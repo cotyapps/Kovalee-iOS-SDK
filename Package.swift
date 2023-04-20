@@ -12,7 +12,9 @@ let package = Package(
         .library(
             name: "KovaleeSDK",
             targets: [
-                "KovaleeFramework"
+                "KovaleeFramework",
+//                "Adjust",
+//                "FrameworkWrapper"
             ]
         ),
     ],
@@ -21,17 +23,23 @@ let package = Package(
         .package(url: "https://github.com/adjust/ios_sdk", branch: "master"),
     ],
     targets: [
-        // Local 
         .binaryTarget(
             name: "KovaleeFramework",
-            path: "./Sources/KovaleeFramework.xcframework",
-            dependencies: ["Adjust"]
-        )
-
-        // .binaryTarget(
-        //     name: "SomeRemoteBinaryPackage",
-        //     url: "https://github.com/cotyapps/Kovalee-iOS-Framework/blob/master/distribution/KovaleeFramework.xcframework.zip",
-        //     checksum: "The checksum of the ZIP archive that contains the XCFramework."
-        // ),
+            path: "./Sources/KovaleeFramework.xcframework"
+        ),
+//        .target(
+//            name: "FrameworkWrapper",
+//            dependencies: [
+//                "KovaleeFramework",
+////                "Adjust"
+//                .product(name: "Adjust", package: "ios_sdk")
+//            ]
+////            path: "FrameworkWrapper"
+//        ),
+//        .binaryTarget(
+//            name: "Adjust",
+//            url: "https://github.com/adjust/ios_sdk/releases/download/v4.33.4/AdjustSdk-iOS-tvOS-Dynamic-4.33.4.xcframework.zip",
+//            checksum: "67366734fdce1aee75fbcebe71379177e98ce1645dd1694d10a8f845815ab4f9"
+//        )
     ]
 )

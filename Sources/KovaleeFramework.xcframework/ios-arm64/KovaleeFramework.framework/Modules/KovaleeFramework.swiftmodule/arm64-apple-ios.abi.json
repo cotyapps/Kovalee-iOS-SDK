@@ -16,7 +16,10 @@
         "name": "Adjust",
         "printedName": "Adjust",
         "declKind": "Import",
-        "moduleName": "KovaleeFramework"
+        "moduleName": "KovaleeFramework",
+        "declAttributes": [
+          "ImplementationOnly"
+        ]
       },
       {
         "kind": "TypeDecl",
@@ -322,21 +325,35 @@
     {
       "filePath": "\/Users\/filippo\/Projects\/KovaleeSDK\/KovaleeFramework\/KovaleeFramework\/Kovalee.swift",
       "kind": "StringLiteral",
-      "offset": 452,
-      "length": 12,
-      "value": "\"initialize\""
+      "offset": 473,
+      "length": 14,
+      "value": "\"initializing\""
     },
     {
       "filePath": "\/Users\/filippo\/Projects\/KovaleeSDK\/KovaleeFramework\/KovaleeFramework\/Kovalee.swift",
       "kind": "StringLiteral",
-      "offset": 502,
+      "offset": 525,
       "length": 16,
       "value": "\"{YourAppToken}\""
     },
     {
       "filePath": "\/Users\/filippo\/Projects\/KovaleeSDK\/KovaleeFramework\/KovaleeFramework\/Kovalee.swift",
       "kind": "StringLiteral",
-      "offset": 973,
+      "offset": 884,
+      "length": 39,
+      "value": "\"Ajust enabled...\""
+    },
+    {
+      "filePath": "\/Users\/filippo\/Projects\/KovaleeSDK\/KovaleeFramework\/KovaleeFramework\/Kovalee.swift",
+      "kind": "StringLiteral",
+      "offset": 922,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/filippo\/Projects\/KovaleeSDK\/KovaleeFramework\/KovaleeFramework\/Kovalee.swift",
+      "kind": "StringLiteral",
+      "offset": 1076,
       "length": 17,
       "value": "\"Sending event: \""
     }
