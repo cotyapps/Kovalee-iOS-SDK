@@ -24,7 +24,8 @@ let package = Package(
         // Local 
         .binaryTarget(
             name: "KovaleeFramework",
-            path: "./Sources/KovaleeFramework.xcframework"
+            path: "./Sources/KovaleeFramework.xcframework",
+            dependencies: ["Adjust"]
         )
 
         // .binaryTarget(
