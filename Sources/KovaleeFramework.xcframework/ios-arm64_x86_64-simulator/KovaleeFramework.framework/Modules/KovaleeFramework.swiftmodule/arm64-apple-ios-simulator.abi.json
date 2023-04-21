@@ -23,8 +23,361 @@
       },
       {
         "kind": "TypeDecl",
-        "name": "Kovalee",
-        "printedName": "Kovalee",
+        "name": "AdjustConfiguration",
+        "printedName": "AdjustConfiguration",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "environment",
+            "printedName": "environment",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Environment",
+                "printedName": "KovaleeFramework.Configuration.Environment",
+                "usr": "s:16KovaleeFramework13ConfigurationV11EnvironmentO"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:16KovaleeFramework19AdjustConfigurationV11environmentAA0D0V11EnvironmentOvp",
+            "mangledName": "$s16KovaleeFramework19AdjustConfigurationV11environmentAA0D0V11EnvironmentOvp",
+            "moduleName": "KovaleeFramework",
+            "declAttributes": [
+              "HasStorage"
+            ],
+            "fixedbinaryorder": 0,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Environment",
+                    "printedName": "KovaleeFramework.Configuration.Environment",
+                    "usr": "s:16KovaleeFramework13ConfigurationV11EnvironmentO"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:16KovaleeFramework19AdjustConfigurationV11environmentAA0D0V11EnvironmentOvg",
+                "mangledName": "$s16KovaleeFramework19AdjustConfigurationV11environmentAA0D0V11EnvironmentOvg",
+                "moduleName": "KovaleeFramework",
+                "implicit": true,
+                "declAttributes": [
+                  "Transparent"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Environment",
+                    "printedName": "KovaleeFramework.Configuration.Environment",
+                    "usr": "s:16KovaleeFramework13ConfigurationV11EnvironmentO"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:16KovaleeFramework19AdjustConfigurationV11environmentAA0D0V11EnvironmentOvs",
+                "mangledName": "$s16KovaleeFramework19AdjustConfigurationV11environmentAA0D0V11EnvironmentOvs",
+                "moduleName": "KovaleeFramework",
+                "implicit": true,
+                "declAttributes": [
+                  "Transparent"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:16KovaleeFramework19AdjustConfigurationV11environmentAA0D0V11EnvironmentOvM",
+                "mangledName": "$s16KovaleeFramework19AdjustConfigurationV11environmentAA0D0V11EnvironmentOvM",
+                "moduleName": "KovaleeFramework",
+                "implicit": true,
+                "declAttributes": [
+                  "Transparent"
+                ],
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "token",
+            "printedName": "token",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:16KovaleeFramework19AdjustConfigurationV5tokenSSvp",
+            "mangledName": "$s16KovaleeFramework19AdjustConfigurationV5tokenSSvp",
+            "moduleName": "KovaleeFramework",
+            "declAttributes": [
+              "HasStorage"
+            ],
+            "fixedbinaryorder": 1,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:16KovaleeFramework19AdjustConfigurationV5tokenSSvg",
+                "mangledName": "$s16KovaleeFramework19AdjustConfigurationV5tokenSSvg",
+                "moduleName": "KovaleeFramework",
+                "implicit": true,
+                "declAttributes": [
+                  "Transparent"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:16KovaleeFramework19AdjustConfigurationV5tokenSSvs",
+                "mangledName": "$s16KovaleeFramework19AdjustConfigurationV5tokenSSvs",
+                "moduleName": "KovaleeFramework",
+                "implicit": true,
+                "declAttributes": [
+                  "Transparent"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:16KovaleeFramework19AdjustConfigurationV5tokenSSvM",
+                "mangledName": "$s16KovaleeFramework19AdjustConfigurationV5tokenSSvM",
+                "moduleName": "KovaleeFramework",
+                "implicit": true,
+                "declAttributes": [
+                  "Transparent"
+                ],
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(environment:token:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "AdjustConfiguration",
+                "printedName": "KovaleeFramework.AdjustConfiguration",
+                "usr": "s:16KovaleeFramework19AdjustConfigurationV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Environment",
+                "printedName": "KovaleeFramework.Configuration.Environment",
+                "usr": "s:16KovaleeFramework13ConfigurationV11EnvironmentO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:16KovaleeFramework19AdjustConfigurationV11environment5tokenAcA0D0V11EnvironmentO_SStcfc",
+            "mangledName": "$s16KovaleeFramework19AdjustConfigurationV11environment5tokenAcA0D0V11EnvironmentO_SStcfc",
+            "moduleName": "KovaleeFramework",
+            "implicit": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Var",
+            "name": "sandbox",
+            "printedName": "sandbox",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "AdjustConfiguration",
+                "printedName": "KovaleeFramework.AdjustConfiguration",
+                "usr": "s:16KovaleeFramework19AdjustConfigurationV"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:16KovaleeFramework19AdjustConfigurationV7sandboxACvpZ",
+            "mangledName": "$s16KovaleeFramework19AdjustConfigurationV7sandboxACvpZ",
+            "moduleName": "KovaleeFramework",
+            "static": true,
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AdjustConfiguration",
+                    "printedName": "KovaleeFramework.AdjustConfiguration",
+                    "usr": "s:16KovaleeFramework19AdjustConfigurationV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:16KovaleeFramework19AdjustConfigurationV7sandboxACvgZ",
+                "mangledName": "$s16KovaleeFramework19AdjustConfigurationV7sandboxACvgZ",
+                "moduleName": "KovaleeFramework",
+                "static": true,
+                "isFromExtension": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "live",
+            "printedName": "live",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "AdjustConfiguration",
+                "printedName": "KovaleeFramework.AdjustConfiguration",
+                "usr": "s:16KovaleeFramework19AdjustConfigurationV"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:16KovaleeFramework19AdjustConfigurationV4liveACvpZ",
+            "mangledName": "$s16KovaleeFramework19AdjustConfigurationV4liveACvpZ",
+            "moduleName": "KovaleeFramework",
+            "static": true,
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AdjustConfiguration",
+                    "printedName": "KovaleeFramework.AdjustConfiguration",
+                    "usr": "s:16KovaleeFramework19AdjustConfigurationV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:16KovaleeFramework19AdjustConfigurationV4liveACvgZ",
+                "mangledName": "$s16KovaleeFramework19AdjustConfigurationV4liveACvgZ",
+                "moduleName": "KovaleeFramework",
+                "static": true,
+                "isFromExtension": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "test",
+            "printedName": "test",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "AdjustConfiguration",
+                "printedName": "KovaleeFramework.AdjustConfiguration",
+                "usr": "s:16KovaleeFramework19AdjustConfigurationV"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:16KovaleeFramework19AdjustConfigurationV4testACvpZ",
+            "mangledName": "$s16KovaleeFramework19AdjustConfigurationV4testACvpZ",
+            "moduleName": "KovaleeFramework",
+            "static": true,
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AdjustConfiguration",
+                    "printedName": "KovaleeFramework.AdjustConfiguration",
+                    "usr": "s:16KovaleeFramework19AdjustConfigurationV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:16KovaleeFramework19AdjustConfigurationV4testACvgZ",
+                "mangledName": "$s16KovaleeFramework19AdjustConfigurationV4testACvgZ",
+                "moduleName": "KovaleeFramework",
+                "static": true,
+                "isFromExtension": true,
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:16KovaleeFramework19AdjustConfigurationV",
+        "mangledName": "$s16KovaleeFramework19AdjustConfigurationV",
+        "moduleName": "KovaleeFramework"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "AdjustWrapper",
+        "printedName": "AdjustWrapper",
         "children": [
           {
             "kind": "Var",
@@ -34,7 +387,7 @@
               {
                 "kind": "TypeFunc",
                 "name": "Function",
-                "printedName": "() -> ()",
+                "printedName": "(KovaleeFramework.AdjustConfiguration) -> ()",
                 "children": [
                   {
                     "kind": "TypeNominal",
@@ -43,20 +396,21 @@
                   },
                   {
                     "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
+                    "name": "AdjustConfiguration",
+                    "printedName": "KovaleeFramework.AdjustConfiguration",
+                    "usr": "s:16KovaleeFramework19AdjustConfigurationV"
                   }
                 ]
               }
             ],
             "declKind": "Var",
-            "usr": "s:16KovaleeFramework0A0V10initializeyycvp",
-            "mangledName": "$s16KovaleeFramework0A0V10initializeyycvp",
+            "usr": "s:16KovaleeFramework13AdjustWrapperV10initializeyyAA0C13ConfigurationVcvp",
+            "mangledName": "$s16KovaleeFramework13AdjustWrapperV10initializeyyAA0C13ConfigurationVcvp",
             "moduleName": "KovaleeFramework",
             "declAttributes": [
-              "HasStorage",
-              "AccessControl"
+              "HasStorage"
             ],
+            "fixedbinaryorder": 0,
             "hasStorage": true,
             "accessors": [
               {
@@ -67,7 +421,7 @@
                   {
                     "kind": "TypeFunc",
                     "name": "Function",
-                    "printedName": "() -> ()",
+                    "printedName": "(KovaleeFramework.AdjustConfiguration) -> ()",
                     "children": [
                       {
                         "kind": "TypeNominal",
@@ -76,17 +430,21 @@
                       },
                       {
                         "kind": "TypeNominal",
-                        "name": "Void",
-                        "printedName": "()"
+                        "name": "AdjustConfiguration",
+                        "printedName": "KovaleeFramework.AdjustConfiguration",
+                        "usr": "s:16KovaleeFramework19AdjustConfigurationV"
                       }
                     ]
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:16KovaleeFramework0A0V10initializeyycvg",
-                "mangledName": "$s16KovaleeFramework0A0V10initializeyycvg",
+                "usr": "s:16KovaleeFramework13AdjustWrapperV10initializeyyAA0C13ConfigurationVcvg",
+                "mangledName": "$s16KovaleeFramework13AdjustWrapperV10initializeyyAA0C13ConfigurationVcvg",
                 "moduleName": "KovaleeFramework",
                 "implicit": true,
+                "declAttributes": [
+                  "Transparent"
+                ],
                 "accessorKind": "get"
               },
               {
@@ -102,7 +460,7 @@
                   {
                     "kind": "TypeFunc",
                     "name": "Function",
-                    "printedName": "() -> ()",
+                    "printedName": "(KovaleeFramework.AdjustConfiguration) -> ()",
                     "children": [
                       {
                         "kind": "TypeNominal",
@@ -111,17 +469,21 @@
                       },
                       {
                         "kind": "TypeNominal",
-                        "name": "Void",
-                        "printedName": "()"
+                        "name": "AdjustConfiguration",
+                        "printedName": "KovaleeFramework.AdjustConfiguration",
+                        "usr": "s:16KovaleeFramework19AdjustConfigurationV"
                       }
                     ]
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:16KovaleeFramework0A0V10initializeyycvs",
-                "mangledName": "$s16KovaleeFramework0A0V10initializeyycvs",
+                "usr": "s:16KovaleeFramework13AdjustWrapperV10initializeyyAA0C13ConfigurationVcvs",
+                "mangledName": "$s16KovaleeFramework13AdjustWrapperV10initializeyyAA0C13ConfigurationVcvs",
                 "moduleName": "KovaleeFramework",
                 "implicit": true,
+                "declAttributes": [
+                  "Transparent"
+                ],
                 "accessorKind": "set"
               },
               {
@@ -136,10 +498,13 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:16KovaleeFramework0A0V10initializeyycvM",
-                "mangledName": "$s16KovaleeFramework0A0V10initializeyycvM",
+                "usr": "s:16KovaleeFramework13AdjustWrapperV10initializeyyAA0C13ConfigurationVcvM",
+                "mangledName": "$s16KovaleeFramework13AdjustWrapperV10initializeyyAA0C13ConfigurationVcvM",
                 "moduleName": "KovaleeFramework",
                 "implicit": true,
+                "declAttributes": [
+                  "Transparent"
+                ],
                 "accessorKind": "_modify"
               }
             ]
@@ -169,13 +534,13 @@
               }
             ],
             "declKind": "Var",
-            "usr": "s:16KovaleeFramework0A0V9sendEventyySScvp",
-            "mangledName": "$s16KovaleeFramework0A0V9sendEventyySScvp",
+            "usr": "s:16KovaleeFramework13AdjustWrapperV9sendEventyySScvp",
+            "mangledName": "$s16KovaleeFramework13AdjustWrapperV9sendEventyySScvp",
             "moduleName": "KovaleeFramework",
             "declAttributes": [
-              "HasStorage",
-              "AccessControl"
+              "HasStorage"
             ],
+            "fixedbinaryorder": 1,
             "hasStorage": true,
             "accessors": [
               {
@@ -203,10 +568,13 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:16KovaleeFramework0A0V9sendEventyySScvg",
-                "mangledName": "$s16KovaleeFramework0A0V9sendEventyySScvg",
+                "usr": "s:16KovaleeFramework13AdjustWrapperV9sendEventyySScvg",
+                "mangledName": "$s16KovaleeFramework13AdjustWrapperV9sendEventyySScvg",
                 "moduleName": "KovaleeFramework",
                 "implicit": true,
+                "declAttributes": [
+                  "Transparent"
+                ],
                 "accessorKind": "get"
               },
               {
@@ -239,8 +607,538 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:16KovaleeFramework0A0V9sendEventyySScvs",
-                "mangledName": "$s16KovaleeFramework0A0V9sendEventyySScvs",
+                "usr": "s:16KovaleeFramework13AdjustWrapperV9sendEventyySScvs",
+                "mangledName": "$s16KovaleeFramework13AdjustWrapperV9sendEventyySScvs",
+                "moduleName": "KovaleeFramework",
+                "implicit": true,
+                "declAttributes": [
+                  "Transparent"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:16KovaleeFramework13AdjustWrapperV9sendEventyySScvM",
+                "mangledName": "$s16KovaleeFramework13AdjustWrapperV9sendEventyySScvM",
+                "moduleName": "KovaleeFramework",
+                "implicit": true,
+                "declAttributes": [
+                  "Transparent"
+                ],
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(initialize:sendEvent:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "AdjustWrapper",
+                "printedName": "KovaleeFramework.AdjustWrapper",
+                "usr": "s:16KovaleeFramework13AdjustWrapperV"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(KovaleeFramework.AdjustConfiguration) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AdjustConfiguration",
+                    "printedName": "KovaleeFramework.AdjustConfiguration",
+                    "usr": "s:16KovaleeFramework19AdjustConfigurationV"
+                  }
+                ]
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Swift.String) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:16KovaleeFramework13AdjustWrapperV10initialize9sendEventACyAA0C13ConfigurationVc_ySSctcfc",
+            "mangledName": "$s16KovaleeFramework13AdjustWrapperV10initialize9sendEventACyAA0C13ConfigurationVc_ySSctcfc",
+            "moduleName": "KovaleeFramework",
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Var",
+            "name": "live",
+            "printedName": "live",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "AdjustWrapper",
+                "printedName": "KovaleeFramework.AdjustWrapper",
+                "usr": "s:16KovaleeFramework13AdjustWrapperV"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:16KovaleeFramework13AdjustWrapperV4liveACvpZ",
+            "mangledName": "$s16KovaleeFramework13AdjustWrapperV4liveACvpZ",
+            "moduleName": "KovaleeFramework",
+            "static": true,
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AdjustWrapper",
+                    "printedName": "KovaleeFramework.AdjustWrapper",
+                    "usr": "s:16KovaleeFramework13AdjustWrapperV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:16KovaleeFramework13AdjustWrapperV4liveACvgZ",
+                "mangledName": "$s16KovaleeFramework13AdjustWrapperV4liveACvgZ",
+                "moduleName": "KovaleeFramework",
+                "static": true,
+                "isFromExtension": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "test",
+            "printedName": "test",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "AdjustWrapper",
+                "printedName": "KovaleeFramework.AdjustWrapper",
+                "usr": "s:16KovaleeFramework13AdjustWrapperV"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:16KovaleeFramework13AdjustWrapperV4testACvpZ",
+            "mangledName": "$s16KovaleeFramework13AdjustWrapperV4testACvpZ",
+            "moduleName": "KovaleeFramework",
+            "static": true,
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AdjustWrapper",
+                    "printedName": "KovaleeFramework.AdjustWrapper",
+                    "usr": "s:16KovaleeFramework13AdjustWrapperV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:16KovaleeFramework13AdjustWrapperV4testACvgZ",
+                "mangledName": "$s16KovaleeFramework13AdjustWrapperV4testACvgZ",
+                "moduleName": "KovaleeFramework",
+                "static": true,
+                "isFromExtension": true,
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:16KovaleeFramework13AdjustWrapperV",
+        "mangledName": "$s16KovaleeFramework13AdjustWrapperV",
+        "moduleName": "KovaleeFramework",
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "KovaleeFramework"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "Configuration",
+        "printedName": "Configuration",
+        "children": [
+          {
+            "kind": "TypeDecl",
+            "name": "Environment",
+            "printedName": "Environment",
+            "children": [
+              {
+                "kind": "Var",
+                "name": "sandbox",
+                "printedName": "sandbox",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(KovaleeFramework.Configuration.Environment.Type) -> KovaleeFramework.Configuration.Environment",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Environment",
+                        "printedName": "KovaleeFramework.Configuration.Environment",
+                        "usr": "s:16KovaleeFramework13ConfigurationV11EnvironmentO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "KovaleeFramework.Configuration.Environment.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Environment",
+                            "printedName": "KovaleeFramework.Configuration.Environment",
+                            "usr": "s:16KovaleeFramework13ConfigurationV11EnvironmentO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:16KovaleeFramework13ConfigurationV11EnvironmentO7sandboxyA2EmF",
+                "mangledName": "$s16KovaleeFramework13ConfigurationV11EnvironmentO7sandboxyA2EmF",
+                "moduleName": "KovaleeFramework"
+              },
+              {
+                "kind": "Var",
+                "name": "production",
+                "printedName": "production",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(KovaleeFramework.Configuration.Environment.Type) -> KovaleeFramework.Configuration.Environment",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Environment",
+                        "printedName": "KovaleeFramework.Configuration.Environment",
+                        "usr": "s:16KovaleeFramework13ConfigurationV11EnvironmentO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "KovaleeFramework.Configuration.Environment.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Environment",
+                            "printedName": "KovaleeFramework.Configuration.Environment",
+                            "usr": "s:16KovaleeFramework13ConfigurationV11EnvironmentO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:16KovaleeFramework13ConfigurationV11EnvironmentO10productionyA2EmF",
+                "mangledName": "$s16KovaleeFramework13ConfigurationV11EnvironmentO10productionyA2EmF",
+                "moduleName": "KovaleeFramework"
+              },
+              {
+                "kind": "Var",
+                "name": "test",
+                "printedName": "test",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(KovaleeFramework.Configuration.Environment.Type) -> KovaleeFramework.Configuration.Environment",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Environment",
+                        "printedName": "KovaleeFramework.Configuration.Environment",
+                        "usr": "s:16KovaleeFramework13ConfigurationV11EnvironmentO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "KovaleeFramework.Configuration.Environment.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Environment",
+                            "printedName": "KovaleeFramework.Configuration.Environment",
+                            "usr": "s:16KovaleeFramework13ConfigurationV11EnvironmentO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:16KovaleeFramework13ConfigurationV11EnvironmentO4testyA2EmF",
+                "mangledName": "$s16KovaleeFramework13ConfigurationV11EnvironmentO4testyA2EmF",
+                "moduleName": "KovaleeFramework"
+              },
+              {
+                "kind": "Function",
+                "name": "==",
+                "printedName": "==(_:_:)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Environment",
+                    "printedName": "KovaleeFramework.Configuration.Environment",
+                    "usr": "s:16KovaleeFramework13ConfigurationV11EnvironmentO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Environment",
+                    "printedName": "KovaleeFramework.Configuration.Environment",
+                    "usr": "s:16KovaleeFramework13ConfigurationV11EnvironmentO"
+                  }
+                ],
+                "declKind": "Func",
+                "usr": "s:16KovaleeFramework13ConfigurationV11EnvironmentO2eeoiySbAE_AEtFZ",
+                "mangledName": "$s16KovaleeFramework13ConfigurationV11EnvironmentO2eeoiySbAE_AEtFZ",
+                "moduleName": "KovaleeFramework",
+                "static": true,
+                "implicit": true,
+                "funcSelfKind": "NonMutating"
+              },
+              {
+                "kind": "Var",
+                "name": "hashValue",
+                "printedName": "hashValue",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:16KovaleeFramework13ConfigurationV11EnvironmentO9hashValueSivp",
+                "mangledName": "$s16KovaleeFramework13ConfigurationV11EnvironmentO9hashValueSivp",
+                "moduleName": "KovaleeFramework",
+                "implicit": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:16KovaleeFramework13ConfigurationV11EnvironmentO9hashValueSivg",
+                    "mangledName": "$s16KovaleeFramework13ConfigurationV11EnvironmentO9hashValueSivg",
+                    "moduleName": "KovaleeFramework",
+                    "implicit": true,
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Function",
+                "name": "hash",
+                "printedName": "hash(into:)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Hasher",
+                    "printedName": "Swift.Hasher",
+                    "paramValueOwnership": "InOut",
+                    "usr": "s:s6HasherV"
+                  }
+                ],
+                "declKind": "Func",
+                "usr": "s:16KovaleeFramework13ConfigurationV11EnvironmentO4hash4intoys6HasherVz_tF",
+                "mangledName": "$s16KovaleeFramework13ConfigurationV11EnvironmentO4hash4intoys6HasherVz_tF",
+                "moduleName": "KovaleeFramework",
+                "implicit": true,
+                "funcSelfKind": "NonMutating"
+              },
+              {
+                "kind": "Var",
+                "name": "adjustEnvironment",
+                "printedName": "adjustEnvironment",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:16KovaleeFramework13ConfigurationV11EnvironmentO06adjustD0SSvp",
+                "mangledName": "$s16KovaleeFramework13ConfigurationV11EnvironmentO06adjustD0SSvp",
+                "moduleName": "KovaleeFramework",
+                "isFromExtension": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:16KovaleeFramework13ConfigurationV11EnvironmentO06adjustD0SSvg",
+                    "mangledName": "$s16KovaleeFramework13ConfigurationV11EnvironmentO06adjustD0SSvg",
+                    "moduleName": "KovaleeFramework",
+                    "isFromExtension": true,
+                    "accessorKind": "get"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Enum",
+            "usr": "s:16KovaleeFramework13ConfigurationV11EnvironmentO",
+            "mangledName": "$s16KovaleeFramework13ConfigurationV11EnvironmentO",
+            "moduleName": "KovaleeFramework",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "conformances": [
+              {
+                "kind": "Conformance",
+                "name": "Equatable",
+                "printedName": "Equatable",
+                "usr": "s:SQ",
+                "mangledName": "$sSQ"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Hashable",
+                "printedName": "Hashable",
+                "usr": "s:SH",
+                "mangledName": "$sSH"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "environment",
+            "printedName": "environment",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Environment",
+                "printedName": "KovaleeFramework.Configuration.Environment",
+                "usr": "s:16KovaleeFramework13ConfigurationV11EnvironmentO"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:16KovaleeFramework13ConfigurationV11environmentAC11EnvironmentOvp",
+            "mangledName": "$s16KovaleeFramework13ConfigurationV11environmentAC11EnvironmentOvp",
+            "moduleName": "KovaleeFramework",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Environment",
+                    "printedName": "KovaleeFramework.Configuration.Environment",
+                    "usr": "s:16KovaleeFramework13ConfigurationV11EnvironmentO"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:16KovaleeFramework13ConfigurationV11environmentAC11EnvironmentOvg",
+                "mangledName": "$s16KovaleeFramework13ConfigurationV11environmentAC11EnvironmentOvg",
+                "moduleName": "KovaleeFramework",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Environment",
+                    "printedName": "KovaleeFramework.Configuration.Environment",
+                    "usr": "s:16KovaleeFramework13ConfigurationV11EnvironmentO"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:16KovaleeFramework13ConfigurationV11environmentAC11EnvironmentOvs",
+                "mangledName": "$s16KovaleeFramework13ConfigurationV11environmentAC11EnvironmentOvs",
                 "moduleName": "KovaleeFramework",
                 "implicit": true,
                 "accessorKind": "set"
@@ -257,8 +1155,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:16KovaleeFramework0A0V9sendEventyySScvM",
-                "mangledName": "$s16KovaleeFramework0A0V9sendEventyySScvM",
+                "usr": "s:16KovaleeFramework13ConfigurationV11environmentAC11EnvironmentOvM",
+                "mangledName": "$s16KovaleeFramework13ConfigurationV11environmentAC11EnvironmentOvM",
                 "moduleName": "KovaleeFramework",
                 "implicit": true,
                 "accessorKind": "_modify"
@@ -266,20 +1164,47 @@
             ]
           },
           {
-            "kind": "Var",
-            "name": "live",
-            "printedName": "live",
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(environment:)",
             "children": [
               {
                 "kind": "TypeNominal",
-                "name": "Kovalee",
-                "printedName": "KovaleeFramework.Kovalee",
-                "usr": "s:16KovaleeFramework0A0V"
+                "name": "Configuration",
+                "printedName": "KovaleeFramework.Configuration",
+                "usr": "s:16KovaleeFramework13ConfigurationV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Environment",
+                "printedName": "KovaleeFramework.Configuration.Environment",
+                "usr": "s:16KovaleeFramework13ConfigurationV11EnvironmentO"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:16KovaleeFramework13ConfigurationV11environmentA2C11EnvironmentO_tcfc",
+            "mangledName": "$s16KovaleeFramework13ConfigurationV11environmentA2C11EnvironmentO_tcfc",
+            "moduleName": "KovaleeFramework",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Var",
+            "name": "test",
+            "printedName": "test",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Configuration",
+                "printedName": "KovaleeFramework.Configuration",
+                "usr": "s:16KovaleeFramework13ConfigurationV"
               }
             ],
             "declKind": "Var",
-            "usr": "s:16KovaleeFramework0A0V4liveACvpZ",
-            "mangledName": "$s16KovaleeFramework0A0V4liveACvpZ",
+            "usr": "s:16KovaleeFramework13ConfigurationV4testACvpZ",
+            "mangledName": "$s16KovaleeFramework13ConfigurationV4testACvpZ",
             "moduleName": "KovaleeFramework",
             "static": true,
             "declAttributes": [
@@ -294,14 +1219,14 @@
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "Kovalee",
-                    "printedName": "KovaleeFramework.Kovalee",
-                    "usr": "s:16KovaleeFramework0A0V"
+                    "name": "Configuration",
+                    "printedName": "KovaleeFramework.Configuration",
+                    "usr": "s:16KovaleeFramework13ConfigurationV"
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:16KovaleeFramework0A0V4liveACvgZ",
-                "mangledName": "$s16KovaleeFramework0A0V4liveACvgZ",
+                "usr": "s:16KovaleeFramework13ConfigurationV4testACvgZ",
+                "mangledName": "$s16KovaleeFramework13ConfigurationV4testACvgZ",
                 "moduleName": "KovaleeFramework",
                 "static": true,
                 "isFromExtension": true,
@@ -311,51 +1236,306 @@
           }
         ],
         "declKind": "Struct",
-        "usr": "s:16KovaleeFramework0A0V",
-        "mangledName": "$s16KovaleeFramework0A0V",
+        "usr": "s:16KovaleeFramework13ConfigurationV",
+        "mangledName": "$s16KovaleeFramework13ConfigurationV",
         "moduleName": "KovaleeFramework",
         "declAttributes": [
           "AccessControl"
         ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "KovaleeManager",
+        "printedName": "KovaleeManager",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "isInitialized",
+            "printedName": "isInitialized",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:16KovaleeFramework0A7ManagerC13isInitializedSbvpZ",
+            "mangledName": "$s16KovaleeFramework0A7ManagerC13isInitializedSbvpZ",
+            "moduleName": "KovaleeFramework",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:16KovaleeFramework0A7ManagerC13isInitializedSbvgZ",
+                "mangledName": "$s16KovaleeFramework0A7ManagerC13isInitializedSbvgZ",
+                "moduleName": "KovaleeFramework",
+                "static": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "initialize",
+            "printedName": "initialize(configuration:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Configuration",
+                "printedName": "KovaleeFramework.Configuration",
+                "usr": "s:16KovaleeFramework13ConfigurationV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:16KovaleeFramework0A7ManagerC10initialize13configurationyAA13ConfigurationV_tFZ",
+            "mangledName": "$s16KovaleeFramework0A7ManagerC10initialize13configurationyAA13ConfigurationV_tFZ",
+            "moduleName": "KovaleeFramework",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Var",
+            "name": "shared",
+            "printedName": "shared",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "KovaleeManager",
+                "printedName": "KovaleeFramework.KovaleeManager",
+                "usr": "s:16KovaleeFramework0A7ManagerC"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:16KovaleeFramework0A7ManagerC6sharedACvpZ",
+            "mangledName": "$s16KovaleeFramework0A7ManagerC6sharedACvpZ",
+            "moduleName": "KovaleeFramework",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "KovaleeManager",
+                    "printedName": "KovaleeFramework.KovaleeManager",
+                    "usr": "s:16KovaleeFramework0A7ManagerC"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:16KovaleeFramework0A7ManagerC6sharedACvgZ",
+                "mangledName": "$s16KovaleeFramework0A7ManagerC6sharedACvgZ",
+                "moduleName": "KovaleeFramework",
+                "static": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "terminate",
+            "printedName": "terminate()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:16KovaleeFramework0A7ManagerC9terminateyyFZ",
+            "mangledName": "$s16KovaleeFramework0A7ManagerC9terminateyyFZ",
+            "moduleName": "KovaleeFramework",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "sendEvent",
+            "printedName": "sendEvent(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:16KovaleeFramework0A7ManagerC9sendEventyySSFZ",
+            "mangledName": "$s16KovaleeFramework0A7ManagerC9sendEventyySSFZ",
+            "moduleName": "KovaleeFramework",
+            "static": true,
+            "declAttributes": [
+              "Final"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "sendEvent",
+            "printedName": "sendEvent(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:16KovaleeFramework0A7ManagerC9sendEventyySSF",
+            "mangledName": "$s16KovaleeFramework0A7ManagerC9sendEventyySSF",
+            "moduleName": "KovaleeFramework",
+            "declAttributes": [
+              "Final"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:16KovaleeFramework0A7ManagerC",
+        "mangledName": "$s16KovaleeFramework0A7ManagerC",
+        "moduleName": "KovaleeFramework",
+        "declAttributes": [
+          "Final",
+          "AccessControl"
+        ],
+        "hasMissingDesignatedInitializers": true
       }
     ],
     "json_format_version": 8
   },
   "ConstValues": [
     {
-      "filePath": "\/Users\/filippo\/Projects\/KovaleeSDK\/KovaleeFramework\/KovaleeFramework\/Kovalee.swift",
+      "filePath": "\/Users\/filippo\/Projects\/KovaleeSDK\/KovaleeFramework\/KovaleeFramework\/AdjustWrapper.swift",
       "kind": "StringLiteral",
-      "offset": 473,
+      "offset": 522,
       "length": 14,
-      "value": "\"initializing\""
+      "value": "\"k53uzh0tk0e8\""
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/KovaleeSDK\/KovaleeFramework\/KovaleeFramework\/Kovalee.swift",
+      "filePath": "\/Users\/filippo\/Projects\/KovaleeSDK\/KovaleeFramework\/KovaleeFramework\/AdjustWrapper.swift",
       "kind": "StringLiteral",
-      "offset": 525,
-      "length": 16,
-      "value": "\"{YourAppToken}\""
+      "offset": 624,
+      "length": 14,
+      "value": "\"k53uzh0tk0e8\""
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/KovaleeSDK\/KovaleeFramework\/KovaleeFramework\/Kovalee.swift",
+      "filePath": "\/Users\/filippo\/Projects\/KovaleeSDK\/KovaleeFramework\/KovaleeFramework\/AdjustWrapper.swift",
       "kind": "StringLiteral",
-      "offset": 884,
-      "length": 39,
-      "value": "\"Ajust enabled...\""
-    },
-    {
-      "filePath": "\/Users\/filippo\/Projects\/KovaleeSDK\/KovaleeFramework\/KovaleeFramework\/Kovalee.swift",
-      "kind": "StringLiteral",
-      "offset": 922,
+      "offset": 720,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/KovaleeSDK\/KovaleeFramework\/KovaleeFramework\/Kovalee.swift",
+      "filePath": "\/Users\/filippo\/Projects\/KovaleeSDK\/KovaleeFramework\/KovaleeFramework\/AdjustWrapper.swift",
       "kind": "StringLiteral",
-      "offset": 1076,
+      "offset": 1194,
+      "length": 21,
+      "value": "\"initializing Adjust\""
+    },
+    {
+      "filePath": "\/Users\/filippo\/Projects\/KovaleeSDK\/KovaleeFramework\/KovaleeFramework\/AdjustWrapper.swift",
+      "kind": "FloatLiteral",
+      "offset": 1555,
+      "length": 3,
+      "value": "2.5"
+    },
+    {
+      "filePath": "\/Users\/filippo\/Projects\/KovaleeSDK\/KovaleeFramework\/KovaleeFramework\/AdjustWrapper.swift",
+      "kind": "StringLiteral",
+      "offset": 1633,
+      "length": 38,
+      "value": "\"Ajust enabled: \""
+    },
+    {
+      "filePath": "\/Users\/filippo\/Projects\/KovaleeSDK\/KovaleeFramework\/KovaleeFramework\/AdjustWrapper.swift",
+      "kind": "StringLiteral",
+      "offset": 1670,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/filippo\/Projects\/KovaleeSDK\/KovaleeFramework\/KovaleeFramework\/AdjustWrapper.swift",
+      "kind": "StringLiteral",
+      "offset": 1808,
       "length": 17,
       "value": "\"Sending event: \""
+    },
+    {
+      "filePath": "\/Users\/filippo\/Projects\/KovaleeSDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
+      "kind": "StringLiteral",
+      "offset": 827,
+      "length": 28,
+      "value": "\"XCODE_RUNNING_FOR_PREVIEWS\""
+    },
+    {
+      "filePath": "\/Users\/filippo\/Projects\/KovaleeSDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
+      "kind": "StringLiteral",
+      "offset": 860,
+      "length": 3,
+      "value": "\"1\""
+    },
+    {
+      "filePath": "\/Users\/filippo\/Projects\/KovaleeSDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
+      "kind": "StringLiteral",
+      "offset": 1115,
+      "length": 82,
+      "value": "\"Please call KovaleeManager.initialize(...) before accessing the shared instance.\""
     }
   ]
 }

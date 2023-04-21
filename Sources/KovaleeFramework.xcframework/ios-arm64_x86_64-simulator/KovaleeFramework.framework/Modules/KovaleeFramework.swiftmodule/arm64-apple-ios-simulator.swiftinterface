@@ -7,12 +7,34 @@ import Foundation
 import Swift
 import _Concurrency
 import _StringProcessing
-public struct Kovalee {
-  public var initialize: () -> Swift.Void
-  public var sendEvent: (Swift.String) -> Swift.Void
+public struct Configuration {
+  public enum Environment {
+    case sandbox
+    case production
+    case test
+    public static func == (a: KovaleeFramework.Configuration.Environment, b: KovaleeFramework.Configuration.Environment) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+  public var environment: KovaleeFramework.Configuration.Environment
+  public init(environment: KovaleeFramework.Configuration.Environment)
 }
-extension KovaleeFramework.Kovalee {
-  public static var live: KovaleeFramework.Kovalee {
+@_hasMissingDesignatedInitializers final public class KovaleeManager {
+  public static var isInitialized: Swift.Bool {
     get
   }
+  public static func initialize(configuration: KovaleeFramework.Configuration)
+  public static var shared: KovaleeFramework.KovaleeManager {
+    get
+  }
+  public static func terminate()
+  @objc deinit
 }
+extension KovaleeFramework.KovaleeManager {
+  public static func sendEvent(_ event: Swift.String)
+  final public func sendEvent(_ event: Swift.String)
+}
+extension KovaleeFramework.Configuration.Environment : Swift.Equatable {}
+extension KovaleeFramework.Configuration.Environment : Swift.Hashable {}
