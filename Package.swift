@@ -17,8 +17,8 @@ let package = Package(
         ),
     ],
     dependencies: [
-        // Dependencies declare other packages that this package depends on.
-        .package(url: "https://github.com/adjust/ios_sdk", branch: "master"),
+        .package(url: "https://github.com/adjust/ios_sdk", exact: "4.33.4"),
+        .package(url: "https://github.com/amplitude/Amplitude-Swift", exact: "0.4.0"),
     ],
     targets: [
         .binaryTarget(
