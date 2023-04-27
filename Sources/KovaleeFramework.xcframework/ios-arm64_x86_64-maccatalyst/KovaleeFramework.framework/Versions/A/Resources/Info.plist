@@ -9,7 +9,7 @@
 	<key>CFBundleExecutable</key>
 	<string>KovaleeFramework</string>
 	<key>CFBundleIdentifier</key>
-	<string>app.kovalee.KovaleeFramework</string>
+	<string>app.kovale.KovaleeFramework</string>
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
 	<key>CFBundleName</key>
@@ -24,6 +24,8 @@
 	</array>
 	<key>CFBundleVersion</key>
 	<string>1</string>
+	<key>CFProductBundleIdentifier</key>
+	<string>app.kovalee.KovaleeFramework</string>
 	<key>DTCompiler</key>
 	<string>com.apple.compilers.llvm.clang.1_0</string>
 	<key>DTPlatformBuild</key>
@@ -41,7 +43,7 @@
 	<key>DTXcodeBuild</key>
 	<string>14E222b</string>
 	<key>LSMinimumSystemVersion</key>
-	<string>13.3</string>
+	<string>11.0</string>
 	<key>UIDeviceFamily</key>
 	<array>
 		<integer>2</integer>

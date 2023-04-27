@@ -1,31 +1,53 @@
 // swift-interface-format-version: 1.0
 // swift-compiler-version: Apple Swift version 5.8 (swiftlang-5.8.0.124.2 clang-1403.0.22.11.100)
-// swift-module-flags: -target arm64-apple-ios16.4 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name KovaleeFramework
+// swift-module-flags: -target arm64-apple-ios14.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name KovaleeFramework
 // swift-module-flags-ignorable: -enable-bare-slash-regex
 import Foundation
 @_exported import KovaleeFramework
 import Swift
 import _Concurrency
 import _StringProcessing
-public struct Configuration {
-  public enum Environment {
-    case sandbox
-    case production
-    case test
-    public static func == (a: KovaleeFramework.Configuration.Environment, b: KovaleeFramework.Configuration.Environment) -> Swift.Bool
+public struct KeysReader {
+  public struct Keys : Swift.Decodable {
+    public let adjust: Swift.String
+    public let amplitude: Swift.String
+    public init(from decoder: any Swift.Decoder) throws
+  }
+  public enum KeysReaderError : Swift.Error {
+    case fileNotFound
+    case fileEmpty
+    public static func == (a: KovaleeFramework.KeysReader.KeysReaderError, b: KovaleeFramework.KeysReader.KeysReaderError) -> Swift.Bool
     public func hash(into hasher: inout Swift.Hasher)
     public var hashValue: Swift.Int {
       get
     }
   }
-  public var environment: KovaleeFramework.Configuration.Environment
-  public init(environment: KovaleeFramework.Configuration.Environment)
+  public var readKeys: () throws -> KovaleeFramework.KeysReader.Keys
+}
+extension KovaleeFramework.KeysReader {
+  public static func `default`(fileName: Swift.String = KovaleeConstants.keysFileName) -> KovaleeFramework.KeysReader
+}
+public struct KovaleeConfiguration {
+  public enum Environment : Swift.String {
+    case sandbox
+    case production
+    case test
+    public init?(rawValue: Swift.String)
+    public typealias RawValue = Swift.String
+    public var rawValue: Swift.String {
+      get
+    }
+  }
+  public var environment: KovaleeFramework.KovaleeConfiguration.Environment
+  public var keysReader: KovaleeFramework.KeysReader
+  public var logLevel: KovaleeFramework.LogLevel
+  public init(environment: KovaleeFramework.KovaleeConfiguration.Environment, keysReader: KovaleeFramework.KeysReader = .default(), logLevel: KovaleeFramework.LogLevel = .info)
 }
 @_hasMissingDesignatedInitializers final public class KovaleeManager {
   public static var isInitialized: Swift.Bool {
     get
   }
-  public static func initialize(configuration: KovaleeFramework.Configuration)
+  public static func initialize(configuration: KovaleeFramework.KovaleeConfiguration)
   public static var shared: KovaleeFramework.KovaleeManager {
     get
   }
@@ -33,8 +55,36 @@ public struct Configuration {
   @objc deinit
 }
 extension KovaleeFramework.KovaleeManager {
-  public static func sendEvent(_ event: Swift.String)
-  final public func sendEvent(_ event: Swift.String)
+  public static func promptTrackingAuthorization(completion: @escaping (Swift.UInt) -> Swift.Void)
+  #if compiler(>=5.3) && $AsyncAwait
+  public static func promptTrackingAuthorization() async -> Swift.UInt
+  #endif
+  public static func sendEvent(_ type: Swift.String, properties: [Swift.String : Swift.String] = [:])
 }
-extension KovaleeFramework.Configuration.Environment : Swift.Equatable {}
-extension KovaleeFramework.Configuration.Environment : Swift.Hashable {}
+public enum LogLevel {
+  case verbose
+  case debug
+  case info
+  case warn
+  case error
+  public var description: Swift.String {
+    get
+  }
+  public static func == (a: KovaleeFramework.LogLevel, b: KovaleeFramework.LogLevel) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+extension KovaleeFramework.LogLevel : Swift.Comparable {
+  public static func < (lhs: KovaleeFramework.LogLevel, rhs: KovaleeFramework.LogLevel) -> Swift.Bool
+}
+public struct KovaleeConstants {
+  public static let keysFileName: Swift.String
+}
+extension KovaleeFramework.KeysReader.KeysReaderError : Swift.Equatable {}
+extension KovaleeFramework.KeysReader.KeysReaderError : Swift.Hashable {}
+extension KovaleeFramework.KovaleeConfiguration.Environment : Swift.Equatable {}
+extension KovaleeFramework.KovaleeConfiguration.Environment : Swift.Hashable {}
+extension KovaleeFramework.KovaleeConfiguration.Environment : Swift.RawRepresentable {}
+extension KovaleeFramework.LogLevel : Swift.Hashable {}
