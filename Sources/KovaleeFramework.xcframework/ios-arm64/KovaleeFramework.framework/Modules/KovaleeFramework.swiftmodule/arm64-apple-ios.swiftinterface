@@ -1,31 +1,28 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.8 (swiftlang-5.8.0.124.2 clang-1403.0.22.11.100)
+// swift-compiler-version: Apple Swift version 5.7.2 (swiftlang-5.7.2.135.5 clang-1400.0.29.51)
 // swift-module-flags: -target arm64-apple-ios14.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name KovaleeFramework
 // swift-module-flags-ignorable: -enable-bare-slash-regex
+import AdSupport
 import Foundation
 @_exported import KovaleeFramework
 import Swift
 import _Concurrency
 import _StringProcessing
-public struct KeysReader {
-  public struct Keys : Swift.Decodable {
-    public let adjust: Swift.String
-    public let amplitude: Swift.String
-    public init(from decoder: any Swift.Decoder) throws
-  }
-  public enum KeysReaderError : Swift.Error {
-    case fileNotFound
-    case fileEmpty
-    public static func == (a: KovaleeFramework.KeysReader.KeysReaderError, b: KovaleeFramework.KeysReader.KeysReaderError) -> Swift.Bool
-    public func hash(into hasher: inout Swift.Hasher)
-    public var hashValue: Swift.Int {
-      get
-    }
-  }
-  public var readKeys: () throws -> KovaleeFramework.KeysReader.Keys
+public struct Event {
+  public init(name: Swift.String, properties: [Swift.String : Any?]? = nil)
 }
-extension KovaleeFramework.KeysReader {
-  public static func `default`(fileName: Swift.String = KovaleeConstants.keysFileName) -> KovaleeFramework.KeysReader
+extension KovaleeFramework.Event : Swift.CustomStringConvertible {
+  public var description: Swift.String {
+    get
+  }
+}
+@_hasMissingDesignatedInitializers public class RemoteConfigValue {
+  public var stringValue: Swift.String?
+  public var numberValue: Foundation.NSNumber
+  public var dataValue: Foundation.Data
+  public var boolValue: Swift.Bool
+  public var jsonValue: Any?
+  @objc deinit
 }
 public struct KovaleeConfiguration {
   public enum Environment : Swift.String {
@@ -39,29 +36,80 @@ public struct KovaleeConfiguration {
     }
   }
   public var environment: KovaleeFramework.KovaleeConfiguration.Environment
-  public var keysReader: KovaleeFramework.KeysReader
   public var logLevel: KovaleeFramework.LogLevel
-  public init(environment: KovaleeFramework.KovaleeConfiguration.Environment, keysReader: KovaleeFramework.KeysReader = .default(), logLevel: KovaleeFramework.LogLevel = .info)
+  public init(environment: KovaleeFramework.KovaleeConfiguration.Environment, keysFileName: Swift.String = KovaleeConstants.keysFileName, logLevel: KovaleeFramework.LogLevel = .info)
 }
-@_hasMissingDesignatedInitializers final public class KovaleeManager {
+@_hasMissingDesignatedInitializers final public class KovaleeAnalytics {
   public static var isInitialized: Swift.Bool {
     get
   }
   public static func initialize(configuration: KovaleeFramework.KovaleeConfiguration)
-  public static var shared: KovaleeFramework.KovaleeManager {
+  public static func terminate()
+  public static var shared: KovaleeFramework.KovaleeAnalytics {
     get
   }
-  public static func terminate()
   @objc deinit
 }
-extension KovaleeFramework.KovaleeManager {
+extension KovaleeFramework.KovaleeAnalytics {
   public static func promptTrackingAuthorization(completion: @escaping (Swift.UInt) -> Swift.Void)
   #if compiler(>=5.3) && $AsyncAwait
   public static func promptTrackingAuthorization() async -> Swift.UInt
   #endif
-  public static func sendEvent(_ type: Swift.String, properties: [Swift.String : Swift.String] = [:])
+  public static func sendEvent(_ event: KovaleeFramework.Event)
+  public static func getIDFA() -> Foundation.UUID?
 }
-public enum LogLevel {
+extension KovaleeFramework.KovaleeAnalytics {
+  #if compiler(>=5.3) && $AsyncAwait
+  public static func customerInfo() async throws -> KovaleeFramework.CustomerInfo?
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
+  public static func fetchOfferings() async throws -> KovaleeFramework.Offerings?
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
+  public static func fetchCurrentOffering() async throws -> KovaleeFramework.Offering?
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
+  public static func restorePurchases() async throws -> KovaleeFramework.CustomerInfo?
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
+  public static func purchase(package: KovaleeFramework.Package) async throws -> KovaleeFramework.PurchaseResultData?
+  #endif
+}
+extension KovaleeFramework.KovaleeAnalytics {
+  public static func remoteValue(forKey key: Swift.String) -> KovaleeFramework.RemoteConfigValue?
+  public static func loadRemoteValues(_ values: [Swift.String : Any])
+}
+extension KovaleeFramework.KovaleeAnalytics {
+  public static func setupfbAdProcessingOptions(options: KovaleeFramework.FBAdProcessingOptions)
+  public static func isApplovinInitialized() -> Swift.Bool
+  public static func showMediationDebugger()
+  public static func createInterstitialAd(withAdUnitIdentifier unitId: Swift.String)
+  public static func isInterstitialAdReady() -> Swift.Bool
+  public static func showInterstitialAd()
+  public static func createRewardedAd(withAdUnitIdentifier unitId: Swift.String)
+  public static func isRewardedAdReady() -> Swift.Bool
+  public static func showRewardedAd(withCompletion completion: ((KovaleeFramework.MAAd) -> Swift.Void)?)
+}
+public struct KovaleeConstants {
+  public static let keysFileName: Swift.String
+  public static let eventsFileSuffix: Swift.String
+  public static let eventsWithPropertiesFileSuffix: Swift.String
+  public static let purchaseCompleteEventName: Swift.String
+  public static let firstAppOpenEvent: Swift.String
+}
+public struct KovaleeKeys : Swift.Decodable {
+  public let appCode: Swift.String
+  public let adjust: Swift.String
+  public let amplitude: Swift.String
+  public let revenueCat: Swift.String
+  public let firebase: [Swift.String : Swift.String]
+  public let applovin: Swift.String
+  public let bottomTier: [Swift.String : Swift.Int]
+  public let topTier: [Swift.String : Swift.Int]
+  public let usTier: [Swift.String : Swift.Int]
+  public init(from decoder: Swift.Decoder) throws
+}
+public enum LogLevel : Swift.Int {
   case verbose
   case debug
   case info
@@ -70,21 +118,266 @@ public enum LogLevel {
   public var description: Swift.String {
     get
   }
-  public static func == (a: KovaleeFramework.LogLevel, b: KovaleeFramework.LogLevel) -> Swift.Bool
-  public func hash(into hasher: inout Swift.Hasher)
-  public var hashValue: Swift.Int {
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
     get
   }
 }
 extension KovaleeFramework.LogLevel : Swift.Comparable {
   public static func < (lhs: KovaleeFramework.LogLevel, rhs: KovaleeFramework.LogLevel) -> Swift.Bool
 }
-public struct KovaleeConstants {
-  public static let keysFileName: Swift.String
+public struct MAAd {
+  public var adUnitIdentifier: Swift.String
+  public var networkName: Swift.String
+  public var networkPlacement: Swift.String!
+  public var creativeIdentifier: Swift.String?
+  public var adReviewCreativeIdentifier: Swift.String?
+  public var revenue: Swift.Double
 }
-extension KovaleeFramework.KeysReader.KeysReaderError : Swift.Equatable {}
-extension KovaleeFramework.KeysReader.KeysReaderError : Swift.Hashable {}
+public struct FBAdProcessingOptions {
+  public var enableLDU: Swift.Bool
+  public var isCountryUS: Swift.Bool
+  public var isStateCalifornia: Swift.Bool
+  public var advertiserTrackingEnabled: Swift.Bool
+}
+@_hasMissingDesignatedInitializers public class CustomerInfo {
+  final public let entitlements: KovaleeFramework.EntitlementInfos
+  public var activeSubscriptions: Swift.Set<Swift.String>
+  final public let allPurchasedProductIdentifiers: Swift.Set<Swift.String>
+  public var latestExpirationDate: Foundation.Date?
+  final public let nonSubscriptions: [KovaleeFramework.NonSubscriptionTransaction]
+  final public let requestDate: Foundation.Date
+  final public let firstSeen: Foundation.Date
+  final public let originalAppUserId: Swift.String
+  final public let managementURL: Foundation.URL?
+  final public let originalPurchaseDate: Foundation.Date?
+  @objc deinit
+}
+@objc @_hasMissingDesignatedInitializers public class EntitlementInfos : ObjectiveC.NSObject {
+  final public let all: [Swift.String : KovaleeFramework.EntitlementInfo]
+  public subscript(key: Swift.String) -> KovaleeFramework.EntitlementInfo? {
+    get
+  }
+  @objc deinit
+}
+@objc @_hasMissingDesignatedInitializers public class EntitlementInfo : ObjectiveC.NSObject {
+  public var identifier: Swift.String
+  public var isActive: Swift.Bool
+  public var willRenew: Swift.Bool
+  public var periodType: KovaleeFramework.PeriodType
+  public var latestPurchaseDate: Foundation.Date?
+  public var originalPurchaseDate: Foundation.Date?
+  public var expirationDate: Foundation.Date?
+  public var store: KovaleeFramework.Store
+  public var productIdentifier: Swift.String
+  public var isSandbox: Swift.Bool
+  public var unsubscribeDetectedAt: Foundation.Date?
+  public var billingIssueDetectedAt: Foundation.Date?
+  public var ownershipType: KovaleeFramework.PurchaseOwnershipType
+  @objc deinit
+}
+@objc @_hasMissingDesignatedInitializers public class NonSubscriptionTransaction : ObjectiveC.NSObject {
+  final public let productIdentifier: Swift.String
+  final public let purchaseDate: Foundation.Date
+  final public let transactionIdentifier: Swift.String
+  @objc deinit
+}
+public enum PeriodType : Swift.Int {
+  case normal
+  case intro
+  case trial
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+public enum PurchaseOwnershipType : Swift.Int {
+  case purchased
+  case familyShared
+  case unknown
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+public enum Store : Swift.Int {
+  case appStore
+  case macAppStore
+  case playStore
+  case stripe
+  case promotional
+  case unknownStore
+  case amazon
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@_hasMissingDesignatedInitializers public class Product {
+  @objc deinit
+}
+public struct Offerings {
+  public let all: [Swift.String : KovaleeFramework.Offering]
+  public var current: KovaleeFramework.Offering?
+}
+@_hasMissingDesignatedInitializers public class Offering {
+  final public let identifier: Swift.String
+  final public let serverDescription: Swift.String
+  final public let availablePackages: [KovaleeFramework.Package]
+  final public let lifetime: KovaleeFramework.Package?
+  final public let annual: KovaleeFramework.Package?
+  final public let sixMonth: KovaleeFramework.Package?
+  final public let threeMonth: KovaleeFramework.Package?
+  final public let twoMonth: KovaleeFramework.Package?
+  final public let monthly: KovaleeFramework.Package?
+  final public let weekly: KovaleeFramework.Package?
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers public class Package : Swift.Identifiable {
+  public var id: Swift.String {
+    get
+  }
+  final public let identifier: Swift.String
+  final public let packageType: KovaleeFramework.PackageType
+  final public let storeProduct: KovaleeFramework.StoreProduct
+  final public let offeringIdentifier: Swift.String
+  public var localizedPriceString: Swift.String
+  public var localizedIntroductoryPriceString: Swift.String?
+  public typealias ID = Swift.String
+  @objc deinit
+}
+public struct StoreProduct {
+  public var productType: KovaleeFramework.ProductType
+  public var productCategory: KovaleeFramework.ProductCategory
+  public var localizedDescription: Swift.String
+  public var localizedTitle: Swift.String
+  public var currencyCode: Swift.String?
+  public var price: Foundation.Decimal
+  public var localizedPriceString: Swift.String
+  public var productIdentifier: Swift.String
+  public var isFamilyShareable: Swift.Bool
+  public var subscriptionGroupIdentifier: Swift.String?
+  public var priceFormatter: Foundation.NumberFormatter?
+  public var subscriptionPeriod: KovaleeFramework.SubscriptionPeriod?
+  public var introductoryDiscount: KovaleeFramework.StoreProductDiscount?
+  public var discounts: [KovaleeFramework.StoreProductDiscount]
+}
+public enum ProductCategory : Swift.Int {
+  case subscription
+  case nonSubscription
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+public enum ProductType : Swift.Int {
+  case consumable
+  case nonConsumable
+  case nonRenewableSubscription
+  case autoRenewableSubscription
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+public struct SubscriptionPeriod {
+  public let value: Swift.Int
+  public let unit: KovaleeFramework.SubscriptionPeriod.Unit
+  public enum Unit : Swift.Int {
+    case day
+    case week
+    case month
+    case year
+    public init?(rawValue: Swift.Int)
+    public typealias RawValue = Swift.Int
+    public var rawValue: Swift.Int {
+      get
+    }
+  }
+}
+public struct StoreProductDiscount {
+  public enum PaymentMode : Swift.Int {
+    case payAsYouGo
+    case payUpFront
+    case freeTrial
+    public init?(rawValue: Swift.Int)
+    public typealias RawValue = Swift.Int
+    public var rawValue: Swift.Int {
+      get
+    }
+  }
+  public enum DiscountType : Swift.Int {
+    case introductory
+    case promotional
+    public init?(rawValue: Swift.Int)
+    public typealias RawValue = Swift.Int
+    public var rawValue: Swift.Int {
+      get
+    }
+  }
+  public var offerIdentifier: Swift.String?
+  public var currencyCode: Swift.String?
+  public var price: Foundation.Decimal
+  public var localizedPriceString: Swift.String
+  public var paymentMode: KovaleeFramework.StoreProductDiscount.PaymentMode
+  public var subscriptionPeriod: KovaleeFramework.SubscriptionPeriod
+  public var numberOfPeriods: Swift.Int
+  public var type: KovaleeFramework.StoreProductDiscount.DiscountType
+}
+public enum PackageType : Swift.Int {
+  case unknown, custom, lifetime, annual, sixMonth, threeMonth, twoMonth, monthly, weekly
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+public struct StoreTransaction {
+  public var productIdentifier: Swift.String
+  public var purchaseDate: Foundation.Date
+  public var transactionIdentifier: Swift.String
+  public var quantity: Swift.Int
+}
+public struct PurchaseResultData {
+  public var transaction: KovaleeFramework.StoreTransaction?
+  public var customerInfo: KovaleeFramework.CustomerInfo
+  public var userCancelled: Swift.Bool
+}
 extension KovaleeFramework.KovaleeConfiguration.Environment : Swift.Equatable {}
 extension KovaleeFramework.KovaleeConfiguration.Environment : Swift.Hashable {}
 extension KovaleeFramework.KovaleeConfiguration.Environment : Swift.RawRepresentable {}
 extension KovaleeFramework.LogLevel : Swift.Hashable {}
+extension KovaleeFramework.LogLevel : Swift.RawRepresentable {}
+extension KovaleeFramework.PeriodType : Swift.Equatable {}
+extension KovaleeFramework.PeriodType : Swift.Hashable {}
+extension KovaleeFramework.PeriodType : Swift.RawRepresentable {}
+extension KovaleeFramework.PurchaseOwnershipType : Swift.Equatable {}
+extension KovaleeFramework.PurchaseOwnershipType : Swift.Hashable {}
+extension KovaleeFramework.PurchaseOwnershipType : Swift.RawRepresentable {}
+extension KovaleeFramework.Store : Swift.Equatable {}
+extension KovaleeFramework.Store : Swift.Hashable {}
+extension KovaleeFramework.Store : Swift.RawRepresentable {}
+extension KovaleeFramework.ProductCategory : Swift.Equatable {}
+extension KovaleeFramework.ProductCategory : Swift.Hashable {}
+extension KovaleeFramework.ProductCategory : Swift.RawRepresentable {}
+extension KovaleeFramework.ProductType : Swift.Equatable {}
+extension KovaleeFramework.ProductType : Swift.Hashable {}
+extension KovaleeFramework.ProductType : Swift.RawRepresentable {}
+extension KovaleeFramework.SubscriptionPeriod.Unit : Swift.Equatable {}
+extension KovaleeFramework.SubscriptionPeriod.Unit : Swift.Hashable {}
+extension KovaleeFramework.SubscriptionPeriod.Unit : Swift.RawRepresentable {}
+extension KovaleeFramework.StoreProductDiscount.PaymentMode : Swift.Equatable {}
+extension KovaleeFramework.StoreProductDiscount.PaymentMode : Swift.Hashable {}
+extension KovaleeFramework.StoreProductDiscount.PaymentMode : Swift.RawRepresentable {}
+extension KovaleeFramework.StoreProductDiscount.DiscountType : Swift.Equatable {}
+extension KovaleeFramework.StoreProductDiscount.DiscountType : Swift.Hashable {}
+extension KovaleeFramework.StoreProductDiscount.DiscountType : Swift.RawRepresentable {}
+extension KovaleeFramework.PackageType : Swift.Equatable {}
+extension KovaleeFramework.PackageType : Swift.Hashable {}
+extension KovaleeFramework.PackageType : Swift.RawRepresentable {}
