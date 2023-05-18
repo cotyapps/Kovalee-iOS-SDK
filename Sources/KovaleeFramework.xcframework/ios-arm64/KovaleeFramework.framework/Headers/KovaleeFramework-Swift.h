@@ -275,8 +275,11 @@ SWIFT_CLASS("_TtC16KovaleeFramework26NonSubscriptionTransaction")
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> 0e4a7ee (feat: completed third party tools integration)
 #endif
 #if defined(__cplusplus)
 #endif
