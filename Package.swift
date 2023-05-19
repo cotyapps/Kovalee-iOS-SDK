@@ -16,10 +16,7 @@ let package = Package(
             ]
         ),
     ],
-    dependencies: [
-        .package(url: "https://github.com/adjust/ios_sdk", exact: "4.33.4"),
-        .package(url: "https://github.com/amplitude/Amplitude-Swift", exact: "0.4.0"),
-    ],
+    dependencies: [],
     targets: [
         .binaryTarget(
             name: "KovaleeFramework",

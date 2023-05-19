@@ -225,12 +225,14 @@ public enum PeriodType : Swift.Int {
 extension KovaleeFramework.KovaleeAnalytics {
   public static func promptTrackingAuthorization(completion: @escaping (Swift.UInt) -> Swift.Void)
   #if compiler(>=5.3) && $AsyncAwait
+  @discardableResult
   public static func promptTrackingAuthorization() async -> Swift.UInt
   #endif
   public static func sendEvent(_ event: KovaleeFramework.Event)
   public static func getIDFA() -> Foundation.UUID?
 }
 extension KovaleeFramework.KovaleeAnalytics {
+  public static func setRevenueCatUserId(userId: Swift.String)
   #if compiler(>=5.3) && $AsyncAwait
   public static func customerInfo() async throws -> KovaleeFramework.CustomerInfo?
   #endif
@@ -255,12 +257,8 @@ extension KovaleeFramework.KovaleeAnalytics {
   public static func setupfbAdProcessingOptions(options: KovaleeFramework.FBAdProcessingOptions)
   public static func isApplovinInitialized() -> Swift.Bool
   public static func showMediationDebugger()
-  public static func createInterstitialAd(withAdUnitIdentifier unitId: Swift.String)
-  public static func isInterstitialAdReady() -> Swift.Bool
-  public static func showInterstitialAd()
-  public static func createRewardedAd(withAdUnitIdentifier unitId: Swift.String)
-  public static func isRewardedAdReady() -> Swift.Bool
-  public static func showRewardedAd(withCompletion completion: ((KovaleeFramework.MAAd) -> Swift.Void)?)
+  public static func displayInterstitialAd(withAdUnitIdentifier unitId: Swift.String)
+  public static func displayRewardedAd(withAdUnitIdentifier unitId: Swift.String, andRewardCompletion completion: ((KovaleeFramework.MAAd) -> Swift.Void)?)
 }
 public struct KovaleeConstants {
   public static let keysFileName: Swift.String
@@ -533,6 +531,7 @@ public struct PurchaseResultData {
   public var userCancelled: Swift.Bool
 }
 <<<<<<< HEAD
+<<<<<<< HEAD
 extension KovaleeFramework.LogLevel : Swift.Hashable {}
 extension KovaleeFramework.LogLevel : Swift.RawRepresentable {}
 extension KovaleeFramework.Configuration.Environment : Swift.Equatable {}
@@ -545,6 +544,13 @@ extension KovaleeFramework.KovaleeConfiguration.Environment : Swift.RawRepresent
 extension KovaleeFramework.LogLevel : Swift.Hashable {}
 extension KovaleeFramework.LogLevel : Swift.RawRepresentable {}
 >>>>>>> 0e4a7ee (feat: completed third party tools integration)
+=======
+extension KovaleeFramework.LogLevel : Swift.Hashable {}
+extension KovaleeFramework.LogLevel : Swift.RawRepresentable {}
+extension KovaleeFramework.KovaleeConfiguration.Environment : Swift.Equatable {}
+extension KovaleeFramework.KovaleeConfiguration.Environment : Swift.Hashable {}
+extension KovaleeFramework.KovaleeConfiguration.Environment : Swift.RawRepresentable {}
+>>>>>>> 4df3d5b (updated framework with small fixes)
 extension KovaleeFramework.PeriodType : Swift.Equatable {}
 extension KovaleeFramework.PeriodType : Swift.Hashable {}
 extension KovaleeFramework.PeriodType : Swift.RawRepresentable {}
