@@ -233,8 +233,7 @@
         "declKind": "Import",
         "moduleName": "KovaleeFramework",
         "declAttributes": [
-          "ImplementationOnly",
-          "RawDocComment"
+          "ImplementationOnly"
         ]
       },
       {
@@ -1422,7 +1421,8 @@
             "static": true,
             "declAttributes": [
               "Final",
-              "AccessControl"
+              "AccessControl",
+              "DiscardableResult"
             ],
             "isFromExtension": true,
             "funcSelfKind": "NonMutating"
@@ -1479,6 +1479,35 @@
             "declKind": "Func",
             "usr": "s:16KovaleeFramework0A9AnalyticsC7getIDFA10Foundation4UUIDVSgyFZ",
             "mangledName": "$s16KovaleeFramework0A9AnalyticsC7getIDFA10Foundation4UUIDVSgyFZ",
+            "moduleName": "KovaleeFramework",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "setRevenueCatUserId",
+            "printedName": "setRevenueCatUserId(userId:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:16KovaleeFramework0A9AnalyticsC19setRevenueCatUserId04userH0ySS_tFZ",
+            "mangledName": "$s16KovaleeFramework0A9AnalyticsC19setRevenueCatUserId04userH0ySS_tFZ",
             "moduleName": "KovaleeFramework",
             "static": true,
             "declAttributes": [
@@ -1817,8 +1846,8 @@
           },
           {
             "kind": "Function",
-            "name": "createInterstitialAd",
-            "printedName": "createInterstitialAd(withAdUnitIdentifier:)",
+            "name": "displayInterstitialAd",
+            "printedName": "displayInterstitialAd(withAdUnitIdentifier:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -1833,8 +1862,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:16KovaleeFramework0A9AnalyticsC20createInterstitialAd04withF14UnitIdentifierySS_tFZ",
-            "mangledName": "$s16KovaleeFramework0A9AnalyticsC20createInterstitialAd04withF14UnitIdentifierySS_tFZ",
+            "usr": "s:16KovaleeFramework0A9AnalyticsC21displayInterstitialAd04withF14UnitIdentifierySS_tFZ",
+            "mangledName": "$s16KovaleeFramework0A9AnalyticsC21displayInterstitialAd04withF14UnitIdentifierySS_tFZ",
             "moduleName": "KovaleeFramework",
             "static": true,
             "declAttributes": [
@@ -1846,55 +1875,8 @@
           },
           {
             "kind": "Function",
-            "name": "isInterstitialAdReady",
-            "printedName": "isInterstitialAdReady()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Bool",
-                "printedName": "Swift.Bool",
-                "usr": "s:Sb"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:16KovaleeFramework0A9AnalyticsC21isInterstitialAdReadySbyFZ",
-            "mangledName": "$s16KovaleeFramework0A9AnalyticsC21isInterstitialAdReadySbyFZ",
-            "moduleName": "KovaleeFramework",
-            "static": true,
-            "declAttributes": [
-              "Final",
-              "AccessControl"
-            ],
-            "isFromExtension": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "showInterstitialAd",
-            "printedName": "showInterstitialAd()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:16KovaleeFramework0A9AnalyticsC18showInterstitialAdyyFZ",
-            "mangledName": "$s16KovaleeFramework0A9AnalyticsC18showInterstitialAdyyFZ",
-            "moduleName": "KovaleeFramework",
-            "static": true,
-            "declAttributes": [
-              "Final",
-              "AccessControl"
-            ],
-            "isFromExtension": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "createRewardedAd",
-            "printedName": "createRewardedAd(withAdUnitIdentifier:)",
+            "name": "displayRewardedAd",
+            "printedName": "displayRewardedAd(withAdUnitIdentifier:andRewardCompletion:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -1906,53 +1888,6 @@
                 "name": "String",
                 "printedName": "Swift.String",
                 "usr": "s:SS"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:16KovaleeFramework0A9AnalyticsC16createRewardedAd04withF14UnitIdentifierySS_tFZ",
-            "mangledName": "$s16KovaleeFramework0A9AnalyticsC16createRewardedAd04withF14UnitIdentifierySS_tFZ",
-            "moduleName": "KovaleeFramework",
-            "static": true,
-            "declAttributes": [
-              "Final",
-              "AccessControl"
-            ],
-            "isFromExtension": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "isRewardedAdReady",
-            "printedName": "isRewardedAdReady()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Bool",
-                "printedName": "Swift.Bool",
-                "usr": "s:Sb"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:16KovaleeFramework0A9AnalyticsC17isRewardedAdReadySbyFZ",
-            "mangledName": "$s16KovaleeFramework0A9AnalyticsC17isRewardedAdReadySbyFZ",
-            "moduleName": "KovaleeFramework",
-            "static": true,
-            "declAttributes": [
-              "Final",
-              "AccessControl"
-            ],
-            "isFromExtension": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "showRewardedAd",
-            "printedName": "showRewardedAd(withCompletion:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
               },
               {
                 "kind": "TypeNominal",
@@ -1982,8 +1917,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:16KovaleeFramework0A9AnalyticsC14showRewardedAd14withCompletionyyAA4MAAdVcSg_tFZ",
-            "mangledName": "$s16KovaleeFramework0A9AnalyticsC14showRewardedAd14withCompletionyyAA4MAAdVcSg_tFZ",
+            "usr": "s:16KovaleeFramework0A9AnalyticsC17displayRewardedAd04withF14UnitIdentifier19andRewardCompletionySS_yAA4MAAdVcSgtFZ",
+            "mangledName": "$s16KovaleeFramework0A9AnalyticsC17displayRewardedAd04withF14UnitIdentifier19andRewardCompletionySS_yAA4MAAdVcSgtFZ",
             "moduleName": "KovaleeFramework",
             "static": true,
             "declAttributes": [
@@ -14773,7 +14708,7 @@
     {
       "filePath": "\/Users\/filippo\/Projects\/KovaleeSDK\/KovaleeFramework\/KovaleeFramework\/Applovin\/ApplovingWrapper.swift",
       "kind": "FloatLiteral",
-      "offset": 2571,
+      "offset": 2211,
       "length": 3,
       "value": "0.0"
     },
