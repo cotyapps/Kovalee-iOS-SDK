@@ -276,10 +276,17 @@ SWIFT_CLASS("_TtC16KovaleeFramework26NonSubscriptionTransaction")
 @end
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 
 =======
 >>>>>>> 0e4a7ee (feat: completed third party tools integration)
+=======
+=======
+
+
+>>>>>>> 7c9bf72 (feat: new SDK version 0.6.0)
+>>>>>>> c30137e (feat: new SDK version 0.6.0)
 #endif
 #if defined(__cplusplus)
 #endif
@@ -566,10 +573,17 @@ SWIFT_CLASS("_TtC16KovaleeFramework26NonSubscriptionTransaction")
 @end
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 
 =======
 >>>>>>> 0e4a7ee (feat: completed third party tools integration)
+=======
+=======
+
+
+>>>>>>> 7c9bf72 (feat: new SDK version 0.6.0)
+>>>>>>> c30137e (feat: new SDK version 0.6.0)
 #endif
 #if defined(__cplusplus)
 #endif
