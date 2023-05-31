@@ -275,6 +275,11 @@ SWIFT_CLASS("_TtC16KovaleeFramework26NonSubscriptionTransaction")
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> develop
 #endif
 #if defined(__cplusplus)
 #endif
@@ -560,6 +565,11 @@ SWIFT_CLASS("_TtC16KovaleeFramework26NonSubscriptionTransaction")
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> develop
 #endif
 #if defined(__cplusplus)
 #endif

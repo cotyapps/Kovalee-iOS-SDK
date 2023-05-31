@@ -38,6 +38,7 @@ extension KovaleeFramework.Event : Swift.CustomStringConvertible {
   @objc deinit
 }
 extension KovaleeFramework.KovaleeAnalytics {
+<<<<<<< HEAD
   public static func sendEvent(_ event: KovaleeFramework.Event)
   public static func setAmplitudeUserId(userId: Swift.String)
   public static func setUserProperty(key: Swift.String, value: Swift.String)
@@ -81,6 +82,11 @@ extension KovaleeFramework.KovaleeAnalytics {
   public static func displayRewardedAd() async
   #endif
 }
+=======
+  public static func value(forKey key: Swift.String) -> KovaleeFramework.RemoteConfigValue?
+  public static func setDefaultValues(_ values: [Swift.String : Any])
+}
+>>>>>>> develop
 public struct KovaleeConstants {
   public static let keysFileName: Swift.String
   public static let eventsFileSuffix: Swift.String
@@ -125,12 +131,34 @@ public enum LogLevel : Swift.Int {
 extension KovaleeFramework.LogLevel : Swift.Comparable {
   public static func < (lhs: KovaleeFramework.LogLevel, rhs: KovaleeFramework.LogLevel) -> Swift.Bool
 }
+<<<<<<< HEAD
+=======
+extension KovaleeFramework.KovaleeAnalytics {
+  public static func setupfbAdProcessingOptions(options: KovaleeFramework.FBAdProcessingOptions)
+  public static func showMediationDebugger()
+  public static func displayInterstitialAd()
+  public static func displayRewardedAd(andRewardCompletion completion: (() -> Swift.Void)?)
+  #if compiler(>=5.3) && $AsyncAwait
+  public static func displayRewardedAd() async
+  #endif
+}
+>>>>>>> develop
 public struct FBAdProcessingOptions {
   public var enableLDU: Swift.Bool
   public var isCountryUS: Swift.Bool
   public var isStateCalifornia: Swift.Bool
   public var advertiserTrackingEnabled: Swift.Bool
 }
+<<<<<<< HEAD
+=======
+extension KovaleeFramework.KovaleeAnalytics {
+  public static func promptTrackingAuthorization(completion: @escaping (AppTrackingTransparency.ATTrackingManager.AuthorizationStatus) -> Swift.Void)
+  #if compiler(>=5.3) && $AsyncAwait
+  @discardableResult
+  public static func promptTrackingAuthorization() async -> AppTrackingTransparency.ATTrackingManager.AuthorizationStatus
+  #endif
+}
+>>>>>>> develop
 public struct Configuration {
   public enum Environment : Swift.String {
     case sandbox
@@ -146,6 +174,32 @@ public struct Configuration {
   public var logLevel: KovaleeFramework.LogLevel
   public init(environment: KovaleeFramework.Configuration.Environment, keysFileName: Swift.String = KovaleeConstants.keysFileName, logLevel: KovaleeFramework.LogLevel = .info)
 }
+<<<<<<< HEAD
+=======
+extension KovaleeFramework.KovaleeAnalytics {
+  public static func setRevenueCatUserId(userId: Swift.String)
+  #if compiler(>=5.3) && $AsyncAwait
+  public static func customerInfo() async throws -> KovaleeFramework.CustomerInfo?
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
+  public static func fetchOfferings() async throws -> KovaleeFramework.Offerings?
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
+  public static func fetchCurrentOffering() async throws -> KovaleeFramework.Offering?
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
+  public static func restorePurchases(fromSource source: Swift.String) async throws -> KovaleeFramework.CustomerInfo?
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
+  public static func purchase(package: KovaleeFramework.Package, fromSource source: Swift.String) async throws -> KovaleeFramework.PurchaseResultData?
+  #endif
+}
+extension KovaleeFramework.KovaleeAnalytics {
+  public static func sendEvent(_ event: KovaleeFramework.Event)
+  public static func setAmplitudeUserId(userId: Swift.String)
+  public static func setUserProperty(key: Swift.String, value: Swift.String)
+}
+>>>>>>> develop
 @_hasMissingDesignatedInitializers public class CustomerInfo {
   final public let entitlements: KovaleeFramework.EntitlementInfos
   public var activeSubscriptions: Swift.Set<Swift.String>

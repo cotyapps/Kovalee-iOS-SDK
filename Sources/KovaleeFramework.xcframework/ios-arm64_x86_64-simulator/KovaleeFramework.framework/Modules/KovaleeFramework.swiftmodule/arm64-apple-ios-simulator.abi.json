@@ -103,8 +103,178 @@
         "printedName": "Foundation",
         "declKind": "Import",
         "moduleName": "KovaleeFramework"
+<<<<<<< HEAD
       },
       {
+        "kind": "TypeDecl",
+        "name": "Event",
+        "printedName": "Event",
+        "children": [
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(name:properties:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Event",
+                "printedName": "KovaleeFramework.Event",
+                "usr": "s:16KovaleeFramework5EventV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[Swift.String : Any?]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Dictionary",
+                    "printedName": "[Swift.String : Any?]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "Any?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "ProtocolComposition",
+                            "printedName": "Any"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ],
+                    "usr": "s:SD"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:16KovaleeFramework5EventV4name10propertiesACSS_SDySSypSgGSgtcfc",
+            "mangledName": "$s16KovaleeFramework5EventV4name10propertiesACSS_SDySSypSgGSgtcfc",
+            "moduleName": "KovaleeFramework",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Var",
+            "name": "description",
+            "printedName": "description",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:16KovaleeFramework5EventV11descriptionSSvp",
+            "mangledName": "$s16KovaleeFramework5EventV11descriptionSSvp",
+            "moduleName": "KovaleeFramework",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:16KovaleeFramework5EventV11descriptionSSvg",
+                "mangledName": "$s16KovaleeFramework5EventV11descriptionSSvg",
+                "moduleName": "KovaleeFramework",
+                "isFromExtension": true,
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:16KovaleeFramework5EventV",
+        "mangledName": "$s16KovaleeFramework5EventV",
+        "moduleName": "KovaleeFramework",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          }
+        ]
+=======
+>>>>>>> develop
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "KovaleeFramework"
+      },
+      {
+<<<<<<< HEAD
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "KovaleeFramework"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "KovaleeFramework"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "KovaleeFramework"
+      },
+      {
+        "kind": "Import",
+        "name": "FirebaseCore",
+        "printedName": "FirebaseCore",
+        "declKind": "Import",
+        "moduleName": "KovaleeFramework",
+        "declAttributes": [
+=======
         "kind": "TypeDecl",
         "name": "Event",
         "printedName": "Event",
@@ -270,6 +440,7 @@
         "declKind": "Import",
         "moduleName": "KovaleeFramework",
         "declAttributes": [
+>>>>>>> develop
           "ImplementationOnly"
         ]
       },
@@ -801,6 +972,7 @@
         "moduleName": "KovaleeFramework"
       },
       {
+<<<<<<< HEAD
         "kind": "Import",
         "name": "AppTrackingTransparency",
         "printedName": "AppTrackingTransparency",
@@ -808,6 +980,8 @@
         "moduleName": "KovaleeFramework"
       },
       {
+=======
+>>>>>>> develop
         "kind": "TypeDecl",
         "name": "KovaleeAnalytics",
         "printedName": "KovaleeAnalytics",
@@ -960,6 +1134,7 @@
           },
           {
             "kind": "Function",
+<<<<<<< HEAD
             "name": "sendEvent",
             "printedName": "sendEvent(_:)",
             "children": [
@@ -978,25 +1153,23 @@
             "declKind": "Func",
             "usr": "s:16KovaleeFramework0A9AnalyticsC9sendEventyyAA0E0VFZ",
             "mangledName": "$s16KovaleeFramework0A9AnalyticsC9sendEventyyAA0E0VFZ",
-            "moduleName": "KovaleeFramework",
-            "static": true,
-            "declAttributes": [
-              "Final",
-              "AccessControl",
-              "RawDocComment"
-            ],
-            "isFromExtension": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "setAmplitudeUserId",
-            "printedName": "setAmplitudeUserId(userId:)",
+=======
+            "name": "value",
+            "printedName": "value(forKey:)",
             "children": [
               {
                 "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
+                "name": "Optional",
+                "printedName": "KovaleeFramework.RemoteConfigValue?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "RemoteConfigValue",
+                    "printedName": "KovaleeFramework.RemoteConfigValue",
+                    "usr": "s:16KovaleeFramework17RemoteConfigValueC"
+                  }
+                ],
+                "usr": "s:Sq"
               },
               {
                 "kind": "TypeNominal",
@@ -1006,8 +1179,9 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:16KovaleeFramework0A9AnalyticsC18setAmplitudeUserId04userG0ySS_tFZ",
-            "mangledName": "$s16KovaleeFramework0A9AnalyticsC18setAmplitudeUserId04userG0ySS_tFZ",
+            "usr": "s:16KovaleeFramework0A9AnalyticsC5value6forKeyAA17RemoteConfigValueCSgSS_tFZ",
+            "mangledName": "$s16KovaleeFramework0A9AnalyticsC5value6forKeyAA17RemoteConfigValueCSgSS_tFZ",
+>>>>>>> develop
             "moduleName": "KovaleeFramework",
             "static": true,
             "declAttributes": [
@@ -1020,8 +1194,13 @@
           },
           {
             "kind": "Function",
-            "name": "setUserProperty",
-            "printedName": "setUserProperty(key:value:)",
+<<<<<<< HEAD
+            "name": "setAmplitudeUserId",
+            "printedName": "setAmplitudeUserId(userId:)",
+=======
+            "name": "setDefaultValues",
+            "printedName": "setDefaultValues(_:)",
+>>>>>>> develop
             "children": [
               {
                 "kind": "TypeNominal",
@@ -1030,6 +1209,66 @@
               },
               {
                 "kind": "TypeNominal",
+<<<<<<< HEAD
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:16KovaleeFramework0A9AnalyticsC18setAmplitudeUserId04userG0ySS_tFZ",
+            "mangledName": "$s16KovaleeFramework0A9AnalyticsC18setAmplitudeUserId04userG0ySS_tFZ",
+=======
+                "name": "Dictionary",
+                "printedName": "[Swift.String : Any]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ProtocolComposition",
+                    "printedName": "Any"
+                  }
+                ],
+                "usr": "s:SD"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:16KovaleeFramework0A9AnalyticsC16setDefaultValuesyySDySSypGFZ",
+            "mangledName": "$s16KovaleeFramework0A9AnalyticsC16setDefaultValuesyySDySSypGFZ",
+>>>>>>> develop
+            "moduleName": "KovaleeFramework",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+<<<<<<< HEAD
+            "name": "setUserProperty",
+            "printedName": "setUserProperty(key:value:)",
+=======
+            "name": "setupfbAdProcessingOptions",
+            "printedName": "setupfbAdProcessingOptions(options:)",
+>>>>>>> develop
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+<<<<<<< HEAD
                 "name": "String",
                 "printedName": "Swift.String",
                 "usr": "s:SS"
@@ -1044,6 +1283,137 @@
             "declKind": "Func",
             "usr": "s:16KovaleeFramework0A9AnalyticsC15setUserProperty3key5valueySS_SStFZ",
             "mangledName": "$s16KovaleeFramework0A9AnalyticsC15setUserProperty3key5valueySS_SStFZ",
+=======
+                "name": "FBAdProcessingOptions",
+                "printedName": "KovaleeFramework.FBAdProcessingOptions",
+                "usr": "s:16KovaleeFramework21FBAdProcessingOptionsV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:16KovaleeFramework0A9AnalyticsC26setupfbAdProcessingOptions7optionsyAA04FBAdfG0V_tFZ",
+            "mangledName": "$s16KovaleeFramework0A9AnalyticsC26setupfbAdProcessingOptions7optionsyAA04FBAdfG0V_tFZ",
+            "moduleName": "KovaleeFramework",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "showMediationDebugger",
+            "printedName": "showMediationDebugger()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:16KovaleeFramework0A9AnalyticsC21showMediationDebuggeryyFZ",
+            "mangledName": "$s16KovaleeFramework0A9AnalyticsC21showMediationDebuggeryyFZ",
+            "moduleName": "KovaleeFramework",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "displayInterstitialAd",
+            "printedName": "displayInterstitialAd()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:16KovaleeFramework0A9AnalyticsC21displayInterstitialAdyyFZ",
+            "mangledName": "$s16KovaleeFramework0A9AnalyticsC21displayInterstitialAdyyFZ",
+            "moduleName": "KovaleeFramework",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "displayRewardedAd",
+            "printedName": "displayRewardedAd(andRewardCompletion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "(() -> ())?",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "() -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      }
+                    ]
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:16KovaleeFramework0A9AnalyticsC17displayRewardedAd19andRewardCompletionyyycSg_tFZ",
+            "mangledName": "$s16KovaleeFramework0A9AnalyticsC17displayRewardedAd19andRewardCompletionyyycSg_tFZ",
+            "moduleName": "KovaleeFramework",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "displayRewardedAd",
+            "printedName": "displayRewardedAd()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:16KovaleeFramework0A9AnalyticsC17displayRewardedAdyyYaFZ",
+            "mangledName": "$s16KovaleeFramework0A9AnalyticsC17displayRewardedAdyyYaFZ",
+>>>>>>> develop
             "moduleName": "KovaleeFramework",
             "static": true,
             "declAttributes": [
@@ -1126,6 +1496,287 @@
             "kind": "Function",
             "name": "setRevenueCatUserId",
             "printedName": "setRevenueCatUserId(userId:)",
+<<<<<<< HEAD
+=======
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:16KovaleeFramework0A9AnalyticsC19setRevenueCatUserId04userH0ySS_tFZ",
+            "mangledName": "$s16KovaleeFramework0A9AnalyticsC19setRevenueCatUserId04userH0ySS_tFZ",
+            "moduleName": "KovaleeFramework",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "customerInfo",
+            "printedName": "customerInfo()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "KovaleeFramework.CustomerInfo?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CustomerInfo",
+                    "printedName": "KovaleeFramework.CustomerInfo",
+                    "usr": "s:16KovaleeFramework12CustomerInfoC"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:16KovaleeFramework0A9AnalyticsC12customerInfoAA08CustomerE0CSgyYaKFZ",
+            "mangledName": "$s16KovaleeFramework0A9AnalyticsC12customerInfoAA08CustomerE0CSgyYaKFZ",
+            "moduleName": "KovaleeFramework",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "fetchOfferings",
+            "printedName": "fetchOfferings()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "KovaleeFramework.Offerings?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Offerings",
+                    "printedName": "KovaleeFramework.Offerings",
+                    "usr": "s:16KovaleeFramework9OfferingsV"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:16KovaleeFramework0A9AnalyticsC14fetchOfferingsAA0E0VSgyYaKFZ",
+            "mangledName": "$s16KovaleeFramework0A9AnalyticsC14fetchOfferingsAA0E0VSgyYaKFZ",
+            "moduleName": "KovaleeFramework",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "fetchCurrentOffering",
+            "printedName": "fetchCurrentOffering()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "KovaleeFramework.Offering?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Offering",
+                    "printedName": "KovaleeFramework.Offering",
+                    "usr": "s:16KovaleeFramework8OfferingC"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:16KovaleeFramework0A9AnalyticsC20fetchCurrentOfferingAA0F0CSgyYaKFZ",
+            "mangledName": "$s16KovaleeFramework0A9AnalyticsC20fetchCurrentOfferingAA0F0CSgyYaKFZ",
+            "moduleName": "KovaleeFramework",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "restorePurchases",
+            "printedName": "restorePurchases(fromSource:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "KovaleeFramework.CustomerInfo?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CustomerInfo",
+                    "printedName": "KovaleeFramework.CustomerInfo",
+                    "usr": "s:16KovaleeFramework12CustomerInfoC"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:16KovaleeFramework0A9AnalyticsC16restorePurchases10fromSourceAA12CustomerInfoCSgSS_tYaKFZ",
+            "mangledName": "$s16KovaleeFramework0A9AnalyticsC16restorePurchases10fromSourceAA12CustomerInfoCSgSS_tYaKFZ",
+            "moduleName": "KovaleeFramework",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "purchase",
+            "printedName": "purchase(package:fromSource:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "KovaleeFramework.PurchaseResultData?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "PurchaseResultData",
+                    "printedName": "KovaleeFramework.PurchaseResultData",
+                    "usr": "s:16KovaleeFramework18PurchaseResultDataV"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Package",
+                "printedName": "KovaleeFramework.Package",
+                "usr": "s:16KovaleeFramework7PackageC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:16KovaleeFramework0A9AnalyticsC8purchase7package10fromSourceAA18PurchaseResultDataVSgAA7PackageC_SStYaKFZ",
+            "mangledName": "$s16KovaleeFramework0A9AnalyticsC8purchase7package10fromSourceAA18PurchaseResultDataVSgAA7PackageC_SStYaKFZ",
+            "moduleName": "KovaleeFramework",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "sendEvent",
+            "printedName": "sendEvent(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Event",
+                "printedName": "KovaleeFramework.Event",
+                "usr": "s:16KovaleeFramework5EventV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:16KovaleeFramework0A9AnalyticsC9sendEventyyAA0E0VFZ",
+            "mangledName": "$s16KovaleeFramework0A9AnalyticsC9sendEventyyAA0E0VFZ",
+            "moduleName": "KovaleeFramework",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "setAmplitudeUserId",
+            "printedName": "setAmplitudeUserId(userId:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:16KovaleeFramework0A9AnalyticsC18setAmplitudeUserId04userG0ySS_tFZ",
+            "mangledName": "$s16KovaleeFramework0A9AnalyticsC18setAmplitudeUserId04userG0ySS_tFZ",
+            "moduleName": "KovaleeFramework",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "setUserProperty",
+            "printedName": "setUserProperty(key:value:)",
+>>>>>>> develop
             "children": [
               {
                 "kind": "TypeNominal",
@@ -1379,6 +2030,7 @@
               },
               {
                 "kind": "TypeNominal",
+<<<<<<< HEAD
                 "name": "Dictionary",
                 "printedName": "[Swift.String : Any]",
                 "children": [
@@ -1400,12 +2052,23 @@
             "declKind": "Func",
             "usr": "s:16KovaleeFramework0A9AnalyticsC16setDefaultValuesyySDySSypGFZ",
             "mangledName": "$s16KovaleeFramework0A9AnalyticsC16setDefaultValuesyySDySSypGFZ",
+=======
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:16KovaleeFramework0A9AnalyticsC15setUserProperty3key5valueySS_SStFZ",
+            "mangledName": "$s16KovaleeFramework0A9AnalyticsC15setUserProperty3key5valueySS_SStFZ",
+>>>>>>> develop
             "moduleName": "KovaleeFramework",
             "static": true,
             "declAttributes": [
               "Final",
               "AccessControl",
               "RawDocComment"
+<<<<<<< HEAD
             ],
             "isFromExtension": true,
             "funcSelfKind": "NonMutating"
@@ -1582,6 +2245,8 @@
               "Final",
               "AccessControl",
               "RawDocComment"
+=======
+>>>>>>> develop
             ],
             "isFromExtension": true,
             "funcSelfKind": "NonMutating"
@@ -1606,6 +2271,16 @@
         "moduleName": "KovaleeFramework"
       },
       {
+<<<<<<< HEAD
+=======
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "KovaleeFramework"
+      },
+      {
+>>>>>>> develop
         "kind": "TypeDecl",
         "name": "KovaleeConstants",
         "printedName": "KovaleeConstants",
@@ -3016,6 +3691,16 @@
       },
       {
         "kind": "Import",
+<<<<<<< HEAD
+=======
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "KovaleeFramework"
+      },
+      {
+        "kind": "Import",
+>>>>>>> develop
         "name": "AppLovinSDK",
         "printedName": "AppLovinSDK",
         "declKind": "Import",
@@ -3418,6 +4103,30 @@
         "moduleName": "KovaleeFramework"
       },
       {
+<<<<<<< HEAD
+=======
+        "kind": "Import",
+        "name": "AppTrackingTransparency",
+        "printedName": "AppTrackingTransparency",
+        "declKind": "Import",
+        "moduleName": "KovaleeFramework"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "KovaleeFramework"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "KovaleeFramework"
+      },
+      {
+>>>>>>> develop
         "kind": "TypeDecl",
         "name": "Configuration",
         "printedName": "Configuration",
@@ -3916,6 +4625,23 @@
       },
       {
         "kind": "Import",
+<<<<<<< HEAD
+=======
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "KovaleeFramework"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "KovaleeFramework"
+      },
+      {
+        "kind": "Import",
+>>>>>>> develop
         "name": "RevenueCat",
         "printedName": "RevenueCat",
         "declKind": "Import",
@@ -14118,42 +14844,66 @@
     {
       "filePath": "\/Users\/filippo\/Projects\/KovaleeSDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/Event.swift",
       "kind": "StringLiteral",
+<<<<<<< HEAD
       "offset": 3194,
+=======
+      "offset": 3300,
+>>>>>>> develop
       "length": 6,
       "value": "\"name\""
     },
     {
       "filePath": "\/Users\/filippo\/Projects\/KovaleeSDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/Event.swift",
       "kind": "StringLiteral",
+<<<<<<< HEAD
       "offset": 3221,
+=======
+      "offset": 3327,
+>>>>>>> develop
       "length": 6,
       "value": "\"type\""
     },
     {
       "filePath": "\/Users\/filippo\/Projects\/KovaleeSDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/Event.swift",
       "kind": "StringLiteral",
+<<<<<<< HEAD
       "offset": 3253,
+=======
+      "offset": 3359,
+>>>>>>> develop
       "length": 12,
       "value": "\"key_action\""
     },
     {
       "filePath": "\/Users\/filippo\/Projects\/KovaleeSDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/Event.swift",
       "kind": "StringLiteral",
+<<<<<<< HEAD
       "offset": 3194,
+=======
+      "offset": 3300,
+>>>>>>> develop
       "length": 6,
       "value": "\"name\""
     },
     {
       "filePath": "\/Users\/filippo\/Projects\/KovaleeSDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/Event.swift",
       "kind": "StringLiteral",
+<<<<<<< HEAD
       "offset": 3221,
+=======
+      "offset": 3327,
+>>>>>>> develop
       "length": 6,
       "value": "\"type\""
     },
     {
       "filePath": "\/Users\/filippo\/Projects\/KovaleeSDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/Event.swift",
       "kind": "StringLiteral",
+<<<<<<< HEAD
       "offset": 3253,
+=======
+      "offset": 3359,
+>>>>>>> develop
       "length": 12,
       "value": "\"key_action\""
     },
@@ -14426,7 +15176,11 @@
     {
       "filePath": "\/Users\/filippo\/Projects\/KovaleeSDK\/KovaleeFramework\/KovaleeFramework\/Applovin\/ApplovingWrapper.swift",
       "kind": "FloatLiteral",
+<<<<<<< HEAD
       "offset": 2197,
+=======
+      "offset": 2322,
+>>>>>>> develop
       "length": 3,
       "value": "0.0"
     },
@@ -14496,6 +15250,16 @@
     {
       "filePath": "\/Users\/filippo\/Projects\/KovaleeSDK\/KovaleeFramework\/KovaleeFramework\/Utils\/Storage.swift",
       "kind": "StringLiteral",
+<<<<<<< HEAD
+=======
+      "offset": 377,
+      "length": 22,
+      "value": "\"KV_isFirstAppOpening\""
+    },
+    {
+      "filePath": "\/Users\/filippo\/Projects\/KovaleeSDK\/KovaleeFramework\/KovaleeFramework\/Utils\/Storage.swift",
+      "kind": "StringLiteral",
+>>>>>>> develop
       "offset": 71,
       "length": 20,
       "value": "\"KV_is_user_premium\""
@@ -14536,6 +15300,16 @@
       "value": "\"KV_amplitude_user_id\""
     },
     {
+<<<<<<< HEAD
+=======
+      "filePath": "\/Users\/filippo\/Projects\/KovaleeSDK\/KovaleeFramework\/KovaleeFramework\/Utils\/Storage.swift",
+      "kind": "StringLiteral",
+      "offset": 377,
+      "length": 22,
+      "value": "\"KV_isFirstAppOpening\""
+    },
+    {
+>>>>>>> develop
       "filePath": "\/Users\/filippo\/Projects\/KovaleeSDK\/KovaleeFramework\/KovaleeFramework\/RevenueCat\/StoreDataModel.swift",
       "kind": "StringLiteral",
       "offset": 2506,
@@ -14832,462 +15606,726 @@
     {
       "filePath": "\/Users\/filippo\/Projects\/KovaleeSDK\/KovaleeFramework\/KovaleeFramework\/RevenueCat\/StoreDataModel.swift",
       "kind": "IntegerLiteral",
+<<<<<<< HEAD
       "offset": 17335,
+=======
+      "offset": 17717,
+>>>>>>> develop
       "length": 15,
       "value": "1"
     },
     {
       "filePath": "\/Users\/filippo\/Projects\/KovaleeSDK\/KovaleeFramework\/KovaleeFramework\/RevenueCat\/StoreDataModel.swift",
       "kind": "IntegerLiteral",
+<<<<<<< HEAD
       "offset": 17335,
+=======
+      "offset": 17717,
+>>>>>>> develop
       "length": 15,
       "value": "1"
     },
     {
       "filePath": "\/Users\/filippo\/Projects\/KovaleeSDK\/KovaleeFramework\/KovaleeFramework\/RevenueCat\/StoreDataModel.swift",
       "kind": "IntegerLiteral",
+<<<<<<< HEAD
       "offset": 17335,
+=======
+      "offset": 17717,
+>>>>>>> develop
       "length": 15,
       "value": "1"
     },
     {
       "filePath": "\/Users\/filippo\/Projects\/KovaleeSDK\/KovaleeFramework\/KovaleeFramework\/RevenueCat\/StoreDataModel.swift",
       "kind": "IntegerLiteral",
+<<<<<<< HEAD
       "offset": 17494,
+=======
+      "offset": 17876,
+>>>>>>> develop
       "length": 13,
       "value": "1"
     },
     {
       "filePath": "\/Users\/filippo\/Projects\/KovaleeSDK\/KovaleeFramework\/KovaleeFramework\/RevenueCat\/StoreDataModel.swift",
       "kind": "IntegerLiteral",
+<<<<<<< HEAD
       "offset": 17554,
+=======
+      "offset": 17936,
+>>>>>>> develop
       "length": 24,
       "value": "2"
     },
     {
       "filePath": "\/Users\/filippo\/Projects\/KovaleeSDK\/KovaleeFramework\/KovaleeFramework\/RevenueCat\/StoreDataModel.swift",
       "kind": "IntegerLiteral",
+<<<<<<< HEAD
       "offset": 17628,
+=======
+      "offset": 18010,
+>>>>>>> develop
       "length": 25,
       "value": "3"
     },
     {
       "filePath": "\/Users\/filippo\/Projects\/KovaleeSDK\/KovaleeFramework\/KovaleeFramework\/RevenueCat\/StoreDataModel.swift",
       "kind": "IntegerLiteral",
+<<<<<<< HEAD
       "offset": 17494,
+=======
+      "offset": 17876,
+>>>>>>> develop
       "length": 13,
       "value": "1"
     },
     {
       "filePath": "\/Users\/filippo\/Projects\/KovaleeSDK\/KovaleeFramework\/KovaleeFramework\/RevenueCat\/StoreDataModel.swift",
       "kind": "IntegerLiteral",
+<<<<<<< HEAD
       "offset": 17554,
+=======
+      "offset": 17936,
+>>>>>>> develop
       "length": 24,
       "value": "2"
     },
     {
       "filePath": "\/Users\/filippo\/Projects\/KovaleeSDK\/KovaleeFramework\/KovaleeFramework\/RevenueCat\/StoreDataModel.swift",
       "kind": "IntegerLiteral",
+<<<<<<< HEAD
       "offset": 17628,
+=======
+      "offset": 18010,
+>>>>>>> develop
       "length": 25,
       "value": "3"
     },
     {
       "filePath": "\/Users\/filippo\/Projects\/KovaleeSDK\/KovaleeFramework\/KovaleeFramework\/RevenueCat\/StoreDataModel.swift",
       "kind": "IntegerLiteral",
+<<<<<<< HEAD
       "offset": 17494,
+=======
+      "offset": 17876,
+>>>>>>> develop
       "length": 13,
       "value": "1"
     },
     {
       "filePath": "\/Users\/filippo\/Projects\/KovaleeSDK\/KovaleeFramework\/KovaleeFramework\/RevenueCat\/StoreDataModel.swift",
       "kind": "IntegerLiteral",
+<<<<<<< HEAD
       "offset": 17554,
+=======
+      "offset": 17936,
+>>>>>>> develop
       "length": 24,
       "value": "2"
     },
     {
       "filePath": "\/Users\/filippo\/Projects\/KovaleeSDK\/KovaleeFramework\/KovaleeFramework\/RevenueCat\/StoreDataModel.swift",
       "kind": "IntegerLiteral",
+<<<<<<< HEAD
       "offset": 17628,
+=======
+      "offset": 18010,
+>>>>>>> develop
       "length": 25,
       "value": "3"
     },
     {
       "filePath": "\/Users\/filippo\/Projects\/KovaleeSDK\/KovaleeFramework\/KovaleeFramework\/RevenueCat\/StoreDataModel.swift",
       "kind": "IntegerLiteral",
+<<<<<<< HEAD
       "offset": 17951,
+=======
+      "offset": 18333,
+>>>>>>> develop
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/filippo\/Projects\/KovaleeSDK\/KovaleeFramework\/KovaleeFramework\/RevenueCat\/StoreDataModel.swift",
       "kind": "IntegerLiteral",
+<<<<<<< HEAD
       "offset": 18023,
+=======
+      "offset": 18405,
+>>>>>>> develop
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/filippo\/Projects\/KovaleeSDK\/KovaleeFramework\/KovaleeFramework\/RevenueCat\/StoreDataModel.swift",
       "kind": "IntegerLiteral",
+<<<<<<< HEAD
       "offset": 18097,
+=======
+      "offset": 18479,
+>>>>>>> develop
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/filippo\/Projects\/KovaleeSDK\/KovaleeFramework\/KovaleeFramework\/RevenueCat\/StoreDataModel.swift",
       "kind": "IntegerLiteral",
+<<<<<<< HEAD
       "offset": 18169,
+=======
+      "offset": 18551,
+>>>>>>> develop
       "length": 1,
       "value": "3"
     },
     {
       "filePath": "\/Users\/filippo\/Projects\/KovaleeSDK\/KovaleeFramework\/KovaleeFramework\/RevenueCat\/StoreDataModel.swift",
       "kind": "IntegerLiteral",
+<<<<<<< HEAD
       "offset": 17951,
+=======
+      "offset": 18333,
+>>>>>>> develop
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/filippo\/Projects\/KovaleeSDK\/KovaleeFramework\/KovaleeFramework\/RevenueCat\/StoreDataModel.swift",
       "kind": "IntegerLiteral",
+<<<<<<< HEAD
       "offset": 18023,
+=======
+      "offset": 18405,
+>>>>>>> develop
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/filippo\/Projects\/KovaleeSDK\/KovaleeFramework\/KovaleeFramework\/RevenueCat\/StoreDataModel.swift",
       "kind": "IntegerLiteral",
+<<<<<<< HEAD
       "offset": 18097,
+=======
+      "offset": 18479,
+>>>>>>> develop
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/filippo\/Projects\/KovaleeSDK\/KovaleeFramework\/KovaleeFramework\/RevenueCat\/StoreDataModel.swift",
       "kind": "IntegerLiteral",
+<<<<<<< HEAD
       "offset": 18169,
+=======
+      "offset": 18551,
+>>>>>>> develop
       "length": 1,
       "value": "3"
     },
     {
       "filePath": "\/Users\/filippo\/Projects\/KovaleeSDK\/KovaleeFramework\/KovaleeFramework\/RevenueCat\/StoreDataModel.swift",
       "kind": "IntegerLiteral",
+<<<<<<< HEAD
       "offset": 17951,
+=======
+      "offset": 18333,
+>>>>>>> develop
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/filippo\/Projects\/KovaleeSDK\/KovaleeFramework\/KovaleeFramework\/RevenueCat\/StoreDataModel.swift",
       "kind": "IntegerLiteral",
+<<<<<<< HEAD
       "offset": 18023,
+=======
+      "offset": 18405,
+>>>>>>> develop
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/filippo\/Projects\/KovaleeSDK\/KovaleeFramework\/KovaleeFramework\/RevenueCat\/StoreDataModel.swift",
       "kind": "IntegerLiteral",
+<<<<<<< HEAD
       "offset": 18097,
+=======
+      "offset": 18479,
+>>>>>>> develop
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/filippo\/Projects\/KovaleeSDK\/KovaleeFramework\/KovaleeFramework\/RevenueCat\/StoreDataModel.swift",
       "kind": "IntegerLiteral",
+<<<<<<< HEAD
       "offset": 18169,
+=======
+      "offset": 18551,
+>>>>>>> develop
       "length": 1,
       "value": "3"
     },
     {
       "filePath": "\/Users\/filippo\/Projects\/KovaleeSDK\/KovaleeFramework\/KovaleeFramework\/RevenueCat\/StoreDataModel.swift",
       "kind": "IntegerLiteral",
+<<<<<<< HEAD
       "offset": 18477,
+=======
+      "offset": 18859,
+>>>>>>> develop
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/filippo\/Projects\/KovaleeSDK\/KovaleeFramework\/KovaleeFramework\/RevenueCat\/StoreDataModel.swift",
       "kind": "IntegerLiteral",
+<<<<<<< HEAD
       "offset": 18550,
+=======
+      "offset": 18932,
+>>>>>>> develop
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/filippo\/Projects\/KovaleeSDK\/KovaleeFramework\/KovaleeFramework\/RevenueCat\/StoreDataModel.swift",
       "kind": "IntegerLiteral",
+<<<<<<< HEAD
       "offset": 18607,
+=======
+      "offset": 18989,
+>>>>>>> develop
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/filippo\/Projects\/KovaleeSDK\/KovaleeFramework\/KovaleeFramework\/RevenueCat\/StoreDataModel.swift",
       "kind": "IntegerLiteral",
+<<<<<<< HEAD
       "offset": 18477,
+=======
+      "offset": 18859,
+>>>>>>> develop
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/filippo\/Projects\/KovaleeSDK\/KovaleeFramework\/KovaleeFramework\/RevenueCat\/StoreDataModel.swift",
       "kind": "IntegerLiteral",
+<<<<<<< HEAD
       "offset": 18550,
+=======
+      "offset": 18932,
+>>>>>>> develop
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/filippo\/Projects\/KovaleeSDK\/KovaleeFramework\/KovaleeFramework\/RevenueCat\/StoreDataModel.swift",
       "kind": "IntegerLiteral",
+<<<<<<< HEAD
       "offset": 18607,
+=======
+      "offset": 18989,
+>>>>>>> develop
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/filippo\/Projects\/KovaleeSDK\/KovaleeFramework\/KovaleeFramework\/RevenueCat\/StoreDataModel.swift",
       "kind": "IntegerLiteral",
+<<<<<<< HEAD
       "offset": 18477,
+=======
+      "offset": 18859,
+>>>>>>> develop
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/filippo\/Projects\/KovaleeSDK\/KovaleeFramework\/KovaleeFramework\/RevenueCat\/StoreDataModel.swift",
       "kind": "IntegerLiteral",
+<<<<<<< HEAD
       "offset": 18550,
+=======
+      "offset": 18932,
+>>>>>>> develop
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/filippo\/Projects\/KovaleeSDK\/KovaleeFramework\/KovaleeFramework\/RevenueCat\/StoreDataModel.swift",
       "kind": "IntegerLiteral",
+<<<<<<< HEAD
       "offset": 18607,
+=======
+      "offset": 18989,
+>>>>>>> develop
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/filippo\/Projects\/KovaleeSDK\/KovaleeFramework\/KovaleeFramework\/RevenueCat\/StoreDataModel.swift",
       "kind": "IntegerLiteral",
+<<<<<<< HEAD
       "offset": 18712,
+=======
+      "offset": 19094,
+>>>>>>> develop
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/filippo\/Projects\/KovaleeSDK\/KovaleeFramework\/KovaleeFramework\/RevenueCat\/StoreDataModel.swift",
       "kind": "IntegerLiteral",
+<<<<<<< HEAD
       "offset": 18789,
+=======
+      "offset": 19171,
+>>>>>>> develop
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/filippo\/Projects\/KovaleeSDK\/KovaleeFramework\/KovaleeFramework\/RevenueCat\/StoreDataModel.swift",
       "kind": "IntegerLiteral",
+<<<<<<< HEAD
       "offset": 18712,
+=======
+      "offset": 19094,
+>>>>>>> develop
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/filippo\/Projects\/KovaleeSDK\/KovaleeFramework\/KovaleeFramework\/RevenueCat\/StoreDataModel.swift",
       "kind": "IntegerLiteral",
+<<<<<<< HEAD
       "offset": 18789,
+=======
+      "offset": 19171,
+>>>>>>> develop
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/filippo\/Projects\/KovaleeSDK\/KovaleeFramework\/KovaleeFramework\/RevenueCat\/StoreDataModel.swift",
       "kind": "IntegerLiteral",
+<<<<<<< HEAD
       "offset": 18712,
+=======
+      "offset": 19094,
+>>>>>>> develop
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/filippo\/Projects\/KovaleeSDK\/KovaleeFramework\/KovaleeFramework\/RevenueCat\/StoreDataModel.swift",
       "kind": "IntegerLiteral",
+<<<<<<< HEAD
       "offset": 18789,
+=======
+      "offset": 19171,
+>>>>>>> develop
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/filippo\/Projects\/KovaleeSDK\/KovaleeFramework\/KovaleeFramework\/RevenueCat\/StoreDataModel.swift",
       "kind": "IntegerLiteral",
+<<<<<<< HEAD
       "offset": 19858,
+=======
+      "offset": 20240,
+>>>>>>> develop
       "length": 2,
       "value": "2"
     },
     {
       "filePath": "\/Users\/filippo\/Projects\/KovaleeSDK\/KovaleeFramework\/KovaleeFramework\/RevenueCat\/StoreDataModel.swift",
       "kind": "IntegerLiteral",
+<<<<<<< HEAD
       "offset": 19927,
+=======
+      "offset": 20309,
+>>>>>>> develop
       "length": 6,
       "value": "1"
     },
     {
       "filePath": "\/Users\/filippo\/Projects\/KovaleeSDK\/KovaleeFramework\/KovaleeFramework\/RevenueCat\/StoreDataModel.swift",
       "kind": "IntegerLiteral",
+<<<<<<< HEAD
       "offset": 20009,
+=======
+      "offset": 20391,
+>>>>>>> develop
       "length": 8,
       "value": "0"
     },
     {
       "filePath": "\/Users\/filippo\/Projects\/KovaleeSDK\/KovaleeFramework\/KovaleeFramework\/RevenueCat\/StoreDataModel.swift",
       "kind": "IntegerLiteral",
+<<<<<<< HEAD
       "offset": 20091,
+=======
+      "offset": 20473,
+>>>>>>> develop
       "length": 6,
       "value": "1"
     },
     {
       "filePath": "\/Users\/filippo\/Projects\/KovaleeSDK\/KovaleeFramework\/KovaleeFramework\/RevenueCat\/StoreDataModel.swift",
       "kind": "IntegerLiteral",
+<<<<<<< HEAD
       "offset": 20174,
+=======
+      "offset": 20556,
+>>>>>>> develop
       "length": 8,
       "value": "2"
     },
     {
       "filePath": "\/Users\/filippo\/Projects\/KovaleeSDK\/KovaleeFramework\/KovaleeFramework\/RevenueCat\/StoreDataModel.swift",
       "kind": "IntegerLiteral",
+<<<<<<< HEAD
       "offset": 20261,
+=======
+      "offset": 20643,
+>>>>>>> develop
       "length": 10,
       "value": "3"
     },
     {
       "filePath": "\/Users\/filippo\/Projects\/KovaleeSDK\/KovaleeFramework\/KovaleeFramework\/RevenueCat\/StoreDataModel.swift",
       "kind": "IntegerLiteral",
+<<<<<<< HEAD
       "offset": 20348,
+=======
+      "offset": 20730,
+>>>>>>> develop
       "length": 8,
       "value": "4"
     },
     {
       "filePath": "\/Users\/filippo\/Projects\/KovaleeSDK\/KovaleeFramework\/KovaleeFramework\/RevenueCat\/StoreDataModel.swift",
       "kind": "IntegerLiteral",
+<<<<<<< HEAD
       "offset": 20431,
+=======
+      "offset": 20813,
+>>>>>>> develop
       "length": 7,
       "value": "5"
     },
     {
       "filePath": "\/Users\/filippo\/Projects\/KovaleeSDK\/KovaleeFramework\/KovaleeFramework\/RevenueCat\/StoreDataModel.swift",
       "kind": "IntegerLiteral",
+<<<<<<< HEAD
       "offset": 20512,
+=======
+      "offset": 20894,
+>>>>>>> develop
       "length": 6,
       "value": "6"
     },
     {
       "filePath": "\/Users\/filippo\/Projects\/KovaleeSDK\/KovaleeFramework\/KovaleeFramework\/RevenueCat\/StoreDataModel.swift",
       "kind": "IntegerLiteral",
+<<<<<<< HEAD
       "offset": 19858,
+=======
+      "offset": 20240,
+>>>>>>> develop
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/filippo\/Projects\/KovaleeSDK\/KovaleeFramework\/KovaleeFramework\/RevenueCat\/StoreDataModel.swift",
       "kind": "IntegerLiteral",
+<<<<<<< HEAD
       "offset": 19927,
+=======
+      "offset": 20309,
+>>>>>>> develop
       "length": 6,
       "value": "1"
     },
     {
       "filePath": "\/Users\/filippo\/Projects\/KovaleeSDK\/KovaleeFramework\/KovaleeFramework\/RevenueCat\/StoreDataModel.swift",
       "kind": "IntegerLiteral",
+<<<<<<< HEAD
       "offset": 20009,
+=======
+      "offset": 20391,
+>>>>>>> develop
       "length": 8,
       "value": "0"
     },
     {
       "filePath": "\/Users\/filippo\/Projects\/KovaleeSDK\/KovaleeFramework\/KovaleeFramework\/RevenueCat\/StoreDataModel.swift",
       "kind": "IntegerLiteral",
+<<<<<<< HEAD
       "offset": 20091,
+=======
+      "offset": 20473,
+>>>>>>> develop
       "length": 6,
       "value": "1"
     },
     {
       "filePath": "\/Users\/filippo\/Projects\/KovaleeSDK\/KovaleeFramework\/KovaleeFramework\/RevenueCat\/StoreDataModel.swift",
       "kind": "IntegerLiteral",
+<<<<<<< HEAD
       "offset": 20174,
+=======
+      "offset": 20556,
+>>>>>>> develop
       "length": 8,
       "value": "2"
     },
     {
       "filePath": "\/Users\/filippo\/Projects\/KovaleeSDK\/KovaleeFramework\/KovaleeFramework\/RevenueCat\/StoreDataModel.swift",
       "kind": "IntegerLiteral",
+<<<<<<< HEAD
       "offset": 20261,
+=======
+      "offset": 20643,
+>>>>>>> develop
       "length": 10,
       "value": "3"
     },
     {
       "filePath": "\/Users\/filippo\/Projects\/KovaleeSDK\/KovaleeFramework\/KovaleeFramework\/RevenueCat\/StoreDataModel.swift",
       "kind": "IntegerLiteral",
+<<<<<<< HEAD
       "offset": 20348,
+=======
+      "offset": 20730,
+>>>>>>> develop
       "length": 8,
       "value": "4"
     },
     {
       "filePath": "\/Users\/filippo\/Projects\/KovaleeSDK\/KovaleeFramework\/KovaleeFramework\/RevenueCat\/StoreDataModel.swift",
       "kind": "IntegerLiteral",
+<<<<<<< HEAD
       "offset": 20431,
+=======
+      "offset": 20813,
+>>>>>>> develop
       "length": 7,
       "value": "5"
     },
     {
       "filePath": "\/Users\/filippo\/Projects\/KovaleeSDK\/KovaleeFramework\/KovaleeFramework\/RevenueCat\/StoreDataModel.swift",
       "kind": "IntegerLiteral",
+<<<<<<< HEAD
       "offset": 20512,
+=======
+      "offset": 20894,
+>>>>>>> develop
       "length": 6,
       "value": "6"
     },
     {
       "filePath": "\/Users\/filippo\/Projects\/KovaleeSDK\/KovaleeFramework\/KovaleeFramework\/RevenueCat\/StoreDataModel.swift",
       "kind": "IntegerLiteral",
+<<<<<<< HEAD
       "offset": 19858,
+=======
+      "offset": 20240,
+>>>>>>> develop
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/filippo\/Projects\/KovaleeSDK\/KovaleeFramework\/KovaleeFramework\/RevenueCat\/StoreDataModel.swift",
       "kind": "IntegerLiteral",
+<<<<<<< HEAD
       "offset": 19927,
+=======
+      "offset": 20309,
+>>>>>>> develop
       "length": 6,
       "value": "1"
     },
     {
       "filePath": "\/Users\/filippo\/Projects\/KovaleeSDK\/KovaleeFramework\/KovaleeFramework\/RevenueCat\/StoreDataModel.swift",
       "kind": "IntegerLiteral",
+<<<<<<< HEAD
       "offset": 20009,
+=======
+      "offset": 20391,
+>>>>>>> develop
       "length": 8,
       "value": "0"
     },
     {
       "filePath": "\/Users\/filippo\/Projects\/KovaleeSDK\/KovaleeFramework\/KovaleeFramework\/RevenueCat\/StoreDataModel.swift",
       "kind": "IntegerLiteral",
+<<<<<<< HEAD
       "offset": 20091,
+=======
+      "offset": 20473,
+>>>>>>> develop
       "length": 6,
       "value": "1"
     },
     {
       "filePath": "\/Users\/filippo\/Projects\/KovaleeSDK\/KovaleeFramework\/KovaleeFramework\/RevenueCat\/StoreDataModel.swift",
       "kind": "IntegerLiteral",
+<<<<<<< HEAD
       "offset": 20174,
+=======
+      "offset": 20556,
+>>>>>>> develop
       "length": 8,
       "value": "2"
     },
     {
       "filePath": "\/Users\/filippo\/Projects\/KovaleeSDK\/KovaleeFramework\/KovaleeFramework\/RevenueCat\/StoreDataModel.swift",
       "kind": "IntegerLiteral",
+<<<<<<< HEAD
       "offset": 20261,
+=======
+      "offset": 20643,
+>>>>>>> develop
       "length": 10,
       "value": "3"
     },
     {
       "filePath": "\/Users\/filippo\/Projects\/KovaleeSDK\/KovaleeFramework\/KovaleeFramework\/RevenueCat\/StoreDataModel.swift",
       "kind": "IntegerLiteral",
+<<<<<<< HEAD
       "offset": 20348,
+=======
+      "offset": 20730,
+>>>>>>> develop
       "length": 8,
       "value": "4"
     },
     {
       "filePath": "\/Users\/filippo\/Projects\/KovaleeSDK\/KovaleeFramework\/KovaleeFramework\/RevenueCat\/StoreDataModel.swift",
       "kind": "IntegerLiteral",
+<<<<<<< HEAD
       "offset": 20431,
+=======
+      "offset": 20813,
+>>>>>>> develop
       "length": 7,
       "value": "5"
     },
     {
       "filePath": "\/Users\/filippo\/Projects\/KovaleeSDK\/KovaleeFramework\/KovaleeFramework\/RevenueCat\/StoreDataModel.swift",
       "kind": "IntegerLiteral",
+<<<<<<< HEAD
       "offset": 20512,
+=======
+      "offset": 20894,
+>>>>>>> develop
       "length": 6,
       "value": "6"
     }
