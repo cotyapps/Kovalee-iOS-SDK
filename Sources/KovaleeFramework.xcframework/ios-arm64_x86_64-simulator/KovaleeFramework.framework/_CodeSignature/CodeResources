@@ -235,18 +235,7 @@
 		</dict>
 		<key>Headers/KovaleeFramework-Swift.h</key>
 		<data>
-<<<<<<< HEAD
-<<<<<<< HEAD
 		lRBYgAJWu37pOhkuwYInRhNXrIM=
-=======
-		xqWm99ZlN/nQ/+X8pI1H/kEErCU=
->>>>>>> 0e4a7ee (feat: completed third party tools integration)
-=======
-		xqWm99ZlN/nQ/+X8pI1H/kEErCU=
-=======
-		lRBYgAJWu37pOhkuwYInRhNXrIM=
->>>>>>> 7c9bf72 (feat: new SDK version 0.6.0)
->>>>>>> c30137e (feat: new SDK version 0.6.0)
 		</data>
 		<key>Headers/KovaleeFramework.h</key>
 		<data>
@@ -254,13 +243,10 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-<<<<<<< HEAD
-<<<<<<< HEAD
 		UxDSx5MtW0dQNPSWcu8SmAjQGcM=
 		</data>
 		<key>Modules/KovaleeFramework.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-<<<<<<< HEAD
 		Xu44mAuwxamm6G43WxEVaqZOl04=
 		</data>
 		<key>Modules/KovaleeFramework.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
@@ -298,105 +284,6 @@
 		<key>Modules/KovaleeFramework.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
 		7MYYRX/iRjQAPkH2WQ0mReajtqE=
-=======
-		g65haGmaZRogKNcK2KNU0dAMJLI=
-=======
-		UxDSx5MtW0dQNPSWcu8SmAjQGcM=
->>>>>>> 65e3bc4 (framework 0.5.0)
-		</data>
-		<key>Modules/KovaleeFramework.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
-		<data>
-=======
-<<<<<<< HEAD
->>>>>>> c30137e (feat: new SDK version 0.6.0)
-		KW2zE3lSPMm9mxUJlxeGjV6g9eI=
-		</data>
-		<key>Modules/KovaleeFramework.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
-		<data>
-		74sUNABCyCNQfmETA0e9wIILSm0=
-		</data>
-		<key>Modules/KovaleeFramework.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
-		<data>
-		C17gmedUb45pSHCAINnS38OC9Kk=
-		</data>
-		<key>Modules/KovaleeFramework.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
-		<data>
-		74sUNABCyCNQfmETA0e9wIILSm0=
-		</data>
-		<key>Modules/KovaleeFramework.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
-		<data>
-		BvAfUdA5S1aWdOwMThNTSo/+wnw=
-		</data>
-		<key>Modules/KovaleeFramework.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
-		<data>
-		KW2zE3lSPMm9mxUJlxeGjV6g9eI=
-		</data>
-		<key>Modules/KovaleeFramework.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
-		<data>
-		8DnyNqsipnlJPvanfuNBHDJ0Rdo=
-		</data>
-		<key>Modules/KovaleeFramework.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
-		<data>
-		DV82G8wCvmPoJQesuoMga1yRrsw=
-		</data>
-		<key>Modules/KovaleeFramework.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
-		<data>
-		8DnyNqsipnlJPvanfuNBHDJ0Rdo=
-		</data>
-		<key>Modules/KovaleeFramework.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
-		<data>
-<<<<<<< HEAD
-<<<<<<< HEAD
-		Bd8AgHaTlBKjSwuriW3a2aVTebs=
->>>>>>> 0e4a7ee (feat: completed third party tools integration)
-=======
-		TG4TahV6IDAStuFiqAEXjCsUqSE=
->>>>>>> 4df3d5b (updated framework with small fixes)
-=======
-		YzAyHhaYwuplBUGSM+z9FC/CLDc=
-<<<<<<< HEAD
->>>>>>> 65e3bc4 (framework 0.5.0)
-=======
-=======
-		Xu44mAuwxamm6G43WxEVaqZOl04=
-		</data>
-		<key>Modules/KovaleeFramework.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
-		<data>
-		lffntp5Wq2461UqW2MsFfTZrsic=
-		</data>
-		<key>Modules/KovaleeFramework.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
-		<data>
-		fsWcDeLCe3fwgm+Q1SlYH4m0kZ0=
-		</data>
-		<key>Modules/KovaleeFramework.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
-		<data>
-		lffntp5Wq2461UqW2MsFfTZrsic=
-		</data>
-		<key>Modules/KovaleeFramework.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
-		<data>
-		yqiP0mrYGEpWa/9cisL5GJs0cL4=
-		</data>
-		<key>Modules/KovaleeFramework.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
-		<data>
-		Xu44mAuwxamm6G43WxEVaqZOl04=
-		</data>
-		<key>Modules/KovaleeFramework.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
-		<data>
-		1J1OqQO/YHEEfK43OPrR5/IbIXY=
-		</data>
-		<key>Modules/KovaleeFramework.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
-		<data>
-		qBrSIwI8019lC5h7V3zCHVUWxqU=
-		</data>
-		<key>Modules/KovaleeFramework.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
-		<data>
-		1J1OqQO/YHEEfK43OPrR5/IbIXY=
-		</data>
-		<key>Modules/KovaleeFramework.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
-		<data>
-		7MYYRX/iRjQAPkH2WQ0mReajtqE=
->>>>>>> 7c9bf72 (feat: new SDK version 0.6.0)
->>>>>>> c30137e (feat: new SDK version 0.6.0)
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -749,18 +636,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-<<<<<<< HEAD
-<<<<<<< HEAD
 			AIJ8z60r1YvKEtF2VQvYRMPVZMeYB20dswyoWkdMrt8=
-=======
-			5g0ZIaG0BaVhMw70hBiVvdZbQTUAIhrVdqNtohab9gk=
->>>>>>> 0e4a7ee (feat: completed third party tools integration)
-=======
-			5g0ZIaG0BaVhMw70hBiVvdZbQTUAIhrVdqNtohab9gk=
-=======
-			AIJ8z60r1YvKEtF2VQvYRMPVZMeYB20dswyoWkdMrt8=
->>>>>>> 7c9bf72 (feat: new SDK version 0.6.0)
->>>>>>> c30137e (feat: new SDK version 0.6.0)
 			</data>
 		</dict>
 		<key>Headers/KovaleeFramework.h</key>
@@ -774,252 +650,70 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
 			wkas4yol0IufzV2zLV45YVbnXYerc/3la9Rvlh1mzlk=
-=======
-			PDGa2VFLaE7mSExA97B/P+L5WvuLzMXpdk9fzgDEGWA=
->>>>>>> 0e4a7ee (feat: completed third party tools integration)
-=======
-			b1dkqcYZM/o6+PxrrPK9XKQZdR6dx2B5RmOguMkIUG8=
->>>>>>> 4df3d5b (updated framework with small fixes)
-=======
-			kUe7gB+cMT1qJfTyQyEecCZznf2zzKIzr2jyNX96B0k=
->>>>>>> 65e3bc4 (framework 0.5.0)
-=======
-			kUe7gB+cMT1qJfTyQyEecCZznf2zzKIzr2jyNX96B0k=
-=======
-			wkas4yol0IufzV2zLV45YVbnXYerc/3la9Rvlh1mzlk=
->>>>>>> 7c9bf72 (feat: new SDK version 0.6.0)
->>>>>>> c30137e (feat: new SDK version 0.6.0)
 			</data>
 		</dict>
 		<key>Modules/KovaleeFramework.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
 			35S2CCIJKmKLiHgpCutmsneZZrSmrtT8J7d25+VEQOY=
-=======
-			RfkJSN/5H2oDX8bPabG1LuaxNYSvzMRcZA6XpLkW5LU=
->>>>>>> 0e4a7ee (feat: completed third party tools integration)
-=======
-			XVSBHBf0wTZ4sCjumV3gI5/2iN0D0WXlwDjuOEeczpg=
->>>>>>> 4df3d5b (updated framework with small fixes)
-=======
-			2nkRtRS9OU1HmOM2t9v9fQ0iiX1iOHnYfD24OKh9AYw=
->>>>>>> 65e3bc4 (framework 0.5.0)
-=======
-			2nkRtRS9OU1HmOM2t9v9fQ0iiX1iOHnYfD24OKh9AYw=
-=======
-			35S2CCIJKmKLiHgpCutmsneZZrSmrtT8J7d25+VEQOY=
->>>>>>> 7c9bf72 (feat: new SDK version 0.6.0)
->>>>>>> c30137e (feat: new SDK version 0.6.0)
 			</data>
 		</dict>
 		<key>Modules/KovaleeFramework.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
 			goK6AOnst+r4FUOpm9cwyqH5QpuizbdBPzl7liJBTC0=
-=======
-			q5bX2QTbTqL/Tu0lTbU1gaHO6INZKJlrz/hhBFfGtdU=
->>>>>>> 0e4a7ee (feat: completed third party tools integration)
-=======
-			Ohq6cihiTyUTwPgwer1EsViolC+NdXbvb6pmComtz8M=
->>>>>>> 65e3bc4 (framework 0.5.0)
-=======
-			Ohq6cihiTyUTwPgwer1EsViolC+NdXbvb6pmComtz8M=
-=======
-			goK6AOnst+r4FUOpm9cwyqH5QpuizbdBPzl7liJBTC0=
->>>>>>> 7c9bf72 (feat: new SDK version 0.6.0)
->>>>>>> c30137e (feat: new SDK version 0.6.0)
 			</data>
 		</dict>
 		<key>Modules/KovaleeFramework.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
 			35S2CCIJKmKLiHgpCutmsneZZrSmrtT8J7d25+VEQOY=
-=======
-			RfkJSN/5H2oDX8bPabG1LuaxNYSvzMRcZA6XpLkW5LU=
->>>>>>> 0e4a7ee (feat: completed third party tools integration)
-=======
-			XVSBHBf0wTZ4sCjumV3gI5/2iN0D0WXlwDjuOEeczpg=
->>>>>>> 4df3d5b (updated framework with small fixes)
-=======
-			2nkRtRS9OU1HmOM2t9v9fQ0iiX1iOHnYfD24OKh9AYw=
->>>>>>> 65e3bc4 (framework 0.5.0)
-=======
-			2nkRtRS9OU1HmOM2t9v9fQ0iiX1iOHnYfD24OKh9AYw=
-=======
-			35S2CCIJKmKLiHgpCutmsneZZrSmrtT8J7d25+VEQOY=
->>>>>>> 7c9bf72 (feat: new SDK version 0.6.0)
->>>>>>> c30137e (feat: new SDK version 0.6.0)
 			</data>
 		</dict>
 		<key>Modules/KovaleeFramework.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
 			J/iscOYdPwitm+LT2LlfjgcnxWV9JHy5Lw1sW+KuCYA=
-=======
-			F8ODcAPgBnvMn/8jCOw87A7hnQalufEemQI4yzAh4Yw=
->>>>>>> 0e4a7ee (feat: completed third party tools integration)
-=======
-			uItIzBMMJUDZmwpiq2aw7vsxF1iqbRdYq9bnbj1n7g4=
->>>>>>> 4df3d5b (updated framework with small fixes)
-=======
-			iKcfsmobyj+iv/fyYCvIKHorGrRhKG4Z6rYVgMSkVvc=
->>>>>>> 65e3bc4 (framework 0.5.0)
-=======
-			iKcfsmobyj+iv/fyYCvIKHorGrRhKG4Z6rYVgMSkVvc=
-=======
-			J/iscOYdPwitm+LT2LlfjgcnxWV9JHy5Lw1sW+KuCYA=
->>>>>>> 7c9bf72 (feat: new SDK version 0.6.0)
->>>>>>> c30137e (feat: new SDK version 0.6.0)
 			</data>
 		</dict>
 		<key>Modules/KovaleeFramework.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
 			wkas4yol0IufzV2zLV45YVbnXYerc/3la9Rvlh1mzlk=
-=======
-			PDGa2VFLaE7mSExA97B/P+L5WvuLzMXpdk9fzgDEGWA=
->>>>>>> 0e4a7ee (feat: completed third party tools integration)
-=======
-			b1dkqcYZM/o6+PxrrPK9XKQZdR6dx2B5RmOguMkIUG8=
->>>>>>> 4df3d5b (updated framework with small fixes)
-=======
-			kUe7gB+cMT1qJfTyQyEecCZznf2zzKIzr2jyNX96B0k=
->>>>>>> 65e3bc4 (framework 0.5.0)
-=======
-			kUe7gB+cMT1qJfTyQyEecCZznf2zzKIzr2jyNX96B0k=
-=======
-			wkas4yol0IufzV2zLV45YVbnXYerc/3la9Rvlh1mzlk=
->>>>>>> 7c9bf72 (feat: new SDK version 0.6.0)
->>>>>>> c30137e (feat: new SDK version 0.6.0)
 			</data>
 		</dict>
 		<key>Modules/KovaleeFramework.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
 			gUjQmezt0NBMmjky4Sz3dJUoiHq0iIw1/2MXx++OgMM=
-=======
-			JH/NKBUL3Rbw6OQlUp1LKs7MCk1FznpAML7QGthybDY=
->>>>>>> 0e4a7ee (feat: completed third party tools integration)
-=======
-			cSccPje7hm3cOTh+CULxO4QN9T5O62tKmFpMZlenGJg=
->>>>>>> 4df3d5b (updated framework with small fixes)
-=======
-			juwupmF2W11BPwAFsBps3RW8dMIZtVgKOFq59VTHPbo=
->>>>>>> 65e3bc4 (framework 0.5.0)
-=======
-			juwupmF2W11BPwAFsBps3RW8dMIZtVgKOFq59VTHPbo=
-=======
-			gUjQmezt0NBMmjky4Sz3dJUoiHq0iIw1/2MXx++OgMM=
->>>>>>> 7c9bf72 (feat: new SDK version 0.6.0)
->>>>>>> c30137e (feat: new SDK version 0.6.0)
 			</data>
 		</dict>
 		<key>Modules/KovaleeFramework.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
 			006vH5YrW+mBGxtYRGzcG1dotUoCifGXsCbLjWzAzOk=
-=======
-			gwdiJBOaHMQmdXpOHSoufEh4BsjYjGf9nLaoOwuTe2o=
->>>>>>> 0e4a7ee (feat: completed third party tools integration)
-=======
-			Ice3mvGqrmXKWV5upV8FH50dYzU0OaxXwZQ8dp79NAs=
->>>>>>> 65e3bc4 (framework 0.5.0)
-=======
-			Ice3mvGqrmXKWV5upV8FH50dYzU0OaxXwZQ8dp79NAs=
-=======
-			006vH5YrW+mBGxtYRGzcG1dotUoCifGXsCbLjWzAzOk=
->>>>>>> 7c9bf72 (feat: new SDK version 0.6.0)
->>>>>>> c30137e (feat: new SDK version 0.6.0)
 			</data>
 		</dict>
 		<key>Modules/KovaleeFramework.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
 			gUjQmezt0NBMmjky4Sz3dJUoiHq0iIw1/2MXx++OgMM=
-=======
-			JH/NKBUL3Rbw6OQlUp1LKs7MCk1FznpAML7QGthybDY=
->>>>>>> 0e4a7ee (feat: completed third party tools integration)
-=======
-			cSccPje7hm3cOTh+CULxO4QN9T5O62tKmFpMZlenGJg=
->>>>>>> 4df3d5b (updated framework with small fixes)
-=======
-			juwupmF2W11BPwAFsBps3RW8dMIZtVgKOFq59VTHPbo=
->>>>>>> 65e3bc4 (framework 0.5.0)
-=======
-			juwupmF2W11BPwAFsBps3RW8dMIZtVgKOFq59VTHPbo=
-=======
-			gUjQmezt0NBMmjky4Sz3dJUoiHq0iIw1/2MXx++OgMM=
->>>>>>> 7c9bf72 (feat: new SDK version 0.6.0)
->>>>>>> c30137e (feat: new SDK version 0.6.0)
 			</data>
 		</dict>
 		<key>Modules/KovaleeFramework.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
 			sJtPufmqXDAzCkrkm26/im+FXRIoLeQErZ2jXDLcJuE=
-=======
-			iopBlB6i7hlj0g2Dk5DuryPb5d2i8KR9h4XDRynCmyE=
->>>>>>> 0e4a7ee (feat: completed third party tools integration)
-=======
-			cHjln7Ourvcq3cmznkcjYHzreAVoPlulZYgTRSAVgU0=
->>>>>>> 4df3d5b (updated framework with small fixes)
-=======
-			NWcqsKI/ru8rLEED4ww2AH2HUb+cAWCuyReSrKxvbgI=
->>>>>>> 65e3bc4 (framework 0.5.0)
-=======
-			NWcqsKI/ru8rLEED4ww2AH2HUb+cAWCuyReSrKxvbgI=
-=======
-			sJtPufmqXDAzCkrkm26/im+FXRIoLeQErZ2jXDLcJuE=
->>>>>>> 7c9bf72 (feat: new SDK version 0.6.0)
->>>>>>> c30137e (feat: new SDK version 0.6.0)
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

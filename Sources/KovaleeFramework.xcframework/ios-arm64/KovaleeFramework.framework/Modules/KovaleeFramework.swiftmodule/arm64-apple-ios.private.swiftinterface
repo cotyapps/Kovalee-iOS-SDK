@@ -3,14 +3,7 @@
 // swift-module-flags: -target arm64-apple-ios14.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name KovaleeFramework
 // swift-module-flags-ignorable: -enable-bare-slash-regex
 import AdSupport
-<<<<<<< HEAD
-<<<<<<< HEAD
 import AppTrackingTransparency
-=======
->>>>>>> 0e4a7ee (feat: completed third party tools integration)
-=======
-import AppTrackingTransparency
->>>>>>> 65e3bc4 (framework 0.5.0)
 import Foundation
 @_exported import KovaleeFramework
 import Swift
@@ -24,17 +17,6 @@ extension KovaleeFramework.Event : Swift.CustomStringConvertible {
   public var description: Swift.String {
     get
   }
-<<<<<<< HEAD
-=======
-}
-@_hasMissingDesignatedInitializers public class RemoteConfigValue {
-  public var stringValue: Swift.String?
-  public var numberValue: Foundation.NSNumber
-  public var dataValue: Foundation.Data
-  public var boolValue: Swift.Bool
-  public var jsonValue: Any?
-  @objc deinit
->>>>>>> 0e4a7ee (feat: completed third party tools integration)
 }
 @_hasMissingDesignatedInitializers public class RemoteConfigValue {
   public var stringValue: Swift.String?
@@ -44,7 +26,6 @@ extension KovaleeFramework.Event : Swift.CustomStringConvertible {
   public var jsonValue: Any?
   @objc deinit
 }
-<<<<<<< HEAD
 @_hasMissingDesignatedInitializers final public class KovaleeAnalytics {
   public static var isInitialized: Swift.Bool {
     get
@@ -137,7 +118,6 @@ public struct Configuration {
       get
     }
   }
-<<<<<<< HEAD
   public var environment: KovaleeFramework.Configuration.Environment
   public var logLevel: KovaleeFramework.LogLevel
   public init(environment: KovaleeFramework.Configuration.Environment, keysFileName: Swift.String = KovaleeConstants.keysFileName, logLevel: KovaleeFramework.LogLevel = .info)
@@ -211,110 +191,6 @@ public enum PeriodType : Swift.Int {
   case normal
   case intro
   case trial
-=======
-  public var environment: KovaleeFramework.KovaleeConfiguration.Environment
-  public var logLevel: KovaleeFramework.LogLevel
-  public init(environment: KovaleeFramework.KovaleeConfiguration.Environment, keysFileName: Swift.String = KovaleeConstants.keysFileName, logLevel: KovaleeFramework.LogLevel = .info)
-}
-=======
->>>>>>> 65e3bc4 (framework 0.5.0)
-@_hasMissingDesignatedInitializers final public class KovaleeAnalytics {
-  public static var isInitialized: Swift.Bool {
-    get
-  }
-  public static func initialize(configuration: KovaleeFramework.Configuration)
-  public static func terminate()
-  public static var shared: KovaleeFramework.KovaleeAnalytics {
-    get
-  }
-  @objc deinit
-}
-extension KovaleeFramework.KovaleeAnalytics {
-<<<<<<< HEAD
-  public static func sendEvent(_ event: KovaleeFramework.Event)
-  public static func setAmplitudeUserId(userId: Swift.String)
-  public static func setUserProperty(key: Swift.String, value: Swift.String)
-}
-extension KovaleeFramework.KovaleeAnalytics {
-  public static func promptTrackingAuthorization(completion: @escaping (AppTrackingTransparency.ATTrackingManager.AuthorizationStatus) -> Swift.Void)
-  #if compiler(>=5.3) && $AsyncAwait
-  @discardableResult
-  public static func promptTrackingAuthorization() async -> AppTrackingTransparency.ATTrackingManager.AuthorizationStatus
-  #endif
-}
-extension KovaleeFramework.KovaleeAnalytics {
-  public static func setRevenueCatUserId(userId: Swift.String)
-  #if compiler(>=5.3) && $AsyncAwait
-  public static func customerInfo() async throws -> KovaleeFramework.CustomerInfo?
-  #endif
-  #if compiler(>=5.3) && $AsyncAwait
-  public static func fetchOfferings() async throws -> KovaleeFramework.Offerings?
-  #endif
-  #if compiler(>=5.3) && $AsyncAwait
-  public static func fetchCurrentOffering() async throws -> KovaleeFramework.Offering?
-  #endif
-  #if compiler(>=5.3) && $AsyncAwait
-  public static func restorePurchases() async throws -> KovaleeFramework.CustomerInfo?
-  #endif
-  #if compiler(>=5.3) && $AsyncAwait
-  public static func purchase(package: KovaleeFramework.Package) async throws -> KovaleeFramework.PurchaseResultData?
-  #endif
-}
-extension KovaleeFramework.KovaleeAnalytics {
-  public static func value(forKey key: Swift.String) -> KovaleeFramework.RemoteConfigValue?
-  public static func setDefaultValues(_ values: [Swift.String : Any])
-}
-extension KovaleeFramework.KovaleeAnalytics {
-  public static func setupfbAdProcessingOptions(options: KovaleeFramework.FBAdProcessingOptions)
-  public static func isApplovinInitialized() -> Swift.Bool
-  public static func showMediationDebugger()
-  public static func displayInterstitialAd()
-  public static func displayRewardedAd(andRewardCompletion completion: (() -> Swift.Void)?)
-  #if compiler(>=5.3) && $AsyncAwait
-  public static func displayRewardedAd() async
-  #endif
-}
-=======
-  public static func value(forKey key: Swift.String) -> KovaleeFramework.RemoteConfigValue?
-  public static func setDefaultValues(_ values: [Swift.String : Any])
-}
->>>>>>> 7c9bf72 (feat: new SDK version 0.6.0)
-public struct KovaleeConstants {
-  public static let keysFileName: Swift.String
-  public static let eventsFileSuffix: Swift.String
-  public static let eventsWithPropertiesFileSuffix: Swift.String
-  public static let purchaseCompleteEventName: Swift.String
-  public static let firstAppOpenEvent: Swift.String
-}
-public struct KovaleeKeys : Swift.Decodable {
-  public let appCode: Swift.String
-  public let adjust: Swift.String
-  public let amplitude: Swift.String
-  public let revenueCat: Swift.String
-  public let firebase: [Swift.String : Swift.String]
-  public let applovin: KovaleeFramework.KovaleeKeys.Applovin?
-  public let conversionValue: KovaleeFramework.KovaleeKeys.ConversionValue?
-  public struct Applovin : Swift.Decodable {
-    public init(from decoder: Swift.Decoder) throws
-  }
-  public struct ConversionValue : Swift.Decodable {
-    public let bottomTier: [Swift.String : Swift.Int]
-    public let topTier: [Swift.String : Swift.Int]
-    public let usTier: [Swift.String : Swift.Int]
-    public init(from decoder: Swift.Decoder) throws
-  }
-  public init(from decoder: Swift.Decoder) throws
-}
-public enum LogLevel : Swift.Int {
-  case verbose
-  case debug
-  case info
-  case warn
-  case error
-  public var description: Swift.String {
-    get
-  }
->>>>>>> 0e4a7ee (feat: completed third party tools integration)
   public init?(rawValue: Swift.Int)
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
@@ -331,153 +207,6 @@ public enum PurchaseOwnershipType : Swift.Int {
     get
   }
 }
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-public struct MAAd {
-  public var adUnitIdentifier: Swift.String
-  public var networkName: Swift.String
-  public var networkPlacement: Swift.String!
-  public var creativeIdentifier: Swift.String?
-  public var adReviewCreativeIdentifier: Swift.String?
-  public var revenue: Swift.Double
-}
-=======
->>>>>>> 65e3bc4 (framework 0.5.0)
-=======
-=======
-extension KovaleeFramework.KovaleeAnalytics {
-  public static func setupfbAdProcessingOptions(options: KovaleeFramework.FBAdProcessingOptions)
-  public static func showMediationDebugger()
-  public static func displayInterstitialAd()
-  public static func displayRewardedAd(andRewardCompletion completion: (() -> Swift.Void)?)
-  #if compiler(>=5.3) && $AsyncAwait
-  public static func displayRewardedAd() async
-  #endif
-}
->>>>>>> 7c9bf72 (feat: new SDK version 0.6.0)
->>>>>>> c30137e (feat: new SDK version 0.6.0)
-public struct FBAdProcessingOptions {
-  public var enableLDU: Swift.Bool
-  public var isCountryUS: Swift.Bool
-  public var isStateCalifornia: Swift.Bool
-  public var advertiserTrackingEnabled: Swift.Bool
-}
-<<<<<<< HEAD
-=======
-extension KovaleeFramework.KovaleeAnalytics {
-  public static func promptTrackingAuthorization(completion: @escaping (AppTrackingTransparency.ATTrackingManager.AuthorizationStatus) -> Swift.Void)
-  #if compiler(>=5.3) && $AsyncAwait
-  @discardableResult
-  public static func promptTrackingAuthorization() async -> AppTrackingTransparency.ATTrackingManager.AuthorizationStatus
-  #endif
-}
->>>>>>> 7c9bf72 (feat: new SDK version 0.6.0)
-public struct Configuration {
-  public enum Environment : Swift.String {
-    case sandbox
-    case production
-    case test
-    public init?(rawValue: Swift.String)
-    public typealias RawValue = Swift.String
-    public var rawValue: Swift.String {
-      get
-    }
-  }
-  public var environment: KovaleeFramework.Configuration.Environment
-  public var logLevel: KovaleeFramework.LogLevel
-  public init(environment: KovaleeFramework.Configuration.Environment, keysFileName: Swift.String = KovaleeConstants.keysFileName, logLevel: KovaleeFramework.LogLevel = .info)
-}
-<<<<<<< HEAD
-=======
-extension KovaleeFramework.KovaleeAnalytics {
-  public static func setRevenueCatUserId(userId: Swift.String)
-  #if compiler(>=5.3) && $AsyncAwait
-  public static func customerInfo() async throws -> KovaleeFramework.CustomerInfo?
-  #endif
-  #if compiler(>=5.3) && $AsyncAwait
-  public static func fetchOfferings() async throws -> KovaleeFramework.Offerings?
-  #endif
-  #if compiler(>=5.3) && $AsyncAwait
-  public static func fetchCurrentOffering() async throws -> KovaleeFramework.Offering?
-  #endif
-  #if compiler(>=5.3) && $AsyncAwait
-  public static func restorePurchases(fromSource source: Swift.String) async throws -> KovaleeFramework.CustomerInfo?
-  #endif
-  #if compiler(>=5.3) && $AsyncAwait
-  public static func purchase(package: KovaleeFramework.Package, fromSource source: Swift.String) async throws -> KovaleeFramework.PurchaseResultData?
-  #endif
-}
-extension KovaleeFramework.KovaleeAnalytics {
-  public static func sendEvent(_ event: KovaleeFramework.Event)
-  public static func setAmplitudeUserId(userId: Swift.String)
-  public static func setUserProperty(key: Swift.String, value: Swift.String)
-}
->>>>>>> 7c9bf72 (feat: new SDK version 0.6.0)
-@_hasMissingDesignatedInitializers public class CustomerInfo {
-  final public let entitlements: KovaleeFramework.EntitlementInfos
-  public var activeSubscriptions: Swift.Set<Swift.String>
-  final public let allPurchasedProductIdentifiers: Swift.Set<Swift.String>
-  public var latestExpirationDate: Foundation.Date?
-  final public let nonSubscriptions: [KovaleeFramework.NonSubscriptionTransaction]
-  final public let requestDate: Foundation.Date
-  final public let firstSeen: Foundation.Date
-  final public let originalAppUserId: Swift.String
-  final public let managementURL: Foundation.URL?
-  final public let originalPurchaseDate: Foundation.Date?
-  @objc deinit
-}
-@objc @_hasMissingDesignatedInitializers public class EntitlementInfos : ObjectiveC.NSObject {
-  final public let all: [Swift.String : KovaleeFramework.EntitlementInfo]
-  public subscript(key: Swift.String) -> KovaleeFramework.EntitlementInfo? {
-    get
-  }
-  @objc deinit
-}
-@objc @_hasMissingDesignatedInitializers public class EntitlementInfo : ObjectiveC.NSObject {
-  public var identifier: Swift.String
-  public var isActive: Swift.Bool
-  public var willRenew: Swift.Bool
-  public var periodType: KovaleeFramework.PeriodType
-  public var latestPurchaseDate: Foundation.Date?
-  public var originalPurchaseDate: Foundation.Date?
-  public var expirationDate: Foundation.Date?
-  public var store: KovaleeFramework.Store
-  public var productIdentifier: Swift.String
-  public var isSandbox: Swift.Bool
-  public var unsubscribeDetectedAt: Foundation.Date?
-  public var billingIssueDetectedAt: Foundation.Date?
-  public var ownershipType: KovaleeFramework.PurchaseOwnershipType
-  @objc deinit
-}
-@objc @_hasMissingDesignatedInitializers public class NonSubscriptionTransaction : ObjectiveC.NSObject {
-  final public let productIdentifier: Swift.String
-  final public let purchaseDate: Foundation.Date
-  final public let transactionIdentifier: Swift.String
-  @objc deinit
-}
-public enum PeriodType : Swift.Int {
-  case normal
-  case intro
-  case trial
-  public init?(rawValue: Swift.Int)
-  public typealias RawValue = Swift.Int
-  public var rawValue: Swift.Int {
-    get
-  }
-}
-public enum PurchaseOwnershipType : Swift.Int {
-  case purchased
-  case familyShared
-  case unknown
-  public init?(rawValue: Swift.Int)
-  public typealias RawValue = Swift.Int
-  public var rawValue: Swift.Int {
-    get
-  }
-}
->>>>>>> 0e4a7ee (feat: completed third party tools integration)
 public enum Store : Swift.Int {
   case appStore
   case macAppStore
@@ -624,33 +353,11 @@ public struct PurchaseResultData {
   public var customerInfo: KovaleeFramework.CustomerInfo
   public var userCancelled: Swift.Bool
 }
-<<<<<<< HEAD
-<<<<<<< HEAD
 extension KovaleeFramework.LogLevel : Swift.Hashable {}
 extension KovaleeFramework.LogLevel : Swift.RawRepresentable {}
 extension KovaleeFramework.Configuration.Environment : Swift.Equatable {}
 extension KovaleeFramework.Configuration.Environment : Swift.Hashable {}
 extension KovaleeFramework.Configuration.Environment : Swift.RawRepresentable {}
-=======
-extension KovaleeFramework.KovaleeConfiguration.Environment : Swift.Equatable {}
-extension KovaleeFramework.KovaleeConfiguration.Environment : Swift.Hashable {}
-extension KovaleeFramework.KovaleeConfiguration.Environment : Swift.RawRepresentable {}
-extension KovaleeFramework.LogLevel : Swift.Hashable {}
-extension KovaleeFramework.LogLevel : Swift.RawRepresentable {}
->>>>>>> 0e4a7ee (feat: completed third party tools integration)
-=======
-extension KovaleeFramework.LogLevel : Swift.Hashable {}
-extension KovaleeFramework.LogLevel : Swift.RawRepresentable {}
-<<<<<<< HEAD
-extension KovaleeFramework.KovaleeConfiguration.Environment : Swift.Equatable {}
-extension KovaleeFramework.KovaleeConfiguration.Environment : Swift.Hashable {}
-extension KovaleeFramework.KovaleeConfiguration.Environment : Swift.RawRepresentable {}
->>>>>>> 4df3d5b (updated framework with small fixes)
-=======
-extension KovaleeFramework.Configuration.Environment : Swift.Equatable {}
-extension KovaleeFramework.Configuration.Environment : Swift.Hashable {}
-extension KovaleeFramework.Configuration.Environment : Swift.RawRepresentable {}
->>>>>>> 65e3bc4 (framework 0.5.0)
 extension KovaleeFramework.PeriodType : Swift.Equatable {}
 extension KovaleeFramework.PeriodType : Swift.Hashable {}
 extension KovaleeFramework.PeriodType : Swift.RawRepresentable {}
