@@ -1,0 +1,4 @@
+framework module KovaleeSDK {
+  header "KovaleeSDK-Swift.h"
+  requires objc
+}
