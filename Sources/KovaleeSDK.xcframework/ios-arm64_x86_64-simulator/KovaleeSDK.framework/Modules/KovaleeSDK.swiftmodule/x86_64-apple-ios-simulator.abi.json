@@ -12,14 +12,28 @@
         "moduleName": "KovaleeSDK"
       },
       {
+        "kind": "Import",
+        "name": "AppTrackingTransparency",
+        "printedName": "AppTrackingTransparency",
+        "declKind": "Import",
+        "moduleName": "KovaleeSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "KovaleeSDK"
+      },
+      {
         "kind": "TypeDecl",
         "name": "KovaleeError",
         "printedName": "KovaleeError",
         "children": [
           {
             "kind": "Var",
-            "name": "userAlreadyPartecipatedInExperiment",
-            "printedName": "userAlreadyPartecipatedInExperiment",
+            "name": "remoteValueAlreadyUsedForABTest",
+            "printedName": "remoteValueAlreadyUsedForABTest",
             "children": [
               {
                 "kind": "TypeFunc",
@@ -49,8 +63,45 @@
               }
             ],
             "declKind": "EnumElement",
-            "usr": "s:10KovaleeSDK0A5ErrorO35userAlreadyPartecipatedInExperimentyA2CmF",
-            "mangledName": "$s10KovaleeSDK0A5ErrorO35userAlreadyPartecipatedInExperimentyA2CmF",
+            "usr": "s:10KovaleeSDK0A5ErrorO31remoteValueAlreadyUsedForABTestyA2CmF",
+            "mangledName": "$s10KovaleeSDK0A5ErrorO31remoteValueAlreadyUsedForABTestyA2CmF",
+            "moduleName": "KovaleeSDK"
+          },
+          {
+            "kind": "Var",
+            "name": "remoteValueFetchError",
+            "printedName": "remoteValueFetchError",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(KovaleeSDK.KovaleeError.Type) -> KovaleeSDK.KovaleeError",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "KovaleeError",
+                    "printedName": "KovaleeSDK.KovaleeError",
+                    "usr": "s:10KovaleeSDK0A5ErrorO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "KovaleeSDK.KovaleeError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "KovaleeError",
+                        "printedName": "KovaleeSDK.KovaleeError",
+                        "usr": "s:10KovaleeSDK0A5ErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:10KovaleeSDK0A5ErrorO016remoteValueFetchC0yA2CmF",
+            "mangledName": "$s10KovaleeSDK0A5ErrorO016remoteValueFetchC0yA2CmF",
             "moduleName": "KovaleeSDK"
           },
           {
@@ -1035,6 +1086,74 @@
           },
           {
             "kind": "Function",
+            "name": "promptTrackingAuthorization",
+            "printedName": "promptTrackingAuthorization(completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(AppTrackingTransparency.ATTrackingManager.AuthorizationStatus) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AuthorizationStatus",
+                    "printedName": "AppTrackingTransparency.ATTrackingManager.AuthorizationStatus",
+                    "usr": "c:@E@ATTrackingManagerAuthorizationStatus"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10KovaleeSDK0A0C27promptTrackingAuthorization10completionyySo017ATTrackingManagerE6StatusVc_tFZ",
+            "mangledName": "$s10KovaleeSDK0A0C27promptTrackingAuthorization10completionyySo017ATTrackingManagerE6StatusVc_tFZ",
+            "moduleName": "KovaleeSDK",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "promptTrackingAuthorization",
+            "printedName": "promptTrackingAuthorization()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "AuthorizationStatus",
+                "printedName": "AppTrackingTransparency.ATTrackingManager.AuthorizationStatus",
+                "usr": "c:@E@ATTrackingManagerAuthorizationStatus"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10KovaleeSDK0A0C27promptTrackingAuthorizationSo017ATTrackingManagerE6StatusVyYaFZ",
+            "mangledName": "$s10KovaleeSDK0A0C27promptTrackingAuthorizationSo017ATTrackingManagerE6StatusVyYaFZ",
+            "moduleName": "KovaleeSDK",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "DiscardableResult",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
             "name": "remoteValue",
             "printedName": "remoteValue(forKey:)",
             "children": [
@@ -1119,7 +1238,7 @@
           {
             "kind": "Function",
             "name": "abTestValue",
-            "printedName": "abTestValue(forKey:experimentName:)",
+            "printedName": "abTestValue(forKey:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -1140,51 +1259,11 @@
                 "name": "String",
                 "printedName": "Swift.String",
                 "usr": "s:SS"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
               }
             ],
             "declKind": "Func",
-            "usr": "s:10KovaleeSDK0A0C11abTestValue6forKey14experimentNameAA012RemoteConfigE0CSgSS_SStYaKFZ",
-            "mangledName": "$s10KovaleeSDK0A0C11abTestValue6forKey14experimentNameAA012RemoteConfigE0CSgSS_SStYaKFZ",
-            "moduleName": "KovaleeSDK",
-            "static": true,
-            "declAttributes": [
-              "Final",
-              "AccessControl",
-              "RawDocComment"
-            ],
-            "isFromExtension": true,
-            "throwing": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "experimentUserHasBeenPartOf",
-            "printedName": "experimentUserHasBeenPartOf()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "Swift.String?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "usr": "s:Sq"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:10KovaleeSDK0A0C27experimentUserHasBeenPartOfSSSgyFZ",
-            "mangledName": "$s10KovaleeSDK0A0C27experimentUserHasBeenPartOfSSSgyFZ",
+            "usr": "s:10KovaleeSDK0A0C11abTestValue6forKeyAA012RemoteConfigE0CSgSS_tYaFZ",
+            "mangledName": "$s10KovaleeSDK0A0C11abTestValue6forKeyAA012RemoteConfigE0CSgSS_tYaFZ",
             "moduleName": "KovaleeSDK",
             "static": true,
             "declAttributes": [
@@ -1341,74 +1420,6 @@
             "declAttributes": [
               "Final",
               "AccessControl",
-              "RawDocComment"
-            ],
-            "isFromExtension": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "promptTrackingAuthorization",
-            "printedName": "promptTrackingAuthorization(completion:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeFunc",
-                "name": "Function",
-                "printedName": "(AppTrackingTransparency.ATTrackingManager.AuthorizationStatus) -> ()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "AuthorizationStatus",
-                    "printedName": "AppTrackingTransparency.ATTrackingManager.AuthorizationStatus",
-                    "usr": "c:@E@ATTrackingManagerAuthorizationStatus"
-                  }
-                ]
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:10KovaleeSDK0A0C27promptTrackingAuthorization10completionyySo017ATTrackingManagerE6StatusVc_tFZ",
-            "mangledName": "$s10KovaleeSDK0A0C27promptTrackingAuthorization10completionyySo017ATTrackingManagerE6StatusVc_tFZ",
-            "moduleName": "KovaleeSDK",
-            "static": true,
-            "declAttributes": [
-              "Final",
-              "AccessControl",
-              "RawDocComment"
-            ],
-            "isFromExtension": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "promptTrackingAuthorization",
-            "printedName": "promptTrackingAuthorization()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "AuthorizationStatus",
-                "printedName": "AppTrackingTransparency.ATTrackingManager.AuthorizationStatus",
-                "usr": "c:@E@ATTrackingManagerAuthorizationStatus"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:10KovaleeSDK0A0C27promptTrackingAuthorizationSo017ATTrackingManagerE6StatusVyYaFZ",
-            "mangledName": "$s10KovaleeSDK0A0C27promptTrackingAuthorizationSo017ATTrackingManagerE6StatusVyYaFZ",
-            "moduleName": "KovaleeSDK",
-            "static": true,
-            "declAttributes": [
-              "Final",
-              "AccessControl",
-              "DiscardableResult",
               "RawDocComment"
             ],
             "isFromExtension": true,
@@ -3013,6 +3024,330 @@
         "moduleName": "KovaleeSDK"
       },
       {
+        "kind": "TypeDecl",
+        "name": "BasicEvent",
+        "printedName": "BasicEvent",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "pageView",
+            "printedName": "pageView",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(KovaleeSDK.BasicEvent.Type) -> (Swift.String) -> KovaleeSDK.BasicEvent",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Swift.String) -> KovaleeSDK.BasicEvent",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "BasicEvent",
+                        "printedName": "KovaleeSDK.BasicEvent",
+                        "usr": "s:10KovaleeSDK10BasicEventO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Tuple",
+                        "printedName": "(screen: Swift.String)",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "KovaleeSDK.BasicEvent.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "BasicEvent",
+                        "printedName": "KovaleeSDK.BasicEvent",
+                        "usr": "s:10KovaleeSDK10BasicEventO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:10KovaleeSDK10BasicEventO8pageViewyACSS_tcACmF",
+            "mangledName": "$s10KovaleeSDK10BasicEventO8pageViewyACSS_tcACmF",
+            "moduleName": "KovaleeSDK"
+          },
+          {
+            "kind": "Var",
+            "name": "pageViewPaywall",
+            "printedName": "pageViewPaywall",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(KovaleeSDK.BasicEvent.Type) -> (Swift.String) -> KovaleeSDK.BasicEvent",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Swift.String) -> KovaleeSDK.BasicEvent",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "BasicEvent",
+                        "printedName": "KovaleeSDK.BasicEvent",
+                        "usr": "s:10KovaleeSDK10BasicEventO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Tuple",
+                        "printedName": "(source: Swift.String)",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "KovaleeSDK.BasicEvent.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "BasicEvent",
+                        "printedName": "KovaleeSDK.BasicEvent",
+                        "usr": "s:10KovaleeSDK10BasicEventO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:10KovaleeSDK10BasicEventO15pageViewPaywallyACSS_tcACmF",
+            "mangledName": "$s10KovaleeSDK10BasicEventO15pageViewPaywallyACSS_tcACmF",
+            "moduleName": "KovaleeSDK"
+          },
+          {
+            "kind": "Var",
+            "name": "notificationActivate",
+            "printedName": "notificationActivate",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(KovaleeSDK.BasicEvent.Type) -> KovaleeSDK.BasicEvent",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "BasicEvent",
+                    "printedName": "KovaleeSDK.BasicEvent",
+                    "usr": "s:10KovaleeSDK10BasicEventO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "KovaleeSDK.BasicEvent.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "BasicEvent",
+                        "printedName": "KovaleeSDK.BasicEvent",
+                        "usr": "s:10KovaleeSDK10BasicEventO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:10KovaleeSDK10BasicEventO20notificationActivateyA2CmF",
+            "mangledName": "$s10KovaleeSDK10BasicEventO20notificationActivateyA2CmF",
+            "moduleName": "KovaleeSDK"
+          },
+          {
+            "kind": "Var",
+            "name": "notificationDeactivate",
+            "printedName": "notificationDeactivate",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(KovaleeSDK.BasicEvent.Type) -> KovaleeSDK.BasicEvent",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "BasicEvent",
+                    "printedName": "KovaleeSDK.BasicEvent",
+                    "usr": "s:10KovaleeSDK10BasicEventO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "KovaleeSDK.BasicEvent.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "BasicEvent",
+                        "printedName": "KovaleeSDK.BasicEvent",
+                        "usr": "s:10KovaleeSDK10BasicEventO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:10KovaleeSDK10BasicEventO22notificationDeactivateyA2CmF",
+            "mangledName": "$s10KovaleeSDK10BasicEventO22notificationDeactivateyA2CmF",
+            "moduleName": "KovaleeSDK"
+          },
+          {
+            "kind": "Var",
+            "name": "acClick",
+            "printedName": "acClick",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(KovaleeSDK.BasicEvent.Type) -> (Swift.String) -> KovaleeSDK.BasicEvent",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Swift.String) -> KovaleeSDK.BasicEvent",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "BasicEvent",
+                        "printedName": "KovaleeSDK.BasicEvent",
+                        "usr": "s:10KovaleeSDK10BasicEventO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Tuple",
+                        "printedName": "(name: Swift.String)",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "KovaleeSDK.BasicEvent.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "BasicEvent",
+                        "printedName": "KovaleeSDK.BasicEvent",
+                        "usr": "s:10KovaleeSDK10BasicEventO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:10KovaleeSDK10BasicEventO7acClickyACSS_tcACmF",
+            "mangledName": "$s10KovaleeSDK10BasicEventO7acClickyACSS_tcACmF",
+            "moduleName": "KovaleeSDK"
+          },
+          {
+            "kind": "Var",
+            "name": "acContentClick",
+            "printedName": "acContentClick",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(KovaleeSDK.BasicEvent.Type) -> (Swift.String) -> KovaleeSDK.BasicEvent",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Swift.String) -> KovaleeSDK.BasicEvent",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "BasicEvent",
+                        "printedName": "KovaleeSDK.BasicEvent",
+                        "usr": "s:10KovaleeSDK10BasicEventO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Tuple",
+                        "printedName": "(name: Swift.String)",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "KovaleeSDK.BasicEvent.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "BasicEvent",
+                        "printedName": "KovaleeSDK.BasicEvent",
+                        "usr": "s:10KovaleeSDK10BasicEventO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:10KovaleeSDK10BasicEventO14acContentClickyACSS_tcACmF",
+            "mangledName": "$s10KovaleeSDK10BasicEventO14acContentClickyACSS_tcACmF",
+            "moduleName": "KovaleeSDK"
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:10KovaleeSDK10BasicEventO",
+        "mangledName": "$s10KovaleeSDK10BasicEventO",
+        "moduleName": "KovaleeSDK",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "KovaleeSDK"
+      },
+      {
         "kind": "Import",
         "name": "AppLovinSDK",
         "printedName": "AppLovinSDK",
@@ -3398,344 +3733,6 @@
         "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "KovaleeSDK"
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "KovaleeSDK"
-      },
-      {
-        "kind": "TypeDecl",
-        "name": "BasicEvent",
-        "printedName": "BasicEvent",
-        "children": [
-          {
-            "kind": "Var",
-            "name": "pageView",
-            "printedName": "pageView",
-            "children": [
-              {
-                "kind": "TypeFunc",
-                "name": "Function",
-                "printedName": "(KovaleeSDK.BasicEvent.Type) -> (Swift.String) -> KovaleeSDK.BasicEvent",
-                "children": [
-                  {
-                    "kind": "TypeFunc",
-                    "name": "Function",
-                    "printedName": "(Swift.String) -> KovaleeSDK.BasicEvent",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "BasicEvent",
-                        "printedName": "KovaleeSDK.BasicEvent",
-                        "usr": "s:10KovaleeSDK10BasicEventO"
-                      },
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Tuple",
-                        "printedName": "(screen: Swift.String)",
-                        "children": [
-                          {
-                            "kind": "TypeNominal",
-                            "name": "String",
-                            "printedName": "Swift.String",
-                            "usr": "s:SS"
-                          }
-                        ]
-                      }
-                    ]
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Metatype",
-                    "printedName": "KovaleeSDK.BasicEvent.Type",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "BasicEvent",
-                        "printedName": "KovaleeSDK.BasicEvent",
-                        "usr": "s:10KovaleeSDK10BasicEventO"
-                      }
-                    ]
-                  }
-                ]
-              }
-            ],
-            "declKind": "EnumElement",
-            "usr": "s:10KovaleeSDK10BasicEventO8pageViewyACSS_tcACmF",
-            "mangledName": "$s10KovaleeSDK10BasicEventO8pageViewyACSS_tcACmF",
-            "moduleName": "KovaleeSDK"
-          },
-          {
-            "kind": "Var",
-            "name": "pageViewPaywall",
-            "printedName": "pageViewPaywall",
-            "children": [
-              {
-                "kind": "TypeFunc",
-                "name": "Function",
-                "printedName": "(KovaleeSDK.BasicEvent.Type) -> (Swift.String) -> KovaleeSDK.BasicEvent",
-                "children": [
-                  {
-                    "kind": "TypeFunc",
-                    "name": "Function",
-                    "printedName": "(Swift.String) -> KovaleeSDK.BasicEvent",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "BasicEvent",
-                        "printedName": "KovaleeSDK.BasicEvent",
-                        "usr": "s:10KovaleeSDK10BasicEventO"
-                      },
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Tuple",
-                        "printedName": "(source: Swift.String)",
-                        "children": [
-                          {
-                            "kind": "TypeNominal",
-                            "name": "String",
-                            "printedName": "Swift.String",
-                            "usr": "s:SS"
-                          }
-                        ]
-                      }
-                    ]
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Metatype",
-                    "printedName": "KovaleeSDK.BasicEvent.Type",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "BasicEvent",
-                        "printedName": "KovaleeSDK.BasicEvent",
-                        "usr": "s:10KovaleeSDK10BasicEventO"
-                      }
-                    ]
-                  }
-                ]
-              }
-            ],
-            "declKind": "EnumElement",
-            "usr": "s:10KovaleeSDK10BasicEventO15pageViewPaywallyACSS_tcACmF",
-            "mangledName": "$s10KovaleeSDK10BasicEventO15pageViewPaywallyACSS_tcACmF",
-            "moduleName": "KovaleeSDK"
-          },
-          {
-            "kind": "Var",
-            "name": "notificationActivate",
-            "printedName": "notificationActivate",
-            "children": [
-              {
-                "kind": "TypeFunc",
-                "name": "Function",
-                "printedName": "(KovaleeSDK.BasicEvent.Type) -> KovaleeSDK.BasicEvent",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "BasicEvent",
-                    "printedName": "KovaleeSDK.BasicEvent",
-                    "usr": "s:10KovaleeSDK10BasicEventO"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Metatype",
-                    "printedName": "KovaleeSDK.BasicEvent.Type",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "BasicEvent",
-                        "printedName": "KovaleeSDK.BasicEvent",
-                        "usr": "s:10KovaleeSDK10BasicEventO"
-                      }
-                    ]
-                  }
-                ]
-              }
-            ],
-            "declKind": "EnumElement",
-            "usr": "s:10KovaleeSDK10BasicEventO20notificationActivateyA2CmF",
-            "mangledName": "$s10KovaleeSDK10BasicEventO20notificationActivateyA2CmF",
-            "moduleName": "KovaleeSDK"
-          },
-          {
-            "kind": "Var",
-            "name": "notificationDeactivate",
-            "printedName": "notificationDeactivate",
-            "children": [
-              {
-                "kind": "TypeFunc",
-                "name": "Function",
-                "printedName": "(KovaleeSDK.BasicEvent.Type) -> KovaleeSDK.BasicEvent",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "BasicEvent",
-                    "printedName": "KovaleeSDK.BasicEvent",
-                    "usr": "s:10KovaleeSDK10BasicEventO"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Metatype",
-                    "printedName": "KovaleeSDK.BasicEvent.Type",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "BasicEvent",
-                        "printedName": "KovaleeSDK.BasicEvent",
-                        "usr": "s:10KovaleeSDK10BasicEventO"
-                      }
-                    ]
-                  }
-                ]
-              }
-            ],
-            "declKind": "EnumElement",
-            "usr": "s:10KovaleeSDK10BasicEventO22notificationDeactivateyA2CmF",
-            "mangledName": "$s10KovaleeSDK10BasicEventO22notificationDeactivateyA2CmF",
-            "moduleName": "KovaleeSDK"
-          },
-          {
-            "kind": "Var",
-            "name": "acClick",
-            "printedName": "acClick",
-            "children": [
-              {
-                "kind": "TypeFunc",
-                "name": "Function",
-                "printedName": "(KovaleeSDK.BasicEvent.Type) -> (Swift.String) -> KovaleeSDK.BasicEvent",
-                "children": [
-                  {
-                    "kind": "TypeFunc",
-                    "name": "Function",
-                    "printedName": "(Swift.String) -> KovaleeSDK.BasicEvent",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "BasicEvent",
-                        "printedName": "KovaleeSDK.BasicEvent",
-                        "usr": "s:10KovaleeSDK10BasicEventO"
-                      },
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Tuple",
-                        "printedName": "(name: Swift.String)",
-                        "children": [
-                          {
-                            "kind": "TypeNominal",
-                            "name": "String",
-                            "printedName": "Swift.String",
-                            "usr": "s:SS"
-                          }
-                        ]
-                      }
-                    ]
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Metatype",
-                    "printedName": "KovaleeSDK.BasicEvent.Type",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "BasicEvent",
-                        "printedName": "KovaleeSDK.BasicEvent",
-                        "usr": "s:10KovaleeSDK10BasicEventO"
-                      }
-                    ]
-                  }
-                ]
-              }
-            ],
-            "declKind": "EnumElement",
-            "usr": "s:10KovaleeSDK10BasicEventO7acClickyACSS_tcACmF",
-            "mangledName": "$s10KovaleeSDK10BasicEventO7acClickyACSS_tcACmF",
-            "moduleName": "KovaleeSDK"
-          },
-          {
-            "kind": "Var",
-            "name": "acContentClick",
-            "printedName": "acContentClick",
-            "children": [
-              {
-                "kind": "TypeFunc",
-                "name": "Function",
-                "printedName": "(KovaleeSDK.BasicEvent.Type) -> (Swift.String) -> KovaleeSDK.BasicEvent",
-                "children": [
-                  {
-                    "kind": "TypeFunc",
-                    "name": "Function",
-                    "printedName": "(Swift.String) -> KovaleeSDK.BasicEvent",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "BasicEvent",
-                        "printedName": "KovaleeSDK.BasicEvent",
-                        "usr": "s:10KovaleeSDK10BasicEventO"
-                      },
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Tuple",
-                        "printedName": "(name: Swift.String)",
-                        "children": [
-                          {
-                            "kind": "TypeNominal",
-                            "name": "String",
-                            "printedName": "Swift.String",
-                            "usr": "s:SS"
-                          }
-                        ]
-                      }
-                    ]
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Metatype",
-                    "printedName": "KovaleeSDK.BasicEvent.Type",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "BasicEvent",
-                        "printedName": "KovaleeSDK.BasicEvent",
-                        "usr": "s:10KovaleeSDK10BasicEventO"
-                      }
-                    ]
-                  }
-                ]
-              }
-            ],
-            "declKind": "EnumElement",
-            "usr": "s:10KovaleeSDK10BasicEventO14acContentClickyACSS_tcACmF",
-            "mangledName": "$s10KovaleeSDK10BasicEventO14acContentClickyACSS_tcACmF",
-            "moduleName": "KovaleeSDK"
-          }
-        ],
-        "declKind": "Enum",
-        "usr": "s:10KovaleeSDK10BasicEventO",
-        "mangledName": "$s10KovaleeSDK10BasicEventO",
-        "moduleName": "KovaleeSDK",
-        "declAttributes": [
-          "AccessControl",
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "KovaleeSDK"
-      },
-      {
-        "kind": "Import",
-        "name": "AppTrackingTransparency",
-        "printedName": "AppTrackingTransparency",
         "declKind": "Import",
         "moduleName": "KovaleeSDK"
       },
@@ -14459,1239 +14456,1239 @@
   },
   "ConstValues": [
     {
-      "filePath": "\/Users\/filippo\/Projects\/KovaleeSDK\/KovaleeFramework\/KovaleeFramework\/Adjust\/AdjustWrapper.swift",
+      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/Adjust\/AdjustWrapper.swift",
       "kind": "StringLiteral",
       "offset": 818,
       "length": 13,
       "value": "\"KovaleeSDK.AdjustWrapper\""
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/KovaleeSDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/Event.swift",
+      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/Event.swift",
       "kind": "StringLiteral",
       "offset": 3298,
       "length": 6,
       "value": "\"name\""
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/KovaleeSDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/Event.swift",
+      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/Event.swift",
       "kind": "StringLiteral",
       "offset": 3325,
       "length": 6,
       "value": "\"type\""
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/KovaleeSDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/Event.swift",
+      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/Event.swift",
       "kind": "StringLiteral",
       "offset": 3357,
       "length": 12,
       "value": "\"key_action\""
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/KovaleeSDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/Event.swift",
+      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/Event.swift",
       "kind": "StringLiteral",
       "offset": 3395,
       "length": 12,
       "value": "\"product_id\""
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/KovaleeSDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/Event.swift",
+      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/Event.swift",
       "kind": "StringLiteral",
       "offset": 3298,
       "length": 6,
       "value": "\"name\""
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/KovaleeSDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/Event.swift",
+      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/Event.swift",
       "kind": "StringLiteral",
       "offset": 3325,
       "length": 6,
       "value": "\"type\""
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/KovaleeSDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/Event.swift",
+      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/Event.swift",
       "kind": "StringLiteral",
       "offset": 3357,
       "length": 12,
       "value": "\"key_action\""
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/KovaleeSDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/Event.swift",
+      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/Event.swift",
       "kind": "StringLiteral",
       "offset": 3395,
       "length": 12,
       "value": "\"product_id\""
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/KovaleeSDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/EventsQueue.swift",
+      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/EventsQueue.swift",
       "kind": "IntegerLiteral",
       "offset": 125,
       "length": 1,
       "value": "5"
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/KovaleeSDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/EventsSequence.swift",
+      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/EventsSequence.swift",
       "kind": "StringLiteral",
       "offset": 64,
       "length": 4,
       "value": "\"us\""
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/KovaleeSDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/EventsSequence.swift",
+      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/EventsSequence.swift",
       "kind": "StringLiteral",
       "offset": 88,
       "length": 10,
       "value": "\"top_tier\""
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/KovaleeSDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/EventsSequence.swift",
+      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/EventsSequence.swift",
       "kind": "StringLiteral",
       "offset": 121,
       "length": 13,
       "value": "\"bottom_tier\""
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/KovaleeSDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/EventsSequence.swift",
+      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/EventsSequence.swift",
       "kind": "StringLiteral",
       "offset": 64,
       "length": 4,
       "value": "\"us\""
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/KovaleeSDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/EventsSequence.swift",
+      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/EventsSequence.swift",
       "kind": "StringLiteral",
       "offset": 88,
       "length": 10,
       "value": "\"top_tier\""
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/KovaleeSDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/EventsSequence.swift",
+      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/EventsSequence.swift",
       "kind": "StringLiteral",
       "offset": 121,
       "length": 13,
       "value": "\"bottom_tier\""
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/KovaleeSDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/EventsSequence.swift",
+      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/EventsSequence.swift",
       "kind": "StringLiteral",
       "offset": 799,
       "length": 8,
       "value": "\"sess_1\""
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/KovaleeSDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/EventsSequence.swift",
+      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/EventsSequence.swift",
       "kind": "StringLiteral",
       "offset": 824,
       "length": 4,
       "value": "\"D0\""
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/KovaleeSDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/EventsSequence.swift",
+      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/EventsSequence.swift",
       "kind": "StringLiteral",
       "offset": 845,
       "length": 4,
       "value": "\"D1\""
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/KovaleeSDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/EventsSequence.swift",
+      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/EventsSequence.swift",
       "kind": "StringLiteral",
       "offset": 866,
       "length": 4,
       "value": "\"D2\""
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/KovaleeSDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/EventsSequence.swift",
+      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/EventsSequence.swift",
       "kind": "StringLiteral",
       "offset": 887,
       "length": 4,
       "value": "\"D3\""
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/KovaleeSDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/EventsSequence.swift",
+      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/EventsSequence.swift",
       "kind": "StringLiteral",
       "offset": 799,
       "length": 8,
       "value": "\"sess_1\""
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/KovaleeSDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/EventsSequence.swift",
+      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/EventsSequence.swift",
       "kind": "StringLiteral",
       "offset": 824,
       "length": 4,
       "value": "\"D0\""
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/KovaleeSDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/EventsSequence.swift",
+      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/EventsSequence.swift",
       "kind": "StringLiteral",
       "offset": 845,
       "length": 4,
       "value": "\"D1\""
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/KovaleeSDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/EventsSequence.swift",
+      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/EventsSequence.swift",
       "kind": "StringLiteral",
       "offset": 866,
       "length": 4,
       "value": "\"D2\""
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/KovaleeSDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/EventsSequence.swift",
+      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/EventsSequence.swift",
       "kind": "StringLiteral",
       "offset": 887,
       "length": 4,
       "value": "\"D3\""
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/KovaleeSDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/FixedSizeQueue.swift",
+      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/FixedSizeQueue.swift",
       "kind": "IntegerLiteral",
       "offset": 240,
       "length": 2,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/KovaleeSDK\/KovaleeFramework\/KovaleeFramework\/Utils\/KovaleeConstants.swift",
+      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/Utils\/KovaleeConstants.swift",
       "kind": "StringLiteral",
       "offset": 89,
       "length": 13,
       "value": "\"KovaleeKeys\""
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/KovaleeSDK\/KovaleeFramework\/KovaleeFramework\/Utils\/KovaleeConstants.swift",
+      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/Utils\/KovaleeConstants.swift",
       "kind": "StringLiteral",
       "offset": 137,
       "length": 21,
       "value": "\"ios_events_included\""
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/KovaleeSDK\/KovaleeFramework\/KovaleeFramework\/Utils\/KovaleeConstants.swift",
+      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/Utils\/KovaleeConstants.swift",
       "kind": "StringLiteral",
       "offset": 207,
       "length": 43,
       "value": "\"ios_events_with_event_properties_included\""
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/KovaleeSDK\/KovaleeFramework\/KovaleeFramework\/Utils\/KovaleeConstants.swift",
+      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/Utils\/KovaleeConstants.swift",
       "kind": "StringLiteral",
       "offset": 294,
       "length": 16,
       "value": "\"payment_finish\""
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/KovaleeSDK\/KovaleeFramework\/KovaleeFramework\/Utils\/KovaleeConstants.swift",
+      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/Utils\/KovaleeConstants.swift",
       "kind": "StringLiteral",
       "offset": 346,
       "length": 16,
       "value": "\"first_app_open\""
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/KovaleeSDK\/KovaleeFramework\/KovaleeFramework\/Logger\/LogLevel.swift",
+      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/Logger\/LogLevel.swift",
       "kind": "IntegerLiteral",
       "offset": 118,
       "length": 1,
       "value": "4"
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/KovaleeSDK\/KovaleeFramework\/KovaleeFramework\/Logger\/LogLevel.swift",
+      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/Logger\/LogLevel.swift",
       "kind": "IntegerLiteral",
       "offset": 170,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/KovaleeSDK\/KovaleeFramework\/KovaleeFramework\/Logger\/LogLevel.swift",
+      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/Logger\/LogLevel.swift",
       "kind": "IntegerLiteral",
       "offset": 225,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/KovaleeSDK\/KovaleeFramework\/KovaleeFramework\/Logger\/LogLevel.swift",
+      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/Logger\/LogLevel.swift",
       "kind": "IntegerLiteral",
       "offset": 289,
       "length": 1,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/KovaleeSDK\/KovaleeFramework\/KovaleeFramework\/Logger\/LogLevel.swift",
+      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/Logger\/LogLevel.swift",
       "kind": "IntegerLiteral",
       "offset": 361,
       "length": 1,
       "value": "3"
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/KovaleeSDK\/KovaleeFramework\/KovaleeFramework\/Logger\/LogLevel.swift",
+      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/Logger\/LogLevel.swift",
       "kind": "IntegerLiteral",
       "offset": 118,
       "length": 1,
       "value": "4"
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/KovaleeSDK\/KovaleeFramework\/KovaleeFramework\/Logger\/LogLevel.swift",
+      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/Logger\/LogLevel.swift",
       "kind": "IntegerLiteral",
       "offset": 170,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/KovaleeSDK\/KovaleeFramework\/KovaleeFramework\/Logger\/LogLevel.swift",
+      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/Logger\/LogLevel.swift",
       "kind": "IntegerLiteral",
       "offset": 225,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/KovaleeSDK\/KovaleeFramework\/KovaleeFramework\/Logger\/LogLevel.swift",
+      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/Logger\/LogLevel.swift",
       "kind": "IntegerLiteral",
       "offset": 289,
       "length": 1,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/KovaleeSDK\/KovaleeFramework\/KovaleeFramework\/Logger\/LogLevel.swift",
+      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/Logger\/LogLevel.swift",
       "kind": "IntegerLiteral",
       "offset": 361,
       "length": 1,
       "value": "3"
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/KovaleeSDK\/KovaleeFramework\/KovaleeFramework\/Logger\/LogLevel.swift",
+      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/Logger\/LogLevel.swift",
       "kind": "IntegerLiteral",
       "offset": 118,
       "length": 1,
       "value": "4"
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/KovaleeSDK\/KovaleeFramework\/KovaleeFramework\/Logger\/LogLevel.swift",
+      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/Logger\/LogLevel.swift",
       "kind": "IntegerLiteral",
       "offset": 170,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/KovaleeSDK\/KovaleeFramework\/KovaleeFramework\/Logger\/LogLevel.swift",
+      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/Logger\/LogLevel.swift",
       "kind": "IntegerLiteral",
       "offset": 225,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/KovaleeSDK\/KovaleeFramework\/KovaleeFramework\/Logger\/LogLevel.swift",
+      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/Logger\/LogLevel.swift",
       "kind": "IntegerLiteral",
       "offset": 289,
       "length": 1,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/KovaleeSDK\/KovaleeFramework\/KovaleeFramework\/Logger\/LogLevel.swift",
+      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/Logger\/LogLevel.swift",
       "kind": "IntegerLiteral",
       "offset": 361,
       "length": 1,
       "value": "3"
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/KovaleeSDK\/KovaleeFramework\/KovaleeFramework\/Applovin\/ApplovingWrapper.swift",
+      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/Applovin\/ApplovingWrapper.swift",
       "kind": "FloatLiteral",
       "offset": 2322,
       "length": 3,
       "value": "0.0"
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/KovaleeSDK\/KovaleeFramework\/KovaleeFramework\/Applovin\/ApplovingWrapper.swift",
+      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/Applovin\/ApplovingWrapper.swift",
       "kind": "StringLiteral",
       "offset": 111,
       "length": 15,
       "value": "\"KovaleeSDK.ApplovinWrapper\""
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/KovaleeSDK\/KovaleeFramework\/KovaleeFramework\/Logger\/Logger.swift",
+      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/Logger\/Logger.swift",
       "kind": "BooleanLiteral",
       "offset": 459,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/KovaleeSDK\/KovaleeFramework\/KovaleeFramework\/RevenueCat\/RevenueCatWrapper.swift",
+      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/RevenueCat\/RevenueCatWrapper.swift",
       "kind": "StringLiteral",
       "offset": 64,
       "length": 17,
       "value": "\"KovaleeSDK.RevenueCatWrapper\""
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/KovaleeSDK\/KovaleeFramework\/KovaleeFramework\/Utils\/Storage.swift",
+      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/Utils\/Storage.swift",
       "kind": "StringLiteral",
       "offset": 71,
       "length": 20,
       "value": "\"KV_is_user_premium\""
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/KovaleeSDK\/KovaleeFramework\/KovaleeFramework\/Utils\/Storage.swift",
+      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/Utils\/Storage.swift",
       "kind": "StringLiteral",
       "offset": 118,
       "length": 21,
       "value": "\"KV_app_opened_count\""
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/KovaleeSDK\/KovaleeFramework\/KovaleeFramework\/Utils\/Storage.swift",
+      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/Utils\/Storage.swift",
       "kind": "StringLiteral",
       "offset": 171,
       "length": 26,
       "value": "\"KV_app_installation_date\""
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/KovaleeSDK\/KovaleeFramework\/KovaleeFramework\/Utils\/Storage.swift",
+      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/Utils\/Storage.swift",
       "kind": "StringLiteral",
       "offset": 226,
       "length": 22,
       "value": "\"KV_user_subscription\""
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/KovaleeSDK\/KovaleeFramework\/KovaleeFramework\/Utils\/Storage.swift",
+      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/Utils\/Storage.swift",
       "kind": "StringLiteral",
       "offset": 276,
       "length": 21,
       "value": "\"KV_conversion_value\""
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/KovaleeSDK\/KovaleeFramework\/KovaleeFramework\/Utils\/Storage.swift",
+      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/Utils\/Storage.swift",
       "kind": "StringLiteral",
       "offset": 325,
       "length": 22,
       "value": "\"KV_amplitude_user_id\""
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/KovaleeSDK\/KovaleeFramework\/KovaleeFramework\/Utils\/Storage.swift",
+      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/Utils\/Storage.swift",
       "kind": "StringLiteral",
       "offset": 377,
       "length": 25,
       "value": "\"KV_is_first_app_opening\""
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/KovaleeSDK\/KovaleeFramework\/KovaleeFramework\/Utils\/Storage.swift",
+      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/Utils\/Storage.swift",
       "kind": "StringLiteral",
       "offset": 432,
       "length": 24,
-      "value": "\"KV_remote_config_value\""
+      "value": "\"KV_ab_experiment_value\""
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/KovaleeSDK\/KovaleeFramework\/KovaleeFramework\/Utils\/Storage.swift",
+      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/Utils\/Storage.swift",
       "kind": "StringLiteral",
-      "offset": 485,
-      "length": 23,
-      "value": "\"KV_ab_experiment_name\""
+      "offset": 484,
+      "length": 22,
+      "value": "\"KV_ab_experiment_key\""
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/KovaleeSDK\/KovaleeFramework\/KovaleeFramework\/Utils\/Storage.swift",
+      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/Utils\/Storage.swift",
       "kind": "StringLiteral",
       "offset": 71,
       "length": 20,
       "value": "\"KV_is_user_premium\""
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/KovaleeSDK\/KovaleeFramework\/KovaleeFramework\/Utils\/Storage.swift",
+      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/Utils\/Storage.swift",
       "kind": "StringLiteral",
       "offset": 118,
       "length": 21,
       "value": "\"KV_app_opened_count\""
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/KovaleeSDK\/KovaleeFramework\/KovaleeFramework\/Utils\/Storage.swift",
+      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/Utils\/Storage.swift",
       "kind": "StringLiteral",
       "offset": 171,
       "length": 26,
       "value": "\"KV_app_installation_date\""
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/KovaleeSDK\/KovaleeFramework\/KovaleeFramework\/Utils\/Storage.swift",
+      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/Utils\/Storage.swift",
       "kind": "StringLiteral",
       "offset": 226,
       "length": 22,
       "value": "\"KV_user_subscription\""
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/KovaleeSDK\/KovaleeFramework\/KovaleeFramework\/Utils\/Storage.swift",
+      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/Utils\/Storage.swift",
       "kind": "StringLiteral",
       "offset": 276,
       "length": 21,
       "value": "\"KV_conversion_value\""
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/KovaleeSDK\/KovaleeFramework\/KovaleeFramework\/Utils\/Storage.swift",
+      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/Utils\/Storage.swift",
       "kind": "StringLiteral",
       "offset": 325,
       "length": 22,
       "value": "\"KV_amplitude_user_id\""
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/KovaleeSDK\/KovaleeFramework\/KovaleeFramework\/Utils\/Storage.swift",
+      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/Utils\/Storage.swift",
       "kind": "StringLiteral",
       "offset": 377,
       "length": 25,
       "value": "\"KV_is_first_app_opening\""
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/KovaleeSDK\/KovaleeFramework\/KovaleeFramework\/Utils\/Storage.swift",
+      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/Utils\/Storage.swift",
       "kind": "StringLiteral",
       "offset": 432,
       "length": 24,
-      "value": "\"KV_remote_config_value\""
+      "value": "\"KV_ab_experiment_value\""
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/KovaleeSDK\/KovaleeFramework\/KovaleeFramework\/Utils\/Storage.swift",
+      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/Utils\/Storage.swift",
       "kind": "StringLiteral",
-      "offset": 485,
-      "length": 23,
-      "value": "\"KV_ab_experiment_name\""
+      "offset": 484,
+      "length": 22,
+      "value": "\"KV_ab_experiment_key\""
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/KovaleeSDK\/KovaleeFramework\/KovaleeFramework\/RevenueCat\/StoreDataModel.swift",
+      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/RevenueCat\/StoreDataModel.swift",
       "kind": "StringLiteral",
       "offset": 2506,
       "length": 16,
       "value": "\"KovaleeSDK.EntitlementInfos\""
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/KovaleeSDK\/KovaleeFramework\/KovaleeFramework\/RevenueCat\/StoreDataModel.swift",
+      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/RevenueCat\/StoreDataModel.swift",
       "kind": "StringLiteral",
       "offset": 3339,
       "length": 15,
       "value": "\"KovaleeSDK.EntitlementInfo\""
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/KovaleeSDK\/KovaleeFramework\/KovaleeFramework\/RevenueCat\/StoreDataModel.swift",
+      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/RevenueCat\/StoreDataModel.swift",
       "kind": "StringLiteral",
       "offset": 6215,
       "length": 26,
       "value": "\"KovaleeSDK.NonSubscriptionTransaction\""
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/KovaleeSDK\/KovaleeFramework\/KovaleeFramework\/RevenueCat\/StoreDataModel.swift",
+      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/RevenueCat\/StoreDataModel.swift",
       "kind": "IntegerLiteral",
       "offset": 6903,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/KovaleeSDK\/KovaleeFramework\/KovaleeFramework\/RevenueCat\/StoreDataModel.swift",
+      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/RevenueCat\/StoreDataModel.swift",
       "kind": "IntegerLiteral",
       "offset": 6988,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/KovaleeSDK\/KovaleeFramework\/KovaleeFramework\/RevenueCat\/StoreDataModel.swift",
+      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/RevenueCat\/StoreDataModel.swift",
       "kind": "IntegerLiteral",
       "offset": 7060,
       "length": 1,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/KovaleeSDK\/KovaleeFramework\/KovaleeFramework\/RevenueCat\/StoreDataModel.swift",
+      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/RevenueCat\/StoreDataModel.swift",
       "kind": "IntegerLiteral",
       "offset": 6903,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/KovaleeSDK\/KovaleeFramework\/KovaleeFramework\/RevenueCat\/StoreDataModel.swift",
+      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/RevenueCat\/StoreDataModel.swift",
       "kind": "IntegerLiteral",
       "offset": 6988,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/KovaleeSDK\/KovaleeFramework\/KovaleeFramework\/RevenueCat\/StoreDataModel.swift",
+      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/RevenueCat\/StoreDataModel.swift",
       "kind": "IntegerLiteral",
       "offset": 7060,
       "length": 1,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/KovaleeSDK\/KovaleeFramework\/KovaleeFramework\/RevenueCat\/StoreDataModel.swift",
+      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/RevenueCat\/StoreDataModel.swift",
       "kind": "IntegerLiteral",
       "offset": 6903,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/KovaleeSDK\/KovaleeFramework\/KovaleeFramework\/RevenueCat\/StoreDataModel.swift",
+      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/RevenueCat\/StoreDataModel.swift",
       "kind": "IntegerLiteral",
       "offset": 6988,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/KovaleeSDK\/KovaleeFramework\/KovaleeFramework\/RevenueCat\/StoreDataModel.swift",
+      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/RevenueCat\/StoreDataModel.swift",
       "kind": "IntegerLiteral",
       "offset": 7060,
       "length": 1,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/KovaleeSDK\/KovaleeFramework\/KovaleeFramework\/RevenueCat\/StoreDataModel.swift",
+      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/RevenueCat\/StoreDataModel.swift",
       "kind": "IntegerLiteral",
       "offset": 7127,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/KovaleeSDK\/KovaleeFramework\/KovaleeFramework\/RevenueCat\/StoreDataModel.swift",
+      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/RevenueCat\/StoreDataModel.swift",
       "kind": "IntegerLiteral",
       "offset": 7153,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/KovaleeSDK\/KovaleeFramework\/KovaleeFramework\/RevenueCat\/StoreDataModel.swift",
+      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/RevenueCat\/StoreDataModel.swift",
       "kind": "IntegerLiteral",
       "offset": 7174,
       "length": 1,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/KovaleeSDK\/KovaleeFramework\/KovaleeFramework\/RevenueCat\/StoreDataModel.swift",
+      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/RevenueCat\/StoreDataModel.swift",
       "kind": "IntegerLiteral",
       "offset": 7127,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/KovaleeSDK\/KovaleeFramework\/KovaleeFramework\/RevenueCat\/StoreDataModel.swift",
+      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/RevenueCat\/StoreDataModel.swift",
       "kind": "IntegerLiteral",
       "offset": 7153,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/KovaleeSDK\/KovaleeFramework\/KovaleeFramework\/RevenueCat\/StoreDataModel.swift",
+      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/RevenueCat\/StoreDataModel.swift",
       "kind": "IntegerLiteral",
       "offset": 7174,
       "length": 1,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/KovaleeSDK\/KovaleeFramework\/KovaleeFramework\/RevenueCat\/StoreDataModel.swift",
+      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/RevenueCat\/StoreDataModel.swift",
       "kind": "IntegerLiteral",
       "offset": 7127,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/KovaleeSDK\/KovaleeFramework\/KovaleeFramework\/RevenueCat\/StoreDataModel.swift",
+      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/RevenueCat\/StoreDataModel.swift",
       "kind": "IntegerLiteral",
       "offset": 7153,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/KovaleeSDK\/KovaleeFramework\/KovaleeFramework\/RevenueCat\/StoreDataModel.swift",
+      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/RevenueCat\/StoreDataModel.swift",
       "kind": "IntegerLiteral",
       "offset": 7174,
       "length": 1,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/KovaleeSDK\/KovaleeFramework\/KovaleeFramework\/RevenueCat\/StoreDataModel.swift",
+      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/RevenueCat\/StoreDataModel.swift",
       "kind": "IntegerLiteral",
       "offset": 7278,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/KovaleeSDK\/KovaleeFramework\/KovaleeFramework\/RevenueCat\/StoreDataModel.swift",
+      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/RevenueCat\/StoreDataModel.swift",
       "kind": "IntegerLiteral",
       "offset": 7361,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/KovaleeSDK\/KovaleeFramework\/KovaleeFramework\/RevenueCat\/StoreDataModel.swift",
+      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/RevenueCat\/StoreDataModel.swift",
       "kind": "IntegerLiteral",
       "offset": 7441,
       "length": 1,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/KovaleeSDK\/KovaleeFramework\/KovaleeFramework\/RevenueCat\/StoreDataModel.swift",
+      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/RevenueCat\/StoreDataModel.swift",
       "kind": "IntegerLiteral",
       "offset": 7506,
       "length": 1,
       "value": "3"
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/KovaleeSDK\/KovaleeFramework\/KovaleeFramework\/RevenueCat\/StoreDataModel.swift",
+      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/RevenueCat\/StoreDataModel.swift",
       "kind": "IntegerLiteral",
       "offset": 7592,
       "length": 1,
       "value": "4"
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/KovaleeSDK\/KovaleeFramework\/KovaleeFramework\/RevenueCat\/StoreDataModel.swift",
+      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/RevenueCat\/StoreDataModel.swift",
       "kind": "IntegerLiteral",
       "offset": 7674,
       "length": 1,
       "value": "5"
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/KovaleeSDK\/KovaleeFramework\/KovaleeFramework\/RevenueCat\/StoreDataModel.swift",
+      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/RevenueCat\/StoreDataModel.swift",
       "kind": "IntegerLiteral",
       "offset": 7750,
       "length": 1,
       "value": "6"
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/KovaleeSDK\/KovaleeFramework\/KovaleeFramework\/RevenueCat\/StoreDataModel.swift",
+      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/RevenueCat\/StoreDataModel.swift",
       "kind": "IntegerLiteral",
       "offset": 7278,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/KovaleeSDK\/KovaleeFramework\/KovaleeFramework\/RevenueCat\/StoreDataModel.swift",
+      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/RevenueCat\/StoreDataModel.swift",
       "kind": "IntegerLiteral",
       "offset": 7361,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/KovaleeSDK\/KovaleeFramework\/KovaleeFramework\/RevenueCat\/StoreDataModel.swift",
+      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/RevenueCat\/StoreDataModel.swift",
       "kind": "IntegerLiteral",
       "offset": 7441,
       "length": 1,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/KovaleeSDK\/KovaleeFramework\/KovaleeFramework\/RevenueCat\/StoreDataModel.swift",
+      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/RevenueCat\/StoreDataModel.swift",
       "kind": "IntegerLiteral",
       "offset": 7506,
       "length": 1,
       "value": "3"
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/KovaleeSDK\/KovaleeFramework\/KovaleeFramework\/RevenueCat\/StoreDataModel.swift",
+      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/RevenueCat\/StoreDataModel.swift",
       "kind": "IntegerLiteral",
       "offset": 7592,
       "length": 1,
       "value": "4"
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/KovaleeSDK\/KovaleeFramework\/KovaleeFramework\/RevenueCat\/StoreDataModel.swift",
+      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/RevenueCat\/StoreDataModel.swift",
       "kind": "IntegerLiteral",
       "offset": 7674,
       "length": 1,
       "value": "5"
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/KovaleeSDK\/KovaleeFramework\/KovaleeFramework\/RevenueCat\/StoreDataModel.swift",
+      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/RevenueCat\/StoreDataModel.swift",
       "kind": "IntegerLiteral",
       "offset": 7750,
       "length": 1,
       "value": "6"
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/KovaleeSDK\/KovaleeFramework\/KovaleeFramework\/RevenueCat\/StoreDataModel.swift",
+      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/RevenueCat\/StoreDataModel.swift",
       "kind": "IntegerLiteral",
       "offset": 7278,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/KovaleeSDK\/KovaleeFramework\/KovaleeFramework\/RevenueCat\/StoreDataModel.swift",
+      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/RevenueCat\/StoreDataModel.swift",
       "kind": "IntegerLiteral",
       "offset": 7361,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/KovaleeSDK\/KovaleeFramework\/KovaleeFramework\/RevenueCat\/StoreDataModel.swift",
+      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/RevenueCat\/StoreDataModel.swift",
       "kind": "IntegerLiteral",
       "offset": 7441,
       "length": 1,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/KovaleeSDK\/KovaleeFramework\/KovaleeFramework\/RevenueCat\/StoreDataModel.swift",
+      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/RevenueCat\/StoreDataModel.swift",
       "kind": "IntegerLiteral",
       "offset": 7506,
       "length": 1,
       "value": "3"
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/KovaleeSDK\/KovaleeFramework\/KovaleeFramework\/RevenueCat\/StoreDataModel.swift",
+      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/RevenueCat\/StoreDataModel.swift",
       "kind": "IntegerLiteral",
       "offset": 7592,
       "length": 1,
       "value": "4"
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/KovaleeSDK\/KovaleeFramework\/KovaleeFramework\/RevenueCat\/StoreDataModel.swift",
+      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/RevenueCat\/StoreDataModel.swift",
       "kind": "IntegerLiteral",
       "offset": 7674,
       "length": 1,
       "value": "5"
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/KovaleeSDK\/KovaleeFramework\/KovaleeFramework\/RevenueCat\/StoreDataModel.swift",
+      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/RevenueCat\/StoreDataModel.swift",
       "kind": "IntegerLiteral",
       "offset": 7750,
       "length": 1,
       "value": "6"
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/KovaleeSDK\/KovaleeFramework\/KovaleeFramework\/RevenueCat\/StoreDataModel.swift",
+      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/RevenueCat\/StoreDataModel.swift",
       "kind": "IntegerLiteral",
       "offset": 17647,
       "length": 15,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/KovaleeSDK\/KovaleeFramework\/KovaleeFramework\/RevenueCat\/StoreDataModel.swift",
+      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/RevenueCat\/StoreDataModel.swift",
       "kind": "IntegerLiteral",
       "offset": 17647,
       "length": 15,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/KovaleeSDK\/KovaleeFramework\/KovaleeFramework\/RevenueCat\/StoreDataModel.swift",
+      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/RevenueCat\/StoreDataModel.swift",
       "kind": "IntegerLiteral",
       "offset": 17647,
       "length": 15,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/KovaleeSDK\/KovaleeFramework\/KovaleeFramework\/RevenueCat\/StoreDataModel.swift",
+      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/RevenueCat\/StoreDataModel.swift",
       "kind": "IntegerLiteral",
       "offset": 17806,
       "length": 13,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/KovaleeSDK\/KovaleeFramework\/KovaleeFramework\/RevenueCat\/StoreDataModel.swift",
+      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/RevenueCat\/StoreDataModel.swift",
       "kind": "IntegerLiteral",
       "offset": 17866,
       "length": 24,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/KovaleeSDK\/KovaleeFramework\/KovaleeFramework\/RevenueCat\/StoreDataModel.swift",
+      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/RevenueCat\/StoreDataModel.swift",
       "kind": "IntegerLiteral",
       "offset": 17940,
       "length": 25,
       "value": "3"
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/KovaleeSDK\/KovaleeFramework\/KovaleeFramework\/RevenueCat\/StoreDataModel.swift",
+      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/RevenueCat\/StoreDataModel.swift",
       "kind": "IntegerLiteral",
       "offset": 17806,
       "length": 13,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/KovaleeSDK\/KovaleeFramework\/KovaleeFramework\/RevenueCat\/StoreDataModel.swift",
+      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/RevenueCat\/StoreDataModel.swift",
       "kind": "IntegerLiteral",
       "offset": 17866,
       "length": 24,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/KovaleeSDK\/KovaleeFramework\/KovaleeFramework\/RevenueCat\/StoreDataModel.swift",
+      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/RevenueCat\/StoreDataModel.swift",
       "kind": "IntegerLiteral",
       "offset": 17940,
       "length": 25,
       "value": "3"
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/KovaleeSDK\/KovaleeFramework\/KovaleeFramework\/RevenueCat\/StoreDataModel.swift",
+      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/RevenueCat\/StoreDataModel.swift",
       "kind": "IntegerLiteral",
       "offset": 17806,
       "length": 13,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/KovaleeSDK\/KovaleeFramework\/KovaleeFramework\/RevenueCat\/StoreDataModel.swift",
+      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/RevenueCat\/StoreDataModel.swift",
       "kind": "IntegerLiteral",
       "offset": 17866,
       "length": 24,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/KovaleeSDK\/KovaleeFramework\/KovaleeFramework\/RevenueCat\/StoreDataModel.swift",
+      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/RevenueCat\/StoreDataModel.swift",
       "kind": "IntegerLiteral",
       "offset": 17940,
       "length": 25,
       "value": "3"
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/KovaleeSDK\/KovaleeFramework\/KovaleeFramework\/RevenueCat\/StoreDataModel.swift",
+      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/RevenueCat\/StoreDataModel.swift",
       "kind": "IntegerLiteral",
       "offset": 18263,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/KovaleeSDK\/KovaleeFramework\/KovaleeFramework\/RevenueCat\/StoreDataModel.swift",
+      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/RevenueCat\/StoreDataModel.swift",
       "kind": "IntegerLiteral",
       "offset": 18335,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/KovaleeSDK\/KovaleeFramework\/KovaleeFramework\/RevenueCat\/StoreDataModel.swift",
+      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/RevenueCat\/StoreDataModel.swift",
       "kind": "IntegerLiteral",
       "offset": 18409,
       "length": 1,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/KovaleeSDK\/KovaleeFramework\/KovaleeFramework\/RevenueCat\/StoreDataModel.swift",
+      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/RevenueCat\/StoreDataModel.swift",
       "kind": "IntegerLiteral",
       "offset": 18481,
       "length": 1,
       "value": "3"
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/KovaleeSDK\/KovaleeFramework\/KovaleeFramework\/RevenueCat\/StoreDataModel.swift",
+      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/RevenueCat\/StoreDataModel.swift",
       "kind": "IntegerLiteral",
       "offset": 18263,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/KovaleeSDK\/KovaleeFramework\/KovaleeFramework\/RevenueCat\/StoreDataModel.swift",
+      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/RevenueCat\/StoreDataModel.swift",
       "kind": "IntegerLiteral",
       "offset": 18335,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/KovaleeSDK\/KovaleeFramework\/KovaleeFramework\/RevenueCat\/StoreDataModel.swift",
+      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/RevenueCat\/StoreDataModel.swift",
       "kind": "IntegerLiteral",
       "offset": 18409,
       "length": 1,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/KovaleeSDK\/KovaleeFramework\/KovaleeFramework\/RevenueCat\/StoreDataModel.swift",
+      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/RevenueCat\/StoreDataModel.swift",
       "kind": "IntegerLiteral",
       "offset": 18481,
       "length": 1,
       "value": "3"
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/KovaleeSDK\/KovaleeFramework\/KovaleeFramework\/RevenueCat\/StoreDataModel.swift",
+      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/RevenueCat\/StoreDataModel.swift",
       "kind": "IntegerLiteral",
       "offset": 18263,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/KovaleeSDK\/KovaleeFramework\/KovaleeFramework\/RevenueCat\/StoreDataModel.swift",
+      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/RevenueCat\/StoreDataModel.swift",
       "kind": "IntegerLiteral",
       "offset": 18335,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/KovaleeSDK\/KovaleeFramework\/KovaleeFramework\/RevenueCat\/StoreDataModel.swift",
+      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/RevenueCat\/StoreDataModel.swift",
       "kind": "IntegerLiteral",
       "offset": 18409,
       "length": 1,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/KovaleeSDK\/KovaleeFramework\/KovaleeFramework\/RevenueCat\/StoreDataModel.swift",
+      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/RevenueCat\/StoreDataModel.swift",
       "kind": "IntegerLiteral",
       "offset": 18481,
       "length": 1,
       "value": "3"
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/KovaleeSDK\/KovaleeFramework\/KovaleeFramework\/RevenueCat\/StoreDataModel.swift",
+      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/RevenueCat\/StoreDataModel.swift",
       "kind": "IntegerLiteral",
       "offset": 18789,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/KovaleeSDK\/KovaleeFramework\/KovaleeFramework\/RevenueCat\/StoreDataModel.swift",
+      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/RevenueCat\/StoreDataModel.swift",
       "kind": "IntegerLiteral",
       "offset": 18862,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/KovaleeSDK\/KovaleeFramework\/KovaleeFramework\/RevenueCat\/StoreDataModel.swift",
+      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/RevenueCat\/StoreDataModel.swift",
       "kind": "IntegerLiteral",
       "offset": 18919,
       "length": 1,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/KovaleeSDK\/KovaleeFramework\/KovaleeFramework\/RevenueCat\/StoreDataModel.swift",
+      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/RevenueCat\/StoreDataModel.swift",
       "kind": "IntegerLiteral",
       "offset": 18789,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/KovaleeSDK\/KovaleeFramework\/KovaleeFramework\/RevenueCat\/StoreDataModel.swift",
+      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/RevenueCat\/StoreDataModel.swift",
       "kind": "IntegerLiteral",
       "offset": 18862,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/KovaleeSDK\/KovaleeFramework\/KovaleeFramework\/RevenueCat\/StoreDataModel.swift",
+      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/RevenueCat\/StoreDataModel.swift",
       "kind": "IntegerLiteral",
       "offset": 18919,
       "length": 1,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/KovaleeSDK\/KovaleeFramework\/KovaleeFramework\/RevenueCat\/StoreDataModel.swift",
+      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/RevenueCat\/StoreDataModel.swift",
       "kind": "IntegerLiteral",
       "offset": 18789,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/KovaleeSDK\/KovaleeFramework\/KovaleeFramework\/RevenueCat\/StoreDataModel.swift",
+      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/RevenueCat\/StoreDataModel.swift",
       "kind": "IntegerLiteral",
       "offset": 18862,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/KovaleeSDK\/KovaleeFramework\/KovaleeFramework\/RevenueCat\/StoreDataModel.swift",
+      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/RevenueCat\/StoreDataModel.swift",
       "kind": "IntegerLiteral",
       "offset": 18919,
       "length": 1,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/KovaleeSDK\/KovaleeFramework\/KovaleeFramework\/RevenueCat\/StoreDataModel.swift",
+      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/RevenueCat\/StoreDataModel.swift",
       "kind": "IntegerLiteral",
       "offset": 19024,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/KovaleeSDK\/KovaleeFramework\/KovaleeFramework\/RevenueCat\/StoreDataModel.swift",
+      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/RevenueCat\/StoreDataModel.swift",
       "kind": "IntegerLiteral",
       "offset": 19101,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/KovaleeSDK\/KovaleeFramework\/KovaleeFramework\/RevenueCat\/StoreDataModel.swift",
+      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/RevenueCat\/StoreDataModel.swift",
       "kind": "IntegerLiteral",
       "offset": 19024,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/KovaleeSDK\/KovaleeFramework\/KovaleeFramework\/RevenueCat\/StoreDataModel.swift",
+      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/RevenueCat\/StoreDataModel.swift",
       "kind": "IntegerLiteral",
       "offset": 19101,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/KovaleeSDK\/KovaleeFramework\/KovaleeFramework\/RevenueCat\/StoreDataModel.swift",
+      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/RevenueCat\/StoreDataModel.swift",
       "kind": "IntegerLiteral",
       "offset": 19024,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/KovaleeSDK\/KovaleeFramework\/KovaleeFramework\/RevenueCat\/StoreDataModel.swift",
+      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/RevenueCat\/StoreDataModel.swift",
       "kind": "IntegerLiteral",
       "offset": 19101,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/KovaleeSDK\/KovaleeFramework\/KovaleeFramework\/RevenueCat\/StoreDataModel.swift",
+      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/RevenueCat\/StoreDataModel.swift",
       "kind": "IntegerLiteral",
       "offset": 20170,
       "length": 2,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/KovaleeSDK\/KovaleeFramework\/KovaleeFramework\/RevenueCat\/StoreDataModel.swift",
+      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/RevenueCat\/StoreDataModel.swift",
       "kind": "IntegerLiteral",
       "offset": 20239,
       "length": 6,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/KovaleeSDK\/KovaleeFramework\/KovaleeFramework\/RevenueCat\/StoreDataModel.swift",
+      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/RevenueCat\/StoreDataModel.swift",
       "kind": "IntegerLiteral",
       "offset": 20321,
       "length": 8,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/KovaleeSDK\/KovaleeFramework\/KovaleeFramework\/RevenueCat\/StoreDataModel.swift",
+      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/RevenueCat\/StoreDataModel.swift",
       "kind": "IntegerLiteral",
       "offset": 20403,
       "length": 6,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/KovaleeSDK\/KovaleeFramework\/KovaleeFramework\/RevenueCat\/StoreDataModel.swift",
+      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/RevenueCat\/StoreDataModel.swift",
       "kind": "IntegerLiteral",
       "offset": 20486,
       "length": 8,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/KovaleeSDK\/KovaleeFramework\/KovaleeFramework\/RevenueCat\/StoreDataModel.swift",
+      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/RevenueCat\/StoreDataModel.swift",
       "kind": "IntegerLiteral",
       "offset": 20573,
       "length": 10,
       "value": "3"
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/KovaleeSDK\/KovaleeFramework\/KovaleeFramework\/RevenueCat\/StoreDataModel.swift",
+      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/RevenueCat\/StoreDataModel.swift",
       "kind": "IntegerLiteral",
       "offset": 20660,
       "length": 8,
       "value": "4"
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/KovaleeSDK\/KovaleeFramework\/KovaleeFramework\/RevenueCat\/StoreDataModel.swift",
+      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/RevenueCat\/StoreDataModel.swift",
       "kind": "IntegerLiteral",
       "offset": 20743,
       "length": 7,
       "value": "5"
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/KovaleeSDK\/KovaleeFramework\/KovaleeFramework\/RevenueCat\/StoreDataModel.swift",
+      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/RevenueCat\/StoreDataModel.swift",
       "kind": "IntegerLiteral",
       "offset": 20824,
       "length": 6,
       "value": "6"
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/KovaleeSDK\/KovaleeFramework\/KovaleeFramework\/RevenueCat\/StoreDataModel.swift",
+      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/RevenueCat\/StoreDataModel.swift",
       "kind": "IntegerLiteral",
       "offset": 20170,
       "length": 1,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/KovaleeSDK\/KovaleeFramework\/KovaleeFramework\/RevenueCat\/StoreDataModel.swift",
+      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/RevenueCat\/StoreDataModel.swift",
       "kind": "IntegerLiteral",
       "offset": 20239,
       "length": 6,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/KovaleeSDK\/KovaleeFramework\/KovaleeFramework\/RevenueCat\/StoreDataModel.swift",
+      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/RevenueCat\/StoreDataModel.swift",
       "kind": "IntegerLiteral",
       "offset": 20321,
       "length": 8,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/KovaleeSDK\/KovaleeFramework\/KovaleeFramework\/RevenueCat\/StoreDataModel.swift",
+      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/RevenueCat\/StoreDataModel.swift",
       "kind": "IntegerLiteral",
       "offset": 20403,
       "length": 6,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/KovaleeSDK\/KovaleeFramework\/KovaleeFramework\/RevenueCat\/StoreDataModel.swift",
+      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/RevenueCat\/StoreDataModel.swift",
       "kind": "IntegerLiteral",
       "offset": 20486,
       "length": 8,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/KovaleeSDK\/KovaleeFramework\/KovaleeFramework\/RevenueCat\/StoreDataModel.swift",
+      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/RevenueCat\/StoreDataModel.swift",
       "kind": "IntegerLiteral",
       "offset": 20573,
       "length": 10,
       "value": "3"
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/KovaleeSDK\/KovaleeFramework\/KovaleeFramework\/RevenueCat\/StoreDataModel.swift",
+      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/RevenueCat\/StoreDataModel.swift",
       "kind": "IntegerLiteral",
       "offset": 20660,
       "length": 8,
       "value": "4"
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/KovaleeSDK\/KovaleeFramework\/KovaleeFramework\/RevenueCat\/StoreDataModel.swift",
+      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/RevenueCat\/StoreDataModel.swift",
       "kind": "IntegerLiteral",
       "offset": 20743,
       "length": 7,
       "value": "5"
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/KovaleeSDK\/KovaleeFramework\/KovaleeFramework\/RevenueCat\/StoreDataModel.swift",
+      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/RevenueCat\/StoreDataModel.swift",
       "kind": "IntegerLiteral",
       "offset": 20824,
       "length": 6,
       "value": "6"
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/KovaleeSDK\/KovaleeFramework\/KovaleeFramework\/RevenueCat\/StoreDataModel.swift",
+      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/RevenueCat\/StoreDataModel.swift",
       "kind": "IntegerLiteral",
       "offset": 20170,
       "length": 1,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/KovaleeSDK\/KovaleeFramework\/KovaleeFramework\/RevenueCat\/StoreDataModel.swift",
+      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/RevenueCat\/StoreDataModel.swift",
       "kind": "IntegerLiteral",
       "offset": 20239,
       "length": 6,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/KovaleeSDK\/KovaleeFramework\/KovaleeFramework\/RevenueCat\/StoreDataModel.swift",
+      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/RevenueCat\/StoreDataModel.swift",
       "kind": "IntegerLiteral",
       "offset": 20321,
       "length": 8,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/KovaleeSDK\/KovaleeFramework\/KovaleeFramework\/RevenueCat\/StoreDataModel.swift",
+      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/RevenueCat\/StoreDataModel.swift",
       "kind": "IntegerLiteral",
       "offset": 20403,
       "length": 6,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/KovaleeSDK\/KovaleeFramework\/KovaleeFramework\/RevenueCat\/StoreDataModel.swift",
+      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/RevenueCat\/StoreDataModel.swift",
       "kind": "IntegerLiteral",
       "offset": 20486,
       "length": 8,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/KovaleeSDK\/KovaleeFramework\/KovaleeFramework\/RevenueCat\/StoreDataModel.swift",
+      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/RevenueCat\/StoreDataModel.swift",
       "kind": "IntegerLiteral",
       "offset": 20573,
       "length": 10,
       "value": "3"
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/KovaleeSDK\/KovaleeFramework\/KovaleeFramework\/RevenueCat\/StoreDataModel.swift",
+      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/RevenueCat\/StoreDataModel.swift",
       "kind": "IntegerLiteral",
       "offset": 20660,
       "length": 8,
       "value": "4"
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/KovaleeSDK\/KovaleeFramework\/KovaleeFramework\/RevenueCat\/StoreDataModel.swift",
+      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/RevenueCat\/StoreDataModel.swift",
       "kind": "IntegerLiteral",
       "offset": 20743,
       "length": 7,
       "value": "5"
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/KovaleeSDK\/KovaleeFramework\/KovaleeFramework\/RevenueCat\/StoreDataModel.swift",
+      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/RevenueCat\/StoreDataModel.swift",
       "kind": "IntegerLiteral",
       "offset": 20824,
       "length": 6,

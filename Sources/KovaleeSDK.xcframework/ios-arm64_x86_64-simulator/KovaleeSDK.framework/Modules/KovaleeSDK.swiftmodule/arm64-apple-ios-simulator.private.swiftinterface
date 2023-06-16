@@ -9,8 +9,16 @@ import Swift
 import SwiftUI
 import _Concurrency
 import _StringProcessing
+extension KovaleeSDK.Kovalee {
+  public static func promptTrackingAuthorization(completion: @escaping (AppTrackingTransparency.ATTrackingManager.AuthorizationStatus) -> Swift.Void)
+  #if compiler(>=5.3) && $AsyncAwait
+  @discardableResult
+  public static func promptTrackingAuthorization() async -> AppTrackingTransparency.ATTrackingManager.AuthorizationStatus
+  #endif
+}
 public enum KovaleeError : Swift.Error {
-  case userAlreadyPartecipatedInExperiment
+  case remoteValueAlreadyUsedForABTest
+  case remoteValueFetchError
   public static func == (a: KovaleeSDK.KovaleeError, b: KovaleeSDK.KovaleeError) -> Swift.Bool
   public func hash(into hasher: inout Swift.Hasher)
   public var hashValue: Swift.Int {
@@ -58,9 +66,8 @@ extension KovaleeSDK.Kovalee {
   #endif
   public static func setDefaultValues(_ values: [Swift.String : Any])
   #if compiler(>=5.3) && $AsyncAwait
-  public static func abTestValue(forKey key: Swift.String, experimentName name: Swift.String) async throws -> KovaleeSDK.RemoteConfigValue?
+  public static func abTestValue(forKey key: Swift.String) async -> KovaleeSDK.RemoteConfigValue?
   #endif
-  public static func experimentUserHasBeenPartOf() -> Swift.String?
 }
 public struct KovaleeConstants {
   public static let keysFileName: Swift.String
@@ -102,6 +109,14 @@ public enum LogLevel : Swift.Int {
 extension KovaleeSDK.LogLevel : Swift.Comparable {
   public static func < (lhs: KovaleeSDK.LogLevel, rhs: KovaleeSDK.LogLevel) -> Swift.Bool
 }
+public enum BasicEvent {
+  case pageView(screen: Swift.String)
+  case pageViewPaywall(source: Swift.String)
+  case notificationActivate
+  case notificationDeactivate
+  case acClick(name: Swift.String)
+  case acContentClick(name: Swift.String)
+}
 extension KovaleeSDK.Kovalee {
   public static func setupfbAdProcessingOptions(options: KovaleeSDK.FBAdProcessingOptions)
   public static func showMediationDebugger()
@@ -116,21 +131,6 @@ public struct FBAdProcessingOptions {
   public var isCountryUS: Swift.Bool
   public var isStateCalifornia: Swift.Bool
   public var advertiserTrackingEnabled: Swift.Bool
-}
-public enum BasicEvent {
-  case pageView(screen: Swift.String)
-  case pageViewPaywall(source: Swift.String)
-  case notificationActivate
-  case notificationDeactivate
-  case acClick(name: Swift.String)
-  case acContentClick(name: Swift.String)
-}
-extension KovaleeSDK.Kovalee {
-  public static func promptTrackingAuthorization(completion: @escaping (AppTrackingTransparency.ATTrackingManager.AuthorizationStatus) -> Swift.Void)
-  #if compiler(>=5.3) && $AsyncAwait
-  @discardableResult
-  public static func promptTrackingAuthorization() async -> AppTrackingTransparency.ATTrackingManager.AuthorizationStatus
-  #endif
 }
 public struct Configuration {
   public enum Environment : Swift.String {
