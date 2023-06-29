@@ -76,8 +76,8 @@ public struct KovaleeKeys : Swift.Decodable {
   public let appCode: Swift.String
   public let adjust: Swift.String
   public let amplitude: Swift.String
-  public let revenueCat: Swift.String
-  public let firebase: [Swift.String : Swift.String]
+  public let revenueCat: Swift.String?
+  public let firebase: [Swift.String : Swift.String]?
   public let applovin: KovaleeSDK.KovaleeKeys.Applovin?
   public let conversionValue: KovaleeSDK.KovaleeKeys.ConversionValue?
   public struct Applovin : Swift.Decodable {

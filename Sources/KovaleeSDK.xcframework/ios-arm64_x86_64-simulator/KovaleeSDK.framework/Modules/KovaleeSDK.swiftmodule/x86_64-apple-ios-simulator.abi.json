@@ -2007,14 +2007,22 @@
             "children": [
               {
                 "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
               }
             ],
             "declKind": "Var",
-            "usr": "s:10KovaleeSDK0A4KeysV10revenueCatSSvp",
-            "mangledName": "$s10KovaleeSDK0A4KeysV10revenueCatSSvp",
+            "usr": "s:10KovaleeSDK0A4KeysV10revenueCatSSSgvp",
+            "mangledName": "$s10KovaleeSDK0A4KeysV10revenueCatSSSgvp",
             "moduleName": "KovaleeSDK",
             "declAttributes": [
               "HasStorage",
@@ -2030,14 +2038,22 @@
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:10KovaleeSDK0A4KeysV10revenueCatSSvg",
-                "mangledName": "$s10KovaleeSDK0A4KeysV10revenueCatSSvg",
+                "usr": "s:10KovaleeSDK0A4KeysV10revenueCatSSSgvg",
+                "mangledName": "$s10KovaleeSDK0A4KeysV10revenueCatSSSgvg",
                 "moduleName": "KovaleeSDK",
                 "implicit": true,
                 "accessorKind": "get"
@@ -2051,40 +2067,8 @@
             "children": [
               {
                 "kind": "TypeNominal",
-                "name": "Dictionary",
-                "printedName": "[Swift.String : Swift.String]",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "usr": "s:SD"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:10KovaleeSDK0A4KeysV8firebaseSDyS2SGvp",
-            "mangledName": "$s10KovaleeSDK0A4KeysV8firebaseSDyS2SGvp",
-            "moduleName": "KovaleeSDK",
-            "declAttributes": [
-              "HasStorage",
-              "AccessControl"
-            ],
-            "isLet": true,
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
+                "name": "Optional",
+                "printedName": "[Swift.String : Swift.String]?",
                 "children": [
                   {
                     "kind": "TypeNominal",
@@ -2107,9 +2091,57 @@
                     "usr": "s:SD"
                   }
                 ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10KovaleeSDK0A4KeysV8firebaseSDyS2SGSgvp",
+            "mangledName": "$s10KovaleeSDK0A4KeysV8firebaseSDyS2SGSgvp",
+            "moduleName": "KovaleeSDK",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "[Swift.String : Swift.String]?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Dictionary",
+                        "printedName": "[Swift.String : Swift.String]",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          }
+                        ],
+                        "usr": "s:SD"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
                 "declKind": "Accessor",
-                "usr": "s:10KovaleeSDK0A4KeysV8firebaseSDyS2SGvg",
-                "mangledName": "$s10KovaleeSDK0A4KeysV8firebaseSDyS2SGvg",
+                "usr": "s:10KovaleeSDK0A4KeysV8firebaseSDyS2SGSgvg",
+                "mangledName": "$s10KovaleeSDK0A4KeysV8firebaseSDyS2SGSgvg",
                 "moduleName": "KovaleeSDK",
                 "implicit": true,
                 "accessorKind": "get"
