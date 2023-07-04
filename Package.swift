@@ -1,4 +1,4 @@
-// swift-tools-version: 5.8
+// swift-tools-version: 5.7.1
 // The swift-tools-version declares the minimum version of Swift required to build this package.
 
 import PackageDescription
@@ -12,15 +12,15 @@ let package = Package(
         .library(
             name: "KovaleeSDK",
             targets: [
-                "KovaleeFramework",
+                "KovaleeSDK",
             ]
         ),
     ],
     dependencies: [],
     targets: [
         .binaryTarget(
-            name: "KovaleeFramework",
-            path: "./Sources/KovaleeFramework.xcframework"
+            name: "KovaleeSDK",
+            path: "./Sources/KovaleeSDK.xcframework"
         ),
     ]
 )
