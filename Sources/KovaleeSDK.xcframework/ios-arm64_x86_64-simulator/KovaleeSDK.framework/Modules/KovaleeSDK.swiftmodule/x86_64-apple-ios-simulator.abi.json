@@ -1645,6 +1645,240 @@
           },
           {
             "kind": "Function",
+            "name": "startedPurchasing",
+            "printedName": "startedPurchasing(subscriptionWithDuration:fromSource:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10KovaleeSDK0A0C17startedPurchasing24subscriptionWithDuration10fromSourceySi_SStFZ",
+            "mangledName": "$s10KovaleeSDK0A0C17startedPurchasing24subscriptionWithDuration10fromSourceySi_SStFZ",
+            "moduleName": "KovaleeSDK",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "succesfullyPurchased",
+            "printedName": "succesfullyPurchased(subscriptionWithProductId:andDuration:fromSource:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10KovaleeSDK0A0C20succesfullyPurchased25subscriptionWithProductId11andDuration10fromSourceySS_SiSStFZ",
+            "mangledName": "$s10KovaleeSDK0A0C20succesfullyPurchased25subscriptionWithProductId11andDuration10fromSourceySS_SiSStFZ",
+            "moduleName": "KovaleeSDK",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "paymentCancelledForSubscription",
+            "printedName": "paymentCancelledForSubscription(fromSource:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10KovaleeSDK0A0C31paymentCancelledForSubscription10fromSourceySS_tFZ",
+            "mangledName": "$s10KovaleeSDK0A0C31paymentCancelledForSubscription10fromSourceySS_tFZ",
+            "moduleName": "KovaleeSDK",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "paymentFailed",
+            "printedName": "paymentFailed(forSubscriptionWithDuration:fromSource:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10KovaleeSDK0A0C13paymentFailed27forSubscriptionWithDuration10fromSourceySi_SStFZ",
+            "mangledName": "$s10KovaleeSDK0A0C13paymentFailed27forSubscriptionWithDuration10fromSourceySi_SStFZ",
+            "moduleName": "KovaleeSDK",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "paymentRestoredFailed",
+            "printedName": "paymentRestoredFailed(fromSource:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10KovaleeSDK0A0C21paymentRestoredFailed10fromSourceySS_tFZ",
+            "mangledName": "$s10KovaleeSDK0A0C21paymentRestoredFailed10fromSourceySS_tFZ",
+            "moduleName": "KovaleeSDK",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "paymentRestored",
+            "printedName": "paymentRestored(fromSource:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10KovaleeSDK0A0C15paymentRestored10fromSourceySS_tFZ",
+            "mangledName": "$s10KovaleeSDK0A0C15paymentRestored10fromSourceySS_tFZ",
+            "moduleName": "KovaleeSDK",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "setIsUserPremium",
+            "printedName": "setIsUserPremium(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10KovaleeSDK0A0C16setIsUserPremiumyySbFZ",
+            "mangledName": "$s10KovaleeSDK0A0C16setIsUserPremiumyySbFZ",
+            "moduleName": "KovaleeSDK",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
             "name": "sendEvent",
             "printedName": "sendEvent(_:)",
             "children": [
@@ -2008,21 +2242,21 @@
               {
                 "kind": "TypeNominal",
                 "name": "Optional",
-                "printedName": "Swift.String?",
+                "printedName": "KovaleeSDK.KovaleeKeys.RevenueCat?",
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
+                    "name": "RevenueCat",
+                    "printedName": "KovaleeSDK.KovaleeKeys.RevenueCat",
+                    "usr": "s:10KovaleeSDK0A4KeysV10RevenueCatV"
                   }
                 ],
                 "usr": "s:Sq"
               }
             ],
             "declKind": "Var",
-            "usr": "s:10KovaleeSDK0A4KeysV10revenueCatSSSgvp",
-            "mangledName": "$s10KovaleeSDK0A4KeysV10revenueCatSSSgvp",
+            "usr": "s:10KovaleeSDK0A4KeysV10revenueCatAC07RevenueE0VSgvp",
+            "mangledName": "$s10KovaleeSDK0A4KeysV10revenueCatAC07RevenueE0VSgvp",
             "moduleName": "KovaleeSDK",
             "declAttributes": [
               "HasStorage",
@@ -2039,21 +2273,21 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Optional",
-                    "printedName": "Swift.String?",
+                    "printedName": "KovaleeSDK.KovaleeKeys.RevenueCat?",
                     "children": [
                       {
                         "kind": "TypeNominal",
-                        "name": "String",
-                        "printedName": "Swift.String",
-                        "usr": "s:SS"
+                        "name": "RevenueCat",
+                        "printedName": "KovaleeSDK.KovaleeKeys.RevenueCat",
+                        "usr": "s:10KovaleeSDK0A4KeysV10RevenueCatV"
                       }
                     ],
                     "usr": "s:Sq"
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:10KovaleeSDK0A4KeysV10revenueCatSSSgvg",
-                "mangledName": "$s10KovaleeSDK0A4KeysV10revenueCatSSSgvg",
+                "usr": "s:10KovaleeSDK0A4KeysV10revenueCatAC07RevenueE0VSgvg",
+                "mangledName": "$s10KovaleeSDK0A4KeysV10revenueCatAC07RevenueE0VSgvg",
                 "moduleName": "KovaleeSDK",
                 "implicit": true,
                 "accessorKind": "get"
@@ -2265,6 +2499,55 @@
                 "moduleName": "KovaleeSDK",
                 "implicit": true,
                 "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "TypeDecl",
+            "name": "RevenueCat",
+            "printedName": "RevenueCat",
+            "children": [
+              {
+                "kind": "Constructor",
+                "name": "init",
+                "printedName": "init(from:)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "RevenueCat",
+                    "printedName": "KovaleeSDK.KovaleeKeys.RevenueCat",
+                    "usr": "s:10KovaleeSDK0A4KeysV10RevenueCatV"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Decoder",
+                    "printedName": "Swift.Decoder",
+                    "usr": "s:s7DecoderP"
+                  }
+                ],
+                "declKind": "Constructor",
+                "usr": "s:10KovaleeSDK0A4KeysV10RevenueCatV4fromAEs7Decoder_p_tKcfc",
+                "mangledName": "$s10KovaleeSDK0A4KeysV10RevenueCatV4fromAEs7Decoder_p_tKcfc",
+                "moduleName": "KovaleeSDK",
+                "implicit": true,
+                "throwing": true,
+                "init_kind": "Designated"
+              }
+            ],
+            "declKind": "Struct",
+            "usr": "s:10KovaleeSDK0A4KeysV10RevenueCatV",
+            "mangledName": "$s10KovaleeSDK0A4KeysV10RevenueCatV",
+            "moduleName": "KovaleeSDK",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "conformances": [
+              {
+                "kind": "Conformance",
+                "name": "Decodable",
+                "printedName": "Decodable",
+                "usr": "s:Se",
+                "mangledName": "$sSe"
               }
             ]
           },

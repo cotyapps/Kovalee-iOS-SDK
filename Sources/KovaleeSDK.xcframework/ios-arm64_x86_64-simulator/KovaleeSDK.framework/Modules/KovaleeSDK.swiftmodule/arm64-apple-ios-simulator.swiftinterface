@@ -76,10 +76,13 @@ public struct KovaleeKeys : Swift.Decodable {
   public let appCode: Swift.String
   public let adjust: Swift.String
   public let amplitude: Swift.String
-  public let revenueCat: Swift.String?
+  public let revenueCat: KovaleeSDK.KovaleeKeys.RevenueCat?
   public let firebase: [Swift.String : Swift.String]?
   public let applovin: KovaleeSDK.KovaleeKeys.Applovin?
   public let conversionValue: KovaleeSDK.KovaleeKeys.ConversionValue?
+  public struct RevenueCat : Swift.Decodable {
+    public init(from decoder: Swift.Decoder) throws
+  }
   public struct Applovin : Swift.Decodable {
     public init(from decoder: Swift.Decoder) throws
   }
@@ -164,6 +167,15 @@ extension KovaleeSDK.Kovalee {
   #if compiler(>=5.3) && $AsyncAwait
   public static func purchase(package: KovaleeSDK.Package, fromSource source: Swift.String) async throws -> KovaleeSDK.PurchaseResultData?
   #endif
+}
+extension KovaleeSDK.Kovalee {
+  public static func startedPurchasing(subscriptionWithDuration duration: Swift.Int, fromSource source: Swift.String)
+  public static func succesfullyPurchased(subscriptionWithProductId productId: Swift.String, andDuration duration: Swift.Int, fromSource source: Swift.String)
+  public static func paymentCancelledForSubscription(fromSource source: Swift.String)
+  public static func paymentFailed(forSubscriptionWithDuration duration: Swift.Int, fromSource source: Swift.String)
+  public static func paymentRestoredFailed(fromSource source: Swift.String)
+  public static func paymentRestored(fromSource source: Swift.String)
+  public static func setIsUserPremium(_ premium: Swift.Bool)
 }
 extension KovaleeSDK.Kovalee {
   public static func sendEvent(_ event: KovaleeSDK.Event)
