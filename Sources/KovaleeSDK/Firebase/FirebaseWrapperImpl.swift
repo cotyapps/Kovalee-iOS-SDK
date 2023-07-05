@@ -10,7 +10,7 @@ struct FirebaseWrapperImpl: FirebaseWrapper {
 			googleAppID: keys.appId,
 			gcmSenderID: keys.senderId
         )
-		options.apiKey = keys.appId
+		options.apiKey = keys.apiKey
 		options.projectID = keys.projectId
 
         FirebaseApp.configure(options: options)
