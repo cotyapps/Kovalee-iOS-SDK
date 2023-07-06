@@ -6,15 +6,17 @@ import FirebaseRemoteConfig
 
 struct FirebaseWrapperImpl: FirebaseWrapper {
 	init(keys: KovaleeKeys.Firebase) {
-        let options = FirebaseOptions(
-			googleAppID: keys.appId,
-			gcmSenderID: keys.senderId
-        )
-		options.apiKey = keys.apiKey
-		options.projectID = keys.projectId
-
-        FirebaseApp.configure(options: options)
-        Analytics.setAnalyticsCollectionEnabled(true)
+		if !keys.configuredInApp {
+			let options = FirebaseOptions(
+				googleAppID: keys.appId,
+				gcmSenderID: keys.senderId
+			)
+			options.apiKey = keys.apiKey
+			options.projectID = keys.projectId
+			
+			FirebaseApp.configure(options: options)
+			Analytics.setAnalyticsCollectionEnabled(true)
+		}
 
         self.remoteConfig = RemoteConfig.remoteConfig()
     }

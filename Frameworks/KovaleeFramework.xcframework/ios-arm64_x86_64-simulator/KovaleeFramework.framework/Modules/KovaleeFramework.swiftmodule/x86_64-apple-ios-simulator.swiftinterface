@@ -115,6 +115,7 @@ public struct KovaleeKeys : Swift.Decodable {
     public var apiKey: Swift.String
     public var senderId: Swift.String
     public var projectId: Swift.String
+    public var configuredInApp: Swift.Bool
     public init(from decoder: Swift.Decoder) throws
   }
   public struct Applovin : Swift.Decodable {
@@ -292,28 +293,6 @@ extension KovaleeFramework.ConversionValueManager {
   public func coarseValue() -> Swift.String
   public mutating func conversionValue(fromEvent event: KovaleeFramework.Event) -> Swift.Int?
 }
-public struct Configuration {
-  public enum Environment : Swift.String {
-    case sandbox
-    case production
-    case test
-    public init?(rawValue: Swift.String)
-    public typealias RawValue = Swift.String
-    public var rawValue: Swift.String {
-      get
-    }
-  }
-  public var environment: KovaleeFramework.Configuration.Environment
-  public var logLevel: KovaleeFramework.LogLevel
-  public var keysFileUrl: Foundation.URL?
-  public init(environment: KovaleeFramework.Configuration.Environment, keysFileName: Swift.String = KovaleeConstants.keysFileName, logLevel: KovaleeFramework.LogLevel = .info)
-}
-extension KovaleeFramework.Configuration {
-  public static func test(keysFileUrl: Foundation.URL) -> KovaleeFramework.Configuration
-  public static var preview: KovaleeFramework.Configuration {
-    get
-  }
-}
 public enum DefaultEvents {
   case firstAppOpen
   case appOpen
@@ -401,6 +380,3 @@ extension KovaleeFramework.AdjustConfiguration.Environment : Swift.Hashable {}
 extension KovaleeFramework.AdjustConfiguration.Environment : Swift.RawRepresentable {}
 extension KovaleeFramework.KovaleeError : Swift.Equatable {}
 extension KovaleeFramework.KovaleeError : Swift.Hashable {}
-extension KovaleeFramework.Configuration.Environment : Swift.Equatable {}
-extension KovaleeFramework.Configuration.Environment : Swift.Hashable {}
-extension KovaleeFramework.Configuration.Environment : Swift.RawRepresentable {}

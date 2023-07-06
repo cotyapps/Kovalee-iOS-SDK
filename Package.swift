@@ -39,7 +39,6 @@ let package = Package(
 				"AppLovinMediationFacebookAdapter",
 				"AppLovinMediationIronSourceAdapter",
 				"AppLovinMediationUnityAdsAdapter",
-//				"AppLovinSDK",
 				"FBAudienceNetwork",
 				"IronSource",
 				"UnityAds",
@@ -72,10 +71,6 @@ let package = Package(
 			name: "AppLovinMediationUnityAdsAdapter",
 			path: "./Frameworks/AppLovinMediationUnityAdsAdapter.xcframework"
 		),
-//		.binaryTarget(
-//			name: "AppLovinSDK",
-//			path: "./Frameworks/AppLovinSDK.xcframework"
-//		),
 		.binaryTarget(
 			name: "FBAudienceNetwork",
 			path: "./Frameworks/FBAudienceNetwork.xcframework"
