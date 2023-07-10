@@ -60,7 +60,7 @@ extension KovaleeFramework.KovaleeManager {
   public func setupfbAdProcessingOptions(options: KovaleeFramework.AbstractFBAdProcessingOptions) async
   #endif
   public func showMediationDebugger()
-  public func displayInterstitialAd()
+  public func displayInterstitialAd(onClose: @escaping () -> Swift.Void)
   public func displayRewardedAd(andRewardCompletion completion: (() -> Swift.Void)?)
   #if compiler(>=5.3) && $AsyncAwait
   public func displayRewardedAd() async
@@ -258,8 +258,8 @@ public protocol AbstractPackage {
   func getDuration() -> Swift.Int
 }
 public protocol ApplovinWrapper {
-  func createInterstitialAd()
   func showMediationDebugger()
+  func createInterstitialAd(onClose: (() -> Swift.Void)?)
   func createRewardedAd(completedVideo completion: (() -> Swift.Void)?)
   #if compiler(>=5.3) && $AsyncAwait
   func setupfbAdProcessingOptions(options: KovaleeFramework.AbstractFBAdProcessingOptions) async

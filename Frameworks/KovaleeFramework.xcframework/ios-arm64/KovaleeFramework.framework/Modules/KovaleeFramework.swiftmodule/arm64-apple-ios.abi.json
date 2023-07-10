@@ -931,17 +931,34 @@
           {
             "kind": "Function",
             "name": "displayInterstitialAd",
-            "printedName": "displayInterstitialAd()",
+            "printedName": "displayInterstitialAd(onClose:)",
             "children": [
               {
                 "kind": "TypeNominal",
                 "name": "Void",
                 "printedName": "()"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "() -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ]
               }
             ],
             "declKind": "Func",
-            "usr": "s:16KovaleeFramework0A7ManagerC21displayInterstitialAdyyF",
-            "mangledName": "$s16KovaleeFramework0A7ManagerC21displayInterstitialAdyyF",
+            "usr": "s:16KovaleeFramework0A7ManagerC21displayInterstitialAd7onCloseyyyc_tF",
+            "mangledName": "$s16KovaleeFramework0A7ManagerC21displayInterstitialAd7onCloseyyyc_tF",
             "moduleName": "KovaleeFramework",
             "declAttributes": [
               "AccessControl"
@@ -6807,27 +6824,6 @@
         "children": [
           {
             "kind": "Function",
-            "name": "createInterstitialAd",
-            "printedName": "createInterstitialAd()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:16KovaleeFramework15ApplovinWrapperP20createInterstitialAdyyF",
-            "mangledName": "$s16KovaleeFramework15ApplovinWrapperP20createInterstitialAdyyF",
-            "moduleName": "KovaleeFramework",
-            "genericSig": "<τ_0_0 where τ_0_0 : KovaleeFramework.ApplovinWrapper>",
-            "sugared_genericSig": "<Self where Self : KovaleeFramework.ApplovinWrapper>",
-            "protocolReq": true,
-            "reqNewWitnessTableEntry": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
             "name": "showMediationDebugger",
             "printedName": "showMediationDebugger()",
             "children": [
@@ -6840,6 +6836,52 @@
             "declKind": "Func",
             "usr": "s:16KovaleeFramework15ApplovinWrapperP21showMediationDebuggeryyF",
             "mangledName": "$s16KovaleeFramework15ApplovinWrapperP21showMediationDebuggeryyF",
+            "moduleName": "KovaleeFramework",
+            "genericSig": "<τ_0_0 where τ_0_0 : KovaleeFramework.ApplovinWrapper>",
+            "sugared_genericSig": "<Self where Self : KovaleeFramework.ApplovinWrapper>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "createInterstitialAd",
+            "printedName": "createInterstitialAd(onClose:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "(() -> ())?",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "() -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      }
+                    ]
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:16KovaleeFramework15ApplovinWrapperP20createInterstitialAd7onCloseyyycSg_tF",
+            "mangledName": "$s16KovaleeFramework15ApplovinWrapperP20createInterstitialAd7onCloseyyycSg_tF",
             "moduleName": "KovaleeFramework",
             "genericSig": "<τ_0_0 where τ_0_0 : KovaleeFramework.ApplovinWrapper>",
             "sugared_genericSig": "<Self where Self : KovaleeFramework.ApplovinWrapper>",
