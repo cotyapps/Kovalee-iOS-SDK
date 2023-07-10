@@ -14,8 +14,8 @@ extension Kovalee {
     }
 
     /// Setup and, when ready, displays an interstitial ad.
-    public static func displayInterstitialAd() {
-        Self.shared.kovaleeManager?.displayInterstitialAd()
+	public static func displayInterstitialAd(onClose: @escaping () -> Void) {
+		Self.shared.kovaleeManager?.displayInterstitialAd(onClose: onClose)
     }
 
     /// Setup and, when ready, displays a rewarded ad.

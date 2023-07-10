@@ -34,11 +34,12 @@ class ApplovinWrapperImpl: NSObject, ApplovinWrapper {
         }
     }
 
-    func createInterstitialAd() {
+	func createInterstitialAd(onClose: (() -> Void)?) {
         guard let sdk, sdk.isInitialized else {
             Logger.error("Failed to load ad: Applovin is not initialized correctly")
             return
         }
+		didCompleteDisplayingAd = onClose
 
         interstitialAd = MAInterstitialAd(adUnitIdentifier: key.interstitialUnitId, sdk: sdk)
         interstitialAd?.delegate = self
@@ -72,6 +73,7 @@ class ApplovinWrapperImpl: NSObject, ApplovinWrapper {
     private var rewardedAd: MARewardedAd?
     private var retryAttempt = 0.0
 
+	private var didCompleteDisplayingAd: (() -> Void)?
     private var didCompleteRewardedVideo: (() -> Void)?
 }
 
@@ -104,6 +106,8 @@ extension ApplovinWrapperImpl: MAAdDelegate, MARewardedAdDelegate {
     func didDisplay(_ ad: AppLovinSDK.MAAd) {}
 
     func didHide(_ ad: AppLovinSDK.MAAd) {
+		Logger.debug("Ad has been hidden")
+
         // Interstitial ad is hidden. Pre-load the next ad
         interstitialAd?.load()
         rewardedAd?.load()
