@@ -49,7 +49,7 @@ class ApplovinWrapperImpl: NSObject, ApplovinWrapper {
             Logger.error("📺 Failed to load ad: Applovin is not initialized correctly")
             return
         }
-		didCompleteDisplayingAd = onClose
+		onAdClose = onClose
 		interstitialAd?.delegate = self
         
         // Load the first ad
@@ -80,7 +80,7 @@ class ApplovinWrapperImpl: NSObject, ApplovinWrapper {
     private var rewardedAd: MARewardedAd?
     private var retryAttempt = 0.0
 
-	private var didCompleteDisplayingAd: (() -> Void)?
+	private var onAdClose: (() -> Void)?
     private var didCompleteRewardedVideo: (() -> Void)?
 }
 
@@ -113,9 +113,7 @@ extension ApplovinWrapperImpl: MAAdDelegate, MARewardedAdDelegate {
 	func didHide(_ ad: MAAd) {
 		Logger.debug("📺 Ad has been hidden")
 
-        // Interstitial ad is hidden. Pre-load the next ad
-        interstitialAd?.load()
-        rewardedAd?.load()
+		onAdClose?()
     }
 
     func didClick(_ ad: AppLovinSDK.MAAd) {}
