@@ -113,6 +113,7 @@ extension ApplovinWrapperImpl: MAAdDelegate, MARewardedAdDelegate {
 	func didHide(_ ad: MAAd) {
 		Logger.debug("📺 Ad has been hidden")
 		onAdClose?()
+		onAdClose = nil
     }
 
     func didClick(_ ad: AppLovinSDK.MAAd) {}
@@ -124,6 +125,7 @@ extension ApplovinWrapperImpl: MAAdDelegate, MARewardedAdDelegate {
     func didRewardUser(for ad: AppLovinSDK.MAAd, with reward: MAReward) {
 		Logger.debug("📺 Rewarded ad has been seen")
         didCompleteRewardedVideo?()
+		didCompleteRewardedVideo = nil
     }
 }
 // swiftlint:enable identifier_name
