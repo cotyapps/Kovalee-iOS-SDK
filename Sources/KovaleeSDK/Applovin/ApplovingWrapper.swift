@@ -112,9 +112,6 @@ extension ApplovinWrapperImpl: MAAdDelegate, MARewardedAdDelegate {
 
 	func didHide(_ ad: MAAd) {
 		Logger.debug("📺 Ad has been hidden")
-		interstitialAd = nil
-		rewardedAd = nil
-
 		onAdClose?()
     }
 
