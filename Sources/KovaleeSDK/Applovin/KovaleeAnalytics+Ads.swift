@@ -14,8 +14,12 @@ extension Kovalee {
     }
 
     /// Setup and, when ready, displays an interstitial ad.
-	public static func displayInterstitialAd(onClose: @escaping () -> Void) {
-		Self.shared.kovaleeManager?.displayInterstitialAd(onClose: onClose)
+	public static func displayInterstitialAd() async -> Bool {
+		await withCheckedContinuation { continuation in
+			Self.shared.kovaleeManager?.displayInterstitialAd {
+				continuation.resume(returning: true)
+			}
+		}
     }
 
     /// Setup and, when ready, displays a rewarded ad.
@@ -25,8 +29,12 @@ extension Kovalee {
     /// `
     /// - Parameters:
     ///    - completion: the completion called once the user has see the ad.
-    public static func displayRewardedAd(andRewardCompletion completion: (() -> Void)?) {
-        Self.shared.kovaleeManager?.displayRewardedAd(andRewardCompletion: completion)
+    public static func displayRewardedAd() async -> Bool {
+		await withCheckedContinuation { continuation in
+			Self.shared.kovaleeManager?.displayRewardedAd(andRewardCompletion: {
+				continuation.resume(returning: true)
+			})
+		}
     }
 
     /// Setup and, when ready, displays a rewarded ad.
