@@ -14,7 +14,8 @@ extension Kovalee {
 	}
 	
 	/// Setup and, when ready, displays an interstitial ad.
-	/// @discardableResult
+	///
+	/// It returns once the user has seen the whole ad
 	public static func displayInterstitialAd() async {
 		await withCheckedContinuation { continuation in
 			Self.shared.kovaleeManager?.displayInterstitialAd {
@@ -25,8 +26,7 @@ extension Kovalee {
 	
 	/// Setup and, when ready, displays a rewarded ad.
 	///
-	/// Once the user has seen the whole ad, a completion block is returned
-	/// To get the return value using Swift async/awat, use: ``displayInterstitialAd()`
+	/// It returns once the user has seen the whole ad
 	public static func displayRewardedAd() async {
 		await withCheckedContinuation { continuation in
 			Self.shared.kovaleeManager?.displayRewardedAd(andRewardCompletion: {
