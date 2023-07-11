@@ -112,6 +112,8 @@ extension ApplovinWrapperImpl: MAAdDelegate, MARewardedAdDelegate {
 
 	func didHide(_ ad: MAAd) {
 		Logger.debug("📺 Ad has been hidden")
+		interstitialAd = nil
+		rewardedAd = nil
 
 		onAdClose?()
     }
@@ -119,12 +121,11 @@ extension ApplovinWrapperImpl: MAAdDelegate, MARewardedAdDelegate {
     func didClick(_ ad: AppLovinSDK.MAAd) {}
 
     func didFail(toDisplay ad: AppLovinSDK.MAAd, withError error: MAError) {
-        // ad failed to display. We recommend loading the next ad
-        interstitialAd?.load()
-        rewardedAd?.load()
+		Logger.debug("📺 Failed to display ads")
     }
 
     func didRewardUser(for ad: AppLovinSDK.MAAd, with reward: MAReward) {
+		Logger.debug("📺 Rewarded ad has been seen")
         didCompleteRewardedVideo?()
     }
 }
