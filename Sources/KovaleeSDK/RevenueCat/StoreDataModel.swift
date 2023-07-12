@@ -347,7 +347,7 @@ public class Package: Identifiable, AbstractPackage {
 		self.rcPackage = false
 	}
 
-	static func empty() -> Package {
+	static public func empty() -> Package {
 		self.init()
 	}
 	
