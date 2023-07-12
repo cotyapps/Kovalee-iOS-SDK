@@ -347,6 +347,8 @@ public class Package: Identifiable, AbstractPackage {
 		self.rcPackage = false
 	}
 
+	/// Generates an empty Package
+	/// To use only for testing purposes
 	static public func empty() -> Package {
 		self.init()
 	}
