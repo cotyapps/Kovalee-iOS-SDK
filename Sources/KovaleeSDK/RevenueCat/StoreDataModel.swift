@@ -336,7 +336,23 @@ public class Package: Identifiable, AbstractPackage {
         self.localizedIntroductoryPriceString = package.localizedIntroductoryPriceString
         self.rcPackage = package
     }
+	
+	internal required init() {
+		self.identifier = "0"
+		self.packageType = .unknown
+		self.storeProduct = StoreProduct.empty()
+		self.offeringIdentifier = ""
+		self.localizedPriceString = ""
+		self.localizedIntroductoryPriceString = nil
+		self.rcPackage = false
+	}
 
+	/// Generates an empty Package
+	/// To use only for testing purposes
+	static public func empty() -> Package {
+		self.init()
+	}
+	
     public func getDuration() -> Int {
 		guard let subscriptionPeriod = (self.rcPackage as! RevenueCat.Package).storeProduct.subscriptionPeriod else {
             return 0
@@ -357,87 +373,108 @@ public class Package: Identifiable, AbstractPackage {
 
 /// Type that provides access to all of `StoreKit`'s product type's properties.
 public struct StoreProduct {
-
-    /// The type of product.
-    public var productType: ProductType
-
-    /// The category of this product, whether a subscription or a one-time purchase.
-    public var productCategory: ProductCategory
-
-    /// A description of the product.
-    /// - Note: The title's language is determined by the storefront that the user's device is connected to,
-    /// not the preferred language set on the device.
-    public var localizedDescription: String
-
-    /// The name of the product.
-    public var localizedTitle: String
-
-    /// The currency of the product's price.
-    public var currencyCode: String?
-
-    /// The decimal representation of the cost of the product, in local currency.
-    public var price: Decimal
-
-    /// The price of this product using ``priceFormatter``.
-    public var localizedPriceString: String
-
-    /// The string that identifies the product to the Apple App Store.
-    public var productIdentifier: String
-
-    /// A Boolean value that indicates whether the product is available for family sharing in App Store Connect.
-    /// Check the value of `isFamilyShareable` to learn whether an in-app purchase is sharable with the family group.
-    ///
-    /// When displaying in-app purchases in your app, indicate whether the product includes Family Sharing
-    /// to help customers make a selection that best fits their needs.
-    ///
-    /// Configure your in-app purchases to allow Family Sharing in App Store Connect.
-    /// For more information about setting up Family Sharing, see Turn-on Family Sharing for in-app purchases.
-    public var isFamilyShareable: Bool
-
-    /// The identifier of the subscription group to which the subscription belongs.
-    /// All auto-renewable subscriptions must be a part of a group.
-    /// You create the group identifiers in App Store Connect.
-    /// This property is `nil` if the product is not an auto-renewable subscription.
-    public var subscriptionGroupIdentifier: String?
-
-    /// Provides a `NumberFormatter`, useful for formatting the price for displaying.
-    /// - Note: This creates a new formatter for every product, which can be slow.
-    /// - Returns: `nil` for StoreKit 2 backed products if the currency code could not be determined.
-    public var priceFormatter: NumberFormatter?
-
-    /// The period details for products that are subscriptions.
-    /// - Returns: `nil` if the product is not a subscription.
-    public var subscriptionPeriod: SubscriptionPeriod?
-
-    /// The object containing introductory price information for the product.
-    /// If you've set up introductory prices in App Store Connect, the introductory price property will be populated.
-    /// This property is `nil` if the product has no introductory price.
-    ///
-    /// Before displaying UI that offers the introductory price,
-    /// you must first determine if the user is eligible to receive it.
-    public var introductoryDiscount: StoreProductDiscount?
-
-    /// An array of subscription offers available for the auto-renewable subscription.
-    /// - Note: the current user may or may not be eligible for some of these.
-    public var discounts: [StoreProductDiscount]
-
-    init(_ product: RevenueCat.StoreProduct) {
-        self.productType = ProductType(rawValue: product.productType.rawValue)!
-        self.productCategory = ProductCategory(rawValue: product.productCategory.rawValue)!
-        self.localizedDescription = product.localizedDescription
-        self.localizedTitle = product.localizedTitle
-        self.currencyCode = product.currencyCode
-        self.price = product.price
-        self.localizedPriceString = product.localizedPriceString
-        self.productIdentifier = product.productIdentifier
-        self.isFamilyShareable = product.isFamilyShareable
-        self.subscriptionGroupIdentifier = product.subscriptionGroupIdentifier
-        self.priceFormatter = product.priceFormatter
-        self.subscriptionPeriod = product.subscriptionPeriod != nil ?
-            SubscriptionPeriod(product.subscriptionPeriod!) : nil
-        self.introductoryDiscount = StoreProductDiscount(product.introductoryDiscount)
-        self.discounts = product.discounts.compactMap { StoreProductDiscount($0) }
-    }
+	
+	/// The type of product.
+	public var productType: ProductType
+	
+	/// The category of this product, whether a subscription or a one-time purchase.
+	public var productCategory: ProductCategory
+	
+	/// A description of the product.
+	/// - Note: The title's language is determined by the storefront that the user's device is connected to,
+	/// not the preferred language set on the device.
+	public var localizedDescription: String
+	
+	/// The name of the product.
+	public var localizedTitle: String
+	
+	/// The currency of the product's price.
+	public var currencyCode: String?
+	
+	/// The decimal representation of the cost of the product, in local currency.
+	public var price: Decimal
+	
+	/// The price of this product using ``priceFormatter``.
+	public var localizedPriceString: String
+	
+	/// The string that identifies the product to the Apple App Store.
+	public var productIdentifier: String
+	
+	/// A Boolean value that indicates whether the product is available for family sharing in App Store Connect.
+	/// Check the value of `isFamilyShareable` to learn whether an in-app purchase is sharable with the family group.
+	///
+	/// When displaying in-app purchases in your app, indicate whether the product includes Family Sharing
+	/// to help customers make a selection that best fits their needs.
+	///
+	/// Configure your in-app purchases to allow Family Sharing in App Store Connect.
+	/// For more information about setting up Family Sharing, see Turn-on Family Sharing for in-app purchases.
+	public var isFamilyShareable: Bool
+	
+	/// The identifier of the subscription group to which the subscription belongs.
+	/// All auto-renewable subscriptions must be a part of a group.
+	/// You create the group identifiers in App Store Connect.
+	/// This property is `nil` if the product is not an auto-renewable subscription.
+	public var subscriptionGroupIdentifier: String?
+	
+	/// Provides a `NumberFormatter`, useful for formatting the price for displaying.
+	/// - Note: This creates a new formatter for every product, which can be slow.
+	/// - Returns: `nil` for StoreKit 2 backed products if the currency code could not be determined.
+	public var priceFormatter: NumberFormatter?
+	
+	/// The period details for products that are subscriptions.
+	/// - Returns: `nil` if the product is not a subscription.
+	public var subscriptionPeriod: SubscriptionPeriod?
+	
+	/// The object containing introductory price information for the product.
+	/// If you've set up introductory prices in App Store Connect, the introductory price property will be populated.
+	/// This property is `nil` if the product has no introductory price.
+	///
+	/// Before displaying UI that offers the introductory price,
+	/// you must first determine if the user is eligible to receive it.
+	public var introductoryDiscount: StoreProductDiscount?
+	
+	/// An array of subscription offers available for the auto-renewable subscription.
+	/// - Note: the current user may or may not be eligible for some of these.
+	public var discounts: [StoreProductDiscount]
+	
+	init(_ product: RevenueCat.StoreProduct) {
+		self.productType = ProductType(rawValue: product.productType.rawValue)!
+		self.productCategory = ProductCategory(rawValue: product.productCategory.rawValue)!
+		self.localizedDescription = product.localizedDescription
+		self.localizedTitle = product.localizedTitle
+		self.currencyCode = product.currencyCode
+		self.price = product.price
+		self.localizedPriceString = product.localizedPriceString
+		self.productIdentifier = product.productIdentifier
+		self.isFamilyShareable = product.isFamilyShareable
+		self.subscriptionGroupIdentifier = product.subscriptionGroupIdentifier
+		self.priceFormatter = product.priceFormatter
+		self.subscriptionPeriod = product.subscriptionPeriod != nil ?
+		SubscriptionPeriod(product.subscriptionPeriod!) : nil
+		self.introductoryDiscount = StoreProductDiscount(product.introductoryDiscount)
+		self.discounts = product.discounts.compactMap { StoreProductDiscount($0) }
+	}
+	
+	private init() {
+		self.productType = .consumable
+		self.productCategory = .subscription
+		self.localizedDescription = ""
+		self.localizedTitle = ""
+		self.currencyCode = nil
+		self.price = 0
+		self.localizedPriceString = ""
+		self.productIdentifier = ""
+		self.isFamilyShareable = false
+		self.subscriptionGroupIdentifier = nil
+		self.priceFormatter = nil
+		self.subscriptionPeriod = nil
+		self.introductoryDiscount = nil
+		self.discounts = []
+	}
+	
+	static func empty() -> Self {
+		self.init()
+	}
 }
 
 public enum ProductCategory: Int {
