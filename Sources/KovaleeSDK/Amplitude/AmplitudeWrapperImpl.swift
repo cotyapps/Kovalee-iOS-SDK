@@ -4,7 +4,7 @@ import Amplitude_Swift
 
 struct AmplitudeWrapperImpl: AmplitudeWrapper {
     init(withKey key: String) {
-		Logger.debug("initializing Amplitude")
+		KLogger.debug("initializing Amplitude")
 
         let trackingOptions = TrackingOptions()
             .disableTrackIpAddress()
@@ -15,9 +15,9 @@ struct AmplitudeWrapperImpl: AmplitudeWrapper {
         amplitude = Amplitude(
             configuration: Amplitude_Swift.Configuration(
                 apiKey: key,
-                logLevel: Logger.logLevel.amplitudeLogLevel(),
+                logLevel: KLogger.logLevel.amplitudeLogLevel(),
                 callback: { event, code, message in
-                    Logger.debug("\(code): \(message) → \(event.description)")
+                    KLogger.debug("\(code): \(message) → \(event.description)")
                 },
                 trackingOptions: trackingOptions,
                 flushEventsOnClose: true
@@ -32,19 +32,19 @@ struct AmplitudeWrapperImpl: AmplitudeWrapper {
             eventType: event.name,
             eventProperties: event.properties ?? [:]
         )
-        Logger.debug("Sending Event: \(event.name) \(event.properties?.serialization ?? "")")
+        KLogger.debug("Sending Event: \(event.name) \(event.properties?.serialization ?? "")")
     }
 
     func setUserId(_ userId: String) {
         amplitude?.setUserId(userId: userId)
 
-        Logger.debug("Setting userId: \(userId)")
+        KLogger.debug("Setting userId: \(userId)")
     }
 
     func setDeviceId(_ deviceId: String) {
         amplitude?.setDeviceId(deviceId: deviceId)
 
-        Logger.debug("Setting deviceId: \(deviceId)")
+        KLogger.debug("Setting deviceId: \(deviceId)")
     }
 
     func setUserProperty(key: String, value: String) {
@@ -52,7 +52,7 @@ struct AmplitudeWrapperImpl: AmplitudeWrapper {
             identify: Identify().set(property: key, value: value)
         )
 
-        Logger.debug("Setting user property: \(key) → \(value)")
+        KLogger.debug("Setting user property: \(key) → \(value)")
     }
 
     func setUserProperty(property: UserProperty) {

@@ -6,9 +6,9 @@ class RevenueCatWrapperImpl: NSObject, RevenueCatWrapper {
 	init(withKeys keys: KovaleeKeys.RevenueCat) {
         super.init()
 
-		Logger.debug("initializing RevenueCat")
+		KLogger.debug("initializing RevenueCat")
 
-        Purchases.logLevel = Logger.logLevel.revenueCatLogLevel()
+        Purchases.logLevel = KLogger.logLevel.revenueCatLogLevel()
         Purchases.configure(
             with: RevenueCat.Configuration
 				.builder(withAPIKey: keys.sdkId)
@@ -28,21 +28,23 @@ class RevenueCatWrapperImpl: NSObject, RevenueCatWrapper {
         let rcOfferings = try await Purchases.shared.offerings()
 
         let offerings = Offerings(rcOfferings)
-        offerings.all.keys.forEach { Logger.debug("🛍️ Fetched offerings \($0)") }
+        offerings.all.keys.forEach { KLogger.debug("🛍️ Fetched offerings \($0)") }
 
         return offerings
     }
 
     func fetchCurrentOffering() async throws -> AbstractOffering? {
+		KLogger.debug("🛍️ Fetching current offering...")
         let rcOfferings = try await Purchases.shared.offerings()
         guard let current = rcOfferings.current else {
             return nil
         }
+		KLogger.debug("🛍️ Fetched current offering \(current)")
         return Offering(offering: current)
     }
 
     func restorePurchases() async throws -> AbstractCustomerInfo? {
-        Logger.debug("🛍️ Restoring purchase...")
+		KLogger.debug("🛍️ Restoring purchase...")
 
         let rcCustomerInfo = try await Purchases.shared.restorePurchases()
         return CustomerInfo(info: rcCustomerInfo)
@@ -50,7 +52,7 @@ class RevenueCatWrapperImpl: NSObject, RevenueCatWrapper {
 
     func purchase(package: AbstractPackage) async throws -> AbstractPurchaseResultData {
 		let purchaseResult = try await Purchases.shared.purchase(package: package.rcPackage as! RevenueCat.Package)
-        Logger.debug("🛍️ Purchase \(purchaseResult)")
+        KLogger.debug("🛍️ Purchase \(purchaseResult)")
 
         return PurchaseResultData(
             transaction: StoreTransaction(transaction: purchaseResult.transaction),

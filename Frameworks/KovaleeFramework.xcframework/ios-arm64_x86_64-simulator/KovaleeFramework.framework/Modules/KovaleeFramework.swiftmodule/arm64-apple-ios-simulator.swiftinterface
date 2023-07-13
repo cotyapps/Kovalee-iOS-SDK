@@ -8,6 +8,7 @@ import Foundation
 import Swift
 import _Concurrency
 import _StringProcessing
+import os
 public class KovaleeManager {
   public init(withStorage storage: KovaleeFramework.Storage = .userDefaults(), keys: KovaleeFramework.KovaleeKeys, adjustWrapper: KovaleeFramework.AdjustWrapper, amplitudeWrapper: KovaleeFramework.AmplitudeWrapper, revenueCatWrapper: KovaleeFramework.RevenueCatWrapper?, firebaseWrapper: KovaleeFramework.FirebaseWrapper?, applovinWrapper: KovaleeFramework.ApplovinWrapper?)
   public func promptTrackingAuthorization(completion: @escaping (AppTrackingTransparency.ATTrackingManager.AuthorizationStatus) -> Swift.Void)
@@ -66,11 +67,10 @@ extension KovaleeFramework.KovaleeManager {
   public func displayRewardedAd() async
   #endif
 }
-public struct Logger {
+public struct KLogger {
   public static var logLevel: KovaleeFramework.LogLevel
 }
-extension KovaleeFramework.Logger {
-  public static func verbose(_ message: Swift.String, fileName: Swift.String? = #fileID, functionName: Swift.String? = #function, line: Swift.UInt = #line)
+extension KovaleeFramework.KLogger {
   public static func debug(_ message: Swift.String, fileName: Swift.String? = #fileID, functionName: Swift.String? = #function, line: Swift.UInt = #line)
   public static func info(_ message: Swift.String, fileName: Swift.String? = #fileID, functionName: Swift.String? = #function, line: Swift.UInt = #line)
   public static func warn(_ message: Swift.String, fileName: Swift.String? = #fileID, functionName: Swift.String? = #function, line: Swift.UInt = #line)
