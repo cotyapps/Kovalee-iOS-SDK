@@ -8,12 +8,14 @@ public struct Configuration {
     ///
     /// ### Environment
     ///
-    /// - ``sandbox``
+    /// - ``development``
     /// - ``production``
     /// - ``test``
     public enum Environment: String {
-        case sandbox
+        case development
         case production
+
+		/// this should only be used for testing purposes
         case test
     }
 

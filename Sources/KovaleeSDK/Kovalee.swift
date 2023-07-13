@@ -110,7 +110,7 @@ extension Kovalee {
 	}
 	
 	internal func createAmplitudeWrapper(withConfiguration configuration: Configuration, andKeys keys: KovaleeKeys.Amplitude) -> AmplitudeWrapper {
-		if configuration.environment == .sandbox && keys.devSDKId == nil {
+		if configuration.environment == .development && keys.devSDKId == nil {
 			Logger.error("Configured Sandbox environment but Amplitude Dev key hasn't been provided")
 		}
 		return AmplitudeWrapperImpl(
