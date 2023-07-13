@@ -2,7 +2,6 @@
 KovaleeSDK is an efficient iOS framework, that's packed with tools specifically for tracking user behavior, handling user purchases, and smoothly integrating ads.
 
 ## **Installation**
-The SDK can be installed in 2 different ways
 
 ### 📦 **Swift Package**
 The package can be simply installed as a dependency from XCode.
@@ -17,13 +16,14 @@ The package can be simply installed as a dependency from XCode.
   
 And you are good to go.
 
-###  **XCFramework**
-1. Download the `KovaleeSDK.xcframework` file from the Sources folder.
-2. Drang and drop the xcframework in your XCode project.
-
-
 ## Requirements
 
 | Platform | Minimum target |
 | -------- | -------------- |
 | iOS      | 14.0+          |
+
+
+## Integration
+To properly work, this Package needs a set of configurations files that should be created by the team @Kovalee.
+
+If you are interested in using this package for your iOS app, feel free to get in contact.
