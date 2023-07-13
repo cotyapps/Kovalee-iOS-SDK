@@ -11,6 +11,8 @@ extension AdjustConfiguration.Environment {
 			return ADJEnvironmentProduction
 		case .sandbox, .test:
 			return ADJEnvironmentSandbox
+		@unknown default:
+			fatalError()
 		}
 	}
 }
@@ -26,7 +28,7 @@ class AdjustWrapperImpl: NSObject, AdjustWrapper {
         configuration: AdjustConfiguration,
         attributionAdidCallback: @escaping (String?) -> Void
     ) {
-		Logger.debug("initializing Adjust")
+		KLogger.debug("initializing Adjust")
 
         self.attributionAdidCallback = attributionAdidCallback
 		self.configuration = configuration
@@ -36,7 +38,7 @@ class AdjustWrapperImpl: NSObject, AdjustWrapper {
             appToken: configuration.token,
             environment: configuration.environment.adjustEnvironment
         )
-        adjustConfig?.logLevel = Logger.logLevel.adjustLogLevel()
+        adjustConfig?.logLevel = KLogger.logLevel.adjustLogLevel()
         adjustConfig?.delayStart = 2.5
         adjustConfig?.delegate = self
 
@@ -62,7 +64,7 @@ class AdjustWrapperImpl: NSObject, AdjustWrapper {
             guard let error else {
                 return
             }
-            Logger.error("An error occurred during completion: \(error.localizedDescription)")
+            KLogger.error("An error occurred during completion: \(error.localizedDescription)")
         }
     }
 
@@ -98,6 +100,8 @@ extension LogLevel {
             return ADJLogLevelWarn
         case .error:
             return ADJLogLevelError
-        }
+		@unknown default:
+			fatalError()
+		}
     }
 }

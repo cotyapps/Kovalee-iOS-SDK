@@ -49,7 +49,7 @@ public final class Kovalee {
             return self.initializedManager!
         } else {
             let errorMessage = "Please call KovaleeManager.initialize(...) before accessing the shared instance."
-            Logger.error(errorMessage)
+            KLogger.error(errorMessage)
             fatalError(errorMessage)
         }
     }
@@ -57,7 +57,7 @@ public final class Kovalee {
 	private init(configuration: Configuration, storage: Storage) {
 		self.configuration = configuration
 		
-		Logger.logLevel = configuration.logLevel
+		KLogger.logLevel = configuration.logLevel
 		
 		do {
 			let keys = try Reader.kovaleeKeysReader.load(configuration.keysFileUrl)
@@ -83,8 +83,8 @@ public final class Kovalee {
 			self.kovaleeManager?.setDefaultUserId()
 			self.kovaleeManager?.sendAppOpenEvent()
 		} catch {
-			Logger.error("We couldn't find the file at \(configuration.keysFileUrl?.absoluteString ?? "")")
-			Logger.error("Please add the file KovaleeKeys.json to your project")
+			KLogger.error("We couldn't find the file at \(configuration.keysFileUrl?.absoluteString ?? "")")
+			KLogger.error("Please add the file KovaleeKeys.json to your project")
 			fatalError(error.localizedDescription)
 		}
 	}
@@ -111,7 +111,7 @@ extension Kovalee {
 	
 	internal func createAmplitudeWrapper(withConfiguration configuration: Configuration, andKeys keys: KovaleeKeys.Amplitude) -> AmplitudeWrapper {
 		if configuration.environment == .development && keys.devSDKId == nil {
-			Logger.error("Configured Sandbox environment but Amplitude Dev key hasn't been provided")
+			KLogger.error("Configured Sandbox environment but Amplitude Dev key hasn't been provided")
 		}
 		return AmplitudeWrapperImpl(
 			withKey: configuration.environment == .production ? keys.prodSDKId : (keys.devSDKId ?? "")

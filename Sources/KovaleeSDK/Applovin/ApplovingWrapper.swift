@@ -4,12 +4,12 @@ import KovaleeFramework
 
 class ApplovinWrapperImpl: NSObject, ApplovinWrapper {
     init(withKey key: KovaleeKeys.Applovin) {
-		Logger.debug("📺 initializing Applovin")
+		KLogger.debug("📺 initializing Applovin")
 
         self.key = key
         self.sdk = ALSdk.shared(withKey: key.sdkId)
         self.sdk?.mediationProvider = "max"
-        self.sdk?.settings.isVerboseLoggingEnabled = Logger.logLevel.applovinLogLevel()
+        self.sdk?.settings.isVerboseLoggingEnabled = KLogger.logLevel.applovinLogLevel()
 
 		if let sdk = self.sdk {
 			self.interstitialAd = MAInterstitialAd(
@@ -46,7 +46,7 @@ class ApplovinWrapperImpl: NSObject, ApplovinWrapper {
 
 	func createInterstitialAd(onClose: (() -> Void)?) {
         guard let sdk, sdk.isInitialized else {
-            Logger.error("📺 Failed to load ad: Applovin is not initialized correctly")
+			KLogger.error("📺 Failed to load ad: Applovin is not initialized correctly")
             return
         }
 		onAdClose = onClose
@@ -58,7 +58,7 @@ class ApplovinWrapperImpl: NSObject, ApplovinWrapper {
 
     func createRewardedAd(completedVideo completion: (() -> Void)?) {
         guard let sdk, sdk.isInitialized else {
-            Logger.error("📺 Failed to load ad: Applovin is not initialized correctly")
+			KLogger.error("📺 Failed to load ad: Applovin is not initialized correctly")
             return
         }
         didCompleteRewardedVideo = completion
@@ -87,7 +87,7 @@ class ApplovinWrapperImpl: NSObject, ApplovinWrapper {
 // swiftlint:disable identifier_name
 extension ApplovinWrapperImpl: MAAdDelegate, MARewardedAdDelegate {
     func didLoad(_ ad: AppLovinSDK.MAAd) {
-        Logger.debug("📺 Ad ready to be shown")
+		KLogger.debug("📺 Ad ready to be shown")
         // Reset retry attempt
         retryAttempt = 0
 
@@ -101,7 +101,7 @@ extension ApplovinWrapperImpl: MAAdDelegate, MARewardedAdDelegate {
         retryAttempt += 1
         let delaySec = pow(2.0, min(6.0, retryAttempt))
 
-        Logger.error("📺 Failed to load ad with unitId: \(adUnitIdentifier)")
+		KLogger.error("📺 Failed to load ad with unitId: \(adUnitIdentifier)")
         DispatchQueue.main.asyncAfter(deadline: .now() + delaySec) {
             self.interstitialAd?.load()
             self.rewardedAd?.load()
@@ -111,7 +111,7 @@ extension ApplovinWrapperImpl: MAAdDelegate, MARewardedAdDelegate {
     func didDisplay(_ ad: AppLovinSDK.MAAd) {}
 
 	func didHide(_ ad: MAAd) {
-		Logger.debug("📺 Ad has been hidden")
+		KLogger.debug("📺 Ad has been hidden")
 		onAdClose?()
 		onAdClose = nil
     }
@@ -119,11 +119,11 @@ extension ApplovinWrapperImpl: MAAdDelegate, MARewardedAdDelegate {
     func didClick(_ ad: AppLovinSDK.MAAd) {}
 
     func didFail(toDisplay ad: AppLovinSDK.MAAd, withError error: MAError) {
-		Logger.debug("📺 Failed to display ads")
+		KLogger.debug("📺 Failed to display ads")
     }
 
     func didRewardUser(for ad: AppLovinSDK.MAAd, with reward: MAReward) {
-		Logger.debug("📺 Rewarded ad has been seen")
+		KLogger.debug("📺 Rewarded ad has been seen")
         didCompleteRewardedVideo?()
 		didCompleteRewardedVideo = nil
     }

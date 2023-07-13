@@ -1050,9 +1050,16 @@
         "moduleName": "KovaleeFramework"
       },
       {
+        "kind": "Import",
+        "name": "os",
+        "printedName": "os",
+        "declKind": "Import",
+        "moduleName": "KovaleeFramework"
+      },
+      {
         "kind": "TypeDecl",
-        "name": "Logger",
-        "printedName": "Logger",
+        "name": "KLogger",
+        "printedName": "KLogger",
         "children": [
           {
             "kind": "Var",
@@ -1067,8 +1074,8 @@
               }
             ],
             "declKind": "Var",
-            "usr": "s:16KovaleeFramework6LoggerV8logLevelAA03LogE0OvpZ",
-            "mangledName": "$s16KovaleeFramework6LoggerV8logLevelAA03LogE0OvpZ",
+            "usr": "s:16KovaleeFramework7KLoggerV8logLevelAA03LogE0OvpZ",
+            "mangledName": "$s16KovaleeFramework7KLoggerV8logLevelAA03LogE0OvpZ",
             "moduleName": "KovaleeFramework",
             "static": true,
             "declAttributes": [
@@ -1091,8 +1098,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:16KovaleeFramework6LoggerV8logLevelAA03LogE0OvgZ",
-                "mangledName": "$s16KovaleeFramework6LoggerV8logLevelAA03LogE0OvgZ",
+                "usr": "s:16KovaleeFramework7KLoggerV8logLevelAA03LogE0OvgZ",
+                "mangledName": "$s16KovaleeFramework7KLoggerV8logLevelAA03LogE0OvgZ",
                 "moduleName": "KovaleeFramework",
                 "static": true,
                 "implicit": true,
@@ -1116,8 +1123,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:16KovaleeFramework6LoggerV8logLevelAA03LogE0OvsZ",
-                "mangledName": "$s16KovaleeFramework6LoggerV8logLevelAA03LogE0OvsZ",
+                "usr": "s:16KovaleeFramework7KLoggerV8logLevelAA03LogE0OvsZ",
+                "mangledName": "$s16KovaleeFramework7KLoggerV8logLevelAA03LogE0OvsZ",
                 "moduleName": "KovaleeFramework",
                 "static": true,
                 "implicit": true,
@@ -1135,79 +1142,14 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:16KovaleeFramework6LoggerV8logLevelAA03LogE0OvMZ",
-                "mangledName": "$s16KovaleeFramework6LoggerV8logLevelAA03LogE0OvMZ",
+                "usr": "s:16KovaleeFramework7KLoggerV8logLevelAA03LogE0OvMZ",
+                "mangledName": "$s16KovaleeFramework7KLoggerV8logLevelAA03LogE0OvMZ",
                 "moduleName": "KovaleeFramework",
                 "static": true,
                 "implicit": true,
                 "accessorKind": "_modify"
               }
             ]
-          },
-          {
-            "kind": "Function",
-            "name": "verbose",
-            "printedName": "verbose(_:fileName:functionName:line:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "Swift.String?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "hasDefaultArg": true,
-                "usr": "s:Sq"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "Swift.String?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "hasDefaultArg": true,
-                "usr": "s:Sq"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "UInt",
-                "printedName": "Swift.UInt",
-                "hasDefaultArg": true,
-                "usr": "s:Su"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:16KovaleeFramework6LoggerV7verbose_8fileName08functionF04lineySS_SSSgAHSutFZ",
-            "mangledName": "$s16KovaleeFramework6LoggerV7verbose_8fileName08functionF04lineySS_SSSgAHSutFZ",
-            "moduleName": "KovaleeFramework",
-            "static": true,
-            "declAttributes": [
-              "AccessControl"
-            ],
-            "isFromExtension": true,
-            "funcSelfKind": "NonMutating"
           },
           {
             "kind": "Function",
@@ -1264,8 +1206,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:16KovaleeFramework6LoggerV5debug_8fileName08functionF04lineySS_SSSgAHSutFZ",
-            "mangledName": "$s16KovaleeFramework6LoggerV5debug_8fileName08functionF04lineySS_SSSgAHSutFZ",
+            "usr": "s:16KovaleeFramework7KLoggerV5debug_8fileName08functionF04lineySS_SSSgAHSutFZ",
+            "mangledName": "$s16KovaleeFramework7KLoggerV5debug_8fileName08functionF04lineySS_SSSgAHSutFZ",
             "moduleName": "KovaleeFramework",
             "static": true,
             "declAttributes": [
@@ -1329,8 +1271,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:16KovaleeFramework6LoggerV4info_8fileName08functionF04lineySS_SSSgAHSutFZ",
-            "mangledName": "$s16KovaleeFramework6LoggerV4info_8fileName08functionF04lineySS_SSSgAHSutFZ",
+            "usr": "s:16KovaleeFramework7KLoggerV4info_8fileName08functionF04lineySS_SSSgAHSutFZ",
+            "mangledName": "$s16KovaleeFramework7KLoggerV4info_8fileName08functionF04lineySS_SSSgAHSutFZ",
             "moduleName": "KovaleeFramework",
             "static": true,
             "declAttributes": [
@@ -1394,8 +1336,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:16KovaleeFramework6LoggerV4warn_8fileName08functionF04lineySS_SSSgAHSutFZ",
-            "mangledName": "$s16KovaleeFramework6LoggerV4warn_8fileName08functionF04lineySS_SSSgAHSutFZ",
+            "usr": "s:16KovaleeFramework7KLoggerV4warn_8fileName08functionF04lineySS_SSSgAHSutFZ",
+            "mangledName": "$s16KovaleeFramework7KLoggerV4warn_8fileName08functionF04lineySS_SSSgAHSutFZ",
             "moduleName": "KovaleeFramework",
             "static": true,
             "declAttributes": [
@@ -1443,8 +1385,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:16KovaleeFramework6LoggerV5error_8fileName08functionF04lineySS_S2SSutFZ",
-            "mangledName": "$s16KovaleeFramework6LoggerV5error_8fileName08functionF04lineySS_S2SSutFZ",
+            "usr": "s:16KovaleeFramework7KLoggerV5error_8fileName08functionF04lineySS_S2SSutFZ",
+            "mangledName": "$s16KovaleeFramework7KLoggerV5error_8fileName08functionF04lineySS_S2SSutFZ",
             "moduleName": "KovaleeFramework",
             "static": true,
             "declAttributes": [
@@ -1455,8 +1397,8 @@
           }
         ],
         "declKind": "Struct",
-        "usr": "s:16KovaleeFramework6LoggerV",
-        "mangledName": "$s16KovaleeFramework6LoggerV",
+        "usr": "s:16KovaleeFramework7KLoggerV",
+        "mangledName": "$s16KovaleeFramework7KLoggerV",
         "moduleName": "KovaleeFramework",
         "declAttributes": [
           "AccessControl",
@@ -1877,13 +1819,6 @@
             "mangledName": "$sSL"
           }
         ]
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "KovaleeFramework"
       },
       {
         "kind": "Import",
@@ -4347,6 +4282,13 @@
         "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "KovaleeFramework"
+      },
+      {
+        "kind": "Import",
+        "name": "os",
+        "printedName": "os",
         "declKind": "Import",
         "moduleName": "KovaleeFramework"
       },
@@ -10867,10 +10809,10 @@
   "ConstValues": [
     {
       "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/Logger\/Logger.swift",
-      "kind": "BooleanLiteral",
-      "offset": 473,
-      "length": 5,
-      "value": "false"
+      "kind": "StringLiteral",
+      "offset": 439,
+      "length": 12,
+      "value": "\"KovaleeSDK\""
     },
     {
       "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/Logger\/LogLevel.swift",
@@ -11015,126 +10957,126 @@
     {
       "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/Utils\/Storage.swift",
       "kind": "StringLiteral",
-      "offset": 78,
+      "offset": 88,
       "length": 20,
       "value": "\"KV_is_user_premium\""
     },
     {
       "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/Utils\/Storage.swift",
       "kind": "StringLiteral",
-      "offset": 125,
+      "offset": 135,
       "length": 21,
       "value": "\"KV_app_opened_count\""
     },
     {
       "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/Utils\/Storage.swift",
       "kind": "StringLiteral",
-      "offset": 178,
+      "offset": 188,
       "length": 26,
       "value": "\"KV_app_installation_date\""
     },
     {
       "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/Utils\/Storage.swift",
       "kind": "StringLiteral",
-      "offset": 233,
+      "offset": 243,
       "length": 22,
       "value": "\"KV_user_subscription\""
     },
     {
       "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/Utils\/Storage.swift",
       "kind": "StringLiteral",
-      "offset": 283,
+      "offset": 293,
       "length": 21,
       "value": "\"KV_conversion_value\""
     },
     {
       "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/Utils\/Storage.swift",
       "kind": "StringLiteral",
-      "offset": 332,
+      "offset": 342,
       "length": 22,
       "value": "\"KV_amplitude_user_id\""
     },
     {
       "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/Utils\/Storage.swift",
       "kind": "StringLiteral",
-      "offset": 384,
+      "offset": 394,
       "length": 25,
       "value": "\"KV_is_first_app_opening\""
     },
     {
       "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/Utils\/Storage.swift",
       "kind": "StringLiteral",
-      "offset": 439,
+      "offset": 449,
       "length": 24,
       "value": "\"KV_ab_experiment_value\""
     },
     {
       "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/Utils\/Storage.swift",
       "kind": "StringLiteral",
-      "offset": 491,
+      "offset": 501,
       "length": 22,
       "value": "\"KV_ab_experiment_key\""
     },
     {
       "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/Utils\/Storage.swift",
       "kind": "StringLiteral",
-      "offset": 78,
+      "offset": 88,
       "length": 20,
       "value": "\"KV_is_user_premium\""
     },
     {
       "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/Utils\/Storage.swift",
       "kind": "StringLiteral",
-      "offset": 125,
+      "offset": 135,
       "length": 21,
       "value": "\"KV_app_opened_count\""
     },
     {
       "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/Utils\/Storage.swift",
       "kind": "StringLiteral",
-      "offset": 178,
+      "offset": 188,
       "length": 26,
       "value": "\"KV_app_installation_date\""
     },
     {
       "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/Utils\/Storage.swift",
       "kind": "StringLiteral",
-      "offset": 233,
+      "offset": 243,
       "length": 22,
       "value": "\"KV_user_subscription\""
     },
     {
       "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/Utils\/Storage.swift",
       "kind": "StringLiteral",
-      "offset": 283,
+      "offset": 293,
       "length": 21,
       "value": "\"KV_conversion_value\""
     },
     {
       "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/Utils\/Storage.swift",
       "kind": "StringLiteral",
-      "offset": 332,
+      "offset": 342,
       "length": 22,
       "value": "\"KV_amplitude_user_id\""
     },
     {
       "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/Utils\/Storage.swift",
       "kind": "StringLiteral",
-      "offset": 384,
+      "offset": 394,
       "length": 25,
       "value": "\"KV_is_first_app_opening\""
     },
     {
       "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/Utils\/Storage.swift",
       "kind": "StringLiteral",
-      "offset": 439,
+      "offset": 449,
       "length": 24,
       "value": "\"KV_ab_experiment_value\""
     },
     {
       "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/Utils\/Storage.swift",
       "kind": "StringLiteral",
-      "offset": 491,
+      "offset": 501,
       "length": 22,
       "value": "\"KV_ab_experiment_key\""
     },

@@ -30,21 +30,21 @@ struct FirebaseWrapperImpl: FirebaseWrapper {
             try await self.remoteConfig.ensureInitialized()
             
             let activated = try await remoteConfig.fetchAndActivate()
-            Logger.debug("🛰️ Remote config activated: \(activated)")
+            KLogger.debug("🛰️ Remote config activated: \(activated)")
             if activated == RemoteConfigFetchAndActivateStatus.error {
                 throw KovaleeError.remoteValueFetchError
             }
 
             let keys = remoteConfig.allKeys(from: RemoteConfigSource.remote)
-            Logger.debug("🛰️ Found remote config keys: [\(keys.joined(separator: ","))]")
+            KLogger.debug("🛰️ Found remote config keys: [\(keys.joined(separator: ","))]")
         } catch {
-            Logger.error("❌ Got an error fetching remote values \(error)")
+            KLogger.error("❌ Got an error fetching remote values \(error)")
         }
     }
 
     func value(forKey key: String) async throws -> Data {
         try await fetchAndActivateRemoteConfig()
-        Logger.debug("🛰️ initialization complete")
+        KLogger.debug("🛰️ initialization complete")
 
 		return remoteConfig.configValue(forKey: key).dataValue
     }
