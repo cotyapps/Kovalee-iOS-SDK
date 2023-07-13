@@ -2060,14 +2060,14 @@
             "children": [
               {
                 "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
+                "name": "Amplitude",
+                "printedName": "KovaleeFramework.KovaleeKeys.Amplitude",
+                "usr": "s:16KovaleeFramework0A4KeysV9AmplitudeV"
               }
             ],
             "declKind": "Var",
-            "usr": "s:16KovaleeFramework0A4KeysV9amplitudeSSvp",
-            "mangledName": "$s16KovaleeFramework0A4KeysV9amplitudeSSvp",
+            "usr": "s:16KovaleeFramework0A4KeysV9amplitudeAC9AmplitudeVvp",
+            "mangledName": "$s16KovaleeFramework0A4KeysV9amplitudeAC9AmplitudeVvp",
             "moduleName": "KovaleeFramework",
             "declAttributes": [
               "HasStorage",
@@ -2083,14 +2083,14 @@
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
+                    "name": "Amplitude",
+                    "printedName": "KovaleeFramework.KovaleeKeys.Amplitude",
+                    "usr": "s:16KovaleeFramework0A4KeysV9AmplitudeV"
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:16KovaleeFramework0A4KeysV9amplitudeSSvg",
-                "mangledName": "$s16KovaleeFramework0A4KeysV9amplitudeSSvg",
+                "usr": "s:16KovaleeFramework0A4KeysV9amplitudeAC9AmplitudeVvg",
+                "mangledName": "$s16KovaleeFramework0A4KeysV9amplitudeAC9AmplitudeVvg",
                 "moduleName": "KovaleeFramework",
                 "implicit": true,
                 "accessorKind": "get"
@@ -2334,6 +2334,250 @@
                 "moduleName": "KovaleeFramework",
                 "implicit": true,
                 "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "TypeDecl",
+            "name": "Amplitude",
+            "printedName": "Amplitude",
+            "children": [
+              {
+                "kind": "Var",
+                "name": "prodSDKId",
+                "printedName": "prodSDKId",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:16KovaleeFramework0A4KeysV9AmplitudeV9prodSDKIdSSvp",
+                "mangledName": "$s16KovaleeFramework0A4KeysV9AmplitudeV9prodSDKIdSSvp",
+                "moduleName": "KovaleeFramework",
+                "declAttributes": [
+                  "HasStorage",
+                  "AccessControl"
+                ],
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:16KovaleeFramework0A4KeysV9AmplitudeV9prodSDKIdSSvg",
+                    "mangledName": "$s16KovaleeFramework0A4KeysV9AmplitudeV9prodSDKIdSSvg",
+                    "moduleName": "KovaleeFramework",
+                    "implicit": true,
+                    "accessorKind": "get"
+                  },
+                  {
+                    "kind": "Accessor",
+                    "name": "Set",
+                    "printedName": "Set()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:16KovaleeFramework0A4KeysV9AmplitudeV9prodSDKIdSSvs",
+                    "mangledName": "$s16KovaleeFramework0A4KeysV9AmplitudeV9prodSDKIdSSvs",
+                    "moduleName": "KovaleeFramework",
+                    "implicit": true,
+                    "accessorKind": "set"
+                  },
+                  {
+                    "kind": "Accessor",
+                    "name": "Modify",
+                    "printedName": "Modify()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:16KovaleeFramework0A4KeysV9AmplitudeV9prodSDKIdSSvM",
+                    "mangledName": "$s16KovaleeFramework0A4KeysV9AmplitudeV9prodSDKIdSSvM",
+                    "moduleName": "KovaleeFramework",
+                    "implicit": true,
+                    "accessorKind": "_modify"
+                  }
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "devSDKId",
+                "printedName": "devSDKId",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:16KovaleeFramework0A4KeysV9AmplitudeV8devSDKIdSSSgvp",
+                "mangledName": "$s16KovaleeFramework0A4KeysV9AmplitudeV8devSDKIdSSSgvp",
+                "moduleName": "KovaleeFramework",
+                "declAttributes": [
+                  "HasInitialValue",
+                  "HasStorage",
+                  "AccessControl"
+                ],
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "Swift.String?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:16KovaleeFramework0A4KeysV9AmplitudeV8devSDKIdSSSgvg",
+                    "mangledName": "$s16KovaleeFramework0A4KeysV9AmplitudeV8devSDKIdSSSgvg",
+                    "moduleName": "KovaleeFramework",
+                    "implicit": true,
+                    "accessorKind": "get"
+                  },
+                  {
+                    "kind": "Accessor",
+                    "name": "Set",
+                    "printedName": "Set()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "Swift.String?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:16KovaleeFramework0A4KeysV9AmplitudeV8devSDKIdSSSgvs",
+                    "mangledName": "$s16KovaleeFramework0A4KeysV9AmplitudeV8devSDKIdSSSgvs",
+                    "moduleName": "KovaleeFramework",
+                    "implicit": true,
+                    "accessorKind": "set"
+                  },
+                  {
+                    "kind": "Accessor",
+                    "name": "Modify",
+                    "printedName": "Modify()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:16KovaleeFramework0A4KeysV9AmplitudeV8devSDKIdSSSgvM",
+                    "mangledName": "$s16KovaleeFramework0A4KeysV9AmplitudeV8devSDKIdSSSgvM",
+                    "moduleName": "KovaleeFramework",
+                    "implicit": true,
+                    "accessorKind": "_modify"
+                  }
+                ]
+              },
+              {
+                "kind": "Constructor",
+                "name": "init",
+                "printedName": "init(from:)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Amplitude",
+                    "printedName": "KovaleeFramework.KovaleeKeys.Amplitude",
+                    "usr": "s:16KovaleeFramework0A4KeysV9AmplitudeV"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Decoder",
+                    "printedName": "Swift.Decoder",
+                    "usr": "s:s7DecoderP"
+                  }
+                ],
+                "declKind": "Constructor",
+                "usr": "s:16KovaleeFramework0A4KeysV9AmplitudeV4fromAEs7Decoder_p_tKcfc",
+                "mangledName": "$s16KovaleeFramework0A4KeysV9AmplitudeV4fromAEs7Decoder_p_tKcfc",
+                "moduleName": "KovaleeFramework",
+                "implicit": true,
+                "throwing": true,
+                "init_kind": "Designated"
+              }
+            ],
+            "declKind": "Struct",
+            "usr": "s:16KovaleeFramework0A4KeysV9AmplitudeV",
+            "mangledName": "$s16KovaleeFramework0A4KeysV9AmplitudeV",
+            "moduleName": "KovaleeFramework",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "conformances": [
+              {
+                "kind": "Conformance",
+                "name": "Decodable",
+                "printedName": "Decodable",
+                "usr": "s:Se",
+                "mangledName": "$sSe"
               }
             ]
           },

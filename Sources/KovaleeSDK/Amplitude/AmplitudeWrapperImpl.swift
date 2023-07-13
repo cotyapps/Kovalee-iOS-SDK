@@ -2,12 +2,8 @@ import Foundation
 import KovaleeFramework
 import Amplitude_Swift
 
-struct AmplitudeConfiguration {
-    var token: String
-}
-
 struct AmplitudeWrapperImpl: AmplitudeWrapper {
-    init(withConfiguration configuration: AmplitudeConfiguration) {
+    init(withKey key: String) {
 		Logger.debug("initializing Amplitude")
 
         let trackingOptions = TrackingOptions()
@@ -18,7 +14,7 @@ struct AmplitudeWrapperImpl: AmplitudeWrapper {
 
         amplitude = Amplitude(
             configuration: Amplitude_Swift.Configuration(
-                apiKey: configuration.token,
+                apiKey: key,
                 logLevel: Logger.logLevel.amplitudeLogLevel(),
                 callback: { event, code, message in
                     Logger.debug("\(code): \(message) → \(event.description)")
@@ -89,6 +85,8 @@ extension LogLevel {
             return .WARN
         case .error:
             return .ERROR
-        }
+		@unknown default:
+			fatalError()
+		}
     }
 }

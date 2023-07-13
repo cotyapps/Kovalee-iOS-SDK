@@ -1,5 +1,5 @@
 import AdSupport
-@_implementationOnly import Amplitude_Swift
+import Amplitude_Swift
 import AppTrackingTransparency
 import Foundation
 import SwiftUI

@@ -100,11 +100,16 @@ public struct KovaleeConstants {
 public struct KovaleeKeys : Swift.Decodable {
   public let appCode: Swift.String
   public let adjust: Swift.String
-  public let amplitude: Swift.String
+  public let amplitude: KovaleeFramework.KovaleeKeys.Amplitude
   public let revenueCat: KovaleeFramework.KovaleeKeys.RevenueCat?
   public let firebase: KovaleeFramework.KovaleeKeys.Firebase?
   public let applovin: KovaleeFramework.KovaleeKeys.Applovin?
   public let conversionValue: KovaleeFramework.KovaleeKeys.ConversionValue?
+  public struct Amplitude : Swift.Decodable {
+    public var prodSDKId: Swift.String
+    public var devSDKId: Swift.String?
+    public init(from decoder: Swift.Decoder) throws
+  }
   public struct RevenueCat : Swift.Decodable {
     public var sdkId: Swift.String
     public var observerMode: Swift.Bool
