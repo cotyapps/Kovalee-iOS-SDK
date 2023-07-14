@@ -136,6 +136,11 @@ extension Kovalee {
 		guard let keys else {
 			return nil
 		}
-		return ApplovinWrapperImpl.init(withKey: keys)
+		let wrapper = ApplovinWrapperImpl.init(withKey: keys)
+
+		Task {
+			await wrapper.initializeSDK()
+		}
+		return wrapper
 	}
 }

@@ -8,7 +8,6 @@ enum ApplovinError: Error {
 }
 
 class ApplovinWrapperImpl: NSObject, ApplovinWrapper {
-
     init(withKey key: KovaleeKeys.Applovin) {
 		KLogger.debug("📺 initializing Applovin")
 
@@ -20,24 +19,32 @@ class ApplovinWrapperImpl: NSObject, ApplovinWrapper {
 		self.interstitialUnitId = key.interstitialUnitId
 		self.rewardedUnitId = key.rewardedUnitId
 
-		if let sdk = self.sdk {
-			self.interstitialAd = MAInterstitialAd(
-				adUnitIdentifier: key.interstitialUnitId,
-				sdk: sdk
-			)
-
-			self.rewardedAd = MARewardedAd.shared(
-				withAdUnitIdentifier: key.rewardedUnitId,
-				sdk: sdk
-			)
-		}
         // TODO: check this user Id
 //        ALSdk.shared()!.userIdentifier = "USER_ID"
     }
+	
+	func initializeSDK() async {
+		guard let sdk = self.sdk else {
+			KLogger.error("📺 Couldn't initialize Applovin")
+			return
+		}
+
+		self.configuration = await sdk.initializeSdk()
+		
+		self.interstitialAd = MAInterstitialAd(
+			adUnitIdentifier: key.interstitialUnitId,
+			sdk: sdk
+		)
+
+		self.rewardedAd = MARewardedAd.shared(
+			withAdUnitIdentifier: key.rewardedUnitId,
+			sdk: sdk
+		)
+		
+		KLogger.debug("📺 Applovin initialized correctly")
+	}
 
 	func setupfbAdProcessingOptions(options: AbstractFBAdProcessingOptions) async {
-		self.configuration = await self.sdk?.initializeSdk()
-
         if configuration?.appTrackingTransparencyStatus == .authorized {
             FBAdSettings.setAdvertiserTrackingEnabled(options.advertiserTrackingEnabled)
         }
