@@ -12,26 +12,32 @@ extension Kovalee {
 	public static func showMediationDebugger() {
 		Self.shared.kovaleeManager?.showMediationDebugger()
 	}
-	
-	/// Setup and, when ready, displays an interstitial ad.
+
+	/// Loads an interstitial ad
 	///
-	/// It returns once the user has seen the whole ad
-	public static func displayInterstitialAd() async {
-		await withCheckedContinuation { continuation in
-			Self.shared.kovaleeManager?.displayInterstitialAd {
-				continuation.resume()
-			}
-		}
+	/// It returns once the ad has been loaded
+	public static func loadInterstitialAd() async -> Bool? {
+		await Self.shared.kovaleeManager?.loadInterstitialAd()
 	}
-	
-	/// Setup and, when ready, displays a rewarded ad.
+
+	/// Loads a rewarded ad
+	///
+	/// It returns once the ad has been loaded
+	public static func loadRewardedAd() async -> Bool? {
+		await Self.shared.kovaleeManager?.loadRewardedAd()
+	}
+
+	/// Displays an interstitial ad if ready
 	///
 	/// It returns once the user has seen the whole ad
-	public static func displayRewardedAd() async {
-		await withCheckedContinuation { continuation in
-			Self.shared.kovaleeManager?.displayRewardedAd(andRewardCompletion: {
-				continuation.resume()
-			})
-		}
+	public static func displayInterstitialAd() async -> Bool? {
+		await Self.shared.kovaleeManager?.showInterstitialAd()
+	}
+
+	/// Displays a rewarded ad if ready
+	///
+	/// It returns once the user has seen the whole ad
+	public static func displayRewardedAd() async -> Bool? {
+		await Self.shared.kovaleeManager?.showRewardedAd()
 	}
 }
