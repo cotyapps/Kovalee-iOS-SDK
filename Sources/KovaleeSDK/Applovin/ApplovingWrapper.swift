@@ -23,13 +23,15 @@ class ApplovinWrapperImpl: NSObject, ApplovinWrapper {
 //        ALSdk.shared()!.userIdentifier = "USER_ID"
     }
 	
-	func initializeSDK() async {
+	private func checkSDKInitialization() async throws {
 		guard let sdk = self.sdk else {
 			KLogger.error("📺 Couldn't initialize Applovin")
-			return
+			throw ApplovinError.notInitializedCorrectly
 		}
 
-		self.configuration = await sdk.initializeSdk()
+		if !sdk.isInitialized {
+			self.configuration = await sdk.initializeSdk()
+		}
 		
 		self.interstitialAd = MAInterstitialAd(
 			adUnitIdentifier: key.interstitialUnitId,
@@ -61,10 +63,7 @@ class ApplovinWrapperImpl: NSObject, ApplovinWrapper {
     }
 
 	func createInterstitialAd() async throws -> Bool {
-        guard let sdk, sdk.isInitialized else {
-			KLogger.error("📺 Failed to load ad: Applovin is not initialized correctly")
-			throw ApplovinError.notInitializedCorrectly
-        }
+		try await checkSDKInitialization()
 
 		return try await withCheckedThrowingContinuation { continuation in
 			interstitialAdReady = continuation
@@ -74,10 +73,8 @@ class ApplovinWrapperImpl: NSObject, ApplovinWrapper {
     }
 
     func createRewardedAd() async throws -> Bool {
-        guard let sdk, sdk.isInitialized else {
-			KLogger.error("📺 Failed to load ad: Applovin is not initialized correctly")
-			throw ApplovinError.notInitializedCorrectly
-        }
+		try await checkSDKInitialization()
+
 		return try await withCheckedThrowingContinuation { continuation in
 			rewardedAdReady = continuation
 			rewardedAd?.delegate = self
