@@ -21,6 +21,28 @@ extension Kovalee {
 		Self.shared.kovaleeManager?.sendEvent(event)
     }
 
+	/// Send an ``Event``
+	///
+	/// This method is used to track a specific user behaviour, like interaction with a button.
+	/// ``` Swift
+	/// Kovalee.sendEvent(withName: "create_list")
+	/// ```
+	///
+	/// It can also be used to track an app behaviour, like displaying a specific View.
+	/// ``` Swift
+	/// Kovalee.sendEvent(withName: "page_view", andProperties: ["name": "list"])
+	/// ```
+	///
+	/// - Parameters:
+	///    - name: the name of the event that is going to be sent
+	///    - properties: the properties of the event that is going to be sent
+	public static func sendEvent(
+		withName name: String,
+		andProperties properties: [String : Any]? = nil
+	) {
+		Self.shared.kovaleeManager?.sendEvent(Event(name: name, properties: properties))
+	}
+
     /// Set a specific userId for Amplitude
     ///
     /// The same deviceId will be set also for RevenueCat amplitude user id attribute
