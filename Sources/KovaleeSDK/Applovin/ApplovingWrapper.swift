@@ -32,17 +32,21 @@ class ApplovinWrapperImpl: NSObject, ApplovinWrapper {
 		if !sdk.isInitialized {
 			self.configuration = await sdk.initializeSdk()
 		}
-		
-		self.interstitialAd = MAInterstitialAd(
-			adUnitIdentifier: key.interstitialUnitId,
-			sdk: sdk
-		)
 
-		self.rewardedAd = MARewardedAd.shared(
-			withAdUnitIdentifier: key.rewardedUnitId,
-			sdk: sdk
-		)
-		
+		if self.interstitialAd == nil {
+			self.interstitialAd = MAInterstitialAd(
+				adUnitIdentifier: key.interstitialUnitId,
+				sdk: sdk
+			)
+		}
+
+		if self.rewardedAd == nil {
+			self.rewardedAd = MARewardedAd.shared(
+				withAdUnitIdentifier: key.rewardedUnitId,
+				sdk: sdk
+			)
+		}
+
 		KLogger.debug("📺 Applovin initialized correctly")
 	}
 
@@ -154,6 +158,7 @@ extension ApplovinWrapperImpl: MAAdDelegate, MARewardedAdDelegate {
 	func didHide(_ ad: MAAd) {
 		KLogger.debug("📺 Ad has been hidden")
 		adClosed?.resume(returning: true)
+		adClosed = nil
     }
 
     func didClick(_ ad: AppLovinSDK.MAAd) {}
@@ -165,6 +170,7 @@ extension ApplovinWrapperImpl: MAAdDelegate, MARewardedAdDelegate {
     func didRewardUser(for ad: AppLovinSDK.MAAd, with reward: MAReward) {
 		KLogger.debug("📺 Rewarded ad has been seen")
 		adClosed?.resume(returning: true)
+		adClosed = nil
     }
 }
 // swiftlint:enable identifier_name
