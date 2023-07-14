@@ -61,10 +61,17 @@ extension KovaleeFramework.KovaleeManager {
   public func setupfbAdProcessingOptions(options: KovaleeFramework.AbstractFBAdProcessingOptions) async
   #endif
   public func showMediationDebugger()
-  public func displayInterstitialAd(onClose: @escaping () -> Swift.Void)
-  public func displayRewardedAd(andRewardCompletion completion: (() -> Swift.Void)?)
   #if compiler(>=5.3) && $AsyncAwait
-  public func displayRewardedAd() async
+  public func loadInterstitialAd() async -> Swift.Bool?
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
+  public func showInterstitialAd() async -> Swift.Bool?
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
+  public func loadRewardedAd() async -> Swift.Bool?
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
+  public func showRewardedAd() async -> Swift.Bool?
   #endif
 }
 public struct KLogger {
@@ -264,10 +271,20 @@ public protocol AbstractPackage {
 }
 public protocol ApplovinWrapper {
   func showMediationDebugger()
-  func createInterstitialAd(onClose: (() -> Swift.Void)?)
-  func createRewardedAd(completedVideo completion: (() -> Swift.Void)?)
   #if compiler(>=5.3) && $AsyncAwait
   func setupfbAdProcessingOptions(options: KovaleeFramework.AbstractFBAdProcessingOptions) async
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
+  func createInterstitialAd() async throws -> Swift.Bool
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
+  func showInterstitialAd() async throws -> Swift.Bool
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
+  func createRewardedAd() async throws -> Swift.Bool
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
+  func showRewardedAd() async throws -> Swift.Bool
   #endif
 }
 public protocol AbstractFBAdProcessingOptions {

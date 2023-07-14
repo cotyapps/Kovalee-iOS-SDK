@@ -2,6 +2,11 @@ import AppLovinSDK
 import FBAudienceNetwork
 import KovaleeFramework
 
+
+enum ApplovinError: Error {
+	case notInitializedCorrectly
+}
+
 class ApplovinWrapperImpl: NSObject, ApplovinWrapper {
     init(withKey key: KovaleeKeys.Applovin) {
 		KLogger.debug("📺 initializing Applovin")
@@ -11,24 +16,41 @@ class ApplovinWrapperImpl: NSObject, ApplovinWrapper {
         self.sdk?.mediationProvider = "max"
         self.sdk?.settings.isVerboseLoggingEnabled = KLogger.logLevel.applovinLogLevel()
 
-		if let sdk = self.sdk {
+		self.interstitialUnitId = key.interstitialUnitId
+		self.rewardedUnitId = key.rewardedUnitId
+
+        // TODO: check this user Id
+//        ALSdk.shared()!.userIdentifier = "USER_ID"
+    }
+	
+	private func checkSDKInitialization() async throws {
+		guard let sdk = self.sdk else {
+			KLogger.error("📺 Couldn't initialize Applovin")
+			throw ApplovinError.notInitializedCorrectly
+		}
+
+		if !sdk.isInitialized {
+			self.configuration = await sdk.initializeSdk()
+		}
+
+		if self.interstitialAd == nil {
 			self.interstitialAd = MAInterstitialAd(
 				adUnitIdentifier: key.interstitialUnitId,
 				sdk: sdk
 			)
+		}
 
+		if self.rewardedAd == nil {
 			self.rewardedAd = MARewardedAd.shared(
 				withAdUnitIdentifier: key.rewardedUnitId,
 				sdk: sdk
 			)
 		}
-        // TODO: check this user Id
-//        ALSdk.shared()!.userIdentifier = "USER_ID"
-    }
+
+		KLogger.debug("📺 Applovin initialized correctly")
+	}
 
 	func setupfbAdProcessingOptions(options: AbstractFBAdProcessingOptions) async {
-		self.configuration = await self.sdk?.initializeSdk()
-
         if configuration?.appTrackingTransparencyStatus == .authorized {
             FBAdSettings.setAdvertiserTrackingEnabled(options.advertiserTrackingEnabled)
         }
@@ -44,33 +66,42 @@ class ApplovinWrapperImpl: NSObject, ApplovinWrapper {
         }
     }
 
-	func createInterstitialAd(onClose: (() -> Void)?) {
-        guard let sdk, sdk.isInitialized else {
-			KLogger.error("📺 Failed to load ad: Applovin is not initialized correctly")
-            return
-        }
-		onAdClose = onClose
-		interstitialAd?.delegate = self
-        
-        // Load the first ad
-        interstitialAd?.load()
+	func createInterstitialAd() async throws -> Bool {
+		try await checkSDKInitialization()
+
+		return try await withCheckedThrowingContinuation { continuation in
+			interstitialAdReady = continuation
+			interstitialAd?.delegate = self
+			interstitialAd?.load()
+		}
     }
 
-    func createRewardedAd(completedVideo completion: (() -> Void)?) {
-        guard let sdk, sdk.isInitialized else {
-			KLogger.error("📺 Failed to load ad: Applovin is not initialized correctly")
-            return
-        }
-        didCompleteRewardedVideo = completion
+    func createRewardedAd() async throws -> Bool {
+		try await checkSDKInitialization()
 
-        rewardedAd?.delegate = self
-
-        // Load the first ad
-        rewardedAd?.load()
+		return try await withCheckedThrowingContinuation { continuation in
+			rewardedAdReady = continuation
+			rewardedAd?.delegate = self
+			rewardedAd?.load()
+		}
     }
 
+	func showInterstitialAd() async throws -> Bool {
+		try await withCheckedThrowingContinuation { continuation in
+			adClosed = continuation
+			interstitialAd?.show()
+		}
+	}
+
+	func showRewardedAd() async throws -> Bool {
+		try await withCheckedThrowingContinuation { continuation in
+			adClosed = continuation
+			rewardedAd?.show()
+		}
+	}
+	
     func showMediationDebugger() {
-        self.sdk?.showMediationDebugger()
+        sdk?.showMediationDebugger()
     }
 
     private let key: KovaleeKeys.Applovin
@@ -80,19 +111,28 @@ class ApplovinWrapperImpl: NSObject, ApplovinWrapper {
     private var rewardedAd: MARewardedAd?
     private var retryAttempt = 0.0
 
-	private var onAdClose: (() -> Void)?
-    private var didCompleteRewardedVideo: (() -> Void)?
+	private var interstitialUnitId: String
+	private var rewardedUnitId: String
+	
+	private var interstitialAdReady: CheckedContinuation<Bool, Error>?
+	private var rewardedAdReady: CheckedContinuation<Bool, Error>?
+	private var adClosed: CheckedContinuation<Bool, Error>?
 }
 
 // swiftlint:disable identifier_name
 extension ApplovinWrapperImpl: MAAdDelegate, MARewardedAdDelegate {
     func didLoad(_ ad: AppLovinSDK.MAAd) {
-		KLogger.debug("📺 Ad ready to be shown")
         // Reset retry attempt
         retryAttempt = 0
 
-        interstitialAd?.show()
-        rewardedAd?.show()
+		if ad.adUnitIdentifier == interstitialUnitId {
+			KLogger.debug("📺 Interstitial Ad ready to be shown")
+			interstitialAdReady?.resume(returning: true)
+		}
+		if ad.adUnitIdentifier == rewardedUnitId {
+			KLogger.debug("📺 Rewarded Ad ready to be shown")
+			rewardedAdReady?.resume(returning: true)
+		}
     }
 
     func didFailToLoadAd(forAdUnitIdentifier adUnitIdentifier: String, withError error: MAError) {
@@ -100,11 +140,16 @@ extension ApplovinWrapperImpl: MAAdDelegate, MARewardedAdDelegate {
         // We recommend retrying with exponentially higher delays up to a maximum delay (in this case 64 seconds)
         retryAttempt += 1
         let delaySec = pow(2.0, min(6.0, retryAttempt))
-
 		KLogger.error("📺 Failed to load ad with unitId: \(adUnitIdentifier)")
-        DispatchQueue.main.asyncAfter(deadline: .now() + delaySec) {
-            self.interstitialAd?.load()
-            self.rewardedAd?.load()
+
+        DispatchQueue.main.asyncAfter(deadline: .now() + delaySec) { [weak self] in
+			if adUnitIdentifier == self?.interstitialUnitId {
+				self?.interstitialAd?.load()
+			}
+
+			if adUnitIdentifier == self?.rewardedUnitId {
+				self?.rewardedAd?.load()
+			}
         }
     }
 
@@ -112,8 +157,8 @@ extension ApplovinWrapperImpl: MAAdDelegate, MARewardedAdDelegate {
 
 	func didHide(_ ad: MAAd) {
 		KLogger.debug("📺 Ad has been hidden")
-		onAdClose?()
-		onAdClose = nil
+		adClosed?.resume(returning: true)
+		adClosed = nil
     }
 
     func didClick(_ ad: AppLovinSDK.MAAd) {}
@@ -124,8 +169,8 @@ extension ApplovinWrapperImpl: MAAdDelegate, MARewardedAdDelegate {
 
     func didRewardUser(for ad: AppLovinSDK.MAAd, with reward: MAReward) {
 		KLogger.debug("📺 Rewarded ad has been seen")
-        didCompleteRewardedVideo?()
-		didCompleteRewardedVideo = nil
+		adClosed?.resume(returning: true)
+		adClosed = nil
     }
 }
 // swiftlint:enable identifier_name

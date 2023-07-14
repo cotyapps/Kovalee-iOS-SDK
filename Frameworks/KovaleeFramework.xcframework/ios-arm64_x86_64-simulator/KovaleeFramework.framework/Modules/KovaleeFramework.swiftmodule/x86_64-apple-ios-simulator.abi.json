@@ -930,81 +930,27 @@
           },
           {
             "kind": "Function",
-            "name": "displayInterstitialAd",
-            "printedName": "displayInterstitialAd(onClose:)",
+            "name": "loadInterstitialAd",
+            "printedName": "loadInterstitialAd()",
             "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeFunc",
-                "name": "Function",
-                "printedName": "() -> ()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  }
-                ]
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:16KovaleeFramework0A7ManagerC21displayInterstitialAd7onCloseyyyc_tF",
-            "mangledName": "$s16KovaleeFramework0A7ManagerC21displayInterstitialAd7onCloseyyyc_tF",
-            "moduleName": "KovaleeFramework",
-            "declAttributes": [
-              "AccessControl"
-            ],
-            "isFromExtension": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "displayRewardedAd",
-            "printedName": "displayRewardedAd(andRewardCompletion:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
               {
                 "kind": "TypeNominal",
                 "name": "Optional",
-                "printedName": "(() -> ())?",
+                "printedName": "Swift.Bool?",
                 "children": [
                   {
-                    "kind": "TypeFunc",
-                    "name": "Function",
-                    "printedName": "() -> ()",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Void",
-                        "printedName": "()"
-                      },
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Void",
-                        "printedName": "()"
-                      }
-                    ]
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
                   }
                 ],
                 "usr": "s:Sq"
               }
             ],
             "declKind": "Func",
-            "usr": "s:16KovaleeFramework0A7ManagerC17displayRewardedAd19andRewardCompletionyyycSg_tF",
-            "mangledName": "$s16KovaleeFramework0A7ManagerC17displayRewardedAd19andRewardCompletionyyycSg_tF",
+            "usr": "s:16KovaleeFramework0A7ManagerC18loadInterstitialAdSbSgyYaF",
+            "mangledName": "$s16KovaleeFramework0A7ManagerC18loadInterstitialAdSbSgyYaF",
             "moduleName": "KovaleeFramework",
             "declAttributes": [
               "AccessControl"
@@ -1014,18 +960,87 @@
           },
           {
             "kind": "Function",
-            "name": "displayRewardedAd",
-            "printedName": "displayRewardedAd()",
+            "name": "showInterstitialAd",
+            "printedName": "showInterstitialAd()",
             "children": [
               {
                 "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
+                "name": "Optional",
+                "printedName": "Swift.Bool?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "usr": "s:Sq"
               }
             ],
             "declKind": "Func",
-            "usr": "s:16KovaleeFramework0A7ManagerC17displayRewardedAdyyYaF",
-            "mangledName": "$s16KovaleeFramework0A7ManagerC17displayRewardedAdyyYaF",
+            "usr": "s:16KovaleeFramework0A7ManagerC18showInterstitialAdSbSgyYaF",
+            "mangledName": "$s16KovaleeFramework0A7ManagerC18showInterstitialAdSbSgyYaF",
+            "moduleName": "KovaleeFramework",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "loadRewardedAd",
+            "printedName": "loadRewardedAd()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Bool?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:16KovaleeFramework0A7ManagerC14loadRewardedAdSbSgyYaF",
+            "mangledName": "$s16KovaleeFramework0A7ManagerC14loadRewardedAdSbSgyYaF",
+            "moduleName": "KovaleeFramework",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "showRewardedAd",
+            "printedName": "showRewardedAd()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Bool?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:16KovaleeFramework0A7ManagerC14showRewardedAdSbSgyYaF",
+            "mangledName": "$s16KovaleeFramework0A7ManagerC14showRewardedAdSbSgyYaF",
             "moduleName": "KovaleeFramework",
             "declAttributes": [
               "AccessControl"
@@ -7031,98 +7046,6 @@
           },
           {
             "kind": "Function",
-            "name": "createInterstitialAd",
-            "printedName": "createInterstitialAd(onClose:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "(() -> ())?",
-                "children": [
-                  {
-                    "kind": "TypeFunc",
-                    "name": "Function",
-                    "printedName": "() -> ()",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Void",
-                        "printedName": "()"
-                      },
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Void",
-                        "printedName": "()"
-                      }
-                    ]
-                  }
-                ],
-                "usr": "s:Sq"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:16KovaleeFramework15ApplovinWrapperP20createInterstitialAd7onCloseyyycSg_tF",
-            "mangledName": "$s16KovaleeFramework15ApplovinWrapperP20createInterstitialAd7onCloseyyycSg_tF",
-            "moduleName": "KovaleeFramework",
-            "genericSig": "<τ_0_0 where τ_0_0 : KovaleeFramework.ApplovinWrapper>",
-            "sugared_genericSig": "<Self where Self : KovaleeFramework.ApplovinWrapper>",
-            "protocolReq": true,
-            "reqNewWitnessTableEntry": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "createRewardedAd",
-            "printedName": "createRewardedAd(completedVideo:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "(() -> ())?",
-                "children": [
-                  {
-                    "kind": "TypeFunc",
-                    "name": "Function",
-                    "printedName": "() -> ()",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Void",
-                        "printedName": "()"
-                      },
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Void",
-                        "printedName": "()"
-                      }
-                    ]
-                  }
-                ],
-                "usr": "s:Sq"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:16KovaleeFramework15ApplovinWrapperP16createRewardedAd14completedVideoyyycSg_tF",
-            "mangledName": "$s16KovaleeFramework15ApplovinWrapperP16createRewardedAd14completedVideoyyycSg_tF",
-            "moduleName": "KovaleeFramework",
-            "genericSig": "<τ_0_0 where τ_0_0 : KovaleeFramework.ApplovinWrapper>",
-            "sugared_genericSig": "<Self where Self : KovaleeFramework.ApplovinWrapper>",
-            "protocolReq": true,
-            "reqNewWitnessTableEntry": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
             "name": "setupfbAdProcessingOptions",
             "printedName": "setupfbAdProcessingOptions(options:)",
             "children": [
@@ -7145,6 +7068,98 @@
             "genericSig": "<τ_0_0 where τ_0_0 : KovaleeFramework.ApplovinWrapper>",
             "sugared_genericSig": "<Self where Self : KovaleeFramework.ApplovinWrapper>",
             "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "createInterstitialAd",
+            "printedName": "createInterstitialAd()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:16KovaleeFramework15ApplovinWrapperP20createInterstitialAdSbyYaKF",
+            "mangledName": "$s16KovaleeFramework15ApplovinWrapperP20createInterstitialAdSbyYaKF",
+            "moduleName": "KovaleeFramework",
+            "genericSig": "<τ_0_0 where τ_0_0 : KovaleeFramework.ApplovinWrapper>",
+            "sugared_genericSig": "<Self where Self : KovaleeFramework.ApplovinWrapper>",
+            "protocolReq": true,
+            "throwing": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "showInterstitialAd",
+            "printedName": "showInterstitialAd()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:16KovaleeFramework15ApplovinWrapperP18showInterstitialAdSbyYaKF",
+            "mangledName": "$s16KovaleeFramework15ApplovinWrapperP18showInterstitialAdSbyYaKF",
+            "moduleName": "KovaleeFramework",
+            "genericSig": "<τ_0_0 where τ_0_0 : KovaleeFramework.ApplovinWrapper>",
+            "sugared_genericSig": "<Self where Self : KovaleeFramework.ApplovinWrapper>",
+            "protocolReq": true,
+            "throwing": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "createRewardedAd",
+            "printedName": "createRewardedAd()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:16KovaleeFramework15ApplovinWrapperP16createRewardedAdSbyYaKF",
+            "mangledName": "$s16KovaleeFramework15ApplovinWrapperP16createRewardedAdSbyYaKF",
+            "moduleName": "KovaleeFramework",
+            "genericSig": "<τ_0_0 where τ_0_0 : KovaleeFramework.ApplovinWrapper>",
+            "sugared_genericSig": "<Self where Self : KovaleeFramework.ApplovinWrapper>",
+            "protocolReq": true,
+            "throwing": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "showRewardedAd",
+            "printedName": "showRewardedAd()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:16KovaleeFramework15ApplovinWrapperP14showRewardedAdSbyYaKF",
+            "mangledName": "$s16KovaleeFramework15ApplovinWrapperP14showRewardedAdSbyYaKF",
+            "moduleName": "KovaleeFramework",
+            "genericSig": "<τ_0_0 where τ_0_0 : KovaleeFramework.ApplovinWrapper>",
+            "sugared_genericSig": "<Self where Self : KovaleeFramework.ApplovinWrapper>",
+            "protocolReq": true,
+            "throwing": true,
             "reqNewWitnessTableEntry": true,
             "funcSelfKind": "NonMutating"
           }
