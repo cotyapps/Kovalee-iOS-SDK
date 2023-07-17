@@ -1,0 +1,10 @@
+# pack-refs with: peeled fully-peeled sorted 
+bfc0b6f81adc06ce5121eb23f628473638d67c5c refs/heads/main
+39b05f343c80f3150bf7023f5db4a349ee833995 refs/heads/nc/bump-stv
+76c0f478abc1220242bc5d47da8011d67567f2c5 refs/heads/nc/release-1.2022062300.0
+837e1c29e9abf1393a40f93ddef1ee319c2e63b0 refs/heads/nc/version
+39b05f343c80f3150bf7023f5db4a349ee833995 refs/pull/1/head
+837e1c29e9abf1393a40f93ddef1ee319c2e63b0 refs/pull/2/head
+76c0f478abc1220242bc5d47da8011d67567f2c5 refs/pull/3/head
+a5f16ba68913840ee5df91b8dc06f5cc063579de refs/tags/1.2021110200.0
+bfc0b6f81adc06ce5121eb23f628473638d67c5c refs/tags/1.2022062300.0
