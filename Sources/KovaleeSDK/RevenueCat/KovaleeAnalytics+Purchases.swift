@@ -113,6 +113,14 @@ extension Kovalee {
 		Self.shared.kovaleeManager?.paymentRestoredFailed(fromSource: source)
 	}
 
+	/// Use this method to tell the SDK a payment has startered restoring
+	///
+	/// - Parameters:
+	///    - source: from where is the user making the purchase
+	public static func paymentRestoreStart(fromSource source: String) {
+		Self.shared.kovaleeManager?.paymentRestoredStart(fromSource: source)
+	}
+
 	/// Use this method to tell the SDK a payment has been restore successfully
 	///
 	/// - Parameters:
