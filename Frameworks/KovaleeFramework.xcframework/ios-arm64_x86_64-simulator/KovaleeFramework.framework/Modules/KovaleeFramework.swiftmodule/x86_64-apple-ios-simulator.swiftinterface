@@ -1,5 +1,5 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.7.2 (swiftlang-5.7.2.135.5 clang-1400.0.29.51)
+// swift-compiler-version: Apple Swift version 5.8 (swiftlang-5.8.0.124.2 clang-1403.0.22.11.100)
 // swift-module-flags: -target x86_64-apple-ios14.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name KovaleeFramework
 // swift-module-flags-ignorable: -enable-bare-slash-regex
 import AppTrackingTransparency
@@ -10,7 +10,7 @@ import _Concurrency
 import _StringProcessing
 import os
 public class KovaleeManager {
-  public init(withStorage storage: KovaleeFramework.Storage = .userDefaults(), keys: KovaleeFramework.KovaleeKeys, adjustWrapper: KovaleeFramework.AdjustWrapper, amplitudeWrapper: KovaleeFramework.AmplitudeWrapper, revenueCatWrapper: KovaleeFramework.RevenueCatWrapper?, firebaseWrapper: KovaleeFramework.FirebaseWrapper?, applovinWrapper: KovaleeFramework.ApplovinWrapper?)
+  public init(withStorage storage: KovaleeFramework.Storage = .userDefaults(), keys: KovaleeFramework.KovaleeKeys, adjustWrapper: any KovaleeFramework.AdjustWrapper, amplitudeWrapper: any KovaleeFramework.AmplitudeWrapper, revenueCatWrapper: (any KovaleeFramework.RevenueCatWrapper)?, firebaseWrapper: (any KovaleeFramework.FirebaseWrapper)?, applovinWrapper: (any KovaleeFramework.ApplovinWrapper)?)
   public func promptTrackingAuthorization(completion: @escaping (AppTrackingTransparency.ATTrackingManager.AuthorizationStatus) -> Swift.Void)
   public func getAttributionAdid() -> Swift.String?
   public func attributionCallback(withAdid adid: Swift.String?)
@@ -26,24 +26,25 @@ extension KovaleeFramework.KovaleeManager {
   public func setIsUserPremium(_ premium: Swift.Bool)
   public func setRevenueCatUserId(userId: Swift.String)
   #if compiler(>=5.3) && $AsyncAwait
-  public func customerInfo() async throws -> KovaleeFramework.AbstractCustomerInfo?
+  public func customerInfo() async throws -> (any KovaleeFramework.AbstractCustomerInfo)?
   #endif
   #if compiler(>=5.3) && $AsyncAwait
-  public func fetchOfferings() async throws -> KovaleeFramework.AbstractOfferings?
+  public func fetchOfferings() async throws -> (any KovaleeFramework.AbstractOfferings)?
   #endif
   #if compiler(>=5.3) && $AsyncAwait
-  public func fetchCurrentOffering() async throws -> KovaleeFramework.AbstractOffering?
+  public func fetchCurrentOffering() async throws -> (any KovaleeFramework.AbstractOffering)?
   #endif
   #if compiler(>=5.3) && $AsyncAwait
-  public func restorePurchases(fromSource source: Swift.String) async throws -> KovaleeFramework.AbstractCustomerInfo?
+  public func restorePurchases(fromSource source: Swift.String) async throws -> (any KovaleeFramework.AbstractCustomerInfo)?
   #endif
   #if compiler(>=5.3) && $AsyncAwait
-  public func purchase(package: KovaleeFramework.AbstractPackage, fromSource source: Swift.String) async throws -> KovaleeFramework.AbstractPurchaseResultData?
+  public func purchase(package: any KovaleeFramework.AbstractPackage, fromSource source: Swift.String) async throws -> (any KovaleeFramework.AbstractPurchaseResultData)?
   #endif
   public func startedPurchasing(subscriptionWithDuration duration: Swift.Int, fromSource source: Swift.String)
   public func succesfullyPurchased(subscriptionWithProductId productId: Swift.String, andDuration duration: Swift.Int, fromSource source: Swift.String)
   public func paymentCancelledForSubscription(fromSource source: Swift.String)
   public func paymentFailed(forSubscriptionWithDuration duration: Swift.Int, fromSource source: Swift.String)
+  public func paymentRestoredStart(fromSource source: Swift.String)
   public func paymentRestoredFailed(fromSource source: Swift.String)
   public func paymentRestored(fromSource source: Swift.String)
 }
@@ -58,7 +59,7 @@ extension KovaleeFramework.KovaleeManager {
 }
 extension KovaleeFramework.KovaleeManager {
   #if compiler(>=5.3) && $AsyncAwait
-  public func setupfbAdProcessingOptions(options: KovaleeFramework.AbstractFBAdProcessingOptions) async
+  public func setupfbAdProcessingOptions(options: any KovaleeFramework.AbstractFBAdProcessingOptions) async
   #endif
   public func showMediationDebugger()
   #if compiler(>=5.3) && $AsyncAwait
@@ -115,12 +116,12 @@ public struct KovaleeKeys : Swift.Decodable {
   public struct Amplitude : Swift.Decodable {
     public var prodSDKId: Swift.String
     public var devSDKId: Swift.String?
-    public init(from decoder: Swift.Decoder) throws
+    public init(from decoder: any Swift.Decoder) throws
   }
   public struct RevenueCat : Swift.Decodable {
     public var sdkId: Swift.String
     public var observerMode: Swift.Bool
-    public init(from decoder: Swift.Decoder) throws
+    public init(from decoder: any Swift.Decoder) throws
   }
   public struct Firebase : Swift.Decodable {
     public var appId: Swift.String
@@ -128,21 +129,21 @@ public struct KovaleeKeys : Swift.Decodable {
     public var senderId: Swift.String
     public var projectId: Swift.String
     public var configuredInApp: Swift.Bool
-    public init(from decoder: Swift.Decoder) throws
+    public init(from decoder: any Swift.Decoder) throws
   }
   public struct Applovin : Swift.Decodable {
     public var sdkId: Swift.String
     public var interstitialUnitId: Swift.String
     public var rewardedUnitId: Swift.String
-    public init(from decoder: Swift.Decoder) throws
+    public init(from decoder: any Swift.Decoder) throws
   }
   public struct ConversionValue : Swift.Decodable {
     public let bottomTier: [Swift.String : Swift.Int]
     public let topTier: [Swift.String : Swift.Int]
     public let usTier: [Swift.String : Swift.Int]
-    public init(from decoder: Swift.Decoder) throws
+    public init(from decoder: any Swift.Decoder) throws
   }
-  public init(from decoder: Swift.Decoder) throws
+  public init(from decoder: any Swift.Decoder) throws
 }
 extension KovaleeFramework.Reader where T == KovaleeFramework.KovaleeKeys {
   public static let kovaleeKeysReader: KovaleeFramework.Reader<KovaleeFramework.KovaleeKeys>
@@ -237,19 +238,19 @@ public protocol FirebaseWrapper {
 public protocol RevenueCatWrapper {
   func setUserId(userId: Swift.String)
   #if compiler(>=5.3) && $AsyncAwait
-  func fetchOfferings() async throws -> KovaleeFramework.AbstractOfferings?
+  func fetchOfferings() async throws -> (any KovaleeFramework.AbstractOfferings)?
   #endif
   #if compiler(>=5.3) && $AsyncAwait
-  func fetchCurrentOffering() async throws -> KovaleeFramework.AbstractOffering?
+  func fetchCurrentOffering() async throws -> (any KovaleeFramework.AbstractOffering)?
   #endif
   #if compiler(>=5.3) && $AsyncAwait
-  func restorePurchases() async throws -> KovaleeFramework.AbstractCustomerInfo?
+  func restorePurchases() async throws -> (any KovaleeFramework.AbstractCustomerInfo)?
   #endif
   #if compiler(>=5.3) && $AsyncAwait
-  func purchase(package: KovaleeFramework.AbstractPackage) async throws -> KovaleeFramework.AbstractPurchaseResultData
+  func purchase(package: any KovaleeFramework.AbstractPackage) async throws -> any KovaleeFramework.AbstractPurchaseResultData
   #endif
   #if compiler(>=5.3) && $AsyncAwait
-  func customerInfo() async throws -> KovaleeFramework.AbstractCustomerInfo
+  func customerInfo() async throws -> any KovaleeFramework.AbstractCustomerInfo
   #endif
   func setAttribution(adid: Swift.String)
   func setAmplitudeUserId(userId: Swift.String)
@@ -272,7 +273,7 @@ public protocol AbstractPackage {
 public protocol ApplovinWrapper {
   func showMediationDebugger()
   #if compiler(>=5.3) && $AsyncAwait
-  func setupfbAdProcessingOptions(options: KovaleeFramework.AbstractFBAdProcessingOptions) async
+  func setupfbAdProcessingOptions(options: any KovaleeFramework.AbstractFBAdProcessingOptions) async
   #endif
   #if compiler(>=5.3) && $AsyncAwait
   func createInterstitialAd() async throws -> Swift.Bool
@@ -323,7 +324,8 @@ public enum DefaultEvents {
   case paymentCancel(source: Swift.String)
   case paymentFailure(source: Swift.String, duration: Swift.Int)
   case paymentFinish(source: Swift.String, duration: Swift.Int, product: Swift.String)
-  case paymentRestore(source: Swift.String)
+  case paymentRestoreStart(source: Swift.String)
+  case paymentRestoreFinish(source: Swift.String)
   case paymentRestoreFail(source: Swift.String)
   case paymentStart(source: Swift.String, duration: Swift.Int)
   case updateConversionValue(number: Swift.Int)
