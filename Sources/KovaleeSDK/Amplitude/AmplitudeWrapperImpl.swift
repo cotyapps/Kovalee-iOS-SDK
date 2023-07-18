@@ -28,7 +28,12 @@ struct AmplitudeWrapperImpl: AmplitudeWrapper {
     }
 
     func sendEvent(_ event: Event) {
-        amplitude?.track(
+		guard let amplitude else {
+			KLogger.error("Failed sending Event: \(event.name) \(event.properties?.serialization ?? "")")
+			return
+		}
+
+        amplitude.track(
             eventType: event.name,
             eventProperties: event.properties ?? [:]
         )
