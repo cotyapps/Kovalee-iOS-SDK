@@ -65,10 +65,8 @@ extension Configuration {
 	public static var preview: Self {
         Self(environment: .test, fileUrl: nil)
     }
-}
 
-extension LogLevel {
-	static func setCurrentLogLevel(_ logLevel: Int) -> Self? {
-		Self.init(rawValue: logLevel)
+	static func currentLogLevel(fromRawValue logLevel: Int) -> LogLevel? {
+		LogLevel.init(rawValue: logLevel)
 	}
 }
