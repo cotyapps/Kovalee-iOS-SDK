@@ -18,10 +18,10 @@ let package = Package(
         ),
     ],
     dependencies: [
-		.package(url: "https://github.com/adjust/ios_sdk", exact: "4.33.4"),
+		.package(url: "https://github.com/adjust/ios_sdk", exact: "4.33.5"),
 		.package(url: "https://github.com/amplitude/Amplitude-Swift", exact: "0.4.6"),
-		.package(url: "https://github.com/RevenueCat/purchases-ios", exact: "4.18.0"),
-		.package(url: "https://github.com/firebase/firebase-ios-sdk.git", exact: "10.11.0"),
+		.package(url: "https://github.com/RevenueCat/purchases-ios", exact: "4.25.0"),
+		.package(url: "https://github.com/firebase/firebase-ios-sdk.git", exact: "10.12.0"),
 		.package(url: "https://github.com/AppLovin/AppLovin-MAX-Swift-Package.git", .upToNextMajor(from: "11.10.1"))
 	],
     targets: [
