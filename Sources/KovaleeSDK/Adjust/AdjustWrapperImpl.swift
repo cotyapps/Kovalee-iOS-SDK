@@ -76,6 +76,10 @@ extension AdjustWrapperImpl: AdjustDelegate {
     func adjustAttributionChanged(_ attribution: ADJAttribution?) {
 		self.attributionAdidCallback(attribution?.adid)
     }
+
+	func adjustConversionValueUpdated(_ fineValue: NSNumber?, coarseValue: String?, lockWindow: NSNumber?) {
+		KLogger.debug("Successfully Updated Conversion Value: \(String(describing: fineValue))")
+	}
 }
 
 extension AdjustWrapper {
