@@ -32,8 +32,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/firebase/firebase-ios-sdk.git",
       "state" : {
-        "revision" : "e700a8f40c87c31cab7984875fcc1225d96b25bf",
-        "version" : "10.11.0"
+        "revision" : "a580250a9ff49ec38da5430cef20f88ddc831db2",
+        "version" : "10.12.0"
       }
     },
     {
@@ -41,8 +41,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/google/GoogleAppMeasurement.git",
       "state" : {
-        "revision" : "62e3a0c09a75e2637f5300d46f05a59313f1c286",
-        "version" : "10.11.0"
+        "revision" : "0a226a8c50494c4cb877fbde27ab6374520a3354",
+        "version" : "10.12.0"
       }
     },
     {
@@ -86,8 +86,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/adjust/ios_sdk",
       "state" : {
-        "revision" : "6ae03883c3b7d22e72e2a5937ad5dd8765d9c31d",
-        "version" : "4.33.4"
+        "revision" : "c97e8e39a70eeba1742ed6ec75d136d2f111a366",
+        "version" : "4.33.5"
       }
     },
     {
@@ -122,8 +122,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/RevenueCat/purchases-ios",
       "state" : {
-        "revision" : "3ad7fab62d44dd7053d6531d5b0bc90e0e4724a7",
-        "version" : "4.18.0"
+        "revision" : "8d16e02c96efbcf58eaf7eef2e595942d935f572",
+        "version" : "4.25.0"
       }
     },
     {
