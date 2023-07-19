@@ -59,12 +59,9 @@ class AdjustWrapperImpl: NSObject, AdjustWrapper {
         Adjust.updateConversionValue(value)
     }
 
-    func sendConversionValue_SKA4(value: Int, coarseValue: String) {
+	func sendConversionValue_SKA4(value: Int, coarseValue: String, completion: @escaping (Error?) -> Void) {
         Adjust.updatePostbackConversionValue(value, coarseValue: coarseValue, lockWindow: false) { error in
-            guard let error else {
-                return
-            }
-            KLogger.error("An error occurred during completion: \(error.localizedDescription)")
+			completion(error)
         }
     }
 
