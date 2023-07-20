@@ -12,7 +12,6 @@ class RevenueCatWrapperImpl: NSObject, RevenueCatWrapper {
         Purchases.configure(
             with: RevenueCat.Configuration
 				.builder(withAPIKey: keys.sdkId)
-                .with(usesStoreKit2IfAvailable: false)
 				.with(observerMode: keys.observerMode)
 				.build()
         )
