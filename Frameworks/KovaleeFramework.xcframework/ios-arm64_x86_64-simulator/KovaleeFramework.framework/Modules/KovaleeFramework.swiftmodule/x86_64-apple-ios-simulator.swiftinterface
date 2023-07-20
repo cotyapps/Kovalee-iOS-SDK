@@ -107,6 +107,7 @@ public struct KovaleeConstants {
 }
 public struct KovaleeKeys : Swift.Decodable {
   public let appCode: Swift.String
+  public let liteVersion: Swift.Bool
   public let adjust: Swift.String
   public let amplitude: KovaleeFramework.KovaleeKeys.Amplitude
   public let revenueCat: KovaleeFramework.KovaleeKeys.RevenueCat?
@@ -310,7 +311,7 @@ extension KovaleeFramework.KovaleeError : Foundation.LocalizedError {
   }
 }
 public struct ConversionValueManager {
-  public init(keys: KovaleeFramework.KovaleeKeys, locale: Swift.String?, storage: KovaleeFramework.Storage = .userDefaults())
+  public init(keys: KovaleeFramework.KovaleeKeys, locale: Swift.String?, liteVersion: Swift.Bool, storage: KovaleeFramework.Storage = .userDefaults())
 }
 extension KovaleeFramework.ConversionValueManager {
   public func coarseValue() -> Swift.String
