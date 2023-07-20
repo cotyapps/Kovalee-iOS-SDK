@@ -1,4 +1,4 @@
-// swift-tools-version: 5.7.0
+// swift-tools-version: 5.5.0
 // The swift-tools-version declares the minimum version of Swift required to build this package.
 
 import PackageDescription
@@ -18,11 +18,11 @@ let package = Package(
         ),
     ],
     dependencies: [
-		.package(url: "https://github.com/adjust/ios_sdk", exact: "4.33.5"),
-		.package(url: "https://github.com/amplitude/Amplitude-Swift", exact: "0.4.6"),
-		.package(url: "https://github.com/RevenueCat/purchases-ios", exact: "4.25.0"),
-		.package(url: "https://github.com/firebase/firebase-ios-sdk.git", exact: "10.12.0"),
-		.package(url: "https://github.com/AppLovin/AppLovin-MAX-Swift-Package.git", .upToNextMajor(from: "11.10.1"))
+		.package(url: "https://github.com/adjust/ios_sdk", from: Version(4, 33, 5)),
+		.package(url: "https://github.com/amplitude/Amplitude-Swift", from: Version(0, 4, 6)),
+		.package(url: "https://github.com/RevenueCat/purchases-ios", from: Version(4, 25, 0)),
+		.package(url: "https://github.com/firebase/firebase-ios-sdk.git", from: Version(10, 12, 0)),
+		.package(url: "https://github.com/AppLovin/AppLovin-MAX-Swift-Package.git", from: Version(11, 10, 1))
 	],
     targets: [
         .binaryTarget(
