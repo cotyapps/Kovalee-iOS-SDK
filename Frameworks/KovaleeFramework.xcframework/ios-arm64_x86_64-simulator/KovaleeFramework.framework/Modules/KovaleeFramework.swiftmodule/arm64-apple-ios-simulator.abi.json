@@ -5670,8 +5670,8 @@
               },
               {
                 "kind": "Var",
-                "name": "sandbox",
-                "printedName": "sandbox",
+                "name": "development",
+                "printedName": "development",
                 "children": [
                   {
                     "kind": "TypeFunc",
@@ -5701,45 +5701,8 @@
                   }
                 ],
                 "declKind": "EnumElement",
-                "usr": "s:16KovaleeFramework19AdjustConfigurationV11EnvironmentO7sandboxyA2EmF",
-                "mangledName": "$s16KovaleeFramework19AdjustConfigurationV11EnvironmentO7sandboxyA2EmF",
-                "moduleName": "KovaleeFramework"
-              },
-              {
-                "kind": "Var",
-                "name": "test",
-                "printedName": "test",
-                "children": [
-                  {
-                    "kind": "TypeFunc",
-                    "name": "Function",
-                    "printedName": "(KovaleeFramework.AdjustConfiguration.Environment.Type) -> KovaleeFramework.AdjustConfiguration.Environment",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Environment",
-                        "printedName": "KovaleeFramework.AdjustConfiguration.Environment",
-                        "usr": "s:16KovaleeFramework19AdjustConfigurationV11EnvironmentO"
-                      },
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Metatype",
-                        "printedName": "KovaleeFramework.AdjustConfiguration.Environment.Type",
-                        "children": [
-                          {
-                            "kind": "TypeNominal",
-                            "name": "Environment",
-                            "printedName": "KovaleeFramework.AdjustConfiguration.Environment",
-                            "usr": "s:16KovaleeFramework19AdjustConfigurationV11EnvironmentO"
-                          }
-                        ]
-                      }
-                    ]
-                  }
-                ],
-                "declKind": "EnumElement",
-                "usr": "s:16KovaleeFramework19AdjustConfigurationV11EnvironmentO4testyA2EmF",
-                "mangledName": "$s16KovaleeFramework19AdjustConfigurationV11EnvironmentO4testyA2EmF",
+                "usr": "s:16KovaleeFramework19AdjustConfigurationV11EnvironmentO11developmentyA2EmF",
+                "mangledName": "$s16KovaleeFramework19AdjustConfigurationV11EnvironmentO11developmentyA2EmF",
                 "moduleName": "KovaleeFramework"
               },
               {

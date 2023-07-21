@@ -203,8 +203,7 @@ extension Foundation.ProcessInfo {
 public struct AdjustConfiguration {
   public enum Environment : Swift.String {
     case production
-    case sandbox
-    case test
+    case development
     public init?(rawValue: Swift.String)
     public typealias RawValue = Swift.String
     public var rawValue: Swift.String {
