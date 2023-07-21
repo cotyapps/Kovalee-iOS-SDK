@@ -9,10 +9,8 @@ extension AdjustConfiguration.Environment {
 		switch self {
 		case .production:
 			return ADJEnvironmentProduction
-		case .sandbox, .test:
+		default:
 			return ADJEnvironmentSandbox
-		@unknown default:
-			fatalError()
 		}
 	}
 }
