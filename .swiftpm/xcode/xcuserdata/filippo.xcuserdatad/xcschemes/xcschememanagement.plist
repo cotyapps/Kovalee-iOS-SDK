@@ -7,7 +7,11 @@
 		<key>Kovalee-iOS-SDK-Package.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
+<<<<<<< HEAD
 			<integer>1</integer>
+=======
+			<integer>5</integer>
+>>>>>>> 75ca524 (feat: removed Amplitude dependency)
 		</dict>
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -26,12 +30,21 @@
 		<key>KovaleeAttribution.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
+<<<<<<< HEAD
 			<integer>3</integer>
+=======
+			<integer>1</integer>
 		</dict>
 		<key>KovaleePurchases.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>4</integer>
+			<integer>2</integer>
+>>>>>>> 75ca524 (feat: removed Amplitude dependency)
+		</dict>
+		<key>KovaleePurchases.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>3</integer>
 		</dict>
 		<key>KovaleeRemoteConfig.xcscheme_^#shared#^_</key>
 		<dict>
@@ -74,7 +87,11 @@
 		<key>KovaleeSDK.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
+<<<<<<< HEAD
 			<integer>0</integer>
+=======
+			<integer>4</integer>
+>>>>>>> 75ca524 (feat: removed Amplitude dependency)
 		</dict>
 		<key>Promises (Playground) 1.xcscheme</key>
 		<dict>
