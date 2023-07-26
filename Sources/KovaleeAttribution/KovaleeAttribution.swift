@@ -55,7 +55,9 @@ extension Kovalee {
 	/// - Returns:the `ATTrackingManager.AuthorizationStatus` based on the user response
 	@discardableResult
 	public static func promptTrackingAuthorization() async -> ATTrackingManager.AuthorizationStatus {
-		await withCheckedContinuation { continuation in
+		Self.shared.setupAtributionManager()
+
+		return await withCheckedContinuation { continuation in
 			Self.shared.kovaleeManager?.promptTrackingAuthorization { userState in
 				continuation.resume(returning: userState)
 			}
