@@ -63,6 +63,14 @@ struct AmplitudeWrapperImpl: AmplitudeWrapper {
     func setUserProperty(property: UserProperty) {
         self.setUserProperty(key: property.key, value: property.value)
     }
+	
+	func getUserId() -> String? {
+		amplitude?.getUserId()
+	}
+
+	func getDeviceId() -> String? {
+		amplitude?.getDeviceId()
+	}
 
     var amplitude: Amplitude?
 }

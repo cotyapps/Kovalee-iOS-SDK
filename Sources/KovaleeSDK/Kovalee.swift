@@ -64,7 +64,7 @@ public final class Kovalee {
 			
 			// avoid initializing third party tools if running UnitTests
 			if !ProcessInfo.isRunningTests {
-				let adjustWrapper = self.createAdjustWrapper(withConfiguration: configuration, andKey: keys.adjust)
+//				let adjustWrapper = self.createAdjustWrapper(withConfiguration: configuration, andKey: keys.adjust)
 				let amplitudeWrapper = self.createAmplitudeWrapper(withConfiguration: configuration, andKeys: keys.amplitude)
 				let revenueCatWrapper = self.createRevenueCatWrapper(withKeys: keys.revenueCat)
 				let firebaseWrapper = self.createFirebaseWrapper(withKeys: keys.firebase)
@@ -90,24 +90,13 @@ public final class Kovalee {
 	}
 
     private static var initializedManager: Kovalee?
-	internal var kovaleeManager: KovaleeManager?
-	
-	private var configuration: Configuration
+
+	public var kovaleeManager: KovaleeManager?
+	public var configuration: Configuration
 }
 
 
 extension Kovalee {
-	internal func createAdjustWrapper(withConfiguration configuration: Configuration, andKey key: String) -> AdjustWrapper {
-		AdjustWrapperImpl(
-			configuration: AdjustConfiguration(
-				environment: configuration.environment.rawValue,
-				token: key
-			),
-			attributionAdidCallback: {
-				self.kovaleeManager?.attributionCallback(withAdid: $0)
-			}
-		)
-	}
 	
 	internal func createAmplitudeWrapper(withConfiguration configuration: Configuration, andKeys keys: KovaleeKeys.Amplitude) -> AmplitudeWrapper {
 		if configuration.environment == .development && keys.devSDKId == nil {
