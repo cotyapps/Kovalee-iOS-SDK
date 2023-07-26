@@ -26,15 +26,7 @@
           {
             "kind": "Constructor",
             "name": "init",
-<<<<<<< HEAD
-<<<<<<< HEAD
             "printedName": "init(withStorage:keys:eventTrackerManager:)",
-=======
-            "printedName": "init(withStorage:keys:amplitudeWrapper:)",
->>>>>>> 63d03c6 (feat: moved Adjust to new target KovaleeAttribution)
-=======
-            "printedName": "init(withStorage:keys:eventTrackerManager:)",
->>>>>>> 9a9c071 (feat: creating Adjust instance if not present yet)
             "children": [
               {
                 "kind": "TypeNominal",
@@ -57,8 +49,6 @@
               },
               {
                 "kind": "TypeNominal",
-<<<<<<< HEAD
-<<<<<<< HEAD
                 "name": "EventTrackerManager",
                 "printedName": "KovaleeFramework.EventTrackerManager",
                 "usr": "s:16KovaleeFramework19EventTrackerManagerP"
@@ -67,26 +57,6 @@
             "declKind": "Constructor",
             "usr": "s:16KovaleeFramework0A7ManagerC11withStorage4keys012eventTrackerC0AcA0E0V_AA0A4KeysVAA05EventhC0_ptcfc",
             "mangledName": "$s16KovaleeFramework0A7ManagerC11withStorage4keys012eventTrackerC0AcA0E0V_AA0A4KeysVAA05EventhC0_ptcfc",
-=======
-                "name": "AmplitudeWrapper",
-                "printedName": "KovaleeFramework.AmplitudeWrapper",
-                "usr": "s:16KovaleeFramework16AmplitudeWrapperP"
-              }
-            ],
-            "declKind": "Constructor",
-            "usr": "s:16KovaleeFramework0A7ManagerC11withStorage4keys16amplitudeWrapperAcA0E0V_AA0A4KeysVAA09AmplitudeH0_ptcfc",
-            "mangledName": "$s16KovaleeFramework0A7ManagerC11withStorage4keys16amplitudeWrapperAcA0E0V_AA0A4KeysVAA09AmplitudeH0_ptcfc",
->>>>>>> 63d03c6 (feat: moved Adjust to new target KovaleeAttribution)
-=======
-                "name": "EventTrackerManager",
-                "printedName": "KovaleeFramework.EventTrackerManager",
-                "usr": "s:16KovaleeFramework19EventTrackerManagerP"
-              }
-            ],
-            "declKind": "Constructor",
-            "usr": "s:16KovaleeFramework0A7ManagerC11withStorage4keys012eventTrackerC0AcA0E0V_AA0A4KeysVAA05EventhC0_ptcfc",
-            "mangledName": "$s16KovaleeFramework0A7ManagerC11withStorage4keys012eventTrackerC0AcA0E0V_AA0A4KeysVAA05EventhC0_ptcfc",
->>>>>>> 9a9c071 (feat: creating Adjust instance if not present yet)
             "moduleName": "KovaleeFramework",
             "declAttributes": [
               "AccessControl"
@@ -105,8 +75,6 @@
               },
               {
                 "kind": "TypeNominal",
-<<<<<<< HEAD
-<<<<<<< HEAD
                 "name": "AttributionManager",
                 "printedName": "KovaleeFramework.AttributionManager",
                 "usr": "s:16KovaleeFramework18AttributionManagerP"
@@ -115,26 +83,6 @@
             "declKind": "Func",
             "usr": "s:16KovaleeFramework0A7ManagerC016setupAttributionC013adjustWrapperyAA0eC0_p_tF",
             "mangledName": "$s16KovaleeFramework0A7ManagerC016setupAttributionC013adjustWrapperyAA0eC0_p_tF",
-=======
-                "name": "AdjustWrapper",
-                "printedName": "KovaleeFramework.AdjustWrapper",
-                "usr": "s:16KovaleeFramework13AdjustWrapperP"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:16KovaleeFramework0A7ManagerC016setupAttributionC013adjustWrapperyAA06AdjustG0_p_tF",
-            "mangledName": "$s16KovaleeFramework0A7ManagerC016setupAttributionC013adjustWrapperyAA06AdjustG0_p_tF",
->>>>>>> 63d03c6 (feat: moved Adjust to new target KovaleeAttribution)
-=======
-                "name": "AttributionManager",
-                "printedName": "KovaleeFramework.AttributionManager",
-                "usr": "s:16KovaleeFramework18AttributionManagerP"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:16KovaleeFramework0A7ManagerC016setupAttributionC013adjustWrapperyAA0eC0_p_tF",
-            "mangledName": "$s16KovaleeFramework0A7ManagerC016setupAttributionC013adjustWrapperyAA0eC0_p_tF",
->>>>>>> 9a9c071 (feat: creating Adjust instance if not present yet)
             "moduleName": "KovaleeFramework",
             "declAttributes": [
               "AccessControl"
@@ -530,24 +478,12 @@
           },
           {
             "kind": "Var",
-<<<<<<< HEAD
-<<<<<<< HEAD
             "name": "attributionManager",
             "printedName": "attributionManager",
-=======
-            "name": "adjust",
-            "printedName": "adjust",
->>>>>>> 63d03c6 (feat: moved Adjust to new target KovaleeAttribution)
-=======
-            "name": "attributionManager",
-            "printedName": "attributionManager",
->>>>>>> 9a9c071 (feat: creating Adjust instance if not present yet)
             "children": [
               {
                 "kind": "TypeNominal",
                 "name": "Optional",
-<<<<<<< HEAD
-<<<<<<< HEAD
                 "printedName": "KovaleeFramework.AttributionManager?",
                 "children": [
                   {
@@ -555,42 +491,14 @@
                     "name": "AttributionManager",
                     "printedName": "KovaleeFramework.AttributionManager",
                     "usr": "s:16KovaleeFramework18AttributionManagerP"
-=======
-                "printedName": "KovaleeFramework.AdjustWrapper?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "AdjustWrapper",
-                    "printedName": "KovaleeFramework.AdjustWrapper",
-                    "usr": "s:16KovaleeFramework13AdjustWrapperP"
->>>>>>> 63d03c6 (feat: moved Adjust to new target KovaleeAttribution)
-=======
-                "printedName": "KovaleeFramework.AttributionManager?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "AttributionManager",
-                    "printedName": "KovaleeFramework.AttributionManager",
-                    "usr": "s:16KovaleeFramework18AttributionManagerP"
->>>>>>> 9a9c071 (feat: creating Adjust instance if not present yet)
                   }
                 ],
                 "usr": "s:Sq"
               }
             ],
             "declKind": "Var",
-<<<<<<< HEAD
-<<<<<<< HEAD
             "usr": "s:16KovaleeFramework0A7ManagerC011attributionC0AA011AttributionC0_pSgvp",
             "mangledName": "$s16KovaleeFramework0A7ManagerC011attributionC0AA011AttributionC0_pSgvp",
-=======
-            "usr": "s:16KovaleeFramework0A7ManagerC6adjustAA13AdjustWrapper_pSgvp",
-            "mangledName": "$s16KovaleeFramework0A7ManagerC6adjustAA13AdjustWrapper_pSgvp",
->>>>>>> 63d03c6 (feat: moved Adjust to new target KovaleeAttribution)
-=======
-            "usr": "s:16KovaleeFramework0A7ManagerC011attributionC0AA011AttributionC0_pSgvp",
-            "mangledName": "$s16KovaleeFramework0A7ManagerC011attributionC0AA011AttributionC0_pSgvp",
->>>>>>> 9a9c071 (feat: creating Adjust instance if not present yet)
             "moduleName": "KovaleeFramework",
             "declAttributes": [
               "HasInitialValue",
@@ -607,8 +515,6 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Optional",
-<<<<<<< HEAD
-<<<<<<< HEAD
                     "printedName": "KovaleeFramework.AttributionManager?",
                     "children": [
                       {
@@ -616,42 +522,14 @@
                         "name": "AttributionManager",
                         "printedName": "KovaleeFramework.AttributionManager",
                         "usr": "s:16KovaleeFramework18AttributionManagerP"
-=======
-                    "printedName": "KovaleeFramework.AdjustWrapper?",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "AdjustWrapper",
-                        "printedName": "KovaleeFramework.AdjustWrapper",
-                        "usr": "s:16KovaleeFramework13AdjustWrapperP"
->>>>>>> 63d03c6 (feat: moved Adjust to new target KovaleeAttribution)
-=======
-                    "printedName": "KovaleeFramework.AttributionManager?",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "AttributionManager",
-                        "printedName": "KovaleeFramework.AttributionManager",
-                        "usr": "s:16KovaleeFramework18AttributionManagerP"
->>>>>>> 9a9c071 (feat: creating Adjust instance if not present yet)
                       }
                     ],
                     "usr": "s:Sq"
                   }
                 ],
                 "declKind": "Accessor",
-<<<<<<< HEAD
-<<<<<<< HEAD
                 "usr": "s:16KovaleeFramework0A7ManagerC011attributionC0AA011AttributionC0_pSgvg",
                 "mangledName": "$s16KovaleeFramework0A7ManagerC011attributionC0AA011AttributionC0_pSgvg",
-=======
-                "usr": "s:16KovaleeFramework0A7ManagerC6adjustAA13AdjustWrapper_pSgvg",
-                "mangledName": "$s16KovaleeFramework0A7ManagerC6adjustAA13AdjustWrapper_pSgvg",
->>>>>>> 63d03c6 (feat: moved Adjust to new target KovaleeAttribution)
-=======
-                "usr": "s:16KovaleeFramework0A7ManagerC011attributionC0AA011AttributionC0_pSgvg",
-                "mangledName": "$s16KovaleeFramework0A7ManagerC011attributionC0AA011AttributionC0_pSgvg",
->>>>>>> 9a9c071 (feat: creating Adjust instance if not present yet)
                 "moduleName": "KovaleeFramework",
                 "implicit": true,
                 "accessorKind": "get"
@@ -669,8 +547,6 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Optional",
-<<<<<<< HEAD
-<<<<<<< HEAD
                     "printedName": "KovaleeFramework.AttributionManager?",
                     "children": [
                       {
@@ -678,42 +554,14 @@
                         "name": "AttributionManager",
                         "printedName": "KovaleeFramework.AttributionManager",
                         "usr": "s:16KovaleeFramework18AttributionManagerP"
-=======
-                    "printedName": "KovaleeFramework.AdjustWrapper?",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "AdjustWrapper",
-                        "printedName": "KovaleeFramework.AdjustWrapper",
-                        "usr": "s:16KovaleeFramework13AdjustWrapperP"
->>>>>>> 63d03c6 (feat: moved Adjust to new target KovaleeAttribution)
-=======
-                    "printedName": "KovaleeFramework.AttributionManager?",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "AttributionManager",
-                        "printedName": "KovaleeFramework.AttributionManager",
-                        "usr": "s:16KovaleeFramework18AttributionManagerP"
->>>>>>> 9a9c071 (feat: creating Adjust instance if not present yet)
                       }
                     ],
                     "usr": "s:Sq"
                   }
                 ],
                 "declKind": "Accessor",
-<<<<<<< HEAD
-<<<<<<< HEAD
                 "usr": "s:16KovaleeFramework0A7ManagerC011attributionC0AA011AttributionC0_pSgvs",
                 "mangledName": "$s16KovaleeFramework0A7ManagerC011attributionC0AA011AttributionC0_pSgvs",
-=======
-                "usr": "s:16KovaleeFramework0A7ManagerC6adjustAA13AdjustWrapper_pSgvs",
-                "mangledName": "$s16KovaleeFramework0A7ManagerC6adjustAA13AdjustWrapper_pSgvs",
->>>>>>> 63d03c6 (feat: moved Adjust to new target KovaleeAttribution)
-=======
-                "usr": "s:16KovaleeFramework0A7ManagerC011attributionC0AA011AttributionC0_pSgvs",
-                "mangledName": "$s16KovaleeFramework0A7ManagerC011attributionC0AA011AttributionC0_pSgvs",
->>>>>>> 9a9c071 (feat: creating Adjust instance if not present yet)
                 "moduleName": "KovaleeFramework",
                 "implicit": true,
                 "accessorKind": "set"
@@ -730,18 +578,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-<<<<<<< HEAD
-<<<<<<< HEAD
                 "usr": "s:16KovaleeFramework0A7ManagerC011attributionC0AA011AttributionC0_pSgvM",
                 "mangledName": "$s16KovaleeFramework0A7ManagerC011attributionC0AA011AttributionC0_pSgvM",
-=======
-                "usr": "s:16KovaleeFramework0A7ManagerC6adjustAA13AdjustWrapper_pSgvM",
-                "mangledName": "$s16KovaleeFramework0A7ManagerC6adjustAA13AdjustWrapper_pSgvM",
->>>>>>> 63d03c6 (feat: moved Adjust to new target KovaleeAttribution)
-=======
-                "usr": "s:16KovaleeFramework0A7ManagerC011attributionC0AA011AttributionC0_pSgvM",
-                "mangledName": "$s16KovaleeFramework0A7ManagerC011attributionC0AA011AttributionC0_pSgvM",
->>>>>>> 9a9c071 (feat: creating Adjust instance if not present yet)
                 "moduleName": "KovaleeFramework",
                 "implicit": true,
                 "accessorKind": "_modify"
@@ -750,24 +588,12 @@
           },
           {
             "kind": "Var",
-<<<<<<< HEAD
-<<<<<<< HEAD
             "name": "trackerManager",
             "printedName": "trackerManager",
-=======
-            "name": "amplitude",
-            "printedName": "amplitude",
->>>>>>> 63d03c6 (feat: moved Adjust to new target KovaleeAttribution)
-=======
-            "name": "trackerManager",
-            "printedName": "trackerManager",
->>>>>>> 9a9c071 (feat: creating Adjust instance if not present yet)
             "children": [
               {
                 "kind": "TypeNominal",
                 "name": "Optional",
-<<<<<<< HEAD
-<<<<<<< HEAD
                 "printedName": "KovaleeFramework.EventTrackerManager?",
                 "children": [
                   {
@@ -775,42 +601,14 @@
                     "name": "EventTrackerManager",
                     "printedName": "KovaleeFramework.EventTrackerManager",
                     "usr": "s:16KovaleeFramework19EventTrackerManagerP"
-=======
-                "printedName": "KovaleeFramework.AmplitudeWrapper?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "AmplitudeWrapper",
-                    "printedName": "KovaleeFramework.AmplitudeWrapper",
-                    "usr": "s:16KovaleeFramework16AmplitudeWrapperP"
->>>>>>> 63d03c6 (feat: moved Adjust to new target KovaleeAttribution)
-=======
-                "printedName": "KovaleeFramework.EventTrackerManager?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "EventTrackerManager",
-                    "printedName": "KovaleeFramework.EventTrackerManager",
-                    "usr": "s:16KovaleeFramework19EventTrackerManagerP"
->>>>>>> 9a9c071 (feat: creating Adjust instance if not present yet)
                   }
                 ],
                 "usr": "s:Sq"
               }
             ],
             "declKind": "Var",
-<<<<<<< HEAD
-<<<<<<< HEAD
             "usr": "s:16KovaleeFramework0A7ManagerC07trackerC0AA012EventTrackerC0_pSgvp",
             "mangledName": "$s16KovaleeFramework0A7ManagerC07trackerC0AA012EventTrackerC0_pSgvp",
-=======
-            "usr": "s:16KovaleeFramework0A7ManagerC9amplitudeAA16AmplitudeWrapper_pSgvp",
-            "mangledName": "$s16KovaleeFramework0A7ManagerC9amplitudeAA16AmplitudeWrapper_pSgvp",
->>>>>>> 63d03c6 (feat: moved Adjust to new target KovaleeAttribution)
-=======
-            "usr": "s:16KovaleeFramework0A7ManagerC07trackerC0AA012EventTrackerC0_pSgvp",
-            "mangledName": "$s16KovaleeFramework0A7ManagerC07trackerC0AA012EventTrackerC0_pSgvp",
->>>>>>> 9a9c071 (feat: creating Adjust instance if not present yet)
             "moduleName": "KovaleeFramework",
             "declAttributes": [
               "HasInitialValue",
@@ -827,8 +625,6 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Optional",
-<<<<<<< HEAD
-<<<<<<< HEAD
                     "printedName": "KovaleeFramework.EventTrackerManager?",
                     "children": [
                       {
@@ -836,42 +632,14 @@
                         "name": "EventTrackerManager",
                         "printedName": "KovaleeFramework.EventTrackerManager",
                         "usr": "s:16KovaleeFramework19EventTrackerManagerP"
-=======
-                    "printedName": "KovaleeFramework.AmplitudeWrapper?",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "AmplitudeWrapper",
-                        "printedName": "KovaleeFramework.AmplitudeWrapper",
-                        "usr": "s:16KovaleeFramework16AmplitudeWrapperP"
->>>>>>> 63d03c6 (feat: moved Adjust to new target KovaleeAttribution)
-=======
-                    "printedName": "KovaleeFramework.EventTrackerManager?",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "EventTrackerManager",
-                        "printedName": "KovaleeFramework.EventTrackerManager",
-                        "usr": "s:16KovaleeFramework19EventTrackerManagerP"
->>>>>>> 9a9c071 (feat: creating Adjust instance if not present yet)
                       }
                     ],
                     "usr": "s:Sq"
                   }
                 ],
                 "declKind": "Accessor",
-<<<<<<< HEAD
-<<<<<<< HEAD
                 "usr": "s:16KovaleeFramework0A7ManagerC07trackerC0AA012EventTrackerC0_pSgvg",
                 "mangledName": "$s16KovaleeFramework0A7ManagerC07trackerC0AA012EventTrackerC0_pSgvg",
-=======
-                "usr": "s:16KovaleeFramework0A7ManagerC9amplitudeAA16AmplitudeWrapper_pSgvg",
-                "mangledName": "$s16KovaleeFramework0A7ManagerC9amplitudeAA16AmplitudeWrapper_pSgvg",
->>>>>>> 63d03c6 (feat: moved Adjust to new target KovaleeAttribution)
-=======
-                "usr": "s:16KovaleeFramework0A7ManagerC07trackerC0AA012EventTrackerC0_pSgvg",
-                "mangledName": "$s16KovaleeFramework0A7ManagerC07trackerC0AA012EventTrackerC0_pSgvg",
->>>>>>> 9a9c071 (feat: creating Adjust instance if not present yet)
                 "moduleName": "KovaleeFramework",
                 "implicit": true,
                 "accessorKind": "get"
@@ -889,8 +657,6 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Optional",
-<<<<<<< HEAD
-<<<<<<< HEAD
                     "printedName": "KovaleeFramework.EventTrackerManager?",
                     "children": [
                       {
@@ -898,42 +664,14 @@
                         "name": "EventTrackerManager",
                         "printedName": "KovaleeFramework.EventTrackerManager",
                         "usr": "s:16KovaleeFramework19EventTrackerManagerP"
-=======
-                    "printedName": "KovaleeFramework.AmplitudeWrapper?",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "AmplitudeWrapper",
-                        "printedName": "KovaleeFramework.AmplitudeWrapper",
-                        "usr": "s:16KovaleeFramework16AmplitudeWrapperP"
->>>>>>> 63d03c6 (feat: moved Adjust to new target KovaleeAttribution)
-=======
-                    "printedName": "KovaleeFramework.EventTrackerManager?",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "EventTrackerManager",
-                        "printedName": "KovaleeFramework.EventTrackerManager",
-                        "usr": "s:16KovaleeFramework19EventTrackerManagerP"
->>>>>>> 9a9c071 (feat: creating Adjust instance if not present yet)
                       }
                     ],
                     "usr": "s:Sq"
                   }
                 ],
                 "declKind": "Accessor",
-<<<<<<< HEAD
-<<<<<<< HEAD
                 "usr": "s:16KovaleeFramework0A7ManagerC07trackerC0AA012EventTrackerC0_pSgvs",
                 "mangledName": "$s16KovaleeFramework0A7ManagerC07trackerC0AA012EventTrackerC0_pSgvs",
-=======
-                "usr": "s:16KovaleeFramework0A7ManagerC9amplitudeAA16AmplitudeWrapper_pSgvs",
-                "mangledName": "$s16KovaleeFramework0A7ManagerC9amplitudeAA16AmplitudeWrapper_pSgvs",
->>>>>>> 63d03c6 (feat: moved Adjust to new target KovaleeAttribution)
-=======
-                "usr": "s:16KovaleeFramework0A7ManagerC07trackerC0AA012EventTrackerC0_pSgvs",
-                "mangledName": "$s16KovaleeFramework0A7ManagerC07trackerC0AA012EventTrackerC0_pSgvs",
->>>>>>> 9a9c071 (feat: creating Adjust instance if not present yet)
                 "moduleName": "KovaleeFramework",
                 "implicit": true,
                 "accessorKind": "set"
@@ -950,18 +688,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-<<<<<<< HEAD
-<<<<<<< HEAD
                 "usr": "s:16KovaleeFramework0A7ManagerC07trackerC0AA012EventTrackerC0_pSgvM",
                 "mangledName": "$s16KovaleeFramework0A7ManagerC07trackerC0AA012EventTrackerC0_pSgvM",
-=======
-                "usr": "s:16KovaleeFramework0A7ManagerC9amplitudeAA16AmplitudeWrapper_pSgvM",
-                "mangledName": "$s16KovaleeFramework0A7ManagerC9amplitudeAA16AmplitudeWrapper_pSgvM",
->>>>>>> 63d03c6 (feat: moved Adjust to new target KovaleeAttribution)
-=======
-                "usr": "s:16KovaleeFramework0A7ManagerC07trackerC0AA012EventTrackerC0_pSgvM",
-                "mangledName": "$s16KovaleeFramework0A7ManagerC07trackerC0AA012EventTrackerC0_pSgvM",
->>>>>>> 9a9c071 (feat: creating Adjust instance if not present yet)
                 "moduleName": "KovaleeFramework",
                 "implicit": true,
                 "accessorKind": "_modify"
@@ -7503,66 +7231,6 @@
             "protocolReq": true,
             "reqNewWitnessTableEntry": true,
             "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "getUserId",
-            "printedName": "getUserId()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "Swift.String?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "usr": "s:Sq"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:16KovaleeFramework16AmplitudeWrapperP9getUserIdSSSgyF",
-            "mangledName": "$s16KovaleeFramework16AmplitudeWrapperP9getUserIdSSSgyF",
-            "moduleName": "KovaleeFramework",
-            "genericSig": "<τ_0_0 where τ_0_0 : KovaleeFramework.AmplitudeWrapper>",
-            "sugared_genericSig": "<Self where Self : KovaleeFramework.AmplitudeWrapper>",
-            "protocolReq": true,
-            "reqNewWitnessTableEntry": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "getDeviceId",
-            "printedName": "getDeviceId()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "Swift.String?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "usr": "s:Sq"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:16KovaleeFramework16AmplitudeWrapperP11getDeviceIdSSSgyF",
-            "mangledName": "$s16KovaleeFramework16AmplitudeWrapperP11getDeviceIdSSSgyF",
-            "moduleName": "KovaleeFramework",
-            "genericSig": "<τ_0_0 where τ_0_0 : KovaleeFramework.AmplitudeWrapper>",
-            "sugared_genericSig": "<Self where Self : KovaleeFramework.AmplitudeWrapper>",
-            "protocolReq": true,
-            "reqNewWitnessTableEntry": true,
-            "funcSelfKind": "NonMutating"
           }
         ],
         "declKind": "Protocol",
@@ -12093,1318 +11761,203 @@
     {
       "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
       "kind": "BooleanLiteral",
-<<<<<<< HEAD
-<<<<<<< HEAD
       "offset": 415,
-=======
-      "offset": 700,
->>>>>>> 63d03c6 (feat: moved Adjust to new target KovaleeAttribution)
-=======
-      "offset": 415,
->>>>>>> 9a9c071 (feat: creating Adjust instance if not present yet)
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
       "kind": "StringLiteral",
-<<<<<<< HEAD
-<<<<<<< HEAD
       "offset": 628,
-=======
-      "offset": 1177,
->>>>>>> 63d03c6 (feat: moved Adjust to new target KovaleeAttribution)
-=======
-      "offset": 628,
->>>>>>> 9a9c071 (feat: creating Adjust instance if not present yet)
       "length": 34,
       "value": "\"setting attribution to Amplitude\""
     },
     {
       "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
       "kind": "StringLiteral",
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-      "offset": 939,
-=======
-      "offset": 1471,
->>>>>>> 63d03c6 (feat: moved Adjust to new target KovaleeAttribution)
-=======
-      "offset": 939,
->>>>>>> 9a9c071 (feat: creating Adjust instance if not present yet)
-=======
       "offset": 938,
->>>>>>> 3ed8e2a (feat: moved Purchases code to KovaleePurchases Target)
       "length": 35,
       "value": "\"setting attribution to RevenueCat\""
     },
     {
       "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
       "kind": "StringLiteral",
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-      "offset": 1539,
-=======
-      "offset": 2059,
->>>>>>> 63d03c6 (feat: moved Adjust to new target KovaleeAttribution)
-=======
-      "offset": 1539,
->>>>>>> 9a9c071 (feat: creating Adjust instance if not present yet)
-=======
-      "offset": 1543,
->>>>>>> 3ed8e2a (feat: moved Purchases code to KovaleePurchases Target)
-=======
-      "offset": 1738,
->>>>>>> 23e3970 (feat: moved Firebase code to specific target KovaleeRemoteConfig)
-=======
       "offset": 1725,
->>>>>>> 3d93e0d (feat: moved Ads code to KovaleeAds)
       "length": 68,
       "value": "\"An error occurred during completion: \""
     },
     {
       "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
       "kind": "StringLiteral",
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-      "offset": 1606,
-=======
-      "offset": 2126,
->>>>>>> 63d03c6 (feat: moved Adjust to new target KovaleeAttribution)
-=======
-      "offset": 1606,
->>>>>>> 9a9c071 (feat: creating Adjust instance if not present yet)
-=======
-      "offset": 1610,
->>>>>>> 3ed8e2a (feat: moved Purchases code to KovaleePurchases Target)
-=======
-      "offset": 1805,
->>>>>>> 23e3970 (feat: moved Firebase code to specific target KovaleeRemoteConfig)
-=======
       "offset": 1792,
->>>>>>> 3d93e0d (feat: moved Ads code to KovaleeAds)
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
       "kind": "StringLiteral",
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-      "offset": 1928,
-=======
-      "offset": 2426,
->>>>>>> 63d03c6 (feat: moved Adjust to new target KovaleeAttribution)
-=======
-      "offset": 1928,
->>>>>>> 9a9c071 (feat: creating Adjust instance if not present yet)
-=======
-      "offset": 1932,
->>>>>>> 3ed8e2a (feat: moved Purchases code to KovaleePurchases Target)
-=======
-      "offset": 2127,
->>>>>>> 23e3970 (feat: moved Firebase code to specific target KovaleeRemoteConfig)
-=======
       "offset": 2114,
->>>>>>> 3d93e0d (feat: moved Ads code to KovaleeAds)
       "length": 35,
       "value": "\"Sending ConversionValue: \""
     },
     {
       "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
       "kind": "StringLiteral",
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-      "offset": 1962,
-=======
-      "offset": 2460,
->>>>>>> 63d03c6 (feat: moved Adjust to new target KovaleeAttribution)
-=======
-      "offset": 1962,
->>>>>>> 9a9c071 (feat: creating Adjust instance if not present yet)
-=======
-      "offset": 1966,
->>>>>>> 3ed8e2a (feat: moved Purchases code to KovaleePurchases Target)
-=======
-      "offset": 2161,
->>>>>>> 23e3970 (feat: moved Firebase code to specific target KovaleeRemoteConfig)
-=======
       "offset": 2148,
->>>>>>> 3d93e0d (feat: moved Ads code to KovaleeAds)
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
       "kind": "StringLiteral",
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-      "offset": 2590,
-=======
-      "offset": 3054,
->>>>>>> 63d03c6 (feat: moved Adjust to new target KovaleeAttribution)
-=======
-      "offset": 2590,
->>>>>>> 9a9c071 (feat: creating Adjust instance if not present yet)
-=======
-      "offset": 2594,
->>>>>>> 3ed8e2a (feat: moved Purchases code to KovaleePurchases Target)
-=======
-      "offset": 2789,
->>>>>>> 23e3970 (feat: moved Firebase code to specific target KovaleeRemoteConfig)
-=======
       "offset": 2776,
->>>>>>> 3d93e0d (feat: moved Ads code to KovaleeAds)
       "length": 21,
       "value": "\"Setting attribution\""
     },
     {
       "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
       "kind": "StringLiteral",
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-      "offset": 3982,
-=======
-      "offset": 3586,
->>>>>>> 69235d0 (feat: implemented functions to retrieve Adjust adid and Amplitude User and Device Id)
-=======
-=======
->>>>>>> 9a9c071 (feat: creating Adjust instance if not present yet)
-=======
->>>>>>> 3ed8e2a (feat: moved Purchases code to KovaleePurchases Target)
-=======
->>>>>>> 23e3970 (feat: moved Firebase code to specific target KovaleeRemoteConfig)
-=======
->>>>>>> 3d93e0d (feat: moved Ads code to KovaleeAds)
-      "offset": 3586,
-=======
-      "offset": 4246,
->>>>>>> 205cf3c (feat: moved Adjust to new target KovaleeAttribution)
-<<<<<<< HEAD
->>>>>>> 63d03c6 (feat: moved Adjust to new target KovaleeAttribution)
-=======
-=======
-      "offset": 3982,
->>>>>>> 7baef6c (feat: creating Adjust instance if not present yet)
-<<<<<<< HEAD
->>>>>>> 9a9c071 (feat: creating Adjust instance if not present yet)
-=======
-=======
-      "offset": 4001,
->>>>>>> 8c22773 (feat: moved Purchases code to KovaleePurchases Target)
-<<<<<<< HEAD
->>>>>>> 3ed8e2a (feat: moved Purchases code to KovaleePurchases Target)
-=======
-=======
-      "offset": 4137,
->>>>>>> 8c8d3f3 (feat: moved Firebase code to specific target KovaleeRemoteConfig)
-<<<<<<< HEAD
->>>>>>> 23e3970 (feat: moved Firebase code to specific target KovaleeRemoteConfig)
-=======
-=======
       "offset": 4124,
->>>>>>> ab23b2e (feat: moved Ads code to KovaleeAds)
->>>>>>> 3d93e0d (feat: moved Ads code to KovaleeAds)
       "length": 5,
       "value": "\"yes\""
     },
     {
       "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
       "kind": "BooleanLiteral",
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-      "offset": 3990,
-=======
-      "offset": 3594,
->>>>>>> 69235d0 (feat: implemented functions to retrieve Adjust adid and Amplitude User and Device Id)
-=======
-=======
->>>>>>> 9a9c071 (feat: creating Adjust instance if not present yet)
-=======
->>>>>>> 3ed8e2a (feat: moved Purchases code to KovaleePurchases Target)
-=======
->>>>>>> 23e3970 (feat: moved Firebase code to specific target KovaleeRemoteConfig)
-=======
->>>>>>> 3d93e0d (feat: moved Ads code to KovaleeAds)
-      "offset": 3594,
-=======
-      "offset": 4254,
->>>>>>> 205cf3c (feat: moved Adjust to new target KovaleeAttribution)
-<<<<<<< HEAD
->>>>>>> 63d03c6 (feat: moved Adjust to new target KovaleeAttribution)
-=======
-=======
-      "offset": 3990,
->>>>>>> 7baef6c (feat: creating Adjust instance if not present yet)
-<<<<<<< HEAD
->>>>>>> 9a9c071 (feat: creating Adjust instance if not present yet)
-=======
-=======
-      "offset": 4009,
->>>>>>> 8c22773 (feat: moved Purchases code to KovaleePurchases Target)
-<<<<<<< HEAD
->>>>>>> 3ed8e2a (feat: moved Purchases code to KovaleePurchases Target)
-=======
-=======
-      "offset": 4145,
->>>>>>> 8c8d3f3 (feat: moved Firebase code to specific target KovaleeRemoteConfig)
-<<<<<<< HEAD
->>>>>>> 23e3970 (feat: moved Firebase code to specific target KovaleeRemoteConfig)
-=======
-=======
       "offset": 4132,
->>>>>>> ab23b2e (feat: moved Ads code to KovaleeAds)
->>>>>>> 3d93e0d (feat: moved Ads code to KovaleeAds)
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
       "kind": "BooleanLiteral",
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-      "offset": 3997,
-=======
-      "offset": 3601,
->>>>>>> 69235d0 (feat: implemented functions to retrieve Adjust adid and Amplitude User and Device Id)
-=======
-=======
->>>>>>> 9a9c071 (feat: creating Adjust instance if not present yet)
-=======
->>>>>>> 3ed8e2a (feat: moved Purchases code to KovaleePurchases Target)
-=======
->>>>>>> 23e3970 (feat: moved Firebase code to specific target KovaleeRemoteConfig)
-=======
->>>>>>> 3d93e0d (feat: moved Ads code to KovaleeAds)
-      "offset": 3601,
-=======
-      "offset": 4261,
->>>>>>> 205cf3c (feat: moved Adjust to new target KovaleeAttribution)
-<<<<<<< HEAD
->>>>>>> 63d03c6 (feat: moved Adjust to new target KovaleeAttribution)
-=======
-=======
-      "offset": 3997,
->>>>>>> 7baef6c (feat: creating Adjust instance if not present yet)
-<<<<<<< HEAD
->>>>>>> 9a9c071 (feat: creating Adjust instance if not present yet)
-=======
-=======
-      "offset": 4016,
->>>>>>> 8c22773 (feat: moved Purchases code to KovaleePurchases Target)
-<<<<<<< HEAD
->>>>>>> 3ed8e2a (feat: moved Purchases code to KovaleePurchases Target)
-=======
-=======
-      "offset": 4152,
->>>>>>> 8c8d3f3 (feat: moved Firebase code to specific target KovaleeRemoteConfig)
-<<<<<<< HEAD
->>>>>>> 23e3970 (feat: moved Firebase code to specific target KovaleeRemoteConfig)
-=======
-=======
       "offset": 4139,
->>>>>>> ab23b2e (feat: moved Ads code to KovaleeAds)
->>>>>>> 3d93e0d (feat: moved Ads code to KovaleeAds)
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
       "kind": "BooleanLiteral",
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-      "offset": 4196,
-=======
-      "offset": 3800,
->>>>>>> 69235d0 (feat: implemented functions to retrieve Adjust adid and Amplitude User and Device Id)
-=======
-=======
->>>>>>> 9a9c071 (feat: creating Adjust instance if not present yet)
-=======
->>>>>>> 3ed8e2a (feat: moved Purchases code to KovaleePurchases Target)
-=======
->>>>>>> 23e3970 (feat: moved Firebase code to specific target KovaleeRemoteConfig)
-=======
->>>>>>> 3d93e0d (feat: moved Ads code to KovaleeAds)
-      "offset": 3800,
-=======
-      "offset": 4460,
->>>>>>> 205cf3c (feat: moved Adjust to new target KovaleeAttribution)
-<<<<<<< HEAD
->>>>>>> 63d03c6 (feat: moved Adjust to new target KovaleeAttribution)
-=======
-=======
-      "offset": 4196,
->>>>>>> 7baef6c (feat: creating Adjust instance if not present yet)
-<<<<<<< HEAD
->>>>>>> 9a9c071 (feat: creating Adjust instance if not present yet)
-=======
-=======
-      "offset": 4215,
->>>>>>> 8c22773 (feat: moved Purchases code to KovaleePurchases Target)
-<<<<<<< HEAD
->>>>>>> 3ed8e2a (feat: moved Purchases code to KovaleePurchases Target)
-=======
-=======
-      "offset": 4351,
->>>>>>> 8c8d3f3 (feat: moved Firebase code to specific target KovaleeRemoteConfig)
-<<<<<<< HEAD
->>>>>>> 23e3970 (feat: moved Firebase code to specific target KovaleeRemoteConfig)
-=======
-=======
       "offset": 4338,
->>>>>>> ab23b2e (feat: moved Ads code to KovaleeAds)
->>>>>>> 3d93e0d (feat: moved Ads code to KovaleeAds)
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
       "kind": "StringLiteral",
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-      "offset": 4404,
-=======
-      "offset": 3998,
->>>>>>> 69235d0 (feat: implemented functions to retrieve Adjust adid and Amplitude User and Device Id)
-=======
-=======
->>>>>>> 9a9c071 (feat: creating Adjust instance if not present yet)
-=======
->>>>>>> 3ed8e2a (feat: moved Purchases code to KovaleePurchases Target)
-=======
->>>>>>> 23e3970 (feat: moved Firebase code to specific target KovaleeRemoteConfig)
-=======
->>>>>>> 3d93e0d (feat: moved Ads code to KovaleeAds)
-      "offset": 3998,
-=======
-      "offset": 4658,
->>>>>>> 205cf3c (feat: moved Adjust to new target KovaleeAttribution)
-<<<<<<< HEAD
->>>>>>> 63d03c6 (feat: moved Adjust to new target KovaleeAttribution)
-=======
-=======
-      "offset": 4404,
->>>>>>> 7baef6c (feat: creating Adjust instance if not present yet)
-<<<<<<< HEAD
->>>>>>> 9a9c071 (feat: creating Adjust instance if not present yet)
-=======
-=======
-      "offset": 4423,
->>>>>>> 8c22773 (feat: moved Purchases code to KovaleePurchases Target)
-<<<<<<< HEAD
->>>>>>> 3ed8e2a (feat: moved Purchases code to KovaleePurchases Target)
-=======
-=======
-      "offset": 4559,
->>>>>>> 8c8d3f3 (feat: moved Firebase code to specific target KovaleeRemoteConfig)
-<<<<<<< HEAD
->>>>>>> 23e3970 (feat: moved Firebase code to specific target KovaleeRemoteConfig)
-=======
-=======
       "offset": 4546,
->>>>>>> ab23b2e (feat: moved Ads code to KovaleeAds)
->>>>>>> 3d93e0d (feat: moved Ads code to KovaleeAds)
       "length": 4,
       "value": "\"no\""
     },
     {
       "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
       "kind": "BooleanLiteral",
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-      "offset": 4464,
-=======
-      "offset": 4058,
->>>>>>> 69235d0 (feat: implemented functions to retrieve Adjust adid and Amplitude User and Device Id)
-=======
-=======
->>>>>>> 9a9c071 (feat: creating Adjust instance if not present yet)
-=======
->>>>>>> 3ed8e2a (feat: moved Purchases code to KovaleePurchases Target)
-=======
->>>>>>> 23e3970 (feat: moved Firebase code to specific target KovaleeRemoteConfig)
-=======
->>>>>>> 3d93e0d (feat: moved Ads code to KovaleeAds)
-      "offset": 4058,
-=======
-      "offset": 4718,
->>>>>>> 205cf3c (feat: moved Adjust to new target KovaleeAttribution)
-<<<<<<< HEAD
->>>>>>> 63d03c6 (feat: moved Adjust to new target KovaleeAttribution)
-=======
-=======
-      "offset": 4464,
->>>>>>> 7baef6c (feat: creating Adjust instance if not present yet)
-<<<<<<< HEAD
->>>>>>> 9a9c071 (feat: creating Adjust instance if not present yet)
-=======
-=======
-      "offset": 4483,
->>>>>>> 8c22773 (feat: moved Purchases code to KovaleePurchases Target)
-<<<<<<< HEAD
->>>>>>> 3ed8e2a (feat: moved Purchases code to KovaleePurchases Target)
-=======
-=======
-      "offset": 4619,
->>>>>>> 8c8d3f3 (feat: moved Firebase code to specific target KovaleeRemoteConfig)
-<<<<<<< HEAD
->>>>>>> 23e3970 (feat: moved Firebase code to specific target KovaleeRemoteConfig)
-=======
-=======
       "offset": 4606,
->>>>>>> ab23b2e (feat: moved Ads code to KovaleeAds)
->>>>>>> 3d93e0d (feat: moved Ads code to KovaleeAds)
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
       "kind": "StringLiteral",
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-      "offset": 4942,
-=======
-      "offset": 4518,
->>>>>>> 69235d0 (feat: implemented functions to retrieve Adjust adid and Amplitude User and Device Id)
-=======
-=======
->>>>>>> 9a9c071 (feat: creating Adjust instance if not present yet)
-=======
->>>>>>> 3ed8e2a (feat: moved Purchases code to KovaleePurchases Target)
-=======
->>>>>>> 23e3970 (feat: moved Firebase code to specific target KovaleeRemoteConfig)
-=======
->>>>>>> 3d93e0d (feat: moved Ads code to KovaleeAds)
-      "offset": 4518,
-=======
-      "offset": 5173,
->>>>>>> 205cf3c (feat: moved Adjust to new target KovaleeAttribution)
-<<<<<<< HEAD
->>>>>>> 63d03c6 (feat: moved Adjust to new target KovaleeAttribution)
-=======
-=======
-      "offset": 4942,
->>>>>>> 7baef6c (feat: creating Adjust instance if not present yet)
-<<<<<<< HEAD
->>>>>>> 9a9c071 (feat: creating Adjust instance if not present yet)
-=======
-=======
-      "offset": 4962,
->>>>>>> 8c22773 (feat: moved Purchases code to KovaleePurchases Target)
-<<<<<<< HEAD
->>>>>>> 3ed8e2a (feat: moved Purchases code to KovaleePurchases Target)
-=======
-=======
-      "offset": 5120,
->>>>>>> 8c8d3f3 (feat: moved Firebase code to specific target KovaleeRemoteConfig)
-<<<<<<< HEAD
->>>>>>> 23e3970 (feat: moved Firebase code to specific target KovaleeRemoteConfig)
-=======
-=======
       "offset": 5104,
->>>>>>> ab23b2e (feat: moved Ads code to KovaleeAds)
->>>>>>> 3d93e0d (feat: moved Ads code to KovaleeAds)
       "length": 4,
       "value": "\"no\""
     },
     {
       "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
       "kind": "StringLiteral",
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-      "offset": 4949,
-=======
-      "offset": 4525,
->>>>>>> 69235d0 (feat: implemented functions to retrieve Adjust adid and Amplitude User and Device Id)
-=======
-=======
->>>>>>> 9a9c071 (feat: creating Adjust instance if not present yet)
-=======
->>>>>>> 3ed8e2a (feat: moved Purchases code to KovaleePurchases Target)
-=======
->>>>>>> 23e3970 (feat: moved Firebase code to specific target KovaleeRemoteConfig)
-=======
->>>>>>> 3d93e0d (feat: moved Ads code to KovaleeAds)
-      "offset": 4525,
-=======
-      "offset": 5180,
->>>>>>> 205cf3c (feat: moved Adjust to new target KovaleeAttribution)
-<<<<<<< HEAD
->>>>>>> 63d03c6 (feat: moved Adjust to new target KovaleeAttribution)
-=======
-=======
-      "offset": 4949,
->>>>>>> 7baef6c (feat: creating Adjust instance if not present yet)
-<<<<<<< HEAD
->>>>>>> 9a9c071 (feat: creating Adjust instance if not present yet)
-=======
-=======
-      "offset": 4969,
->>>>>>> 8c22773 (feat: moved Purchases code to KovaleePurchases Target)
-<<<<<<< HEAD
->>>>>>> 3ed8e2a (feat: moved Purchases code to KovaleePurchases Target)
-=======
-=======
-      "offset": 5127,
->>>>>>> 8c8d3f3 (feat: moved Firebase code to specific target KovaleeRemoteConfig)
-<<<<<<< HEAD
->>>>>>> 23e3970 (feat: moved Firebase code to specific target KovaleeRemoteConfig)
-=======
-=======
       "offset": 5111,
->>>>>>> ab23b2e (feat: moved Ads code to KovaleeAds)
->>>>>>> 3d93e0d (feat: moved Ads code to KovaleeAds)
       "length": 5,
       "value": "\"yes\""
     },
     {
       "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
       "kind": "StringLiteral",
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-      "offset": 7307,
-=======
-      "offset": 6883,
->>>>>>> 69235d0 (feat: implemented functions to retrieve Adjust adid and Amplitude User and Device Id)
-=======
-=======
->>>>>>> 9a9c071 (feat: creating Adjust instance if not present yet)
-=======
->>>>>>> 3ed8e2a (feat: moved Purchases code to KovaleePurchases Target)
-=======
->>>>>>> 23e3970 (feat: moved Firebase code to specific target KovaleeRemoteConfig)
-=======
->>>>>>> 3d93e0d (feat: moved Ads code to KovaleeAds)
-      "offset": 6883,
-=======
-      "offset": 7538,
->>>>>>> 205cf3c (feat: moved Adjust to new target KovaleeAttribution)
-<<<<<<< HEAD
->>>>>>> 63d03c6 (feat: moved Adjust to new target KovaleeAttribution)
-=======
-=======
-      "offset": 7307,
->>>>>>> 7baef6c (feat: creating Adjust instance if not present yet)
-<<<<<<< HEAD
->>>>>>> 9a9c071 (feat: creating Adjust instance if not present yet)
-=======
-=======
-      "offset": 7427,
->>>>>>> 8c22773 (feat: moved Purchases code to KovaleePurchases Target)
-<<<<<<< HEAD
->>>>>>> 3ed8e2a (feat: moved Purchases code to KovaleePurchases Target)
-=======
-=======
-      "offset": 7585,
->>>>>>> 8c8d3f3 (feat: moved Firebase code to specific target KovaleeRemoteConfig)
-<<<<<<< HEAD
->>>>>>> 23e3970 (feat: moved Firebase code to specific target KovaleeRemoteConfig)
-=======
-=======
       "offset": 7569,
->>>>>>> ab23b2e (feat: moved Ads code to KovaleeAds)
->>>>>>> 3d93e0d (feat: moved Ads code to KovaleeAds)
       "length": 5,
       "value": "\"yes\""
     },
     {
       "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
       "kind": "StringLiteral",
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-      "offset": 8727,
-=======
-      "offset": 8303,
->>>>>>> 69235d0 (feat: implemented functions to retrieve Adjust adid and Amplitude User and Device Id)
-=======
-=======
->>>>>>> 9a9c071 (feat: creating Adjust instance if not present yet)
-=======
->>>>>>> 3ed8e2a (feat: moved Purchases code to KovaleePurchases Target)
-=======
->>>>>>> 23e3970 (feat: moved Firebase code to specific target KovaleeRemoteConfig)
-=======
->>>>>>> 3d93e0d (feat: moved Ads code to KovaleeAds)
-      "offset": 8303,
-=======
-      "offset": 8958,
->>>>>>> 205cf3c (feat: moved Adjust to new target KovaleeAttribution)
-<<<<<<< HEAD
->>>>>>> 63d03c6 (feat: moved Adjust to new target KovaleeAttribution)
-=======
-=======
-      "offset": 8727,
->>>>>>> 7baef6c (feat: creating Adjust instance if not present yet)
-<<<<<<< HEAD
->>>>>>> 9a9c071 (feat: creating Adjust instance if not present yet)
-=======
-=======
-      "offset": 8847,
->>>>>>> 8c22773 (feat: moved Purchases code to KovaleePurchases Target)
-<<<<<<< HEAD
->>>>>>> 3ed8e2a (feat: moved Purchases code to KovaleePurchases Target)
-=======
-=======
-      "offset": 9045,
->>>>>>> 8c8d3f3 (feat: moved Firebase code to specific target KovaleeRemoteConfig)
-<<<<<<< HEAD
->>>>>>> 23e3970 (feat: moved Firebase code to specific target KovaleeRemoteConfig)
-=======
-=======
       "offset": 9029,
->>>>>>> ab23b2e (feat: moved Ads code to KovaleeAds)
->>>>>>> 3d93e0d (feat: moved Ads code to KovaleeAds)
       "length": 87,
       "value": "\"🛰️ Retrieved value \""
     },
     {
       "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
       "kind": "StringLiteral",
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-      "offset": 8794,
-=======
-      "offset": 8370,
->>>>>>> 69235d0 (feat: implemented functions to retrieve Adjust adid and Amplitude User and Device Id)
-=======
-=======
->>>>>>> 9a9c071 (feat: creating Adjust instance if not present yet)
-=======
->>>>>>> 3ed8e2a (feat: moved Purchases code to KovaleePurchases Target)
-=======
->>>>>>> 23e3970 (feat: moved Firebase code to specific target KovaleeRemoteConfig)
-=======
->>>>>>> 3d93e0d (feat: moved Ads code to KovaleeAds)
-      "offset": 8370,
-=======
-      "offset": 9025,
->>>>>>> 205cf3c (feat: moved Adjust to new target KovaleeAttribution)
-<<<<<<< HEAD
->>>>>>> 63d03c6 (feat: moved Adjust to new target KovaleeAttribution)
-=======
-=======
-      "offset": 8794,
->>>>>>> 7baef6c (feat: creating Adjust instance if not present yet)
-<<<<<<< HEAD
->>>>>>> 9a9c071 (feat: creating Adjust instance if not present yet)
-=======
-=======
-      "offset": 8914,
->>>>>>> 8c22773 (feat: moved Purchases code to KovaleePurchases Target)
-<<<<<<< HEAD
->>>>>>> 3ed8e2a (feat: moved Purchases code to KovaleePurchases Target)
-=======
-=======
-      "offset": 9112,
->>>>>>> 8c8d3f3 (feat: moved Firebase code to specific target KovaleeRemoteConfig)
-<<<<<<< HEAD
->>>>>>> 23e3970 (feat: moved Firebase code to specific target KovaleeRemoteConfig)
-=======
-=======
       "offset": 9096,
->>>>>>> ab23b2e (feat: moved Ads code to KovaleeAds)
->>>>>>> 3d93e0d (feat: moved Ads code to KovaleeAds)
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
       "kind": "StringLiteral",
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-      "offset": 8797,
-=======
-      "offset": 8373,
->>>>>>> 69235d0 (feat: implemented functions to retrieve Adjust adid and Amplitude User and Device Id)
-=======
-=======
->>>>>>> 9a9c071 (feat: creating Adjust instance if not present yet)
-=======
->>>>>>> 3ed8e2a (feat: moved Purchases code to KovaleePurchases Target)
-=======
->>>>>>> 23e3970 (feat: moved Firebase code to specific target KovaleeRemoteConfig)
-=======
->>>>>>> 3d93e0d (feat: moved Ads code to KovaleeAds)
-      "offset": 8373,
-=======
-      "offset": 9028,
->>>>>>> 205cf3c (feat: moved Adjust to new target KovaleeAttribution)
-<<<<<<< HEAD
->>>>>>> 63d03c6 (feat: moved Adjust to new target KovaleeAttribution)
-=======
-=======
-      "offset": 8797,
->>>>>>> 7baef6c (feat: creating Adjust instance if not present yet)
-<<<<<<< HEAD
->>>>>>> 9a9c071 (feat: creating Adjust instance if not present yet)
-=======
-=======
-      "offset": 8917,
->>>>>>> 8c22773 (feat: moved Purchases code to KovaleePurchases Target)
-<<<<<<< HEAD
->>>>>>> 3ed8e2a (feat: moved Purchases code to KovaleePurchases Target)
-=======
-=======
-      "offset": 9115,
->>>>>>> 8c8d3f3 (feat: moved Firebase code to specific target KovaleeRemoteConfig)
-<<<<<<< HEAD
->>>>>>> 23e3970 (feat: moved Firebase code to specific target KovaleeRemoteConfig)
-=======
-=======
       "offset": 9099,
->>>>>>> ab23b2e (feat: moved Ads code to KovaleeAds)
->>>>>>> 3d93e0d (feat: moved Ads code to KovaleeAds)
       "length": 3,
       "value": "\" for key: \""
     },
     {
       "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
       "kind": "StringLiteral",
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-      "offset": 8813,
-=======
-      "offset": 8389,
->>>>>>> 69235d0 (feat: implemented functions to retrieve Adjust adid and Amplitude User and Device Id)
-=======
-=======
->>>>>>> 9a9c071 (feat: creating Adjust instance if not present yet)
-=======
->>>>>>> 3ed8e2a (feat: moved Purchases code to KovaleePurchases Target)
-=======
->>>>>>> 23e3970 (feat: moved Firebase code to specific target KovaleeRemoteConfig)
-=======
->>>>>>> 3d93e0d (feat: moved Ads code to KovaleeAds)
-      "offset": 8389,
-=======
-      "offset": 9044,
->>>>>>> 205cf3c (feat: moved Adjust to new target KovaleeAttribution)
-<<<<<<< HEAD
->>>>>>> 63d03c6 (feat: moved Adjust to new target KovaleeAttribution)
-=======
-=======
-      "offset": 8813,
->>>>>>> 7baef6c (feat: creating Adjust instance if not present yet)
-<<<<<<< HEAD
->>>>>>> 9a9c071 (feat: creating Adjust instance if not present yet)
-=======
-=======
-      "offset": 8933,
->>>>>>> 8c22773 (feat: moved Purchases code to KovaleePurchases Target)
-<<<<<<< HEAD
->>>>>>> 3ed8e2a (feat: moved Purchases code to KovaleePurchases Target)
-=======
-=======
-      "offset": 9131,
->>>>>>> 8c8d3f3 (feat: moved Firebase code to specific target KovaleeRemoteConfig)
-<<<<<<< HEAD
->>>>>>> 23e3970 (feat: moved Firebase code to specific target KovaleeRemoteConfig)
-=======
-=======
       "offset": 9115,
->>>>>>> ab23b2e (feat: moved Ads code to KovaleeAds)
->>>>>>> 3d93e0d (feat: moved Ads code to KovaleeAds)
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
       "kind": "StringLiteral",
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-      "offset": 9105,
-=======
-      "offset": 8681,
->>>>>>> 69235d0 (feat: implemented functions to retrieve Adjust adid and Amplitude User and Device Id)
-=======
-=======
->>>>>>> 9a9c071 (feat: creating Adjust instance if not present yet)
-=======
->>>>>>> 3ed8e2a (feat: moved Purchases code to KovaleePurchases Target)
-=======
->>>>>>> 23e3970 (feat: moved Firebase code to specific target KovaleeRemoteConfig)
-=======
->>>>>>> 3d93e0d (feat: moved Ads code to KovaleeAds)
-      "offset": 8681,
-=======
-      "offset": 9336,
->>>>>>> 205cf3c (feat: moved Adjust to new target KovaleeAttribution)
-<<<<<<< HEAD
->>>>>>> 63d03c6 (feat: moved Adjust to new target KovaleeAttribution)
-=======
-=======
-      "offset": 9105,
->>>>>>> 7baef6c (feat: creating Adjust instance if not present yet)
-<<<<<<< HEAD
->>>>>>> 9a9c071 (feat: creating Adjust instance if not present yet)
-=======
-=======
-      "offset": 9225,
->>>>>>> 8c22773 (feat: moved Purchases code to KovaleePurchases Target)
-<<<<<<< HEAD
->>>>>>> 3ed8e2a (feat: moved Purchases code to KovaleePurchases Target)
-=======
-=======
-      "offset": 9423,
->>>>>>> 8c8d3f3 (feat: moved Firebase code to specific target KovaleeRemoteConfig)
-<<<<<<< HEAD
->>>>>>> 23e3970 (feat: moved Firebase code to specific target KovaleeRemoteConfig)
-=======
-=======
       "offset": 9407,
->>>>>>> ab23b2e (feat: moved Ads code to KovaleeAds)
->>>>>>> 3d93e0d (feat: moved Ads code to KovaleeAds)
       "length": 83,
       "value": "\"🛰️ User already partecipated in a different experiment with \""
     },
     {
       "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
       "kind": "StringLiteral",
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-      "offset": 9187,
-=======
-      "offset": 8763,
->>>>>>> 69235d0 (feat: implemented functions to retrieve Adjust adid and Amplitude User and Device Id)
-=======
-=======
->>>>>>> 9a9c071 (feat: creating Adjust instance if not present yet)
-=======
->>>>>>> 3ed8e2a (feat: moved Purchases code to KovaleePurchases Target)
-=======
->>>>>>> 23e3970 (feat: moved Firebase code to specific target KovaleeRemoteConfig)
-=======
->>>>>>> 3d93e0d (feat: moved Ads code to KovaleeAds)
-      "offset": 8763,
-=======
-      "offset": 9418,
->>>>>>> 205cf3c (feat: moved Adjust to new target KovaleeAttribution)
-<<<<<<< HEAD
->>>>>>> 63d03c6 (feat: moved Adjust to new target KovaleeAttribution)
-=======
-=======
-      "offset": 9187,
->>>>>>> 7baef6c (feat: creating Adjust instance if not present yet)
-<<<<<<< HEAD
->>>>>>> 9a9c071 (feat: creating Adjust instance if not present yet)
-=======
-=======
-      "offset": 9307,
->>>>>>> 8c22773 (feat: moved Purchases code to KovaleePurchases Target)
-<<<<<<< HEAD
->>>>>>> 3ed8e2a (feat: moved Purchases code to KovaleePurchases Target)
-=======
-=======
-      "offset": 9505,
->>>>>>> 8c8d3f3 (feat: moved Firebase code to specific target KovaleeRemoteConfig)
-<<<<<<< HEAD
->>>>>>> 23e3970 (feat: moved Firebase code to specific target KovaleeRemoteConfig)
-=======
-=======
       "offset": 9489,
->>>>>>> ab23b2e (feat: moved Ads code to KovaleeAds)
->>>>>>> 3d93e0d (feat: moved Ads code to KovaleeAds)
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
       "kind": "StringLiteral",
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-      "offset": 9387,
-=======
-      "offset": 8963,
->>>>>>> 69235d0 (feat: implemented functions to retrieve Adjust adid and Amplitude User and Device Id)
-=======
-=======
->>>>>>> 9a9c071 (feat: creating Adjust instance if not present yet)
-=======
->>>>>>> 3ed8e2a (feat: moved Purchases code to KovaleePurchases Target)
-=======
->>>>>>> 23e3970 (feat: moved Firebase code to specific target KovaleeRemoteConfig)
-=======
->>>>>>> 3d93e0d (feat: moved Ads code to KovaleeAds)
-      "offset": 8963,
-=======
-      "offset": 9618,
->>>>>>> 205cf3c (feat: moved Adjust to new target KovaleeAttribution)
-<<<<<<< HEAD
->>>>>>> 63d03c6 (feat: moved Adjust to new target KovaleeAttribution)
-=======
-=======
-      "offset": 9387,
->>>>>>> 7baef6c (feat: creating Adjust instance if not present yet)
-<<<<<<< HEAD
->>>>>>> 9a9c071 (feat: creating Adjust instance if not present yet)
-=======
-=======
-      "offset": 9507,
->>>>>>> 8c22773 (feat: moved Purchases code to KovaleePurchases Target)
-<<<<<<< HEAD
->>>>>>> 3ed8e2a (feat: moved Purchases code to KovaleePurchases Target)
-=======
-=======
-      "offset": 9705,
->>>>>>> 8c8d3f3 (feat: moved Firebase code to specific target KovaleeRemoteConfig)
-<<<<<<< HEAD
->>>>>>> 23e3970 (feat: moved Firebase code to specific target KovaleeRemoteConfig)
-=======
-=======
       "offset": 9689,
->>>>>>> ab23b2e (feat: moved Ads code to KovaleeAds)
->>>>>>> 3d93e0d (feat: moved Ads code to KovaleeAds)
       "length": 56,
       "value": "\"🛰️ Fetched AB Experiment value from local storage\""
     },
     {
       "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
       "kind": "StringLiteral",
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-      "offset": 9786,
-=======
-      "offset": 9357,
->>>>>>> 69235d0 (feat: implemented functions to retrieve Adjust adid and Amplitude User and Device Id)
-=======
-=======
->>>>>>> 9a9c071 (feat: creating Adjust instance if not present yet)
-=======
->>>>>>> 3ed8e2a (feat: moved Purchases code to KovaleePurchases Target)
-=======
->>>>>>> 23e3970 (feat: moved Firebase code to specific target KovaleeRemoteConfig)
-=======
->>>>>>> 3d93e0d (feat: moved Ads code to KovaleeAds)
-      "offset": 9357,
-=======
-      "offset": 10012,
->>>>>>> 205cf3c (feat: moved Adjust to new target KovaleeAttribution)
-<<<<<<< HEAD
->>>>>>> 63d03c6 (feat: moved Adjust to new target KovaleeAttribution)
-=======
-=======
-      "offset": 9786,
->>>>>>> 7baef6c (feat: creating Adjust instance if not present yet)
-<<<<<<< HEAD
->>>>>>> 9a9c071 (feat: creating Adjust instance if not present yet)
-=======
-=======
-      "offset": 9906,
->>>>>>> 8c22773 (feat: moved Purchases code to KovaleePurchases Target)
-<<<<<<< HEAD
->>>>>>> 3ed8e2a (feat: moved Purchases code to KovaleePurchases Target)
-=======
-=======
-      "offset": 10115,
->>>>>>> 8c8d3f3 (feat: moved Firebase code to specific target KovaleeRemoteConfig)
-<<<<<<< HEAD
->>>>>>> 23e3970 (feat: moved Firebase code to specific target KovaleeRemoteConfig)
-=======
-=======
       "offset": 10099,
->>>>>>> ab23b2e (feat: moved Ads code to KovaleeAds)
->>>>>>> 3d93e0d (feat: moved Ads code to KovaleeAds)
       "length": 3,
       "value": "\"0\""
     },
     {
       "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
       "kind": "StringLiteral",
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-      "offset": 10176,
-=======
-      "offset": 9747,
->>>>>>> 69235d0 (feat: implemented functions to retrieve Adjust adid and Amplitude User and Device Id)
-=======
-=======
->>>>>>> 9a9c071 (feat: creating Adjust instance if not present yet)
-=======
->>>>>>> 3ed8e2a (feat: moved Purchases code to KovaleePurchases Target)
-=======
->>>>>>> 23e3970 (feat: moved Firebase code to specific target KovaleeRemoteConfig)
-=======
->>>>>>> 3d93e0d (feat: moved Ads code to KovaleeAds)
-      "offset": 9747,
-=======
-      "offset": 10402,
->>>>>>> 205cf3c (feat: moved Adjust to new target KovaleeAttribution)
-<<<<<<< HEAD
->>>>>>> 63d03c6 (feat: moved Adjust to new target KovaleeAttribution)
-=======
-=======
-      "offset": 10176,
->>>>>>> 7baef6c (feat: creating Adjust instance if not present yet)
-<<<<<<< HEAD
->>>>>>> 9a9c071 (feat: creating Adjust instance if not present yet)
-=======
-=======
-      "offset": 10296,
->>>>>>> 8c22773 (feat: moved Purchases code to KovaleePurchases Target)
-<<<<<<< HEAD
->>>>>>> 3ed8e2a (feat: moved Purchases code to KovaleePurchases Target)
-=======
-=======
-      "offset": 10502,
->>>>>>> 8c8d3f3 (feat: moved Firebase code to specific target KovaleeRemoteConfig)
-<<<<<<< HEAD
->>>>>>> 23e3970 (feat: moved Firebase code to specific target KovaleeRemoteConfig)
-=======
-=======
       "offset": 10490,
->>>>>>> ab23b2e (feat: moved Ads code to KovaleeAds)
->>>>>>> 3d93e0d (feat: moved Ads code to KovaleeAds)
       "length": 27,
       "value": "\"creating interstitial ad \""
     },
     {
       "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
       "kind": "StringLiteral",
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-      "offset": 10335,
-=======
-      "offset": 9906,
->>>>>>> 69235d0 (feat: implemented functions to retrieve Adjust adid and Amplitude User and Device Id)
-=======
-=======
->>>>>>> 9a9c071 (feat: creating Adjust instance if not present yet)
-=======
->>>>>>> 3ed8e2a (feat: moved Purchases code to KovaleePurchases Target)
-=======
->>>>>>> 23e3970 (feat: moved Firebase code to specific target KovaleeRemoteConfig)
-=======
->>>>>>> 3d93e0d (feat: moved Ads code to KovaleeAds)
-      "offset": 9906,
-=======
-      "offset": 10561,
->>>>>>> 205cf3c (feat: moved Adjust to new target KovaleeAttribution)
-<<<<<<< HEAD
->>>>>>> 63d03c6 (feat: moved Adjust to new target KovaleeAttribution)
-=======
-=======
-      "offset": 10335,
->>>>>>> 7baef6c (feat: creating Adjust instance if not present yet)
-<<<<<<< HEAD
->>>>>>> 9a9c071 (feat: creating Adjust instance if not present yet)
-=======
-=======
-      "offset": 10455,
->>>>>>> 8c22773 (feat: moved Purchases code to KovaleePurchases Target)
-<<<<<<< HEAD
->>>>>>> 3ed8e2a (feat: moved Purchases code to KovaleePurchases Target)
-=======
-=======
-      "offset": 10661,
->>>>>>> 8c8d3f3 (feat: moved Firebase code to specific target KovaleeRemoteConfig)
-<<<<<<< HEAD
->>>>>>> 23e3970 (feat: moved Firebase code to specific target KovaleeRemoteConfig)
-=======
-=======
       "offset": 10651,
->>>>>>> ab23b2e (feat: moved Ads code to KovaleeAds)
->>>>>>> 3d93e0d (feat: moved Ads code to KovaleeAds)
       "length": 25,
       "value": "\"display interstitial ad\""
     },
     {
       "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
       "kind": "StringLiteral",
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-      "offset": 10539,
-=======
-      "offset": 10110,
->>>>>>> 69235d0 (feat: implemented functions to retrieve Adjust adid and Amplitude User and Device Id)
-=======
-=======
->>>>>>> 9a9c071 (feat: creating Adjust instance if not present yet)
-=======
->>>>>>> 3ed8e2a (feat: moved Purchases code to KovaleePurchases Target)
-=======
->>>>>>> 23e3970 (feat: moved Firebase code to specific target KovaleeRemoteConfig)
-=======
->>>>>>> 3d93e0d (feat: moved Ads code to KovaleeAds)
-      "offset": 10110,
-=======
-      "offset": 10765,
->>>>>>> 205cf3c (feat: moved Adjust to new target KovaleeAttribution)
-<<<<<<< HEAD
->>>>>>> 63d03c6 (feat: moved Adjust to new target KovaleeAttribution)
-=======
-=======
-      "offset": 10539,
->>>>>>> 7baef6c (feat: creating Adjust instance if not present yet)
-<<<<<<< HEAD
->>>>>>> 9a9c071 (feat: creating Adjust instance if not present yet)
-=======
-=======
-      "offset": 10659,
->>>>>>> 8c22773 (feat: moved Purchases code to KovaleePurchases Target)
-<<<<<<< HEAD
->>>>>>> 3ed8e2a (feat: moved Purchases code to KovaleePurchases Target)
-=======
-=======
-      "offset": 10865,
->>>>>>> 8c8d3f3 (feat: moved Firebase code to specific target KovaleeRemoteConfig)
-<<<<<<< HEAD
->>>>>>> 23e3970 (feat: moved Firebase code to specific target KovaleeRemoteConfig)
-=======
-=======
       "offset": 10857,
->>>>>>> ab23b2e (feat: moved Ads code to KovaleeAds)
->>>>>>> 3d93e0d (feat: moved Ads code to KovaleeAds)
       "length": 22,
       "value": "\"creating rewarded ad\""
     },
     {
       "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
       "kind": "StringLiteral",
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-      "offset": 10684,
-=======
-      "offset": 10255,
->>>>>>> 69235d0 (feat: implemented functions to retrieve Adjust adid and Amplitude User and Device Id)
-=======
-=======
->>>>>>> 9a9c071 (feat: creating Adjust instance if not present yet)
-=======
->>>>>>> 3ed8e2a (feat: moved Purchases code to KovaleePurchases Target)
-=======
->>>>>>> 23e3970 (feat: moved Firebase code to specific target KovaleeRemoteConfig)
-=======
->>>>>>> 3d93e0d (feat: moved Ads code to KovaleeAds)
-      "offset": 10255,
-=======
-      "offset": 10910,
->>>>>>> 205cf3c (feat: moved Adjust to new target KovaleeAttribution)
-<<<<<<< HEAD
->>>>>>> 63d03c6 (feat: moved Adjust to new target KovaleeAttribution)
-=======
-=======
-      "offset": 10684,
->>>>>>> 7baef6c (feat: creating Adjust instance if not present yet)
-<<<<<<< HEAD
->>>>>>> 9a9c071 (feat: creating Adjust instance if not present yet)
-=======
-=======
-      "offset": 10804,
->>>>>>> 8c22773 (feat: moved Purchases code to KovaleePurchases Target)
-<<<<<<< HEAD
->>>>>>> 3ed8e2a (feat: moved Purchases code to KovaleePurchases Target)
-=======
-=======
-      "offset": 11010,
->>>>>>> 8c8d3f3 (feat: moved Firebase code to specific target KovaleeRemoteConfig)
-<<<<<<< HEAD
->>>>>>> 23e3970 (feat: moved Firebase code to specific target KovaleeRemoteConfig)
-=======
-=======
       "offset": 11004,
->>>>>>> ab23b2e (feat: moved Ads code to KovaleeAds)
->>>>>>> 3d93e0d (feat: moved Ads code to KovaleeAds)
       "length": 21,
       "value": "\"display rewarded ad\""
     },
