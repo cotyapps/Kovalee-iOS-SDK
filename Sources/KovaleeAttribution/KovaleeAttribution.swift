@@ -22,7 +22,9 @@ extension Kovalee {
 	}
 
 	private func setupAtributionManager() {
+		KLogger.debug("Setting up Attribution Manager")
 		guard Self.shared.kovaleeManager?.adjust == nil else {
+			KLogger.debug("Attribution Manager already set")
 			return
 		}
 
