@@ -18,11 +18,19 @@
 		</data>
 		<key>Modules/KovaleeFramework.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
+<<<<<<< HEAD
 		7JOkoCRnjHn/j/WzxwP6pjGov7w=
 		</data>
 		<key>Modules/KovaleeFramework.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
 		j/X6LbIHYNvzAP/0ya28wB6qxz4=
+=======
+		7K2Nw9Ga7ee+624v8BM3zH8+WIo=
+		</data>
+		<key>Modules/KovaleeFramework.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
+		<data>
+		ldOhJp1bL75+GhcjnZy5sfLqEPQ=
+>>>>>>> 69235d0 (feat: implemented functions to retrieve Adjust adid and Amplitude User and Device Id)
 		</data>
 		<key>Modules/KovaleeFramework.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -30,6 +38,7 @@
 		</data>
 		<key>Modules/KovaleeFramework.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
+<<<<<<< HEAD
 		j/X6LbIHYNvzAP/0ya28wB6qxz4=
 		</data>
 		<key>Modules/KovaleeFramework.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
@@ -43,6 +52,21 @@
 		<key>Modules/KovaleeFramework.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
 		qf5YW3AsJvhgLNCWhV2seZDYxGU=
+=======
+		ldOhJp1bL75+GhcjnZy5sfLqEPQ=
+		</data>
+		<key>Modules/KovaleeFramework.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
+		<data>
+		hMXhznftpvEJ14tKJjrnhYhqWNM=
+		</data>
+		<key>Modules/KovaleeFramework.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
+		<data>
+		7K2Nw9Ga7ee+624v8BM3zH8+WIo=
+		</data>
+		<key>Modules/KovaleeFramework.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
+		<data>
+		wwgIuYGFM5wpvgAmj6U6UDR6qSo=
+>>>>>>> 69235d0 (feat: implemented functions to retrieve Adjust adid and Amplitude User and Device Id)
 		</data>
 		<key>Modules/KovaleeFramework.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -50,11 +74,19 @@
 		</data>
 		<key>Modules/KovaleeFramework.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
+<<<<<<< HEAD
 		qf5YW3AsJvhgLNCWhV2seZDYxGU=
 		</data>
 		<key>Modules/KovaleeFramework.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
 		nvls1NgUFMyMyDfeMrFPt57ZriM=
+=======
+		wwgIuYGFM5wpvgAmj6U6UDR6qSo=
+		</data>
+		<key>Modules/KovaleeFramework.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
+		<data>
+		1KtmvJym7U3FbQT6GFe5fVgJ2F4=
+>>>>>>> 69235d0 (feat: implemented functions to retrieve Adjust adid and Amplitude User and Device Id)
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -81,14 +113,22 @@
 		<dict>
 			<key>hash2</key>
 			<data>
+<<<<<<< HEAD
 			43i91dZO4o5j66iPIbZ0I0/+Lv0oiM/5E9XzB/2S/2c=
+=======
+			BCAviTh+pCEtY6FKTYjXErboKfiVjLIsqGCGv6kCQuw=
+>>>>>>> 69235d0 (feat: implemented functions to retrieve Adjust adid and Amplitude User and Device Id)
 			</data>
 		</dict>
 		<key>Modules/KovaleeFramework.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
+<<<<<<< HEAD
 			mOP5sR+dqdas4/kTgkrCeykZt/uRYAtub0+MOJxTgN4=
+=======
+			yZJ57FyTE7NdKpz6ovLNGrUTMgUCJBOJsanB34gap3Q=
+>>>>>>> 69235d0 (feat: implemented functions to retrieve Adjust adid and Amplitude User and Device Id)
 			</data>
 		</dict>
 		<key>Modules/KovaleeFramework.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
@@ -102,28 +142,44 @@
 		<dict>
 			<key>hash2</key>
 			<data>
+<<<<<<< HEAD
 			mOP5sR+dqdas4/kTgkrCeykZt/uRYAtub0+MOJxTgN4=
+=======
+			yZJ57FyTE7NdKpz6ovLNGrUTMgUCJBOJsanB34gap3Q=
+>>>>>>> 69235d0 (feat: implemented functions to retrieve Adjust adid and Amplitude User and Device Id)
 			</data>
 		</dict>
 		<key>Modules/KovaleeFramework.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
+<<<<<<< HEAD
 			K9362N3renzbAnhWdBFRUAuSAaA6bkb9o5wJJsITp8M=
+=======
+			NROE2gWOO9GRX3PyyEk5GSYo7Efs1xSNVW63UDBJHf8=
+>>>>>>> 69235d0 (feat: implemented functions to retrieve Adjust adid and Amplitude User and Device Id)
 			</data>
 		</dict>
 		<key>Modules/KovaleeFramework.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
+<<<<<<< HEAD
 			43i91dZO4o5j66iPIbZ0I0/+Lv0oiM/5E9XzB/2S/2c=
+=======
+			BCAviTh+pCEtY6FKTYjXErboKfiVjLIsqGCGv6kCQuw=
+>>>>>>> 69235d0 (feat: implemented functions to retrieve Adjust adid and Amplitude User and Device Id)
 			</data>
 		</dict>
 		<key>Modules/KovaleeFramework.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
+<<<<<<< HEAD
 			9TvIHiAcmZUo++x/IvMs2vZ7n4z4sV48XdBcAo2czBU=
+=======
+			gQsA4YEPMcbzJoHD9VlrV0MmUD/c7zMwvHktWVrg9CI=
+>>>>>>> 69235d0 (feat: implemented functions to retrieve Adjust adid and Amplitude User and Device Id)
 			</data>
 		</dict>
 		<key>Modules/KovaleeFramework.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
@@ -137,14 +193,22 @@
 		<dict>
 			<key>hash2</key>
 			<data>
+<<<<<<< HEAD
 			9TvIHiAcmZUo++x/IvMs2vZ7n4z4sV48XdBcAo2czBU=
+=======
+			gQsA4YEPMcbzJoHD9VlrV0MmUD/c7zMwvHktWVrg9CI=
+>>>>>>> 69235d0 (feat: implemented functions to retrieve Adjust adid and Amplitude User and Device Id)
 			</data>
 		</dict>
 		<key>Modules/KovaleeFramework.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
+<<<<<<< HEAD
 			XhOIkF9cNBGDKIHoGmeVPtI54+Ub6BJU9zcoQ2JvftI=
+=======
+			TrbKXFeP4LAzRHNDaBkroY4LoLBEd1uvGx7i3WD3/ks=
+>>>>>>> 69235d0 (feat: implemented functions to retrieve Adjust adid and Amplitude User and Device Id)
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
