@@ -31,4 +31,11 @@ extension Kovalee {
             }
         }
     }
+
+	/// Retrieve the Adjust identifier value
+	///
+	/// - Returns: the Adjust identifier value
+	public static func getAttributionAdid() -> String? {
+		Self.shared.kovaleeManager?.getAttributionAdid()
+	}
 }

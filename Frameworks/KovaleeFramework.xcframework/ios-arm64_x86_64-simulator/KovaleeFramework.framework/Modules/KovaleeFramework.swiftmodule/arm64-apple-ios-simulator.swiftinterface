@@ -1,5 +1,5 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.8 (swiftlang-5.8.0.124.2 clang-1403.0.22.11.100)
+// swift-compiler-version: Apple Swift version 5.8.1 (swiftlang-5.8.0.124.5 clang-1403.0.22.11.100)
 // swift-module-flags: -target arm64-apple-ios14.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name KovaleeFramework
 // swift-module-flags-ignorable: -enable-bare-slash-regex
 import AppTrackingTransparency
@@ -17,6 +17,8 @@ public class KovaleeManager {
   public func setDefaultUserId()
   public func sendEvent(_ event: KovaleeFramework.Event)
   public func setAmplitudeUserId(userId: Swift.String)
+  public func amplitudeUserId() -> Swift.String?
+  public func amplitudeDeviceId() -> Swift.String?
   public func setUserProperty(key: Swift.String, value: Swift.String)
   public func setUserProperty(property: KovaleeFramework.UserProperty)
   public func sendAppOpenEvent()
@@ -228,6 +230,8 @@ public protocol AmplitudeWrapper {
   func setDeviceId(_ deviceId: Swift.String)
   func setUserProperty(key: Swift.String, value: Swift.String)
   func setUserProperty(property: KovaleeFramework.UserProperty)
+  func getUserId() -> Swift.String?
+  func getDeviceId() -> Swift.String?
 }
 public protocol FirebaseWrapper {
   func setDefaultValues(_ values: [Swift.String : Any])
