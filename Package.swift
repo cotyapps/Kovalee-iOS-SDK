@@ -27,19 +27,12 @@ let package = Package(
 			targets: [
 				"KovaleePurchases",
 			]
-		),
-		.library(
-			name: "KovaleeRemoteConfig",
-			targets: [
-				"KovaleeRemoteConfig",
-			]
-		),
+		)
     ],
     dependencies: [
 		.package(url: "https://github.com/adjust/ios_sdk", from: Version(4, 33, 5)),
 		.package(url: "https://github.com/amplitude/Amplitude-Swift", from: Version(0, 4, 6)),
 		.package(url: "https://github.com/RevenueCat/purchases-ios", from: Version(4, 25, 0)),
-		.package(url: "https://github.com/firebase/firebase-ios-sdk.git", from: Version(10, 12, 0)),
 	],
     targets: [
         .binaryTarget(
@@ -54,7 +47,6 @@ let package = Package(
 				.product(name: "Amplitude-Swift", package: "Amplitude-swift")
 			]
 		),
-
 		.target(
 			name: "KovaleeAttribution",
 			dependencies: [
@@ -69,14 +61,5 @@ let package = Package(
 				.product(name: "RevenueCat", package: "purchases-ios")
 			]
 		),
-		.target(
-			name: "KovaleeRemoteConfig",
-			dependencies: [
-				"KovaleeSDK",
-				.product(name: "FirebaseAnalyticsSwift", package: "firebase-ios-sdk"),
-				.product(name: "FirebaseRemoteConfigSwift", package: "firebase-ios-sdk")
-			]
-		),
-		
     ]
 )
