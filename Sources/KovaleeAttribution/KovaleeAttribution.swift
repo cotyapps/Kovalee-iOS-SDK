@@ -22,7 +22,7 @@ extension Kovalee {
 	}
 
 	private func setupAtributionManager() {
-		guard Self.shared.kovaleeManager?.amplitude == nil else {
+		guard Self.shared.kovaleeManager?.adjust == nil else {
 			return
 		}
 
@@ -53,9 +53,7 @@ extension Kovalee {
 	/// - Returns:the `ATTrackingManager.AuthorizationStatus` based on the user response
 	@discardableResult
 	public static func promptTrackingAuthorization() async -> ATTrackingManager.AuthorizationStatus {
-		Self.shared.setupAtributionManager()
-
-		return await withCheckedContinuation { continuation in
+		await withCheckedContinuation { continuation in
 			Self.shared.kovaleeManager?.promptTrackingAuthorization { userState in
 				continuation.resume(returning: userState)
 			}
