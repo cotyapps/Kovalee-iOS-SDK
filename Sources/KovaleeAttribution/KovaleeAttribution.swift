@@ -21,16 +21,6 @@ extension Kovalee {
 		)
 	}
 
-	private func setupAtributionManager() {
-		guard Self.shared.kovaleeManager?.attributionManager == nil else {
-			return
-		}
-
-		Self.shared.kovaleeManager?.setupAttributionManager(
-			adjustWrapper: Self.shared.instantiateAttributionManager()
-		)
-	}
-
 	/// Prompt the user with tracking authorization alert view
 	///
 	/// This method uses a trailing closure as return value.
@@ -41,7 +31,6 @@ extension Kovalee {
 	public static func promptTrackingAuthorization(
 		completion: @escaping (ATTrackingManager.AuthorizationStatus) -> Void
 	) {
-		Self.shared.setupAtributionManager()
 		Self.shared.kovaleeManager?.promptTrackingAuthorization(completion: completion)
 	}
 
@@ -53,9 +42,7 @@ extension Kovalee {
 	/// - Returns:the `ATTrackingManager.AuthorizationStatus` based on the user response
 	@discardableResult
 	public static func promptTrackingAuthorization() async -> ATTrackingManager.AuthorizationStatus {
-		Self.shared.setupAtributionManager()
-
-		return await withCheckedContinuation { continuation in
+		await withCheckedContinuation { continuation in
 			Self.shared.kovaleeManager?.promptTrackingAuthorization { userState in
 				continuation.resume(returning: userState)
 			}

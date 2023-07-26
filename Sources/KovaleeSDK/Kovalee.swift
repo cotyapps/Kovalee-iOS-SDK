@@ -68,11 +68,7 @@ public final class Kovalee {
 					withConfiguration: configuration,
 					andKeys: keys.amplitude
 				)
-//				let adjustWrapper = self.createAdjustWrapper(withConfiguration: configuration, andKey: keys.adjust)
-//				let revenueCatWrapper = self.createRevenueCatWrapper(withKeys: keys.revenueCat)
-//				let firebaseWrapper = self.createFirebaseWrapper(withKeys: keys.firebase)
-//				let applovinWrapper = self.createApplovinWrapper(withKeys: keys.applovin)
-				
+
 				self.kovaleeManager = KovaleeManager.init(
 					keys: keys,
 					eventTrackerManager: eventTracker
@@ -108,25 +104,4 @@ extension Kovalee {
 			withKey: configuration.environment == .production ? keys.prodSDKId : (keys.devSDKId ?? "")
 		)
 	}
-	
-//	internal func createFirebaseWrapper(withKeys keys: KovaleeKeys.Firebase?) -> FirebaseWrapper? {
-//		guard let keys else {
-//			return nil
-//		}
-//		return FirebaseWrapperImpl(keys: keys)
-//	}
-//
-//	internal func createRevenueCatWrapper(withKeys keys: KovaleeKeys.RevenueCat?) -> RevenueCatWrapper? {
-//		guard let keys else {
-//			return nil
-//		}
-//		return RevenueCatWrapperImpl(withKeys: keys)
-//	}
-//
-//	internal func createApplovinWrapper(withKeys keys: KovaleeKeys.Applovin?) -> ApplovinWrapper? {
-//		guard let keys else {
-//			return nil
-//		}
-//		return ApplovinWrapperImpl.init(withKey: keys)
-//	}
 }
