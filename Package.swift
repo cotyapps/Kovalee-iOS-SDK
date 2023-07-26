@@ -34,19 +34,12 @@ let package = Package(
 				"KovaleeRemoteConfig",
 			]
 		),
-		.library(
-			name: "KovaleeAds",
-			targets: [
-				"KovaleeAds",
-			]
-		),
     ],
     dependencies: [
 		.package(url: "https://github.com/adjust/ios_sdk", from: Version(4, 33, 5)),
 		.package(url: "https://github.com/amplitude/Amplitude-Swift", from: Version(0, 4, 6)),
 		.package(url: "https://github.com/RevenueCat/purchases-ios", from: Version(4, 25, 0)),
 		.package(url: "https://github.com/firebase/firebase-ios-sdk.git", from: Version(10, 12, 0)),
-		.package(url: "https://github.com/AppLovin/AppLovin-MAX-Swift-Package.git", from: Version(11, 10, 1))
 	],
     targets: [
         .binaryTarget(
@@ -84,53 +77,6 @@ let package = Package(
 				.product(name: "FirebaseRemoteConfigSwift", package: "firebase-ios-sdk")
 			]
 		),
-		.target(
-			name: "KovaleeAds",
-			dependencies: [
-				"KovaleeSDK",
-				"AdColony",
-				"AppLovinMediationAdColonyAdapter",
-				"AppLovinMediationFacebookAdapter",
-				"AppLovinMediationIronSourceAdapter",
-				"AppLovinMediationUnityAdsAdapter",
-				"FBAudienceNetwork",
-				"IronSource",
-				"UnityAds",
-				.product(name: "AppLovinSDK", package: "AppLovin-MAX-Swift-Package")
-			]
-		),
-
-		.binaryTarget(
-			name: "AdColony",
-			path: "./Frameworks/AdColony.xcframework"
-		),
-		.binaryTarget(
-			name: "AppLovinMediationAdColonyAdapter",
-			path: "./Frameworks/AppLovinMediationAdColonyAdapter.xcframework"
-		),
-		.binaryTarget(
-			name: "AppLovinMediationFacebookAdapter",
-			path: "./Frameworks/AppLovinMediationFacebookAdapter.xcframework"
-		),
-		.binaryTarget(
-			name: "AppLovinMediationIronSourceAdapter",
-			path: "./Frameworks/AppLovinMediationIronSourceAdapter.xcframework"
-		),
-		.binaryTarget(
-			name: "AppLovinMediationUnityAdsAdapter",
-			path: "./Frameworks/AppLovinMediationUnityAdsAdapter.xcframework"
-		),
-		.binaryTarget(
-			name: "FBAudienceNetwork",
-			path: "./Frameworks/FBAudienceNetwork.xcframework"
-		),
-		.binaryTarget(
-			name: "IronSource",
-			path: "./Frameworks/IronSource.xcframework"
-		),
-		.binaryTarget(
-			name: "UnityAds",
-			path: "./Frameworks/UnityAds.xcframework"
-		),
+		
     ]
 )
