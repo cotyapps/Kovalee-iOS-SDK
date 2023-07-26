@@ -10,8 +10,8 @@ import _Concurrency
 import _StringProcessing
 import os
 public class KovaleeManager {
-  public init(withStorage storage: KovaleeFramework.Storage = .userDefaults(), keys: KovaleeFramework.KovaleeKeys, amplitudeWrapper: any KovaleeFramework.AmplitudeWrapper)
-  public func setupAttributionManager(adjustWrapper: any KovaleeFramework.AdjustWrapper)
+  public init(withStorage storage: KovaleeFramework.Storage = .userDefaults(), keys: KovaleeFramework.KovaleeKeys, eventTrackerManager: any KovaleeFramework.EventTrackerManager)
+  public func setupAttributionManager(adjustWrapper: any KovaleeFramework.AttributionManager)
   public func setupPurchaseManager(revenueCatWrapper: any KovaleeFramework.RevenueCatWrapper)
   public func setupRemoteConfigurationManager(firebaseWrapper: any KovaleeFramework.FirebaseWrapper)
   public func setupAdsManager(applovinWrapper: any KovaleeFramework.ApplovinWrapper)
@@ -21,11 +21,13 @@ public class KovaleeManager {
   public func setDefaultUserId()
   public func sendEvent(_ event: KovaleeFramework.Event)
   public func setAmplitudeUserId(userId: Swift.String)
+  public func amplitudeUserId() -> Swift.String?
+  public func amplitudeDeviceId() -> Swift.String?
   public func setUserProperty(key: Swift.String, value: Swift.String)
   public func setUserProperty(property: KovaleeFramework.UserProperty)
   public func sendAppOpenEvent()
-  public var adjust: (any KovaleeFramework.AdjustWrapper)?
-  public var amplitude: (any KovaleeFramework.AmplitudeWrapper)?
+  public var attributionManager: (any KovaleeFramework.AttributionManager)?
+  public var trackerManager: (any KovaleeFramework.EventTrackerManager)?
   public var firebase: (any KovaleeFramework.FirebaseWrapper)?
   public var revenueCat: (any KovaleeFramework.RevenueCatWrapper)?
   public var applovin: (any KovaleeFramework.ApplovinWrapper)?
@@ -223,7 +225,7 @@ public struct AdjustConfiguration {
   public var token: Swift.String
   public init(environment: Swift.String, token: Swift.String)
 }
-public protocol AdjustWrapper {
+public protocol AttributionManager {
   func getAttributionAdid() -> Swift.String?
   func promptTrackingAuthorization(completion: @escaping (AppTrackingTransparency.ATTrackingManager.AuthorizationStatus) -> Swift.Void)
   func sendConversionValue_SKA3(value: Swift.Int)
@@ -231,12 +233,14 @@ public protocol AdjustWrapper {
   var attributionAdidCallback: (Swift.String?) -> Swift.Void { get }
   var configuration: KovaleeFramework.AdjustConfiguration { get }
 }
-public protocol AmplitudeWrapper {
+public protocol EventTrackerManager {
   func sendEvent(_ event: KovaleeFramework.Event)
   func setUserId(_ userId: Swift.String)
   func setDeviceId(_ deviceId: Swift.String)
   func setUserProperty(key: Swift.String, value: Swift.String)
   func setUserProperty(property: KovaleeFramework.UserProperty)
+  func getUserId() -> Swift.String?
+  func getDeviceId() -> Swift.String?
 }
 public protocol FirebaseWrapper {
   func setDefaultValues(_ values: [Swift.String : Any])

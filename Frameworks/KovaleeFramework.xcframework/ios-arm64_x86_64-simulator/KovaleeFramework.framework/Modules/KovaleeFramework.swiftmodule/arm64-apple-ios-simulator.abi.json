@@ -26,7 +26,7 @@
           {
             "kind": "Constructor",
             "name": "init",
-            "printedName": "init(withStorage:keys:amplitudeWrapper:)",
+            "printedName": "init(withStorage:keys:eventTrackerManager:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -49,14 +49,14 @@
               },
               {
                 "kind": "TypeNominal",
-                "name": "AmplitudeWrapper",
-                "printedName": "KovaleeFramework.AmplitudeWrapper",
-                "usr": "s:16KovaleeFramework16AmplitudeWrapperP"
+                "name": "EventTrackerManager",
+                "printedName": "KovaleeFramework.EventTrackerManager",
+                "usr": "s:16KovaleeFramework19EventTrackerManagerP"
               }
             ],
             "declKind": "Constructor",
-            "usr": "s:16KovaleeFramework0A7ManagerC11withStorage4keys16amplitudeWrapperAcA0E0V_AA0A4KeysVAA09AmplitudeH0_ptcfc",
-            "mangledName": "$s16KovaleeFramework0A7ManagerC11withStorage4keys16amplitudeWrapperAcA0E0V_AA0A4KeysVAA09AmplitudeH0_ptcfc",
+            "usr": "s:16KovaleeFramework0A7ManagerC11withStorage4keys012eventTrackerC0AcA0E0V_AA0A4KeysVAA05EventhC0_ptcfc",
+            "mangledName": "$s16KovaleeFramework0A7ManagerC11withStorage4keys012eventTrackerC0AcA0E0V_AA0A4KeysVAA05EventhC0_ptcfc",
             "moduleName": "KovaleeFramework",
             "declAttributes": [
               "AccessControl"
@@ -75,14 +75,14 @@
               },
               {
                 "kind": "TypeNominal",
-                "name": "AdjustWrapper",
-                "printedName": "KovaleeFramework.AdjustWrapper",
-                "usr": "s:16KovaleeFramework13AdjustWrapperP"
+                "name": "AttributionManager",
+                "printedName": "KovaleeFramework.AttributionManager",
+                "usr": "s:16KovaleeFramework18AttributionManagerP"
               }
             ],
             "declKind": "Func",
-            "usr": "s:16KovaleeFramework0A7ManagerC016setupAttributionC013adjustWrapperyAA06AdjustG0_p_tF",
-            "mangledName": "$s16KovaleeFramework0A7ManagerC016setupAttributionC013adjustWrapperyAA06AdjustG0_p_tF",
+            "usr": "s:16KovaleeFramework0A7ManagerC016setupAttributionC013adjustWrapperyAA0eC0_p_tF",
+            "mangledName": "$s16KovaleeFramework0A7ManagerC016setupAttributionC013adjustWrapperyAA0eC0_p_tF",
             "moduleName": "KovaleeFramework",
             "declAttributes": [
               "AccessControl"
@@ -342,6 +342,64 @@
           },
           {
             "kind": "Function",
+            "name": "amplitudeUserId",
+            "printedName": "amplitudeUserId()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:16KovaleeFramework0A7ManagerC15amplitudeUserIdSSSgyF",
+            "mangledName": "$s16KovaleeFramework0A7ManagerC15amplitudeUserIdSSSgyF",
+            "moduleName": "KovaleeFramework",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "amplitudeDeviceId",
+            "printedName": "amplitudeDeviceId()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:16KovaleeFramework0A7ManagerC17amplitudeDeviceIdSSSgyF",
+            "mangledName": "$s16KovaleeFramework0A7ManagerC17amplitudeDeviceIdSSSgyF",
+            "moduleName": "KovaleeFramework",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
             "name": "setUserProperty",
             "printedName": "setUserProperty(key:value:)",
             "children": [
@@ -420,27 +478,27 @@
           },
           {
             "kind": "Var",
-            "name": "adjust",
-            "printedName": "adjust",
+            "name": "attributionManager",
+            "printedName": "attributionManager",
             "children": [
               {
                 "kind": "TypeNominal",
                 "name": "Optional",
-                "printedName": "KovaleeFramework.AdjustWrapper?",
+                "printedName": "KovaleeFramework.AttributionManager?",
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "AdjustWrapper",
-                    "printedName": "KovaleeFramework.AdjustWrapper",
-                    "usr": "s:16KovaleeFramework13AdjustWrapperP"
+                    "name": "AttributionManager",
+                    "printedName": "KovaleeFramework.AttributionManager",
+                    "usr": "s:16KovaleeFramework18AttributionManagerP"
                   }
                 ],
                 "usr": "s:Sq"
               }
             ],
             "declKind": "Var",
-            "usr": "s:16KovaleeFramework0A7ManagerC6adjustAA13AdjustWrapper_pSgvp",
-            "mangledName": "$s16KovaleeFramework0A7ManagerC6adjustAA13AdjustWrapper_pSgvp",
+            "usr": "s:16KovaleeFramework0A7ManagerC011attributionC0AA011AttributionC0_pSgvp",
+            "mangledName": "$s16KovaleeFramework0A7ManagerC011attributionC0AA011AttributionC0_pSgvp",
             "moduleName": "KovaleeFramework",
             "declAttributes": [
               "HasInitialValue",
@@ -457,21 +515,21 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Optional",
-                    "printedName": "KovaleeFramework.AdjustWrapper?",
+                    "printedName": "KovaleeFramework.AttributionManager?",
                     "children": [
                       {
                         "kind": "TypeNominal",
-                        "name": "AdjustWrapper",
-                        "printedName": "KovaleeFramework.AdjustWrapper",
-                        "usr": "s:16KovaleeFramework13AdjustWrapperP"
+                        "name": "AttributionManager",
+                        "printedName": "KovaleeFramework.AttributionManager",
+                        "usr": "s:16KovaleeFramework18AttributionManagerP"
                       }
                     ],
                     "usr": "s:Sq"
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:16KovaleeFramework0A7ManagerC6adjustAA13AdjustWrapper_pSgvg",
-                "mangledName": "$s16KovaleeFramework0A7ManagerC6adjustAA13AdjustWrapper_pSgvg",
+                "usr": "s:16KovaleeFramework0A7ManagerC011attributionC0AA011AttributionC0_pSgvg",
+                "mangledName": "$s16KovaleeFramework0A7ManagerC011attributionC0AA011AttributionC0_pSgvg",
                 "moduleName": "KovaleeFramework",
                 "implicit": true,
                 "accessorKind": "get"
@@ -489,21 +547,21 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Optional",
-                    "printedName": "KovaleeFramework.AdjustWrapper?",
+                    "printedName": "KovaleeFramework.AttributionManager?",
                     "children": [
                       {
                         "kind": "TypeNominal",
-                        "name": "AdjustWrapper",
-                        "printedName": "KovaleeFramework.AdjustWrapper",
-                        "usr": "s:16KovaleeFramework13AdjustWrapperP"
+                        "name": "AttributionManager",
+                        "printedName": "KovaleeFramework.AttributionManager",
+                        "usr": "s:16KovaleeFramework18AttributionManagerP"
                       }
                     ],
                     "usr": "s:Sq"
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:16KovaleeFramework0A7ManagerC6adjustAA13AdjustWrapper_pSgvs",
-                "mangledName": "$s16KovaleeFramework0A7ManagerC6adjustAA13AdjustWrapper_pSgvs",
+                "usr": "s:16KovaleeFramework0A7ManagerC011attributionC0AA011AttributionC0_pSgvs",
+                "mangledName": "$s16KovaleeFramework0A7ManagerC011attributionC0AA011AttributionC0_pSgvs",
                 "moduleName": "KovaleeFramework",
                 "implicit": true,
                 "accessorKind": "set"
@@ -520,8 +578,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:16KovaleeFramework0A7ManagerC6adjustAA13AdjustWrapper_pSgvM",
-                "mangledName": "$s16KovaleeFramework0A7ManagerC6adjustAA13AdjustWrapper_pSgvM",
+                "usr": "s:16KovaleeFramework0A7ManagerC011attributionC0AA011AttributionC0_pSgvM",
+                "mangledName": "$s16KovaleeFramework0A7ManagerC011attributionC0AA011AttributionC0_pSgvM",
                 "moduleName": "KovaleeFramework",
                 "implicit": true,
                 "accessorKind": "_modify"
@@ -530,27 +588,27 @@
           },
           {
             "kind": "Var",
-            "name": "amplitude",
-            "printedName": "amplitude",
+            "name": "trackerManager",
+            "printedName": "trackerManager",
             "children": [
               {
                 "kind": "TypeNominal",
                 "name": "Optional",
-                "printedName": "KovaleeFramework.AmplitudeWrapper?",
+                "printedName": "KovaleeFramework.EventTrackerManager?",
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "AmplitudeWrapper",
-                    "printedName": "KovaleeFramework.AmplitudeWrapper",
-                    "usr": "s:16KovaleeFramework16AmplitudeWrapperP"
+                    "name": "EventTrackerManager",
+                    "printedName": "KovaleeFramework.EventTrackerManager",
+                    "usr": "s:16KovaleeFramework19EventTrackerManagerP"
                   }
                 ],
                 "usr": "s:Sq"
               }
             ],
             "declKind": "Var",
-            "usr": "s:16KovaleeFramework0A7ManagerC9amplitudeAA16AmplitudeWrapper_pSgvp",
-            "mangledName": "$s16KovaleeFramework0A7ManagerC9amplitudeAA16AmplitudeWrapper_pSgvp",
+            "usr": "s:16KovaleeFramework0A7ManagerC07trackerC0AA012EventTrackerC0_pSgvp",
+            "mangledName": "$s16KovaleeFramework0A7ManagerC07trackerC0AA012EventTrackerC0_pSgvp",
             "moduleName": "KovaleeFramework",
             "declAttributes": [
               "HasInitialValue",
@@ -567,21 +625,21 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Optional",
-                    "printedName": "KovaleeFramework.AmplitudeWrapper?",
+                    "printedName": "KovaleeFramework.EventTrackerManager?",
                     "children": [
                       {
                         "kind": "TypeNominal",
-                        "name": "AmplitudeWrapper",
-                        "printedName": "KovaleeFramework.AmplitudeWrapper",
-                        "usr": "s:16KovaleeFramework16AmplitudeWrapperP"
+                        "name": "EventTrackerManager",
+                        "printedName": "KovaleeFramework.EventTrackerManager",
+                        "usr": "s:16KovaleeFramework19EventTrackerManagerP"
                       }
                     ],
                     "usr": "s:Sq"
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:16KovaleeFramework0A7ManagerC9amplitudeAA16AmplitudeWrapper_pSgvg",
-                "mangledName": "$s16KovaleeFramework0A7ManagerC9amplitudeAA16AmplitudeWrapper_pSgvg",
+                "usr": "s:16KovaleeFramework0A7ManagerC07trackerC0AA012EventTrackerC0_pSgvg",
+                "mangledName": "$s16KovaleeFramework0A7ManagerC07trackerC0AA012EventTrackerC0_pSgvg",
                 "moduleName": "KovaleeFramework",
                 "implicit": true,
                 "accessorKind": "get"
@@ -599,21 +657,21 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Optional",
-                    "printedName": "KovaleeFramework.AmplitudeWrapper?",
+                    "printedName": "KovaleeFramework.EventTrackerManager?",
                     "children": [
                       {
                         "kind": "TypeNominal",
-                        "name": "AmplitudeWrapper",
-                        "printedName": "KovaleeFramework.AmplitudeWrapper",
-                        "usr": "s:16KovaleeFramework16AmplitudeWrapperP"
+                        "name": "EventTrackerManager",
+                        "printedName": "KovaleeFramework.EventTrackerManager",
+                        "usr": "s:16KovaleeFramework19EventTrackerManagerP"
                       }
                     ],
                     "usr": "s:Sq"
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:16KovaleeFramework0A7ManagerC9amplitudeAA16AmplitudeWrapper_pSgvs",
-                "mangledName": "$s16KovaleeFramework0A7ManagerC9amplitudeAA16AmplitudeWrapper_pSgvs",
+                "usr": "s:16KovaleeFramework0A7ManagerC07trackerC0AA012EventTrackerC0_pSgvs",
+                "mangledName": "$s16KovaleeFramework0A7ManagerC07trackerC0AA012EventTrackerC0_pSgvs",
                 "moduleName": "KovaleeFramework",
                 "implicit": true,
                 "accessorKind": "set"
@@ -630,8 +688,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:16KovaleeFramework0A7ManagerC9amplitudeAA16AmplitudeWrapper_pSgvM",
-                "mangledName": "$s16KovaleeFramework0A7ManagerC9amplitudeAA16AmplitudeWrapper_pSgvM",
+                "usr": "s:16KovaleeFramework0A7ManagerC07trackerC0AA012EventTrackerC0_pSgvM",
+                "mangledName": "$s16KovaleeFramework0A7ManagerC07trackerC0AA012EventTrackerC0_pSgvM",
                 "moduleName": "KovaleeFramework",
                 "implicit": true,
                 "accessorKind": "_modify"
@@ -6677,8 +6735,8 @@
       },
       {
         "kind": "TypeDecl",
-        "name": "AdjustWrapper",
-        "printedName": "AdjustWrapper",
+        "name": "AttributionManager",
+        "printedName": "AttributionManager",
         "children": [
           {
             "kind": "Function",
@@ -6701,11 +6759,11 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:16KovaleeFramework13AdjustWrapperP18getAttributionAdidSSSgyF",
-            "mangledName": "$s16KovaleeFramework13AdjustWrapperP18getAttributionAdidSSSgyF",
+            "usr": "s:16KovaleeFramework18AttributionManagerP03getC4AdidSSSgyF",
+            "mangledName": "$s16KovaleeFramework18AttributionManagerP03getC4AdidSSSgyF",
             "moduleName": "KovaleeFramework",
-            "genericSig": "<τ_0_0 where τ_0_0 : KovaleeFramework.AdjustWrapper>",
-            "sugared_genericSig": "<Self where Self : KovaleeFramework.AdjustWrapper>",
+            "genericSig": "<τ_0_0 where τ_0_0 : KovaleeFramework.AttributionManager>",
+            "sugared_genericSig": "<Self where Self : KovaleeFramework.AttributionManager>",
             "protocolReq": true,
             "reqNewWitnessTableEntry": true,
             "funcSelfKind": "NonMutating"
@@ -6740,11 +6798,11 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:16KovaleeFramework13AdjustWrapperP27promptTrackingAuthorization10completionyySo017ATTrackingManagerG6StatusVc_tF",
-            "mangledName": "$s16KovaleeFramework13AdjustWrapperP27promptTrackingAuthorization10completionyySo017ATTrackingManagerG6StatusVc_tF",
+            "usr": "s:16KovaleeFramework18AttributionManagerP27promptTrackingAuthorization10completionyySo010ATTrackingdG6StatusVc_tF",
+            "mangledName": "$s16KovaleeFramework18AttributionManagerP27promptTrackingAuthorization10completionyySo010ATTrackingdG6StatusVc_tF",
             "moduleName": "KovaleeFramework",
-            "genericSig": "<τ_0_0 where τ_0_0 : KovaleeFramework.AdjustWrapper>",
-            "sugared_genericSig": "<Self where Self : KovaleeFramework.AdjustWrapper>",
+            "genericSig": "<τ_0_0 where τ_0_0 : KovaleeFramework.AttributionManager>",
+            "sugared_genericSig": "<Self where Self : KovaleeFramework.AttributionManager>",
             "protocolReq": true,
             "reqNewWitnessTableEntry": true,
             "funcSelfKind": "NonMutating"
@@ -6767,11 +6825,11 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:16KovaleeFramework13AdjustWrapperP24sendConversionValue_SKA35valueySi_tF",
-            "mangledName": "$s16KovaleeFramework13AdjustWrapperP24sendConversionValue_SKA35valueySi_tF",
+            "usr": "s:16KovaleeFramework18AttributionManagerP24sendConversionValue_SKA35valueySi_tF",
+            "mangledName": "$s16KovaleeFramework18AttributionManagerP24sendConversionValue_SKA35valueySi_tF",
             "moduleName": "KovaleeFramework",
-            "genericSig": "<τ_0_0 where τ_0_0 : KovaleeFramework.AdjustWrapper>",
-            "sugared_genericSig": "<Self where Self : KovaleeFramework.AdjustWrapper>",
+            "genericSig": "<τ_0_0 where τ_0_0 : KovaleeFramework.AttributionManager>",
+            "sugared_genericSig": "<Self where Self : KovaleeFramework.AttributionManager>",
             "protocolReq": true,
             "reqNewWitnessTableEntry": true,
             "funcSelfKind": "NonMutating"
@@ -6826,11 +6884,11 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:16KovaleeFramework13AdjustWrapperP24sendConversionValue_SKA45value06coarseG010completionySi_SSys5Error_pSgctF",
-            "mangledName": "$s16KovaleeFramework13AdjustWrapperP24sendConversionValue_SKA45value06coarseG010completionySi_SSys5Error_pSgctF",
+            "usr": "s:16KovaleeFramework18AttributionManagerP24sendConversionValue_SKA45value06coarseG010completionySi_SSys5Error_pSgctF",
+            "mangledName": "$s16KovaleeFramework18AttributionManagerP24sendConversionValue_SKA45value06coarseG010completionySi_SSys5Error_pSgctF",
             "moduleName": "KovaleeFramework",
-            "genericSig": "<τ_0_0 where τ_0_0 : KovaleeFramework.AdjustWrapper>",
-            "sugared_genericSig": "<Self where Self : KovaleeFramework.AdjustWrapper>",
+            "genericSig": "<τ_0_0 where τ_0_0 : KovaleeFramework.AttributionManager>",
+            "sugared_genericSig": "<Self where Self : KovaleeFramework.AttributionManager>",
             "protocolReq": true,
             "reqNewWitnessTableEntry": true,
             "funcSelfKind": "NonMutating"
@@ -6868,8 +6926,8 @@
               }
             ],
             "declKind": "Var",
-            "usr": "s:16KovaleeFramework13AdjustWrapperP23attributionAdidCallbackyySSSgcvp",
-            "mangledName": "$s16KovaleeFramework13AdjustWrapperP23attributionAdidCallbackyySSSgcvp",
+            "usr": "s:16KovaleeFramework18AttributionManagerP23attributionAdidCallbackyySSSgcvp",
+            "mangledName": "$s16KovaleeFramework18AttributionManagerP23attributionAdidCallbackyySSSgcvp",
             "moduleName": "KovaleeFramework",
             "protocolReq": true,
             "accessors": [
@@ -6906,11 +6964,11 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:16KovaleeFramework13AdjustWrapperP23attributionAdidCallbackyySSSgcvg",
-                "mangledName": "$s16KovaleeFramework13AdjustWrapperP23attributionAdidCallbackyySSSgcvg",
+                "usr": "s:16KovaleeFramework18AttributionManagerP23attributionAdidCallbackyySSSgcvg",
+                "mangledName": "$s16KovaleeFramework18AttributionManagerP23attributionAdidCallbackyySSSgcvg",
                 "moduleName": "KovaleeFramework",
-                "genericSig": "<τ_0_0 where τ_0_0 : KovaleeFramework.AdjustWrapper>",
-                "sugared_genericSig": "<Self where Self : KovaleeFramework.AdjustWrapper>",
+                "genericSig": "<τ_0_0 where τ_0_0 : KovaleeFramework.AttributionManager>",
+                "sugared_genericSig": "<Self where Self : KovaleeFramework.AttributionManager>",
                 "protocolReq": true,
                 "reqNewWitnessTableEntry": true,
                 "accessorKind": "get"
@@ -6930,8 +6988,8 @@
               }
             ],
             "declKind": "Var",
-            "usr": "s:16KovaleeFramework13AdjustWrapperP13configurationAA0C13ConfigurationVvp",
-            "mangledName": "$s16KovaleeFramework13AdjustWrapperP13configurationAA0C13ConfigurationVvp",
+            "usr": "s:16KovaleeFramework18AttributionManagerP13configurationAA19AdjustConfigurationVvp",
+            "mangledName": "$s16KovaleeFramework18AttributionManagerP13configurationAA19AdjustConfigurationVvp",
             "moduleName": "KovaleeFramework",
             "protocolReq": true,
             "accessors": [
@@ -6948,11 +7006,11 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:16KovaleeFramework13AdjustWrapperP13configurationAA0C13ConfigurationVvg",
-                "mangledName": "$s16KovaleeFramework13AdjustWrapperP13configurationAA0C13ConfigurationVvg",
+                "usr": "s:16KovaleeFramework18AttributionManagerP13configurationAA19AdjustConfigurationVvg",
+                "mangledName": "$s16KovaleeFramework18AttributionManagerP13configurationAA19AdjustConfigurationVvg",
                 "moduleName": "KovaleeFramework",
-                "genericSig": "<τ_0_0 where τ_0_0 : KovaleeFramework.AdjustWrapper>",
-                "sugared_genericSig": "<Self where Self : KovaleeFramework.AdjustWrapper>",
+                "genericSig": "<τ_0_0 where τ_0_0 : KovaleeFramework.AttributionManager>",
+                "sugared_genericSig": "<Self where Self : KovaleeFramework.AttributionManager>",
                 "protocolReq": true,
                 "reqNewWitnessTableEntry": true,
                 "accessorKind": "get"
@@ -6961,8 +7019,8 @@
           }
         ],
         "declKind": "Protocol",
-        "usr": "s:16KovaleeFramework13AdjustWrapperP",
-        "mangledName": "$s16KovaleeFramework13AdjustWrapperP",
+        "usr": "s:16KovaleeFramework18AttributionManagerP",
+        "mangledName": "$s16KovaleeFramework18AttributionManagerP",
         "moduleName": "KovaleeFramework",
         "declAttributes": [
           "AccessControl"
@@ -6970,8 +7028,8 @@
       },
       {
         "kind": "TypeDecl",
-        "name": "AmplitudeWrapper",
-        "printedName": "AmplitudeWrapper",
+        "name": "EventTrackerManager",
+        "printedName": "EventTrackerManager",
         "children": [
           {
             "kind": "Function",
@@ -6991,11 +7049,11 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:16KovaleeFramework16AmplitudeWrapperP9sendEventyyAA0F0VF",
-            "mangledName": "$s16KovaleeFramework16AmplitudeWrapperP9sendEventyyAA0F0VF",
+            "usr": "s:16KovaleeFramework19EventTrackerManagerP04sendC0yyAA0C0VF",
+            "mangledName": "$s16KovaleeFramework19EventTrackerManagerP04sendC0yyAA0C0VF",
             "moduleName": "KovaleeFramework",
-            "genericSig": "<τ_0_0 where τ_0_0 : KovaleeFramework.AmplitudeWrapper>",
-            "sugared_genericSig": "<Self where Self : KovaleeFramework.AmplitudeWrapper>",
+            "genericSig": "<τ_0_0 where τ_0_0 : KovaleeFramework.EventTrackerManager>",
+            "sugared_genericSig": "<Self where Self : KovaleeFramework.EventTrackerManager>",
             "protocolReq": true,
             "reqNewWitnessTableEntry": true,
             "funcSelfKind": "NonMutating"
@@ -7018,11 +7076,11 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:16KovaleeFramework16AmplitudeWrapperP9setUserIdyySSF",
-            "mangledName": "$s16KovaleeFramework16AmplitudeWrapperP9setUserIdyySSF",
+            "usr": "s:16KovaleeFramework19EventTrackerManagerP9setUserIdyySSF",
+            "mangledName": "$s16KovaleeFramework19EventTrackerManagerP9setUserIdyySSF",
             "moduleName": "KovaleeFramework",
-            "genericSig": "<τ_0_0 where τ_0_0 : KovaleeFramework.AmplitudeWrapper>",
-            "sugared_genericSig": "<Self where Self : KovaleeFramework.AmplitudeWrapper>",
+            "genericSig": "<τ_0_0 where τ_0_0 : KovaleeFramework.EventTrackerManager>",
+            "sugared_genericSig": "<Self where Self : KovaleeFramework.EventTrackerManager>",
             "protocolReq": true,
             "reqNewWitnessTableEntry": true,
             "funcSelfKind": "NonMutating"
@@ -7045,11 +7103,11 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:16KovaleeFramework16AmplitudeWrapperP11setDeviceIdyySSF",
-            "mangledName": "$s16KovaleeFramework16AmplitudeWrapperP11setDeviceIdyySSF",
+            "usr": "s:16KovaleeFramework19EventTrackerManagerP11setDeviceIdyySSF",
+            "mangledName": "$s16KovaleeFramework19EventTrackerManagerP11setDeviceIdyySSF",
             "moduleName": "KovaleeFramework",
-            "genericSig": "<τ_0_0 where τ_0_0 : KovaleeFramework.AmplitudeWrapper>",
-            "sugared_genericSig": "<Self where Self : KovaleeFramework.AmplitudeWrapper>",
+            "genericSig": "<τ_0_0 where τ_0_0 : KovaleeFramework.EventTrackerManager>",
+            "sugared_genericSig": "<Self where Self : KovaleeFramework.EventTrackerManager>",
             "protocolReq": true,
             "reqNewWitnessTableEntry": true,
             "funcSelfKind": "NonMutating"
@@ -7078,11 +7136,11 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:16KovaleeFramework16AmplitudeWrapperP15setUserProperty3key5valueySS_SStF",
-            "mangledName": "$s16KovaleeFramework16AmplitudeWrapperP15setUserProperty3key5valueySS_SStF",
+            "usr": "s:16KovaleeFramework19EventTrackerManagerP15setUserProperty3key5valueySS_SStF",
+            "mangledName": "$s16KovaleeFramework19EventTrackerManagerP15setUserProperty3key5valueySS_SStF",
             "moduleName": "KovaleeFramework",
-            "genericSig": "<τ_0_0 where τ_0_0 : KovaleeFramework.AmplitudeWrapper>",
-            "sugared_genericSig": "<Self where Self : KovaleeFramework.AmplitudeWrapper>",
+            "genericSig": "<τ_0_0 where τ_0_0 : KovaleeFramework.EventTrackerManager>",
+            "sugared_genericSig": "<Self where Self : KovaleeFramework.EventTrackerManager>",
             "protocolReq": true,
             "reqNewWitnessTableEntry": true,
             "funcSelfKind": "NonMutating"
@@ -7105,19 +7163,79 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:16KovaleeFramework16AmplitudeWrapperP15setUserProperty8propertyyAA0fG0O_tF",
-            "mangledName": "$s16KovaleeFramework16AmplitudeWrapperP15setUserProperty8propertyyAA0fG0O_tF",
+            "usr": "s:16KovaleeFramework19EventTrackerManagerP15setUserProperty8propertyyAA0gH0O_tF",
+            "mangledName": "$s16KovaleeFramework19EventTrackerManagerP15setUserProperty8propertyyAA0gH0O_tF",
             "moduleName": "KovaleeFramework",
-            "genericSig": "<τ_0_0 where τ_0_0 : KovaleeFramework.AmplitudeWrapper>",
-            "sugared_genericSig": "<Self where Self : KovaleeFramework.AmplitudeWrapper>",
+            "genericSig": "<τ_0_0 where τ_0_0 : KovaleeFramework.EventTrackerManager>",
+            "sugared_genericSig": "<Self where Self : KovaleeFramework.EventTrackerManager>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getUserId",
+            "printedName": "getUserId()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:16KovaleeFramework19EventTrackerManagerP9getUserIdSSSgyF",
+            "mangledName": "$s16KovaleeFramework19EventTrackerManagerP9getUserIdSSSgyF",
+            "moduleName": "KovaleeFramework",
+            "genericSig": "<τ_0_0 where τ_0_0 : KovaleeFramework.EventTrackerManager>",
+            "sugared_genericSig": "<Self where Self : KovaleeFramework.EventTrackerManager>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getDeviceId",
+            "printedName": "getDeviceId()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:16KovaleeFramework19EventTrackerManagerP11getDeviceIdSSSgyF",
+            "mangledName": "$s16KovaleeFramework19EventTrackerManagerP11getDeviceIdSSSgyF",
+            "moduleName": "KovaleeFramework",
+            "genericSig": "<τ_0_0 where τ_0_0 : KovaleeFramework.EventTrackerManager>",
+            "sugared_genericSig": "<Self where Self : KovaleeFramework.EventTrackerManager>",
             "protocolReq": true,
             "reqNewWitnessTableEntry": true,
             "funcSelfKind": "NonMutating"
           }
         ],
         "declKind": "Protocol",
-        "usr": "s:16KovaleeFramework16AmplitudeWrapperP",
-        "mangledName": "$s16KovaleeFramework16AmplitudeWrapperP",
+        "usr": "s:16KovaleeFramework19EventTrackerManagerP",
+        "mangledName": "$s16KovaleeFramework19EventTrackerManagerP",
         "moduleName": "KovaleeFramework",
         "declAttributes": [
           "AccessControl"
@@ -11643,203 +11761,203 @@
     {
       "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 700,
+      "offset": 415,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
       "kind": "StringLiteral",
-      "offset": 1177,
+      "offset": 628,
       "length": 34,
       "value": "\"setting attribution to Amplitude\""
     },
     {
       "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
       "kind": "StringLiteral",
-      "offset": 1471,
+      "offset": 939,
       "length": 35,
       "value": "\"setting attribution to RevenueCat\""
     },
     {
       "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
       "kind": "StringLiteral",
-      "offset": 2059,
+      "offset": 1539,
       "length": 68,
       "value": "\"An error occurred during completion: \""
     },
     {
       "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
       "kind": "StringLiteral",
-      "offset": 2126,
+      "offset": 1606,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
       "kind": "StringLiteral",
-      "offset": 2426,
+      "offset": 1928,
       "length": 35,
       "value": "\"Sending ConversionValue: \""
     },
     {
       "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
       "kind": "StringLiteral",
-      "offset": 2460,
+      "offset": 1962,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
       "kind": "StringLiteral",
-      "offset": 3054,
+      "offset": 2590,
       "length": 21,
       "value": "\"Setting attribution\""
     },
     {
       "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
       "kind": "StringLiteral",
-      "offset": 4246,
+      "offset": 3982,
       "length": 5,
       "value": "\"yes\""
     },
     {
       "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 4254,
+      "offset": 3990,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 4261,
+      "offset": 3997,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 4460,
+      "offset": 4196,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
       "kind": "StringLiteral",
-      "offset": 4658,
+      "offset": 4404,
       "length": 4,
       "value": "\"no\""
     },
     {
       "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 4718,
+      "offset": 4464,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
       "kind": "StringLiteral",
-      "offset": 5173,
+      "offset": 4942,
       "length": 4,
       "value": "\"no\""
     },
     {
       "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
       "kind": "StringLiteral",
-      "offset": 5180,
+      "offset": 4949,
       "length": 5,
       "value": "\"yes\""
     },
     {
       "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
       "kind": "StringLiteral",
-      "offset": 7538,
+      "offset": 7307,
       "length": 5,
       "value": "\"yes\""
     },
     {
       "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
       "kind": "StringLiteral",
-      "offset": 8958,
+      "offset": 8727,
       "length": 87,
       "value": "\"🛰️ Retrieved value \""
     },
     {
       "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
       "kind": "StringLiteral",
-      "offset": 9025,
+      "offset": 8794,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
       "kind": "StringLiteral",
-      "offset": 9028,
+      "offset": 8797,
       "length": 3,
       "value": "\" for key: \""
     },
     {
       "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
       "kind": "StringLiteral",
-      "offset": 9044,
+      "offset": 8813,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
       "kind": "StringLiteral",
-      "offset": 9336,
+      "offset": 9105,
       "length": 83,
       "value": "\"🛰️ User already partecipated in a different experiment with \""
     },
     {
       "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
       "kind": "StringLiteral",
-      "offset": 9418,
+      "offset": 9187,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
       "kind": "StringLiteral",
-      "offset": 9618,
+      "offset": 9387,
       "length": 56,
       "value": "\"🛰️ Fetched AB Experiment value from local storage\""
     },
     {
       "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
       "kind": "StringLiteral",
-      "offset": 10012,
+      "offset": 9786,
       "length": 3,
       "value": "\"0\""
     },
     {
       "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
       "kind": "StringLiteral",
-      "offset": 10402,
+      "offset": 10176,
       "length": 27,
       "value": "\"creating interstitial ad \""
     },
     {
       "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
       "kind": "StringLiteral",
-      "offset": 10561,
+      "offset": 10335,
       "length": 25,
       "value": "\"display interstitial ad\""
     },
     {
       "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
       "kind": "StringLiteral",
-      "offset": 10765,
+      "offset": 10539,
       "length": 22,
       "value": "\"creating rewarded ad\""
     },
     {
       "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
       "kind": "StringLiteral",
-      "offset": 10910,
+      "offset": 10684,
       "length": 21,
       "value": "\"display rewarded ad\""
     },

@@ -5,7 +5,7 @@ import KovaleeSDK
 
 // MARK: Adjust
 extension Kovalee {
-	private func instantiateAttributionManager() -> AdjustWrapper {
+	private func instantiateAttributionManager() -> AttributionManager {
 		guard let key = self.keys.adjust else {
 			fatalError("No configuration Key for Adjust found in the Keys file")
 		}
@@ -22,7 +22,7 @@ extension Kovalee {
 	}
 
 	private func setupAtributionManager() {
-		guard Self.shared.kovaleeManager?.adjust == nil else {
+		guard Self.shared.kovaleeManager?.attributionManager == nil else {
 			return
 		}
 

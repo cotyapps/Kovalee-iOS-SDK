@@ -64,22 +64,18 @@ public final class Kovalee {
 
 			// avoid initializing third party tools if running UnitTests
 			if !ProcessInfo.isRunningTests {
-//				let adjustWrapper = self.createAdjustWrapper(withConfiguration: configuration, andKey: keys.adjust)
-				let amplitudeWrapper = self.createAmplitudeWrapper(
+				let eventTracker = self.createAmplitudeWrapper(
 					withConfiguration: configuration,
 					andKeys: keys.amplitude
 				)
+//				let adjustWrapper = self.createAdjustWrapper(withConfiguration: configuration, andKey: keys.adjust)
 //				let revenueCatWrapper = self.createRevenueCatWrapper(withKeys: keys.revenueCat)
 //				let firebaseWrapper = self.createFirebaseWrapper(withKeys: keys.firebase)
 //				let applovinWrapper = self.createApplovinWrapper(withKeys: keys.applovin)
 				
 				self.kovaleeManager = KovaleeManager.init(
 					keys: keys,
-//					adjustWrapper: adjustWrapper,
-					amplitudeWrapper: amplitudeWrapper
-//					revenueCatWrapper: revenueCatWrapper,
-//					firebaseWrapper: firebaseWrapper,
-//					applovinWrapper: applovinWrapper
+					eventTrackerManager: eventTracker
 				)
 			}
 
@@ -101,8 +97,10 @@ public final class Kovalee {
 
 
 extension Kovalee {
-	
-	internal func createAmplitudeWrapper(withConfiguration configuration: Configuration, andKeys keys: KovaleeKeys.Amplitude) -> AmplitudeWrapper {
+	internal func createAmplitudeWrapper(
+		withConfiguration configuration: Configuration,
+		andKeys keys: KovaleeKeys.Amplitude
+	) -> EventTrackerManager {
 		if configuration.environment == .development && keys.devSDKId == nil {
 			KLogger.error("Configured Sandbox environment but Amplitude Dev key hasn't been provided")
 		}

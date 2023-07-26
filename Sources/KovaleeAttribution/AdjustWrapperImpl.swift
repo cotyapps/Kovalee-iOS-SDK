@@ -21,7 +21,7 @@ extension AdjustConfiguration {
     }
 }
 
-class AdjustWrapperImpl: NSObject, AdjustWrapper {
+class AdjustWrapperImpl: NSObject, AttributionManager {
     init(
         configuration: AdjustConfiguration,
         attributionAdidCallback: @escaping (String?) -> Void
@@ -77,8 +77,8 @@ extension AdjustWrapperImpl: AdjustDelegate {
 	}
 }
 
-extension AdjustWrapper {
-    static var test: AdjustWrapper {
+extension AttributionManager {
+    static var test: AttributionManager {
         AdjustWrapperImpl(
             configuration: .test,
 			attributionAdidCallback: { _ in }
