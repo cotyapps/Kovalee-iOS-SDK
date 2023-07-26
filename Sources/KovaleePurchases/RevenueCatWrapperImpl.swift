@@ -2,7 +2,7 @@ import Foundation
 import KovaleeFramework
 import RevenueCat
 
-class RevenueCatWrapperImpl: NSObject, RevenueCatWrapper {
+class RevenueCatWrapperImpl: NSObject, PurchaseManager {
 	init(withKeys keys: KovaleeKeys.RevenueCat) {
         super.init()
 

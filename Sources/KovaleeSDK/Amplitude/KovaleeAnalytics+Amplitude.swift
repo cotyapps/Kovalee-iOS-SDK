@@ -1,7 +1,7 @@
 import Foundation
 import KovaleeFramework
 
-// MARK: Amplitude
+// MARK: Event Tracking
 extension Kovalee {
     /// Send an ``Event``
     ///
@@ -89,3 +89,90 @@ extension Kovalee {
 		Self.shared.kovaleeManager?.amplitudeDeviceId()
 	}
 }
+
+// MARK: Purchase accessory methods
+extension Kovalee {
+
+	/// Use this method straight before starting a purchase
+	///
+	/// - Parameters:
+	///    - duration: the subscription duration
+	///    - source: from where is the user making the purchase
+	public static func startedPurchasing(
+		subscriptionWithDuration duration: Int,
+		fromSource source: String
+	) {
+		Self.shared.kovaleeManager?.startedPurchasing(subscriptionWithDuration: duration, fromSource: source)
+	}
+
+	/// Use this method straight after a purchase has been successfully executed
+	///
+	/// - Parameters:
+	///    - productId: the id of the purchased subscription
+	///    - duration: the subscription duration
+	///    - source: from where is the user making the purchase
+	public static func succesfullyPurchased(
+		subscriptionWithProductId productId: String,
+		andDuration duration: Int,
+		fromSource source: String
+	) {
+		Self.shared.kovaleeManager?.succesfullyPurchased(
+			subscriptionWithProductId: productId,
+			andDuration: duration,
+			fromSource: source
+		)
+	}
+
+	/// Use this method to tell the SDK a payment has been cancelled
+	///
+	/// - Parameters:
+	///    - source: from where is the user making the purchase
+	public static func paymentCancelledForSubscription(fromSource source: String) {
+		Self.shared.kovaleeManager?.paymentCancelledForSubscription(fromSource: source)
+	}
+
+	/// Use this method to tell the SDK a subscription payment has failed
+	///
+	/// - Parameters:
+	///    - duration: the subscription duration
+	///    - source: from where is the user making the purchase
+	public static func paymentFailed(
+		forSubscriptionWithDuration duration: Int,
+		fromSource source: String
+	) {
+		Self.shared.kovaleeManager?.paymentFailed(forSubscriptionWithDuration: duration, fromSource: source)
+	}
+
+	/// Use this method to tell the SDK a restore payment has failed
+	///
+	/// - Parameters:
+	///    - source: from where is the user making the purchase
+	public static func paymentRestoredFailed(fromSource source: String) {
+		Self.shared.kovaleeManager?.paymentRestoredFailed(fromSource: source)
+	}
+
+	/// Use this method to tell the SDK a payment has startered restoring
+	///
+	/// - Parameters:
+	///    - source: from where is the user making the purchase
+	public static func paymentRestoreStart(fromSource source: String) {
+		Self.shared.kovaleeManager?.paymentRestoredStart(fromSource: source)
+	}
+
+	/// Use this method to tell the SDK a payment has been restore successfully
+	///
+	/// - Parameters:
+	///    - source: from where is the user making the purchase
+	public static func paymentRestored(fromSource source: String) {
+		Self.shared.kovaleeManager?.paymentRestored(fromSource: source)
+	}
+
+	/// Use this method to tell the SDK that the current user is or is not premum
+	///
+	/// - Parameters:
+	///    - premium: is the user premium
+	public static func setIsUserPremium(_ premium: Bool) {
+		Self.shared.kovaleeManager?.setIsUserPremium(premium)
+	}
+}
+

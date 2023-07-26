@@ -144,7 +144,7 @@
           {
             "kind": "Function",
             "name": "setupPurchaseManager",
-            "printedName": "setupPurchaseManager(revenueCatWrapper:)",
+            "printedName": "setupPurchaseManager(purchaseManaegr:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -153,14 +153,14 @@
               },
               {
                 "kind": "TypeNominal",
-                "name": "RevenueCatWrapper",
-                "printedName": "KovaleeFramework.RevenueCatWrapper",
-                "usr": "s:16KovaleeFramework17RevenueCatWrapperP"
+                "name": "PurchaseManager",
+                "printedName": "KovaleeFramework.PurchaseManager",
+                "usr": "s:16KovaleeFramework15PurchaseManagerP"
               }
             ],
             "declKind": "Func",
-            "usr": "s:16KovaleeFramework0A7ManagerC013setupPurchaseC017revenueCatWrapperyAA07RevenuegH0_p_tF",
-            "mangledName": "$s16KovaleeFramework0A7ManagerC013setupPurchaseC017revenueCatWrapperyAA07RevenuegH0_p_tF",
+            "usr": "s:16KovaleeFramework0A7ManagerC013setupPurchaseC015purchaseManaegryAA0eC0_p_tF",
+            "mangledName": "$s16KovaleeFramework0A7ManagerC013setupPurchaseC015purchaseManaegryAA0eC0_p_tF",
             "moduleName": "KovaleeFramework",
             "declAttributes": [
               "AccessControl"
@@ -970,6 +970,116 @@
           },
           {
             "kind": "Var",
+            "name": "purchaseManager",
+            "printedName": "purchaseManager",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "KovaleeFramework.PurchaseManager?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "PurchaseManager",
+                    "printedName": "KovaleeFramework.PurchaseManager",
+                    "usr": "s:16KovaleeFramework15PurchaseManagerP"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:16KovaleeFramework0A7ManagerC08purchaseC0AA08PurchaseC0_pSgvp",
+            "mangledName": "$s16KovaleeFramework0A7ManagerC08purchaseC0AA08PurchaseC0_pSgvp",
+            "moduleName": "KovaleeFramework",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "KovaleeFramework.PurchaseManager?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "PurchaseManager",
+                        "printedName": "KovaleeFramework.PurchaseManager",
+                        "usr": "s:16KovaleeFramework15PurchaseManagerP"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:16KovaleeFramework0A7ManagerC08purchaseC0AA08PurchaseC0_pSgvg",
+                "mangledName": "$s16KovaleeFramework0A7ManagerC08purchaseC0AA08PurchaseC0_pSgvg",
+                "moduleName": "KovaleeFramework",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "KovaleeFramework.PurchaseManager?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "PurchaseManager",
+                        "printedName": "KovaleeFramework.PurchaseManager",
+                        "usr": "s:16KovaleeFramework15PurchaseManagerP"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:16KovaleeFramework0A7ManagerC08purchaseC0AA08PurchaseC0_pSgvs",
+                "mangledName": "$s16KovaleeFramework0A7ManagerC08purchaseC0AA08PurchaseC0_pSgvs",
+                "moduleName": "KovaleeFramework",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:16KovaleeFramework0A7ManagerC08purchaseC0AA08PurchaseC0_pSgvM",
+                "mangledName": "$s16KovaleeFramework0A7ManagerC08purchaseC0AA08PurchaseC0_pSgvM",
+                "moduleName": "KovaleeFramework",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
             "name": "firebase",
             "printedName": "firebase",
             "children": [
@@ -1072,116 +1182,6 @@
                 "declKind": "Accessor",
                 "usr": "s:16KovaleeFramework0A7ManagerC8firebaseAA15FirebaseWrapper_pSgvM",
                 "mangledName": "$s16KovaleeFramework0A7ManagerC8firebaseAA15FirebaseWrapper_pSgvM",
-                "moduleName": "KovaleeFramework",
-                "implicit": true,
-                "accessorKind": "_modify"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
-            "name": "revenueCat",
-            "printedName": "revenueCat",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "KovaleeFramework.RevenueCatWrapper?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "RevenueCatWrapper",
-                    "printedName": "KovaleeFramework.RevenueCatWrapper",
-                    "usr": "s:16KovaleeFramework17RevenueCatWrapperP"
-                  }
-                ],
-                "usr": "s:Sq"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:16KovaleeFramework0A7ManagerC10revenueCatAA07RevenueE7Wrapper_pSgvp",
-            "mangledName": "$s16KovaleeFramework0A7ManagerC10revenueCatAA07RevenueE7Wrapper_pSgvp",
-            "moduleName": "KovaleeFramework",
-            "declAttributes": [
-              "HasInitialValue",
-              "HasStorage",
-              "AccessControl"
-            ],
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Optional",
-                    "printedName": "KovaleeFramework.RevenueCatWrapper?",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "RevenueCatWrapper",
-                        "printedName": "KovaleeFramework.RevenueCatWrapper",
-                        "usr": "s:16KovaleeFramework17RevenueCatWrapperP"
-                      }
-                    ],
-                    "usr": "s:Sq"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:16KovaleeFramework0A7ManagerC10revenueCatAA07RevenueE7Wrapper_pSgvg",
-                "mangledName": "$s16KovaleeFramework0A7ManagerC10revenueCatAA07RevenueE7Wrapper_pSgvg",
-                "moduleName": "KovaleeFramework",
-                "implicit": true,
-                "accessorKind": "get"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Set",
-                "printedName": "Set()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Optional",
-                    "printedName": "KovaleeFramework.RevenueCatWrapper?",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "RevenueCatWrapper",
-                        "printedName": "KovaleeFramework.RevenueCatWrapper",
-                        "usr": "s:16KovaleeFramework17RevenueCatWrapperP"
-                      }
-                    ],
-                    "usr": "s:Sq"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:16KovaleeFramework0A7ManagerC10revenueCatAA07RevenueE7Wrapper_pSgvs",
-                "mangledName": "$s16KovaleeFramework0A7ManagerC10revenueCatAA07RevenueE7Wrapper_pSgvs",
-                "moduleName": "KovaleeFramework",
-                "implicit": true,
-                "accessorKind": "set"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Modify",
-                "printedName": "Modify()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:16KovaleeFramework0A7ManagerC10revenueCatAA07RevenueE7Wrapper_pSgvM",
-                "mangledName": "$s16KovaleeFramework0A7ManagerC10revenueCatAA07RevenueE7Wrapper_pSgvM",
                 "moduleName": "KovaleeFramework",
                 "implicit": true,
                 "accessorKind": "_modify"
@@ -7658,8 +7658,8 @@
       },
       {
         "kind": "TypeDecl",
-        "name": "RevenueCatWrapper",
-        "printedName": "RevenueCatWrapper",
+        "name": "PurchaseManager",
+        "printedName": "PurchaseManager",
         "children": [
           {
             "kind": "Function",
@@ -7679,11 +7679,11 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:16KovaleeFramework17RevenueCatWrapperP9setUserId04userH0ySS_tF",
-            "mangledName": "$s16KovaleeFramework17RevenueCatWrapperP9setUserId04userH0ySS_tF",
+            "usr": "s:16KovaleeFramework15PurchaseManagerP9setUserId04userG0ySS_tF",
+            "mangledName": "$s16KovaleeFramework15PurchaseManagerP9setUserId04userG0ySS_tF",
             "moduleName": "KovaleeFramework",
-            "genericSig": "<τ_0_0 where τ_0_0 : KovaleeFramework.RevenueCatWrapper>",
-            "sugared_genericSig": "<Self where Self : KovaleeFramework.RevenueCatWrapper>",
+            "genericSig": "<τ_0_0 where τ_0_0 : KovaleeFramework.PurchaseManager>",
+            "sugared_genericSig": "<Self where Self : KovaleeFramework.PurchaseManager>",
             "protocolReq": true,
             "reqNewWitnessTableEntry": true,
             "funcSelfKind": "NonMutating"
@@ -7709,11 +7709,11 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:16KovaleeFramework17RevenueCatWrapperP14fetchOfferingsAA08AbstractG0_pSgyYaKF",
-            "mangledName": "$s16KovaleeFramework17RevenueCatWrapperP14fetchOfferingsAA08AbstractG0_pSgyYaKF",
+            "usr": "s:16KovaleeFramework15PurchaseManagerP14fetchOfferingsAA08AbstractF0_pSgyYaKF",
+            "mangledName": "$s16KovaleeFramework15PurchaseManagerP14fetchOfferingsAA08AbstractF0_pSgyYaKF",
             "moduleName": "KovaleeFramework",
-            "genericSig": "<τ_0_0 where τ_0_0 : KovaleeFramework.RevenueCatWrapper>",
-            "sugared_genericSig": "<Self where Self : KovaleeFramework.RevenueCatWrapper>",
+            "genericSig": "<τ_0_0 where τ_0_0 : KovaleeFramework.PurchaseManager>",
+            "sugared_genericSig": "<Self where Self : KovaleeFramework.PurchaseManager>",
             "protocolReq": true,
             "throwing": true,
             "reqNewWitnessTableEntry": true,
@@ -7740,11 +7740,11 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:16KovaleeFramework17RevenueCatWrapperP20fetchCurrentOfferingAA08AbstractH0_pSgyYaKF",
-            "mangledName": "$s16KovaleeFramework17RevenueCatWrapperP20fetchCurrentOfferingAA08AbstractH0_pSgyYaKF",
+            "usr": "s:16KovaleeFramework15PurchaseManagerP20fetchCurrentOfferingAA08AbstractG0_pSgyYaKF",
+            "mangledName": "$s16KovaleeFramework15PurchaseManagerP20fetchCurrentOfferingAA08AbstractG0_pSgyYaKF",
             "moduleName": "KovaleeFramework",
-            "genericSig": "<τ_0_0 where τ_0_0 : KovaleeFramework.RevenueCatWrapper>",
-            "sugared_genericSig": "<Self where Self : KovaleeFramework.RevenueCatWrapper>",
+            "genericSig": "<τ_0_0 where τ_0_0 : KovaleeFramework.PurchaseManager>",
+            "sugared_genericSig": "<Self where Self : KovaleeFramework.PurchaseManager>",
             "protocolReq": true,
             "throwing": true,
             "reqNewWitnessTableEntry": true,
@@ -7771,11 +7771,11 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:16KovaleeFramework17RevenueCatWrapperP16restorePurchasesAA20AbstractCustomerInfo_pSgyYaKF",
-            "mangledName": "$s16KovaleeFramework17RevenueCatWrapperP16restorePurchasesAA20AbstractCustomerInfo_pSgyYaKF",
+            "usr": "s:16KovaleeFramework15PurchaseManagerP16restorePurchasesAA20AbstractCustomerInfo_pSgyYaKF",
+            "mangledName": "$s16KovaleeFramework15PurchaseManagerP16restorePurchasesAA20AbstractCustomerInfo_pSgyYaKF",
             "moduleName": "KovaleeFramework",
-            "genericSig": "<τ_0_0 where τ_0_0 : KovaleeFramework.RevenueCatWrapper>",
-            "sugared_genericSig": "<Self where Self : KovaleeFramework.RevenueCatWrapper>",
+            "genericSig": "<τ_0_0 where τ_0_0 : KovaleeFramework.PurchaseManager>",
+            "sugared_genericSig": "<Self where Self : KovaleeFramework.PurchaseManager>",
             "protocolReq": true,
             "throwing": true,
             "reqNewWitnessTableEntry": true,
@@ -7800,11 +7800,11 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:16KovaleeFramework17RevenueCatWrapperP8purchase7packageAA26AbstractPurchaseResultData_pAA0H7Package_p_tYaKF",
-            "mangledName": "$s16KovaleeFramework17RevenueCatWrapperP8purchase7packageAA26AbstractPurchaseResultData_pAA0H7Package_p_tYaKF",
+            "usr": "s:16KovaleeFramework15PurchaseManagerP8purchase7packageAA08AbstractC10ResultData_pAA0G7Package_p_tYaKF",
+            "mangledName": "$s16KovaleeFramework15PurchaseManagerP8purchase7packageAA08AbstractC10ResultData_pAA0G7Package_p_tYaKF",
             "moduleName": "KovaleeFramework",
-            "genericSig": "<τ_0_0 where τ_0_0 : KovaleeFramework.RevenueCatWrapper>",
-            "sugared_genericSig": "<Self where Self : KovaleeFramework.RevenueCatWrapper>",
+            "genericSig": "<τ_0_0 where τ_0_0 : KovaleeFramework.PurchaseManager>",
+            "sugared_genericSig": "<Self where Self : KovaleeFramework.PurchaseManager>",
             "protocolReq": true,
             "throwing": true,
             "reqNewWitnessTableEntry": true,
@@ -7823,11 +7823,11 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:16KovaleeFramework17RevenueCatWrapperP12customerInfoAA016AbstractCustomerG0_pyYaKF",
-            "mangledName": "$s16KovaleeFramework17RevenueCatWrapperP12customerInfoAA016AbstractCustomerG0_pyYaKF",
+            "usr": "s:16KovaleeFramework15PurchaseManagerP12customerInfoAA016AbstractCustomerF0_pyYaKF",
+            "mangledName": "$s16KovaleeFramework15PurchaseManagerP12customerInfoAA016AbstractCustomerF0_pyYaKF",
             "moduleName": "KovaleeFramework",
-            "genericSig": "<τ_0_0 where τ_0_0 : KovaleeFramework.RevenueCatWrapper>",
-            "sugared_genericSig": "<Self where Self : KovaleeFramework.RevenueCatWrapper>",
+            "genericSig": "<τ_0_0 where τ_0_0 : KovaleeFramework.PurchaseManager>",
+            "sugared_genericSig": "<Self where Self : KovaleeFramework.PurchaseManager>",
             "protocolReq": true,
             "throwing": true,
             "reqNewWitnessTableEntry": true,
@@ -7851,11 +7851,11 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:16KovaleeFramework17RevenueCatWrapperP14setAttribution4adidySS_tF",
-            "mangledName": "$s16KovaleeFramework17RevenueCatWrapperP14setAttribution4adidySS_tF",
+            "usr": "s:16KovaleeFramework15PurchaseManagerP14setAttribution4adidySS_tF",
+            "mangledName": "$s16KovaleeFramework15PurchaseManagerP14setAttribution4adidySS_tF",
             "moduleName": "KovaleeFramework",
-            "genericSig": "<τ_0_0 where τ_0_0 : KovaleeFramework.RevenueCatWrapper>",
-            "sugared_genericSig": "<Self where Self : KovaleeFramework.RevenueCatWrapper>",
+            "genericSig": "<τ_0_0 where τ_0_0 : KovaleeFramework.PurchaseManager>",
+            "sugared_genericSig": "<Self where Self : KovaleeFramework.PurchaseManager>",
             "protocolReq": true,
             "reqNewWitnessTableEntry": true,
             "funcSelfKind": "NonMutating"
@@ -7878,19 +7878,19 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:16KovaleeFramework17RevenueCatWrapperP18setAmplitudeUserId04userI0ySS_tF",
-            "mangledName": "$s16KovaleeFramework17RevenueCatWrapperP18setAmplitudeUserId04userI0ySS_tF",
+            "usr": "s:16KovaleeFramework15PurchaseManagerP18setAmplitudeUserId04userH0ySS_tF",
+            "mangledName": "$s16KovaleeFramework15PurchaseManagerP18setAmplitudeUserId04userH0ySS_tF",
             "moduleName": "KovaleeFramework",
-            "genericSig": "<τ_0_0 where τ_0_0 : KovaleeFramework.RevenueCatWrapper>",
-            "sugared_genericSig": "<Self where Self : KovaleeFramework.RevenueCatWrapper>",
+            "genericSig": "<τ_0_0 where τ_0_0 : KovaleeFramework.PurchaseManager>",
+            "sugared_genericSig": "<Self where Self : KovaleeFramework.PurchaseManager>",
             "protocolReq": true,
             "reqNewWitnessTableEntry": true,
             "funcSelfKind": "NonMutating"
           }
         ],
         "declKind": "Protocol",
-        "usr": "s:16KovaleeFramework17RevenueCatWrapperP",
-        "mangledName": "$s16KovaleeFramework17RevenueCatWrapperP",
+        "usr": "s:16KovaleeFramework15PurchaseManagerP",
+        "mangledName": "$s16KovaleeFramework15PurchaseManagerP",
         "moduleName": "KovaleeFramework",
         "declAttributes": [
           "AccessControl"
@@ -12125,6 +12125,7 @@
       "kind": "StringLiteral",
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
       "offset": 939,
 =======
       "offset": 1471,
@@ -12132,12 +12133,16 @@
 =======
       "offset": 939,
 >>>>>>> 9a9c071 (feat: creating Adjust instance if not present yet)
+=======
+      "offset": 938,
+>>>>>>> 3ed8e2a (feat: moved Purchases code to KovaleePurchases Target)
       "length": 35,
       "value": "\"setting attribution to RevenueCat\""
     },
     {
       "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
       "kind": "StringLiteral",
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
       "offset": 1539,
@@ -12147,12 +12152,16 @@
 =======
       "offset": 1539,
 >>>>>>> 9a9c071 (feat: creating Adjust instance if not present yet)
+=======
+      "offset": 1543,
+>>>>>>> 3ed8e2a (feat: moved Purchases code to KovaleePurchases Target)
       "length": 68,
       "value": "\"An error occurred during completion: \""
     },
     {
       "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
       "kind": "StringLiteral",
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
       "offset": 1606,
@@ -12162,12 +12171,16 @@
 =======
       "offset": 1606,
 >>>>>>> 9a9c071 (feat: creating Adjust instance if not present yet)
+=======
+      "offset": 1610,
+>>>>>>> 3ed8e2a (feat: moved Purchases code to KovaleePurchases Target)
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
       "kind": "StringLiteral",
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
       "offset": 1928,
@@ -12177,12 +12190,16 @@
 =======
       "offset": 1928,
 >>>>>>> 9a9c071 (feat: creating Adjust instance if not present yet)
+=======
+      "offset": 1932,
+>>>>>>> 3ed8e2a (feat: moved Purchases code to KovaleePurchases Target)
       "length": 35,
       "value": "\"Sending ConversionValue: \""
     },
     {
       "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
       "kind": "StringLiteral",
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
       "offset": 1962,
@@ -12192,12 +12209,16 @@
 =======
       "offset": 1962,
 >>>>>>> 9a9c071 (feat: creating Adjust instance if not present yet)
+=======
+      "offset": 1966,
+>>>>>>> 3ed8e2a (feat: moved Purchases code to KovaleePurchases Target)
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
       "kind": "StringLiteral",
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
       "offset": 2590,
@@ -12207,12 +12228,16 @@
 =======
       "offset": 2590,
 >>>>>>> 9a9c071 (feat: creating Adjust instance if not present yet)
+=======
+      "offset": 2594,
+>>>>>>> 3ed8e2a (feat: moved Purchases code to KovaleePurchases Target)
       "length": 21,
       "value": "\"Setting attribution\""
     },
     {
       "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
       "kind": "StringLiteral",
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -12223,6 +12248,8 @@
 =======
 =======
 >>>>>>> 9a9c071 (feat: creating Adjust instance if not present yet)
+=======
+>>>>>>> 3ed8e2a (feat: moved Purchases code to KovaleePurchases Target)
       "offset": 3586,
 =======
       "offset": 4246,
@@ -12233,13 +12260,20 @@
 =======
       "offset": 3982,
 >>>>>>> 7baef6c (feat: creating Adjust instance if not present yet)
+<<<<<<< HEAD
 >>>>>>> 9a9c071 (feat: creating Adjust instance if not present yet)
+=======
+=======
+      "offset": 4001,
+>>>>>>> 8c22773 (feat: moved Purchases code to KovaleePurchases Target)
+>>>>>>> 3ed8e2a (feat: moved Purchases code to KovaleePurchases Target)
       "length": 5,
       "value": "\"yes\""
     },
     {
       "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
       "kind": "BooleanLiteral",
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -12250,6 +12284,8 @@
 =======
 =======
 >>>>>>> 9a9c071 (feat: creating Adjust instance if not present yet)
+=======
+>>>>>>> 3ed8e2a (feat: moved Purchases code to KovaleePurchases Target)
       "offset": 3594,
 =======
       "offset": 4254,
@@ -12260,13 +12296,20 @@
 =======
       "offset": 3990,
 >>>>>>> 7baef6c (feat: creating Adjust instance if not present yet)
+<<<<<<< HEAD
 >>>>>>> 9a9c071 (feat: creating Adjust instance if not present yet)
+=======
+=======
+      "offset": 4009,
+>>>>>>> 8c22773 (feat: moved Purchases code to KovaleePurchases Target)
+>>>>>>> 3ed8e2a (feat: moved Purchases code to KovaleePurchases Target)
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
       "kind": "BooleanLiteral",
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -12277,6 +12320,8 @@
 =======
 =======
 >>>>>>> 9a9c071 (feat: creating Adjust instance if not present yet)
+=======
+>>>>>>> 3ed8e2a (feat: moved Purchases code to KovaleePurchases Target)
       "offset": 3601,
 =======
       "offset": 4261,
@@ -12287,13 +12332,20 @@
 =======
       "offset": 3997,
 >>>>>>> 7baef6c (feat: creating Adjust instance if not present yet)
+<<<<<<< HEAD
 >>>>>>> 9a9c071 (feat: creating Adjust instance if not present yet)
+=======
+=======
+      "offset": 4016,
+>>>>>>> 8c22773 (feat: moved Purchases code to KovaleePurchases Target)
+>>>>>>> 3ed8e2a (feat: moved Purchases code to KovaleePurchases Target)
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
       "kind": "BooleanLiteral",
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -12304,6 +12356,8 @@
 =======
 =======
 >>>>>>> 9a9c071 (feat: creating Adjust instance if not present yet)
+=======
+>>>>>>> 3ed8e2a (feat: moved Purchases code to KovaleePurchases Target)
       "offset": 3800,
 =======
       "offset": 4460,
@@ -12314,13 +12368,20 @@
 =======
       "offset": 4196,
 >>>>>>> 7baef6c (feat: creating Adjust instance if not present yet)
+<<<<<<< HEAD
 >>>>>>> 9a9c071 (feat: creating Adjust instance if not present yet)
+=======
+=======
+      "offset": 4215,
+>>>>>>> 8c22773 (feat: moved Purchases code to KovaleePurchases Target)
+>>>>>>> 3ed8e2a (feat: moved Purchases code to KovaleePurchases Target)
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
       "kind": "StringLiteral",
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -12331,6 +12392,8 @@
 =======
 =======
 >>>>>>> 9a9c071 (feat: creating Adjust instance if not present yet)
+=======
+>>>>>>> 3ed8e2a (feat: moved Purchases code to KovaleePurchases Target)
       "offset": 3998,
 =======
       "offset": 4658,
@@ -12341,13 +12404,20 @@
 =======
       "offset": 4404,
 >>>>>>> 7baef6c (feat: creating Adjust instance if not present yet)
+<<<<<<< HEAD
 >>>>>>> 9a9c071 (feat: creating Adjust instance if not present yet)
+=======
+=======
+      "offset": 4423,
+>>>>>>> 8c22773 (feat: moved Purchases code to KovaleePurchases Target)
+>>>>>>> 3ed8e2a (feat: moved Purchases code to KovaleePurchases Target)
       "length": 4,
       "value": "\"no\""
     },
     {
       "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
       "kind": "BooleanLiteral",
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -12358,6 +12428,8 @@
 =======
 =======
 >>>>>>> 9a9c071 (feat: creating Adjust instance if not present yet)
+=======
+>>>>>>> 3ed8e2a (feat: moved Purchases code to KovaleePurchases Target)
       "offset": 4058,
 =======
       "offset": 4718,
@@ -12368,13 +12440,20 @@
 =======
       "offset": 4464,
 >>>>>>> 7baef6c (feat: creating Adjust instance if not present yet)
+<<<<<<< HEAD
 >>>>>>> 9a9c071 (feat: creating Adjust instance if not present yet)
+=======
+=======
+      "offset": 4483,
+>>>>>>> 8c22773 (feat: moved Purchases code to KovaleePurchases Target)
+>>>>>>> 3ed8e2a (feat: moved Purchases code to KovaleePurchases Target)
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
       "kind": "StringLiteral",
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -12385,6 +12464,8 @@
 =======
 =======
 >>>>>>> 9a9c071 (feat: creating Adjust instance if not present yet)
+=======
+>>>>>>> 3ed8e2a (feat: moved Purchases code to KovaleePurchases Target)
       "offset": 4518,
 =======
       "offset": 5173,
@@ -12395,13 +12476,20 @@
 =======
       "offset": 4942,
 >>>>>>> 7baef6c (feat: creating Adjust instance if not present yet)
+<<<<<<< HEAD
 >>>>>>> 9a9c071 (feat: creating Adjust instance if not present yet)
+=======
+=======
+      "offset": 4962,
+>>>>>>> 8c22773 (feat: moved Purchases code to KovaleePurchases Target)
+>>>>>>> 3ed8e2a (feat: moved Purchases code to KovaleePurchases Target)
       "length": 4,
       "value": "\"no\""
     },
     {
       "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
       "kind": "StringLiteral",
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -12412,6 +12500,8 @@
 =======
 =======
 >>>>>>> 9a9c071 (feat: creating Adjust instance if not present yet)
+=======
+>>>>>>> 3ed8e2a (feat: moved Purchases code to KovaleePurchases Target)
       "offset": 4525,
 =======
       "offset": 5180,
@@ -12422,13 +12512,20 @@
 =======
       "offset": 4949,
 >>>>>>> 7baef6c (feat: creating Adjust instance if not present yet)
+<<<<<<< HEAD
 >>>>>>> 9a9c071 (feat: creating Adjust instance if not present yet)
+=======
+=======
+      "offset": 4969,
+>>>>>>> 8c22773 (feat: moved Purchases code to KovaleePurchases Target)
+>>>>>>> 3ed8e2a (feat: moved Purchases code to KovaleePurchases Target)
       "length": 5,
       "value": "\"yes\""
     },
     {
       "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
       "kind": "StringLiteral",
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -12439,6 +12536,8 @@
 =======
 =======
 >>>>>>> 9a9c071 (feat: creating Adjust instance if not present yet)
+=======
+>>>>>>> 3ed8e2a (feat: moved Purchases code to KovaleePurchases Target)
       "offset": 6883,
 =======
       "offset": 7538,
@@ -12449,13 +12548,20 @@
 =======
       "offset": 7307,
 >>>>>>> 7baef6c (feat: creating Adjust instance if not present yet)
+<<<<<<< HEAD
 >>>>>>> 9a9c071 (feat: creating Adjust instance if not present yet)
+=======
+=======
+      "offset": 7427,
+>>>>>>> 8c22773 (feat: moved Purchases code to KovaleePurchases Target)
+>>>>>>> 3ed8e2a (feat: moved Purchases code to KovaleePurchases Target)
       "length": 5,
       "value": "\"yes\""
     },
     {
       "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
       "kind": "StringLiteral",
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -12466,6 +12572,8 @@
 =======
 =======
 >>>>>>> 9a9c071 (feat: creating Adjust instance if not present yet)
+=======
+>>>>>>> 3ed8e2a (feat: moved Purchases code to KovaleePurchases Target)
       "offset": 8303,
 =======
       "offset": 8958,
@@ -12476,13 +12584,20 @@
 =======
       "offset": 8727,
 >>>>>>> 7baef6c (feat: creating Adjust instance if not present yet)
+<<<<<<< HEAD
 >>>>>>> 9a9c071 (feat: creating Adjust instance if not present yet)
+=======
+=======
+      "offset": 8847,
+>>>>>>> 8c22773 (feat: moved Purchases code to KovaleePurchases Target)
+>>>>>>> 3ed8e2a (feat: moved Purchases code to KovaleePurchases Target)
       "length": 87,
       "value": "\"🛰️ Retrieved value \""
     },
     {
       "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
       "kind": "StringLiteral",
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -12493,6 +12608,8 @@
 =======
 =======
 >>>>>>> 9a9c071 (feat: creating Adjust instance if not present yet)
+=======
+>>>>>>> 3ed8e2a (feat: moved Purchases code to KovaleePurchases Target)
       "offset": 8370,
 =======
       "offset": 9025,
@@ -12503,13 +12620,20 @@
 =======
       "offset": 8794,
 >>>>>>> 7baef6c (feat: creating Adjust instance if not present yet)
+<<<<<<< HEAD
 >>>>>>> 9a9c071 (feat: creating Adjust instance if not present yet)
+=======
+=======
+      "offset": 8914,
+>>>>>>> 8c22773 (feat: moved Purchases code to KovaleePurchases Target)
+>>>>>>> 3ed8e2a (feat: moved Purchases code to KovaleePurchases Target)
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
       "kind": "StringLiteral",
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -12520,6 +12644,8 @@
 =======
 =======
 >>>>>>> 9a9c071 (feat: creating Adjust instance if not present yet)
+=======
+>>>>>>> 3ed8e2a (feat: moved Purchases code to KovaleePurchases Target)
       "offset": 8373,
 =======
       "offset": 9028,
@@ -12530,13 +12656,20 @@
 =======
       "offset": 8797,
 >>>>>>> 7baef6c (feat: creating Adjust instance if not present yet)
+<<<<<<< HEAD
 >>>>>>> 9a9c071 (feat: creating Adjust instance if not present yet)
+=======
+=======
+      "offset": 8917,
+>>>>>>> 8c22773 (feat: moved Purchases code to KovaleePurchases Target)
+>>>>>>> 3ed8e2a (feat: moved Purchases code to KovaleePurchases Target)
       "length": 3,
       "value": "\" for key: \""
     },
     {
       "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
       "kind": "StringLiteral",
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -12547,6 +12680,8 @@
 =======
 =======
 >>>>>>> 9a9c071 (feat: creating Adjust instance if not present yet)
+=======
+>>>>>>> 3ed8e2a (feat: moved Purchases code to KovaleePurchases Target)
       "offset": 8389,
 =======
       "offset": 9044,
@@ -12557,13 +12692,20 @@
 =======
       "offset": 8813,
 >>>>>>> 7baef6c (feat: creating Adjust instance if not present yet)
+<<<<<<< HEAD
 >>>>>>> 9a9c071 (feat: creating Adjust instance if not present yet)
+=======
+=======
+      "offset": 8933,
+>>>>>>> 8c22773 (feat: moved Purchases code to KovaleePurchases Target)
+>>>>>>> 3ed8e2a (feat: moved Purchases code to KovaleePurchases Target)
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
       "kind": "StringLiteral",
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -12574,6 +12716,8 @@
 =======
 =======
 >>>>>>> 9a9c071 (feat: creating Adjust instance if not present yet)
+=======
+>>>>>>> 3ed8e2a (feat: moved Purchases code to KovaleePurchases Target)
       "offset": 8681,
 =======
       "offset": 9336,
@@ -12584,13 +12728,20 @@
 =======
       "offset": 9105,
 >>>>>>> 7baef6c (feat: creating Adjust instance if not present yet)
+<<<<<<< HEAD
 >>>>>>> 9a9c071 (feat: creating Adjust instance if not present yet)
+=======
+=======
+      "offset": 9225,
+>>>>>>> 8c22773 (feat: moved Purchases code to KovaleePurchases Target)
+>>>>>>> 3ed8e2a (feat: moved Purchases code to KovaleePurchases Target)
       "length": 83,
       "value": "\"🛰️ User already partecipated in a different experiment with \""
     },
     {
       "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
       "kind": "StringLiteral",
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -12601,6 +12752,8 @@
 =======
 =======
 >>>>>>> 9a9c071 (feat: creating Adjust instance if not present yet)
+=======
+>>>>>>> 3ed8e2a (feat: moved Purchases code to KovaleePurchases Target)
       "offset": 8763,
 =======
       "offset": 9418,
@@ -12611,13 +12764,20 @@
 =======
       "offset": 9187,
 >>>>>>> 7baef6c (feat: creating Adjust instance if not present yet)
+<<<<<<< HEAD
 >>>>>>> 9a9c071 (feat: creating Adjust instance if not present yet)
+=======
+=======
+      "offset": 9307,
+>>>>>>> 8c22773 (feat: moved Purchases code to KovaleePurchases Target)
+>>>>>>> 3ed8e2a (feat: moved Purchases code to KovaleePurchases Target)
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
       "kind": "StringLiteral",
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -12628,6 +12788,8 @@
 =======
 =======
 >>>>>>> 9a9c071 (feat: creating Adjust instance if not present yet)
+=======
+>>>>>>> 3ed8e2a (feat: moved Purchases code to KovaleePurchases Target)
       "offset": 8963,
 =======
       "offset": 9618,
@@ -12638,13 +12800,20 @@
 =======
       "offset": 9387,
 >>>>>>> 7baef6c (feat: creating Adjust instance if not present yet)
+<<<<<<< HEAD
 >>>>>>> 9a9c071 (feat: creating Adjust instance if not present yet)
+=======
+=======
+      "offset": 9507,
+>>>>>>> 8c22773 (feat: moved Purchases code to KovaleePurchases Target)
+>>>>>>> 3ed8e2a (feat: moved Purchases code to KovaleePurchases Target)
       "length": 56,
       "value": "\"🛰️ Fetched AB Experiment value from local storage\""
     },
     {
       "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
       "kind": "StringLiteral",
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -12655,6 +12824,8 @@
 =======
 =======
 >>>>>>> 9a9c071 (feat: creating Adjust instance if not present yet)
+=======
+>>>>>>> 3ed8e2a (feat: moved Purchases code to KovaleePurchases Target)
       "offset": 9357,
 =======
       "offset": 10012,
@@ -12665,13 +12836,20 @@
 =======
       "offset": 9786,
 >>>>>>> 7baef6c (feat: creating Adjust instance if not present yet)
+<<<<<<< HEAD
 >>>>>>> 9a9c071 (feat: creating Adjust instance if not present yet)
+=======
+=======
+      "offset": 9906,
+>>>>>>> 8c22773 (feat: moved Purchases code to KovaleePurchases Target)
+>>>>>>> 3ed8e2a (feat: moved Purchases code to KovaleePurchases Target)
       "length": 3,
       "value": "\"0\""
     },
     {
       "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
       "kind": "StringLiteral",
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -12682,6 +12860,8 @@
 =======
 =======
 >>>>>>> 9a9c071 (feat: creating Adjust instance if not present yet)
+=======
+>>>>>>> 3ed8e2a (feat: moved Purchases code to KovaleePurchases Target)
       "offset": 9747,
 =======
       "offset": 10402,
@@ -12692,13 +12872,20 @@
 =======
       "offset": 10176,
 >>>>>>> 7baef6c (feat: creating Adjust instance if not present yet)
+<<<<<<< HEAD
 >>>>>>> 9a9c071 (feat: creating Adjust instance if not present yet)
+=======
+=======
+      "offset": 10296,
+>>>>>>> 8c22773 (feat: moved Purchases code to KovaleePurchases Target)
+>>>>>>> 3ed8e2a (feat: moved Purchases code to KovaleePurchases Target)
       "length": 27,
       "value": "\"creating interstitial ad \""
     },
     {
       "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
       "kind": "StringLiteral",
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -12709,6 +12896,8 @@
 =======
 =======
 >>>>>>> 9a9c071 (feat: creating Adjust instance if not present yet)
+=======
+>>>>>>> 3ed8e2a (feat: moved Purchases code to KovaleePurchases Target)
       "offset": 9906,
 =======
       "offset": 10561,
@@ -12719,13 +12908,20 @@
 =======
       "offset": 10335,
 >>>>>>> 7baef6c (feat: creating Adjust instance if not present yet)
+<<<<<<< HEAD
 >>>>>>> 9a9c071 (feat: creating Adjust instance if not present yet)
+=======
+=======
+      "offset": 10455,
+>>>>>>> 8c22773 (feat: moved Purchases code to KovaleePurchases Target)
+>>>>>>> 3ed8e2a (feat: moved Purchases code to KovaleePurchases Target)
       "length": 25,
       "value": "\"display interstitial ad\""
     },
     {
       "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
       "kind": "StringLiteral",
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -12736,6 +12932,8 @@
 =======
 =======
 >>>>>>> 9a9c071 (feat: creating Adjust instance if not present yet)
+=======
+>>>>>>> 3ed8e2a (feat: moved Purchases code to KovaleePurchases Target)
       "offset": 10110,
 =======
       "offset": 10765,
@@ -12746,13 +12944,20 @@
 =======
       "offset": 10539,
 >>>>>>> 7baef6c (feat: creating Adjust instance if not present yet)
+<<<<<<< HEAD
 >>>>>>> 9a9c071 (feat: creating Adjust instance if not present yet)
+=======
+=======
+      "offset": 10659,
+>>>>>>> 8c22773 (feat: moved Purchases code to KovaleePurchases Target)
+>>>>>>> 3ed8e2a (feat: moved Purchases code to KovaleePurchases Target)
       "length": 22,
       "value": "\"creating rewarded ad\""
     },
     {
       "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
       "kind": "StringLiteral",
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -12763,6 +12968,8 @@
 =======
 =======
 >>>>>>> 9a9c071 (feat: creating Adjust instance if not present yet)
+=======
+>>>>>>> 3ed8e2a (feat: moved Purchases code to KovaleePurchases Target)
       "offset": 10255,
 =======
       "offset": 10910,
@@ -12773,7 +12980,13 @@
 =======
       "offset": 10684,
 >>>>>>> 7baef6c (feat: creating Adjust instance if not present yet)
+<<<<<<< HEAD
 >>>>>>> 9a9c071 (feat: creating Adjust instance if not present yet)
+=======
+=======
+      "offset": 10804,
+>>>>>>> 8c22773 (feat: moved Purchases code to KovaleePurchases Target)
+>>>>>>> 3ed8e2a (feat: moved Purchases code to KovaleePurchases Target)
       "length": 21,
       "value": "\"display rewarded ad\""
     },
