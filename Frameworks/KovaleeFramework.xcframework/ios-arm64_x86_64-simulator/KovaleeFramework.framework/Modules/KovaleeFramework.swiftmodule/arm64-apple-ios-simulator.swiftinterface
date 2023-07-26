@@ -26,8 +26,12 @@ public class KovaleeManager {
   public func setupPurchaseManager(revenueCatWrapper: any KovaleeFramework.RevenueCatWrapper)
 =======
   public func setupPurchaseManager(purchaseManaegr: any KovaleeFramework.PurchaseManager)
+<<<<<<< HEAD
 >>>>>>> 3ed8e2a (feat: moved Purchases code to KovaleePurchases Target)
   public func setupRemoteConfigurationManager(firebaseWrapper: any KovaleeFramework.FirebaseWrapper)
+=======
+  public func setupRemoteConfigurationManager(remoteConfigManager: any KovaleeFramework.RemoteConfigurationManager)
+>>>>>>> 23e3970 (feat: moved Firebase code to specific target KovaleeRemoteConfig)
   public func setupAdsManager(applovinWrapper: any KovaleeFramework.ApplovinWrapper)
   public func promptTrackingAuthorization(completion: @escaping (AppTrackingTransparency.ATTrackingManager.AuthorizationStatus) -> Swift.Void)
   public func getAttributionAdid() -> Swift.String?
@@ -55,8 +59,12 @@ public class KovaleeManager {
 >>>>>>> 9a9c071 (feat: creating Adjust instance if not present yet)
 =======
   public var purchaseManager: (any KovaleeFramework.PurchaseManager)?
+<<<<<<< HEAD
 >>>>>>> 3ed8e2a (feat: moved Purchases code to KovaleePurchases Target)
   public var firebase: (any KovaleeFramework.FirebaseWrapper)?
+=======
+  public var remoteConfigManager: (any KovaleeFramework.RemoteConfigurationManager)?
+>>>>>>> 23e3970 (feat: moved Firebase code to specific target KovaleeRemoteConfig)
   public var applovin: (any KovaleeFramework.ApplovinWrapper)?
   @objc deinit
 }
@@ -271,7 +279,7 @@ public protocol EventTrackerManager {
   func getUserId() -> Swift.String?
   func getDeviceId() -> Swift.String?
 }
-public protocol FirebaseWrapper {
+public protocol RemoteConfigurationManager {
   func setDefaultValues(_ values: [Swift.String : Any])
   #if compiler(>=5.3) && $AsyncAwait
   func value(forKey key: Swift.String) async throws -> Foundation.Data

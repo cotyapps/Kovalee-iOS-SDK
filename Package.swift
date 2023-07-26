@@ -28,6 +28,12 @@ let package = Package(
 				"KovaleePurchases",
 			]
 		),
+		.library(
+			name: "KovaleeRemoteConfig",
+			targets: [
+				"KovaleeRemoteConfig",
+			]
+		),
     ],
     dependencies: [
 		.package(url: "https://github.com/adjust/ios_sdk", from: Version(4, 33, 5)),
@@ -55,12 +61,9 @@ let package = Package(
 				"IronSource",
 				"UnityAds",
 				.product(name: "Amplitude-Swift", package: "Amplitude-swift"),
-				.product(name: "FirebaseAnalyticsSwift", package: "firebase-ios-sdk"),
-				.product(name: "FirebaseRemoteConfigSwift", package: "firebase-ios-sdk"),
 				.product(name: "AppLovinSDK", package: "AppLovin-MAX-Swift-Package")
 			]
 		),
-		
 		.target(
 			name: "KovaleeAttribution",
 			dependencies: [
@@ -68,12 +71,19 @@ let package = Package(
 				.product(name: "Adjust", package: "ios_sdk")
 			]
 		),
-
 		.target(
 			name: "KovaleePurchases",
 			dependencies: [
 				"KovaleeSDK",
 				.product(name: "RevenueCat", package: "purchases-ios")
+			]
+		),
+		.target(
+			name: "KovaleeRemoteConfig",
+			dependencies: [
+				"KovaleeSDK",
+				.product(name: "FirebaseAnalyticsSwift", package: "firebase-ios-sdk"),
+				.product(name: "FirebaseRemoteConfigSwift", package: "firebase-ios-sdk")
 			]
 		),
 

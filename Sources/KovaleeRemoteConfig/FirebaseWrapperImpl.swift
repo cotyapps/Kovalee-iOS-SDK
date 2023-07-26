@@ -4,7 +4,7 @@ import FirebaseCore
 import FirebaseAnalytics
 import FirebaseRemoteConfig
 
-struct FirebaseWrapperImpl: FirebaseWrapper {
+struct FirebaseWrapperImpl: RemoteConfigurationManager {
 	init(keys: KovaleeKeys.Firebase) {
 		if !keys.configuredInApp {
 			let options = FirebaseOptions(

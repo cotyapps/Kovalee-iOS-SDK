@@ -170,7 +170,7 @@
           {
             "kind": "Function",
             "name": "setupRemoteConfigurationManager",
-            "printedName": "setupRemoteConfigurationManager(firebaseWrapper:)",
+            "printedName": "setupRemoteConfigurationManager(remoteConfigManager:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -179,14 +179,14 @@
               },
               {
                 "kind": "TypeNominal",
-                "name": "FirebaseWrapper",
-                "printedName": "KovaleeFramework.FirebaseWrapper",
-                "usr": "s:16KovaleeFramework15FirebaseWrapperP"
+                "name": "RemoteConfigurationManager",
+                "printedName": "KovaleeFramework.RemoteConfigurationManager",
+                "usr": "s:16KovaleeFramework26RemoteConfigurationManagerP"
               }
             ],
             "declKind": "Func",
-            "usr": "s:16KovaleeFramework0A7ManagerC024setupRemoteConfigurationC015firebaseWrapperyAA08FirebaseH0_p_tF",
-            "mangledName": "$s16KovaleeFramework0A7ManagerC024setupRemoteConfigurationC015firebaseWrapperyAA08FirebaseH0_p_tF",
+            "usr": "s:16KovaleeFramework0A7ManagerC024setupRemoteConfigurationC0012remoteConfigC0yAA0efC0_p_tF",
+            "mangledName": "$s16KovaleeFramework0A7ManagerC024setupRemoteConfigurationC0012remoteConfigC0yAA0efC0_p_tF",
             "moduleName": "KovaleeFramework",
             "declAttributes": [
               "AccessControl"
@@ -1080,27 +1080,27 @@
           },
           {
             "kind": "Var",
-            "name": "firebase",
-            "printedName": "firebase",
+            "name": "remoteConfigManager",
+            "printedName": "remoteConfigManager",
             "children": [
               {
                 "kind": "TypeNominal",
                 "name": "Optional",
-                "printedName": "KovaleeFramework.FirebaseWrapper?",
+                "printedName": "KovaleeFramework.RemoteConfigurationManager?",
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "FirebaseWrapper",
-                    "printedName": "KovaleeFramework.FirebaseWrapper",
-                    "usr": "s:16KovaleeFramework15FirebaseWrapperP"
+                    "name": "RemoteConfigurationManager",
+                    "printedName": "KovaleeFramework.RemoteConfigurationManager",
+                    "usr": "s:16KovaleeFramework26RemoteConfigurationManagerP"
                   }
                 ],
                 "usr": "s:Sq"
               }
             ],
             "declKind": "Var",
-            "usr": "s:16KovaleeFramework0A7ManagerC8firebaseAA15FirebaseWrapper_pSgvp",
-            "mangledName": "$s16KovaleeFramework0A7ManagerC8firebaseAA15FirebaseWrapper_pSgvp",
+            "usr": "s:16KovaleeFramework0A7ManagerC012remoteConfigC0AA019RemoteConfigurationC0_pSgvp",
+            "mangledName": "$s16KovaleeFramework0A7ManagerC012remoteConfigC0AA019RemoteConfigurationC0_pSgvp",
             "moduleName": "KovaleeFramework",
             "declAttributes": [
               "HasInitialValue",
@@ -1117,21 +1117,21 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Optional",
-                    "printedName": "KovaleeFramework.FirebaseWrapper?",
+                    "printedName": "KovaleeFramework.RemoteConfigurationManager?",
                     "children": [
                       {
                         "kind": "TypeNominal",
-                        "name": "FirebaseWrapper",
-                        "printedName": "KovaleeFramework.FirebaseWrapper",
-                        "usr": "s:16KovaleeFramework15FirebaseWrapperP"
+                        "name": "RemoteConfigurationManager",
+                        "printedName": "KovaleeFramework.RemoteConfigurationManager",
+                        "usr": "s:16KovaleeFramework26RemoteConfigurationManagerP"
                       }
                     ],
                     "usr": "s:Sq"
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:16KovaleeFramework0A7ManagerC8firebaseAA15FirebaseWrapper_pSgvg",
-                "mangledName": "$s16KovaleeFramework0A7ManagerC8firebaseAA15FirebaseWrapper_pSgvg",
+                "usr": "s:16KovaleeFramework0A7ManagerC012remoteConfigC0AA019RemoteConfigurationC0_pSgvg",
+                "mangledName": "$s16KovaleeFramework0A7ManagerC012remoteConfigC0AA019RemoteConfigurationC0_pSgvg",
                 "moduleName": "KovaleeFramework",
                 "implicit": true,
                 "accessorKind": "get"
@@ -1149,21 +1149,21 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Optional",
-                    "printedName": "KovaleeFramework.FirebaseWrapper?",
+                    "printedName": "KovaleeFramework.RemoteConfigurationManager?",
                     "children": [
                       {
                         "kind": "TypeNominal",
-                        "name": "FirebaseWrapper",
-                        "printedName": "KovaleeFramework.FirebaseWrapper",
-                        "usr": "s:16KovaleeFramework15FirebaseWrapperP"
+                        "name": "RemoteConfigurationManager",
+                        "printedName": "KovaleeFramework.RemoteConfigurationManager",
+                        "usr": "s:16KovaleeFramework26RemoteConfigurationManagerP"
                       }
                     ],
                     "usr": "s:Sq"
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:16KovaleeFramework0A7ManagerC8firebaseAA15FirebaseWrapper_pSgvs",
-                "mangledName": "$s16KovaleeFramework0A7ManagerC8firebaseAA15FirebaseWrapper_pSgvs",
+                "usr": "s:16KovaleeFramework0A7ManagerC012remoteConfigC0AA019RemoteConfigurationC0_pSgvs",
+                "mangledName": "$s16KovaleeFramework0A7ManagerC012remoteConfigC0AA019RemoteConfigurationC0_pSgvs",
                 "moduleName": "KovaleeFramework",
                 "implicit": true,
                 "accessorKind": "set"
@@ -1180,8 +1180,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:16KovaleeFramework0A7ManagerC8firebaseAA15FirebaseWrapper_pSgvM",
-                "mangledName": "$s16KovaleeFramework0A7ManagerC8firebaseAA15FirebaseWrapper_pSgvM",
+                "usr": "s:16KovaleeFramework0A7ManagerC012remoteConfigC0AA019RemoteConfigurationC0_pSgvM",
+                "mangledName": "$s16KovaleeFramework0A7ManagerC012remoteConfigC0AA019RemoteConfigurationC0_pSgvM",
                 "moduleName": "KovaleeFramework",
                 "implicit": true,
                 "accessorKind": "_modify"
@@ -7575,8 +7575,8 @@
       },
       {
         "kind": "TypeDecl",
-        "name": "FirebaseWrapper",
-        "printedName": "FirebaseWrapper",
+        "name": "RemoteConfigurationManager",
+        "printedName": "RemoteConfigurationManager",
         "children": [
           {
             "kind": "Function",
@@ -7609,11 +7609,11 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:16KovaleeFramework15FirebaseWrapperP16setDefaultValuesyySDySSypGF",
-            "mangledName": "$s16KovaleeFramework15FirebaseWrapperP16setDefaultValuesyySDySSypGF",
+            "usr": "s:16KovaleeFramework26RemoteConfigurationManagerP16setDefaultValuesyySDySSypGF",
+            "mangledName": "$s16KovaleeFramework26RemoteConfigurationManagerP16setDefaultValuesyySDySSypGF",
             "moduleName": "KovaleeFramework",
-            "genericSig": "<τ_0_0 where τ_0_0 : KovaleeFramework.FirebaseWrapper>",
-            "sugared_genericSig": "<Self where Self : KovaleeFramework.FirebaseWrapper>",
+            "genericSig": "<τ_0_0 where τ_0_0 : KovaleeFramework.RemoteConfigurationManager>",
+            "sugared_genericSig": "<Self where Self : KovaleeFramework.RemoteConfigurationManager>",
             "protocolReq": true,
             "reqNewWitnessTableEntry": true,
             "funcSelfKind": "NonMutating"
@@ -7637,11 +7637,11 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:16KovaleeFramework15FirebaseWrapperP5value6forKey10Foundation4DataVSS_tYaKF",
-            "mangledName": "$s16KovaleeFramework15FirebaseWrapperP5value6forKey10Foundation4DataVSS_tYaKF",
+            "usr": "s:16KovaleeFramework26RemoteConfigurationManagerP5value6forKey10Foundation4DataVSS_tYaKF",
+            "mangledName": "$s16KovaleeFramework26RemoteConfigurationManagerP5value6forKey10Foundation4DataVSS_tYaKF",
             "moduleName": "KovaleeFramework",
-            "genericSig": "<τ_0_0 where τ_0_0 : KovaleeFramework.FirebaseWrapper>",
-            "sugared_genericSig": "<Self where Self : KovaleeFramework.FirebaseWrapper>",
+            "genericSig": "<τ_0_0 where τ_0_0 : KovaleeFramework.RemoteConfigurationManager>",
+            "sugared_genericSig": "<Self where Self : KovaleeFramework.RemoteConfigurationManager>",
             "protocolReq": true,
             "throwing": true,
             "reqNewWitnessTableEntry": true,
@@ -7649,8 +7649,8 @@
           }
         ],
         "declKind": "Protocol",
-        "usr": "s:16KovaleeFramework15FirebaseWrapperP",
-        "mangledName": "$s16KovaleeFramework15FirebaseWrapperP",
+        "usr": "s:16KovaleeFramework26RemoteConfigurationManagerP",
+        "mangledName": "$s16KovaleeFramework26RemoteConfigurationManagerP",
         "moduleName": "KovaleeFramework",
         "declAttributes": [
           "AccessControl"
@@ -12145,6 +12145,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
       "offset": 1539,
 =======
       "offset": 2059,
@@ -12155,12 +12156,16 @@
 =======
       "offset": 1543,
 >>>>>>> 3ed8e2a (feat: moved Purchases code to KovaleePurchases Target)
+=======
+      "offset": 1738,
+>>>>>>> 23e3970 (feat: moved Firebase code to specific target KovaleeRemoteConfig)
       "length": 68,
       "value": "\"An error occurred during completion: \""
     },
     {
       "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
       "kind": "StringLiteral",
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -12174,12 +12179,16 @@
 =======
       "offset": 1610,
 >>>>>>> 3ed8e2a (feat: moved Purchases code to KovaleePurchases Target)
+=======
+      "offset": 1805,
+>>>>>>> 23e3970 (feat: moved Firebase code to specific target KovaleeRemoteConfig)
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
       "kind": "StringLiteral",
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -12193,12 +12202,16 @@
 =======
       "offset": 1932,
 >>>>>>> 3ed8e2a (feat: moved Purchases code to KovaleePurchases Target)
+=======
+      "offset": 2127,
+>>>>>>> 23e3970 (feat: moved Firebase code to specific target KovaleeRemoteConfig)
       "length": 35,
       "value": "\"Sending ConversionValue: \""
     },
     {
       "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
       "kind": "StringLiteral",
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -12212,12 +12225,16 @@
 =======
       "offset": 1966,
 >>>>>>> 3ed8e2a (feat: moved Purchases code to KovaleePurchases Target)
+=======
+      "offset": 2161,
+>>>>>>> 23e3970 (feat: moved Firebase code to specific target KovaleeRemoteConfig)
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
       "kind": "StringLiteral",
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -12231,12 +12248,16 @@
 =======
       "offset": 2594,
 >>>>>>> 3ed8e2a (feat: moved Purchases code to KovaleePurchases Target)
+=======
+      "offset": 2789,
+>>>>>>> 23e3970 (feat: moved Firebase code to specific target KovaleeRemoteConfig)
       "length": 21,
       "value": "\"Setting attribution\""
     },
     {
       "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
       "kind": "StringLiteral",
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -12250,6 +12271,8 @@
 >>>>>>> 9a9c071 (feat: creating Adjust instance if not present yet)
 =======
 >>>>>>> 3ed8e2a (feat: moved Purchases code to KovaleePurchases Target)
+=======
+>>>>>>> 23e3970 (feat: moved Firebase code to specific target KovaleeRemoteConfig)
       "offset": 3586,
 =======
       "offset": 4246,
@@ -12266,13 +12289,20 @@
 =======
       "offset": 4001,
 >>>>>>> 8c22773 (feat: moved Purchases code to KovaleePurchases Target)
+<<<<<<< HEAD
 >>>>>>> 3ed8e2a (feat: moved Purchases code to KovaleePurchases Target)
+=======
+=======
+      "offset": 4137,
+>>>>>>> 8c8d3f3 (feat: moved Firebase code to specific target KovaleeRemoteConfig)
+>>>>>>> 23e3970 (feat: moved Firebase code to specific target KovaleeRemoteConfig)
       "length": 5,
       "value": "\"yes\""
     },
     {
       "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
       "kind": "BooleanLiteral",
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -12286,6 +12316,8 @@
 >>>>>>> 9a9c071 (feat: creating Adjust instance if not present yet)
 =======
 >>>>>>> 3ed8e2a (feat: moved Purchases code to KovaleePurchases Target)
+=======
+>>>>>>> 23e3970 (feat: moved Firebase code to specific target KovaleeRemoteConfig)
       "offset": 3594,
 =======
       "offset": 4254,
@@ -12302,13 +12334,20 @@
 =======
       "offset": 4009,
 >>>>>>> 8c22773 (feat: moved Purchases code to KovaleePurchases Target)
+<<<<<<< HEAD
 >>>>>>> 3ed8e2a (feat: moved Purchases code to KovaleePurchases Target)
+=======
+=======
+      "offset": 4145,
+>>>>>>> 8c8d3f3 (feat: moved Firebase code to specific target KovaleeRemoteConfig)
+>>>>>>> 23e3970 (feat: moved Firebase code to specific target KovaleeRemoteConfig)
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
       "kind": "BooleanLiteral",
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -12322,6 +12361,8 @@
 >>>>>>> 9a9c071 (feat: creating Adjust instance if not present yet)
 =======
 >>>>>>> 3ed8e2a (feat: moved Purchases code to KovaleePurchases Target)
+=======
+>>>>>>> 23e3970 (feat: moved Firebase code to specific target KovaleeRemoteConfig)
       "offset": 3601,
 =======
       "offset": 4261,
@@ -12338,13 +12379,20 @@
 =======
       "offset": 4016,
 >>>>>>> 8c22773 (feat: moved Purchases code to KovaleePurchases Target)
+<<<<<<< HEAD
 >>>>>>> 3ed8e2a (feat: moved Purchases code to KovaleePurchases Target)
+=======
+=======
+      "offset": 4152,
+>>>>>>> 8c8d3f3 (feat: moved Firebase code to specific target KovaleeRemoteConfig)
+>>>>>>> 23e3970 (feat: moved Firebase code to specific target KovaleeRemoteConfig)
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
       "kind": "BooleanLiteral",
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -12358,6 +12406,8 @@
 >>>>>>> 9a9c071 (feat: creating Adjust instance if not present yet)
 =======
 >>>>>>> 3ed8e2a (feat: moved Purchases code to KovaleePurchases Target)
+=======
+>>>>>>> 23e3970 (feat: moved Firebase code to specific target KovaleeRemoteConfig)
       "offset": 3800,
 =======
       "offset": 4460,
@@ -12374,13 +12424,20 @@
 =======
       "offset": 4215,
 >>>>>>> 8c22773 (feat: moved Purchases code to KovaleePurchases Target)
+<<<<<<< HEAD
 >>>>>>> 3ed8e2a (feat: moved Purchases code to KovaleePurchases Target)
+=======
+=======
+      "offset": 4351,
+>>>>>>> 8c8d3f3 (feat: moved Firebase code to specific target KovaleeRemoteConfig)
+>>>>>>> 23e3970 (feat: moved Firebase code to specific target KovaleeRemoteConfig)
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
       "kind": "StringLiteral",
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -12394,6 +12451,8 @@
 >>>>>>> 9a9c071 (feat: creating Adjust instance if not present yet)
 =======
 >>>>>>> 3ed8e2a (feat: moved Purchases code to KovaleePurchases Target)
+=======
+>>>>>>> 23e3970 (feat: moved Firebase code to specific target KovaleeRemoteConfig)
       "offset": 3998,
 =======
       "offset": 4658,
@@ -12410,13 +12469,20 @@
 =======
       "offset": 4423,
 >>>>>>> 8c22773 (feat: moved Purchases code to KovaleePurchases Target)
+<<<<<<< HEAD
 >>>>>>> 3ed8e2a (feat: moved Purchases code to KovaleePurchases Target)
+=======
+=======
+      "offset": 4559,
+>>>>>>> 8c8d3f3 (feat: moved Firebase code to specific target KovaleeRemoteConfig)
+>>>>>>> 23e3970 (feat: moved Firebase code to specific target KovaleeRemoteConfig)
       "length": 4,
       "value": "\"no\""
     },
     {
       "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
       "kind": "BooleanLiteral",
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -12430,6 +12496,8 @@
 >>>>>>> 9a9c071 (feat: creating Adjust instance if not present yet)
 =======
 >>>>>>> 3ed8e2a (feat: moved Purchases code to KovaleePurchases Target)
+=======
+>>>>>>> 23e3970 (feat: moved Firebase code to specific target KovaleeRemoteConfig)
       "offset": 4058,
 =======
       "offset": 4718,
@@ -12446,13 +12514,20 @@
 =======
       "offset": 4483,
 >>>>>>> 8c22773 (feat: moved Purchases code to KovaleePurchases Target)
+<<<<<<< HEAD
 >>>>>>> 3ed8e2a (feat: moved Purchases code to KovaleePurchases Target)
+=======
+=======
+      "offset": 4619,
+>>>>>>> 8c8d3f3 (feat: moved Firebase code to specific target KovaleeRemoteConfig)
+>>>>>>> 23e3970 (feat: moved Firebase code to specific target KovaleeRemoteConfig)
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
       "kind": "StringLiteral",
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -12466,6 +12541,8 @@
 >>>>>>> 9a9c071 (feat: creating Adjust instance if not present yet)
 =======
 >>>>>>> 3ed8e2a (feat: moved Purchases code to KovaleePurchases Target)
+=======
+>>>>>>> 23e3970 (feat: moved Firebase code to specific target KovaleeRemoteConfig)
       "offset": 4518,
 =======
       "offset": 5173,
@@ -12482,13 +12559,20 @@
 =======
       "offset": 4962,
 >>>>>>> 8c22773 (feat: moved Purchases code to KovaleePurchases Target)
+<<<<<<< HEAD
 >>>>>>> 3ed8e2a (feat: moved Purchases code to KovaleePurchases Target)
+=======
+=======
+      "offset": 5120,
+>>>>>>> 8c8d3f3 (feat: moved Firebase code to specific target KovaleeRemoteConfig)
+>>>>>>> 23e3970 (feat: moved Firebase code to specific target KovaleeRemoteConfig)
       "length": 4,
       "value": "\"no\""
     },
     {
       "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
       "kind": "StringLiteral",
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -12502,6 +12586,8 @@
 >>>>>>> 9a9c071 (feat: creating Adjust instance if not present yet)
 =======
 >>>>>>> 3ed8e2a (feat: moved Purchases code to KovaleePurchases Target)
+=======
+>>>>>>> 23e3970 (feat: moved Firebase code to specific target KovaleeRemoteConfig)
       "offset": 4525,
 =======
       "offset": 5180,
@@ -12518,13 +12604,20 @@
 =======
       "offset": 4969,
 >>>>>>> 8c22773 (feat: moved Purchases code to KovaleePurchases Target)
+<<<<<<< HEAD
 >>>>>>> 3ed8e2a (feat: moved Purchases code to KovaleePurchases Target)
+=======
+=======
+      "offset": 5127,
+>>>>>>> 8c8d3f3 (feat: moved Firebase code to specific target KovaleeRemoteConfig)
+>>>>>>> 23e3970 (feat: moved Firebase code to specific target KovaleeRemoteConfig)
       "length": 5,
       "value": "\"yes\""
     },
     {
       "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
       "kind": "StringLiteral",
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -12538,6 +12631,8 @@
 >>>>>>> 9a9c071 (feat: creating Adjust instance if not present yet)
 =======
 >>>>>>> 3ed8e2a (feat: moved Purchases code to KovaleePurchases Target)
+=======
+>>>>>>> 23e3970 (feat: moved Firebase code to specific target KovaleeRemoteConfig)
       "offset": 6883,
 =======
       "offset": 7538,
@@ -12554,13 +12649,20 @@
 =======
       "offset": 7427,
 >>>>>>> 8c22773 (feat: moved Purchases code to KovaleePurchases Target)
+<<<<<<< HEAD
 >>>>>>> 3ed8e2a (feat: moved Purchases code to KovaleePurchases Target)
+=======
+=======
+      "offset": 7585,
+>>>>>>> 8c8d3f3 (feat: moved Firebase code to specific target KovaleeRemoteConfig)
+>>>>>>> 23e3970 (feat: moved Firebase code to specific target KovaleeRemoteConfig)
       "length": 5,
       "value": "\"yes\""
     },
     {
       "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
       "kind": "StringLiteral",
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -12574,6 +12676,8 @@
 >>>>>>> 9a9c071 (feat: creating Adjust instance if not present yet)
 =======
 >>>>>>> 3ed8e2a (feat: moved Purchases code to KovaleePurchases Target)
+=======
+>>>>>>> 23e3970 (feat: moved Firebase code to specific target KovaleeRemoteConfig)
       "offset": 8303,
 =======
       "offset": 8958,
@@ -12590,13 +12694,20 @@
 =======
       "offset": 8847,
 >>>>>>> 8c22773 (feat: moved Purchases code to KovaleePurchases Target)
+<<<<<<< HEAD
 >>>>>>> 3ed8e2a (feat: moved Purchases code to KovaleePurchases Target)
+=======
+=======
+      "offset": 9045,
+>>>>>>> 8c8d3f3 (feat: moved Firebase code to specific target KovaleeRemoteConfig)
+>>>>>>> 23e3970 (feat: moved Firebase code to specific target KovaleeRemoteConfig)
       "length": 87,
       "value": "\"🛰️ Retrieved value \""
     },
     {
       "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
       "kind": "StringLiteral",
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -12610,6 +12721,8 @@
 >>>>>>> 9a9c071 (feat: creating Adjust instance if not present yet)
 =======
 >>>>>>> 3ed8e2a (feat: moved Purchases code to KovaleePurchases Target)
+=======
+>>>>>>> 23e3970 (feat: moved Firebase code to specific target KovaleeRemoteConfig)
       "offset": 8370,
 =======
       "offset": 9025,
@@ -12626,13 +12739,20 @@
 =======
       "offset": 8914,
 >>>>>>> 8c22773 (feat: moved Purchases code to KovaleePurchases Target)
+<<<<<<< HEAD
 >>>>>>> 3ed8e2a (feat: moved Purchases code to KovaleePurchases Target)
+=======
+=======
+      "offset": 9112,
+>>>>>>> 8c8d3f3 (feat: moved Firebase code to specific target KovaleeRemoteConfig)
+>>>>>>> 23e3970 (feat: moved Firebase code to specific target KovaleeRemoteConfig)
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
       "kind": "StringLiteral",
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -12646,6 +12766,8 @@
 >>>>>>> 9a9c071 (feat: creating Adjust instance if not present yet)
 =======
 >>>>>>> 3ed8e2a (feat: moved Purchases code to KovaleePurchases Target)
+=======
+>>>>>>> 23e3970 (feat: moved Firebase code to specific target KovaleeRemoteConfig)
       "offset": 8373,
 =======
       "offset": 9028,
@@ -12662,13 +12784,20 @@
 =======
       "offset": 8917,
 >>>>>>> 8c22773 (feat: moved Purchases code to KovaleePurchases Target)
+<<<<<<< HEAD
 >>>>>>> 3ed8e2a (feat: moved Purchases code to KovaleePurchases Target)
+=======
+=======
+      "offset": 9115,
+>>>>>>> 8c8d3f3 (feat: moved Firebase code to specific target KovaleeRemoteConfig)
+>>>>>>> 23e3970 (feat: moved Firebase code to specific target KovaleeRemoteConfig)
       "length": 3,
       "value": "\" for key: \""
     },
     {
       "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
       "kind": "StringLiteral",
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -12682,6 +12811,8 @@
 >>>>>>> 9a9c071 (feat: creating Adjust instance if not present yet)
 =======
 >>>>>>> 3ed8e2a (feat: moved Purchases code to KovaleePurchases Target)
+=======
+>>>>>>> 23e3970 (feat: moved Firebase code to specific target KovaleeRemoteConfig)
       "offset": 8389,
 =======
       "offset": 9044,
@@ -12698,13 +12829,20 @@
 =======
       "offset": 8933,
 >>>>>>> 8c22773 (feat: moved Purchases code to KovaleePurchases Target)
+<<<<<<< HEAD
 >>>>>>> 3ed8e2a (feat: moved Purchases code to KovaleePurchases Target)
+=======
+=======
+      "offset": 9131,
+>>>>>>> 8c8d3f3 (feat: moved Firebase code to specific target KovaleeRemoteConfig)
+>>>>>>> 23e3970 (feat: moved Firebase code to specific target KovaleeRemoteConfig)
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
       "kind": "StringLiteral",
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -12718,6 +12856,8 @@
 >>>>>>> 9a9c071 (feat: creating Adjust instance if not present yet)
 =======
 >>>>>>> 3ed8e2a (feat: moved Purchases code to KovaleePurchases Target)
+=======
+>>>>>>> 23e3970 (feat: moved Firebase code to specific target KovaleeRemoteConfig)
       "offset": 8681,
 =======
       "offset": 9336,
@@ -12734,13 +12874,20 @@
 =======
       "offset": 9225,
 >>>>>>> 8c22773 (feat: moved Purchases code to KovaleePurchases Target)
+<<<<<<< HEAD
 >>>>>>> 3ed8e2a (feat: moved Purchases code to KovaleePurchases Target)
+=======
+=======
+      "offset": 9423,
+>>>>>>> 8c8d3f3 (feat: moved Firebase code to specific target KovaleeRemoteConfig)
+>>>>>>> 23e3970 (feat: moved Firebase code to specific target KovaleeRemoteConfig)
       "length": 83,
       "value": "\"🛰️ User already partecipated in a different experiment with \""
     },
     {
       "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
       "kind": "StringLiteral",
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -12754,6 +12901,8 @@
 >>>>>>> 9a9c071 (feat: creating Adjust instance if not present yet)
 =======
 >>>>>>> 3ed8e2a (feat: moved Purchases code to KovaleePurchases Target)
+=======
+>>>>>>> 23e3970 (feat: moved Firebase code to specific target KovaleeRemoteConfig)
       "offset": 8763,
 =======
       "offset": 9418,
@@ -12770,13 +12919,20 @@
 =======
       "offset": 9307,
 >>>>>>> 8c22773 (feat: moved Purchases code to KovaleePurchases Target)
+<<<<<<< HEAD
 >>>>>>> 3ed8e2a (feat: moved Purchases code to KovaleePurchases Target)
+=======
+=======
+      "offset": 9505,
+>>>>>>> 8c8d3f3 (feat: moved Firebase code to specific target KovaleeRemoteConfig)
+>>>>>>> 23e3970 (feat: moved Firebase code to specific target KovaleeRemoteConfig)
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
       "kind": "StringLiteral",
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -12790,6 +12946,8 @@
 >>>>>>> 9a9c071 (feat: creating Adjust instance if not present yet)
 =======
 >>>>>>> 3ed8e2a (feat: moved Purchases code to KovaleePurchases Target)
+=======
+>>>>>>> 23e3970 (feat: moved Firebase code to specific target KovaleeRemoteConfig)
       "offset": 8963,
 =======
       "offset": 9618,
@@ -12806,13 +12964,20 @@
 =======
       "offset": 9507,
 >>>>>>> 8c22773 (feat: moved Purchases code to KovaleePurchases Target)
+<<<<<<< HEAD
 >>>>>>> 3ed8e2a (feat: moved Purchases code to KovaleePurchases Target)
+=======
+=======
+      "offset": 9705,
+>>>>>>> 8c8d3f3 (feat: moved Firebase code to specific target KovaleeRemoteConfig)
+>>>>>>> 23e3970 (feat: moved Firebase code to specific target KovaleeRemoteConfig)
       "length": 56,
       "value": "\"🛰️ Fetched AB Experiment value from local storage\""
     },
     {
       "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
       "kind": "StringLiteral",
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -12826,6 +12991,8 @@
 >>>>>>> 9a9c071 (feat: creating Adjust instance if not present yet)
 =======
 >>>>>>> 3ed8e2a (feat: moved Purchases code to KovaleePurchases Target)
+=======
+>>>>>>> 23e3970 (feat: moved Firebase code to specific target KovaleeRemoteConfig)
       "offset": 9357,
 =======
       "offset": 10012,
@@ -12842,13 +13009,20 @@
 =======
       "offset": 9906,
 >>>>>>> 8c22773 (feat: moved Purchases code to KovaleePurchases Target)
+<<<<<<< HEAD
 >>>>>>> 3ed8e2a (feat: moved Purchases code to KovaleePurchases Target)
+=======
+=======
+      "offset": 10115,
+>>>>>>> 8c8d3f3 (feat: moved Firebase code to specific target KovaleeRemoteConfig)
+>>>>>>> 23e3970 (feat: moved Firebase code to specific target KovaleeRemoteConfig)
       "length": 3,
       "value": "\"0\""
     },
     {
       "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
       "kind": "StringLiteral",
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -12862,6 +13036,8 @@
 >>>>>>> 9a9c071 (feat: creating Adjust instance if not present yet)
 =======
 >>>>>>> 3ed8e2a (feat: moved Purchases code to KovaleePurchases Target)
+=======
+>>>>>>> 23e3970 (feat: moved Firebase code to specific target KovaleeRemoteConfig)
       "offset": 9747,
 =======
       "offset": 10402,
@@ -12878,13 +13054,20 @@
 =======
       "offset": 10296,
 >>>>>>> 8c22773 (feat: moved Purchases code to KovaleePurchases Target)
+<<<<<<< HEAD
 >>>>>>> 3ed8e2a (feat: moved Purchases code to KovaleePurchases Target)
+=======
+=======
+      "offset": 10502,
+>>>>>>> 8c8d3f3 (feat: moved Firebase code to specific target KovaleeRemoteConfig)
+>>>>>>> 23e3970 (feat: moved Firebase code to specific target KovaleeRemoteConfig)
       "length": 27,
       "value": "\"creating interstitial ad \""
     },
     {
       "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
       "kind": "StringLiteral",
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -12898,6 +13081,8 @@
 >>>>>>> 9a9c071 (feat: creating Adjust instance if not present yet)
 =======
 >>>>>>> 3ed8e2a (feat: moved Purchases code to KovaleePurchases Target)
+=======
+>>>>>>> 23e3970 (feat: moved Firebase code to specific target KovaleeRemoteConfig)
       "offset": 9906,
 =======
       "offset": 10561,
@@ -12914,13 +13099,20 @@
 =======
       "offset": 10455,
 >>>>>>> 8c22773 (feat: moved Purchases code to KovaleePurchases Target)
+<<<<<<< HEAD
 >>>>>>> 3ed8e2a (feat: moved Purchases code to KovaleePurchases Target)
+=======
+=======
+      "offset": 10661,
+>>>>>>> 8c8d3f3 (feat: moved Firebase code to specific target KovaleeRemoteConfig)
+>>>>>>> 23e3970 (feat: moved Firebase code to specific target KovaleeRemoteConfig)
       "length": 25,
       "value": "\"display interstitial ad\""
     },
     {
       "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
       "kind": "StringLiteral",
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -12934,6 +13126,8 @@
 >>>>>>> 9a9c071 (feat: creating Adjust instance if not present yet)
 =======
 >>>>>>> 3ed8e2a (feat: moved Purchases code to KovaleePurchases Target)
+=======
+>>>>>>> 23e3970 (feat: moved Firebase code to specific target KovaleeRemoteConfig)
       "offset": 10110,
 =======
       "offset": 10765,
@@ -12950,13 +13144,20 @@
 =======
       "offset": 10659,
 >>>>>>> 8c22773 (feat: moved Purchases code to KovaleePurchases Target)
+<<<<<<< HEAD
 >>>>>>> 3ed8e2a (feat: moved Purchases code to KovaleePurchases Target)
+=======
+=======
+      "offset": 10865,
+>>>>>>> 8c8d3f3 (feat: moved Firebase code to specific target KovaleeRemoteConfig)
+>>>>>>> 23e3970 (feat: moved Firebase code to specific target KovaleeRemoteConfig)
       "length": 22,
       "value": "\"creating rewarded ad\""
     },
     {
       "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
       "kind": "StringLiteral",
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -12970,6 +13171,8 @@
 >>>>>>> 9a9c071 (feat: creating Adjust instance if not present yet)
 =======
 >>>>>>> 3ed8e2a (feat: moved Purchases code to KovaleePurchases Target)
+=======
+>>>>>>> 23e3970 (feat: moved Firebase code to specific target KovaleeRemoteConfig)
       "offset": 10255,
 =======
       "offset": 10910,
@@ -12986,7 +13189,13 @@
 =======
       "offset": 10804,
 >>>>>>> 8c22773 (feat: moved Purchases code to KovaleePurchases Target)
+<<<<<<< HEAD
 >>>>>>> 3ed8e2a (feat: moved Purchases code to KovaleePurchases Target)
+=======
+=======
+      "offset": 11010,
+>>>>>>> 8c8d3f3 (feat: moved Firebase code to specific target KovaleeRemoteConfig)
+>>>>>>> 23e3970 (feat: moved Firebase code to specific target KovaleeRemoteConfig)
       "length": 21,
       "value": "\"display rewarded ad\""
     },
