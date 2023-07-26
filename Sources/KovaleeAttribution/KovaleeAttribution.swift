@@ -5,15 +5,29 @@ import KovaleeSDK
 
 // MARK: Adjust
 extension Kovalee {
-	private func createAdjustWrapper(withConfiguration configuration: Configuration, andKey key: String) -> AdjustWrapper {
-		AdjustWrapperImpl(
+	private func instantiateAttributionManager() -> AdjustWrapper {
+		guard let key = self.keys.adjust else {
+			fatalError("No configuration Key for Adjust found in the Keys file")
+		}
+
+		return AdjustWrapperImpl(
 			configuration: AdjustConfiguration(
-				environment: configuration.environment.rawValue,
+				environment: self.configuration.environment.rawValue,
 				token: key
 			),
 			attributionAdidCallback: {
 				self.kovaleeManager?.attributionCallback(withAdid: $0)
 			}
+		)
+	}
+
+	private func setupAtributionManager() {
+		guard Self.shared.kovaleeManager?.amplitude == nil else {
+			return
+		}
+
+		Self.shared.kovaleeManager?.setupAttributionManager(
+			adjustWrapper: Self.shared.instantiateAttributionManager()
 		)
 	}
 
@@ -27,6 +41,7 @@ extension Kovalee {
 	public static func promptTrackingAuthorization(
 		completion: @escaping (ATTrackingManager.AuthorizationStatus) -> Void
 	) {
+		Self.shared.setupAtributionManager()
 		Self.shared.kovaleeManager?.promptTrackingAuthorization(completion: completion)
 	}
 
@@ -38,7 +53,9 @@ extension Kovalee {
 	/// - Returns:the `ATTrackingManager.AuthorizationStatus` based on the user response
 	@discardableResult
 	public static func promptTrackingAuthorization() async -> ATTrackingManager.AuthorizationStatus {
-		await withCheckedContinuation { continuation in
+		Self.shared.setupAtributionManager()
+
+		return await withCheckedContinuation { continuation in
 			Self.shared.kovaleeManager?.promptTrackingAuthorization { userState in
 				continuation.resume(returning: userState)
 			}

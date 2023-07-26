@@ -1,5 +1,5 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.8 (swiftlang-5.8.0.124.2 clang-1403.0.22.11.100)
+// swift-compiler-version: Apple Swift version 5.8.1 (swiftlang-5.8.0.124.5 clang-1403.0.22.11.100)
 // swift-module-flags: -target x86_64-apple-ios14.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name KovaleeFramework
 // swift-module-flags-ignorable: -enable-bare-slash-regex
 import AppTrackingTransparency
@@ -10,7 +10,11 @@ import _Concurrency
 import _StringProcessing
 import os
 public class KovaleeManager {
-  public init(withStorage storage: KovaleeFramework.Storage = .userDefaults(), keys: KovaleeFramework.KovaleeKeys, adjustWrapper: any KovaleeFramework.AdjustWrapper, amplitudeWrapper: any KovaleeFramework.AmplitudeWrapper, revenueCatWrapper: (any KovaleeFramework.RevenueCatWrapper)?, firebaseWrapper: (any KovaleeFramework.FirebaseWrapper)?, applovinWrapper: (any KovaleeFramework.ApplovinWrapper)?)
+  public init(withStorage storage: KovaleeFramework.Storage = .userDefaults(), keys: KovaleeFramework.KovaleeKeys, amplitudeWrapper: any KovaleeFramework.AmplitudeWrapper)
+  public func setupAttributionManager(adjustWrapper: any KovaleeFramework.AdjustWrapper)
+  public func setupPurchaseManager(revenueCatWrapper: any KovaleeFramework.RevenueCatWrapper)
+  public func setupRemoteConfigurationManager(firebaseWrapper: any KovaleeFramework.FirebaseWrapper)
+  public func setupAdsManager(applovinWrapper: any KovaleeFramework.ApplovinWrapper)
   public func promptTrackingAuthorization(completion: @escaping (AppTrackingTransparency.ATTrackingManager.AuthorizationStatus) -> Swift.Void)
   public func getAttributionAdid() -> Swift.String?
   public func attributionCallback(withAdid adid: Swift.String?)
@@ -20,6 +24,11 @@ public class KovaleeManager {
   public func setUserProperty(key: Swift.String, value: Swift.String)
   public func setUserProperty(property: KovaleeFramework.UserProperty)
   public func sendAppOpenEvent()
+  public var adjust: (any KovaleeFramework.AdjustWrapper)?
+  public var amplitude: (any KovaleeFramework.AmplitudeWrapper)?
+  public var firebase: (any KovaleeFramework.FirebaseWrapper)?
+  public var revenueCat: (any KovaleeFramework.RevenueCatWrapper)?
+  public var applovin: (any KovaleeFramework.ApplovinWrapper)?
   @objc deinit
 }
 extension KovaleeFramework.KovaleeManager {
@@ -107,8 +116,8 @@ public struct KovaleeConstants {
 }
 public struct KovaleeKeys : Swift.Decodable {
   public let appCode: Swift.String
-  public let liteVersion: Swift.Bool
-  public let adjust: Swift.String
+  public let liteVersion: Swift.Bool?
+  public let adjust: Swift.String?
   public let amplitude: KovaleeFramework.KovaleeKeys.Amplitude
   public let revenueCat: KovaleeFramework.KovaleeKeys.RevenueCat?
   public let firebase: KovaleeFramework.KovaleeKeys.Firebase?
