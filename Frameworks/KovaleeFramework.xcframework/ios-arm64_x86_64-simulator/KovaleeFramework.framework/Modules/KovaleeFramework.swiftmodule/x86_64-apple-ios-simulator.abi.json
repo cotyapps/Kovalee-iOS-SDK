@@ -7231,6 +7231,7 @@
             "protocolReq": true,
             "reqNewWitnessTableEntry": true,
             "funcSelfKind": "NonMutating"
+<<<<<<< HEAD
           },
           {
             "kind": "Function",
@@ -7291,6 +7292,8 @@
             "protocolReq": true,
             "reqNewWitnessTableEntry": true,
             "funcSelfKind": "NonMutating"
+=======
+>>>>>>> 13962f8 (feat: restored KovaleeFramework)
           }
         ],
         "declKind": "Protocol",
@@ -11878,10 +11881,18 @@
       "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
       "kind": "StringLiteral",
 <<<<<<< HEAD
+<<<<<<< HEAD
       "offset": 4124,
 =======
       "offset": 3586,
+<<<<<<< HEAD
 >>>>>>> 69235d0 (feat: implemented functions to retrieve Adjust adid and Amplitude User and Device Id)
+=======
+>>>>>>> master
+=======
+      "offset": 4124,
+>>>>>>> 13962f8 (feat: restored KovaleeFramework)
+>>>>>>> 3226eb0 (feat: restored KovaleeFramework)
       "length": 5,
       "value": "\"yes\""
     },
@@ -11889,10 +11900,18 @@
       "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
       "kind": "BooleanLiteral",
 <<<<<<< HEAD
+<<<<<<< HEAD
       "offset": 4132,
 =======
       "offset": 3594,
+<<<<<<< HEAD
 >>>>>>> 69235d0 (feat: implemented functions to retrieve Adjust adid and Amplitude User and Device Id)
+=======
+>>>>>>> master
+=======
+      "offset": 4132,
+>>>>>>> 13962f8 (feat: restored KovaleeFramework)
+>>>>>>> 3226eb0 (feat: restored KovaleeFramework)
       "length": 4,
       "value": "true"
     },
@@ -11900,10 +11919,18 @@
       "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
       "kind": "BooleanLiteral",
 <<<<<<< HEAD
+<<<<<<< HEAD
       "offset": 4139,
 =======
       "offset": 3601,
+<<<<<<< HEAD
 >>>>>>> 69235d0 (feat: implemented functions to retrieve Adjust adid and Amplitude User and Device Id)
+=======
+>>>>>>> master
+=======
+      "offset": 4139,
+>>>>>>> 13962f8 (feat: restored KovaleeFramework)
+>>>>>>> 3226eb0 (feat: restored KovaleeFramework)
       "length": 5,
       "value": "false"
     },
@@ -11911,10 +11938,18 @@
       "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
       "kind": "BooleanLiteral",
 <<<<<<< HEAD
+<<<<<<< HEAD
       "offset": 4338,
 =======
       "offset": 3800,
+<<<<<<< HEAD
 >>>>>>> 69235d0 (feat: implemented functions to retrieve Adjust adid and Amplitude User and Device Id)
+=======
+>>>>>>> master
+=======
+      "offset": 4338,
+>>>>>>> 13962f8 (feat: restored KovaleeFramework)
+>>>>>>> 3226eb0 (feat: restored KovaleeFramework)
       "length": 4,
       "value": "true"
     },
@@ -11922,10 +11957,18 @@
       "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
       "kind": "StringLiteral",
 <<<<<<< HEAD
+<<<<<<< HEAD
       "offset": 4546,
 =======
       "offset": 3998,
+<<<<<<< HEAD
 >>>>>>> 69235d0 (feat: implemented functions to retrieve Adjust adid and Amplitude User and Device Id)
+=======
+>>>>>>> master
+=======
+      "offset": 4546,
+>>>>>>> 13962f8 (feat: restored KovaleeFramework)
+>>>>>>> 3226eb0 (feat: restored KovaleeFramework)
       "length": 4,
       "value": "\"no\""
     },
@@ -11933,10 +11976,18 @@
       "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
       "kind": "BooleanLiteral",
 <<<<<<< HEAD
+<<<<<<< HEAD
       "offset": 4606,
 =======
       "offset": 4058,
+<<<<<<< HEAD
 >>>>>>> 69235d0 (feat: implemented functions to retrieve Adjust adid and Amplitude User and Device Id)
+=======
+>>>>>>> master
+=======
+      "offset": 4606,
+>>>>>>> 13962f8 (feat: restored KovaleeFramework)
+>>>>>>> 3226eb0 (feat: restored KovaleeFramework)
       "length": 5,
       "value": "false"
     },
@@ -11944,11 +11995,26 @@
       "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
       "kind": "StringLiteral",
 <<<<<<< HEAD
+<<<<<<< HEAD
       "offset": 5104,
 =======
       "offset": 4518,
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 69235d0 (feat: implemented functions to retrieve Adjust adid and Amplitude User and Device Id)
+=======
+      "length": 5,
+      "value": "\"yes\""
+    },
+    {
+      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
+      "kind": "StringLiteral",
+      "offset": 4526,
+>>>>>>> master
+=======
+      "offset": 5104,
+>>>>>>> 13962f8 (feat: restored KovaleeFramework)
+>>>>>>> 3226eb0 (feat: restored KovaleeFramework)
       "length": 4,
       "value": "\"no\""
 =======
@@ -12006,7 +12072,14 @@
 =======
 >>>>>>> 150464a (fix: fixing setting user is premium on RC customerInfo call)
       "offset": 6885,
+<<<<<<< HEAD
 >>>>>>> 15931f2 (fix: fixed setUserIsPremium function)
+=======
+>>>>>>> master
+=======
+      "offset": 5111,
+>>>>>>> 13962f8 (feat: restored KovaleeFramework)
+>>>>>>> 3226eb0 (feat: restored KovaleeFramework)
       "length": 5,
       "value": "\"yes\""
     },
@@ -12015,13 +12088,32 @@
       "kind": "StringLiteral",
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> 13962f8 (feat: restored KovaleeFramework)
+      "offset": 7569,
+      "length": 5,
+      "value": "\"yes\""
+    },
+    {
+      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
+      "kind": "StringLiteral",
+>>>>>>> 3226eb0 (feat: restored KovaleeFramework)
       "offset": 9029,
+<<<<<<< HEAD
 =======
       "offset": 8303,
 >>>>>>> 69235d0 (feat: implemented functions to retrieve Adjust adid and Amplitude User and Device Id)
 =======
       "offset": 8305,
+<<<<<<< HEAD
 >>>>>>> 15931f2 (fix: fixed setUserIsPremium function)
+=======
+>>>>>>> master
+=======
+>>>>>>> 13962f8 (feat: restored KovaleeFramework)
+>>>>>>> 3226eb0 (feat: restored KovaleeFramework)
       "length": 87,
       "value": "\"🛰️ Retrieved value \""
     },
@@ -12036,7 +12128,14 @@
 >>>>>>> 69235d0 (feat: implemented functions to retrieve Adjust adid and Amplitude User and Device Id)
 =======
       "offset": 8372,
+<<<<<<< HEAD
 >>>>>>> 15931f2 (fix: fixed setUserIsPremium function)
+=======
+>>>>>>> master
+=======
+      "offset": 9096,
+>>>>>>> 13962f8 (feat: restored KovaleeFramework)
+>>>>>>> 3226eb0 (feat: restored KovaleeFramework)
       "length": 2,
       "value": "\"\""
     },
@@ -12051,7 +12150,14 @@
 >>>>>>> 69235d0 (feat: implemented functions to retrieve Adjust adid and Amplitude User and Device Id)
 =======
       "offset": 8375,
+<<<<<<< HEAD
 >>>>>>> 15931f2 (fix: fixed setUserIsPremium function)
+=======
+>>>>>>> master
+=======
+      "offset": 9099,
+>>>>>>> 13962f8 (feat: restored KovaleeFramework)
+>>>>>>> 3226eb0 (feat: restored KovaleeFramework)
       "length": 3,
       "value": "\" for key: \""
     },
@@ -12066,7 +12172,14 @@
 >>>>>>> 69235d0 (feat: implemented functions to retrieve Adjust adid and Amplitude User and Device Id)
 =======
       "offset": 8391,
+<<<<<<< HEAD
 >>>>>>> 15931f2 (fix: fixed setUserIsPremium function)
+=======
+>>>>>>> master
+=======
+      "offset": 9115,
+>>>>>>> 13962f8 (feat: restored KovaleeFramework)
+>>>>>>> 3226eb0 (feat: restored KovaleeFramework)
       "length": 2,
       "value": "\"\""
     },
@@ -12081,7 +12194,14 @@
 >>>>>>> 69235d0 (feat: implemented functions to retrieve Adjust adid and Amplitude User and Device Id)
 =======
       "offset": 8683,
+<<<<<<< HEAD
 >>>>>>> 15931f2 (fix: fixed setUserIsPremium function)
+=======
+>>>>>>> master
+=======
+      "offset": 9407,
+>>>>>>> 13962f8 (feat: restored KovaleeFramework)
+>>>>>>> 3226eb0 (feat: restored KovaleeFramework)
       "length": 83,
       "value": "\"🛰️ User already partecipated in a different experiment with \""
     },
@@ -12096,7 +12216,14 @@
 >>>>>>> 69235d0 (feat: implemented functions to retrieve Adjust adid and Amplitude User and Device Id)
 =======
       "offset": 8765,
+<<<<<<< HEAD
 >>>>>>> 15931f2 (fix: fixed setUserIsPremium function)
+=======
+>>>>>>> master
+=======
+      "offset": 9489,
+>>>>>>> 13962f8 (feat: restored KovaleeFramework)
+>>>>>>> 3226eb0 (feat: restored KovaleeFramework)
       "length": 2,
       "value": "\"\""
     },
@@ -12111,7 +12238,14 @@
 >>>>>>> 69235d0 (feat: implemented functions to retrieve Adjust adid and Amplitude User and Device Id)
 =======
       "offset": 8965,
+<<<<<<< HEAD
 >>>>>>> 15931f2 (fix: fixed setUserIsPremium function)
+=======
+>>>>>>> master
+=======
+      "offset": 9689,
+>>>>>>> 13962f8 (feat: restored KovaleeFramework)
+>>>>>>> 3226eb0 (feat: restored KovaleeFramework)
       "length": 56,
       "value": "\"🛰️ Fetched AB Experiment value from local storage\""
     },
@@ -12126,7 +12260,14 @@
 >>>>>>> 69235d0 (feat: implemented functions to retrieve Adjust adid and Amplitude User and Device Id)
 =======
       "offset": 9359,
+<<<<<<< HEAD
 >>>>>>> 15931f2 (fix: fixed setUserIsPremium function)
+=======
+>>>>>>> master
+=======
+      "offset": 10099,
+>>>>>>> 13962f8 (feat: restored KovaleeFramework)
+>>>>>>> 3226eb0 (feat: restored KovaleeFramework)
       "length": 3,
       "value": "\"0\""
     },
@@ -12141,7 +12282,14 @@
 >>>>>>> 69235d0 (feat: implemented functions to retrieve Adjust adid and Amplitude User and Device Id)
 =======
       "offset": 9749,
+<<<<<<< HEAD
 >>>>>>> 15931f2 (fix: fixed setUserIsPremium function)
+=======
+>>>>>>> master
+=======
+      "offset": 10490,
+>>>>>>> 13962f8 (feat: restored KovaleeFramework)
+>>>>>>> 3226eb0 (feat: restored KovaleeFramework)
       "length": 27,
       "value": "\"creating interstitial ad \""
     },
@@ -12156,7 +12304,14 @@
 >>>>>>> 69235d0 (feat: implemented functions to retrieve Adjust adid and Amplitude User and Device Id)
 =======
       "offset": 9908,
+<<<<<<< HEAD
 >>>>>>> 15931f2 (fix: fixed setUserIsPremium function)
+=======
+>>>>>>> master
+=======
+      "offset": 10651,
+>>>>>>> 13962f8 (feat: restored KovaleeFramework)
+>>>>>>> 3226eb0 (feat: restored KovaleeFramework)
       "length": 25,
       "value": "\"display interstitial ad\""
     },
@@ -12171,7 +12326,14 @@
 >>>>>>> 69235d0 (feat: implemented functions to retrieve Adjust adid and Amplitude User and Device Id)
 =======
       "offset": 10112,
+<<<<<<< HEAD
 >>>>>>> 15931f2 (fix: fixed setUserIsPremium function)
+=======
+>>>>>>> master
+=======
+      "offset": 10857,
+>>>>>>> 13962f8 (feat: restored KovaleeFramework)
+>>>>>>> 3226eb0 (feat: restored KovaleeFramework)
       "length": 22,
       "value": "\"creating rewarded ad\""
     },
@@ -12186,7 +12348,14 @@
 >>>>>>> 69235d0 (feat: implemented functions to retrieve Adjust adid and Amplitude User and Device Id)
 =======
       "offset": 10257,
+<<<<<<< HEAD
 >>>>>>> 15931f2 (fix: fixed setUserIsPremium function)
+=======
+>>>>>>> master
+=======
+      "offset": 11004,
+>>>>>>> 13962f8 (feat: restored KovaleeFramework)
+>>>>>>> 3226eb0 (feat: restored KovaleeFramework)
       "length": 21,
       "value": "\"display rewarded ad\""
     },
