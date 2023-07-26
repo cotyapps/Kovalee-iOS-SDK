@@ -22,7 +22,7 @@ extension Kovalee {
 	}
 
 	private func setupAtributionManager() {
-		guard Self.shared.kovaleeManager?.amplitude == nil else {
+		guard Self.shared.kovaleeManager?.attributionManager == nil else {
 			return
 		}
 

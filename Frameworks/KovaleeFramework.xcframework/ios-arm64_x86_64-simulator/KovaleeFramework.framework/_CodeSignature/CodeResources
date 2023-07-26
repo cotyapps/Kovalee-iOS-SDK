@@ -20,6 +20,7 @@
 		<data>
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 		7JOkoCRnjHn/j/WzxwP6pjGov7w=
 		</data>
 		<key>Modules/KovaleeFramework.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
@@ -28,6 +29,8 @@
 =======
 =======
 >>>>>>> 63d03c6 (feat: moved Adjust to new target KovaleeAttribution)
+=======
+>>>>>>> 9a9c071 (feat: creating Adjust instance if not present yet)
 		7K2Nw9Ga7ee+624v8BM3zH8+WIo=
 		</data>
 		<key>Modules/KovaleeFramework.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
@@ -43,7 +46,17 @@
 		<data>
 		gwLgi4LTCYQ24PyqxwY63tD/kHY=
 >>>>>>> 205cf3c (feat: moved Adjust to new target KovaleeAttribution)
+<<<<<<< HEAD
 >>>>>>> 63d03c6 (feat: moved Adjust to new target KovaleeAttribution)
+=======
+=======
+		7JOkoCRnjHn/j/WzxwP6pjGov7w=
+		</data>
+		<key>Modules/KovaleeFramework.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
+		<data>
+		j/X6LbIHYNvzAP/0ya28wB6qxz4=
+>>>>>>> 7baef6c (feat: creating Adjust instance if not present yet)
+>>>>>>> 9a9c071 (feat: creating Adjust instance if not present yet)
 		</data>
 		<key>Modules/KovaleeFramework.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -51,6 +64,7 @@
 		</data>
 		<key>Modules/KovaleeFramework.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 		j/X6LbIHYNvzAP/0ya28wB6qxz4=
@@ -69,6 +83,8 @@
 =======
 =======
 >>>>>>> 63d03c6 (feat: moved Adjust to new target KovaleeAttribution)
+=======
+>>>>>>> 9a9c071 (feat: creating Adjust instance if not present yet)
 		ldOhJp1bL75+GhcjnZy5sfLqEPQ=
 		</data>
 		<key>Modules/KovaleeFramework.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
@@ -87,20 +103,30 @@
 =======
 =======
 		gwLgi4LTCYQ24PyqxwY63tD/kHY=
+=======
+		j/X6LbIHYNvzAP/0ya28wB6qxz4=
+>>>>>>> 7baef6c (feat: creating Adjust instance if not present yet)
 		</data>
 		<key>Modules/KovaleeFramework.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		OWCYAiRfoFMF+CSr7hmElp/BLyU=
+		Z6SfUj8jtMRRME5usOnPpE7KsMI=
 		</data>
 		<key>Modules/KovaleeFramework.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		N7VTpkz6MM1NNmHer+TwCNrcUjg=
+		7JOkoCRnjHn/j/WzxwP6pjGov7w=
 		</data>
 		<key>Modules/KovaleeFramework.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
+<<<<<<< HEAD
 		wwZHlKGKu+vVSDdjb+GWl1mlA5k=
 >>>>>>> 205cf3c (feat: moved Adjust to new target KovaleeAttribution)
+<<<<<<< HEAD
 >>>>>>> 63d03c6 (feat: moved Adjust to new target KovaleeAttribution)
+=======
+=======
+		qf5YW3AsJvhgLNCWhV2seZDYxGU=
+>>>>>>> 7baef6c (feat: creating Adjust instance if not present yet)
+>>>>>>> 9a9c071 (feat: creating Adjust instance if not present yet)
 		</data>
 		<key>Modules/KovaleeFramework.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -108,6 +134,7 @@
 		</data>
 		<key>Modules/KovaleeFramework.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 		qf5YW3AsJvhgLNCWhV2seZDYxGU=
@@ -118,6 +145,8 @@
 =======
 =======
 >>>>>>> 63d03c6 (feat: moved Adjust to new target KovaleeAttribution)
+=======
+>>>>>>> 9a9c071 (feat: creating Adjust instance if not present yet)
 		wwgIuYGFM5wpvgAmj6U6UDR6qSo=
 		</data>
 		<key>Modules/KovaleeFramework.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
@@ -133,7 +162,17 @@
 		<data>
 		7o1jfor/N0985DOpoKLncdaNnFY=
 >>>>>>> 205cf3c (feat: moved Adjust to new target KovaleeAttribution)
+<<<<<<< HEAD
 >>>>>>> 63d03c6 (feat: moved Adjust to new target KovaleeAttribution)
+=======
+=======
+		qf5YW3AsJvhgLNCWhV2seZDYxGU=
+		</data>
+		<key>Modules/KovaleeFramework.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
+		<data>
+		nvls1NgUFMyMyDfeMrFPt57ZriM=
+>>>>>>> 7baef6c (feat: creating Adjust instance if not present yet)
+>>>>>>> 9a9c071 (feat: creating Adjust instance if not present yet)
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -162,16 +201,25 @@
 			<data>
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 			43i91dZO4o5j66iPIbZ0I0/+Lv0oiM/5E9XzB/2S/2c=
 =======
 			BCAviTh+pCEtY6FKTYjXErboKfiVjLIsqGCGv6kCQuw=
 >>>>>>> 69235d0 (feat: implemented functions to retrieve Adjust adid and Amplitude User and Device Id)
 =======
+=======
+>>>>>>> 9a9c071 (feat: creating Adjust instance if not present yet)
 			BCAviTh+pCEtY6FKTYjXErboKfiVjLIsqGCGv6kCQuw=
 =======
 			YNxy6bG26AXh81GANqWa8oql37Mfo0tP3ZKMOyt/F3c=
 >>>>>>> 205cf3c (feat: moved Adjust to new target KovaleeAttribution)
+<<<<<<< HEAD
 >>>>>>> 63d03c6 (feat: moved Adjust to new target KovaleeAttribution)
+=======
+=======
+			43i91dZO4o5j66iPIbZ0I0/+Lv0oiM/5E9XzB/2S/2c=
+>>>>>>> 7baef6c (feat: creating Adjust instance if not present yet)
+>>>>>>> 9a9c071 (feat: creating Adjust instance if not present yet)
 			</data>
 		</dict>
 		<key>Modules/KovaleeFramework.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
@@ -180,16 +228,25 @@
 			<data>
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 			mOP5sR+dqdas4/kTgkrCeykZt/uRYAtub0+MOJxTgN4=
 =======
 			yZJ57FyTE7NdKpz6ovLNGrUTMgUCJBOJsanB34gap3Q=
 >>>>>>> 69235d0 (feat: implemented functions to retrieve Adjust adid and Amplitude User and Device Id)
 =======
+=======
+>>>>>>> 9a9c071 (feat: creating Adjust instance if not present yet)
 			yZJ57FyTE7NdKpz6ovLNGrUTMgUCJBOJsanB34gap3Q=
 =======
 			W7V5Kc6Ec0A4uOiP+yyqCFXYNm4Fa1HpZekLAPtRsv4=
 >>>>>>> 205cf3c (feat: moved Adjust to new target KovaleeAttribution)
+<<<<<<< HEAD
 >>>>>>> 63d03c6 (feat: moved Adjust to new target KovaleeAttribution)
+=======
+=======
+			mOP5sR+dqdas4/kTgkrCeykZt/uRYAtub0+MOJxTgN4=
+>>>>>>> 7baef6c (feat: creating Adjust instance if not present yet)
+>>>>>>> 9a9c071 (feat: creating Adjust instance if not present yet)
 			</data>
 		</dict>
 		<key>Modules/KovaleeFramework.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
@@ -205,16 +262,25 @@
 			<data>
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 			mOP5sR+dqdas4/kTgkrCeykZt/uRYAtub0+MOJxTgN4=
 =======
 			yZJ57FyTE7NdKpz6ovLNGrUTMgUCJBOJsanB34gap3Q=
 >>>>>>> 69235d0 (feat: implemented functions to retrieve Adjust adid and Amplitude User and Device Id)
 =======
+=======
+>>>>>>> 9a9c071 (feat: creating Adjust instance if not present yet)
 			yZJ57FyTE7NdKpz6ovLNGrUTMgUCJBOJsanB34gap3Q=
 =======
 			W7V5Kc6Ec0A4uOiP+yyqCFXYNm4Fa1HpZekLAPtRsv4=
 >>>>>>> 205cf3c (feat: moved Adjust to new target KovaleeAttribution)
+<<<<<<< HEAD
 >>>>>>> 63d03c6 (feat: moved Adjust to new target KovaleeAttribution)
+=======
+=======
+			mOP5sR+dqdas4/kTgkrCeykZt/uRYAtub0+MOJxTgN4=
+>>>>>>> 7baef6c (feat: creating Adjust instance if not present yet)
+>>>>>>> 9a9c071 (feat: creating Adjust instance if not present yet)
 			</data>
 		</dict>
 		<key>Modules/KovaleeFramework.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
@@ -223,16 +289,25 @@
 			<data>
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 			K9362N3renzbAnhWdBFRUAuSAaA6bkb9o5wJJsITp8M=
 =======
 			NROE2gWOO9GRX3PyyEk5GSYo7Efs1xSNVW63UDBJHf8=
 >>>>>>> 69235d0 (feat: implemented functions to retrieve Adjust adid and Amplitude User and Device Id)
 =======
+=======
+>>>>>>> 9a9c071 (feat: creating Adjust instance if not present yet)
 			NROE2gWOO9GRX3PyyEk5GSYo7Efs1xSNVW63UDBJHf8=
 =======
 			ZXQDT954fw/lwe/jHVV8KXhhI7m/Y2a3e/3dDNvYpKE=
 >>>>>>> 205cf3c (feat: moved Adjust to new target KovaleeAttribution)
+<<<<<<< HEAD
 >>>>>>> 63d03c6 (feat: moved Adjust to new target KovaleeAttribution)
+=======
+=======
+			K9362N3renzbAnhWdBFRUAuSAaA6bkb9o5wJJsITp8M=
+>>>>>>> 7baef6c (feat: creating Adjust instance if not present yet)
+>>>>>>> 9a9c071 (feat: creating Adjust instance if not present yet)
 			</data>
 		</dict>
 		<key>Modules/KovaleeFramework.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
@@ -241,16 +316,25 @@
 			<data>
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 			43i91dZO4o5j66iPIbZ0I0/+Lv0oiM/5E9XzB/2S/2c=
 =======
 			BCAviTh+pCEtY6FKTYjXErboKfiVjLIsqGCGv6kCQuw=
 >>>>>>> 69235d0 (feat: implemented functions to retrieve Adjust adid and Amplitude User and Device Id)
 =======
+=======
+>>>>>>> 9a9c071 (feat: creating Adjust instance if not present yet)
 			BCAviTh+pCEtY6FKTYjXErboKfiVjLIsqGCGv6kCQuw=
 =======
 			YNxy6bG26AXh81GANqWa8oql37Mfo0tP3ZKMOyt/F3c=
 >>>>>>> 205cf3c (feat: moved Adjust to new target KovaleeAttribution)
+<<<<<<< HEAD
 >>>>>>> 63d03c6 (feat: moved Adjust to new target KovaleeAttribution)
+=======
+=======
+			43i91dZO4o5j66iPIbZ0I0/+Lv0oiM/5E9XzB/2S/2c=
+>>>>>>> 7baef6c (feat: creating Adjust instance if not present yet)
+>>>>>>> 9a9c071 (feat: creating Adjust instance if not present yet)
 			</data>
 		</dict>
 		<key>Modules/KovaleeFramework.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
@@ -259,16 +343,25 @@
 			<data>
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 			9TvIHiAcmZUo++x/IvMs2vZ7n4z4sV48XdBcAo2czBU=
 =======
 			gQsA4YEPMcbzJoHD9VlrV0MmUD/c7zMwvHktWVrg9CI=
 >>>>>>> 69235d0 (feat: implemented functions to retrieve Adjust adid and Amplitude User and Device Id)
 =======
+=======
+>>>>>>> 9a9c071 (feat: creating Adjust instance if not present yet)
 			gQsA4YEPMcbzJoHD9VlrV0MmUD/c7zMwvHktWVrg9CI=
 =======
 			Hqa9DGEVX51ktUSotuj3uwk2tKK2EP1wNi/TtUO47uw=
 >>>>>>> 205cf3c (feat: moved Adjust to new target KovaleeAttribution)
+<<<<<<< HEAD
 >>>>>>> 63d03c6 (feat: moved Adjust to new target KovaleeAttribution)
+=======
+=======
+			9TvIHiAcmZUo++x/IvMs2vZ7n4z4sV48XdBcAo2czBU=
+>>>>>>> 7baef6c (feat: creating Adjust instance if not present yet)
+>>>>>>> 9a9c071 (feat: creating Adjust instance if not present yet)
 			</data>
 		</dict>
 		<key>Modules/KovaleeFramework.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
@@ -284,16 +377,25 @@
 			<data>
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 			9TvIHiAcmZUo++x/IvMs2vZ7n4z4sV48XdBcAo2czBU=
 =======
 			gQsA4YEPMcbzJoHD9VlrV0MmUD/c7zMwvHktWVrg9CI=
 >>>>>>> 69235d0 (feat: implemented functions to retrieve Adjust adid and Amplitude User and Device Id)
 =======
+=======
+>>>>>>> 9a9c071 (feat: creating Adjust instance if not present yet)
 			gQsA4YEPMcbzJoHD9VlrV0MmUD/c7zMwvHktWVrg9CI=
 =======
 			Hqa9DGEVX51ktUSotuj3uwk2tKK2EP1wNi/TtUO47uw=
 >>>>>>> 205cf3c (feat: moved Adjust to new target KovaleeAttribution)
+<<<<<<< HEAD
 >>>>>>> 63d03c6 (feat: moved Adjust to new target KovaleeAttribution)
+=======
+=======
+			9TvIHiAcmZUo++x/IvMs2vZ7n4z4sV48XdBcAo2czBU=
+>>>>>>> 7baef6c (feat: creating Adjust instance if not present yet)
+>>>>>>> 9a9c071 (feat: creating Adjust instance if not present yet)
 			</data>
 		</dict>
 		<key>Modules/KovaleeFramework.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
@@ -302,16 +404,25 @@
 			<data>
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 			XhOIkF9cNBGDKIHoGmeVPtI54+Ub6BJU9zcoQ2JvftI=
 =======
 			TrbKXFeP4LAzRHNDaBkroY4LoLBEd1uvGx7i3WD3/ks=
 >>>>>>> 69235d0 (feat: implemented functions to retrieve Adjust adid and Amplitude User and Device Id)
 =======
+=======
+>>>>>>> 9a9c071 (feat: creating Adjust instance if not present yet)
 			TrbKXFeP4LAzRHNDaBkroY4LoLBEd1uvGx7i3WD3/ks=
 =======
 			o/FZoPAvEiP0aeKtjucw1DHaM7JTUae8KutMuazYgH8=
 >>>>>>> 205cf3c (feat: moved Adjust to new target KovaleeAttribution)
+<<<<<<< HEAD
 >>>>>>> 63d03c6 (feat: moved Adjust to new target KovaleeAttribution)
+=======
+=======
+			XhOIkF9cNBGDKIHoGmeVPtI54+Ub6BJU9zcoQ2JvftI=
+>>>>>>> 7baef6c (feat: creating Adjust instance if not present yet)
+>>>>>>> 9a9c071 (feat: creating Adjust instance if not present yet)
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
