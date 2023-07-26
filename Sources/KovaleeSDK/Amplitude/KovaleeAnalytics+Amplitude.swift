@@ -74,4 +74,18 @@ extension Kovalee {
     public static func sendEvent(event: BasicEvent) {
         Self.sendEvent(Event(name: event.name, properties: event.properties))
     }
+
+	/// Retrieve the userId set in amplitude
+	///
+	/// - Returns: the user id set in amplitude
+	public static func getAmplitudeUserId() -> String? {
+		Self.shared.kovaleeManager?.amplitudeUserId()
+	}
+
+	/// Retrieve the deviceId set in amplitude
+	///
+	/// - Returns: the device id set in amplitude
+	public static func getAmplitudeDeviceId() -> String? {
+		Self.shared.kovaleeManager?.amplitudeDeviceId()
+	}
 }
