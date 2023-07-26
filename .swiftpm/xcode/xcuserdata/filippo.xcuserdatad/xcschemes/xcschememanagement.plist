@@ -111,6 +111,7 @@
 			<key>orderHint</key>
 			<integer>19</integer>
 		</dict>
+<<<<<<< HEAD
 		<key>Promises (Playground) 12.xcscheme</key>
 		<dict>
 <<<<<<< HEAD
@@ -146,6 +147,8 @@
 			<integer>22</integer>
 >>>>>>> 993b5fc (fix: fixed setUserIsPremium function)
 		</dict>
+=======
+>>>>>>> 3226eb0 (feat: restored KovaleeFramework)
 		<key>Promises (Playground) 2.xcscheme</key>
 		<dict>
 			<key>isShown</key>
