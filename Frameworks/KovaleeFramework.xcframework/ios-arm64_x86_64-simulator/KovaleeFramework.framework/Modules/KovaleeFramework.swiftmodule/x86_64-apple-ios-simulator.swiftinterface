@@ -31,8 +31,12 @@ public class KovaleeManager {
   public func setupRemoteConfigurationManager(firebaseWrapper: any KovaleeFramework.FirebaseWrapper)
 =======
   public func setupRemoteConfigurationManager(remoteConfigManager: any KovaleeFramework.RemoteConfigurationManager)
+<<<<<<< HEAD
 >>>>>>> 23e3970 (feat: moved Firebase code to specific target KovaleeRemoteConfig)
   public func setupAdsManager(applovinWrapper: any KovaleeFramework.ApplovinWrapper)
+=======
+  public func setupAdsManager(adsManager: any KovaleeFramework.AdsManager)
+>>>>>>> 3d93e0d (feat: moved Ads code to KovaleeAds)
   public func promptTrackingAuthorization(completion: @escaping (AppTrackingTransparency.ATTrackingManager.AuthorizationStatus) -> Swift.Void)
   public func getAttributionAdid() -> Swift.String?
   public func attributionCallback(withAdid adid: Swift.String?)
@@ -64,8 +68,12 @@ public class KovaleeManager {
   public var firebase: (any KovaleeFramework.FirebaseWrapper)?
 =======
   public var remoteConfigManager: (any KovaleeFramework.RemoteConfigurationManager)?
+<<<<<<< HEAD
 >>>>>>> 23e3970 (feat: moved Firebase code to specific target KovaleeRemoteConfig)
   public var applovin: (any KovaleeFramework.ApplovinWrapper)?
+=======
+  public var adsManager: (any KovaleeFramework.AdsManager)?
+>>>>>>> 3d93e0d (feat: moved Ads code to KovaleeAds)
   @objc deinit
 }
 extension KovaleeFramework.KovaleeManager {
@@ -320,7 +328,7 @@ public protocol AbstractPackage {
   var rcPackage: Any { get }
   func getDuration() -> Swift.Int
 }
-public protocol ApplovinWrapper {
+public protocol AdsManager {
   func showMediationDebugger()
   #if compiler(>=5.3) && $AsyncAwait
   func setupfbAdProcessingOptions(options: any KovaleeFramework.AbstractFBAdProcessingOptions) async

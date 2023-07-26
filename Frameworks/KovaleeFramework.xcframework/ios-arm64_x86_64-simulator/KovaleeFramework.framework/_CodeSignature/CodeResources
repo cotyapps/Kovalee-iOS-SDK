@@ -23,6 +23,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 		7JOkoCRnjHn/j/WzxwP6pjGov7w=
 		</data>
 		<key>Modules/KovaleeFramework.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
@@ -37,6 +38,8 @@
 >>>>>>> 3ed8e2a (feat: moved Purchases code to KovaleePurchases Target)
 =======
 >>>>>>> 23e3970 (feat: moved Firebase code to specific target KovaleeRemoteConfig)
+=======
+>>>>>>> 3d93e0d (feat: moved Ads code to KovaleeAds)
 		7K2Nw9Ga7ee+624v8BM3zH8+WIo=
 		</data>
 		<key>Modules/KovaleeFramework.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
@@ -82,7 +85,17 @@
 		<data>
 		vRVi+HwSHUv1XD0jMqhw087xZjk=
 >>>>>>> 8c8d3f3 (feat: moved Firebase code to specific target KovaleeRemoteConfig)
+<<<<<<< HEAD
 >>>>>>> 23e3970 (feat: moved Firebase code to specific target KovaleeRemoteConfig)
+=======
+=======
+		I0z+hSRIaNwIQe9tZ86tOBnjw0o=
+		</data>
+		<key>Modules/KovaleeFramework.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
+		<data>
+		II8ERaZLDX6pDySdoRaIDGrl4yM=
+>>>>>>> ab23b2e (feat: moved Ads code to KovaleeAds)
+>>>>>>> 3d93e0d (feat: moved Ads code to KovaleeAds)
 		</data>
 		<key>Modules/KovaleeFramework.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -90,6 +103,7 @@
 		</data>
 		<key>Modules/KovaleeFramework.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -117,6 +131,8 @@
 >>>>>>> 3ed8e2a (feat: moved Purchases code to KovaleePurchases Target)
 =======
 >>>>>>> 23e3970 (feat: moved Firebase code to specific target KovaleeRemoteConfig)
+=======
+>>>>>>> 3d93e0d (feat: moved Ads code to KovaleeAds)
 		ldOhJp1bL75+GhcjnZy5sfLqEPQ=
 		</data>
 		<key>Modules/KovaleeFramework.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
@@ -144,17 +160,21 @@
 =======
 		vRVi+HwSHUv1XD0jMqhw087xZjk=
 >>>>>>> 8c8d3f3 (feat: moved Firebase code to specific target KovaleeRemoteConfig)
+=======
+		II8ERaZLDX6pDySdoRaIDGrl4yM=
+>>>>>>> ab23b2e (feat: moved Ads code to KovaleeAds)
 		</data>
 		<key>Modules/KovaleeFramework.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		VhqLgsZ6vH/Am5lPyTFguE1ds04=
+		D3FuSw24Y5+uTHeNhspNpsey0u8=
 		</data>
 		<key>Modules/KovaleeFramework.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		rdNkMRayJRgrGwcwXneJMrpDqS4=
+		I0z+hSRIaNwIQe9tZ86tOBnjw0o=
 		</data>
 		<key>Modules/KovaleeFramework.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -178,7 +198,13 @@
 =======
 		8NeL8IDu4m9XYxEbyw5lzjgsEXU=
 >>>>>>> 8c8d3f3 (feat: moved Firebase code to specific target KovaleeRemoteConfig)
+<<<<<<< HEAD
 >>>>>>> 23e3970 (feat: moved Firebase code to specific target KovaleeRemoteConfig)
+=======
+=======
+		ni5+WGP/pl7WV8Dui4EniGBU2S8=
+>>>>>>> ab23b2e (feat: moved Ads code to KovaleeAds)
+>>>>>>> 3d93e0d (feat: moved Ads code to KovaleeAds)
 		</data>
 		<key>Modules/KovaleeFramework.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -186,6 +212,7 @@
 		</data>
 		<key>Modules/KovaleeFramework.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -205,6 +232,8 @@
 >>>>>>> 3ed8e2a (feat: moved Purchases code to KovaleePurchases Target)
 =======
 >>>>>>> 23e3970 (feat: moved Firebase code to specific target KovaleeRemoteConfig)
+=======
+>>>>>>> 3d93e0d (feat: moved Ads code to KovaleeAds)
 		wwgIuYGFM5wpvgAmj6U6UDR6qSo=
 		</data>
 		<key>Modules/KovaleeFramework.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
@@ -250,7 +279,17 @@
 		<data>
 		CXdUbO3x03r9ff5nlkAOwT+T/bE=
 >>>>>>> 8c8d3f3 (feat: moved Firebase code to specific target KovaleeRemoteConfig)
+<<<<<<< HEAD
 >>>>>>> 23e3970 (feat: moved Firebase code to specific target KovaleeRemoteConfig)
+=======
+=======
+		ni5+WGP/pl7WV8Dui4EniGBU2S8=
+		</data>
+		<key>Modules/KovaleeFramework.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
+		<data>
+		qj6WYErzXmQT1r6L7tQzlLCgG/Y=
+>>>>>>> ab23b2e (feat: moved Ads code to KovaleeAds)
+>>>>>>> 3d93e0d (feat: moved Ads code to KovaleeAds)
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -282,6 +321,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 			43i91dZO4o5j66iPIbZ0I0/+Lv0oiM/5E9XzB/2S/2c=
 =======
 			BCAviTh+pCEtY6FKTYjXErboKfiVjLIsqGCGv6kCQuw=
@@ -293,6 +333,8 @@
 >>>>>>> 3ed8e2a (feat: moved Purchases code to KovaleePurchases Target)
 =======
 >>>>>>> 23e3970 (feat: moved Firebase code to specific target KovaleeRemoteConfig)
+=======
+>>>>>>> 3d93e0d (feat: moved Ads code to KovaleeAds)
 			BCAviTh+pCEtY6FKTYjXErboKfiVjLIsqGCGv6kCQuw=
 =======
 			YNxy6bG26AXh81GANqWa8oql37Mfo0tP3ZKMOyt/F3c=
@@ -315,13 +357,20 @@
 =======
 			JGY1qLs9xBo44Csa/01ktikeDfqdAghLySUNf0vCY3g=
 >>>>>>> 8c8d3f3 (feat: moved Firebase code to specific target KovaleeRemoteConfig)
+<<<<<<< HEAD
 >>>>>>> 23e3970 (feat: moved Firebase code to specific target KovaleeRemoteConfig)
+=======
+=======
+			/aftgJ9cDkoD4G6ePPg7NZX2nNz2IruDJCuixOOmM9Q=
+>>>>>>> ab23b2e (feat: moved Ads code to KovaleeAds)
+>>>>>>> 3d93e0d (feat: moved Ads code to KovaleeAds)
 			</data>
 		</dict>
 		<key>Modules/KovaleeFramework.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -338,6 +387,8 @@
 >>>>>>> 3ed8e2a (feat: moved Purchases code to KovaleePurchases Target)
 =======
 >>>>>>> 23e3970 (feat: moved Firebase code to specific target KovaleeRemoteConfig)
+=======
+>>>>>>> 3d93e0d (feat: moved Ads code to KovaleeAds)
 			yZJ57FyTE7NdKpz6ovLNGrUTMgUCJBOJsanB34gap3Q=
 =======
 			W7V5Kc6Ec0A4uOiP+yyqCFXYNm4Fa1HpZekLAPtRsv4=
@@ -360,7 +411,13 @@
 =======
 			LHnuMkWn3+dajmEHr0lT0iWMC2bE57R3JZr2dG8wrFc=
 >>>>>>> 8c8d3f3 (feat: moved Firebase code to specific target KovaleeRemoteConfig)
+<<<<<<< HEAD
 >>>>>>> 23e3970 (feat: moved Firebase code to specific target KovaleeRemoteConfig)
+=======
+=======
+			5BxD90e63MtJuHAuvxZYuwagx+NP21vvaNytBbmKcAw=
+>>>>>>> ab23b2e (feat: moved Ads code to KovaleeAds)
+>>>>>>> 3d93e0d (feat: moved Ads code to KovaleeAds)
 			</data>
 		</dict>
 		<key>Modules/KovaleeFramework.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
@@ -379,6 +436,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 			mOP5sR+dqdas4/kTgkrCeykZt/uRYAtub0+MOJxTgN4=
 =======
 			yZJ57FyTE7NdKpz6ovLNGrUTMgUCJBOJsanB34gap3Q=
@@ -390,6 +448,8 @@
 >>>>>>> 3ed8e2a (feat: moved Purchases code to KovaleePurchases Target)
 =======
 >>>>>>> 23e3970 (feat: moved Firebase code to specific target KovaleeRemoteConfig)
+=======
+>>>>>>> 3d93e0d (feat: moved Ads code to KovaleeAds)
 			yZJ57FyTE7NdKpz6ovLNGrUTMgUCJBOJsanB34gap3Q=
 =======
 			W7V5Kc6Ec0A4uOiP+yyqCFXYNm4Fa1HpZekLAPtRsv4=
@@ -412,13 +472,20 @@
 =======
 			LHnuMkWn3+dajmEHr0lT0iWMC2bE57R3JZr2dG8wrFc=
 >>>>>>> 8c8d3f3 (feat: moved Firebase code to specific target KovaleeRemoteConfig)
+<<<<<<< HEAD
 >>>>>>> 23e3970 (feat: moved Firebase code to specific target KovaleeRemoteConfig)
+=======
+=======
+			5BxD90e63MtJuHAuvxZYuwagx+NP21vvaNytBbmKcAw=
+>>>>>>> ab23b2e (feat: moved Ads code to KovaleeAds)
+>>>>>>> 3d93e0d (feat: moved Ads code to KovaleeAds)
 			</data>
 		</dict>
 		<key>Modules/KovaleeFramework.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -435,6 +502,8 @@
 >>>>>>> 3ed8e2a (feat: moved Purchases code to KovaleePurchases Target)
 =======
 >>>>>>> 23e3970 (feat: moved Firebase code to specific target KovaleeRemoteConfig)
+=======
+>>>>>>> 3d93e0d (feat: moved Ads code to KovaleeAds)
 			NROE2gWOO9GRX3PyyEk5GSYo7Efs1xSNVW63UDBJHf8=
 =======
 			ZXQDT954fw/lwe/jHVV8KXhhI7m/Y2a3e/3dDNvYpKE=
@@ -457,13 +526,20 @@
 =======
 			8hGl9/gEWFeSZh5tPI5/N+u6WBt6/jyWHtrTbmzHEig=
 >>>>>>> 8c8d3f3 (feat: moved Firebase code to specific target KovaleeRemoteConfig)
+<<<<<<< HEAD
 >>>>>>> 23e3970 (feat: moved Firebase code to specific target KovaleeRemoteConfig)
+=======
+=======
+			2wPOLaZUXIRZA8WjUlEo7bNLQGYiIehzsgSeq++rdv4=
+>>>>>>> ab23b2e (feat: moved Ads code to KovaleeAds)
+>>>>>>> 3d93e0d (feat: moved Ads code to KovaleeAds)
 			</data>
 		</dict>
 		<key>Modules/KovaleeFramework.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -480,6 +556,8 @@
 >>>>>>> 3ed8e2a (feat: moved Purchases code to KovaleePurchases Target)
 =======
 >>>>>>> 23e3970 (feat: moved Firebase code to specific target KovaleeRemoteConfig)
+=======
+>>>>>>> 3d93e0d (feat: moved Ads code to KovaleeAds)
 			BCAviTh+pCEtY6FKTYjXErboKfiVjLIsqGCGv6kCQuw=
 =======
 			YNxy6bG26AXh81GANqWa8oql37Mfo0tP3ZKMOyt/F3c=
@@ -502,13 +580,20 @@
 =======
 			JGY1qLs9xBo44Csa/01ktikeDfqdAghLySUNf0vCY3g=
 >>>>>>> 8c8d3f3 (feat: moved Firebase code to specific target KovaleeRemoteConfig)
+<<<<<<< HEAD
 >>>>>>> 23e3970 (feat: moved Firebase code to specific target KovaleeRemoteConfig)
+=======
+=======
+			/aftgJ9cDkoD4G6ePPg7NZX2nNz2IruDJCuixOOmM9Q=
+>>>>>>> ab23b2e (feat: moved Ads code to KovaleeAds)
+>>>>>>> 3d93e0d (feat: moved Ads code to KovaleeAds)
 			</data>
 		</dict>
 		<key>Modules/KovaleeFramework.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -525,6 +610,8 @@
 >>>>>>> 3ed8e2a (feat: moved Purchases code to KovaleePurchases Target)
 =======
 >>>>>>> 23e3970 (feat: moved Firebase code to specific target KovaleeRemoteConfig)
+=======
+>>>>>>> 3d93e0d (feat: moved Ads code to KovaleeAds)
 			gQsA4YEPMcbzJoHD9VlrV0MmUD/c7zMwvHktWVrg9CI=
 =======
 			Hqa9DGEVX51ktUSotuj3uwk2tKK2EP1wNi/TtUO47uw=
@@ -547,7 +634,13 @@
 =======
 			kCXljj0PMg2BYmjX2djRImLoFVOMQxaDgYuxlBOQczo=
 >>>>>>> 8c8d3f3 (feat: moved Firebase code to specific target KovaleeRemoteConfig)
+<<<<<<< HEAD
 >>>>>>> 23e3970 (feat: moved Firebase code to specific target KovaleeRemoteConfig)
+=======
+=======
+			oMOctg2K08oJUvqsp4EyLl0J340mr1rdiygVYtSjwt0=
+>>>>>>> ab23b2e (feat: moved Ads code to KovaleeAds)
+>>>>>>> 3d93e0d (feat: moved Ads code to KovaleeAds)
 			</data>
 		</dict>
 		<key>Modules/KovaleeFramework.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
@@ -566,6 +659,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 			9TvIHiAcmZUo++x/IvMs2vZ7n4z4sV48XdBcAo2czBU=
 =======
 			gQsA4YEPMcbzJoHD9VlrV0MmUD/c7zMwvHktWVrg9CI=
@@ -577,6 +671,8 @@
 >>>>>>> 3ed8e2a (feat: moved Purchases code to KovaleePurchases Target)
 =======
 >>>>>>> 23e3970 (feat: moved Firebase code to specific target KovaleeRemoteConfig)
+=======
+>>>>>>> 3d93e0d (feat: moved Ads code to KovaleeAds)
 			gQsA4YEPMcbzJoHD9VlrV0MmUD/c7zMwvHktWVrg9CI=
 =======
 			Hqa9DGEVX51ktUSotuj3uwk2tKK2EP1wNi/TtUO47uw=
@@ -599,13 +695,20 @@
 =======
 			kCXljj0PMg2BYmjX2djRImLoFVOMQxaDgYuxlBOQczo=
 >>>>>>> 8c8d3f3 (feat: moved Firebase code to specific target KovaleeRemoteConfig)
+<<<<<<< HEAD
 >>>>>>> 23e3970 (feat: moved Firebase code to specific target KovaleeRemoteConfig)
+=======
+=======
+			oMOctg2K08oJUvqsp4EyLl0J340mr1rdiygVYtSjwt0=
+>>>>>>> ab23b2e (feat: moved Ads code to KovaleeAds)
+>>>>>>> 3d93e0d (feat: moved Ads code to KovaleeAds)
 			</data>
 		</dict>
 		<key>Modules/KovaleeFramework.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -622,6 +725,8 @@
 >>>>>>> 3ed8e2a (feat: moved Purchases code to KovaleePurchases Target)
 =======
 >>>>>>> 23e3970 (feat: moved Firebase code to specific target KovaleeRemoteConfig)
+=======
+>>>>>>> 3d93e0d (feat: moved Ads code to KovaleeAds)
 			TrbKXFeP4LAzRHNDaBkroY4LoLBEd1uvGx7i3WD3/ks=
 =======
 			o/FZoPAvEiP0aeKtjucw1DHaM7JTUae8KutMuazYgH8=
@@ -644,7 +749,13 @@
 =======
 			i92t0WPKEpPrA1J1jgHVnxmbVS3nt3pPdOdj9gEoyZM=
 >>>>>>> 8c8d3f3 (feat: moved Firebase code to specific target KovaleeRemoteConfig)
+<<<<<<< HEAD
 >>>>>>> 23e3970 (feat: moved Firebase code to specific target KovaleeRemoteConfig)
+=======
+=======
+			5Lmltklw+21nVMrO1rT/djMFEJZqg9Nu95VyYdZLI2I=
+>>>>>>> ab23b2e (feat: moved Ads code to KovaleeAds)
+>>>>>>> 3d93e0d (feat: moved Ads code to KovaleeAds)
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

@@ -196,7 +196,7 @@
           {
             "kind": "Function",
             "name": "setupAdsManager",
-            "printedName": "setupAdsManager(applovinWrapper:)",
+            "printedName": "setupAdsManager(adsManager:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -205,14 +205,14 @@
               },
               {
                 "kind": "TypeNominal",
-                "name": "ApplovinWrapper",
-                "printedName": "KovaleeFramework.ApplovinWrapper",
-                "usr": "s:16KovaleeFramework15ApplovinWrapperP"
+                "name": "AdsManager",
+                "printedName": "KovaleeFramework.AdsManager",
+                "usr": "s:16KovaleeFramework10AdsManagerP"
               }
             ],
             "declKind": "Func",
-            "usr": "s:16KovaleeFramework0A7ManagerC08setupAdsC015applovinWrapperyAA08ApplovinG0_p_tF",
-            "mangledName": "$s16KovaleeFramework0A7ManagerC08setupAdsC015applovinWrapperyAA08ApplovinG0_p_tF",
+            "usr": "s:16KovaleeFramework0A7ManagerC08setupAdsC003adsC0yAA0eC0_p_tF",
+            "mangledName": "$s16KovaleeFramework0A7ManagerC08setupAdsC003adsC0yAA0eC0_p_tF",
             "moduleName": "KovaleeFramework",
             "declAttributes": [
               "AccessControl"
@@ -1190,27 +1190,27 @@
           },
           {
             "kind": "Var",
-            "name": "applovin",
-            "printedName": "applovin",
+            "name": "adsManager",
+            "printedName": "adsManager",
             "children": [
               {
                 "kind": "TypeNominal",
                 "name": "Optional",
-                "printedName": "KovaleeFramework.ApplovinWrapper?",
+                "printedName": "KovaleeFramework.AdsManager?",
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "ApplovinWrapper",
-                    "printedName": "KovaleeFramework.ApplovinWrapper",
-                    "usr": "s:16KovaleeFramework15ApplovinWrapperP"
+                    "name": "AdsManager",
+                    "printedName": "KovaleeFramework.AdsManager",
+                    "usr": "s:16KovaleeFramework10AdsManagerP"
                   }
                 ],
                 "usr": "s:Sq"
               }
             ],
             "declKind": "Var",
-            "usr": "s:16KovaleeFramework0A7ManagerC8applovinAA15ApplovinWrapper_pSgvp",
-            "mangledName": "$s16KovaleeFramework0A7ManagerC8applovinAA15ApplovinWrapper_pSgvp",
+            "usr": "s:16KovaleeFramework0A7ManagerC03adsC0AA03AdsC0_pSgvp",
+            "mangledName": "$s16KovaleeFramework0A7ManagerC03adsC0AA03AdsC0_pSgvp",
             "moduleName": "KovaleeFramework",
             "declAttributes": [
               "HasInitialValue",
@@ -1227,21 +1227,21 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Optional",
-                    "printedName": "KovaleeFramework.ApplovinWrapper?",
+                    "printedName": "KovaleeFramework.AdsManager?",
                     "children": [
                       {
                         "kind": "TypeNominal",
-                        "name": "ApplovinWrapper",
-                        "printedName": "KovaleeFramework.ApplovinWrapper",
-                        "usr": "s:16KovaleeFramework15ApplovinWrapperP"
+                        "name": "AdsManager",
+                        "printedName": "KovaleeFramework.AdsManager",
+                        "usr": "s:16KovaleeFramework10AdsManagerP"
                       }
                     ],
                     "usr": "s:Sq"
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:16KovaleeFramework0A7ManagerC8applovinAA15ApplovinWrapper_pSgvg",
-                "mangledName": "$s16KovaleeFramework0A7ManagerC8applovinAA15ApplovinWrapper_pSgvg",
+                "usr": "s:16KovaleeFramework0A7ManagerC03adsC0AA03AdsC0_pSgvg",
+                "mangledName": "$s16KovaleeFramework0A7ManagerC03adsC0AA03AdsC0_pSgvg",
                 "moduleName": "KovaleeFramework",
                 "implicit": true,
                 "accessorKind": "get"
@@ -1259,21 +1259,21 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Optional",
-                    "printedName": "KovaleeFramework.ApplovinWrapper?",
+                    "printedName": "KovaleeFramework.AdsManager?",
                     "children": [
                       {
                         "kind": "TypeNominal",
-                        "name": "ApplovinWrapper",
-                        "printedName": "KovaleeFramework.ApplovinWrapper",
-                        "usr": "s:16KovaleeFramework15ApplovinWrapperP"
+                        "name": "AdsManager",
+                        "printedName": "KovaleeFramework.AdsManager",
+                        "usr": "s:16KovaleeFramework10AdsManagerP"
                       }
                     ],
                     "usr": "s:Sq"
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:16KovaleeFramework0A7ManagerC8applovinAA15ApplovinWrapper_pSgvs",
-                "mangledName": "$s16KovaleeFramework0A7ManagerC8applovinAA15ApplovinWrapper_pSgvs",
+                "usr": "s:16KovaleeFramework0A7ManagerC03adsC0AA03AdsC0_pSgvs",
+                "mangledName": "$s16KovaleeFramework0A7ManagerC03adsC0AA03AdsC0_pSgvs",
                 "moduleName": "KovaleeFramework",
                 "implicit": true,
                 "accessorKind": "set"
@@ -1290,8 +1290,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:16KovaleeFramework0A7ManagerC8applovinAA15ApplovinWrapper_pSgvM",
-                "mangledName": "$s16KovaleeFramework0A7ManagerC8applovinAA15ApplovinWrapper_pSgvM",
+                "usr": "s:16KovaleeFramework0A7ManagerC03adsC0AA03AdsC0_pSgvM",
+                "mangledName": "$s16KovaleeFramework0A7ManagerC03adsC0AA03AdsC0_pSgvM",
                 "moduleName": "KovaleeFramework",
                 "implicit": true,
                 "accessorKind": "_modify"
@@ -8168,8 +8168,8 @@
       },
       {
         "kind": "TypeDecl",
-        "name": "ApplovinWrapper",
-        "printedName": "ApplovinWrapper",
+        "name": "AdsManager",
+        "printedName": "AdsManager",
         "children": [
           {
             "kind": "Function",
@@ -8183,11 +8183,11 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:16KovaleeFramework15ApplovinWrapperP21showMediationDebuggeryyF",
-            "mangledName": "$s16KovaleeFramework15ApplovinWrapperP21showMediationDebuggeryyF",
+            "usr": "s:16KovaleeFramework10AdsManagerP21showMediationDebuggeryyF",
+            "mangledName": "$s16KovaleeFramework10AdsManagerP21showMediationDebuggeryyF",
             "moduleName": "KovaleeFramework",
-            "genericSig": "<τ_0_0 where τ_0_0 : KovaleeFramework.ApplovinWrapper>",
-            "sugared_genericSig": "<Self where Self : KovaleeFramework.ApplovinWrapper>",
+            "genericSig": "<τ_0_0 where τ_0_0 : KovaleeFramework.AdsManager>",
+            "sugared_genericSig": "<Self where Self : KovaleeFramework.AdsManager>",
             "protocolReq": true,
             "reqNewWitnessTableEntry": true,
             "funcSelfKind": "NonMutating"
@@ -8210,11 +8210,11 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:16KovaleeFramework15ApplovinWrapperP26setupfbAdProcessingOptions7optionsyAA012AbstractFBAdgH0_p_tYaF",
-            "mangledName": "$s16KovaleeFramework15ApplovinWrapperP26setupfbAdProcessingOptions7optionsyAA012AbstractFBAdgH0_p_tYaF",
+            "usr": "s:16KovaleeFramework10AdsManagerP26setupfbAdProcessingOptions7optionsyAA012AbstractFBAdgH0_p_tYaF",
+            "mangledName": "$s16KovaleeFramework10AdsManagerP26setupfbAdProcessingOptions7optionsyAA012AbstractFBAdgH0_p_tYaF",
             "moduleName": "KovaleeFramework",
-            "genericSig": "<τ_0_0 where τ_0_0 : KovaleeFramework.ApplovinWrapper>",
-            "sugared_genericSig": "<Self where Self : KovaleeFramework.ApplovinWrapper>",
+            "genericSig": "<τ_0_0 where τ_0_0 : KovaleeFramework.AdsManager>",
+            "sugared_genericSig": "<Self where Self : KovaleeFramework.AdsManager>",
             "protocolReq": true,
             "reqNewWitnessTableEntry": true,
             "funcSelfKind": "NonMutating"
@@ -8232,11 +8232,11 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:16KovaleeFramework15ApplovinWrapperP20createInterstitialAdSbyYaKF",
-            "mangledName": "$s16KovaleeFramework15ApplovinWrapperP20createInterstitialAdSbyYaKF",
+            "usr": "s:16KovaleeFramework10AdsManagerP20createInterstitialAdSbyYaKF",
+            "mangledName": "$s16KovaleeFramework10AdsManagerP20createInterstitialAdSbyYaKF",
             "moduleName": "KovaleeFramework",
-            "genericSig": "<τ_0_0 where τ_0_0 : KovaleeFramework.ApplovinWrapper>",
-            "sugared_genericSig": "<Self where Self : KovaleeFramework.ApplovinWrapper>",
+            "genericSig": "<τ_0_0 where τ_0_0 : KovaleeFramework.AdsManager>",
+            "sugared_genericSig": "<Self where Self : KovaleeFramework.AdsManager>",
             "protocolReq": true,
             "throwing": true,
             "reqNewWitnessTableEntry": true,
@@ -8255,11 +8255,11 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:16KovaleeFramework15ApplovinWrapperP18showInterstitialAdSbyYaKF",
-            "mangledName": "$s16KovaleeFramework15ApplovinWrapperP18showInterstitialAdSbyYaKF",
+            "usr": "s:16KovaleeFramework10AdsManagerP18showInterstitialAdSbyYaKF",
+            "mangledName": "$s16KovaleeFramework10AdsManagerP18showInterstitialAdSbyYaKF",
             "moduleName": "KovaleeFramework",
-            "genericSig": "<τ_0_0 where τ_0_0 : KovaleeFramework.ApplovinWrapper>",
-            "sugared_genericSig": "<Self where Self : KovaleeFramework.ApplovinWrapper>",
+            "genericSig": "<τ_0_0 where τ_0_0 : KovaleeFramework.AdsManager>",
+            "sugared_genericSig": "<Self where Self : KovaleeFramework.AdsManager>",
             "protocolReq": true,
             "throwing": true,
             "reqNewWitnessTableEntry": true,
@@ -8278,11 +8278,11 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:16KovaleeFramework15ApplovinWrapperP16createRewardedAdSbyYaKF",
-            "mangledName": "$s16KovaleeFramework15ApplovinWrapperP16createRewardedAdSbyYaKF",
+            "usr": "s:16KovaleeFramework10AdsManagerP16createRewardedAdSbyYaKF",
+            "mangledName": "$s16KovaleeFramework10AdsManagerP16createRewardedAdSbyYaKF",
             "moduleName": "KovaleeFramework",
-            "genericSig": "<τ_0_0 where τ_0_0 : KovaleeFramework.ApplovinWrapper>",
-            "sugared_genericSig": "<Self where Self : KovaleeFramework.ApplovinWrapper>",
+            "genericSig": "<τ_0_0 where τ_0_0 : KovaleeFramework.AdsManager>",
+            "sugared_genericSig": "<Self where Self : KovaleeFramework.AdsManager>",
             "protocolReq": true,
             "throwing": true,
             "reqNewWitnessTableEntry": true,
@@ -8301,11 +8301,11 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:16KovaleeFramework15ApplovinWrapperP14showRewardedAdSbyYaKF",
-            "mangledName": "$s16KovaleeFramework15ApplovinWrapperP14showRewardedAdSbyYaKF",
+            "usr": "s:16KovaleeFramework10AdsManagerP14showRewardedAdSbyYaKF",
+            "mangledName": "$s16KovaleeFramework10AdsManagerP14showRewardedAdSbyYaKF",
             "moduleName": "KovaleeFramework",
-            "genericSig": "<τ_0_0 where τ_0_0 : KovaleeFramework.ApplovinWrapper>",
-            "sugared_genericSig": "<Self where Self : KovaleeFramework.ApplovinWrapper>",
+            "genericSig": "<τ_0_0 where τ_0_0 : KovaleeFramework.AdsManager>",
+            "sugared_genericSig": "<Self where Self : KovaleeFramework.AdsManager>",
             "protocolReq": true,
             "throwing": true,
             "reqNewWitnessTableEntry": true,
@@ -8313,8 +8313,8 @@
           }
         ],
         "declKind": "Protocol",
-        "usr": "s:16KovaleeFramework15ApplovinWrapperP",
-        "mangledName": "$s16KovaleeFramework15ApplovinWrapperP",
+        "usr": "s:16KovaleeFramework10AdsManagerP",
+        "mangledName": "$s16KovaleeFramework10AdsManagerP",
         "moduleName": "KovaleeFramework",
         "declAttributes": [
           "AccessControl"
@@ -12146,6 +12146,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
       "offset": 1539,
 =======
       "offset": 2059,
@@ -12159,12 +12160,16 @@
 =======
       "offset": 1738,
 >>>>>>> 23e3970 (feat: moved Firebase code to specific target KovaleeRemoteConfig)
+=======
+      "offset": 1725,
+>>>>>>> 3d93e0d (feat: moved Ads code to KovaleeAds)
       "length": 68,
       "value": "\"An error occurred during completion: \""
     },
     {
       "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
       "kind": "StringLiteral",
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -12182,12 +12187,16 @@
 =======
       "offset": 1805,
 >>>>>>> 23e3970 (feat: moved Firebase code to specific target KovaleeRemoteConfig)
+=======
+      "offset": 1792,
+>>>>>>> 3d93e0d (feat: moved Ads code to KovaleeAds)
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
       "kind": "StringLiteral",
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -12205,12 +12214,16 @@
 =======
       "offset": 2127,
 >>>>>>> 23e3970 (feat: moved Firebase code to specific target KovaleeRemoteConfig)
+=======
+      "offset": 2114,
+>>>>>>> 3d93e0d (feat: moved Ads code to KovaleeAds)
       "length": 35,
       "value": "\"Sending ConversionValue: \""
     },
     {
       "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
       "kind": "StringLiteral",
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -12228,12 +12241,16 @@
 =======
       "offset": 2161,
 >>>>>>> 23e3970 (feat: moved Firebase code to specific target KovaleeRemoteConfig)
+=======
+      "offset": 2148,
+>>>>>>> 3d93e0d (feat: moved Ads code to KovaleeAds)
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
       "kind": "StringLiteral",
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -12251,12 +12268,16 @@
 =======
       "offset": 2789,
 >>>>>>> 23e3970 (feat: moved Firebase code to specific target KovaleeRemoteConfig)
+=======
+      "offset": 2776,
+>>>>>>> 3d93e0d (feat: moved Ads code to KovaleeAds)
       "length": 21,
       "value": "\"Setting attribution\""
     },
     {
       "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
       "kind": "StringLiteral",
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -12273,6 +12294,8 @@
 >>>>>>> 3ed8e2a (feat: moved Purchases code to KovaleePurchases Target)
 =======
 >>>>>>> 23e3970 (feat: moved Firebase code to specific target KovaleeRemoteConfig)
+=======
+>>>>>>> 3d93e0d (feat: moved Ads code to KovaleeAds)
       "offset": 3586,
 =======
       "offset": 4246,
@@ -12295,13 +12318,20 @@
 =======
       "offset": 4137,
 >>>>>>> 8c8d3f3 (feat: moved Firebase code to specific target KovaleeRemoteConfig)
+<<<<<<< HEAD
 >>>>>>> 23e3970 (feat: moved Firebase code to specific target KovaleeRemoteConfig)
+=======
+=======
+      "offset": 4124,
+>>>>>>> ab23b2e (feat: moved Ads code to KovaleeAds)
+>>>>>>> 3d93e0d (feat: moved Ads code to KovaleeAds)
       "length": 5,
       "value": "\"yes\""
     },
     {
       "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
       "kind": "BooleanLiteral",
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -12318,6 +12348,8 @@
 >>>>>>> 3ed8e2a (feat: moved Purchases code to KovaleePurchases Target)
 =======
 >>>>>>> 23e3970 (feat: moved Firebase code to specific target KovaleeRemoteConfig)
+=======
+>>>>>>> 3d93e0d (feat: moved Ads code to KovaleeAds)
       "offset": 3594,
 =======
       "offset": 4254,
@@ -12340,13 +12372,20 @@
 =======
       "offset": 4145,
 >>>>>>> 8c8d3f3 (feat: moved Firebase code to specific target KovaleeRemoteConfig)
+<<<<<<< HEAD
 >>>>>>> 23e3970 (feat: moved Firebase code to specific target KovaleeRemoteConfig)
+=======
+=======
+      "offset": 4132,
+>>>>>>> ab23b2e (feat: moved Ads code to KovaleeAds)
+>>>>>>> 3d93e0d (feat: moved Ads code to KovaleeAds)
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
       "kind": "BooleanLiteral",
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -12363,6 +12402,8 @@
 >>>>>>> 3ed8e2a (feat: moved Purchases code to KovaleePurchases Target)
 =======
 >>>>>>> 23e3970 (feat: moved Firebase code to specific target KovaleeRemoteConfig)
+=======
+>>>>>>> 3d93e0d (feat: moved Ads code to KovaleeAds)
       "offset": 3601,
 =======
       "offset": 4261,
@@ -12385,13 +12426,20 @@
 =======
       "offset": 4152,
 >>>>>>> 8c8d3f3 (feat: moved Firebase code to specific target KovaleeRemoteConfig)
+<<<<<<< HEAD
 >>>>>>> 23e3970 (feat: moved Firebase code to specific target KovaleeRemoteConfig)
+=======
+=======
+      "offset": 4139,
+>>>>>>> ab23b2e (feat: moved Ads code to KovaleeAds)
+>>>>>>> 3d93e0d (feat: moved Ads code to KovaleeAds)
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
       "kind": "BooleanLiteral",
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -12408,6 +12456,8 @@
 >>>>>>> 3ed8e2a (feat: moved Purchases code to KovaleePurchases Target)
 =======
 >>>>>>> 23e3970 (feat: moved Firebase code to specific target KovaleeRemoteConfig)
+=======
+>>>>>>> 3d93e0d (feat: moved Ads code to KovaleeAds)
       "offset": 3800,
 =======
       "offset": 4460,
@@ -12430,13 +12480,20 @@
 =======
       "offset": 4351,
 >>>>>>> 8c8d3f3 (feat: moved Firebase code to specific target KovaleeRemoteConfig)
+<<<<<<< HEAD
 >>>>>>> 23e3970 (feat: moved Firebase code to specific target KovaleeRemoteConfig)
+=======
+=======
+      "offset": 4338,
+>>>>>>> ab23b2e (feat: moved Ads code to KovaleeAds)
+>>>>>>> 3d93e0d (feat: moved Ads code to KovaleeAds)
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
       "kind": "StringLiteral",
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -12453,6 +12510,8 @@
 >>>>>>> 3ed8e2a (feat: moved Purchases code to KovaleePurchases Target)
 =======
 >>>>>>> 23e3970 (feat: moved Firebase code to specific target KovaleeRemoteConfig)
+=======
+>>>>>>> 3d93e0d (feat: moved Ads code to KovaleeAds)
       "offset": 3998,
 =======
       "offset": 4658,
@@ -12475,13 +12534,20 @@
 =======
       "offset": 4559,
 >>>>>>> 8c8d3f3 (feat: moved Firebase code to specific target KovaleeRemoteConfig)
+<<<<<<< HEAD
 >>>>>>> 23e3970 (feat: moved Firebase code to specific target KovaleeRemoteConfig)
+=======
+=======
+      "offset": 4546,
+>>>>>>> ab23b2e (feat: moved Ads code to KovaleeAds)
+>>>>>>> 3d93e0d (feat: moved Ads code to KovaleeAds)
       "length": 4,
       "value": "\"no\""
     },
     {
       "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
       "kind": "BooleanLiteral",
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -12498,6 +12564,8 @@
 >>>>>>> 3ed8e2a (feat: moved Purchases code to KovaleePurchases Target)
 =======
 >>>>>>> 23e3970 (feat: moved Firebase code to specific target KovaleeRemoteConfig)
+=======
+>>>>>>> 3d93e0d (feat: moved Ads code to KovaleeAds)
       "offset": 4058,
 =======
       "offset": 4718,
@@ -12520,13 +12588,20 @@
 =======
       "offset": 4619,
 >>>>>>> 8c8d3f3 (feat: moved Firebase code to specific target KovaleeRemoteConfig)
+<<<<<<< HEAD
 >>>>>>> 23e3970 (feat: moved Firebase code to specific target KovaleeRemoteConfig)
+=======
+=======
+      "offset": 4606,
+>>>>>>> ab23b2e (feat: moved Ads code to KovaleeAds)
+>>>>>>> 3d93e0d (feat: moved Ads code to KovaleeAds)
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
       "kind": "StringLiteral",
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -12543,6 +12618,8 @@
 >>>>>>> 3ed8e2a (feat: moved Purchases code to KovaleePurchases Target)
 =======
 >>>>>>> 23e3970 (feat: moved Firebase code to specific target KovaleeRemoteConfig)
+=======
+>>>>>>> 3d93e0d (feat: moved Ads code to KovaleeAds)
       "offset": 4518,
 =======
       "offset": 5173,
@@ -12565,13 +12642,20 @@
 =======
       "offset": 5120,
 >>>>>>> 8c8d3f3 (feat: moved Firebase code to specific target KovaleeRemoteConfig)
+<<<<<<< HEAD
 >>>>>>> 23e3970 (feat: moved Firebase code to specific target KovaleeRemoteConfig)
+=======
+=======
+      "offset": 5104,
+>>>>>>> ab23b2e (feat: moved Ads code to KovaleeAds)
+>>>>>>> 3d93e0d (feat: moved Ads code to KovaleeAds)
       "length": 4,
       "value": "\"no\""
     },
     {
       "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
       "kind": "StringLiteral",
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -12588,6 +12672,8 @@
 >>>>>>> 3ed8e2a (feat: moved Purchases code to KovaleePurchases Target)
 =======
 >>>>>>> 23e3970 (feat: moved Firebase code to specific target KovaleeRemoteConfig)
+=======
+>>>>>>> 3d93e0d (feat: moved Ads code to KovaleeAds)
       "offset": 4525,
 =======
       "offset": 5180,
@@ -12610,13 +12696,20 @@
 =======
       "offset": 5127,
 >>>>>>> 8c8d3f3 (feat: moved Firebase code to specific target KovaleeRemoteConfig)
+<<<<<<< HEAD
 >>>>>>> 23e3970 (feat: moved Firebase code to specific target KovaleeRemoteConfig)
+=======
+=======
+      "offset": 5111,
+>>>>>>> ab23b2e (feat: moved Ads code to KovaleeAds)
+>>>>>>> 3d93e0d (feat: moved Ads code to KovaleeAds)
       "length": 5,
       "value": "\"yes\""
     },
     {
       "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
       "kind": "StringLiteral",
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -12633,6 +12726,8 @@
 >>>>>>> 3ed8e2a (feat: moved Purchases code to KovaleePurchases Target)
 =======
 >>>>>>> 23e3970 (feat: moved Firebase code to specific target KovaleeRemoteConfig)
+=======
+>>>>>>> 3d93e0d (feat: moved Ads code to KovaleeAds)
       "offset": 6883,
 =======
       "offset": 7538,
@@ -12655,13 +12750,20 @@
 =======
       "offset": 7585,
 >>>>>>> 8c8d3f3 (feat: moved Firebase code to specific target KovaleeRemoteConfig)
+<<<<<<< HEAD
 >>>>>>> 23e3970 (feat: moved Firebase code to specific target KovaleeRemoteConfig)
+=======
+=======
+      "offset": 7569,
+>>>>>>> ab23b2e (feat: moved Ads code to KovaleeAds)
+>>>>>>> 3d93e0d (feat: moved Ads code to KovaleeAds)
       "length": 5,
       "value": "\"yes\""
     },
     {
       "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
       "kind": "StringLiteral",
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -12678,6 +12780,8 @@
 >>>>>>> 3ed8e2a (feat: moved Purchases code to KovaleePurchases Target)
 =======
 >>>>>>> 23e3970 (feat: moved Firebase code to specific target KovaleeRemoteConfig)
+=======
+>>>>>>> 3d93e0d (feat: moved Ads code to KovaleeAds)
       "offset": 8303,
 =======
       "offset": 8958,
@@ -12700,13 +12804,20 @@
 =======
       "offset": 9045,
 >>>>>>> 8c8d3f3 (feat: moved Firebase code to specific target KovaleeRemoteConfig)
+<<<<<<< HEAD
 >>>>>>> 23e3970 (feat: moved Firebase code to specific target KovaleeRemoteConfig)
+=======
+=======
+      "offset": 9029,
+>>>>>>> ab23b2e (feat: moved Ads code to KovaleeAds)
+>>>>>>> 3d93e0d (feat: moved Ads code to KovaleeAds)
       "length": 87,
       "value": "\"🛰️ Retrieved value \""
     },
     {
       "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
       "kind": "StringLiteral",
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -12723,6 +12834,8 @@
 >>>>>>> 3ed8e2a (feat: moved Purchases code to KovaleePurchases Target)
 =======
 >>>>>>> 23e3970 (feat: moved Firebase code to specific target KovaleeRemoteConfig)
+=======
+>>>>>>> 3d93e0d (feat: moved Ads code to KovaleeAds)
       "offset": 8370,
 =======
       "offset": 9025,
@@ -12745,13 +12858,20 @@
 =======
       "offset": 9112,
 >>>>>>> 8c8d3f3 (feat: moved Firebase code to specific target KovaleeRemoteConfig)
+<<<<<<< HEAD
 >>>>>>> 23e3970 (feat: moved Firebase code to specific target KovaleeRemoteConfig)
+=======
+=======
+      "offset": 9096,
+>>>>>>> ab23b2e (feat: moved Ads code to KovaleeAds)
+>>>>>>> 3d93e0d (feat: moved Ads code to KovaleeAds)
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
       "kind": "StringLiteral",
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -12768,6 +12888,8 @@
 >>>>>>> 3ed8e2a (feat: moved Purchases code to KovaleePurchases Target)
 =======
 >>>>>>> 23e3970 (feat: moved Firebase code to specific target KovaleeRemoteConfig)
+=======
+>>>>>>> 3d93e0d (feat: moved Ads code to KovaleeAds)
       "offset": 8373,
 =======
       "offset": 9028,
@@ -12790,13 +12912,20 @@
 =======
       "offset": 9115,
 >>>>>>> 8c8d3f3 (feat: moved Firebase code to specific target KovaleeRemoteConfig)
+<<<<<<< HEAD
 >>>>>>> 23e3970 (feat: moved Firebase code to specific target KovaleeRemoteConfig)
+=======
+=======
+      "offset": 9099,
+>>>>>>> ab23b2e (feat: moved Ads code to KovaleeAds)
+>>>>>>> 3d93e0d (feat: moved Ads code to KovaleeAds)
       "length": 3,
       "value": "\" for key: \""
     },
     {
       "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
       "kind": "StringLiteral",
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -12813,6 +12942,8 @@
 >>>>>>> 3ed8e2a (feat: moved Purchases code to KovaleePurchases Target)
 =======
 >>>>>>> 23e3970 (feat: moved Firebase code to specific target KovaleeRemoteConfig)
+=======
+>>>>>>> 3d93e0d (feat: moved Ads code to KovaleeAds)
       "offset": 8389,
 =======
       "offset": 9044,
@@ -12835,13 +12966,20 @@
 =======
       "offset": 9131,
 >>>>>>> 8c8d3f3 (feat: moved Firebase code to specific target KovaleeRemoteConfig)
+<<<<<<< HEAD
 >>>>>>> 23e3970 (feat: moved Firebase code to specific target KovaleeRemoteConfig)
+=======
+=======
+      "offset": 9115,
+>>>>>>> ab23b2e (feat: moved Ads code to KovaleeAds)
+>>>>>>> 3d93e0d (feat: moved Ads code to KovaleeAds)
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
       "kind": "StringLiteral",
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -12858,6 +12996,8 @@
 >>>>>>> 3ed8e2a (feat: moved Purchases code to KovaleePurchases Target)
 =======
 >>>>>>> 23e3970 (feat: moved Firebase code to specific target KovaleeRemoteConfig)
+=======
+>>>>>>> 3d93e0d (feat: moved Ads code to KovaleeAds)
       "offset": 8681,
 =======
       "offset": 9336,
@@ -12880,13 +13020,20 @@
 =======
       "offset": 9423,
 >>>>>>> 8c8d3f3 (feat: moved Firebase code to specific target KovaleeRemoteConfig)
+<<<<<<< HEAD
 >>>>>>> 23e3970 (feat: moved Firebase code to specific target KovaleeRemoteConfig)
+=======
+=======
+      "offset": 9407,
+>>>>>>> ab23b2e (feat: moved Ads code to KovaleeAds)
+>>>>>>> 3d93e0d (feat: moved Ads code to KovaleeAds)
       "length": 83,
       "value": "\"🛰️ User already partecipated in a different experiment with \""
     },
     {
       "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
       "kind": "StringLiteral",
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -12903,6 +13050,8 @@
 >>>>>>> 3ed8e2a (feat: moved Purchases code to KovaleePurchases Target)
 =======
 >>>>>>> 23e3970 (feat: moved Firebase code to specific target KovaleeRemoteConfig)
+=======
+>>>>>>> 3d93e0d (feat: moved Ads code to KovaleeAds)
       "offset": 8763,
 =======
       "offset": 9418,
@@ -12925,13 +13074,20 @@
 =======
       "offset": 9505,
 >>>>>>> 8c8d3f3 (feat: moved Firebase code to specific target KovaleeRemoteConfig)
+<<<<<<< HEAD
 >>>>>>> 23e3970 (feat: moved Firebase code to specific target KovaleeRemoteConfig)
+=======
+=======
+      "offset": 9489,
+>>>>>>> ab23b2e (feat: moved Ads code to KovaleeAds)
+>>>>>>> 3d93e0d (feat: moved Ads code to KovaleeAds)
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
       "kind": "StringLiteral",
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -12948,6 +13104,8 @@
 >>>>>>> 3ed8e2a (feat: moved Purchases code to KovaleePurchases Target)
 =======
 >>>>>>> 23e3970 (feat: moved Firebase code to specific target KovaleeRemoteConfig)
+=======
+>>>>>>> 3d93e0d (feat: moved Ads code to KovaleeAds)
       "offset": 8963,
 =======
       "offset": 9618,
@@ -12970,13 +13128,20 @@
 =======
       "offset": 9705,
 >>>>>>> 8c8d3f3 (feat: moved Firebase code to specific target KovaleeRemoteConfig)
+<<<<<<< HEAD
 >>>>>>> 23e3970 (feat: moved Firebase code to specific target KovaleeRemoteConfig)
+=======
+=======
+      "offset": 9689,
+>>>>>>> ab23b2e (feat: moved Ads code to KovaleeAds)
+>>>>>>> 3d93e0d (feat: moved Ads code to KovaleeAds)
       "length": 56,
       "value": "\"🛰️ Fetched AB Experiment value from local storage\""
     },
     {
       "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
       "kind": "StringLiteral",
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -12993,6 +13158,8 @@
 >>>>>>> 3ed8e2a (feat: moved Purchases code to KovaleePurchases Target)
 =======
 >>>>>>> 23e3970 (feat: moved Firebase code to specific target KovaleeRemoteConfig)
+=======
+>>>>>>> 3d93e0d (feat: moved Ads code to KovaleeAds)
       "offset": 9357,
 =======
       "offset": 10012,
@@ -13015,13 +13182,20 @@
 =======
       "offset": 10115,
 >>>>>>> 8c8d3f3 (feat: moved Firebase code to specific target KovaleeRemoteConfig)
+<<<<<<< HEAD
 >>>>>>> 23e3970 (feat: moved Firebase code to specific target KovaleeRemoteConfig)
+=======
+=======
+      "offset": 10099,
+>>>>>>> ab23b2e (feat: moved Ads code to KovaleeAds)
+>>>>>>> 3d93e0d (feat: moved Ads code to KovaleeAds)
       "length": 3,
       "value": "\"0\""
     },
     {
       "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
       "kind": "StringLiteral",
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -13038,6 +13212,8 @@
 >>>>>>> 3ed8e2a (feat: moved Purchases code to KovaleePurchases Target)
 =======
 >>>>>>> 23e3970 (feat: moved Firebase code to specific target KovaleeRemoteConfig)
+=======
+>>>>>>> 3d93e0d (feat: moved Ads code to KovaleeAds)
       "offset": 9747,
 =======
       "offset": 10402,
@@ -13060,13 +13236,20 @@
 =======
       "offset": 10502,
 >>>>>>> 8c8d3f3 (feat: moved Firebase code to specific target KovaleeRemoteConfig)
+<<<<<<< HEAD
 >>>>>>> 23e3970 (feat: moved Firebase code to specific target KovaleeRemoteConfig)
+=======
+=======
+      "offset": 10490,
+>>>>>>> ab23b2e (feat: moved Ads code to KovaleeAds)
+>>>>>>> 3d93e0d (feat: moved Ads code to KovaleeAds)
       "length": 27,
       "value": "\"creating interstitial ad \""
     },
     {
       "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
       "kind": "StringLiteral",
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -13083,6 +13266,8 @@
 >>>>>>> 3ed8e2a (feat: moved Purchases code to KovaleePurchases Target)
 =======
 >>>>>>> 23e3970 (feat: moved Firebase code to specific target KovaleeRemoteConfig)
+=======
+>>>>>>> 3d93e0d (feat: moved Ads code to KovaleeAds)
       "offset": 9906,
 =======
       "offset": 10561,
@@ -13105,13 +13290,20 @@
 =======
       "offset": 10661,
 >>>>>>> 8c8d3f3 (feat: moved Firebase code to specific target KovaleeRemoteConfig)
+<<<<<<< HEAD
 >>>>>>> 23e3970 (feat: moved Firebase code to specific target KovaleeRemoteConfig)
+=======
+=======
+      "offset": 10651,
+>>>>>>> ab23b2e (feat: moved Ads code to KovaleeAds)
+>>>>>>> 3d93e0d (feat: moved Ads code to KovaleeAds)
       "length": 25,
       "value": "\"display interstitial ad\""
     },
     {
       "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
       "kind": "StringLiteral",
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -13128,6 +13320,8 @@
 >>>>>>> 3ed8e2a (feat: moved Purchases code to KovaleePurchases Target)
 =======
 >>>>>>> 23e3970 (feat: moved Firebase code to specific target KovaleeRemoteConfig)
+=======
+>>>>>>> 3d93e0d (feat: moved Ads code to KovaleeAds)
       "offset": 10110,
 =======
       "offset": 10765,
@@ -13150,13 +13344,20 @@
 =======
       "offset": 10865,
 >>>>>>> 8c8d3f3 (feat: moved Firebase code to specific target KovaleeRemoteConfig)
+<<<<<<< HEAD
 >>>>>>> 23e3970 (feat: moved Firebase code to specific target KovaleeRemoteConfig)
+=======
+=======
+      "offset": 10857,
+>>>>>>> ab23b2e (feat: moved Ads code to KovaleeAds)
+>>>>>>> 3d93e0d (feat: moved Ads code to KovaleeAds)
       "length": 22,
       "value": "\"creating rewarded ad\""
     },
     {
       "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
       "kind": "StringLiteral",
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -13173,6 +13374,8 @@
 >>>>>>> 3ed8e2a (feat: moved Purchases code to KovaleePurchases Target)
 =======
 >>>>>>> 23e3970 (feat: moved Firebase code to specific target KovaleeRemoteConfig)
+=======
+>>>>>>> 3d93e0d (feat: moved Ads code to KovaleeAds)
       "offset": 10255,
 =======
       "offset": 10910,
@@ -13195,7 +13398,13 @@
 =======
       "offset": 11010,
 >>>>>>> 8c8d3f3 (feat: moved Firebase code to specific target KovaleeRemoteConfig)
+<<<<<<< HEAD
 >>>>>>> 23e3970 (feat: moved Firebase code to specific target KovaleeRemoteConfig)
+=======
+=======
+      "offset": 11004,
+>>>>>>> ab23b2e (feat: moved Ads code to KovaleeAds)
+>>>>>>> 3d93e0d (feat: moved Ads code to KovaleeAds)
       "length": 21,
       "value": "\"display rewarded ad\""
     },
