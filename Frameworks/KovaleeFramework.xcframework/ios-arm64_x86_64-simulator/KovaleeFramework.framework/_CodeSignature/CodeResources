@@ -19,18 +19,31 @@
 		<key>Modules/KovaleeFramework.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
 <<<<<<< HEAD
+<<<<<<< HEAD
 		7JOkoCRnjHn/j/WzxwP6pjGov7w=
 		</data>
 		<key>Modules/KovaleeFramework.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
 		j/X6LbIHYNvzAP/0ya28wB6qxz4=
 =======
+=======
+>>>>>>> 63d03c6 (feat: moved Adjust to new target KovaleeAttribution)
 		7K2Nw9Ga7ee+624v8BM3zH8+WIo=
 		</data>
 		<key>Modules/KovaleeFramework.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
 		ldOhJp1bL75+GhcjnZy5sfLqEPQ=
+<<<<<<< HEAD
 >>>>>>> 69235d0 (feat: implemented functions to retrieve Adjust adid and Amplitude User and Device Id)
+=======
+=======
+		N7VTpkz6MM1NNmHer+TwCNrcUjg=
+		</data>
+		<key>Modules/KovaleeFramework.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
+		<data>
+		gwLgi4LTCYQ24PyqxwY63tD/kHY=
+>>>>>>> 205cf3c (feat: moved Adjust to new target KovaleeAttribution)
+>>>>>>> 63d03c6 (feat: moved Adjust to new target KovaleeAttribution)
 		</data>
 		<key>Modules/KovaleeFramework.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -38,6 +51,7 @@
 		</data>
 		<key>Modules/KovaleeFramework.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
+<<<<<<< HEAD
 <<<<<<< HEAD
 		j/X6LbIHYNvzAP/0ya28wB6qxz4=
 		</data>
@@ -53,6 +67,8 @@
 		<data>
 		qf5YW3AsJvhgLNCWhV2seZDYxGU=
 =======
+=======
+>>>>>>> 63d03c6 (feat: moved Adjust to new target KovaleeAttribution)
 		ldOhJp1bL75+GhcjnZy5sfLqEPQ=
 		</data>
 		<key>Modules/KovaleeFramework.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
@@ -66,7 +82,25 @@
 		<key>Modules/KovaleeFramework.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
 		wwgIuYGFM5wpvgAmj6U6UDR6qSo=
+<<<<<<< HEAD
 >>>>>>> 69235d0 (feat: implemented functions to retrieve Adjust adid and Amplitude User and Device Id)
+=======
+=======
+		gwLgi4LTCYQ24PyqxwY63tD/kHY=
+		</data>
+		<key>Modules/KovaleeFramework.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
+		<data>
+		OWCYAiRfoFMF+CSr7hmElp/BLyU=
+		</data>
+		<key>Modules/KovaleeFramework.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
+		<data>
+		N7VTpkz6MM1NNmHer+TwCNrcUjg=
+		</data>
+		<key>Modules/KovaleeFramework.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
+		<data>
+		wwZHlKGKu+vVSDdjb+GWl1mlA5k=
+>>>>>>> 205cf3c (feat: moved Adjust to new target KovaleeAttribution)
+>>>>>>> 63d03c6 (feat: moved Adjust to new target KovaleeAttribution)
 		</data>
 		<key>Modules/KovaleeFramework.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -75,18 +109,31 @@
 		<key>Modules/KovaleeFramework.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
 <<<<<<< HEAD
+<<<<<<< HEAD
 		qf5YW3AsJvhgLNCWhV2seZDYxGU=
 		</data>
 		<key>Modules/KovaleeFramework.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
 		nvls1NgUFMyMyDfeMrFPt57ZriM=
 =======
+=======
+>>>>>>> 63d03c6 (feat: moved Adjust to new target KovaleeAttribution)
 		wwgIuYGFM5wpvgAmj6U6UDR6qSo=
 		</data>
 		<key>Modules/KovaleeFramework.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
 		1KtmvJym7U3FbQT6GFe5fVgJ2F4=
+<<<<<<< HEAD
 >>>>>>> 69235d0 (feat: implemented functions to retrieve Adjust adid and Amplitude User and Device Id)
+=======
+=======
+		wwZHlKGKu+vVSDdjb+GWl1mlA5k=
+		</data>
+		<key>Modules/KovaleeFramework.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
+		<data>
+		7o1jfor/N0985DOpoKLncdaNnFY=
+>>>>>>> 205cf3c (feat: moved Adjust to new target KovaleeAttribution)
+>>>>>>> 63d03c6 (feat: moved Adjust to new target KovaleeAttribution)
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -114,10 +161,17 @@
 			<key>hash2</key>
 			<data>
 <<<<<<< HEAD
+<<<<<<< HEAD
 			43i91dZO4o5j66iPIbZ0I0/+Lv0oiM/5E9XzB/2S/2c=
 =======
 			BCAviTh+pCEtY6FKTYjXErboKfiVjLIsqGCGv6kCQuw=
 >>>>>>> 69235d0 (feat: implemented functions to retrieve Adjust adid and Amplitude User and Device Id)
+=======
+			BCAviTh+pCEtY6FKTYjXErboKfiVjLIsqGCGv6kCQuw=
+=======
+			YNxy6bG26AXh81GANqWa8oql37Mfo0tP3ZKMOyt/F3c=
+>>>>>>> 205cf3c (feat: moved Adjust to new target KovaleeAttribution)
+>>>>>>> 63d03c6 (feat: moved Adjust to new target KovaleeAttribution)
 			</data>
 		</dict>
 		<key>Modules/KovaleeFramework.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
@@ -125,10 +179,17 @@
 			<key>hash2</key>
 			<data>
 <<<<<<< HEAD
+<<<<<<< HEAD
 			mOP5sR+dqdas4/kTgkrCeykZt/uRYAtub0+MOJxTgN4=
 =======
 			yZJ57FyTE7NdKpz6ovLNGrUTMgUCJBOJsanB34gap3Q=
 >>>>>>> 69235d0 (feat: implemented functions to retrieve Adjust adid and Amplitude User and Device Id)
+=======
+			yZJ57FyTE7NdKpz6ovLNGrUTMgUCJBOJsanB34gap3Q=
+=======
+			W7V5Kc6Ec0A4uOiP+yyqCFXYNm4Fa1HpZekLAPtRsv4=
+>>>>>>> 205cf3c (feat: moved Adjust to new target KovaleeAttribution)
+>>>>>>> 63d03c6 (feat: moved Adjust to new target KovaleeAttribution)
 			</data>
 		</dict>
 		<key>Modules/KovaleeFramework.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
@@ -143,10 +204,17 @@
 			<key>hash2</key>
 			<data>
 <<<<<<< HEAD
+<<<<<<< HEAD
 			mOP5sR+dqdas4/kTgkrCeykZt/uRYAtub0+MOJxTgN4=
 =======
 			yZJ57FyTE7NdKpz6ovLNGrUTMgUCJBOJsanB34gap3Q=
 >>>>>>> 69235d0 (feat: implemented functions to retrieve Adjust adid and Amplitude User and Device Id)
+=======
+			yZJ57FyTE7NdKpz6ovLNGrUTMgUCJBOJsanB34gap3Q=
+=======
+			W7V5Kc6Ec0A4uOiP+yyqCFXYNm4Fa1HpZekLAPtRsv4=
+>>>>>>> 205cf3c (feat: moved Adjust to new target KovaleeAttribution)
+>>>>>>> 63d03c6 (feat: moved Adjust to new target KovaleeAttribution)
 			</data>
 		</dict>
 		<key>Modules/KovaleeFramework.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
@@ -154,10 +222,17 @@
 			<key>hash2</key>
 			<data>
 <<<<<<< HEAD
+<<<<<<< HEAD
 			K9362N3renzbAnhWdBFRUAuSAaA6bkb9o5wJJsITp8M=
 =======
 			NROE2gWOO9GRX3PyyEk5GSYo7Efs1xSNVW63UDBJHf8=
 >>>>>>> 69235d0 (feat: implemented functions to retrieve Adjust adid and Amplitude User and Device Id)
+=======
+			NROE2gWOO9GRX3PyyEk5GSYo7Efs1xSNVW63UDBJHf8=
+=======
+			ZXQDT954fw/lwe/jHVV8KXhhI7m/Y2a3e/3dDNvYpKE=
+>>>>>>> 205cf3c (feat: moved Adjust to new target KovaleeAttribution)
+>>>>>>> 63d03c6 (feat: moved Adjust to new target KovaleeAttribution)
 			</data>
 		</dict>
 		<key>Modules/KovaleeFramework.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
@@ -165,10 +240,17 @@
 			<key>hash2</key>
 			<data>
 <<<<<<< HEAD
+<<<<<<< HEAD
 			43i91dZO4o5j66iPIbZ0I0/+Lv0oiM/5E9XzB/2S/2c=
 =======
 			BCAviTh+pCEtY6FKTYjXErboKfiVjLIsqGCGv6kCQuw=
 >>>>>>> 69235d0 (feat: implemented functions to retrieve Adjust adid and Amplitude User and Device Id)
+=======
+			BCAviTh+pCEtY6FKTYjXErboKfiVjLIsqGCGv6kCQuw=
+=======
+			YNxy6bG26AXh81GANqWa8oql37Mfo0tP3ZKMOyt/F3c=
+>>>>>>> 205cf3c (feat: moved Adjust to new target KovaleeAttribution)
+>>>>>>> 63d03c6 (feat: moved Adjust to new target KovaleeAttribution)
 			</data>
 		</dict>
 		<key>Modules/KovaleeFramework.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
@@ -176,10 +258,17 @@
 			<key>hash2</key>
 			<data>
 <<<<<<< HEAD
+<<<<<<< HEAD
 			9TvIHiAcmZUo++x/IvMs2vZ7n4z4sV48XdBcAo2czBU=
 =======
 			gQsA4YEPMcbzJoHD9VlrV0MmUD/c7zMwvHktWVrg9CI=
 >>>>>>> 69235d0 (feat: implemented functions to retrieve Adjust adid and Amplitude User and Device Id)
+=======
+			gQsA4YEPMcbzJoHD9VlrV0MmUD/c7zMwvHktWVrg9CI=
+=======
+			Hqa9DGEVX51ktUSotuj3uwk2tKK2EP1wNi/TtUO47uw=
+>>>>>>> 205cf3c (feat: moved Adjust to new target KovaleeAttribution)
+>>>>>>> 63d03c6 (feat: moved Adjust to new target KovaleeAttribution)
 			</data>
 		</dict>
 		<key>Modules/KovaleeFramework.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
@@ -194,10 +283,17 @@
 			<key>hash2</key>
 			<data>
 <<<<<<< HEAD
+<<<<<<< HEAD
 			9TvIHiAcmZUo++x/IvMs2vZ7n4z4sV48XdBcAo2czBU=
 =======
 			gQsA4YEPMcbzJoHD9VlrV0MmUD/c7zMwvHktWVrg9CI=
 >>>>>>> 69235d0 (feat: implemented functions to retrieve Adjust adid and Amplitude User and Device Id)
+=======
+			gQsA4YEPMcbzJoHD9VlrV0MmUD/c7zMwvHktWVrg9CI=
+=======
+			Hqa9DGEVX51ktUSotuj3uwk2tKK2EP1wNi/TtUO47uw=
+>>>>>>> 205cf3c (feat: moved Adjust to new target KovaleeAttribution)
+>>>>>>> 63d03c6 (feat: moved Adjust to new target KovaleeAttribution)
 			</data>
 		</dict>
 		<key>Modules/KovaleeFramework.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
@@ -205,10 +301,17 @@
 			<key>hash2</key>
 			<data>
 <<<<<<< HEAD
+<<<<<<< HEAD
 			XhOIkF9cNBGDKIHoGmeVPtI54+Ub6BJU9zcoQ2JvftI=
 =======
 			TrbKXFeP4LAzRHNDaBkroY4LoLBEd1uvGx7i3WD3/ks=
 >>>>>>> 69235d0 (feat: implemented functions to retrieve Adjust adid and Amplitude User and Device Id)
+=======
+			TrbKXFeP4LAzRHNDaBkroY4LoLBEd1uvGx7i3WD3/ks=
+=======
+			o/FZoPAvEiP0aeKtjucw1DHaM7JTUae8KutMuazYgH8=
+>>>>>>> 205cf3c (feat: moved Adjust to new target KovaleeAttribution)
+>>>>>>> 63d03c6 (feat: moved Adjust to new target KovaleeAttribution)
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

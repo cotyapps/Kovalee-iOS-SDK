@@ -10,8 +10,13 @@ import _Concurrency
 import _StringProcessing
 import os
 public class KovaleeManager {
+<<<<<<< HEAD
   public init(withStorage storage: KovaleeFramework.Storage = .userDefaults(), keys: KovaleeFramework.KovaleeKeys, eventTrackerManager: any KovaleeFramework.EventTrackerManager)
   public func setupAttributionManager(adjustWrapper: any KovaleeFramework.AttributionManager)
+=======
+  public init(withStorage storage: KovaleeFramework.Storage = .userDefaults(), keys: KovaleeFramework.KovaleeKeys, amplitudeWrapper: any KovaleeFramework.AmplitudeWrapper)
+  public func setupAttributionManager(adjustWrapper: any KovaleeFramework.AdjustWrapper)
+>>>>>>> 63d03c6 (feat: moved Adjust to new target KovaleeAttribution)
   public func setupPurchaseManager(revenueCatWrapper: any KovaleeFramework.RevenueCatWrapper)
   public func setupRemoteConfigurationManager(firebaseWrapper: any KovaleeFramework.FirebaseWrapper)
   public func setupAdsManager(applovinWrapper: any KovaleeFramework.ApplovinWrapper)
@@ -26,8 +31,13 @@ public class KovaleeManager {
   public func setUserProperty(key: Swift.String, value: Swift.String)
   public func setUserProperty(property: KovaleeFramework.UserProperty)
   public func sendAppOpenEvent()
+<<<<<<< HEAD
   public var attributionManager: (any KovaleeFramework.AttributionManager)?
   public var trackerManager: (any KovaleeFramework.EventTrackerManager)?
+=======
+  public var adjust: (any KovaleeFramework.AdjustWrapper)?
+  public var amplitude: (any KovaleeFramework.AmplitudeWrapper)?
+>>>>>>> 63d03c6 (feat: moved Adjust to new target KovaleeAttribution)
   public var firebase: (any KovaleeFramework.FirebaseWrapper)?
   public var revenueCat: (any KovaleeFramework.RevenueCatWrapper)?
   public var applovin: (any KovaleeFramework.ApplovinWrapper)?
