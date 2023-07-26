@@ -63,7 +63,7 @@ struct AmplitudeWrapperImpl: EventTrackerManager {
     func setUserProperty(property: UserProperty) {
         self.setUserProperty(key: property.key, value: property.value)
     }
-	
+
 	func getUserId() -> String? {
 		amplitude?.getUserId()
 	}

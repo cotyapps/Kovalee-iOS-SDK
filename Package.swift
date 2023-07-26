@@ -61,6 +61,7 @@ let package = Package(
 				.product(name: "Amplitude-Swift", package: "Amplitude-swift")
 			]
 		),
+
 		.target(
 			name: "KovaleeAttribution",
 			dependencies: [
