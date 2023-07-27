@@ -9,15 +9,6 @@
           "revision": "7f7e5d65b9193b1c229c4c28615430c8d22b7017",
           "version": "0.4.6"
         }
-      },
-      {
-        "package": "Adjust",
-        "repositoryURL": "https://github.com/adjust/ios_sdk",
-        "state": {
-          "branch": null,
-          "revision": "c97e8e39a70eeba1742ed6ec75d136d2f111a366",
-          "version": "4.33.5"
-        }
       }
     ]
   },

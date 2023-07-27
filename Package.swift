@@ -15,16 +15,9 @@ let package = Package(
             targets: [
                 "KovaleeSDK",
             ]
-        ),
-		.library(
-			name: "KovaleeAttribution",
-			targets: [
-				"KovaleeAttribution",
-			]
-		)
+        )
     ],
     dependencies: [
-		.package(url: "https://github.com/adjust/ios_sdk", from: Version(4, 33, 5)),
 		.package(url: "https://github.com/amplitude/Amplitude-Swift", from: Version(0, 4, 6))
 	],
     targets: [
@@ -38,13 +31,6 @@ let package = Package(
 			dependencies: [
 				"KovaleeFramework",
 				.product(name: "Amplitude-Swift", package: "Amplitude-swift")
-			]
-		),
-		.target(
-			name: "KovaleeAttribution",
-			dependencies: [
-				"KovaleeSDK",
-				.product(name: "Adjust", package: "ios_sdk")
 			]
 		)
     ]
