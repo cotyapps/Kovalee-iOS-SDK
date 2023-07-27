@@ -18,15 +18,6 @@
           "revision": "c97e8e39a70eeba1742ed6ec75d136d2f111a366",
           "version": "4.33.5"
         }
-      },
-      {
-        "package": "RevenueCat",
-        "repositoryURL": "https://github.com/RevenueCat/purchases-ios",
-        "state": {
-          "branch": null,
-          "revision": "8d16e02c96efbcf58eaf7eef2e595942d935f572",
-          "version": "4.25.0"
-        }
       }
     ]
   },
