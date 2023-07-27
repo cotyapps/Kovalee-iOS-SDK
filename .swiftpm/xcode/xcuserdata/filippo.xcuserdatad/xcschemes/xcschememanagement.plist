@@ -62,14 +62,30 @@
 			<key>orderHint</key>
 			<integer>5</integer>
 		</dict>
+		<key>KovaleeAds.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>6</integer>
+		</dict>
 		<key>KovaleeAttribution.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>2</integer>
+			<integer>3</integer>
+		</dict>
+		<key>KovaleePurchases.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>4</integer>
+		</dict>
+		<key>KovaleeRemoteConfig.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>5</integer>
 		</dict>
 		<key>KovaleeSDK-Package.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 			<integer>1</integer>
@@ -92,6 +108,9 @@
 =======
 			<integer>10</integer>
 >>>>>>> 69235d0 (feat: implemented functions to retrieve Adjust adid and Amplitude User and Device Id)
+=======
+			<integer>2</integer>
+>>>>>>> 993b5fc (fix: fixed setUserIsPremium function)
 		</dict>
 		<key>KovaleeSDK.xcscheme_^#shared#^_</key>
 		<dict>
@@ -110,12 +129,51 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 993b5fc (fix: fixed setUserIsPremium function)
 			<integer>9</integer>
 =======
 			<integer>5</integer>
 >>>>>>> 69235d0 (feat: implemented functions to retrieve Adjust adid and Amplitude User and Device Id)
+=======
+			<integer>9</integer>
+		</dict>
+		<key>Promises (Playground) 10.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+			<key>orderHint</key>
+			<integer>18</integer>
+		</dict>
+		<key>Promises (Playground) 11.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+			<key>orderHint</key>
+			<integer>19</integer>
+		</dict>
+		<key>Promises (Playground) 12.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+			<key>orderHint</key>
+			<integer>20</integer>
+		</dict>
+		<key>Promises (Playground) 13.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+			<key>orderHint</key>
+			<integer>21</integer>
+		</dict>
+		<key>Promises (Playground) 14.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+			<key>orderHint</key>
+			<integer>22</integer>
+>>>>>>> 993b5fc (fix: fixed setUserIsPremium function)
 		</dict>
 		<key>Promises (Playground) 10.xcscheme</key>
 		<dict>
@@ -177,6 +235,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 			<integer>10</integer>
 =======
 			<integer>6</integer>
@@ -187,6 +246,9 @@
 =======
 			<integer>6</integer>
 >>>>>>> 69235d0 (feat: implemented functions to retrieve Adjust adid and Amplitude User and Device Id)
+=======
+			<integer>10</integer>
+>>>>>>> 993b5fc (fix: fixed setUserIsPremium function)
 		</dict>
 		<key>Promises (Playground) 3.xcscheme</key>
 		<dict>
@@ -196,6 +258,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 			<integer>11</integer>
 =======
 			<integer>7</integer>
@@ -206,6 +269,9 @@
 =======
 			<integer>7</integer>
 >>>>>>> 69235d0 (feat: implemented functions to retrieve Adjust adid and Amplitude User and Device Id)
+=======
+			<integer>11</integer>
+>>>>>>> 993b5fc (fix: fixed setUserIsPremium function)
 		</dict>
 		<key>Promises (Playground) 4.xcscheme</key>
 		<dict>
@@ -215,6 +281,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 			<integer>12</integer>
 =======
 			<integer>8</integer>
@@ -225,6 +292,9 @@
 =======
 			<integer>8</integer>
 >>>>>>> 69235d0 (feat: implemented functions to retrieve Adjust adid and Amplitude User and Device Id)
+=======
+			<integer>12</integer>
+>>>>>>> 993b5fc (fix: fixed setUserIsPremium function)
 		</dict>
 		<key>Promises (Playground) 5.xcscheme</key>
 		<dict>
@@ -234,6 +304,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 			<integer>13</integer>
 =======
 			<integer>9</integer>
@@ -244,6 +315,9 @@
 =======
 			<integer>9</integer>
 >>>>>>> 69235d0 (feat: implemented functions to retrieve Adjust adid and Amplitude User and Device Id)
+=======
+			<integer>13</integer>
+>>>>>>> 993b5fc (fix: fixed setUserIsPremium function)
 		</dict>
 		<key>Promises (Playground) 6.xcscheme</key>
 		<dict>
@@ -281,6 +355,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 			<integer>8</integer>
 =======
 			<integer>4</integer>
@@ -291,6 +366,9 @@
 =======
 			<integer>4</integer>
 >>>>>>> 69235d0 (feat: implemented functions to retrieve Adjust adid and Amplitude User and Device Id)
+=======
+			<integer>8</integer>
+>>>>>>> 993b5fc (fix: fixed setUserIsPremium function)
 		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
