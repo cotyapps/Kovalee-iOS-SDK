@@ -19,6 +19,7 @@
 		<key>Modules/KovaleeFramework.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
 <<<<<<< HEAD
+<<<<<<< HEAD
 		I0z+hSRIaNwIQe9tZ86tOBnjw0o=
 		</data>
 		<key>Modules/KovaleeFramework.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
@@ -26,6 +27,9 @@
 		II8ERaZLDX6pDySdoRaIDGrl4yM=
 =======
 		7K2Nw9Ga7ee+624v8BM3zH8+WIo=
+=======
+		EOmL7wG1aaSUWiRT7Rtv6wj6qMU=
+>>>>>>> 993b5fc (fix: fixed setUserIsPremium function)
 		</data>
 		<key>Modules/KovaleeFramework.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -61,7 +65,7 @@
 		</data>
 		<key>Modules/KovaleeFramework.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		7K2Nw9Ga7ee+624v8BM3zH8+WIo=
+		EOmL7wG1aaSUWiRT7Rtv6wj6qMU=
 		</data>
 		<key>Modules/KovaleeFramework.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -114,10 +118,14 @@
 			<key>hash2</key>
 			<data>
 <<<<<<< HEAD
+<<<<<<< HEAD
 			/aftgJ9cDkoD4G6ePPg7NZX2nNz2IruDJCuixOOmM9Q=
 =======
 			BCAviTh+pCEtY6FKTYjXErboKfiVjLIsqGCGv6kCQuw=
 >>>>>>> 69235d0 (feat: implemented functions to retrieve Adjust adid and Amplitude User and Device Id)
+=======
+			hxsaupzIBYjsXrd1dEeA9RNHP8wMkMGMsywGRn5qDz4=
+>>>>>>> 993b5fc (fix: fixed setUserIsPremium function)
 			</data>
 		</dict>
 		<key>Modules/KovaleeFramework.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
@@ -165,10 +173,14 @@
 			<key>hash2</key>
 			<data>
 <<<<<<< HEAD
+<<<<<<< HEAD
 			/aftgJ9cDkoD4G6ePPg7NZX2nNz2IruDJCuixOOmM9Q=
 =======
 			BCAviTh+pCEtY6FKTYjXErboKfiVjLIsqGCGv6kCQuw=
 >>>>>>> 69235d0 (feat: implemented functions to retrieve Adjust adid and Amplitude User and Device Id)
+=======
+			hxsaupzIBYjsXrd1dEeA9RNHP8wMkMGMsywGRn5qDz4=
+>>>>>>> 993b5fc (fix: fixed setUserIsPremium function)
 			</data>
 		</dict>
 		<key>Modules/KovaleeFramework.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
