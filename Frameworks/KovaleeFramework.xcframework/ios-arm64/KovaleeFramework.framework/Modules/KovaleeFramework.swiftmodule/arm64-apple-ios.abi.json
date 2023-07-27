@@ -12132,6 +12132,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 993b5fc (fix: fixed setUserIsPremium function)
 =======
 <<<<<<< HEAD
@@ -12146,10 +12147,20 @@
 =======
 =======
 >>>>>>> 15931f2 (fix: fixed setUserIsPremium function)
+=======
     },
     {
       "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
       "kind": "StringLiteral",
+      "offset": 4526,
+      "length": 4,
+      "value": "\"no\""
+>>>>>>> 150464a (fix: fixing setting user is premium on RC customerInfo call)
+    },
+    {
+      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
+      "kind": "StringLiteral",
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -12215,6 +12226,8 @@
       "offset": 6885,
 >>>>>>> 15931f2 (fix: fixed setUserIsPremium function)
 =======
+=======
+>>>>>>> 150464a (fix: fixing setting user is premium on RC customerInfo call)
       "offset": 6885,
 =======
       "offset": 5111,
@@ -12231,7 +12244,6 @@
 >>>>>>> 15931f2 (fix: fixed setUserIsPremium function)
       "length": 5,
       "value": "\"yes\""
->>>>>>> 6d3ea5e (fix: fixed setUserIsPremium function)
     },
     {
       "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",

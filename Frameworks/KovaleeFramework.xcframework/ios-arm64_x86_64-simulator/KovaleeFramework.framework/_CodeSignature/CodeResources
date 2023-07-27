@@ -27,6 +27,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 13962f8 (feat: restored KovaleeFramework)
@@ -61,6 +62,9 @@
 		Km+N472gQ+Bg3497qexBB+tBzKs=
 >>>>>>> 6d3ea5e (fix: fixed setUserIsPremium function)
 >>>>>>> 15931f2 (fix: fixed setUserIsPremium function)
+=======
+		Km+N472gQ+Bg3497qexBB+tBzKs=
+>>>>>>> 150464a (fix: fixing setting user is premium on RC customerInfo call)
 		</data>
 		<key>Modules/KovaleeFramework.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -139,11 +143,7 @@
 		</data>
 		<key>Modules/KovaleeFramework.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-<<<<<<< HEAD
-		EOmL7wG1aaSUWiRT7Rtv6wj6qMU=
-=======
 		Km+N472gQ+Bg3497qexBB+tBzKs=
->>>>>>> 6d3ea5e (fix: fixed setUserIsPremium function)
 		</data>
 		<key>Modules/KovaleeFramework.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -221,6 +221,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 3226eb0 (feat: restored KovaleeFramework)
 			/aftgJ9cDkoD4G6ePPg7NZX2nNz2IruDJCuixOOmM9Q=
@@ -261,6 +262,9 @@
 			KLP6Fgi7aUPmGovss/YzOvZfscyl9VUSAr3c3iq3xec=
 >>>>>>> 6d3ea5e (fix: fixed setUserIsPremium function)
 >>>>>>> 15931f2 (fix: fixed setUserIsPremium function)
+=======
+			KLP6Fgi7aUPmGovss/YzOvZfscyl9VUSAr3c3iq3xec=
+>>>>>>> 150464a (fix: fixing setting user is premium on RC customerInfo call)
 			</data>
 		</dict>
 		<key>Modules/KovaleeFramework.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
@@ -355,6 +359,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 3226eb0 (feat: restored KovaleeFramework)
 			/aftgJ9cDkoD4G6ePPg7NZX2nNz2IruDJCuixOOmM9Q=
@@ -395,6 +400,9 @@
 			KLP6Fgi7aUPmGovss/YzOvZfscyl9VUSAr3c3iq3xec=
 >>>>>>> 6d3ea5e (fix: fixed setUserIsPremium function)
 >>>>>>> 15931f2 (fix: fixed setUserIsPremium function)
+=======
+			KLP6Fgi7aUPmGovss/YzOvZfscyl9VUSAr3c3iq3xec=
+>>>>>>> 150464a (fix: fixing setting user is premium on RC customerInfo call)
 			</data>
 		</dict>
 		<key>Modules/KovaleeFramework.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
