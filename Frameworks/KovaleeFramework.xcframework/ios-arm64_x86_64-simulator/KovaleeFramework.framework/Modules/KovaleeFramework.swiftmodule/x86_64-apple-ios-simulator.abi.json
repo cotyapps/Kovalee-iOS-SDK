@@ -11217,8 +11217,6 @@
       "offset": 4518,
       "length": 5,
       "value": "\"yes\""
-<<<<<<< HEAD
-=======
     },
     {
       "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
@@ -11226,20 +11224,13 @@
       "offset": 4526,
       "length": 4,
       "value": "\"no\""
->>>>>>> 6d3ea5e (fix: fixed setUserIsPremium function)
     },
     {
       "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
       "kind": "StringLiteral",
-<<<<<<< HEAD
-      "offset": 4526,
-      "length": 4,
-      "value": "\"no\""
-=======
       "offset": 6885,
       "length": 5,
       "value": "\"yes\""
->>>>>>> 6d3ea5e (fix: fixed setUserIsPremium function)
     },
     {
       "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
