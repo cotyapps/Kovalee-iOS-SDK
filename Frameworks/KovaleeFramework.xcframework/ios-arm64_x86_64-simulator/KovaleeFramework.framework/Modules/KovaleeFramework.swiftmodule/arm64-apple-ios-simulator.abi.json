@@ -11879,9 +11879,6 @@
       "kind": "StringLiteral",
 <<<<<<< HEAD
       "offset": 4124,
-=======
-      "offset": 3586,
->>>>>>> master
       "length": 5,
       "value": "\"yes\""
     },
@@ -11890,9 +11887,6 @@
       "kind": "BooleanLiteral",
 <<<<<<< HEAD
       "offset": 4132,
-=======
-      "offset": 3594,
->>>>>>> master
       "length": 4,
       "value": "true"
     },
@@ -11901,9 +11895,6 @@
       "kind": "BooleanLiteral",
 <<<<<<< HEAD
       "offset": 4139,
-=======
-      "offset": 3601,
->>>>>>> master
       "length": 5,
       "value": "false"
     },
@@ -11912,9 +11903,6 @@
       "kind": "BooleanLiteral",
 <<<<<<< HEAD
       "offset": 4338,
-=======
-      "offset": 3800,
->>>>>>> master
       "length": 4,
       "value": "true"
     },
@@ -11923,9 +11911,6 @@
       "kind": "StringLiteral",
 <<<<<<< HEAD
       "offset": 4546,
-=======
-      "offset": 3998,
->>>>>>> master
       "length": 4,
       "value": "\"no\""
     },
@@ -11934,9 +11919,6 @@
       "kind": "BooleanLiteral",
 <<<<<<< HEAD
       "offset": 4606,
-=======
-      "offset": 4058,
->>>>>>> master
       "length": 5,
       "value": "false"
     },
@@ -11945,27 +11927,66 @@
       "kind": "StringLiteral",
 <<<<<<< HEAD
       "offset": 5104,
-=======
-      "offset": 4518,
-      "length": 5,
-      "value": "\"yes\""
-    },
-    {
-      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
-      "kind": "StringLiteral",
-      "offset": 4526,
->>>>>>> master
       "length": 4,
       "value": "\"no\""
+=======
+      "length": 5,
+      "value": "\"yes\""
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> 993b5fc (fix: fixed setUserIsPremium function)
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> 15931f2 (fix: fixed setUserIsPremium function)
+=======
+>>>>>>> 150464a (fix: fixing setting user is premium on RC customerInfo call)
     },
     {
       "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
       "kind": "StringLiteral",
-<<<<<<< HEAD
       "offset": 5111,
+      "length": 5,
+      "value": "\"yes\""
 =======
+      "offset": 4526,
+      "length": 4,
+      "value": "\"no\""
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> 993b5fc (fix: fixed setUserIsPremium function)
+=======
+>>>>>>> 6d3ea5e (fix: fixed setUserIsPremium function)
+>>>>>>> 15931f2 (fix: fixed setUserIsPremium function)
+=======
+>>>>>>> 150464a (fix: fixing setting user is premium on RC customerInfo call)
+    },
+    {
+      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
+      "kind": "StringLiteral",
+      "offset": 7569,
+=======
+      "offset": 6883,
+>>>>>>> 69235d0 (feat: implemented functions to retrieve Adjust adid and Amplitude User and Device Id)
+=======
+      "offset": 4526,
+      "length": 4,
+      "value": "\"no\""
+=======
+=======
+>>>>>>> 150464a (fix: fixing setting user is premium on RC customerInfo call)
       "offset": 6885,
+<<<<<<< HEAD
+>>>>>>> 15931f2 (fix: fixed setUserIsPremium function)
+=======
 >>>>>>> master
+=======
+      "offset": 5111,
+>>>>>>> 13962f8 (feat: restored KovaleeFramework)
+>>>>>>> 3226eb0 (feat: restored KovaleeFramework)
+=======
+      "offset": 7571,
+>>>>>>> a79068b (feat: new KovaleeFramework version)
       "length": 5,
       "value": "\"yes\""
     },
@@ -11973,6 +11994,12 @@
       "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
       "kind": "StringLiteral",
 <<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> 13962f8 (feat: restored KovaleeFramework)
       "offset": 7569,
       "length": 5,
       "value": "\"yes\""
@@ -11980,131 +12007,85 @@
     {
       "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
       "kind": "StringLiteral",
+>>>>>>> 3226eb0 (feat: restored KovaleeFramework)
       "offset": 9029,
-=======
-      "offset": 8305,
->>>>>>> master
       "length": 87,
       "value": "\"🛰️ Retrieved value \""
     },
     {
       "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
       "kind": "StringLiteral",
-<<<<<<< HEAD
       "offset": 9096,
-=======
-      "offset": 8372,
->>>>>>> master
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
       "kind": "StringLiteral",
-<<<<<<< HEAD
       "offset": 9099,
-=======
-      "offset": 8375,
->>>>>>> master
       "length": 3,
       "value": "\" for key: \""
     },
     {
       "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
       "kind": "StringLiteral",
-<<<<<<< HEAD
       "offset": 9115,
-=======
-      "offset": 8391,
->>>>>>> master
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
       "kind": "StringLiteral",
-<<<<<<< HEAD
       "offset": 9407,
-=======
-      "offset": 8683,
->>>>>>> master
       "length": 83,
       "value": "\"🛰️ User already partecipated in a different experiment with \""
     },
     {
       "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
       "kind": "StringLiteral",
-<<<<<<< HEAD
       "offset": 9489,
-=======
-      "offset": 8765,
->>>>>>> master
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
       "kind": "StringLiteral",
-<<<<<<< HEAD
       "offset": 9689,
-=======
-      "offset": 8965,
->>>>>>> master
       "length": 56,
       "value": "\"🛰️ Fetched AB Experiment value from local storage\""
     },
     {
       "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
       "kind": "StringLiteral",
-<<<<<<< HEAD
       "offset": 10099,
-=======
-      "offset": 9359,
->>>>>>> master
       "length": 3,
       "value": "\"0\""
     },
     {
       "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
       "kind": "StringLiteral",
-<<<<<<< HEAD
       "offset": 10490,
-=======
-      "offset": 9749,
->>>>>>> master
       "length": 27,
       "value": "\"creating interstitial ad \""
     },
     {
       "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
       "kind": "StringLiteral",
-<<<<<<< HEAD
       "offset": 10651,
-=======
-      "offset": 9908,
->>>>>>> master
       "length": 25,
       "value": "\"display interstitial ad\""
     },
     {
       "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
       "kind": "StringLiteral",
-<<<<<<< HEAD
       "offset": 10857,
-=======
-      "offset": 10112,
->>>>>>> master
       "length": 22,
       "value": "\"creating rewarded ad\""
     },
     {
       "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
       "kind": "StringLiteral",
-<<<<<<< HEAD
       "offset": 11004,
-=======
-      "offset": 10257,
->>>>>>> master
       "length": 21,
       "value": "\"display rewarded ad\""
     },

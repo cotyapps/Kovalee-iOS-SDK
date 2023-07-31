@@ -11957,6 +11957,18 @@
 >>>>>>> master
       "length": 4,
       "value": "\"no\""
+=======
+      "length": 5,
+      "value": "\"yes\""
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> 993b5fc (fix: fixed setUserIsPremium function)
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> 15931f2 (fix: fixed setUserIsPremium function)
+=======
+>>>>>>> 150464a (fix: fixing setting user is premium on RC customerInfo call)
     },
     {
       "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
@@ -11968,11 +11980,59 @@
 >>>>>>> master
       "length": 5,
       "value": "\"yes\""
+=======
+      "offset": 4526,
+      "length": 4,
+      "value": "\"no\""
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> 993b5fc (fix: fixed setUserIsPremium function)
+=======
+>>>>>>> 6d3ea5e (fix: fixed setUserIsPremium function)
+>>>>>>> 15931f2 (fix: fixed setUserIsPremium function)
+=======
+>>>>>>> 150464a (fix: fixing setting user is premium on RC customerInfo call)
     },
     {
       "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
       "kind": "StringLiteral",
 <<<<<<< HEAD
+      "offset": 7569,
+=======
+      "offset": 6883,
+>>>>>>> 69235d0 (feat: implemented functions to retrieve Adjust adid and Amplitude User and Device Id)
+=======
+      "offset": 4526,
+      "length": 4,
+      "value": "\"no\""
+=======
+=======
+>>>>>>> 150464a (fix: fixing setting user is premium on RC customerInfo call)
+      "offset": 6885,
+<<<<<<< HEAD
+>>>>>>> 15931f2 (fix: fixed setUserIsPremium function)
+=======
+>>>>>>> master
+=======
+      "offset": 5111,
+>>>>>>> 13962f8 (feat: restored KovaleeFramework)
+>>>>>>> 3226eb0 (feat: restored KovaleeFramework)
+=======
+      "offset": 7571,
+>>>>>>> a79068b (feat: new KovaleeFramework version)
+      "length": 5,
+      "value": "\"yes\""
+    },
+    {
+      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
+      "kind": "StringLiteral",
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> 13962f8 (feat: restored KovaleeFramework)
       "offset": 7569,
       "length": 5,
       "value": "\"yes\""
@@ -11980,6 +12040,7 @@
     {
       "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
       "kind": "StringLiteral",
+>>>>>>> 3226eb0 (feat: restored KovaleeFramework)
       "offset": 9029,
 =======
       "offset": 8305,
