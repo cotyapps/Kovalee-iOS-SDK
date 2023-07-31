@@ -91,7 +91,6 @@ public final class Kovalee {
 	public var configuration: Configuration
 }
 
-
 extension Kovalee {
 	internal func createAmplitudeWrapper(
 		withConfiguration configuration: Configuration,
