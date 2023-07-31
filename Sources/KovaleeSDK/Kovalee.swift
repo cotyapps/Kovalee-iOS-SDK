@@ -60,23 +60,18 @@ public final class Kovalee {
 		KLogger.logLevel = configuration.logLevel
 		
 		do {
-			let keys = try Reader.kovaleeKeysReader.load(configuration.keysFileUrl)
-			
+			self.keys = try Reader.kovaleeKeysReader.load(configuration.keysFileUrl)
+
 			// avoid initializing third party tools if running UnitTests
 			if !ProcessInfo.isRunningTests {
-				let adjustWrapper = self.createAdjustWrapper(withConfiguration: configuration, andKey: keys.adjust)
-				let amplitudeWrapper = self.createAmplitudeWrapper(withConfiguration: configuration, andKeys: keys.amplitude)
-				let revenueCatWrapper = self.createRevenueCatWrapper(withKeys: keys.revenueCat)
-				let firebaseWrapper = self.createFirebaseWrapper(withKeys: keys.firebase)
-				let applovinWrapper = self.createApplovinWrapper(withKeys: keys.applovin)
-				
+				let eventTracker = self.createAmplitudeWrapper(
+					withConfiguration: configuration,
+					andKeys: keys.amplitude
+				)
+
 				self.kovaleeManager = KovaleeManager.init(
 					keys: keys,
-					adjustWrapper: adjustWrapper,
-					amplitudeWrapper: amplitudeWrapper,
-					revenueCatWrapper: revenueCatWrapper,
-					firebaseWrapper: firebaseWrapper,
-					applovinWrapper: applovinWrapper
+					eventTrackerManager: eventTracker
 				)
 			}
 
@@ -90,52 +85,23 @@ public final class Kovalee {
 	}
 
     private static var initializedManager: Kovalee?
-	internal var kovaleeManager: KovaleeManager?
-	
-	private var configuration: Configuration
+
+	public var keys: KovaleeKeys
+	public var kovaleeManager: KovaleeManager?
+	public var configuration: Configuration
 }
 
 
 extension Kovalee {
-	internal func createAdjustWrapper(withConfiguration configuration: Configuration, andKey key: String) -> AdjustWrapper {
-		AdjustWrapperImpl(
-			configuration: AdjustConfiguration(
-				environment: configuration.environment.rawValue,
-				token: key
-			),
-			attributionAdidCallback: {
-				self.kovaleeManager?.attributionCallback(withAdid: $0)
-			}
-		)
-	}
-	
-	internal func createAmplitudeWrapper(withConfiguration configuration: Configuration, andKeys keys: KovaleeKeys.Amplitude) -> AmplitudeWrapper {
+	internal func createAmplitudeWrapper(
+		withConfiguration configuration: Configuration,
+		andKeys keys: KovaleeKeys.Amplitude
+	) -> EventTrackerManager {
 		if configuration.environment == .development && keys.devSDKId == nil {
 			KLogger.error("Configured Sandbox environment but Amplitude Dev key hasn't been provided")
 		}
 		return AmplitudeWrapperImpl(
 			withKey: configuration.environment == .production ? keys.prodSDKId : (keys.devSDKId ?? "")
 		)
-	}
-	
-	internal func createFirebaseWrapper(withKeys keys: KovaleeKeys.Firebase?) -> FirebaseWrapper? {
-		guard let keys else {
-			return nil
-		}
-		return FirebaseWrapperImpl(keys: keys)
-	}
-
-	internal func createRevenueCatWrapper(withKeys keys: KovaleeKeys.RevenueCat?) -> RevenueCatWrapper? {
-		guard let keys else {
-			return nil
-		}
-		return RevenueCatWrapperImpl(withKeys: keys)
-	}
-	
-	internal func createApplovinWrapper(withKeys keys: KovaleeKeys.Applovin?) -> ApplovinWrapper? {
-		guard let keys else {
-			return nil
-		}
-		return ApplovinWrapperImpl.init(withKey: keys)
 	}
 }

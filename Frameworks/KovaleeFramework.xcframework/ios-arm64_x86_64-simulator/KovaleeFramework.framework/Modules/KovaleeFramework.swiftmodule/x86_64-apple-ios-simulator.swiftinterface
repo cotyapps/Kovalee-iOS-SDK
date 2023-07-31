@@ -10,7 +10,11 @@ import _Concurrency
 import _StringProcessing
 import os
 public class KovaleeManager {
-  public init(withStorage storage: KovaleeFramework.Storage = .userDefaults(), keys: KovaleeFramework.KovaleeKeys, adjustWrapper: any KovaleeFramework.AdjustWrapper, amplitudeWrapper: any KovaleeFramework.AmplitudeWrapper, revenueCatWrapper: (any KovaleeFramework.RevenueCatWrapper)?, firebaseWrapper: (any KovaleeFramework.FirebaseWrapper)?, applovinWrapper: (any KovaleeFramework.ApplovinWrapper)?)
+  public init(withStorage storage: KovaleeFramework.Storage = .userDefaults(), keys: KovaleeFramework.KovaleeKeys, eventTrackerManager: any KovaleeFramework.EventTrackerManager)
+  public func setupAttributionManager(adjustWrapper: any KovaleeFramework.AttributionManager)
+  public func setupPurchaseManager(purchaseManaegr: any KovaleeFramework.PurchaseManager)
+  public func setupRemoteConfigurationManager(remoteConfigManager: any KovaleeFramework.RemoteConfigurationManager)
+  public func setupAdsManager(adsManager: any KovaleeFramework.AdsManager)
   public func promptTrackingAuthorization(completion: @escaping (AppTrackingTransparency.ATTrackingManager.AuthorizationStatus) -> Swift.Void)
   public func getAttributionAdid() -> Swift.String?
   public func attributionCallback(withAdid adid: Swift.String?)
@@ -22,6 +26,11 @@ public class KovaleeManager {
   public func setUserProperty(key: Swift.String, value: Swift.String)
   public func setUserProperty(property: KovaleeFramework.UserProperty)
   public func sendAppOpenEvent()
+  public var attributionManager: (any KovaleeFramework.AttributionManager)?
+  public var trackerManager: (any KovaleeFramework.EventTrackerManager)?
+  public var purchaseManager: (any KovaleeFramework.PurchaseManager)?
+  public var remoteConfigManager: (any KovaleeFramework.RemoteConfigurationManager)?
+  public var adsManager: (any KovaleeFramework.AdsManager)?
   @objc deinit
 }
 extension KovaleeFramework.KovaleeManager {
@@ -42,6 +51,8 @@ extension KovaleeFramework.KovaleeManager {
   #if compiler(>=5.3) && $AsyncAwait
   public func purchase(package: any KovaleeFramework.AbstractPackage, fromSource source: Swift.String) async throws -> (any KovaleeFramework.AbstractPurchaseResultData)?
   #endif
+}
+extension KovaleeFramework.KovaleeManager {
   public func startedPurchasing(subscriptionWithDuration duration: Swift.Int, fromSource source: Swift.String)
   public func succesfullyPurchased(subscriptionWithProductId productId: Swift.String, andDuration duration: Swift.Int, fromSource source: Swift.String)
   public func paymentCancelledForSubscription(fromSource source: Swift.String)
@@ -109,8 +120,8 @@ public struct KovaleeConstants {
 }
 public struct KovaleeKeys : Swift.Decodable {
   public let appCode: Swift.String
-  public let liteVersion: Swift.Bool
-  public let adjust: Swift.String
+  public let liteVersion: Swift.Bool?
+  public let adjust: Swift.String?
   public let amplitude: KovaleeFramework.KovaleeKeys.Amplitude
   public let revenueCat: KovaleeFramework.KovaleeKeys.RevenueCat?
   public let firebase: KovaleeFramework.KovaleeKeys.Firebase?
@@ -216,7 +227,7 @@ public struct AdjustConfiguration {
   public var token: Swift.String
   public init(environment: Swift.String, token: Swift.String)
 }
-public protocol AdjustWrapper {
+public protocol AttributionManager {
   func getAttributionAdid() -> Swift.String?
   func promptTrackingAuthorization(completion: @escaping (AppTrackingTransparency.ATTrackingManager.AuthorizationStatus) -> Swift.Void)
   func sendConversionValue_SKA3(value: Swift.Int)
@@ -224,7 +235,7 @@ public protocol AdjustWrapper {
   var attributionAdidCallback: (Swift.String?) -> Swift.Void { get }
   var configuration: KovaleeFramework.AdjustConfiguration { get }
 }
-public protocol AmplitudeWrapper {
+public protocol EventTrackerManager {
   func sendEvent(_ event: KovaleeFramework.Event)
   func setUserId(_ userId: Swift.String)
   func setDeviceId(_ deviceId: Swift.String)
@@ -233,13 +244,13 @@ public protocol AmplitudeWrapper {
   func getUserId() -> Swift.String?
   func getDeviceId() -> Swift.String?
 }
-public protocol FirebaseWrapper {
+public protocol RemoteConfigurationManager {
   func setDefaultValues(_ values: [Swift.String : Any])
   #if compiler(>=5.3) && $AsyncAwait
   func value(forKey key: Swift.String) async throws -> Foundation.Data
   #endif
 }
-public protocol RevenueCatWrapper {
+public protocol PurchaseManager {
   func setUserId(userId: Swift.String)
   #if compiler(>=5.3) && $AsyncAwait
   func fetchOfferings() async throws -> (any KovaleeFramework.AbstractOfferings)?
@@ -274,7 +285,7 @@ public protocol AbstractPackage {
   var rcPackage: Any { get }
   func getDuration() -> Swift.Int
 }
-public protocol ApplovinWrapper {
+public protocol AdsManager {
   func showMediationDebugger()
   #if compiler(>=5.3) && $AsyncAwait
   func setupfbAdProcessingOptions(options: any KovaleeFramework.AbstractFBAdProcessingOptions) async
