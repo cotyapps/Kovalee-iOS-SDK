@@ -7194,6 +7194,7 @@
             ],
             "declKind": "Func",
 <<<<<<< HEAD
+<<<<<<< HEAD
             "usr": "s:16KovaleeFramework19EventTrackerManagerP9getUserIdSSSgyF",
             "mangledName": "$s16KovaleeFramework19EventTrackerManagerP9getUserIdSSSgyF",
             "moduleName": "KovaleeFramework",
@@ -7263,12 +7264,13 @@
             "genericSig": "<τ_0_0 where τ_0_0 : KovaleeFramework.AmplitudeWrapper>",
             "sugared_genericSig": "<Self where Self : KovaleeFramework.AmplitudeWrapper>",
 =======
+=======
+>>>>>>> a79068b (feat: new KovaleeFramework version)
             "usr": "s:16KovaleeFramework19EventTrackerManagerP9getUserIdSSSgyF",
             "mangledName": "$s16KovaleeFramework19EventTrackerManagerP9getUserIdSSSgyF",
             "moduleName": "KovaleeFramework",
             "genericSig": "<τ_0_0 where τ_0_0 : KovaleeFramework.EventTrackerManager>",
             "sugared_genericSig": "<Self where Self : KovaleeFramework.EventTrackerManager>",
->>>>>>> 13962f8 (feat: restored KovaleeFramework)
             "protocolReq": true,
             "reqNewWitnessTableEntry": true,
             "funcSelfKind": "NonMutating"
@@ -7294,19 +7296,11 @@
               }
             ],
             "declKind": "Func",
-<<<<<<< HEAD
-            "usr": "s:16KovaleeFramework16AmplitudeWrapperP11getDeviceIdSSSgyF",
-            "mangledName": "$s16KovaleeFramework16AmplitudeWrapperP11getDeviceIdSSSgyF",
-            "moduleName": "KovaleeFramework",
-            "genericSig": "<τ_0_0 where τ_0_0 : KovaleeFramework.AmplitudeWrapper>",
-            "sugared_genericSig": "<Self where Self : KovaleeFramework.AmplitudeWrapper>",
-=======
             "usr": "s:16KovaleeFramework19EventTrackerManagerP11getDeviceIdSSSgyF",
             "mangledName": "$s16KovaleeFramework19EventTrackerManagerP11getDeviceIdSSSgyF",
             "moduleName": "KovaleeFramework",
             "genericSig": "<τ_0_0 where τ_0_0 : KovaleeFramework.EventTrackerManager>",
             "sugared_genericSig": "<Self where Self : KovaleeFramework.EventTrackerManager>",
->>>>>>> 13962f8 (feat: restored KovaleeFramework)
             "protocolReq": true,
             "reqNewWitnessTableEntry": true,
             "funcSelfKind": "NonMutating"
@@ -11898,6 +11892,7 @@
       "kind": "StringLiteral",
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
       "offset": 4124,
 =======
       "offset": 3586,
@@ -11908,6 +11903,9 @@
       "offset": 4124,
 >>>>>>> 13962f8 (feat: restored KovaleeFramework)
 >>>>>>> 3226eb0 (feat: restored KovaleeFramework)
+=======
+      "offset": 4124,
+>>>>>>> a79068b (feat: new KovaleeFramework version)
       "length": 5,
       "value": "\"yes\""
     },
@@ -11916,6 +11914,7 @@
       "kind": "BooleanLiteral",
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
       "offset": 4132,
 =======
       "offset": 3594,
@@ -11926,6 +11925,9 @@
       "offset": 4132,
 >>>>>>> 13962f8 (feat: restored KovaleeFramework)
 >>>>>>> 3226eb0 (feat: restored KovaleeFramework)
+=======
+      "offset": 4132,
+>>>>>>> a79068b (feat: new KovaleeFramework version)
       "length": 4,
       "value": "true"
     },
@@ -11934,6 +11936,7 @@
       "kind": "BooleanLiteral",
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
       "offset": 4139,
 =======
       "offset": 3601,
@@ -11944,6 +11947,9 @@
       "offset": 4139,
 >>>>>>> 13962f8 (feat: restored KovaleeFramework)
 >>>>>>> 3226eb0 (feat: restored KovaleeFramework)
+=======
+      "offset": 4139,
+>>>>>>> a79068b (feat: new KovaleeFramework version)
       "length": 5,
       "value": "false"
     },
@@ -11952,6 +11958,7 @@
       "kind": "BooleanLiteral",
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
       "offset": 4338,
 =======
       "offset": 3800,
@@ -11962,6 +11969,9 @@
       "offset": 4338,
 >>>>>>> 13962f8 (feat: restored KovaleeFramework)
 >>>>>>> 3226eb0 (feat: restored KovaleeFramework)
+=======
+      "offset": 4338,
+>>>>>>> a79068b (feat: new KovaleeFramework version)
       "length": 4,
       "value": "true"
     },
@@ -11970,6 +11980,7 @@
       "kind": "StringLiteral",
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
       "offset": 4546,
 =======
       "offset": 3998,
@@ -11980,6 +11991,9 @@
       "offset": 4546,
 >>>>>>> 13962f8 (feat: restored KovaleeFramework)
 >>>>>>> 3226eb0 (feat: restored KovaleeFramework)
+=======
+      "offset": 4546,
+>>>>>>> a79068b (feat: new KovaleeFramework version)
       "length": 4,
       "value": "\"no\""
     },
@@ -11988,6 +12002,7 @@
       "kind": "BooleanLiteral",
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
       "offset": 4606,
 =======
       "offset": 4058,
@@ -11998,12 +12013,16 @@
       "offset": 4606,
 >>>>>>> 13962f8 (feat: restored KovaleeFramework)
 >>>>>>> 3226eb0 (feat: restored KovaleeFramework)
+=======
+      "offset": 4606,
+>>>>>>> a79068b (feat: new KovaleeFramework version)
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
       "kind": "StringLiteral",
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
       "offset": 5104,
@@ -12016,6 +12035,9 @@
       "length": 4,
       "value": "\"no\""
 =======
+=======
+      "offset": 5104,
+>>>>>>> a79068b (feat: new KovaleeFramework version)
       "length": 5,
       "value": "\"yes\""
 <<<<<<< HEAD
@@ -12033,6 +12055,7 @@
       "kind": "StringLiteral",
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
       "offset": 5111,
 =======
       "offset": 4525,
@@ -12044,6 +12067,9 @@
 =======
       "offset": 5104,
 >>>>>>> 13962f8 (feat: restored KovaleeFramework)
+=======
+      "offset": 5112,
+>>>>>>> a79068b (feat: new KovaleeFramework version)
       "length": 4,
       "value": "\"no\""
 <<<<<<< HEAD
@@ -12058,6 +12084,7 @@
     {
       "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
       "kind": "StringLiteral",
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -12081,12 +12108,16 @@
       "offset": 5111,
 >>>>>>> 13962f8 (feat: restored KovaleeFramework)
 >>>>>>> 3226eb0 (feat: restored KovaleeFramework)
+=======
+      "offset": 7571,
+>>>>>>> a79068b (feat: new KovaleeFramework version)
       "length": 5,
       "value": "\"yes\""
     },
     {
       "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
       "kind": "StringLiteral",
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -12110,12 +12141,16 @@
       "offset": 9029,
 >>>>>>> 13962f8 (feat: restored KovaleeFramework)
 >>>>>>> 3226eb0 (feat: restored KovaleeFramework)
+=======
+      "offset": 9031,
+>>>>>>> a79068b (feat: new KovaleeFramework version)
       "length": 87,
       "value": "\"🛰️ Retrieved value \""
     },
     {
       "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
       "kind": "StringLiteral",
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -12132,12 +12167,16 @@
       "offset": 9096,
 >>>>>>> 13962f8 (feat: restored KovaleeFramework)
 >>>>>>> 3226eb0 (feat: restored KovaleeFramework)
+=======
+      "offset": 9098,
+>>>>>>> a79068b (feat: new KovaleeFramework version)
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
       "kind": "StringLiteral",
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -12154,12 +12193,16 @@
       "offset": 9099,
 >>>>>>> 13962f8 (feat: restored KovaleeFramework)
 >>>>>>> 3226eb0 (feat: restored KovaleeFramework)
+=======
+      "offset": 9101,
+>>>>>>> a79068b (feat: new KovaleeFramework version)
       "length": 3,
       "value": "\" for key: \""
     },
     {
       "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
       "kind": "StringLiteral",
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -12176,12 +12219,16 @@
       "offset": 9115,
 >>>>>>> 13962f8 (feat: restored KovaleeFramework)
 >>>>>>> 3226eb0 (feat: restored KovaleeFramework)
+=======
+      "offset": 9117,
+>>>>>>> a79068b (feat: new KovaleeFramework version)
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
       "kind": "StringLiteral",
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -12198,12 +12245,16 @@
       "offset": 9407,
 >>>>>>> 13962f8 (feat: restored KovaleeFramework)
 >>>>>>> 3226eb0 (feat: restored KovaleeFramework)
+=======
+      "offset": 9409,
+>>>>>>> a79068b (feat: new KovaleeFramework version)
       "length": 83,
       "value": "\"🛰️ User already partecipated in a different experiment with \""
     },
     {
       "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
       "kind": "StringLiteral",
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -12220,12 +12271,16 @@
       "offset": 9489,
 >>>>>>> 13962f8 (feat: restored KovaleeFramework)
 >>>>>>> 3226eb0 (feat: restored KovaleeFramework)
+=======
+      "offset": 9491,
+>>>>>>> a79068b (feat: new KovaleeFramework version)
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
       "kind": "StringLiteral",
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -12242,12 +12297,16 @@
       "offset": 9689,
 >>>>>>> 13962f8 (feat: restored KovaleeFramework)
 >>>>>>> 3226eb0 (feat: restored KovaleeFramework)
+=======
+      "offset": 9691,
+>>>>>>> a79068b (feat: new KovaleeFramework version)
       "length": 56,
       "value": "\"🛰️ Fetched AB Experiment value from local storage\""
     },
     {
       "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
       "kind": "StringLiteral",
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -12264,12 +12323,16 @@
       "offset": 10099,
 >>>>>>> 13962f8 (feat: restored KovaleeFramework)
 >>>>>>> 3226eb0 (feat: restored KovaleeFramework)
+=======
+      "offset": 10101,
+>>>>>>> a79068b (feat: new KovaleeFramework version)
       "length": 3,
       "value": "\"0\""
     },
     {
       "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
       "kind": "StringLiteral",
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -12286,12 +12349,16 @@
       "offset": 10490,
 >>>>>>> 13962f8 (feat: restored KovaleeFramework)
 >>>>>>> 3226eb0 (feat: restored KovaleeFramework)
+=======
+      "offset": 10492,
+>>>>>>> a79068b (feat: new KovaleeFramework version)
       "length": 27,
       "value": "\"creating interstitial ad \""
     },
     {
       "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
       "kind": "StringLiteral",
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -12308,12 +12375,16 @@
       "offset": 10651,
 >>>>>>> 13962f8 (feat: restored KovaleeFramework)
 >>>>>>> 3226eb0 (feat: restored KovaleeFramework)
+=======
+      "offset": 10653,
+>>>>>>> a79068b (feat: new KovaleeFramework version)
       "length": 25,
       "value": "\"display interstitial ad\""
     },
     {
       "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
       "kind": "StringLiteral",
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -12330,12 +12401,16 @@
       "offset": 10857,
 >>>>>>> 13962f8 (feat: restored KovaleeFramework)
 >>>>>>> 3226eb0 (feat: restored KovaleeFramework)
+=======
+      "offset": 10859,
+>>>>>>> a79068b (feat: new KovaleeFramework version)
       "length": 22,
       "value": "\"creating rewarded ad\""
     },
     {
       "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
       "kind": "StringLiteral",
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -12352,6 +12427,9 @@
       "offset": 11004,
 >>>>>>> 13962f8 (feat: restored KovaleeFramework)
 >>>>>>> 3226eb0 (feat: restored KovaleeFramework)
+=======
+      "offset": 11006,
+>>>>>>> a79068b (feat: new KovaleeFramework version)
       "length": 21,
       "value": "\"display rewarded ad\""
     },
