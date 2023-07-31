@@ -7193,9 +7193,6 @@
               }
             ],
             "declKind": "Func",
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
             "usr": "s:16KovaleeFramework19EventTrackerManagerP9getUserIdSSSgyF",
             "mangledName": "$s16KovaleeFramework19EventTrackerManagerP9getUserIdSSSgyF",
             "moduleName": "KovaleeFramework",
@@ -7234,6 +7231,7 @@
             "protocolReq": true,
             "reqNewWitnessTableEntry": true,
             "funcSelfKind": "NonMutating"
+<<<<<<< HEAD
           },
           {
             "kind": "Function",
@@ -7369,6 +7367,8 @@
             "protocolReq": true,
             "reqNewWitnessTableEntry": true,
             "funcSelfKind": "NonMutating"
+=======
+>>>>>>> 768955f (new-framework-version)
           }
         ],
         "declKind": "Protocol",
@@ -11955,11 +11955,8 @@
     {
       "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
       "kind": "StringLiteral",
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
       "offset": 4124,
+<<<<<<< HEAD
 =======
       "offset": 3586,
 >>>>>>> 69235d0 (feat: implemented functions to retrieve Adjust adid and Amplitude User and Device Id)
@@ -11979,17 +11976,16 @@
 =======
 >>>>>>> master
 >>>>>>> 1005f09 (fixed merge conflicts)
+=======
+>>>>>>> 768955f (new-framework-version)
       "length": 5,
       "value": "\"yes\""
     },
     {
       "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
       "kind": "BooleanLiteral",
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
       "offset": 4132,
+<<<<<<< HEAD
 =======
       "offset": 3594,
 >>>>>>> 69235d0 (feat: implemented functions to retrieve Adjust adid and Amplitude User and Device Id)
@@ -12009,17 +12005,16 @@
 =======
 >>>>>>> master
 >>>>>>> 1005f09 (fixed merge conflicts)
+=======
+>>>>>>> 768955f (new-framework-version)
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
       "kind": "BooleanLiteral",
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
       "offset": 4139,
+<<<<<<< HEAD
 =======
       "offset": 3601,
 >>>>>>> 69235d0 (feat: implemented functions to retrieve Adjust adid and Amplitude User and Device Id)
@@ -12039,17 +12034,16 @@
 =======
 >>>>>>> master
 >>>>>>> 1005f09 (fixed merge conflicts)
+=======
+>>>>>>> 768955f (new-framework-version)
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
       "kind": "BooleanLiteral",
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
       "offset": 4338,
+<<<<<<< HEAD
 =======
       "offset": 3800,
 >>>>>>> 69235d0 (feat: implemented functions to retrieve Adjust adid and Amplitude User and Device Id)
@@ -12069,17 +12063,16 @@
 =======
 >>>>>>> master
 >>>>>>> 1005f09 (fixed merge conflicts)
+=======
+>>>>>>> 768955f (new-framework-version)
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
       "kind": "StringLiteral",
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
       "offset": 4546,
+<<<<<<< HEAD
 =======
       "offset": 3998,
 >>>>>>> 69235d0 (feat: implemented functions to retrieve Adjust adid and Amplitude User and Device Id)
@@ -12099,17 +12092,16 @@
 =======
 >>>>>>> master
 >>>>>>> 1005f09 (fixed merge conflicts)
+=======
+>>>>>>> 768955f (new-framework-version)
       "length": 4,
       "value": "\"no\""
     },
     {
       "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
       "kind": "BooleanLiteral",
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
       "offset": 4606,
+<<<<<<< HEAD
 =======
       "offset": 4058,
 >>>>>>> 69235d0 (feat: implemented functions to retrieve Adjust adid and Amplitude User and Device Id)
@@ -12129,17 +12121,16 @@
 =======
 >>>>>>> master
 >>>>>>> 1005f09 (fixed merge conflicts)
+=======
+>>>>>>> 768955f (new-framework-version)
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
       "kind": "StringLiteral",
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
       "offset": 5104,
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 3226eb0 (feat: restored KovaleeFramework)
@@ -12152,12 +12143,15 @@
 >>>>>>> 69235d0 (feat: implemented functions to retrieve Adjust adid and Amplitude User and Device Id)
 =======
       "offset": 4518,
+=======
+>>>>>>> 768955f (new-framework-version)
       "length": 5,
       "value": "\"yes\""
     },
     {
       "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
       "kind": "StringLiteral",
+<<<<<<< HEAD
       "offset": 4526,
 >>>>>>> master
       "length": 4,
@@ -12218,10 +12212,12 @@
       "offset": 5104,
 >>>>>>> 13962f8 (feat: restored KovaleeFramework)
 =======
+=======
+>>>>>>> 768955f (new-framework-version)
       "offset": 5112,
->>>>>>> a79068b (feat: new KovaleeFramework version)
       "length": 4,
       "value": "\"no\""
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> 993b5fc (fix: fixed setUserIsPremium function)
@@ -12239,10 +12235,13 @@
 =======
 >>>>>>> 6d3ea5e (fix: fixed setUserIsPremium function)
 >>>>>>> 15931f2 (fix: fixed setUserIsPremium function)
+=======
+>>>>>>> 768955f (new-framework-version)
     },
     {
       "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
       "kind": "StringLiteral",
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -12287,12 +12286,16 @@
       "offset": 6885,
 >>>>>>> master
 >>>>>>> 1005f09 (fixed merge conflicts)
+=======
+      "offset": 7571,
+>>>>>>> 768955f (new-framework-version)
       "length": 5,
       "value": "\"yes\""
     },
     {
       "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
       "kind": "StringLiteral",
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -12340,12 +12343,16 @@
       "offset": 8305,
 >>>>>>> master
 >>>>>>> 1005f09 (fixed merge conflicts)
+=======
+      "offset": 9031,
+>>>>>>> 768955f (new-framework-version)
       "length": 87,
       "value": "\"🛰️ Retrieved value \""
     },
     {
       "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
       "kind": "StringLiteral",
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -12382,12 +12389,16 @@
       "offset": 8372,
 >>>>>>> master
 >>>>>>> 1005f09 (fixed merge conflicts)
+=======
+      "offset": 9098,
+>>>>>>> 768955f (new-framework-version)
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
       "kind": "StringLiteral",
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -12424,12 +12435,16 @@
       "offset": 8375,
 >>>>>>> master
 >>>>>>> 1005f09 (fixed merge conflicts)
+=======
+      "offset": 9101,
+>>>>>>> 768955f (new-framework-version)
       "length": 3,
       "value": "\" for key: \""
     },
     {
       "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
       "kind": "StringLiteral",
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -12466,12 +12481,16 @@
       "offset": 8391,
 >>>>>>> master
 >>>>>>> 1005f09 (fixed merge conflicts)
+=======
+      "offset": 9117,
+>>>>>>> 768955f (new-framework-version)
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
       "kind": "StringLiteral",
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -12508,12 +12527,16 @@
       "offset": 8683,
 >>>>>>> master
 >>>>>>> 1005f09 (fixed merge conflicts)
+=======
+      "offset": 9409,
+>>>>>>> 768955f (new-framework-version)
       "length": 83,
       "value": "\"🛰️ User already partecipated in a different experiment with \""
     },
     {
       "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
       "kind": "StringLiteral",
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -12550,12 +12573,16 @@
       "offset": 8765,
 >>>>>>> master
 >>>>>>> 1005f09 (fixed merge conflicts)
+=======
+      "offset": 9491,
+>>>>>>> 768955f (new-framework-version)
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
       "kind": "StringLiteral",
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -12592,12 +12619,16 @@
       "offset": 8965,
 >>>>>>> master
 >>>>>>> 1005f09 (fixed merge conflicts)
+=======
+      "offset": 9691,
+>>>>>>> 768955f (new-framework-version)
       "length": 56,
       "value": "\"🛰️ Fetched AB Experiment value from local storage\""
     },
     {
       "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
       "kind": "StringLiteral",
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -12634,12 +12665,16 @@
       "offset": 9359,
 >>>>>>> master
 >>>>>>> 1005f09 (fixed merge conflicts)
+=======
+      "offset": 10101,
+>>>>>>> 768955f (new-framework-version)
       "length": 3,
       "value": "\"0\""
     },
     {
       "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
       "kind": "StringLiteral",
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -12676,12 +12711,16 @@
       "offset": 9749,
 >>>>>>> master
 >>>>>>> 1005f09 (fixed merge conflicts)
+=======
+      "offset": 10492,
+>>>>>>> 768955f (new-framework-version)
       "length": 27,
       "value": "\"creating interstitial ad \""
     },
     {
       "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
       "kind": "StringLiteral",
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -12718,12 +12757,16 @@
       "offset": 9908,
 >>>>>>> master
 >>>>>>> 1005f09 (fixed merge conflicts)
+=======
+      "offset": 10653,
+>>>>>>> 768955f (new-framework-version)
       "length": 25,
       "value": "\"display interstitial ad\""
     },
     {
       "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
       "kind": "StringLiteral",
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -12760,12 +12803,16 @@
       "offset": 10112,
 >>>>>>> master
 >>>>>>> 1005f09 (fixed merge conflicts)
+=======
+      "offset": 10859,
+>>>>>>> 768955f (new-framework-version)
       "length": 22,
       "value": "\"creating rewarded ad\""
     },
     {
       "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
       "kind": "StringLiteral",
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -12802,6 +12849,9 @@
       "offset": 10257,
 >>>>>>> master
 >>>>>>> 1005f09 (fixed merge conflicts)
+=======
+      "offset": 11006,
+>>>>>>> 768955f (new-framework-version)
       "length": 21,
       "value": "\"display rewarded ad\""
     },

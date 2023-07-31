@@ -28,18 +28,21 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 13962f8 (feat: restored KovaleeFramework)
 >>>>>>> 3226eb0 (feat: restored KovaleeFramework)
 		I0z+hSRIaNwIQe9tZ86tOBnjw0o=
 =======
+=======
+>>>>>>> 768955f (new-framework-version)
 		kZ09rCpEFi/f4RE2v6BIh6EIEEE=
->>>>>>> a79068b (feat: new KovaleeFramework version)
 		</data>
 		<key>Modules/KovaleeFramework.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
 		II8ERaZLDX6pDySdoRaIDGrl4yM=
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -88,6 +91,8 @@
 		<data>
 		ldOhJp1bL75+GhcjnZy5sfLqEPQ=
 >>>>>>> 69235d0 (feat: implemented functions to retrieve Adjust adid and Amplitude User and Device Id)
+=======
+>>>>>>> 768955f (new-framework-version)
 		</data>
 		<key>Modules/KovaleeFramework.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -95,7 +100,6 @@
 		</data>
 		<key>Modules/KovaleeFramework.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-<<<<<<< HEAD
 		II8ERaZLDX6pDySdoRaIDGrl4yM=
 		</data>
 		<key>Modules/KovaleeFramework.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
@@ -111,6 +115,7 @@
 		ni5+WGP/pl7WV8Dui4EniGBU2S8=
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 		ldOhJp1bL75+GhcjnZy5sfLqEPQ=
 		</data>
@@ -149,6 +154,8 @@
 		<data>
 		wwgIuYGFM5wpvgAmj6U6UDR6qSo=
 >>>>>>> 69235d0 (feat: implemented functions to retrieve Adjust adid and Amplitude User and Device Id)
+=======
+>>>>>>> 768955f (new-framework-version)
 		</data>
 		<key>Modules/KovaleeFramework.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -156,12 +163,12 @@
 		</data>
 		<key>Modules/KovaleeFramework.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-<<<<<<< HEAD
 		ni5+WGP/pl7WV8Dui4EniGBU2S8=
 		</data>
 		<key>Modules/KovaleeFramework.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
 		qj6WYErzXmQT1r6L7tQzlLCgG/Y=
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -186,6 +193,8 @@
 		<data>
 		1KtmvJym7U3FbQT6GFe5fVgJ2F4=
 >>>>>>> 69235d0 (feat: implemented functions to retrieve Adjust adid and Amplitude User and Device Id)
+=======
+>>>>>>> 768955f (new-framework-version)
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -222,6 +231,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 3226eb0 (feat: restored KovaleeFramework)
 			/aftgJ9cDkoD4G6ePPg7NZX2nNz2IruDJCuixOOmM9Q=
@@ -265,14 +275,17 @@
 =======
 			KLP6Fgi7aUPmGovss/YzOvZfscyl9VUSAr3c3iq3xec=
 >>>>>>> 150464a (fix: fixing setting user is premium on RC customerInfo call)
+=======
+			WBsOQ5+tic4aAqzStlOmoKbxPBr0BUVY+NK43u8tB7s=
+>>>>>>> 768955f (new-framework-version)
 			</data>
 		</dict>
 		<key>Modules/KovaleeFramework.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-<<<<<<< HEAD
 			5BxD90e63MtJuHAuvxZYuwagx+NP21vvaNytBbmKcAw=
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 			yZJ57FyTE7NdKpz6ovLNGrUTMgUCJBOJsanB34gap3Q=
@@ -289,6 +302,8 @@
 =======
 			yZJ57FyTE7NdKpz6ovLNGrUTMgUCJBOJsanB34gap3Q=
 >>>>>>> 69235d0 (feat: implemented functions to retrieve Adjust adid and Amplitude User and Device Id)
+=======
+>>>>>>> 768955f (new-framework-version)
 			</data>
 		</dict>
 		<key>Modules/KovaleeFramework.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
@@ -302,8 +317,8 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-<<<<<<< HEAD
 			5BxD90e63MtJuHAuvxZYuwagx+NP21vvaNytBbmKcAw=
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 			yZJ57FyTE7NdKpz6ovLNGrUTMgUCJBOJsanB34gap3Q=
@@ -320,14 +335,16 @@
 =======
 			yZJ57FyTE7NdKpz6ovLNGrUTMgUCJBOJsanB34gap3Q=
 >>>>>>> 69235d0 (feat: implemented functions to retrieve Adjust adid and Amplitude User and Device Id)
+=======
+>>>>>>> 768955f (new-framework-version)
 			</data>
 		</dict>
 		<key>Modules/KovaleeFramework.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-<<<<<<< HEAD
 			2wPOLaZUXIRZA8WjUlEo7bNLQGYiIehzsgSeq++rdv4=
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 			NROE2gWOO9GRX3PyyEk5GSYo7Efs1xSNVW63UDBJHf8=
@@ -344,6 +361,8 @@
 =======
 			NROE2gWOO9GRX3PyyEk5GSYo7Efs1xSNVW63UDBJHf8=
 >>>>>>> 69235d0 (feat: implemented functions to retrieve Adjust adid and Amplitude User and Device Id)
+=======
+>>>>>>> 768955f (new-framework-version)
 			</data>
 		</dict>
 		<key>Modules/KovaleeFramework.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
@@ -360,6 +379,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 3226eb0 (feat: restored KovaleeFramework)
 			/aftgJ9cDkoD4G6ePPg7NZX2nNz2IruDJCuixOOmM9Q=
@@ -403,14 +423,17 @@
 =======
 			KLP6Fgi7aUPmGovss/YzOvZfscyl9VUSAr3c3iq3xec=
 >>>>>>> 150464a (fix: fixing setting user is premium on RC customerInfo call)
+=======
+			WBsOQ5+tic4aAqzStlOmoKbxPBr0BUVY+NK43u8tB7s=
+>>>>>>> 768955f (new-framework-version)
 			</data>
 		</dict>
 		<key>Modules/KovaleeFramework.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-<<<<<<< HEAD
 			oMOctg2K08oJUvqsp4EyLl0J340mr1rdiygVYtSjwt0=
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 			gQsA4YEPMcbzJoHD9VlrV0MmUD/c7zMwvHktWVrg9CI=
@@ -427,6 +450,8 @@
 =======
 			gQsA4YEPMcbzJoHD9VlrV0MmUD/c7zMwvHktWVrg9CI=
 >>>>>>> 69235d0 (feat: implemented functions to retrieve Adjust adid and Amplitude User and Device Id)
+=======
+>>>>>>> 768955f (new-framework-version)
 			</data>
 		</dict>
 		<key>Modules/KovaleeFramework.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
@@ -440,8 +465,8 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-<<<<<<< HEAD
 			oMOctg2K08oJUvqsp4EyLl0J340mr1rdiygVYtSjwt0=
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 			gQsA4YEPMcbzJoHD9VlrV0MmUD/c7zMwvHktWVrg9CI=
@@ -458,14 +483,16 @@
 =======
 			gQsA4YEPMcbzJoHD9VlrV0MmUD/c7zMwvHktWVrg9CI=
 >>>>>>> 69235d0 (feat: implemented functions to retrieve Adjust adid and Amplitude User and Device Id)
+=======
+>>>>>>> 768955f (new-framework-version)
 			</data>
 		</dict>
 		<key>Modules/KovaleeFramework.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-<<<<<<< HEAD
 			5Lmltklw+21nVMrO1rT/djMFEJZqg9Nu95VyYdZLI2I=
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 			TrbKXFeP4LAzRHNDaBkroY4LoLBEd1uvGx7i3WD3/ks=
@@ -482,6 +509,8 @@
 =======
 			TrbKXFeP4LAzRHNDaBkroY4LoLBEd1uvGx7i3WD3/ks=
 >>>>>>> 69235d0 (feat: implemented functions to retrieve Adjust adid and Amplitude User and Device Id)
+=======
+>>>>>>> 768955f (new-framework-version)
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
