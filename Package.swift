@@ -18,7 +18,7 @@ let package = Package(
         )
     ],
     dependencies: [
-		.package(url: "https://github.com/amplitude/Amplitude-Swift", from: Version(0, 4, 6))
+		.package(url: "https://github.com/amplitude/Amplitude-Swift", from: Version(0, 4, 7))
 	],
     targets: [
         .binaryTarget(
