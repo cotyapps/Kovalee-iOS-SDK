@@ -7195,6 +7195,7 @@
             "declKind": "Func",
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             "usr": "s:16KovaleeFramework19EventTrackerManagerP9getUserIdSSSgyF",
             "mangledName": "$s16KovaleeFramework19EventTrackerManagerP9getUserIdSSSgyF",
             "moduleName": "KovaleeFramework",
@@ -7268,9 +7269,13 @@
 >>>>>>> a79068b (feat: new KovaleeFramework version)
             "usr": "s:16KovaleeFramework19EventTrackerManagerP9getUserIdSSSgyF",
             "mangledName": "$s16KovaleeFramework19EventTrackerManagerP9getUserIdSSSgyF",
+=======
+            "usr": "s:16KovaleeFramework16AmplitudeWrapperP9getUserIdSSSgyF",
+            "mangledName": "$s16KovaleeFramework16AmplitudeWrapperP9getUserIdSSSgyF",
+>>>>>>> master
             "moduleName": "KovaleeFramework",
-            "genericSig": "<τ_0_0 where τ_0_0 : KovaleeFramework.EventTrackerManager>",
-            "sugared_genericSig": "<Self where Self : KovaleeFramework.EventTrackerManager>",
+            "genericSig": "<τ_0_0 where τ_0_0 : KovaleeFramework.AmplitudeWrapper>",
+            "sugared_genericSig": "<Self where Self : KovaleeFramework.AmplitudeWrapper>",
             "protocolReq": true,
             "reqNewWitnessTableEntry": true,
             "funcSelfKind": "NonMutating"
@@ -7296,11 +7301,11 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:16KovaleeFramework19EventTrackerManagerP11getDeviceIdSSSgyF",
-            "mangledName": "$s16KovaleeFramework19EventTrackerManagerP11getDeviceIdSSSgyF",
+            "usr": "s:16KovaleeFramework16AmplitudeWrapperP11getDeviceIdSSSgyF",
+            "mangledName": "$s16KovaleeFramework16AmplitudeWrapperP11getDeviceIdSSSgyF",
             "moduleName": "KovaleeFramework",
-            "genericSig": "<τ_0_0 where τ_0_0 : KovaleeFramework.EventTrackerManager>",
-            "sugared_genericSig": "<Self where Self : KovaleeFramework.EventTrackerManager>",
+            "genericSig": "<τ_0_0 where τ_0_0 : KovaleeFramework.AmplitudeWrapper>",
+            "sugared_genericSig": "<Self where Self : KovaleeFramework.AmplitudeWrapper>",
             "protocolReq": true,
             "reqNewWitnessTableEntry": true,
             "funcSelfKind": "NonMutating"
@@ -11969,7 +11974,11 @@
 >>>>>>> a79068b (feat: new KovaleeFramework version)
 =======
       "offset": 3586,
+<<<<<<< HEAD
 >>>>>>> 69235d0 (feat: implemented functions to retrieve Adjust adid and Amplitude User and Device Id)
+=======
+>>>>>>> master
+>>>>>>> 1005f09 (fixed merge conflicts)
       "length": 5,
       "value": "\"yes\""
     },
@@ -11995,7 +12004,11 @@
 >>>>>>> a79068b (feat: new KovaleeFramework version)
 =======
       "offset": 3594,
+<<<<<<< HEAD
 >>>>>>> 69235d0 (feat: implemented functions to retrieve Adjust adid and Amplitude User and Device Id)
+=======
+>>>>>>> master
+>>>>>>> 1005f09 (fixed merge conflicts)
       "length": 4,
       "value": "true"
     },
@@ -12021,7 +12034,11 @@
 >>>>>>> a79068b (feat: new KovaleeFramework version)
 =======
       "offset": 3601,
+<<<<<<< HEAD
 >>>>>>> 69235d0 (feat: implemented functions to retrieve Adjust adid and Amplitude User and Device Id)
+=======
+>>>>>>> master
+>>>>>>> 1005f09 (fixed merge conflicts)
       "length": 5,
       "value": "false"
     },
@@ -12047,7 +12064,11 @@
 >>>>>>> a79068b (feat: new KovaleeFramework version)
 =======
       "offset": 3800,
+<<<<<<< HEAD
 >>>>>>> 69235d0 (feat: implemented functions to retrieve Adjust adid and Amplitude User and Device Id)
+=======
+>>>>>>> master
+>>>>>>> 1005f09 (fixed merge conflicts)
       "length": 4,
       "value": "true"
     },
@@ -12073,7 +12094,11 @@
 >>>>>>> a79068b (feat: new KovaleeFramework version)
 =======
       "offset": 3998,
+<<<<<<< HEAD
 >>>>>>> 69235d0 (feat: implemented functions to retrieve Adjust adid and Amplitude User and Device Id)
+=======
+>>>>>>> master
+>>>>>>> 1005f09 (fixed merge conflicts)
       "length": 4,
       "value": "\"no\""
     },
@@ -12099,7 +12124,11 @@
 >>>>>>> a79068b (feat: new KovaleeFramework version)
 =======
       "offset": 4058,
+<<<<<<< HEAD
 >>>>>>> 69235d0 (feat: implemented functions to retrieve Adjust adid and Amplitude User and Device Id)
+=======
+>>>>>>> master
+>>>>>>> 1005f09 (fixed merge conflicts)
       "length": 5,
       "value": "false"
     },
@@ -12121,6 +12150,16 @@
 =======
       "offset": 4518,
 >>>>>>> 69235d0 (feat: implemented functions to retrieve Adjust adid and Amplitude User and Device Id)
+=======
+      "offset": 4518,
+      "length": 5,
+      "value": "\"yes\""
+    },
+    {
+      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
+      "kind": "StringLiteral",
+      "offset": 4526,
+>>>>>>> master
       "length": 4,
       "value": "\"no\""
 =======
@@ -12160,6 +12199,7 @@
     {
       "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
       "kind": "StringLiteral",
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -12237,11 +12277,16 @@
       "offset": 7571,
 >>>>>>> a79068b (feat: new KovaleeFramework version)
 =======
+<<<<<<< HEAD
       "offset": 4525,
 >>>>>>> 69235d0 (feat: implemented functions to retrieve Adjust adid and Amplitude User and Device Id)
 =======
       "offset": 6885,
 >>>>>>> 15931f2 (fix: fixed setUserIsPremium function)
+=======
+      "offset": 6885,
+>>>>>>> master
+>>>>>>> 1005f09 (fixed merge conflicts)
       "length": 5,
       "value": "\"yes\""
     },
@@ -12254,6 +12299,9 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 1005f09 (fixed merge conflicts)
       "offset": 9029,
 =======
       "offset": 8303,
@@ -12282,11 +12330,16 @@
       "offset": 9031,
 >>>>>>> a79068b (feat: new KovaleeFramework version)
 =======
+<<<<<<< HEAD
       "offset": 8303,
 >>>>>>> 69235d0 (feat: implemented functions to retrieve Adjust adid and Amplitude User and Device Id)
 =======
       "offset": 8305,
 >>>>>>> 15931f2 (fix: fixed setUserIsPremium function)
+=======
+      "offset": 8305,
+>>>>>>> master
+>>>>>>> 1005f09 (fixed merge conflicts)
       "length": 87,
       "value": "\"🛰️ Retrieved value \""
     },
@@ -12299,6 +12352,9 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 1005f09 (fixed merge conflicts)
       "offset": 9096,
 =======
       "offset": 8370,
@@ -12316,11 +12372,16 @@
       "offset": 9098,
 >>>>>>> a79068b (feat: new KovaleeFramework version)
 =======
+<<<<<<< HEAD
       "offset": 8370,
 >>>>>>> 69235d0 (feat: implemented functions to retrieve Adjust adid and Amplitude User and Device Id)
 =======
       "offset": 8372,
 >>>>>>> 15931f2 (fix: fixed setUserIsPremium function)
+=======
+      "offset": 8372,
+>>>>>>> master
+>>>>>>> 1005f09 (fixed merge conflicts)
       "length": 2,
       "value": "\"\""
     },
@@ -12333,6 +12394,9 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 1005f09 (fixed merge conflicts)
       "offset": 9099,
 =======
       "offset": 8373,
@@ -12350,11 +12414,16 @@
       "offset": 9101,
 >>>>>>> a79068b (feat: new KovaleeFramework version)
 =======
+<<<<<<< HEAD
       "offset": 8373,
 >>>>>>> 69235d0 (feat: implemented functions to retrieve Adjust adid and Amplitude User and Device Id)
 =======
       "offset": 8375,
 >>>>>>> 15931f2 (fix: fixed setUserIsPremium function)
+=======
+      "offset": 8375,
+>>>>>>> master
+>>>>>>> 1005f09 (fixed merge conflicts)
       "length": 3,
       "value": "\" for key: \""
     },
@@ -12367,6 +12436,9 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 1005f09 (fixed merge conflicts)
       "offset": 9115,
 =======
       "offset": 8389,
@@ -12384,11 +12456,16 @@
       "offset": 9117,
 >>>>>>> a79068b (feat: new KovaleeFramework version)
 =======
+<<<<<<< HEAD
       "offset": 8389,
 >>>>>>> 69235d0 (feat: implemented functions to retrieve Adjust adid and Amplitude User and Device Id)
 =======
       "offset": 8391,
 >>>>>>> 15931f2 (fix: fixed setUserIsPremium function)
+=======
+      "offset": 8391,
+>>>>>>> master
+>>>>>>> 1005f09 (fixed merge conflicts)
       "length": 2,
       "value": "\"\""
     },
@@ -12401,6 +12478,9 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 1005f09 (fixed merge conflicts)
       "offset": 9407,
 =======
       "offset": 8681,
@@ -12418,11 +12498,16 @@
       "offset": 9409,
 >>>>>>> a79068b (feat: new KovaleeFramework version)
 =======
+<<<<<<< HEAD
       "offset": 8681,
 >>>>>>> 69235d0 (feat: implemented functions to retrieve Adjust adid and Amplitude User and Device Id)
 =======
       "offset": 8683,
 >>>>>>> 15931f2 (fix: fixed setUserIsPremium function)
+=======
+      "offset": 8683,
+>>>>>>> master
+>>>>>>> 1005f09 (fixed merge conflicts)
       "length": 83,
       "value": "\"🛰️ User already partecipated in a different experiment with \""
     },
@@ -12435,6 +12520,9 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 1005f09 (fixed merge conflicts)
       "offset": 9489,
 =======
       "offset": 8763,
@@ -12452,11 +12540,16 @@
       "offset": 9491,
 >>>>>>> a79068b (feat: new KovaleeFramework version)
 =======
+<<<<<<< HEAD
       "offset": 8763,
 >>>>>>> 69235d0 (feat: implemented functions to retrieve Adjust adid and Amplitude User and Device Id)
 =======
       "offset": 8765,
 >>>>>>> 15931f2 (fix: fixed setUserIsPremium function)
+=======
+      "offset": 8765,
+>>>>>>> master
+>>>>>>> 1005f09 (fixed merge conflicts)
       "length": 2,
       "value": "\"\""
     },
@@ -12469,6 +12562,9 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 1005f09 (fixed merge conflicts)
       "offset": 9689,
 =======
       "offset": 8963,
@@ -12486,11 +12582,16 @@
       "offset": 9691,
 >>>>>>> a79068b (feat: new KovaleeFramework version)
 =======
+<<<<<<< HEAD
       "offset": 8963,
 >>>>>>> 69235d0 (feat: implemented functions to retrieve Adjust adid and Amplitude User and Device Id)
 =======
       "offset": 8965,
 >>>>>>> 15931f2 (fix: fixed setUserIsPremium function)
+=======
+      "offset": 8965,
+>>>>>>> master
+>>>>>>> 1005f09 (fixed merge conflicts)
       "length": 56,
       "value": "\"🛰️ Fetched AB Experiment value from local storage\""
     },
@@ -12503,6 +12604,9 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 1005f09 (fixed merge conflicts)
       "offset": 10099,
 =======
       "offset": 9357,
@@ -12520,11 +12624,16 @@
       "offset": 10101,
 >>>>>>> a79068b (feat: new KovaleeFramework version)
 =======
+<<<<<<< HEAD
       "offset": 9357,
 >>>>>>> 69235d0 (feat: implemented functions to retrieve Adjust adid and Amplitude User and Device Id)
 =======
       "offset": 9359,
 >>>>>>> 15931f2 (fix: fixed setUserIsPremium function)
+=======
+      "offset": 9359,
+>>>>>>> master
+>>>>>>> 1005f09 (fixed merge conflicts)
       "length": 3,
       "value": "\"0\""
     },
@@ -12537,6 +12646,9 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 1005f09 (fixed merge conflicts)
       "offset": 10490,
 =======
       "offset": 9747,
@@ -12554,11 +12666,16 @@
       "offset": 10492,
 >>>>>>> a79068b (feat: new KovaleeFramework version)
 =======
+<<<<<<< HEAD
       "offset": 9747,
 >>>>>>> 69235d0 (feat: implemented functions to retrieve Adjust adid and Amplitude User and Device Id)
 =======
       "offset": 9749,
 >>>>>>> 15931f2 (fix: fixed setUserIsPremium function)
+=======
+      "offset": 9749,
+>>>>>>> master
+>>>>>>> 1005f09 (fixed merge conflicts)
       "length": 27,
       "value": "\"creating interstitial ad \""
     },
@@ -12571,6 +12688,9 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 1005f09 (fixed merge conflicts)
       "offset": 10651,
 =======
       "offset": 9906,
@@ -12588,11 +12708,16 @@
       "offset": 10653,
 >>>>>>> a79068b (feat: new KovaleeFramework version)
 =======
+<<<<<<< HEAD
       "offset": 9906,
 >>>>>>> 69235d0 (feat: implemented functions to retrieve Adjust adid and Amplitude User and Device Id)
 =======
       "offset": 9908,
 >>>>>>> 15931f2 (fix: fixed setUserIsPremium function)
+=======
+      "offset": 9908,
+>>>>>>> master
+>>>>>>> 1005f09 (fixed merge conflicts)
       "length": 25,
       "value": "\"display interstitial ad\""
     },
@@ -12605,6 +12730,9 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 1005f09 (fixed merge conflicts)
       "offset": 10857,
 =======
       "offset": 10110,
@@ -12622,11 +12750,16 @@
       "offset": 10859,
 >>>>>>> a79068b (feat: new KovaleeFramework version)
 =======
+<<<<<<< HEAD
       "offset": 10110,
 >>>>>>> 69235d0 (feat: implemented functions to retrieve Adjust adid and Amplitude User and Device Id)
 =======
       "offset": 10112,
 >>>>>>> 15931f2 (fix: fixed setUserIsPremium function)
+=======
+      "offset": 10112,
+>>>>>>> master
+>>>>>>> 1005f09 (fixed merge conflicts)
       "length": 22,
       "value": "\"creating rewarded ad\""
     },
@@ -12639,6 +12772,9 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 1005f09 (fixed merge conflicts)
       "offset": 11004,
 =======
       "offset": 10255,
@@ -12656,11 +12792,16 @@
       "offset": 11006,
 >>>>>>> a79068b (feat: new KovaleeFramework version)
 =======
+<<<<<<< HEAD
       "offset": 10255,
 >>>>>>> 69235d0 (feat: implemented functions to retrieve Adjust adid and Amplitude User and Device Id)
 =======
       "offset": 10257,
 >>>>>>> 15931f2 (fix: fixed setUserIsPremium function)
+=======
+      "offset": 10257,
+>>>>>>> master
+>>>>>>> 1005f09 (fixed merge conflicts)
       "length": 21,
       "value": "\"display rewarded ad\""
     },
