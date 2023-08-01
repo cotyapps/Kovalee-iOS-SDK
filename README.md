@@ -1,6 +1,16 @@
 # Kovalee-SDK
 KovaleeSDK is an efficient iOS framework, that's packed with tools specifically for tracking user behavior, handling user purchases, and smoothly integrating ads.
 
+We all know that integrating tracking tools can feel like solving a Rubik's cube. The hurdles of Apple's restrictions and the hoops we jump through with third-party frameworks make the process complex and time-consuming.
+
+We've tackled this issue head-on at Kovalee. `KovaleeSDK` is our answer - a framework designed to handle the heavy lifting, automating many of the typically tedious steps and wrapping much of the tracking functionality into the SDK.
+
+`KovaleeSDK` is split into multiple modules, distributed through SPM, each one taking care of a different area. You don’t need to integrate all of them, but only the ones useful for your app.:
+- [KovaleeAttribution](https://github.com/cotyapps/KovaleeAttribution-iOS.git)
+- [KovaleePurchases](https://github.com/cotyapps/KovaleePurchases-iOS.git)
+- [KovaleeRemoteConfig](https://github.com/cotyapps/KovaleeRemoteConfig-iOS.git)
+- [KovaleeAds](https://github.com/cotyapps/KovaleeAds-iOS.git)
+
 ## **Installation**
 
 ### 📦 **Swift Package**
