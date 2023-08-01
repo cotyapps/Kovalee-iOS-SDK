@@ -4,6 +4,7 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+
 ## [v1.0.2] - 2023-07-27
 ### :bug: Bug Fixes
 - [`993b5fc`](https://github.com/cotyapps/Kovalee-iOS-SDK/commit/993b5fcded6240ada61886bb207f9d2f7f7b6abe) - fixed setUserIsPremium function *(commit by [@fto-k](https://github.com/fto-k))*
@@ -28,3 +29,4 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 [v1.0.0]: https://github.com/cotyapps/Kovalee-iOS-SDK/compare/0.9.13...v1.0.0
 [v1.0.1]: https://github.com/cotyapps/Kovalee-iOS-SDK/compare/v1.0.0...v1.0.1
 [v1.0.2]: https://github.com/cotyapps/Kovalee-iOS-SDK/compare/v1.0.1...v1.0.2
+[v1.2.0]: https://github.com/cotyapps/Kovalee-iOS-SDK/compare/v1.0.2...v1.2.0
