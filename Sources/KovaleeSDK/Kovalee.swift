@@ -75,7 +75,6 @@ public final class Kovalee {
 				)
 			}
 
-			self.kovaleeManager?.setDefaultUserId()
 			self.kovaleeManager?.sendAppOpenEvent()
 		} catch {
 			KLogger.error("We couldn't find the file at \(configuration.keysFileUrl?.absoluteString ?? "")")
