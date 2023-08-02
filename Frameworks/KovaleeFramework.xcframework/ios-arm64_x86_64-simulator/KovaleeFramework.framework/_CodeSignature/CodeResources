@@ -29,6 +29,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 13962f8 (feat: restored KovaleeFramework)
@@ -38,6 +39,9 @@
 =======
 >>>>>>> 768955f (new-framework-version)
 		kZ09rCpEFi/f4RE2v6BIh6EIEEE=
+=======
+		bGpkp6gemaVzEgxQAcrK00p9PIQ=
+>>>>>>> 19beee2 (fix: updated setDefualtUserId to set it to nil if none is found)
 		</data>
 		<key>Modules/KovaleeFramework.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -108,7 +112,7 @@
 		</data>
 		<key>Modules/KovaleeFramework.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		kZ09rCpEFi/f4RE2v6BIh6EIEEE=
+		bGpkp6gemaVzEgxQAcrK00p9PIQ=
 		</data>
 		<key>Modules/KovaleeFramework.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -232,6 +236,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 3226eb0 (feat: restored KovaleeFramework)
 			/aftgJ9cDkoD4G6ePPg7NZX2nNz2IruDJCuixOOmM9Q=
@@ -278,6 +283,9 @@
 =======
 			WBsOQ5+tic4aAqzStlOmoKbxPBr0BUVY+NK43u8tB7s=
 >>>>>>> 768955f (new-framework-version)
+=======
+			AMAG8GIbwBchZY56NT3QLu963ifUdX03KfBAxetmicY=
+>>>>>>> 19beee2 (fix: updated setDefualtUserId to set it to nil if none is found)
 			</data>
 		</dict>
 		<key>Modules/KovaleeFramework.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
@@ -380,6 +388,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 3226eb0 (feat: restored KovaleeFramework)
 			/aftgJ9cDkoD4G6ePPg7NZX2nNz2IruDJCuixOOmM9Q=
@@ -426,6 +435,9 @@
 =======
 			WBsOQ5+tic4aAqzStlOmoKbxPBr0BUVY+NK43u8tB7s=
 >>>>>>> 768955f (new-framework-version)
+=======
+			AMAG8GIbwBchZY56NT3QLu963ifUdX03KfBAxetmicY=
+>>>>>>> 19beee2 (fix: updated setDefualtUserId to set it to nil if none is found)
 			</data>
 		</dict>
 		<key>Modules/KovaleeFramework.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>

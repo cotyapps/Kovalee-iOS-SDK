@@ -11955,6 +11955,7 @@
     {
       "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
       "kind": "StringLiteral",
+<<<<<<< HEAD
       "offset": 4124,
 <<<<<<< HEAD
 =======
@@ -11978,12 +11979,16 @@
 >>>>>>> 1005f09 (fixed merge conflicts)
 =======
 >>>>>>> 768955f (new-framework-version)
+=======
+      "offset": 4110,
+>>>>>>> 19beee2 (fix: updated setDefualtUserId to set it to nil if none is found)
       "length": 5,
       "value": "\"yes\""
     },
     {
       "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
       "kind": "BooleanLiteral",
+<<<<<<< HEAD
       "offset": 4132,
 <<<<<<< HEAD
 =======
@@ -12007,12 +12012,16 @@
 >>>>>>> 1005f09 (fixed merge conflicts)
 =======
 >>>>>>> 768955f (new-framework-version)
+=======
+      "offset": 4118,
+>>>>>>> 19beee2 (fix: updated setDefualtUserId to set it to nil if none is found)
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
       "kind": "BooleanLiteral",
+<<<<<<< HEAD
       "offset": 4139,
 <<<<<<< HEAD
 =======
@@ -12036,12 +12045,16 @@
 >>>>>>> 1005f09 (fixed merge conflicts)
 =======
 >>>>>>> 768955f (new-framework-version)
+=======
+      "offset": 4125,
+>>>>>>> 19beee2 (fix: updated setDefualtUserId to set it to nil if none is found)
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
       "kind": "BooleanLiteral",
+<<<<<<< HEAD
       "offset": 4338,
 <<<<<<< HEAD
 =======
@@ -12065,12 +12078,16 @@
 >>>>>>> 1005f09 (fixed merge conflicts)
 =======
 >>>>>>> 768955f (new-framework-version)
+=======
+      "offset": 4324,
+>>>>>>> 19beee2 (fix: updated setDefualtUserId to set it to nil if none is found)
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
       "kind": "StringLiteral",
+<<<<<<< HEAD
       "offset": 4546,
 <<<<<<< HEAD
 =======
@@ -12094,12 +12111,16 @@
 >>>>>>> 1005f09 (fixed merge conflicts)
 =======
 >>>>>>> 768955f (new-framework-version)
+=======
+      "offset": 4532,
+>>>>>>> 19beee2 (fix: updated setDefualtUserId to set it to nil if none is found)
       "length": 4,
       "value": "\"no\""
     },
     {
       "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
       "kind": "BooleanLiteral",
+<<<<<<< HEAD
       "offset": 4606,
 <<<<<<< HEAD
 =======
@@ -12123,12 +12144,16 @@
 >>>>>>> 1005f09 (fixed merge conflicts)
 =======
 >>>>>>> 768955f (new-framework-version)
+=======
+      "offset": 4592,
+>>>>>>> 19beee2 (fix: updated setDefualtUserId to set it to nil if none is found)
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
       "kind": "StringLiteral",
+<<<<<<< HEAD
       "offset": 5104,
 <<<<<<< HEAD
 =======
@@ -12145,12 +12170,16 @@
       "offset": 4518,
 =======
 >>>>>>> 768955f (new-framework-version)
+=======
+      "offset": 5090,
+>>>>>>> 19beee2 (fix: updated setDefualtUserId to set it to nil if none is found)
       "length": 5,
       "value": "\"yes\""
     },
     {
       "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
       "kind": "StringLiteral",
+<<<<<<< HEAD
 <<<<<<< HEAD
       "offset": 4526,
 >>>>>>> master
@@ -12215,6 +12244,9 @@
 =======
 >>>>>>> 768955f (new-framework-version)
       "offset": 5112,
+=======
+      "offset": 5098,
+>>>>>>> 19beee2 (fix: updated setDefualtUserId to set it to nil if none is found)
       "length": 4,
       "value": "\"no\""
 <<<<<<< HEAD
@@ -12241,6 +12273,7 @@
     {
       "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
       "kind": "StringLiteral",
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -12289,12 +12322,16 @@
 =======
       "offset": 7571,
 >>>>>>> 768955f (new-framework-version)
+=======
+      "offset": 7557,
+>>>>>>> 19beee2 (fix: updated setDefualtUserId to set it to nil if none is found)
       "length": 5,
       "value": "\"yes\""
     },
     {
       "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
       "kind": "StringLiteral",
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -12346,6 +12383,9 @@
 =======
       "offset": 9031,
 >>>>>>> 768955f (new-framework-version)
+=======
+      "offset": 9017,
+>>>>>>> 19beee2 (fix: updated setDefualtUserId to set it to nil if none is found)
       "length": 87,
       "value": "\"🛰️ Retrieved value \""
     },
@@ -12360,6 +12400,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 1005f09 (fixed merge conflicts)
       "offset": 9096,
@@ -12392,6 +12433,9 @@
 =======
       "offset": 9098,
 >>>>>>> 768955f (new-framework-version)
+=======
+      "offset": 9084,
+>>>>>>> 19beee2 (fix: updated setDefualtUserId to set it to nil if none is found)
       "length": 2,
       "value": "\"\""
     },
@@ -12406,6 +12450,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 1005f09 (fixed merge conflicts)
       "offset": 9099,
@@ -12438,6 +12483,9 @@
 =======
       "offset": 9101,
 >>>>>>> 768955f (new-framework-version)
+=======
+      "offset": 9087,
+>>>>>>> 19beee2 (fix: updated setDefualtUserId to set it to nil if none is found)
       "length": 3,
       "value": "\" for key: \""
     },
@@ -12452,6 +12500,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 1005f09 (fixed merge conflicts)
       "offset": 9115,
@@ -12484,6 +12533,9 @@
 =======
       "offset": 9117,
 >>>>>>> 768955f (new-framework-version)
+=======
+      "offset": 9103,
+>>>>>>> 19beee2 (fix: updated setDefualtUserId to set it to nil if none is found)
       "length": 2,
       "value": "\"\""
     },
@@ -12498,6 +12550,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 1005f09 (fixed merge conflicts)
       "offset": 9407,
@@ -12530,6 +12583,9 @@
 =======
       "offset": 9409,
 >>>>>>> 768955f (new-framework-version)
+=======
+      "offset": 9395,
+>>>>>>> 19beee2 (fix: updated setDefualtUserId to set it to nil if none is found)
       "length": 83,
       "value": "\"🛰️ User already partecipated in a different experiment with \""
     },
@@ -12544,6 +12600,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 1005f09 (fixed merge conflicts)
       "offset": 9489,
@@ -12576,6 +12633,9 @@
 =======
       "offset": 9491,
 >>>>>>> 768955f (new-framework-version)
+=======
+      "offset": 9477,
+>>>>>>> 19beee2 (fix: updated setDefualtUserId to set it to nil if none is found)
       "length": 2,
       "value": "\"\""
     },
@@ -12590,6 +12650,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 1005f09 (fixed merge conflicts)
       "offset": 9689,
@@ -12622,6 +12683,9 @@
 =======
       "offset": 9691,
 >>>>>>> 768955f (new-framework-version)
+=======
+      "offset": 9677,
+>>>>>>> 19beee2 (fix: updated setDefualtUserId to set it to nil if none is found)
       "length": 56,
       "value": "\"🛰️ Fetched AB Experiment value from local storage\""
     },
@@ -12636,6 +12700,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 1005f09 (fixed merge conflicts)
       "offset": 10099,
@@ -12668,6 +12733,9 @@
 =======
       "offset": 10101,
 >>>>>>> 768955f (new-framework-version)
+=======
+      "offset": 10087,
+>>>>>>> 19beee2 (fix: updated setDefualtUserId to set it to nil if none is found)
       "length": 3,
       "value": "\"0\""
     },
@@ -12682,6 +12750,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 1005f09 (fixed merge conflicts)
       "offset": 10490,
@@ -12714,6 +12783,9 @@
 =======
       "offset": 10492,
 >>>>>>> 768955f (new-framework-version)
+=======
+      "offset": 10478,
+>>>>>>> 19beee2 (fix: updated setDefualtUserId to set it to nil if none is found)
       "length": 27,
       "value": "\"creating interstitial ad \""
     },
@@ -12728,6 +12800,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 1005f09 (fixed merge conflicts)
       "offset": 10651,
@@ -12760,6 +12833,9 @@
 =======
       "offset": 10653,
 >>>>>>> 768955f (new-framework-version)
+=======
+      "offset": 10639,
+>>>>>>> 19beee2 (fix: updated setDefualtUserId to set it to nil if none is found)
       "length": 25,
       "value": "\"display interstitial ad\""
     },
@@ -12774,6 +12850,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 1005f09 (fixed merge conflicts)
       "offset": 10857,
@@ -12806,6 +12883,9 @@
 =======
       "offset": 10859,
 >>>>>>> 768955f (new-framework-version)
+=======
+      "offset": 10845,
+>>>>>>> 19beee2 (fix: updated setDefualtUserId to set it to nil if none is found)
       "length": 22,
       "value": "\"creating rewarded ad\""
     },
@@ -12820,6 +12900,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 1005f09 (fixed merge conflicts)
       "offset": 11004,
@@ -12852,6 +12933,9 @@
 =======
       "offset": 11006,
 >>>>>>> 768955f (new-framework-version)
+=======
+      "offset": 10992,
+>>>>>>> 19beee2 (fix: updated setDefualtUserId to set it to nil if none is found)
       "length": 21,
       "value": "\"display rewarded ad\""
     },
