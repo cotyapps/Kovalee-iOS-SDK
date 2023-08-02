@@ -5,6 +5,41 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 
+## [v1.2.0] - 2023-08-01
+### :sparkles: New Features
+- [`5cb83ca`](https://github.com/cotyapps/Kovalee-iOS-SDK/commit/5cb83ca2809d451a7a7e997c55f93642778ef91d) - started splitting framework *(commit by [@fto-k](https://github.com/fto-k))*
+- [`205cf3c`](https://github.com/cotyapps/Kovalee-iOS-SDK/commit/205cf3cff6d568982b66dc6b6188d8fa0ce2da2c) - moved Adjust to new target KovaleeAttribution *(commit by [@fto-k](https://github.com/fto-k))*
+- [`d0f320f`](https://github.com/cotyapps/Kovalee-iOS-SDK/commit/d0f320f6e17e8c94a7c31b77b25b960796342738) - creating Adjust instance if not present yet *(commit by [@fto-k](https://github.com/fto-k))*
+- [`f11c67c`](https://github.com/cotyapps/Kovalee-iOS-SDK/commit/f11c67cbb1b75de279e7517580dcf0e4c5081703) - creating Adjust instance if not present yet *(commit by [@fto-k](https://github.com/fto-k))*
+- [`03f5dc1`](https://github.com/cotyapps/Kovalee-iOS-SDK/commit/03f5dc13b7a4e484ca3f851f22381742b57e6aae) - creating Adjust instance if not present yet *(commit by [@fto-k](https://github.com/fto-k))*
+- [`0bb1993`](https://github.com/cotyapps/Kovalee-iOS-SDK/commit/0bb1993dbccd3adc024ebf298725c39b529b6a8e) - creating Adjust instance if not present yet *(commit by [@fto-k](https://github.com/fto-k))*
+- [`7baef6c`](https://github.com/cotyapps/Kovalee-iOS-SDK/commit/7baef6c4e14763bd4f7fe09aa3c81546a0b0b09c) - creating Adjust instance if not present yet *(commit by [@fto-k](https://github.com/fto-k))*
+- [`9ea19e6`](https://github.com/cotyapps/Kovalee-iOS-SDK/commit/9ea19e66a72a08cd825f470e9b029c694b56f867) - implemented functions to retrieve Adjust adid and Amplitude User and Device Id *(commit by [@fto-k](https://github.com/fto-k))*
+- [`e516d4e`](https://github.com/cotyapps/Kovalee-iOS-SDK/commit/e516d4eee412f116882b7eede6bd1a4310ff9d36) - started splitting framework *(commit by [@fto-k](https://github.com/fto-k))*
+- [`a8542e3`](https://github.com/cotyapps/Kovalee-iOS-SDK/commit/a8542e3732b948bfa80f18706510bb48648cbf11) - moved Adjust to new target KovaleeAttribution *(commit by [@fto-k](https://github.com/fto-k))*
+- [`36b6e98`](https://github.com/cotyapps/Kovalee-iOS-SDK/commit/36b6e9849d41b496c901a900c513f158cf2be7f2) - creating Adjust instance if not present yet *(commit by [@fto-k](https://github.com/fto-k))*
+- [`098c568`](https://github.com/cotyapps/Kovalee-iOS-SDK/commit/098c568dbde392abace93a68fbef930234edbcd2) - moved Purchases code to KovaleePurchases Target *(commit by [@fto-k](https://github.com/fto-k))*
+- [`863e6fc`](https://github.com/cotyapps/Kovalee-iOS-SDK/commit/863e6fcb01416d810dea17021135ba111686e206) - moved Firebase code to specific target KovaleeRemoteConfig *(commit by [@fto-k](https://github.com/fto-k))*
+- [`a0a2073`](https://github.com/cotyapps/Kovalee-iOS-SDK/commit/a0a207382fa44eb7bfe23b53ea1a784eaa2ffc70) - moved Ads code to KovaleeAds *(commit by [@fto-k](https://github.com/fto-k))*
+- [`77f2878`](https://github.com/cotyapps/Kovalee-iOS-SDK/commit/77f2878e0737608d0108fc48877a4f03b38d917a) - updated to the latest framework version *(commit by [@fto-k](https://github.com/fto-k))*
+- [`efb778f`](https://github.com/cotyapps/Kovalee-iOS-SDK/commit/efb778febd5ce6bde601178b3efeccbed4407b57) - removed Amplitude dependency *(commit by [@fto-k](https://github.com/fto-k))*
+- [`13962f8`](https://github.com/cotyapps/Kovalee-iOS-SDK/commit/13962f8b979f6b81cae4d8dae1e8b14187487a51) - restored KovaleeFramework *(commit by [@fto-k](https://github.com/fto-k))*
+- [`ee4ca8d`](https://github.com/cotyapps/Kovalee-iOS-SDK/commit/ee4ca8d6a1166b54385712f97b4654f38acb2275) - moved RemoteConfig to specific Package *(commit by [@fto-k](https://github.com/fto-k))*
+- [`5a2a46a`](https://github.com/cotyapps/Kovalee-iOS-SDK/commit/5a2a46aff496bf07a728bea73bd3e18238aded8a) - moved Purchases to specific package *(commit by [@fto-k](https://github.com/fto-k))*
+- [`50b41f8`](https://github.com/cotyapps/Kovalee-iOS-SDK/commit/50b41f85e700dfb9a9e32b0f3b1a63a38cd085a8) - moved Attribution to specific package *(commit by [@fto-k](https://github.com/fto-k))*
+- [`95dc5b3`](https://github.com/cotyapps/Kovalee-iOS-SDK/commit/95dc5b3042db342cb9d3ba47f0e343df47d13bdc) - updated Amplitud to 0.4.7 *(commit by [@fto-k](https://github.com/fto-k))*
+- [`630feb8`](https://github.com/cotyapps/Kovalee-iOS-SDK/commit/630feb89706cebb7e11c709f1501b63dc22a8dcc) - implemented functions to retrieve Adjust adid and Amplitude User and Device Id *(commit by [@fto-k](https://github.com/fto-k))*
+- [`f96ead0`](https://github.com/cotyapps/Kovalee-iOS-SDK/commit/f96ead08dec212c4868692a5fd789c0d61424ba1) - removed Amplitude dependency *(commit by [@fto-k](https://github.com/fto-k))*
+- [`a8a67f6`](https://github.com/cotyapps/Kovalee-iOS-SDK/commit/a8a67f6fdd1b66ec34982b0ed4a5719ecf93efcc) - restored KovaleeFramework *(commit by [@fto-k](https://github.com/fto-k))*
+- [`f1f4a6c`](https://github.com/cotyapps/Kovalee-iOS-SDK/commit/f1f4a6c4726456925cd09c8500780e3da784f839) - new KovaleeFramework version *(commit by [@fto-k](https://github.com/fto-k))*
+
+### :bug: Bug Fixes
+- [`d2121b1`](https://github.com/cotyapps/Kovalee-iOS-SDK/commit/d2121b1f08079bac2f4429cc1aab5931fb1e98a9) - rebased on master *(commit by [@fto-k](https://github.com/fto-k))*
+- [`b425b8f`](https://github.com/cotyapps/Kovalee-iOS-SDK/commit/b425b8f876e3aa81263d26351601baf757366eb2) - fixed setUserIsPremium function *(commit by [@fto-k](https://github.com/fto-k))*
+- [`d33266c`](https://github.com/cotyapps/Kovalee-iOS-SDK/commit/d33266c94381d06b5c0ae443dcd112bbda4ad99f) - fixed setUserIsPremium function *(commit by [@fto-k](https://github.com/fto-k))*
+- [`9495db2`](https://github.com/cotyapps/Kovalee-iOS-SDK/commit/9495db2ee25c0b33018fbb83b388dc4fc4893b93) - fixing setting user is premium on RC customerInfo call *(commit by [@fto-k](https://github.com/fto-k))*
+
+
 ## [v1.0.2] - 2023-07-27
 ### :bug: Bug Fixes
 - [`993b5fc`](https://github.com/cotyapps/Kovalee-iOS-SDK/commit/993b5fcded6240ada61886bb207f9d2f7f7b6abe) - fixed setUserIsPremium function *(commit by [@fto-k](https://github.com/fto-k))*
@@ -30,3 +65,4 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 [v1.0.1]: https://github.com/cotyapps/Kovalee-iOS-SDK/compare/v1.0.0...v1.0.1
 [v1.0.2]: https://github.com/cotyapps/Kovalee-iOS-SDK/compare/v1.0.1...v1.0.2
 [v1.2.0]: https://github.com/cotyapps/Kovalee-iOS-SDK/compare/v1.0.2...v1.2.0
+[v1.2.1]: https://github.com/cotyapps/Kovalee-iOS-SDK/compare/v1.2.0...v1.2.1
