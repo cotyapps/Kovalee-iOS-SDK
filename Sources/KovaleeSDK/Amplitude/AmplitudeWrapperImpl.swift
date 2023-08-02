@@ -23,8 +23,6 @@ struct AmplitudeWrapperImpl: EventTrackerManager {
                 flushEventsOnClose: true
             )
         )
-
-        amplitude?.add(plugin: IDFACollectionPlugin())
     }
 
     func sendEvent(_ event: Event) {
