@@ -11956,6 +11956,7 @@
       "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
       "kind": "StringLiteral",
 <<<<<<< HEAD
+<<<<<<< HEAD
       "offset": 4124,
 <<<<<<< HEAD
 =======
@@ -11982,12 +11983,16 @@
 =======
       "offset": 4110,
 >>>>>>> 19beee2 (fix: updated setDefualtUserId to set it to nil if none is found)
+=======
+      "offset": 4110,
+>>>>>>> master
       "length": 5,
       "value": "\"yes\""
     },
     {
       "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
       "kind": "BooleanLiteral",
+<<<<<<< HEAD
 <<<<<<< HEAD
       "offset": 4132,
 <<<<<<< HEAD
@@ -12015,12 +12020,16 @@
 =======
       "offset": 4118,
 >>>>>>> 19beee2 (fix: updated setDefualtUserId to set it to nil if none is found)
+=======
+      "offset": 4118,
+>>>>>>> master
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
       "kind": "BooleanLiteral",
+<<<<<<< HEAD
 <<<<<<< HEAD
       "offset": 4139,
 <<<<<<< HEAD
@@ -12048,12 +12057,16 @@
 =======
       "offset": 4125,
 >>>>>>> 19beee2 (fix: updated setDefualtUserId to set it to nil if none is found)
+=======
+      "offset": 4125,
+>>>>>>> master
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
       "kind": "BooleanLiteral",
+<<<<<<< HEAD
 <<<<<<< HEAD
       "offset": 4338,
 <<<<<<< HEAD
@@ -12081,12 +12094,16 @@
 =======
       "offset": 4324,
 >>>>>>> 19beee2 (fix: updated setDefualtUserId to set it to nil if none is found)
+=======
+      "offset": 4324,
+>>>>>>> master
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
       "kind": "StringLiteral",
+<<<<<<< HEAD
 <<<<<<< HEAD
       "offset": 4546,
 <<<<<<< HEAD
@@ -12114,12 +12131,16 @@
 =======
       "offset": 4532,
 >>>>>>> 19beee2 (fix: updated setDefualtUserId to set it to nil if none is found)
+=======
+      "offset": 4532,
+>>>>>>> master
       "length": 4,
       "value": "\"no\""
     },
     {
       "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
       "kind": "BooleanLiteral",
+<<<<<<< HEAD
 <<<<<<< HEAD
       "offset": 4606,
 <<<<<<< HEAD
@@ -12147,12 +12168,16 @@
 =======
       "offset": 4592,
 >>>>>>> 19beee2 (fix: updated setDefualtUserId to set it to nil if none is found)
+=======
+      "offset": 4592,
+>>>>>>> master
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
       "kind": "StringLiteral",
+<<<<<<< HEAD
 <<<<<<< HEAD
       "offset": 5104,
 <<<<<<< HEAD
@@ -12173,6 +12198,9 @@
 =======
       "offset": 5090,
 >>>>>>> 19beee2 (fix: updated setDefualtUserId to set it to nil if none is found)
+=======
+      "offset": 5090,
+>>>>>>> master
       "length": 5,
       "value": "\"yes\""
     },
@@ -12181,7 +12209,11 @@
       "kind": "StringLiteral",
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
       "offset": 4526,
+>>>>>>> master
+=======
+      "offset": 5098,
 >>>>>>> master
       "length": 4,
       "value": "\"no\""
@@ -12214,6 +12246,7 @@
     {
       "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
       "kind": "StringLiteral",
+<<<<<<< HEAD
       "offset": 4526,
       "length": 4,
       "value": "\"no\""
@@ -12233,6 +12266,9 @@
 =======
       "offset": 4525,
 >>>>>>> 69235d0 (feat: implemented functions to retrieve Adjust adid and Amplitude User and Device Id)
+=======
+      "offset": 7557,
+>>>>>>> master
       "length": 5,
       "value": "\"yes\""
 =======
@@ -12273,6 +12309,7 @@
     {
       "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
       "kind": "StringLiteral",
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -12386,12 +12423,16 @@
 =======
       "offset": 9017,
 >>>>>>> 19beee2 (fix: updated setDefualtUserId to set it to nil if none is found)
+=======
+      "offset": 9017,
+>>>>>>> master
       "length": 87,
       "value": "\"🛰️ Retrieved value \""
     },
     {
       "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
       "kind": "StringLiteral",
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -12436,12 +12477,16 @@
 =======
       "offset": 9084,
 >>>>>>> 19beee2 (fix: updated setDefualtUserId to set it to nil if none is found)
+=======
+      "offset": 9084,
+>>>>>>> master
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
       "kind": "StringLiteral",
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -12486,12 +12531,16 @@
 =======
       "offset": 9087,
 >>>>>>> 19beee2 (fix: updated setDefualtUserId to set it to nil if none is found)
+=======
+      "offset": 9087,
+>>>>>>> master
       "length": 3,
       "value": "\" for key: \""
     },
     {
       "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
       "kind": "StringLiteral",
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -12536,12 +12585,16 @@
 =======
       "offset": 9103,
 >>>>>>> 19beee2 (fix: updated setDefualtUserId to set it to nil if none is found)
+=======
+      "offset": 9103,
+>>>>>>> master
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
       "kind": "StringLiteral",
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -12586,12 +12639,16 @@
 =======
       "offset": 9395,
 >>>>>>> 19beee2 (fix: updated setDefualtUserId to set it to nil if none is found)
+=======
+      "offset": 9395,
+>>>>>>> master
       "length": 83,
       "value": "\"🛰️ User already partecipated in a different experiment with \""
     },
     {
       "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
       "kind": "StringLiteral",
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -12636,12 +12693,16 @@
 =======
       "offset": 9477,
 >>>>>>> 19beee2 (fix: updated setDefualtUserId to set it to nil if none is found)
+=======
+      "offset": 9477,
+>>>>>>> master
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
       "kind": "StringLiteral",
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -12686,12 +12747,16 @@
 =======
       "offset": 9677,
 >>>>>>> 19beee2 (fix: updated setDefualtUserId to set it to nil if none is found)
+=======
+      "offset": 9677,
+>>>>>>> master
       "length": 56,
       "value": "\"🛰️ Fetched AB Experiment value from local storage\""
     },
     {
       "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
       "kind": "StringLiteral",
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -12736,12 +12801,16 @@
 =======
       "offset": 10087,
 >>>>>>> 19beee2 (fix: updated setDefualtUserId to set it to nil if none is found)
+=======
+      "offset": 10087,
+>>>>>>> master
       "length": 3,
       "value": "\"0\""
     },
     {
       "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
       "kind": "StringLiteral",
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -12786,12 +12855,16 @@
 =======
       "offset": 10478,
 >>>>>>> 19beee2 (fix: updated setDefualtUserId to set it to nil if none is found)
+=======
+      "offset": 10478,
+>>>>>>> master
       "length": 27,
       "value": "\"creating interstitial ad \""
     },
     {
       "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
       "kind": "StringLiteral",
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -12836,12 +12909,16 @@
 =======
       "offset": 10639,
 >>>>>>> 19beee2 (fix: updated setDefualtUserId to set it to nil if none is found)
+=======
+      "offset": 10639,
+>>>>>>> master
       "length": 25,
       "value": "\"display interstitial ad\""
     },
     {
       "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
       "kind": "StringLiteral",
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -12886,12 +12963,16 @@
 =======
       "offset": 10845,
 >>>>>>> 19beee2 (fix: updated setDefualtUserId to set it to nil if none is found)
+=======
+      "offset": 10845,
+>>>>>>> master
       "length": 22,
       "value": "\"creating rewarded ad\""
     },
     {
       "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
       "kind": "StringLiteral",
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -12936,6 +13017,9 @@
 =======
       "offset": 10992,
 >>>>>>> 19beee2 (fix: updated setDefualtUserId to set it to nil if none is found)
+=======
+      "offset": 10992,
+>>>>>>> master
       "length": 21,
       "value": "\"display rewarded ad\""
     },
