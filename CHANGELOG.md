@@ -5,6 +5,8 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 
+<<<<<<< HEAD
+=======
 ## [v1.2.1] - 2023-08-02
 ### :sparkles: New Features
 - [`a661804`](https://github.com/cotyapps/Kovalee-iOS-SDK/commit/a661804de8be23d3ae80e3589ed0422ecc69b725) - removing .swiftpm cached *(commit by [@fto-k](https://github.com/fto-k))*
@@ -15,6 +17,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - [`35f847a`](https://github.com/cotyapps/Kovalee-iOS-SDK/commit/35f847a933e87cce6af7d26be384925ee962d01c) - new KovaleeFramework release with fix for amplitude user id *(commit by [@fto-k](https://github.com/fto-k))*
 
 
+>>>>>>> master
 ## [v1.2.0] - 2023-08-01
 ### :sparkles: New Features
 - [`5cb83ca`](https://github.com/cotyapps/Kovalee-iOS-SDK/commit/5cb83ca2809d451a7a7e997c55f93642778ef91d) - started splitting framework *(commit by [@fto-k](https://github.com/fto-k))*
