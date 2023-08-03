@@ -17,8 +17,8 @@ Pod::Spec.new do |s|
   s.source_files     = [
     'Sources/KovaleeSDK/Kovalee.swift',
     'Sources/KovaleeSDK/Configuration.swift',
-    'Cocoapos-Fix/KovaleeAnalytics+Amplitude.swift',
-    'Sources/KovaleeSDK/Amplitude/AmplitudeWrapperImpl.swift'
+    'Sources/KovaleeSDK/Amplitude/KovaleeAnalytics+Amplitude.swift',
+    'Cocoapods-Fix/AmplitudeWrapperImpl.swift'
   ]
 
   s.vendored_frameworks = ['Frameworks/KovaleeFramework.xcframework']
