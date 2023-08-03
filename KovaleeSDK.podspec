@@ -14,7 +14,12 @@ Pod::Spec.new do |s|
 
   s.ios.deployment_target = '14.3'
   s.swift_version    = '5.7'
-  s.source_files     = 'Sources/**/*.{h,swift}'
+  s.source_files     = [
+    'Sources/KovaleeSDK/Kovalee.swift',
+    'Sources/KovaleeSDK/Configuration.swift',
+    'Cocoapos-Fix/KovaleeAnalytics+Amplitude.swift',
+    'Sources/KovaleeSDK/Amplitude/AmplitudeWrapperImpl.swift'
+  ]
 
   s.vendored_frameworks = ['Frameworks/KovaleeFramework.xcframework']
   s.dependency 'AmplitudeSwift', '~> 0.4.7'
