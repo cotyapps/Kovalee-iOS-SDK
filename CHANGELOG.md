@@ -7,6 +7,31 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 <<<<<<< HEAD
 =======
+## [v1.2.2] - 2023-08-03
+### :sparkles: New Features
+- [`473215d`](https://github.com/cotyapps/Kovalee-iOS-SDK/commit/473215d75fbab6f2eb92aa34594af975a33343bb) - added podspec file *(commit by [@fto-k](https://github.com/fto-k))*
+- [`1c626b2`](https://github.com/cotyapps/Kovalee-iOS-SDK/commit/1c626b275f3ef57cb7ff63b7fb3cf422c5e19a29) - updated Amplitud to 0.4.7 *(commit by [@fto-k](https://github.com/fto-k))*
+- [`203e8d0`](https://github.com/cotyapps/Kovalee-iOS-SDK/commit/203e8d0fe3f06601e17b3ecf113f173deed2325b) - implemented functions to retrieve Adjust adid and Amplitude User and Device Id *(commit by [@fto-k](https://github.com/fto-k))*
+- [`fbe7358`](https://github.com/cotyapps/Kovalee-iOS-SDK/commit/fbe7358cf190eaa6f19d0c62d50025c62287b552) - removed Amplitude dependency *(commit by [@fto-k](https://github.com/fto-k))*
+- [`94818d0`](https://github.com/cotyapps/Kovalee-iOS-SDK/commit/94818d0ac6591101353924588fc9c05f9d31808c) - restored KovaleeFramework *(commit by [@fto-k](https://github.com/fto-k))*
+- [`f7178db`](https://github.com/cotyapps/Kovalee-iOS-SDK/commit/f7178db5efd0ae6d57e6351ca85e339914ad2055) - new KovaleeFramework version *(commit by [@fto-k](https://github.com/fto-k))*
+- [`dc3ad2c`](https://github.com/cotyapps/Kovalee-iOS-SDK/commit/dc3ad2c7add6807af14d50934e1200b3e676168c) - implemented functions to retrieve Adjust adid and Amplitude User and Device Id *(commit by [@fto-k](https://github.com/fto-k))*
+- [`8d333f9`](https://github.com/cotyapps/Kovalee-iOS-SDK/commit/8d333f9e5438e0b4a9b83cdc4ee9c8a8c00ce7f0) - added podspec file *(commit by [@fto-k](https://github.com/fto-k))*
+- [`8547040`](https://github.com/cotyapps/Kovalee-iOS-SDK/commit/85470408a96b1a7ef56fc091bf9097e9764ee014) - created AmplitudeWrapper duplicate file for cocoapods to support different namespace for Amplitude *(commit by [@fto-k](https://github.com/fto-k))*
+
+### :bug: Bug Fixes
+- [`0dee4b5`](https://github.com/cotyapps/Kovalee-iOS-SDK/commit/0dee4b5075576cbeefb0cb75fb4c11a53724033d) - fixed setUserIsPremium function *(commit by [@fto-k](https://github.com/fto-k))*
+- [`add9e8e`](https://github.com/cotyapps/Kovalee-iOS-SDK/commit/add9e8e6ae6468539f988004e6d4a404eb95d803) - fixed setUserIsPremium function *(commit by [@fto-k](https://github.com/fto-k))*
+- [`46a1fc9`](https://github.com/cotyapps/Kovalee-iOS-SDK/commit/46a1fc922c45ae20117a9cb5c1557fc5a73d3c5c) - fixing setting user is premium on RC customerInfo call *(commit by [@fto-k](https://github.com/fto-k))*
+- [`f118223`](https://github.com/cotyapps/Kovalee-iOS-SDK/commit/f1182236ad998b8eddf786d0ea14b2545e5c1b26) - fixed setUserIsPremium function *(commit by [@fto-k](https://github.com/fto-k))*
+- [`6f03fa3`](https://github.com/cotyapps/Kovalee-iOS-SDK/commit/6f03fa36a774159c4db42e483e99569e271b70a1) - fixed setUserIsPremium function *(commit by [@fto-k](https://github.com/fto-k))*
+- [`15e5bed`](https://github.com/cotyapps/Kovalee-iOS-SDK/commit/15e5bed4701506e998bf993cd2c4905dc2b002b5) - fixing setting user is premium on RC customerInfo call *(commit by [@fto-k](https://github.com/fto-k))*
+- [`fd2c050`](https://github.com/cotyapps/Kovalee-iOS-SDK/commit/fd2c05044fa800f832f4076c65a737bdbde339f1) - possible fix for setting user id *(commit by [@fto-k](https://github.com/fto-k))*
+- [`5c04eed`](https://github.com/cotyapps/Kovalee-iOS-SDK/commit/5c04eed67c31c8e4200bee313a9523828dfb7a62) - updated setDefualtUserId to set it to nil if none is found *(commit by [@fto-k](https://github.com/fto-k))*
+- [`ed39553`](https://github.com/cotyapps/Kovalee-iOS-SDK/commit/ed395537455cd2a514c06ec63f118621c54ced02) - new KovaleeFramework release with fix for amplitude user id *(commit by [@fto-k](https://github.com/fto-k))*
+- [`de7640e`](https://github.com/cotyapps/Kovalee-iOS-SDK/commit/de7640e16b97a69e7c2d6542316db1f732837ab1) - fixed cocoapod fix path *(commit by [@fto-k](https://github.com/fto-k))*
+
+
 ## [v1.2.1] - 2023-08-02
 ### :sparkles: New Features
 - [`a661804`](https://github.com/cotyapps/Kovalee-iOS-SDK/commit/a661804de8be23d3ae80e3589ed0422ecc69b725) - removing .swiftpm cached *(commit by [@fto-k](https://github.com/fto-k))*
@@ -79,3 +104,4 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 [v1.0.2]: https://github.com/cotyapps/Kovalee-iOS-SDK/compare/v1.0.1...v1.0.2
 [v1.2.0]: https://github.com/cotyapps/Kovalee-iOS-SDK/compare/v1.0.2...v1.2.0
 [v1.2.1]: https://github.com/cotyapps/Kovalee-iOS-SDK/compare/v1.2.0...v1.2.1
+[v1.2.2]: https://github.com/cotyapps/Kovalee-iOS-SDK/compare/v1.2.1...v1.2.2
