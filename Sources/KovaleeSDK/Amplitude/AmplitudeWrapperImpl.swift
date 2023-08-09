@@ -2,7 +2,7 @@ import Foundation
 import KovaleeFramework
 import Amplitude_Swift
 
-struct AmplitudeWrapperImpl: EventTrackerManager {
+struct AmplitudeWrapperImpl: EventTrackerManager, Manager {
     init(withKey key: String) {
 		KLogger.debug("initializing Amplitude")
 

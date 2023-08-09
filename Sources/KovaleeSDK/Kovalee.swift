@@ -64,10 +64,10 @@ public final class Kovalee {
 
 			// avoid initializing third party tools if running UnitTests
 			if !ProcessInfo.isRunningTests {
-				let eventTracker = self.createAmplitudeWrapper(
+				let eventTracker = EventsTrackerManagerCreator().createImplementation(
 					withConfiguration: configuration,
-					andKeys: keys.amplitude
-				)
+					andKeys: keys
+				) as! EventTrackerManager
 
 				self.kovaleeManager = KovaleeManager.init(
 					keys: keys,
@@ -92,15 +92,49 @@ public final class Kovalee {
 }
 
 extension Kovalee {
-	internal func createAmplitudeWrapper(
+	private func setupCapabilities() {
+		Capabilities.allCases.forEach {
+			switch $0 {
+			case .attribution:
+				if let attributionManager = (AttributionManagerCreator() as? Creator)?.createImplementation(
+					withConfiguration: configuration,
+					andKeys: keys
+				) as? AttributionManager {
+					self.kovaleeManager?.setupAttributionManager(adjustWrapper: attributionManager)
+				}
+			case .eventsTracking: ()
+			}
+		}
+	}
+}
+
+enum Capabilities: CaseIterable {
+	case eventsTracking
+	case attribution
+}
+
+public protocol Manager {}
+
+protocol Creator {
+	func createImplementation(
 		withConfiguration configuration: Configuration,
-		andKeys keys: KovaleeKeys.Amplitude
-	) -> EventTrackerManager {
-		if configuration.environment == .development && keys.devSDKId == nil {
+		andKeys keys: KovaleeKeys
+	) -> Manager
+}
+
+struct EventsTrackerManagerCreator {}
+struct AttributionManagerCreator {}
+
+extension EventsTrackerManagerCreator: Creator {
+	func createImplementation(
+		withConfiguration configuration: Configuration,
+		andKeys keys: KovaleeKeys
+	) -> Manager {
+		if configuration.environment == .development && keys.amplitude.devSDKId == nil {
 			KLogger.error("Configured Sandbox environment but Amplitude Dev key hasn't been provided")
 		}
 		return AmplitudeWrapperImpl(
-			withKey: configuration.environment == .production ? keys.prodSDKId : (keys.devSDKId ?? "")
+			withKey: configuration.environment == .production ? keys.amplitude.prodSDKId : (keys.amplitude.devSDKId ?? "")
 		)
 	}
 }
