@@ -7,6 +7,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 <<<<<<< HEAD
 =======
+## [v1.2.3] - 2023-08-09
+### :bug: Bug Fixes
+- [`209049c`](https://github.com/cotyapps/Kovalee-iOS-SDK/commit/209049cc46f131995c3c72bc58be6075ce7f5c7e) - sending conversion value on first app open *(commit by [@fto-k](https://github.com/fto-k))*
+
+
 ## [v1.2.2] - 2023-08-03
 ### :sparkles: New Features
 - [`473215d`](https://github.com/cotyapps/Kovalee-iOS-SDK/commit/473215d75fbab6f2eb92aa34594af975a33343bb) - added podspec file *(commit by [@fto-k](https://github.com/fto-k))*
@@ -105,3 +110,4 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 [v1.2.0]: https://github.com/cotyapps/Kovalee-iOS-SDK/compare/v1.0.2...v1.2.0
 [v1.2.1]: https://github.com/cotyapps/Kovalee-iOS-SDK/compare/v1.2.0...v1.2.1
 [v1.2.2]: https://github.com/cotyapps/Kovalee-iOS-SDK/compare/v1.2.1...v1.2.2
+[v1.2.3]: https://github.com/cotyapps/Kovalee-iOS-SDK/compare/1.2.3...v1.2.3
