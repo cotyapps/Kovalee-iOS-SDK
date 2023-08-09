@@ -73,6 +73,8 @@ public final class Kovalee {
 					keys: keys,
 					eventTrackerManager: eventTracker
 				)
+				
+				setupCapabilities()
 			}
 
 			self.kovaleeManager?.setDefaultUserId()
@@ -105,6 +107,10 @@ extension Kovalee {
 				) as? AttributionManager {
 					self.kovaleeManager?.setupAttributionManager(adjustWrapper: attributionManager)
 				}
+				
+			case .purchases: ()
+			case .remoteConfiguration: ()
+			case .ads: ()
 			case .eventsTracking: ()
 			}
 		}
@@ -114,6 +120,9 @@ extension Kovalee {
 enum Capabilities: CaseIterable {
 	case eventsTracking
 	case attribution
+	case purchases
+	case remoteConfiguration
+	case ads
 }
 
 public protocol Manager {}
