@@ -96,7 +96,10 @@ extension Kovalee {
 		Capabilities.allCases.forEach {
 			switch $0 {
 			case .attribution:
-				if let attributionManager = (AttributionManagerCreator() as? Creator)?.createImplementation(
+				let attributionCreator = AttributionManagerCreator {
+					self.kovaleeManager?.attributionCallback(withAdid: $0)
+				}
+				if let attributionManager = (attributionCreator as? Creator)?.createImplementation(
 					withConfiguration: configuration,
 					andKeys: keys
 				) as? AttributionManager {
@@ -115,26 +118,14 @@ enum Capabilities: CaseIterable {
 
 public protocol Manager {}
 
-protocol Creator {
+public protocol Creator {
 	func createImplementation(
 		withConfiguration configuration: Configuration,
 		andKeys keys: KovaleeKeys
 	) -> Manager
 }
 
-struct EventsTrackerManagerCreator {}
-struct AttributionManagerCreator {}
-
-extension EventsTrackerManagerCreator: Creator {
-	func createImplementation(
-		withConfiguration configuration: Configuration,
-		andKeys keys: KovaleeKeys
-	) -> Manager {
-		if configuration.environment == .development && keys.amplitude.devSDKId == nil {
-			KLogger.error("Configured Sandbox environment but Amplitude Dev key hasn't been provided")
-		}
-		return AmplitudeWrapperImpl(
-			withKey: configuration.environment == .production ? keys.amplitude.prodSDKId : (keys.amplitude.devSDKId ?? "")
-		)
-	}
+public struct EventsTrackerManagerCreator {}
+public struct AttributionManagerCreator {
+	var attributionAdidCallback: (String?) -> Void
 }

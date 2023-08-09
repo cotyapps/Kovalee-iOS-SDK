@@ -1,6 +1,20 @@
 import Foundation
 import KovaleeFramework
 
+extension EventsTrackerManagerCreator: Creator {
+	public func createImplementation(
+		withConfiguration configuration: Configuration,
+		andKeys keys: KovaleeKeys
+	) -> Manager {
+		if configuration.environment == .development && keys.amplitude.devSDKId == nil {
+			KLogger.error("Configured Sandbox environment but Amplitude Dev key hasn't been provided")
+		}
+		return AmplitudeWrapperImpl(
+			withKey: configuration.environment == .production ? keys.amplitude.prodSDKId : (keys.amplitude.devSDKId ?? "")
+		)
+	}
+}
+
 // MARK: Event Tracking
 extension Kovalee {
     /// Send an ``Event``
