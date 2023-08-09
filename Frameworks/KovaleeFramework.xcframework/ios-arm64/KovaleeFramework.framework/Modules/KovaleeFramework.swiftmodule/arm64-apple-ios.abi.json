@@ -7231,144 +7231,6 @@
             "protocolReq": true,
             "reqNewWitnessTableEntry": true,
             "funcSelfKind": "NonMutating"
-<<<<<<< HEAD
-          },
-          {
-            "kind": "Function",
-            "name": "getUserId",
-            "printedName": "getUserId()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "Swift.String?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "usr": "s:Sq"
-              }
-            ],
-            "declKind": "Func",
-=======
-<<<<<<< HEAD
->>>>>>> 3226eb0 (feat: restored KovaleeFramework)
-            "usr": "s:16KovaleeFramework16AmplitudeWrapperP9getUserIdSSSgyF",
-            "mangledName": "$s16KovaleeFramework16AmplitudeWrapperP9getUserIdSSSgyF",
-            "moduleName": "KovaleeFramework",
-            "genericSig": "<τ_0_0 where τ_0_0 : KovaleeFramework.AmplitudeWrapper>",
-            "sugared_genericSig": "<Self where Self : KovaleeFramework.AmplitudeWrapper>",
-=======
-=======
->>>>>>> a79068b (feat: new KovaleeFramework version)
-            "usr": "s:16KovaleeFramework19EventTrackerManagerP9getUserIdSSSgyF",
-            "mangledName": "$s16KovaleeFramework19EventTrackerManagerP9getUserIdSSSgyF",
-=======
-            "usr": "s:16KovaleeFramework16AmplitudeWrapperP9getUserIdSSSgyF",
-            "mangledName": "$s16KovaleeFramework16AmplitudeWrapperP9getUserIdSSSgyF",
->>>>>>> master
-            "moduleName": "KovaleeFramework",
-            "genericSig": "<τ_0_0 where τ_0_0 : KovaleeFramework.AmplitudeWrapper>",
-            "sugared_genericSig": "<Self where Self : KovaleeFramework.AmplitudeWrapper>",
-            "protocolReq": true,
-            "reqNewWitnessTableEntry": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "getDeviceId",
-            "printedName": "getDeviceId()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "Swift.String?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "usr": "s:Sq"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:16KovaleeFramework16AmplitudeWrapperP11getDeviceIdSSSgyF",
-            "mangledName": "$s16KovaleeFramework16AmplitudeWrapperP11getDeviceIdSSSgyF",
-            "moduleName": "KovaleeFramework",
-            "genericSig": "<τ_0_0 where τ_0_0 : KovaleeFramework.AmplitudeWrapper>",
-            "sugared_genericSig": "<Self where Self : KovaleeFramework.AmplitudeWrapper>",
-            "protocolReq": true,
-            "reqNewWitnessTableEntry": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "getUserId",
-            "printedName": "getUserId()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "Swift.String?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "usr": "s:Sq"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:16KovaleeFramework16AmplitudeWrapperP9getUserIdSSSgyF",
-            "mangledName": "$s16KovaleeFramework16AmplitudeWrapperP9getUserIdSSSgyF",
-            "moduleName": "KovaleeFramework",
-            "genericSig": "<τ_0_0 where τ_0_0 : KovaleeFramework.AmplitudeWrapper>",
-            "sugared_genericSig": "<Self where Self : KovaleeFramework.AmplitudeWrapper>",
-            "protocolReq": true,
-            "reqNewWitnessTableEntry": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "getDeviceId",
-            "printedName": "getDeviceId()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "Swift.String?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "usr": "s:Sq"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:16KovaleeFramework16AmplitudeWrapperP11getDeviceIdSSSgyF",
-            "mangledName": "$s16KovaleeFramework16AmplitudeWrapperP11getDeviceIdSSSgyF",
-            "moduleName": "KovaleeFramework",
-            "genericSig": "<τ_0_0 where τ_0_0 : KovaleeFramework.AmplitudeWrapper>",
-            "sugared_genericSig": "<Self where Self : KovaleeFramework.AmplitudeWrapper>",
-            "protocolReq": true,
-            "reqNewWitnessTableEntry": true,
-            "funcSelfKind": "NonMutating"
-=======
->>>>>>> 768955f (new-framework-version)
           }
         ],
         "declKind": "Protocol",
@@ -11955,1071 +11817,154 @@
     {
       "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
       "kind": "StringLiteral",
-<<<<<<< HEAD
-<<<<<<< HEAD
-      "offset": 4124,
-<<<<<<< HEAD
-=======
-      "offset": 3586,
->>>>>>> 69235d0 (feat: implemented functions to retrieve Adjust adid and Amplitude User and Device Id)
-=======
-      "offset": 3586,
-=======
-      "offset": 4124,
->>>>>>> 13962f8 (feat: restored KovaleeFramework)
->>>>>>> 3226eb0 (feat: restored KovaleeFramework)
-=======
-      "offset": 4124,
->>>>>>> a79068b (feat: new KovaleeFramework version)
-=======
-      "offset": 3586,
-<<<<<<< HEAD
->>>>>>> 69235d0 (feat: implemented functions to retrieve Adjust adid and Amplitude User and Device Id)
-=======
->>>>>>> master
->>>>>>> 1005f09 (fixed merge conflicts)
-=======
->>>>>>> 768955f (new-framework-version)
-=======
       "offset": 4110,
->>>>>>> 19beee2 (fix: updated setDefualtUserId to set it to nil if none is found)
-=======
-      "offset": 4110,
->>>>>>> master
       "length": 5,
       "value": "\"yes\""
     },
     {
       "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
       "kind": "BooleanLiteral",
-<<<<<<< HEAD
-<<<<<<< HEAD
-      "offset": 4132,
-<<<<<<< HEAD
-=======
-      "offset": 3594,
->>>>>>> 69235d0 (feat: implemented functions to retrieve Adjust adid and Amplitude User and Device Id)
-=======
-      "offset": 3594,
-=======
-      "offset": 4132,
->>>>>>> 13962f8 (feat: restored KovaleeFramework)
->>>>>>> 3226eb0 (feat: restored KovaleeFramework)
-=======
-      "offset": 4132,
->>>>>>> a79068b (feat: new KovaleeFramework version)
-=======
-      "offset": 3594,
-<<<<<<< HEAD
->>>>>>> 69235d0 (feat: implemented functions to retrieve Adjust adid and Amplitude User and Device Id)
-=======
->>>>>>> master
->>>>>>> 1005f09 (fixed merge conflicts)
-=======
->>>>>>> 768955f (new-framework-version)
-=======
       "offset": 4118,
->>>>>>> 19beee2 (fix: updated setDefualtUserId to set it to nil if none is found)
-=======
-      "offset": 4118,
->>>>>>> master
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
       "kind": "BooleanLiteral",
-<<<<<<< HEAD
-<<<<<<< HEAD
-      "offset": 4139,
-<<<<<<< HEAD
-=======
-      "offset": 3601,
->>>>>>> 69235d0 (feat: implemented functions to retrieve Adjust adid and Amplitude User and Device Id)
-=======
-      "offset": 3601,
-=======
-      "offset": 4139,
->>>>>>> 13962f8 (feat: restored KovaleeFramework)
->>>>>>> 3226eb0 (feat: restored KovaleeFramework)
-=======
-      "offset": 4139,
->>>>>>> a79068b (feat: new KovaleeFramework version)
-=======
-      "offset": 3601,
-<<<<<<< HEAD
->>>>>>> 69235d0 (feat: implemented functions to retrieve Adjust adid and Amplitude User and Device Id)
-=======
->>>>>>> master
->>>>>>> 1005f09 (fixed merge conflicts)
-=======
->>>>>>> 768955f (new-framework-version)
-=======
       "offset": 4125,
->>>>>>> 19beee2 (fix: updated setDefualtUserId to set it to nil if none is found)
-=======
-      "offset": 4125,
->>>>>>> master
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
       "kind": "BooleanLiteral",
-<<<<<<< HEAD
-<<<<<<< HEAD
-      "offset": 4338,
-<<<<<<< HEAD
-=======
-      "offset": 3800,
->>>>>>> 69235d0 (feat: implemented functions to retrieve Adjust adid and Amplitude User and Device Id)
-=======
-      "offset": 3800,
-=======
-      "offset": 4338,
->>>>>>> 13962f8 (feat: restored KovaleeFramework)
->>>>>>> 3226eb0 (feat: restored KovaleeFramework)
-=======
-      "offset": 4338,
->>>>>>> a79068b (feat: new KovaleeFramework version)
-=======
-      "offset": 3800,
-<<<<<<< HEAD
->>>>>>> 69235d0 (feat: implemented functions to retrieve Adjust adid and Amplitude User and Device Id)
-=======
->>>>>>> master
->>>>>>> 1005f09 (fixed merge conflicts)
-=======
->>>>>>> 768955f (new-framework-version)
-=======
       "offset": 4324,
->>>>>>> 19beee2 (fix: updated setDefualtUserId to set it to nil if none is found)
-=======
-      "offset": 4324,
->>>>>>> master
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
+      "kind": "IntegerLiteral",
+      "offset": 4494,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
       "kind": "StringLiteral",
-<<<<<<< HEAD
-<<<<<<< HEAD
-      "offset": 4546,
-<<<<<<< HEAD
-=======
-      "offset": 3998,
->>>>>>> 69235d0 (feat: implemented functions to retrieve Adjust adid and Amplitude User and Device Id)
-=======
-      "offset": 3998,
-=======
-      "offset": 4546,
->>>>>>> 13962f8 (feat: restored KovaleeFramework)
->>>>>>> 3226eb0 (feat: restored KovaleeFramework)
-=======
-      "offset": 4546,
->>>>>>> a79068b (feat: new KovaleeFramework version)
-=======
-      "offset": 3998,
-<<<<<<< HEAD
->>>>>>> 69235d0 (feat: implemented functions to retrieve Adjust adid and Amplitude User and Device Id)
-=======
->>>>>>> master
->>>>>>> 1005f09 (fixed merge conflicts)
-=======
->>>>>>> 768955f (new-framework-version)
-=======
-      "offset": 4532,
->>>>>>> 19beee2 (fix: updated setDefualtUserId to set it to nil if none is found)
-=======
-      "offset": 4532,
->>>>>>> master
+      "offset": 4607,
       "length": 4,
       "value": "\"no\""
     },
     {
       "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
       "kind": "BooleanLiteral",
-<<<<<<< HEAD
-<<<<<<< HEAD
-      "offset": 4606,
-<<<<<<< HEAD
-=======
-      "offset": 4058,
->>>>>>> 69235d0 (feat: implemented functions to retrieve Adjust adid and Amplitude User and Device Id)
-=======
-      "offset": 4058,
-=======
-      "offset": 4606,
->>>>>>> 13962f8 (feat: restored KovaleeFramework)
->>>>>>> 3226eb0 (feat: restored KovaleeFramework)
-=======
-      "offset": 4606,
->>>>>>> a79068b (feat: new KovaleeFramework version)
-=======
-      "offset": 4058,
-<<<<<<< HEAD
->>>>>>> 69235d0 (feat: implemented functions to retrieve Adjust adid and Amplitude User and Device Id)
-=======
->>>>>>> master
->>>>>>> 1005f09 (fixed merge conflicts)
-=======
->>>>>>> 768955f (new-framework-version)
-=======
-      "offset": 4592,
->>>>>>> 19beee2 (fix: updated setDefualtUserId to set it to nil if none is found)
-=======
-      "offset": 4592,
->>>>>>> master
+      "offset": 4667,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
       "kind": "StringLiteral",
-<<<<<<< HEAD
-<<<<<<< HEAD
-      "offset": 5104,
-<<<<<<< HEAD
-=======
-=======
->>>>>>> 3226eb0 (feat: restored KovaleeFramework)
-      "offset": 4518,
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> 69235d0 (feat: implemented functions to retrieve Adjust adid and Amplitude User and Device Id)
-=======
-      "offset": 4518,
->>>>>>> 69235d0 (feat: implemented functions to retrieve Adjust adid and Amplitude User and Device Id)
-=======
-      "offset": 4518,
-=======
->>>>>>> 768955f (new-framework-version)
-=======
-      "offset": 5090,
->>>>>>> 19beee2 (fix: updated setDefualtUserId to set it to nil if none is found)
-=======
-      "offset": 5090,
->>>>>>> master
+      "offset": 5165,
       "length": 5,
       "value": "\"yes\""
     },
     {
       "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
       "kind": "StringLiteral",
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-      "offset": 4526,
->>>>>>> master
-=======
-      "offset": 5098,
->>>>>>> master
+      "offset": 5173,
       "length": 4,
       "value": "\"no\""
-=======
-=======
-      "offset": 5104,
->>>>>>> a79068b (feat: new KovaleeFramework version)
-      "length": 5,
-      "value": "\"yes\""
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> 993b5fc (fix: fixed setUserIsPremium function)
-=======
-<<<<<<< HEAD
-=======
->>>>>>> 15931f2 (fix: fixed setUserIsPremium function)
-=======
->>>>>>> 150464a (fix: fixing setting user is premium on RC customerInfo call)
-=======
-      "length": 5,
-      "value": "\"yes\""
->>>>>>> 993b5fc (fix: fixed setUserIsPremium function)
-=======
-=======
->>>>>>> 15931f2 (fix: fixed setUserIsPremium function)
-=======
     },
     {
       "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
       "kind": "StringLiteral",
-<<<<<<< HEAD
-      "offset": 4526,
-      "length": 4,
-      "value": "\"no\""
->>>>>>> 150464a (fix: fixing setting user is premium on RC customerInfo call)
-    },
-    {
-      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
-      "kind": "StringLiteral",
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-      "offset": 5111,
-=======
-      "offset": 4525,
->>>>>>> 69235d0 (feat: implemented functions to retrieve Adjust adid and Amplitude User and Device Id)
-=======
-      "offset": 7557,
->>>>>>> master
-      "length": 5,
-      "value": "\"yes\""
-=======
-      "offset": 4526,
-=======
-      "offset": 5104,
->>>>>>> 13962f8 (feat: restored KovaleeFramework)
-=======
-=======
->>>>>>> 768955f (new-framework-version)
-      "offset": 5112,
-=======
-      "offset": 5098,
->>>>>>> 19beee2 (fix: updated setDefualtUserId to set it to nil if none is found)
-      "length": 4,
-      "value": "\"no\""
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> 993b5fc (fix: fixed setUserIsPremium function)
-=======
->>>>>>> 6d3ea5e (fix: fixed setUserIsPremium function)
->>>>>>> 15931f2 (fix: fixed setUserIsPremium function)
-=======
->>>>>>> 150464a (fix: fixing setting user is premium on RC customerInfo call)
-=======
-      "offset": 4526,
-      "length": 4,
-      "value": "\"no\""
-<<<<<<< HEAD
->>>>>>> 993b5fc (fix: fixed setUserIsPremium function)
-=======
->>>>>>> 6d3ea5e (fix: fixed setUserIsPremium function)
->>>>>>> 15931f2 (fix: fixed setUserIsPremium function)
-=======
->>>>>>> 768955f (new-framework-version)
-    },
-    {
-      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
-      "kind": "StringLiteral",
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-      "offset": 7569,
-=======
-      "offset": 6883,
->>>>>>> 69235d0 (feat: implemented functions to retrieve Adjust adid and Amplitude User and Device Id)
-=======
-=======
->>>>>>> 15931f2 (fix: fixed setUserIsPremium function)
-      "offset": 4526,
-      "length": 4,
-      "value": "\"no\""
-=======
-<<<<<<< HEAD
-=======
->>>>>>> 150464a (fix: fixing setting user is premium on RC customerInfo call)
-      "offset": 6885,
->>>>>>> 15931f2 (fix: fixed setUserIsPremium function)
-=======
-=======
->>>>>>> 150464a (fix: fixing setting user is premium on RC customerInfo call)
-      "offset": 6885,
-=======
-      "offset": 5111,
->>>>>>> 13962f8 (feat: restored KovaleeFramework)
->>>>>>> 3226eb0 (feat: restored KovaleeFramework)
-=======
-      "offset": 7571,
->>>>>>> a79068b (feat: new KovaleeFramework version)
-=======
-<<<<<<< HEAD
-      "offset": 4525,
->>>>>>> 69235d0 (feat: implemented functions to retrieve Adjust adid and Amplitude User and Device Id)
-=======
-      "offset": 6885,
->>>>>>> 15931f2 (fix: fixed setUserIsPremium function)
-=======
-      "offset": 6885,
->>>>>>> master
->>>>>>> 1005f09 (fixed merge conflicts)
-=======
-      "offset": 7571,
->>>>>>> 768955f (new-framework-version)
-=======
-      "offset": 7557,
->>>>>>> 19beee2 (fix: updated setDefualtUserId to set it to nil if none is found)
+      "offset": 7632,
       "length": 5,
       "value": "\"yes\""
     },
     {
       "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
       "kind": "StringLiteral",
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> 1005f09 (fixed merge conflicts)
-      "offset": 9029,
-=======
-      "offset": 8303,
->>>>>>> 69235d0 (feat: implemented functions to retrieve Adjust adid and Amplitude User and Device Id)
-=======
-      "offset": 8305,
->>>>>>> 15931f2 (fix: fixed setUserIsPremium function)
-=======
-      "offset": 8305,
-=======
-      "offset": 7569,
-=======
-      "offset": 6883,
->>>>>>> 69235d0 (feat: implemented functions to retrieve Adjust adid and Amplitude User and Device Id)
-      "length": 5,
-      "value": "\"yes\""
-    },
-    {
-      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
-      "kind": "StringLiteral",
-<<<<<<< HEAD
-      "offset": 9029,
->>>>>>> 13962f8 (feat: restored KovaleeFramework)
->>>>>>> 3226eb0 (feat: restored KovaleeFramework)
-=======
-      "offset": 9031,
->>>>>>> a79068b (feat: new KovaleeFramework version)
-=======
-<<<<<<< HEAD
-      "offset": 8303,
->>>>>>> 69235d0 (feat: implemented functions to retrieve Adjust adid and Amplitude User and Device Id)
-=======
-      "offset": 8305,
->>>>>>> 15931f2 (fix: fixed setUserIsPremium function)
-=======
-      "offset": 8305,
->>>>>>> master
->>>>>>> 1005f09 (fixed merge conflicts)
-=======
-      "offset": 9031,
->>>>>>> 768955f (new-framework-version)
-=======
-      "offset": 9017,
->>>>>>> 19beee2 (fix: updated setDefualtUserId to set it to nil if none is found)
-=======
-      "offset": 9017,
->>>>>>> master
+      "offset": 9092,
       "length": 87,
       "value": "\"🛰️ Retrieved value \""
     },
     {
       "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
       "kind": "StringLiteral",
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> 1005f09 (fixed merge conflicts)
-      "offset": 9096,
-=======
-      "offset": 8370,
->>>>>>> 69235d0 (feat: implemented functions to retrieve Adjust adid and Amplitude User and Device Id)
-=======
-      "offset": 8372,
->>>>>>> 15931f2 (fix: fixed setUserIsPremium function)
-=======
-      "offset": 8372,
-=======
-      "offset": 9096,
->>>>>>> 13962f8 (feat: restored KovaleeFramework)
->>>>>>> 3226eb0 (feat: restored KovaleeFramework)
-=======
-      "offset": 9098,
->>>>>>> a79068b (feat: new KovaleeFramework version)
-=======
-<<<<<<< HEAD
-      "offset": 8370,
->>>>>>> 69235d0 (feat: implemented functions to retrieve Adjust adid and Amplitude User and Device Id)
-=======
-      "offset": 8372,
->>>>>>> 15931f2 (fix: fixed setUserIsPremium function)
-=======
-      "offset": 8372,
->>>>>>> master
->>>>>>> 1005f09 (fixed merge conflicts)
-=======
-      "offset": 9098,
->>>>>>> 768955f (new-framework-version)
-=======
-      "offset": 9084,
->>>>>>> 19beee2 (fix: updated setDefualtUserId to set it to nil if none is found)
-=======
-      "offset": 9084,
->>>>>>> master
+      "offset": 9159,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
       "kind": "StringLiteral",
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> 1005f09 (fixed merge conflicts)
-      "offset": 9099,
-=======
-      "offset": 8373,
->>>>>>> 69235d0 (feat: implemented functions to retrieve Adjust adid and Amplitude User and Device Id)
-=======
-      "offset": 8375,
->>>>>>> 15931f2 (fix: fixed setUserIsPremium function)
-=======
-      "offset": 8375,
-=======
-      "offset": 9099,
->>>>>>> 13962f8 (feat: restored KovaleeFramework)
->>>>>>> 3226eb0 (feat: restored KovaleeFramework)
-=======
-      "offset": 9101,
->>>>>>> a79068b (feat: new KovaleeFramework version)
-=======
-<<<<<<< HEAD
-      "offset": 8373,
->>>>>>> 69235d0 (feat: implemented functions to retrieve Adjust adid and Amplitude User and Device Id)
-=======
-      "offset": 8375,
->>>>>>> 15931f2 (fix: fixed setUserIsPremium function)
-=======
-      "offset": 8375,
->>>>>>> master
->>>>>>> 1005f09 (fixed merge conflicts)
-=======
-      "offset": 9101,
->>>>>>> 768955f (new-framework-version)
-=======
-      "offset": 9087,
->>>>>>> 19beee2 (fix: updated setDefualtUserId to set it to nil if none is found)
-=======
-      "offset": 9087,
->>>>>>> master
+      "offset": 9162,
       "length": 3,
       "value": "\" for key: \""
     },
     {
       "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
       "kind": "StringLiteral",
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> 1005f09 (fixed merge conflicts)
-      "offset": 9115,
-=======
-      "offset": 8389,
->>>>>>> 69235d0 (feat: implemented functions to retrieve Adjust adid and Amplitude User and Device Id)
-=======
-      "offset": 8391,
->>>>>>> 15931f2 (fix: fixed setUserIsPremium function)
-=======
-      "offset": 8391,
-=======
-      "offset": 9115,
->>>>>>> 13962f8 (feat: restored KovaleeFramework)
->>>>>>> 3226eb0 (feat: restored KovaleeFramework)
-=======
-      "offset": 9117,
->>>>>>> a79068b (feat: new KovaleeFramework version)
-=======
-<<<<<<< HEAD
-      "offset": 8389,
->>>>>>> 69235d0 (feat: implemented functions to retrieve Adjust adid and Amplitude User and Device Id)
-=======
-      "offset": 8391,
->>>>>>> 15931f2 (fix: fixed setUserIsPremium function)
-=======
-      "offset": 8391,
->>>>>>> master
->>>>>>> 1005f09 (fixed merge conflicts)
-=======
-      "offset": 9117,
->>>>>>> 768955f (new-framework-version)
-=======
-      "offset": 9103,
->>>>>>> 19beee2 (fix: updated setDefualtUserId to set it to nil if none is found)
-=======
-      "offset": 9103,
->>>>>>> master
+      "offset": 9178,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
       "kind": "StringLiteral",
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> 1005f09 (fixed merge conflicts)
-      "offset": 9407,
-=======
-      "offset": 8681,
->>>>>>> 69235d0 (feat: implemented functions to retrieve Adjust adid and Amplitude User and Device Id)
-=======
-      "offset": 8683,
->>>>>>> 15931f2 (fix: fixed setUserIsPremium function)
-=======
-      "offset": 8683,
-=======
-      "offset": 9407,
->>>>>>> 13962f8 (feat: restored KovaleeFramework)
->>>>>>> 3226eb0 (feat: restored KovaleeFramework)
-=======
-      "offset": 9409,
->>>>>>> a79068b (feat: new KovaleeFramework version)
-=======
-<<<<<<< HEAD
-      "offset": 8681,
->>>>>>> 69235d0 (feat: implemented functions to retrieve Adjust adid and Amplitude User and Device Id)
-=======
-      "offset": 8683,
->>>>>>> 15931f2 (fix: fixed setUserIsPremium function)
-=======
-      "offset": 8683,
->>>>>>> master
->>>>>>> 1005f09 (fixed merge conflicts)
-=======
-      "offset": 9409,
->>>>>>> 768955f (new-framework-version)
-=======
-      "offset": 9395,
->>>>>>> 19beee2 (fix: updated setDefualtUserId to set it to nil if none is found)
-=======
-      "offset": 9395,
->>>>>>> master
+      "offset": 9470,
       "length": 83,
       "value": "\"🛰️ User already partecipated in a different experiment with \""
     },
     {
       "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
       "kind": "StringLiteral",
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> 1005f09 (fixed merge conflicts)
-      "offset": 9489,
-=======
-      "offset": 8763,
->>>>>>> 69235d0 (feat: implemented functions to retrieve Adjust adid and Amplitude User and Device Id)
-=======
-      "offset": 8765,
->>>>>>> 15931f2 (fix: fixed setUserIsPremium function)
-=======
-      "offset": 8765,
-=======
-      "offset": 9489,
->>>>>>> 13962f8 (feat: restored KovaleeFramework)
->>>>>>> 3226eb0 (feat: restored KovaleeFramework)
-=======
-      "offset": 9491,
->>>>>>> a79068b (feat: new KovaleeFramework version)
-=======
-<<<<<<< HEAD
-      "offset": 8763,
->>>>>>> 69235d0 (feat: implemented functions to retrieve Adjust adid and Amplitude User and Device Id)
-=======
-      "offset": 8765,
->>>>>>> 15931f2 (fix: fixed setUserIsPremium function)
-=======
-      "offset": 8765,
->>>>>>> master
->>>>>>> 1005f09 (fixed merge conflicts)
-=======
-      "offset": 9491,
->>>>>>> 768955f (new-framework-version)
-=======
-      "offset": 9477,
->>>>>>> 19beee2 (fix: updated setDefualtUserId to set it to nil if none is found)
-=======
-      "offset": 9477,
->>>>>>> master
+      "offset": 9552,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
       "kind": "StringLiteral",
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> 1005f09 (fixed merge conflicts)
-      "offset": 9689,
-=======
-      "offset": 8963,
->>>>>>> 69235d0 (feat: implemented functions to retrieve Adjust adid and Amplitude User and Device Id)
-=======
-      "offset": 8965,
->>>>>>> 15931f2 (fix: fixed setUserIsPremium function)
-=======
-      "offset": 8965,
-=======
-      "offset": 9689,
->>>>>>> 13962f8 (feat: restored KovaleeFramework)
->>>>>>> 3226eb0 (feat: restored KovaleeFramework)
-=======
-      "offset": 9691,
->>>>>>> a79068b (feat: new KovaleeFramework version)
-=======
-<<<<<<< HEAD
-      "offset": 8963,
->>>>>>> 69235d0 (feat: implemented functions to retrieve Adjust adid and Amplitude User and Device Id)
-=======
-      "offset": 8965,
->>>>>>> 15931f2 (fix: fixed setUserIsPremium function)
-=======
-      "offset": 8965,
->>>>>>> master
->>>>>>> 1005f09 (fixed merge conflicts)
-=======
-      "offset": 9691,
->>>>>>> 768955f (new-framework-version)
-=======
-      "offset": 9677,
->>>>>>> 19beee2 (fix: updated setDefualtUserId to set it to nil if none is found)
-=======
-      "offset": 9677,
->>>>>>> master
+      "offset": 9752,
       "length": 56,
       "value": "\"🛰️ Fetched AB Experiment value from local storage\""
     },
     {
       "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
       "kind": "StringLiteral",
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> 1005f09 (fixed merge conflicts)
-      "offset": 10099,
-=======
-      "offset": 9357,
->>>>>>> 69235d0 (feat: implemented functions to retrieve Adjust adid and Amplitude User and Device Id)
-=======
-      "offset": 9359,
->>>>>>> 15931f2 (fix: fixed setUserIsPremium function)
-=======
-      "offset": 9359,
-=======
-      "offset": 10099,
->>>>>>> 13962f8 (feat: restored KovaleeFramework)
->>>>>>> 3226eb0 (feat: restored KovaleeFramework)
-=======
-      "offset": 10101,
->>>>>>> a79068b (feat: new KovaleeFramework version)
-=======
-<<<<<<< HEAD
-      "offset": 9357,
->>>>>>> 69235d0 (feat: implemented functions to retrieve Adjust adid and Amplitude User and Device Id)
-=======
-      "offset": 9359,
->>>>>>> 15931f2 (fix: fixed setUserIsPremium function)
-=======
-      "offset": 9359,
->>>>>>> master
->>>>>>> 1005f09 (fixed merge conflicts)
-=======
-      "offset": 10101,
->>>>>>> 768955f (new-framework-version)
-=======
-      "offset": 10087,
->>>>>>> 19beee2 (fix: updated setDefualtUserId to set it to nil if none is found)
-=======
-      "offset": 10087,
->>>>>>> master
+      "offset": 10162,
       "length": 3,
       "value": "\"0\""
     },
     {
       "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
       "kind": "StringLiteral",
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> 1005f09 (fixed merge conflicts)
-      "offset": 10490,
-=======
-      "offset": 9747,
->>>>>>> 69235d0 (feat: implemented functions to retrieve Adjust adid and Amplitude User and Device Id)
-=======
-      "offset": 9749,
->>>>>>> 15931f2 (fix: fixed setUserIsPremium function)
-=======
-      "offset": 9749,
-=======
-      "offset": 10490,
->>>>>>> 13962f8 (feat: restored KovaleeFramework)
->>>>>>> 3226eb0 (feat: restored KovaleeFramework)
-=======
-      "offset": 10492,
->>>>>>> a79068b (feat: new KovaleeFramework version)
-=======
-<<<<<<< HEAD
-      "offset": 9747,
->>>>>>> 69235d0 (feat: implemented functions to retrieve Adjust adid and Amplitude User and Device Id)
-=======
-      "offset": 9749,
->>>>>>> 15931f2 (fix: fixed setUserIsPremium function)
-=======
-      "offset": 9749,
->>>>>>> master
->>>>>>> 1005f09 (fixed merge conflicts)
-=======
-      "offset": 10492,
->>>>>>> 768955f (new-framework-version)
-=======
-      "offset": 10478,
->>>>>>> 19beee2 (fix: updated setDefualtUserId to set it to nil if none is found)
-=======
-      "offset": 10478,
->>>>>>> master
+      "offset": 10553,
       "length": 27,
       "value": "\"creating interstitial ad \""
     },
     {
       "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
       "kind": "StringLiteral",
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> 1005f09 (fixed merge conflicts)
-      "offset": 10651,
-=======
-      "offset": 9906,
->>>>>>> 69235d0 (feat: implemented functions to retrieve Adjust adid and Amplitude User and Device Id)
-=======
-      "offset": 9908,
->>>>>>> 15931f2 (fix: fixed setUserIsPremium function)
-=======
-      "offset": 9908,
-=======
-      "offset": 10651,
->>>>>>> 13962f8 (feat: restored KovaleeFramework)
->>>>>>> 3226eb0 (feat: restored KovaleeFramework)
-=======
-      "offset": 10653,
->>>>>>> a79068b (feat: new KovaleeFramework version)
-=======
-<<<<<<< HEAD
-      "offset": 9906,
->>>>>>> 69235d0 (feat: implemented functions to retrieve Adjust adid and Amplitude User and Device Id)
-=======
-      "offset": 9908,
->>>>>>> 15931f2 (fix: fixed setUserIsPremium function)
-=======
-      "offset": 9908,
->>>>>>> master
->>>>>>> 1005f09 (fixed merge conflicts)
-=======
-      "offset": 10653,
->>>>>>> 768955f (new-framework-version)
-=======
-      "offset": 10639,
->>>>>>> 19beee2 (fix: updated setDefualtUserId to set it to nil if none is found)
-=======
-      "offset": 10639,
->>>>>>> master
+      "offset": 10714,
       "length": 25,
       "value": "\"display interstitial ad\""
     },
     {
       "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
       "kind": "StringLiteral",
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> 1005f09 (fixed merge conflicts)
-      "offset": 10857,
-=======
-      "offset": 10110,
->>>>>>> 69235d0 (feat: implemented functions to retrieve Adjust adid and Amplitude User and Device Id)
-=======
-      "offset": 10112,
->>>>>>> 15931f2 (fix: fixed setUserIsPremium function)
-=======
-      "offset": 10112,
-=======
-      "offset": 10857,
->>>>>>> 13962f8 (feat: restored KovaleeFramework)
->>>>>>> 3226eb0 (feat: restored KovaleeFramework)
-=======
-      "offset": 10859,
->>>>>>> a79068b (feat: new KovaleeFramework version)
-=======
-<<<<<<< HEAD
-      "offset": 10110,
->>>>>>> 69235d0 (feat: implemented functions to retrieve Adjust adid and Amplitude User and Device Id)
-=======
-      "offset": 10112,
->>>>>>> 15931f2 (fix: fixed setUserIsPremium function)
-=======
-      "offset": 10112,
->>>>>>> master
->>>>>>> 1005f09 (fixed merge conflicts)
-=======
-      "offset": 10859,
->>>>>>> 768955f (new-framework-version)
-=======
-      "offset": 10845,
->>>>>>> 19beee2 (fix: updated setDefualtUserId to set it to nil if none is found)
-=======
-      "offset": 10845,
->>>>>>> master
+      "offset": 10920,
       "length": 22,
       "value": "\"creating rewarded ad\""
     },
     {
       "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
       "kind": "StringLiteral",
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> 1005f09 (fixed merge conflicts)
-      "offset": 11004,
-=======
-      "offset": 10255,
->>>>>>> 69235d0 (feat: implemented functions to retrieve Adjust adid and Amplitude User and Device Id)
-=======
-      "offset": 10257,
->>>>>>> 15931f2 (fix: fixed setUserIsPremium function)
-=======
-      "offset": 10257,
-=======
-      "offset": 11004,
->>>>>>> 13962f8 (feat: restored KovaleeFramework)
->>>>>>> 3226eb0 (feat: restored KovaleeFramework)
-=======
-      "offset": 11006,
->>>>>>> a79068b (feat: new KovaleeFramework version)
-=======
-<<<<<<< HEAD
-      "offset": 10255,
->>>>>>> 69235d0 (feat: implemented functions to retrieve Adjust adid and Amplitude User and Device Id)
-=======
-      "offset": 10257,
->>>>>>> 15931f2 (fix: fixed setUserIsPremium function)
-=======
-      "offset": 10257,
->>>>>>> master
->>>>>>> 1005f09 (fixed merge conflicts)
-=======
-      "offset": 11006,
->>>>>>> 768955f (new-framework-version)
-=======
-      "offset": 10992,
->>>>>>> 19beee2 (fix: updated setDefualtUserId to set it to nil if none is found)
-=======
-      "offset": 10992,
->>>>>>> master
+      "offset": 11067,
       "length": 21,
       "value": "\"display rewarded ad\""
     },
