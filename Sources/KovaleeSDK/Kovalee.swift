@@ -127,5 +127,5 @@ public protocol Creator {
 
 public struct EventsTrackerManagerCreator {}
 public struct AttributionManagerCreator {
-	var attributionAdidCallback: (String?) -> Void
+	public var attributionAdidCallback: (String?) -> Void
 }
