@@ -64,15 +64,17 @@ public final class Kovalee {
 
 			// avoid initializing third party tools if running UnitTests
 			if !ProcessInfo.isRunningTests {
-				let eventTracker = self.createAmplitudeWrapper(
+				let eventTracker = EventsTrackerManagerCreator().createImplementation(
 					withConfiguration: configuration,
-					andKeys: keys.amplitude
-				)
+					andKeys: keys
+				) as! EventTrackerManager
 
 				self.kovaleeManager = KovaleeManager.init(
 					keys: keys,
 					eventTrackerManager: eventTracker
 				)
+				
+				setupCapabilities()
 			}
 
 			self.kovaleeManager?.setDefaultUserId()
@@ -92,15 +94,73 @@ public final class Kovalee {
 }
 
 extension Kovalee {
-	internal func createAmplitudeWrapper(
-		withConfiguration configuration: Configuration,
-		andKeys keys: KovaleeKeys.Amplitude
-	) -> EventTrackerManager {
-		if configuration.environment == .development && keys.devSDKId == nil {
-			KLogger.error("Configured Sandbox environment but Amplitude Dev key hasn't been provided")
+	private func setupCapabilities() {
+		Capabilities.allCases.forEach {
+			switch $0 {
+			case .attribution:
+				let creator = AttributionManagerCreator {
+					self.kovaleeManager?.attributionCallback(withAdid: $0)
+				}
+				if let attributionManager = (creator as? Creator)?.createImplementation(
+					withConfiguration: configuration,
+					andKeys: keys
+				) as? AttributionManager {
+					self.kovaleeManager?.setupAttributionManager(adjustWrapper: attributionManager)
+				}
+
+			case .purchases:
+				let creator = PurchaseManagerCreator()
+				if let purchaseManager = (creator as? Creator)?.createImplementation(
+					withConfiguration: configuration,
+					andKeys: keys
+				) as? PurchaseManager {
+					self.kovaleeManager?.setupPurchaseManager(purchaseManaegr: purchaseManager)
+				}
+
+			case .remoteConfiguration:
+				let creator = RemoteConfigManagerCreator()
+				if let remoteConfigManager = (creator as? Creator)?.createImplementation(
+					withConfiguration: configuration,
+					andKeys: keys
+				) as? RemoteConfigurationManager {
+					self.kovaleeManager?.setupRemoteConfigurationManager(remoteConfigManager: remoteConfigManager)
+				}
+
+			case .ads:
+				let creator = AdsManagerCreator()
+				if let adsManager = (creator as? Creator)?.createImplementation(
+					withConfiguration: configuration,
+					andKeys: keys
+				) as? AdsManager {
+					self.kovaleeManager?.setupAdsManager(adsManager: adsManager)
+				}
+			case .eventsTracking: ()
+			}
 		}
-		return AmplitudeWrapperImpl(
-			withKey: configuration.environment == .production ? keys.prodSDKId : (keys.devSDKId ?? "")
-		)
 	}
 }
+
+enum Capabilities: CaseIterable {
+	case eventsTracking
+	case attribution
+	case purchases
+	case remoteConfiguration
+	case ads
+}
+
+public protocol Manager {}
+
+public protocol Creator {
+	func createImplementation(
+		withConfiguration configuration: Configuration,
+		andKeys keys: KovaleeKeys
+	) -> Manager
+}
+
+public struct EventsTrackerManagerCreator {}
+public struct AttributionManagerCreator {
+	public var attributionAdidCallback: (String?) -> Void
+}
+public struct PurchaseManagerCreator {}
+public struct RemoteConfigManagerCreator {}
+public struct AdsManagerCreator {}
