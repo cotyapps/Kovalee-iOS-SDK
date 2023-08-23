@@ -18,7 +18,7 @@ let package = Package(
         )
     ],
     dependencies: [
-		.package(url: "https://github.com/amplitude/Amplitude-Swift", from: Version(0, 4, 7))
+		.package(url: "https://github.com/amplitude/Amplitude-Swift", from: Version(0, 4, 14))
 	],
     targets: [
         .binaryTarget(
@@ -30,7 +30,7 @@ let package = Package(
 			name: "KovaleeSDK",
 			dependencies: [
 				"KovaleeFramework",
-				.product(name: "Amplitude-Swift", package: "Amplitude-swift")
+				.product(name: "AmplitudeSwift", package: "Amplitude-Swift")
 			]
 		)
     ]

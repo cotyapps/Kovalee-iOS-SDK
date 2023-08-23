@@ -1,6 +1,6 @@
+import AmplitudeSwift
 import Foundation
 import KovaleeFramework
-import Amplitude_Swift
 
 struct AmplitudeWrapperImpl: EventTrackerManager, Manager {
     init(withKey key: String) {
@@ -10,10 +10,9 @@ struct AmplitudeWrapperImpl: EventTrackerManager, Manager {
             .disableTrackIpAddress()
             .disableCarrier()
             .disableTrackCity()
-            .disableTrackLatLng()
 
         amplitude = Amplitude(
-            configuration: Amplitude_Swift.Configuration(
+            configuration: AmplitudeSwift.Configuration(
                 apiKey: key,
                 logLevel: KLogger.logLevel.amplitudeLogLevel(),
                 callback: { event, code, message in
