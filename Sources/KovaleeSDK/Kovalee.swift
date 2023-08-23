@@ -98,19 +98,42 @@ extension Kovalee {
 		Capabilities.allCases.forEach {
 			switch $0 {
 			case .attribution:
-				let attributionCreator = AttributionManagerCreator {
+				let creator = AttributionManagerCreator {
 					self.kovaleeManager?.attributionCallback(withAdid: $0)
 				}
-				if let attributionManager = (attributionCreator as? Creator)?.createImplementation(
+				if let attributionManager = (creator as? Creator)?.createImplementation(
 					withConfiguration: configuration,
 					andKeys: keys
 				) as? AttributionManager {
 					self.kovaleeManager?.setupAttributionManager(adjustWrapper: attributionManager)
 				}
-				
-			case .purchases: ()
-			case .remoteConfiguration: ()
-			case .ads: ()
+
+			case .purchases:
+				let creator = PurchaseManagerCreator()
+				if let purchaseManager = (creator as? Creator)?.createImplementation(
+					withConfiguration: configuration,
+					andKeys: keys
+				) as? PurchaseManager {
+					self.kovaleeManager?.setupPurchaseManager(purchaseManaegr: purchaseManager)
+				}
+
+			case .remoteConfiguration:
+				let creator = RemoteConfigManagerCreator()
+				if let remoteConfigManager = (creator as? Creator)?.createImplementation(
+					withConfiguration: configuration,
+					andKeys: keys
+				) as? RemoteConfigurationManager {
+					self.kovaleeManager?.setupRemoteConfigurationManager(remoteConfigManager: remoteConfigManager)
+				}
+
+			case .ads:
+				let creator = AdsManagerCreator()
+				if let adsManager = (creator as? Creator)?.createImplementation(
+					withConfiguration: configuration,
+					andKeys: keys
+				) as? AdsManager {
+					self.kovaleeManager?.setupAdsManager(adsManager: adsManager)
+				}
 			case .eventsTracking: ()
 			}
 		}
@@ -138,3 +161,6 @@ public struct EventsTrackerManagerCreator {}
 public struct AttributionManagerCreator {
 	public var attributionAdidCallback: (String?) -> Void
 }
+public struct PurchaseManagerCreator {}
+public struct RemoteConfigManagerCreator {}
+public struct AdsManagerCreator {}
