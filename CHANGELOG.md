@@ -7,6 +7,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 <<<<<<< HEAD
 =======
+## [1.3.1] - 2023-08-24
+### :bug: Bug Fixes
+- [`fd2d43e`](https://github.com/cotyapps/Kovalee-iOS-SDK/commit/fd2d43ec3d1951e062e4b0c86b56421fb5d441ad) - new Framework version for fixing automatically user-id setting *(commit by [@fto-k](https://github.com/fto-k))*
+
+
 ## [v1.2.4] - 2023-08-09
 ### :bug: Bug Fixes
 - [`8353691`](https://github.com/cotyapps/Kovalee-iOS-SDK/commit/83536911c1d69f7d72915932fb903c9299cee2ce) - cv value on first app open *(commit by [@fto-k](https://github.com/fto-k))*
@@ -117,3 +122,4 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 [v1.2.2]: https://github.com/cotyapps/Kovalee-iOS-SDK/compare/v1.2.1...v1.2.2
 [v1.2.3]: https://github.com/cotyapps/Kovalee-iOS-SDK/compare/1.2.3...v1.2.3
 [v1.2.4]: https://github.com/cotyapps/Kovalee-iOS-SDK/compare/v1.2.3...v1.2.4
+[1.3.1]: https://github.com/cotyapps/Kovalee-iOS-SDK/compare/1.3.0...1.3.1
