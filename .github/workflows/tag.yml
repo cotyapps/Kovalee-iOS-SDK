@@ -2,7 +2,7 @@ name: Bump version
 on:
   push:
     tags:
-      - *.*.*
+      - '*'
 jobs:
   deploy:
     runs-on: ubuntu-latest
