@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'KovaleeSDK'
-  s.version          = '1.3.0'
+  s.version          = '1.3.1'
   s.summary          = 'KovaleeSDK is an efficient iOS framework, that\'s packed with tools for tracking user behavior.'
   s.description  = <<-DESC
                    KovaleeSDK is an efficient iOS framework, that\'s packed with tools specifically for tracking user behavior, handling user purchases, and smoothly integrating ads.
@@ -14,12 +14,7 @@ Pod::Spec.new do |s|
 
   s.ios.deployment_target = '14.3'
   s.swift_version    = '5.7'
-  s.source_files     = [
-    'Sources/KovaleeSDK/Kovalee.swift',
-    'Sources/KovaleeSDK/Configuration.swift',
-    'Sources/KovaleeSDK/Amplitude/KovaleeAnalytics+Amplitude.swift',
-    'Cocoapods-Fix/AmplitudeWrapperImpl.swift'
-  ]
+  s.source_files     =  "Sources/KovaleeSDK/**/*.swift"
 
   s.vendored_frameworks = ['Frameworks/KovaleeFramework.xcframework']
   s.dependency 'AmplitudeSwift', '~> 0.4.7'
