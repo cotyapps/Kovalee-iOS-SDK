@@ -7,6 +7,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 <<<<<<< HEAD
 =======
+## [1.3.3] - 2023-09-07
+### :sparkles: New Features
+- [`297bcc0`](https://github.com/cotyapps/Kovalee-iOS-SDK/commit/297bcc08f0463fae166590fa1c2f80c88bfe4231) - new framework version with new method for purchasing subscriptions *(commit by [@fto-k](https://github.com/fto-k))*
+
+
 ## [1.3.2] - 2023-08-31
 ### :sparkles: New Features
 - [`4165b21`](https://github.com/cotyapps/Kovalee-iOS-SDK/commit/4165b21208f075184da6b1813d36bec4ad112765) - enabled Amplitude IP tracking *(commit by [@fto-k](https://github.com/fto-k))*
@@ -129,3 +134,4 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 [v1.2.4]: https://github.com/cotyapps/Kovalee-iOS-SDK/compare/v1.2.3...v1.2.4
 [1.3.1]: https://github.com/cotyapps/Kovalee-iOS-SDK/compare/1.3.0...1.3.1
 [1.3.2]: https://github.com/cotyapps/Kovalee-iOS-SDK/compare/1.3.1...1.3.2
+[1.3.3]: https://github.com/cotyapps/Kovalee-iOS-SDK/compare/1.3.2...1.3.3
