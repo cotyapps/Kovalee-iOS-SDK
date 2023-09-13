@@ -74,9 +74,6 @@ extension KovaleeFramework.KovaleeManager {
   #endif
 }
 extension KovaleeFramework.KovaleeManager {
-  #if compiler(>=5.3) && $AsyncAwait
-  public func setupfbAdProcessingOptions(options: any KovaleeFramework.AbstractFBAdProcessingOptions) async
-  #endif
   public func showMediationDebugger()
   #if compiler(>=5.3) && $AsyncAwait
   public func loadInterstitialAd() async -> Swift.Bool?
@@ -294,9 +291,6 @@ public protocol AbstractPackage {
 public protocol AdsManager {
   func showMediationDebugger()
   #if compiler(>=5.3) && $AsyncAwait
-  func setupfbAdProcessingOptions(options: any KovaleeFramework.AbstractFBAdProcessingOptions) async
-  #endif
-  #if compiler(>=5.3) && $AsyncAwait
   func createInterstitialAd() async throws -> Swift.Bool
   #endif
   #if compiler(>=5.3) && $AsyncAwait
@@ -308,12 +302,6 @@ public protocol AdsManager {
   #if compiler(>=5.3) && $AsyncAwait
   func showRewardedAd() async throws -> Swift.Bool
   #endif
-}
-public protocol AbstractFBAdProcessingOptions {
-  var advertiserTrackingEnabled: Swift.Bool { get }
-  var enableLDU: Swift.Bool { get }
-  var isCountryUS: Swift.Bool { get }
-  var isStateCalifornia: Swift.Bool { get }
 }
 public enum KovaleeError : Swift.Error {
   case firebaseNotInitialized

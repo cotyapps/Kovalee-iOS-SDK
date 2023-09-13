@@ -1622,33 +1622,6 @@
           },
           {
             "kind": "Function",
-            "name": "setupfbAdProcessingOptions",
-            "printedName": "setupfbAdProcessingOptions(options:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "AbstractFBAdProcessingOptions",
-                "printedName": "KovaleeFramework.AbstractFBAdProcessingOptions",
-                "usr": "s:16KovaleeFramework29AbstractFBAdProcessingOptionsP"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:16KovaleeFramework0A7ManagerC26setupfbAdProcessingOptions7optionsyAA012AbstractFBAdfG0_p_tYaF",
-            "mangledName": "$s16KovaleeFramework0A7ManagerC26setupfbAdProcessingOptions7optionsyAA012AbstractFBAdfG0_p_tYaF",
-            "moduleName": "KovaleeFramework",
-            "declAttributes": [
-              "AccessControl"
-            ],
-            "isFromExtension": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
             "name": "showMediationDebugger",
             "printedName": "showMediationDebugger()",
             "children": [
@@ -7940,33 +7913,6 @@
           },
           {
             "kind": "Function",
-            "name": "setupfbAdProcessingOptions",
-            "printedName": "setupfbAdProcessingOptions(options:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "AbstractFBAdProcessingOptions",
-                "printedName": "KovaleeFramework.AbstractFBAdProcessingOptions",
-                "usr": "s:16KovaleeFramework29AbstractFBAdProcessingOptionsP"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:16KovaleeFramework10AdsManagerP26setupfbAdProcessingOptions7optionsyAA012AbstractFBAdgH0_p_tYaF",
-            "mangledName": "$s16KovaleeFramework10AdsManagerP26setupfbAdProcessingOptions7optionsyAA012AbstractFBAdgH0_p_tYaF",
-            "moduleName": "KovaleeFramework",
-            "genericSig": "<τ_0_0 where τ_0_0 : KovaleeFramework.AdsManager>",
-            "sugared_genericSig": "<Self where Self : KovaleeFramework.AdsManager>",
-            "protocolReq": true,
-            "reqNewWitnessTableEntry": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
             "name": "createInterstitialAd",
             "printedName": "createInterstitialAd()",
             "children": [
@@ -8061,188 +8007,6 @@
         "declKind": "Protocol",
         "usr": "s:16KovaleeFramework10AdsManagerP",
         "mangledName": "$s16KovaleeFramework10AdsManagerP",
-        "moduleName": "KovaleeFramework",
-        "declAttributes": [
-          "AccessControl"
-        ]
-      },
-      {
-        "kind": "TypeDecl",
-        "name": "AbstractFBAdProcessingOptions",
-        "printedName": "AbstractFBAdProcessingOptions",
-        "children": [
-          {
-            "kind": "Var",
-            "name": "advertiserTrackingEnabled",
-            "printedName": "advertiserTrackingEnabled",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Bool",
-                "printedName": "Swift.Bool",
-                "usr": "s:Sb"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:16KovaleeFramework29AbstractFBAdProcessingOptionsP25advertiserTrackingEnabledSbvp",
-            "mangledName": "$s16KovaleeFramework29AbstractFBAdProcessingOptionsP25advertiserTrackingEnabledSbvp",
-            "moduleName": "KovaleeFramework",
-            "protocolReq": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Bool",
-                    "printedName": "Swift.Bool",
-                    "usr": "s:Sb"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:16KovaleeFramework29AbstractFBAdProcessingOptionsP25advertiserTrackingEnabledSbvg",
-                "mangledName": "$s16KovaleeFramework29AbstractFBAdProcessingOptionsP25advertiserTrackingEnabledSbvg",
-                "moduleName": "KovaleeFramework",
-                "genericSig": "<τ_0_0 where τ_0_0 : KovaleeFramework.AbstractFBAdProcessingOptions>",
-                "sugared_genericSig": "<Self where Self : KovaleeFramework.AbstractFBAdProcessingOptions>",
-                "protocolReq": true,
-                "reqNewWitnessTableEntry": true,
-                "accessorKind": "get"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
-            "name": "enableLDU",
-            "printedName": "enableLDU",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Bool",
-                "printedName": "Swift.Bool",
-                "usr": "s:Sb"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:16KovaleeFramework29AbstractFBAdProcessingOptionsP9enableLDUSbvp",
-            "mangledName": "$s16KovaleeFramework29AbstractFBAdProcessingOptionsP9enableLDUSbvp",
-            "moduleName": "KovaleeFramework",
-            "protocolReq": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Bool",
-                    "printedName": "Swift.Bool",
-                    "usr": "s:Sb"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:16KovaleeFramework29AbstractFBAdProcessingOptionsP9enableLDUSbvg",
-                "mangledName": "$s16KovaleeFramework29AbstractFBAdProcessingOptionsP9enableLDUSbvg",
-                "moduleName": "KovaleeFramework",
-                "genericSig": "<τ_0_0 where τ_0_0 : KovaleeFramework.AbstractFBAdProcessingOptions>",
-                "sugared_genericSig": "<Self where Self : KovaleeFramework.AbstractFBAdProcessingOptions>",
-                "protocolReq": true,
-                "reqNewWitnessTableEntry": true,
-                "accessorKind": "get"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
-            "name": "isCountryUS",
-            "printedName": "isCountryUS",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Bool",
-                "printedName": "Swift.Bool",
-                "usr": "s:Sb"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:16KovaleeFramework29AbstractFBAdProcessingOptionsP11isCountryUSSbvp",
-            "mangledName": "$s16KovaleeFramework29AbstractFBAdProcessingOptionsP11isCountryUSSbvp",
-            "moduleName": "KovaleeFramework",
-            "protocolReq": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Bool",
-                    "printedName": "Swift.Bool",
-                    "usr": "s:Sb"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:16KovaleeFramework29AbstractFBAdProcessingOptionsP11isCountryUSSbvg",
-                "mangledName": "$s16KovaleeFramework29AbstractFBAdProcessingOptionsP11isCountryUSSbvg",
-                "moduleName": "KovaleeFramework",
-                "genericSig": "<τ_0_0 where τ_0_0 : KovaleeFramework.AbstractFBAdProcessingOptions>",
-                "sugared_genericSig": "<Self where Self : KovaleeFramework.AbstractFBAdProcessingOptions>",
-                "protocolReq": true,
-                "reqNewWitnessTableEntry": true,
-                "accessorKind": "get"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
-            "name": "isStateCalifornia",
-            "printedName": "isStateCalifornia",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Bool",
-                "printedName": "Swift.Bool",
-                "usr": "s:Sb"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:16KovaleeFramework29AbstractFBAdProcessingOptionsP17isStateCaliforniaSbvp",
-            "mangledName": "$s16KovaleeFramework29AbstractFBAdProcessingOptionsP17isStateCaliforniaSbvp",
-            "moduleName": "KovaleeFramework",
-            "protocolReq": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Bool",
-                    "printedName": "Swift.Bool",
-                    "usr": "s:Sb"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:16KovaleeFramework29AbstractFBAdProcessingOptionsP17isStateCaliforniaSbvg",
-                "mangledName": "$s16KovaleeFramework29AbstractFBAdProcessingOptionsP17isStateCaliforniaSbvg",
-                "moduleName": "KovaleeFramework",
-                "genericSig": "<τ_0_0 where τ_0_0 : KovaleeFramework.AbstractFBAdProcessingOptions>",
-                "sugared_genericSig": "<Self where Self : KovaleeFramework.AbstractFBAdProcessingOptions>",
-                "protocolReq": true,
-                "reqNewWitnessTableEntry": true,
-                "accessorKind": "get"
-              }
-            ]
-          }
-        ],
-        "declKind": "Protocol",
-        "usr": "s:16KovaleeFramework29AbstractFBAdProcessingOptionsP",
-        "mangledName": "$s16KovaleeFramework29AbstractFBAdProcessingOptionsP",
         "moduleName": "KovaleeFramework",
         "declAttributes": [
           "AccessControl"
@@ -11958,91 +11722,91 @@
     {
       "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
       "kind": "StringLiteral",
-      "offset": 8349,
+      "offset": 8345,
       "length": 5,
       "value": "\"yes\""
     },
     {
       "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
       "kind": "StringLiteral",
-      "offset": 9809,
+      "offset": 9805,
       "length": 87,
       "value": "\"🛰️ Retrieved value \""
     },
     {
       "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
       "kind": "StringLiteral",
-      "offset": 9876,
+      "offset": 9872,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
       "kind": "StringLiteral",
-      "offset": 9879,
+      "offset": 9875,
       "length": 3,
       "value": "\" for key: \""
     },
     {
       "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
       "kind": "StringLiteral",
-      "offset": 9895,
+      "offset": 9891,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
       "kind": "StringLiteral",
-      "offset": 10187,
+      "offset": 10183,
       "length": 83,
       "value": "\"🛰️ User already partecipated in a different experiment with \""
     },
     {
       "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
       "kind": "StringLiteral",
-      "offset": 10269,
+      "offset": 10265,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
       "kind": "StringLiteral",
-      "offset": 10469,
+      "offset": 10465,
       "length": 56,
       "value": "\"🛰️ Fetched AB Experiment value from local storage\""
     },
     {
       "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
       "kind": "StringLiteral",
-      "offset": 10879,
+      "offset": 10875,
       "length": 3,
       "value": "\"0\""
     },
     {
       "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
       "kind": "StringLiteral",
-      "offset": 11270,
+      "offset": 11104,
       "length": 27,
       "value": "\"creating interstitial ad \""
     },
     {
       "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
       "kind": "StringLiteral",
-      "offset": 11431,
+      "offset": 11265,
       "length": 25,
       "value": "\"display interstitial ad\""
     },
     {
       "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
       "kind": "StringLiteral",
-      "offset": 11637,
+      "offset": 11471,
       "length": 22,
       "value": "\"creating rewarded ad\""
     },
     {
       "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
       "kind": "StringLiteral",
-      "offset": 11784,
+      "offset": 11618,
       "length": 21,
       "value": "\"display rewarded ad\""
     },
