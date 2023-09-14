@@ -85,7 +85,7 @@ extension KovaleeFramework.KovaleeManager {
   public func loadRewardedAd() async -> Swift.Bool?
   #endif
   #if compiler(>=5.3) && $AsyncAwait
-  public func showRewardedAd() async -> Swift.Bool?
+  public func showRewardedAd() async -> (any KovaleeFramework.AbstractReward)?
   #endif
 }
 public struct KLogger {
@@ -300,8 +300,12 @@ public protocol AdsManager {
   func createRewardedAd() async throws -> Swift.Bool
   #endif
   #if compiler(>=5.3) && $AsyncAwait
-  func showRewardedAd() async throws -> Swift.Bool
+  func showRewardedAd() async throws -> (any KovaleeFramework.AbstractReward)?
   #endif
+}
+public protocol AbstractReward {
+  var label: Swift.String { get }
+  var amount: Swift.Int { get }
 }
 public enum KovaleeError : Swift.Error {
   case firebaseNotInitialized
