@@ -1739,21 +1739,21 @@
               {
                 "kind": "TypeNominal",
                 "name": "Optional",
-                "printedName": "Swift.Bool?",
+                "printedName": "KovaleeFramework.AbstractReward?",
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "Bool",
-                    "printedName": "Swift.Bool",
-                    "usr": "s:Sb"
+                    "name": "AbstractReward",
+                    "printedName": "KovaleeFramework.AbstractReward",
+                    "usr": "s:16KovaleeFramework14AbstractRewardP"
                   }
                 ],
                 "usr": "s:Sq"
               }
             ],
             "declKind": "Func",
-            "usr": "s:16KovaleeFramework0A7ManagerC14showRewardedAdSbSgyYaF",
-            "mangledName": "$s16KovaleeFramework0A7ManagerC14showRewardedAdSbSgyYaF",
+            "usr": "s:16KovaleeFramework0A7ManagerC14showRewardedAdAA14AbstractReward_pSgyYaF",
+            "mangledName": "$s16KovaleeFramework0A7ManagerC14showRewardedAdAA14AbstractReward_pSgyYaF",
             "moduleName": "KovaleeFramework",
             "declAttributes": [
               "AccessControl"
@@ -7987,14 +7987,22 @@
             "children": [
               {
                 "kind": "TypeNominal",
-                "name": "Bool",
-                "printedName": "Swift.Bool",
-                "usr": "s:Sb"
+                "name": "Optional",
+                "printedName": "KovaleeFramework.AbstractReward?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AbstractReward",
+                    "printedName": "KovaleeFramework.AbstractReward",
+                    "usr": "s:16KovaleeFramework14AbstractRewardP"
+                  }
+                ],
+                "usr": "s:Sq"
               }
             ],
             "declKind": "Func",
-            "usr": "s:16KovaleeFramework10AdsManagerP14showRewardedAdSbyYaKF",
-            "mangledName": "$s16KovaleeFramework10AdsManagerP14showRewardedAdSbyYaKF",
+            "usr": "s:16KovaleeFramework10AdsManagerP14showRewardedAdAA14AbstractReward_pSgyYaKF",
+            "mangledName": "$s16KovaleeFramework10AdsManagerP14showRewardedAdAA14AbstractReward_pSgyYaKF",
             "moduleName": "KovaleeFramework",
             "genericSig": "<τ_0_0 where τ_0_0 : KovaleeFramework.AdsManager>",
             "sugared_genericSig": "<Self where Self : KovaleeFramework.AdsManager>",
@@ -8007,6 +8015,104 @@
         "declKind": "Protocol",
         "usr": "s:16KovaleeFramework10AdsManagerP",
         "mangledName": "$s16KovaleeFramework10AdsManagerP",
+        "moduleName": "KovaleeFramework",
+        "declAttributes": [
+          "AccessControl"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "AbstractReward",
+        "printedName": "AbstractReward",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "label",
+            "printedName": "label",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:16KovaleeFramework14AbstractRewardP5labelSSvp",
+            "mangledName": "$s16KovaleeFramework14AbstractRewardP5labelSSvp",
+            "moduleName": "KovaleeFramework",
+            "protocolReq": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:16KovaleeFramework14AbstractRewardP5labelSSvg",
+                "mangledName": "$s16KovaleeFramework14AbstractRewardP5labelSSvg",
+                "moduleName": "KovaleeFramework",
+                "genericSig": "<τ_0_0 where τ_0_0 : KovaleeFramework.AbstractReward>",
+                "sugared_genericSig": "<Self where Self : KovaleeFramework.AbstractReward>",
+                "protocolReq": true,
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "amount",
+            "printedName": "amount",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:16KovaleeFramework14AbstractRewardP6amountSivp",
+            "mangledName": "$s16KovaleeFramework14AbstractRewardP6amountSivp",
+            "moduleName": "KovaleeFramework",
+            "protocolReq": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:16KovaleeFramework14AbstractRewardP6amountSivg",
+                "mangledName": "$s16KovaleeFramework14AbstractRewardP6amountSivg",
+                "moduleName": "KovaleeFramework",
+                "genericSig": "<τ_0_0 where τ_0_0 : KovaleeFramework.AbstractReward>",
+                "sugared_genericSig": "<Self where Self : KovaleeFramework.AbstractReward>",
+                "protocolReq": true,
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Protocol",
+        "usr": "s:16KovaleeFramework14AbstractRewardP",
+        "mangledName": "$s16KovaleeFramework14AbstractRewardP",
         "moduleName": "KovaleeFramework",
         "declAttributes": [
           "AccessControl"
@@ -11806,7 +11912,7 @@
     {
       "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
       "kind": "StringLiteral",
-      "offset": 11618,
+      "offset": 11628,
       "length": 21,
       "value": "\"display rewarded ad\""
     },
