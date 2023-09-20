@@ -308,6 +308,7 @@ public protocol AdsManager {
   #if compiler(>=5.3) && $AsyncAwait
   func showRewardedAd() async throws -> (any KovaleeFramework.AbstractReward)?
   #endif
+  func setDataCollectionEnabled(_ enabled: Swift.Bool)
 }
 public protocol AbstractReward {
   var label: Swift.String { get }
