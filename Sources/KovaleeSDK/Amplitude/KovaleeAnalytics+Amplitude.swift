@@ -17,6 +17,13 @@ extension EventsTrackerManagerCreator: Creator {
 
 // MARK: Event Tracking
 extension Kovalee {
+	public static func setDataCollectionEnabled(_ enabled: Bool) {
+		Self.shared.kovaleeManager?.setDataCollectionEnabled(enabled)
+	}
+	
+	public static func isDataCollectionEnabled() -> Bool {
+		Self.shared.kovaleeManager?.isDataCollectionEnabled() ?? true
+	}
     /// Send an ``Event``
     ///
     /// This method is used to track a specific user behaviour, like interaction with a button.
