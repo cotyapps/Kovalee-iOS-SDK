@@ -255,6 +255,21 @@ public enum Duration {
 	case week
 	case year
 	
+	public static func create(fromIntValue value: Int) -> Self? {
+		switch value {
+		case 1:
+			return .day
+		case 7:
+			return .week
+		case 30:
+			return .month
+		case 365:
+			return .year
+		default:
+			return nil
+		}
+	}
+
 	public var inDays: Int {
 		switch self {
 		case .day:
