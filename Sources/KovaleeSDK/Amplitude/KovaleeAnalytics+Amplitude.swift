@@ -17,13 +17,23 @@ extension EventsTrackerManagerCreator: Creator {
 
 // MARK: Event Tracking
 extension Kovalee {
+
+	/// Disable any data collection for this specific user
+	///
+	/// - Parameters:
+	///    - enabled: a boolean stating if data about the user should be collected
 	public static func setDataCollectionEnabled(_ enabled: Bool) {
+		KLogger.debug("Opt \(enabled ? "in" : "out") user from collecting data")
 		Self.shared.kovaleeManager?.setDataCollectionEnabled(enabled)
 	}
-	
+
+	/// Returns a bulean stating if the data about the current user is currently collected
+	///
+	/// - Returns: a boolean stating if data about the user is currently collected
 	public static func isDataCollectionEnabled() -> Bool {
 		Self.shared.kovaleeManager?.isDataCollectionEnabled() ?? true
 	}
+
     /// Send an ``Event``
     ///
     /// This method is used to track a specific user behaviour, like interaction with a button.

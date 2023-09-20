@@ -254,6 +254,7 @@ public protocol RemoteConfigurationManager {
   #if compiler(>=5.3) && $AsyncAwait
   func value(forKey key: Swift.String) async throws -> Foundation.Data
   #endif
+  func setDataCollectionEnabled(_ enabled: Swift.Bool)
 }
 public protocol PurchaseManager {
   func setUserId(userId: Swift.String)
