@@ -112,11 +112,27 @@ extension Kovalee {
 	/// - Parameters:
 	///    - duration: the subscription duration
 	///    - source: from where is the user making the purchase
+	@available(swift, deprecated: 1.3.5, obsoleted: 1.4.0, message: "This method will be removed in v1.4.0, please migrate to startedPurchasing method with Duration instead of Int as input parameter")
 	public static func startedPurchasing(
 		subscriptionWithDuration duration: Int,
 		fromSource source: String
 	) {
 		Self.shared.kovaleeManager?.startedPurchasing(subscriptionWithDuration: duration, fromSource: source)
+	}
+	
+	/// Use this method straight before starting a purchase
+	///
+	/// - Parameters:
+	///    - duration: the subscription duration
+	///    - source: from where is the user making the purchase
+	public static func startedPurchasing(
+		subscriptionWithDuration duration: Duration,
+		fromSource source: String
+	) {
+		Self.shared.kovaleeManager?.startedPurchasing(
+			subscriptionWithDuration: duration.inDays,
+			fromSource: source
+		)
 	}
 
 	/// Use this method straight after a purchase has been successfully executed
@@ -125,6 +141,7 @@ extension Kovalee {
 	///    - productId: the id of the purchased subscription
 	///    - duration: the subscription duration
 	///    - source: from where is the user making the purchase
+	@available(swift, deprecated: 1.3.5, obsoleted: 1.4.0, message: "This method will be removed in v1.4.0, please migrate to succesfullyPurchased method with Duration instead of Int as input parameter")
 	public static func succesfullyPurchased(
 		subscriptionWithProductId productId: String,
 		andDuration duration: Int,
@@ -133,6 +150,24 @@ extension Kovalee {
 		Self.shared.kovaleeManager?.succesfullyPurchased(
 			subscriptionWithProductId: productId,
 			andDuration: duration,
+			fromSource: source
+		)
+	}
+	
+	/// Use this method straight after a purchase has been successfully executed
+	///
+	/// - Parameters:
+	///    - productId: the id of the purchased subscription
+	///    - duration: the subscription duration
+	///    - source: from where is the user making the purchase
+	public static func succesfullyPurchased(
+		subscriptionWithProductId productId: String,
+		andDuration duration: Duration,
+		fromSource source: String
+	) {
+		Self.shared.kovaleeManager?.succesfullyPurchased(
+			subscriptionWithProductId: productId,
+			andDuration: duration.inDays,
 			fromSource: source
 		)
 	}
@@ -150,11 +185,27 @@ extension Kovalee {
 	/// - Parameters:
 	///    - duration: the subscription duration
 	///    - source: from where is the user making the purchase
+	@available(swift, deprecated: 1.3.5, obsoleted: 1.4.0, message: "This method will be removed in v1.4.0, please migrate to paymentFailed method with Duration instead of Int as input parameter")
 	public static func paymentFailed(
 		forSubscriptionWithDuration duration: Int,
 		fromSource source: String
 	) {
 		Self.shared.kovaleeManager?.paymentFailed(forSubscriptionWithDuration: duration, fromSource: source)
+	}
+	
+	/// Use this method to tell the SDK a subscription payment has failed
+	///
+	/// - Parameters:
+	///    - duration: the subscription duration
+	///    - source: from where is the user making the purchase
+	public static func paymentFailed(
+		forSubscriptionWithDuration duration: Duration,
+		fromSource source: String
+	) {
+		Self.shared.kovaleeManager?.paymentFailed(
+			forSubscriptionWithDuration: duration.inDays,
+			fromSource: source
+		)
 	}
 
 	/// Use this method to tell the SDK a restore payment has failed
@@ -190,3 +241,23 @@ extension Kovalee {
 	}
 }
 
+/// Helper enum to map subscription duration to Int
+public enum Duration {
+	case day
+	case month
+	case week
+	case year
+	
+	var inDays: Int {
+		switch self {
+		case .day:
+			return 1
+		case .month:
+			return 30
+		case .week:
+			return 7
+		case .year:
+			return 365
+		}
+	}
+}
