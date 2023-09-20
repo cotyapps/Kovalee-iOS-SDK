@@ -7,6 +7,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 <<<<<<< HEAD
 =======
+## [1.3.5] - 2023-09-20
+### :sparkles: New Features
+- [`3e4fd51`](https://github.com/cotyapps/Kovalee-iOS-SDK/commit/3e4fd518aa052b1c89532bf174a4d907b1e35d4a) - updated subscription duration functions input parameter to be an Enum instead of int *(commit by [@fto-k](https://github.com/fto-k))*
+
+
 ## [1.3.4] - 2023-09-14
 ### :sparkles: New Features
 - [`a692085`](https://github.com/cotyapps/Kovalee-iOS-SDK/commit/a692085cdc875a209c915da0d38dc6f32f28bab0) - removed FB ad Configuration from KovaleeAds protocol *(commit by [@fto-k](https://github.com/fto-k))*
@@ -143,3 +148,4 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 [1.3.2]: https://github.com/cotyapps/Kovalee-iOS-SDK/compare/1.3.1...1.3.2
 [1.3.3]: https://github.com/cotyapps/Kovalee-iOS-SDK/compare/1.3.2...1.3.3
 [1.3.4]: https://github.com/cotyapps/Kovalee-iOS-SDK/compare/1.3.3...1.3.4
+[1.3.5]: https://github.com/cotyapps/Kovalee-iOS-SDK/compare/1.3.4...1.3.5
