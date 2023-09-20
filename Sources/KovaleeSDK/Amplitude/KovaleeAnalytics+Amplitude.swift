@@ -248,7 +248,7 @@ public enum Duration {
 	case week
 	case year
 	
-	var inDays: Int {
+	public var inDays: Int {
 		switch self {
 		case .day:
 			return 1
