@@ -129,7 +129,7 @@ extension Kovalee {
 	/// - Parameters:
 	///    - duration: the subscription duration
 	///    - source: from where is the user making the purchase
-	@available(swift, deprecated: 1.3.5, obsoleted: 1.4.0, message: "This method will be removed in v1.4.0, please migrate to startedPurchasing method with Duration instead of Int as input parameter")
+	@available(swift, deprecated: 1.3.5, obsoleted: 1.5.0, message: "This method will be removed in v1.4.0, please migrate to startedPurchasing method with Duration instead of Int as input parameter")
 	public static func startedPurchasing(
 		subscriptionWithDuration duration: Int,
 		fromSource source: String
@@ -158,7 +158,7 @@ extension Kovalee {
 	///    - productId: the id of the purchased subscription
 	///    - duration: the subscription duration
 	///    - source: from where is the user making the purchase
-	@available(swift, deprecated: 1.3.5, obsoleted: 1.4.0, message: "This method will be removed in v1.4.0, please migrate to succesfullyPurchased method with Duration instead of Int as input parameter")
+	@available(swift, deprecated: 1.3.5, obsoleted: 1.5.0, message: "This method will be removed in v1.4.0, please migrate to succesfullyPurchased method with Duration instead of Int as input parameter")
 	public static func succesfullyPurchased(
 		subscriptionWithProductId productId: String,
 		andDuration duration: Int,
@@ -202,7 +202,7 @@ extension Kovalee {
 	/// - Parameters:
 	///    - duration: the subscription duration
 	///    - source: from where is the user making the purchase
-	@available(swift, deprecated: 1.3.5, obsoleted: 1.4.0, message: "This method will be removed in v1.4.0, please migrate to paymentFailed method with Duration instead of Int as input parameter")
+	@available(swift, deprecated: 1.3.5, obsoleted: 1.5.0, message: "This method will be removed in v1.4.0, please migrate to paymentFailed method with Duration instead of Int as input parameter")
 	public static func paymentFailed(
 		forSubscriptionWithDuration duration: Int,
 		fromSource source: String
