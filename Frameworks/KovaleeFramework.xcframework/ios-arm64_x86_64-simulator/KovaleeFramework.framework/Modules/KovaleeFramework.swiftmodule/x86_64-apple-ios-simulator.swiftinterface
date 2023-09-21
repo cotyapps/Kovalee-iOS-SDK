@@ -236,6 +236,7 @@ public protocol AttributionManager {
   func promptTrackingAuthorization(completion: @escaping (AppTrackingTransparency.ATTrackingManager.AuthorizationStatus) -> Swift.Void)
   func sendConversionValue_SKA3(value: Swift.Int)
   func sendConversionValue_SKA4(value: Swift.Int, coarseValue: Swift.String, completion: @escaping ((any Swift.Error)?) -> Swift.Void)
+  func setDataCollectionEnabled(_ enabled: Swift.Bool)
   var attributionAdidCallback: (Swift.String?) -> Swift.Void { get }
   var configuration: KovaleeFramework.AdjustConfiguration { get }
 }
