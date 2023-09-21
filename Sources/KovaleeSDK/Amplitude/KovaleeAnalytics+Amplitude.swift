@@ -17,6 +17,23 @@ extension EventsTrackerManagerCreator: Creator {
 
 // MARK: Event Tracking
 extension Kovalee {
+
+	/// Disable any data collection for this specific user
+	///
+	/// - Parameters:
+	///    - enabled: a boolean stating if data about the user should be collected
+	public static func setDataCollectionEnabled(_ enabled: Bool) {
+		KLogger.debug("Opt \(enabled ? "in" : "out") user from collecting data")
+		Self.shared.kovaleeManager?.setDataCollectionEnabled(enabled)
+	}
+
+	/// Returns a bulean stating if the data about the current user is currently collected
+	///
+	/// - Returns: a boolean stating if data about the user is currently collected
+	public static func isDataCollectionEnabled() -> Bool {
+		Self.shared.kovaleeManager?.isDataCollectionEnabled() ?? true
+	}
+
     /// Send an ``Event``
     ///
     /// This method is used to track a specific user behaviour, like interaction with a button.
@@ -112,7 +129,7 @@ extension Kovalee {
 	/// - Parameters:
 	///    - duration: the subscription duration
 	///    - source: from where is the user making the purchase
-	@available(swift, deprecated: 1.3.5, obsoleted: 1.4.0, message: "This method will be removed in v1.4.0, please migrate to startedPurchasing method with Duration instead of Int as input parameter")
+	@available(swift, deprecated: 1.3.5, obsoleted: 1.5.0, message: "This method will be removed in v1.4.0, please migrate to startedPurchasing method with Duration instead of Int as input parameter")
 	public static func startedPurchasing(
 		subscriptionWithDuration duration: Int,
 		fromSource source: String
@@ -141,7 +158,7 @@ extension Kovalee {
 	///    - productId: the id of the purchased subscription
 	///    - duration: the subscription duration
 	///    - source: from where is the user making the purchase
-	@available(swift, deprecated: 1.3.5, obsoleted: 1.4.0, message: "This method will be removed in v1.4.0, please migrate to succesfullyPurchased method with Duration instead of Int as input parameter")
+	@available(swift, deprecated: 1.3.5, obsoleted: 1.5.0, message: "This method will be removed in v1.4.0, please migrate to succesfullyPurchased method with Duration instead of Int as input parameter")
 	public static func succesfullyPurchased(
 		subscriptionWithProductId productId: String,
 		andDuration duration: Int,
@@ -185,7 +202,7 @@ extension Kovalee {
 	/// - Parameters:
 	///    - duration: the subscription duration
 	///    - source: from where is the user making the purchase
-	@available(swift, deprecated: 1.3.5, obsoleted: 1.4.0, message: "This method will be removed in v1.4.0, please migrate to paymentFailed method with Duration instead of Int as input parameter")
+	@available(swift, deprecated: 1.3.5, obsoleted: 1.5.0, message: "This method will be removed in v1.4.0, please migrate to paymentFailed method with Duration instead of Int as input parameter")
 	public static func paymentFailed(
 		forSubscriptionWithDuration duration: Int,
 		fromSource source: String
@@ -248,6 +265,21 @@ public enum Duration {
 	case week
 	case year
 	
+	public static func create(fromIntValue value: Int) -> Self? {
+		switch value {
+		case 1:
+			return .day
+		case 7:
+			return .week
+		case 30:
+			return .month
+		case 365:
+			return .year
+		default:
+			return nil
+		}
+	}
+
 	public var inDays: Int {
 		switch self {
 		case .day:

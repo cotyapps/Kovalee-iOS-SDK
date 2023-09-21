@@ -1,7 +1,7 @@
 framework module KovaleeFramework {
   umbrella header "KovaleeFramework.h"
-
   export *
+
   module * { export * }
 }
 

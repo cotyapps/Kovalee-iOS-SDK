@@ -23,6 +23,10 @@ struct AmplitudeWrapperImpl: EventTrackerManager, Manager {
         )
     }
 
+	func setDataCollectionEnabled(_ enabled: Bool) {
+		amplitude?.configuration.optOut = !enabled
+	}
+
     func sendEvent(_ event: Event) {
 		guard let amplitude else {
 			KLogger.error("Failed sending Event: \(event.name) \(event.properties?.serialization ?? "")")
