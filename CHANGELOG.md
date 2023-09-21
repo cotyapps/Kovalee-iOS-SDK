@@ -7,6 +7,20 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 <<<<<<< HEAD
 =======
+## [1.4.0] - 2023-09-21
+### :sparkles: New Features
+- [`19ef312`](https://github.com/cotyapps/Kovalee-iOS-SDK/commit/19ef3126551f1babe6446023f398a31f1b16e64b) - implemented new tracking optout function *(commit by [@fto-k](https://github.com/fto-k))*
+- [`4afcbc7`](https://github.com/cotyapps/Kovalee-iOS-SDK/commit/4afcbc7e0d1502f8f67caa7a04c6d2280f584268) - updated KFramework for enabling tracking optout *(commit by [@fto-k](https://github.com/fto-k))*
+- [`2c7c1a0`](https://github.com/cotyapps/Kovalee-iOS-SDK/commit/2c7c1a0b70a15b8f24ce8ad8d57d64de22821bfa) - added new method to create Duration enum from Int values *(commit by [@fto-k](https://github.com/fto-k))*
+- [`fdc859d`](https://github.com/cotyapps/Kovalee-iOS-SDK/commit/fdc859d76076c57abc2cf36675c83b89ca115c4b) - set tracking enabled on tracker initialization *(commit by [@fto-k](https://github.com/fto-k))*
+- [`9c230c2`](https://github.com/cotyapps/Kovalee-iOS-SDK/commit/9c230c2d8535092ba33a24d4249972a8a441101d) - added tracking opt out for remote config *(commit by [@fto-k](https://github.com/fto-k))*
+- [`0e69027`](https://github.com/cotyapps/Kovalee-iOS-SDK/commit/0e69027f51fc596a37e7b4c0a2e949067ae18535) - added tracking enabling capabilities to KovaleeAds *(commit by [@fto-k](https://github.com/fto-k))*
+- [`c873c2f`](https://github.com/cotyapps/Kovalee-iOS-SDK/commit/c873c2fac42697342a6a52f3a4ee3d780d49332f) - enabled tracking switch for attribution *(commit by [@fto-k](https://github.com/fto-k))*
+- [`d731326`](https://github.com/cotyapps/Kovalee-iOS-SDK/commit/d7313262d4fcf436ace03fd8fab0f03cdcfcb9de) - disabled events sequences if tracking is disabled *(commit by [@fto-k](https://github.com/fto-k))*
+- [`45ed24d`](https://github.com/cotyapps/Kovalee-iOS-SDK/commit/45ed24da84a2e3fb04d4ce20a208bcf65a48f826) - added protocol default implementation to avoid other Kovalee modules to complain *(commit by [@fto-k](https://github.com/fto-k))*
+- [`7a6915f`](https://github.com/cotyapps/Kovalee-iOS-SDK/commit/7a6915feb05d25bb1486707d87bf6fee876ab14f) - bumped podspec version *(commit by [@fto-k](https://github.com/fto-k))*
+
+
 ## [1.3.6] - 2023-09-20
 ### :bug: Bug Fixes
 - [`9882077`](https://github.com/cotyapps/Kovalee-iOS-SDK/commit/9882077bb7aa3fa945e2297ea2ea814167c765f0) - Duration inDays computed property is now public *(commit by [@fto-k](https://github.com/fto-k))*
@@ -155,3 +169,4 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 [1.3.4]: https://github.com/cotyapps/Kovalee-iOS-SDK/compare/1.3.3...1.3.4
 [1.3.5]: https://github.com/cotyapps/Kovalee-iOS-SDK/compare/1.3.4...1.3.5
 [1.3.6]: https://github.com/cotyapps/Kovalee-iOS-SDK/compare/1.3.5...1.3.6
+[1.4.0]: https://github.com/cotyapps/Kovalee-iOS-SDK/compare/1.3.6...1.4.0
