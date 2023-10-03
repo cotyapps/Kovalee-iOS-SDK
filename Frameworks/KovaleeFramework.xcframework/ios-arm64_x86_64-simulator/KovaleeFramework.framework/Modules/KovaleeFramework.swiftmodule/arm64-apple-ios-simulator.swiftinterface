@@ -20,6 +20,8 @@ public class KovaleeManager {
   public func getAttributionAdid() -> Swift.String?
   public func attributionCallback(withAdid adid: Swift.String?)
   public func setDefaultUserId()
+  public func installationDate() -> Foundation.Date?
+  public func appOpeningCount() -> Swift.Int
   public func sendEvent(_ event: KovaleeFramework.Event)
   public func setAmplitudeUserId(userId: Swift.String)
   public func amplitudeUserId() -> Swift.String?
