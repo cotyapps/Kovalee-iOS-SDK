@@ -7,6 +7,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 <<<<<<< HEAD
 =======
+## [1.4.3] - 2023-10-03
+### :bug: Bug Fixes
+- [`755764a`](https://github.com/cotyapps/Kovalee-iOS-SDK/commit/755764a8fec38d59daa4ec37b7ec265508b51b03) - appInstallationDate and appOpeningCount are now static functions *(commit by [@fto-k](https://github.com/fto-k))*
+
+
 ## [1.4.2] - 2023-10-03
 ### :sparkles: New Features
 - [`1d1978c`](https://github.com/cotyapps/Kovalee-iOS-SDK/commit/1d1978c6990377f86ac164f29d173a7e8431055d) - implemented extra safety guard for stopping app opening events in case tracking is disabled *(commit by [@fto-k](https://github.com/fto-k))*
@@ -182,3 +187,4 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 [1.4.0]: https://github.com/cotyapps/Kovalee-iOS-SDK/compare/1.3.6...1.4.0
 [1.4.1]: https://github.com/cotyapps/Kovalee-iOS-SDK/compare/1.4.0...1.4.1
 [1.4.2]: https://github.com/cotyapps/Kovalee-iOS-SDK/compare/1.4.1...1.4.2
+[1.4.3]: https://github.com/cotyapps/Kovalee-iOS-SDK/compare/1.4.2...1.4.3
