@@ -18,6 +18,20 @@ extension EventsTrackerManagerCreator: Creator {
 // MARK: Event Tracking
 extension Kovalee {
 
+	/// Returns the date when the app has been installed in the current device
+	///
+	/// - Returns: date of the app installation in current device
+	public func appInstallationDate() -> Date? {
+		Self.shared.kovaleeManager?.installationDate()
+	}
+
+	/// Returns the number of times the app has been opened
+	///
+	/// - Returns: number of times app has beeen opened
+	public func appOpeningCount() -> Int {
+		Self.shared.kovaleeManager?.appOpeningCount() ?? 0
+	}
+
 	/// Disable any data collection for this specific user
 	///
 	/// - Parameters:
@@ -27,7 +41,7 @@ extension Kovalee {
 		Self.shared.kovaleeManager?.setDataCollectionEnabled(enabled)
 	}
 
-	/// Returns a bulean stating if the data about the current user is currently collected
+	/// Returns a boolean stating if the data about the current user is currently collected
 	///
 	/// - Returns: a boolean stating if data about the user is currently collected
 	public static func isDataCollectionEnabled() -> Bool {
