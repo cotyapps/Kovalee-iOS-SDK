@@ -7,6 +7,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 <<<<<<< HEAD
 =======
+## [1.4.1] - 2023-10-03
+### :sparkles: New Features
+- [`a3d193e`](https://github.com/cotyapps/Kovalee-iOS-SDK/commit/a3d193e7c2147605d68620352ab3bf45eb42bfea) - new methods to retrieve app installation date and app opeining count *(commit by [@fto-k](https://github.com/fto-k))*
+
+
 ## [1.4.0] - 2023-09-21
 ### :sparkles: New Features
 - [`19ef312`](https://github.com/cotyapps/Kovalee-iOS-SDK/commit/19ef3126551f1babe6446023f398a31f1b16e64b) - implemented new tracking optout function *(commit by [@fto-k](https://github.com/fto-k))*
@@ -170,3 +175,4 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 [1.3.5]: https://github.com/cotyapps/Kovalee-iOS-SDK/compare/1.3.4...1.3.5
 [1.3.6]: https://github.com/cotyapps/Kovalee-iOS-SDK/compare/1.3.5...1.3.6
 [1.4.0]: https://github.com/cotyapps/Kovalee-iOS-SDK/compare/1.3.6...1.4.0
+[1.4.1]: https://github.com/cotyapps/Kovalee-iOS-SDK/compare/1.4.0...1.4.1
