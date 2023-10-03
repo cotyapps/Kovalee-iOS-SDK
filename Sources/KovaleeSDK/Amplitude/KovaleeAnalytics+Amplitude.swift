@@ -21,14 +21,14 @@ extension Kovalee {
 	/// Returns the date when the app has been installed in the current device
 	///
 	/// - Returns: date of the app installation in current device
-	public func appInstallationDate() -> Date? {
+	public static func appInstallationDate() -> Date? {
 		Self.shared.kovaleeManager?.installationDate()
 	}
 
 	/// Returns the number of times the app has been opened
 	///
 	/// - Returns: number of times app has beeen opened
-	public func appOpeningCount() -> Int {
+	public static func appOpeningCount() -> Int {
 		Self.shared.kovaleeManager?.appOpeningCount() ?? 0
 	}
 
