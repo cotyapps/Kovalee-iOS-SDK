@@ -7,7 +7,7 @@ struct AmplitudeWrapperImpl: EventTrackerManager, Manager {
 		KLogger.debug("initializing Amplitude")
 
         let trackingOptions = TrackingOptions()
-            .disableCarrier()
+            .disableTrackCarrier()
             .disableTrackCity()
 
         amplitude = Amplitude(
