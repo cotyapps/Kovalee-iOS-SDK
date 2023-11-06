@@ -119,6 +119,19 @@ extension Kovalee {
     public static func sendEvent(event: BasicEvent) {
         Self.sendEvent(Event(name: event.name, properties: event.properties))
     }
+	
+	/// Send a ``TaggingPlanLiteEvent``
+	///
+	/// This method is used to track one of the events in the ``TaggingPlanLiteEvent`` enumeration
+	/// ``` Swift
+	/// Kovalee.sendEvent(event: .onboardingPageView(number: 4))
+	/// ```
+	///
+	/// - Parameters:
+	///    - event: the event that is going to be sent
+	public static func sendEvent(event: TaggingPlanLiteEvent) {
+		Self.sendEvent(Event(name: event.name, properties: event.properties))
+	}
 
 	/// Retrieve the userId set in amplitude
 	///
@@ -134,6 +147,57 @@ extension Kovalee {
 		Self.shared.kovaleeManager?.amplitudeDeviceId()
 	}
 }
+
+public enum TaggingPlanLiteEvent {
+	case onboardingFinish
+	case onboardingPageView(number: Int)
+	case onboardingStart
+	case pageViewPaywall(source: String) // onboarding (onboarding paywall) / in_content (paywall within the app/ not onboarding)
+	case paymentSubscribe(name: String) //id of the product
+	case paymentTrialStarted
+	case paymentTrialConvert
+	case acContentEngage
+	case acClick(name: String) // name of the button
+	
+	var name: String {
+		switch self {
+		case .onboardingFinish:
+			"onboarding_finish"
+		case .onboardingPageView:
+			"onboarding_page_view"
+		case .onboardingStart:
+			"onboarding_start"
+		case .pageViewPaywall:
+			"page_view_paywall"
+		case .paymentSubscribe:
+			"payment_subscribe"
+		case .paymentTrialStarted:
+			"payment_trial_started"
+		case .paymentTrialConvert:
+			"payment_trial_convert"
+		case .acContentEngage:
+			"ac_content_engage"
+		case .acClick:
+			"ac_click"
+		}
+	}
+	
+	var properties: [String: String]? {
+		switch self {
+		case let .onboardingPageView(number):
+			["number": "\(number)"]
+		case let .pageViewPaywall(source):
+			["source": source]
+		case let .paymentSubscribe(name):
+			["name": name]
+		case let .acClick(name):
+			["name": name]
+		default:
+			nil
+		}
+	}
+}
+
 
 // MARK: Purchase accessory methods
 extension Kovalee {
