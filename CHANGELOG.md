@@ -7,6 +7,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 <<<<<<< HEAD
 =======
+## [1.5.0] - 2023-11-06
+### :sparkles: New Features
+- [`e88a1d9`](https://github.com/cotyapps/Kovalee-iOS-SDK/commit/e88a1d9adcba0d25b846516e7e56f8ea858b3c88) - created new TaggingPlanLiteEvent enum with lite events to be tracked *(commit by [@fto-k](https://github.com/fto-k))*
+
+
 ## [1.4.3] - 2023-10-03
 ### :bug: Bug Fixes
 - [`755764a`](https://github.com/cotyapps/Kovalee-iOS-SDK/commit/755764a8fec38d59daa4ec37b7ec265508b51b03) - appInstallationDate and appOpeningCount are now static functions *(commit by [@fto-k](https://github.com/fto-k))*
@@ -188,3 +193,4 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 [1.4.1]: https://github.com/cotyapps/Kovalee-iOS-SDK/compare/1.4.0...1.4.1
 [1.4.2]: https://github.com/cotyapps/Kovalee-iOS-SDK/compare/1.4.1...1.4.2
 [1.4.3]: https://github.com/cotyapps/Kovalee-iOS-SDK/compare/1.4.2...1.4.3
+[1.5.0]: https://github.com/cotyapps/Kovalee-iOS-SDK/compare/1.4.4...1.5.0
