@@ -7,6 +7,14 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 <<<<<<< HEAD
 =======
+## [1.5.2] - 2023-11-08
+### :sparkles: New Features
+- [`2eef111`](https://github.com/cotyapps/Kovalee-iOS-SDK/commit/2eef111b8d0f700cb4a1e345d9bfd3a2e81f8224) - updating RemoteConfig initialization and function asynchronicity *(commit by [@fto-k](https://github.com/fto-k))*
+- [`e3ad3cb`](https://github.com/cotyapps/Kovalee-iOS-SDK/commit/e3ad3cb576473d371afbbf23b1952dd9ee3e40a0) - removed asyncronocity for remote values *(commit by [@fto-k](https://github.com/fto-k))*
+- [`8ca8438`](https://github.com/cotyapps/Kovalee-iOS-SDK/commit/8ca84386bbc9a950d3104dab618d64383f27ba89) - removed asynchonicity *(commit by [@fto-k](https://github.com/fto-k))*
+- [`0955403`](https://github.com/cotyapps/Kovalee-iOS-SDK/commit/0955403596269c11415401b9ffaabf754b4f3f6f) - removed asynchonicity from abValue *(commit by [@fto-k](https://github.com/fto-k))*
+
+
 ## [1.5.0] - 2023-11-06
 ### :sparkles: New Features
 - [`e88a1d9`](https://github.com/cotyapps/Kovalee-iOS-SDK/commit/e88a1d9adcba0d25b846516e7e56f8ea858b3c88) - created new TaggingPlanLiteEvent enum with lite events to be tracked *(commit by [@fto-k](https://github.com/fto-k))*
@@ -194,3 +202,4 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 [1.4.2]: https://github.com/cotyapps/Kovalee-iOS-SDK/compare/1.4.1...1.4.2
 [1.4.3]: https://github.com/cotyapps/Kovalee-iOS-SDK/compare/1.4.2...1.4.3
 [1.5.0]: https://github.com/cotyapps/Kovalee-iOS-SDK/compare/1.4.4...1.5.0
+[1.5.2]: https://github.com/cotyapps/Kovalee-iOS-SDK/compare/1.5.1...1.5.2
