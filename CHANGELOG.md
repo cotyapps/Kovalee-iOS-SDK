@@ -7,6 +7,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 <<<<<<< HEAD
 =======
+## [1.5.3] - 2023-11-08
+### :bug: Bug Fixes
+- [`b82a59c`](https://github.com/cotyapps/Kovalee-iOS-SDK/commit/b82a59c170479678d8110559166a1060c83f6000) - abValue retrieval should still be async *(commit by [@fto-k](https://github.com/fto-k))*
+
+
 ## [1.5.2] - 2023-11-08
 ### :sparkles: New Features
 - [`2eef111`](https://github.com/cotyapps/Kovalee-iOS-SDK/commit/2eef111b8d0f700cb4a1e345d9bfd3a2e81f8224) - updating RemoteConfig initialization and function asynchronicity *(commit by [@fto-k](https://github.com/fto-k))*
@@ -203,3 +208,4 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 [1.4.3]: https://github.com/cotyapps/Kovalee-iOS-SDK/compare/1.4.2...1.4.3
 [1.5.0]: https://github.com/cotyapps/Kovalee-iOS-SDK/compare/1.4.4...1.5.0
 [1.5.2]: https://github.com/cotyapps/Kovalee-iOS-SDK/compare/1.5.1...1.5.2
+[1.5.3]: https://github.com/cotyapps/Kovalee-iOS-SDK/compare/1.5.2...1.5.3
