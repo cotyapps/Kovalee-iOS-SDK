@@ -71,9 +71,7 @@ extension KovaleeFramework.KovaleeManager {
 }
 extension KovaleeFramework.KovaleeManager {
   public func setDefaultValues(_ values: [Swift.String : Any])
-  #if compiler(>=5.3) && $AsyncAwait
-  public func remoteValue(forKey key: Swift.String) async throws -> Foundation.Data
-  #endif
+  public func remoteValue(forKey key: Swift.String) throws -> Foundation.Data
   #if compiler(>=5.3) && $AsyncAwait
   public func abTestValue(forKey key: Swift.String) async -> Foundation.Data?
   #endif
@@ -257,7 +255,7 @@ public protocol RemoteConfigurationManager {
   func fetchAndActivateRemoteConfig() async
   #endif
   func setDefaultValues(_ values: [Swift.String : Any])
-  func value(forKey key: Swift.String) -> Foundation.Data
+  func value(forKey key: Swift.String) throws -> Foundation.Data
   func setDataCollectionEnabled(_ enabled: Swift.Bool)
 }
 public protocol PurchaseManager {
