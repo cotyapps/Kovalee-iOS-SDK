@@ -253,10 +253,11 @@ public protocol EventTrackerManager {
   func getDeviceId() -> Swift.String?
 }
 public protocol RemoteConfigurationManager {
-  func setDefaultValues(_ values: [Swift.String : Any])
   #if compiler(>=5.3) && $AsyncAwait
-  func value(forKey key: Swift.String) async throws -> Foundation.Data
+  func fetchAndActivateRemoteConfig() async
   #endif
+  func setDefaultValues(_ values: [Swift.String : Any])
+  func value(forKey key: Swift.String) -> Foundation.Data
   func setDataCollectionEnabled(_ enabled: Swift.Bool)
 }
 public protocol PurchaseManager {
