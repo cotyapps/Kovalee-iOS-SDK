@@ -72,7 +72,9 @@ extension KovaleeFramework.KovaleeManager {
 extension KovaleeFramework.KovaleeManager {
   public func setDefaultValues(_ values: [Swift.String : Any])
   public func remoteValue(forKey key: Swift.String) throws -> Foundation.Data
-  public func abTestValue(forKey key: Swift.String) -> Foundation.Data?
+  #if compiler(>=5.3) && $AsyncAwait
+  public func abTestValue(forKey key: Swift.String) async -> Foundation.Data?
+  #endif
 }
 extension KovaleeFramework.KovaleeManager {
   public func showMediationDebugger()
