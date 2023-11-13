@@ -1125,6 +1125,63 @@
           },
           {
             "kind": "Function",
+            "name": "setPurchaseDelegate",
+            "printedName": "setPurchaseDelegate(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "KovaleePurchasesDelegate",
+                "printedName": "KovaleeFramework.KovaleePurchasesDelegate",
+                "usr": "s:16KovaleeFramework0A17PurchasesDelegateP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:16KovaleeFramework0A7ManagerC19setPurchaseDelegateyyAA0a9PurchasesF0_pF",
+            "mangledName": "$s16KovaleeFramework0A7ManagerC19setPurchaseDelegateyyAA0a9PurchasesF0_pF",
+            "moduleName": "KovaleeFramework",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "revenueCatUserId",
+            "printedName": "revenueCatUserId()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:16KovaleeFramework0A7ManagerC16revenueCatUserIdSSSgyF",
+            "mangledName": "$s16KovaleeFramework0A7ManagerC16revenueCatUserIdSSSgyF",
+            "moduleName": "KovaleeFramework",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
             "name": "setIsUserPremium",
             "printedName": "setIsUserPremium(_:)",
             "children": [
@@ -1397,6 +1454,64 @@
             ],
             "isFromExtension": true,
             "throwing": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "checkTrialOrIntroDiscountEligibility",
+            "printedName": "checkTrialOrIntroDiscountEligibility(productIdentifiers:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[Swift.String : Swift.Int]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Dictionary",
+                    "printedName": "[Swift.String : Swift.Int]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      }
+                    ],
+                    "usr": "s:SD"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[Swift.String]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sa"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:16KovaleeFramework0A7ManagerC36checkTrialOrIntroDiscountEligibility18productIdentifiersSDySSSiGSgSaySSG_tYaF",
+            "mangledName": "$s16KovaleeFramework0A7ManagerC36checkTrialOrIntroDiscountEligibility18productIdentifiersSDySSSiGSgSaySSG_tYaF",
+            "moduleName": "KovaleeFramework",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "isFromExtension": true,
             "funcSelfKind": "NonMutating"
           },
           {
@@ -7589,6 +7704,28 @@
         "children": [
           {
             "kind": "Function",
+            "name": "revenueCatUserId",
+            "printedName": "revenueCatUserId()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:16KovaleeFramework15PurchaseManagerP16revenueCatUserIdSSyF",
+            "mangledName": "$s16KovaleeFramework15PurchaseManagerP16revenueCatUserIdSSyF",
+            "moduleName": "KovaleeFramework",
+            "genericSig": "<τ_0_0 where τ_0_0 : KovaleeFramework.PurchaseManager>",
+            "sugared_genericSig": "<Self where Self : KovaleeFramework.PurchaseManager>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
             "name": "setUserId",
             "printedName": "setUserId(userId:)",
             "children": [
@@ -7611,6 +7748,83 @@
             "genericSig": "<τ_0_0 where τ_0_0 : KovaleeFramework.PurchaseManager>",
             "sugared_genericSig": "<Self where Self : KovaleeFramework.PurchaseManager>",
             "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "setAttribution",
+            "printedName": "setAttribution(adid:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:16KovaleeFramework15PurchaseManagerP14setAttribution4adidySS_tF",
+            "mangledName": "$s16KovaleeFramework15PurchaseManagerP14setAttribution4adidySS_tF",
+            "moduleName": "KovaleeFramework",
+            "genericSig": "<τ_0_0 where τ_0_0 : KovaleeFramework.PurchaseManager>",
+            "sugared_genericSig": "<Self where Self : KovaleeFramework.PurchaseManager>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "setAmplitudeUserId",
+            "printedName": "setAmplitudeUserId(userId:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:16KovaleeFramework15PurchaseManagerP18setAmplitudeUserId04userH0ySS_tF",
+            "mangledName": "$s16KovaleeFramework15PurchaseManagerP18setAmplitudeUserId04userH0ySS_tF",
+            "moduleName": "KovaleeFramework",
+            "genericSig": "<τ_0_0 where τ_0_0 : KovaleeFramework.PurchaseManager>",
+            "sugared_genericSig": "<Self where Self : KovaleeFramework.PurchaseManager>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "customerInfo",
+            "printedName": "customerInfo()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "AbstractCustomerInfo",
+                "printedName": "KovaleeFramework.AbstractCustomerInfo",
+                "usr": "s:16KovaleeFramework20AbstractCustomerInfoP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:16KovaleeFramework15PurchaseManagerP12customerInfoAA016AbstractCustomerF0_pyYaKF",
+            "mangledName": "$s16KovaleeFramework15PurchaseManagerP12customerInfoAA016AbstractCustomerF0_pyYaKF",
+            "moduleName": "KovaleeFramework",
+            "genericSig": "<τ_0_0 where τ_0_0 : KovaleeFramework.PurchaseManager>",
+            "sugared_genericSig": "<Self where Self : KovaleeFramework.PurchaseManager>",
+            "protocolReq": true,
+            "throwing": true,
             "reqNewWitnessTableEntry": true,
             "funcSelfKind": "NonMutating"
           },
@@ -7767,31 +7981,58 @@
           },
           {
             "kind": "Function",
-            "name": "customerInfo",
-            "printedName": "customerInfo()",
+            "name": "checkTrialOrIntroDiscountEligibility",
+            "printedName": "checkTrialOrIntroDiscountEligibility(productIdentifiers:)",
             "children": [
               {
                 "kind": "TypeNominal",
-                "name": "AbstractCustomerInfo",
-                "printedName": "KovaleeFramework.AbstractCustomerInfo",
-                "usr": "s:16KovaleeFramework20AbstractCustomerInfoP"
+                "name": "Dictionary",
+                "printedName": "[Swift.String : Swift.Int]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "usr": "s:SD"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[Swift.String]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sa"
               }
             ],
             "declKind": "Func",
-            "usr": "s:16KovaleeFramework15PurchaseManagerP12customerInfoAA016AbstractCustomerF0_pyYaKF",
-            "mangledName": "$s16KovaleeFramework15PurchaseManagerP12customerInfoAA016AbstractCustomerF0_pyYaKF",
+            "usr": "s:16KovaleeFramework15PurchaseManagerP36checkTrialOrIntroDiscountEligibility18productIdentifiersSDySSSiGSaySSG_tYaF",
+            "mangledName": "$s16KovaleeFramework15PurchaseManagerP36checkTrialOrIntroDiscountEligibility18productIdentifiersSDySSSiGSaySSG_tYaF",
             "moduleName": "KovaleeFramework",
             "genericSig": "<τ_0_0 where τ_0_0 : KovaleeFramework.PurchaseManager>",
             "sugared_genericSig": "<Self where Self : KovaleeFramework.PurchaseManager>",
             "protocolReq": true,
-            "throwing": true,
             "reqNewWitnessTableEntry": true,
             "funcSelfKind": "NonMutating"
           },
           {
             "kind": "Function",
-            "name": "setAttribution",
-            "printedName": "setAttribution(adid:)",
+            "name": "setPurchaseDelegate",
+            "printedName": "setPurchaseDelegate(_:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -7800,41 +8041,14 @@
               },
               {
                 "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
+                "name": "KovaleePurchasesDelegate",
+                "printedName": "KovaleeFramework.KovaleePurchasesDelegate",
+                "usr": "s:16KovaleeFramework0A17PurchasesDelegateP"
               }
             ],
             "declKind": "Func",
-            "usr": "s:16KovaleeFramework15PurchaseManagerP14setAttribution4adidySS_tF",
-            "mangledName": "$s16KovaleeFramework15PurchaseManagerP14setAttribution4adidySS_tF",
-            "moduleName": "KovaleeFramework",
-            "genericSig": "<τ_0_0 where τ_0_0 : KovaleeFramework.PurchaseManager>",
-            "sugared_genericSig": "<Self where Self : KovaleeFramework.PurchaseManager>",
-            "protocolReq": true,
-            "reqNewWitnessTableEntry": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "setAmplitudeUserId",
-            "printedName": "setAmplitudeUserId(userId:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:16KovaleeFramework15PurchaseManagerP18setAmplitudeUserId04userH0ySS_tF",
-            "mangledName": "$s16KovaleeFramework15PurchaseManagerP18setAmplitudeUserId04userH0ySS_tF",
+            "usr": "s:16KovaleeFramework15PurchaseManagerP03setC8DelegateyyAA0a9PurchasesF0_pF",
+            "mangledName": "$s16KovaleeFramework15PurchaseManagerP03setC8DelegateyyAA0a9PurchasesF0_pF",
             "moduleName": "KovaleeFramework",
             "genericSig": "<τ_0_0 where τ_0_0 : KovaleeFramework.PurchaseManager>",
             "sugared_genericSig": "<Self where Self : KovaleeFramework.PurchaseManager>",
@@ -7846,6 +8060,47 @@
         "declKind": "Protocol",
         "usr": "s:16KovaleeFramework15PurchaseManagerP",
         "mangledName": "$s16KovaleeFramework15PurchaseManagerP",
+        "moduleName": "KovaleeFramework",
+        "declAttributes": [
+          "AccessControl"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "KovaleePurchasesDelegate",
+        "printedName": "KovaleePurchasesDelegate",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "didRecieveUpdate",
+            "printedName": "didRecieveUpdate(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "AbstractCustomerInfo",
+                "printedName": "KovaleeFramework.AbstractCustomerInfo",
+                "usr": "s:16KovaleeFramework20AbstractCustomerInfoP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:16KovaleeFramework0A17PurchasesDelegateP16didRecieveUpdateyyAA20AbstractCustomerInfo_pF",
+            "mangledName": "$s16KovaleeFramework0A17PurchasesDelegateP16didRecieveUpdateyyAA20AbstractCustomerInfo_pF",
+            "moduleName": "KovaleeFramework",
+            "genericSig": "<τ_0_0 where τ_0_0 : KovaleeFramework.KovaleePurchasesDelegate>",
+            "sugared_genericSig": "<Self where Self : KovaleeFramework.KovaleePurchasesDelegate>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Protocol",
+        "usr": "s:16KovaleeFramework0A17PurchasesDelegateP",
+        "mangledName": "$s16KovaleeFramework0A17PurchasesDelegateP",
         "moduleName": "KovaleeFramework",
         "declAttributes": [
           "AccessControl"
@@ -12112,112 +12367,112 @@
     {
       "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
       "kind": "StringLiteral",
-      "offset": 6498,
+      "offset": 6723,
       "length": 5,
       "value": "\"yes\""
     },
     {
       "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
       "kind": "StringLiteral",
-      "offset": 6506,
+      "offset": 6731,
       "length": 4,
       "value": "\"no\""
     },
     {
       "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
       "kind": "StringLiteral",
-      "offset": 9692,
+      "offset": 10153,
       "length": 5,
       "value": "\"yes\""
     },
     {
       "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
       "kind": "StringLiteral",
-      "offset": 11140,
+      "offset": 11601,
       "length": 87,
       "value": "\"🛰️ Retrieved value \""
     },
     {
       "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
       "kind": "StringLiteral",
-      "offset": 11207,
+      "offset": 11668,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
       "kind": "StringLiteral",
-      "offset": 11210,
+      "offset": 11671,
       "length": 3,
       "value": "\" for key: \""
     },
     {
       "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
       "kind": "StringLiteral",
-      "offset": 11226,
+      "offset": 11687,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 11430,
+      "offset": 11891,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
       "kind": "StringLiteral",
-      "offset": 11647,
+      "offset": 12108,
       "length": 83,
       "value": "\"🛰️ User already partecipated in a different experiment with \""
     },
     {
       "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
       "kind": "StringLiteral",
-      "offset": 11729,
+      "offset": 12190,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
       "kind": "StringLiteral",
-      "offset": 11931,
+      "offset": 12392,
       "length": 56,
       "value": "\"🛰️ Fetched AB Experiment value from local storage\""
     },
     {
       "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
       "kind": "StringLiteral",
-      "offset": 12162,
+      "offset": 12623,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
       "kind": "StringLiteral",
-      "offset": 12626,
+      "offset": 13087,
       "length": 27,
       "value": "\"creating interstitial ad \""
     },
     {
       "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
       "kind": "StringLiteral",
-      "offset": 12787,
+      "offset": 13248,
       "length": 25,
       "value": "\"display interstitial ad\""
     },
     {
       "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
       "kind": "StringLiteral",
-      "offset": 12993,
+      "offset": 13454,
       "length": 22,
       "value": "\"creating rewarded ad\""
     },
     {
       "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
       "kind": "StringLiteral",
-      "offset": 13150,
+      "offset": 13611,
       "length": 21,
       "value": "\"display rewarded ad\""
     },

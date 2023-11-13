@@ -39,6 +39,8 @@ public class KovaleeManager {
   @objc deinit
 }
 extension KovaleeFramework.KovaleeManager {
+  public func setPurchaseDelegate(_ delegate: any KovaleeFramework.KovaleePurchasesDelegate)
+  public func revenueCatUserId() -> Swift.String?
   public func setIsUserPremium(_ premium: Swift.Bool)
   public func setRevenueCatUserId(userId: Swift.String)
   #if compiler(>=5.3) && $AsyncAwait
@@ -58,6 +60,9 @@ extension KovaleeFramework.KovaleeManager {
   #endif
   #if compiler(>=5.3) && $AsyncAwait
   public func purchase(package: any KovaleeFramework.AbstractPackage, fromSource source: Swift.String) async throws -> (any KovaleeFramework.AbstractPurchaseResultData)?
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
+  public func checkTrialOrIntroDiscountEligibility(productIdentifiers: [Swift.String]) async -> [Swift.String : Swift.Int]?
   #endif
 }
 extension KovaleeFramework.KovaleeManager {
@@ -259,7 +264,13 @@ public protocol RemoteConfigurationManager {
   func setDataCollectionEnabled(_ enabled: Swift.Bool)
 }
 public protocol PurchaseManager {
+  func revenueCatUserId() -> Swift.String
   func setUserId(userId: Swift.String)
+  func setAttribution(adid: Swift.String)
+  func setAmplitudeUserId(userId: Swift.String)
+  #if compiler(>=5.3) && $AsyncAwait
+  func customerInfo() async throws -> any KovaleeFramework.AbstractCustomerInfo
+  #endif
   #if compiler(>=5.3) && $AsyncAwait
   func fetchOfferings() async throws -> (any KovaleeFramework.AbstractOfferings)?
   #endif
@@ -276,10 +287,12 @@ public protocol PurchaseManager {
   func purchaseProduct(withId productId: Swift.String) async throws -> any KovaleeFramework.AbstractPurchaseResultData
   #endif
   #if compiler(>=5.3) && $AsyncAwait
-  func customerInfo() async throws -> any KovaleeFramework.AbstractCustomerInfo
+  func checkTrialOrIntroDiscountEligibility(productIdentifiers: [Swift.String]) async -> [Swift.String : Swift.Int]
   #endif
-  func setAttribution(adid: Swift.String)
-  func setAmplitudeUserId(userId: Swift.String)
+  func setPurchaseDelegate(_ delegate: any KovaleeFramework.KovaleePurchasesDelegate)
+}
+public protocol KovaleePurchasesDelegate {
+  func didRecieveUpdate(_ customerInfo: any KovaleeFramework.AbstractCustomerInfo)
 }
 public protocol AbstractCustomerInfo {
   var activeSubscriptions: Swift.Set<Swift.String> { get }
