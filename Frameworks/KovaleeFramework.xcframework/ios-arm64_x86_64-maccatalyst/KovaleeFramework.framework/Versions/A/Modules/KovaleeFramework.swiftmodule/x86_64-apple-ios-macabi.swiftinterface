@@ -278,7 +278,7 @@ public protocol PurchaseManager {
   func fetchCurrentOffering() async throws -> (any KovaleeFramework.AbstractOffering)?
   #endif
   #if compiler(>=5.3) && $AsyncAwait
-  func restorePurchases() async throws -> (any KovaleeFramework.AbstractCustomerInfo)?
+  func restorePurchases() async throws -> any KovaleeFramework.AbstractCustomerInfo
   #endif
   #if compiler(>=5.3) && $AsyncAwait
   func purchase(package: any KovaleeFramework.AbstractPackage) async throws -> any KovaleeFramework.AbstractPurchaseResultData
@@ -292,7 +292,7 @@ public protocol PurchaseManager {
   func setPurchaseDelegate(_ delegate: any KovaleeFramework.KovaleePurchasesDelegate)
 }
 public protocol KovaleePurchasesDelegate {
-  func didRecieveUpdate(_ customerInfo: any KovaleeFramework.AbstractCustomerInfo)
+  func didReceiveUpdate(_ customerInfo: any KovaleeFramework.AbstractCustomerInfo)
 }
 public protocol AbstractCustomerInfo {
   var activeSubscriptions: Swift.Set<Swift.String> { get }

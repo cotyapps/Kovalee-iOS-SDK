@@ -7897,22 +7897,14 @@
             "children": [
               {
                 "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "KovaleeFramework.AbstractCustomerInfo?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "AbstractCustomerInfo",
-                    "printedName": "KovaleeFramework.AbstractCustomerInfo",
-                    "usr": "s:16KovaleeFramework20AbstractCustomerInfoP"
-                  }
-                ],
-                "usr": "s:Sq"
+                "name": "AbstractCustomerInfo",
+                "printedName": "KovaleeFramework.AbstractCustomerInfo",
+                "usr": "s:16KovaleeFramework20AbstractCustomerInfoP"
               }
             ],
             "declKind": "Func",
-            "usr": "s:16KovaleeFramework15PurchaseManagerP16restorePurchasesAA20AbstractCustomerInfo_pSgyYaKF",
-            "mangledName": "$s16KovaleeFramework15PurchaseManagerP16restorePurchasesAA20AbstractCustomerInfo_pSgyYaKF",
+            "usr": "s:16KovaleeFramework15PurchaseManagerP16restorePurchasesAA20AbstractCustomerInfo_pyYaKF",
+            "mangledName": "$s16KovaleeFramework15PurchaseManagerP16restorePurchasesAA20AbstractCustomerInfo_pyYaKF",
             "moduleName": "KovaleeFramework",
             "genericSig": "<τ_0_0 where τ_0_0 : KovaleeFramework.PurchaseManager>",
             "sugared_genericSig": "<Self where Self : KovaleeFramework.PurchaseManager>",
@@ -8072,8 +8064,8 @@
         "children": [
           {
             "kind": "Function",
-            "name": "didRecieveUpdate",
-            "printedName": "didRecieveUpdate(_:)",
+            "name": "didReceiveUpdate",
+            "printedName": "didReceiveUpdate(_:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -8088,8 +8080,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:16KovaleeFramework0A17PurchasesDelegateP16didRecieveUpdateyyAA20AbstractCustomerInfo_pF",
-            "mangledName": "$s16KovaleeFramework0A17PurchasesDelegateP16didRecieveUpdateyyAA20AbstractCustomerInfo_pF",
+            "usr": "s:16KovaleeFramework0A17PurchasesDelegateP16didReceiveUpdateyyAA20AbstractCustomerInfo_pF",
+            "mangledName": "$s16KovaleeFramework0A17PurchasesDelegateP16didReceiveUpdateyyAA20AbstractCustomerInfo_pF",
             "moduleName": "KovaleeFramework",
             "genericSig": "<τ_0_0 where τ_0_0 : KovaleeFramework.KovaleePurchasesDelegate>",
             "sugared_genericSig": "<Self where Self : KovaleeFramework.KovaleePurchasesDelegate>",
@@ -12381,98 +12373,105 @@
     {
       "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
       "kind": "StringLiteral",
-      "offset": 10153,
+      "offset": 7621,
+      "length": 24,
+      "value": "\"Payment restore Failed\""
+    },
+    {
+      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
+      "kind": "StringLiteral",
+      "offset": 10195,
       "length": 5,
       "value": "\"yes\""
     },
     {
       "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
       "kind": "StringLiteral",
-      "offset": 11601,
+      "offset": 11643,
       "length": 87,
       "value": "\"🛰️ Retrieved value \""
     },
     {
       "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
       "kind": "StringLiteral",
-      "offset": 11668,
+      "offset": 11710,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
       "kind": "StringLiteral",
-      "offset": 11671,
+      "offset": 11713,
       "length": 3,
       "value": "\" for key: \""
     },
     {
       "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
       "kind": "StringLiteral",
-      "offset": 11687,
+      "offset": 11729,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 11891,
+      "offset": 11933,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
       "kind": "StringLiteral",
-      "offset": 12108,
+      "offset": 12150,
       "length": 83,
       "value": "\"🛰️ User already partecipated in a different experiment with \""
     },
     {
       "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
       "kind": "StringLiteral",
-      "offset": 12190,
+      "offset": 12232,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
       "kind": "StringLiteral",
-      "offset": 12392,
+      "offset": 12434,
       "length": 56,
       "value": "\"🛰️ Fetched AB Experiment value from local storage\""
     },
     {
       "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
       "kind": "StringLiteral",
-      "offset": 12623,
+      "offset": 12665,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
       "kind": "StringLiteral",
-      "offset": 13087,
+      "offset": 13129,
       "length": 27,
       "value": "\"creating interstitial ad \""
     },
     {
       "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
       "kind": "StringLiteral",
-      "offset": 13248,
+      "offset": 13290,
       "length": 25,
       "value": "\"display interstitial ad\""
     },
     {
       "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
       "kind": "StringLiteral",
-      "offset": 13454,
+      "offset": 13496,
       "length": 22,
       "value": "\"creating rewarded ad\""
     },
     {
       "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
       "kind": "StringLiteral",
-      "offset": 13611,
+      "offset": 13653,
       "length": 21,
       "value": "\"display rewarded ad\""
     },
