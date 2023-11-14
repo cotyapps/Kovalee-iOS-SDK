@@ -7,6 +7,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 <<<<<<< HEAD
 =======
+## [1.5.5] - 2023-11-14
+### :bug: Bug Fixes
+- [`17fb110`](https://github.com/cotyapps/Kovalee-iOS-SDK/commit/17fb1104265f1f17906929c4e2adeda11924263c) - Payment restore should now throw an error in case of failure *(commit by [@fto-k](https://github.com/fto-k))*
+
+
 ## [1.5.4] - 2023-11-13
 ### :sparkles: New Features
 - [`9125e24`](https://github.com/cotyapps/Kovalee-iOS-SDK/commit/9125e2477b53a20b427ad4102c20482c6d797b97) - new purchase methods *(commit by [@fto-k](https://github.com/fto-k))*
@@ -215,3 +220,4 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 [1.5.2]: https://github.com/cotyapps/Kovalee-iOS-SDK/compare/1.5.1...1.5.2
 [1.5.3]: https://github.com/cotyapps/Kovalee-iOS-SDK/compare/1.5.2...1.5.3
 [1.5.4]: https://github.com/cotyapps/Kovalee-iOS-SDK/compare/1.5.3...1.5.4
+[1.5.5]: https://github.com/cotyapps/Kovalee-iOS-SDK/compare/1.5.4...1.5.5
