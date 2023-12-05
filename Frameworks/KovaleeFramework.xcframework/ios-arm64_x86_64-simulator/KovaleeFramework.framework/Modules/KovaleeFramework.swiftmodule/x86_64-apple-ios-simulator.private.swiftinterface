@@ -76,7 +76,9 @@ extension KovaleeFramework.KovaleeManager {
 }
 extension KovaleeFramework.KovaleeManager {
   public func setDefaultValues(_ values: [Swift.String : Any])
-  public func remoteValue(forKey key: Swift.String) throws -> Foundation.Data
+  #if compiler(>=5.3) && $AsyncAwait
+  public func remoteValue(forKey key: Swift.String) async throws -> Foundation.Data
+  #endif
   #if compiler(>=5.3) && $AsyncAwait
   public func abTestValue(forKey key: Swift.String) async -> Swift.String?
   #endif
@@ -256,11 +258,10 @@ public protocol EventTrackerManager {
   func getDeviceId() -> Swift.String?
 }
 public protocol RemoteConfigurationManager {
-  #if compiler(>=5.3) && $AsyncAwait
-  func fetchAndActivateRemoteConfig() async
-  #endif
   func setDefaultValues(_ values: [Swift.String : Any])
-  func value(forKey key: Swift.String) throws -> Foundation.Data
+  #if compiler(>=5.3) && $AsyncAwait
+  func value(forKey key: Swift.String) async throws -> Foundation.Data
+  #endif
   func setDataCollectionEnabled(_ enabled: Swift.Bool)
 }
 public protocol PurchaseManager {
