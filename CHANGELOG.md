@@ -7,6 +7,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 <<<<<<< HEAD
 =======
+## [1.5.6] - 2023-12-05
+### :bug: Bug Fixes
+- [`11822a0`](https://github.com/cotyapps/Kovalee-iOS-SDK/commit/11822a045b41ce737ac5cf14372321078097f1b1) - rolling back RemoteConfig fetching *(commit by [@fto-k](https://github.com/fto-k))*
+
+
 ## [1.5.5] - 2023-11-14
 ### :bug: Bug Fixes
 - [`17fb110`](https://github.com/cotyapps/Kovalee-iOS-SDK/commit/17fb1104265f1f17906929c4e2adeda11924263c) - Payment restore should now throw an error in case of failure *(commit by [@fto-k](https://github.com/fto-k))*
@@ -221,3 +226,4 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 [1.5.3]: https://github.com/cotyapps/Kovalee-iOS-SDK/compare/1.5.2...1.5.3
 [1.5.4]: https://github.com/cotyapps/Kovalee-iOS-SDK/compare/1.5.3...1.5.4
 [1.5.5]: https://github.com/cotyapps/Kovalee-iOS-SDK/compare/1.5.4...1.5.5
+[1.5.6]: https://github.com/cotyapps/Kovalee-iOS-SDK/compare/1.5.5...1.5.6
