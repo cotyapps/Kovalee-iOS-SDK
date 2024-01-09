@@ -44,6 +44,9 @@ extension KovaleeFramework.KovaleeManager {
   public func setIsUserPremium(_ premium: Swift.Bool)
   public func setRevenueCatUserId(userId: Swift.String)
   #if compiler(>=5.3) && $AsyncAwait
+  public func syncPurchase() async throws -> (any KovaleeFramework.AbstractCustomerInfo)?
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
   public func customerInfo() async throws -> (any KovaleeFramework.AbstractCustomerInfo)?
   #endif
   #if compiler(>=5.3) && $AsyncAwait
@@ -76,9 +79,7 @@ extension KovaleeFramework.KovaleeManager {
 }
 extension KovaleeFramework.KovaleeManager {
   public func setDefaultValues(_ values: [Swift.String : Any])
-  #if compiler(>=5.3) && $AsyncAwait
-  public func remoteValue(forKey key: Swift.String) async throws -> Foundation.Data
-  #endif
+  public func remoteValue(forKey key: Swift.String) throws -> Foundation.Data
   #if compiler(>=5.3) && $AsyncAwait
   public func abTestValue(forKey key: Swift.String) async -> Swift.String?
   #endif
@@ -258,10 +259,11 @@ public protocol EventTrackerManager {
   func getDeviceId() -> Swift.String?
 }
 public protocol RemoteConfigurationManager {
-  func setDefaultValues(_ values: [Swift.String : Any])
   #if compiler(>=5.3) && $AsyncAwait
-  func value(forKey key: Swift.String) async throws -> Foundation.Data
+  func fetchAndActivateRemoteConfig() async
   #endif
+  func setDefaultValues(_ values: [Swift.String : Any])
+  func value(forKey key: Swift.String) throws -> Foundation.Data
   func setDataCollectionEnabled(_ enabled: Swift.Bool)
 }
 public protocol PurchaseManager {
@@ -269,6 +271,9 @@ public protocol PurchaseManager {
   func setUserId(userId: Swift.String)
   func setAttribution(adid: Swift.String)
   func setAmplitudeUserId(userId: Swift.String)
+  #if compiler(>=5.3) && $AsyncAwait
+  func syncPurchase() async throws -> any KovaleeFramework.AbstractCustomerInfo
+  #endif
   #if compiler(>=5.3) && $AsyncAwait
   func customerInfo() async throws -> any KovaleeFramework.AbstractCustomerInfo
   #endif
