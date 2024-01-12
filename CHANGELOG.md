@@ -7,6 +7,14 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 <<<<<<< HEAD
 =======
+## [1.5.9] - 2024-01-12
+### :bug: Bug Fixes
+- [`2c96587`](https://github.com/cotyapps/Kovalee-iOS-SDK/commit/2c96587061273bb2e99a9dd9e9a3fceab1f1ebb8) - rolled back async abTestValue *(commit by [@fto-k](https://github.com/fto-k))*
+
+### :wrench: Chores
+- [`0fb65eb`](https://github.com/cotyapps/Kovalee-iOS-SDK/commit/0fb65eba4d7357ed384ee5ab1fe995601cee53c5) - updated fastfile *(commit by [@fto-k](https://github.com/fto-k))*
+
+
 ## [1.5.6] - 2023-12-05
 ### :bug: Bug Fixes
 - [`11822a0`](https://github.com/cotyapps/Kovalee-iOS-SDK/commit/11822a045b41ce737ac5cf14372321078097f1b1) - rolling back RemoteConfig fetching *(commit by [@fto-k](https://github.com/fto-k))*
@@ -227,3 +235,4 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 [1.5.4]: https://github.com/cotyapps/Kovalee-iOS-SDK/compare/1.5.3...1.5.4
 [1.5.5]: https://github.com/cotyapps/Kovalee-iOS-SDK/compare/1.5.4...1.5.5
 [1.5.6]: https://github.com/cotyapps/Kovalee-iOS-SDK/compare/1.5.5...1.5.6
+[1.5.9]: https://github.com/cotyapps/Kovalee-iOS-SDK/compare/1.5.8...1.5.9
