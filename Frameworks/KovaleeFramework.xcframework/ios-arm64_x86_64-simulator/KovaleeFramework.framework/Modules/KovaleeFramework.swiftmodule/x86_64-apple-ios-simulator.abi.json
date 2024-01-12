@@ -1757,8 +1757,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:16KovaleeFramework0A7ManagerC11remoteValue6forKey10Foundation4DataVSS_tKF",
-            "mangledName": "$s16KovaleeFramework0A7ManagerC11remoteValue6forKey10Foundation4DataVSS_tKF",
+            "usr": "s:16KovaleeFramework0A7ManagerC11remoteValue6forKey10Foundation4DataVSS_tYaKF",
+            "mangledName": "$s16KovaleeFramework0A7ManagerC11remoteValue6forKey10Foundation4DataVSS_tYaKF",
             "moduleName": "KovaleeFramework",
             "isFromExtension": true,
             "throwing": true,
@@ -7601,8 +7601,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:16KovaleeFramework26RemoteConfigurationManagerP5value6forKey10Foundation4DataVSS_tKF",
-            "mangledName": "$s16KovaleeFramework26RemoteConfigurationManagerP5value6forKey10Foundation4DataVSS_tKF",
+            "usr": "s:16KovaleeFramework26RemoteConfigurationManagerP5value6forKey10Foundation4DataVSS_tYaKF",
+            "mangledName": "$s16KovaleeFramework26RemoteConfigurationManagerP5value6forKey10Foundation4DataVSS_tYaKF",
             "moduleName": "KovaleeFramework",
             "genericSig": "<τ_0_0 where τ_0_0 : KovaleeFramework.RemoteConfigurationManager>",
             "sugared_genericSig": "<Self where Self : KovaleeFramework.RemoteConfigurationManager>",
@@ -12360,84 +12360,84 @@
     {
       "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
       "kind": "StringLiteral",
-      "offset": 13333,
+      "offset": 13339,
       "length": 87,
       "value": "\"🛰️ Retrieved value \""
     },
     {
       "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
       "kind": "StringLiteral",
-      "offset": 13400,
+      "offset": 13406,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
       "kind": "StringLiteral",
-      "offset": 13403,
+      "offset": 13409,
       "length": 3,
       "value": "\" for key: \""
     },
     {
       "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
       "kind": "StringLiteral",
-      "offset": 13419,
+      "offset": 13425,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
       "kind": "StringLiteral",
-      "offset": 13734,
+      "offset": 13740,
       "length": 83,
       "value": "\"🛰️ User already partecipated in a different experiment with \""
     },
     {
       "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
       "kind": "StringLiteral",
-      "offset": 13816,
+      "offset": 13822,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
       "kind": "StringLiteral",
-      "offset": 14049,
+      "offset": 14055,
       "length": 56,
       "value": "\"🛰️ Fetched AB Experiment value from local storage\""
     },
     {
       "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
       "kind": "StringLiteral",
-      "offset": 14322,
+      "offset": 14325,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
       "kind": "StringLiteral",
-      "offset": 14844,
+      "offset": 14847,
       "length": 27,
       "value": "\"creating interstitial ad \""
     },
     {
       "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
       "kind": "StringLiteral",
-      "offset": 15010,
+      "offset": 15013,
       "length": 25,
       "value": "\"display interstitial ad\""
     },
     {
       "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
       "kind": "StringLiteral",
-      "offset": 15223,
+      "offset": 15226,
       "length": 22,
       "value": "\"creating rewarded ad\""
     },
     {
       "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
       "kind": "StringLiteral",
-      "offset": 15386,
+      "offset": 15389,
       "length": 21,
       "value": "\"display rewarded ad\""
     },
