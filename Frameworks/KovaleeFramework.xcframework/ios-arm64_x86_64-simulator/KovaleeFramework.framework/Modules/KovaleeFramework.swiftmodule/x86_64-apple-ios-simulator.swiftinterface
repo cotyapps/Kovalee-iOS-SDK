@@ -86,6 +86,7 @@ extension KovaleeFramework.KovaleeManager {
   public func abTestValue(forKey key: Swift.String) async -> Swift.String?
   #endif
   public func setAbTestValue(_ value: Swift.String)
+  public func setFetchTimeout(_ timeout: Swift.Double)
 }
 extension KovaleeFramework.KovaleeManager {
   public func showMediationDebugger()
