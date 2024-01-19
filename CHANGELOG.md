@@ -7,6 +7,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 <<<<<<< HEAD
 =======
+## [1.6.0] - 2024-01-19
+### :sparkles: New Features
+- [`ef33315`](https://github.com/cotyapps/Kovalee-iOS-SDK/commit/ef33315b6071f0d45d0697b8f3944e757ff3377d) - new functions to set ab test value and set remote config timeout *(commit by [@fto-k](https://github.com/fto-k))*
+- [`02aed2e`](https://github.com/cotyapps/Kovalee-iOS-SDK/commit/02aed2eafa6cae2373b10699294dae11046682ec) - set timeout for remote config fetching *(commit by [@fto-k](https://github.com/fto-k))*
+
+
 ## [1.5.9] - 2024-01-12
 ### :bug: Bug Fixes
 - [`2c96587`](https://github.com/cotyapps/Kovalee-iOS-SDK/commit/2c96587061273bb2e99a9dd9e9a3fceab1f1ebb8) - rolled back async abTestValue *(commit by [@fto-k](https://github.com/fto-k))*
@@ -236,3 +242,4 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 [1.5.5]: https://github.com/cotyapps/Kovalee-iOS-SDK/compare/1.5.4...1.5.5
 [1.5.6]: https://github.com/cotyapps/Kovalee-iOS-SDK/compare/1.5.5...1.5.6
 [1.5.9]: https://github.com/cotyapps/Kovalee-iOS-SDK/compare/1.5.8...1.5.9
+[1.6.0]: https://github.com/cotyapps/Kovalee-iOS-SDK/compare/1.5.9...1.6.0
