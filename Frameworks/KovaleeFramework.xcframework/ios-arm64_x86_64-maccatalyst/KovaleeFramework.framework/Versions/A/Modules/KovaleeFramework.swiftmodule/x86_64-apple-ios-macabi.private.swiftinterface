@@ -85,6 +85,8 @@ extension KovaleeFramework.KovaleeManager {
   #if compiler(>=5.3) && $AsyncAwait
   public func abTestValue(forKey key: Swift.String) async -> Swift.String?
   #endif
+  public func setAbTestValue(_ value: Swift.String)
+  public func setFetchTimeout(_ timeout: Swift.Double)
 }
 extension KovaleeFramework.KovaleeManager {
   public func showMediationDebugger()
@@ -261,6 +263,7 @@ public protocol EventTrackerManager {
   func getDeviceId() -> Swift.String?
 }
 public protocol RemoteConfigurationManager {
+  func setFetchTimeout(_ timeout: Swift.Double)
   #if compiler(>=5.3) && $AsyncAwait
   func fetchAndActivateRemoteConfig() async
   #endif
