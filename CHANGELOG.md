@@ -7,6 +7,19 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 <<<<<<< HEAD
 =======
+## [1.6.1] - 2024-01-24
+### :sparkles: New Features
+- [`c01e5e1`](https://github.com/cotyapps/Kovalee-iOS-SDK/commit/c01e5e18054f077bcf920bca873afbbc42a26893) - new method to expose local ab test value *(commit by [@fto-k](https://github.com/fto-k))*
+
+### :bug: Bug Fixes
+- [`e6749eb`](https://github.com/cotyapps/Kovalee-iOS-SDK/commit/e6749eb9a2967124bfc57042f46468e7a1c4f202) - when ab value is manually set, remote config shouldn t update default values *(commit by [@fto-k](https://github.com/fto-k))*
+- [`d03ded9`](https://github.com/cotyapps/Kovalee-iOS-SDK/commit/d03ded9b122e8c85879db9dfa6033429c59ad369) - setting AB value to user defaults as String instead of Data *(commit by [@fto-k](https://github.com/fto-k))*
+
+### :wrench: Chores
+- [`aeb742e`](https://github.com/cotyapps/Kovalee-iOS-SDK/commit/aeb742e60524b322d5e831ad011ab623a92b7af5) - amended fastfile *(commit by [@fto-k](https://github.com/fto-k))*
+- [`283c8fb`](https://github.com/cotyapps/Kovalee-iOS-SDK/commit/283c8fb537c83123b83dde103ecfe79c62d8cb03) - removed debugging logs *(commit by [@fto-k](https://github.com/fto-k))*
+
+
 ## [1.6.0] - 2024-01-19
 ### :sparkles: New Features
 - [`ef33315`](https://github.com/cotyapps/Kovalee-iOS-SDK/commit/ef33315b6071f0d45d0697b8f3944e757ff3377d) - new functions to set ab test value and set remote config timeout *(commit by [@fto-k](https://github.com/fto-k))*
@@ -243,3 +256,4 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 [1.5.6]: https://github.com/cotyapps/Kovalee-iOS-SDK/compare/1.5.5...1.5.6
 [1.5.9]: https://github.com/cotyapps/Kovalee-iOS-SDK/compare/1.5.8...1.5.9
 [1.6.0]: https://github.com/cotyapps/Kovalee-iOS-SDK/compare/1.5.9...1.6.0
+[1.6.1]: https://github.com/cotyapps/Kovalee-iOS-SDK/compare/1.6.0...1.6.1
