@@ -5,6 +5,7 @@
 import AppTrackingTransparency
 import Foundation
 @_exported import KovaleeFramework
+import OSLog
 import Swift
 import _Concurrency
 import _StringProcessing
