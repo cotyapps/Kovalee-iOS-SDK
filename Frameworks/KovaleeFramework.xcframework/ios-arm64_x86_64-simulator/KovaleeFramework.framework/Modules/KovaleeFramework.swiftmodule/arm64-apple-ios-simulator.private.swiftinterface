@@ -83,6 +83,7 @@ extension KovaleeFramework.KovaleeManager {
   #if compiler(>=5.3) && $AsyncAwait
   public func remoteValue(forKey key: Swift.String) async throws -> Foundation.Data
   #endif
+  public func localABTestValue() -> Swift.String?
   #if compiler(>=5.3) && $AsyncAwait
   public func abTestValue(forKey key: Swift.String) async -> Swift.String?
   #endif
