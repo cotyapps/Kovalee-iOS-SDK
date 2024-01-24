@@ -12317,274 +12317,260 @@
     },
     {
       "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
-      "kind": "BooleanLiteral",
-      "offset": 1748,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
-      "kind": "BooleanLiteral",
-      "offset": 1893,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
       "kind": "StringLiteral",
-      "offset": 2464,
+      "offset": 2282,
       "length": 68,
       "value": "\"An error occurred during completion: \""
     },
     {
       "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
       "kind": "StringLiteral",
-      "offset": 2531,
+      "offset": 2349,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
       "kind": "StringLiteral",
-      "offset": 2937,
+      "offset": 2755,
       "length": 35,
       "value": "\"Sending ConversionValue: \""
     },
     {
       "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
       "kind": "StringLiteral",
-      "offset": 2971,
+      "offset": 2789,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
       "kind": "StringLiteral",
-      "offset": 3727,
+      "offset": 3545,
       "length": 21,
       "value": "\"Setting attribution\""
     },
     {
       "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 4344,
+      "offset": 4162,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 4473,
+      "offset": 4291,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
       "kind": "StringLiteral",
-      "offset": 5533,
+      "offset": 5351,
       "length": 5,
       "value": "\"yes\""
     },
     {
       "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 5541,
+      "offset": 5359,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 5548,
+      "offset": 5366,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 5864,
+      "offset": 5682,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 6060,
+      "offset": 5878,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
       "kind": "StringLiteral",
-      "offset": 6172,
+      "offset": 5990,
       "length": 4,
       "value": "\"no\""
     },
     {
       "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 6236,
+      "offset": 6054,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 6373,
+      "offset": 6191,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
       "kind": "StringLiteral",
-      "offset": 7509,
+      "offset": 7327,
       "length": 5,
       "value": "\"yes\""
     },
     {
       "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
       "kind": "StringLiteral",
-      "offset": 7517,
+      "offset": 7335,
       "length": 4,
       "value": "\"no\""
     },
     {
       "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
       "kind": "StringLiteral",
-      "offset": 8559,
+      "offset": 8377,
       "length": 24,
       "value": "\"Payment restore Failed\""
     },
     {
       "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
       "kind": "StringLiteral",
-      "offset": 11691,
+      "offset": 11509,
       "length": 5,
       "value": "\"yes\""
     },
     {
       "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
       "kind": "StringLiteral",
-      "offset": 13345,
+      "offset": 13163,
       "length": 87,
       "value": "\"🛰️ Retrieved value \""
     },
     {
       "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
       "kind": "StringLiteral",
-      "offset": 13412,
+      "offset": 13230,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
       "kind": "StringLiteral",
-      "offset": 13415,
+      "offset": 13233,
       "length": 3,
       "value": "\" for key: \""
     },
     {
       "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
       "kind": "StringLiteral",
-      "offset": 13431,
+      "offset": 13249,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
       "kind": "StringLiteral",
-      "offset": 13728,
+      "offset": 13546,
       "length": 48,
       "value": "\"🛰️ Couldn't find any stored AB test value\""
     },
     {
       "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
       "kind": "StringLiteral",
-      "offset": 13834,
+      "offset": 13652,
       "length": 56,
       "value": "\"🛰️ Fetched AB Experiment value from local storage\""
     },
     {
       "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
       "kind": "StringLiteral",
-      "offset": 14203,
+      "offset": 14021,
       "length": 83,
       "value": "\"🛰️ User already partecipated in a different experiment with \""
     },
     {
       "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
       "kind": "StringLiteral",
-      "offset": 14285,
+      "offset": 14103,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
       "kind": "StringLiteral",
-      "offset": 14518,
+      "offset": 14336,
       "length": 56,
       "value": "\"🛰️ Fetched AB Experiment value from local storage\""
     },
     {
       "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
       "kind": "StringLiteral",
-      "offset": 14797,
+      "offset": 14615,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
       "kind": "StringLiteral",
-      "offset": 15196,
+      "offset": 15014,
       "length": 17,
       "value": "\"ab_test_version\""
     },
     {
       "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
       "kind": "StringLiteral",
-      "offset": 15437,
+      "offset": 15255,
       "length": 49,
       "value": "\"🛰️ User has already an ab test version set\""
     },
     {
       "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
       "kind": "StringLiteral",
-      "offset": 15714,
+      "offset": 15532,
       "length": 55,
       "value": "\"🛰️ Fetched AB value from local storage: \""
     },
     {
       "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
       "kind": "StringLiteral",
-      "offset": 15768,
+      "offset": 15586,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
       "kind": "StringLiteral",
-      "offset": 16364,
+      "offset": 16182,
       "length": 27,
       "value": "\"creating interstitial ad \""
     },
     {
       "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
       "kind": "StringLiteral",
-      "offset": 16530,
+      "offset": 16348,
       "length": 25,
       "value": "\"display interstitial ad\""
     },
     {
       "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
       "kind": "StringLiteral",
-      "offset": 16743,
+      "offset": 16561,
       "length": 22,
       "value": "\"creating rewarded ad\""
     },
     {
       "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
       "kind": "StringLiteral",
-      "offset": 16906,
+      "offset": 16724,
       "length": 21,
       "value": "\"display rewarded ad\""
     },
