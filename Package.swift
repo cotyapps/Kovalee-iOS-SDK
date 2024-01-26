@@ -5,33 +5,59 @@ import PackageDescription
 
 let package = Package(
     name: "KovaleeSDK",
-	defaultLocalization: "en",
+    defaultLocalization: "en",
     platforms: [
-        .iOS(.v14)
+        .iOS(.v14),
     ],
     products: [
         .library(
-            name: "KovaleeSDK",
+            name: .sdk,
             targets: [
-                "KovaleeSDK",
+                .sdk, .sdkUI,
             ]
-        )
+        ),
     ],
     dependencies: [
-		.package(url: "https://github.com/amplitude/Amplitude-Swift", .upToNextMajor(from: "1.1.0"))
-	],
+        .package(url: "https://github.com/amplitude/Amplitude-Swift", .upToNextMajor(from: "1.1.0")),
+    ],
     targets: [
         .binaryTarget(
-            name: "KovaleeFramework",
+            name: .framework,
             path: "./Frameworks/KovaleeFramework.xcframework"
         ),
 
-		.target(
-			name: "KovaleeSDK",
-			dependencies: [
-				"KovaleeFramework",
-				.product(name: "AmplitudeSwift", package: "Amplitude-Swift")
-			]
-		)
+        .target(
+            name: .sdk,
+            dependencies: [
+                .framework,
+                .product(name: "AmplitudeSwift", package: "Amplitude-Swift"),
+            ]
+        ),
+        .target(
+            name: .sdkUI,
+            dependencies: [
+                .sdk,
+            ]
+        ),
     ]
 )
+
+extension Target.Dependency {
+    static var framework: Self {
+        .target(name: .framework)
+    }
+
+    static var sdk: Self {
+        .target(name: .sdk)
+    }
+
+    static var ui: Self {
+        .target(name: .sdkUI)
+    }
+}
+
+extension String {
+    static let framework = "KovaleeFramework"
+    static let sdk = "KovaleeSDK"
+    static let sdkUI = "KovaleeSDKUI"
+}
