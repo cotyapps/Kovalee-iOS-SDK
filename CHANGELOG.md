@@ -7,6 +7,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 <<<<<<< HEAD
 =======
+## [1.6.3] - 2024-01-31
+### :sparkles: New Features
+- [`5af5742`](https://github.com/cotyapps/Kovalee-iOS-SDK/commit/5af5742260fae9b467bdf5abdd07d97e0a66e6e4) - disabled IDFV tracking for GDPR reasons *(commit by [@fto-k](https://github.com/fto-k))*
+
+
 ## [1.6.2] - 2024-01-24
 ### :bug: Bug Fixes
 - [`adc8cfa`](https://github.com/cotyapps/Kovalee-iOS-SDK/commit/adc8cfac528d1df22c7bd8d9304bdd5f71b921ae) - removed remote fetch on SDK initialization *(commit by [@fto-k](https://github.com/fto-k))*
@@ -263,3 +268,4 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 [1.6.0]: https://github.com/cotyapps/Kovalee-iOS-SDK/compare/1.5.9...1.6.0
 [1.6.1]: https://github.com/cotyapps/Kovalee-iOS-SDK/compare/1.6.0...1.6.1
 [1.6.2]: https://github.com/cotyapps/Kovalee-iOS-SDK/compare/1.6.1...1.6.2
+[1.6.3]: https://github.com/cotyapps/Kovalee-iOS-SDK/compare/1.6.2...1.6.3
