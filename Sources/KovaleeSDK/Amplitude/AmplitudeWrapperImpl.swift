@@ -4,11 +4,12 @@ import KovaleeFramework
 
 struct AmplitudeWrapperImpl: EventTrackerManager, Manager {
     init(withKey key: String) {
-		KLogger.debug("initializing Amplitude")
+        KLogger.debug("initializing Amplitude")
 
         let trackingOptions = TrackingOptions()
             .disableTrackCarrier()
             .disableTrackCity()
+            .disableTrackIDFV()
 
         amplitude = Amplitude(
             configuration: AmplitudeSwift.Configuration(
@@ -23,15 +24,15 @@ struct AmplitudeWrapperImpl: EventTrackerManager, Manager {
         )
     }
 
-	func setDataCollectionEnabled(_ enabled: Bool) {
-		amplitude?.configuration.optOut = !enabled
-	}
+    func setDataCollectionEnabled(_ enabled: Bool) {
+        amplitude?.configuration.optOut = !enabled
+    }
 
     func sendEvent(_ event: Event) {
-		guard let amplitude else {
-			KLogger.error("Failed sending Event: \(event.name) \(event.properties?.serialization ?? "")")
-			return
-		}
+        guard let amplitude else {
+            KLogger.error("Failed sending Event: \(event.name) \(event.properties?.serialization ?? "")")
+            return
+        }
 
         amplitude.track(
             eventType: event.name,
@@ -61,27 +62,27 @@ struct AmplitudeWrapperImpl: EventTrackerManager, Manager {
     }
 
     func setUserProperty(property: UserProperty) {
-        self.setUserProperty(key: property.key, value: property.value)
+        setUserProperty(key: property.key, value: property.value)
     }
 
-	func getUserId() -> String? {
-		amplitude?.getUserId()
-	}
+    func getUserId() -> String? {
+        amplitude?.getUserId()
+    }
 
-	func getDeviceId() -> String? {
-		amplitude?.getDeviceId()
-	}
+    func getDeviceId() -> String? {
+        amplitude?.getDeviceId()
+    }
 
     var amplitude: Amplitude?
 }
 
 extension BaseEvent {
     var description: String {
-        guard let properties = self.eventProperties else {
-            return self.eventType
+        guard let properties = eventProperties else {
+            return eventType
         }
 
-        return self.eventType + " " + properties.description
+        return eventType + " " + properties.description
     }
 }
 
@@ -98,8 +99,8 @@ extension LogLevel {
             return .WARN
         case .error:
             return .ERROR
-		@unknown default:
-			fatalError()
-		}
+        @unknown default:
+            fatalError()
+        }
     }
 }
