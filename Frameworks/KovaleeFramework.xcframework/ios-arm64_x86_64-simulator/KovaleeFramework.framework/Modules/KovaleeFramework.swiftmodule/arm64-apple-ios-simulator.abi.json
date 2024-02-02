@@ -12295,2044 +12295,2044 @@
   },
   "ConstValues": [
     {
-      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
+      "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
       "kind": "BooleanLiteral",
       "offset": 550,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
+      "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
       "kind": "StringLiteral",
       "offset": 865,
       "length": 34,
       "value": "\"setting attribution to Amplitude\""
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
+      "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
       "kind": "StringLiteral",
       "offset": 1199,
       "length": 35,
       "value": "\"setting attribution to RevenueCat\""
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
+      "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
       "kind": "StringLiteral",
       "offset": 2282,
       "length": 68,
       "value": "\"An error occurred during completion: \""
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
+      "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
       "kind": "StringLiteral",
       "offset": 2349,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
+      "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
       "kind": "StringLiteral",
       "offset": 2755,
       "length": 35,
       "value": "\"Sending ConversionValue: \""
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
+      "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
       "kind": "StringLiteral",
       "offset": 2789,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
+      "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
       "kind": "StringLiteral",
       "offset": 3545,
       "length": 21,
       "value": "\"Setting attribution\""
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
+      "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
       "kind": "IntegerLiteral",
       "offset": 4162,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
+      "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
       "kind": "BooleanLiteral",
       "offset": 4291,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
+      "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
       "kind": "StringLiteral",
       "offset": 5351,
       "length": 5,
       "value": "\"yes\""
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
+      "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
       "kind": "BooleanLiteral",
       "offset": 5359,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
+      "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
       "kind": "BooleanLiteral",
       "offset": 5366,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
+      "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
       "kind": "BooleanLiteral",
       "offset": 5682,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
+      "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
       "kind": "IntegerLiteral",
       "offset": 5878,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
+      "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
       "kind": "StringLiteral",
       "offset": 5990,
       "length": 4,
       "value": "\"no\""
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
+      "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
       "kind": "BooleanLiteral",
       "offset": 6054,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
+      "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
       "kind": "BooleanLiteral",
       "offset": 6191,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
+      "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
       "kind": "StringLiteral",
       "offset": 7327,
       "length": 5,
       "value": "\"yes\""
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
+      "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
       "kind": "StringLiteral",
       "offset": 7335,
       "length": 4,
       "value": "\"no\""
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
+      "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
       "kind": "StringLiteral",
       "offset": 8377,
       "length": 24,
       "value": "\"Payment restore Failed\""
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
+      "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
       "kind": "StringLiteral",
       "offset": 11509,
       "length": 5,
       "value": "\"yes\""
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
+      "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
       "kind": "StringLiteral",
       "offset": 13163,
       "length": 87,
       "value": "\"🛰️ Retrieved value \""
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
+      "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
       "kind": "StringLiteral",
       "offset": 13230,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
+      "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
       "kind": "StringLiteral",
       "offset": 13233,
       "length": 3,
       "value": "\" for key: \""
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
+      "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
       "kind": "StringLiteral",
       "offset": 13249,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
+      "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
       "kind": "StringLiteral",
       "offset": 13546,
       "length": 48,
       "value": "\"🛰️ Couldn't find any stored AB test value\""
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
+      "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
       "kind": "StringLiteral",
       "offset": 13652,
       "length": 56,
       "value": "\"🛰️ Fetched AB Experiment value from local storage\""
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
+      "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
       "kind": "StringLiteral",
       "offset": 14021,
       "length": 83,
       "value": "\"🛰️ User already partecipated in a different experiment with \""
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
+      "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
       "kind": "StringLiteral",
       "offset": 14103,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
+      "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
       "kind": "StringLiteral",
       "offset": 14336,
       "length": 56,
       "value": "\"🛰️ Fetched AB Experiment value from local storage\""
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
+      "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
       "kind": "StringLiteral",
       "offset": 14615,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
+      "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
       "kind": "StringLiteral",
       "offset": 15014,
       "length": 17,
       "value": "\"ab_test_version\""
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
+      "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
       "kind": "StringLiteral",
       "offset": 15255,
       "length": 49,
       "value": "\"🛰️ User has already an ab test version set\""
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
+      "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
       "kind": "StringLiteral",
       "offset": 15532,
       "length": 55,
       "value": "\"🛰️ Fetched AB value from local storage: \""
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
+      "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
       "kind": "StringLiteral",
       "offset": 15586,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
+      "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
       "kind": "StringLiteral",
       "offset": 16182,
       "length": 27,
       "value": "\"creating interstitial ad \""
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
+      "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
       "kind": "StringLiteral",
       "offset": 16348,
       "length": 25,
       "value": "\"display interstitial ad\""
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
+      "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
       "kind": "StringLiteral",
       "offset": 16561,
       "length": 22,
       "value": "\"creating rewarded ad\""
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
+      "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
       "kind": "StringLiteral",
       "offset": 16724,
       "length": 21,
       "value": "\"display rewarded ad\""
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/Logger\/Logger.swift",
+      "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/Logger\/Logger.swift",
       "kind": "StringLiteral",
       "offset": 228,
       "length": 12,
       "value": "\"KovaleeSDK\""
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/Logger\/Logger.swift",
+      "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/Logger\/Logger.swift",
       "kind": "StringLiteral",
       "offset": 635,
       "length": 45,
       "value": "\"[Kovalee] \""
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/Logger\/Logger.swift",
+      "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/Logger\/Logger.swift",
       "kind": "StringLiteral",
       "offset": 666,
       "length": 1,
       "value": "\" - \""
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/Logger\/Logger.swift",
+      "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/Logger\/Logger.swift",
       "kind": "StringLiteral",
       "offset": 679,
       "length": 1,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/Logger\/Logger.swift",
+      "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/Logger\/Logger.swift",
       "kind": "StringLiteral",
       "offset": 773,
       "length": 8,
       "value": "\".swift\""
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/Logger\/Logger.swift",
+      "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/Logger\/Logger.swift",
       "kind": "StringLiteral",
       "offset": 789,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/Logger\/Logger.swift",
+      "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/Logger\/Logger.swift",
       "kind": "StringLiteral",
       "offset": 877,
       "length": 33,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/Logger\/Logger.swift",
+      "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/Logger\/Logger.swift",
       "kind": "StringLiteral",
       "offset": 889,
       "length": 1,
       "value": "\".\""
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/Logger\/Logger.swift",
+      "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/Logger\/Logger.swift",
       "kind": "StringLiteral",
       "offset": 901,
       "length": 1,
       "value": "\":\""
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/Logger\/Logger.swift",
+      "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/Logger\/Logger.swift",
       "kind": "StringLiteral",
       "offset": 909,
       "length": 1,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/Logger\/Logger.swift",
+      "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/Logger\/Logger.swift",
       "kind": "StringLiteral",
       "offset": 921,
       "length": 52,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/Logger\/Logger.swift",
+      "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/Logger\/Logger.swift",
       "kind": "StringLiteral",
       "offset": 942,
       "length": 1,
       "value": "\" - \""
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/Logger\/Logger.swift",
+      "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/Logger\/Logger.swift",
       "kind": "StringLiteral",
       "offset": 959,
       "length": 1,
       "value": "\" - \""
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/Logger\/Logger.swift",
+      "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/Logger\/Logger.swift",
       "kind": "StringLiteral",
       "offset": 972,
       "length": 1,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/Logger\/Logger.swift",
+      "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/Logger\/Logger.swift",
       "kind": "StringLiteral",
       "offset": 1373,
       "length": 32,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/Logger\/Logger.swift",
+      "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/Logger\/Logger.swift",
       "kind": "StringLiteral",
       "offset": 1404,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/Logger\/Logger.swift",
+      "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/Logger\/Logger.swift",
       "kind": "StringLiteral",
       "offset": 1787,
       "length": 32,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/Logger\/Logger.swift",
+      "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/Logger\/Logger.swift",
       "kind": "StringLiteral",
       "offset": 1818,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/Logger\/Logger.swift",
+      "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/Logger\/Logger.swift",
       "kind": "StringLiteral",
       "offset": 2204,
       "length": 32,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/Logger\/Logger.swift",
+      "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/Logger\/Logger.swift",
       "kind": "StringLiteral",
       "offset": 2235,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/Logger\/Logger.swift",
+      "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/Logger\/Logger.swift",
       "kind": "StringLiteral",
       "offset": 2619,
       "length": 32,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/Logger\/Logger.swift",
+      "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/Logger\/Logger.swift",
       "kind": "StringLiteral",
       "offset": 2650,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/Logger\/LogLevel.swift",
+      "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/Logger\/LogLevel.swift",
       "kind": "IntegerLiteral",
       "offset": 118,
       "length": 1,
       "value": "4"
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/Logger\/LogLevel.swift",
+      "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/Logger\/LogLevel.swift",
       "kind": "IntegerLiteral",
       "offset": 170,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/Logger\/LogLevel.swift",
+      "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/Logger\/LogLevel.swift",
       "kind": "IntegerLiteral",
       "offset": 225,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/Logger\/LogLevel.swift",
+      "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/Logger\/LogLevel.swift",
       "kind": "IntegerLiteral",
       "offset": 289,
       "length": 1,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/Logger\/LogLevel.swift",
+      "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/Logger\/LogLevel.swift",
       "kind": "IntegerLiteral",
       "offset": 361,
       "length": 1,
       "value": "3"
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/Logger\/LogLevel.swift",
+      "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/Logger\/LogLevel.swift",
       "kind": "StringLiteral",
       "offset": 465,
       "length": 6,
       "value": "\"📢\""
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/Logger\/LogLevel.swift",
+      "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/Logger\/LogLevel.swift",
       "kind": "StringLiteral",
       "offset": 512,
       "length": 5,
       "value": "\"✅\""
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/Logger\/LogLevel.swift",
+      "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/Logger\/LogLevel.swift",
       "kind": "StringLiteral",
       "offset": 557,
       "length": 8,
       "value": "\"ℹ️\""
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/Logger\/LogLevel.swift",
+      "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/Logger\/LogLevel.swift",
       "kind": "StringLiteral",
       "offset": 605,
       "length": 8,
       "value": "\"⚠️\""
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/Logger\/LogLevel.swift",
+      "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/Logger\/LogLevel.swift",
       "kind": "StringLiteral",
       "offset": 654,
       "length": 5,
       "value": "\"❌\""
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/Logger\/LogLevel.swift",
+      "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/Logger\/LogLevel.swift",
       "kind": "IntegerLiteral",
       "offset": 118,
       "length": 1,
       "value": "4"
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/Logger\/LogLevel.swift",
+      "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/Logger\/LogLevel.swift",
       "kind": "IntegerLiteral",
       "offset": 170,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/Logger\/LogLevel.swift",
+      "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/Logger\/LogLevel.swift",
       "kind": "IntegerLiteral",
       "offset": 225,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/Logger\/LogLevel.swift",
+      "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/Logger\/LogLevel.swift",
       "kind": "IntegerLiteral",
       "offset": 289,
       "length": 1,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/Logger\/LogLevel.swift",
+      "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/Logger\/LogLevel.swift",
       "kind": "IntegerLiteral",
       "offset": 361,
       "length": 1,
       "value": "3"
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/Logger\/LogLevel.swift",
+      "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/Logger\/LogLevel.swift",
       "kind": "IntegerLiteral",
       "offset": 118,
       "length": 1,
       "value": "4"
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/Logger\/LogLevel.swift",
+      "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/Logger\/LogLevel.swift",
       "kind": "IntegerLiteral",
       "offset": 170,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/Logger\/LogLevel.swift",
+      "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/Logger\/LogLevel.swift",
       "kind": "IntegerLiteral",
       "offset": 225,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/Logger\/LogLevel.swift",
+      "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/Logger\/LogLevel.swift",
       "kind": "IntegerLiteral",
       "offset": 289,
       "length": 1,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/Logger\/LogLevel.swift",
+      "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/Logger\/LogLevel.swift",
       "kind": "IntegerLiteral",
       "offset": 361,
       "length": 1,
       "value": "3"
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/Logger\/LogLevel.swift",
+      "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/Logger\/LogLevel.swift",
       "kind": "BooleanLiteral",
       "offset": 903,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/Utils\/KovaleeConstants.swift",
+      "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/Utils\/KovaleeConstants.swift",
       "kind": "StringLiteral",
       "offset": 89,
       "length": 13,
       "value": "\"KovaleeKeys\""
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/Utils\/KovaleeConstants.swift",
+      "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/Utils\/KovaleeConstants.swift",
       "kind": "StringLiteral",
       "offset": 137,
       "length": 21,
       "value": "\"ios_events_included\""
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/Utils\/KovaleeConstants.swift",
+      "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/Utils\/KovaleeConstants.swift",
       "kind": "StringLiteral",
       "offset": 207,
       "length": 43,
       "value": "\"ios_events_with_event_properties_included\""
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/Utils\/KovaleeConstants.swift",
+      "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/Utils\/KovaleeConstants.swift",
       "kind": "StringLiteral",
       "offset": 294,
       "length": 16,
       "value": "\"payment_finish\""
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/Utils\/KovaleeConstants.swift",
+      "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/Utils\/KovaleeConstants.swift",
       "kind": "StringLiteral",
       "offset": 346,
       "length": 16,
       "value": "\"first_app_open\""
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/Utils\/Storage.swift",
+      "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/Utils\/Storage.swift",
       "kind": "StringLiteral",
       "offset": 88,
       "length": 20,
       "value": "\"KV_is_user_premium\""
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/Utils\/Storage.swift",
+      "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/Utils\/Storage.swift",
       "kind": "StringLiteral",
       "offset": 135,
       "length": 21,
       "value": "\"KV_app_opened_count\""
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/Utils\/Storage.swift",
+      "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/Utils\/Storage.swift",
       "kind": "StringLiteral",
       "offset": 188,
       "length": 26,
       "value": "\"KV_app_installation_date\""
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/Utils\/Storage.swift",
+      "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/Utils\/Storage.swift",
       "kind": "StringLiteral",
       "offset": 243,
       "length": 22,
       "value": "\"KV_user_subscription\""
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/Utils\/Storage.swift",
+      "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/Utils\/Storage.swift",
       "kind": "StringLiteral",
       "offset": 293,
       "length": 21,
       "value": "\"KV_conversion_value\""
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/Utils\/Storage.swift",
+      "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/Utils\/Storage.swift",
       "kind": "StringLiteral",
       "offset": 342,
       "length": 22,
       "value": "\"KV_amplitude_user_id\""
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/Utils\/Storage.swift",
+      "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/Utils\/Storage.swift",
       "kind": "StringLiteral",
       "offset": 394,
       "length": 25,
       "value": "\"KV_is_first_app_opening\""
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/Utils\/Storage.swift",
+      "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/Utils\/Storage.swift",
       "kind": "StringLiteral",
       "offset": 449,
       "length": 24,
       "value": "\"KV_ab_experiment_value\""
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/Utils\/Storage.swift",
+      "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/Utils\/Storage.swift",
       "kind": "StringLiteral",
       "offset": 501,
       "length": 22,
       "value": "\"KV_ab_experiment_key\""
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/Utils\/Storage.swift",
+      "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/Utils\/Storage.swift",
       "kind": "StringLiteral",
       "offset": 556,
       "length": 31,
       "value": "\"KV_is_data_collection_enabled\""
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/Utils\/Storage.swift",
+      "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/Utils\/Storage.swift",
       "kind": "StringLiteral",
       "offset": 88,
       "length": 20,
       "value": "\"KV_is_user_premium\""
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/Utils\/Storage.swift",
+      "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/Utils\/Storage.swift",
       "kind": "StringLiteral",
       "offset": 135,
       "length": 21,
       "value": "\"KV_app_opened_count\""
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/Utils\/Storage.swift",
+      "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/Utils\/Storage.swift",
       "kind": "StringLiteral",
       "offset": 188,
       "length": 26,
       "value": "\"KV_app_installation_date\""
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/Utils\/Storage.swift",
+      "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/Utils\/Storage.swift",
       "kind": "StringLiteral",
       "offset": 243,
       "length": 22,
       "value": "\"KV_user_subscription\""
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/Utils\/Storage.swift",
+      "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/Utils\/Storage.swift",
       "kind": "StringLiteral",
       "offset": 293,
       "length": 21,
       "value": "\"KV_conversion_value\""
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/Utils\/Storage.swift",
+      "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/Utils\/Storage.swift",
       "kind": "StringLiteral",
       "offset": 342,
       "length": 22,
       "value": "\"KV_amplitude_user_id\""
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/Utils\/Storage.swift",
+      "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/Utils\/Storage.swift",
       "kind": "StringLiteral",
       "offset": 394,
       "length": 25,
       "value": "\"KV_is_first_app_opening\""
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/Utils\/Storage.swift",
+      "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/Utils\/Storage.swift",
       "kind": "StringLiteral",
       "offset": 449,
       "length": 24,
       "value": "\"KV_ab_experiment_value\""
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/Utils\/Storage.swift",
+      "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/Utils\/Storage.swift",
       "kind": "StringLiteral",
       "offset": 501,
       "length": 22,
       "value": "\"KV_ab_experiment_key\""
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/Utils\/Storage.swift",
+      "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/Utils\/Storage.swift",
       "kind": "StringLiteral",
       "offset": 556,
       "length": 31,
       "value": "\"KV_is_data_collection_enabled\""
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/Utils\/Storage.swift",
+      "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/Utils\/Storage.swift",
       "kind": "StringLiteral",
       "offset": 1441,
       "length": 66,
       "value": "\"📦 Hydrating from storage: \""
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/Utils\/Storage.swift",
+      "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/Utils\/Storage.swift",
       "kind": "StringLiteral",
       "offset": 1477,
       "length": 1,
       "value": "\" \""
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/Utils\/Storage.swift",
+      "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/Utils\/Storage.swift",
       "kind": "StringLiteral",
       "offset": 1506,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/Utils\/Storage.swift",
+      "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/Utils\/Storage.swift",
       "kind": "StringLiteral",
       "offset": 1675,
       "length": 45,
       "value": "\"📦 Persisting to storage: \""
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/Utils\/Storage.swift",
+      "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/Utils\/Storage.swift",
       "kind": "StringLiteral",
       "offset": 1710,
       "length": 1,
       "value": "\" \""
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/Utils\/Storage.swift",
+      "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/Utils\/Storage.swift",
       "kind": "StringLiteral",
       "offset": 1719,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/Utils\/Storage.swift",
+      "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/Utils\/Storage.swift",
       "kind": "StringLiteral",
       "offset": 1855,
       "length": 36,
       "value": "\"📦 Removing from storage: \""
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/Utils\/Storage.swift",
+      "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/Utils\/Storage.swift",
       "kind": "StringLiteral",
       "offset": 1890,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/Utils\/Utils.swift",
+      "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/Utils\/Utils.swift",
       "kind": "StringLiteral",
       "offset": 129,
       "length": 29,
       "value": "\"XCTestConfigurationFilePath\""
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/Utils\/KovaleeError.swift",
+      "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/Utils\/KovaleeError.swift",
       "kind": "StringLiteral",
       "offset": 305,
       "length": 38,
       "value": "\"Firebase is not configured correctly\""
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/Utils\/KovaleeError.swift",
+      "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/Utils\/KovaleeError.swift",
       "kind": "StringLiteral",
       "offset": 410,
       "length": 89,
       "value": "\"Remote value already used for AB Test. Please use 'Kovalee.abTestValue(forKey:)' method\""
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/Utils\/KovaleeError.swift",
+      "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/Utils\/KovaleeError.swift",
       "kind": "StringLiteral",
       "offset": 556,
       "length": 36,
       "value": "\"Problems fetching the remote value\""
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/ConversionValueManager.swift",
+      "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/ConversionValueManager.swift",
       "kind": "StringLiteral",
       "offset": 1617,
       "length": 5,
       "value": "\"low\""
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/ConversionValueManager.swift",
+      "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/ConversionValueManager.swift",
       "kind": "StringLiteral",
       "offset": 1677,
       "length": 8,
       "value": "\"medium\""
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/ConversionValueManager.swift",
+      "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/ConversionValueManager.swift",
       "kind": "StringLiteral",
       "offset": 1739,
       "length": 6,
       "value": "\"high\""
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/ConversionValueManager.swift",
+      "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/ConversionValueManager.swift",
       "kind": "IntegerLiteral",
       "offset": 2517,
       "length": 1,
       "value": "4"
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/ConversionValueManager.swift",
+      "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/ConversionValueManager.swift",
       "kind": "IntegerLiteral",
       "offset": 2774,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/ConversionValueManager.swift",
+      "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/ConversionValueManager.swift",
       "kind": "IntegerLiteral",
       "offset": 4124,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/ConversionValueManager.swift",
+      "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/ConversionValueManager.swift",
       "kind": "BooleanLiteral",
       "offset": 4430,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/ConversionValueManager.swift",
+      "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/ConversionValueManager.swift",
       "kind": "StringLiteral",
       "offset": 4522,
       "length": 64,
       "value": "\"🧲 Found hardcoded conversion value: \""
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/ConversionValueManager.swift",
+      "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/ConversionValueManager.swift",
       "kind": "IntegerLiteral",
       "offset": 4583,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/ConversionValueManager.swift",
+      "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/ConversionValueManager.swift",
       "kind": "StringLiteral",
       "offset": 4585,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/ConversionValueManager.swift",
+      "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/ConversionValueManager.swift",
       "kind": "IntegerLiteral",
       "offset": 4801,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/ConversionValueManager.swift",
+      "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/ConversionValueManager.swift",
       "kind": "BooleanLiteral",
       "offset": 5270,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/ConversionValueManager.swift",
+      "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/ConversionValueManager.swift",
       "kind": "BooleanLiteral",
       "offset": 5289,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/ConversionValueManager.swift",
+      "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/ConversionValueManager.swift",
       "kind": "IntegerLiteral",
       "offset": 5490,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/ConversionValueManager.swift",
+      "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/ConversionValueManager.swift",
       "kind": "IntegerLiteral",
       "offset": 5622,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/ConversionValueManager.swift",
+      "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/ConversionValueManager.swift",
       "kind": "IntegerLiteral",
       "offset": 5715,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/ConversionValueManager.swift",
+      "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/ConversionValueManager.swift",
       "kind": "IntegerLiteral",
       "offset": 5729,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/ConversionValueManager.swift",
+      "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/ConversionValueManager.swift",
       "kind": "StringLiteral",
       "offset": 5885,
       "length": 80,
       "value": "\"📍 appOpenedCount: \""
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/ConversionValueManager.swift",
+      "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/ConversionValueManager.swift",
       "kind": "StringLiteral",
       "offset": 5924,
       "length": 1,
       "value": "\" - daysSinceInstall: \""
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/ConversionValueManager.swift",
+      "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/ConversionValueManager.swift",
       "kind": "StringLiteral",
       "offset": 5964,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/ConversionValueManager.swift",
+      "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/ConversionValueManager.swift",
       "kind": "IntegerLiteral",
       "offset": 6003,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/ConversionValueManager.swift",
+      "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/ConversionValueManager.swift",
       "kind": "IntegerLiteral",
       "offset": 6026,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/ConversionValueManager.swift",
+      "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/ConversionValueManager.swift",
       "kind": "IntegerLiteral",
       "offset": 6030,
       "length": 2,
       "value": "-1"
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/ConversionValueManager.swift",
+      "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/ConversionValueManager.swift",
       "kind": "StringLiteral",
       "offset": 6591,
       "length": 34,
       "value": "\"Correctly loaded Events Sequence\""
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/ConversionValueManager.swift",
+      "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/ConversionValueManager.swift",
       "kind": "StringLiteral",
       "offset": 6671,
       "length": 32,
       "value": "\"Failed to load Events Sequence\""
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/ConversionValueManager.swift",
+      "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/ConversionValueManager.swift",
       "kind": "StringLiteral",
       "offset": 6820,
       "length": 30,
       "value": "\"Correctly loaded Events List\""
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/ConversionValueManager.swift",
+      "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/ConversionValueManager.swift",
       "kind": "StringLiteral",
       "offset": 6896,
       "length": 28,
       "value": "\"Failed to load Events List\""
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/Event+Defaults.swift",
+      "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/Event+Defaults.swift",
       "kind": "StringLiteral",
       "offset": 724,
       "length": 16,
       "value": "\"first_app_open\""
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/Event+Defaults.swift",
+      "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/Event+Defaults.swift",
       "kind": "StringLiteral",
       "offset": 783,
       "length": 10,
       "value": "\"app_open\""
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/Event+Defaults.swift",
+      "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/Event+Defaults.swift",
       "kind": "StringLiteral",
       "offset": 842,
       "length": 17,
       "value": "\"na_att_activate\""
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/Event+Defaults.swift",
+      "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/Event+Defaults.swift",
       "kind": "StringLiteral",
       "offset": 910,
       "length": 19,
       "value": "\"na_att_deactivate\""
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/Event+Defaults.swift",
+      "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/Event+Defaults.swift",
       "kind": "StringLiteral",
       "offset": 978,
       "length": 16,
       "value": "\"payment_cancel\""
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/Event+Defaults.swift",
+      "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/Event+Defaults.swift",
       "kind": "StringLiteral",
       "offset": 1044,
       "length": 17,
       "value": "\"payment_failure\""
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/Event+Defaults.swift",
+      "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/Event+Defaults.swift",
       "kind": "StringLiteral",
       "offset": 1110,
       "length": 16,
       "value": "\"payment_finish\""
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/Event+Defaults.swift",
+      "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/Event+Defaults.swift",
       "kind": "StringLiteral",
       "offset": 1166,
       "length": 23,
       "value": "\"payment_restore_start\""
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/Event+Defaults.swift",
+      "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/Event+Defaults.swift",
       "kind": "StringLiteral",
       "offset": 1245,
       "length": 24,
       "value": "\"payment_restore_finish\""
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/Event+Defaults.swift",
+      "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/Event+Defaults.swift",
       "kind": "StringLiteral",
       "offset": 1323,
       "length": 22,
       "value": "\"payment_restore_fail\""
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/Event+Defaults.swift",
+      "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/Event+Defaults.swift",
       "kind": "StringLiteral",
       "offset": 1393,
       "length": 15,
       "value": "\"payment_start\""
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/Event+Defaults.swift",
+      "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/Event+Defaults.swift",
       "kind": "StringLiteral",
       "offset": 1465,
       "length": 25,
       "value": "\"update_conversion_value\""
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/Event+Defaults.swift",
+      "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/Event+Defaults.swift",
       "kind": "StringLiteral",
       "offset": 1531,
       "length": 24,
       "value": "\"conversion_value_error\""
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/Event+Defaults.swift",
+      "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/Event+Defaults.swift",
       "kind": "StringLiteral",
       "offset": 1610,
       "length": 23,
       "value": "\"ads_interstitial_show\""
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/Event+Defaults.swift",
+      "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/Event+Defaults.swift",
       "kind": "StringLiteral",
       "offset": 1684,
       "length": 19,
       "value": "\"ads_rewarded_show\""
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/Event+Defaults.swift",
+      "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/Event+Defaults.swift",
       "kind": "StringLiteral",
       "offset": 1833,
       "length": 6,
       "value": "\"name\""
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/Event+Defaults.swift",
+      "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/Event+Defaults.swift",
       "kind": "StringLiteral",
       "offset": 1841,
       "length": 12,
       "value": "\"att_prompt\""
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/Event+Defaults.swift",
+      "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/Event+Defaults.swift",
       "kind": "StringLiteral",
       "offset": 1906,
       "length": 6,
       "value": "\"name\""
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/Event+Defaults.swift",
+      "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/Event+Defaults.swift",
       "kind": "StringLiteral",
       "offset": 1914,
       "length": 12,
       "value": "\"att_prompt\""
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/Event+Defaults.swift",
+      "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/Event+Defaults.swift",
       "kind": "StringLiteral",
       "offset": 2007,
       "length": 8,
       "value": "\"source\""
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/Event+Defaults.swift",
+      "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/Event+Defaults.swift",
       "kind": "StringLiteral",
       "offset": 2131,
       "length": 8,
       "value": "\"source\""
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/Event+Defaults.swift",
+      "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/Event+Defaults.swift",
       "kind": "StringLiteral",
       "offset": 2165,
       "length": 6,
       "value": "\"name\""
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/Event+Defaults.swift",
+      "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/Event+Defaults.swift",
       "kind": "StringLiteral",
       "offset": 2303,
       "length": 8,
       "value": "\"source\""
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/Event+Defaults.swift",
+      "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/Event+Defaults.swift",
       "kind": "StringLiteral",
       "offset": 2337,
       "length": 6,
       "value": "\"name\""
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/Event+Defaults.swift",
+      "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/Event+Defaults.swift",
       "kind": "StringLiteral",
       "offset": 2371,
       "length": 12,
       "value": "\"product_id\""
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/Event+Defaults.swift",
+      "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/Event+Defaults.swift",
       "kind": "StringLiteral",
       "offset": 2552,
       "length": 8,
       "value": "\"source\""
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/Event+Defaults.swift",
+      "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/Event+Defaults.swift",
       "kind": "StringLiteral",
       "offset": 2661,
       "length": 8,
       "value": "\"source\""
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/Event+Defaults.swift",
+      "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/Event+Defaults.swift",
       "kind": "StringLiteral",
       "offset": 2695,
       "length": 6,
       "value": "\"name\""
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/Event+Defaults.swift",
+      "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/Event+Defaults.swift",
       "kind": "StringLiteral",
       "offset": 2796,
       "length": 8,
       "value": "\"number\""
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/Event+Defaults.swift",
+      "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/Event+Defaults.swift",
       "kind": "StringLiteral",
       "offset": 2867,
       "length": 7,
       "value": "\"error\""
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/Event+Defaults.swift",
+      "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/Event+Defaults.swift",
       "kind": "StringLiteral",
       "offset": 3160,
       "length": 9,
       "value": "\"premium\""
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/Event+Defaults.swift",
+      "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/Event+Defaults.swift",
       "kind": "StringLiteral",
       "offset": 3209,
       "length": 6,
       "value": "\"adid\""
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/Event+Defaults.swift",
+      "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/Event+Defaults.swift",
       "kind": "StringLiteral",
       "offset": 3264,
       "length": 17,
       "value": "\"ab_test_version\""
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/Event+Defaults.swift",
+      "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/Event+Defaults.swift",
       "kind": "StringLiteral",
       "offset": 4073,
       "length": 11,
       "value": "\"page_view\""
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/Event+Defaults.swift",
+      "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/Event+Defaults.swift",
       "kind": "StringLiteral",
       "offset": 4135,
       "length": 19,
       "value": "\"page_view_paywall\""
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/Event+Defaults.swift",
+      "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/Event+Defaults.swift",
       "kind": "StringLiteral",
       "offset": 4210,
       "length": 26,
       "value": "\"na_notification_activate\""
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/Event+Defaults.swift",
+      "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/Event+Defaults.swift",
       "kind": "StringLiteral",
       "offset": 4294,
       "length": 28,
       "value": "\"na_notification_deactivate\""
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/Event+Defaults.swift",
+      "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/Event+Defaults.swift",
       "kind": "StringLiteral",
       "offset": 4365,
       "length": 10,
       "value": "\"ac_click\""
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/Event+Defaults.swift",
+      "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/Event+Defaults.swift",
       "kind": "StringLiteral",
       "offset": 4425,
       "length": 18,
       "value": "\"ac_content_click\""
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/Event+Defaults.swift",
+      "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/Event+Defaults.swift",
       "kind": "StringLiteral",
       "offset": 4580,
       "length": 6,
       "value": "\"name\""
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/Event+Defaults.swift",
+      "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/Event+Defaults.swift",
       "kind": "StringLiteral",
       "offset": 4659,
       "length": 8,
       "value": "\"source\""
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/Event+Defaults.swift",
+      "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/Event+Defaults.swift",
       "kind": "StringLiteral",
       "offset": 4733,
       "length": 6,
       "value": "\"name\""
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/Event+Defaults.swift",
+      "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/Event+Defaults.swift",
       "kind": "StringLiteral",
       "offset": 4741,
       "length": 15,
       "value": "\"notifications\""
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/Event+Defaults.swift",
+      "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/Event+Defaults.swift",
       "kind": "StringLiteral",
       "offset": 4816,
       "length": 6,
       "value": "\"name\""
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/Event+Defaults.swift",
+      "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/Event+Defaults.swift",
       "kind": "StringLiteral",
       "offset": 4824,
       "length": 15,
       "value": "\"notifications\""
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/Event+Defaults.swift",
+      "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/Event+Defaults.swift",
       "kind": "StringLiteral",
       "offset": 4894,
       "length": 6,
       "value": "\"name\""
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/Event+Defaults.swift",
+      "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/Event+Defaults.swift",
       "kind": "StringLiteral",
       "offset": 4985,
       "length": 6,
       "value": "\"name\""
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/Event+Defaults.swift",
+      "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/Event+Defaults.swift",
       "kind": "StringLiteral",
       "offset": 5015,
       "length": 6,
       "value": "\"type\""
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/Event+Defaults.swift",
+      "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/Event+Defaults.swift",
       "kind": "StringLiteral",
       "offset": 5023,
       "length": 6,
       "value": "\"todo\""
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/Event.swift",
+      "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/Event.swift",
       "kind": "StringLiteral",
       "offset": 1875,
       "length": 4,
       "value": "\"__\""
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/Event.swift",
+      "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/Event.swift",
       "kind": "StringLiteral",
       "offset": 2105,
       "length": 4,
       "value": "\"__\""
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/Event.swift",
+      "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/Event.swift",
       "kind": "StringLiteral",
       "offset": 2403,
       "length": 4,
       "value": "\"__\""
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/Event.swift",
+      "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/Event.swift",
       "kind": "StringLiteral",
       "offset": 2417,
       "length": 4,
       "value": "\"__\""
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/Event.swift",
+      "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/Event.swift",
       "kind": "StringLiteral",
       "offset": 2508,
       "length": 4,
       "value": "\"__\""
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/Event.swift",
+      "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/Event.swift",
       "kind": "StringLiteral",
       "offset": 2522,
       "length": 5,
       "value": "\"__0\""
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/Event.swift",
+      "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/Event.swift",
       "kind": "StringLiteral",
       "offset": 2921,
       "length": 10,
       "value": "\"ac_click\""
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/Event.swift",
+      "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/Event.swift",
       "kind": "StringLiteral",
       "offset": 2954,
       "length": 5,
       "value": "\"ads\""
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/Event.swift",
+      "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/Event.swift",
       "kind": "StringLiteral",
       "offset": 2982,
       "length": 11,
       "value": "\"page_view\""
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/Event.swift",
+      "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/Event.swift",
       "kind": "StringLiteral",
       "offset": 3067,
       "length": 10,
       "value": "\"payment_\""
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/Event.swift",
+      "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/Event.swift",
       "kind": "StringLiteral",
       "offset": 3153,
       "length": 12,
       "value": "\"ac_content\""
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/Event.swift",
+      "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/Event.swift",
       "kind": "StringLiteral",
       "offset": 3310,
       "length": 6,
       "value": "\"name\""
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/Event.swift",
+      "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/Event.swift",
       "kind": "StringLiteral",
       "offset": 3337,
       "length": 6,
       "value": "\"type\""
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/Event.swift",
+      "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/Event.swift",
       "kind": "StringLiteral",
       "offset": 3369,
       "length": 12,
       "value": "\"key_action\""
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/Event.swift",
+      "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/Event.swift",
       "kind": "StringLiteral",
       "offset": 3407,
       "length": 12,
       "value": "\"product_id\""
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/Event.swift",
+      "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/Event.swift",
       "kind": "StringLiteral",
       "offset": 3310,
       "length": 6,
       "value": "\"name\""
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/Event.swift",
+      "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/Event.swift",
       "kind": "StringLiteral",
       "offset": 3337,
       "length": 6,
       "value": "\"type\""
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/Event.swift",
+      "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/Event.swift",
       "kind": "StringLiteral",
       "offset": 3369,
       "length": 12,
       "value": "\"key_action\""
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/Event.swift",
+      "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/Event.swift",
       "kind": "StringLiteral",
       "offset": 3407,
       "length": 12,
       "value": "\"product_id\""
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/Event.swift",
+      "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/Event.swift",
       "kind": "StringLiteral",
       "offset": 3687,
       "length": 10,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/Event.swift",
+      "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/Event.swift",
       "kind": "StringLiteral",
       "offset": 3696,
       "length": 15,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/Event.swift",
+      "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/Event.swift",
       "kind": "StringLiteral",
       "offset": 4201,
       "length": 4,
       "value": "\"__\""
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/Event.swift",
+      "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/Event.swift",
       "kind": "StringLiteral",
       "offset": 4361,
       "length": 3,
       "value": "\" \""
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/Event.swift",
+      "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/Event.swift",
       "kind": "StringLiteral",
       "offset": 4372,
       "length": 3,
       "value": "\"_\""
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/Event.swift",
+      "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/Event.swift",
       "kind": "StringLiteral",
       "offset": 4559,
       "length": 3,
       "value": "\"_\""
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/Event.swift",
+      "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/Event.swift",
       "kind": "StringLiteral",
       "offset": 4565,
       "length": 13,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/Event.swift",
+      "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/Event.swift",
       "kind": "StringLiteral",
       "offset": 4577,
       "length": 18,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/Event.swift",
+      "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/Event.swift",
       "kind": "StringLiteral",
       "offset": 4627,
       "length": 4,
       "value": "\"__\""
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/EventsList.swift",
+      "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/EventsList.swift",
       "kind": "StringLiteral",
       "offset": 649,
       "length": 3,
       "value": "\"-\""
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/EventsList.swift",
+      "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/EventsList.swift",
       "kind": "StringLiteral",
       "offset": 694,
       "length": 6,
       "value": "\"json\""
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/EventsList.swift",
+      "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/EventsList.swift",
       "kind": "Array",
       "offset": 814,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/EventsList.swift",
+      "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/EventsList.swift",
       "kind": "StringLiteral",
       "offset": 1136,
       "length": 67,
       "value": "\"Loading events file: \""
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/EventsList.swift",
+      "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/EventsList.swift",
       "kind": "StringLiteral",
       "offset": 1202,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/EventsQueue.swift",
+      "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/EventsQueue.swift",
       "kind": "IntegerLiteral",
       "offset": 122,
       "length": 1,
       "value": "5"
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/EventsQueue.swift",
+      "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/EventsQueue.swift",
       "kind": "StringLiteral",
       "offset": 272,
       "length": 42,
       "value": "\"New event in Queue: \""
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/EventsQueue.swift",
+      "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/EventsQueue.swift",
       "kind": "StringLiteral",
       "offset": 313,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/EventsQueue.swift",
+      "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/EventsQueue.swift",
       "kind": "StringLiteral",
       "offset": 331,
       "length": 46,
       "value": "\"Current Events Sequence: \""
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/EventsQueue.swift",
+      "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/EventsQueue.swift",
       "kind": "StringLiteral",
       "offset": 376,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/EventsQueue.swift",
+      "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/EventsQueue.swift",
       "kind": "StringLiteral",
       "offset": 491,
       "length": 42,
       "value": "\"New event in Queue: \""
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/EventsQueue.swift",
+      "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/EventsQueue.swift",
       "kind": "StringLiteral",
       "offset": 532,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/EventsQueue.swift",
+      "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/EventsQueue.swift",
       "kind": "StringLiteral",
       "offset": 550,
       "length": 46,
       "value": "\"Current Events Sequence: \""
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/EventsQueue.swift",
+      "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/EventsQueue.swift",
       "kind": "StringLiteral",
       "offset": 595,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/EventsQueue.swift",
+      "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/EventsQueue.swift",
       "kind": "StringLiteral",
       "offset": 828,
       "length": 3,
       "value": "\"|\""
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/EventsSequence.swift",
+      "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/EventsSequence.swift",
       "kind": "StringLiteral",
       "offset": 64,
       "length": 4,
       "value": "\"us\""
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/EventsSequence.swift",
+      "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/EventsSequence.swift",
       "kind": "StringLiteral",
       "offset": 88,
       "length": 10,
       "value": "\"top_tier\""
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/EventsSequence.swift",
+      "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/EventsSequence.swift",
       "kind": "StringLiteral",
       "offset": 121,
       "length": 13,
       "value": "\"bottom_tier\""
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/EventsSequence.swift",
+      "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/EventsSequence.swift",
       "kind": "StringLiteral",
       "offset": 241,
       "length": 4,
       "value": "\"us\""
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/EventsSequence.swift",
+      "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/EventsSequence.swift",
       "kind": "StringLiteral",
       "offset": 531,
       "length": 4,
       "value": "\"au\""
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/EventsSequence.swift",
+      "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/EventsSequence.swift",
       "kind": "StringLiteral",
       "offset": 537,
       "length": 4,
       "value": "\"ae\""
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/EventsSequence.swift",
+      "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/EventsSequence.swift",
       "kind": "StringLiteral",
       "offset": 543,
       "length": 4,
       "value": "\"ca\""
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/EventsSequence.swift",
+      "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/EventsSequence.swift",
       "kind": "StringLiteral",
       "offset": 549,
       "length": 4,
       "value": "\"uk\""
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/EventsSequence.swift",
+      "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/EventsSequence.swift",
       "kind": "StringLiteral",
       "offset": 555,
       "length": 4,
       "value": "\"nz\""
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/EventsSequence.swift",
+      "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/EventsSequence.swift",
       "kind": "StringLiteral",
       "offset": 561,
       "length": 4,
       "value": "\"ch\""
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/EventsSequence.swift",
+      "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/EventsSequence.swift",
       "kind": "StringLiteral",
       "offset": 567,
       "length": 4,
       "value": "\"ie\""
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/EventsSequence.swift",
+      "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/EventsSequence.swift",
       "kind": "StringLiteral",
       "offset": 573,
       "length": 4,
       "value": "\"se\""
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/EventsSequence.swift",
+      "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/EventsSequence.swift",
       "kind": "StringLiteral",
       "offset": 579,
       "length": 4,
       "value": "\"de\""
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/EventsSequence.swift",
+      "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/EventsSequence.swift",
       "kind": "StringLiteral",
       "offset": 585,
       "length": 4,
       "value": "\"no\""
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/EventsSequence.swift",
+      "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/EventsSequence.swift",
       "kind": "StringLiteral",
       "offset": 603,
       "length": 4,
       "value": "\"nl\""
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/EventsSequence.swift",
+      "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/EventsSequence.swift",
       "kind": "StringLiteral",
       "offset": 609,
       "length": 4,
       "value": "\"sg\""
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/EventsSequence.swift",
+      "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/EventsSequence.swift",
       "kind": "StringLiteral",
       "offset": 615,
       "length": 4,
       "value": "\"at\""
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/EventsSequence.swift",
+      "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/EventsSequence.swift",
       "kind": "StringLiteral",
       "offset": 621,
       "length": 4,
       "value": "\"jp\""
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/EventsSequence.swift",
+      "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/EventsSequence.swift",
       "kind": "StringLiteral",
       "offset": 627,
       "length": 4,
       "value": "\"dk\""
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/EventsSequence.swift",
+      "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/EventsSequence.swift",
       "kind": "StringLiteral",
       "offset": 633,
       "length": 4,
       "value": "\"fr\""
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/EventsSequence.swift",
+      "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/EventsSequence.swift",
       "kind": "StringLiteral",
       "offset": 639,
       "length": 4,
       "value": "\"fi\""
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/EventsSequence.swift",
+      "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/EventsSequence.swift",
       "kind": "StringLiteral",
       "offset": 645,
       "length": 4,
       "value": "\"be\""
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/EventsSequence.swift",
+      "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/EventsSequence.swift",
       "kind": "StringLiteral",
       "offset": 651,
       "length": 4,
       "value": "\"cn\""
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/EventsSequence.swift",
+      "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/EventsSequence.swift",
       "kind": "StringLiteral",
       "offset": 64,
       "length": 4,
       "value": "\"us\""
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/EventsSequence.swift",
+      "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/EventsSequence.swift",
       "kind": "StringLiteral",
       "offset": 88,
       "length": 10,
       "value": "\"top_tier\""
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/EventsSequence.swift",
+      "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/EventsSequence.swift",
       "kind": "StringLiteral",
       "offset": 121,
       "length": 13,
       "value": "\"bottom_tier\""
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/EventsSequence.swift",
+      "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/EventsSequence.swift",
       "kind": "StringLiteral",
       "offset": 799,
       "length": 8,
       "value": "\"sess_1\""
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/EventsSequence.swift",
+      "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/EventsSequence.swift",
       "kind": "StringLiteral",
       "offset": 824,
       "length": 4,
       "value": "\"D0\""
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/EventsSequence.swift",
+      "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/EventsSequence.swift",
       "kind": "StringLiteral",
       "offset": 845,
       "length": 4,
       "value": "\"D1\""
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/EventsSequence.swift",
+      "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/EventsSequence.swift",
       "kind": "StringLiteral",
       "offset": 866,
       "length": 4,
       "value": "\"D2\""
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/EventsSequence.swift",
+      "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/EventsSequence.swift",
       "kind": "StringLiteral",
       "offset": 887,
       "length": 4,
       "value": "\"D3\""
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/EventsSequence.swift",
+      "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/EventsSequence.swift",
       "kind": "IntegerLiteral",
       "offset": 984,
       "length": 2,
       "value": "-1"
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/EventsSequence.swift",
+      "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/EventsSequence.swift",
       "kind": "IntegerLiteral",
       "offset": 1034,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/EventsSequence.swift",
+      "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/EventsSequence.swift",
       "kind": "IntegerLiteral",
       "offset": 1075,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/EventsSequence.swift",
+      "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/EventsSequence.swift",
       "kind": "IntegerLiteral",
       "offset": 1116,
       "length": 1,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/EventsSequence.swift",
+      "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/EventsSequence.swift",
       "kind": "IntegerLiteral",
       "offset": 1157,
       "length": 1,
       "value": "3"
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/EventsSequence.swift",
+      "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/EventsSequence.swift",
       "kind": "StringLiteral",
       "offset": 799,
       "length": 8,
       "value": "\"sess_1\""
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/EventsSequence.swift",
+      "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/EventsSequence.swift",
       "kind": "StringLiteral",
       "offset": 824,
       "length": 4,
       "value": "\"D0\""
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/EventsSequence.swift",
+      "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/EventsSequence.swift",
       "kind": "StringLiteral",
       "offset": 845,
       "length": 4,
       "value": "\"D1\""
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/EventsSequence.swift",
+      "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/EventsSequence.swift",
       "kind": "StringLiteral",
       "offset": 866,
       "length": 4,
       "value": "\"D2\""
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/EventsSequence.swift",
+      "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/EventsSequence.swift",
       "kind": "StringLiteral",
       "offset": 887,
       "length": 4,
       "value": "\"D3\""
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/EventsSequence.swift",
+      "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/EventsSequence.swift",
       "kind": "StringLiteral",
       "offset": 1631,
       "length": 24,
       "value": "\"Timeframe out of bound\""
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/EventsSequence.swift",
+      "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/EventsSequence.swift",
       "kind": "StringLiteral",
       "offset": 1868,
       "length": 20,
       "value": "\"-ios_cv_sequences_\""
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/EventsSequence.swift",
+      "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/EventsSequence.swift",
       "kind": "StringLiteral",
       "offset": 1910,
       "length": 3,
       "value": "\"_\""
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/EventsSequence.swift",
+      "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/EventsSequence.swift",
       "kind": "StringLiteral",
       "offset": 2583,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/EventsSequence.swift",
+      "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/EventsSequence.swift",
       "kind": "StringLiteral",
       "offset": 2713,
       "length": 41,
       "value": "\"Loading file: \""
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/EventsSequence.swift",
+      "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/EventsSequence.swift",
       "kind": "StringLiteral",
       "offset": 2753,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/EventsSequence.swift",
+      "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/EventsSequence.swift",
       "kind": "StringLiteral",
       "offset": 3010,
       "length": 6,
       "value": "\"json\""
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/EventsSequence.swift",
+      "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/EventsSequence.swift",
       "kind": "StringLiteral",
       "offset": 3336,
       "length": 3,
       "value": "\"|\""
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/EventsSequence.swift",
+      "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/EventsSequence.swift",
       "kind": "IntegerLiteral",
       "offset": 3351,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/EventsSequence.swift",
+      "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/EventsSequence.swift",
       "kind": "StringLiteral",
       "offset": 3372,
       "length": 3,
       "value": "\"|\""
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/FixedSizeQueue.swift",
+      "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/FixedSizeQueue.swift",
       "kind": "IntegerLiteral",
       "offset": 240,
       "length": 2,
       "value": "-1"
     },
     {
-      "filePath": "\/Users\/filippo\/Projects\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/FixedSizeQueue.swift",
+      "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/FixedSizeQueue.swift",
       "kind": "IntegerLiteral",
       "offset": 442,
       "length": 1,
