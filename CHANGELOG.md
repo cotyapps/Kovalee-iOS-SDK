@@ -7,6 +7,16 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 <<<<<<< HEAD
 =======
+## [1.7.0] - 2024-02-05
+### :sparkles: New Features
+- [`429f1b4`](https://github.com/cotyapps/Kovalee-iOS-SDK/commit/429f1b458070708478f2c8c2e6619d69a3b8e71d) - added xcframework for VisionOS *(commit by [@fto-k](https://github.com/fto-k))*
+- [`bb710b8`](https://github.com/cotyapps/Kovalee-iOS-SDK/commit/bb710b8983a5470e145bff4e53707e0607425194) - added VisionOS Simulators support *(commit by [@fto-k](https://github.com/fto-k))*
+
+### :wrench: Chores
+- [`961940e`](https://github.com/cotyapps/Kovalee-iOS-SDK/commit/961940eb32677a047992a08eb47c703aeffb3a27) - testing support for vision-os *(commit by [@fto-k](https://github.com/fto-k))*
+- [`874f369`](https://github.com/cotyapps/Kovalee-iOS-SDK/commit/874f3692cc7efebef31f77aca594eae32ffabf2e) - re-enabling cathalyst support *(commit by [@fto-k](https://github.com/fto-k))*
+
+
 ## [1.6.3] - 2024-01-31
 ### :sparkles: New Features
 - [`5af5742`](https://github.com/cotyapps/Kovalee-iOS-SDK/commit/5af5742260fae9b467bdf5abdd07d97e0a66e6e4) - disabled IDFV tracking for GDPR reasons *(commit by [@fto-k](https://github.com/fto-k))*
@@ -269,3 +279,4 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 [1.6.1]: https://github.com/cotyapps/Kovalee-iOS-SDK/compare/1.6.0...1.6.1
 [1.6.2]: https://github.com/cotyapps/Kovalee-iOS-SDK/compare/1.6.1...1.6.2
 [1.6.3]: https://github.com/cotyapps/Kovalee-iOS-SDK/compare/1.6.2...1.6.3
+[1.7.0]: https://github.com/cotyapps/Kovalee-iOS-SDK/compare/1.6.3...1.7.0
