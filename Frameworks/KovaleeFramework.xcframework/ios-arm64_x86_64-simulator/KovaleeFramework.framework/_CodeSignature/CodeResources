@@ -18,11 +18,19 @@
 		</data>
 		<key>Modules/KovaleeFramework.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
+<<<<<<< HEAD
 		evutKuSsyZ0rQxR2/ZRTc+uxFzs=
 		</data>
 		<key>Modules/KovaleeFramework.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
 		iHNTqkfahzEXFFy6kAHh3Ol9RcY=
+=======
+		fc+zeejpWHE9axpTmpHR2p2GJ3k=
+		</data>
+		<key>Modules/KovaleeFramework.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
+		<data>
+		afwzY2wU09ZLM0SdeXjFjPp/H2c=
+>>>>>>> 44cfe72 (feat: implemented set AB test flag)
 		</data>
 		<key>Modules/KovaleeFramework.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -30,6 +38,7 @@
 		</data>
 		<key>Modules/KovaleeFramework.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
+<<<<<<< HEAD
 		iHNTqkfahzEXFFy6kAHh3Ol9RcY=
 		</data>
 		<key>Modules/KovaleeFramework.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
@@ -43,6 +52,21 @@
 		<key>Modules/KovaleeFramework.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
 		JKMUtj/BM0QNGaOD7LufO5WdUwg=
+=======
+		afwzY2wU09ZLM0SdeXjFjPp/H2c=
+		</data>
+		<key>Modules/KovaleeFramework.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
+		<data>
+		hI0NTTKQtLAAmCd/+aN20UGnrhY=
+		</data>
+		<key>Modules/KovaleeFramework.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
+		<data>
+		fc+zeejpWHE9axpTmpHR2p2GJ3k=
+		</data>
+		<key>Modules/KovaleeFramework.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
+		<data>
+		59HhdUrybi+iZjJT1DuL2opmo8o=
+>>>>>>> 44cfe72 (feat: implemented set AB test flag)
 		</data>
 		<key>Modules/KovaleeFramework.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -50,11 +74,19 @@
 		</data>
 		<key>Modules/KovaleeFramework.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
+<<<<<<< HEAD
 		JKMUtj/BM0QNGaOD7LufO5WdUwg=
 		</data>
 		<key>Modules/KovaleeFramework.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
 		vzzieECStobezO+yv7LdL6DyV8Q=
+=======
+		59HhdUrybi+iZjJT1DuL2opmo8o=
+		</data>
+		<key>Modules/KovaleeFramework.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
+		<data>
+		72mYlyBZwvmX/ySk9cYT+R2NsnU=
+>>>>>>> 44cfe72 (feat: implemented set AB test flag)
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -81,14 +113,22 @@
 		<dict>
 			<key>hash2</key>
 			<data>
+<<<<<<< HEAD
 			11CZbfvh4jHO3bhUYPTYKqlZ+i013JGymK6mf/MWi0s=
+=======
+			KJb6nawY16XY7/n/jye3kEY8DKspCGxCCp/Aal4x1o4=
+>>>>>>> 44cfe72 (feat: implemented set AB test flag)
 			</data>
 		</dict>
 		<key>Modules/KovaleeFramework.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
+<<<<<<< HEAD
 			4K5lvhxVmqio3EGRQElq1UB8ffDqLGkPT02tltXFtEk=
+=======
+			aQdHVjn08rrvG/lxt+uYbhby+nchyIshbNrKdmVXue4=
+>>>>>>> 44cfe72 (feat: implemented set AB test flag)
 			</data>
 		</dict>
 		<key>Modules/KovaleeFramework.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
@@ -102,28 +142,44 @@
 		<dict>
 			<key>hash2</key>
 			<data>
+<<<<<<< HEAD
 			4K5lvhxVmqio3EGRQElq1UB8ffDqLGkPT02tltXFtEk=
+=======
+			aQdHVjn08rrvG/lxt+uYbhby+nchyIshbNrKdmVXue4=
+>>>>>>> 44cfe72 (feat: implemented set AB test flag)
 			</data>
 		</dict>
 		<key>Modules/KovaleeFramework.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
+<<<<<<< HEAD
 			V+H9cA2dM59OjWpKEfxZRBj5BeD1ohK466arcrsZMc4=
+=======
+			4irGxdlfF6AAQHbl64ZwG9jWNBG/78nYUn4AVJvrITE=
+>>>>>>> 44cfe72 (feat: implemented set AB test flag)
 			</data>
 		</dict>
 		<key>Modules/KovaleeFramework.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
+<<<<<<< HEAD
 			11CZbfvh4jHO3bhUYPTYKqlZ+i013JGymK6mf/MWi0s=
+=======
+			KJb6nawY16XY7/n/jye3kEY8DKspCGxCCp/Aal4x1o4=
+>>>>>>> 44cfe72 (feat: implemented set AB test flag)
 			</data>
 		</dict>
 		<key>Modules/KovaleeFramework.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
+<<<<<<< HEAD
 			46/GmQQ1EruYkmJ2yFBvHhz8m7mSsIL0MTVNBGXzZic=
+=======
+			6cX1NeBag1O94HoP1V+ixKbpivt9uikDKoRpVQXSMgw=
+>>>>>>> 44cfe72 (feat: implemented set AB test flag)
 			</data>
 		</dict>
 		<key>Modules/KovaleeFramework.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
@@ -137,14 +193,22 @@
 		<dict>
 			<key>hash2</key>
 			<data>
+<<<<<<< HEAD
 			46/GmQQ1EruYkmJ2yFBvHhz8m7mSsIL0MTVNBGXzZic=
+=======
+			6cX1NeBag1O94HoP1V+ixKbpivt9uikDKoRpVQXSMgw=
+>>>>>>> 44cfe72 (feat: implemented set AB test flag)
 			</data>
 		</dict>
 		<key>Modules/KovaleeFramework.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
+<<<<<<< HEAD
 			igub/fz3l7/K8XDq0d++K+X1qp42kS4GxHM11YNnj/k=
+=======
+			iaAwcJiQ2QF9F60c761ybVRO0ptqmJQK2st8y4izRtw=
+>>>>>>> 44cfe72 (feat: implemented set AB test flag)
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
