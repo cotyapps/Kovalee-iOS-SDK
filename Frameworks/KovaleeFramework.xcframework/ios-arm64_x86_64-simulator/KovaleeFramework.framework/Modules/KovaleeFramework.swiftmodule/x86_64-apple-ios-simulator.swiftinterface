@@ -70,10 +70,10 @@ extension KovaleeFramework.KovaleeManager {
   #endif
 }
 extension KovaleeFramework.KovaleeManager {
-  public func startedPurchasing(subscriptionWithDuration duration: Swift.Int, fromSource source: Swift.String)
-  public func succesfullyPurchased(subscriptionWithProductId productId: Swift.String, andDuration duration: Swift.Int, fromSource source: Swift.String)
+  public func startedPurchasing(subscriptionWithId productId: Swift.String, fromSource source: Swift.String)
+  public func succesfullyPurchased(subscriptionWithProductId productId: Swift.String, fromSource source: Swift.String)
   public func paymentCancelledForSubscription(fromSource source: Swift.String)
-  public func paymentFailed(forSubscriptionWithDuration duration: Swift.Int, fromSource source: Swift.String)
+  public func paymentFailed(forSubscriptionWithId productId: Swift.String, fromSource source: Swift.String)
   public func paymentRestoredStart(fromSource source: Swift.String)
   public func paymentRestoredFailed(fromSource source: Swift.String)
   public func paymentRestored(fromSource source: Swift.String)
@@ -372,12 +372,12 @@ public enum DefaultEvents {
   case naAttActivate
   case naAttDeactivate
   case paymentCancel(source: Swift.String)
-  case paymentFailure(source: Swift.String, duration: Swift.Int)
-  case paymentFinish(source: Swift.String, duration: Swift.Int, product: Swift.String)
+  case paymentFailure(source: Swift.String, product: Swift.String)
+  case paymentFinish(source: Swift.String, product: Swift.String)
   case paymentRestoreStart(source: Swift.String)
   case paymentRestoreFinish(source: Swift.String)
   case paymentRestoreFail(source: Swift.String)
-  case paymentStart(source: Swift.String, duration: Swift.Int)
+  case paymentStart(source: Swift.String, product: Swift.String)
   case updateConversionValue(number: Swift.Int)
   case conversionValueError(error: Swift.String)
   case adsInterstitialShow
