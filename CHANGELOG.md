@@ -7,6 +7,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 <<<<<<< HEAD
 =======
+## [1.7.1] - 2024-02-09
+### :sparkles: New Features
+- [`1d31190`](https://github.com/cotyapps/Kovalee-iOS-SDK/commit/1d311908cef085d9bedc9e7c048ae23f08cdf6e5) - changed purchase events properties *(commit by [@fto-k](https://github.com/fto-k))*
+
+
 ## [1.7.0] - 2024-02-05
 ### :sparkles: New Features
 - [`429f1b4`](https://github.com/cotyapps/Kovalee-iOS-SDK/commit/429f1b458070708478f2c8c2e6619d69a3b8e71d) - added xcframework for VisionOS *(commit by [@fto-k](https://github.com/fto-k))*
@@ -280,3 +285,4 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 [1.6.2]: https://github.com/cotyapps/Kovalee-iOS-SDK/compare/1.6.1...1.6.2
 [1.6.3]: https://github.com/cotyapps/Kovalee-iOS-SDK/compare/1.6.2...1.6.3
 [1.7.0]: https://github.com/cotyapps/Kovalee-iOS-SDK/compare/1.6.3...1.7.0
+[1.7.1]: https://github.com/cotyapps/Kovalee-iOS-SDK/compare/1.7.0...1.7.1
