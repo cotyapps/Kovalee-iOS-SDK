@@ -61,9 +61,9 @@ public struct DebugView: View {
                     ABTestView()
                 }
 
-//                Section {
-//                    PurchaseCVView()
-//                }
+                Section {
+                    PurchaseCVView()
+                }
             }
             .navigationTitle("SDK Debug Console")
             .onChange(of: isDebugModeOn) { _ in
