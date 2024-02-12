@@ -5,6 +5,7 @@ import SwiftUI
 @available(iOS 16.0, *)
 public struct DebugView: View {
     @State private var isDebugModeOn = false
+    @State private var abTestValue: String?
 
     var installationDate: String? {
         guard let installationDate = Kovalee.appInstallationDate() else {
@@ -66,13 +67,20 @@ public struct DebugView: View {
                     PurchaseCVView()
                 }
 
-                if isDebugModeOn {
-                    Section {
+                Section {
+                    if let abTestValue {
+                        InfoLabel(title: "Current AB test Value:", value: abTestValue)
+                    }
+                    if isDebugModeOn {
                         ABTestView()
                     }
                 }
             }
+            .task {
+                self.abTestValue = await Kovalee.shared.kovaleeManager?.abTestValue(forKey: "ab_test_version")
+            }
             .navigationTitle("SDK Debug Console")
+            .navigationBarTitleDisplayMode(.inline)
             .onChange(of: isDebugModeOn) { _ in
                 Kovalee.shared.kovaleeManager?.setDebugMode(isDebugModeOn)
             }
@@ -107,14 +115,10 @@ struct InfoLabel: View {
 
 @available(iOS 16.0, *)
 struct ABTestView: View {
-    @State private var abTestValue: String?
     @State private var newABValue: String = ""
 
     var body: some View {
         Group {
-            if let abTestValue {
-                InfoLabel(title: "Current AB test Value:", value: abTestValue)
-            }
             TextField("Set AB test Value", text: $newABValue)
                 .keyboardType(.numberPad)
 
@@ -122,11 +126,6 @@ struct ABTestView: View {
                 Kovalee.shared.kovaleeManager?.setAbTestValue(newABValue)
             }
             .buttonStyle(.borderedProminent)
-        }
-        .onAppear {
-            Task {
-                self.abTestValue = await Kovalee.shared.kovaleeManager?.abTestValue(forKey: "ab_test_version")
-            }
         }
     }
 }
