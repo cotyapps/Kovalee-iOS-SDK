@@ -4,9 +4,6 @@ import SwiftUI
 
 @available(iOS 16.0, *)
 public struct DebugView: View {
-    @State private var abTestValue: String?
-    @State private var customerSubscriptions: Set<String>?
-
     @State private var isDebugModeOn = false
 
     var installationDate: String? {
@@ -64,23 +61,11 @@ public struct DebugView: View {
                     ABTestView()
                 }
 
-                if let customerSubscriptions {
-                    Section {
-                        VStack(alignment: .leading) {
-                            Text("Customer Subscriptions:").bold()
-                            ForEach(Array(customerSubscriptions), id: \.self) {
-                                Text($0)
-                            }
-                        }
-                    }
+                Section {
+                    PurchaseCVView()
                 }
             }
             .navigationTitle("SDK Debug Console")
-            .onAppear {
-                Task {
-                    self.customerSubscriptions = try? await Kovalee.shared.kovaleeManager?.customerInfo()?.activeSubscriptions
-                }
-            }
             .onChange(of: isDebugModeOn) { _ in
                 Kovalee.shared.kovaleeManager?.setDebugMode(isDebugModeOn)
             }
@@ -134,6 +119,37 @@ struct ABTestView: View {
         .onAppear {
             Task {
                 self.abTestValue = await Kovalee.shared.kovaleeManager?.abTestValue(forKey: "ab_test_version")
+            }
+        }
+    }
+}
+
+@available(iOS 16.0, *)
+struct PurchaseCVView: View {
+    @State private var customerSubscriptions: Set<String>?
+
+    var body: some View {
+        VStack(alignment: .leading) {
+            Text("Customer Subscriptions:").bold()
+            if let customerSubscriptions {
+                ForEach(Array(customerSubscriptions), id: \.self) { subscription in
+                    HStack {
+                        Text(subscription)
+
+                        Button("Simulate Purchase") {
+                            Kovalee.shared.kovaleeManager?.succesfullyPurchased(
+                                subscriptionWithProductId: subscription,
+                                fromSource: "debug"
+                            )
+                        }
+                        .buttonStyle(.borderedProminent)
+                    }
+                }
+            }
+        }
+        .onAppear {
+            Task {
+                self.customerSubscriptions = try? await Kovalee.shared.kovaleeManager?.customerInfo()?.activeSubscriptions
             }
         }
     }
