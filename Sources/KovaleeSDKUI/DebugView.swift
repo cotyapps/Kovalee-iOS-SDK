@@ -20,6 +20,11 @@ public struct DebugView: View {
             List {
                 Toggle("Enable Debug Mode", isOn: $isDebugModeOn)
 
+                InfoLabel(
+                    title: "Configuration:",
+                    value: Kovalee.shared.configuration.environment.rawValue
+                )
+
                 Section {
                     InfoLabel(
                         title: "SDK Initialized:",
@@ -58,11 +63,13 @@ public struct DebugView: View {
                 }
 
                 Section {
-                    ABTestView()
+                    PurchaseCVView()
                 }
 
-                Section {
-                    PurchaseCVView()
+                if isDebugModeOn {
+                    Section {
+                        ABTestView()
+                    }
                 }
             }
             .navigationTitle("SDK Debug Console")
@@ -130,13 +137,15 @@ struct PurchaseCVView: View {
 
     var body: some View {
         VStack(alignment: .leading) {
-            Text("Customer Subscriptions:").bold()
             if let customerSubscriptions {
+                Text("Active Subscriptions:").bold()
                 ForEach(Array(customerSubscriptions), id: \.self) { subscription in
                     HStack {
                         Text(subscription)
                     }
                 }
+            } else {
+                Text("No Subscriptions purchased")
             }
         }
         .task {
