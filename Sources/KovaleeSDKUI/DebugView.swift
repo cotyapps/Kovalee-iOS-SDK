@@ -61,9 +61,9 @@ public struct DebugView: View {
                     ABTestView()
                 }
 
-                Section {
-                    PurchaseCVView()
-                }
+//                Section {
+//                    PurchaseCVView()
+//                }
             }
             .navigationTitle("SDK Debug Console")
             .onChange(of: isDebugModeOn) { _ in
@@ -135,22 +135,12 @@ struct PurchaseCVView: View {
                 ForEach(Array(customerSubscriptions), id: \.self) { subscription in
                     HStack {
                         Text(subscription)
-
-                        Button("Simulate Purchase") {
-                            Kovalee.shared.kovaleeManager?.succesfullyPurchased(
-                                subscriptionWithProductId: subscription,
-                                fromSource: "debug"
-                            )
-                        }
-                        .buttonStyle(.borderedProminent)
                     }
                 }
             }
         }
-        .onAppear {
-            Task {
-                self.customerSubscriptions = try? await Kovalee.shared.kovaleeManager?.customerInfo()?.activeSubscriptions
-            }
+        .task {
+            self.customerSubscriptions = try? await Kovalee.shared.kovaleeManager?.customerInfo()?.activeSubscriptions
         }
     }
 }
