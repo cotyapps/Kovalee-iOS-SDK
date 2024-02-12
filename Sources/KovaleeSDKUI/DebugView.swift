@@ -9,6 +9,15 @@ public struct DebugView: View {
 
     @State private var isDebugModeOn = false
 
+    var installationDate: String? {
+        guard let installationDate = Kovalee.appInstallationDate() else {
+            return nil
+        }
+        let formatter = DateFormatter()
+        formatter.dateStyle = .short
+        return formatter.string(from: installationDate)
+    }
+
     public var body: some View {
         NavigationView {
             List {
@@ -19,10 +28,19 @@ public struct DebugView: View {
                         title: "SDK Initialized:",
                         value: Kovalee.isInitialized ? "✅" : "❌"
                     )
-                    InfoLabel(
-                        title: "Data collection enabled:",
-                        value: Kovalee.isDataCollectionEnabled() ? "✅" : "❌"
-                    )
+                    if let installationDate {
+                        InfoLabel(
+                            title: "Installation Date",
+                            value: installationDate
+                        )
+                    }
+                    if let conversionValue = Kovalee.shared.kovaleeManager?.userConversionValue() {
+                        InfoLabel(
+                            title: "Conversion Value",
+                            value: "\(conversionValue)"
+                        )
+                    }
+
                     if let userId = Kovalee.getAmplitudeUserId() {
                         InfoLabel(
                             title: "Amplitude User Id:",
