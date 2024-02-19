@@ -23,6 +23,7 @@ public class KovaleeManager {
   public func setDefaultUserId()
   public func installationDate() -> Foundation.Date?
   public func appOpeningCount() -> Swift.Int
+  public func userConversionValue() -> Swift.Int
   public func sendEvent(_ event: KovaleeFramework.Event)
   public func setAmplitudeUserId(userId: Swift.String)
   public func amplitudeUserId() -> Swift.String?
@@ -32,6 +33,7 @@ public class KovaleeManager {
   public func sendAppOpenEvent()
   public func isDataCollectionEnabled() -> Swift.Bool
   public func setDataCollectionEnabled(_ enabled: Swift.Bool)
+  public func setDebugMode(_ on: Swift.Bool)
   public var attributionManager: (any KovaleeFramework.AttributionManager)?
   public var trackerManager: (any KovaleeFramework.EventTrackerManager)?
   public var purchaseManager: (any KovaleeFramework.PurchaseManager)?
@@ -60,7 +62,7 @@ extension KovaleeFramework.KovaleeManager {
   public func restorePurchases(fromSource source: Swift.String) async throws -> (any KovaleeFramework.AbstractCustomerInfo)?
   #endif
   #if compiler(>=5.3) && $AsyncAwait
-  public func purchaseSubscription(withIdentifier subscriptionId: Swift.String, andDuration duration: Swift.Int, fromSource source: Swift.String) async throws -> (any KovaleeFramework.AbstractPurchaseResultData)?
+  public func purchaseSubscription(withIdentifier subscriptionId: Swift.String, andDuration _: Swift.Int, fromSource source: Swift.String) async throws -> (any KovaleeFramework.AbstractPurchaseResultData)?
   #endif
   #if compiler(>=5.3) && $AsyncAwait
   public func purchase(package: any KovaleeFramework.AbstractPackage, fromSource source: Swift.String) async throws -> (any KovaleeFramework.AbstractPurchaseResultData)?
