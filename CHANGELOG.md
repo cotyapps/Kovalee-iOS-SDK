@@ -7,6 +7,27 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 <<<<<<< HEAD
 =======
+## [1.8.0] - 2024-02-19
+### :sparkles: New Features
+- [`557b0aa`](https://github.com/cotyapps/Kovalee-iOS-SDK/commit/557b0aa87ef3c363d8169a943f5165fdd09cdac1) - implemented ViewModifier to load DebugView *(commit by [@fto-k](https://github.com/fto-k))*
+- [`49f56e2`](https://github.com/cotyapps/Kovalee-iOS-SDK/commit/49f56e28d742dba8e54af676030a21faae21ec8f) - added a few data point to DebugView *(commit by [@fto-k](https://github.com/fto-k))*
+- [`78f32b3`](https://github.com/cotyapps/Kovalee-iOS-SDK/commit/78f32b374e4380787422591318db8222d1908d50) - updated UI *(commit by [@fto-k](https://github.com/fto-k))*
+- [`1bf338d`](https://github.com/cotyapps/Kovalee-iOS-SDK/commit/1bf338d804d4bfc402a192b4287a4344ea4d4263) - implemented set AB test flag *(commit by [@fto-k](https://github.com/fto-k))*
+- [`0383307`](https://github.com/cotyapps/Kovalee-iOS-SDK/commit/0383307ec577b3ef7da7391edea3e62e7138a6b9) - exposing conversion value *(commit by [@fto-k](https://github.com/fto-k))*
+- [`56d7491`](https://github.com/cotyapps/Kovalee-iOS-SDK/commit/56d7491d23209d62726b16015c77f98e7aab0168) - debug-mode conversion value test *(commit by [@fto-k](https://github.com/fto-k))*
+- [`c79bacb`](https://github.com/cotyapps/Kovalee-iOS-SDK/commit/c79bacb966a696e57b48941497f9d99844dde705) - added print debug *(commit by [@fto-k](https://github.com/fto-k))*
+- [`bbe04f3`](https://github.com/cotyapps/Kovalee-iOS-SDK/commit/bbe04f3f69cfb1c74537857445bfe773b7a44a96) - restored only ABTestValue *(commit by [@fto-k](https://github.com/fto-k))*
+- [`9ccc81a`](https://github.com/cotyapps/Kovalee-iOS-SDK/commit/9ccc81a9089de4c2dca800a98b6c883b4f6bf6f2) - display current user active subscriptions *(commit by [@fto-k](https://github.com/fto-k))*
+- [`acd39b1`](https://github.com/cotyapps/Kovalee-iOS-SDK/commit/acd39b1eee0fc41a850a3d123f06415f4c5c69cd) - showing current configuration *(commit by [@fto-k](https://github.com/fto-k))*
+- [`f7151e8`](https://github.com/cotyapps/Kovalee-iOS-SDK/commit/f7151e89ee852eafdbb449ef5548fbeb03dae78e) - UI fixes *(commit by [@fto-k](https://github.com/fto-k))*
+- [`3f52777`](https://github.com/cotyapps/Kovalee-iOS-SDK/commit/3f527777f3e4b41658f9255a6555b2c6462fe12a) - changed purchase events properties *(commit by [@fto-k](https://github.com/fto-k))*
+- [`9567d55`](https://github.com/cotyapps/Kovalee-iOS-SDK/commit/9567d55a7a97545da1b981d79e4d8bb32ce18ebe) - updated KovaleeFramework *(commit by [@fto-k](https://github.com/fto-k))*
+- [`2706f4d`](https://github.com/cotyapps/Kovalee-iOS-SDK/commit/2706f4d866a15e4d77b7efa20261b7314e14e2f7) - implemented ViewModifier to load DebugView *(commit by [@fto-k](https://github.com/fto-k))*
+
+### :bug: Bug Fixes
+- [`51ca101`](https://github.com/cotyapps/Kovalee-iOS-SDK/commit/51ca101e72b56e0a929519277d8955cca2ace131) - fixed merge conflict *(commit by [@fto-k](https://github.com/fto-k))*
+
+
 ## [1.7.1] - 2024-02-09
 ### :sparkles: New Features
 - [`1d31190`](https://github.com/cotyapps/Kovalee-iOS-SDK/commit/1d311908cef085d9bedc9e7c048ae23f08cdf6e5) - changed purchase events properties *(commit by [@fto-k](https://github.com/fto-k))*
@@ -286,3 +307,4 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 [1.6.3]: https://github.com/cotyapps/Kovalee-iOS-SDK/compare/1.6.2...1.6.3
 [1.7.0]: https://github.com/cotyapps/Kovalee-iOS-SDK/compare/1.6.3...1.7.0
 [1.7.1]: https://github.com/cotyapps/Kovalee-iOS-SDK/compare/1.7.0...1.7.1
+[1.8.0]: https://github.com/cotyapps/Kovalee-iOS-SDK/compare/1.7.1...1.8.0
