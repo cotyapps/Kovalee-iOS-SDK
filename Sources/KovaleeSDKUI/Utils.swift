@@ -16,15 +16,11 @@ struct ShakeDetectorModifier: ViewModifier {
                 self.isDebugViewPresented = true
             }
             .sheet(isPresented: $isDebugViewPresented) {
-<<<<<<< HEAD
                 if #available(iOS 16.0, *) {
                     DebugView()
                 } else {
                     Text("Debug view is supported in iOS 16+")
                 }
-=======
-                DebugView()
->>>>>>> 6ce946f (feat: implemented ViewModifier to load DebugView)
             }
     }
 }
@@ -42,10 +38,6 @@ struct DeviceShakeViewModifier: ViewModifier {
     }
 }
 
-<<<<<<< HEAD
-=======
-// A View extension to make the modifier easier to use.
->>>>>>> 6ce946f (feat: implemented ViewModifier to load DebugView)
 extension View {
     func onShake(perform action: @escaping () -> Void) -> some View {
         modifier(DeviceShakeViewModifier(action: action))

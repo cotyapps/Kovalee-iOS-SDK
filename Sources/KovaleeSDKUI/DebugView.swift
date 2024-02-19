@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 import KovaleeFramework
 import KovaleeSDK
 import SwiftUI
@@ -153,16 +152,3 @@ struct PurchaseCVView: View {
         }
     }
 }
-=======
-import SwiftUI
-
-public struct DebugView: View {
-    public var body: some View {
-        Text("Hello, World!")
-    }
-}
-
-#Preview {
-    DebugView()
-}
->>>>>>> 6ce946f (feat: implemented ViewModifier to load DebugView)
