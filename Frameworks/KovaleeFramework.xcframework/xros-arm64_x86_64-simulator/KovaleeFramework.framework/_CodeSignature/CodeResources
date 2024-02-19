@@ -18,19 +18,11 @@
 		</data>
 		<key>Modules/KovaleeFramework.swiftmodule/arm64-apple-xros-simulator.abi.json</key>
 		<data>
-<<<<<<< HEAD
 		bPzqqT7UOdmFlnk50+jSDY1w0do=
 		</data>
 		<key>Modules/KovaleeFramework.swiftmodule/arm64-apple-xros-simulator.private.swiftinterface</key>
 		<data>
 		3sZ3yGMlwFqzg84AoOmAyBvOu7g=
-=======
-		evutKuSsyZ0rQxR2/ZRTc+uxFzs=
-		</data>
-		<key>Modules/KovaleeFramework.swiftmodule/arm64-apple-xros-simulator.private.swiftinterface</key>
-		<data>
-		/4tUUPTQnIyTNJ3tykaTbIQ+sMo=
->>>>>>> 1d31190 (feat: changed purchase events properties)
 		</data>
 		<key>Modules/KovaleeFramework.swiftmodule/arm64-apple-xros-simulator.swiftdoc</key>
 		<data>
@@ -38,7 +30,6 @@
 		</data>
 		<key>Modules/KovaleeFramework.swiftmodule/arm64-apple-xros-simulator.swiftinterface</key>
 		<data>
-<<<<<<< HEAD
 		3sZ3yGMlwFqzg84AoOmAyBvOu7g=
 		</data>
 		<key>Modules/KovaleeFramework.swiftmodule/arm64-apple-xros-simulator.swiftmodule</key>
@@ -52,21 +43,6 @@
 		<key>Modules/KovaleeFramework.swiftmodule/x86_64-apple-xros-simulator.private.swiftinterface</key>
 		<data>
 		zdJfU+7d7bDuX6iJWYA52noDvug=
-=======
-		/4tUUPTQnIyTNJ3tykaTbIQ+sMo=
-		</data>
-		<key>Modules/KovaleeFramework.swiftmodule/arm64-apple-xros-simulator.swiftmodule</key>
-		<data>
-		B7Cn1IjcTJIoNjZKiEWBjo02t1Y=
-		</data>
-		<key>Modules/KovaleeFramework.swiftmodule/x86_64-apple-xros-simulator.abi.json</key>
-		<data>
-		evutKuSsyZ0rQxR2/ZRTc+uxFzs=
-		</data>
-		<key>Modules/KovaleeFramework.swiftmodule/x86_64-apple-xros-simulator.private.swiftinterface</key>
-		<data>
-		xJTwNSSPiVGgrnAsCcvd+Ehf9rU=
->>>>>>> 1d31190 (feat: changed purchase events properties)
 		</data>
 		<key>Modules/KovaleeFramework.swiftmodule/x86_64-apple-xros-simulator.swiftdoc</key>
 		<data>
@@ -74,19 +50,11 @@
 		</data>
 		<key>Modules/KovaleeFramework.swiftmodule/x86_64-apple-xros-simulator.swiftinterface</key>
 		<data>
-<<<<<<< HEAD
 		zdJfU+7d7bDuX6iJWYA52noDvug=
 		</data>
 		<key>Modules/KovaleeFramework.swiftmodule/x86_64-apple-xros-simulator.swiftmodule</key>
 		<data>
 		seSKCi7AhvLhrEXP+VWzExuttyU=
-=======
-		xJTwNSSPiVGgrnAsCcvd+Ehf9rU=
-		</data>
-		<key>Modules/KovaleeFramework.swiftmodule/x86_64-apple-xros-simulator.swiftmodule</key>
-		<data>
-		Iprn8/tyZnBfUffUr3QkfhnJfzw=
->>>>>>> 1d31190 (feat: changed purchase events properties)
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -113,22 +81,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-<<<<<<< HEAD
 			DMzU2b+kIoT1xizGqOYd8uQkTCK6i1k0G8GDOnkooO4=
-=======
-			11CZbfvh4jHO3bhUYPTYKqlZ+i013JGymK6mf/MWi0s=
->>>>>>> 1d31190 (feat: changed purchase events properties)
 			</data>
 		</dict>
 		<key>Modules/KovaleeFramework.swiftmodule/arm64-apple-xros-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-<<<<<<< HEAD
 			ZK33oLx0nHCUPlJy2JeiHsVt45zuKeF/3ma+Vl4z2ec=
-=======
-			LK/LUlMsGzTd7wo4yq1zIgdfMqwlZhCFumlM7IyxQrw=
->>>>>>> 1d31190 (feat: changed purchase events properties)
 			</data>
 		</dict>
 		<key>Modules/KovaleeFramework.swiftmodule/arm64-apple-xros-simulator.swiftdoc</key>
@@ -142,44 +102,28 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-<<<<<<< HEAD
 			ZK33oLx0nHCUPlJy2JeiHsVt45zuKeF/3ma+Vl4z2ec=
-=======
-			LK/LUlMsGzTd7wo4yq1zIgdfMqwlZhCFumlM7IyxQrw=
->>>>>>> 1d31190 (feat: changed purchase events properties)
 			</data>
 		</dict>
 		<key>Modules/KovaleeFramework.swiftmodule/arm64-apple-xros-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-<<<<<<< HEAD
 			zmEToKNKBb9pGJcibGXsHP9sXcT2D7FjHZV6PR8NmbI=
-=======
-			t9RWdQc3kR7iwFAWUxWA4G49Fn0oBhb4L1lc0okoOXo=
->>>>>>> 1d31190 (feat: changed purchase events properties)
 			</data>
 		</dict>
 		<key>Modules/KovaleeFramework.swiftmodule/x86_64-apple-xros-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-<<<<<<< HEAD
 			DMzU2b+kIoT1xizGqOYd8uQkTCK6i1k0G8GDOnkooO4=
-=======
-			11CZbfvh4jHO3bhUYPTYKqlZ+i013JGymK6mf/MWi0s=
->>>>>>> 1d31190 (feat: changed purchase events properties)
 			</data>
 		</dict>
 		<key>Modules/KovaleeFramework.swiftmodule/x86_64-apple-xros-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-<<<<<<< HEAD
 			HP+HB5tjR/GLbobOlyfCe+wREfSaa7UqGmlHysajWKs=
-=======
-			CytO8n/Jxfb2yrzLzcpzH3apg1a91ynHfmyC+QDo9Rc=
->>>>>>> 1d31190 (feat: changed purchase events properties)
 			</data>
 		</dict>
 		<key>Modules/KovaleeFramework.swiftmodule/x86_64-apple-xros-simulator.swiftdoc</key>
@@ -193,22 +137,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-<<<<<<< HEAD
 			HP+HB5tjR/GLbobOlyfCe+wREfSaa7UqGmlHysajWKs=
-=======
-			CytO8n/Jxfb2yrzLzcpzH3apg1a91ynHfmyC+QDo9Rc=
->>>>>>> 1d31190 (feat: changed purchase events properties)
 			</data>
 		</dict>
 		<key>Modules/KovaleeFramework.swiftmodule/x86_64-apple-xros-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-<<<<<<< HEAD
 			ed3X5L23AXIfxQ0z2xJUsbloW+W6KbqS03m+Fd4Vj7o=
-=======
-			POnDrTG4J3A7f7oDchTOgOifVXZ8OHixzLtLbuZ6+gA=
->>>>>>> 1d31190 (feat: changed purchase events properties)
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

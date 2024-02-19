@@ -12493,209 +12493,133 @@
     {
       "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
       "kind": "StringLiteral",
-<<<<<<< HEAD
       "offset": 11564,
-=======
-      "offset": 11325,
->>>>>>> 1d31190 (feat: changed purchase events properties)
       "length": 5,
       "value": "\"yes\""
     },
     {
       "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
       "kind": "StringLiteral",
-<<<<<<< HEAD
       "offset": 13216,
-=======
-      "offset": 12977,
->>>>>>> 1d31190 (feat: changed purchase events properties)
       "length": 87,
       "value": "\"🛰️ Retrieved value \""
     },
     {
       "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
       "kind": "StringLiteral",
-<<<<<<< HEAD
       "offset": 13283,
-=======
-      "offset": 13044,
->>>>>>> 1d31190 (feat: changed purchase events properties)
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
       "kind": "StringLiteral",
-<<<<<<< HEAD
       "offset": 13286,
-=======
-      "offset": 13047,
->>>>>>> 1d31190 (feat: changed purchase events properties)
       "length": 3,
       "value": "\" for key: \""
     },
     {
       "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
       "kind": "StringLiteral",
-<<<<<<< HEAD
       "offset": 13302,
-=======
-      "offset": 13063,
->>>>>>> 1d31190 (feat: changed purchase events properties)
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
       "kind": "StringLiteral",
-<<<<<<< HEAD
       "offset": 13599,
-=======
-      "offset": 13360,
->>>>>>> 1d31190 (feat: changed purchase events properties)
       "length": 48,
       "value": "\"🛰️ Couldn't find any stored AB test value\""
     },
     {
       "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
       "kind": "StringLiteral",
-<<<<<<< HEAD
       "offset": 13705,
-=======
-      "offset": 13466,
->>>>>>> 1d31190 (feat: changed purchase events properties)
       "length": 56,
       "value": "\"🛰️ Fetched AB Experiment value from local storage\""
     },
     {
       "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
       "kind": "StringLiteral",
-<<<<<<< HEAD
       "offset": 14074,
-=======
-      "offset": 13835,
->>>>>>> 1d31190 (feat: changed purchase events properties)
       "length": 83,
       "value": "\"🛰️ User already partecipated in a different experiment with \""
     },
     {
       "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
       "kind": "StringLiteral",
-<<<<<<< HEAD
       "offset": 14156,
-=======
-      "offset": 13917,
->>>>>>> 1d31190 (feat: changed purchase events properties)
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
       "kind": "StringLiteral",
-<<<<<<< HEAD
       "offset": 14389,
-=======
-      "offset": 14150,
->>>>>>> 1d31190 (feat: changed purchase events properties)
       "length": 56,
       "value": "\"🛰️ Fetched AB Experiment value from local storage\""
     },
     {
       "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
       "kind": "StringLiteral",
-<<<<<<< HEAD
       "offset": 14668,
-=======
-      "offset": 14429,
->>>>>>> 1d31190 (feat: changed purchase events properties)
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
       "kind": "StringLiteral",
-<<<<<<< HEAD
       "offset": 15067,
-=======
-      "offset": 14828,
->>>>>>> 1d31190 (feat: changed purchase events properties)
       "length": 17,
       "value": "\"ab_test_version\""
     },
     {
       "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
       "kind": "StringLiteral",
-<<<<<<< HEAD
       "offset": 15606,
-=======
-      "offset": 15069,
->>>>>>> 1d31190 (feat: changed purchase events properties)
       "length": 49,
       "value": "\"🛰️ User has already an ab test version set\""
     },
     {
       "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
       "kind": "StringLiteral",
-<<<<<<< HEAD
       "offset": 15883,
-=======
-      "offset": 15346,
->>>>>>> 1d31190 (feat: changed purchase events properties)
       "length": 55,
       "value": "\"🛰️ Fetched AB value from local storage: \""
     },
     {
       "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
       "kind": "StringLiteral",
-<<<<<<< HEAD
       "offset": 15937,
-=======
-      "offset": 15400,
->>>>>>> 1d31190 (feat: changed purchase events properties)
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
       "kind": "StringLiteral",
-<<<<<<< HEAD
       "offset": 16533,
-=======
-      "offset": 15996,
->>>>>>> 1d31190 (feat: changed purchase events properties)
       "length": 27,
       "value": "\"creating interstitial ad \""
     },
     {
       "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
       "kind": "StringLiteral",
-<<<<<<< HEAD
       "offset": 16699,
-=======
-      "offset": 16162,
->>>>>>> 1d31190 (feat: changed purchase events properties)
       "length": 25,
       "value": "\"display interstitial ad\""
     },
     {
       "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
       "kind": "StringLiteral",
-<<<<<<< HEAD
       "offset": 16912,
-=======
-      "offset": 16375,
->>>>>>> 1d31190 (feat: changed purchase events properties)
       "length": 22,
       "value": "\"creating rewarded ad\""
     },
     {
       "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
       "kind": "StringLiteral",
-<<<<<<< HEAD
       "offset": 17075,
-=======
-      "offset": 16538,
->>>>>>> 1d31190 (feat: changed purchase events properties)
       "length": 21,
       "value": "\"display rewarded ad\""
     },
@@ -13451,528 +13375,336 @@
     {
       "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/Event+Defaults.swift",
       "kind": "StringLiteral",
-<<<<<<< HEAD
       "offset": 722,
-=======
-      "offset": 713,
->>>>>>> 1d31190 (feat: changed purchase events properties)
       "length": 16,
       "value": "\"first_app_open\""
     },
     {
       "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/Event+Defaults.swift",
       "kind": "StringLiteral",
-<<<<<<< HEAD
       "offset": 781,
-=======
-      "offset": 772,
->>>>>>> 1d31190 (feat: changed purchase events properties)
       "length": 10,
       "value": "\"app_open\""
     },
     {
       "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/Event+Defaults.swift",
       "kind": "StringLiteral",
-<<<<<<< HEAD
       "offset": 840,
-=======
-      "offset": 831,
->>>>>>> 1d31190 (feat: changed purchase events properties)
       "length": 17,
       "value": "\"na_att_activate\""
     },
     {
       "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/Event+Defaults.swift",
       "kind": "StringLiteral",
-<<<<<<< HEAD
       "offset": 908,
-=======
-      "offset": 899,
->>>>>>> 1d31190 (feat: changed purchase events properties)
       "length": 19,
       "value": "\"na_att_deactivate\""
     },
     {
       "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/Event+Defaults.swift",
       "kind": "StringLiteral",
-<<<<<<< HEAD
       "offset": 976,
-=======
-      "offset": 967,
->>>>>>> 1d31190 (feat: changed purchase events properties)
       "length": 16,
       "value": "\"payment_cancel\""
     },
     {
       "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/Event+Defaults.swift",
       "kind": "StringLiteral",
-<<<<<<< HEAD
       "offset": 1042,
-=======
-      "offset": 1033,
->>>>>>> 1d31190 (feat: changed purchase events properties)
       "length": 17,
       "value": "\"payment_failure\""
     },
     {
       "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/Event+Defaults.swift",
       "kind": "StringLiteral",
-<<<<<<< HEAD
       "offset": 1108,
-=======
-      "offset": 1099,
->>>>>>> 1d31190 (feat: changed purchase events properties)
       "length": 16,
       "value": "\"payment_finish\""
     },
     {
       "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/Event+Defaults.swift",
       "kind": "StringLiteral",
-<<<<<<< HEAD
       "offset": 1179,
-=======
-      "offset": 1155,
->>>>>>> 1d31190 (feat: changed purchase events properties)
       "length": 23,
       "value": "\"payment_restore_start\""
     },
     {
       "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/Event+Defaults.swift",
       "kind": "StringLiteral",
-<<<<<<< HEAD
       "offset": 1258,
-=======
-      "offset": 1234,
->>>>>>> 1d31190 (feat: changed purchase events properties)
       "length": 24,
       "value": "\"payment_restore_finish\""
     },
     {
       "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/Event+Defaults.swift",
       "kind": "StringLiteral",
-<<<<<<< HEAD
       "offset": 1336,
-=======
-      "offset": 1312,
->>>>>>> 1d31190 (feat: changed purchase events properties)
       "length": 22,
       "value": "\"payment_restore_fail\""
     },
     {
       "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/Event+Defaults.swift",
       "kind": "StringLiteral",
-<<<<<<< HEAD
       "offset": 1406,
-=======
-      "offset": 1382,
->>>>>>> 1d31190 (feat: changed purchase events properties)
       "length": 15,
       "value": "\"payment_start\""
     },
     {
       "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/Event+Defaults.swift",
       "kind": "StringLiteral",
-<<<<<<< HEAD
       "offset": 1478,
-=======
-      "offset": 1454,
->>>>>>> 1d31190 (feat: changed purchase events properties)
       "length": 25,
       "value": "\"update_conversion_value\""
     },
     {
       "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/Event+Defaults.swift",
       "kind": "StringLiteral",
-<<<<<<< HEAD
       "offset": 1559,
-=======
-      "offset": 1520,
->>>>>>> 1d31190 (feat: changed purchase events properties)
       "length": 24,
       "value": "\"conversion_value_error\""
     },
     {
       "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/Event+Defaults.swift",
       "kind": "StringLiteral",
-<<<<<<< HEAD
       "offset": 1638,
-=======
-      "offset": 1599,
->>>>>>> 1d31190 (feat: changed purchase events properties)
       "length": 23,
       "value": "\"ads_interstitial_show\""
     },
     {
       "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/Event+Defaults.swift",
       "kind": "StringLiteral",
-<<<<<<< HEAD
       "offset": 1712,
-=======
-      "offset": 1673,
->>>>>>> 1d31190 (feat: changed purchase events properties)
       "length": 19,
       "value": "\"ads_rewarded_show\""
     },
     {
       "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/Event+Defaults.swift",
       "kind": "StringLiteral",
-<<<<<<< HEAD
       "offset": 1864,
-=======
-      "offset": 1822,
->>>>>>> 1d31190 (feat: changed purchase events properties)
       "length": 6,
       "value": "\"name\""
     },
     {
       "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/Event+Defaults.swift",
       "kind": "StringLiteral",
-<<<<<<< HEAD
       "offset": 1872,
-=======
-      "offset": 1830,
->>>>>>> 1d31190 (feat: changed purchase events properties)
       "length": 12,
       "value": "\"att_prompt\""
     },
     {
       "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/Event+Defaults.swift",
       "kind": "StringLiteral",
-<<<<<<< HEAD
       "offset": 1937,
-=======
-      "offset": 1895,
->>>>>>> 1d31190 (feat: changed purchase events properties)
       "length": 6,
       "value": "\"name\""
     },
     {
       "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/Event+Defaults.swift",
       "kind": "StringLiteral",
-<<<<<<< HEAD
       "offset": 1945,
-=======
-      "offset": 1903,
->>>>>>> 1d31190 (feat: changed purchase events properties)
       "length": 12,
       "value": "\"att_prompt\""
     },
     {
       "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/Event+Defaults.swift",
       "kind": "StringLiteral",
-<<<<<<< HEAD
       "offset": 2038,
-=======
-      "offset": 1996,
->>>>>>> 1d31190 (feat: changed purchase events properties)
       "length": 8,
       "value": "\"source\""
     },
     {
       "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/Event+Defaults.swift",
       "kind": "StringLiteral",
-<<<<<<< HEAD
       "offset": 2160,
-=======
-      "offset": 2121,
->>>>>>> 1d31190 (feat: changed purchase events properties)
       "length": 8,
       "value": "\"source\""
     },
     {
       "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/Event+Defaults.swift",
       "kind": "StringLiteral",
-<<<<<<< HEAD
       "offset": 2194,
-=======
-      "offset": 2155,
->>>>>>> 1d31190 (feat: changed purchase events properties)
       "length": 6,
       "value": "\"name\""
     },
     {
       "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/Event+Defaults.swift",
       "kind": "StringLiteral",
-<<<<<<< HEAD
       "offset": 2316,
-=======
-      "offset": 2280,
->>>>>>> 1d31190 (feat: changed purchase events properties)
       "length": 8,
       "value": "\"source\""
     },
     {
       "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/Event+Defaults.swift",
       "kind": "StringLiteral",
-<<<<<<< HEAD
       "offset": 2350,
-=======
-      "offset": 2314,
->>>>>>> 1d31190 (feat: changed purchase events properties)
       "length": 6,
       "value": "\"name\""
     },
     {
       "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/Event+Defaults.swift",
       "kind": "StringLiteral",
-<<<<<<< HEAD
       "offset": 2544,
-=======
-      "offset": 2489,
->>>>>>> 1d31190 (feat: changed purchase events properties)
       "length": 8,
       "value": "\"source\""
     },
     {
       "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/Event+Defaults.swift",
       "kind": "StringLiteral",
-<<<<<<< HEAD
       "offset": 2650,
-=======
-      "offset": 2599,
->>>>>>> 1d31190 (feat: changed purchase events properties)
       "length": 8,
       "value": "\"source\""
     },
     {
       "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/Event+Defaults.swift",
       "kind": "StringLiteral",
-<<<<<<< HEAD
       "offset": 2684,
-=======
-      "offset": 2633,
->>>>>>> 1d31190 (feat: changed purchase events properties)
       "length": 6,
       "value": "\"name\""
     },
     {
       "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/Event+Defaults.swift",
       "kind": "StringLiteral",
-<<<<<<< HEAD
       "offset": 2787,
-=======
-      "offset": 2735,
->>>>>>> 1d31190 (feat: changed purchase events properties)
       "length": 8,
       "value": "\"number\""
     },
     {
       "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/Event+Defaults.swift",
       "kind": "StringLiteral",
-<<<<<<< HEAD
       "offset": 2873,
-=======
-      "offset": 2806,
->>>>>>> 1d31190 (feat: changed purchase events properties)
       "length": 7,
       "value": "\"error\""
     },
     {
       "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/Event+Defaults.swift",
       "kind": "StringLiteral",
-<<<<<<< HEAD
       "offset": 3169,
-=======
-      "offset": 3099,
->>>>>>> 1d31190 (feat: changed purchase events properties)
       "length": 9,
       "value": "\"premium\""
     },
     {
       "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/Event+Defaults.swift",
       "kind": "StringLiteral",
-<<<<<<< HEAD
       "offset": 3218,
-=======
-      "offset": 3148,
->>>>>>> 1d31190 (feat: changed purchase events properties)
       "length": 6,
       "value": "\"adid\""
     },
     {
       "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/Event+Defaults.swift",
       "kind": "StringLiteral",
-<<<<<<< HEAD
       "offset": 3273,
-=======
-      "offset": 3203,
->>>>>>> 1d31190 (feat: changed purchase events properties)
       "length": 17,
       "value": "\"ab_test_version\""
     },
     {
       "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/Event+Defaults.swift",
       "kind": "StringLiteral",
-<<<<<<< HEAD
       "offset": 4082,
-=======
-      "offset": 4012,
->>>>>>> 1d31190 (feat: changed purchase events properties)
       "length": 11,
       "value": "\"page_view\""
     },
     {
       "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/Event+Defaults.swift",
       "kind": "StringLiteral",
-<<<<<<< HEAD
       "offset": 4144,
-=======
-      "offset": 4074,
->>>>>>> 1d31190 (feat: changed purchase events properties)
       "length": 19,
       "value": "\"page_view_paywall\""
     },
     {
       "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/Event+Defaults.swift",
       "kind": "StringLiteral",
-<<<<<<< HEAD
       "offset": 4219,
-=======
-      "offset": 4149,
->>>>>>> 1d31190 (feat: changed purchase events properties)
       "length": 26,
       "value": "\"na_notification_activate\""
     },
     {
       "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/Event+Defaults.swift",
       "kind": "StringLiteral",
-<<<<<<< HEAD
       "offset": 4303,
-=======
-      "offset": 4233,
->>>>>>> 1d31190 (feat: changed purchase events properties)
       "length": 28,
       "value": "\"na_notification_deactivate\""
     },
     {
       "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/Event+Defaults.swift",
       "kind": "StringLiteral",
-<<<<<<< HEAD
       "offset": 4374,
-=======
-      "offset": 4304,
->>>>>>> 1d31190 (feat: changed purchase events properties)
       "length": 10,
       "value": "\"ac_click\""
     },
     {
       "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/Event+Defaults.swift",
       "kind": "StringLiteral",
-<<<<<<< HEAD
       "offset": 4434,
-=======
-      "offset": 4364,
->>>>>>> 1d31190 (feat: changed purchase events properties)
       "length": 18,
       "value": "\"ac_content_click\""
     },
     {
       "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/Event+Defaults.swift",
       "kind": "StringLiteral",
-<<<<<<< HEAD
       "offset": 4592,
-=======
-      "offset": 4519,
->>>>>>> 1d31190 (feat: changed purchase events properties)
       "length": 6,
       "value": "\"name\""
     },
     {
       "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/Event+Defaults.swift",
       "kind": "StringLiteral",
-<<<<<<< HEAD
       "offset": 4671,
-=======
-      "offset": 4598,
->>>>>>> 1d31190 (feat: changed purchase events properties)
       "length": 8,
       "value": "\"source\""
     },
     {
       "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/Event+Defaults.swift",
       "kind": "StringLiteral",
-<<<<<<< HEAD
       "offset": 4745,
-=======
-      "offset": 4672,
->>>>>>> 1d31190 (feat: changed purchase events properties)
       "length": 6,
       "value": "\"name\""
     },
     {
       "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/Event+Defaults.swift",
       "kind": "StringLiteral",
-<<<<<<< HEAD
       "offset": 4753,
-=======
-      "offset": 4680,
->>>>>>> 1d31190 (feat: changed purchase events properties)
       "length": 15,
       "value": "\"notifications\""
     },
     {
       "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/Event+Defaults.swift",
       "kind": "StringLiteral",
-<<<<<<< HEAD
       "offset": 4828,
-=======
-      "offset": 4755,
->>>>>>> 1d31190 (feat: changed purchase events properties)
       "length": 6,
       "value": "\"name\""
     },
     {
       "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/Event+Defaults.swift",
       "kind": "StringLiteral",
-<<<<<<< HEAD
       "offset": 4836,
-=======
-      "offset": 4763,
->>>>>>> 1d31190 (feat: changed purchase events properties)
       "length": 15,
       "value": "\"notifications\""
     },
     {
       "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/Event+Defaults.swift",
       "kind": "StringLiteral",
-<<<<<<< HEAD
       "offset": 4906,
-=======
-      "offset": 4833,
->>>>>>> 1d31190 (feat: changed purchase events properties)
       "length": 6,
       "value": "\"name\""
     },
     {
       "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/Event+Defaults.swift",
       "kind": "StringLiteral",
-<<<<<<< HEAD
       "offset": 4997,
-=======
-      "offset": 4924,
->>>>>>> 1d31190 (feat: changed purchase events properties)
       "length": 6,
       "value": "\"name\""
     },
     {
       "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/Event+Defaults.swift",
       "kind": "StringLiteral",
-<<<<<<< HEAD
       "offset": 5027,
-=======
-      "offset": 4954,
->>>>>>> 1d31190 (feat: changed purchase events properties)
       "length": 6,
       "value": "\"type\""
     },
     {
       "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/Event+Defaults.swift",
       "kind": "StringLiteral",
-<<<<<<< HEAD
       "offset": 5035,
-=======
-      "offset": 4962,
->>>>>>> 1d31190 (feat: changed purchase events properties)
       "length": 6,
       "value": "\"todo\""
     },
