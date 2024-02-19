@@ -7,6 +7,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 <<<<<<< HEAD
 =======
+## [1.8.1] - 2024-02-19
+### :bug: Bug Fixes
+- [`313f51b`](https://github.com/cotyapps/Kovalee-iOS-SDK/commit/313f51bcbeada7d5471cd91aabc0360151168b48) - fixed bug in events sequences lite *(commit by [@fto-k](https://github.com/fto-k))*
+
+
 ## [1.8.0] - 2024-02-19
 ### :sparkles: New Features
 - [`557b0aa`](https://github.com/cotyapps/Kovalee-iOS-SDK/commit/557b0aa87ef3c363d8169a943f5165fdd09cdac1) - implemented ViewModifier to load DebugView *(commit by [@fto-k](https://github.com/fto-k))*
@@ -308,3 +313,4 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 [1.7.0]: https://github.com/cotyapps/Kovalee-iOS-SDK/compare/1.6.3...1.7.0
 [1.7.1]: https://github.com/cotyapps/Kovalee-iOS-SDK/compare/1.7.0...1.7.1
 [1.8.0]: https://github.com/cotyapps/Kovalee-iOS-SDK/compare/1.7.1...1.8.0
+[1.8.1]: https://github.com/cotyapps/Kovalee-iOS-SDK/compare/1.8.0...1.8.1
