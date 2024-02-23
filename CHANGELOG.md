@@ -7,6 +7,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 <<<<<<< HEAD
 =======
+## [1.8.2] - 2024-02-23
+### :sparkles: New Features
+- [`f0814f6`](https://github.com/cotyapps/Kovalee-iOS-SDK/commit/f0814f6e66735b6d60058c11d23ad7bd2b6fd60f) - exposing method to detect if SDK is in debug mode *(commit by [@fto-k](https://github.com/fto-k))*
+
+
 ## [1.8.1] - 2024-02-19
 ### :bug: Bug Fixes
 - [`313f51b`](https://github.com/cotyapps/Kovalee-iOS-SDK/commit/313f51bcbeada7d5471cd91aabc0360151168b48) - fixed bug in events sequences lite *(commit by [@fto-k](https://github.com/fto-k))*
@@ -314,3 +319,4 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 [1.7.1]: https://github.com/cotyapps/Kovalee-iOS-SDK/compare/1.7.0...1.7.1
 [1.8.0]: https://github.com/cotyapps/Kovalee-iOS-SDK/compare/1.7.1...1.8.0
 [1.8.1]: https://github.com/cotyapps/Kovalee-iOS-SDK/compare/1.8.0...1.8.1
+[1.8.2]: https://github.com/cotyapps/Kovalee-iOS-SDK/compare/1.8.1...1.8.2
