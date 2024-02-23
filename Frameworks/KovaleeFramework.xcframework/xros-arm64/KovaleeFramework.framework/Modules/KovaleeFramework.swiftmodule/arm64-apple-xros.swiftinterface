@@ -34,6 +34,7 @@ public class KovaleeManager {
   public func isDataCollectionEnabled() -> Swift.Bool
   public func setDataCollectionEnabled(_ enabled: Swift.Bool)
   public func setDebugMode(_ on: Swift.Bool)
+  public func debugModeOn() -> Swift.Bool
   public var attributionManager: (any KovaleeFramework.AttributionManager)?
   public var trackerManager: (any KovaleeFramework.EventTrackerManager)?
   public var purchaseManager: (any KovaleeFramework.PurchaseManager)?
