@@ -4,18 +4,18 @@ import SwiftUI
 
 @available(iOS 16.0, *)
 public struct DebugView: View {
+    @Environment(\.dismiss) private var dismiss
+
     @State private var isDebugModeOn = false
     @State private var abTestValue: String?
-
     @State private var basicInfoExpanded: Bool = false
 
-    var installationDate: String? {
+    private var installationDate: String? {
         guard let installationDate = Kovalee.appInstallationDate() else {
             return nil
         }
-        let formatter = DateFormatter()
-        formatter.dateStyle = .short
-        return formatter.string(from: installationDate)
+
+        return installationDate.formatted(date: .numeric, time: .omitted)
     }
 
     public var body: some View {
@@ -24,44 +24,7 @@ public struct DebugView: View {
                 Toggle("Enable Debug Mode", isOn: $isDebugModeOn)
 
                 Section {
-                    InfoLabel(
-                        title: "Configuration:",
-                        value: Kovalee.shared.configuration.environment.rawValue
-                    )
-                    InfoLabel(
-                        title: "SDK Initialized:",
-                        value: Kovalee.isInitialized ? "✅" : "❌"
-                    )
-                    if let installationDate {
-                        InfoLabel(
-                            title: "Installation Date",
-                            value: installationDate
-                        )
-                    }
-                    if let conversionValue = Kovalee.shared.kovaleeManager?.userConversionValue() {
-                        InfoLabel(
-                            title: "Conversion Value",
-                            value: "\(conversionValue)"
-                        )
-                    }
-
-                    if let userId = Kovalee.getAmplitudeUserId() {
-                        InfoLabel(
-                            title: "Amplitude User Id:",
-                            value: userId,
-                            horizontal: false
-                        )
-                    }
-                    if let deviceId = Kovalee.shared.kovaleeManager?.amplitudeDeviceId() {
-                        InfoLabel(
-                            title: "Amplitude Device Id:",
-                            value: deviceId,
-                            horizontal: false
-                        )
-                    }
-                    if let adid = Kovalee.shared.kovaleeManager?.getAttributionAdid() {
-                        InfoLabel(title: "User ADID:", value: adid, horizontal: false)
-                    }
+                    basicInfoView()
                 } header: {
                     Text("Basic Infos")
                 }
@@ -73,9 +36,7 @@ public struct DebugView: View {
                 }
 
                 Section {
-                    if let abTestValue {
-                        InfoLabel(title: "Current AB test Value:", value: abTestValue)
-                    }
+                    InfoLabel(title: "Current AB test Value:", value: abTestValue ?? "Not set yet")
                     if isDebugModeOn {
                         ABTestView()
                     }
@@ -91,13 +52,62 @@ public struct DebugView: View {
             .onChange(of: isDebugModeOn) { _ in
                 Kovalee.shared.kovaleeManager?.setDebugMode(isDebugModeOn)
             }
+            .toolbar {
+                ToolbarItem(placement: .topBarTrailing) {
+                    Button("", systemImage: "xmark", role: .destructive) {
+                        dismiss()
+                    }
+                    .bold()
+                    .tint(.black)
+                }
+            }
         }
     }
 }
 
 @available(iOS 16.0, *)
-#Preview {
-    DebugView()
+extension DebugView {
+    @ViewBuilder
+    private func basicInfoView() -> some View {
+        InfoLabel(
+            title: "Configuration:",
+            value: Kovalee.shared.configuration.environment.rawValue
+        )
+        InfoLabel(
+            title: "SDK Initialized:",
+            value: Kovalee.isInitialized ? "✅" : "❌"
+        )
+        if let installationDate {
+            InfoLabel(
+                title: "Installation Date",
+                value: installationDate
+            )
+        }
+        if let conversionValue = Kovalee.shared.kovaleeManager?.userConversionValue() {
+            InfoLabel(
+                title: "Conversion Value",
+                value: "\(conversionValue)"
+            )
+        }
+
+        if let userId = Kovalee.getAmplitudeUserId() {
+            InfoLabel(
+                title: "Amplitude User Id:",
+                value: userId,
+                horizontal: false
+            )
+        }
+        if let deviceId = Kovalee.shared.kovaleeManager?.amplitudeDeviceId() {
+            InfoLabel(
+                title: "Amplitude Device Id:",
+                value: deviceId,
+                horizontal: false
+            )
+        }
+        if let adid = Kovalee.shared.kovaleeManager?.getAttributionAdid() {
+            InfoLabel(title: "User ADID:", value: adid, horizontal: false)
+        }
+    }
 }
 
 struct InfoLabel: View {
