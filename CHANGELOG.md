@@ -7,6 +7,18 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 <<<<<<< HEAD
 =======
+## [1.8.3] - 2024-02-28
+### :sparkles: New Features
+- [`43d07a2`](https://github.com/cotyapps/Kovalee-iOS-SDK/commit/43d07a23145495447c1453c862327b5b418e639b) - UI updates for Debug mode *(commit by [@fto-k](https://github.com/fto-k))*
+- [`6246099`](https://github.com/cotyapps/Kovalee-iOS-SDK/commit/62460995cbe256f888dcea65091a6e44f958aa5a) - updated DebugConsole to be available in UIKit *(commit by [@fto-k](https://github.com/fto-k))*
+
+### :bug: Bug Fixes
+- [`105f4bc`](https://github.com/cotyapps/Kovalee-iOS-SDK/commit/105f4bc31b494b8416b0009fbb205853f0d343ff) - events sequences files can be loaded independently from app_code case *(commit by [@fto-k](https://github.com/fto-k))*
+
+### :wrench: Chores
+- [`70d48c8`](https://github.com/cotyapps/Kovalee-iOS-SDK/commit/70d48c804cae42aab42efe396d780883d27dacb6) - integrated documentation for DebugConsole *(commit by [@fto-k](https://github.com/fto-k))*
+
+
 ## [1.8.2] - 2024-02-23
 ### :sparkles: New Features
 - [`f0814f6`](https://github.com/cotyapps/Kovalee-iOS-SDK/commit/f0814f6e66735b6d60058c11d23ad7bd2b6fd60f) - exposing method to detect if SDK is in debug mode *(commit by [@fto-k](https://github.com/fto-k))*
@@ -320,3 +332,4 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 [1.8.0]: https://github.com/cotyapps/Kovalee-iOS-SDK/compare/1.7.1...1.8.0
 [1.8.1]: https://github.com/cotyapps/Kovalee-iOS-SDK/compare/1.8.0...1.8.1
 [1.8.2]: https://github.com/cotyapps/Kovalee-iOS-SDK/compare/1.8.1...1.8.2
+[1.8.3]: https://github.com/cotyapps/Kovalee-iOS-SDK/compare/1.8.2...1.8.3
