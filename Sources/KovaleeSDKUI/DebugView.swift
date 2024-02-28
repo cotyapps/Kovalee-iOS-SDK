@@ -7,6 +7,8 @@ public struct DebugView: View {
     @State private var isDebugModeOn = false
     @State private var abTestValue: String?
 
+    @State private var basicInfoExpanded: Bool = false
+
     var installationDate: String? {
         guard let installationDate = Kovalee.appInstallationDate() else {
             return nil
@@ -21,12 +23,11 @@ public struct DebugView: View {
             List {
                 Toggle("Enable Debug Mode", isOn: $isDebugModeOn)
 
-                InfoLabel(
-                    title: "Configuration:",
-                    value: Kovalee.shared.configuration.environment.rawValue
-                )
-
                 Section {
+                    InfoLabel(
+                        title: "Configuration:",
+                        value: Kovalee.shared.configuration.environment.rawValue
+                    )
                     InfoLabel(
                         title: "SDK Initialized:",
                         value: Kovalee.isInitialized ? "✅" : "❌"
@@ -61,10 +62,14 @@ public struct DebugView: View {
                     if let adid = Kovalee.shared.kovaleeManager?.getAttributionAdid() {
                         InfoLabel(title: "User ADID:", value: adid, horizontal: false)
                     }
+                } header: {
+                    Text("Basic Infos")
                 }
 
                 Section {
                     PurchaseCVView()
+                } header: {
+                    Text("Purchases")
                 }
 
                 Section {
@@ -74,6 +79,8 @@ public struct DebugView: View {
                     if isDebugModeOn {
                         ABTestView()
                     }
+                } header: {
+                    Text("AB Test")
                 }
             }
             .task {
@@ -115,17 +122,25 @@ struct InfoLabel: View {
 
 @available(iOS 16.0, *)
 struct ABTestView: View {
+    enum FocusedField {
+        case abValue
+    }
+
+    @FocusState private var focusedField: FocusedField?
     @State private var newABValue: String = ""
 
     var body: some View {
-        Group {
-            TextField("Set AB test Value", text: $newABValue)
-                .keyboardType(.numberPad)
+        TextField("Set AB test Value", text: $newABValue)
+            .keyboardType(.numberPad)
+            .focused($focusedField, equals: .abValue)
 
-            Button("Update Value") {
-                Kovalee.shared.kovaleeManager?.setAbTestValue(newABValue)
-            }
-            .buttonStyle(.borderedProminent)
+        Button("Update Value") {
+            focusedField = nil
+            Kovalee.shared.kovaleeManager?.setAbTestValue(newABValue)
+        }
+        .buttonStyle(.borderedProminent)
+        .onAppear {
+            focusedField = .abValue
         }
     }
 }
