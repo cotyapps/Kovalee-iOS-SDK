@@ -2,6 +2,39 @@ import KovaleeFramework
 import KovaleeSDK
 import SwiftUI
 
+/// `DebugView` is designed to display and interact with the information collected by the SDK.
+///
+/// Use `DebugView` to present critical debugging information such as:
+/// - installation date
+/// - Current Conversion Value
+/// - Amplitude user ID
+/// - Amplitude device ID
+/// - adid
+/// - Current A/B test variant
+/// - Purchased products.
+/// This view also allows to force a specific A/B test variant.
+///
+/// - Important: ``DebugView`` is not intended for use in production.
+///
+/// ## Integration
+/// You can integrated ``DebugView`` in your code as you would integrate any other view.
+///
+/// We strongly encourage you to use the provided utilities to present ``DebugView``.
+///
+/// ### SwiftUI
+/// If your project uses SwiftUI you should use the view modifier ``showDebugConsoleOnShake()`` as follows:
+/// ```swift
+/// @main
+/// struct NewApp: App {
+///	    var body: some Scene {
+///	        WindowGroup {
+///				ContentView()
+///					.showDebugConsoleOnShake()
+///	 		}
+///		}
+///	}
+/// ```
+/// ``showDebugConsoleOnShake()`` will take care of only showing the debug console in a debug build or a test flight build.
 @available(iOS 16.0, *)
 public struct DebugView: View {
     @Environment(\.dismiss) private var dismiss
