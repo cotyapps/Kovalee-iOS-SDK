@@ -31,6 +31,9 @@ let package = Package(
             dependencies: [
                 .framework,
                 .product(name: "AmplitudeSwift", package: "Amplitude-Swift"),
+            ],
+            resources: [
+                .copy("../PrivacyInfo.xcprivacy"),
             ]
         ),
         .target(
