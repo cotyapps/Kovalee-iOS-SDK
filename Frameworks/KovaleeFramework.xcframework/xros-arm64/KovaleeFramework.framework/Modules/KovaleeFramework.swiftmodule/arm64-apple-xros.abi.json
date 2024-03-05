@@ -14384,160 +14384,160 @@
       "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/EventsSequence.swift",
       "kind": "StringLiteral",
       "offset": 3238,
-      "length": 41,
+      "length": 44,
       "value": "\"Loading file: \""
     },
     {
       "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/EventsSequence.swift",
       "kind": "StringLiteral",
-      "offset": 3278,
+      "offset": 3281,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/EventsSequence.swift",
       "kind": "StringLiteral",
-      "offset": 3616,
+      "offset": 3619,
       "length": 3,
       "value": "\"|\""
     },
     {
       "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/EventsSequence.swift",
       "kind": "IntegerLiteral",
-      "offset": 3631,
+      "offset": 3634,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/EventsSequence.swift",
       "kind": "StringLiteral",
-      "offset": 3652,
+      "offset": 3655,
       "length": 3,
       "value": "\"|\""
     },
     {
       "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/EventsSequence.swift",
       "kind": "StringLiteral",
-      "offset": 5175,
+      "offset": 5178,
       "length": 70,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/EventsSequence.swift",
       "kind": "StringLiteral",
-      "offset": 5186,
+      "offset": 5189,
       "length": 1,
       "value": "\"-ios_cv_sequences_\""
     },
     {
       "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/EventsSequence.swift",
       "kind": "StringLiteral",
-      "offset": 5223,
+      "offset": 5226,
       "length": 1,
       "value": "\"_\""
     },
     {
       "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/EventsSequence.swift",
       "kind": "StringLiteral",
-      "offset": 5243,
+      "offset": 5246,
       "length": 1,
       "value": "\"_\""
     },
     {
       "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/EventsSequence.swift",
       "kind": "StringLiteral",
-      "offset": 5278,
+      "offset": 5281,
       "length": 7,
       "value": "\".json\""
     },
     {
       "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/EventsSequence.swift",
       "kind": "StringLiteral",
-      "offset": 5312,
+      "offset": 5315,
       "length": 37,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/EventsSequence.swift",
       "kind": "StringLiteral",
-      "offset": 5326,
+      "offset": 5329,
       "length": 1,
       "value": "\"\\d{8}\""
     },
     {
       "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/EventsSequence.swift",
       "kind": "StringLiteral",
-      "offset": 5348,
+      "offset": 5351,
       "length": 1,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/EventsSequence.swift",
       "kind": "Array",
-      "offset": 5607,
+      "offset": 5610,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/EventsSequence.swift",
       "kind": "IntegerLiteral",
-      "offset": 5636,
+      "offset": 5639,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/EventsSequence.swift",
       "kind": "StringLiteral",
-      "offset": 5837,
+      "offset": 5840,
       "length": 10,
       "value": "\"yyyyMMdd\""
     },
     {
       "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/EventsSequence.swift",
       "kind": "StringLiteral",
-      "offset": 6002,
+      "offset": 6005,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/EventsSequence.swift",
       "kind": "StringLiteral",
-      "offset": 6073,
+      "offset": 6076,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/EventsSequence.swift",
       "kind": "StringLiteral",
-      "offset": 6179,
+      "offset": 6182,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/EventsSequence.swift",
       "kind": "StringLiteral",
-      "offset": 6250,
+      "offset": 6253,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/EventsSequence.swift",
       "kind": "BooleanLiteral",
-      "offset": 6467,
+      "offset": 6470,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/EventsSequence.swift",
       "kind": "StringLiteral",
-      "offset": 6782,
-      "length": 52,
-      "value": "\"Error occurred while searching for files: \""
+      "offset": 6793,
+      "length": 40,
+      "value": "\"Error loading sequence files: \""
     },
     {
       "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/EventsSequence.swift",
       "kind": "StringLiteral",
-      "offset": 6833,
+      "offset": 6832,
       "length": 2,
       "value": "\"\""
     },
