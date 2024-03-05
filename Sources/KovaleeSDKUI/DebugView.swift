@@ -63,6 +63,12 @@ public struct DebugView: View {
                 }
 
                 Section {
+                    sequencesView()
+                } header: {
+                    Text("Events Sequences")
+                }
+
+                Section {
                     PurchaseCVView()
                 } header: {
                     Text("Purchases")
@@ -139,6 +145,21 @@ extension DebugView {
         }
         if let adid = Kovalee.shared.kovaleeManager?.getAttributionAdid() {
             InfoLabel(title: "User ADID:", value: adid, horizontal: false)
+        }
+    }
+
+    @ViewBuilder
+    private func sequencesView() -> some View {
+        InfoLabel(
+            title: "Loaded file:",
+            value: Kovalee.shared.kovaleeManager?.currentSequencesFileName() ?? "No file loaded"
+        )
+
+        if let sequence = Kovalee.shared.kovaleeManager?.currentEventsSequence() {
+            InfoLabel(
+                title: "Current sequence:",
+                value: sequence
+            )
         }
     }
 }

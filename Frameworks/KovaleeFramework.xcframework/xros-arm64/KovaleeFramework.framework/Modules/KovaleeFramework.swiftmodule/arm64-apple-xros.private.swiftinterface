@@ -23,6 +23,8 @@ public class KovaleeManager {
   public func setDefaultUserId()
   public func installationDate() -> Foundation.Date?
   public func appOpeningCount() -> Swift.Int
+  public func currentSequencesFileName() -> Swift.String?
+  public func currentEventsSequence() -> Swift.String
   public func userConversionValue() -> Swift.Int
   public func sendEvent(_ event: KovaleeFramework.Event)
   public func setAmplitudeUserId(userId: Swift.String)
