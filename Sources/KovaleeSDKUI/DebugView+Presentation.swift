@@ -24,9 +24,7 @@ public extension View {
     }
 }
 
-/// To integrate ``DebugViewController`` into your UIKit-based projects to display ``DebugView``.
-///
-/// We recommend using the provided method ``presentDebugConsoleOnShake()`` to present ``DebugViewController``.
+/// To display ``DebugView`` into your UIKit-based projects, we recommend using the provided method ``presentDebugConsoleOnShake()``. This function will present ``DebugViewController`` which is a UIKit wrapper around ``DebugView``.
 /// This method ensures that the debug console is only presented in debug builds or TestFlight builds.
 ///
 /// ### Usage
