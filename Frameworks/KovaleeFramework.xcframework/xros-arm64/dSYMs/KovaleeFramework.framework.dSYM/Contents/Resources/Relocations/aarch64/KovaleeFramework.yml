@@ -2,8 +2,8 @@
 triple:          'arm64-apple-darwin'
 binary-path:     '/Users/filippo/Library/Developer/Xcode/DerivedData/KovaleeSDK-amutdawxkynecfehopwdcbkforfj/Build/Intermediates.noindex/ArchiveIntermediates/KovaleeFramework (visionOS)/InstallationBuildProductsLocation/Library/Frameworks/KovaleeFramework.framework/KovaleeFramework'
 relocations:
-  - { offsetInCU: 0x34, offset: 0x30B2A, size: 0x8, addend: 0x0, symName: _KovaleeFrameworkVersionString, symObjAddr: 0x0, symBinAddr: 0x243D0, symSize: 0x0 }
-  - { offsetInCU: 0x69, offset: 0x30B5F, size: 0x8, addend: 0x0, symName: _KovaleeFrameworkVersionNumber, symObjAddr: 0x38, symBinAddr: 0x24408, symSize: 0x0 }
+  - { offsetInCU: 0x34, offset: 0x30B2A, size: 0x8, addend: 0x0, symName: _KovaleeFrameworkVersionString, symObjAddr: 0x0, symBinAddr: 0x243C0, symSize: 0x0 }
+  - { offsetInCU: 0x69, offset: 0x30B5F, size: 0x8, addend: 0x0, symName: _KovaleeFrameworkVersionNumber, symObjAddr: 0x38, symBinAddr: 0x243F8, symSize: 0x0 }
   - { offsetInCU: 0x4F, offset: 0x30BC4, size: 0x8, addend: 0x0, symName: '_$s16KovaleeFramework0A7ManagerC11withStorage4keys012eventTrackerC0AcA0E0V_AA0A4KeysVAA05EventhC0_ptcfC', symObjAddr: 0x0, symBinAddr: 0x4000, symSize: 0x54 }
   - { offsetInCU: 0xA9, offset: 0x30C1E, size: 0x8, addend: 0x0, symName: '_$s16KovaleeFramework0A7ManagerC11withStorage4keys012eventTrackerC0AcA0E0V_AA0A4KeysVAA05EventhC0_ptcfc', symObjAddr: 0x54, symBinAddr: 0x4054, symSize: 0x698 }
   - { offsetInCU: 0x201, offset: 0x30D76, size: 0x8, addend: 0x0, symName: '_$s16KovaleeFramework0A7ManagerC016setupAttributionC013adjustWrapperyAA0eC0_p_tF', symObjAddr: 0x6EC, symBinAddr: 0x46EC, symSize: 0x314 }
