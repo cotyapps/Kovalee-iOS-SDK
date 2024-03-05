@@ -152,13 +152,15 @@ extension DebugView {
     private func sequencesView() -> some View {
         InfoLabel(
             title: "Loaded file:",
-            value: Kovalee.shared.kovaleeManager?.currentSequencesFileName() ?? "No file loaded"
+            value: Kovalee.shared.kovaleeManager?.currentSequencesFileName() ?? "No file loaded",
+            horizontal: false
         )
 
         if let sequence = Kovalee.shared.kovaleeManager?.currentEventsSequence() {
             InfoLabel(
                 title: "Current sequence:",
-                value: sequence
+                value: sequence,
+                horizontal: false
             )
         }
     }
