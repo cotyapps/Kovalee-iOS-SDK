@@ -358,7 +358,6 @@ public protocol AbstractReward {
   var amount: Swift.Int { get }
 }
 public protocol PaywallManager {
-  func setDataCollectionEnabled(_ enabled: Swift.Bool)
 }
 public enum KovaleeError : Swift.Error {
   case firebaseNotInitialized
