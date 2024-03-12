@@ -11383,6 +11383,243 @@
         "printedName": "Customer",
         "children": [
           {
+            "kind": "Var",
+            "name": "id",
+            "printedName": "id",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:16KovaleeFramework8CustomerV2idSSvp",
+            "mangledName": "$s16KovaleeFramework8CustomerV2idSSvp",
+            "moduleName": "KovaleeFramework",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:16KovaleeFramework8CustomerV2idSSvg",
+                "mangledName": "$s16KovaleeFramework8CustomerV2idSSvg",
+                "moduleName": "KovaleeFramework",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:16KovaleeFramework8CustomerV2idSSvs",
+                "mangledName": "$s16KovaleeFramework8CustomerV2idSSvs",
+                "moduleName": "KovaleeFramework",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:16KovaleeFramework8CustomerV2idSSvM",
+                "mangledName": "$s16KovaleeFramework8CustomerV2idSSvM",
+                "moduleName": "KovaleeFramework",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "metadata",
+            "printedName": "metadata",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[Swift.String : Swift.String]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Dictionary",
+                    "printedName": "[Swift.String : Swift.String]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:SD"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:16KovaleeFramework8CustomerV8metadataSDyS2SGSgvp",
+            "mangledName": "$s16KovaleeFramework8CustomerV8metadataSDyS2SGSgvp",
+            "moduleName": "KovaleeFramework",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "[Swift.String : Swift.String]?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Dictionary",
+                        "printedName": "[Swift.String : Swift.String]",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          }
+                        ],
+                        "usr": "s:SD"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:16KovaleeFramework8CustomerV8metadataSDyS2SGSgvg",
+                "mangledName": "$s16KovaleeFramework8CustomerV8metadataSDyS2SGSgvg",
+                "moduleName": "KovaleeFramework",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "[Swift.String : Swift.String]?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Dictionary",
+                        "printedName": "[Swift.String : Swift.String]",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          }
+                        ],
+                        "usr": "s:SD"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:16KovaleeFramework8CustomerV8metadataSDyS2SGSgvs",
+                "mangledName": "$s16KovaleeFramework8CustomerV8metadataSDyS2SGSgvs",
+                "moduleName": "KovaleeFramework",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:16KovaleeFramework8CustomerV8metadataSDyS2SGSgvM",
+                "mangledName": "$s16KovaleeFramework8CustomerV8metadataSDyS2SGSgvM",
+                "moduleName": "KovaleeFramework",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
             "kind": "Constructor",
             "name": "init",
             "printedName": "init(from:)",
@@ -14722,119 +14959,119 @@
     {
       "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/Utils\/WebToAppHandler.swift",
       "kind": "StringLiteral",
-      "offset": 389,
+      "offset": 403,
       "length": 109,
       "value": "\"pk_live_51OXOZEGz1bZiAzq1SfGgS7jE4fAV9Ty8I1OsNofnXnzdnRjGuPWVow5Y4QA3xcU1ev9UPQmEr53ZgqzGOlRAVOlU00qcr4RBFd\""
     },
     {
       "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/Utils\/WebToAppHandler.swift",
       "kind": "StringLiteral",
-      "offset": 516,
+      "offset": 530,
       "length": 109,
       "value": "\"sk_test_51OXOZEGz1bZiAzq1Wrhf8A6GG7huwjsIVWHhddZXpFuHcl78BHjkwoTJ4wOhwqpUksGDdTRv2r8jf2UZOqx1MI0P00BmXbYTdk\""
     },
     {
       "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/Utils\/WebToAppHandler.swift",
       "kind": "StringLiteral",
-      "offset": 639,
+      "offset": 653,
       "length": 28,
       "value": "\"https:\/\/api.stripe.com\/v1\/\""
     },
     {
       "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/Utils\/WebToAppHandler.swift",
       "kind": "StringLiteral",
-      "offset": 1099,
+      "offset": 1113,
       "length": 5,
       "value": "\"GET\""
     },
     {
       "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/Utils\/WebToAppHandler.swift",
       "kind": "StringLiteral",
-      "offset": 1134,
+      "offset": 1148,
       "length": 46,
       "value": "\"Bearer \""
     },
     {
       "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/Utils\/WebToAppHandler.swift",
       "kind": "StringLiteral",
-      "offset": 1179,
+      "offset": 1193,
       "length": 24,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/Utils\/WebToAppHandler.swift",
       "kind": "StringLiteral",
-      "offset": 1202,
+      "offset": 1216,
       "length": 15,
       "value": "\"Authorization\""
     },
     {
       "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/Utils\/WebToAppHandler.swift",
       "kind": "StringLiteral",
-      "offset": 1620,
+      "offset": 1634,
       "length": 18,
       "value": "\"customers\/search\""
     },
     {
       "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/Utils\/WebToAppHandler.swift",
       "kind": "BooleanLiteral",
-      "offset": 1667,
+      "offset": 1681,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/Utils\/WebToAppHandler.swift",
       "kind": "StringLiteral",
-      "offset": 1865,
+      "offset": 1879,
       "length": 7,
       "value": "\"query\""
     },
     {
       "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/Utils\/WebToAppHandler.swift",
       "kind": "StringLiteral",
-      "offset": 1905,
+      "offset": 1919,
       "length": 18,
       "value": "\"email:'\""
     },
     {
       "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/Utils\/WebToAppHandler.swift",
       "kind": "StringLiteral",
-      "offset": 1921,
+      "offset": 1935,
       "length": 20,
       "value": "\"'\""
     },
     {
       "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/Utils\/WebToAppHandler.swift",
       "kind": "StringLiteral",
-      "offset": 2283,
+      "offset": 2297,
       "length": 15,
       "value": "\"subscriptions\""
     },
     {
       "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/Utils\/WebToAppHandler.swift",
       "kind": "BooleanLiteral",
-      "offset": 2327,
+      "offset": 2341,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/Utils\/WebToAppHandler.swift",
       "kind": "StringLiteral",
-      "offset": 2500,
+      "offset": 2514,
       "length": 10,
       "value": "\"customer\""
     },
     {
       "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/Utils\/WebToAppHandler.swift",
       "kind": "StringLiteral",
-      "offset": 2708,
+      "offset": 2722,
       "length": 8,
       "value": "\"active\""
     },
     {
       "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/Utils\/WebToAppHandler.swift",
       "kind": "StringLiteral",
-      "offset": 2733,
+      "offset": 2747,
       "length": 10,
       "value": "\"trialing\""
     },

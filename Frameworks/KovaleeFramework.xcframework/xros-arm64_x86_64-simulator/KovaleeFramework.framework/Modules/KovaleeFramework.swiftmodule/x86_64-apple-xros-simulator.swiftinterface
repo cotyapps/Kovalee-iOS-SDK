@@ -451,6 +451,8 @@ extension Swift.Dictionary where Key == Swift.String, Value == Any {
   }
 }
 public struct Customer : Swift.Codable {
+  public var id: Swift.String
+  public var metadata: [Swift.String : Swift.String]?
   public func encode(to encoder: any Swift.Encoder) throws
   public init(from decoder: any Swift.Decoder) throws
 }
