@@ -26,6 +26,7 @@ public class KovaleeManager {
   public func currentSequencesFileName() -> Swift.String?
   public func currentEventsSequence() -> Swift.String
   public func userConversionValue() -> Swift.Int
+  public func stripeCustomerId() -> Swift.String?
   public func sendEvent(_ event: KovaleeFramework.Event)
   public func setAmplitudeUserId(userId: Swift.String)
   public func amplitudeUserId() -> Swift.String?
@@ -212,6 +213,7 @@ public enum StorageKeys : Swift.String {
   case abExperimentValue
   case abExperimentKey
   case isDataCollectionEnabled
+  case customerId
   public init?(rawValue: Swift.String)
   public typealias RawValue = Swift.String
   public var rawValue: Swift.String {
