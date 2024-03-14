@@ -97,7 +97,9 @@ extension Kovalee {
         Capabilities.allCases.forEach {
             switch $0 {
             case .attribution:
-                let creator = AttributionManagerCreator(externalDevice: self.kovaleeManager?.stripeCustomerId()) {
+                let creator = AttributionManagerCreator(
+                    externalDevice: self.kovaleeManager?.stripeCustomerId()
+                ) {
                     self.kovaleeManager?.attributionCallback(withAdid: $0)
                 }
                 if let attributionManager = (creator as? Creator)?.createImplementation(
