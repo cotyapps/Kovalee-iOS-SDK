@@ -113,7 +113,7 @@ extension KovaleeFramework.KovaleeManager {
 }
 extension KovaleeFramework.KovaleeManager {
   #if compiler(>=5.3) && $AsyncAwait
-  public func retrieveSubscribedCustomer(withEmail email: Swift.String, isLiveEnvironment isLive: Swift.Bool) async throws -> KovaleeFramework.Customer?
+  public func retrieveSubscribedCustomer(withEmail email: Swift.String, isLiveEnvironment _: Swift.Bool) async throws -> KovaleeFramework.Customer?
   #endif
 }
 public struct KLogger {

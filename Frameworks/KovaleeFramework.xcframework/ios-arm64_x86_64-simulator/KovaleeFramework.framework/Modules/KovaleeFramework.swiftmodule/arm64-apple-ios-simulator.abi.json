@@ -15037,62 +15037,48 @@
       "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/Utils\/WebToAppHandler.swift",
       "kind": "StringLiteral",
       "offset": 403,
-      "length": 109,
-      "value": "\"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\""
+      "length": 41,
+      "value": "\"https:\/\/stripe-server-j6pl.onrender.com\""
     },
     {
       "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/Utils\/WebToAppHandler.swift",
       "kind": "StringLiteral",
-      "offset": 530,
-      "length": 109,
-      "value": "\"sk_test_51OXOZEGz1bZiAzq1Wrhf8A6GG7huwjsIVWHhddZXpFuHcl78BHjkwoTJ4wOhwqpUksGDdTRv2r8jf2UZOqx1MI0P00BmXbYTdk\""
-    },
-    {
-      "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/Utils\/WebToAppHandler.swift",
-      "kind": "StringLiteral",
-      "offset": 653,
-      "length": 28,
-      "value": "\"https:\/\/api.stripe.com\/v1\/\""
-    },
-    {
-      "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/Utils\/WebToAppHandler.swift",
-      "kind": "StringLiteral",
-      "offset": 1113,
+      "offset": 826,
       "length": 5,
       "value": "\"GET\""
     },
     {
       "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/Utils\/WebToAppHandler.swift",
       "kind": "StringLiteral",
-      "offset": 1148,
-      "length": 46,
-      "value": "\"Bearer \""
+      "offset": 1233,
+      "length": 27,
+      "value": "\"\/search-customer\/\""
     },
     {
       "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/Utils\/WebToAppHandler.swift",
       "kind": "StringLiteral",
-      "offset": 1193,
-      "length": 24,
+      "offset": 1259,
+      "length": 42,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/Utils\/WebToAppHandler.swift",
-      "kind": "StringLiteral",
-      "offset": 1216,
-      "length": 15,
-      "value": "\"Authorization\""
+      "kind": "BooleanLiteral",
+      "offset": 1289,
+      "length": 4,
+      "value": "true"
     },
     {
       "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/Utils\/WebToAppHandler.swift",
       "kind": "StringLiteral",
-      "offset": 1634,
-      "length": 18,
-      "value": "\"customers\/search\""
+      "offset": 1662,
+      "length": 15,
+      "value": "\"subscriptions\""
     },
     {
       "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/Utils\/WebToAppHandler.swift",
       "kind": "BooleanLiteral",
-      "offset": 1681,
+      "offset": 1706,
       "length": 4,
       "value": "true"
     },
@@ -15100,55 +15086,20 @@
       "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/Utils\/WebToAppHandler.swift",
       "kind": "StringLiteral",
       "offset": 1879,
-      "length": 7,
-      "value": "\"query\""
-    },
-    {
-      "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/Utils\/WebToAppHandler.swift",
-      "kind": "StringLiteral",
-      "offset": 1919,
-      "length": 18,
-      "value": "\"email:'\""
-    },
-    {
-      "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/Utils\/WebToAppHandler.swift",
-      "kind": "StringLiteral",
-      "offset": 1935,
-      "length": 20,
-      "value": "\"'\""
-    },
-    {
-      "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/Utils\/WebToAppHandler.swift",
-      "kind": "StringLiteral",
-      "offset": 2297,
-      "length": 15,
-      "value": "\"subscriptions\""
-    },
-    {
-      "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/Utils\/WebToAppHandler.swift",
-      "kind": "BooleanLiteral",
-      "offset": 2341,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/Utils\/WebToAppHandler.swift",
-      "kind": "StringLiteral",
-      "offset": 2514,
       "length": 10,
       "value": "\"customer\""
     },
     {
       "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/Utils\/WebToAppHandler.swift",
       "kind": "StringLiteral",
-      "offset": 2722,
+      "offset": 2087,
       "length": 8,
       "value": "\"active\""
     },
     {
       "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/Utils\/WebToAppHandler.swift",
       "kind": "StringLiteral",
-      "offset": 2747,
+      "offset": 2112,
       "length": 10,
       "value": "\"trialing\""
     },
