@@ -17,6 +17,7 @@ public class KovaleeManager {
   public func setupPurchaseManager(purchaseManaegr: any KovaleeFramework.PurchaseManager)
   public func setupRemoteConfigurationManager(remoteConfigManager: any KovaleeFramework.RemoteConfigurationManager)
   public func setupAdsManager(adsManager: any KovaleeFramework.AdsManager)
+  public func setupPaywallManager(paywallManager: any KovaleeFramework.PaywallManager)
   public func promptTrackingAuthorization(completion: @escaping (AppTrackingTransparency.ATTrackingManager.AuthorizationStatus) -> Swift.Void)
   public func getAttributionAdid() -> Swift.String?
   public func attributionCallback(withAdid adid: Swift.String?)
@@ -42,6 +43,7 @@ public class KovaleeManager {
   public var purchaseManager: (any KovaleeFramework.PurchaseManager)?
   public var remoteConfigManager: (any KovaleeFramework.RemoteConfigurationManager)?
   public var adsManager: (any KovaleeFramework.AdsManager)?
+  public var paywallManager: (any KovaleeFramework.PaywallManager)?
   @objc deinit
 }
 extension KovaleeFramework.KovaleeManager {
@@ -148,6 +150,7 @@ public struct KovaleeKeys : Swift.Decodable {
   public let revenueCat: KovaleeFramework.KovaleeKeys.RevenueCat?
   public let firebase: KovaleeFramework.KovaleeKeys.Firebase?
   public let applovin: KovaleeFramework.KovaleeKeys.Applovin?
+  public let superwall: KovaleeFramework.KovaleeKeys.Superwall?
   public let conversionValue: KovaleeFramework.KovaleeKeys.ConversionValue?
   public struct Amplitude : Swift.Decodable {
     public var prodSDKId: Swift.String
@@ -177,6 +180,11 @@ public struct KovaleeKeys : Swift.Decodable {
     public let bottomTier: [Swift.String : Swift.Int]
     public let topTier: [Swift.String : Swift.Int]
     public let usTier: [Swift.String : Swift.Int]
+    public init(from decoder: any Swift.Decoder) throws
+  }
+  public struct Superwall : Swift.Decodable {
+    public var prodSDKId: Swift.String
+    public var devSDKId: Swift.String?
     public init(from decoder: any Swift.Decoder) throws
   }
   public init(from decoder: any Swift.Decoder) throws
@@ -348,6 +356,8 @@ public protocol AdsManager {
 public protocol AbstractReward {
   var label: Swift.String { get }
   var amount: Swift.Int { get }
+}
+public protocol PaywallManager {
 }
 public enum KovaleeError : Swift.Error {
   case firebaseNotInitialized
