@@ -7,6 +7,22 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 <<<<<<< HEAD
 =======
+## [1.8.4] - 2024-03-29
+### :sparkles: New Features
+- [`c87f1b1`](https://github.com/cotyapps/Kovalee-iOS-SDK/commit/c87f1b1bc5b6c863f9fd216d2558a38fbf37ec27) - events sequences files with date suffix can now be loaded *(commit by [@fto-k](https://github.com/fto-k))*
+- [`33d039e`](https://github.com/cotyapps/Kovalee-iOS-SDK/commit/33d039e0cd017866f9eefa103c37749384b31dd6) - display events sequences related data to Debug Console *(commit by [@fto-k](https://github.com/fto-k))*
+- [`b9f1b27`](https://github.com/cotyapps/Kovalee-iOS-SDK/commit/b9f1b2760ca5d35ceebcbb302b0e10cab703c5e9) - updated DebugView accessibility *(commit by [@fto-k](https://github.com/fto-k))*
+- [`e6380da`](https://github.com/cotyapps/Kovalee-iOS-SDK/commit/e6380da6cb38a5ccbb36c856f4f056977b69efd2) - updated SDK for privacy manifest conformance *(commit by [@fto-k](https://github.com/fto-k))*
+
+### :bug: Bug Fixes
+- [`863e87e`](https://github.com/cotyapps/Kovalee-iOS-SDK/commit/863e87e0ae1e7e9fd64ec59b5b23eb2aa8d0f627) - small fix on events sequences logging *(commit by [@fto-k](https://github.com/fto-k))*
+- [`a4beb16`](https://github.com/cotyapps/Kovalee-iOS-SDK/commit/a4beb169b669fd634522204dd5b25166e264b4ad) - show only last path component for events sequence file name *(commit by [@fto-k](https://github.com/fto-k))*
+- [`92afb3d`](https://github.com/cotyapps/Kovalee-iOS-SDK/commit/92afb3d2751c0bb2542c10b1bee1d2bb028f2675) - small Console UI update *(commit by [@fto-k](https://github.com/fto-k))*
+
+### :wrench: Chores
+- [`35dd64f`](https://github.com/cotyapps/Kovalee-iOS-SDK/commit/35dd64f8f31d658bf353d33614aec3d825f1bc8c) - small documentation amend *(commit by [@fto-k](https://github.com/fto-k))*
+
+
 ## [1.8.3] - 2024-02-28
 ### :sparkles: New Features
 - [`43d07a2`](https://github.com/cotyapps/Kovalee-iOS-SDK/commit/43d07a23145495447c1453c862327b5b418e639b) - UI updates for Debug mode *(commit by [@fto-k](https://github.com/fto-k))*
@@ -333,3 +349,4 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 [1.8.1]: https://github.com/cotyapps/Kovalee-iOS-SDK/compare/1.8.0...1.8.1
 [1.8.2]: https://github.com/cotyapps/Kovalee-iOS-SDK/compare/1.8.1...1.8.2
 [1.8.3]: https://github.com/cotyapps/Kovalee-iOS-SDK/compare/1.8.2...1.8.3
+[1.8.4]: https://github.com/cotyapps/Kovalee-iOS-SDK/compare/1.8.3...1.8.4
