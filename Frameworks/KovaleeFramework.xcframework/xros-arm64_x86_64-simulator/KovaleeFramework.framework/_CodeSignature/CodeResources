@@ -14,15 +14,15 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		Vo9qkU9q7zgxlxpe+1e9A9Cj/DY=
+		zYbjdEAH307yxLXnwIv2c1V1kGs=
 		</data>
 		<key>Modules/KovaleeFramework.swiftmodule/arm64-apple-xros-simulator.abi.json</key>
 		<data>
-		s3snqlf494nP35AjnP8B5G8Nah0=
+		hdFn0g8y0vn339sTIbhNxol1zwE=
 		</data>
 		<key>Modules/KovaleeFramework.swiftmodule/arm64-apple-xros-simulator.private.swiftinterface</key>
 		<data>
-		XBrJ2j+sngfNrZJ0Filggj840hI=
+		QIGQXfb+C+8dwGWgl1nqEiHcx68=
 		</data>
 		<key>Modules/KovaleeFramework.swiftmodule/arm64-apple-xros-simulator.swiftdoc</key>
 		<data>
@@ -30,19 +30,19 @@
 		</data>
 		<key>Modules/KovaleeFramework.swiftmodule/arm64-apple-xros-simulator.swiftinterface</key>
 		<data>
-		XBrJ2j+sngfNrZJ0Filggj840hI=
+		QIGQXfb+C+8dwGWgl1nqEiHcx68=
 		</data>
 		<key>Modules/KovaleeFramework.swiftmodule/arm64-apple-xros-simulator.swiftmodule</key>
 		<data>
-		pUTNP1HrMyM1hw+398W+RF+Ko/Q=
+		UUKr7CYkjMB3NvWmouxqposUUYc=
 		</data>
 		<key>Modules/KovaleeFramework.swiftmodule/x86_64-apple-xros-simulator.abi.json</key>
 		<data>
-		s3snqlf494nP35AjnP8B5G8Nah0=
+		hdFn0g8y0vn339sTIbhNxol1zwE=
 		</data>
 		<key>Modules/KovaleeFramework.swiftmodule/x86_64-apple-xros-simulator.private.swiftinterface</key>
 		<data>
-		4UCMVlyNaEStFte9jzt52InQMhY=
+		rPrH6sOpEybAQ31eUaRkJwBnCKI=
 		</data>
 		<key>Modules/KovaleeFramework.swiftmodule/x86_64-apple-xros-simulator.swiftdoc</key>
 		<data>
@@ -50,11 +50,11 @@
 		</data>
 		<key>Modules/KovaleeFramework.swiftmodule/x86_64-apple-xros-simulator.swiftinterface</key>
 		<data>
-		4UCMVlyNaEStFte9jzt52InQMhY=
+		rPrH6sOpEybAQ31eUaRkJwBnCKI=
 		</data>
 		<key>Modules/KovaleeFramework.swiftmodule/x86_64-apple-xros-simulator.swiftmodule</key>
 		<data>
-		P+i4f/Pm7wThCvtyPSLzxB2pP8M=
+		98WJHAOPyXQn7hmv/2rTNf17Pzk=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -62,7 +62,7 @@
 		</data>
 		<key>PrivacyInfo.xcprivacy</key>
 		<data>
-		VNfnvilkxsgyLj1nOIgU/IFsylE=
+		YY781vlblOeaE0W6F2rJj1Xl++Y=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -85,14 +85,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			XLQbZQdWkk5QBFjLYplimF9UBTezG9Ylhyqbc3oodHw=
+			2eevV+LhqH8HNAoCKhOcgUr1WWMkwsPxaCsjYCZpJ70=
 			</data>
 		</dict>
 		<key>Modules/KovaleeFramework.swiftmodule/arm64-apple-xros-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			LQV8alBltwSPTv8LUnZl4e+xKcMhQGHw+xk+OMojnd8=
+			N2rMcvuL0HXdEV7/XAoPwkvgyz5rB+SaNH53MWrl9e8=
 			</data>
 		</dict>
 		<key>Modules/KovaleeFramework.swiftmodule/arm64-apple-xros-simulator.swiftdoc</key>
@@ -106,28 +106,28 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			LQV8alBltwSPTv8LUnZl4e+xKcMhQGHw+xk+OMojnd8=
+			N2rMcvuL0HXdEV7/XAoPwkvgyz5rB+SaNH53MWrl9e8=
 			</data>
 		</dict>
 		<key>Modules/KovaleeFramework.swiftmodule/arm64-apple-xros-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			w8yrxF9SjaFbVJkoVA6juQERPIQF2jC2R3uFF0qOU/M=
+			fSh5C1TCL5je9lltAi7ss8pJTUbRDTboWqK7MxEyJXs=
 			</data>
 		</dict>
 		<key>Modules/KovaleeFramework.swiftmodule/x86_64-apple-xros-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			XLQbZQdWkk5QBFjLYplimF9UBTezG9Ylhyqbc3oodHw=
+			2eevV+LhqH8HNAoCKhOcgUr1WWMkwsPxaCsjYCZpJ70=
 			</data>
 		</dict>
 		<key>Modules/KovaleeFramework.swiftmodule/x86_64-apple-xros-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			ria1hYTGT/dS2pA1svZiGf0mogRAF1tTUhobAy4Myhc=
+			S3fcQTd4CIpYLBss8VAixCjYo6pxtmvYiGEvPyFHJtE=
 			</data>
 		</dict>
 		<key>Modules/KovaleeFramework.swiftmodule/x86_64-apple-xros-simulator.swiftdoc</key>
@@ -141,14 +141,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			ria1hYTGT/dS2pA1svZiGf0mogRAF1tTUhobAy4Myhc=
+			S3fcQTd4CIpYLBss8VAixCjYo6pxtmvYiGEvPyFHJtE=
 			</data>
 		</dict>
 		<key>Modules/KovaleeFramework.swiftmodule/x86_64-apple-xros-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			k5UGbMTKcN57/BORlzM5KopMLvGc+xLcU8BtEtSBKC0=
+			clT9iRXWqmK7CMV/rPqRjCa5zzWuBnqIDzfu6XVJjpU=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -162,7 +162,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			Hw7UzcQQ8TKYJu3+V6VRKYFj8gZnBxfCcjqZ/FKXEFA=
+			C9fEwywke9tT6p3GFg7zaNOdQR4hJZUl/cv51w7jr5k=
 			</data>
 		</dict>
 	</dict>
