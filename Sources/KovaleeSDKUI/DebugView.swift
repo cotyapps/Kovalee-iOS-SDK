@@ -43,6 +43,8 @@ public struct DebugView: View {
     @State private var abTestValue: String?
     @State private var basicInfoExpanded: Bool = false
 
+    public init() {}
+
     private var installationDate: String? {
         guard let installationDate = Kovalee.appInstallationDate() else {
             return nil

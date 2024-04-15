@@ -53,8 +53,8 @@ extension UIWindow {
     }
 }
 
-enum Config {
-    enum AppConfiguration {
+public enum Config {
+    public enum AppConfiguration {
         case Debug
         case TestFlight
         case AppStore
@@ -62,7 +62,7 @@ enum Config {
 
     private static let isTestFlight = Bundle.main.appStoreReceiptURL?.lastPathComponent == "sandboxReceipt"
 
-    static var isDebug: Bool {
+    public static var isDebug: Bool {
         #if DEBUG
             return true
         #else
@@ -80,7 +80,7 @@ enum Config {
         }
     }
 
-    static var isDebugOrTestflight: Bool {
+    public static var isDebugOrTestflight: Bool {
         if isDebug || isTestFlight {
             return true
         } else {
