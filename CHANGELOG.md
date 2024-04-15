@@ -7,6 +7,23 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 <<<<<<< HEAD
 =======
+## [1.9.0] - 2024-04-15
+### :sparkles: New Features
+- [`788c6f9`](https://github.com/cotyapps/Kovalee-iOS-SDK/commit/788c6f9f586d964c2bcd4230688fcfbc6de3f44e) - introducing new Paywall manager to handle paywalls *(commit by [@fto-k](https://github.com/fto-k))*
+
+### :bug: Bug Fixes
+- [`891976f`](https://github.com/cotyapps/Kovalee-iOS-SDK/commit/891976f4f9d280e140e6bc7efa1f1c5d0f0b078f) - PaywallManager protocol *(commit by [@fto-k](https://github.com/fto-k))*
+- [`cd88f53`](https://github.com/cotyapps/Kovalee-iOS-SDK/commit/cd88f5303c33693d26e323e531f09ceccc7344af) - updated KovaleeFramework for PaywallKit *(commit by [@fto-k](https://github.com/fto-k))*
+
+### :wrench: Chores
+- [`9d1f486`](https://github.com/cotyapps/Kovalee-iOS-SDK/commit/9d1f486c2fc071d1fa1beb815d9dcc429dc5c1c2) - updated privacy manifest *(commit by [@fto-k](https://github.com/fto-k))*
+- [`02ef906`](https://github.com/cotyapps/Kovalee-iOS-SDK/commit/02ef90603b87ff5dc044c67b635416f7949fda26) - updated privacy manifest *(commit by [@fto-k](https://github.com/fto-k))*
+- [`ee113cd`](https://github.com/cotyapps/Kovalee-iOS-SDK/commit/ee113cdfac59db2dbf39090ef6080e511263d17b) - updated privacy manifest *(commit by [@fto-k](https://github.com/fto-k))*
+- [`63359cb`](https://github.com/cotyapps/Kovalee-iOS-SDK/commit/63359cb7c6671cf8675eb527901765eeb2593842) - updated min amplitude version for Privacy manifest *(commit by [@fto-k](https://github.com/fto-k))*
+- [`fcf8af7`](https://github.com/cotyapps/Kovalee-iOS-SDK/commit/fcf8af79932240ddb965eb2bc7a3e91e5b6bab4d) - updated privacy info *(commit by [@fto-k](https://github.com/fto-k))*
+- [`205d72e`](https://github.com/cotyapps/Kovalee-iOS-SDK/commit/205d72eab4a91e08f4852791bd32f78e5919621a) - updated privacy manifest *(commit by [@fto-k](https://github.com/fto-k))*
+
+
 ## [1.8.4] - 2024-03-29
 ### :sparkles: New Features
 - [`c87f1b1`](https://github.com/cotyapps/Kovalee-iOS-SDK/commit/c87f1b1bc5b6c863f9fd216d2558a38fbf37ec27) - events sequences files with date suffix can now be loaded *(commit by [@fto-k](https://github.com/fto-k))*
@@ -350,3 +367,4 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 [1.8.2]: https://github.com/cotyapps/Kovalee-iOS-SDK/compare/1.8.1...1.8.2
 [1.8.3]: https://github.com/cotyapps/Kovalee-iOS-SDK/compare/1.8.2...1.8.3
 [1.8.4]: https://github.com/cotyapps/Kovalee-iOS-SDK/compare/1.8.3...1.8.4
+[1.9.0]: https://github.com/cotyapps/Kovalee-iOS-SDK/compare/1.8.4...1.9.0
