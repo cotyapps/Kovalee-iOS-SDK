@@ -7,6 +7,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 <<<<<<< HEAD
 =======
+## [1.9.2] - 2024-04-15
+### :wrench: Chores
+- [`3e4b0df`](https://github.com/cotyapps/Kovalee-iOS-SDK/commit/3e4b0df32bbd3edda88361b2c9adadb00d715679) - updated privacy manifest *(commit by [@fto-k](https://github.com/fto-k))*
+
+
 ## [1.9.0] - 2024-04-15
 ### :sparkles: New Features
 - [`788c6f9`](https://github.com/cotyapps/Kovalee-iOS-SDK/commit/788c6f9f586d964c2bcd4230688fcfbc6de3f44e) - introducing new Paywall manager to handle paywalls *(commit by [@fto-k](https://github.com/fto-k))*
@@ -368,3 +373,4 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 [1.8.3]: https://github.com/cotyapps/Kovalee-iOS-SDK/compare/1.8.2...1.8.3
 [1.8.4]: https://github.com/cotyapps/Kovalee-iOS-SDK/compare/1.8.3...1.8.4
 [1.9.0]: https://github.com/cotyapps/Kovalee-iOS-SDK/compare/1.8.4...1.9.0
+[1.9.2]: https://github.com/cotyapps/Kovalee-iOS-SDK/compare/1.9.1...1.9.2
