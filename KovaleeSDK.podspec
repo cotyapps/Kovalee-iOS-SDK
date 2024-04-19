@@ -17,5 +17,5 @@ Pod::Spec.new do |s|
   s.source_files     =  "Sources/KovaleeSDK/**/*.swift"
 
   s.vendored_frameworks = ['Frameworks/KovaleeFramework.xcframework']
-  s.dependency 'AmplitudeSwift', '~> 0.7.3'
+  s.dependency 'AmplitudeSwift', '>= 1.4.5'
 end
