@@ -7,6 +7,15 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 <<<<<<< HEAD
 =======
+## [1.9.5] - 2024-04-22
+### :sparkles: New Features
+- [`8c59693`](https://github.com/cotyapps/Kovalee-iOS-SDK/commit/8c596937c7bb1922d26107552624d650477ebaab) - setting SDK version to amplitude user properties *(commit by [@fto-k](https://github.com/fto-k))*
+- [`1b1dd45`](https://github.com/cotyapps/Kovalee-iOS-SDK/commit/1b1dd451c72cea5bf2faeff217d413036c343310) - set amplitude Id as RevenueCat default user Id during app start *(commit by [@fto-k](https://github.com/fto-k))*
+
+### :wrench: Chores
+- [`636680e`](https://github.com/cotyapps/Kovalee-iOS-SDK/commit/636680e43897206b040ed0f53ac511e947560fa1) - update podspecs *(commit by [@fto-k](https://github.com/fto-k))*
+
+
 ## [1.9.3] - 2024-04-15
 ### :wrench: Chores
 - [`aa9afdc`](https://github.com/cotyapps/Kovalee-iOS-SDK/commit/aa9afdc6711d337b377c89ce760d840b37d99c86) - updated privacy manifest *(commit by [@fto-k](https://github.com/fto-k))*
@@ -380,3 +389,4 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 [1.9.0]: https://github.com/cotyapps/Kovalee-iOS-SDK/compare/1.8.4...1.9.0
 [1.9.2]: https://github.com/cotyapps/Kovalee-iOS-SDK/compare/1.9.1...1.9.2
 [1.9.3]: https://github.com/cotyapps/Kovalee-iOS-SDK/compare/1.9.2...1.9.3
+[1.9.5]: https://github.com/cotyapps/Kovalee-iOS-SDK/compare/1.9.4...1.9.5
