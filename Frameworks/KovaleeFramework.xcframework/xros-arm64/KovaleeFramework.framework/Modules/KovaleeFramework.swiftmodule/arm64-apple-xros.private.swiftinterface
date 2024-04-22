@@ -11,9 +11,9 @@ import _StringProcessing
 import _SwiftConcurrencyShims
 import os
 public class KovaleeManager {
-  public init(withStorage storage: KovaleeFramework.Storage = .userDefaults(), keys: KovaleeFramework.KovaleeKeys, eventTrackerManager: any KovaleeFramework.EventTrackerManager)
+  public init(withStorage storage: KovaleeFramework.Storage = .userDefaults(), keys: KovaleeFramework.KovaleeKeys, sdkVersion: Swift.String, eventTrackerManager: any KovaleeFramework.EventTrackerManager)
   public func setupAttributionManager(adjustWrapper: any KovaleeFramework.AttributionManager)
-  public func setupPurchaseManager(purchaseManaegr: any KovaleeFramework.PurchaseManager)
+  public func setupPurchaseManager(purchaseManager: any KovaleeFramework.PurchaseManager)
   public func setupRemoteConfigurationManager(remoteConfigManager: any KovaleeFramework.RemoteConfigurationManager)
   public func setupAdsManager(adsManager: any KovaleeFramework.AdsManager)
   public func setupPaywallManager(paywallManager: any KovaleeFramework.PaywallManager)
@@ -204,6 +204,7 @@ public struct Reader<T> where T : Swift.Decodable {
   public var load: (Foundation.URL?) throws -> T
 }
 public enum StorageKeys : Swift.String {
+  case sdkVersion
   case isUserPremium
   case appOpenedCount
   case appInstallationDate
@@ -407,6 +408,7 @@ public enum UserProperty {
   case premium(value: Swift.String)
   case adid(value: Swift.String)
   case abTestVersion(value: Swift.String)
+  case sdkVersion(value: Swift.String)
   public var key: Swift.String {
     get
   }

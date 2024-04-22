@@ -1,6 +1,8 @@
 import Foundation
 import KovaleeFramework
 
+let SDK_VERSION = "1.9.4"
+
 /// A wrapper around all the third party tools used by Kovalee to gather information within the apps
 ///
 /// You initialize Kovalee by providing a ``Configuration``.
@@ -29,7 +31,7 @@ public final class Kovalee {
     }
 
     /// used for testing purpose mainly
-    internal static func initialize(configuration: Configuration, storage: Storage) {
+    static func initialize(configuration: Configuration, storage: Storage) {
         initializedManager = .init(configuration: configuration, storage: storage)
     }
 
@@ -70,6 +72,7 @@ public final class Kovalee {
 
                 kovaleeManager = KovaleeManager(
                     keys: keys,
+                    sdkVersion: SDK_VERSION,
                     eventTrackerManager: eventTracker
                 )
 
@@ -94,8 +97,8 @@ public final class Kovalee {
 
 extension Kovalee {
     private func setupCapabilities() {
-        Capabilities.allCases.forEach {
-            switch $0 {
+        for item in Capabilities.allCases {
+            switch item {
             case .attribution:
                 let creator = AttributionManagerCreator {
                     self.kovaleeManager?.attributionCallback(withAdid: $0)
@@ -104,7 +107,7 @@ extension Kovalee {
                     withConfiguration: configuration,
                     andKeys: keys
                 ) as? AttributionManager {
-                    self.kovaleeManager?.setupAttributionManager(adjustWrapper: attributionManager)
+                    kovaleeManager?.setupAttributionManager(adjustWrapper: attributionManager)
                 }
 
             case .purchases:
@@ -113,7 +116,7 @@ extension Kovalee {
                     withConfiguration: configuration,
                     andKeys: keys
                 ) as? PurchaseManager {
-                    self.kovaleeManager?.setupPurchaseManager(purchaseManaegr: purchaseManager)
+                    kovaleeManager?.setupPurchaseManager(purchaseManager: purchaseManager)
                 }
 
             case .remoteConfiguration:
@@ -122,7 +125,7 @@ extension Kovalee {
                     withConfiguration: configuration,
                     andKeys: keys
                 ) as? RemoteConfigurationManager {
-                    self.kovaleeManager?.setupRemoteConfigurationManager(remoteConfigManager: remoteConfigManager)
+                    kovaleeManager?.setupRemoteConfigurationManager(remoteConfigManager: remoteConfigManager)
                 }
 
             case .ads:
@@ -131,7 +134,7 @@ extension Kovalee {
                     withConfiguration: configuration,
                     andKeys: keys
                 ) as? AdsManager {
-                    self.kovaleeManager?.setupAdsManager(adsManager: adsManager)
+                    kovaleeManager?.setupAdsManager(adsManager: adsManager)
                 }
 
             case .paywall:
@@ -140,7 +143,7 @@ extension Kovalee {
                     withConfiguration: configuration,
                     andKeys: keys
                 ) as? PaywallManager {
-                    self.kovaleeManager?.setupPaywallManager(paywallManager: paywallManager)
+                    kovaleeManager?.setupPaywallManager(paywallManager: paywallManager)
                 }
             case .eventsTracking: ()
             }
