@@ -43,7 +43,7 @@ platform :ios do
 
     update_version_in_swift("../Sources/KovaleeSDK/Kovalee.swift", version)
 
-    git_add(path: podspec_name)
+    git_add
     git_commit(
       path: [podspec_name],
       message: "#{version} release"
