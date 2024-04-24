@@ -7,6 +7,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 <<<<<<< HEAD
 =======
+## [1.9.6] - 2024-04-24
+### :bug: Bug Fixes
+- [`0f9e129`](https://github.com/cotyapps/Kovalee-iOS-SDK/commit/0f9e129a4de679ae8a713f664820257c9ae95c85) - setting amplitude id to RC on app open *(commit by [@fto-k](https://github.com/fto-k))*
+
+
 ## [1.9.5] - 2024-04-22
 ### :sparkles: New Features
 - [`8c59693`](https://github.com/cotyapps/Kovalee-iOS-SDK/commit/8c596937c7bb1922d26107552624d650477ebaab) - setting SDK version to amplitude user properties *(commit by [@fto-k](https://github.com/fto-k))*
@@ -390,3 +395,4 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 [1.9.2]: https://github.com/cotyapps/Kovalee-iOS-SDK/compare/1.9.1...1.9.2
 [1.9.3]: https://github.com/cotyapps/Kovalee-iOS-SDK/compare/1.9.2...1.9.3
 [1.9.5]: https://github.com/cotyapps/Kovalee-iOS-SDK/compare/1.9.4...1.9.5
+[1.9.6]: https://github.com/cotyapps/Kovalee-iOS-SDK/compare/1.9.5...1.9.6
