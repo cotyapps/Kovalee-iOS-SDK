@@ -7,6 +7,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 <<<<<<< HEAD
 =======
+## [1.9.8] - 2024-04-30
+### :sparkles: New Features
+- [`236ae68`](https://github.com/cotyapps/Kovalee-iOS-SDK/commit/236ae68816cd23249491e8f333332d5a51d64752) - added Current SDK version to debug console *(commit by [@fto-k](https://github.com/fto-k))*
+- [`5672eb4`](https://github.com/cotyapps/Kovalee-iOS-SDK/commit/5672eb4e2060a605c7ce1edac770c189d2eaf0fe) - new revenue cat async login function *(commit by [@fto-k](https://github.com/fto-k))*
+- [`7607b61`](https://github.com/cotyapps/Kovalee-iOS-SDK/commit/7607b612e833bf16bac1dc6c634f80fd0e885d9c) - new revenue cat async login function *(commit by [@fto-k](https://github.com/fto-k))*
+
+
 ## [1.9.7] - 2024-04-30
 ### :bug: Bug Fixes
 - [`c893a93`](https://github.com/cotyapps/Kovalee-iOS-SDK/commit/c893a93eeb4614b12208b9f5b6cd0ddc78e0689a) - events sequences tracking for early events *(commit by [@fto-k](https://github.com/fto-k))*
@@ -403,3 +410,4 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 [1.9.5]: https://github.com/cotyapps/Kovalee-iOS-SDK/compare/1.9.4...1.9.5
 [1.9.6]: https://github.com/cotyapps/Kovalee-iOS-SDK/compare/1.9.5...1.9.6
 [1.9.7]: https://github.com/cotyapps/Kovalee-iOS-SDK/compare/1.9.6...1.9.7
+[1.9.8]: https://github.com/cotyapps/Kovalee-iOS-SDK/compare/1.9.7...1.9.8
