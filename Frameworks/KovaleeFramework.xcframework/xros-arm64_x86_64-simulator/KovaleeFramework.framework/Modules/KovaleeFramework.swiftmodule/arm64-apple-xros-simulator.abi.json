@@ -1484,6 +1484,53 @@
           },
           {
             "kind": "Function",
+            "name": "setRevenueCatUserId",
+            "printedName": "setRevenueCatUserId(userId:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "(any KovaleeFramework.AbstractCustomerInfo, created: Swift.Bool)?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Tuple",
+                    "printedName": "(any KovaleeFramework.AbstractCustomerInfo, created: Swift.Bool)",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "AbstractCustomerInfo",
+                        "printedName": "any KovaleeFramework.AbstractCustomerInfo",
+                        "usr": "s:16KovaleeFramework20AbstractCustomerInfoP"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Bool",
+                        "printedName": "Swift.Bool",
+                        "usr": "s:Sb"
+                      }
+                    ]
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:16KovaleeFramework0A7ManagerC19setRevenueCatUserId04userH0AA20AbstractCustomerInfo_p_Sb7createdtSgSS_tYaKF",
+            "mangledName": "$s16KovaleeFramework0A7ManagerC19setRevenueCatUserId04userH0AA20AbstractCustomerInfo_p_Sb7createdtSgSS_tYaKF",
+            "moduleName": "KovaleeFramework",
+            "isFromExtension": true,
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
             "name": "syncPurchase",
             "printedName": "syncPurchase()",
             "children": [
