@@ -8396,6 +8396,48 @@
           },
           {
             "kind": "Function",
+            "name": "setUserId",
+            "printedName": "setUserId(userId:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Tuple",
+                "printedName": "(any KovaleeFramework.AbstractCustomerInfo, created: Swift.Bool)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AbstractCustomerInfo",
+                    "printedName": "any KovaleeFramework.AbstractCustomerInfo",
+                    "usr": "s:16KovaleeFramework20AbstractCustomerInfoP"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ]
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:16KovaleeFramework15PurchaseManagerP9setUserId04userG0AA20AbstractCustomerInfo_p_Sb7createdtSS_tYaKF",
+            "mangledName": "$s16KovaleeFramework15PurchaseManagerP9setUserId04userG0AA20AbstractCustomerInfo_p_Sb7createdtSS_tYaKF",
+            "moduleName": "KovaleeFramework",
+            "genericSig": "<τ_0_0 where τ_0_0 : KovaleeFramework.PurchaseManager>",
+            "sugared_genericSig": "<Self where Self : KovaleeFramework.PurchaseManager>",
+            "protocolReq": true,
+            "throwing": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
             "name": "setAttribution",
             "printedName": "setAttribution(adid:)",
             "children": [
@@ -12953,7 +12995,7 @@
     {
       "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 7877,
+      "offset": 7891,
       "length": 5,
       "value": "false"
     },

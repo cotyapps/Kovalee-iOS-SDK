@@ -291,6 +291,9 @@ public protocol RemoteConfigurationManager {
 public protocol PurchaseManager {
   func revenueCatUserId() -> Swift.String
   func setUserId(userId: Swift.String)
+  #if compiler(>=5.3) && $AsyncAwait
+  func setUserId(userId: Swift.String) async throws -> (any KovaleeFramework.AbstractCustomerInfo, created: Swift.Bool)
+  #endif
   func setAttribution(adid: Swift.String)
   func setAmplitudeUserId(userId: Swift.String)
   #if compiler(>=5.3) && $AsyncAwait
