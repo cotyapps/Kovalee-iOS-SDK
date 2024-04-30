@@ -1,7 +1,7 @@
 import Foundation
 import KovaleeFramework
 
-let SDK_VERSION = "1.9.5"
+let SDK_VERSION = "1.9.6"
 
 /// A wrapper around all the third party tools used by Kovalee to gather information within the apps
 ///
