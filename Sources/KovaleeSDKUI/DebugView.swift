@@ -56,6 +56,7 @@ public struct DebugView: View {
     public var body: some View {
         NavigationView {
             List {
+                Text("SDK Version: \(SDK_VERSION)")
                 Toggle("Enable Debug Mode", isOn: $isDebugModeOn)
 
                 Section {
