@@ -7,6 +7,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 <<<<<<< HEAD
 =======
+## [1.9.7] - 2024-04-30
+### :bug: Bug Fixes
+- [`c893a93`](https://github.com/cotyapps/Kovalee-iOS-SDK/commit/c893a93eeb4614b12208b9f5b6cd0ddc78e0689a) - events sequences tracking for early events *(commit by [@fto-k](https://github.com/fto-k))*
+- [`d53ff2a`](https://github.com/cotyapps/Kovalee-iOS-SDK/commit/d53ff2ab2ff211a95ba68c2e32a8790f26c2418d) - events sequences tracking for early events *(commit by [@fto-k](https://github.com/fto-k))*
+
+
 ## [1.9.6] - 2024-04-24
 ### :bug: Bug Fixes
 - [`0f9e129`](https://github.com/cotyapps/Kovalee-iOS-SDK/commit/0f9e129a4de679ae8a713f664820257c9ae95c85) - setting amplitude id to RC on app open *(commit by [@fto-k](https://github.com/fto-k))*
@@ -396,3 +402,4 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 [1.9.3]: https://github.com/cotyapps/Kovalee-iOS-SDK/compare/1.9.2...1.9.3
 [1.9.5]: https://github.com/cotyapps/Kovalee-iOS-SDK/compare/1.9.4...1.9.5
 [1.9.6]: https://github.com/cotyapps/Kovalee-iOS-SDK/compare/1.9.5...1.9.6
+[1.9.7]: https://github.com/cotyapps/Kovalee-iOS-SDK/compare/1.9.6...1.9.7
