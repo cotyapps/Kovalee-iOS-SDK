@@ -7,6 +7,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 <<<<<<< HEAD
 =======
+## [1.9.9] - 2024-05-02
+### :bug: Bug Fixes
+- [`5859a9c`](https://github.com/cotyapps/Kovalee-iOS-SDK/commit/5859a9cfd2851099a0bc71baac7843992fc09926) - fixed tracking authorization and related cv *(commit by [@fto-k](https://github.com/fto-k))*
+- [`f8706a0`](https://github.com/cotyapps/Kovalee-iOS-SDK/commit/f8706a0a9629ed34bb5621da2b9b5d48107f0b5f) - rolled back attribution *(commit by [@fto-k](https://github.com/fto-k))*
+
+
 ## [1.9.8] - 2024-04-30
 ### :sparkles: New Features
 - [`236ae68`](https://github.com/cotyapps/Kovalee-iOS-SDK/commit/236ae68816cd23249491e8f333332d5a51d64752) - added Current SDK version to debug console *(commit by [@fto-k](https://github.com/fto-k))*
@@ -411,3 +417,4 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 [1.9.6]: https://github.com/cotyapps/Kovalee-iOS-SDK/compare/1.9.5...1.9.6
 [1.9.7]: https://github.com/cotyapps/Kovalee-iOS-SDK/compare/1.9.6...1.9.7
 [1.9.8]: https://github.com/cotyapps/Kovalee-iOS-SDK/compare/1.9.7...1.9.8
+[1.9.9]: https://github.com/cotyapps/Kovalee-iOS-SDK/compare/1.9.8...1.9.9
