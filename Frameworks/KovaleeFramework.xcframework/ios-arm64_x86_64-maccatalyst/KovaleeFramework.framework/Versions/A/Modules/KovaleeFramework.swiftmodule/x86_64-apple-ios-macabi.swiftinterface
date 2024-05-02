@@ -17,9 +17,7 @@ public class KovaleeManager {
   public func setupRemoteConfigurationManager(remoteConfigManager: any KovaleeFramework.RemoteConfigurationManager)
   public func setupAdsManager(adsManager: any KovaleeFramework.AdsManager)
   public func setupPaywallManager(paywallManager: any KovaleeFramework.PaywallManager)
-  #if compiler(>=5.3) && $AsyncAwait
-  public func promptTrackingAuthorization() async -> AppTrackingTransparency.ATTrackingManager.AuthorizationStatus
-  #endif
+  public func promptTrackingAuthorization(completion: @escaping (AppTrackingTransparency.ATTrackingManager.AuthorizationStatus) -> Swift.Void)
   public func getAttributionAdid() -> Swift.String?
   public func attributionCallback(withAdid adid: Swift.String?)
   public func setDefaultUserId()
@@ -265,9 +263,7 @@ public struct AdjustConfiguration {
 }
 public protocol AttributionManager {
   func getAttributionAdid() -> Swift.String?
-  #if compiler(>=5.3) && $AsyncAwait
-  func promptTrackingAuthorization() async -> AppTrackingTransparency.ATTrackingManager.AuthorizationStatus
-  #endif
+  func promptTrackingAuthorization(completion: @escaping (AppTrackingTransparency.ATTrackingManager.AuthorizationStatus) -> Swift.Void)
   func sendConversionValue_SKA3(value: Swift.Int)
   func sendConversionValue_SKA4(value: Swift.Int, coarseValue: Swift.String, completion: @escaping ((any Swift.Error)?) -> Swift.Void)
   func setDataCollectionEnabled(_ enabled: Swift.Bool)

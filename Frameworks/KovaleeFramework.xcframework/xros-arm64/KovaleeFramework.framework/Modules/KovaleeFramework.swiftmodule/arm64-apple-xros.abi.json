@@ -202,18 +202,35 @@
           {
             "kind": "Function",
             "name": "promptTrackingAuthorization",
-            "printedName": "promptTrackingAuthorization()",
+            "printedName": "promptTrackingAuthorization(completion:)",
             "children": [
               {
                 "kind": "TypeNominal",
-                "name": "AuthorizationStatus",
-                "printedName": "AppTrackingTransparency.ATTrackingManager.AuthorizationStatus",
-                "usr": "c:@E@ATTrackingManagerAuthorizationStatus"
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(AppTrackingTransparency.ATTrackingManager.AuthorizationStatus) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AuthorizationStatus",
+                    "printedName": "AppTrackingTransparency.ATTrackingManager.AuthorizationStatus",
+                    "usr": "c:@E@ATTrackingManagerAuthorizationStatus"
+                  }
+                ]
               }
             ],
             "declKind": "Func",
-            "usr": "s:16KovaleeFramework0A7ManagerC27promptTrackingAuthorizationSo010ATTrackingcF6StatusVyYaF",
-            "mangledName": "$s16KovaleeFramework0A7ManagerC27promptTrackingAuthorizationSo010ATTrackingcF6StatusVyYaF",
+            "usr": "s:16KovaleeFramework0A7ManagerC27promptTrackingAuthorization10completionyySo010ATTrackingcF6StatusVc_tF",
+            "mangledName": "$s16KovaleeFramework0A7ManagerC27promptTrackingAuthorization10completionyySo010ATTrackingcF6StatusVc_tF",
             "moduleName": "KovaleeFramework",
             "declAttributes": [
               "AccessControl"
@@ -7688,18 +7705,35 @@
           {
             "kind": "Function",
             "name": "promptTrackingAuthorization",
-            "printedName": "promptTrackingAuthorization()",
+            "printedName": "promptTrackingAuthorization(completion:)",
             "children": [
               {
                 "kind": "TypeNominal",
-                "name": "AuthorizationStatus",
-                "printedName": "AppTrackingTransparency.ATTrackingManager.AuthorizationStatus",
-                "usr": "c:@E@ATTrackingManagerAuthorizationStatus"
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(AppTrackingTransparency.ATTrackingManager.AuthorizationStatus) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AuthorizationStatus",
+                    "printedName": "AppTrackingTransparency.ATTrackingManager.AuthorizationStatus",
+                    "usr": "c:@E@ATTrackingManagerAuthorizationStatus"
+                  }
+                ]
               }
             ],
             "declKind": "Func",
-            "usr": "s:16KovaleeFramework18AttributionManagerP27promptTrackingAuthorizationSo010ATTrackingdG6StatusVyYaF",
-            "mangledName": "$s16KovaleeFramework18AttributionManagerP27promptTrackingAuthorizationSo010ATTrackingdG6StatusVyYaF",
+            "usr": "s:16KovaleeFramework18AttributionManagerP27promptTrackingAuthorization10completionyySo010ATTrackingdG6StatusVc_tF",
+            "mangledName": "$s16KovaleeFramework18AttributionManagerP27promptTrackingAuthorization10completionyySo010ATTrackingdG6StatusVc_tF",
             "moduleName": "KovaleeFramework",
             "genericSig": "<τ_0_0 where τ_0_0 : KovaleeFramework.AttributionManager>",
             "sugared_genericSig": "<Self where Self : KovaleeFramework.AttributionManager>",
@@ -13008,7 +13042,7 @@
     {
       "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 7736,
+      "offset": 7798,
       "length": 5,
       "value": "false"
     },
