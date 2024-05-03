@@ -7,6 +7,17 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 <<<<<<< HEAD
 =======
+## [1.9.11] - 2024-05-03
+### :sparkles: New Features
+- [`ba587c3`](https://github.com/cotyapps/Kovalee-iOS-SDK/commit/ba587c3c29f900d8ec4d5c22a8746ca2a7ab875b) - send naAttDeactivate only if choice is actually deactivate *(commit by [@fto-k](https://github.com/fto-k))*
+
+### :bug: Bug Fixes
+- [`d6bf1e4`](https://github.com/cotyapps/Kovalee-iOS-SDK/commit/d6bf1e490aaa95c1c78ad548a12cf208728ae7b4) - fixed issue with sending double conversion value *(commit by [@fto-k](https://github.com/fto-k))*
+
+### :wrench: Chores
+- [`cb8467b`](https://github.com/cotyapps/Kovalee-iOS-SDK/commit/cb8467bba1e6340a6eb6f116ff71e8a9083297d7) - updated SDK_VERSION string *(commit by [@fto-k](https://github.com/fto-k))*
+
+
 ## [1.9.9] - 2024-05-02
 ### :bug: Bug Fixes
 - [`5859a9c`](https://github.com/cotyapps/Kovalee-iOS-SDK/commit/5859a9cfd2851099a0bc71baac7843992fc09926) - fixed tracking authorization and related cv *(commit by [@fto-k](https://github.com/fto-k))*
@@ -418,3 +429,4 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 [1.9.7]: https://github.com/cotyapps/Kovalee-iOS-SDK/compare/1.9.6...1.9.7
 [1.9.8]: https://github.com/cotyapps/Kovalee-iOS-SDK/compare/1.9.7...1.9.8
 [1.9.9]: https://github.com/cotyapps/Kovalee-iOS-SDK/compare/1.9.8...1.9.9
+[1.9.11]: https://github.com/cotyapps/Kovalee-iOS-SDK/compare/1.9.10...1.9.11
