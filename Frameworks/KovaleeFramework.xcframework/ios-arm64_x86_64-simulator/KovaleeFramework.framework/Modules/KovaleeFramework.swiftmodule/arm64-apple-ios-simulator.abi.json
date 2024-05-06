@@ -9446,6 +9446,43 @@
           },
           {
             "kind": "Var",
+            "name": "adjustNotReadyYet",
+            "printedName": "adjustNotReadyYet",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(KovaleeFramework.KovaleeError.Type) -> KovaleeFramework.KovaleeError",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "KovaleeError",
+                    "printedName": "KovaleeFramework.KovaleeError",
+                    "usr": "s:16KovaleeFramework0A5ErrorO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "KovaleeFramework.KovaleeError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "KovaleeError",
+                        "printedName": "KovaleeFramework.KovaleeError",
+                        "usr": "s:16KovaleeFramework0A5ErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:16KovaleeFramework0A5ErrorO17adjustNotReadyYetyA2CmF",
+            "mangledName": "$s16KovaleeFramework0A5ErrorO17adjustNotReadyYetyA2CmF",
+            "moduleName": "KovaleeFramework"
+          },
+          {
+            "kind": "Var",
             "name": "remoteValueAlreadyUsedForABTest",
             "printedName": "remoteValueAlreadyUsedForABTest",
             "children": [
@@ -13042,7 +13079,7 @@
     {
       "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 7982,
+      "offset": 8012,
       "length": 5,
       "value": "false"
     },

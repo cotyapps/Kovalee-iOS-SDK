@@ -367,6 +367,7 @@ public protocol PaywallManager {
 }
 public enum KovaleeError : Swift.Error {
   case firebaseNotInitialized
+  case adjustNotReadyYet
   case remoteValueAlreadyUsedForABTest
   case remoteValueFetchError
   public static func == (a: KovaleeFramework.KovaleeError, b: KovaleeFramework.KovaleeError) -> Swift.Bool
