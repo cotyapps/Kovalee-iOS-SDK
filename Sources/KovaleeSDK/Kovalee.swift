@@ -138,6 +138,9 @@ extension Kovalee {
                 }
 
             case .paywall:
+                guard keys.superwall != nil else {
+                    return
+                }
                 let creator = PaywallManagerCreator()
                 if let paywallManager = (creator as? Creator)?.createImplementation(
                     withConfiguration: configuration,

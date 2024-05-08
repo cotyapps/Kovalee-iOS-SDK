@@ -1531,6 +1531,34 @@
           },
           {
             "kind": "Function",
+            "name": "logoutRevenueCatUser",
+            "printedName": "logoutRevenueCatUser()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "(any KovaleeFramework.AbstractCustomerInfo)?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AbstractCustomerInfo",
+                    "printedName": "any KovaleeFramework.AbstractCustomerInfo",
+                    "usr": "s:16KovaleeFramework20AbstractCustomerInfoP"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:16KovaleeFramework0A7ManagerC20logoutRevenueCatUserAA20AbstractCustomerInfo_pSgyYaKF",
+            "mangledName": "$s16KovaleeFramework0A7ManagerC20logoutRevenueCatUserAA20AbstractCustomerInfo_pSgyYaKF",
+            "moduleName": "KovaleeFramework",
+            "isFromExtension": true,
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
             "name": "syncPurchase",
             "printedName": "syncPurchase()",
             "children": [
@@ -8485,6 +8513,29 @@
           },
           {
             "kind": "Function",
+            "name": "logout",
+            "printedName": "logout()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "AbstractCustomerInfo",
+                "printedName": "any KovaleeFramework.AbstractCustomerInfo",
+                "usr": "s:16KovaleeFramework20AbstractCustomerInfoP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:16KovaleeFramework15PurchaseManagerP6logoutAA20AbstractCustomerInfo_pyYaKF",
+            "mangledName": "$s16KovaleeFramework15PurchaseManagerP6logoutAA20AbstractCustomerInfo_pyYaKF",
+            "moduleName": "KovaleeFramework",
+            "genericSig": "<τ_0_0 where τ_0_0 : KovaleeFramework.PurchaseManager>",
+            "sugared_genericSig": "<Self where Self : KovaleeFramework.PurchaseManager>",
+            "protocolReq": true,
+            "throwing": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
             "name": "setAttribution",
             "printedName": "setAttribution(adid:)",
             "children": [
@@ -9442,43 +9493,6 @@
             "declKind": "EnumElement",
             "usr": "s:16KovaleeFramework0A5ErrorO22firebaseNotInitializedyA2CmF",
             "mangledName": "$s16KovaleeFramework0A5ErrorO22firebaseNotInitializedyA2CmF",
-            "moduleName": "KovaleeFramework"
-          },
-          {
-            "kind": "Var",
-            "name": "adjustNotReadyYet",
-            "printedName": "adjustNotReadyYet",
-            "children": [
-              {
-                "kind": "TypeFunc",
-                "name": "Function",
-                "printedName": "(KovaleeFramework.KovaleeError.Type) -> KovaleeFramework.KovaleeError",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "KovaleeError",
-                    "printedName": "KovaleeFramework.KovaleeError",
-                    "usr": "s:16KovaleeFramework0A5ErrorO"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Metatype",
-                    "printedName": "KovaleeFramework.KovaleeError.Type",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "KovaleeError",
-                        "printedName": "KovaleeFramework.KovaleeError",
-                        "usr": "s:16KovaleeFramework0A5ErrorO"
-                      }
-                    ]
-                  }
-                ]
-              }
-            ],
-            "declKind": "EnumElement",
-            "usr": "s:16KovaleeFramework0A5ErrorO17adjustNotReadyYetyA2CmF",
-            "mangledName": "$s16KovaleeFramework0A5ErrorO17adjustNotReadyYetyA2CmF",
             "moduleName": "KovaleeFramework"
           },
           {
