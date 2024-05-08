@@ -1,7 +1,7 @@
 import Foundation
 import KovaleeFramework
 
-public let SDK_VERSION = "1.9.10"
+public let SDK_VERSION = "1.9.11"
 
 /// A wrapper around all the third party tools used by Kovalee to gather information within the apps
 ///
@@ -138,6 +138,9 @@ extension Kovalee {
                 }
 
             case .paywall:
+                guard keys.superwall != nil else {
+                    return
+                }
                 let creator = PaywallManagerCreator()
                 if let paywallManager = (creator as? Creator)?.createImplementation(
                     withConfiguration: configuration,
