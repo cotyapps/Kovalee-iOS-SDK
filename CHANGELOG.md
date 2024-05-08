@@ -7,6 +7,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 <<<<<<< HEAD
 =======
+## [1.9.12] - 2024-05-08
+### :sparkles: New Features
+- [`f6a0caa`](https://github.com/cotyapps/Kovalee-iOS-SDK/commit/f6a0caad112c80aa71c122f96f44892d650df44a) - throws error if trying to fetch offers before adid has been synched *(commit by [@fto-k](https://github.com/fto-k))*
+- [`4879153`](https://github.com/cotyapps/Kovalee-iOS-SDK/commit/4879153e89ac22c27e9e4350d22b1b17bc2235f5) - updated xcframework with new Purchase method *(commit by [@fto-k](https://github.com/fto-k))*
+
+
 ## [1.9.11] - 2024-05-03
 ### :sparkles: New Features
 - [`ba587c3`](https://github.com/cotyapps/Kovalee-iOS-SDK/commit/ba587c3c29f900d8ec4d5c22a8746ca2a7ab875b) - send naAttDeactivate only if choice is actually deactivate *(commit by [@fto-k](https://github.com/fto-k))*
@@ -430,3 +436,4 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 [1.9.8]: https://github.com/cotyapps/Kovalee-iOS-SDK/compare/1.9.7...1.9.8
 [1.9.9]: https://github.com/cotyapps/Kovalee-iOS-SDK/compare/1.9.8...1.9.9
 [1.9.11]: https://github.com/cotyapps/Kovalee-iOS-SDK/compare/1.9.10...1.9.11
+[1.9.12]: https://github.com/cotyapps/Kovalee-iOS-SDK/compare/1.9.11...1.9.12
