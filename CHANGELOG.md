@@ -7,6 +7,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 <<<<<<< HEAD
 =======
+## [1.9.13] - 2024-05-16
+### :bug: Bug Fixes
+- [`6a94ef4`](https://github.com/cotyapps/Kovalee-iOS-SDK/commit/6a94ef406c975706448127997c10f50bfdf871c1) - fixed CV not sent if not set previously *(commit by [@fto-k](https://github.com/fto-k))*
+
+
 ## [1.9.12] - 2024-05-08
 ### :sparkles: New Features
 - [`f6a0caa`](https://github.com/cotyapps/Kovalee-iOS-SDK/commit/f6a0caad112c80aa71c122f96f44892d650df44a) - throws error if trying to fetch offers before adid has been synched *(commit by [@fto-k](https://github.com/fto-k))*
@@ -437,3 +442,4 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 [1.9.9]: https://github.com/cotyapps/Kovalee-iOS-SDK/compare/1.9.8...1.9.9
 [1.9.11]: https://github.com/cotyapps/Kovalee-iOS-SDK/compare/1.9.10...1.9.11
 [1.9.12]: https://github.com/cotyapps/Kovalee-iOS-SDK/compare/1.9.11...1.9.12
+[1.9.13]: https://github.com/cotyapps/Kovalee-iOS-SDK/compare/1.9.12...1.9.13
