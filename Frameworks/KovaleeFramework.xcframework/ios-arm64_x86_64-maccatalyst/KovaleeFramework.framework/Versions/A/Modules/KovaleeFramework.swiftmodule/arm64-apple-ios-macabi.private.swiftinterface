@@ -221,6 +221,7 @@ public enum StorageKeys : Swift.String {
   case abExperimentValue
   case abExperimentKey
   case isDataCollectionEnabled
+  case nttTrackingPromptStatus
   public init?(rawValue: Swift.String)
   public typealias RawValue = Swift.String
   public var rawValue: Swift.String {
