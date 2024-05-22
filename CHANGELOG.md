@@ -7,6 +7,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 <<<<<<< HEAD
 =======
+## [1.9.14] - 2024-05-22
+### :bug: Bug Fixes
+- [`f5fd15e`](https://github.com/cotyapps/Kovalee-iOS-SDK/commit/f5fd15e20d2f7729d2cfd62612d7d0d59cc67407) - fixing multiple ntt event sent *(commit by [@fto-k](https://github.com/fto-k))*
+
+
 ## [1.9.13] - 2024-05-16
 ### :bug: Bug Fixes
 - [`6a94ef4`](https://github.com/cotyapps/Kovalee-iOS-SDK/commit/6a94ef406c975706448127997c10f50bfdf871c1) - fixed CV not sent if not set previously *(commit by [@fto-k](https://github.com/fto-k))*
@@ -443,3 +448,4 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 [1.9.11]: https://github.com/cotyapps/Kovalee-iOS-SDK/compare/1.9.10...1.9.11
 [1.9.12]: https://github.com/cotyapps/Kovalee-iOS-SDK/compare/1.9.11...1.9.12
 [1.9.13]: https://github.com/cotyapps/Kovalee-iOS-SDK/compare/1.9.12...1.9.13
+[1.9.14]: https://github.com/cotyapps/Kovalee-iOS-SDK/compare/1.9.13...1.9.14
