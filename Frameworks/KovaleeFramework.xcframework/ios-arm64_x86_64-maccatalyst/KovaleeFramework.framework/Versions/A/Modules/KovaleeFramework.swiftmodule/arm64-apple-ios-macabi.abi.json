@@ -13130,7 +13130,7 @@
     {
       "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 8280,
+      "offset": 8444,
       "length": 5,
       "value": "false"
     },
@@ -13361,7 +13361,7 @@
     {
       "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/Utils\/Storage.swift",
       "kind": "StringLiteral",
-      "offset": 662,
+      "offset": 665,
       "length": 31,
       "value": "\"KV_ntt_tracking_prompt_status\""
     },
@@ -13445,7 +13445,7 @@
     {
       "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/Utils\/Storage.swift",
       "kind": "StringLiteral",
-      "offset": 662,
+      "offset": 665,
       "length": 31,
       "value": "\"KV_ntt_tracking_prompt_status\""
     },
