@@ -7,6 +7,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 <<<<<<< HEAD
 =======
+## [1.9.17] - 2024-05-31
+### :wrench: Chores
+- [`1b73251`](https://github.com/cotyapps/Kovalee-iOS-SDK/commit/1b73251e95777fe4e95395e31f48ee20cb55a725) - bumped app SDK version *(commit by [@fto-k](https://github.com/fto-k))*
+- [`65d1f37`](https://github.com/cotyapps/Kovalee-iOS-SDK/commit/65d1f37d2de31299eb7d526d798d4e3a407889fb) - created new KovaleeSDKUI podspecs *(commit by [@fto-k](https://github.com/fto-k))*
+
+
 ## [1.9.16] - 2024-05-31
 ### :wrench: Chores
 - [`b9ea938`](https://github.com/cotyapps/Kovalee-iOS-SDK/commit/b9ea938736c9123a9533dc65bff46a2c7ed2196f) - enabled KovaleeSDKUI for cocoapods *(commit by [@fto-k](https://github.com/fto-k))*
@@ -461,3 +467,4 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 [1.9.14]: https://github.com/cotyapps/Kovalee-iOS-SDK/compare/1.9.13...1.9.14
 [1.9.15]: https://github.com/cotyapps/Kovalee-iOS-SDK/compare/1.9.14...1.9.15
 [1.9.16]: https://github.com/cotyapps/Kovalee-iOS-SDK/compare/1.9.15...1.9.16
+[1.9.17]: https://github.com/cotyapps/Kovalee-iOS-SDK/compare/1.9.16...1.9.17
