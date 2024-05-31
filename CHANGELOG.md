@@ -7,6 +7,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 <<<<<<< HEAD
 =======
+## [1.9.16] - 2024-05-31
+### :wrench: Chores
+- [`b9ea938`](https://github.com/cotyapps/Kovalee-iOS-SDK/commit/b9ea938736c9123a9533dc65bff46a2c7ed2196f) - enabled KovaleeSDKUI for cocoapods *(commit by [@fto-k](https://github.com/fto-k))*
+
+
 ## [1.9.15] - 2024-05-23
 ### :bug: Bug Fixes
 - [`5dcd04a`](https://github.com/cotyapps/Kovalee-iOS-SDK/commit/5dcd04a92cb59fc7b808f3cc793d01fce0ce7972) - sync amplitudeId in RC *(commit by [@fto-k](https://github.com/fto-k))*
@@ -455,3 +460,4 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 [1.9.13]: https://github.com/cotyapps/Kovalee-iOS-SDK/compare/1.9.12...1.9.13
 [1.9.14]: https://github.com/cotyapps/Kovalee-iOS-SDK/compare/1.9.13...1.9.14
 [1.9.15]: https://github.com/cotyapps/Kovalee-iOS-SDK/compare/1.9.14...1.9.15
+[1.9.16]: https://github.com/cotyapps/Kovalee-iOS-SDK/compare/1.9.15...1.9.16
