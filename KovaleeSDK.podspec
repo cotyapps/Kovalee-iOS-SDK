@@ -14,17 +14,8 @@ Pod::Spec.new do |s|
 
   s.ios.deployment_target = '14.3'
   s.swift_version    = '5.7'
-  s.default_subspec       = 'SDK'
 
-  s.subspec 'SDK' do |sdk|
-    sdk.source_files = 'Sources/KovaleeSDK/**/{*.swift,!KovaleeSDKUI/*.swift}'  # Include all .swift files except those in KovaleeSDKUI folder
-    sdk.resources    = 'Sources/KovaleeSDK/PrivacyInfo.xcprivacy'
-    sdk.vendored_frameworks = ['Frameworks/KovaleeFramework.xcframework']
-	  sdk.dependency 'AmplitudeSwift', '>= 1.4.5'
-  end
-
-  s.subspec 'SDKUI' do |sdkUI|
-    sdkUI.source_files = 'Sources/KovaleeSDKUI/**/*.swift'
-    sdkUI.dependency 'KovaleeSDK/SDK'
-  end
+  s.source_files     =  "Sources/KovaleeSDK/**/*.swift"
+  s.vendored_frameworks = ['Frameworks/KovaleeFramework.xcframework']
+  s.dependency 'AmplitudeSwift', '>= 1.4.5'
 end
