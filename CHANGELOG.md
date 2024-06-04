@@ -7,6 +7,15 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 <<<<<<< HEAD
 =======
+## [1.9.19] - 2024-06-04
+### :sparkles: New Features
+- [`a2b9961`](https://github.com/cotyapps/Kovalee-iOS-SDK/commit/a2b996129482fc0004a9d26f62a381771f0fa673) - setting AmplitudeId just before purchase if no amplitude Id has been set before *(commit by [@fto-k](https://github.com/fto-k))*
+- [`6e78c9b`](https://github.com/cotyapps/Kovalee-iOS-SDK/commit/6e78c9bb573759fb26072aa646e326046bdfc9bf) - updated Amplitude Id setting during purchase *(commit by [@fto-k](https://github.com/fto-k))*
+
+### :wrench: Chores
+- [`4c848ee`](https://github.com/cotyapps/Kovalee-iOS-SDK/commit/4c848eee4d4d21a837b4cb8054a16fcebc8fb32e) - updated fastlane file to handle both podspecs *(commit by [@fto-k](https://github.com/fto-k))*
+
+
 ## [1.9.18] - 2024-06-03
 ### :bug: Bug Fixes
 - [`6e63338`](https://github.com/cotyapps/Kovalee-iOS-SDK/commit/6e6333856bdfd296569c2d7a2ce18a478aa41eb9) - fixing amplitude user id *(commit by [@fto-k](https://github.com/fto-k))*
@@ -478,3 +487,4 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 [1.9.16]: https://github.com/cotyapps/Kovalee-iOS-SDK/compare/1.9.15...1.9.16
 [1.9.17]: https://github.com/cotyapps/Kovalee-iOS-SDK/compare/1.9.16...1.9.17
 [1.9.18]: https://github.com/cotyapps/Kovalee-iOS-SDK/compare/1.9.17...1.9.18
+[1.9.19]: https://github.com/cotyapps/Kovalee-iOS-SDK/compare/1.9.18...1.9.19
