@@ -34,7 +34,7 @@ platform :ios do
 
   def release(type)
     podspec_name = "KovaleeSDK.podspec"
-    swift_file_path = "../Sources/KovaleeSDK/Kovalee.swift"
+    swift_file_path = "./Sources/KovaleeSDK/Kovalee.swift"
 
     pod_lib_lint
     version = version_bump_podspec(
@@ -42,7 +42,7 @@ platform :ios do
       bump_type: type
     )
 
-    update_version_in_swift(swift_file_path, version)
+    update_version_in_swift(version)
     handle_git(version, [podspec_name, swift_file_path])
 
     pod_push(path: podspec_name)
@@ -50,7 +50,8 @@ platform :ios do
   end
 end
 
-def update_version_in_swift(file_path, new_version)
+def update_version_in_swift(new_version)
+  file_path = "../Sources/KovaleeSDK/Kovalee.swift"
   text = File.read(file_path)
   new_contents = text.gsub(/(let SDK_VERSION = ")[^"]+/, "\\1#{new_version}")
 
