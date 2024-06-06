@@ -7,6 +7,18 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 <<<<<<< HEAD
 =======
+## [1.9.21] - 2024-06-06
+### :sparkles: New Features
+- [`e4622b1`](https://github.com/cotyapps/Kovalee-iOS-SDK/commit/e4622b12d589759af91d49dcb5dd5090b2daebca) - implemented alreadIntegrated flag for apps that already have kovalee tools integrated *(commit by [@fto-k](https://github.com/fto-k))*
+
+### :bug: Bug Fixes
+- [`cfea482`](https://github.com/cotyapps/Kovalee-iOS-SDK/commit/cfea4820f6e3eb1a0135baa6be976e8b58c7b7d3) - fixed fastlane script *(commit by [@fto-k](https://github.com/fto-k))*
+
+### :wrench: Chores
+- [`65deaa0`](https://github.com/cotyapps/Kovalee-iOS-SDK/commit/65deaa0c6fdb4b0dd4461cd244b005cebbb61c45) - fastlane file update *(commit by [@fto-k](https://github.com/fto-k))*
+- [`f48d7e7`](https://github.com/cotyapps/Kovalee-iOS-SDK/commit/f48d7e7d732fdc436fe8a2f84cec7cb7a0d083f5) - fastlane file update *(commit by [@fto-k](https://github.com/fto-k))*
+
+
 ## [1.9.20] - 2024-06-04
 ### :sparkles: New Features
 - [`551601e`](https://github.com/cotyapps/Kovalee-iOS-SDK/commit/551601e68435bd02734e55055bbb880a01022fb6) - setting Amplitude Id also for deprecated purchase function *(commit by [@fto-k](https://github.com/fto-k))*
@@ -500,3 +512,4 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 [1.9.18]: https://github.com/cotyapps/Kovalee-iOS-SDK/compare/1.9.17...1.9.18
 [1.9.19]: https://github.com/cotyapps/Kovalee-iOS-SDK/compare/1.9.18...1.9.19
 [1.9.20]: https://github.com/cotyapps/Kovalee-iOS-SDK/compare/1.9.19...1.9.20
+[1.9.21]: https://github.com/cotyapps/Kovalee-iOS-SDK/compare/1.9.20...1.9.21
