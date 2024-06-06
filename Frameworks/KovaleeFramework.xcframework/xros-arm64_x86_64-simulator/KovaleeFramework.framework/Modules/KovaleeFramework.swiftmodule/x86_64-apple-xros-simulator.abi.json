@@ -26,7 +26,7 @@
           {
             "kind": "Constructor",
             "name": "init",
-            "printedName": "init(withStorage:keys:sdkVersion:eventTrackerManager:)",
+            "printedName": "init(withStorage:keys:sdkVersion:eventTrackerManager:alreadyIntegrated:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -58,11 +58,17 @@
                 "name": "EventTrackerManager",
                 "printedName": "any KovaleeFramework.EventTrackerManager",
                 "usr": "s:16KovaleeFramework19EventTrackerManagerP"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
               }
             ],
             "declKind": "Constructor",
-            "usr": "s:16KovaleeFramework0A7ManagerC11withStorage4keys10sdkVersion012eventTrackerC0AcA0E0V_AA0A4KeysVSSAA05EventjC0_ptcfc",
-            "mangledName": "$s16KovaleeFramework0A7ManagerC11withStorage4keys10sdkVersion012eventTrackerC0AcA0E0V_AA0A4KeysVSSAA05EventjC0_ptcfc",
+            "usr": "s:16KovaleeFramework0A7ManagerC11withStorage4keys10sdkVersion012eventTrackerC017alreadyIntegratedAcA0E0V_AA0A4KeysVSSAA05EventjC0_pSbtcfc",
+            "mangledName": "$s16KovaleeFramework0A7ManagerC11withStorage4keys10sdkVersion012eventTrackerC017alreadyIntegratedAcA0E0V_AA0A4KeysVSSAA05EventjC0_pSbtcfc",
             "moduleName": "KovaleeFramework",
             "declAttributes": [
               "AccessControl"
@@ -13130,7 +13136,7 @@
     {
       "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 8127,
+      "offset": 8301,
       "length": 5,
       "value": "false"
     },

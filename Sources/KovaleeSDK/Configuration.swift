@@ -3,7 +3,6 @@ import KovaleeFramework
 
 /// A type that describes how to configure ``Kovalee``
 public struct Configuration {
-
     /// The type of environment
     ///
     /// ### Environment
@@ -15,7 +14,7 @@ public struct Configuration {
         case development
         case production
 
-		/// this should only be used for testing purposes
+        /// this should only be used for testing purposes
         case test
     }
 
@@ -23,7 +22,8 @@ public struct Configuration {
     public var environment: Environment
     /// Configuration log level
     public var logLevel: LogLevel
-	public var keysFileUrl: URL?
+    public var keysFileUrl: URL?
+    public var alreadyIntegrated: Bool
 
     /// Creates a configuration with environment, keys file name, and log level.
     ///
@@ -36,37 +36,41 @@ public struct Configuration {
     public init(
         environment: Environment,
         keysFileName: String = KovaleeConstants.keysFileName,
-        logLevel: LogLevel = .info
+        logLevel: LogLevel = .info,
+        alreadyIntegrated: Bool = false
     ) {
         self.environment = environment
-        self.keysFileUrl = Bundle.main.url(
+        keysFileUrl = Bundle.main.url(
             forResource: keysFileName,
             withExtension: "json"
         )
         self.logLevel = logLevel
+        self.alreadyIntegrated = alreadyIntegrated
     }
 
     init(
         environment: Environment,
         fileUrl: URL?,
-        logLevel: LogLevel = .info
+        logLevel: LogLevel = .info,
+        alreadyIntegrated: Bool = false
     ) {
         self.environment = environment
-        self.keysFileUrl = fileUrl
+        keysFileUrl = fileUrl
         self.logLevel = logLevel
+        self.alreadyIntegrated = alreadyIntegrated
     }
 }
 
-extension Configuration {
-    public static func test(keysFileUrl: URL) -> Self {
+public extension Configuration {
+    static func test(keysFileUrl: URL) -> Self {
         Self(environment: .test, fileUrl: keysFileUrl)
     }
 
-	public static var preview: Self {
+    static var preview: Self {
         Self(environment: .test, fileUrl: nil)
     }
 
-	public static func currentLogLevel(fromRawValue logLevel: Int) -> LogLevel? {
-		LogLevel.init(rawValue: logLevel)
-	}
+    static func currentLogLevel(fromRawValue logLevel: Int) -> LogLevel? {
+        LogLevel(rawValue: logLevel)
+    }
 }

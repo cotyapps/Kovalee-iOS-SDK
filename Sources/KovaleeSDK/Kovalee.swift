@@ -73,7 +73,8 @@ public final class Kovalee {
                 kovaleeManager = KovaleeManager(
                     keys: keys,
                     sdkVersion: SDK_VERSION,
-                    eventTrackerManager: eventTracker
+                    eventTrackerManager: eventTracker,
+                    alreadyIntegrated: configuration.alreadyIntegrated
                 )
 
                 setupCapabilities()
