@@ -18,6 +18,15 @@
           "revision": "e2ca17ac735bcbc48b13062484541702ef45153d",
           "version": "1.0.3"
         }
+      },
+      {
+        "package": "Survicate",
+        "repositoryURL": "https://github.com/Survicate/survicate-ios-sdk",
+        "state": {
+          "branch": null,
+          "revision": "bd013377f640cfc76907205317c09c49ab2e5833",
+          "version": "5.0.0"
+        }
       }
     ]
   },

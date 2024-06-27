@@ -19,6 +19,7 @@ let package = Package(
     ],
     dependencies: [
         .package(url: "https://github.com/amplitude/Amplitude-Swift", .upToNextMajor(from: "1.4.3")),
+        .package(url: "https://github.com/Survicate/survicate-ios-sdk", .upToNextMajor(from: "5.0.0")),
     ],
     targets: [
         .binaryTarget(
@@ -40,6 +41,12 @@ let package = Package(
             name: .sdkUI,
             dependencies: [
                 .sdk,
+            ]
+        ),
+        .target(
+            name: "KovaleeSurvey",
+            dependencies: [
+                .product(name: "Survicate", package: "survicate-ios-sdk"),
             ]
         ),
     ]
