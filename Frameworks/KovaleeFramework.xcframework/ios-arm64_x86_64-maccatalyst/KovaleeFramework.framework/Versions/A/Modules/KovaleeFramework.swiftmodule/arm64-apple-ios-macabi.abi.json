@@ -207,6 +207,32 @@
           },
           {
             "kind": "Function",
+            "name": "setupSurveyManager",
+            "printedName": "setupSurveyManager(surveyManager:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "SurveyManager",
+                "printedName": "any KovaleeFramework.SurveyManager",
+                "usr": "s:16KovaleeFramework13SurveyManagerP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:16KovaleeFramework0A7ManagerC011setupSurveyC006surveyC0yAA0eC0_p_tF",
+            "mangledName": "$s16KovaleeFramework0A7ManagerC011setupSurveyC006surveyC0yAA0eC0_p_tF",
+            "moduleName": "KovaleeFramework",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
             "name": "promptTrackingAuthorization",
             "printedName": "promptTrackingAuthorization(completion:)",
             "children": [
@@ -1383,6 +1409,116 @@
                 "declKind": "Accessor",
                 "usr": "s:16KovaleeFramework0A7ManagerC07paywallC0AA07PaywallC0_pSgvM",
                 "mangledName": "$s16KovaleeFramework0A7ManagerC07paywallC0AA07PaywallC0_pSgvM",
+                "moduleName": "KovaleeFramework",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "surveyManager",
+            "printedName": "surveyManager",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "(any KovaleeFramework.SurveyManager)?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "SurveyManager",
+                    "printedName": "any KovaleeFramework.SurveyManager",
+                    "usr": "s:16KovaleeFramework13SurveyManagerP"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:16KovaleeFramework0A7ManagerC06surveyC0AA06SurveyC0_pSgvp",
+            "mangledName": "$s16KovaleeFramework0A7ManagerC06surveyC0AA06SurveyC0_pSgvp",
+            "moduleName": "KovaleeFramework",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "(any KovaleeFramework.SurveyManager)?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "SurveyManager",
+                        "printedName": "any KovaleeFramework.SurveyManager",
+                        "usr": "s:16KovaleeFramework13SurveyManagerP"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:16KovaleeFramework0A7ManagerC06surveyC0AA06SurveyC0_pSgvg",
+                "mangledName": "$s16KovaleeFramework0A7ManagerC06surveyC0AA06SurveyC0_pSgvg",
+                "moduleName": "KovaleeFramework",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "(any KovaleeFramework.SurveyManager)?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "SurveyManager",
+                        "printedName": "any KovaleeFramework.SurveyManager",
+                        "usr": "s:16KovaleeFramework13SurveyManagerP"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:16KovaleeFramework0A7ManagerC06surveyC0AA06SurveyC0_pSgvs",
+                "mangledName": "$s16KovaleeFramework0A7ManagerC06surveyC0AA06SurveyC0_pSgvs",
+                "moduleName": "KovaleeFramework",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:16KovaleeFramework0A7ManagerC06surveyC0AA06SurveyC0_pSgvM",
+                "mangledName": "$s16KovaleeFramework0A7ManagerC06surveyC0AA06SurveyC0_pSgvM",
                 "moduleName": "KovaleeFramework",
                 "implicit": true,
                 "accessorKind": "_modify"
@@ -3733,6 +3869,66 @@
             ]
           },
           {
+            "kind": "Var",
+            "name": "survicate",
+            "printedName": "survicate",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "KovaleeFramework.KovaleeKeys.Survicate?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Survicate",
+                    "printedName": "KovaleeFramework.KovaleeKeys.Survicate",
+                    "usr": "s:16KovaleeFramework0A4KeysV9SurvicateV"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:16KovaleeFramework0A4KeysV9survicateAC9SurvicateVSgvp",
+            "mangledName": "$s16KovaleeFramework0A4KeysV9survicateAC9SurvicateVSgvp",
+            "moduleName": "KovaleeFramework",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "KovaleeFramework.KovaleeKeys.Survicate?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Survicate",
+                        "printedName": "KovaleeFramework.KovaleeKeys.Survicate",
+                        "usr": "s:16KovaleeFramework0A4KeysV9SurvicateV"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:16KovaleeFramework0A4KeysV9survicateAC9SurvicateVSgvg",
+                "mangledName": "$s16KovaleeFramework0A4KeysV9survicateAC9SurvicateVSgvg",
+                "moduleName": "KovaleeFramework",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
             "kind": "TypeDecl",
             "name": "Amplitude",
             "printedName": "Amplitude",
@@ -5468,6 +5664,99 @@
             "declKind": "Struct",
             "usr": "s:16KovaleeFramework0A4KeysV9SuperwallV",
             "mangledName": "$s16KovaleeFramework0A4KeysV9SuperwallV",
+            "moduleName": "KovaleeFramework",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "conformances": [
+              {
+                "kind": "Conformance",
+                "name": "Decodable",
+                "printedName": "Decodable",
+                "usr": "s:Se",
+                "mangledName": "$sSe"
+              }
+            ]
+          },
+          {
+            "kind": "TypeDecl",
+            "name": "Survicate",
+            "printedName": "Survicate",
+            "children": [
+              {
+                "kind": "Var",
+                "name": "sdkId",
+                "printedName": "sdkId",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:16KovaleeFramework0A4KeysV9SurvicateV5sdkIdSSvp",
+                "mangledName": "$s16KovaleeFramework0A4KeysV9SurvicateV5sdkIdSSvp",
+                "moduleName": "KovaleeFramework",
+                "declAttributes": [
+                  "HasStorage",
+                  "AccessControl"
+                ],
+                "isLet": true,
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:16KovaleeFramework0A4KeysV9SurvicateV5sdkIdSSvg",
+                    "mangledName": "$s16KovaleeFramework0A4KeysV9SurvicateV5sdkIdSSvg",
+                    "moduleName": "KovaleeFramework",
+                    "implicit": true,
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Constructor",
+                "name": "init",
+                "printedName": "init(from:)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Survicate",
+                    "printedName": "KovaleeFramework.KovaleeKeys.Survicate",
+                    "usr": "s:16KovaleeFramework0A4KeysV9SurvicateV"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Decoder",
+                    "printedName": "any Swift.Decoder",
+                    "usr": "s:s7DecoderP"
+                  }
+                ],
+                "declKind": "Constructor",
+                "usr": "s:16KovaleeFramework0A4KeysV9SurvicateV4fromAEs7Decoder_p_tKcfc",
+                "mangledName": "$s16KovaleeFramework0A4KeysV9SurvicateV4fromAEs7Decoder_p_tKcfc",
+                "moduleName": "KovaleeFramework",
+                "implicit": true,
+                "throwing": true,
+                "init_kind": "Designated"
+              }
+            ],
+            "declKind": "Struct",
+            "usr": "s:16KovaleeFramework0A4KeysV9SurvicateV",
+            "mangledName": "$s16KovaleeFramework0A4KeysV9SurvicateV",
             "moduleName": "KovaleeFramework",
             "declAttributes": [
               "AccessControl"
@@ -7759,7 +8048,8 @@
         "mangledName": "$s16KovaleeFramework19AdjustConfigurationV",
         "moduleName": "KovaleeFramework",
         "declAttributes": [
-          "AccessControl"
+          "AccessControl",
+          "RawDocComment"
         ]
       },
       {
@@ -8321,7 +8611,8 @@
         "mangledName": "$s16KovaleeFramework19EventTrackerManagerP",
         "moduleName": "KovaleeFramework",
         "declAttributes": [
-          "AccessControl"
+          "AccessControl",
+          "RawDocComment"
         ]
       },
       {
@@ -8479,7 +8770,8 @@
         "mangledName": "$s16KovaleeFramework26RemoteConfigurationManagerP",
         "moduleName": "KovaleeFramework",
         "declAttributes": [
-          "AccessControl"
+          "AccessControl",
+          "RawDocComment"
         ]
       },
       {
@@ -8954,7 +9246,8 @@
         "mangledName": "$s16KovaleeFramework15PurchaseManagerP",
         "moduleName": "KovaleeFramework",
         "declAttributes": [
-          "AccessControl"
+          "AccessControl",
+          "RawDocComment"
         ]
       },
       {
@@ -9538,6 +9831,169 @@
         "moduleName": "KovaleeFramework",
         "declAttributes": [
           "AccessControl"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "SurveyManager",
+        "printedName": "SurveyManager",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "sendEvent",
+            "printedName": "sendEvent(with:andProperties:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Dictionary",
+                "printedName": "[Swift.String : Swift.String]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:SD"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:16KovaleeFramework13SurveyManagerP9sendEvent4with13andPropertiesySS_SDyS2SGtF",
+            "mangledName": "$s16KovaleeFramework13SurveyManagerP9sendEvent4with13andPropertiesySS_SDyS2SGtF",
+            "moduleName": "KovaleeFramework",
+            "genericSig": "<τ_0_0 where τ_0_0 : KovaleeFramework.SurveyManager>",
+            "sugared_genericSig": "<Self where Self : KovaleeFramework.SurveyManager>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "viewScreen",
+            "printedName": "viewScreen(with:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:16KovaleeFramework13SurveyManagerP10viewScreen4withySS_tF",
+            "mangledName": "$s16KovaleeFramework13SurveyManagerP10viewScreen4withySS_tF",
+            "moduleName": "KovaleeFramework",
+            "genericSig": "<τ_0_0 where τ_0_0 : KovaleeFramework.SurveyManager>",
+            "sugared_genericSig": "<Self where Self : KovaleeFramework.SurveyManager>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "setUserProperies",
+            "printedName": "setUserProperies(properties:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Dictionary",
+                "printedName": "[Swift.String : Swift.String]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:SD"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:16KovaleeFramework13SurveyManagerP16setUserProperies10propertiesySDyS2SG_tF",
+            "mangledName": "$s16KovaleeFramework13SurveyManagerP16setUserProperies10propertiesySDyS2SG_tF",
+            "moduleName": "KovaleeFramework",
+            "genericSig": "<τ_0_0 where τ_0_0 : KovaleeFramework.SurveyManager>",
+            "sugared_genericSig": "<Self where Self : KovaleeFramework.SurveyManager>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "setUserProperty",
+            "printedName": "setUserProperty(withName:andValue:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:16KovaleeFramework13SurveyManagerP15setUserProperty8withName8andValueySS_SStF",
+            "mangledName": "$s16KovaleeFramework13SurveyManagerP15setUserProperty8withName8andValueySS_SStF",
+            "moduleName": "KovaleeFramework",
+            "genericSig": "<τ_0_0 where τ_0_0 : KovaleeFramework.SurveyManager>",
+            "sugared_genericSig": "<Self where Self : KovaleeFramework.SurveyManager>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Protocol",
+        "usr": "s:16KovaleeFramework13SurveyManagerP",
+        "mangledName": "$s16KovaleeFramework13SurveyManagerP",
+        "moduleName": "KovaleeFramework",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
         ]
       },
       {
@@ -13185,504 +13641,504 @@
   },
   "ConstValues": [
     {
-      "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
+      "filePath": "\/Users\/rodrigogiglio\/Desktop\/Kovalee-iOS-Framework\/KovaleeFramework\/KovaleeManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 8326,
+      "offset": 8488,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/Logger\/Logger.swift",
+      "filePath": "\/Users\/rodrigogiglio\/Desktop\/Kovalee-iOS-Framework\/KovaleeFramework\/Logger\/Logger.swift",
       "kind": "StringLiteral",
       "offset": 228,
       "length": 12,
       "value": "\"KovaleeSDK\""
     },
     {
-      "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/Logger\/LogLevel.swift",
+      "filePath": "\/Users\/rodrigogiglio\/Desktop\/Kovalee-iOS-Framework\/KovaleeFramework\/Logger\/LogLevel.swift",
       "kind": "IntegerLiteral",
       "offset": 118,
       "length": 1,
       "value": "4"
     },
     {
-      "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/Logger\/LogLevel.swift",
+      "filePath": "\/Users\/rodrigogiglio\/Desktop\/Kovalee-iOS-Framework\/KovaleeFramework\/Logger\/LogLevel.swift",
       "kind": "IntegerLiteral",
       "offset": 170,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/Logger\/LogLevel.swift",
+      "filePath": "\/Users\/rodrigogiglio\/Desktop\/Kovalee-iOS-Framework\/KovaleeFramework\/Logger\/LogLevel.swift",
       "kind": "IntegerLiteral",
       "offset": 225,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/Logger\/LogLevel.swift",
+      "filePath": "\/Users\/rodrigogiglio\/Desktop\/Kovalee-iOS-Framework\/KovaleeFramework\/Logger\/LogLevel.swift",
       "kind": "IntegerLiteral",
       "offset": 289,
       "length": 1,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/Logger\/LogLevel.swift",
+      "filePath": "\/Users\/rodrigogiglio\/Desktop\/Kovalee-iOS-Framework\/KovaleeFramework\/Logger\/LogLevel.swift",
       "kind": "IntegerLiteral",
       "offset": 361,
       "length": 1,
       "value": "3"
     },
     {
-      "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/Logger\/LogLevel.swift",
+      "filePath": "\/Users\/rodrigogiglio\/Desktop\/Kovalee-iOS-Framework\/KovaleeFramework\/Logger\/LogLevel.swift",
       "kind": "IntegerLiteral",
       "offset": 118,
       "length": 1,
       "value": "4"
     },
     {
-      "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/Logger\/LogLevel.swift",
+      "filePath": "\/Users\/rodrigogiglio\/Desktop\/Kovalee-iOS-Framework\/KovaleeFramework\/Logger\/LogLevel.swift",
       "kind": "IntegerLiteral",
       "offset": 170,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/Logger\/LogLevel.swift",
+      "filePath": "\/Users\/rodrigogiglio\/Desktop\/Kovalee-iOS-Framework\/KovaleeFramework\/Logger\/LogLevel.swift",
       "kind": "IntegerLiteral",
       "offset": 225,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/Logger\/LogLevel.swift",
+      "filePath": "\/Users\/rodrigogiglio\/Desktop\/Kovalee-iOS-Framework\/KovaleeFramework\/Logger\/LogLevel.swift",
       "kind": "IntegerLiteral",
       "offset": 289,
       "length": 1,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/Logger\/LogLevel.swift",
+      "filePath": "\/Users\/rodrigogiglio\/Desktop\/Kovalee-iOS-Framework\/KovaleeFramework\/Logger\/LogLevel.swift",
       "kind": "IntegerLiteral",
       "offset": 361,
       "length": 1,
       "value": "3"
     },
     {
-      "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/Logger\/LogLevel.swift",
+      "filePath": "\/Users\/rodrigogiglio\/Desktop\/Kovalee-iOS-Framework\/KovaleeFramework\/Logger\/LogLevel.swift",
       "kind": "IntegerLiteral",
       "offset": 118,
       "length": 1,
       "value": "4"
     },
     {
-      "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/Logger\/LogLevel.swift",
+      "filePath": "\/Users\/rodrigogiglio\/Desktop\/Kovalee-iOS-Framework\/KovaleeFramework\/Logger\/LogLevel.swift",
       "kind": "IntegerLiteral",
       "offset": 170,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/Logger\/LogLevel.swift",
+      "filePath": "\/Users\/rodrigogiglio\/Desktop\/Kovalee-iOS-Framework\/KovaleeFramework\/Logger\/LogLevel.swift",
       "kind": "IntegerLiteral",
       "offset": 225,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/Logger\/LogLevel.swift",
+      "filePath": "\/Users\/rodrigogiglio\/Desktop\/Kovalee-iOS-Framework\/KovaleeFramework\/Logger\/LogLevel.swift",
       "kind": "IntegerLiteral",
       "offset": 289,
       "length": 1,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/Logger\/LogLevel.swift",
+      "filePath": "\/Users\/rodrigogiglio\/Desktop\/Kovalee-iOS-Framework\/KovaleeFramework\/Logger\/LogLevel.swift",
       "kind": "IntegerLiteral",
       "offset": 361,
       "length": 1,
       "value": "3"
     },
     {
-      "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/Utils\/KovaleeConstants.swift",
+      "filePath": "\/Users\/rodrigogiglio\/Desktop\/Kovalee-iOS-Framework\/KovaleeFramework\/Utils\/KovaleeConstants.swift",
       "kind": "StringLiteral",
       "offset": 89,
       "length": 13,
       "value": "\"KovaleeKeys\""
     },
     {
-      "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/Utils\/KovaleeConstants.swift",
+      "filePath": "\/Users\/rodrigogiglio\/Desktop\/Kovalee-iOS-Framework\/KovaleeFramework\/Utils\/KovaleeConstants.swift",
       "kind": "StringLiteral",
       "offset": 137,
       "length": 21,
       "value": "\"ios_events_included\""
     },
     {
-      "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/Utils\/KovaleeConstants.swift",
+      "filePath": "\/Users\/rodrigogiglio\/Desktop\/Kovalee-iOS-Framework\/KovaleeFramework\/Utils\/KovaleeConstants.swift",
       "kind": "StringLiteral",
       "offset": 207,
       "length": 43,
       "value": "\"ios_events_with_event_properties_included\""
     },
     {
-      "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/Utils\/KovaleeConstants.swift",
+      "filePath": "\/Users\/rodrigogiglio\/Desktop\/Kovalee-iOS-Framework\/KovaleeFramework\/Utils\/KovaleeConstants.swift",
       "kind": "StringLiteral",
       "offset": 294,
       "length": 16,
       "value": "\"payment_finish\""
     },
     {
-      "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/Utils\/KovaleeConstants.swift",
+      "filePath": "\/Users\/rodrigogiglio\/Desktop\/Kovalee-iOS-Framework\/KovaleeFramework\/Utils\/KovaleeConstants.swift",
       "kind": "StringLiteral",
       "offset": 346,
       "length": 16,
       "value": "\"first_app_open\""
     },
     {
-      "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/Utils\/Storage.swift",
+      "filePath": "\/Users\/rodrigogiglio\/Desktop\/Kovalee-iOS-Framework\/KovaleeFramework\/Utils\/Storage.swift",
       "kind": "StringLiteral",
       "offset": 85,
       "length": 16,
       "value": "\"KV_sdk_version\""
     },
     {
-      "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/Utils\/Storage.swift",
+      "filePath": "\/Users\/rodrigogiglio\/Desktop\/Kovalee-iOS-Framework\/KovaleeFramework\/Utils\/Storage.swift",
       "kind": "StringLiteral",
       "offset": 127,
       "length": 20,
       "value": "\"KV_is_user_premium\""
     },
     {
-      "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/Utils\/Storage.swift",
+      "filePath": "\/Users\/rodrigogiglio\/Desktop\/Kovalee-iOS-Framework\/KovaleeFramework\/Utils\/Storage.swift",
       "kind": "StringLiteral",
       "offset": 174,
       "length": 21,
       "value": "\"KV_app_opened_count\""
     },
     {
-      "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/Utils\/Storage.swift",
+      "filePath": "\/Users\/rodrigogiglio\/Desktop\/Kovalee-iOS-Framework\/KovaleeFramework\/Utils\/Storage.swift",
       "kind": "StringLiteral",
       "offset": 227,
       "length": 26,
       "value": "\"KV_app_installation_date\""
     },
     {
-      "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/Utils\/Storage.swift",
+      "filePath": "\/Users\/rodrigogiglio\/Desktop\/Kovalee-iOS-Framework\/KovaleeFramework\/Utils\/Storage.swift",
       "kind": "StringLiteral",
       "offset": 282,
       "length": 22,
       "value": "\"KV_user_subscription\""
     },
     {
-      "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/Utils\/Storage.swift",
+      "filePath": "\/Users\/rodrigogiglio\/Desktop\/Kovalee-iOS-Framework\/KovaleeFramework\/Utils\/Storage.swift",
       "kind": "StringLiteral",
       "offset": 332,
       "length": 21,
       "value": "\"KV_conversion_value\""
     },
     {
-      "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/Utils\/Storage.swift",
+      "filePath": "\/Users\/rodrigogiglio\/Desktop\/Kovalee-iOS-Framework\/KovaleeFramework\/Utils\/Storage.swift",
       "kind": "StringLiteral",
       "offset": 381,
       "length": 22,
       "value": "\"KV_amplitude_user_id\""
     },
     {
-      "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/Utils\/Storage.swift",
+      "filePath": "\/Users\/rodrigogiglio\/Desktop\/Kovalee-iOS-Framework\/KovaleeFramework\/Utils\/Storage.swift",
       "kind": "StringLiteral",
       "offset": 433,
       "length": 25,
       "value": "\"KV_is_first_app_opening\""
     },
     {
-      "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/Utils\/Storage.swift",
+      "filePath": "\/Users\/rodrigogiglio\/Desktop\/Kovalee-iOS-Framework\/KovaleeFramework\/Utils\/Storage.swift",
       "kind": "StringLiteral",
       "offset": 488,
       "length": 24,
       "value": "\"KV_ab_experiment_value\""
     },
     {
-      "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/Utils\/Storage.swift",
+      "filePath": "\/Users\/rodrigogiglio\/Desktop\/Kovalee-iOS-Framework\/KovaleeFramework\/Utils\/Storage.swift",
       "kind": "StringLiteral",
       "offset": 540,
       "length": 22,
       "value": "\"KV_ab_experiment_key\""
     },
     {
-      "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/Utils\/Storage.swift",
+      "filePath": "\/Users\/rodrigogiglio\/Desktop\/Kovalee-iOS-Framework\/KovaleeFramework\/Utils\/Storage.swift",
       "kind": "StringLiteral",
       "offset": 598,
       "length": 31,
       "value": "\"KV_is_data_collection_enabled\""
     },
     {
-      "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/Utils\/Storage.swift",
+      "filePath": "\/Users\/rodrigogiglio\/Desktop\/Kovalee-iOS-Framework\/KovaleeFramework\/Utils\/Storage.swift",
       "kind": "StringLiteral",
       "offset": 665,
       "length": 31,
       "value": "\"KV_ntt_tracking_prompt_status\""
     },
     {
-      "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/Utils\/Storage.swift",
+      "filePath": "\/Users\/rodrigogiglio\/Desktop\/Kovalee-iOS-Framework\/KovaleeFramework\/Utils\/Storage.swift",
       "kind": "StringLiteral",
       "offset": 85,
       "length": 16,
       "value": "\"KV_sdk_version\""
     },
     {
-      "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/Utils\/Storage.swift",
+      "filePath": "\/Users\/rodrigogiglio\/Desktop\/Kovalee-iOS-Framework\/KovaleeFramework\/Utils\/Storage.swift",
       "kind": "StringLiteral",
       "offset": 127,
       "length": 20,
       "value": "\"KV_is_user_premium\""
     },
     {
-      "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/Utils\/Storage.swift",
+      "filePath": "\/Users\/rodrigogiglio\/Desktop\/Kovalee-iOS-Framework\/KovaleeFramework\/Utils\/Storage.swift",
       "kind": "StringLiteral",
       "offset": 174,
       "length": 21,
       "value": "\"KV_app_opened_count\""
     },
     {
-      "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/Utils\/Storage.swift",
+      "filePath": "\/Users\/rodrigogiglio\/Desktop\/Kovalee-iOS-Framework\/KovaleeFramework\/Utils\/Storage.swift",
       "kind": "StringLiteral",
       "offset": 227,
       "length": 26,
       "value": "\"KV_app_installation_date\""
     },
     {
-      "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/Utils\/Storage.swift",
+      "filePath": "\/Users\/rodrigogiglio\/Desktop\/Kovalee-iOS-Framework\/KovaleeFramework\/Utils\/Storage.swift",
       "kind": "StringLiteral",
       "offset": 282,
       "length": 22,
       "value": "\"KV_user_subscription\""
     },
     {
-      "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/Utils\/Storage.swift",
+      "filePath": "\/Users\/rodrigogiglio\/Desktop\/Kovalee-iOS-Framework\/KovaleeFramework\/Utils\/Storage.swift",
       "kind": "StringLiteral",
       "offset": 332,
       "length": 21,
       "value": "\"KV_conversion_value\""
     },
     {
-      "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/Utils\/Storage.swift",
+      "filePath": "\/Users\/rodrigogiglio\/Desktop\/Kovalee-iOS-Framework\/KovaleeFramework\/Utils\/Storage.swift",
       "kind": "StringLiteral",
       "offset": 381,
       "length": 22,
       "value": "\"KV_amplitude_user_id\""
     },
     {
-      "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/Utils\/Storage.swift",
+      "filePath": "\/Users\/rodrigogiglio\/Desktop\/Kovalee-iOS-Framework\/KovaleeFramework\/Utils\/Storage.swift",
       "kind": "StringLiteral",
       "offset": 433,
       "length": 25,
       "value": "\"KV_is_first_app_opening\""
     },
     {
-      "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/Utils\/Storage.swift",
+      "filePath": "\/Users\/rodrigogiglio\/Desktop\/Kovalee-iOS-Framework\/KovaleeFramework\/Utils\/Storage.swift",
       "kind": "StringLiteral",
       "offset": 488,
       "length": 24,
       "value": "\"KV_ab_experiment_value\""
     },
     {
-      "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/Utils\/Storage.swift",
+      "filePath": "\/Users\/rodrigogiglio\/Desktop\/Kovalee-iOS-Framework\/KovaleeFramework\/Utils\/Storage.swift",
       "kind": "StringLiteral",
       "offset": 540,
       "length": 22,
       "value": "\"KV_ab_experiment_key\""
     },
     {
-      "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/Utils\/Storage.swift",
+      "filePath": "\/Users\/rodrigogiglio\/Desktop\/Kovalee-iOS-Framework\/KovaleeFramework\/Utils\/Storage.swift",
       "kind": "StringLiteral",
       "offset": 598,
       "length": 31,
       "value": "\"KV_is_data_collection_enabled\""
     },
     {
-      "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/Utils\/Storage.swift",
+      "filePath": "\/Users\/rodrigogiglio\/Desktop\/Kovalee-iOS-Framework\/KovaleeFramework\/Utils\/Storage.swift",
       "kind": "StringLiteral",
       "offset": 665,
       "length": 31,
       "value": "\"KV_ntt_tracking_prompt_status\""
     },
     {
-      "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/Event.swift",
+      "filePath": "\/Users\/rodrigogiglio\/Desktop\/Kovalee-iOS-Framework\/KovaleeFramework\/ConversionValue\/Event.swift",
       "kind": "StringLiteral",
       "offset": 3310,
       "length": 6,
       "value": "\"name\""
     },
     {
-      "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/Event.swift",
+      "filePath": "\/Users\/rodrigogiglio\/Desktop\/Kovalee-iOS-Framework\/KovaleeFramework\/ConversionValue\/Event.swift",
       "kind": "StringLiteral",
       "offset": 3337,
       "length": 6,
       "value": "\"type\""
     },
     {
-      "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/Event.swift",
+      "filePath": "\/Users\/rodrigogiglio\/Desktop\/Kovalee-iOS-Framework\/KovaleeFramework\/ConversionValue\/Event.swift",
       "kind": "StringLiteral",
       "offset": 3369,
       "length": 12,
       "value": "\"key_action\""
     },
     {
-      "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/Event.swift",
+      "filePath": "\/Users\/rodrigogiglio\/Desktop\/Kovalee-iOS-Framework\/KovaleeFramework\/ConversionValue\/Event.swift",
       "kind": "StringLiteral",
       "offset": 3407,
       "length": 12,
       "value": "\"product_id\""
     },
     {
-      "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/Event.swift",
+      "filePath": "\/Users\/rodrigogiglio\/Desktop\/Kovalee-iOS-Framework\/KovaleeFramework\/ConversionValue\/Event.swift",
       "kind": "StringLiteral",
       "offset": 3310,
       "length": 6,
       "value": "\"name\""
     },
     {
-      "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/Event.swift",
+      "filePath": "\/Users\/rodrigogiglio\/Desktop\/Kovalee-iOS-Framework\/KovaleeFramework\/ConversionValue\/Event.swift",
       "kind": "StringLiteral",
       "offset": 3337,
       "length": 6,
       "value": "\"type\""
     },
     {
-      "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/Event.swift",
+      "filePath": "\/Users\/rodrigogiglio\/Desktop\/Kovalee-iOS-Framework\/KovaleeFramework\/ConversionValue\/Event.swift",
       "kind": "StringLiteral",
       "offset": 3369,
       "length": 12,
       "value": "\"key_action\""
     },
     {
-      "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/Event.swift",
+      "filePath": "\/Users\/rodrigogiglio\/Desktop\/Kovalee-iOS-Framework\/KovaleeFramework\/ConversionValue\/Event.swift",
       "kind": "StringLiteral",
       "offset": 3407,
       "length": 12,
       "value": "\"product_id\""
     },
     {
-      "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/EventsQueue.swift",
+      "filePath": "\/Users\/rodrigogiglio\/Desktop\/Kovalee-iOS-Framework\/KovaleeFramework\/ConversionValue\/EventsQueue.swift",
       "kind": "IntegerLiteral",
       "offset": 122,
       "length": 1,
       "value": "5"
     },
     {
-      "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/EventsSequence.swift",
+      "filePath": "\/Users\/rodrigogiglio\/Desktop\/Kovalee-iOS-Framework\/KovaleeFramework\/ConversionValue\/EventsSequence.swift",
       "kind": "StringLiteral",
       "offset": 64,
       "length": 4,
       "value": "\"us\""
     },
     {
-      "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/EventsSequence.swift",
+      "filePath": "\/Users\/rodrigogiglio\/Desktop\/Kovalee-iOS-Framework\/KovaleeFramework\/ConversionValue\/EventsSequence.swift",
       "kind": "StringLiteral",
       "offset": 88,
       "length": 10,
       "value": "\"top_tier\""
     },
     {
-      "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/EventsSequence.swift",
+      "filePath": "\/Users\/rodrigogiglio\/Desktop\/Kovalee-iOS-Framework\/KovaleeFramework\/ConversionValue\/EventsSequence.swift",
       "kind": "StringLiteral",
       "offset": 121,
       "length": 13,
       "value": "\"bottom_tier\""
     },
     {
-      "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/EventsSequence.swift",
+      "filePath": "\/Users\/rodrigogiglio\/Desktop\/Kovalee-iOS-Framework\/KovaleeFramework\/ConversionValue\/EventsSequence.swift",
       "kind": "StringLiteral",
       "offset": 64,
       "length": 4,
       "value": "\"us\""
     },
     {
-      "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/EventsSequence.swift",
+      "filePath": "\/Users\/rodrigogiglio\/Desktop\/Kovalee-iOS-Framework\/KovaleeFramework\/ConversionValue\/EventsSequence.swift",
       "kind": "StringLiteral",
       "offset": 88,
       "length": 10,
       "value": "\"top_tier\""
     },
     {
-      "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/EventsSequence.swift",
+      "filePath": "\/Users\/rodrigogiglio\/Desktop\/Kovalee-iOS-Framework\/KovaleeFramework\/ConversionValue\/EventsSequence.swift",
       "kind": "StringLiteral",
       "offset": 121,
       "length": 13,
       "value": "\"bottom_tier\""
     },
     {
-      "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/EventsSequence.swift",
+      "filePath": "\/Users\/rodrigogiglio\/Desktop\/Kovalee-iOS-Framework\/KovaleeFramework\/ConversionValue\/EventsSequence.swift",
       "kind": "StringLiteral",
       "offset": 800,
       "length": 8,
       "value": "\"sess_1\""
     },
     {
-      "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/EventsSequence.swift",
+      "filePath": "\/Users\/rodrigogiglio\/Desktop\/Kovalee-iOS-Framework\/KovaleeFramework\/ConversionValue\/EventsSequence.swift",
       "kind": "StringLiteral",
       "offset": 825,
       "length": 4,
       "value": "\"D0\""
     },
     {
-      "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/EventsSequence.swift",
+      "filePath": "\/Users\/rodrigogiglio\/Desktop\/Kovalee-iOS-Framework\/KovaleeFramework\/ConversionValue\/EventsSequence.swift",
       "kind": "StringLiteral",
       "offset": 846,
       "length": 4,
       "value": "\"D1\""
     },
     {
-      "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/EventsSequence.swift",
+      "filePath": "\/Users\/rodrigogiglio\/Desktop\/Kovalee-iOS-Framework\/KovaleeFramework\/ConversionValue\/EventsSequence.swift",
       "kind": "StringLiteral",
       "offset": 867,
       "length": 4,
       "value": "\"D2\""
     },
     {
-      "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/EventsSequence.swift",
+      "filePath": "\/Users\/rodrigogiglio\/Desktop\/Kovalee-iOS-Framework\/KovaleeFramework\/ConversionValue\/EventsSequence.swift",
       "kind": "StringLiteral",
       "offset": 888,
       "length": 4,
       "value": "\"D3\""
     },
     {
-      "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/EventsSequence.swift",
+      "filePath": "\/Users\/rodrigogiglio\/Desktop\/Kovalee-iOS-Framework\/KovaleeFramework\/ConversionValue\/EventsSequence.swift",
       "kind": "StringLiteral",
       "offset": 800,
       "length": 8,
       "value": "\"sess_1\""
     },
     {
-      "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/EventsSequence.swift",
+      "filePath": "\/Users\/rodrigogiglio\/Desktop\/Kovalee-iOS-Framework\/KovaleeFramework\/ConversionValue\/EventsSequence.swift",
       "kind": "StringLiteral",
       "offset": 825,
       "length": 4,
       "value": "\"D0\""
     },
     {
-      "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/EventsSequence.swift",
+      "filePath": "\/Users\/rodrigogiglio\/Desktop\/Kovalee-iOS-Framework\/KovaleeFramework\/ConversionValue\/EventsSequence.swift",
       "kind": "StringLiteral",
       "offset": 846,
       "length": 4,
       "value": "\"D1\""
     },
     {
-      "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/EventsSequence.swift",
+      "filePath": "\/Users\/rodrigogiglio\/Desktop\/Kovalee-iOS-Framework\/KovaleeFramework\/ConversionValue\/EventsSequence.swift",
       "kind": "StringLiteral",
       "offset": 867,
       "length": 4,
       "value": "\"D2\""
     },
     {
-      "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/EventsSequence.swift",
+      "filePath": "\/Users\/rodrigogiglio\/Desktop\/Kovalee-iOS-Framework\/KovaleeFramework\/ConversionValue\/EventsSequence.swift",
       "kind": "StringLiteral",
       "offset": 888,
       "length": 4,
       "value": "\"D3\""
     },
     {
-      "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/FixedSizeQueue.swift",
+      "filePath": "\/Users\/rodrigogiglio\/Desktop\/Kovalee-iOS-Framework\/KovaleeFramework\/ConversionValue\/FixedSizeQueue.swift",
       "kind": "IntegerLiteral",
       "offset": 240,
       "length": 2,

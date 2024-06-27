@@ -17,6 +17,7 @@ public class KovaleeManager {
   public func setupRemoteConfigurationManager(remoteConfigManager: any KovaleeFramework.RemoteConfigurationManager)
   public func setupAdsManager(adsManager: any KovaleeFramework.AdsManager)
   public func setupPaywallManager(paywallManager: any KovaleeFramework.PaywallManager)
+  public func setupSurveyManager(surveyManager: any KovaleeFramework.SurveyManager)
   public func promptTrackingAuthorization(completion: @escaping (AppTrackingTransparency.ATTrackingManager.AuthorizationStatus) -> Swift.Void)
   public func getAttributionAdid() -> Swift.String?
   public func attributionCallback(withAdid adid: Swift.String?)
@@ -43,6 +44,7 @@ public class KovaleeManager {
   public var remoteConfigManager: (any KovaleeFramework.RemoteConfigurationManager)?
   public var adsManager: (any KovaleeFramework.AdsManager)?
   public var paywallManager: (any KovaleeFramework.PaywallManager)?
+  public var surveyManager: (any KovaleeFramework.SurveyManager)?
   @objc deinit
 }
 extension KovaleeFramework.KovaleeManager {
@@ -158,6 +160,7 @@ public struct KovaleeKeys : Swift.Decodable {
   public let applovin: KovaleeFramework.KovaleeKeys.Applovin?
   public let superwall: KovaleeFramework.KovaleeKeys.Superwall?
   public let conversionValue: KovaleeFramework.KovaleeKeys.ConversionValue?
+  public let survicate: KovaleeFramework.KovaleeKeys.Survicate?
   public struct Amplitude : Swift.Decodable {
     public var prodSDKId: Swift.String
     public var devSDKId: Swift.String?
@@ -191,6 +194,10 @@ public struct KovaleeKeys : Swift.Decodable {
   public struct Superwall : Swift.Decodable {
     public var prodSDKId: Swift.String
     public var devSDKId: Swift.String?
+    public init(from decoder: any Swift.Decoder) throws
+  }
+  public struct Survicate : Swift.Decodable {
+    public let sdkId: Swift.String
     public init(from decoder: any Swift.Decoder) throws
   }
   public init(from decoder: any Swift.Decoder) throws
@@ -373,6 +380,12 @@ public protocol AbstractReward {
   var amount: Swift.Int { get }
 }
 public protocol PaywallManager {
+}
+public protocol SurveyManager {
+  func sendEvent(with name: Swift.String, andProperties properies: [Swift.String : Swift.String])
+  func viewScreen(with name: Swift.String)
+  func setUserProperies(properties: [Swift.String : Swift.String])
+  func setUserProperty(withName name: Swift.String, andValue value: Swift.String)
 }
 public enum KovaleeError : Swift.Error {
   case firebaseNotInitialized
