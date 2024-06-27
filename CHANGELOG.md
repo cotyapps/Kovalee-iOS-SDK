@@ -7,6 +7,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 <<<<<<< HEAD
 =======
+## [1.9.22] - 2024-06-27
+### :sparkles: New Features
+- [`c7866c1`](https://github.com/cotyapps/Kovalee-iOS-SDK/commit/c7866c1ae87f2166c68631d32e4588ef2b162d22) - exposing RC set email function *(commit by [@fto-k](https://github.com/fto-k))*
+
+
 ## [1.9.21] - 2024-06-06
 ### :sparkles: New Features
 - [`e4622b1`](https://github.com/cotyapps/Kovalee-iOS-SDK/commit/e4622b12d589759af91d49dcb5dd5090b2daebca) - implemented alreadIntegrated flag for apps that already have kovalee tools integrated *(commit by [@fto-k](https://github.com/fto-k))*
@@ -513,3 +518,4 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 [1.9.19]: https://github.com/cotyapps/Kovalee-iOS-SDK/compare/1.9.18...1.9.19
 [1.9.20]: https://github.com/cotyapps/Kovalee-iOS-SDK/compare/1.9.19...1.9.20
 [1.9.21]: https://github.com/cotyapps/Kovalee-iOS-SDK/compare/1.9.20...1.9.21
+[1.9.22]: https://github.com/cotyapps/Kovalee-iOS-SDK/compare/1.9.21...1.9.22
