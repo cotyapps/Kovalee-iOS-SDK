@@ -1537,6 +1537,30 @@
           },
           {
             "kind": "Function",
+            "name": "setRevenueCatEmail",
+            "printedName": "setRevenueCatEmail(email:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:16KovaleeFramework0A7ManagerC18setRevenueCatEmail5emailySS_tF",
+            "mangledName": "$s16KovaleeFramework0A7ManagerC18setRevenueCatEmail5emailySS_tF",
+            "moduleName": "KovaleeFramework",
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
             "name": "logoutRevenueCatUser",
             "printedName": "logoutRevenueCatUser()",
             "children": [
@@ -8556,6 +8580,33 @@
           },
           {
             "kind": "Function",
+            "name": "setEmail",
+            "printedName": "setEmail(email:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:16KovaleeFramework15PurchaseManagerP8setEmail5emailySS_tF",
+            "mangledName": "$s16KovaleeFramework15PurchaseManagerP8setEmail5emailySS_tF",
+            "moduleName": "KovaleeFramework",
+            "genericSig": "<τ_0_0 where τ_0_0 : KovaleeFramework.PurchaseManager>",
+            "sugared_genericSig": "<Self where Self : KovaleeFramework.PurchaseManager>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
             "name": "logout",
             "printedName": "logout()",
             "children": [
@@ -13136,7 +13187,7 @@
     {
       "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 8301,
+      "offset": 8326,
       "length": 5,
       "value": "false"
     },

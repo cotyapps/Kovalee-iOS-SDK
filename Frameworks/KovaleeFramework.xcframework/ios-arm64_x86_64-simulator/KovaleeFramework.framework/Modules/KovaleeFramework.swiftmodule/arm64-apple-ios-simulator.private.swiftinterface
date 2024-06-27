@@ -53,6 +53,7 @@ extension KovaleeFramework.KovaleeManager {
   #if compiler(>=5.3) && $AsyncAwait
   public func setRevenueCatUserId(userId: Swift.String) async throws -> (any KovaleeFramework.AbstractCustomerInfo, created: Swift.Bool)?
   #endif
+  public func setRevenueCatEmail(email: Swift.String)
   #if compiler(>=5.3) && $AsyncAwait
   public func logoutRevenueCatUser() async throws -> (any KovaleeFramework.AbstractCustomerInfo)?
   #endif
@@ -301,6 +302,7 @@ public protocol PurchaseManager {
   #if compiler(>=5.3) && $AsyncAwait
   func setUserId(userId: Swift.String) async throws -> (any KovaleeFramework.AbstractCustomerInfo, created: Swift.Bool)
   #endif
+  func setEmail(email: Swift.String)
   #if compiler(>=5.3) && $AsyncAwait
   func logout() async throws -> any KovaleeFramework.AbstractCustomerInfo
   #endif
