@@ -149,6 +149,16 @@ extension Kovalee {
                 ) as? PaywallManager {
                     kovaleeManager?.setupPaywallManager(paywallManager: paywallManager)
                 }
+
+            case .survey:
+                let creator = SurveyManagerCreator()
+                if let surveyManager = (creator as? Creator)?.createImplementation(
+                    withConfiguration: configuration,
+                    andKeys: keys
+                ) as? SurveyManager {
+                    kovaleeManager?.setupSurveyManager(surveyManager: surveyManager)
+                }
+
             case .eventsTracking: ()
             }
         }
@@ -162,6 +172,7 @@ enum Capabilities: CaseIterable {
     case remoteConfiguration
     case ads
     case paywall
+    case survey
 }
 
 public protocol Manager {}
@@ -182,3 +193,4 @@ public struct PurchaseManagerCreator {}
 public struct RemoteConfigManagerCreator {}
 public struct AdsManagerCreator {}
 public struct PaywallManagerCreator {}
+public struct SurveyManagerCreator {}
