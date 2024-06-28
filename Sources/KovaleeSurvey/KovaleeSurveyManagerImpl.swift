@@ -4,8 +4,13 @@ import Foundation
 import KovaleeFramework
 
 class KovaleeSurveyManagerImpl: SurveyManager, Manager {
-    
+
+    private enum Constants {
+        static let amplitudeUserIdKey = "user_id"
+    }
+
     private let survicate: SurvicateSdk?
+    weak var delegate: KovaleeSurveyDelegate?
 
     init(withKey workspaceKey: String?) {
 
@@ -26,28 +31,41 @@ class KovaleeSurveyManagerImpl: SurveyManager, Manager {
         }
     }
 
-    func sendEvent(with name: String, andProperties properies: [String : String]) {
-        // TODO: - implement
+    func sendEvent(with name: String, andProperties properties: [String : Any]?) {
+        if let stringOnlyProperties = properties?.compactMapValues({ $0 as? String }) {
+            survicate?.invokeEvent(name: name, with: stringOnlyProperties)
+        } else {
+            survicate?.invokeEvent(name: name)
+        }
     }
 
     func viewScreen(with name: String) {
-        // TODO: - implement
-    }
-
-    func setUserProperies(properties: [String : String]) {
-        // TODO: - implement
+        survicate?.enterScreen(value: name)
     }
 
     func setUserProperty(withName name: String, andValue value: String) {
-        // TODO: - implement
+        let userTrait = UserTrait(withName: name, value: value)
+        survicate?.setUserTrait(userTrait)
+    }
+
+    func setAmplitudeUserId(userId: String) {
+        let amplitudeIdUserTrait = UserTrait(withName: Constants.amplitudeUserIdKey, value: userId)
+        survicate?.setUserTrait(amplitudeIdUserTrait)
+    }
+
+    func setSurveyDelegate(_ delegate: KovaleeSurveyDelegate) {
+        self.delegate = delegate
     }
 }
 
-// TODO: - Implement methods if needed (and remove unused)
 extension KovaleeSurveyManagerImpl: SurvicateDelegate {
-    func surveyClosed(surveyId: String) {}
-    func surveyDisplayed(event: SurveyDisplayedEvent) {}
-    func questionAnswered(_ event: QuestionAnsweredEvent) {}
-    func surveyCompleted(event: SurveyCompletedEvent) {}
-    func surveyClosed(event: SurveyClosedEvent) {}
+    func surveyClosed(surveyId: String) {
+        delegate?.surveyClosed(surveyId: surveyId)
+    }
+    func surveyCompleted(event: SurveyCompletedEvent) {
+        delegate?.surveyCompleted(surveyId: event.surveyId)
+    }
+    func surveyClosed(event: SurveyClosedEvent) {
+        delegate?.surveyClosed(surveyId: event.surveyId)
+    }
 }

@@ -2198,6 +2198,30 @@
           },
           {
             "kind": "Function",
+            "name": "setSurveyDelegate",
+            "printedName": "setSurveyDelegate(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "KovaleeSurveyDelegate",
+                "printedName": "any KovaleeFramework.KovaleeSurveyDelegate",
+                "usr": "s:16KovaleeFramework0A14SurveyDelegateP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:16KovaleeFramework0A7ManagerC17setSurveyDelegateyyAA0aeF0_pF",
+            "mangledName": "$s16KovaleeFramework0A7ManagerC17setSurveyDelegateyyAA0aeF0_pF",
+            "moduleName": "KovaleeFramework",
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
             "name": "setDefaultValues",
             "printedName": "setDefaultValues(_:)",
             "children": [
@@ -9835,6 +9859,104 @@
       },
       {
         "kind": "TypeDecl",
+        "name": "KovaleeSurveyDelegate",
+        "printedName": "KovaleeSurveyDelegate",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "surveyDisplayed",
+            "printedName": "surveyDisplayed(surveyId:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:16KovaleeFramework0A14SurveyDelegateP15surveyDisplayed0E2IdySS_tF",
+            "mangledName": "$s16KovaleeFramework0A14SurveyDelegateP15surveyDisplayed0E2IdySS_tF",
+            "moduleName": "KovaleeFramework",
+            "genericSig": "<τ_0_0 where τ_0_0 : KovaleeFramework.KovaleeSurveyDelegate>",
+            "sugared_genericSig": "<Self where Self : KovaleeFramework.KovaleeSurveyDelegate>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "surveyCompleted",
+            "printedName": "surveyCompleted(surveyId:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:16KovaleeFramework0A14SurveyDelegateP15surveyCompleted0E2IdySS_tF",
+            "mangledName": "$s16KovaleeFramework0A14SurveyDelegateP15surveyCompleted0E2IdySS_tF",
+            "moduleName": "KovaleeFramework",
+            "genericSig": "<τ_0_0 where τ_0_0 : KovaleeFramework.KovaleeSurveyDelegate>",
+            "sugared_genericSig": "<Self where Self : KovaleeFramework.KovaleeSurveyDelegate>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "surveyClosed",
+            "printedName": "surveyClosed(surveyId:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:16KovaleeFramework0A14SurveyDelegateP12surveyClosed0E2IdySS_tF",
+            "mangledName": "$s16KovaleeFramework0A14SurveyDelegateP12surveyClosed0E2IdySS_tF",
+            "moduleName": "KovaleeFramework",
+            "genericSig": "<τ_0_0 where τ_0_0 : KovaleeFramework.KovaleeSurveyDelegate>",
+            "sugared_genericSig": "<Self where Self : KovaleeFramework.KovaleeSurveyDelegate>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Protocol",
+        "usr": "s:16KovaleeFramework0A14SurveyDelegateP",
+        "mangledName": "$s16KovaleeFramework0A14SurveyDelegateP",
+        "moduleName": "KovaleeFramework",
+        "genericSig": "<τ_0_0 : AnyObject>",
+        "sugared_genericSig": "<Self : AnyObject>",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
         "name": "SurveyManager",
         "printedName": "SurveyManager",
         "children": [
@@ -9856,28 +9978,35 @@
               },
               {
                 "kind": "TypeNominal",
-                "name": "Dictionary",
-                "printedName": "[Swift.String : Swift.String]",
+                "name": "Optional",
+                "printedName": "[Swift.String : Any]?",
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
+                    "name": "Dictionary",
+                    "printedName": "[Swift.String : Any]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ProtocolComposition",
+                        "printedName": "Any"
+                      }
+                    ],
+                    "usr": "s:SD"
                   }
                 ],
-                "usr": "s:SD"
+                "usr": "s:Sq"
               }
             ],
             "declKind": "Func",
-            "usr": "s:16KovaleeFramework13SurveyManagerP9sendEvent4with13andPropertiesySS_SDyS2SGtF",
-            "mangledName": "$s16KovaleeFramework13SurveyManagerP9sendEvent4with13andPropertiesySS_SDyS2SGtF",
+            "usr": "s:16KovaleeFramework13SurveyManagerP9sendEvent4with13andPropertiesySS_SDySSypGSgtF",
+            "mangledName": "$s16KovaleeFramework13SurveyManagerP9sendEvent4with13andPropertiesySS_SDySSypGSgtF",
             "moduleName": "KovaleeFramework",
             "genericSig": "<τ_0_0 where τ_0_0 : KovaleeFramework.SurveyManager>",
             "sugared_genericSig": "<Self where Self : KovaleeFramework.SurveyManager>",
@@ -9905,47 +10034,6 @@
             "declKind": "Func",
             "usr": "s:16KovaleeFramework13SurveyManagerP10viewScreen4withySS_tF",
             "mangledName": "$s16KovaleeFramework13SurveyManagerP10viewScreen4withySS_tF",
-            "moduleName": "KovaleeFramework",
-            "genericSig": "<τ_0_0 where τ_0_0 : KovaleeFramework.SurveyManager>",
-            "sugared_genericSig": "<Self where Self : KovaleeFramework.SurveyManager>",
-            "protocolReq": true,
-            "reqNewWitnessTableEntry": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "setUserProperies",
-            "printedName": "setUserProperies(properties:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Dictionary",
-                "printedName": "[Swift.String : Swift.String]",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "usr": "s:SD"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:16KovaleeFramework13SurveyManagerP16setUserProperies10propertiesySDyS2SG_tF",
-            "mangledName": "$s16KovaleeFramework13SurveyManagerP16setUserProperies10propertiesySDyS2SG_tF",
             "moduleName": "KovaleeFramework",
             "genericSig": "<τ_0_0 where τ_0_0 : KovaleeFramework.SurveyManager>",
             "sugared_genericSig": "<Self where Self : KovaleeFramework.SurveyManager>",
@@ -9985,6 +10073,60 @@
             "protocolReq": true,
             "reqNewWitnessTableEntry": true,
             "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "setAmplitudeUserId",
+            "printedName": "setAmplitudeUserId(userId:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:16KovaleeFramework13SurveyManagerP18setAmplitudeUserId04userH0ySS_tF",
+            "mangledName": "$s16KovaleeFramework13SurveyManagerP18setAmplitudeUserId04userH0ySS_tF",
+            "moduleName": "KovaleeFramework",
+            "genericSig": "<τ_0_0 where τ_0_0 : KovaleeFramework.SurveyManager>",
+            "sugared_genericSig": "<Self where Self : KovaleeFramework.SurveyManager>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "setSurveyDelegate",
+            "printedName": "setSurveyDelegate(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "KovaleeSurveyDelegate",
+                "printedName": "any KovaleeFramework.KovaleeSurveyDelegate",
+                "usr": "s:16KovaleeFramework0A14SurveyDelegateP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:16KovaleeFramework13SurveyManagerP03setC8DelegateyyAA0acF0_pF",
+            "mangledName": "$s16KovaleeFramework13SurveyManagerP03setC8DelegateyyAA0acF0_pF",
+            "moduleName": "KovaleeFramework",
+            "genericSig": "<τ_0_0 where τ_0_0 : KovaleeFramework.SurveyManager>",
+            "sugared_genericSig": "<Self where Self : KovaleeFramework.SurveyManager>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
           }
         ],
         "declKind": "Protocol",
@@ -9992,8 +10134,7 @@
         "mangledName": "$s16KovaleeFramework13SurveyManagerP",
         "moduleName": "KovaleeFramework",
         "declAttributes": [
-          "AccessControl",
-          "RawDocComment"
+          "AccessControl"
         ]
       },
       {
@@ -13643,7 +13784,7 @@
     {
       "filePath": "\/Users\/rodrigogiglio\/Desktop\/Kovalee-iOS-Framework\/KovaleeFramework\/KovaleeManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 8488,
+      "offset": 9060,
       "length": 5,
       "value": "false"
     },
@@ -13793,6 +13934,13 @@
       "offset": 346,
       "length": 16,
       "value": "\"first_app_open\""
+    },
+    {
+      "filePath": "\/Users\/rodrigogiglio\/Desktop\/Kovalee-iOS-Framework\/KovaleeFramework\/Utils\/KovaleeConstants.swift",
+      "kind": "StringLiteral",
+      "offset": 404,
+      "length": 11,
+      "value": "\"page_view\""
     },
     {
       "filePath": "\/Users\/rodrigogiglio\/Desktop\/Kovalee-iOS-Framework\/KovaleeFramework\/Utils\/Storage.swift",

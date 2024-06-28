@@ -94,6 +94,9 @@ extension KovaleeFramework.KovaleeManager {
   public func paymentRestored(fromSource source: Swift.String)
 }
 extension KovaleeFramework.KovaleeManager {
+  public func setSurveyDelegate(_ delegate: any KovaleeFramework.KovaleeSurveyDelegate)
+}
+extension KovaleeFramework.KovaleeManager {
   public func setDefaultValues(_ values: [Swift.String : Any])
   #if compiler(>=5.3) && $AsyncAwait
   public func remoteValue(forKey key: Swift.String) async throws -> Foundation.Data
@@ -381,11 +384,17 @@ public protocol AbstractReward {
 }
 public protocol PaywallManager {
 }
+public protocol KovaleeSurveyDelegate : AnyObject {
+  func surveyDisplayed(surveyId: Swift.String)
+  func surveyCompleted(surveyId: Swift.String)
+  func surveyClosed(surveyId: Swift.String)
+}
 public protocol SurveyManager {
-  func sendEvent(with name: Swift.String, andProperties properies: [Swift.String : Swift.String])
+  func sendEvent(with name: Swift.String, andProperties properties: [Swift.String : Any]?)
   func viewScreen(with name: Swift.String)
-  func setUserProperies(properties: [Swift.String : Swift.String])
   func setUserProperty(withName name: Swift.String, andValue value: Swift.String)
+  func setAmplitudeUserId(userId: Swift.String)
+  func setSurveyDelegate(_ delegate: any KovaleeFramework.KovaleeSurveyDelegate)
 }
 public enum KovaleeError : Swift.Error {
   case firebaseNotInitialized
