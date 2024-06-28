@@ -27,19 +27,16 @@ class KovaleeSurveyManagerImpl: SurveyManager, Manager {
     }
 
     func sendEvent(with name: String, andProperties properies: [String : String]) {
-        // TODO: - implement
+        survicate?.invokeEvent(name: name, with: properies)
     }
 
     func viewScreen(with name: String) {
-        // TODO: - implement
-    }
-
-    func setUserProperies(properties: [String : String]) {
-        // TODO: - implement
+        survicate?.enterScreen(value: name)
     }
 
     func setUserProperty(withName name: String, andValue value: String) {
-        // TODO: - implement
+        let userTrait = UserTrait(withName: name, value: value)
+        survicate?.setUserTrait(userTrait)
     }
 }
 
