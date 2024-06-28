@@ -390,7 +390,7 @@ public protocol KovaleeSurveyDelegate : AnyObject {
   func surveyClosed(surveyId: Swift.String)
 }
 public protocol SurveyManager {
-  func sendEvent(with name: Swift.String, andProperties properies: [Swift.String : Any]?)
+  func sendEvent(with name: Swift.String, andProperties properties: [Swift.String : Any]?)
   func viewScreen(with name: Swift.String)
   func setUserProperty(withName name: Swift.String, andValue value: Swift.String)
   func setAmplitudeUserId(userId: Swift.String)

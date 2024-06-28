@@ -7,7 +7,6 @@ class KovaleeSurveyManagerImpl: SurveyManager, Manager {
 
     private enum Constants {
         static let amplitudeUserIdKey = "user_id"
-        static let pageViewEventNamePrefix = "page_view"
     }
 
     private let survicate: SurvicateSdk?
@@ -32,15 +31,11 @@ class KovaleeSurveyManagerImpl: SurveyManager, Manager {
         }
     }
 
-    func sendEvent(with name: String, andProperties properies: [String : Any]?) {
-        
-        if isPageView(name) {
-            viewScreen(with: name)
-        } else {
-            let stringOnlyProperties = properies?.compactMapValues { $0 as? String }
-            guard let stringOnlyProperties else { return }
-
+    func sendEvent(with name: String, andProperties properties: [String : Any]?) {
+        if let stringOnlyProperties = properties?.compactMapValues({ $0 as? String }) {
             survicate?.invokeEvent(name: name, with: stringOnlyProperties)
+        } else {
+            survicate?.invokeEvent(name: name)
         }
     }
 
@@ -60,13 +55,6 @@ class KovaleeSurveyManagerImpl: SurveyManager, Manager {
 
     func setSurveyDelegate(_ delegate: KovaleeSurveyDelegate) {
         self.delegate = delegate
-    }
-}
-
-private extension KovaleeSurveyManagerImpl {
-
-    func isPageView(_ eventName: String) -> Bool {
-        return eventName.contains(Constants.pageViewEventNamePrefix)
     }
 }
 

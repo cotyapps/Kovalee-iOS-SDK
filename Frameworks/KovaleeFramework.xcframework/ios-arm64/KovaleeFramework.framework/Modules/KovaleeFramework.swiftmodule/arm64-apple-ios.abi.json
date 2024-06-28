@@ -13784,7 +13784,7 @@
     {
       "filePath": "\/Users\/rodrigogiglio\/Desktop\/Kovalee-iOS-Framework\/KovaleeFramework\/KovaleeManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 8924,
+      "offset": 9060,
       "length": 5,
       "value": "false"
     },
@@ -13934,6 +13934,13 @@
       "offset": 346,
       "length": 16,
       "value": "\"first_app_open\""
+    },
+    {
+      "filePath": "\/Users\/rodrigogiglio\/Desktop\/Kovalee-iOS-Framework\/KovaleeFramework\/Utils\/KovaleeConstants.swift",
+      "kind": "StringLiteral",
+      "offset": 404,
+      "length": 11,
+      "value": "\"page_view\""
     },
     {
       "filePath": "\/Users\/rodrigogiglio\/Desktop\/Kovalee-iOS-Framework\/KovaleeFramework\/Utils\/Storage.swift",
