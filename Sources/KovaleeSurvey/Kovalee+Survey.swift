@@ -10,13 +10,13 @@ extension SurveyManagerCreator: Creator {
     }
 }
 
-extension Kovalee {
+public extension Kovalee {
 
     /// Sets the delegate for Survey actions
     ///
     /// - Parameters:
     ///    - delegate: the delegate that will perform Survey actions
-    public static func setSurveyDelegate(_ delegate: KovaleeSurveyDelegate) {
+    static func setSurveyDelegate(_ delegate: KovaleeSurveyDelegate) {
         Self.shared.kovaleeManager?.setSurveyDelegate(delegate)
     }
 }
