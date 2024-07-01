@@ -13,7 +13,7 @@ let package = Package(
         .library(
             name: .sdk,
             targets: [
-                .sdk, .sdkUI,
+                .sdk, .sdkUI, .survey,
             ]
         ),
     ],
@@ -44,8 +44,9 @@ let package = Package(
             ]
         ),
         .target(
-            name: "KovaleeSurvey",
+            name: .survey,
             dependencies: [
+                .sdk,
                 .product(name: "Survicate", package: "survicate-ios-sdk"),
             ]
         ),
@@ -64,10 +65,15 @@ extension Target.Dependency {
     static var ui: Self {
         .target(name: .sdkUI)
     }
+
+    static var survey: Self {
+        .target(name: .survey)
+    }
 }
 
 extension String {
     static let framework = "KovaleeFramework"
     static let sdk = "KovaleeSDK"
     static let sdkUI = "KovaleeSDKUI"
+    static let survey = "KovaleeSurvey"
 }
