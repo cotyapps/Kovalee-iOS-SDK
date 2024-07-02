@@ -395,6 +395,7 @@ public protocol SurveyManager {
   func setUserProperty(withName name: Swift.String, andValue value: Swift.String)
   func setAmplitudeUserId(userId: Swift.String)
   func setSurveyDelegate(_ delegate: any KovaleeFramework.KovaleeSurveyDelegate)
+  func deactivate()
 }
 public enum KovaleeError : Swift.Error {
   case firebaseNotInitialized

@@ -1,37 +1,39 @@
-import Survicate
-import KovaleeSDK
 import Foundation
 import KovaleeFramework
+import KovaleeSDK
+import Survicate
 
 class KovaleeSurveyManagerImpl: SurveyManager, Manager {
-
     private enum Constants {
         static let amplitudeUserIdKey = "user_id"
     }
 
-    private let survicate: SurvicateSdk?
+    private var survicate: SurvicateSdk?
     weak var delegate: KovaleeSurveyDelegate?
 
     init(withKey workspaceKey: String?) {
-
         guard let workspaceKey else {
-            self.survicate = nil
+            survicate = nil
             KLogger.error("No workspaceKey found for Survicate. Survicate was not configured.")
-            
+
             return
         }
 
         do {
-            self.survicate = SurvicateSdk.shared
-            try self.survicate?.setWorkspaceKey(workspaceKey)
-            self.survicate?.initialize()
-            self.survicate?.addListener(self)
+            survicate = SurvicateSdk.shared
+            try survicate?.setWorkspaceKey(workspaceKey)
+            survicate?.initialize()
+            survicate?.addListener(self)
         } catch {
             KLogger.error("Couldn't initialise Survicate: \(error)")
         }
     }
 
-    func sendEvent(with name: String, andProperties properties: [String : Any]?) {
+    func deactivate() {
+        survicate = nil
+    }
+
+    func sendEvent(with name: String, andProperties properties: [String: Any]?) {
         if let stringOnlyProperties = properties?.compactMapValues({ $0 as? String }) {
             survicate?.invokeEvent(name: name, with: stringOnlyProperties)
         } else {
@@ -62,9 +64,11 @@ extension KovaleeSurveyManagerImpl: SurvicateDelegate {
     func surveyClosed(surveyId: String) {
         delegate?.surveyClosed(surveyId: surveyId)
     }
+
     func surveyCompleted(event: SurveyCompletedEvent) {
         delegate?.surveyCompleted(surveyId: event.surveyId)
     }
+
     func surveyClosed(event: SurveyClosedEvent) {
         delegate?.surveyClosed(surveyId: event.surveyId)
     }
