@@ -30,6 +30,7 @@ class KovaleeSurveyManagerImpl: SurveyManager, Manager {
     }
 
     func deactivate() {
+        survicate?.reset()
         survicate = nil
     }
 
