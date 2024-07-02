@@ -14,11 +14,15 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		eWVEGx7o9YBy/7Tz8BRhpvWPzdc=
+		ey2PAZ639myvJm3m8ADlpsa+DLs=
 		</data>
 		<key>Modules/KovaleeFramework.swiftmodule/arm64-apple-xros-simulator.abi.json</key>
 		<data>
+<<<<<<< HEAD
 		TAiy3uDWlQFFmK3vd4yftnHv7pg=
+=======
+		eT/mjsDOvCdMlZDKh0Pud3ZOlrY=
+>>>>>>> eb33ae5 (fix: trying to fix remote Survey activation)
 		</data>
 		<key>Modules/KovaleeFramework.swiftmodule/arm64-apple-xros-simulator.private.swiftinterface</key>
 		<data>
@@ -34,11 +38,19 @@
 		</data>
 		<key>Modules/KovaleeFramework.swiftmodule/arm64-apple-xros-simulator.swiftmodule</key>
 		<data>
+<<<<<<< HEAD
 		VBWcV5T2ALivjhAmfQ/Fpf+5Sgg=
 		</data>
 		<key>Modules/KovaleeFramework.swiftmodule/x86_64-apple-xros-simulator.abi.json</key>
 		<data>
 		TAiy3uDWlQFFmK3vd4yftnHv7pg=
+=======
+		0mvJo+hkjunsQrVbCu3M5Vyl4hI=
+		</data>
+		<key>Modules/KovaleeFramework.swiftmodule/x86_64-apple-xros-simulator.abi.json</key>
+		<data>
+		eT/mjsDOvCdMlZDKh0Pud3ZOlrY=
+>>>>>>> eb33ae5 (fix: trying to fix remote Survey activation)
 		</data>
 		<key>Modules/KovaleeFramework.swiftmodule/x86_64-apple-xros-simulator.private.swiftinterface</key>
 		<data>
@@ -54,7 +66,11 @@
 		</data>
 		<key>Modules/KovaleeFramework.swiftmodule/x86_64-apple-xros-simulator.swiftmodule</key>
 		<data>
+<<<<<<< HEAD
 		LEFzKMlgMwwZ9Rp15CJ90gZzoZQ=
+=======
+		0aOit/ztTn+3g+X4X1ssGK3XrqM=
+>>>>>>> eb33ae5 (fix: trying to fix remote Survey activation)
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -85,7 +101,11 @@
 		<dict>
 			<key>hash2</key>
 			<data>
+<<<<<<< HEAD
 			iw3ATyYpZnHIcHEN8v9RdWZULWaHwLQGoN4PlpsRYAY=
+=======
+			kvxz4oAnB7IQMNzw4EVneHS+Xu5pOjXz7PBvu8i5mjg=
+>>>>>>> eb33ae5 (fix: trying to fix remote Survey activation)
 			</data>
 		</dict>
 		<key>Modules/KovaleeFramework.swiftmodule/arm64-apple-xros-simulator.private.swiftinterface</key>
@@ -113,14 +133,22 @@
 		<dict>
 			<key>hash2</key>
 			<data>
+<<<<<<< HEAD
 			P0XpYSyfwzZ5RVs4HbOWS3wbcz8kl7dwdFKXfAXMLPQ=
+=======
+			K2VO5CY91eV2ydw82T53YIawIdn4RJRZ5Qii1S89MxQ=
+>>>>>>> eb33ae5 (fix: trying to fix remote Survey activation)
 			</data>
 		</dict>
 		<key>Modules/KovaleeFramework.swiftmodule/x86_64-apple-xros-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
+<<<<<<< HEAD
 			iw3ATyYpZnHIcHEN8v9RdWZULWaHwLQGoN4PlpsRYAY=
+=======
+			kvxz4oAnB7IQMNzw4EVneHS+Xu5pOjXz7PBvu8i5mjg=
+>>>>>>> eb33ae5 (fix: trying to fix remote Survey activation)
 			</data>
 		</dict>
 		<key>Modules/KovaleeFramework.swiftmodule/x86_64-apple-xros-simulator.private.swiftinterface</key>
@@ -148,7 +176,11 @@
 		<dict>
 			<key>hash2</key>
 			<data>
+<<<<<<< HEAD
 			lusOykI6W+x82R/DoKHkbIuw8Vp8ir+gtOz/O0AdtCk=
+=======
+			Y47cVyheGBZQGgDozJkFe8y74V8hDB+lsSmvxcjxMY0=
+>>>>>>> eb33ae5 (fix: trying to fix remote Survey activation)
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

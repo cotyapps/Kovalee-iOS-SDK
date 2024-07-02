@@ -14,15 +14,23 @@
 		</data>
 		<key>ios-arm64/KovaleeFramework.framework/Info.plist</key>
 		<data>
-		WiNF3J49dv4EA5Md+sBmw6ufbqA=
+		3vCQCQHKdZrvIgtuV1A3yRqT1qc=
 		</data>
 		<key>ios-arm64/KovaleeFramework.framework/KovaleeFramework</key>
 		<data>
+<<<<<<< HEAD
 		babskehGLjaOQ0rvlPrJtq10W+E=
 		</data>
 		<key>ios-arm64/KovaleeFramework.framework/Modules/KovaleeFramework.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
 		TAiy3uDWlQFFmK3vd4yftnHv7pg=
+=======
+		vbzg2bEIzNMhuBnf15iZ8rZ6eao=
+		</data>
+		<key>ios-arm64/KovaleeFramework.framework/Modules/KovaleeFramework.swiftmodule/arm64-apple-ios.abi.json</key>
+		<data>
+		eT/mjsDOvCdMlZDKh0Pud3ZOlrY=
+>>>>>>> eb33ae5 (fix: trying to fix remote Survey activation)
 		</data>
 		<key>ios-arm64/KovaleeFramework.framework/Modules/KovaleeFramework.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
@@ -46,7 +54,11 @@
 		</data>
 		<key>ios-arm64/KovaleeFramework.framework/_CodeSignature/CodeResources</key>
 		<data>
+<<<<<<< HEAD
 		/pp0bhaSTkeosMEd41c9eSyyQMU=
+=======
+		rmRAsAUoc+fHSSQaGoBY9wsEsqQ=
+>>>>>>> eb33ae5 (fix: trying to fix remote Survey activation)
 		</data>
 		<key>ios-arm64/dSYMs/KovaleeFramework.framework.dSYM/Contents/Info.plist</key>
 		<data>
@@ -54,11 +66,19 @@
 		</data>
 		<key>ios-arm64/dSYMs/KovaleeFramework.framework.dSYM/Contents/Resources/DWARF/KovaleeFramework</key>
 		<data>
+<<<<<<< HEAD
 		8tu2Va+CUKCNI/l/3oq8IYYtkzY=
 		</data>
 		<key>ios-arm64/dSYMs/KovaleeFramework.framework.dSYM/Contents/Resources/Relocations/aarch64/KovaleeFramework.yml</key>
 		<data>
 		8jgUv6b2k50LXOXoN2yqLEsVIJ8=
+=======
+		aCJ8QM/74N+CXLi6sTreXObQb+I=
+		</data>
+		<key>ios-arm64/dSYMs/KovaleeFramework.framework.dSYM/Contents/Resources/Relocations/aarch64/KovaleeFramework.yml</key>
+		<data>
+		OVe2hyoaXtDnloGTji+dETj1I/Y=
+>>>>>>> eb33ae5 (fix: trying to fix remote Survey activation)
 		</data>
 		<key>ios-arm64_x86_64-maccatalyst/KovaleeFramework.framework/Versions/A/Headers/KovaleeFramework-Swift.h</key>
 		<data>
@@ -70,11 +90,19 @@
 		</data>
 		<key>ios-arm64_x86_64-maccatalyst/KovaleeFramework.framework/Versions/A/KovaleeFramework</key>
 		<data>
+<<<<<<< HEAD
 		506QmproFI72L/8OGXuC091ri/k=
 		</data>
 		<key>ios-arm64_x86_64-maccatalyst/KovaleeFramework.framework/Versions/A/Modules/KovaleeFramework.swiftmodule/arm64-apple-ios-macabi.abi.json</key>
 		<data>
 		TAiy3uDWlQFFmK3vd4yftnHv7pg=
+=======
+		3K7jeuKe0CY1OZmCfo1LBeIFheU=
+		</data>
+		<key>ios-arm64_x86_64-maccatalyst/KovaleeFramework.framework/Versions/A/Modules/KovaleeFramework.swiftmodule/arm64-apple-ios-macabi.abi.json</key>
+		<data>
+		eT/mjsDOvCdMlZDKh0Pud3ZOlrY=
+>>>>>>> eb33ae5 (fix: trying to fix remote Survey activation)
 		</data>
 		<key>ios-arm64_x86_64-maccatalyst/KovaleeFramework.framework/Versions/A/Modules/KovaleeFramework.swiftmodule/arm64-apple-ios-macabi.private.swiftinterface</key>
 		<data>
@@ -90,7 +118,11 @@
 		</data>
 		<key>ios-arm64_x86_64-maccatalyst/KovaleeFramework.framework/Versions/A/Modules/KovaleeFramework.swiftmodule/x86_64-apple-ios-macabi.abi.json</key>
 		<data>
+<<<<<<< HEAD
 		TAiy3uDWlQFFmK3vd4yftnHv7pg=
+=======
+		eT/mjsDOvCdMlZDKh0Pud3ZOlrY=
+>>>>>>> eb33ae5 (fix: trying to fix remote Survey activation)
 		</data>
 		<key>ios-arm64_x86_64-maccatalyst/KovaleeFramework.framework/Versions/A/Modules/KovaleeFramework.swiftmodule/x86_64-apple-ios-macabi.private.swiftinterface</key>
 		<data>
@@ -110,7 +142,7 @@
 		</data>
 		<key>ios-arm64_x86_64-maccatalyst/KovaleeFramework.framework/Versions/A/Resources/Info.plist</key>
 		<data>
-		87ZdpxoYilBH9UgAlbRBWAkPsno=
+		sx10TarTJSZNkNznYDeAyGgmbaE=
 		</data>
 		<key>ios-arm64_x86_64-maccatalyst/KovaleeFramework.framework/Versions/A/Resources/PrivacyInfo.xcprivacy</key>
 		<data>
@@ -118,7 +150,11 @@
 		</data>
 		<key>ios-arm64_x86_64-maccatalyst/KovaleeFramework.framework/Versions/A/_CodeSignature/CodeResources</key>
 		<data>
+<<<<<<< HEAD
 		vSpEHV72IXOaSUQVDF+qiGlC/tQ=
+=======
+		P5xXKR+SvPIyAWQ3RfU5TAgycjY=
+>>>>>>> eb33ae5 (fix: trying to fix remote Survey activation)
 		</data>
 		<key>ios-arm64_x86_64-maccatalyst/dSYMs/KovaleeFramework.framework.dSYM/Contents/Info.plist</key>
 		<data>
@@ -126,6 +162,7 @@
 		</data>
 		<key>ios-arm64_x86_64-maccatalyst/dSYMs/KovaleeFramework.framework.dSYM/Contents/Resources/DWARF/KovaleeFramework</key>
 		<data>
+<<<<<<< HEAD
 		1fAJ/xa0zGSOs6c1HH+g6QCJNi8=
 		</data>
 		<key>ios-arm64_x86_64-maccatalyst/dSYMs/KovaleeFramework.framework.dSYM/Contents/Resources/Relocations/aarch64/KovaleeFramework.yml</key>
@@ -135,6 +172,17 @@
 		<key>ios-arm64_x86_64-maccatalyst/dSYMs/KovaleeFramework.framework.dSYM/Contents/Resources/Relocations/x86_64/KovaleeFramework.yml</key>
 		<data>
 		6Xz4yBJFQSyB7VddjZqiDhgJuHg=
+=======
+		SCCWkFTzc47BmY4UOOOyPHqbA5U=
+		</data>
+		<key>ios-arm64_x86_64-maccatalyst/dSYMs/KovaleeFramework.framework.dSYM/Contents/Resources/Relocations/aarch64/KovaleeFramework.yml</key>
+		<data>
+		w5PHtmA5lP4fEkyqmDE3zkpGBmM=
+		</data>
+		<key>ios-arm64_x86_64-maccatalyst/dSYMs/KovaleeFramework.framework.dSYM/Contents/Resources/Relocations/x86_64/KovaleeFramework.yml</key>
+		<data>
+		cwB3rSRcejWFhRiU640l1HkyfQ0=
+>>>>>>> eb33ae5 (fix: trying to fix remote Survey activation)
 		</data>
 		<key>ios-arm64_x86_64-simulator/KovaleeFramework.framework/Headers/KovaleeFramework-Swift.h</key>
 		<data>
@@ -146,15 +194,23 @@
 		</data>
 		<key>ios-arm64_x86_64-simulator/KovaleeFramework.framework/Info.plist</key>
 		<data>
-		EcYQ72lodcykD80badLd86ddnx4=
+		IySAeBCfM6eGiOQjqTNawjFXISo=
 		</data>
 		<key>ios-arm64_x86_64-simulator/KovaleeFramework.framework/KovaleeFramework</key>
 		<data>
+<<<<<<< HEAD
 		FWnQLp70UzHJQ5KfUzBLXBksKtw=
 		</data>
 		<key>ios-arm64_x86_64-simulator/KovaleeFramework.framework/Modules/KovaleeFramework.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
 		TAiy3uDWlQFFmK3vd4yftnHv7pg=
+=======
+		YsVqIDbiiFy7UbUrpWpgbSxz94A=
+		</data>
+		<key>ios-arm64_x86_64-simulator/KovaleeFramework.framework/Modules/KovaleeFramework.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
+		<data>
+		eT/mjsDOvCdMlZDKh0Pud3ZOlrY=
+>>>>>>> eb33ae5 (fix: trying to fix remote Survey activation)
 		</data>
 		<key>ios-arm64_x86_64-simulator/KovaleeFramework.framework/Modules/KovaleeFramework.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -170,7 +226,11 @@
 		</data>
 		<key>ios-arm64_x86_64-simulator/KovaleeFramework.framework/Modules/KovaleeFramework.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
+<<<<<<< HEAD
 		TAiy3uDWlQFFmK3vd4yftnHv7pg=
+=======
+		eT/mjsDOvCdMlZDKh0Pud3ZOlrY=
+>>>>>>> eb33ae5 (fix: trying to fix remote Survey activation)
 		</data>
 		<key>ios-arm64_x86_64-simulator/KovaleeFramework.framework/Modules/KovaleeFramework.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -194,7 +254,11 @@
 		</data>
 		<key>ios-arm64_x86_64-simulator/KovaleeFramework.framework/_CodeSignature/CodeResources</key>
 		<data>
+<<<<<<< HEAD
 		bUub0gdFK9IeUZO0xm68LbEnNds=
+=======
+		UOTDchfk+/S+GeV7UxtRUMfgYu8=
+>>>>>>> eb33ae5 (fix: trying to fix remote Survey activation)
 		</data>
 		<key>ios-arm64_x86_64-simulator/dSYMs/KovaleeFramework.framework.dSYM/Contents/Info.plist</key>
 		<data>
@@ -202,6 +266,7 @@
 		</data>
 		<key>ios-arm64_x86_64-simulator/dSYMs/KovaleeFramework.framework.dSYM/Contents/Resources/DWARF/KovaleeFramework</key>
 		<data>
+<<<<<<< HEAD
 		vUp+61/XIGsZHRaJICX6FSGIX+k=
 		</data>
 		<key>ios-arm64_x86_64-simulator/dSYMs/KovaleeFramework.framework.dSYM/Contents/Resources/Relocations/aarch64/KovaleeFramework.yml</key>
@@ -211,6 +276,17 @@
 		<key>ios-arm64_x86_64-simulator/dSYMs/KovaleeFramework.framework.dSYM/Contents/Resources/Relocations/x86_64/KovaleeFramework.yml</key>
 		<data>
 		7dmTT8frQCbp3PEpN/0dLmTwvcE=
+=======
+		ap4h1aK9WgdxHWvn4+DDE/qCtrA=
+		</data>
+		<key>ios-arm64_x86_64-simulator/dSYMs/KovaleeFramework.framework.dSYM/Contents/Resources/Relocations/aarch64/KovaleeFramework.yml</key>
+		<data>
+		5/+jGNDa/d27Fe1aNIEMZGk0Ddc=
+		</data>
+		<key>ios-arm64_x86_64-simulator/dSYMs/KovaleeFramework.framework.dSYM/Contents/Resources/Relocations/x86_64/KovaleeFramework.yml</key>
+		<data>
+		3TzQkdxM9dfDnhM+jxQsoxI/u8o=
+>>>>>>> eb33ae5 (fix: trying to fix remote Survey activation)
 		</data>
 		<key>xros-arm64/KovaleeFramework.framework/Headers/KovaleeFramework-Swift.h</key>
 		<data>
@@ -222,15 +298,23 @@
 		</data>
 		<key>xros-arm64/KovaleeFramework.framework/Info.plist</key>
 		<data>
-		I0dpVRiWJi7RpCix+fkMQ1IWGV4=
+		oVAptn0nUGMouuVseb10Og3dT/A=
 		</data>
 		<key>xros-arm64/KovaleeFramework.framework/KovaleeFramework</key>
 		<data>
+<<<<<<< HEAD
 		iB4nFICE7yRBhoRcW9Z1CRvggFA=
 		</data>
 		<key>xros-arm64/KovaleeFramework.framework/Modules/KovaleeFramework.swiftmodule/arm64-apple-xros.abi.json</key>
 		<data>
 		TAiy3uDWlQFFmK3vd4yftnHv7pg=
+=======
+		Ky6p8hCnt0Gaa0lJhiKdbRBxf3c=
+		</data>
+		<key>xros-arm64/KovaleeFramework.framework/Modules/KovaleeFramework.swiftmodule/arm64-apple-xros.abi.json</key>
+		<data>
+		eT/mjsDOvCdMlZDKh0Pud3ZOlrY=
+>>>>>>> eb33ae5 (fix: trying to fix remote Survey activation)
 		</data>
 		<key>xros-arm64/KovaleeFramework.framework/Modules/KovaleeFramework.swiftmodule/arm64-apple-xros.private.swiftinterface</key>
 		<data>
@@ -258,11 +342,19 @@
 		</data>
 		<key>xros-arm64/dSYMs/KovaleeFramework.framework.dSYM/Contents/Resources/DWARF/KovaleeFramework</key>
 		<data>
+<<<<<<< HEAD
 		G7p4JA5dVd40yC86RsZibGOyxPw=
 		</data>
 		<key>xros-arm64/dSYMs/KovaleeFramework.framework.dSYM/Contents/Resources/Relocations/aarch64/KovaleeFramework.yml</key>
 		<data>
 		bMVgzRaOJEEYlzvRYalv35YbaQw=
+=======
+		4eaUBAzVJfi2NpqwNpwSXP2REJk=
+		</data>
+		<key>xros-arm64/dSYMs/KovaleeFramework.framework.dSYM/Contents/Resources/Relocations/aarch64/KovaleeFramework.yml</key>
+		<data>
+		vMwJHrRg79YxLf5IBZ+ZdM2V6Qs=
+>>>>>>> eb33ae5 (fix: trying to fix remote Survey activation)
 		</data>
 		<key>xros-arm64_x86_64-simulator/KovaleeFramework.framework/Headers/KovaleeFramework-Swift.h</key>
 		<data>
@@ -274,15 +366,23 @@
 		</data>
 		<key>xros-arm64_x86_64-simulator/KovaleeFramework.framework/Info.plist</key>
 		<data>
-		eWVEGx7o9YBy/7Tz8BRhpvWPzdc=
+		ey2PAZ639myvJm3m8ADlpsa+DLs=
 		</data>
 		<key>xros-arm64_x86_64-simulator/KovaleeFramework.framework/KovaleeFramework</key>
 		<data>
+<<<<<<< HEAD
 		aBKS7Tuu+a2OOyZzZy3HESPNRzs=
 		</data>
 		<key>xros-arm64_x86_64-simulator/KovaleeFramework.framework/Modules/KovaleeFramework.swiftmodule/arm64-apple-xros-simulator.abi.json</key>
 		<data>
 		TAiy3uDWlQFFmK3vd4yftnHv7pg=
+=======
+		HdlcOY4H+J+scEiOULxr+A82QJY=
+		</data>
+		<key>xros-arm64_x86_64-simulator/KovaleeFramework.framework/Modules/KovaleeFramework.swiftmodule/arm64-apple-xros-simulator.abi.json</key>
+		<data>
+		eT/mjsDOvCdMlZDKh0Pud3ZOlrY=
+>>>>>>> eb33ae5 (fix: trying to fix remote Survey activation)
 		</data>
 		<key>xros-arm64_x86_64-simulator/KovaleeFramework.framework/Modules/KovaleeFramework.swiftmodule/arm64-apple-xros-simulator.private.swiftinterface</key>
 		<data>
@@ -298,7 +398,11 @@
 		</data>
 		<key>xros-arm64_x86_64-simulator/KovaleeFramework.framework/Modules/KovaleeFramework.swiftmodule/x86_64-apple-xros-simulator.abi.json</key>
 		<data>
+<<<<<<< HEAD
 		TAiy3uDWlQFFmK3vd4yftnHv7pg=
+=======
+		eT/mjsDOvCdMlZDKh0Pud3ZOlrY=
+>>>>>>> eb33ae5 (fix: trying to fix remote Survey activation)
 		</data>
 		<key>xros-arm64_x86_64-simulator/KovaleeFramework.framework/Modules/KovaleeFramework.swiftmodule/x86_64-apple-xros-simulator.private.swiftinterface</key>
 		<data>
@@ -322,7 +426,11 @@
 		</data>
 		<key>xros-arm64_x86_64-simulator/KovaleeFramework.framework/_CodeSignature/CodeResources</key>
 		<data>
+<<<<<<< HEAD
 		H2uWP+hb6HjsWbvJGdNQvC5fAkU=
+=======
+		Rk1DkJoq4UoaWLPnSQTyJYM8RZw=
+>>>>>>> eb33ae5 (fix: trying to fix remote Survey activation)
 		</data>
 		<key>xros-arm64_x86_64-simulator/dSYMs/KovaleeFramework.framework.dSYM/Contents/Info.plist</key>
 		<data>
@@ -330,6 +438,7 @@
 		</data>
 		<key>xros-arm64_x86_64-simulator/dSYMs/KovaleeFramework.framework.dSYM/Contents/Resources/DWARF/KovaleeFramework</key>
 		<data>
+<<<<<<< HEAD
 		aKqDoWaDRFQKfdsbYuQbKpqwXfM=
 		</data>
 		<key>xros-arm64_x86_64-simulator/dSYMs/KovaleeFramework.framework.dSYM/Contents/Resources/Relocations/aarch64/KovaleeFramework.yml</key>
@@ -339,6 +448,17 @@
 		<key>xros-arm64_x86_64-simulator/dSYMs/KovaleeFramework.framework.dSYM/Contents/Resources/Relocations/x86_64/KovaleeFramework.yml</key>
 		<data>
 		k4NQDyoDboSj3/wxcn06ia28cPU=
+=======
+		/Nsxl907zJ5VLbEvjH1VlZE1JFY=
+		</data>
+		<key>xros-arm64_x86_64-simulator/dSYMs/KovaleeFramework.framework.dSYM/Contents/Resources/Relocations/aarch64/KovaleeFramework.yml</key>
+		<data>
+		3DJCX+RgcOpPQMuwqn9tCRqMhrg=
+		</data>
+		<key>xros-arm64_x86_64-simulator/dSYMs/KovaleeFramework.framework.dSYM/Contents/Resources/Relocations/x86_64/KovaleeFramework.yml</key>
+		<data>
+		rbuBvsvRmh5JeoYMMx1jBOjhQC4=
+>>>>>>> eb33ae5 (fix: trying to fix remote Survey activation)
 		</data>
 	</dict>
 	<key>files2</key>
@@ -369,33 +489,49 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			WiNF3J49dv4EA5Md+sBmw6ufbqA=
+			3vCQCQHKdZrvIgtuV1A3yRqT1qc=
 			</data>
 			<key>hash2</key>
 			<data>
-			8if4PHfquNv8t7Df9JmEtre0exjyjqgw54lR62NkrMY=
+			YlXycHVBmDjTrtXeErvk8qi4BSCLuBhYslV8mLFXUq0=
 			</data>
 		</dict>
 		<key>ios-arm64/KovaleeFramework.framework/KovaleeFramework</key>
 		<dict>
 			<key>hash</key>
 			<data>
+<<<<<<< HEAD
 			babskehGLjaOQ0rvlPrJtq10W+E=
 			</data>
 			<key>hash2</key>
 			<data>
 			JFx421KLaZDZEiCg72atYpp/a85MN8rK84Jvej6+lSo=
+=======
+			vbzg2bEIzNMhuBnf15iZ8rZ6eao=
+			</data>
+			<key>hash2</key>
+			<data>
+			Sxb3SDQVEhqf9Dl9FIQuIYcAiVkTeq+4fCMlIV82hqE=
+>>>>>>> eb33ae5 (fix: trying to fix remote Survey activation)
 			</data>
 		</dict>
 		<key>ios-arm64/KovaleeFramework.framework/Modules/KovaleeFramework.swiftmodule/arm64-apple-ios.abi.json</key>
 		<dict>
 			<key>hash</key>
 			<data>
+<<<<<<< HEAD
 			TAiy3uDWlQFFmK3vd4yftnHv7pg=
 			</data>
 			<key>hash2</key>
 			<data>
 			iw3ATyYpZnHIcHEN8v9RdWZULWaHwLQGoN4PlpsRYAY=
+=======
+			eT/mjsDOvCdMlZDKh0Pud3ZOlrY=
+			</data>
+			<key>hash2</key>
+			<data>
+			kvxz4oAnB7IQMNzw4EVneHS+Xu5pOjXz7PBvu8i5mjg=
+>>>>>>> eb33ae5 (fix: trying to fix remote Survey activation)
 			</data>
 		</dict>
 		<key>ios-arm64/KovaleeFramework.framework/Modules/KovaleeFramework.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
@@ -457,11 +593,19 @@
 		<dict>
 			<key>hash</key>
 			<data>
+<<<<<<< HEAD
 			/pp0bhaSTkeosMEd41c9eSyyQMU=
 			</data>
 			<key>hash2</key>
 			<data>
 			VO7CV6XjQ+uipvLOc6gDlA95NQ1D/xcVHYXc5G1llbo=
+=======
+			rmRAsAUoc+fHSSQaGoBY9wsEsqQ=
+			</data>
+			<key>hash2</key>
+			<data>
+			tcUvIf2h0hCU76gaqmOJpVplBYIiigPXjNO3FIaaf3o=
+>>>>>>> eb33ae5 (fix: trying to fix remote Survey activation)
 			</data>
 		</dict>
 		<key>ios-arm64/dSYMs/KovaleeFramework.framework.dSYM/Contents/Info.plist</key>
@@ -479,22 +623,38 @@
 		<dict>
 			<key>hash</key>
 			<data>
+<<<<<<< HEAD
 			8tu2Va+CUKCNI/l/3oq8IYYtkzY=
 			</data>
 			<key>hash2</key>
 			<data>
 			VPD25F4Po+AFLJynlOpsCcvC5qFbAMcdIE8yY0grMEE=
+=======
+			aCJ8QM/74N+CXLi6sTreXObQb+I=
+			</data>
+			<key>hash2</key>
+			<data>
+			xWvGcCnpef8A4e3bJo2l6n5gqgotY1FzCZ6RDjcC0qk=
+>>>>>>> eb33ae5 (fix: trying to fix remote Survey activation)
 			</data>
 		</dict>
 		<key>ios-arm64/dSYMs/KovaleeFramework.framework.dSYM/Contents/Resources/Relocations/aarch64/KovaleeFramework.yml</key>
 		<dict>
 			<key>hash</key>
 			<data>
+<<<<<<< HEAD
 			8jgUv6b2k50LXOXoN2yqLEsVIJ8=
 			</data>
 			<key>hash2</key>
 			<data>
 			G+E7xQJj7L5BSdK6tUlxnLCBTsM80JBXzsKC9wT5Nuw=
+=======
+			OVe2hyoaXtDnloGTji+dETj1I/Y=
+			</data>
+			<key>hash2</key>
+			<data>
+			jC9fBtHv2wQWugZYP/pX2Zzfhe6ipSbIP31ZLZEsYFY=
+>>>>>>> eb33ae5 (fix: trying to fix remote Survey activation)
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-maccatalyst/KovaleeFramework.framework/Headers</key>
@@ -543,22 +703,38 @@
 		<dict>
 			<key>hash</key>
 			<data>
+<<<<<<< HEAD
 			506QmproFI72L/8OGXuC091ri/k=
 			</data>
 			<key>hash2</key>
 			<data>
 			0TmnqV6Va8fWMcxPwgAS3r/+vQr/i5SxQVVYEiym9qY=
+=======
+			3K7jeuKe0CY1OZmCfo1LBeIFheU=
+			</data>
+			<key>hash2</key>
+			<data>
+			E+tpxffoP9SuUDW3XpRl1Zpr8G29FMLoN9IGYdlD7SM=
+>>>>>>> eb33ae5 (fix: trying to fix remote Survey activation)
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-maccatalyst/KovaleeFramework.framework/Versions/A/Modules/KovaleeFramework.swiftmodule/arm64-apple-ios-macabi.abi.json</key>
 		<dict>
 			<key>hash</key>
 			<data>
+<<<<<<< HEAD
 			TAiy3uDWlQFFmK3vd4yftnHv7pg=
 			</data>
 			<key>hash2</key>
 			<data>
 			iw3ATyYpZnHIcHEN8v9RdWZULWaHwLQGoN4PlpsRYAY=
+=======
+			eT/mjsDOvCdMlZDKh0Pud3ZOlrY=
+			</data>
+			<key>hash2</key>
+			<data>
+			kvxz4oAnB7IQMNzw4EVneHS+Xu5pOjXz7PBvu8i5mjg=
+>>>>>>> eb33ae5 (fix: trying to fix remote Survey activation)
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-maccatalyst/KovaleeFramework.framework/Versions/A/Modules/KovaleeFramework.swiftmodule/arm64-apple-ios-macabi.private.swiftinterface</key>
@@ -598,11 +774,19 @@
 		<dict>
 			<key>hash</key>
 			<data>
+<<<<<<< HEAD
 			TAiy3uDWlQFFmK3vd4yftnHv7pg=
 			</data>
 			<key>hash2</key>
 			<data>
 			iw3ATyYpZnHIcHEN8v9RdWZULWaHwLQGoN4PlpsRYAY=
+=======
+			eT/mjsDOvCdMlZDKh0Pud3ZOlrY=
+			</data>
+			<key>hash2</key>
+			<data>
+			kvxz4oAnB7IQMNzw4EVneHS+Xu5pOjXz7PBvu8i5mjg=
+>>>>>>> eb33ae5 (fix: trying to fix remote Survey activation)
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-maccatalyst/KovaleeFramework.framework/Versions/A/Modules/KovaleeFramework.swiftmodule/x86_64-apple-ios-macabi.private.swiftinterface</key>
@@ -653,11 +837,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			87ZdpxoYilBH9UgAlbRBWAkPsno=
+			sx10TarTJSZNkNznYDeAyGgmbaE=
 			</data>
 			<key>hash2</key>
 			<data>
-			VsSMxW6o51xKzhhCTOEbuk31zamOrgjqnk/SB+U/w3Y=
+			Gfi5GoEYHFbhpo+kwEn9xHUoPUUJdxZpBT93Chiuib4=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-maccatalyst/KovaleeFramework.framework/Versions/A/Resources/PrivacyInfo.xcprivacy</key>
@@ -675,11 +859,19 @@
 		<dict>
 			<key>hash</key>
 			<data>
+<<<<<<< HEAD
 			vSpEHV72IXOaSUQVDF+qiGlC/tQ=
 			</data>
 			<key>hash2</key>
 			<data>
 			wiiIr42pLyAC7YZNQFLV2Jqfrc3lZ0NSsD1Pb4KoiFU=
+=======
+			P5xXKR+SvPIyAWQ3RfU5TAgycjY=
+			</data>
+			<key>hash2</key>
+			<data>
+			xfwVsHLUC5lbINhQjSWugXjoIKz/zbhfGt6pnJ+MYnY=
+>>>>>>> eb33ae5 (fix: trying to fix remote Survey activation)
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-maccatalyst/KovaleeFramework.framework/Versions/Current</key>
@@ -702,33 +894,57 @@
 		<dict>
 			<key>hash</key>
 			<data>
+<<<<<<< HEAD
 			1fAJ/xa0zGSOs6c1HH+g6QCJNi8=
 			</data>
 			<key>hash2</key>
 			<data>
 			5mIYFvE1kRxY9GWNEYB8oWNdRYZ6i/TX8Ci0fMB4XH0=
+=======
+			SCCWkFTzc47BmY4UOOOyPHqbA5U=
+			</data>
+			<key>hash2</key>
+			<data>
+			H7vy1FMMpewFIlwn8NLCHDKYtcs9Xp8f5H3JZlUsL+A=
+>>>>>>> eb33ae5 (fix: trying to fix remote Survey activation)
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-maccatalyst/dSYMs/KovaleeFramework.framework.dSYM/Contents/Resources/Relocations/aarch64/KovaleeFramework.yml</key>
 		<dict>
 			<key>hash</key>
 			<data>
+<<<<<<< HEAD
 			xULXQnXkoIyAq4+DyHgUVY4LllU=
 			</data>
 			<key>hash2</key>
 			<data>
 			E4FuPXZVVUS4DhJpny2P9+Nl6czoT3wwtUaFcv80EXw=
+=======
+			w5PHtmA5lP4fEkyqmDE3zkpGBmM=
+			</data>
+			<key>hash2</key>
+			<data>
+			rDOxsjTM7GPyADQEvAWT1G+uSEUojL4QyczGnRIvlBY=
+>>>>>>> eb33ae5 (fix: trying to fix remote Survey activation)
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-maccatalyst/dSYMs/KovaleeFramework.framework.dSYM/Contents/Resources/Relocations/x86_64/KovaleeFramework.yml</key>
 		<dict>
 			<key>hash</key>
 			<data>
+<<<<<<< HEAD
 			6Xz4yBJFQSyB7VddjZqiDhgJuHg=
 			</data>
 			<key>hash2</key>
 			<data>
 			csrmrHeIYNVW0wTFowlkLmgZusFjFZMlx6FDdjJ1uJE=
+=======
+			cwB3rSRcejWFhRiU640l1HkyfQ0=
+			</data>
+			<key>hash2</key>
+			<data>
+			Y/77CmK5ALEimhmsAisPXaPpL0xr/5NnTnbOzOc7DgM=
+>>>>>>> eb33ae5 (fix: trying to fix remote Survey activation)
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/KovaleeFramework.framework/Headers/KovaleeFramework-Swift.h</key>
@@ -757,33 +973,49 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			EcYQ72lodcykD80badLd86ddnx4=
+			IySAeBCfM6eGiOQjqTNawjFXISo=
 			</data>
 			<key>hash2</key>
 			<data>
-			Aa29UOaVdsCBab/IVig3aLuh2f7nNRjvS65dO3OpaFQ=
+			CXTk/AQ8ZrfFtwl4thPtvsobB4PPUhjzCDFa0+ojUXM=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/KovaleeFramework.framework/KovaleeFramework</key>
 		<dict>
 			<key>hash</key>
 			<data>
+<<<<<<< HEAD
 			FWnQLp70UzHJQ5KfUzBLXBksKtw=
 			</data>
 			<key>hash2</key>
 			<data>
 			A/PzmR/JdTLL+F4DKf1oMEYVrt5LBmh2WtR4WO55kWg=
+=======
+			YsVqIDbiiFy7UbUrpWpgbSxz94A=
+			</data>
+			<key>hash2</key>
+			<data>
+			jhqQ2XLOJEkI5JT+QjdjyIuF0ex8xzjNw3IeE+/QmuI=
+>>>>>>> eb33ae5 (fix: trying to fix remote Survey activation)
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/KovaleeFramework.framework/Modules/KovaleeFramework.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash</key>
 			<data>
+<<<<<<< HEAD
 			TAiy3uDWlQFFmK3vd4yftnHv7pg=
 			</data>
 			<key>hash2</key>
 			<data>
 			iw3ATyYpZnHIcHEN8v9RdWZULWaHwLQGoN4PlpsRYAY=
+=======
+			eT/mjsDOvCdMlZDKh0Pud3ZOlrY=
+			</data>
+			<key>hash2</key>
+			<data>
+			kvxz4oAnB7IQMNzw4EVneHS+Xu5pOjXz7PBvu8i5mjg=
+>>>>>>> eb33ae5 (fix: trying to fix remote Survey activation)
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/KovaleeFramework.framework/Modules/KovaleeFramework.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
@@ -823,11 +1055,19 @@
 		<dict>
 			<key>hash</key>
 			<data>
+<<<<<<< HEAD
 			TAiy3uDWlQFFmK3vd4yftnHv7pg=
 			</data>
 			<key>hash2</key>
 			<data>
 			iw3ATyYpZnHIcHEN8v9RdWZULWaHwLQGoN4PlpsRYAY=
+=======
+			eT/mjsDOvCdMlZDKh0Pud3ZOlrY=
+			</data>
+			<key>hash2</key>
+			<data>
+			kvxz4oAnB7IQMNzw4EVneHS+Xu5pOjXz7PBvu8i5mjg=
+>>>>>>> eb33ae5 (fix: trying to fix remote Survey activation)
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/KovaleeFramework.framework/Modules/KovaleeFramework.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
@@ -889,11 +1129,19 @@
 		<dict>
 			<key>hash</key>
 			<data>
+<<<<<<< HEAD
 			bUub0gdFK9IeUZO0xm68LbEnNds=
 			</data>
 			<key>hash2</key>
 			<data>
 			JFB0GGZS1on3Zqatfbbdwb8Hz9TX+MBRTk5fqVB4rSs=
+=======
+			UOTDchfk+/S+GeV7UxtRUMfgYu8=
+			</data>
+			<key>hash2</key>
+			<data>
+			sUlORsB75f7lW/O9OViqiQQQ4cqkgjyiLbt9xt7AZTE=
+>>>>>>> eb33ae5 (fix: trying to fix remote Survey activation)
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/dSYMs/KovaleeFramework.framework.dSYM/Contents/Info.plist</key>
@@ -911,33 +1159,57 @@
 		<dict>
 			<key>hash</key>
 			<data>
+<<<<<<< HEAD
 			vUp+61/XIGsZHRaJICX6FSGIX+k=
 			</data>
 			<key>hash2</key>
 			<data>
 			emwD9tqY7EQcFSdeQ85yjdnJHtCCeqiTK3xJDyRtXpg=
+=======
+			ap4h1aK9WgdxHWvn4+DDE/qCtrA=
+			</data>
+			<key>hash2</key>
+			<data>
+			RCQ1bNQZoGH1kuItm/9pAbrNM17n62VNb0GrgPNeYhc=
+>>>>>>> eb33ae5 (fix: trying to fix remote Survey activation)
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/dSYMs/KovaleeFramework.framework.dSYM/Contents/Resources/Relocations/aarch64/KovaleeFramework.yml</key>
 		<dict>
 			<key>hash</key>
 			<data>
+<<<<<<< HEAD
 			775o74xKQM5W/tPLvEQfd+aEvpY=
 			</data>
 			<key>hash2</key>
 			<data>
 			czSGN1MAckaAxCabd0kvTfpNeTjL4tVpblRUJYYHxpw=
+=======
+			5/+jGNDa/d27Fe1aNIEMZGk0Ddc=
+			</data>
+			<key>hash2</key>
+			<data>
+			ltmsxyOoWMmEXMWX7l+qSNmHSjprnBNzf4rUs88/wTc=
+>>>>>>> eb33ae5 (fix: trying to fix remote Survey activation)
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/dSYMs/KovaleeFramework.framework.dSYM/Contents/Resources/Relocations/x86_64/KovaleeFramework.yml</key>
 		<dict>
 			<key>hash</key>
 			<data>
+<<<<<<< HEAD
 			7dmTT8frQCbp3PEpN/0dLmTwvcE=
 			</data>
 			<key>hash2</key>
 			<data>
 			exl0JaNJOFS4EEEHgUC0rXKWMTuIKrb9/tZKGawpdPw=
+=======
+			3TzQkdxM9dfDnhM+jxQsoxI/u8o=
+			</data>
+			<key>hash2</key>
+			<data>
+			wgDNpquPg0rJ5Fh7UP9nBl8GDgRjLLZQCEREbR6x8ck=
+>>>>>>> eb33ae5 (fix: trying to fix remote Survey activation)
 			</data>
 		</dict>
 		<key>xros-arm64/KovaleeFramework.framework/Headers/KovaleeFramework-Swift.h</key>
@@ -966,33 +1238,49 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			I0dpVRiWJi7RpCix+fkMQ1IWGV4=
+			oVAptn0nUGMouuVseb10Og3dT/A=
 			</data>
 			<key>hash2</key>
 			<data>
-			P4VmjGPbAsSb+AEFGnUJMCbJFS7S7gle/a398dX2FoY=
+			lZ96UdAEKOP7EKswHzEOtiDdXS3F2/WUTuWY0TAL/9U=
 			</data>
 		</dict>
 		<key>xros-arm64/KovaleeFramework.framework/KovaleeFramework</key>
 		<dict>
 			<key>hash</key>
 			<data>
+<<<<<<< HEAD
 			iB4nFICE7yRBhoRcW9Z1CRvggFA=
 			</data>
 			<key>hash2</key>
 			<data>
 			RGDv4S9V2OrsjF1UKIkK+962ZsELpqwlFU+3SOqWXwQ=
+=======
+			Ky6p8hCnt0Gaa0lJhiKdbRBxf3c=
+			</data>
+			<key>hash2</key>
+			<data>
+			2bAV5R8KFrtwpoNgWYL1MNvG2WneaoVGT8jazUY4//M=
+>>>>>>> eb33ae5 (fix: trying to fix remote Survey activation)
 			</data>
 		</dict>
 		<key>xros-arm64/KovaleeFramework.framework/Modules/KovaleeFramework.swiftmodule/arm64-apple-xros.abi.json</key>
 		<dict>
 			<key>hash</key>
 			<data>
+<<<<<<< HEAD
 			TAiy3uDWlQFFmK3vd4yftnHv7pg=
 			</data>
 			<key>hash2</key>
 			<data>
 			iw3ATyYpZnHIcHEN8v9RdWZULWaHwLQGoN4PlpsRYAY=
+=======
+			eT/mjsDOvCdMlZDKh0Pud3ZOlrY=
+			</data>
+			<key>hash2</key>
+			<data>
+			kvxz4oAnB7IQMNzw4EVneHS+Xu5pOjXz7PBvu8i5mjg=
+>>>>>>> eb33ae5 (fix: trying to fix remote Survey activation)
 			</data>
 		</dict>
 		<key>xros-arm64/KovaleeFramework.framework/Modules/KovaleeFramework.swiftmodule/arm64-apple-xros.private.swiftinterface</key>
@@ -1065,22 +1353,38 @@
 		<dict>
 			<key>hash</key>
 			<data>
+<<<<<<< HEAD
 			G7p4JA5dVd40yC86RsZibGOyxPw=
 			</data>
 			<key>hash2</key>
 			<data>
 			Eff8pN3/OZPHjAlcBTFAYvyBgwuNa3FX9kVVK/w6dtk=
+=======
+			4eaUBAzVJfi2NpqwNpwSXP2REJk=
+			</data>
+			<key>hash2</key>
+			<data>
+			tE1S86/l86Q2Ex921uI9nPXtw1DK56qZzBrbfpHoCXM=
+>>>>>>> eb33ae5 (fix: trying to fix remote Survey activation)
 			</data>
 		</dict>
 		<key>xros-arm64/dSYMs/KovaleeFramework.framework.dSYM/Contents/Resources/Relocations/aarch64/KovaleeFramework.yml</key>
 		<dict>
 			<key>hash</key>
 			<data>
+<<<<<<< HEAD
 			bMVgzRaOJEEYlzvRYalv35YbaQw=
 			</data>
 			<key>hash2</key>
 			<data>
 			xMWjCiPb5q+whVQhgubepo5qRXZgv+TlndtMHLeES6I=
+=======
+			vMwJHrRg79YxLf5IBZ+ZdM2V6Qs=
+			</data>
+			<key>hash2</key>
+			<data>
+			0CXeSlGHRBLEtNeYp6uuM7HXkPV1b7c3YMJkncyJMY8=
+>>>>>>> eb33ae5 (fix: trying to fix remote Survey activation)
 			</data>
 		</dict>
 		<key>xros-arm64_x86_64-simulator/KovaleeFramework.framework/Headers/KovaleeFramework-Swift.h</key>
@@ -1109,33 +1413,49 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			eWVEGx7o9YBy/7Tz8BRhpvWPzdc=
+			ey2PAZ639myvJm3m8ADlpsa+DLs=
 			</data>
 			<key>hash2</key>
 			<data>
-			LU0kYss13Z4oWswyw1HILsQHPwDYvVeBibqy4C+HXfE=
+			24mW/ruvMsk2AKl+p6wymghcIxnM+yHGuIzA9DKr/9o=
 			</data>
 		</dict>
 		<key>xros-arm64_x86_64-simulator/KovaleeFramework.framework/KovaleeFramework</key>
 		<dict>
 			<key>hash</key>
 			<data>
+<<<<<<< HEAD
 			aBKS7Tuu+a2OOyZzZy3HESPNRzs=
 			</data>
 			<key>hash2</key>
 			<data>
 			Y02Qf6aDL4OvnUkpiVwlaziCDi3YU3+xwWEko7YhSCI=
+=======
+			HdlcOY4H+J+scEiOULxr+A82QJY=
+			</data>
+			<key>hash2</key>
+			<data>
+			olkikg8jChoM052xJPbIcz+617wKkbVij7S4NVhqazs=
+>>>>>>> eb33ae5 (fix: trying to fix remote Survey activation)
 			</data>
 		</dict>
 		<key>xros-arm64_x86_64-simulator/KovaleeFramework.framework/Modules/KovaleeFramework.swiftmodule/arm64-apple-xros-simulator.abi.json</key>
 		<dict>
 			<key>hash</key>
 			<data>
+<<<<<<< HEAD
 			TAiy3uDWlQFFmK3vd4yftnHv7pg=
 			</data>
 			<key>hash2</key>
 			<data>
 			iw3ATyYpZnHIcHEN8v9RdWZULWaHwLQGoN4PlpsRYAY=
+=======
+			eT/mjsDOvCdMlZDKh0Pud3ZOlrY=
+			</data>
+			<key>hash2</key>
+			<data>
+			kvxz4oAnB7IQMNzw4EVneHS+Xu5pOjXz7PBvu8i5mjg=
+>>>>>>> eb33ae5 (fix: trying to fix remote Survey activation)
 			</data>
 		</dict>
 		<key>xros-arm64_x86_64-simulator/KovaleeFramework.framework/Modules/KovaleeFramework.swiftmodule/arm64-apple-xros-simulator.private.swiftinterface</key>
@@ -1175,11 +1495,19 @@
 		<dict>
 			<key>hash</key>
 			<data>
+<<<<<<< HEAD
 			TAiy3uDWlQFFmK3vd4yftnHv7pg=
 			</data>
 			<key>hash2</key>
 			<data>
 			iw3ATyYpZnHIcHEN8v9RdWZULWaHwLQGoN4PlpsRYAY=
+=======
+			eT/mjsDOvCdMlZDKh0Pud3ZOlrY=
+			</data>
+			<key>hash2</key>
+			<data>
+			kvxz4oAnB7IQMNzw4EVneHS+Xu5pOjXz7PBvu8i5mjg=
+>>>>>>> eb33ae5 (fix: trying to fix remote Survey activation)
 			</data>
 		</dict>
 		<key>xros-arm64_x86_64-simulator/KovaleeFramework.framework/Modules/KovaleeFramework.swiftmodule/x86_64-apple-xros-simulator.private.swiftinterface</key>
@@ -1241,11 +1569,19 @@
 		<dict>
 			<key>hash</key>
 			<data>
+<<<<<<< HEAD
 			H2uWP+hb6HjsWbvJGdNQvC5fAkU=
 			</data>
 			<key>hash2</key>
 			<data>
 			aX7HN839dM9XRJtVyvExPvCx8l7jdc+zCFYKp8NsLKY=
+=======
+			Rk1DkJoq4UoaWLPnSQTyJYM8RZw=
+			</data>
+			<key>hash2</key>
+			<data>
+			7PKkUC4dxce1MoYdKYOqzF8BJF6SUtK5kowRMzZYE94=
+>>>>>>> eb33ae5 (fix: trying to fix remote Survey activation)
 			</data>
 		</dict>
 		<key>xros-arm64_x86_64-simulator/dSYMs/KovaleeFramework.framework.dSYM/Contents/Info.plist</key>
@@ -1263,33 +1599,57 @@
 		<dict>
 			<key>hash</key>
 			<data>
+<<<<<<< HEAD
 			aKqDoWaDRFQKfdsbYuQbKpqwXfM=
 			</data>
 			<key>hash2</key>
 			<data>
 			BT6wNFAu3eBtg9h860OUjGJMfiJPC4L4XyU6de0VbDo=
+=======
+			/Nsxl907zJ5VLbEvjH1VlZE1JFY=
+			</data>
+			<key>hash2</key>
+			<data>
+			FQIMl13ac+hP5E3XY5qcF+LrJZybwC4ELe5Z5RHhqd0=
+>>>>>>> eb33ae5 (fix: trying to fix remote Survey activation)
 			</data>
 		</dict>
 		<key>xros-arm64_x86_64-simulator/dSYMs/KovaleeFramework.framework.dSYM/Contents/Resources/Relocations/aarch64/KovaleeFramework.yml</key>
 		<dict>
 			<key>hash</key>
 			<data>
+<<<<<<< HEAD
 			8OtFztAopaclNXWFkXD+h3CLwYg=
 			</data>
 			<key>hash2</key>
 			<data>
 			km+NfKrQzzgh0zSdC2ToeaAcmC07hxFYYTYZUhko4bY=
+=======
+			3DJCX+RgcOpPQMuwqn9tCRqMhrg=
+			</data>
+			<key>hash2</key>
+			<data>
+			d34Oz6XQKoyolRjDxq/ZSlPIQvKTihPUuRUqBogr8fw=
+>>>>>>> eb33ae5 (fix: trying to fix remote Survey activation)
 			</data>
 		</dict>
 		<key>xros-arm64_x86_64-simulator/dSYMs/KovaleeFramework.framework.dSYM/Contents/Resources/Relocations/x86_64/KovaleeFramework.yml</key>
 		<dict>
 			<key>hash</key>
 			<data>
+<<<<<<< HEAD
 			k4NQDyoDboSj3/wxcn06ia28cPU=
 			</data>
 			<key>hash2</key>
 			<data>
 			vtVOmVX1W20EHVeKGZ7ORAoID2q7RScMH8+XegyvBbc=
+=======
+			rbuBvsvRmh5JeoYMMx1jBOjhQC4=
+			</data>
+			<key>hash2</key>
+			<data>
+			l6p4Am6cg48QlCoW805rru8AVOftTCUmcwXSHKpWrgU=
+>>>>>>> eb33ae5 (fix: trying to fix remote Survey activation)
 			</data>
 		</dict>
 	</dict>
