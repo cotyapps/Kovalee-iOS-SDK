@@ -13784,11 +13784,7 @@
     {
       "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
       "kind": "BooleanLiteral",
-<<<<<<< HEAD
-      "offset": 9164,
-=======
       "offset": 9954,
->>>>>>> eb33ae5 (fix: trying to fix remote Survey activation)
       "length": 5,
       "value": "false"
     },
@@ -13940,31 +13936,20 @@
       "value": "\"first_app_open\""
     },
     {
-<<<<<<< HEAD
-      "filePath": "\/Users\/rodrigogiglio\/Desktop\/Kovalee-iOS-Framework\/KovaleeFramework\/Utils\/KovaleeConstants.swift",
-=======
       "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/Utils\/KovaleeConstants.swift",
->>>>>>> eb33ae5 (fix: trying to fix remote Survey activation)
       "kind": "StringLiteral",
       "offset": 404,
       "length": 11,
       "value": "\"page_view\""
     },
     {
-<<<<<<< HEAD
-      "filePath": "\/Users\/rodrigogiglio\/Desktop\/Kovalee-iOS-Framework\/KovaleeFramework\/Utils\/KovaleeConstants.swift",
-=======
       "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/Utils\/KovaleeConstants.swift",
->>>>>>> eb33ae5 (fix: trying to fix remote Survey activation)
       "kind": "StringLiteral",
       "offset": 442,
       "length": 6,
       "value": "\"name\""
     },
     {
-<<<<<<< HEAD
-      "filePath": "\/Users\/rodrigogiglio\/Desktop\/Kovalee-iOS-Framework\/KovaleeFramework\/Utils\/Storage.swift",
-=======
       "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/Utils\/KovaleeConstants.swift",
       "kind": "StringLiteral",
       "offset": 482,
@@ -13973,7 +13958,6 @@
     },
     {
       "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/Utils\/Storage.swift",
->>>>>>> eb33ae5 (fix: trying to fix remote Survey activation)
       "kind": "StringLiteral",
       "offset": 85,
       "length": 16,
