@@ -32,40 +32,33 @@ platform :ios do
     release("major")
   end
 
-  lane :pod do
-    podspec_name = "KovaleeSDK.podspec"
+  lane :ui_pod do
+    podspec_name = "KovaleeSDKUI.podspec"
+    pod_lib_lint(podspec: podspec_name)
+    pod_push(path: podspec_name)
+  end
+
+  lane :survey_pod do
+    podspec_name = "KovaleeSurvey.podspec"
     pod_lib_lint(podspec: podspec_name)
     pod_push(path: podspec_name)
   end
 
   def release(type)
     sdk_podspec = "KovaleeSDK.podspec"
-    ui_podspec = "KovaleeSDKUI.podspec"
     survey_podspec = "KovaleeSurvey.podspec"
     swift_file_path = "./Sources/KovaleeSDK/Kovalee.swift"
 
-    pod_lib_lint
+    pod_lib_lint(podspec: sdk_podspec)
     version = version_bump_podspec(
       path: sdk_podspec,
       bump_type: type
     )
 
-    version_bump_podspec(
-      path: ui_podspec,
-      bump_type: type
-    )
-
-    version = version_bump_podspec(
-      path: survey_podspec,
-      bump_type: type
-    )
-
     update_version_in_swift(version)
-    handle_git(version, [sdk_podspec, swift_file_path, ui_podspec, survey_podspec])
+    handle_git(version, [sdk_podspec, swift_file_path])
 
     pod_push(path: sdk_podspec)
-    pod_push(path: ui_podspec)
-    pod_push(path: survey_podspec)
   end
 end
 
