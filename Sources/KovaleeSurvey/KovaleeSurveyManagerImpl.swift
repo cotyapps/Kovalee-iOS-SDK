@@ -62,6 +62,13 @@ class KovaleeSurveyManagerImpl: SurveyManager, Manager {
 }
 
 extension KovaleeSurveyManagerImpl: SurvicateDelegate {
+
+    func surveyDisplayed(event: SurveyDisplayedEvent) {
+        if Kovalee.getAmplitudeUserId() == nil {
+            Kovalee.setAmplitudeUserId(userId: UUID().uuidString)
+        }
+    }
+
     func surveyClosed(surveyId: String) {
         delegate?.surveyClosed(surveyId: surveyId)
     }
