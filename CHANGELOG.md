@@ -7,6 +7,32 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 <<<<<<< HEAD
 =======
+## [1.10.0] - 2024-07-03
+### :sparkles: New Features
+- [`dd91be7`](https://github.com/cotyapps/Kovalee-iOS-SDK/commit/dd91be7cdaea1280d92ecf942af630143f33a6bb) - implement Survicate methods on KovaleeSurveyManager *(commit by [@rodrigowoulddo](https://github.com/rodrigowoulddo))*
+- [`1bf2c6c`](https://github.com/cotyapps/Kovalee-iOS-SDK/commit/1bf2c6c20ef25e3d69cfee57088e4759f4a4ed15) - implement methods on KovaleeSurveyManagerImpl *(commit by [@rodrigowoulddo](https://github.com/rodrigowoulddo))*
+- [`f0c1100`](https://github.com/cotyapps/Kovalee-iOS-SDK/commit/f0c110017bd1fe921ea8b0a8d6cbb5a7578c3714) - expose setSurveyDelegate *(commit by [@rodrigowoulddo](https://github.com/rodrigowoulddo))*
+- [`ad4fd0f`](https://github.com/cotyapps/Kovalee-iOS-SDK/commit/ad4fd0fe504f63645a893cb02d41f8a4651a7f73) - update KovaleeFramework *(commit by [@rodrigowoulddo](https://github.com/rodrigowoulddo))*
+
+### :bug: Bug Fixes
+- [`8c697b1`](https://github.com/cotyapps/Kovalee-iOS-SDK/commit/8c697b134bb91a8c873beceaac2161f3fb4ec9d3) - make setSurveyDelegate public *(commit by [@rodrigowoulddo](https://github.com/rodrigowoulddo))*
+- [`97e05b5`](https://github.com/cotyapps/Kovalee-iOS-SDK/commit/97e05b5314532aa59296148ccbb073e532ac3fe1) - export KovaleeSurvey target *(commit by [@rodrigowoulddo](https://github.com/rodrigowoulddo))*
+- [`d89ec4a`](https://github.com/cotyapps/Kovalee-iOS-SDK/commit/d89ec4ac59f9808a3644f20287ee8b6262f423c1) - trying to fix remote Survey activation *(commit by [@fto-k](https://github.com/fto-k))*
+- [`a5da0a0`](https://github.com/cotyapps/Kovalee-iOS-SDK/commit/a5da0a0f6f93e70c5f67d4984ab6d6507a92a53a) - trying to fix remote Survey activation *(commit by [@fto-k](https://github.com/fto-k))*
+- [`04f890b`](https://github.com/cotyapps/Kovalee-iOS-SDK/commit/04f890baf0efb247d8066a328d03dc1cecec4fda) - added new way to deactivate SurveyKit *(commit by [@fto-k](https://github.com/fto-k))*
+- [`db3bd68`](https://github.com/cotyapps/Kovalee-iOS-SDK/commit/db3bd68b635e6474adfc39c4af57e0fae88e1530) - resetting SurveyKit *(commit by [@fto-k](https://github.com/fto-k))*
+- [`b8a5169`](https://github.com/cotyapps/Kovalee-iOS-SDK/commit/b8a516963e4d7c0bbb93138bfd37d475143dc276) - moved survey check on initialization *(commit by [@fto-k](https://github.com/fto-k))*
+- [`0977fe0`](https://github.com/cotyapps/Kovalee-iOS-SDK/commit/0977fe05504479b16df7f08cd685e04193a93c3b) - moved survey check on initialization *(commit by [@fto-k](https://github.com/fto-k))*
+- [`957b8be`](https://github.com/cotyapps/Kovalee-iOS-SDK/commit/957b8be83c2c6a5bc9a7874a4811a48f049edd5b) - set amplitude id on the first survey display if it doesn't exist *(commit by [@rodrigowoulddo](https://github.com/rodrigowoulddo))*
+- [`7f9f222`](https://github.com/cotyapps/Kovalee-iOS-SDK/commit/7f9f222b424c858ecd698f74ad12ca4a49575a21) - remove unused deactivate() function from KovaleeSurveyManagerImpl *(commit by [@rodrigowoulddo](https://github.com/rodrigowoulddo))*
+
+### :wrench: Chores
+- [`3a4696b`](https://github.com/cotyapps/Kovalee-iOS-SDK/commit/3a4696bb43071859d14f0462d0d060231e34be90) - fixed issue in fastfile *(commit by [@fto-k](https://github.com/fto-k))*
+- [`80f434d`](https://github.com/cotyapps/Kovalee-iOS-SDK/commit/80f434d95245d0c1b29f37a340fe1c80f3d95236) - added new target KovaleeSurvey *(commit by [@fto-k](https://github.com/fto-k))*
+- [`def0dc5`](https://github.com/cotyapps/Kovalee-iOS-SDK/commit/def0dc56a245fbc967f65ae36189884d1f9cf31d) - created KovaleeSurvey target *(commit by [@fto-k](https://github.com/fto-k))*
+- [`e7f00b7`](https://github.com/cotyapps/Kovalee-iOS-SDK/commit/e7f00b7d854d2e6129d89d1ccfbc1baa5579137d) - updated fastlene to handle new KovaleeSurvey podfile *(commit by [@fto-k](https://github.com/fto-k))*
+
+
 ## [1.9.22] - 2024-06-27
 ### :sparkles: New Features
 - [`c7866c1`](https://github.com/cotyapps/Kovalee-iOS-SDK/commit/c7866c1ae87f2166c68631d32e4588ef2b162d22) - exposing RC set email function *(commit by [@fto-k](https://github.com/fto-k))*
@@ -519,3 +545,4 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 [1.9.20]: https://github.com/cotyapps/Kovalee-iOS-SDK/compare/1.9.19...1.9.20
 [1.9.21]: https://github.com/cotyapps/Kovalee-iOS-SDK/compare/1.9.20...1.9.21
 [1.9.22]: https://github.com/cotyapps/Kovalee-iOS-SDK/compare/1.9.21...1.9.22
+[1.10.0]: https://github.com/cotyapps/Kovalee-iOS-SDK/compare/1.9.22...1.10.0
