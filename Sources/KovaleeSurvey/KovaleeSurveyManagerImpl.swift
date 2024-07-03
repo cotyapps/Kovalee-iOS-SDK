@@ -29,11 +29,6 @@ class KovaleeSurveyManagerImpl: SurveyManager, Manager {
         }
     }
 
-    func deactivate() {
-        survicate?.reset()
-        survicate = nil
-    }
-
     func sendEvent(with name: String, andProperties properties: [String: Any]?) {
         if let stringOnlyProperties = properties?.compactMapValues({ $0 as? String }) {
             survicate?.invokeEvent(name: name, with: stringOnlyProperties)
