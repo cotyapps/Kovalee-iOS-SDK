@@ -17,6 +17,6 @@ Pod::Spec.new do |s|
   
     s.source_files     =  "Sources/KovaleeSurvey/**/*.swift"
     s.dependency 'KovaleeSDK'
-    s.dependency 'Survicate'
+    s.dependency 'Survicate', '>= 1.9.23'
   end
   
