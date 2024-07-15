@@ -1,6 +1,6 @@
 ---
 triple:          'arm64-apple-darwin'
-binary-path:     '/Users/rodrigogiglio/Library/Developer/Xcode/DerivedData/KovaleeSDK-aqqgkjwvgisqsgcmbjppgbmygovy/Build/Intermediates.noindex/ArchiveIntermediates/KovaleeFramework (visionOS)/InstallationBuildProductsLocation/Library/Frameworks/KovaleeFramework.framework/KovaleeFramework'
+binary-path:     '/Users/filippo/Library/Developer/Xcode/DerivedData/KovaleeSDK-amutdawxkynecfehopwdcbkforfj/Build/Intermediates.noindex/ArchiveIntermediates/KovaleeFramework (visionOS)/InstallationBuildProductsLocation/Library/Frameworks/KovaleeFramework.framework/KovaleeFramework'
 relocations:
   - { offsetInCU: 0x34, offset: 0x3122E, size: 0x8, addend: 0x0, symName: _KovaleeFrameworkVersionString, symObjAddr: 0x0, symBinAddr: 0x24DD0, symSize: 0x0 }
   - { offsetInCU: 0x69, offset: 0x31263, size: 0x8, addend: 0x0, symName: _KovaleeFrameworkVersionNumber, symObjAddr: 0x38, symBinAddr: 0x24E08, symSize: 0x0 }
@@ -235,7 +235,7 @@ relocations:
   - { offsetInCU: 0xBB, offset: 0x39E26, size: 0x8, addend: 0x0, symName: '_$s16KovaleeFramework8LogLevelOSYAASY8rawValuexSg03RawF0Qz_tcfCTW', symObjAddr: 0x234, symBinAddr: 0xD780, symSize: 0x8 }
   - { offsetInCU: 0xD7, offset: 0x39E42, size: 0x8, addend: 0x0, symName: '_$s16KovaleeFramework8LogLevelOSYAASY8rawValue03RawF0QzvgTW', symObjAddr: 0x23C, symBinAddr: 0xD788, symSize: 0x18 }
   - { offsetInCU: 0xEF, offset: 0x39E5A, size: 0x8, addend: 0x0, symName: '_$s16KovaleeFramework8LogLevelOSYAASY8rawValue03RawF0QzvgTW', symObjAddr: 0x23C, symBinAddr: 0xD788, symSize: 0x18 }
-  - { offsetInCU: 0x10D, offset: 0x39E78, size: 0x8, addend: 0x0, symName: '_$s16KovaleeFramework8LogLevelO5orderSDyACSiGvpZ', symObjAddr: 0x7488, symBinAddr: 0x30E70, symSize: 0x0 }
+  - { offsetInCU: 0x10D, offset: 0x39E78, size: 0x8, addend: 0x0, symName: '_$s16KovaleeFramework8LogLevelO5orderSDyACSiGvpZ', symObjAddr: 0x7438, symBinAddr: 0x30E70, symSize: 0x0 }
   - { offsetInCU: 0x194, offset: 0x39EFF, size: 0x8, addend: 0x0, symName: '_$s16KovaleeFramework8LogLevelO13orderedLevels33_B6D36734888EFC85E85782239FA03865LL_WZ', symObjAddr: 0x258, symBinAddr: 0xD7A4, symSize: 0x30 }
   - { offsetInCU: 0x1E0, offset: 0x39F4B, size: 0x8, addend: 0x0, symName: '_$s16KovaleeFramework8LogLevelO5order_WZ', symObjAddr: 0x288, symBinAddr: 0xD7D4, symSize: 0xC8 }
   - { offsetInCU: 0x250, offset: 0x39FBB, size: 0x8, addend: 0x0, symName: '_$sSi16KovaleeFramework8LogLevelOACSiIegynrd_Si6offset_AC7elementtAC_SitIegnr_TR04$s16a10Framework8cD36O5orderSDyACSiGvpZfiAC_SitSi_ACtcfU_Tf3nnpf_n', symObjAddr: 0x350, symBinAddr: 0xD89C, symSize: 0x14 }

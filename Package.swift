@@ -47,7 +47,11 @@ let package = Package(
             name: .survey,
             dependencies: [
                 .sdk,
-                .product(name: "Survicate", package: "survicate-ios-sdk"),
+                .product(
+                    name: "Survicate",
+                    package: "survicate-ios-sdk",
+                    condition: .when(platforms: [.iOS])
+                ),
             ]
         ),
     ]

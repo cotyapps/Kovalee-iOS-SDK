@@ -19,4 +19,3 @@ Pod::Spec.new do |s|
     s.dependency 'KovaleeSDK'
     s.dependency 'Survicate', '>= 1.10.0'
   end
-  
