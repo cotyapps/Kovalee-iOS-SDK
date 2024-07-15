@@ -7,6 +7,15 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 <<<<<<< HEAD
 =======
+## [1.10.1] - 2024-07-15
+### :bug: Bug Fixes
+- [`a23e11f`](https://github.com/cotyapps/Kovalee-iOS-SDK/commit/a23e11fe3d69d3b8978ec78f796186b1f17db990) - Added condition based on platform to use Survicate as dependency *(commit by [@fto-k](https://github.com/fto-k))*
+
+### :wrench: Chores
+- [`605ce30`](https://github.com/cotyapps/Kovalee-iOS-SDK/commit/605ce3013f176faf8a4d67624b076d89f46287a8) - adde pod specific lanes to fastlane *(commit by [@fto-k](https://github.com/fto-k))*
+- [`a62bef9`](https://github.com/cotyapps/Kovalee-iOS-SDK/commit/a62bef951e435c51f839b7aabcfac3076fd51671) - updated .gitignore *(commit by [@fto-k](https://github.com/fto-k))*
+
+
 ## [1.10.0] - 2024-07-03
 ### :sparkles: New Features
 - [`dd91be7`](https://github.com/cotyapps/Kovalee-iOS-SDK/commit/dd91be7cdaea1280d92ecf942af630143f33a6bb) - implement Survicate methods on KovaleeSurveyManager *(commit by [@rodrigowoulddo](https://github.com/rodrigowoulddo))*
@@ -546,3 +555,4 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 [1.9.21]: https://github.com/cotyapps/Kovalee-iOS-SDK/compare/1.9.20...1.9.21
 [1.9.22]: https://github.com/cotyapps/Kovalee-iOS-SDK/compare/1.9.21...1.9.22
 [1.10.0]: https://github.com/cotyapps/Kovalee-iOS-SDK/compare/1.9.22...1.10.0
+[1.10.1]: https://github.com/cotyapps/Kovalee-iOS-SDK/compare/1.10.0...1.10.1
