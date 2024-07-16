@@ -212,10 +212,14 @@ extension KovaleeFramework.KovaleeManager {
   public func removeUserFromBundle()
   #if compiler(>=5.3) && $AsyncAwait
 <<<<<<< HEAD
+<<<<<<< HEAD
   public func isUserInBundle(bundleId: Swift.String, appCode: Swift.String, email: Swift.String) async throws -> Swift.Bool
 =======
   public func isUserInBundle(appCode: Swift.String, email: Swift.String) async throws -> Swift.Bool
 >>>>>>> 82a117a (feat: basic bundle check implementation)
+=======
+  public func isUserInBundle(bundleId: Swift.String, appCode: Swift.String, email: Swift.String) async throws -> Swift.Bool
+>>>>>>> ebe5358 (feat: updated bundle check to receive also bundle_id)
   #endif
 }
 public enum FileReaderError : Swift.Error {

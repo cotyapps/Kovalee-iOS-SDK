@@ -2542,10 +2542,14 @@
             "kind": "Function",
             "name": "isUserInBundle",
 <<<<<<< HEAD
+<<<<<<< HEAD
             "printedName": "isUserInBundle(bundleId:appCode:email:)",
 =======
             "printedName": "isUserInBundle(appCode:email:)",
 >>>>>>> 82a117a (feat: basic bundle check implementation)
+=======
+            "printedName": "isUserInBundle(bundleId:appCode:email:)",
+>>>>>>> ebe5358 (feat: updated bundle check to receive also bundle_id)
             "children": [
               {
                 "kind": "TypeNominal",
@@ -2565,12 +2569,16 @@
                 "printedName": "Swift.String",
                 "usr": "s:SS"
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> ebe5358 (feat: updated bundle check to receive also bundle_id)
               },
               {
                 "kind": "TypeNominal",
                 "name": "String",
                 "printedName": "Swift.String",
                 "usr": "s:SS"
+<<<<<<< HEAD
               }
             ],
             "declKind": "Func",
@@ -2583,6 +2591,13 @@
             "usr": "s:16KovaleeFramework0A7ManagerC14isUserInBundle7appCode5emailSbSS_SStYaKF",
             "mangledName": "$s16KovaleeFramework0A7ManagerC14isUserInBundle7appCode5emailSbSS_SStYaKF",
 >>>>>>> 82a117a (feat: basic bundle check implementation)
+=======
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:16KovaleeFramework0A7ManagerC14isUserInBundle8bundleId7appCode5emailSbSS_S2StYaKF",
+            "mangledName": "$s16KovaleeFramework0A7ManagerC14isUserInBundle8bundleId7appCode5emailSbSS_S2StYaKF",
+>>>>>>> ebe5358 (feat: updated bundle check to receive also bundle_id)
             "moduleName": "KovaleeFramework",
             "declAttributes": [
               "AccessControl"

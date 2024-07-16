@@ -21,6 +21,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 		d5z1TwJRFhnk2eKTLDoZgaPvWEM=
 		</data>
 		<key>Modules/KovaleeFramework.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
@@ -31,6 +32,8 @@
 =======
 =======
 >>>>>>> 82a117a (feat: basic bundle check implementation)
+=======
+>>>>>>> ebe5358 (feat: updated bundle check to receive also bundle_id)
 		LjeURKLNiZUiU7/obKWgCh2j/2Q=
 >>>>>>> cbb676c (fix: moved set app_code for every user not only new ones)
 		</data>
@@ -47,7 +50,17 @@
 		<data>
 		VxbHnRfLMGU5JJ4zxDDoJ3jtDOM=
 >>>>>>> d867df9 (feat: basic bundle check implementation)
+<<<<<<< HEAD
 >>>>>>> 82a117a (feat: basic bundle check implementation)
+=======
+=======
+		d5z1TwJRFhnk2eKTLDoZgaPvWEM=
+		</data>
+		<key>Modules/KovaleeFramework.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
+		<data>
+		oPmagCEcAiEjqMfFnB7W/KmO/T0=
+>>>>>>> 89a29ce (feat: updated bundle check to receive also bundle_id)
+>>>>>>> ebe5358 (feat: updated bundle check to receive also bundle_id)
 		</data>
 		<key>Modules/KovaleeFramework.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -55,6 +68,7 @@
 		</data>
 		<key>Modules/KovaleeFramework.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 		oPmagCEcAiEjqMfFnB7W/KmO/T0=
@@ -73,6 +87,8 @@
 =======
 =======
 >>>>>>> 82a117a (feat: basic bundle check implementation)
+=======
+>>>>>>> ebe5358 (feat: updated bundle check to receive also bundle_id)
 		T4i3RkvBHwFCB85/EjWZgg+Deo4=
 		</data>
 		<key>Modules/KovaleeFramework.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
@@ -91,20 +107,30 @@
 =======
 =======
 		VxbHnRfLMGU5JJ4zxDDoJ3jtDOM=
+=======
+		oPmagCEcAiEjqMfFnB7W/KmO/T0=
+>>>>>>> 89a29ce (feat: updated bundle check to receive also bundle_id)
 		</data>
 		<key>Modules/KovaleeFramework.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		bwGAREU7OjdmQ4JyYcj+AM+IJF0=
+		Txg4uvMzupmdf3viFSkvhhub834=
 		</data>
 		<key>Modules/KovaleeFramework.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		yr3WkZEW4HgLQWszvJWhnXoGhVU=
+		d5z1TwJRFhnk2eKTLDoZgaPvWEM=
 		</data>
 		<key>Modules/KovaleeFramework.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
+<<<<<<< HEAD
 		LVgvE88EjvzVskLszozJ/p629jI=
 >>>>>>> d867df9 (feat: basic bundle check implementation)
+<<<<<<< HEAD
 >>>>>>> 82a117a (feat: basic bundle check implementation)
+=======
+=======
+		gvIB/9zKl1WJ1EHEQVBR7/wkMos=
+>>>>>>> 89a29ce (feat: updated bundle check to receive also bundle_id)
+>>>>>>> ebe5358 (feat: updated bundle check to receive also bundle_id)
 		</data>
 		<key>Modules/KovaleeFramework.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -112,6 +138,7 @@
 		</data>
 		<key>Modules/KovaleeFramework.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 		gvIB/9zKl1WJ1EHEQVBR7/wkMos=
@@ -122,6 +149,8 @@
 =======
 =======
 >>>>>>> 82a117a (feat: basic bundle check implementation)
+=======
+>>>>>>> ebe5358 (feat: updated bundle check to receive also bundle_id)
 		GRyLE+sx6YwpKl3vb3vzjGHnuvE=
 		</data>
 		<key>Modules/KovaleeFramework.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
@@ -137,7 +166,17 @@
 		<data>
 		vlW/mVWZ9clg8L4W6mVL9ZZf1kE=
 >>>>>>> d867df9 (feat: basic bundle check implementation)
+<<<<<<< HEAD
 >>>>>>> 82a117a (feat: basic bundle check implementation)
+=======
+=======
+		gvIB/9zKl1WJ1EHEQVBR7/wkMos=
+		</data>
+		<key>Modules/KovaleeFramework.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
+		<data>
+		o8ox7ToSdVoadOUVi2FpSYLmrF4=
+>>>>>>> 89a29ce (feat: updated bundle check to receive also bundle_id)
+>>>>>>> ebe5358 (feat: updated bundle check to receive also bundle_id)
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -171,6 +210,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 			x/s0rzf1v4/65++CBZfpqovjEdJGvXCn1OycO9ifaEY=
 =======
 			flk0d0lVFA+K1p/FxhXEVZjUHVP2mQa+sUnRRo/YNrA=
@@ -179,11 +219,19 @@
 			gyICTdBQzrQLdrY/Nafi3xNHI+wBFAEsWPUlO1WiRaI=
 >>>>>>> cbb676c (fix: moved set app_code for every user not only new ones)
 =======
+=======
+>>>>>>> ebe5358 (feat: updated bundle check to receive also bundle_id)
 			gyICTdBQzrQLdrY/Nafi3xNHI+wBFAEsWPUlO1WiRaI=
 =======
 			QxA985UIkcgG6MOjm9s//sPuYJ9MAnbT94T/dNtoc0U=
 >>>>>>> d867df9 (feat: basic bundle check implementation)
+<<<<<<< HEAD
 >>>>>>> 82a117a (feat: basic bundle check implementation)
+=======
+=======
+			x/s0rzf1v4/65++CBZfpqovjEdJGvXCn1OycO9ifaEY=
+>>>>>>> 89a29ce (feat: updated bundle check to receive also bundle_id)
+>>>>>>> ebe5358 (feat: updated bundle check to receive also bundle_id)
 			</data>
 		</dict>
 		<key>Modules/KovaleeFramework.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
@@ -192,16 +240,25 @@
 			<data>
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 			Oer+MKNvKPxqi8uUnbj9eae5CPw0LZF9lJWhcuZ3uxo=
 =======
 			cqjpe37Akqy0xq2jGVCaIfhwy2YRxEb+EwCmcGrlo5w=
 >>>>>>> f939733 (fix: sending app_code as user property to filter Survicate user audience)
 =======
+=======
+>>>>>>> ebe5358 (feat: updated bundle check to receive also bundle_id)
 			cqjpe37Akqy0xq2jGVCaIfhwy2YRxEb+EwCmcGrlo5w=
 =======
 			z8xdia7zB/aSZiSqqpWTRB87EUMFJHNEr/6GZ3hkk3Y=
 >>>>>>> d867df9 (feat: basic bundle check implementation)
+<<<<<<< HEAD
 >>>>>>> 82a117a (feat: basic bundle check implementation)
+=======
+=======
+			Oer+MKNvKPxqi8uUnbj9eae5CPw0LZF9lJWhcuZ3uxo=
+>>>>>>> 89a29ce (feat: updated bundle check to receive also bundle_id)
+>>>>>>> ebe5358 (feat: updated bundle check to receive also bundle_id)
 			</data>
 		</dict>
 		<key>Modules/KovaleeFramework.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
@@ -217,16 +274,25 @@
 			<data>
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 			Oer+MKNvKPxqi8uUnbj9eae5CPw0LZF9lJWhcuZ3uxo=
 =======
 			cqjpe37Akqy0xq2jGVCaIfhwy2YRxEb+EwCmcGrlo5w=
 >>>>>>> f939733 (fix: sending app_code as user property to filter Survicate user audience)
 =======
+=======
+>>>>>>> ebe5358 (feat: updated bundle check to receive also bundle_id)
 			cqjpe37Akqy0xq2jGVCaIfhwy2YRxEb+EwCmcGrlo5w=
 =======
 			z8xdia7zB/aSZiSqqpWTRB87EUMFJHNEr/6GZ3hkk3Y=
 >>>>>>> d867df9 (feat: basic bundle check implementation)
+<<<<<<< HEAD
 >>>>>>> 82a117a (feat: basic bundle check implementation)
+=======
+=======
+			Oer+MKNvKPxqi8uUnbj9eae5CPw0LZF9lJWhcuZ3uxo=
+>>>>>>> 89a29ce (feat: updated bundle check to receive also bundle_id)
+>>>>>>> ebe5358 (feat: updated bundle check to receive also bundle_id)
 			</data>
 		</dict>
 		<key>Modules/KovaleeFramework.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
@@ -235,22 +301,32 @@
 			<data>
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 			Wb4LlrHn1FauSjvXIPuCAhIt+Ose/tleqJaf8JumNn0=
 =======
 			2aNOFRV4RA28ckRYyTmZwyBnTVWCOE5FvmVlf2da5gI=
 >>>>>>> f939733 (fix: sending app_code as user property to filter Survicate user audience)
 =======
+=======
+>>>>>>> ebe5358 (feat: updated bundle check to receive also bundle_id)
 			2aNOFRV4RA28ckRYyTmZwyBnTVWCOE5FvmVlf2da5gI=
 =======
 			S7FfKHIZnr9WJ1BvN1+4YECpOa2+zZGKhGkG/bSJ6Xw=
 >>>>>>> d867df9 (feat: basic bundle check implementation)
+<<<<<<< HEAD
 >>>>>>> 82a117a (feat: basic bundle check implementation)
+=======
+=======
+			Wb4LlrHn1FauSjvXIPuCAhIt+Ose/tleqJaf8JumNn0=
+>>>>>>> 89a29ce (feat: updated bundle check to receive also bundle_id)
+>>>>>>> ebe5358 (feat: updated bundle check to receive also bundle_id)
 			</data>
 		</dict>
 		<key>Modules/KovaleeFramework.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -262,11 +338,19 @@
 			gyICTdBQzrQLdrY/Nafi3xNHI+wBFAEsWPUlO1WiRaI=
 >>>>>>> cbb676c (fix: moved set app_code for every user not only new ones)
 =======
+=======
+>>>>>>> ebe5358 (feat: updated bundle check to receive also bundle_id)
 			gyICTdBQzrQLdrY/Nafi3xNHI+wBFAEsWPUlO1WiRaI=
 =======
 			QxA985UIkcgG6MOjm9s//sPuYJ9MAnbT94T/dNtoc0U=
 >>>>>>> d867df9 (feat: basic bundle check implementation)
+<<<<<<< HEAD
 >>>>>>> 82a117a (feat: basic bundle check implementation)
+=======
+=======
+			x/s0rzf1v4/65++CBZfpqovjEdJGvXCn1OycO9ifaEY=
+>>>>>>> 89a29ce (feat: updated bundle check to receive also bundle_id)
+>>>>>>> ebe5358 (feat: updated bundle check to receive also bundle_id)
 			</data>
 		</dict>
 		<key>Modules/KovaleeFramework.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
@@ -275,16 +359,25 @@
 			<data>
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 			o5BQ3z8QX1cKYm/624080Vj5FoEF5SDW8qBpeeEXKHE=
 =======
 			HKjxVSFO+GP3eFLwZKd4+cccVjxnATAzh2sxDAw1ysQ=
 >>>>>>> f939733 (fix: sending app_code as user property to filter Survicate user audience)
 =======
+=======
+>>>>>>> ebe5358 (feat: updated bundle check to receive also bundle_id)
 			HKjxVSFO+GP3eFLwZKd4+cccVjxnATAzh2sxDAw1ysQ=
 =======
 			OzIWlkTNS6oT6wNRf0RP2Li6rLVTkRURd5LwfNx3Ru0=
 >>>>>>> d867df9 (feat: basic bundle check implementation)
+<<<<<<< HEAD
 >>>>>>> 82a117a (feat: basic bundle check implementation)
+=======
+=======
+			o5BQ3z8QX1cKYm/624080Vj5FoEF5SDW8qBpeeEXKHE=
+>>>>>>> 89a29ce (feat: updated bundle check to receive also bundle_id)
+>>>>>>> ebe5358 (feat: updated bundle check to receive also bundle_id)
 			</data>
 		</dict>
 		<key>Modules/KovaleeFramework.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
@@ -300,16 +393,25 @@
 			<data>
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 			o5BQ3z8QX1cKYm/624080Vj5FoEF5SDW8qBpeeEXKHE=
 =======
 			HKjxVSFO+GP3eFLwZKd4+cccVjxnATAzh2sxDAw1ysQ=
 >>>>>>> f939733 (fix: sending app_code as user property to filter Survicate user audience)
 =======
+=======
+>>>>>>> ebe5358 (feat: updated bundle check to receive also bundle_id)
 			HKjxVSFO+GP3eFLwZKd4+cccVjxnATAzh2sxDAw1ysQ=
 =======
 			OzIWlkTNS6oT6wNRf0RP2Li6rLVTkRURd5LwfNx3Ru0=
 >>>>>>> d867df9 (feat: basic bundle check implementation)
+<<<<<<< HEAD
 >>>>>>> 82a117a (feat: basic bundle check implementation)
+=======
+=======
+			o5BQ3z8QX1cKYm/624080Vj5FoEF5SDW8qBpeeEXKHE=
+>>>>>>> 89a29ce (feat: updated bundle check to receive also bundle_id)
+>>>>>>> ebe5358 (feat: updated bundle check to receive also bundle_id)
 			</data>
 		</dict>
 		<key>Modules/KovaleeFramework.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
@@ -318,16 +420,25 @@
 			<data>
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 			xOiOZegxjkiKjXck3KmU6EVwPygcrZ+Uh3bHtpTdMJQ=
 =======
 			Ai7LCaUmz4UT6A0shv5X+1T8DoFx15ttF5Fiw9kvZWg=
 >>>>>>> f939733 (fix: sending app_code as user property to filter Survicate user audience)
 =======
+=======
+>>>>>>> ebe5358 (feat: updated bundle check to receive also bundle_id)
 			Ai7LCaUmz4UT6A0shv5X+1T8DoFx15ttF5Fiw9kvZWg=
 =======
 			YFEH6jyYv++V2eIpZQj7UYDtLT/ghtH5te0RjoDhbDI=
 >>>>>>> d867df9 (feat: basic bundle check implementation)
+<<<<<<< HEAD
 >>>>>>> 82a117a (feat: basic bundle check implementation)
+=======
+=======
+			xOiOZegxjkiKjXck3KmU6EVwPygcrZ+Uh3bHtpTdMJQ=
+>>>>>>> 89a29ce (feat: updated bundle check to receive also bundle_id)
+>>>>>>> ebe5358 (feat: updated bundle check to receive also bundle_id)
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

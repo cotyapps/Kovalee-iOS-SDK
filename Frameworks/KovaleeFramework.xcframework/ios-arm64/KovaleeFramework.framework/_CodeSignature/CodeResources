@@ -21,6 +21,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 		d5z1TwJRFhnk2eKTLDoZgaPvWEM=
 		</data>
 		<key>Modules/KovaleeFramework.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
@@ -31,6 +32,8 @@
 =======
 =======
 >>>>>>> 82a117a (feat: basic bundle check implementation)
+=======
+>>>>>>> ebe5358 (feat: updated bundle check to receive also bundle_id)
 		LjeURKLNiZUiU7/obKWgCh2j/2Q=
 >>>>>>> cbb676c (fix: moved set app_code for every user not only new ones)
 		</data>
@@ -47,7 +50,17 @@
 		<data>
 		qDfxjM8hjaAU4cKUVJk/4z4BcJA=
 >>>>>>> d867df9 (feat: basic bundle check implementation)
+<<<<<<< HEAD
 >>>>>>> 82a117a (feat: basic bundle check implementation)
+=======
+=======
+		d5z1TwJRFhnk2eKTLDoZgaPvWEM=
+		</data>
+		<key>Modules/KovaleeFramework.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
+		<data>
+		knEDcutPrskgTCi0y67DIkeVAJk=
+>>>>>>> 89a29ce (feat: updated bundle check to receive also bundle_id)
+>>>>>>> ebe5358 (feat: updated bundle check to receive also bundle_id)
 		</data>
 		<key>Modules/KovaleeFramework.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
@@ -55,6 +68,7 @@
 		</data>
 		<key>Modules/KovaleeFramework.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 		knEDcutPrskgTCi0y67DIkeVAJk=
@@ -65,6 +79,8 @@
 =======
 =======
 >>>>>>> 82a117a (feat: basic bundle check implementation)
+=======
+>>>>>>> ebe5358 (feat: updated bundle check to receive also bundle_id)
 		8NCT9xAxHhGvf71Ln6Mcn9+eRf8=
 		</data>
 		<key>Modules/KovaleeFramework.swiftmodule/arm64-apple-ios.swiftmodule</key>
@@ -80,7 +96,17 @@
 		<data>
 		WScpQ0erqPfsAWq8xirHmQ07hOU=
 >>>>>>> d867df9 (feat: basic bundle check implementation)
+<<<<<<< HEAD
 >>>>>>> 82a117a (feat: basic bundle check implementation)
+=======
+=======
+		knEDcutPrskgTCi0y67DIkeVAJk=
+		</data>
+		<key>Modules/KovaleeFramework.swiftmodule/arm64-apple-ios.swiftmodule</key>
+		<data>
+		a+gcXTAw/E0rvw9n/7XhR8JhIGE=
+>>>>>>> 89a29ce (feat: updated bundle check to receive also bundle_id)
+>>>>>>> ebe5358 (feat: updated bundle check to receive also bundle_id)
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -114,6 +140,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 			x/s0rzf1v4/65++CBZfpqovjEdJGvXCn1OycO9ifaEY=
 =======
 			flk0d0lVFA+K1p/FxhXEVZjUHVP2mQa+sUnRRo/YNrA=
@@ -122,11 +149,19 @@
 			gyICTdBQzrQLdrY/Nafi3xNHI+wBFAEsWPUlO1WiRaI=
 >>>>>>> cbb676c (fix: moved set app_code for every user not only new ones)
 =======
+=======
+>>>>>>> ebe5358 (feat: updated bundle check to receive also bundle_id)
 			gyICTdBQzrQLdrY/Nafi3xNHI+wBFAEsWPUlO1WiRaI=
 =======
 			QxA985UIkcgG6MOjm9s//sPuYJ9MAnbT94T/dNtoc0U=
 >>>>>>> d867df9 (feat: basic bundle check implementation)
+<<<<<<< HEAD
 >>>>>>> 82a117a (feat: basic bundle check implementation)
+=======
+=======
+			x/s0rzf1v4/65++CBZfpqovjEdJGvXCn1OycO9ifaEY=
+>>>>>>> 89a29ce (feat: updated bundle check to receive also bundle_id)
+>>>>>>> ebe5358 (feat: updated bundle check to receive also bundle_id)
 			</data>
 		</dict>
 		<key>Modules/KovaleeFramework.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
@@ -135,16 +170,25 @@
 			<data>
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 			qA73c0ehpkf2Oh2VgO3IQvYkgO1j9gM/Z4cGzJCR+jI=
 =======
 			3gFMccZDjG7jgC5H5PV3k+6t6NptS1f5AnWD7sQQZ50=
 >>>>>>> f939733 (fix: sending app_code as user property to filter Survicate user audience)
 =======
+=======
+>>>>>>> ebe5358 (feat: updated bundle check to receive also bundle_id)
 			3gFMccZDjG7jgC5H5PV3k+6t6NptS1f5AnWD7sQQZ50=
 =======
 			AYl4RccyHsu4lYxV8Q/1SUCCbCJwzB8SX2F5PMBn9r4=
 >>>>>>> d867df9 (feat: basic bundle check implementation)
+<<<<<<< HEAD
 >>>>>>> 82a117a (feat: basic bundle check implementation)
+=======
+=======
+			qA73c0ehpkf2Oh2VgO3IQvYkgO1j9gM/Z4cGzJCR+jI=
+>>>>>>> 89a29ce (feat: updated bundle check to receive also bundle_id)
+>>>>>>> ebe5358 (feat: updated bundle check to receive also bundle_id)
 			</data>
 		</dict>
 		<key>Modules/KovaleeFramework.swiftmodule/arm64-apple-ios.swiftdoc</key>
@@ -160,16 +204,25 @@
 			<data>
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 			qA73c0ehpkf2Oh2VgO3IQvYkgO1j9gM/Z4cGzJCR+jI=
 =======
 			3gFMccZDjG7jgC5H5PV3k+6t6NptS1f5AnWD7sQQZ50=
 >>>>>>> f939733 (fix: sending app_code as user property to filter Survicate user audience)
 =======
+=======
+>>>>>>> ebe5358 (feat: updated bundle check to receive also bundle_id)
 			3gFMccZDjG7jgC5H5PV3k+6t6NptS1f5AnWD7sQQZ50=
 =======
 			AYl4RccyHsu4lYxV8Q/1SUCCbCJwzB8SX2F5PMBn9r4=
 >>>>>>> d867df9 (feat: basic bundle check implementation)
+<<<<<<< HEAD
 >>>>>>> 82a117a (feat: basic bundle check implementation)
+=======
+=======
+			qA73c0ehpkf2Oh2VgO3IQvYkgO1j9gM/Z4cGzJCR+jI=
+>>>>>>> 89a29ce (feat: updated bundle check to receive also bundle_id)
+>>>>>>> ebe5358 (feat: updated bundle check to receive also bundle_id)
 			</data>
 		</dict>
 		<key>Modules/KovaleeFramework.swiftmodule/arm64-apple-ios.swiftmodule</key>
@@ -178,16 +231,25 @@
 			<data>
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 			6p5VCbLkyjUywZE+1AAoIpKxLtHJGIePuf22nJS3Yco=
 =======
 			0LC9FYsh15jxYC2ErjlUnsWANSNJG7mlDr6FYAtiqm4=
 >>>>>>> f939733 (fix: sending app_code as user property to filter Survicate user audience)
 =======
+=======
+>>>>>>> ebe5358 (feat: updated bundle check to receive also bundle_id)
 			0LC9FYsh15jxYC2ErjlUnsWANSNJG7mlDr6FYAtiqm4=
 =======
 			omT7SLbeF2z0w7qpQhw6ooiEQAzf+DMYIutxDfnOSH8=
 >>>>>>> d867df9 (feat: basic bundle check implementation)
+<<<<<<< HEAD
 >>>>>>> 82a117a (feat: basic bundle check implementation)
+=======
+=======
+			6p5VCbLkyjUywZE+1AAoIpKxLtHJGIePuf22nJS3Yco=
+>>>>>>> 89a29ce (feat: updated bundle check to receive also bundle_id)
+>>>>>>> ebe5358 (feat: updated bundle check to receive also bundle_id)
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

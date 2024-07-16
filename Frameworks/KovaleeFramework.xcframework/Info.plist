@@ -12,6 +12,7 @@
 			<key>DebugSymbolsPath</key>
 			<string>dSYMs</string>
 			<key>LibraryIdentifier</key>
+<<<<<<< HEAD
 			<string>ios-arm64_x86_64-simulator</string>
 			<key>LibraryPath</key>
 			<string>KovaleeFramework.framework</string>
@@ -109,6 +110,9 @@
 			<key>DebugSymbolsPath</key>
 			<string>dSYMs</string>
 			<key>LibraryIdentifier</key>
+=======
+<<<<<<< HEAD
+>>>>>>> ebe5358 (feat: updated bundle check to receive also bundle_id)
 			<string>ios-arm64</string>
 			<key>LibraryPath</key>
 			<string>KovaleeFramework.framework</string>
@@ -141,6 +145,8 @@
 			<key>DebugSymbolsPath</key>
 			<string>dSYMs</string>
 			<key>LibraryIdentifier</key>
+=======
+>>>>>>> 89a29ce (feat: updated bundle check to receive also bundle_id)
 			<string>ios-arm64_x86_64-simulator</string>
 			<key>LibraryPath</key>
 			<string>KovaleeFramework.framework</string>
@@ -153,6 +159,22 @@
 			<string>ios</string>
 			<key>SupportedPlatformVariant</key>
 			<string>simulator</string>
+		</dict>
+		<dict>
+			<key>BinaryPath</key>
+			<string>KovaleeFramework.framework/KovaleeFramework</string>
+			<key>DebugSymbolsPath</key>
+			<string>dSYMs</string>
+			<key>LibraryIdentifier</key>
+			<string>ios-arm64</string>
+			<key>LibraryPath</key>
+			<string>KovaleeFramework.framework</string>
+			<key>SupportedArchitectures</key>
+			<array>
+				<string>arm64</string>
+			</array>
+			<key>SupportedPlatform</key>
+			<string>ios</string>
 		</dict>
 		<dict>
 			<key>BinaryPath</key>
