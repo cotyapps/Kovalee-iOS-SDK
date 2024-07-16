@@ -2541,7 +2541,7 @@
           {
             "kind": "Function",
             "name": "isUserInBundle",
-            "printedName": "isUserInBundle(appCode:email:)",
+            "printedName": "isUserInBundle(bundleId:appCode:email:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -2560,11 +2560,17 @@
                 "name": "String",
                 "printedName": "Swift.String",
                 "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
               }
             ],
             "declKind": "Func",
-            "usr": "s:16KovaleeFramework0A7ManagerC14isUserInBundle7appCode5emailSbSS_SStYaKF",
-            "mangledName": "$s16KovaleeFramework0A7ManagerC14isUserInBundle7appCode5emailSbSS_SStYaKF",
+            "usr": "s:16KovaleeFramework0A7ManagerC14isUserInBundle8bundleId7appCode5emailSbSS_S2StYaKF",
+            "mangledName": "$s16KovaleeFramework0A7ManagerC14isUserInBundle8bundleId7appCode5emailSbSS_S2StYaKF",
             "moduleName": "KovaleeFramework",
             "declAttributes": [
               "AccessControl"
