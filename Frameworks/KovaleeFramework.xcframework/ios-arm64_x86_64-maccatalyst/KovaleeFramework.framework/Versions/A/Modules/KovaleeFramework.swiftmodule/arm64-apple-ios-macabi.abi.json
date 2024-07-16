@@ -2541,7 +2541,11 @@
           {
             "kind": "Function",
             "name": "isUserInBundle",
+<<<<<<< HEAD
             "printedName": "isUserInBundle(bundleId:appCode:email:)",
+=======
+            "printedName": "isUserInBundle(appCode:email:)",
+>>>>>>> 82a117a (feat: basic bundle check implementation)
             "children": [
               {
                 "kind": "TypeNominal",
@@ -2560,6 +2564,7 @@
                 "name": "String",
                 "printedName": "Swift.String",
                 "usr": "s:SS"
+<<<<<<< HEAD
               },
               {
                 "kind": "TypeNominal",
@@ -2571,6 +2576,13 @@
             "declKind": "Func",
             "usr": "s:16KovaleeFramework0A7ManagerC14isUserInBundle8bundleId7appCode5emailSbSS_S2StYaKF",
             "mangledName": "$s16KovaleeFramework0A7ManagerC14isUserInBundle8bundleId7appCode5emailSbSS_S2StYaKF",
+=======
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:16KovaleeFramework0A7ManagerC14isUserInBundle7appCode5emailSbSS_SStYaKF",
+            "mangledName": "$s16KovaleeFramework0A7ManagerC14isUserInBundle7appCode5emailSbSS_SStYaKF",
+>>>>>>> 82a117a (feat: basic bundle check implementation)
             "moduleName": "KovaleeFramework",
             "declAttributes": [
               "AccessControl"
@@ -13986,6 +13998,7 @@
       "kind": "BooleanLiteral",
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
       "offset": 9683,
 =======
       "offset": 9238,
@@ -13993,6 +14006,12 @@
 =======
       "offset": 9228,
 >>>>>>> cbb676c (fix: moved set app_code for every user not only new ones)
+=======
+      "offset": 9228,
+=======
+      "offset": 9683,
+>>>>>>> d867df9 (feat: basic bundle check implementation)
+>>>>>>> 82a117a (feat: basic bundle check implementation)
       "length": 5,
       "value": "false"
     },
