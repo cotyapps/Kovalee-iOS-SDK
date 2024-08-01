@@ -7,6 +7,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 <<<<<<< HEAD
 =======
+## [1.10.4] - 2024-08-01
+### :bug: Bug Fixes
+- [`9a1f564`](https://github.com/cotyapps/Kovalee-iOS-SDK/commit/9a1f56491c298179500c430a99e114e342a3eae9) - fixed possible issue on capabilities setup *(commit by [@fto-k](https://github.com/fto-k))*
+
+
 ## [1.10.3] - 2024-08-01
 ### :bug: Bug Fixes
 - [`10272ba`](https://github.com/cotyapps/Kovalee-iOS-SDK/commit/10272ba1689677e6f47ec9644be63045cbf8cf60) - updated KovaleeSurveyManagerImpl implementation to avoid running for mac catalyst *(commit by [@fto-k](https://github.com/fto-k))*
@@ -565,3 +570,4 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 [1.10.0]: https://github.com/cotyapps/Kovalee-iOS-SDK/compare/1.9.22...1.10.0
 [1.10.1]: https://github.com/cotyapps/Kovalee-iOS-SDK/compare/1.10.0...1.10.1
 [1.10.3]: https://github.com/cotyapps/Kovalee-iOS-SDK/compare/1.10.2...1.10.3
+[1.10.4]: https://github.com/cotyapps/Kovalee-iOS-SDK/compare/1.10.3...1.10.4
