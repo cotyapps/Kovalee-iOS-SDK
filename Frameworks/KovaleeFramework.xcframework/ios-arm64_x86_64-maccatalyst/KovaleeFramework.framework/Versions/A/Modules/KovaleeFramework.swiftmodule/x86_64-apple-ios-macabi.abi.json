@@ -13985,10 +13985,14 @@
       "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
       "kind": "BooleanLiteral",
 <<<<<<< HEAD
+<<<<<<< HEAD
       "offset": 9683,
 =======
       "offset": 9238,
 >>>>>>> f939733 (fix: sending app_code as user property to filter Survicate user audience)
+=======
+      "offset": 9228,
+>>>>>>> cbb676c (fix: moved set app_code for every user not only new ones)
       "length": 5,
       "value": "false"
     },

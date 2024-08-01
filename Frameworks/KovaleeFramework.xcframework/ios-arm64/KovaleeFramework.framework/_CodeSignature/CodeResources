@@ -19,6 +19,7 @@
 		<key>Modules/KovaleeFramework.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
 <<<<<<< HEAD
+<<<<<<< HEAD
 		d5z1TwJRFhnk2eKTLDoZgaPvWEM=
 		</data>
 		<key>Modules/KovaleeFramework.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
@@ -26,6 +27,9 @@
 		knEDcutPrskgTCi0y67DIkeVAJk=
 =======
 		Ma1dYNNmHXwH6Yxfmm0gOX420CQ=
+=======
+		LjeURKLNiZUiU7/obKWgCh2j/2Q=
+>>>>>>> cbb676c (fix: moved set app_code for every user not only new ones)
 		</data>
 		<key>Modules/KovaleeFramework.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
@@ -82,10 +86,14 @@
 			<key>hash2</key>
 			<data>
 <<<<<<< HEAD
+<<<<<<< HEAD
 			x/s0rzf1v4/65++CBZfpqovjEdJGvXCn1OycO9ifaEY=
 =======
 			flk0d0lVFA+K1p/FxhXEVZjUHVP2mQa+sUnRRo/YNrA=
 >>>>>>> f939733 (fix: sending app_code as user property to filter Survicate user audience)
+=======
+			gyICTdBQzrQLdrY/Nafi3xNHI+wBFAEsWPUlO1WiRaI=
+>>>>>>> cbb676c (fix: moved set app_code for every user not only new ones)
 			</data>
 		</dict>
 		<key>Modules/KovaleeFramework.swiftmodule/arm64-apple-ios.private.swiftinterface</key>

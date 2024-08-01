@@ -19,6 +19,7 @@
 		<key>ios-arm64/KovaleeFramework.framework/KovaleeFramework</key>
 		<data>
 <<<<<<< HEAD
+<<<<<<< HEAD
 		pFx4cIrj0Wx/IQKSPa7vnx28o40=
 		</data>
 		<key>ios-arm64/KovaleeFramework.framework/Modules/KovaleeFramework.swiftmodule/arm64-apple-ios.abi.json</key>
@@ -30,10 +31,13 @@
 		knEDcutPrskgTCi0y67DIkeVAJk=
 =======
 		xOV3gijAhMbaQvtxZxh5y1exHtM=
+=======
+		B4G6ZgII/RLHk/Ouw/M9cMKIh/k=
+>>>>>>> cbb676c (fix: moved set app_code for every user not only new ones)
 		</data>
 		<key>ios-arm64/KovaleeFramework.framework/Modules/KovaleeFramework.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		Ma1dYNNmHXwH6Yxfmm0gOX420CQ=
+		LjeURKLNiZUiU7/obKWgCh2j/2Q=
 		</data>
 		<key>ios-arm64/KovaleeFramework.framework/Modules/KovaleeFramework.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
@@ -63,10 +67,14 @@
 		<key>ios-arm64/KovaleeFramework.framework/_CodeSignature/CodeResources</key>
 		<data>
 <<<<<<< HEAD
+<<<<<<< HEAD
 		vUzd9UiAo4s0llB4LldhWhs+g2Q=
 =======
 		UkcjeEtZiP9O3e0KRNbLH03y3Ys=
 >>>>>>> f939733 (fix: sending app_code as user property to filter Survicate user audience)
+=======
+		GQwHwjWTYnbYgf9Gon4YCXAE3cs=
+>>>>>>> cbb676c (fix: moved set app_code for every user not only new ones)
 		</data>
 		<key>ios-arm64/dSYMs/KovaleeFramework.framework.dSYM/Contents/Info.plist</key>
 		<data>
@@ -74,6 +82,7 @@
 		</data>
 		<key>ios-arm64/dSYMs/KovaleeFramework.framework.dSYM/Contents/Resources/DWARF/KovaleeFramework</key>
 		<data>
+<<<<<<< HEAD
 <<<<<<< HEAD
 		8N/JbJOFEo0gk5oS9Olbadlvke4=
 		</data>
@@ -87,6 +96,13 @@
 		<data>
 		Q9PZo3PcyOACZ+1VPw6So8PVomM=
 >>>>>>> f939733 (fix: sending app_code as user property to filter Survicate user audience)
+=======
+		FU5cWa6pta/jKJZ/bhQQfU11aC0=
+		</data>
+		<key>ios-arm64/dSYMs/KovaleeFramework.framework.dSYM/Contents/Resources/Relocations/aarch64/KovaleeFramework.yml</key>
+		<data>
+		T/n+RSemDKPXOkz62QLzsyekNqY=
+>>>>>>> cbb676c (fix: moved set app_code for every user not only new ones)
 		</data>
 		<key>ios-arm64_x86_64-maccatalyst/KovaleeFramework.framework/Versions/A/Headers/KovaleeFramework-Swift.h</key>
 		<data>
@@ -99,6 +115,7 @@
 		<key>ios-arm64_x86_64-maccatalyst/KovaleeFramework.framework/Versions/A/KovaleeFramework</key>
 		<data>
 <<<<<<< HEAD
+<<<<<<< HEAD
 		krhghWmegBhMPa2dIdq6uiEw6yc=
 		</data>
 		<key>ios-arm64_x86_64-maccatalyst/KovaleeFramework.framework/Versions/A/Modules/KovaleeFramework.swiftmodule/arm64-apple-ios-macabi.abi.json</key>
@@ -110,10 +127,13 @@
 		iu5dcoXKTfZohakJe6VKnaArMTk=
 =======
 		2GXqeaHI6nr47Oku5FQ1dpdF1TU=
+=======
+		bKpGs+CGDbx6/ZnMWT6G9U1wW1U=
+>>>>>>> cbb676c (fix: moved set app_code for every user not only new ones)
 		</data>
 		<key>ios-arm64_x86_64-maccatalyst/KovaleeFramework.framework/Versions/A/Modules/KovaleeFramework.swiftmodule/arm64-apple-ios-macabi.abi.json</key>
 		<data>
-		Ma1dYNNmHXwH6Yxfmm0gOX420CQ=
+		LjeURKLNiZUiU7/obKWgCh2j/2Q=
 		</data>
 		<key>ios-arm64_x86_64-maccatalyst/KovaleeFramework.framework/Versions/A/Modules/KovaleeFramework.swiftmodule/arm64-apple-ios-macabi.private.swiftinterface</key>
 		<data>
@@ -141,7 +161,7 @@
 		</data>
 		<key>ios-arm64_x86_64-maccatalyst/KovaleeFramework.framework/Versions/A/Modules/KovaleeFramework.swiftmodule/x86_64-apple-ios-macabi.abi.json</key>
 		<data>
-		Ma1dYNNmHXwH6Yxfmm0gOX420CQ=
+		LjeURKLNiZUiU7/obKWgCh2j/2Q=
 		</data>
 		<key>ios-arm64_x86_64-maccatalyst/KovaleeFramework.framework/Versions/A/Modules/KovaleeFramework.swiftmodule/x86_64-apple-ios-macabi.private.swiftinterface</key>
 		<data>
@@ -175,10 +195,14 @@
 		<key>ios-arm64_x86_64-maccatalyst/KovaleeFramework.framework/Versions/A/_CodeSignature/CodeResources</key>
 		<data>
 <<<<<<< HEAD
+<<<<<<< HEAD
 		+jLFbDa2I2LZqN5vVYGAkVJHsSs=
 =======
 		/xNXGtrzkPZIR4scYkACSV2yYMA=
 >>>>>>> f939733 (fix: sending app_code as user property to filter Survicate user audience)
+=======
+		yp/m4ma1muo4RQedVMBuWjGZqR0=
+>>>>>>> cbb676c (fix: moved set app_code for every user not only new ones)
 		</data>
 		<key>ios-arm64_x86_64-maccatalyst/dSYMs/KovaleeFramework.framework.dSYM/Contents/Info.plist</key>
 		<data>
@@ -186,6 +210,7 @@
 		</data>
 		<key>ios-arm64_x86_64-maccatalyst/dSYMs/KovaleeFramework.framework.dSYM/Contents/Resources/DWARF/KovaleeFramework</key>
 		<data>
+<<<<<<< HEAD
 <<<<<<< HEAD
 		j01fPn97oQ8hbyyvs4nA/kXSWZ0=
 		</data>
@@ -198,15 +223,22 @@
 		RBsUtmdpfa1EhAM99P4adPVP6Rg=
 =======
 		PDaP7t0YKYpzyCuqtz0rDyvNOPo=
+=======
+		b6N2vTgDf8taa1JjTyar2ykzMHY=
+>>>>>>> cbb676c (fix: moved set app_code for every user not only new ones)
 		</data>
 		<key>ios-arm64_x86_64-maccatalyst/dSYMs/KovaleeFramework.framework.dSYM/Contents/Resources/Relocations/aarch64/KovaleeFramework.yml</key>
 		<data>
-		Iv2hD1nY85FvARmqPvgjJYd6sTo=
+		64EA6m2G9lpDKOspRImVsr8+siY=
 		</data>
 		<key>ios-arm64_x86_64-maccatalyst/dSYMs/KovaleeFramework.framework.dSYM/Contents/Resources/Relocations/x86_64/KovaleeFramework.yml</key>
 		<data>
+<<<<<<< HEAD
 		gdVP+pQIXjsHvI8/EkTe/xB4H2E=
 >>>>>>> f939733 (fix: sending app_code as user property to filter Survicate user audience)
+=======
+		sef6gK29KjW0lJfstb4zTNRvc/E=
+>>>>>>> cbb676c (fix: moved set app_code for every user not only new ones)
 		</data>
 		<key>ios-arm64_x86_64-simulator/KovaleeFramework.framework/Headers/KovaleeFramework-Swift.h</key>
 		<data>
@@ -223,6 +255,7 @@
 		<key>ios-arm64_x86_64-simulator/KovaleeFramework.framework/KovaleeFramework</key>
 		<data>
 <<<<<<< HEAD
+<<<<<<< HEAD
 		mdesp4eL6x5fgHyhj5T46jHVWLw=
 		</data>
 		<key>ios-arm64_x86_64-simulator/KovaleeFramework.framework/Modules/KovaleeFramework.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
@@ -234,10 +267,13 @@
 		oPmagCEcAiEjqMfFnB7W/KmO/T0=
 =======
 		KS8gjhpvp0a84M6VtlE7v/Sk+PU=
+=======
+		h7qH6yplD84Bo5/58uqLakOkOys=
+>>>>>>> cbb676c (fix: moved set app_code for every user not only new ones)
 		</data>
 		<key>ios-arm64_x86_64-simulator/KovaleeFramework.framework/Modules/KovaleeFramework.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		Ma1dYNNmHXwH6Yxfmm0gOX420CQ=
+		LjeURKLNiZUiU7/obKWgCh2j/2Q=
 		</data>
 		<key>ios-arm64_x86_64-simulator/KovaleeFramework.framework/Modules/KovaleeFramework.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -265,7 +301,7 @@
 		</data>
 		<key>ios-arm64_x86_64-simulator/KovaleeFramework.framework/Modules/KovaleeFramework.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		Ma1dYNNmHXwH6Yxfmm0gOX420CQ=
+		LjeURKLNiZUiU7/obKWgCh2j/2Q=
 		</data>
 		<key>ios-arm64_x86_64-simulator/KovaleeFramework.framework/Modules/KovaleeFramework.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -295,10 +331,14 @@
 		<key>ios-arm64_x86_64-simulator/KovaleeFramework.framework/_CodeSignature/CodeResources</key>
 		<data>
 <<<<<<< HEAD
+<<<<<<< HEAD
 		8CpY+di1LFG/OrQQKE3gnVL236I=
 =======
 		PhClOCzafw8jmunyIU258dMGzbQ=
 >>>>>>> f939733 (fix: sending app_code as user property to filter Survicate user audience)
+=======
+		xOOB+g8XyFgvo48oA6PJ99NluAA=
+>>>>>>> cbb676c (fix: moved set app_code for every user not only new ones)
 		</data>
 		<key>ios-arm64_x86_64-simulator/dSYMs/KovaleeFramework.framework.dSYM/Contents/Info.plist</key>
 		<data>
@@ -306,6 +346,7 @@
 		</data>
 		<key>ios-arm64_x86_64-simulator/dSYMs/KovaleeFramework.framework.dSYM/Contents/Resources/DWARF/KovaleeFramework</key>
 		<data>
+<<<<<<< HEAD
 <<<<<<< HEAD
 		W4/OUKNoWvZJMjybV2/A7ABlj44=
 		</data>
@@ -318,15 +359,22 @@
 		GwIAxyDgMnpO9VRYQzlWhbwdKwg=
 =======
 		pPzvzrPfB3rd2njqtDM59K1I0A8=
+=======
+		peVJCjX57/AfvzRWgXE64SNZrz4=
+>>>>>>> cbb676c (fix: moved set app_code for every user not only new ones)
 		</data>
 		<key>ios-arm64_x86_64-simulator/dSYMs/KovaleeFramework.framework.dSYM/Contents/Resources/Relocations/aarch64/KovaleeFramework.yml</key>
 		<data>
-		2PoFUZz7FnNBTN0dieR5uFTHExU=
+		0u0TkkmALPHk0pVRLZ0oxwkxZOk=
 		</data>
 		<key>ios-arm64_x86_64-simulator/dSYMs/KovaleeFramework.framework.dSYM/Contents/Resources/Relocations/x86_64/KovaleeFramework.yml</key>
 		<data>
+<<<<<<< HEAD
 		7dVt888RWrKZHJFuy+gsQAr1LFQ=
 >>>>>>> f939733 (fix: sending app_code as user property to filter Survicate user audience)
+=======
+		wriRlN6844N7bszl/Anda0PZiRw=
+>>>>>>> cbb676c (fix: moved set app_code for every user not only new ones)
 		</data>
 		<key>xros-arm64/KovaleeFramework.framework/Headers/KovaleeFramework-Swift.h</key>
 		<data>
@@ -343,6 +391,7 @@
 		<key>xros-arm64/KovaleeFramework.framework/KovaleeFramework</key>
 		<data>
 <<<<<<< HEAD
+<<<<<<< HEAD
 		lvq+Tfg8a6DOc+vdlW1MaHFEOZs=
 		</data>
 		<key>xros-arm64/KovaleeFramework.framework/Modules/KovaleeFramework.swiftmodule/arm64-apple-xros.abi.json</key>
@@ -354,10 +403,13 @@
 		4OBxDWH420sHHOvvFK5TRRiqfKI=
 =======
 		/eh5pnRLcjke2Ciklo6getlsWG4=
+=======
+		jIPyisshNxVOlNtUzUVFxz/+oWw=
+>>>>>>> cbb676c (fix: moved set app_code for every user not only new ones)
 		</data>
 		<key>xros-arm64/KovaleeFramework.framework/Modules/KovaleeFramework.swiftmodule/arm64-apple-xros.abi.json</key>
 		<data>
-		Ma1dYNNmHXwH6Yxfmm0gOX420CQ=
+		LjeURKLNiZUiU7/obKWgCh2j/2Q=
 		</data>
 		<key>xros-arm64/KovaleeFramework.framework/Modules/KovaleeFramework.swiftmodule/arm64-apple-xros.private.swiftinterface</key>
 		<data>
@@ -391,6 +443,7 @@
 		<key>xros-arm64/dSYMs/KovaleeFramework.framework.dSYM/Contents/Resources/DWARF/KovaleeFramework</key>
 		<data>
 <<<<<<< HEAD
+<<<<<<< HEAD
 		LQlI0fpbPmp9wu4oTG82d1Dmc28=
 		</data>
 		<key>xros-arm64/dSYMs/KovaleeFramework.framework.dSYM/Contents/Resources/Relocations/aarch64/KovaleeFramework.yml</key>
@@ -403,6 +456,13 @@
 		<data>
 		XRhOU+m3XlSS4tWjYmgkyjOr2Io=
 >>>>>>> f939733 (fix: sending app_code as user property to filter Survicate user audience)
+=======
+		UcJaepYroYi4/vKwo/4l76VtGFA=
+		</data>
+		<key>xros-arm64/dSYMs/KovaleeFramework.framework.dSYM/Contents/Resources/Relocations/aarch64/KovaleeFramework.yml</key>
+		<data>
+		GJoP0R/751h8R6jomUoMXaT99VU=
+>>>>>>> cbb676c (fix: moved set app_code for every user not only new ones)
 		</data>
 		<key>xros-arm64_x86_64-simulator/KovaleeFramework.framework/Headers/KovaleeFramework-Swift.h</key>
 		<data>
@@ -419,6 +479,7 @@
 		<key>xros-arm64_x86_64-simulator/KovaleeFramework.framework/KovaleeFramework</key>
 		<data>
 <<<<<<< HEAD
+<<<<<<< HEAD
 		tlh0jH96JGPXiKv8FM5pSIOBQ/M=
 		</data>
 		<key>xros-arm64_x86_64-simulator/KovaleeFramework.framework/Modules/KovaleeFramework.swiftmodule/arm64-apple-xros-simulator.abi.json</key>
@@ -430,10 +491,13 @@
 		BSjp30SGC3j8C1smqYuMIc45KLk=
 =======
 		qyaYDuPDVJdkwpRBHw75r6Y4c80=
+=======
+		QuVo/fKPbj79S2O+DH7FWIVqkII=
+>>>>>>> cbb676c (fix: moved set app_code for every user not only new ones)
 		</data>
 		<key>xros-arm64_x86_64-simulator/KovaleeFramework.framework/Modules/KovaleeFramework.swiftmodule/arm64-apple-xros-simulator.abi.json</key>
 		<data>
-		Ma1dYNNmHXwH6Yxfmm0gOX420CQ=
+		LjeURKLNiZUiU7/obKWgCh2j/2Q=
 		</data>
 		<key>xros-arm64_x86_64-simulator/KovaleeFramework.framework/Modules/KovaleeFramework.swiftmodule/arm64-apple-xros-simulator.private.swiftinterface</key>
 		<data>
@@ -461,7 +525,7 @@
 		</data>
 		<key>xros-arm64_x86_64-simulator/KovaleeFramework.framework/Modules/KovaleeFramework.swiftmodule/x86_64-apple-xros-simulator.abi.json</key>
 		<data>
-		Ma1dYNNmHXwH6Yxfmm0gOX420CQ=
+		LjeURKLNiZUiU7/obKWgCh2j/2Q=
 		</data>
 		<key>xros-arm64_x86_64-simulator/KovaleeFramework.framework/Modules/KovaleeFramework.swiftmodule/x86_64-apple-xros-simulator.private.swiftinterface</key>
 		<data>
@@ -491,10 +555,14 @@
 		<key>xros-arm64_x86_64-simulator/KovaleeFramework.framework/_CodeSignature/CodeResources</key>
 		<data>
 <<<<<<< HEAD
+<<<<<<< HEAD
 		wvpSQnVq5D3GHAaNtDEWQZ31SbE=
 =======
 		ViHp+Bq65wE/auP1rwpv0/a5+ns=
 >>>>>>> f939733 (fix: sending app_code as user property to filter Survicate user audience)
+=======
+		dFWazZNXvNH+9dY98U5D0N0tpl8=
+>>>>>>> cbb676c (fix: moved set app_code for every user not only new ones)
 		</data>
 		<key>xros-arm64_x86_64-simulator/dSYMs/KovaleeFramework.framework.dSYM/Contents/Info.plist</key>
 		<data>
@@ -502,6 +570,7 @@
 		</data>
 		<key>xros-arm64_x86_64-simulator/dSYMs/KovaleeFramework.framework.dSYM/Contents/Resources/DWARF/KovaleeFramework</key>
 		<data>
+<<<<<<< HEAD
 <<<<<<< HEAD
 		qT9jI9ArkpnyOobPiz4fPMhNdHE=
 		</data>
@@ -514,15 +583,22 @@
 		UN5M5mR9ySVrSastSKjMXaUVUSs=
 =======
 		vj/wzRJd/jRy7I9pyDxfzm5Yr5A=
+=======
+		gtF5QA3bLlQUgBDGb/FZT7PQf5I=
+>>>>>>> cbb676c (fix: moved set app_code for every user not only new ones)
 		</data>
 		<key>xros-arm64_x86_64-simulator/dSYMs/KovaleeFramework.framework.dSYM/Contents/Resources/Relocations/aarch64/KovaleeFramework.yml</key>
 		<data>
-		PfTZh9rJbspGHcVebZG0+gNBggU=
+		juSPac47KQY0CNBTJbxq7R6t2dU=
 		</data>
 		<key>xros-arm64_x86_64-simulator/dSYMs/KovaleeFramework.framework.dSYM/Contents/Resources/Relocations/x86_64/KovaleeFramework.yml</key>
 		<data>
+<<<<<<< HEAD
 		8RqBLM9EslXtuesP4ADdOxrcQrk=
 >>>>>>> f939733 (fix: sending app_code as user property to filter Survicate user audience)
+=======
+		TCvYjITSUCt94qyZrNweZs1QzJw=
+>>>>>>> cbb676c (fix: moved set app_code for every user not only new ones)
 		</data>
 	</dict>
 	<key>files2</key>
@@ -565,6 +641,7 @@
 			<key>hash</key>
 			<data>
 <<<<<<< HEAD
+<<<<<<< HEAD
 			pFx4cIrj0Wx/IQKSPa7vnx28o40=
 			</data>
 			<key>hash2</key>
@@ -577,12 +654,20 @@
 			<data>
 			kJxCy4SNwzBqB4Kf1uMwBBwjdRuEPkCGUNIW5akTz9g=
 >>>>>>> f939733 (fix: sending app_code as user property to filter Survicate user audience)
+=======
+			B4G6ZgII/RLHk/Ouw/M9cMKIh/k=
+			</data>
+			<key>hash2</key>
+			<data>
+			3kVuBNrQPvAOCti9Hw3emjLgIqvYEkmqmga40BaUbrs=
+>>>>>>> cbb676c (fix: moved set app_code for every user not only new ones)
 			</data>
 		</dict>
 		<key>ios-arm64/KovaleeFramework.framework/Modules/KovaleeFramework.swiftmodule/arm64-apple-ios.abi.json</key>
 		<dict>
 			<key>hash</key>
 			<data>
+<<<<<<< HEAD
 <<<<<<< HEAD
 			d5z1TwJRFhnk2eKTLDoZgaPvWEM=
 			</data>
@@ -596,6 +681,13 @@
 			<data>
 			flk0d0lVFA+K1p/FxhXEVZjUHVP2mQa+sUnRRo/YNrA=
 >>>>>>> f939733 (fix: sending app_code as user property to filter Survicate user audience)
+=======
+			LjeURKLNiZUiU7/obKWgCh2j/2Q=
+			</data>
+			<key>hash2</key>
+			<data>
+			gyICTdBQzrQLdrY/Nafi3xNHI+wBFAEsWPUlO1WiRaI=
+>>>>>>> cbb676c (fix: moved set app_code for every user not only new ones)
 			</data>
 		</dict>
 		<key>ios-arm64/KovaleeFramework.framework/Modules/KovaleeFramework.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
@@ -674,6 +766,7 @@
 			<key>hash</key>
 			<data>
 <<<<<<< HEAD
+<<<<<<< HEAD
 			vUzd9UiAo4s0llB4LldhWhs+g2Q=
 			</data>
 			<key>hash2</key>
@@ -686,6 +779,13 @@
 			<data>
 			5tznZX+cfhuV4lBg2mhJEE3+8ZfsqQ2LRG/wHiv7U7w=
 >>>>>>> f939733 (fix: sending app_code as user property to filter Survicate user audience)
+=======
+			GQwHwjWTYnbYgf9Gon4YCXAE3cs=
+			</data>
+			<key>hash2</key>
+			<data>
+			HW7+IC1PKTOXf3Zcff/Ilc1LILDVSToI+BuhM1ra5Wk=
+>>>>>>> cbb676c (fix: moved set app_code for every user not only new ones)
 			</data>
 		</dict>
 		<key>ios-arm64/dSYMs/KovaleeFramework.framework.dSYM/Contents/Info.plist</key>
@@ -704,6 +804,7 @@
 			<key>hash</key>
 			<data>
 <<<<<<< HEAD
+<<<<<<< HEAD
 			8N/JbJOFEo0gk5oS9Olbadlvke4=
 			</data>
 			<key>hash2</key>
@@ -716,12 +817,20 @@
 			<data>
 			VlmYTD4gZGWmzZ42U/GLNBgYNYUpgmUW1aMNHdeJ+Co=
 >>>>>>> f939733 (fix: sending app_code as user property to filter Survicate user audience)
+=======
+			FU5cWa6pta/jKJZ/bhQQfU11aC0=
+			</data>
+			<key>hash2</key>
+			<data>
+			xYt/XXhOViu2YxW1PT+1d2tSGkpmFA5RFXr4Y/h7k34=
+>>>>>>> cbb676c (fix: moved set app_code for every user not only new ones)
 			</data>
 		</dict>
 		<key>ios-arm64/dSYMs/KovaleeFramework.framework.dSYM/Contents/Resources/Relocations/aarch64/KovaleeFramework.yml</key>
 		<dict>
 			<key>hash</key>
 			<data>
+<<<<<<< HEAD
 <<<<<<< HEAD
 			Vlyi1IS3J3Rvbndjah0kxJ7joFE=
 			</data>
@@ -735,6 +844,13 @@
 			<data>
 			TLUwH/oBG5TmzYF8M60ex70Y7bFR+NSU5UHDWqtjP6U=
 >>>>>>> f939733 (fix: sending app_code as user property to filter Survicate user audience)
+=======
+			T/n+RSemDKPXOkz62QLzsyekNqY=
+			</data>
+			<key>hash2</key>
+			<data>
+			YBqYSeJhVon4NhJF12L+wi/EBdILpsVLxeK7O6ExR8c=
+>>>>>>> cbb676c (fix: moved set app_code for every user not only new ones)
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-maccatalyst/KovaleeFramework.framework/Headers</key>
@@ -784,6 +900,7 @@
 			<key>hash</key>
 			<data>
 <<<<<<< HEAD
+<<<<<<< HEAD
 			krhghWmegBhMPa2dIdq6uiEw6yc=
 			</data>
 			<key>hash2</key>
@@ -796,12 +913,20 @@
 			<data>
 			S9nAClLftl/pW9B1JbISFW+Hn9iLtFHn/lGmQmxNEzU=
 >>>>>>> f939733 (fix: sending app_code as user property to filter Survicate user audience)
+=======
+			bKpGs+CGDbx6/ZnMWT6G9U1wW1U=
+			</data>
+			<key>hash2</key>
+			<data>
+			3w8RVKkKsjBIYmZ41bebhnQFw3/Fn6a+duDQBSNbok8=
+>>>>>>> cbb676c (fix: moved set app_code for every user not only new ones)
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-maccatalyst/KovaleeFramework.framework/Versions/A/Modules/KovaleeFramework.swiftmodule/arm64-apple-ios-macabi.abi.json</key>
 		<dict>
 			<key>hash</key>
 			<data>
+<<<<<<< HEAD
 <<<<<<< HEAD
 			d5z1TwJRFhnk2eKTLDoZgaPvWEM=
 			</data>
@@ -815,6 +940,13 @@
 			<data>
 			flk0d0lVFA+K1p/FxhXEVZjUHVP2mQa+sUnRRo/YNrA=
 >>>>>>> f939733 (fix: sending app_code as user property to filter Survicate user audience)
+=======
+			LjeURKLNiZUiU7/obKWgCh2j/2Q=
+			</data>
+			<key>hash2</key>
+			<data>
+			gyICTdBQzrQLdrY/Nafi3xNHI+wBFAEsWPUlO1WiRaI=
+>>>>>>> cbb676c (fix: moved set app_code for every user not only new ones)
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-maccatalyst/KovaleeFramework.framework/Versions/A/Modules/KovaleeFramework.swiftmodule/arm64-apple-ios-macabi.private.swiftinterface</key>
@@ -871,6 +1003,7 @@
 			<key>hash</key>
 			<data>
 <<<<<<< HEAD
+<<<<<<< HEAD
 			d5z1TwJRFhnk2eKTLDoZgaPvWEM=
 			</data>
 			<key>hash2</key>
@@ -883,6 +1016,13 @@
 			<data>
 			flk0d0lVFA+K1p/FxhXEVZjUHVP2mQa+sUnRRo/YNrA=
 >>>>>>> f939733 (fix: sending app_code as user property to filter Survicate user audience)
+=======
+			LjeURKLNiZUiU7/obKWgCh2j/2Q=
+			</data>
+			<key>hash2</key>
+			<data>
+			gyICTdBQzrQLdrY/Nafi3xNHI+wBFAEsWPUlO1WiRaI=
+>>>>>>> cbb676c (fix: moved set app_code for every user not only new ones)
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-maccatalyst/KovaleeFramework.framework/Versions/A/Modules/KovaleeFramework.swiftmodule/x86_64-apple-ios-macabi.private.swiftinterface</key>
@@ -972,6 +1112,7 @@
 			<key>hash</key>
 			<data>
 <<<<<<< HEAD
+<<<<<<< HEAD
 			+jLFbDa2I2LZqN5vVYGAkVJHsSs=
 			</data>
 			<key>hash2</key>
@@ -984,6 +1125,13 @@
 			<data>
 			4VzkEM8M7ZKGs7wqi7oQ5cPW9TaatLn8g4U1BNaUNrM=
 >>>>>>> f939733 (fix: sending app_code as user property to filter Survicate user audience)
+=======
+			yp/m4ma1muo4RQedVMBuWjGZqR0=
+			</data>
+			<key>hash2</key>
+			<data>
+			/nFMyGOcNRyn83zhZ1jI02M9E2geyo8b/Ff0tqs7y7w=
+>>>>>>> cbb676c (fix: moved set app_code for every user not only new ones)
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-maccatalyst/KovaleeFramework.framework/Versions/Current</key>
@@ -1007,6 +1155,7 @@
 			<key>hash</key>
 			<data>
 <<<<<<< HEAD
+<<<<<<< HEAD
 			j01fPn97oQ8hbyyvs4nA/kXSWZ0=
 			</data>
 			<key>hash2</key>
@@ -1019,12 +1168,20 @@
 			<data>
 			wn4HVlzmkAaedgqn/HlFU5UFjVLlH6/J6eYBePhl87I=
 >>>>>>> f939733 (fix: sending app_code as user property to filter Survicate user audience)
+=======
+			b6N2vTgDf8taa1JjTyar2ykzMHY=
+			</data>
+			<key>hash2</key>
+			<data>
+			WDeVNYpl3h4Tw/Eq/SArbcLh5HONiO4Ewi5HJlFsV10=
+>>>>>>> cbb676c (fix: moved set app_code for every user not only new ones)
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-maccatalyst/dSYMs/KovaleeFramework.framework.dSYM/Contents/Resources/Relocations/aarch64/KovaleeFramework.yml</key>
 		<dict>
 			<key>hash</key>
 			<data>
+<<<<<<< HEAD
 <<<<<<< HEAD
 			HwnXZnDnagpnCA9UGTqeKgsa3d0=
 			</data>
@@ -1038,12 +1195,20 @@
 			<data>
 			Ww5cumEyeMMolTyH7v/rHwiRN0fAnmfClRX1/Bjbzwk=
 >>>>>>> f939733 (fix: sending app_code as user property to filter Survicate user audience)
+=======
+			64EA6m2G9lpDKOspRImVsr8+siY=
+			</data>
+			<key>hash2</key>
+			<data>
+			ze6JIx0QQEQFO16xX/qF5hfggsRIuUOMQPuHQwbqGxQ=
+>>>>>>> cbb676c (fix: moved set app_code for every user not only new ones)
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-maccatalyst/dSYMs/KovaleeFramework.framework.dSYM/Contents/Resources/Relocations/x86_64/KovaleeFramework.yml</key>
 		<dict>
 			<key>hash</key>
 			<data>
+<<<<<<< HEAD
 <<<<<<< HEAD
 			RBsUtmdpfa1EhAM99P4adPVP6Rg=
 			</data>
@@ -1057,6 +1222,13 @@
 			<data>
 			LcAIpTZBfz4h+12XuXE/U6gVVewN4VVx8ENQFw/TVuY=
 >>>>>>> f939733 (fix: sending app_code as user property to filter Survicate user audience)
+=======
+			sef6gK29KjW0lJfstb4zTNRvc/E=
+			</data>
+			<key>hash2</key>
+			<data>
+			HTSK1Gf/c73BOhU+a+fbRD4bTmqs9i4atwR6ndatOZs=
+>>>>>>> cbb676c (fix: moved set app_code for every user not only new ones)
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/KovaleeFramework.framework/Headers/KovaleeFramework-Swift.h</key>
@@ -1097,6 +1269,7 @@
 			<key>hash</key>
 			<data>
 <<<<<<< HEAD
+<<<<<<< HEAD
 			mdesp4eL6x5fgHyhj5T46jHVWLw=
 			</data>
 			<key>hash2</key>
@@ -1109,12 +1282,20 @@
 			<data>
 			FjwhhNcAHxcbdgZVGEdNyLvH/yZxoz0Qa89I+DrjlVY=
 >>>>>>> f939733 (fix: sending app_code as user property to filter Survicate user audience)
+=======
+			h7qH6yplD84Bo5/58uqLakOkOys=
+			</data>
+			<key>hash2</key>
+			<data>
+			P6fw+A1f125FB3DhaqiO+1Q1fMU1ZHymKhRcE8dvNd4=
+>>>>>>> cbb676c (fix: moved set app_code for every user not only new ones)
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/KovaleeFramework.framework/Modules/KovaleeFramework.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash</key>
 			<data>
+<<<<<<< HEAD
 <<<<<<< HEAD
 			d5z1TwJRFhnk2eKTLDoZgaPvWEM=
 			</data>
@@ -1128,6 +1309,13 @@
 			<data>
 			flk0d0lVFA+K1p/FxhXEVZjUHVP2mQa+sUnRRo/YNrA=
 >>>>>>> f939733 (fix: sending app_code as user property to filter Survicate user audience)
+=======
+			LjeURKLNiZUiU7/obKWgCh2j/2Q=
+			</data>
+			<key>hash2</key>
+			<data>
+			gyICTdBQzrQLdrY/Nafi3xNHI+wBFAEsWPUlO1WiRaI=
+>>>>>>> cbb676c (fix: moved set app_code for every user not only new ones)
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/KovaleeFramework.framework/Modules/KovaleeFramework.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
@@ -1184,6 +1372,7 @@
 			<key>hash</key>
 			<data>
 <<<<<<< HEAD
+<<<<<<< HEAD
 			d5z1TwJRFhnk2eKTLDoZgaPvWEM=
 			</data>
 			<key>hash2</key>
@@ -1196,6 +1385,13 @@
 			<data>
 			flk0d0lVFA+K1p/FxhXEVZjUHVP2mQa+sUnRRo/YNrA=
 >>>>>>> f939733 (fix: sending app_code as user property to filter Survicate user audience)
+=======
+			LjeURKLNiZUiU7/obKWgCh2j/2Q=
+			</data>
+			<key>hash2</key>
+			<data>
+			gyICTdBQzrQLdrY/Nafi3xNHI+wBFAEsWPUlO1WiRaI=
+>>>>>>> cbb676c (fix: moved set app_code for every user not only new ones)
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/KovaleeFramework.framework/Modules/KovaleeFramework.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
@@ -1274,6 +1470,7 @@
 			<key>hash</key>
 			<data>
 <<<<<<< HEAD
+<<<<<<< HEAD
 			8CpY+di1LFG/OrQQKE3gnVL236I=
 			</data>
 			<key>hash2</key>
@@ -1286,6 +1483,13 @@
 			<data>
 			9QOQadKR2phShtkM2LMYP7i4A+VLkIQjR0jbA4Ae+Zk=
 >>>>>>> f939733 (fix: sending app_code as user property to filter Survicate user audience)
+=======
+			xOOB+g8XyFgvo48oA6PJ99NluAA=
+			</data>
+			<key>hash2</key>
+			<data>
+			ab1Naxvq3utrObzhfRNPZAD+LLt7PIQsmOrNu6QBMI0=
+>>>>>>> cbb676c (fix: moved set app_code for every user not only new ones)
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/dSYMs/KovaleeFramework.framework.dSYM/Contents/Info.plist</key>
@@ -1304,6 +1508,7 @@
 			<key>hash</key>
 			<data>
 <<<<<<< HEAD
+<<<<<<< HEAD
 			W4/OUKNoWvZJMjybV2/A7ABlj44=
 			</data>
 			<key>hash2</key>
@@ -1316,12 +1521,20 @@
 			<data>
 			xnaZzRtWH6NcRM4wKzdEB0xhWcwpBjSCJpDogxTRi7o=
 >>>>>>> f939733 (fix: sending app_code as user property to filter Survicate user audience)
+=======
+			peVJCjX57/AfvzRWgXE64SNZrz4=
+			</data>
+			<key>hash2</key>
+			<data>
+			iO21xyhzmF5hph3PFiLMoYQD7YSZ+GxBilDXRIsJQbI=
+>>>>>>> cbb676c (fix: moved set app_code for every user not only new ones)
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/dSYMs/KovaleeFramework.framework.dSYM/Contents/Resources/Relocations/aarch64/KovaleeFramework.yml</key>
 		<dict>
 			<key>hash</key>
 			<data>
+<<<<<<< HEAD
 <<<<<<< HEAD
 			zJRJkIeM7R5yszFUQoWrALMetGU=
 			</data>
@@ -1335,12 +1548,20 @@
 			<data>
 			iTa7rkE9hQPcz4SBzCSiTur/XVESNg1wjPpOtTNKg9g=
 >>>>>>> f939733 (fix: sending app_code as user property to filter Survicate user audience)
+=======
+			0u0TkkmALPHk0pVRLZ0oxwkxZOk=
+			</data>
+			<key>hash2</key>
+			<data>
+			2dFTc44MVsQuM27jYygokMAH/TmgShRRKZMOW2jTN+I=
+>>>>>>> cbb676c (fix: moved set app_code for every user not only new ones)
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/dSYMs/KovaleeFramework.framework.dSYM/Contents/Resources/Relocations/x86_64/KovaleeFramework.yml</key>
 		<dict>
 			<key>hash</key>
 			<data>
+<<<<<<< HEAD
 <<<<<<< HEAD
 			GwIAxyDgMnpO9VRYQzlWhbwdKwg=
 			</data>
@@ -1354,6 +1575,13 @@
 			<data>
 			XZPyyVO7oh5jwy7Ce3Q4Nb5dX+spkSgaYvywPhXnZ0Y=
 >>>>>>> f939733 (fix: sending app_code as user property to filter Survicate user audience)
+=======
+			wriRlN6844N7bszl/Anda0PZiRw=
+			</data>
+			<key>hash2</key>
+			<data>
+			stDDgjB6dC2Vm50uLdwa1oLxBtjPn+wLi5HhVXZ9zNQ=
+>>>>>>> cbb676c (fix: moved set app_code for every user not only new ones)
 			</data>
 		</dict>
 		<key>xros-arm64/KovaleeFramework.framework/Headers/KovaleeFramework-Swift.h</key>
@@ -1394,6 +1622,7 @@
 			<key>hash</key>
 			<data>
 <<<<<<< HEAD
+<<<<<<< HEAD
 			lvq+Tfg8a6DOc+vdlW1MaHFEOZs=
 			</data>
 			<key>hash2</key>
@@ -1406,12 +1635,20 @@
 			<data>
 			t3GQ59/x5ULQw/strpSGb7rmkeUwtH0eWBJGYSwMjag=
 >>>>>>> f939733 (fix: sending app_code as user property to filter Survicate user audience)
+=======
+			jIPyisshNxVOlNtUzUVFxz/+oWw=
+			</data>
+			<key>hash2</key>
+			<data>
+			j5xTYkUXoLLUZlSM0TFK9/3q7wGJdvhA4jL0G247lgE=
+>>>>>>> cbb676c (fix: moved set app_code for every user not only new ones)
 			</data>
 		</dict>
 		<key>xros-arm64/KovaleeFramework.framework/Modules/KovaleeFramework.swiftmodule/arm64-apple-xros.abi.json</key>
 		<dict>
 			<key>hash</key>
 			<data>
+<<<<<<< HEAD
 <<<<<<< HEAD
 			d5z1TwJRFhnk2eKTLDoZgaPvWEM=
 			</data>
@@ -1425,6 +1662,13 @@
 			<data>
 			flk0d0lVFA+K1p/FxhXEVZjUHVP2mQa+sUnRRo/YNrA=
 >>>>>>> f939733 (fix: sending app_code as user property to filter Survicate user audience)
+=======
+			LjeURKLNiZUiU7/obKWgCh2j/2Q=
+			</data>
+			<key>hash2</key>
+			<data>
+			gyICTdBQzrQLdrY/Nafi3xNHI+wBFAEsWPUlO1WiRaI=
+>>>>>>> cbb676c (fix: moved set app_code for every user not only new ones)
 			</data>
 		</dict>
 		<key>xros-arm64/KovaleeFramework.framework/Modules/KovaleeFramework.swiftmodule/arm64-apple-xros.private.swiftinterface</key>
@@ -1514,6 +1758,7 @@
 			<key>hash</key>
 			<data>
 <<<<<<< HEAD
+<<<<<<< HEAD
 			LQlI0fpbPmp9wu4oTG82d1Dmc28=
 			</data>
 			<key>hash2</key>
@@ -1526,12 +1771,20 @@
 			<data>
 			5gbZn/6ND7e6vc9Sb5dnAbbuoiqDx5l8Uw0p0wy2MKo=
 >>>>>>> f939733 (fix: sending app_code as user property to filter Survicate user audience)
+=======
+			UcJaepYroYi4/vKwo/4l76VtGFA=
+			</data>
+			<key>hash2</key>
+			<data>
+			LZGscaWlo7+VV5DYtqd4CWueWj97fAcRwRXqYH9c2xM=
+>>>>>>> cbb676c (fix: moved set app_code for every user not only new ones)
 			</data>
 		</dict>
 		<key>xros-arm64/dSYMs/KovaleeFramework.framework.dSYM/Contents/Resources/Relocations/aarch64/KovaleeFramework.yml</key>
 		<dict>
 			<key>hash</key>
 			<data>
+<<<<<<< HEAD
 <<<<<<< HEAD
 			NqdVNlb6hJZl2uCdUVDMqvqzmRQ=
 			</data>
@@ -1545,6 +1798,13 @@
 			<data>
 			mMrSdkuO2WSrvCGtiXhRzcwjwTMiGw48AVAkkFxsN7U=
 >>>>>>> f939733 (fix: sending app_code as user property to filter Survicate user audience)
+=======
+			GJoP0R/751h8R6jomUoMXaT99VU=
+			</data>
+			<key>hash2</key>
+			<data>
+			Zn6Up7kXRwRubf/7EerFb9AWSDanCXUou1fY5kZ0Iyw=
+>>>>>>> cbb676c (fix: moved set app_code for every user not only new ones)
 			</data>
 		</dict>
 		<key>xros-arm64_x86_64-simulator/KovaleeFramework.framework/Headers/KovaleeFramework-Swift.h</key>
@@ -1585,6 +1845,7 @@
 			<key>hash</key>
 			<data>
 <<<<<<< HEAD
+<<<<<<< HEAD
 			tlh0jH96JGPXiKv8FM5pSIOBQ/M=
 			</data>
 			<key>hash2</key>
@@ -1597,12 +1858,20 @@
 			<data>
 			7nOE27XaxMvcoJ/gaz6Bm9CiGE5ndUFTqidkgzyiyQM=
 >>>>>>> f939733 (fix: sending app_code as user property to filter Survicate user audience)
+=======
+			QuVo/fKPbj79S2O+DH7FWIVqkII=
+			</data>
+			<key>hash2</key>
+			<data>
+			ZgKSpPP3+eriLtihC/6qEuZG81l52zB3YiUmXFvR2ws=
+>>>>>>> cbb676c (fix: moved set app_code for every user not only new ones)
 			</data>
 		</dict>
 		<key>xros-arm64_x86_64-simulator/KovaleeFramework.framework/Modules/KovaleeFramework.swiftmodule/arm64-apple-xros-simulator.abi.json</key>
 		<dict>
 			<key>hash</key>
 			<data>
+<<<<<<< HEAD
 <<<<<<< HEAD
 			d5z1TwJRFhnk2eKTLDoZgaPvWEM=
 			</data>
@@ -1616,6 +1885,13 @@
 			<data>
 			flk0d0lVFA+K1p/FxhXEVZjUHVP2mQa+sUnRRo/YNrA=
 >>>>>>> f939733 (fix: sending app_code as user property to filter Survicate user audience)
+=======
+			LjeURKLNiZUiU7/obKWgCh2j/2Q=
+			</data>
+			<key>hash2</key>
+			<data>
+			gyICTdBQzrQLdrY/Nafi3xNHI+wBFAEsWPUlO1WiRaI=
+>>>>>>> cbb676c (fix: moved set app_code for every user not only new ones)
 			</data>
 		</dict>
 		<key>xros-arm64_x86_64-simulator/KovaleeFramework.framework/Modules/KovaleeFramework.swiftmodule/arm64-apple-xros-simulator.private.swiftinterface</key>
@@ -1672,6 +1948,7 @@
 			<key>hash</key>
 			<data>
 <<<<<<< HEAD
+<<<<<<< HEAD
 			d5z1TwJRFhnk2eKTLDoZgaPvWEM=
 			</data>
 			<key>hash2</key>
@@ -1684,6 +1961,13 @@
 			<data>
 			flk0d0lVFA+K1p/FxhXEVZjUHVP2mQa+sUnRRo/YNrA=
 >>>>>>> f939733 (fix: sending app_code as user property to filter Survicate user audience)
+=======
+			LjeURKLNiZUiU7/obKWgCh2j/2Q=
+			</data>
+			<key>hash2</key>
+			<data>
+			gyICTdBQzrQLdrY/Nafi3xNHI+wBFAEsWPUlO1WiRaI=
+>>>>>>> cbb676c (fix: moved set app_code for every user not only new ones)
 			</data>
 		</dict>
 		<key>xros-arm64_x86_64-simulator/KovaleeFramework.framework/Modules/KovaleeFramework.swiftmodule/x86_64-apple-xros-simulator.private.swiftinterface</key>
@@ -1762,6 +2046,7 @@
 			<key>hash</key>
 			<data>
 <<<<<<< HEAD
+<<<<<<< HEAD
 			wvpSQnVq5D3GHAaNtDEWQZ31SbE=
 			</data>
 			<key>hash2</key>
@@ -1774,6 +2059,13 @@
 			<data>
 			AUelQvHJjQZKmWewK2J9hz50fKzgzmruDj6P8yrtpSc=
 >>>>>>> f939733 (fix: sending app_code as user property to filter Survicate user audience)
+=======
+			dFWazZNXvNH+9dY98U5D0N0tpl8=
+			</data>
+			<key>hash2</key>
+			<data>
+			kFWVW1XbITl1fHyVxmCQhWdo/7xyk48kNc0sGVPGgQI=
+>>>>>>> cbb676c (fix: moved set app_code for every user not only new ones)
 			</data>
 		</dict>
 		<key>xros-arm64_x86_64-simulator/dSYMs/KovaleeFramework.framework.dSYM/Contents/Info.plist</key>
@@ -1792,6 +2084,7 @@
 			<key>hash</key>
 			<data>
 <<<<<<< HEAD
+<<<<<<< HEAD
 			qT9jI9ArkpnyOobPiz4fPMhNdHE=
 			</data>
 			<key>hash2</key>
@@ -1804,12 +2097,20 @@
 			<data>
 			AXfvt54xR6qYPJD5iDvjb+IUCmk8gGJw4WyWoGGOvjc=
 >>>>>>> f939733 (fix: sending app_code as user property to filter Survicate user audience)
+=======
+			gtF5QA3bLlQUgBDGb/FZT7PQf5I=
+			</data>
+			<key>hash2</key>
+			<data>
+			1nw1Nj2u3mLFCyVsgxS5rtQEfyjdCxqkaw2yAPomUxQ=
+>>>>>>> cbb676c (fix: moved set app_code for every user not only new ones)
 			</data>
 		</dict>
 		<key>xros-arm64_x86_64-simulator/dSYMs/KovaleeFramework.framework.dSYM/Contents/Resources/Relocations/aarch64/KovaleeFramework.yml</key>
 		<dict>
 			<key>hash</key>
 			<data>
+<<<<<<< HEAD
 <<<<<<< HEAD
 			0vAzRIkxruNjdjdDnwNwfkeX0mg=
 			</data>
@@ -1823,12 +2124,20 @@
 			<data>
 			PmidwzZYHfO7RpjyOjh+aFDRJhKIq2rulpw9MiJNaJY=
 >>>>>>> f939733 (fix: sending app_code as user property to filter Survicate user audience)
+=======
+			juSPac47KQY0CNBTJbxq7R6t2dU=
+			</data>
+			<key>hash2</key>
+			<data>
+			veVAfsK+PbRb/PT0rKYQ0h9t6UgCbHt1inBz2XS+5h8=
+>>>>>>> cbb676c (fix: moved set app_code for every user not only new ones)
 			</data>
 		</dict>
 		<key>xros-arm64_x86_64-simulator/dSYMs/KovaleeFramework.framework.dSYM/Contents/Resources/Relocations/x86_64/KovaleeFramework.yml</key>
 		<dict>
 			<key>hash</key>
 			<data>
+<<<<<<< HEAD
 <<<<<<< HEAD
 			UN5M5mR9ySVrSastSKjMXaUVUSs=
 			</data>
@@ -1842,6 +2151,13 @@
 			<data>
 			ZkF+QZtwSGpNcnRLBfiUfb3yEueG8iDxeG+YHKasUQo=
 >>>>>>> f939733 (fix: sending app_code as user property to filter Survicate user audience)
+=======
+			TCvYjITSUCt94qyZrNweZs1QzJw=
+			</data>
+			<key>hash2</key>
+			<data>
+			OLlJTxy0HOochAXivpZkgOIcs3pExX10i6PYB4SO/4s=
+>>>>>>> cbb676c (fix: moved set app_code for every user not only new ones)
 			</data>
 		</dict>
 	</dict>
