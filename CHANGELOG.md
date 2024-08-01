@@ -7,6 +7,14 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 <<<<<<< HEAD
 =======
+## [1.10.3] - 2024-08-01
+### :bug: Bug Fixes
+- [`10272ba`](https://github.com/cotyapps/Kovalee-iOS-SDK/commit/10272ba1689677e6f47ec9644be63045cbf8cf60) - updated KovaleeSurveyManagerImpl implementation to avoid running for mac catalyst *(commit by [@fto-k](https://github.com/fto-k))*
+- [`2fe1ce7`](https://github.com/cotyapps/Kovalee-iOS-SDK/commit/2fe1ce780a482aeae156935c83bead557895bc40) - only initialize Survicate if key is present in KovaleeKeys *(commit by [@fto-k](https://github.com/fto-k))*
+- [`f939733`](https://github.com/cotyapps/Kovalee-iOS-SDK/commit/f9397331ac6773ab3f5827b59aca93cb6adb7068) - sending app_code as user property to filter Survicate user audience *(commit by [@fto-k](https://github.com/fto-k))*
+- [`cbb676c`](https://github.com/cotyapps/Kovalee-iOS-SDK/commit/cbb676c13018e0efdb53a27b928489fe1b82242c) - moved set app_code for every user not only new ones *(commit by [@fto-k](https://github.com/fto-k))*
+
+
 ## [1.10.1] - 2024-07-15
 ### :bug: Bug Fixes
 - [`a23e11f`](https://github.com/cotyapps/Kovalee-iOS-SDK/commit/a23e11fe3d69d3b8978ec78f796186b1f17db990) - Added condition based on platform to use Survicate as dependency *(commit by [@fto-k](https://github.com/fto-k))*
@@ -556,3 +564,4 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 [1.9.22]: https://github.com/cotyapps/Kovalee-iOS-SDK/compare/1.9.21...1.9.22
 [1.10.0]: https://github.com/cotyapps/Kovalee-iOS-SDK/compare/1.9.22...1.10.0
 [1.10.1]: https://github.com/cotyapps/Kovalee-iOS-SDK/compare/1.10.0...1.10.1
+[1.10.3]: https://github.com/cotyapps/Kovalee-iOS-SDK/compare/1.10.2...1.10.3
