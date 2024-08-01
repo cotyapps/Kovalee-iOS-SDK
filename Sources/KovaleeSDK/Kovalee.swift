@@ -140,7 +140,7 @@ extension Kovalee {
 
             case .paywall:
                 guard keys.superwall != nil else {
-                    return
+                    continue
                 }
                 let creator = PaywallManagerCreator()
                 if let paywallManager = (creator as? Creator)?.createImplementation(
@@ -152,7 +152,7 @@ extension Kovalee {
 
             case .survey:
                 guard keys.survicate?.sdkId != nil else {
-                    return
+                    continue
                 }
                 let creator = SurveyManagerCreator()
                 if let surveyManager = (creator as? Creator)?.createImplementation(
