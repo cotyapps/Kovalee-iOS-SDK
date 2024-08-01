@@ -11644,6 +11644,63 @@
         "children": [
           {
             "kind": "Var",
+            "name": "appCode",
+            "printedName": "appCode",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(KovaleeFramework.UserProperty.Type) -> (Swift.String) -> KovaleeFramework.UserProperty",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Swift.String) -> KovaleeFramework.UserProperty",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "UserProperty",
+                        "printedName": "KovaleeFramework.UserProperty",
+                        "usr": "s:16KovaleeFramework12UserPropertyO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Tuple",
+                        "printedName": "(value: Swift.String)",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "KovaleeFramework.UserProperty.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "UserProperty",
+                        "printedName": "KovaleeFramework.UserProperty",
+                        "usr": "s:16KovaleeFramework12UserPropertyO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:16KovaleeFramework12UserPropertyO7appCodeyACSS_tcACmF",
+            "mangledName": "$s16KovaleeFramework12UserPropertyO7appCodeyACSS_tcACmF",
+            "moduleName": "KovaleeFramework"
+          },
+          {
+            "kind": "Var",
             "name": "premium",
             "printedName": "premium",
             "children": [
@@ -13927,7 +13984,11 @@
     {
       "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
       "kind": "BooleanLiteral",
+<<<<<<< HEAD
       "offset": 9683,
+=======
+      "offset": 9238,
+>>>>>>> f939733 (fix: sending app_code as user property to filter Survicate user audience)
       "length": 5,
       "value": "false"
     },

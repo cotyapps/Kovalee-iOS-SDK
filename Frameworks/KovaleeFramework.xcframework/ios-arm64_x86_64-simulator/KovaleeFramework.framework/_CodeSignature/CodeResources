@@ -14,15 +14,23 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		IySAeBCfM6eGiOQjqTNawjFXISo=
+		776C4GhrmwhPmsKa5U/9Hf8/+aA=
 		</data>
 		<key>Modules/KovaleeFramework.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
+<<<<<<< HEAD
 		d5z1TwJRFhnk2eKTLDoZgaPvWEM=
 		</data>
 		<key>Modules/KovaleeFramework.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
 		oPmagCEcAiEjqMfFnB7W/KmO/T0=
+=======
+		Ma1dYNNmHXwH6Yxfmm0gOX420CQ=
+		</data>
+		<key>Modules/KovaleeFramework.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
+		<data>
+		T4i3RkvBHwFCB85/EjWZgg+Deo4=
+>>>>>>> f939733 (fix: sending app_code as user property to filter Survicate user audience)
 		</data>
 		<key>Modules/KovaleeFramework.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -30,6 +38,7 @@
 		</data>
 		<key>Modules/KovaleeFramework.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
+<<<<<<< HEAD
 		oPmagCEcAiEjqMfFnB7W/KmO/T0=
 		</data>
 		<key>Modules/KovaleeFramework.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
@@ -43,6 +52,21 @@
 		<key>Modules/KovaleeFramework.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
 		gvIB/9zKl1WJ1EHEQVBR7/wkMos=
+=======
+		T4i3RkvBHwFCB85/EjWZgg+Deo4=
+		</data>
+		<key>Modules/KovaleeFramework.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
+		<data>
+		mbX+s16hfzZdGptTCgogdbxbBd4=
+		</data>
+		<key>Modules/KovaleeFramework.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
+		<data>
+		Ma1dYNNmHXwH6Yxfmm0gOX420CQ=
+		</data>
+		<key>Modules/KovaleeFramework.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
+		<data>
+		GRyLE+sx6YwpKl3vb3vzjGHnuvE=
+>>>>>>> f939733 (fix: sending app_code as user property to filter Survicate user audience)
 		</data>
 		<key>Modules/KovaleeFramework.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -50,11 +74,19 @@
 		</data>
 		<key>Modules/KovaleeFramework.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
+<<<<<<< HEAD
 		gvIB/9zKl1WJ1EHEQVBR7/wkMos=
 		</data>
 		<key>Modules/KovaleeFramework.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
 		o8ox7ToSdVoadOUVi2FpSYLmrF4=
+=======
+		GRyLE+sx6YwpKl3vb3vzjGHnuvE=
+		</data>
+		<key>Modules/KovaleeFramework.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
+		<data>
+		L5R+O97ErD1guALf87nPQGtr610=
+>>>>>>> f939733 (fix: sending app_code as user property to filter Survicate user audience)
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -85,14 +117,22 @@
 		<dict>
 			<key>hash2</key>
 			<data>
+<<<<<<< HEAD
 			x/s0rzf1v4/65++CBZfpqovjEdJGvXCn1OycO9ifaEY=
+=======
+			flk0d0lVFA+K1p/FxhXEVZjUHVP2mQa+sUnRRo/YNrA=
+>>>>>>> f939733 (fix: sending app_code as user property to filter Survicate user audience)
 			</data>
 		</dict>
 		<key>Modules/KovaleeFramework.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
+<<<<<<< HEAD
 			Oer+MKNvKPxqi8uUnbj9eae5CPw0LZF9lJWhcuZ3uxo=
+=======
+			cqjpe37Akqy0xq2jGVCaIfhwy2YRxEb+EwCmcGrlo5w=
+>>>>>>> f939733 (fix: sending app_code as user property to filter Survicate user audience)
 			</data>
 		</dict>
 		<key>Modules/KovaleeFramework.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
@@ -106,28 +146,44 @@
 		<dict>
 			<key>hash2</key>
 			<data>
+<<<<<<< HEAD
 			Oer+MKNvKPxqi8uUnbj9eae5CPw0LZF9lJWhcuZ3uxo=
+=======
+			cqjpe37Akqy0xq2jGVCaIfhwy2YRxEb+EwCmcGrlo5w=
+>>>>>>> f939733 (fix: sending app_code as user property to filter Survicate user audience)
 			</data>
 		</dict>
 		<key>Modules/KovaleeFramework.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
+<<<<<<< HEAD
 			Wb4LlrHn1FauSjvXIPuCAhIt+Ose/tleqJaf8JumNn0=
+=======
+			2aNOFRV4RA28ckRYyTmZwyBnTVWCOE5FvmVlf2da5gI=
+>>>>>>> f939733 (fix: sending app_code as user property to filter Survicate user audience)
 			</data>
 		</dict>
 		<key>Modules/KovaleeFramework.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
+<<<<<<< HEAD
 			x/s0rzf1v4/65++CBZfpqovjEdJGvXCn1OycO9ifaEY=
+=======
+			flk0d0lVFA+K1p/FxhXEVZjUHVP2mQa+sUnRRo/YNrA=
+>>>>>>> f939733 (fix: sending app_code as user property to filter Survicate user audience)
 			</data>
 		</dict>
 		<key>Modules/KovaleeFramework.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
+<<<<<<< HEAD
 			o5BQ3z8QX1cKYm/624080Vj5FoEF5SDW8qBpeeEXKHE=
+=======
+			HKjxVSFO+GP3eFLwZKd4+cccVjxnATAzh2sxDAw1ysQ=
+>>>>>>> f939733 (fix: sending app_code as user property to filter Survicate user audience)
 			</data>
 		</dict>
 		<key>Modules/KovaleeFramework.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
@@ -141,14 +197,22 @@
 		<dict>
 			<key>hash2</key>
 			<data>
+<<<<<<< HEAD
 			o5BQ3z8QX1cKYm/624080Vj5FoEF5SDW8qBpeeEXKHE=
+=======
+			HKjxVSFO+GP3eFLwZKd4+cccVjxnATAzh2sxDAw1ysQ=
+>>>>>>> f939733 (fix: sending app_code as user property to filter Survicate user audience)
 			</data>
 		</dict>
 		<key>Modules/KovaleeFramework.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
+<<<<<<< HEAD
 			xOiOZegxjkiKjXck3KmU6EVwPygcrZ+Uh3bHtpTdMJQ=
+=======
+			Ai7LCaUmz4UT6A0shv5X+1T8DoFx15ttF5Fiw9kvZWg=
+>>>>>>> f939733 (fix: sending app_code as user property to filter Survicate user audience)
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

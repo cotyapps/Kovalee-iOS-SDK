@@ -450,6 +450,7 @@ public enum DefaultEvents {
   }
 }
 public enum UserProperty {
+  case appCode(value: Swift.String)
   case premium(value: Swift.String)
   case adid(value: Swift.String)
   case abTestVersion(value: Swift.String)
