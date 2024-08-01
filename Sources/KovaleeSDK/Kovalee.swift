@@ -151,6 +151,9 @@ extension Kovalee {
                 }
 
             case .survey:
+                guard keys.survicate?.sdkId != nil else {
+                    return
+                }
                 let creator = SurveyManagerCreator()
                 if let surveyManager = (creator as? Creator)?.createImplementation(
                     withConfiguration: configuration,
