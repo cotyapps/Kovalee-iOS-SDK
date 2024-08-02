@@ -22,6 +22,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 		pFx4cIrj0Wx/IQKSPa7vnx28o40=
 		</data>
 		<key>ios-arm64/KovaleeFramework.framework/Modules/KovaleeFramework.swiftmodule/arm64-apple-ios.abi.json</key>
@@ -40,13 +41,17 @@
 >>>>>>> ebe5358 (feat: updated bundle check to receive also bundle_id)
 		B4G6ZgII/RLHk/Ouw/M9cMKIh/k=
 >>>>>>> cbb676c (fix: moved set app_code for every user not only new ones)
+=======
+		P3sEZGPjor17t9mo9lgm2F0qKGI=
+>>>>>>> 9edd81a (rebased)
 		</data>
 		<key>ios-arm64/KovaleeFramework.framework/Modules/KovaleeFramework.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		LjeURKLNiZUiU7/obKWgCh2j/2Q=
+		S5tD+wye1wYKgo/psoCAhv+IQQs=
 		</data>
 		<key>ios-arm64/KovaleeFramework.framework/Modules/KovaleeFramework.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
+<<<<<<< HEAD
 		8NCT9xAxHhGvf71Ln6Mcn9+eRf8=
 <<<<<<< HEAD
 >>>>>>> f939733 (fix: sending app_code as user property to filter Survicate user audience)
@@ -73,6 +78,9 @@
 		knEDcutPrskgTCi0y67DIkeVAJk=
 >>>>>>> 89a29ce (feat: updated bundle check to receive also bundle_id)
 >>>>>>> ebe5358 (feat: updated bundle check to receive also bundle_id)
+=======
+		Y3pWOV4MEOmDsxrAVXCQaI8PQSY=
+>>>>>>> 9edd81a (rebased)
 		</data>
 		<key>ios-arm64/KovaleeFramework.framework/Modules/KovaleeFramework.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
@@ -80,6 +88,7 @@
 		</data>
 		<key>ios-arm64/KovaleeFramework.framework/Modules/KovaleeFramework.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -101,6 +110,9 @@
 		knEDcutPrskgTCi0y67DIkeVAJk=
 >>>>>>> 89a29ce (feat: updated bundle check to receive also bundle_id)
 >>>>>>> ebe5358 (feat: updated bundle check to receive also bundle_id)
+=======
+		Y3pWOV4MEOmDsxrAVXCQaI8PQSY=
+>>>>>>> 9edd81a (rebased)
 		</data>
 		<key>ios-arm64/KovaleeFramework.framework/Modules/module.modulemap</key>
 		<data>
@@ -112,6 +124,7 @@
 		</data>
 		<key>ios-arm64/KovaleeFramework.framework/_CodeSignature/CodeResources</key>
 		<data>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -137,6 +150,9 @@
 		vUzd9UiAo4s0llB4LldhWhs+g2Q=
 >>>>>>> 89a29ce (feat: updated bundle check to receive also bundle_id)
 >>>>>>> ebe5358 (feat: updated bundle check to receive also bundle_id)
+=======
+		XAVzVbTxWNt6P++NlJW+GG3ODrk=
+>>>>>>> 9edd81a (rebased)
 		</data>
 		<key>ios-arm64/dSYMs/KovaleeFramework.framework.dSYM/Contents/Info.plist</key>
 		<data>
@@ -144,6 +160,7 @@
 		</data>
 		<key>ios-arm64/dSYMs/KovaleeFramework.framework.dSYM/Contents/Resources/DWARF/KovaleeFramework</key>
 		<data>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -191,6 +208,13 @@
 		Vlyi1IS3J3Rvbndjah0kxJ7joFE=
 >>>>>>> 89a29ce (feat: updated bundle check to receive also bundle_id)
 >>>>>>> ebe5358 (feat: updated bundle check to receive also bundle_id)
+=======
+		iuGt+D++JbzRNBN6t5WmbjcYJ6c=
+		</data>
+		<key>ios-arm64/dSYMs/KovaleeFramework.framework.dSYM/Contents/Resources/Relocations/aarch64/KovaleeFramework.yml</key>
+		<data>
+		fJc60GrBJ3mmH/1LV4HnBkjfKV0=
+>>>>>>> 9edd81a (rebased)
 		</data>
 		<key>ios-arm64_x86_64-maccatalyst/KovaleeFramework.framework/Versions/A/Headers/KovaleeFramework-Swift.h</key>
 		<data>
@@ -202,6 +226,7 @@
 		</data>
 		<key>ios-arm64_x86_64-maccatalyst/KovaleeFramework.framework/Versions/A/KovaleeFramework</key>
 		<data>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -224,13 +249,17 @@
 >>>>>>> ebe5358 (feat: updated bundle check to receive also bundle_id)
 		bKpGs+CGDbx6/ZnMWT6G9U1wW1U=
 >>>>>>> cbb676c (fix: moved set app_code for every user not only new ones)
+=======
+		14ne667h6yCWcfmTFUa5xLWs+b4=
+>>>>>>> 9edd81a (rebased)
 		</data>
 		<key>ios-arm64_x86_64-maccatalyst/KovaleeFramework.framework/Versions/A/Modules/KovaleeFramework.swiftmodule/arm64-apple-ios-macabi.abi.json</key>
 		<data>
-		LjeURKLNiZUiU7/obKWgCh2j/2Q=
+		S5tD+wye1wYKgo/psoCAhv+IQQs=
 		</data>
 		<key>ios-arm64_x86_64-maccatalyst/KovaleeFramework.framework/Versions/A/Modules/KovaleeFramework.swiftmodule/arm64-apple-ios-macabi.private.swiftinterface</key>
 		<data>
+<<<<<<< HEAD
 		pNmiNdAdzulNL8bzdZvm2/CFxo4=
 <<<<<<< HEAD
 >>>>>>> f939733 (fix: sending app_code as user property to filter Survicate user audience)
@@ -257,6 +286,9 @@
 		iu5dcoXKTfZohakJe6VKnaArMTk=
 >>>>>>> 89a29ce (feat: updated bundle check to receive also bundle_id)
 >>>>>>> ebe5358 (feat: updated bundle check to receive also bundle_id)
+=======
+		ckA7vSqQdacMRgbIqW411sJfFJE=
+>>>>>>> 9edd81a (rebased)
 		</data>
 		<key>ios-arm64_x86_64-maccatalyst/KovaleeFramework.framework/Versions/A/Modules/KovaleeFramework.swiftmodule/arm64-apple-ios-macabi.swiftdoc</key>
 		<data>
@@ -264,6 +296,7 @@
 		</data>
 		<key>ios-arm64_x86_64-maccatalyst/KovaleeFramework.framework/Versions/A/Modules/KovaleeFramework.swiftmodule/arm64-apple-ios-macabi.swiftinterface</key>
 		<data>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -282,13 +315,17 @@
 =======
 >>>>>>> ebe5358 (feat: updated bundle check to receive also bundle_id)
 		pNmiNdAdzulNL8bzdZvm2/CFxo4=
+=======
+		ckA7vSqQdacMRgbIqW411sJfFJE=
+>>>>>>> 9edd81a (rebased)
 		</data>
 		<key>ios-arm64_x86_64-maccatalyst/KovaleeFramework.framework/Versions/A/Modules/KovaleeFramework.swiftmodule/x86_64-apple-ios-macabi.abi.json</key>
 		<data>
-		LjeURKLNiZUiU7/obKWgCh2j/2Q=
+		S5tD+wye1wYKgo/psoCAhv+IQQs=
 		</data>
 		<key>ios-arm64_x86_64-maccatalyst/KovaleeFramework.framework/Versions/A/Modules/KovaleeFramework.swiftmodule/x86_64-apple-ios-macabi.private.swiftinterface</key>
 		<data>
+<<<<<<< HEAD
 		GfK3EVFYGYVlQ2h31lOWM7aECOo=
 <<<<<<< HEAD
 >>>>>>> f939733 (fix: sending app_code as user property to filter Survicate user audience)
@@ -315,6 +352,9 @@
 		ZP84mxD584Ek+fmu27YNLJhACzg=
 >>>>>>> 89a29ce (feat: updated bundle check to receive also bundle_id)
 >>>>>>> ebe5358 (feat: updated bundle check to receive also bundle_id)
+=======
+		jzvnKbPun4ujLYH+iKGqzfv2vVw=
+>>>>>>> 9edd81a (rebased)
 		</data>
 		<key>ios-arm64_x86_64-maccatalyst/KovaleeFramework.framework/Versions/A/Modules/KovaleeFramework.swiftmodule/x86_64-apple-ios-macabi.swiftdoc</key>
 		<data>
@@ -322,6 +362,7 @@
 		</data>
 		<key>ios-arm64_x86_64-maccatalyst/KovaleeFramework.framework/Versions/A/Modules/KovaleeFramework.swiftmodule/x86_64-apple-ios-macabi.swiftinterface</key>
 		<data>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -343,6 +384,9 @@
 		ZP84mxD584Ek+fmu27YNLJhACzg=
 >>>>>>> 89a29ce (feat: updated bundle check to receive also bundle_id)
 >>>>>>> ebe5358 (feat: updated bundle check to receive also bundle_id)
+=======
+		jzvnKbPun4ujLYH+iKGqzfv2vVw=
+>>>>>>> 9edd81a (rebased)
 		</data>
 		<key>ios-arm64_x86_64-maccatalyst/KovaleeFramework.framework/Versions/A/Modules/module.modulemap</key>
 		<data>
@@ -358,6 +402,7 @@
 		</data>
 		<key>ios-arm64_x86_64-maccatalyst/KovaleeFramework.framework/Versions/A/_CodeSignature/CodeResources</key>
 		<data>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -383,6 +428,9 @@
 		+jLFbDa2I2LZqN5vVYGAkVJHsSs=
 >>>>>>> 89a29ce (feat: updated bundle check to receive also bundle_id)
 >>>>>>> ebe5358 (feat: updated bundle check to receive also bundle_id)
+=======
+		K8j1Oox4+2g5cywpK51Rs/84yA0=
+>>>>>>> 9edd81a (rebased)
 		</data>
 		<key>ios-arm64_x86_64-maccatalyst/dSYMs/KovaleeFramework.framework.dSYM/Contents/Info.plist</key>
 		<data>
@@ -390,6 +438,7 @@
 		</data>
 		<key>ios-arm64_x86_64-maccatalyst/dSYMs/KovaleeFramework.framework.dSYM/Contents/Resources/DWARF/KovaleeFramework</key>
 		<data>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -412,13 +461,17 @@
 >>>>>>> ebe5358 (feat: updated bundle check to receive also bundle_id)
 		b6N2vTgDf8taa1JjTyar2ykzMHY=
 >>>>>>> cbb676c (fix: moved set app_code for every user not only new ones)
+=======
+		HR0w4XZ8OErLSsoOXiSaUhMW86E=
+>>>>>>> 9edd81a (rebased)
 		</data>
 		<key>ios-arm64_x86_64-maccatalyst/dSYMs/KovaleeFramework.framework.dSYM/Contents/Resources/Relocations/aarch64/KovaleeFramework.yml</key>
 		<data>
-		64EA6m2G9lpDKOspRImVsr8+siY=
+		84rFdj5Bmsl5VxxGuuVHQcyEI2A=
 		</data>
 		<key>ios-arm64_x86_64-maccatalyst/dSYMs/KovaleeFramework.framework.dSYM/Contents/Resources/Relocations/x86_64/KovaleeFramework.yml</key>
 		<data>
+<<<<<<< HEAD
 <<<<<<< HEAD
 		gdVP+pQIXjsHvI8/EkTe/xB4H2E=
 >>>>>>> f939733 (fix: sending app_code as user property to filter Survicate user audience)
@@ -449,6 +502,9 @@
 		RBsUtmdpfa1EhAM99P4adPVP6Rg=
 >>>>>>> 89a29ce (feat: updated bundle check to receive also bundle_id)
 >>>>>>> ebe5358 (feat: updated bundle check to receive also bundle_id)
+=======
+		ESWHgpu/Y7LWwl0WEBwAIiFF8wo=
+>>>>>>> 9edd81a (rebased)
 		</data>
 		<key>ios-arm64_x86_64-simulator/KovaleeFramework.framework/Headers/KovaleeFramework-Swift.h</key>
 		<data>
@@ -464,6 +520,7 @@
 		</data>
 		<key>ios-arm64_x86_64-simulator/KovaleeFramework.framework/KovaleeFramework</key>
 		<data>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -486,13 +543,17 @@
 >>>>>>> ebe5358 (feat: updated bundle check to receive also bundle_id)
 		h7qH6yplD84Bo5/58uqLakOkOys=
 >>>>>>> cbb676c (fix: moved set app_code for every user not only new ones)
+=======
+		8yBfSOkFG8QeiRGI2w21UTYub4k=
+>>>>>>> 9edd81a (rebased)
 		</data>
 		<key>ios-arm64_x86_64-simulator/KovaleeFramework.framework/Modules/KovaleeFramework.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		LjeURKLNiZUiU7/obKWgCh2j/2Q=
+		S5tD+wye1wYKgo/psoCAhv+IQQs=
 		</data>
 		<key>ios-arm64_x86_64-simulator/KovaleeFramework.framework/Modules/KovaleeFramework.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
+<<<<<<< HEAD
 		T4i3RkvBHwFCB85/EjWZgg+Deo4=
 <<<<<<< HEAD
 >>>>>>> f939733 (fix: sending app_code as user property to filter Survicate user audience)
@@ -519,6 +580,9 @@
 		oPmagCEcAiEjqMfFnB7W/KmO/T0=
 >>>>>>> 89a29ce (feat: updated bundle check to receive also bundle_id)
 >>>>>>> ebe5358 (feat: updated bundle check to receive also bundle_id)
+=======
+		wi9iGpxlJA50Jj4iMFh+FEUQSxk=
+>>>>>>> 9edd81a (rebased)
 		</data>
 		<key>ios-arm64_x86_64-simulator/KovaleeFramework.framework/Modules/KovaleeFramework.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -526,6 +590,7 @@
 		</data>
 		<key>ios-arm64_x86_64-simulator/KovaleeFramework.framework/Modules/KovaleeFramework.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -544,13 +609,17 @@
 =======
 >>>>>>> ebe5358 (feat: updated bundle check to receive also bundle_id)
 		T4i3RkvBHwFCB85/EjWZgg+Deo4=
+=======
+		wi9iGpxlJA50Jj4iMFh+FEUQSxk=
+>>>>>>> 9edd81a (rebased)
 		</data>
 		<key>ios-arm64_x86_64-simulator/KovaleeFramework.framework/Modules/KovaleeFramework.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		LjeURKLNiZUiU7/obKWgCh2j/2Q=
+		S5tD+wye1wYKgo/psoCAhv+IQQs=
 		</data>
 		<key>ios-arm64_x86_64-simulator/KovaleeFramework.framework/Modules/KovaleeFramework.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
+<<<<<<< HEAD
 		GRyLE+sx6YwpKl3vb3vzjGHnuvE=
 <<<<<<< HEAD
 >>>>>>> f939733 (fix: sending app_code as user property to filter Survicate user audience)
@@ -577,6 +646,9 @@
 		gvIB/9zKl1WJ1EHEQVBR7/wkMos=
 >>>>>>> 89a29ce (feat: updated bundle check to receive also bundle_id)
 >>>>>>> ebe5358 (feat: updated bundle check to receive also bundle_id)
+=======
+		3zGuSeeGWXi1NUL3Qexm6cWwee0=
+>>>>>>> 9edd81a (rebased)
 		</data>
 		<key>ios-arm64_x86_64-simulator/KovaleeFramework.framework/Modules/KovaleeFramework.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -584,6 +656,7 @@
 		</data>
 		<key>ios-arm64_x86_64-simulator/KovaleeFramework.framework/Modules/KovaleeFramework.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -605,6 +678,9 @@
 		gvIB/9zKl1WJ1EHEQVBR7/wkMos=
 >>>>>>> 89a29ce (feat: updated bundle check to receive also bundle_id)
 >>>>>>> ebe5358 (feat: updated bundle check to receive also bundle_id)
+=======
+		3zGuSeeGWXi1NUL3Qexm6cWwee0=
+>>>>>>> 9edd81a (rebased)
 		</data>
 		<key>ios-arm64_x86_64-simulator/KovaleeFramework.framework/Modules/module.modulemap</key>
 		<data>
@@ -616,6 +692,7 @@
 		</data>
 		<key>ios-arm64_x86_64-simulator/KovaleeFramework.framework/_CodeSignature/CodeResources</key>
 		<data>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -641,6 +718,9 @@
 		8CpY+di1LFG/OrQQKE3gnVL236I=
 >>>>>>> 89a29ce (feat: updated bundle check to receive also bundle_id)
 >>>>>>> ebe5358 (feat: updated bundle check to receive also bundle_id)
+=======
+		Jt+OBtyF4DplflNkKGC9eOf/Qjg=
+>>>>>>> 9edd81a (rebased)
 		</data>
 		<key>ios-arm64_x86_64-simulator/dSYMs/KovaleeFramework.framework.dSYM/Contents/Info.plist</key>
 		<data>
@@ -648,6 +728,7 @@
 		</data>
 		<key>ios-arm64_x86_64-simulator/dSYMs/KovaleeFramework.framework.dSYM/Contents/Resources/DWARF/KovaleeFramework</key>
 		<data>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -670,13 +751,17 @@
 >>>>>>> ebe5358 (feat: updated bundle check to receive also bundle_id)
 		peVJCjX57/AfvzRWgXE64SNZrz4=
 >>>>>>> cbb676c (fix: moved set app_code for every user not only new ones)
+=======
+		Ea6m9gJ+XCr772lKN5oYz0wKeC8=
+>>>>>>> 9edd81a (rebased)
 		</data>
 		<key>ios-arm64_x86_64-simulator/dSYMs/KovaleeFramework.framework.dSYM/Contents/Resources/Relocations/aarch64/KovaleeFramework.yml</key>
 		<data>
-		0u0TkkmALPHk0pVRLZ0oxwkxZOk=
+		u8V2I1yF5x7IbWMZApl/NsM1OsI=
 		</data>
 		<key>ios-arm64_x86_64-simulator/dSYMs/KovaleeFramework.framework.dSYM/Contents/Resources/Relocations/x86_64/KovaleeFramework.yml</key>
 		<data>
+<<<<<<< HEAD
 <<<<<<< HEAD
 		7dVt888RWrKZHJFuy+gsQAr1LFQ=
 >>>>>>> f939733 (fix: sending app_code as user property to filter Survicate user audience)
@@ -707,6 +792,9 @@
 		GwIAxyDgMnpO9VRYQzlWhbwdKwg=
 >>>>>>> 89a29ce (feat: updated bundle check to receive also bundle_id)
 >>>>>>> ebe5358 (feat: updated bundle check to receive also bundle_id)
+=======
+		2qEva+twGVEx3CX8Y2m6uwa8w8A=
+>>>>>>> 9edd81a (rebased)
 		</data>
 		<key>xros-arm64/KovaleeFramework.framework/Headers/KovaleeFramework-Swift.h</key>
 		<data>
@@ -722,6 +810,7 @@
 		</data>
 		<key>xros-arm64/KovaleeFramework.framework/KovaleeFramework</key>
 		<data>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -744,13 +833,17 @@
 >>>>>>> ebe5358 (feat: updated bundle check to receive also bundle_id)
 		jIPyisshNxVOlNtUzUVFxz/+oWw=
 >>>>>>> cbb676c (fix: moved set app_code for every user not only new ones)
+=======
+		CTNTeDcauBu6MfzQ4ae5hNvv7K8=
+>>>>>>> 9edd81a (rebased)
 		</data>
 		<key>xros-arm64/KovaleeFramework.framework/Modules/KovaleeFramework.swiftmodule/arm64-apple-xros.abi.json</key>
 		<data>
-		LjeURKLNiZUiU7/obKWgCh2j/2Q=
+		S5tD+wye1wYKgo/psoCAhv+IQQs=
 		</data>
 		<key>xros-arm64/KovaleeFramework.framework/Modules/KovaleeFramework.swiftmodule/arm64-apple-xros.private.swiftinterface</key>
 		<data>
+<<<<<<< HEAD
 		l4b4ap8+p/Xrlg000Vc256a02y8=
 <<<<<<< HEAD
 >>>>>>> f939733 (fix: sending app_code as user property to filter Survicate user audience)
@@ -777,6 +870,9 @@
 		4OBxDWH420sHHOvvFK5TRRiqfKI=
 >>>>>>> 89a29ce (feat: updated bundle check to receive also bundle_id)
 >>>>>>> ebe5358 (feat: updated bundle check to receive also bundle_id)
+=======
+		/QG7RaPDHju8wHMYIRfny/v2v98=
+>>>>>>> 9edd81a (rebased)
 		</data>
 		<key>xros-arm64/KovaleeFramework.framework/Modules/KovaleeFramework.swiftmodule/arm64-apple-xros.swiftdoc</key>
 		<data>
@@ -784,6 +880,7 @@
 		</data>
 		<key>xros-arm64/KovaleeFramework.framework/Modules/KovaleeFramework.swiftmodule/arm64-apple-xros.swiftinterface</key>
 		<data>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -805,6 +902,9 @@
 		4OBxDWH420sHHOvvFK5TRRiqfKI=
 >>>>>>> 89a29ce (feat: updated bundle check to receive also bundle_id)
 >>>>>>> ebe5358 (feat: updated bundle check to receive also bundle_id)
+=======
+		/QG7RaPDHju8wHMYIRfny/v2v98=
+>>>>>>> 9edd81a (rebased)
 		</data>
 		<key>xros-arm64/KovaleeFramework.framework/Modules/module.modulemap</key>
 		<data>
@@ -820,6 +920,7 @@
 		</data>
 		<key>xros-arm64/dSYMs/KovaleeFramework.framework.dSYM/Contents/Resources/DWARF/KovaleeFramework</key>
 		<data>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -867,6 +968,13 @@
 		NqdVNlb6hJZl2uCdUVDMqvqzmRQ=
 >>>>>>> 89a29ce (feat: updated bundle check to receive also bundle_id)
 >>>>>>> ebe5358 (feat: updated bundle check to receive also bundle_id)
+=======
+		sW6emfWdillqeCqgAis3VXP9ubg=
+		</data>
+		<key>xros-arm64/dSYMs/KovaleeFramework.framework.dSYM/Contents/Resources/Relocations/aarch64/KovaleeFramework.yml</key>
+		<data>
+		FKP01HQbl6wj9GZGP9fEG1TAIVI=
+>>>>>>> 9edd81a (rebased)
 		</data>
 		<key>xros-arm64_x86_64-simulator/KovaleeFramework.framework/Headers/KovaleeFramework-Swift.h</key>
 		<data>
@@ -882,6 +990,7 @@
 		</data>
 		<key>xros-arm64_x86_64-simulator/KovaleeFramework.framework/KovaleeFramework</key>
 		<data>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -904,13 +1013,17 @@
 >>>>>>> ebe5358 (feat: updated bundle check to receive also bundle_id)
 		QuVo/fKPbj79S2O+DH7FWIVqkII=
 >>>>>>> cbb676c (fix: moved set app_code for every user not only new ones)
+=======
+		DU2HsBf6RK+/wfpRB8Cs3iiX+Hw=
+>>>>>>> 9edd81a (rebased)
 		</data>
 		<key>xros-arm64_x86_64-simulator/KovaleeFramework.framework/Modules/KovaleeFramework.swiftmodule/arm64-apple-xros-simulator.abi.json</key>
 		<data>
-		LjeURKLNiZUiU7/obKWgCh2j/2Q=
+		S5tD+wye1wYKgo/psoCAhv+IQQs=
 		</data>
 		<key>xros-arm64_x86_64-simulator/KovaleeFramework.framework/Modules/KovaleeFramework.swiftmodule/arm64-apple-xros-simulator.private.swiftinterface</key>
 		<data>
+<<<<<<< HEAD
 		I3F1U7iE9iHX7js+xMlAhlRzTtU=
 <<<<<<< HEAD
 >>>>>>> f939733 (fix: sending app_code as user property to filter Survicate user audience)
@@ -937,6 +1050,9 @@
 		BSjp30SGC3j8C1smqYuMIc45KLk=
 >>>>>>> 89a29ce (feat: updated bundle check to receive also bundle_id)
 >>>>>>> ebe5358 (feat: updated bundle check to receive also bundle_id)
+=======
+		/c2jrC68npAghbxl8RcvgI7zoZs=
+>>>>>>> 9edd81a (rebased)
 		</data>
 		<key>xros-arm64_x86_64-simulator/KovaleeFramework.framework/Modules/KovaleeFramework.swiftmodule/arm64-apple-xros-simulator.swiftdoc</key>
 		<data>
@@ -944,6 +1060,7 @@
 		</data>
 		<key>xros-arm64_x86_64-simulator/KovaleeFramework.framework/Modules/KovaleeFramework.swiftmodule/arm64-apple-xros-simulator.swiftinterface</key>
 		<data>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -962,13 +1079,17 @@
 =======
 >>>>>>> ebe5358 (feat: updated bundle check to receive also bundle_id)
 		I3F1U7iE9iHX7js+xMlAhlRzTtU=
+=======
+		/c2jrC68npAghbxl8RcvgI7zoZs=
+>>>>>>> 9edd81a (rebased)
 		</data>
 		<key>xros-arm64_x86_64-simulator/KovaleeFramework.framework/Modules/KovaleeFramework.swiftmodule/x86_64-apple-xros-simulator.abi.json</key>
 		<data>
-		LjeURKLNiZUiU7/obKWgCh2j/2Q=
+		S5tD+wye1wYKgo/psoCAhv+IQQs=
 		</data>
 		<key>xros-arm64_x86_64-simulator/KovaleeFramework.framework/Modules/KovaleeFramework.swiftmodule/x86_64-apple-xros-simulator.private.swiftinterface</key>
 		<data>
+<<<<<<< HEAD
 		lVg+mXu7rgsfvOvW66whlUX4brU=
 <<<<<<< HEAD
 >>>>>>> f939733 (fix: sending app_code as user property to filter Survicate user audience)
@@ -995,6 +1116,9 @@
 		KDeB69n1s2bZFwv4lXpGDEUyp9A=
 >>>>>>> 89a29ce (feat: updated bundle check to receive also bundle_id)
 >>>>>>> ebe5358 (feat: updated bundle check to receive also bundle_id)
+=======
+		RVsmzpjVWlIwZdiJ/MfbuCe5sMM=
+>>>>>>> 9edd81a (rebased)
 		</data>
 		<key>xros-arm64_x86_64-simulator/KovaleeFramework.framework/Modules/KovaleeFramework.swiftmodule/x86_64-apple-xros-simulator.swiftdoc</key>
 		<data>
@@ -1002,6 +1126,7 @@
 		</data>
 		<key>xros-arm64_x86_64-simulator/KovaleeFramework.framework/Modules/KovaleeFramework.swiftmodule/x86_64-apple-xros-simulator.swiftinterface</key>
 		<data>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -1023,6 +1148,9 @@
 		KDeB69n1s2bZFwv4lXpGDEUyp9A=
 >>>>>>> 89a29ce (feat: updated bundle check to receive also bundle_id)
 >>>>>>> ebe5358 (feat: updated bundle check to receive also bundle_id)
+=======
+		RVsmzpjVWlIwZdiJ/MfbuCe5sMM=
+>>>>>>> 9edd81a (rebased)
 		</data>
 		<key>xros-arm64_x86_64-simulator/KovaleeFramework.framework/Modules/module.modulemap</key>
 		<data>
@@ -1034,6 +1162,7 @@
 		</data>
 		<key>xros-arm64_x86_64-simulator/KovaleeFramework.framework/_CodeSignature/CodeResources</key>
 		<data>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -1059,6 +1188,9 @@
 		wvpSQnVq5D3GHAaNtDEWQZ31SbE=
 >>>>>>> 89a29ce (feat: updated bundle check to receive also bundle_id)
 >>>>>>> ebe5358 (feat: updated bundle check to receive also bundle_id)
+=======
+		c2Whn+lhSODYyRAomXKRbzBBzw0=
+>>>>>>> 9edd81a (rebased)
 		</data>
 		<key>xros-arm64_x86_64-simulator/dSYMs/KovaleeFramework.framework.dSYM/Contents/Info.plist</key>
 		<data>
@@ -1066,6 +1198,7 @@
 		</data>
 		<key>xros-arm64_x86_64-simulator/dSYMs/KovaleeFramework.framework.dSYM/Contents/Resources/DWARF/KovaleeFramework</key>
 		<data>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -1088,13 +1221,17 @@
 >>>>>>> ebe5358 (feat: updated bundle check to receive also bundle_id)
 		gtF5QA3bLlQUgBDGb/FZT7PQf5I=
 >>>>>>> cbb676c (fix: moved set app_code for every user not only new ones)
+=======
+		RFJBUkStQhfQqeEXUHOL4EcORLQ=
+>>>>>>> 9edd81a (rebased)
 		</data>
 		<key>xros-arm64_x86_64-simulator/dSYMs/KovaleeFramework.framework.dSYM/Contents/Resources/Relocations/aarch64/KovaleeFramework.yml</key>
 		<data>
-		juSPac47KQY0CNBTJbxq7R6t2dU=
+		aAUnTuVs2SiZvxvcYxGIr657bxc=
 		</data>
 		<key>xros-arm64_x86_64-simulator/dSYMs/KovaleeFramework.framework.dSYM/Contents/Resources/Relocations/x86_64/KovaleeFramework.yml</key>
 		<data>
+<<<<<<< HEAD
 <<<<<<< HEAD
 		8RqBLM9EslXtuesP4ADdOxrcQrk=
 >>>>>>> f939733 (fix: sending app_code as user property to filter Survicate user audience)
@@ -1125,6 +1262,9 @@
 		UN5M5mR9ySVrSastSKjMXaUVUSs=
 >>>>>>> 89a29ce (feat: updated bundle check to receive also bundle_id)
 >>>>>>> ebe5358 (feat: updated bundle check to receive also bundle_id)
+=======
+		TqsAXcQhB/gX8wD3HesipuX+xkQ=
+>>>>>>> 9edd81a (rebased)
 		</data>
 	</dict>
 	<key>files2</key>
@@ -1166,6 +1306,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -1213,12 +1354,20 @@
 			VRjxeDKgmMsQ3pSMmGMGr6BxXCv71DyGlkRKNk2zwTI=
 >>>>>>> 89a29ce (feat: updated bundle check to receive also bundle_id)
 >>>>>>> ebe5358 (feat: updated bundle check to receive also bundle_id)
+=======
+			P3sEZGPjor17t9mo9lgm2F0qKGI=
+			</data>
+			<key>hash2</key>
+			<data>
+			tWnW2301vaBzbrFg6RvLU8Et7aoCfUTEHD94em4nXKg=
+>>>>>>> 9edd81a (rebased)
 			</data>
 		</dict>
 		<key>ios-arm64/KovaleeFramework.framework/Modules/KovaleeFramework.swiftmodule/arm64-apple-ios.abi.json</key>
 		<dict>
 			<key>hash</key>
 			<data>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -1266,12 +1415,20 @@
 			x/s0rzf1v4/65++CBZfpqovjEdJGvXCn1OycO9ifaEY=
 >>>>>>> 89a29ce (feat: updated bundle check to receive also bundle_id)
 >>>>>>> ebe5358 (feat: updated bundle check to receive also bundle_id)
+=======
+			S5tD+wye1wYKgo/psoCAhv+IQQs=
+			</data>
+			<key>hash2</key>
+			<data>
+			f0CsnEorNonIMkk9MyxCAcPhdT9aGee8S2unrKvpd4I=
+>>>>>>> 9edd81a (rebased)
 			</data>
 		</dict>
 		<key>ios-arm64/KovaleeFramework.framework/Modules/KovaleeFramework.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<dict>
 			<key>hash</key>
 			<data>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -1311,6 +1468,13 @@
 			qA73c0ehpkf2Oh2VgO3IQvYkgO1j9gM/Z4cGzJCR+jI=
 >>>>>>> 89a29ce (feat: updated bundle check to receive also bundle_id)
 >>>>>>> ebe5358 (feat: updated bundle check to receive also bundle_id)
+=======
+			Y3pWOV4MEOmDsxrAVXCQaI8PQSY=
+			</data>
+			<key>hash2</key>
+			<data>
+			SXug5T3CF3xwlGlJYssz7gkaIJRCjY1pLN0icXz7kPI=
+>>>>>>> 9edd81a (rebased)
 			</data>
 		</dict>
 		<key>ios-arm64/KovaleeFramework.framework/Modules/KovaleeFramework.swiftmodule/arm64-apple-ios.swiftdoc</key>
@@ -1331,6 +1495,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 			knEDcutPrskgTCi0y67DIkeVAJk=
 			</data>
 			<key>hash2</key>
@@ -1367,6 +1532,13 @@
 			qA73c0ehpkf2Oh2VgO3IQvYkgO1j9gM/Z4cGzJCR+jI=
 >>>>>>> 89a29ce (feat: updated bundle check to receive also bundle_id)
 >>>>>>> ebe5358 (feat: updated bundle check to receive also bundle_id)
+=======
+			Y3pWOV4MEOmDsxrAVXCQaI8PQSY=
+			</data>
+			<key>hash2</key>
+			<data>
+			SXug5T3CF3xwlGlJYssz7gkaIJRCjY1pLN0icXz7kPI=
+>>>>>>> 9edd81a (rebased)
 			</data>
 		</dict>
 		<key>ios-arm64/KovaleeFramework.framework/Modules/module.modulemap</key>
@@ -1395,6 +1567,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -1442,6 +1615,13 @@
 			u8njyK85pPtAvWhS1dSmTBrIa/p5hPwRbGM3PpbMCko=
 >>>>>>> 89a29ce (feat: updated bundle check to receive also bundle_id)
 >>>>>>> ebe5358 (feat: updated bundle check to receive also bundle_id)
+=======
+			XAVzVbTxWNt6P++NlJW+GG3ODrk=
+			</data>
+			<key>hash2</key>
+			<data>
+			ECcTCQkijXXgMiK2bWUc6ktynxQZA9GUtKhKigPR3mQ=
+>>>>>>> 9edd81a (rebased)
 			</data>
 		</dict>
 		<key>ios-arm64/dSYMs/KovaleeFramework.framework.dSYM/Contents/Info.plist</key>
@@ -1459,6 +1639,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -1506,12 +1687,20 @@
 			057A7/a6vXe9Ra6fXTWHamJ6K4uUcYeANE7nOTv1uow=
 >>>>>>> 89a29ce (feat: updated bundle check to receive also bundle_id)
 >>>>>>> ebe5358 (feat: updated bundle check to receive also bundle_id)
+=======
+			iuGt+D++JbzRNBN6t5WmbjcYJ6c=
+			</data>
+			<key>hash2</key>
+			<data>
+			4QeudE2/+kP/tfoIklge1EPnDmGhQd9uTpnRZOpB1Kc=
+>>>>>>> 9edd81a (rebased)
 			</data>
 		</dict>
 		<key>ios-arm64/dSYMs/KovaleeFramework.framework.dSYM/Contents/Resources/Relocations/aarch64/KovaleeFramework.yml</key>
 		<dict>
 			<key>hash</key>
 			<data>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -1559,6 +1748,13 @@
 			jgF0gSlNG1K+1Yq9GeqNB5PnMIrXsmvMk2u4cwfKe9Y=
 >>>>>>> 89a29ce (feat: updated bundle check to receive also bundle_id)
 >>>>>>> ebe5358 (feat: updated bundle check to receive also bundle_id)
+=======
+			fJc60GrBJ3mmH/1LV4HnBkjfKV0=
+			</data>
+			<key>hash2</key>
+			<data>
+			2k1NaffgWHk/vG7piDC1aD7N6An3Z9Bd/+RTtZPUZ5k=
+>>>>>>> 9edd81a (rebased)
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-maccatalyst/KovaleeFramework.framework/Headers</key>
@@ -1611,6 +1807,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 			krhghWmegBhMPa2dIdq6uiEw6yc=
 			</data>
 			<key>hash2</key>
@@ -1654,12 +1851,20 @@
 			n4NFbjXWkalsrWp66AifeKniUIAwf9MknsdoLvmPCf4=
 >>>>>>> 89a29ce (feat: updated bundle check to receive also bundle_id)
 >>>>>>> ebe5358 (feat: updated bundle check to receive also bundle_id)
+=======
+			14ne667h6yCWcfmTFUa5xLWs+b4=
+			</data>
+			<key>hash2</key>
+			<data>
+			NvvTO5NadA4LmsQ/hXiE2GwcAiEgOPOgdE0nZ5mwFqA=
+>>>>>>> 9edd81a (rebased)
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-maccatalyst/KovaleeFramework.framework/Versions/A/Modules/KovaleeFramework.swiftmodule/arm64-apple-ios-macabi.abi.json</key>
 		<dict>
 			<key>hash</key>
 			<data>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -1707,12 +1912,20 @@
 			x/s0rzf1v4/65++CBZfpqovjEdJGvXCn1OycO9ifaEY=
 >>>>>>> 89a29ce (feat: updated bundle check to receive also bundle_id)
 >>>>>>> ebe5358 (feat: updated bundle check to receive also bundle_id)
+=======
+			S5tD+wye1wYKgo/psoCAhv+IQQs=
+			</data>
+			<key>hash2</key>
+			<data>
+			f0CsnEorNonIMkk9MyxCAcPhdT9aGee8S2unrKvpd4I=
+>>>>>>> 9edd81a (rebased)
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-maccatalyst/KovaleeFramework.framework/Versions/A/Modules/KovaleeFramework.swiftmodule/arm64-apple-ios-macabi.private.swiftinterface</key>
 		<dict>
 			<key>hash</key>
 			<data>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -1752,6 +1965,13 @@
 			kGeUsCmBiizw95KNi+qPfJasy5dQiSOBMymsWt4J/OY=
 >>>>>>> 89a29ce (feat: updated bundle check to receive also bundle_id)
 >>>>>>> ebe5358 (feat: updated bundle check to receive also bundle_id)
+=======
+			ckA7vSqQdacMRgbIqW411sJfFJE=
+			</data>
+			<key>hash2</key>
+			<data>
+			x8og5EtEYnUBeAJGrmFfoDgo5/dbjZQuIpS1syw+ULo=
+>>>>>>> 9edd81a (rebased)
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-maccatalyst/KovaleeFramework.framework/Versions/A/Modules/KovaleeFramework.swiftmodule/arm64-apple-ios-macabi.swiftdoc</key>
@@ -1772,6 +1992,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 			iu5dcoXKTfZohakJe6VKnaArMTk=
 			</data>
 			<key>hash2</key>
@@ -1808,12 +2029,20 @@
 			kGeUsCmBiizw95KNi+qPfJasy5dQiSOBMymsWt4J/OY=
 >>>>>>> 89a29ce (feat: updated bundle check to receive also bundle_id)
 >>>>>>> ebe5358 (feat: updated bundle check to receive also bundle_id)
+=======
+			ckA7vSqQdacMRgbIqW411sJfFJE=
+			</data>
+			<key>hash2</key>
+			<data>
+			x8og5EtEYnUBeAJGrmFfoDgo5/dbjZQuIpS1syw+ULo=
+>>>>>>> 9edd81a (rebased)
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-maccatalyst/KovaleeFramework.framework/Versions/A/Modules/KovaleeFramework.swiftmodule/x86_64-apple-ios-macabi.abi.json</key>
 		<dict>
 			<key>hash</key>
 			<data>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -1861,12 +2090,20 @@
 			x/s0rzf1v4/65++CBZfpqovjEdJGvXCn1OycO9ifaEY=
 >>>>>>> 89a29ce (feat: updated bundle check to receive also bundle_id)
 >>>>>>> ebe5358 (feat: updated bundle check to receive also bundle_id)
+=======
+			S5tD+wye1wYKgo/psoCAhv+IQQs=
+			</data>
+			<key>hash2</key>
+			<data>
+			f0CsnEorNonIMkk9MyxCAcPhdT9aGee8S2unrKvpd4I=
+>>>>>>> 9edd81a (rebased)
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-maccatalyst/KovaleeFramework.framework/Versions/A/Modules/KovaleeFramework.swiftmodule/x86_64-apple-ios-macabi.private.swiftinterface</key>
 		<dict>
 			<key>hash</key>
 			<data>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -1906,6 +2143,13 @@
 			BQB7fw302kPyclYPlu3h3kiS/EzSCkfxzZjfl30nIp4=
 >>>>>>> 89a29ce (feat: updated bundle check to receive also bundle_id)
 >>>>>>> ebe5358 (feat: updated bundle check to receive also bundle_id)
+=======
+			jzvnKbPun4ujLYH+iKGqzfv2vVw=
+			</data>
+			<key>hash2</key>
+			<data>
+			l4fJU7XC+t4p25+QBhmRRURGOA1wzYVgMp09gdU49Lc=
+>>>>>>> 9edd81a (rebased)
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-maccatalyst/KovaleeFramework.framework/Versions/A/Modules/KovaleeFramework.swiftmodule/x86_64-apple-ios-macabi.swiftdoc</key>
@@ -1926,6 +2170,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 			ZP84mxD584Ek+fmu27YNLJhACzg=
 			</data>
 			<key>hash2</key>
@@ -1962,6 +2207,13 @@
 			BQB7fw302kPyclYPlu3h3kiS/EzSCkfxzZjfl30nIp4=
 >>>>>>> 89a29ce (feat: updated bundle check to receive also bundle_id)
 >>>>>>> ebe5358 (feat: updated bundle check to receive also bundle_id)
+=======
+			jzvnKbPun4ujLYH+iKGqzfv2vVw=
+			</data>
+			<key>hash2</key>
+			<data>
+			l4fJU7XC+t4p25+QBhmRRURGOA1wzYVgMp09gdU49Lc=
+>>>>>>> 9edd81a (rebased)
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-maccatalyst/KovaleeFramework.framework/Versions/A/Modules/module.modulemap</key>
@@ -2001,6 +2253,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -2048,6 +2301,13 @@
 			xOvsYxq+M33Ck0oimUCMzheUFRn2gw0KRuW5sqpzkWE=
 >>>>>>> 89a29ce (feat: updated bundle check to receive also bundle_id)
 >>>>>>> ebe5358 (feat: updated bundle check to receive also bundle_id)
+=======
+			K8j1Oox4+2g5cywpK51Rs/84yA0=
+			</data>
+			<key>hash2</key>
+			<data>
+			hHDn+MVzsab/xM+SJzU6lHRePA28C0N4SbYjgBvcisA=
+>>>>>>> 9edd81a (rebased)
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-maccatalyst/KovaleeFramework.framework/Versions/Current</key>
@@ -2070,6 +2330,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -2117,12 +2378,20 @@
 			eOuYpdCpzifk8SJ7qn6N1VqE4kuwIgVuLX+dgCn8auQ=
 >>>>>>> 89a29ce (feat: updated bundle check to receive also bundle_id)
 >>>>>>> ebe5358 (feat: updated bundle check to receive also bundle_id)
+=======
+			HR0w4XZ8OErLSsoOXiSaUhMW86E=
+			</data>
+			<key>hash2</key>
+			<data>
+			wJpMjcwyhjDTTeYN8bs5LnFOje2RZkKGIVazpWCChuc=
+>>>>>>> 9edd81a (rebased)
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-maccatalyst/dSYMs/KovaleeFramework.framework.dSYM/Contents/Resources/Relocations/aarch64/KovaleeFramework.yml</key>
 		<dict>
 			<key>hash</key>
 			<data>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -2170,12 +2439,20 @@
 			j2mPWuGy8xqewJPmkyikXU+ZvHHlap/yUzomIRwZafs=
 >>>>>>> 89a29ce (feat: updated bundle check to receive also bundle_id)
 >>>>>>> ebe5358 (feat: updated bundle check to receive also bundle_id)
+=======
+			84rFdj5Bmsl5VxxGuuVHQcyEI2A=
+			</data>
+			<key>hash2</key>
+			<data>
+			L3q5VN7xjl3EVy83VrDEPm6mvgVgvttK/MQrdORJ7EQ=
+>>>>>>> 9edd81a (rebased)
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-maccatalyst/dSYMs/KovaleeFramework.framework.dSYM/Contents/Resources/Relocations/x86_64/KovaleeFramework.yml</key>
 		<dict>
 			<key>hash</key>
 			<data>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -2223,6 +2500,13 @@
 			vKqjUNnjKq5fwVe5Ux/DcMBOVpG9cvOnGRdmu+023wY=
 >>>>>>> 89a29ce (feat: updated bundle check to receive also bundle_id)
 >>>>>>> ebe5358 (feat: updated bundle check to receive also bundle_id)
+=======
+			ESWHgpu/Y7LWwl0WEBwAIiFF8wo=
+			</data>
+			<key>hash2</key>
+			<data>
+			7QVfX+mmZTBNWsuTeCNA0XejOHkEnLcodLC1tL9CI1U=
+>>>>>>> 9edd81a (rebased)
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/KovaleeFramework.framework/Headers/KovaleeFramework-Swift.h</key>
@@ -2262,6 +2546,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -2309,12 +2594,20 @@
 			W6NiYsBz/jDzeY8jdAEwNwWqnbetpVnDnT/HTqMu4ZI=
 >>>>>>> 89a29ce (feat: updated bundle check to receive also bundle_id)
 >>>>>>> ebe5358 (feat: updated bundle check to receive also bundle_id)
+=======
+			8yBfSOkFG8QeiRGI2w21UTYub4k=
+			</data>
+			<key>hash2</key>
+			<data>
+			HTbqc+564b18tRjbTL+1B/vM4EhzwmLAP1NuqCs6A4c=
+>>>>>>> 9edd81a (rebased)
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/KovaleeFramework.framework/Modules/KovaleeFramework.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash</key>
 			<data>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -2362,12 +2655,20 @@
 			x/s0rzf1v4/65++CBZfpqovjEdJGvXCn1OycO9ifaEY=
 >>>>>>> 89a29ce (feat: updated bundle check to receive also bundle_id)
 >>>>>>> ebe5358 (feat: updated bundle check to receive also bundle_id)
+=======
+			S5tD+wye1wYKgo/psoCAhv+IQQs=
+			</data>
+			<key>hash2</key>
+			<data>
+			f0CsnEorNonIMkk9MyxCAcPhdT9aGee8S2unrKvpd4I=
+>>>>>>> 9edd81a (rebased)
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/KovaleeFramework.framework/Modules/KovaleeFramework.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash</key>
 			<data>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -2407,6 +2708,13 @@
 			Oer+MKNvKPxqi8uUnbj9eae5CPw0LZF9lJWhcuZ3uxo=
 >>>>>>> 89a29ce (feat: updated bundle check to receive also bundle_id)
 >>>>>>> ebe5358 (feat: updated bundle check to receive also bundle_id)
+=======
+			wi9iGpxlJA50Jj4iMFh+FEUQSxk=
+			</data>
+			<key>hash2</key>
+			<data>
+			fBD0WVa6ehlY1l6ce8EjRRTWJW6R00KDm0iLT2ECvy4=
+>>>>>>> 9edd81a (rebased)
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/KovaleeFramework.framework/Modules/KovaleeFramework.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
@@ -2427,6 +2735,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 			oPmagCEcAiEjqMfFnB7W/KmO/T0=
 			</data>
 			<key>hash2</key>
@@ -2463,12 +2772,20 @@
 			Oer+MKNvKPxqi8uUnbj9eae5CPw0LZF9lJWhcuZ3uxo=
 >>>>>>> 89a29ce (feat: updated bundle check to receive also bundle_id)
 >>>>>>> ebe5358 (feat: updated bundle check to receive also bundle_id)
+=======
+			wi9iGpxlJA50Jj4iMFh+FEUQSxk=
+			</data>
+			<key>hash2</key>
+			<data>
+			fBD0WVa6ehlY1l6ce8EjRRTWJW6R00KDm0iLT2ECvy4=
+>>>>>>> 9edd81a (rebased)
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/KovaleeFramework.framework/Modules/KovaleeFramework.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash</key>
 			<data>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -2516,12 +2833,20 @@
 			x/s0rzf1v4/65++CBZfpqovjEdJGvXCn1OycO9ifaEY=
 >>>>>>> 89a29ce (feat: updated bundle check to receive also bundle_id)
 >>>>>>> ebe5358 (feat: updated bundle check to receive also bundle_id)
+=======
+			S5tD+wye1wYKgo/psoCAhv+IQQs=
+			</data>
+			<key>hash2</key>
+			<data>
+			f0CsnEorNonIMkk9MyxCAcPhdT9aGee8S2unrKvpd4I=
+>>>>>>> 9edd81a (rebased)
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/KovaleeFramework.framework/Modules/KovaleeFramework.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash</key>
 			<data>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -2561,6 +2886,13 @@
 			o5BQ3z8QX1cKYm/624080Vj5FoEF5SDW8qBpeeEXKHE=
 >>>>>>> 89a29ce (feat: updated bundle check to receive also bundle_id)
 >>>>>>> ebe5358 (feat: updated bundle check to receive also bundle_id)
+=======
+			3zGuSeeGWXi1NUL3Qexm6cWwee0=
+			</data>
+			<key>hash2</key>
+			<data>
+			E1YI/czgA/E8tyTn3aE0Ydx2E4VKCEsL9FkFBA/69tg=
+>>>>>>> 9edd81a (rebased)
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/KovaleeFramework.framework/Modules/KovaleeFramework.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
@@ -2581,6 +2913,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 			gvIB/9zKl1WJ1EHEQVBR7/wkMos=
 			</data>
 			<key>hash2</key>
@@ -2617,6 +2950,13 @@
 			o5BQ3z8QX1cKYm/624080Vj5FoEF5SDW8qBpeeEXKHE=
 >>>>>>> 89a29ce (feat: updated bundle check to receive also bundle_id)
 >>>>>>> ebe5358 (feat: updated bundle check to receive also bundle_id)
+=======
+			3zGuSeeGWXi1NUL3Qexm6cWwee0=
+			</data>
+			<key>hash2</key>
+			<data>
+			E1YI/czgA/E8tyTn3aE0Ydx2E4VKCEsL9FkFBA/69tg=
+>>>>>>> 9edd81a (rebased)
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/KovaleeFramework.framework/Modules/module.modulemap</key>
@@ -2645,6 +2985,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -2692,6 +3033,13 @@
 			MSSdARXD3tCf9sJxbxmf1CKLOAtmJwc1QkBCbicY2oE=
 >>>>>>> 89a29ce (feat: updated bundle check to receive also bundle_id)
 >>>>>>> ebe5358 (feat: updated bundle check to receive also bundle_id)
+=======
+			Jt+OBtyF4DplflNkKGC9eOf/Qjg=
+			</data>
+			<key>hash2</key>
+			<data>
+			0xFwG291orWgSrfPrbGpRFEC+lFaSebMzEvXPGinAxk=
+>>>>>>> 9edd81a (rebased)
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/dSYMs/KovaleeFramework.framework.dSYM/Contents/Info.plist</key>
@@ -2709,6 +3057,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -2756,12 +3105,20 @@
 			tV1gwa9wb2SxvKaf4LauSEgTUzYM/zXZK90WjNRDL4o=
 >>>>>>> 89a29ce (feat: updated bundle check to receive also bundle_id)
 >>>>>>> ebe5358 (feat: updated bundle check to receive also bundle_id)
+=======
+			Ea6m9gJ+XCr772lKN5oYz0wKeC8=
+			</data>
+			<key>hash2</key>
+			<data>
+			Zb51IyVh5alggw/Zd0FlS/lS64z9K363n/UvQ5AEj1g=
+>>>>>>> 9edd81a (rebased)
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/dSYMs/KovaleeFramework.framework.dSYM/Contents/Resources/Relocations/aarch64/KovaleeFramework.yml</key>
 		<dict>
 			<key>hash</key>
 			<data>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -2809,12 +3166,20 @@
 			73JQbe3jAHhfQLhrYMDMLaOldBfIh58XutwfDSXvMTE=
 >>>>>>> 89a29ce (feat: updated bundle check to receive also bundle_id)
 >>>>>>> ebe5358 (feat: updated bundle check to receive also bundle_id)
+=======
+			u8V2I1yF5x7IbWMZApl/NsM1OsI=
+			</data>
+			<key>hash2</key>
+			<data>
+			853fIpkxz8VoEtLfxmjw7BMRIW0FnDaqSAjsQYMg0l8=
+>>>>>>> 9edd81a (rebased)
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/dSYMs/KovaleeFramework.framework.dSYM/Contents/Resources/Relocations/x86_64/KovaleeFramework.yml</key>
 		<dict>
 			<key>hash</key>
 			<data>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -2862,6 +3227,13 @@
 			qmGMus0hMQYbvFFpFryx7OhdoeIdK3YraGxeXe4ZUs0=
 >>>>>>> 89a29ce (feat: updated bundle check to receive also bundle_id)
 >>>>>>> ebe5358 (feat: updated bundle check to receive also bundle_id)
+=======
+			2qEva+twGVEx3CX8Y2m6uwa8w8A=
+			</data>
+			<key>hash2</key>
+			<data>
+			IznJFAVrr1g/m1KpAL0x8gxtHp1RrmtTr/5mdCAO4VM=
+>>>>>>> 9edd81a (rebased)
 			</data>
 		</dict>
 		<key>xros-arm64/KovaleeFramework.framework/Headers/KovaleeFramework-Swift.h</key>
@@ -2901,6 +3273,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -2948,12 +3321,20 @@
 			1/Zo9TeLP1REnG5XFsTw7RcJGAQLZQKupGZLqX18rr8=
 >>>>>>> 89a29ce (feat: updated bundle check to receive also bundle_id)
 >>>>>>> ebe5358 (feat: updated bundle check to receive also bundle_id)
+=======
+			CTNTeDcauBu6MfzQ4ae5hNvv7K8=
+			</data>
+			<key>hash2</key>
+			<data>
+			iEXcwAwj3JfXW4Y5TqiWPJmGzhHQWAUADBNMtDC6hGg=
+>>>>>>> 9edd81a (rebased)
 			</data>
 		</dict>
 		<key>xros-arm64/KovaleeFramework.framework/Modules/KovaleeFramework.swiftmodule/arm64-apple-xros.abi.json</key>
 		<dict>
 			<key>hash</key>
 			<data>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -3001,12 +3382,20 @@
 			x/s0rzf1v4/65++CBZfpqovjEdJGvXCn1OycO9ifaEY=
 >>>>>>> 89a29ce (feat: updated bundle check to receive also bundle_id)
 >>>>>>> ebe5358 (feat: updated bundle check to receive also bundle_id)
+=======
+			S5tD+wye1wYKgo/psoCAhv+IQQs=
+			</data>
+			<key>hash2</key>
+			<data>
+			f0CsnEorNonIMkk9MyxCAcPhdT9aGee8S2unrKvpd4I=
+>>>>>>> 9edd81a (rebased)
 			</data>
 		</dict>
 		<key>xros-arm64/KovaleeFramework.framework/Modules/KovaleeFramework.swiftmodule/arm64-apple-xros.private.swiftinterface</key>
 		<dict>
 			<key>hash</key>
 			<data>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -3046,6 +3435,13 @@
 			IXALlwrQ5RYz1HGbng7Qn6Ps2RS/Kb+lVemvaK2w7pI=
 >>>>>>> 89a29ce (feat: updated bundle check to receive also bundle_id)
 >>>>>>> ebe5358 (feat: updated bundle check to receive also bundle_id)
+=======
+			/QG7RaPDHju8wHMYIRfny/v2v98=
+			</data>
+			<key>hash2</key>
+			<data>
+			HnnUMQtemEROiPsFejMCt0E/hVePox3VeF+DAxVz7rk=
+>>>>>>> 9edd81a (rebased)
 			</data>
 		</dict>
 		<key>xros-arm64/KovaleeFramework.framework/Modules/KovaleeFramework.swiftmodule/arm64-apple-xros.swiftdoc</key>
@@ -3066,6 +3462,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 			4OBxDWH420sHHOvvFK5TRRiqfKI=
 			</data>
 			<key>hash2</key>
@@ -3102,6 +3499,13 @@
 			IXALlwrQ5RYz1HGbng7Qn6Ps2RS/Kb+lVemvaK2w7pI=
 >>>>>>> 89a29ce (feat: updated bundle check to receive also bundle_id)
 >>>>>>> ebe5358 (feat: updated bundle check to receive also bundle_id)
+=======
+			/QG7RaPDHju8wHMYIRfny/v2v98=
+			</data>
+			<key>hash2</key>
+			<data>
+			HnnUMQtemEROiPsFejMCt0E/hVePox3VeF+DAxVz7rk=
+>>>>>>> 9edd81a (rebased)
 			</data>
 		</dict>
 		<key>xros-arm64/KovaleeFramework.framework/Modules/module.modulemap</key>
@@ -3141,6 +3545,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -3188,12 +3593,20 @@
 			NG5LttmB83vgCbjLmLvqrfSZQUEdn/kr3TEHnowof4Y=
 >>>>>>> 89a29ce (feat: updated bundle check to receive also bundle_id)
 >>>>>>> ebe5358 (feat: updated bundle check to receive also bundle_id)
+=======
+			sW6emfWdillqeCqgAis3VXP9ubg=
+			</data>
+			<key>hash2</key>
+			<data>
+			eSzw56k++dMpHal92feXQ7yAUAPDVzXvwjGafHFZHz0=
+>>>>>>> 9edd81a (rebased)
 			</data>
 		</dict>
 		<key>xros-arm64/dSYMs/KovaleeFramework.framework.dSYM/Contents/Resources/Relocations/aarch64/KovaleeFramework.yml</key>
 		<dict>
 			<key>hash</key>
 			<data>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -3241,6 +3654,13 @@
 			6yMRCfyTiyJ8wN2tj7QvaZ95qd8PR5SUT9G+8FWbs7s=
 >>>>>>> 89a29ce (feat: updated bundle check to receive also bundle_id)
 >>>>>>> ebe5358 (feat: updated bundle check to receive also bundle_id)
+=======
+			FKP01HQbl6wj9GZGP9fEG1TAIVI=
+			</data>
+			<key>hash2</key>
+			<data>
+			lISIxCK2QtYDe3gQNDz2YyRjVN1D9AR180KH4yEHvHM=
+>>>>>>> 9edd81a (rebased)
 			</data>
 		</dict>
 		<key>xros-arm64_x86_64-simulator/KovaleeFramework.framework/Headers/KovaleeFramework-Swift.h</key>
@@ -3280,6 +3700,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -3327,12 +3748,20 @@
 			W5QRDp/UknkOn2hARW8O43P583oarcfsEGEm9Odf6K0=
 >>>>>>> 89a29ce (feat: updated bundle check to receive also bundle_id)
 >>>>>>> ebe5358 (feat: updated bundle check to receive also bundle_id)
+=======
+			DU2HsBf6RK+/wfpRB8Cs3iiX+Hw=
+			</data>
+			<key>hash2</key>
+			<data>
+			PuBCUvFTn1OO1Kak7lRfA4KmJ9VKqPuawos1lwWy/Yg=
+>>>>>>> 9edd81a (rebased)
 			</data>
 		</dict>
 		<key>xros-arm64_x86_64-simulator/KovaleeFramework.framework/Modules/KovaleeFramework.swiftmodule/arm64-apple-xros-simulator.abi.json</key>
 		<dict>
 			<key>hash</key>
 			<data>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -3380,12 +3809,20 @@
 			x/s0rzf1v4/65++CBZfpqovjEdJGvXCn1OycO9ifaEY=
 >>>>>>> 89a29ce (feat: updated bundle check to receive also bundle_id)
 >>>>>>> ebe5358 (feat: updated bundle check to receive also bundle_id)
+=======
+			S5tD+wye1wYKgo/psoCAhv+IQQs=
+			</data>
+			<key>hash2</key>
+			<data>
+			f0CsnEorNonIMkk9MyxCAcPhdT9aGee8S2unrKvpd4I=
+>>>>>>> 9edd81a (rebased)
 			</data>
 		</dict>
 		<key>xros-arm64_x86_64-simulator/KovaleeFramework.framework/Modules/KovaleeFramework.swiftmodule/arm64-apple-xros-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash</key>
 			<data>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -3425,6 +3862,13 @@
 			jC8VORQ+OCDg+FgrzL4u0csGt18a7PTadhaMPUs71Xk=
 >>>>>>> 89a29ce (feat: updated bundle check to receive also bundle_id)
 >>>>>>> ebe5358 (feat: updated bundle check to receive also bundle_id)
+=======
+			/c2jrC68npAghbxl8RcvgI7zoZs=
+			</data>
+			<key>hash2</key>
+			<data>
+			2MIZVYiwhESKgUhpCKnphFM0AmNekIaLKlVYGzApe1M=
+>>>>>>> 9edd81a (rebased)
 			</data>
 		</dict>
 		<key>xros-arm64_x86_64-simulator/KovaleeFramework.framework/Modules/KovaleeFramework.swiftmodule/arm64-apple-xros-simulator.swiftdoc</key>
@@ -3445,6 +3889,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 			BSjp30SGC3j8C1smqYuMIc45KLk=
 			</data>
 			<key>hash2</key>
@@ -3481,12 +3926,20 @@
 			jC8VORQ+OCDg+FgrzL4u0csGt18a7PTadhaMPUs71Xk=
 >>>>>>> 89a29ce (feat: updated bundle check to receive also bundle_id)
 >>>>>>> ebe5358 (feat: updated bundle check to receive also bundle_id)
+=======
+			/c2jrC68npAghbxl8RcvgI7zoZs=
+			</data>
+			<key>hash2</key>
+			<data>
+			2MIZVYiwhESKgUhpCKnphFM0AmNekIaLKlVYGzApe1M=
+>>>>>>> 9edd81a (rebased)
 			</data>
 		</dict>
 		<key>xros-arm64_x86_64-simulator/KovaleeFramework.framework/Modules/KovaleeFramework.swiftmodule/x86_64-apple-xros-simulator.abi.json</key>
 		<dict>
 			<key>hash</key>
 			<data>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -3534,12 +3987,20 @@
 			x/s0rzf1v4/65++CBZfpqovjEdJGvXCn1OycO9ifaEY=
 >>>>>>> 89a29ce (feat: updated bundle check to receive also bundle_id)
 >>>>>>> ebe5358 (feat: updated bundle check to receive also bundle_id)
+=======
+			S5tD+wye1wYKgo/psoCAhv+IQQs=
+			</data>
+			<key>hash2</key>
+			<data>
+			f0CsnEorNonIMkk9MyxCAcPhdT9aGee8S2unrKvpd4I=
+>>>>>>> 9edd81a (rebased)
 			</data>
 		</dict>
 		<key>xros-arm64_x86_64-simulator/KovaleeFramework.framework/Modules/KovaleeFramework.swiftmodule/x86_64-apple-xros-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash</key>
 			<data>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -3579,6 +4040,13 @@
 			qBZ5s227+Jh7F9OKJYWxPo93ppYgk7oNQat0kVdNH8I=
 >>>>>>> 89a29ce (feat: updated bundle check to receive also bundle_id)
 >>>>>>> ebe5358 (feat: updated bundle check to receive also bundle_id)
+=======
+			RVsmzpjVWlIwZdiJ/MfbuCe5sMM=
+			</data>
+			<key>hash2</key>
+			<data>
+			MZf7NHjMn47JFtlYZ+ZNFGUP/GhY1NyE8IpfY65lyrk=
+>>>>>>> 9edd81a (rebased)
 			</data>
 		</dict>
 		<key>xros-arm64_x86_64-simulator/KovaleeFramework.framework/Modules/KovaleeFramework.swiftmodule/x86_64-apple-xros-simulator.swiftdoc</key>
@@ -3599,6 +4067,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 			KDeB69n1s2bZFwv4lXpGDEUyp9A=
 			</data>
 			<key>hash2</key>
@@ -3635,6 +4104,13 @@
 			qBZ5s227+Jh7F9OKJYWxPo93ppYgk7oNQat0kVdNH8I=
 >>>>>>> 89a29ce (feat: updated bundle check to receive also bundle_id)
 >>>>>>> ebe5358 (feat: updated bundle check to receive also bundle_id)
+=======
+			RVsmzpjVWlIwZdiJ/MfbuCe5sMM=
+			</data>
+			<key>hash2</key>
+			<data>
+			MZf7NHjMn47JFtlYZ+ZNFGUP/GhY1NyE8IpfY65lyrk=
+>>>>>>> 9edd81a (rebased)
 			</data>
 		</dict>
 		<key>xros-arm64_x86_64-simulator/KovaleeFramework.framework/Modules/module.modulemap</key>
@@ -3663,6 +4139,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -3710,6 +4187,13 @@
 			4MhMd/U8VwSA632JVoe3jPw8q+zGsFj8jzZpzSPnyZw=
 >>>>>>> 89a29ce (feat: updated bundle check to receive also bundle_id)
 >>>>>>> ebe5358 (feat: updated bundle check to receive also bundle_id)
+=======
+			c2Whn+lhSODYyRAomXKRbzBBzw0=
+			</data>
+			<key>hash2</key>
+			<data>
+			KUTZAAIW/VcQK3BJBwaEek1FvAPir9Aqi6bJzGmi8J0=
+>>>>>>> 9edd81a (rebased)
 			</data>
 		</dict>
 		<key>xros-arm64_x86_64-simulator/dSYMs/KovaleeFramework.framework.dSYM/Contents/Info.plist</key>
@@ -3727,6 +4211,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -3774,12 +4259,20 @@
 			MFO7pFkzw8ofqvTZeOJwKhs6i4ZZMHQBsGlrsQ5gTCw=
 >>>>>>> 89a29ce (feat: updated bundle check to receive also bundle_id)
 >>>>>>> ebe5358 (feat: updated bundle check to receive also bundle_id)
+=======
+			RFJBUkStQhfQqeEXUHOL4EcORLQ=
+			</data>
+			<key>hash2</key>
+			<data>
+			tTTRVx9xcozLNKhdDFTWgeE2y7RXoXoquiA50DsiTxI=
+>>>>>>> 9edd81a (rebased)
 			</data>
 		</dict>
 		<key>xros-arm64_x86_64-simulator/dSYMs/KovaleeFramework.framework.dSYM/Contents/Resources/Relocations/aarch64/KovaleeFramework.yml</key>
 		<dict>
 			<key>hash</key>
 			<data>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -3827,12 +4320,20 @@
 			a4dSV7msVG6LoAZ8Yh2y/cSbWzd8H+Ve+BqjzQTESQE=
 >>>>>>> 89a29ce (feat: updated bundle check to receive also bundle_id)
 >>>>>>> ebe5358 (feat: updated bundle check to receive also bundle_id)
+=======
+			aAUnTuVs2SiZvxvcYxGIr657bxc=
+			</data>
+			<key>hash2</key>
+			<data>
+			5sjIuAw4gsDbRy968BDmEIJxpOKgpMNKt57ZNkbyD4o=
+>>>>>>> 9edd81a (rebased)
 			</data>
 		</dict>
 		<key>xros-arm64_x86_64-simulator/dSYMs/KovaleeFramework.framework.dSYM/Contents/Resources/Relocations/x86_64/KovaleeFramework.yml</key>
 		<dict>
 			<key>hash</key>
 			<data>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -3880,6 +4381,13 @@
 			g6hpXdRcDEILk0l/oJqEI4UzOHhTr1KEjlUn4PEyUP0=
 >>>>>>> 89a29ce (feat: updated bundle check to receive also bundle_id)
 >>>>>>> ebe5358 (feat: updated bundle check to receive also bundle_id)
+=======
+			TqsAXcQhB/gX8wD3HesipuX+xkQ=
+			</data>
+			<key>hash2</key>
+			<data>
+			MYE9/a0t59j6V3B2y2O1lqyJPWcRiI2J/Y8cblaV0yI=
+>>>>>>> 9edd81a (rebased)
 			</data>
 		</dict>
 	</dict>
