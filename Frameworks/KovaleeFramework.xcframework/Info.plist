@@ -90,6 +90,7 @@
 			<key>DebugSymbolsPath</key>
 			<string>dSYMs</string>
 			<key>LibraryIdentifier</key>
+<<<<<<< HEAD
 			<string>xros-arm64</string>
 			<key>LibraryPath</key>
 			<string>KovaleeFramework.framework</string>
@@ -134,6 +135,9 @@
 			<string>dSYMs</string>
 			<key>LibraryIdentifier</key>
 			<string>xros-arm64_x86_64-simulator</string>
+=======
+			<string>ios-arm64_x86_64-simulator</string>
+>>>>>>> 557e486 (feat: setting property bundle if user is part of one)
 			<key>LibraryPath</key>
 			<string>KovaleeFramework.framework</string>
 			<key>SupportedArchitectures</key>
@@ -142,9 +146,25 @@
 				<string>x86_64</string>
 			</array>
 			<key>SupportedPlatform</key>
-			<string>xros</string>
+			<string>ios</string>
 			<key>SupportedPlatformVariant</key>
 			<string>simulator</string>
+		</dict>
+		<dict>
+			<key>BinaryPath</key>
+			<string>KovaleeFramework.framework/KovaleeFramework</string>
+			<key>DebugSymbolsPath</key>
+			<string>dSYMs</string>
+			<key>LibraryIdentifier</key>
+			<string>ios-arm64</string>
+			<key>LibraryPath</key>
+			<string>KovaleeFramework.framework</string>
+			<key>SupportedArchitectures</key>
+			<array>
+				<string>arm64</string>
+			</array>
+			<key>SupportedPlatform</key>
+			<string>ios</string>
 		</dict>
 		<dict>
 			<key>BinaryPath</key>
@@ -171,23 +191,7 @@
 			<key>DebugSymbolsPath</key>
 			<string>dSYMs</string>
 			<key>LibraryIdentifier</key>
-			<string>ios-arm64</string>
-			<key>LibraryPath</key>
-			<string>KovaleeFramework.framework</string>
-			<key>SupportedArchitectures</key>
-			<array>
-				<string>arm64</string>
-			</array>
-			<key>SupportedPlatform</key>
-			<string>ios</string>
-		</dict>
-		<dict>
-			<key>BinaryPath</key>
-			<string>KovaleeFramework.framework/KovaleeFramework</string>
-			<key>DebugSymbolsPath</key>
-			<string>dSYMs</string>
-			<key>LibraryIdentifier</key>
-			<string>ios-arm64_x86_64-simulator</string>
+			<string>xros-arm64_x86_64-simulator</string>
 			<key>LibraryPath</key>
 			<string>KovaleeFramework.framework</string>
 			<key>SupportedArchitectures</key>
@@ -196,9 +200,25 @@
 				<string>x86_64</string>
 			</array>
 			<key>SupportedPlatform</key>
-			<string>ios</string>
+			<string>xros</string>
 			<key>SupportedPlatformVariant</key>
 			<string>simulator</string>
+		</dict>
+		<dict>
+			<key>BinaryPath</key>
+			<string>KovaleeFramework.framework/KovaleeFramework</string>
+			<key>DebugSymbolsPath</key>
+			<string>dSYMs</string>
+			<key>LibraryIdentifier</key>
+			<string>xros-arm64</string>
+			<key>LibraryPath</key>
+			<string>KovaleeFramework.framework</string>
+			<key>SupportedArchitectures</key>
+			<array>
+				<string>arm64</string>
+			</array>
+			<key>SupportedPlatform</key>
+			<string>xros</string>
 		</dict>
 	</array>
 	<key>CFBundlePackageType</key>

@@ -23,6 +23,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 		d5z1TwJRFhnk2eKTLDoZgaPvWEM=
 		</data>
 		<key>Modules/KovaleeFramework.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
@@ -69,6 +70,13 @@
 		<data>
 		Y3pWOV4MEOmDsxrAVXCQaI8PQSY=
 >>>>>>> 9edd81a (rebased)
+=======
+		xg/0Hbos6QalbVZXlefBAANKntE=
+		</data>
+		<key>Modules/KovaleeFramework.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
+		<data>
+		R6tmMy/WXxg3s9T1oYuwZCKvVfY=
+>>>>>>> 557e486 (feat: setting property bundle if user is part of one)
 		</data>
 		<key>Modules/KovaleeFramework.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
@@ -76,6 +84,7 @@
 		</data>
 		<key>Modules/KovaleeFramework.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -123,6 +132,13 @@
 		<data>
 		GIs2qXNHVpmFYaroFdvw4HbwaH0=
 >>>>>>> 9edd81a (rebased)
+=======
+		R6tmMy/WXxg3s9T1oYuwZCKvVfY=
+		</data>
+		<key>Modules/KovaleeFramework.swiftmodule/arm64-apple-ios.swiftmodule</key>
+		<data>
+		zgk+vwWhEKFVhS1y6ZyskHi4SuA=
+>>>>>>> 557e486 (feat: setting property bundle if user is part of one)
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -158,6 +174,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 			x/s0rzf1v4/65++CBZfpqovjEdJGvXCn1OycO9ifaEY=
 =======
 			flk0d0lVFA+K1p/FxhXEVZjUHVP2mQa+sUnRRo/YNrA=
@@ -182,12 +199,16 @@
 =======
 			f0CsnEorNonIMkk9MyxCAcPhdT9aGee8S2unrKvpd4I=
 >>>>>>> 9edd81a (rebased)
+=======
+			7kjuaNmAbEPMu9is1lpe7lXjgZzkkfl+tX3NAojcU6Y=
+>>>>>>> 557e486 (feat: setting property bundle if user is part of one)
 			</data>
 		</dict>
 		<key>Modules/KovaleeFramework.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -213,6 +234,9 @@
 =======
 			SXug5T3CF3xwlGlJYssz7gkaIJRCjY1pLN0icXz7kPI=
 >>>>>>> 9edd81a (rebased)
+=======
+			MJViwJLXHhsLaIu3sCw9zlh7kwKCDTWglds8qdg3CoI=
+>>>>>>> 557e486 (feat: setting property bundle if user is part of one)
 			</data>
 		</dict>
 		<key>Modules/KovaleeFramework.swiftmodule/arm64-apple-ios.swiftdoc</key>
@@ -230,6 +254,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 			qA73c0ehpkf2Oh2VgO3IQvYkgO1j9gM/Z4cGzJCR+jI=
 =======
 			3gFMccZDjG7jgC5H5PV3k+6t6NptS1f5AnWD7sQQZ50=
@@ -251,12 +276,16 @@
 =======
 			SXug5T3CF3xwlGlJYssz7gkaIJRCjY1pLN0icXz7kPI=
 >>>>>>> 9edd81a (rebased)
+=======
+			MJViwJLXHhsLaIu3sCw9zlh7kwKCDTWglds8qdg3CoI=
+>>>>>>> 557e486 (feat: setting property bundle if user is part of one)
 			</data>
 		</dict>
 		<key>Modules/KovaleeFramework.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -282,6 +311,9 @@
 =======
 			oUK+nPihkKmLHljrKt0dWRX1+GBtI5kmeEs003K1GD0=
 >>>>>>> 9edd81a (rebased)
+=======
+			EU9+rJogiBHUuwyPUIoAPnN3q9itCwKnjSoy5eMEXww=
+>>>>>>> 557e486 (feat: setting property bundle if user is part of one)
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

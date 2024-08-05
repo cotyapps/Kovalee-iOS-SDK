@@ -23,6 +23,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 		d5z1TwJRFhnk2eKTLDoZgaPvWEM=
 		</data>
 		<key>Modules/KovaleeFramework.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
@@ -69,6 +70,13 @@
 		<data>
 		wi9iGpxlJA50Jj4iMFh+FEUQSxk=
 >>>>>>> 9edd81a (rebased)
+=======
+		xg/0Hbos6QalbVZXlefBAANKntE=
+		</data>
+		<key>Modules/KovaleeFramework.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
+		<data>
+		OP2qmxVIHnuLETvgpy7cnhtpC7s=
+>>>>>>> 557e486 (feat: setting property bundle if user is part of one)
 		</data>
 		<key>Modules/KovaleeFramework.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -76,6 +84,7 @@
 		</data>
 		<key>Modules/KovaleeFramework.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -102,17 +111,21 @@
 =======
 		wi9iGpxlJA50Jj4iMFh+FEUQSxk=
 >>>>>>> 9edd81a (rebased)
+=======
+		OP2qmxVIHnuLETvgpy7cnhtpC7s=
+>>>>>>> 557e486 (feat: setting property bundle if user is part of one)
 		</data>
 		<key>Modules/KovaleeFramework.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		5GktC/utvABcK1kAHRSVIEH+3Sw=
+		W2Kw+ri8nKQkHeljXA0cJ3n31i4=
 		</data>
 		<key>Modules/KovaleeFramework.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		S5tD+wye1wYKgo/psoCAhv+IQQs=
+		xg/0Hbos6QalbVZXlefBAANKntE=
 		</data>
 		<key>Modules/KovaleeFramework.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
+<<<<<<< HEAD
 <<<<<<< HEAD
 		GRyLE+sx6YwpKl3vb3vzjGHnuvE=
 <<<<<<< HEAD
@@ -147,6 +160,9 @@
 =======
 		3zGuSeeGWXi1NUL3Qexm6cWwee0=
 >>>>>>> 9edd81a (rebased)
+=======
+		ZN2H8Dqc2zWZlEM2tW8jSF3lBBU=
+>>>>>>> 557e486 (feat: setting property bundle if user is part of one)
 		</data>
 		<key>Modules/KovaleeFramework.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -154,6 +170,7 @@
 		</data>
 		<key>Modules/KovaleeFramework.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -201,6 +218,13 @@
 		<data>
 		MX/pTppRrj7XAg0jiSICxK98E50=
 >>>>>>> 9edd81a (rebased)
+=======
+		ZN2H8Dqc2zWZlEM2tW8jSF3lBBU=
+		</data>
+		<key>Modules/KovaleeFramework.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
+		<data>
+		MhqXwmRDVwRZgKDzZSN8w8HTQGk=
+>>>>>>> 557e486 (feat: setting property bundle if user is part of one)
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -236,6 +260,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 			x/s0rzf1v4/65++CBZfpqovjEdJGvXCn1OycO9ifaEY=
 =======
 			flk0d0lVFA+K1p/FxhXEVZjUHVP2mQa+sUnRRo/YNrA=
@@ -260,12 +285,16 @@
 =======
 			f0CsnEorNonIMkk9MyxCAcPhdT9aGee8S2unrKvpd4I=
 >>>>>>> 9edd81a (rebased)
+=======
+			7kjuaNmAbEPMu9is1lpe7lXjgZzkkfl+tX3NAojcU6Y=
+>>>>>>> 557e486 (feat: setting property bundle if user is part of one)
 			</data>
 		</dict>
 		<key>Modules/KovaleeFramework.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -291,6 +320,9 @@
 =======
 			fBD0WVa6ehlY1l6ce8EjRRTWJW6R00KDm0iLT2ECvy4=
 >>>>>>> 9edd81a (rebased)
+=======
+			wJ7UPHz9l/LmdKfeFqWSLSD6j57wlntbr3hNaRXIvKA=
+>>>>>>> 557e486 (feat: setting property bundle if user is part of one)
 			</data>
 		</dict>
 		<key>Modules/KovaleeFramework.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
@@ -308,6 +340,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 			Oer+MKNvKPxqi8uUnbj9eae5CPw0LZF9lJWhcuZ3uxo=
 =======
 			cqjpe37Akqy0xq2jGVCaIfhwy2YRxEb+EwCmcGrlo5w=
@@ -329,12 +362,16 @@
 =======
 			fBD0WVa6ehlY1l6ce8EjRRTWJW6R00KDm0iLT2ECvy4=
 >>>>>>> 9edd81a (rebased)
+=======
+			wJ7UPHz9l/LmdKfeFqWSLSD6j57wlntbr3hNaRXIvKA=
+>>>>>>> 557e486 (feat: setting property bundle if user is part of one)
 			</data>
 		</dict>
 		<key>Modules/KovaleeFramework.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -360,12 +397,16 @@
 =======
 			HnDMiRKm0+Yv1JTU80ndS456PC+g4FhAVGbcvimjmE4=
 >>>>>>> 9edd81a (rebased)
+=======
+			oEjC1XhGqL4U6qnawBLqFwJttjNQ9yj6ciI9gFysYVo=
+>>>>>>> 557e486 (feat: setting property bundle if user is part of one)
 			</data>
 		</dict>
 		<key>Modules/KovaleeFramework.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -395,12 +436,16 @@
 =======
 			f0CsnEorNonIMkk9MyxCAcPhdT9aGee8S2unrKvpd4I=
 >>>>>>> 9edd81a (rebased)
+=======
+			7kjuaNmAbEPMu9is1lpe7lXjgZzkkfl+tX3NAojcU6Y=
+>>>>>>> 557e486 (feat: setting property bundle if user is part of one)
 			</data>
 		</dict>
 		<key>Modules/KovaleeFramework.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -426,6 +471,9 @@
 =======
 			E1YI/czgA/E8tyTn3aE0Ydx2E4VKCEsL9FkFBA/69tg=
 >>>>>>> 9edd81a (rebased)
+=======
+			7907IPrAfAlZYXNv9rQV5JV6wt/Oet+hU9bs7MxaLvk=
+>>>>>>> 557e486 (feat: setting property bundle if user is part of one)
 			</data>
 		</dict>
 		<key>Modules/KovaleeFramework.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
@@ -443,6 +491,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 			o5BQ3z8QX1cKYm/624080Vj5FoEF5SDW8qBpeeEXKHE=
 =======
 			HKjxVSFO+GP3eFLwZKd4+cccVjxnATAzh2sxDAw1ysQ=
@@ -464,12 +513,16 @@
 =======
 			E1YI/czgA/E8tyTn3aE0Ydx2E4VKCEsL9FkFBA/69tg=
 >>>>>>> 9edd81a (rebased)
+=======
+			7907IPrAfAlZYXNv9rQV5JV6wt/Oet+hU9bs7MxaLvk=
+>>>>>>> 557e486 (feat: setting property bundle if user is part of one)
 			</data>
 		</dict>
 		<key>Modules/KovaleeFramework.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -495,6 +548,9 @@
 =======
 			m+3hvfcVGvXD+Rktc8+gC6ikYX3hTx0v+4xClku4eKY=
 >>>>>>> 9edd81a (rebased)
+=======
+			360vlB+UGOvhtAidGoXydIeoMoPO/b0j8TL4kDg/Ivs=
+>>>>>>> 557e486 (feat: setting property bundle if user is part of one)
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

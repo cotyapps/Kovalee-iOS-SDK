@@ -11785,6 +11785,63 @@
           },
           {
             "kind": "Var",
+            "name": "bundle",
+            "printedName": "bundle",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(KovaleeFramework.UserProperty.Type) -> (Swift.String) -> KovaleeFramework.UserProperty",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Swift.String) -> KovaleeFramework.UserProperty",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "UserProperty",
+                        "printedName": "KovaleeFramework.UserProperty",
+                        "usr": "s:16KovaleeFramework12UserPropertyO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Tuple",
+                        "printedName": "(value: Swift.String)",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "KovaleeFramework.UserProperty.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "UserProperty",
+                        "printedName": "KovaleeFramework.UserProperty",
+                        "usr": "s:16KovaleeFramework12UserPropertyO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:16KovaleeFramework12UserPropertyO6bundleyACSS_tcACmF",
+            "mangledName": "$s16KovaleeFramework12UserPropertyO6bundleyACSS_tcACmF",
+            "moduleName": "KovaleeFramework"
+          },
+          {
+            "kind": "Var",
             "name": "adid",
             "printedName": "adid",
             "children": [
