@@ -18,65 +18,11 @@
 		</data>
 		<key>Modules/KovaleeFramework.swiftmodule/arm64-apple-xros-simulator.abi.json</key>
 		<data>
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-		d5z1TwJRFhnk2eKTLDoZgaPvWEM=
-		</data>
-		<key>Modules/KovaleeFramework.swiftmodule/arm64-apple-xros-simulator.private.swiftinterface</key>
-		<data>
-		BSjp30SGC3j8C1smqYuMIc45KLk=
-=======
-		Ma1dYNNmHXwH6Yxfmm0gOX420CQ=
-=======
-=======
->>>>>>> 82a117a (feat: basic bundle check implementation)
-=======
->>>>>>> ebe5358 (feat: updated bundle check to receive also bundle_id)
-		LjeURKLNiZUiU7/obKWgCh2j/2Q=
->>>>>>> cbb676c (fix: moved set app_code for every user not only new ones)
-		</data>
-		<key>Modules/KovaleeFramework.swiftmodule/arm64-apple-xros-simulator.private.swiftinterface</key>
-		<data>
-		I3F1U7iE9iHX7js+xMlAhlRzTtU=
-<<<<<<< HEAD
->>>>>>> f939733 (fix: sending app_code as user property to filter Survicate user audience)
-=======
-=======
-		yr3WkZEW4HgLQWszvJWhnXoGhVU=
-		</data>
-		<key>Modules/KovaleeFramework.swiftmodule/arm64-apple-xros-simulator.private.swiftinterface</key>
-		<data>
-		PIxpkI5Y9GiCMRcMzyV1diGE0Bo=
->>>>>>> d867df9 (feat: basic bundle check implementation)
-<<<<<<< HEAD
->>>>>>> 82a117a (feat: basic bundle check implementation)
-=======
-=======
-		d5z1TwJRFhnk2eKTLDoZgaPvWEM=
-		</data>
-		<key>Modules/KovaleeFramework.swiftmodule/arm64-apple-xros-simulator.private.swiftinterface</key>
-		<data>
-		BSjp30SGC3j8C1smqYuMIc45KLk=
->>>>>>> 89a29ce (feat: updated bundle check to receive also bundle_id)
->>>>>>> ebe5358 (feat: updated bundle check to receive also bundle_id)
-=======
-		S5tD+wye1wYKgo/psoCAhv+IQQs=
-		</data>
-		<key>Modules/KovaleeFramework.swiftmodule/arm64-apple-xros-simulator.private.swiftinterface</key>
-		<data>
-		/c2jrC68npAghbxl8RcvgI7zoZs=
->>>>>>> 9edd81a (rebased)
-=======
 		xg/0Hbos6QalbVZXlefBAANKntE=
 		</data>
 		<key>Modules/KovaleeFramework.swiftmodule/arm64-apple-xros-simulator.private.swiftinterface</key>
 		<data>
 		eRy8ILnqXsqRH+CiOQhixsFP0b4=
->>>>>>> 557e486 (feat: setting property bundle if user is part of one)
 		</data>
 		<key>Modules/KovaleeFramework.swiftmodule/arm64-apple-xros-simulator.swiftdoc</key>
 		<data>
@@ -84,36 +30,7 @@
 		</data>
 		<key>Modules/KovaleeFramework.swiftmodule/arm64-apple-xros-simulator.swiftinterface</key>
 		<data>
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-		BSjp30SGC3j8C1smqYuMIc45KLk=
-		</data>
-		<key>Modules/KovaleeFramework.swiftmodule/arm64-apple-xros-simulator.swiftmodule</key>
-		<data>
-		In90KNoFV+TEsRJGOmYfluKLCzk=
-		</data>
-		<key>Modules/KovaleeFramework.swiftmodule/x86_64-apple-xros-simulator.abi.json</key>
-		<data>
-		d5z1TwJRFhnk2eKTLDoZgaPvWEM=
-		</data>
-		<key>Modules/KovaleeFramework.swiftmodule/x86_64-apple-xros-simulator.private.swiftinterface</key>
-		<data>
-		KDeB69n1s2bZFwv4lXpGDEUyp9A=
-=======
-=======
->>>>>>> 82a117a (feat: basic bundle check implementation)
-=======
->>>>>>> ebe5358 (feat: updated bundle check to receive also bundle_id)
-		I3F1U7iE9iHX7js+xMlAhlRzTtU=
-=======
-		/c2jrC68npAghbxl8RcvgI7zoZs=
->>>>>>> 9edd81a (rebased)
-=======
 		eRy8ILnqXsqRH+CiOQhixsFP0b4=
->>>>>>> 557e486 (feat: setting property bundle if user is part of one)
 		</data>
 		<key>Modules/KovaleeFramework.swiftmodule/arm64-apple-xros-simulator.swiftmodule</key>
 		<data>
@@ -125,44 +42,7 @@
 		</data>
 		<key>Modules/KovaleeFramework.swiftmodule/x86_64-apple-xros-simulator.private.swiftinterface</key>
 		<data>
-<<<<<<< HEAD
-<<<<<<< HEAD
-		lVg+mXu7rgsfvOvW66whlUX4brU=
-<<<<<<< HEAD
->>>>>>> f939733 (fix: sending app_code as user property to filter Survicate user audience)
-=======
-=======
-		PIxpkI5Y9GiCMRcMzyV1diGE0Bo=
-=======
-		BSjp30SGC3j8C1smqYuMIc45KLk=
->>>>>>> 89a29ce (feat: updated bundle check to receive also bundle_id)
-		</data>
-		<key>Modules/KovaleeFramework.swiftmodule/arm64-apple-xros-simulator.swiftmodule</key>
-		<data>
-		In90KNoFV+TEsRJGOmYfluKLCzk=
-		</data>
-		<key>Modules/KovaleeFramework.swiftmodule/x86_64-apple-xros-simulator.abi.json</key>
-		<data>
-		d5z1TwJRFhnk2eKTLDoZgaPvWEM=
-		</data>
-		<key>Modules/KovaleeFramework.swiftmodule/x86_64-apple-xros-simulator.private.swiftinterface</key>
-		<data>
-<<<<<<< HEAD
-		wwB7nFUiAnwv9oeRK9vztxjZyac=
->>>>>>> d867df9 (feat: basic bundle check implementation)
-<<<<<<< HEAD
->>>>>>> 82a117a (feat: basic bundle check implementation)
-=======
-=======
-		KDeB69n1s2bZFwv4lXpGDEUyp9A=
->>>>>>> 89a29ce (feat: updated bundle check to receive also bundle_id)
->>>>>>> ebe5358 (feat: updated bundle check to receive also bundle_id)
-=======
-		RVsmzpjVWlIwZdiJ/MfbuCe5sMM=
->>>>>>> 9edd81a (rebased)
-=======
 		Lh0rpSU89oTrlTRtywMsS1B+9PE=
->>>>>>> 557e486 (feat: setting property bundle if user is part of one)
 		</data>
 		<key>Modules/KovaleeFramework.swiftmodule/x86_64-apple-xros-simulator.swiftdoc</key>
 		<data>
@@ -170,61 +50,11 @@
 		</data>
 		<key>Modules/KovaleeFramework.swiftmodule/x86_64-apple-xros-simulator.swiftinterface</key>
 		<data>
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-		KDeB69n1s2bZFwv4lXpGDEUyp9A=
-		</data>
-		<key>Modules/KovaleeFramework.swiftmodule/x86_64-apple-xros-simulator.swiftmodule</key>
-		<data>
-		fCRjOeLn5QyIIQYlFB8N+ReCQe0=
-=======
-=======
->>>>>>> 82a117a (feat: basic bundle check implementation)
-=======
->>>>>>> ebe5358 (feat: updated bundle check to receive also bundle_id)
-		lVg+mXu7rgsfvOvW66whlUX4brU=
-		</data>
-		<key>Modules/KovaleeFramework.swiftmodule/x86_64-apple-xros-simulator.swiftmodule</key>
-		<data>
-		oo667yqdAja6RW5BANpFzuGHzBc=
-<<<<<<< HEAD
->>>>>>> f939733 (fix: sending app_code as user property to filter Survicate user audience)
-=======
-=======
-		wwB7nFUiAnwv9oeRK9vztxjZyac=
-		</data>
-		<key>Modules/KovaleeFramework.swiftmodule/x86_64-apple-xros-simulator.swiftmodule</key>
-		<data>
-		jsyODubSQd00MxI60L0d/r7L6z8=
->>>>>>> d867df9 (feat: basic bundle check implementation)
-<<<<<<< HEAD
->>>>>>> 82a117a (feat: basic bundle check implementation)
-=======
-=======
-		KDeB69n1s2bZFwv4lXpGDEUyp9A=
-		</data>
-		<key>Modules/KovaleeFramework.swiftmodule/x86_64-apple-xros-simulator.swiftmodule</key>
-		<data>
-		fCRjOeLn5QyIIQYlFB8N+ReCQe0=
->>>>>>> 89a29ce (feat: updated bundle check to receive also bundle_id)
->>>>>>> ebe5358 (feat: updated bundle check to receive also bundle_id)
-=======
-		RVsmzpjVWlIwZdiJ/MfbuCe5sMM=
-		</data>
-		<key>Modules/KovaleeFramework.swiftmodule/x86_64-apple-xros-simulator.swiftmodule</key>
-		<data>
-		eCCFCW2VkUAuTj+cvklonn388II=
->>>>>>> 9edd81a (rebased)
-=======
 		Lh0rpSU89oTrlTRtywMsS1B+9PE=
 		</data>
 		<key>Modules/KovaleeFramework.swiftmodule/x86_64-apple-xros-simulator.swiftmodule</key>
 		<data>
 		q/YYUUeYHUJcUzOA85aMtrkmyHE=
->>>>>>> 557e486 (feat: setting property bundle if user is part of one)
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -255,74 +85,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-			x/s0rzf1v4/65++CBZfpqovjEdJGvXCn1OycO9ifaEY=
-=======
-			flk0d0lVFA+K1p/FxhXEVZjUHVP2mQa+sUnRRo/YNrA=
->>>>>>> f939733 (fix: sending app_code as user property to filter Survicate user audience)
-=======
-			gyICTdBQzrQLdrY/Nafi3xNHI+wBFAEsWPUlO1WiRaI=
->>>>>>> cbb676c (fix: moved set app_code for every user not only new ones)
-=======
-=======
->>>>>>> ebe5358 (feat: updated bundle check to receive also bundle_id)
-			gyICTdBQzrQLdrY/Nafi3xNHI+wBFAEsWPUlO1WiRaI=
-=======
-			QxA985UIkcgG6MOjm9s//sPuYJ9MAnbT94T/dNtoc0U=
->>>>>>> d867df9 (feat: basic bundle check implementation)
-<<<<<<< HEAD
->>>>>>> 82a117a (feat: basic bundle check implementation)
-=======
-=======
-			x/s0rzf1v4/65++CBZfpqovjEdJGvXCn1OycO9ifaEY=
->>>>>>> 89a29ce (feat: updated bundle check to receive also bundle_id)
->>>>>>> ebe5358 (feat: updated bundle check to receive also bundle_id)
-=======
-			f0CsnEorNonIMkk9MyxCAcPhdT9aGee8S2unrKvpd4I=
->>>>>>> 9edd81a (rebased)
-=======
 			7kjuaNmAbEPMu9is1lpe7lXjgZzkkfl+tX3NAojcU6Y=
->>>>>>> 557e486 (feat: setting property bundle if user is part of one)
 			</data>
 		</dict>
 		<key>Modules/KovaleeFramework.swiftmodule/arm64-apple-xros-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-			jC8VORQ+OCDg+FgrzL4u0csGt18a7PTadhaMPUs71Xk=
-=======
-			OImKAyjrCI0KStGIDgXtY4HIVEh5YQMg+jS3k/6r/MA=
->>>>>>> f939733 (fix: sending app_code as user property to filter Survicate user audience)
-=======
-=======
->>>>>>> ebe5358 (feat: updated bundle check to receive also bundle_id)
-			OImKAyjrCI0KStGIDgXtY4HIVEh5YQMg+jS3k/6r/MA=
-=======
-			yiBFkZ+TODi9et/ydFbooFAA0wT/hVEyPanN7AsZYxQ=
->>>>>>> d867df9 (feat: basic bundle check implementation)
-<<<<<<< HEAD
->>>>>>> 82a117a (feat: basic bundle check implementation)
-=======
-=======
-			jC8VORQ+OCDg+FgrzL4u0csGt18a7PTadhaMPUs71Xk=
->>>>>>> 89a29ce (feat: updated bundle check to receive also bundle_id)
->>>>>>> ebe5358 (feat: updated bundle check to receive also bundle_id)
-=======
-			2MIZVYiwhESKgUhpCKnphFM0AmNekIaLKlVYGzApe1M=
->>>>>>> 9edd81a (rebased)
-=======
 			5QeG0w/t4XXXFyF+8zAb/2BBvmvxUbxAn4R3wyTGYvk=
->>>>>>> 557e486 (feat: setting property bundle if user is part of one)
 			</data>
 		</dict>
 		<key>Modules/KovaleeFramework.swiftmodule/arm64-apple-xros-simulator.swiftdoc</key>
@@ -336,144 +106,28 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-			jC8VORQ+OCDg+FgrzL4u0csGt18a7PTadhaMPUs71Xk=
-=======
-			OImKAyjrCI0KStGIDgXtY4HIVEh5YQMg+jS3k/6r/MA=
->>>>>>> f939733 (fix: sending app_code as user property to filter Survicate user audience)
-=======
-=======
->>>>>>> ebe5358 (feat: updated bundle check to receive also bundle_id)
-			OImKAyjrCI0KStGIDgXtY4HIVEh5YQMg+jS3k/6r/MA=
-=======
-			yiBFkZ+TODi9et/ydFbooFAA0wT/hVEyPanN7AsZYxQ=
->>>>>>> d867df9 (feat: basic bundle check implementation)
-<<<<<<< HEAD
->>>>>>> 82a117a (feat: basic bundle check implementation)
-=======
-=======
-			jC8VORQ+OCDg+FgrzL4u0csGt18a7PTadhaMPUs71Xk=
->>>>>>> 89a29ce (feat: updated bundle check to receive also bundle_id)
->>>>>>> ebe5358 (feat: updated bundle check to receive also bundle_id)
-=======
-			2MIZVYiwhESKgUhpCKnphFM0AmNekIaLKlVYGzApe1M=
->>>>>>> 9edd81a (rebased)
-=======
 			5QeG0w/t4XXXFyF+8zAb/2BBvmvxUbxAn4R3wyTGYvk=
->>>>>>> 557e486 (feat: setting property bundle if user is part of one)
 			</data>
 		</dict>
 		<key>Modules/KovaleeFramework.swiftmodule/arm64-apple-xros-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-			lKHMlc50fryF2z2ZfAK7JryqZhcIrXuJ4Kwahrr80o8=
-=======
-			NIIXQbcTveCNN5A1wH6jDpnxT6W6+QxsNQEHbAgyM1o=
->>>>>>> f939733 (fix: sending app_code as user property to filter Survicate user audience)
-=======
-=======
->>>>>>> ebe5358 (feat: updated bundle check to receive also bundle_id)
-			NIIXQbcTveCNN5A1wH6jDpnxT6W6+QxsNQEHbAgyM1o=
-=======
-			hwa9wf4ABTBfpY1m6jWLRgWWD7+fzz8MPYoV9vYi87w=
->>>>>>> d867df9 (feat: basic bundle check implementation)
-<<<<<<< HEAD
->>>>>>> 82a117a (feat: basic bundle check implementation)
-=======
-=======
-			lKHMlc50fryF2z2ZfAK7JryqZhcIrXuJ4Kwahrr80o8=
->>>>>>> 89a29ce (feat: updated bundle check to receive also bundle_id)
->>>>>>> ebe5358 (feat: updated bundle check to receive also bundle_id)
-=======
-			GTOLC2St7N60/ts4YAsUZFYC7TBETpVQsjskIf9GXpE=
->>>>>>> 9edd81a (rebased)
-=======
 			D6Lt2rDV34k7w6QN9UYvrO5LC+8GYqd0k6O48ICBw2c=
->>>>>>> 557e486 (feat: setting property bundle if user is part of one)
 			</data>
 		</dict>
 		<key>Modules/KovaleeFramework.swiftmodule/x86_64-apple-xros-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-			x/s0rzf1v4/65++CBZfpqovjEdJGvXCn1OycO9ifaEY=
-=======
-			flk0d0lVFA+K1p/FxhXEVZjUHVP2mQa+sUnRRo/YNrA=
->>>>>>> f939733 (fix: sending app_code as user property to filter Survicate user audience)
-=======
-			gyICTdBQzrQLdrY/Nafi3xNHI+wBFAEsWPUlO1WiRaI=
->>>>>>> cbb676c (fix: moved set app_code for every user not only new ones)
-=======
-=======
->>>>>>> ebe5358 (feat: updated bundle check to receive also bundle_id)
-			gyICTdBQzrQLdrY/Nafi3xNHI+wBFAEsWPUlO1WiRaI=
-=======
-			QxA985UIkcgG6MOjm9s//sPuYJ9MAnbT94T/dNtoc0U=
->>>>>>> d867df9 (feat: basic bundle check implementation)
-<<<<<<< HEAD
->>>>>>> 82a117a (feat: basic bundle check implementation)
-=======
-=======
-			x/s0rzf1v4/65++CBZfpqovjEdJGvXCn1OycO9ifaEY=
->>>>>>> 89a29ce (feat: updated bundle check to receive also bundle_id)
->>>>>>> ebe5358 (feat: updated bundle check to receive also bundle_id)
-=======
-			f0CsnEorNonIMkk9MyxCAcPhdT9aGee8S2unrKvpd4I=
->>>>>>> 9edd81a (rebased)
-=======
 			7kjuaNmAbEPMu9is1lpe7lXjgZzkkfl+tX3NAojcU6Y=
->>>>>>> 557e486 (feat: setting property bundle if user is part of one)
 			</data>
 		</dict>
 		<key>Modules/KovaleeFramework.swiftmodule/x86_64-apple-xros-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-			qBZ5s227+Jh7F9OKJYWxPo93ppYgk7oNQat0kVdNH8I=
-=======
-			OlUqPdb+Yz3zm02UfvRoE6keByyJ2/MYF8rvTm2J0J0=
->>>>>>> f939733 (fix: sending app_code as user property to filter Survicate user audience)
-=======
-=======
->>>>>>> ebe5358 (feat: updated bundle check to receive also bundle_id)
-			OlUqPdb+Yz3zm02UfvRoE6keByyJ2/MYF8rvTm2J0J0=
-=======
-			8s/IKElagNq5atInPq5szcd/AOCw7b/QDHnk7Q1Hgp8=
->>>>>>> d867df9 (feat: basic bundle check implementation)
-<<<<<<< HEAD
->>>>>>> 82a117a (feat: basic bundle check implementation)
-=======
-=======
-			qBZ5s227+Jh7F9OKJYWxPo93ppYgk7oNQat0kVdNH8I=
->>>>>>> 89a29ce (feat: updated bundle check to receive also bundle_id)
->>>>>>> ebe5358 (feat: updated bundle check to receive also bundle_id)
-=======
-			MZf7NHjMn47JFtlYZ+ZNFGUP/GhY1NyE8IpfY65lyrk=
->>>>>>> 9edd81a (rebased)
-=======
 			I9YIiuNsD+ttHjU3S+jrDaj045OrMQv5Mx+m8VuyAng=
->>>>>>> 557e486 (feat: setting property bundle if user is part of one)
 			</data>
 		</dict>
 		<key>Modules/KovaleeFramework.swiftmodule/x86_64-apple-xros-simulator.swiftdoc</key>
@@ -487,70 +141,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-			qBZ5s227+Jh7F9OKJYWxPo93ppYgk7oNQat0kVdNH8I=
-=======
-			OlUqPdb+Yz3zm02UfvRoE6keByyJ2/MYF8rvTm2J0J0=
->>>>>>> f939733 (fix: sending app_code as user property to filter Survicate user audience)
-=======
-=======
->>>>>>> ebe5358 (feat: updated bundle check to receive also bundle_id)
-			OlUqPdb+Yz3zm02UfvRoE6keByyJ2/MYF8rvTm2J0J0=
-=======
-			8s/IKElagNq5atInPq5szcd/AOCw7b/QDHnk7Q1Hgp8=
->>>>>>> d867df9 (feat: basic bundle check implementation)
-<<<<<<< HEAD
->>>>>>> 82a117a (feat: basic bundle check implementation)
-=======
-=======
-			qBZ5s227+Jh7F9OKJYWxPo93ppYgk7oNQat0kVdNH8I=
->>>>>>> 89a29ce (feat: updated bundle check to receive also bundle_id)
->>>>>>> ebe5358 (feat: updated bundle check to receive also bundle_id)
-=======
-			MZf7NHjMn47JFtlYZ+ZNFGUP/GhY1NyE8IpfY65lyrk=
->>>>>>> 9edd81a (rebased)
-=======
 			I9YIiuNsD+ttHjU3S+jrDaj045OrMQv5Mx+m8VuyAng=
->>>>>>> 557e486 (feat: setting property bundle if user is part of one)
 			</data>
 		</dict>
 		<key>Modules/KovaleeFramework.swiftmodule/x86_64-apple-xros-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-			4LnbXrINUFP1h27ffN35Rg29erF4A/cgSSyGLehbRsk=
-=======
-			wq4e6qyDv72cnCmFOLmbTWgdggdCdjHUodDaoSyQecg=
->>>>>>> f939733 (fix: sending app_code as user property to filter Survicate user audience)
-=======
-=======
->>>>>>> ebe5358 (feat: updated bundle check to receive also bundle_id)
-			wq4e6qyDv72cnCmFOLmbTWgdggdCdjHUodDaoSyQecg=
-=======
-			c8dOVYrPFhwLZhdnGYrVs504uoEpKLNLtnpbBDw1F6k=
->>>>>>> d867df9 (feat: basic bundle check implementation)
-<<<<<<< HEAD
->>>>>>> 82a117a (feat: basic bundle check implementation)
-=======
-=======
-			4LnbXrINUFP1h27ffN35Rg29erF4A/cgSSyGLehbRsk=
->>>>>>> 89a29ce (feat: updated bundle check to receive also bundle_id)
->>>>>>> ebe5358 (feat: updated bundle check to receive also bundle_id)
-=======
-			ZmOa4jtlmuXB3YtzL7JsiuEgK1mJiJlWKatEPMSqIME=
->>>>>>> 9edd81a (rebased)
-=======
 			1j5xQt7gyQM2sNtPreupC2BXQ2RsNXBzoJkjPIIjazU=
->>>>>>> 557e486 (feat: setting property bundle if user is part of one)
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
