@@ -208,6 +208,12 @@ public struct KovaleeKeys : Swift.Decodable {
 extension KovaleeFramework.Reader where T == KovaleeFramework.KovaleeKeys {
   public static let kovaleeKeysReader: KovaleeFramework.Reader<KovaleeFramework.KovaleeKeys>
 }
+extension KovaleeFramework.KovaleeManager {
+  public func removeUserFromBundle()
+  #if compiler(>=5.3) && $AsyncAwait
+  public func isUserInBundle(bundleId: Swift.String, appCode: Swift.String, email: Swift.String) async throws -> Swift.Bool
+  #endif
+}
 public enum FileReaderError : Swift.Error {
   case fileNotFound
   case fileEmpty
@@ -223,6 +229,7 @@ public struct Reader<T> where T : Swift.Decodable {
 public enum StorageKeys : Swift.String {
   case sdkVersion
   case isUserPremium
+  case isUserInBundle
   case appOpenedCount
   case appInstallationDate
   case userSubscription
@@ -400,6 +407,7 @@ public enum KovaleeError : Swift.Error {
   case firebaseNotInitialized
   case remoteValueAlreadyUsedForABTest
   case remoteValueFetchError
+  case userAlreadyInBundle
   public static func == (a: KovaleeFramework.KovaleeError, b: KovaleeFramework.KovaleeError) -> Swift.Bool
   public func hash(into hasher: inout Swift.Hasher)
   public var hashValue: Swift.Int {
