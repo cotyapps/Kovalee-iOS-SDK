@@ -2541,7 +2541,7 @@
           {
             "kind": "Function",
             "name": "isUserInBundle",
-            "printedName": "isUserInBundle(bundleId:appCode:email:)",
+            "printedName": "isUserInBundle(email:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -2554,23 +2554,11 @@
                 "name": "String",
                 "printedName": "Swift.String",
                 "usr": "s:SS"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
               }
             ],
             "declKind": "Func",
-            "usr": "s:16KovaleeFramework0A7ManagerC14isUserInBundle8bundleId7appCode5emailSbSS_S2StYaKF",
-            "mangledName": "$s16KovaleeFramework0A7ManagerC14isUserInBundle8bundleId7appCode5emailSbSS_S2StYaKF",
+            "usr": "s:16KovaleeFramework0A7ManagerC14isUserInBundle5emailSbSS_tYaKF",
+            "mangledName": "$s16KovaleeFramework0A7ManagerC14isUserInBundle5emailSbSS_tYaKF",
             "moduleName": "KovaleeFramework",
             "declAttributes": [
               "AccessControl"
@@ -14041,7 +14029,7 @@
     {
       "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 9226,
+      "offset": 9227,
       "length": 5,
       "value": "false"
     },

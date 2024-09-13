@@ -211,7 +211,7 @@ extension KovaleeFramework.Reader where T == KovaleeFramework.KovaleeKeys {
 extension KovaleeFramework.KovaleeManager {
   public func removeUserFromBundle()
   #if compiler(>=5.3) && $AsyncAwait
-  public func isUserInBundle(bundleId: Swift.String, appCode: Swift.String, email: Swift.String) async throws -> Swift.Bool
+  public func isUserInBundle(email: Swift.String) async throws -> Swift.Bool
   #endif
 }
 public enum FileReaderError : Swift.Error {
