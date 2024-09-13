@@ -7,6 +7,14 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 <<<<<<< HEAD
 =======
+## [1.10.7] - 2024-09-13
+### :sparkles: New Features
+- [`76b757c`](https://github.com/cotyapps/Kovalee-iOS-SDK/commit/76b757c3f4cc4190197bda36fcff2d34999eab54) - updated bundle-check function with new backend endpoint *(commit by [@fto-k](https://github.com/fto-k))*
+
+### :bug: Bug Fixes
+- [`dc25cc9`](https://github.com/cotyapps/Kovalee-iOS-SDK/commit/dc25cc9335369644642b8e964ed9a17c32034ec2) - solved PrivacyInfo declaration issue *(commit by [@fto-k](https://github.com/fto-k))*
+
+
 ## [1.10.5] - 2024-08-21
 ### :bug: Bug Fixes
 - [`d267cb8`](https://github.com/cotyapps/Kovalee-iOS-SDK/commit/d267cb8b4fde659f5bb98b67d1c95a9d0b13f374) - sdk now converts purchase events properties to durations for mature apps *(commit by [@fto-k](https://github.com/fto-k))*
@@ -577,3 +585,4 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 [1.10.3]: https://github.com/cotyapps/Kovalee-iOS-SDK/compare/1.10.2...1.10.3
 [1.10.4]: https://github.com/cotyapps/Kovalee-iOS-SDK/compare/1.10.3...1.10.4
 [1.10.5]: https://github.com/cotyapps/Kovalee-iOS-SDK/compare/1.10.4...1.10.5
+[1.10.7]: https://github.com/cotyapps/Kovalee-iOS-SDK/compare/1.10.6...1.10.7
