@@ -1,6 +1,7 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.10 (swiftlang-5.10.0.13 clang-1500.3.9.4)
+// swift-compiler-version: Apple Swift version 6.0 effective-5.10 (swiftlang-6.0.0.9.10 clang-1600.0.26.2)
 // swift-module-flags: -target arm64-apple-xros1.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name KovaleeFramework
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface
 import AppTrackingTransparency
 import Foundation
 @_exported import KovaleeFramework
@@ -52,37 +53,17 @@ extension KovaleeFramework.KovaleeManager {
   public func revenueCatUserId() -> Swift.String?
   public func setIsUserPremium(_ premium: Swift.Bool)
   public func setRevenueCatUserId(userId: Swift.String)
-  #if compiler(>=5.3) && $AsyncAwait
   public func setRevenueCatUserId(userId: Swift.String) async throws -> (any KovaleeFramework.AbstractCustomerInfo, created: Swift.Bool)?
-  #endif
   public func setRevenueCatEmail(email: Swift.String)
-  #if compiler(>=5.3) && $AsyncAwait
   public func logoutRevenueCatUser() async throws -> (any KovaleeFramework.AbstractCustomerInfo)?
-  #endif
-  #if compiler(>=5.3) && $AsyncAwait
   public func syncPurchase() async throws -> (any KovaleeFramework.AbstractCustomerInfo)?
-  #endif
-  #if compiler(>=5.3) && $AsyncAwait
   public func customerInfo() async throws -> (any KovaleeFramework.AbstractCustomerInfo)?
-  #endif
-  #if compiler(>=5.3) && $AsyncAwait
   public func fetchOfferings() async throws -> (any KovaleeFramework.AbstractOfferings)?
-  #endif
-  #if compiler(>=5.3) && $AsyncAwait
   public func fetchCurrentOffering() async throws -> (any KovaleeFramework.AbstractOffering)?
-  #endif
-  #if compiler(>=5.3) && $AsyncAwait
   public func restorePurchases(fromSource source: Swift.String) async throws -> (any KovaleeFramework.AbstractCustomerInfo)?
-  #endif
-  #if compiler(>=5.3) && $AsyncAwait
   public func purchaseSubscription(withIdentifier subscriptionId: Swift.String, andDuration _: Swift.Int, fromSource source: Swift.String) async throws -> (any KovaleeFramework.AbstractPurchaseResultData)?
-  #endif
-  #if compiler(>=5.3) && $AsyncAwait
   public func purchase(package: any KovaleeFramework.AbstractPackage, fromSource source: Swift.String) async throws -> (any KovaleeFramework.AbstractPurchaseResultData)?
-  #endif
-  #if compiler(>=5.3) && $AsyncAwait
   public func checkTrialOrIntroDiscountEligibility(productIdentifiers: [Swift.String]) async -> [Swift.String : Swift.Int]?
-  #endif
 }
 extension KovaleeFramework.KovaleeManager {
   public func startedPurchasing(subscriptionWithId productId: Swift.String, fromSource source: Swift.String)
@@ -98,30 +79,18 @@ extension KovaleeFramework.KovaleeManager {
 }
 extension KovaleeFramework.KovaleeManager {
   public func setDefaultValues(_ values: [Swift.String : Any])
-  #if compiler(>=5.3) && $AsyncAwait
   public func remoteValue(forKey key: Swift.String) async throws -> Foundation.Data
-  #endif
   public func localABTestValue() -> Swift.String?
-  #if compiler(>=5.3) && $AsyncAwait
   public func abTestValue(forKey key: Swift.String) async -> Swift.String?
-  #endif
   public func setAbTestValue(_ value: Swift.String)
   public func setFetchTimeout(_ timeout: Swift.Double)
 }
 extension KovaleeFramework.KovaleeManager {
   public func showMediationDebugger()
-  #if compiler(>=5.3) && $AsyncAwait
   public func loadInterstitialAd() async -> Swift.Bool?
-  #endif
-  #if compiler(>=5.3) && $AsyncAwait
   public func showInterstitialAd() async -> Swift.Bool?
-  #endif
-  #if compiler(>=5.3) && $AsyncAwait
   public func loadRewardedAd() async -> Swift.Bool?
-  #endif
-  #if compiler(>=5.3) && $AsyncAwait
   public func showRewardedAd() async -> (any KovaleeFramework.AbstractReward)?
-  #endif
 }
 public struct KLogger {
   public static var logLevel: KovaleeFramework.LogLevel
@@ -210,9 +179,7 @@ extension KovaleeFramework.Reader where T == KovaleeFramework.KovaleeKeys {
 }
 extension KovaleeFramework.KovaleeManager {
   public func removeUserFromBundle()
-  #if compiler(>=5.3) && $AsyncAwait
   public func isUserInBundle(email: Swift.String) async throws -> Swift.Bool
-  #endif
 }
 public enum FileReaderError : Swift.Error {
   case fileNotFound
@@ -304,51 +271,27 @@ public protocol EventTrackerManager {
 }
 public protocol RemoteConfigurationManager {
   func setFetchTimeout(_ timeout: Swift.Double)
-  #if compiler(>=5.3) && $AsyncAwait
   func fetchAndActivateRemoteConfig() async
-  #endif
   func setDefaultValues(_ values: [Swift.String : Any])
-  #if compiler(>=5.3) && $AsyncAwait
   func value(forKey key: Swift.String) async throws -> Foundation.Data
-  #endif
   func setDataCollectionEnabled(_ enabled: Swift.Bool)
 }
 public protocol PurchaseManager {
   func revenueCatUserId() -> Swift.String
   func setUserId(userId: Swift.String)
-  #if compiler(>=5.3) && $AsyncAwait
   func setUserId(userId: Swift.String) async throws -> (any KovaleeFramework.AbstractCustomerInfo, created: Swift.Bool)
-  #endif
   func setEmail(email: Swift.String)
-  #if compiler(>=5.3) && $AsyncAwait
   func logout() async throws -> any KovaleeFramework.AbstractCustomerInfo
-  #endif
   func setAttribution(adid: Swift.String)
   func setAmplitudeUserId(userId: Swift.String)
-  #if compiler(>=5.3) && $AsyncAwait
   func syncPurchase() async throws -> any KovaleeFramework.AbstractCustomerInfo
-  #endif
-  #if compiler(>=5.3) && $AsyncAwait
   func customerInfo() async throws -> any KovaleeFramework.AbstractCustomerInfo
-  #endif
-  #if compiler(>=5.3) && $AsyncAwait
   func fetchOfferings() async throws -> (any KovaleeFramework.AbstractOfferings)?
-  #endif
-  #if compiler(>=5.3) && $AsyncAwait
   func fetchCurrentOffering() async throws -> (any KovaleeFramework.AbstractOffering)?
-  #endif
-  #if compiler(>=5.3) && $AsyncAwait
   func restorePurchases() async throws -> any KovaleeFramework.AbstractCustomerInfo
-  #endif
-  #if compiler(>=5.3) && $AsyncAwait
   func purchase(package: any KovaleeFramework.AbstractPackage) async throws -> any KovaleeFramework.AbstractPurchaseResultData
-  #endif
-  #if compiler(>=5.3) && $AsyncAwait
   func purchaseProduct(withId productId: Swift.String) async throws -> any KovaleeFramework.AbstractPurchaseResultData
-  #endif
-  #if compiler(>=5.3) && $AsyncAwait
   func checkTrialOrIntroDiscountEligibility(productIdentifiers: [Swift.String]) async -> [Swift.String : Swift.Int]
-  #endif
   func setPurchaseDelegate(_ delegate: any KovaleeFramework.KovaleePurchasesDelegate)
 }
 public protocol KovaleePurchasesDelegate {
@@ -371,18 +314,10 @@ public protocol AbstractPackage {
 }
 public protocol AdsManager {
   func showMediationDebugger()
-  #if compiler(>=5.3) && $AsyncAwait
   func createInterstitialAd() async throws -> Swift.Bool
-  #endif
-  #if compiler(>=5.3) && $AsyncAwait
   func showInterstitialAd() async throws -> Swift.Bool
-  #endif
-  #if compiler(>=5.3) && $AsyncAwait
   func createRewardedAd() async throws -> Swift.Bool
-  #endif
-  #if compiler(>=5.3) && $AsyncAwait
   func showRewardedAd() async throws -> (any KovaleeFramework.AbstractReward)?
-  #endif
   func setDataCollectionEnabled(_ enabled: Swift.Bool)
 }
 public protocol AbstractReward {
