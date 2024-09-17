@@ -7,6 +7,14 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 <<<<<<< HEAD
 =======
+## [1.10.8] - 2024-09-17
+### :bug: Bug Fixes
+- [`77aac45`](https://github.com/cotyapps/Kovalee-iOS-SDK/commit/77aac4552840078b18880e6fad23cbc7f27dc997) - updated bundle input parameter *(commit by [@fto-k](https://github.com/fto-k))*
+
+### :wrench: Chores
+- [`cd46784`](https://github.com/cotyapps/Kovalee-iOS-SDK/commit/cd467841e6ec0178af4da25c7eec29e53f395231) - bumped podspec version *(commit by [@fto-k](https://github.com/fto-k))*
+
+
 ## [1.10.7] - 2024-09-13
 ### :sparkles: New Features
 - [`76b757c`](https://github.com/cotyapps/Kovalee-iOS-SDK/commit/76b757c3f4cc4190197bda36fcff2d34999eab54) - updated bundle-check function with new backend endpoint *(commit by [@fto-k](https://github.com/fto-k))*
@@ -586,3 +594,4 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 [1.10.4]: https://github.com/cotyapps/Kovalee-iOS-SDK/compare/1.10.3...1.10.4
 [1.10.5]: https://github.com/cotyapps/Kovalee-iOS-SDK/compare/1.10.4...1.10.5
 [1.10.7]: https://github.com/cotyapps/Kovalee-iOS-SDK/compare/1.10.6...1.10.7
+[1.10.8]: https://github.com/cotyapps/Kovalee-iOS-SDK/compare/1.10.7...1.10.8
