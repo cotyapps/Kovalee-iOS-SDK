@@ -388,6 +388,7 @@ public enum UserProperty {
   case appCode(value: Swift.String)
   case premium(value: Swift.String)
   case bundle(value: Swift.String)
+  case emailDomain(value: Swift.String)
   case adid(value: Swift.String)
   case abTestVersion(value: Swift.String)
   case sdkVersion(value: Swift.String)
