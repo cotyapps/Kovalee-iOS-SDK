@@ -7,6 +7,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 <<<<<<< HEAD
 =======
+## [1.10.9] - 2024-09-26
+### :sparkles: New Features
+- [`045d82c`](https://github.com/cotyapps/Kovalee-iOS-SDK/commit/045d82cd81ace6f4145ec4ef1b30635274756d06) - added email domain user property if user is part of a bundle *(commit by [@fto-k](https://github.com/fto-k))*
+
+
 ## [1.10.8] - 2024-09-17
 ### :bug: Bug Fixes
 - [`77aac45`](https://github.com/cotyapps/Kovalee-iOS-SDK/commit/77aac4552840078b18880e6fad23cbc7f27dc997) - updated bundle input parameter *(commit by [@fto-k](https://github.com/fto-k))*
@@ -595,3 +600,4 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 [1.10.5]: https://github.com/cotyapps/Kovalee-iOS-SDK/compare/1.10.4...1.10.5
 [1.10.7]: https://github.com/cotyapps/Kovalee-iOS-SDK/compare/1.10.6...1.10.7
 [1.10.8]: https://github.com/cotyapps/Kovalee-iOS-SDK/compare/1.10.7...1.10.8
+[1.10.9]: https://github.com/cotyapps/Kovalee-iOS-SDK/compare/1.10.8...1.10.9
