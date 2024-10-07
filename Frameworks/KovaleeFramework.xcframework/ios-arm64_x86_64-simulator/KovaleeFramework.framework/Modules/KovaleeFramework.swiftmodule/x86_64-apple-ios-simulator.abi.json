@@ -26,7 +26,7 @@
           {
             "kind": "Constructor",
             "name": "init",
-            "printedName": "init(withStorage:keys:sdkVersion:eventTrackerManager:alreadyIntegrated:)",
+            "printedName": "init(withStorage:keys:sdkVersion:eventTrackerManager:experimentalFeatureEnabled:alreadyIntegrated:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -64,11 +64,17 @@
                 "name": "Bool",
                 "printedName": "Swift.Bool",
                 "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
               }
             ],
             "declKind": "Constructor",
-            "usr": "s:16KovaleeFramework0A7ManagerC11withStorage4keys10sdkVersion012eventTrackerC017alreadyIntegratedAcA0E0V_AA0A4KeysVSSAA05EventjC0_pSbtcfc",
-            "mangledName": "$s16KovaleeFramework0A7ManagerC11withStorage4keys10sdkVersion012eventTrackerC017alreadyIntegratedAcA0E0V_AA0A4KeysVSSAA05EventjC0_pSbtcfc",
+            "usr": "s:16KovaleeFramework0A7ManagerC11withStorage4keys10sdkVersion012eventTrackerC026experimentalFeatureEnabled17alreadyIntegratedAcA0E0V_AA0A4KeysVSSAA05EventjC0_pS2btcfc",
+            "mangledName": "$s16KovaleeFramework0A7ManagerC11withStorage4keys10sdkVersion012eventTrackerC026experimentalFeatureEnabled17alreadyIntegratedAcA0E0V_AA0A4KeysVSSAA05EventjC0_pS2btcfc",
             "moduleName": "KovaleeFramework",
             "declAttributes": [
               "AccessControl"
@@ -11145,7 +11151,7 @@
           {
             "kind": "Constructor",
             "name": "init",
-            "printedName": "init(keys:locale:liteVersion:storage:)",
+            "printedName": "init(keys:locale:liteVersion:experimentalFeatureEnabled:storage:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -11181,6 +11187,12 @@
               },
               {
                 "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
                 "name": "Storage",
                 "printedName": "KovaleeFramework.Storage",
                 "hasDefaultArg": true,
@@ -11188,8 +11200,8 @@
               }
             ],
             "declKind": "Constructor",
-            "usr": "s:16KovaleeFramework22ConversionValueManagerV4keys6locale11liteVersion7storageAcA0A4KeysV_SSSgSbAA7StorageVtcfc",
-            "mangledName": "$s16KovaleeFramework22ConversionValueManagerV4keys6locale11liteVersion7storageAcA0A4KeysV_SSSgSbAA7StorageVtcfc",
+            "usr": "s:16KovaleeFramework22ConversionValueManagerV4keys6locale11liteVersion26experimentalFeatureEnabled7storageAcA0A4KeysV_SSSgS2bAA7StorageVtcfc",
+            "mangledName": "$s16KovaleeFramework22ConversionValueManagerV4keys6locale11liteVersion26experimentalFeatureEnabled7storageAcA0A4KeysV_SSSgS2bAA7StorageVtcfc",
             "moduleName": "KovaleeFramework",
             "declAttributes": [
               "AccessControl"
@@ -13527,6 +13539,48 @@
           },
           {
             "kind": "Var",
+            "name": "experimentalValue",
+            "printedName": "experimentalValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:16KovaleeFramework5EventV17experimentalValueSSvp",
+            "mangledName": "$s16KovaleeFramework5EventV17experimentalValueSSvp",
+            "moduleName": "KovaleeFramework",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:16KovaleeFramework5EventV17experimentalValueSSvg",
+                "mangledName": "$s16KovaleeFramework5EventV17experimentalValueSSvg",
+                "moduleName": "KovaleeFramework",
+                "isFromExtension": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
             "name": "serialization",
             "printedName": "serialization",
             "children": [
@@ -14747,7 +14801,7 @@
     {
       "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 9218,
+      "offset": 9304,
       "length": 5,
       "value": "false"
     },
@@ -14943,14 +14997,14 @@
     {
       "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/Event.swift",
       "kind": "StringLiteral",
-      "offset": 3445,
+      "offset": 3847,
       "length": 12,
       "value": "\"key_action\""
     },
     {
       "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/Event.swift",
       "kind": "StringLiteral",
-      "offset": 3483,
+      "offset": 3885,
       "length": 12,
       "value": "\"product_id\""
     },
@@ -14960,6 +15014,13 @@
       "offset": 122,
       "length": 1,
       "value": "5"
+    },
+    {
+      "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/EventsQueue.swift",
+      "kind": "BooleanLiteral",
+      "offset": 455,
+      "length": 5,
+      "value": "false"
     },
     {
       "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/EventsSequence.swift",

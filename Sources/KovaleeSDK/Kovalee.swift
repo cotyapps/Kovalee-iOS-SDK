@@ -74,6 +74,7 @@ public final class Kovalee {
                     keys: keys,
                     sdkVersion: SDK_VERSION,
                     eventTrackerManager: eventTracker,
+                    experimentalFeatureEnabled: configuration.enableExperimentalFeature,
                     alreadyIntegrated: configuration.alreadyIntegrated
                 )
 
