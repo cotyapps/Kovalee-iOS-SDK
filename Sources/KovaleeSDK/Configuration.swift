@@ -24,6 +24,7 @@ public struct Configuration {
     public var logLevel: LogLevel
     public var keysFileUrl: URL?
     public var alreadyIntegrated: Bool
+    public var enableExperimentalFeature: Bool
 
     /// Creates a configuration with environment, keys file name, and log level.
     ///
@@ -33,11 +34,13 @@ public struct Configuration {
     ///   - environment: The enviroment type
     ///   - keysFileName: The file name for the keys
     ///   - logLevel: The configuration log levels
+    ///   - experimentalFeatureEnabled: enable any new experimental feature
     public init(
         environment: Environment,
         keysFileName: String = KovaleeConstants.keysFileName,
         logLevel: LogLevel = .info,
-        alreadyIntegrated: Bool = false
+        alreadyIntegrated: Bool = false,
+        enableExperimentalFeature: Bool = false
     ) {
         self.environment = environment
         keysFileUrl = Bundle.main.url(
@@ -46,18 +49,21 @@ public struct Configuration {
         )
         self.logLevel = logLevel
         self.alreadyIntegrated = alreadyIntegrated
+        self.enableExperimentalFeature = enableExperimentalFeature
     }
 
     init(
         environment: Environment,
         fileUrl: URL?,
         logLevel: LogLevel = .info,
-        alreadyIntegrated: Bool = false
+        alreadyIntegrated: Bool = false,
+        enableExperimentalFeature: Bool = false
     ) {
         self.environment = environment
         keysFileUrl = fileUrl
         self.logLevel = logLevel
         self.alreadyIntegrated = alreadyIntegrated
+        self.enableExperimentalFeature = enableExperimentalFeature
     }
 }
 
