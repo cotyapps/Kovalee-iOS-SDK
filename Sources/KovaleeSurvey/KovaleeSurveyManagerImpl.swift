@@ -43,8 +43,12 @@ import KovaleeSDK
         }
 
         func setUserProperty(withName name: String, andValue value: String) {
-            let userTrait = UserTrait(withName: name, value: value)
-            survicate?.setUserTrait(userTrait)
+            survicate?.setUserTrait(UserTrait(withName: name, value: value))
+        }
+
+        func setUserProperties(_ properties: [String: String]) {
+            let traits = properties.map { UserTrait(withName: $0.key, value: $0.value) }
+            survicate?.setUserTraits(traits: traits)
         }
 
         func setAmplitudeUserId(userId: String) {

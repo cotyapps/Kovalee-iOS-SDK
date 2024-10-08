@@ -18,11 +18,11 @@
 		</data>
 		<key>Modules/KovaleeFramework.swiftmodule/arm64-apple-xros-simulator.abi.json</key>
 		<data>
-		Lp5Q8ZBIcdtQt4eYAcPAYs7CZzE=
+		aiGNQ2XVh8kinKZ+59v6PRKp+lI=
 		</data>
 		<key>Modules/KovaleeFramework.swiftmodule/arm64-apple-xros-simulator.private.swiftinterface</key>
 		<data>
-		7M/q/dM46CWTfC9z3286G0M2tIw=
+		aeoR22pG8mavML3bTvOPd4rKZ3c=
 		</data>
 		<key>Modules/KovaleeFramework.swiftmodule/arm64-apple-xros-simulator.swiftdoc</key>
 		<data>
@@ -30,19 +30,19 @@
 		</data>
 		<key>Modules/KovaleeFramework.swiftmodule/arm64-apple-xros-simulator.swiftinterface</key>
 		<data>
-		7M/q/dM46CWTfC9z3286G0M2tIw=
+		aeoR22pG8mavML3bTvOPd4rKZ3c=
 		</data>
 		<key>Modules/KovaleeFramework.swiftmodule/arm64-apple-xros-simulator.swiftmodule</key>
 		<data>
-		0u3SLE9RnoIse3jsQ7pTLuS0dNY=
+		cVNVDU1x3oTF6lSIdmtI/DbzUs8=
 		</data>
 		<key>Modules/KovaleeFramework.swiftmodule/x86_64-apple-xros-simulator.abi.json</key>
 		<data>
-		Lp5Q8ZBIcdtQt4eYAcPAYs7CZzE=
+		aiGNQ2XVh8kinKZ+59v6PRKp+lI=
 		</data>
 		<key>Modules/KovaleeFramework.swiftmodule/x86_64-apple-xros-simulator.private.swiftinterface</key>
 		<data>
-		Hol4qlZHAxHxIZZjuUIxcdUNDU8=
+		HCxpkB56OWPZBV5o1EI4NbFLAb8=
 		</data>
 		<key>Modules/KovaleeFramework.swiftmodule/x86_64-apple-xros-simulator.swiftdoc</key>
 		<data>
@@ -50,11 +50,11 @@
 		</data>
 		<key>Modules/KovaleeFramework.swiftmodule/x86_64-apple-xros-simulator.swiftinterface</key>
 		<data>
-		Hol4qlZHAxHxIZZjuUIxcdUNDU8=
+		HCxpkB56OWPZBV5o1EI4NbFLAb8=
 		</data>
 		<key>Modules/KovaleeFramework.swiftmodule/x86_64-apple-xros-simulator.swiftmodule</key>
 		<data>
-		bs579qI/P+8kKupZOdWelQduv9A=
+		KDuzgP3lI522it0hatvDaLn2c44=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -85,14 +85,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			RmvTXJOZnMljnhb7vZ+2HZVbMgb/XpHy4Pklzh5qwWc=
+			pmgAdWjTM1TbzykgR8YbTM5ehEdXWKQHl8dcQny/TN8=
 			</data>
 		</dict>
 		<key>Modules/KovaleeFramework.swiftmodule/arm64-apple-xros-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			KaEnKiBY1pVcJrMzmKaRC96hwvh9G3bjYc49aBGNqUo=
+			R94JI3YhAjItRFqCO5oBCPldoxLyF5F9U4r7UZcYnh4=
 			</data>
 		</dict>
 		<key>Modules/KovaleeFramework.swiftmodule/arm64-apple-xros-simulator.swiftdoc</key>
@@ -106,28 +106,28 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			KaEnKiBY1pVcJrMzmKaRC96hwvh9G3bjYc49aBGNqUo=
+			R94JI3YhAjItRFqCO5oBCPldoxLyF5F9U4r7UZcYnh4=
 			</data>
 		</dict>
 		<key>Modules/KovaleeFramework.swiftmodule/arm64-apple-xros-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			cSjnCf8vATrPEdRLt5Mgi5K2U6RswlY4Q5FKmq102RI=
+			3sSBD7KEprc7Ex+WZ6o5V+LbvmhuMJSdVw03/7EiESU=
 			</data>
 		</dict>
 		<key>Modules/KovaleeFramework.swiftmodule/x86_64-apple-xros-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			RmvTXJOZnMljnhb7vZ+2HZVbMgb/XpHy4Pklzh5qwWc=
+			pmgAdWjTM1TbzykgR8YbTM5ehEdXWKQHl8dcQny/TN8=
 			</data>
 		</dict>
 		<key>Modules/KovaleeFramework.swiftmodule/x86_64-apple-xros-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			JsZ94VESGWqWNCJg63U3ptc8zHQKZ/0Mc2QboQI2qQg=
+			STyxVqW2viW4J1u01MB3kJnaTTqcGOcQTZOQBY2f864=
 			</data>
 		</dict>
 		<key>Modules/KovaleeFramework.swiftmodule/x86_64-apple-xros-simulator.swiftdoc</key>
@@ -141,14 +141,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			JsZ94VESGWqWNCJg63U3ptc8zHQKZ/0Mc2QboQI2qQg=
+			STyxVqW2viW4J1u01MB3kJnaTTqcGOcQTZOQBY2f864=
 			</data>
 		</dict>
 		<key>Modules/KovaleeFramework.swiftmodule/x86_64-apple-xros-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Cok8BBtiVEGIipY6ClsXAU24Cg3jstTbzTfSWMFvJ6I=
+			v0IzqS/p/Xc98C8ikp2w46xtNBb3arLQc42Nqgm9GmM=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
