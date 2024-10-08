@@ -22,14 +22,14 @@ public extension Kovalee {
     ///
     /// - Returns: date of the app installation in current device
     static func appInstallationDate() -> Date? {
-        Self.shared.kovaleeManager?.installationDate()
+        shared.kovaleeManager?.installationDate()
     }
 
     /// Returns the number of times the app has been opened
     ///
     /// - Returns: number of times app has beeen opened
     static func appOpeningCount() -> Int {
-        Self.shared.kovaleeManager?.appOpeningCount() ?? 0
+        shared.kovaleeManager?.appOpeningCount() ?? 0
     }
 
     /// Disable any data collection for this specific user
@@ -38,14 +38,14 @@ public extension Kovalee {
     ///    - enabled: a boolean stating if data about the user should be collected
     static func setDataCollectionEnabled(_ enabled: Bool) {
         KLogger.debug("Opt \(enabled ? "in" : "out") user from collecting data")
-        Self.shared.kovaleeManager?.setDataCollectionEnabled(enabled)
+        shared.kovaleeManager?.setDataCollectionEnabled(enabled)
     }
 
     /// Returns a boolean stating if the data about the current user is currently collected
     ///
     /// - Returns: a boolean stating if data about the user is currently collected
     static func isDataCollectionEnabled() -> Bool {
-        Self.shared.kovaleeManager?.isDataCollectionEnabled() ?? true
+        shared.kovaleeManager?.isDataCollectionEnabled() ?? true
     }
 
     /// Send an ``Event``
@@ -63,7 +63,7 @@ public extension Kovalee {
     /// - Parameters:
     ///    - event: the event that is going to be sent
     static func sendEvent(_ event: Event) {
-        Self.shared.kovaleeManager?.sendEvent(event)
+        shared.kovaleeManager?.sendEvent(event)
     }
 
     /// Send an ``Event``
@@ -85,7 +85,7 @@ public extension Kovalee {
         withName name: String,
         andProperties properties: [String: Any]? = nil
     ) {
-        Self.shared.kovaleeManager?.sendEvent(Event(name: name, properties: properties))
+        shared.kovaleeManager?.sendEvent(Event(name: name, properties: properties))
     }
 
     /// Set a specific userId for Amplitude
@@ -95,7 +95,7 @@ public extension Kovalee {
     /// - Parameters:
     ///    - userId: a string representing the userId to be set
     static func setAmplitudeUserId(userId: String) {
-        Self.shared.kovaleeManager?.setAmplitudeUserId(userId: userId)
+        shared.kovaleeManager?.setAmplitudeUserId(userId: userId)
     }
 
     /// Associate a new property to the current user.
@@ -104,7 +104,15 @@ public extension Kovalee {
     ///    - key: key to recognise the property
     ///    - value: value of the user property
     static func setUserProperty(key: String, value: String) {
-        Self.shared.kovaleeManager?.setUserProperty(key: key, value: value)
+        shared.kovaleeManager?.setUserProperty(key: key, value: value)
+    }
+
+    /// Associate a dictionary of properties to the current user.
+    ///
+    /// - Parameters:
+    ///    - properties: key-value dictionary of user properties
+    static func setUserProperties(_ properties: [String: String]) {
+        shared.kovaleeManager?.setUserProperties(properties)
     }
 
     /// Send a ``BasicEvent``
@@ -117,7 +125,7 @@ public extension Kovalee {
     /// - Parameters:
     ///    - event: the event that is going to be sent
     static func sendEvent(event: BasicEvent) {
-        Self.sendEvent(Event(name: event.name, properties: event.properties))
+        sendEvent(Event(name: event.name, properties: event.properties))
     }
 
     /// Send a ``TaggingPlanLiteEvent``
@@ -130,21 +138,21 @@ public extension Kovalee {
     /// - Parameters:
     ///    - event: the event that is going to be sent
     static func sendEvent(event: TaggingPlanLiteEvent) {
-        Self.sendEvent(Event(name: event.name, properties: event.properties))
+        sendEvent(Event(name: event.name, properties: event.properties))
     }
 
     /// Retrieve the userId set in amplitude
     ///
     /// - Returns: the user id set in amplitude
     static func getAmplitudeUserId() -> String? {
-        Self.shared.kovaleeManager?.amplitudeUserId()
+        shared.kovaleeManager?.amplitudeUserId()
     }
 
     /// Retrieve the deviceId set in amplitude
     ///
     /// - Returns: the device id set in amplitude
     static func getAmplitudeDeviceId() -> String? {
-        Self.shared.kovaleeManager?.amplitudeDeviceId()
+        shared.kovaleeManager?.amplitudeDeviceId()
     }
 }
 
@@ -211,7 +219,7 @@ public extension Kovalee {
         subscriptionWithDuration _: Duration,
         fromSource source: String
     ) {
-        Self.startedPurchasing(subscriptionWithProductId: "", fromSource: source)
+        startedPurchasing(subscriptionWithProductId: "", fromSource: source)
     }
 
     /// Use this method straight before starting a purchase
@@ -224,7 +232,7 @@ public extension Kovalee {
         subscriptionWithProductId productId: String,
         fromSource source: String
     ) {
-        Self.shared.kovaleeManager?.startedPurchasing(subscriptionWithId: productId, fromSource: source)
+        shared.kovaleeManager?.startedPurchasing(subscriptionWithId: productId, fromSource: source)
     }
 
     /// Use this method straight after a purchase has been successfully executed
@@ -238,7 +246,7 @@ public extension Kovalee {
         andDuration _: Duration,
         fromSource source: String
     ) {
-        Self.shared.kovaleeManager?.succesfullyPurchased(
+        shared.kovaleeManager?.succesfullyPurchased(
             subscriptionWithProductId: productId,
             fromSource: source
         )
@@ -249,7 +257,7 @@ public extension Kovalee {
     /// - Parameters:
     ///    - source: from where is the user making the purchase
     static func paymentCancelledForSubscription(fromSource source: String) {
-        Self.shared.kovaleeManager?.paymentCancelledForSubscription(fromSource: source)
+        shared.kovaleeManager?.paymentCancelledForSubscription(fromSource: source)
     }
 
     /// Use this method to tell the SDK a subscription payment has failed
@@ -262,7 +270,7 @@ public extension Kovalee {
         forSubscriptionWithDuration _: Duration,
         fromSource source: String
     ) {
-        Self.paymentFailed(forSubscriptionWithId: "", fromSource: source)
+        paymentFailed(forSubscriptionWithId: "", fromSource: source)
     }
 
     /// Use this method to tell the SDK a subscription payment has failed
@@ -275,7 +283,7 @@ public extension Kovalee {
         forSubscriptionWithId productId: String,
         fromSource source: String
     ) {
-        Self.shared.kovaleeManager?.paymentFailed(
+        shared.kovaleeManager?.paymentFailed(
             forSubscriptionWithId: productId,
             fromSource: source
         )
@@ -286,7 +294,7 @@ public extension Kovalee {
     /// - Parameters:
     ///    - source: from where is the user making the purchase
     static func paymentRestoredFailed(fromSource source: String) {
-        Self.shared.kovaleeManager?.paymentRestoredFailed(fromSource: source)
+        shared.kovaleeManager?.paymentRestoredFailed(fromSource: source)
     }
 
     /// Use this method to tell the SDK a payment has startered restoring
@@ -294,7 +302,7 @@ public extension Kovalee {
     /// - Parameters:
     ///    - source: from where is the user making the purchase
     static func paymentRestoreStart(fromSource source: String) {
-        Self.shared.kovaleeManager?.paymentRestoredStart(fromSource: source)
+        shared.kovaleeManager?.paymentRestoredStart(fromSource: source)
     }
 
     /// Use this method to tell the SDK a payment has been restore successfully
@@ -302,7 +310,7 @@ public extension Kovalee {
     /// - Parameters:
     ///    - source: from where is the user making the purchase
     static func paymentRestored(fromSource source: String) {
-        Self.shared.kovaleeManager?.paymentRestored(fromSource: source)
+        shared.kovaleeManager?.paymentRestored(fromSource: source)
     }
 
     /// Use this method to tell the SDK that the current user is or is not premum
@@ -310,7 +318,7 @@ public extension Kovalee {
     /// - Parameters:
     ///    - premium: is the user premium
     static func setIsUserPremium(_ premium: Bool) {
-        Self.shared.kovaleeManager?.setIsUserPremium(premium)
+        shared.kovaleeManager?.setIsUserPremium(premium)
     }
 }
 
