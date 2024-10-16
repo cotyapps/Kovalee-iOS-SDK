@@ -296,8 +296,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:16KovaleeFramework0A7ManagerC18getAttributionAdidSSSgyF",
-            "mangledName": "$s16KovaleeFramework0A7ManagerC18getAttributionAdidSSSgyF",
+            "usr": "s:16KovaleeFramework0A7ManagerC18getAttributionAdidSSSgyYaF",
+            "mangledName": "$s16KovaleeFramework0A7ManagerC18getAttributionAdidSSSgyYaF",
             "moduleName": "KovaleeFramework",
             "declAttributes": [
               "AccessControl"
@@ -8527,8 +8527,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:16KovaleeFramework18AttributionManagerP03getC4AdidSSSgyF",
-            "mangledName": "$s16KovaleeFramework18AttributionManagerP03getC4AdidSSSgyF",
+            "usr": "s:16KovaleeFramework18AttributionManagerP03getC4AdidSSSgyYaF",
+            "mangledName": "$s16KovaleeFramework18AttributionManagerP03getC4AdidSSSgyYaF",
             "moduleName": "KovaleeFramework",
             "genericSig": "<τ_0_0 where τ_0_0 : KovaleeFramework.AttributionManager>",
             "sugared_genericSig": "<Self where Self : KovaleeFramework.AttributionManager>",
@@ -8568,33 +8568,6 @@
             "declKind": "Func",
             "usr": "s:16KovaleeFramework18AttributionManagerP27promptTrackingAuthorization10completionyySo010ATTrackingdG6StatusVc_tF",
             "mangledName": "$s16KovaleeFramework18AttributionManagerP27promptTrackingAuthorization10completionyySo010ATTrackingdG6StatusVc_tF",
-            "moduleName": "KovaleeFramework",
-            "genericSig": "<τ_0_0 where τ_0_0 : KovaleeFramework.AttributionManager>",
-            "sugared_genericSig": "<Self where Self : KovaleeFramework.AttributionManager>",
-            "protocolReq": true,
-            "reqNewWitnessTableEntry": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "sendConversionValue_SKA3",
-            "printedName": "sendConversionValue_SKA3(value:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Int",
-                "printedName": "Swift.Int",
-                "usr": "s:Si"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:16KovaleeFramework18AttributionManagerP24sendConversionValue_SKA35valueySi_tF",
-            "mangledName": "$s16KovaleeFramework18AttributionManagerP24sendConversionValue_SKA35valueySi_tF",
             "moduleName": "KovaleeFramework",
             "genericSig": "<τ_0_0 where τ_0_0 : KovaleeFramework.AttributionManager>",
             "sugared_genericSig": "<Self where Self : KovaleeFramework.AttributionManager>",
@@ -14951,7 +14924,7 @@
     {
       "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 9491,
+      "offset": 9209,
       "length": 5,
       "value": "false"
     },
