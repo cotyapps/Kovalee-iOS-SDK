@@ -7,6 +7,18 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 <<<<<<< HEAD
 =======
+## [1.12.0] - 2024-10-17
+### :sparkles: New Features
+- [`80e380b`](https://github.com/cotyapps/Kovalee-iOS-SDK/commit/80e380be9db0fd36bec278b8a8ba6a6ea2229bc4) - added new function to set a dictionary of user properties *(commit by [@fto-k](https://github.com/fto-k))*
+- [`1c2e429`](https://github.com/cotyapps/Kovalee-iOS-SDK/commit/1c2e429764cf5455af559106f845cfb1002ef8be) - updated Attribution functions to comply with Adjust v5 *(commit by [@fto-k](https://github.com/fto-k))*
+
+### :bug: Bug Fixes
+- [`a297ee3`](https://github.com/cotyapps/Kovalee-iOS-SDK/commit/a297ee3b1946739fa64284d46765368376c312a1) - fixed DebugView adid retrieval *(commit by [@fto-k](https://github.com/fto-k))*
+
+### :wrench: Chores
+- [`4017193`](https://github.com/cotyapps/Kovalee-iOS-SDK/commit/40171937e5d059bed547d4b8093c5eda5ff1982a) - cleaned up functions declaration *(commit by [@fto-k](https://github.com/fto-k))*
+
+
 ## [1.11.0] - 2024-10-07
 ### :sparkles: New Features
 - [`ac939ec`](https://github.com/cotyapps/Kovalee-iOS-SDK/commit/ac939ecb7a03f830f2559bdb2421bf925b34c65f) - new experimental feature flag *(commit by [@fto-k](https://github.com/fto-k))*
@@ -607,3 +619,4 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 [1.10.8]: https://github.com/cotyapps/Kovalee-iOS-SDK/compare/1.10.7...1.10.8
 [1.10.9]: https://github.com/cotyapps/Kovalee-iOS-SDK/compare/1.10.8...1.10.9
 [1.11.0]: https://github.com/cotyapps/Kovalee-iOS-SDK/compare/1.10.9...1.11.0
+[1.12.0]: https://github.com/cotyapps/Kovalee-iOS-SDK/compare/1.11.1...1.12.0
