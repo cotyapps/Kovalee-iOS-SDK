@@ -40,6 +40,7 @@ public struct DebugView: View {
 
     @State private var isDebugModeOn = false
     @State private var abTestValue: String?
+    @State private var adid: String?
     @State private var basicInfoExpanded: Bool = false
 
     public init() {}
@@ -87,6 +88,7 @@ public struct DebugView: View {
             }
             .task {
                 self.abTestValue = await Kovalee.shared.kovaleeManager?.abTestValue(forKey: "ab_test_version")
+                self.adid = await Kovalee.shared.kovaleeManager?.getAttributionAdid()
             }
             .navigationTitle("SDK Debug Console")
             .navigationBarTitleDisplayMode(.inline)
@@ -145,7 +147,7 @@ extension DebugView {
                 horizontal: false
             )
         }
-        if let adid = Kovalee.shared.kovaleeManager?.getAttributionAdid() {
+        if let adid {
             InfoLabel(title: "User ADID:", value: adid, horizontal: false)
         }
     }

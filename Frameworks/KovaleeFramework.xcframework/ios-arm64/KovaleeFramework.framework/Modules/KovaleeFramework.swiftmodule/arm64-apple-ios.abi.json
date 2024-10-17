@@ -296,8 +296,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:16KovaleeFramework0A7ManagerC18getAttributionAdidSSSgyF",
-            "mangledName": "$s16KovaleeFramework0A7ManagerC18getAttributionAdidSSSgyF",
+            "usr": "s:16KovaleeFramework0A7ManagerC18getAttributionAdidSSSgyYaF",
+            "mangledName": "$s16KovaleeFramework0A7ManagerC18getAttributionAdidSSSgyYaF",
             "moduleName": "KovaleeFramework",
             "declAttributes": [
               "AccessControl"
@@ -615,6 +615,46 @@
             "declKind": "Func",
             "usr": "s:16KovaleeFramework0A7ManagerC15setUserProperty3key5valueySS_SStF",
             "mangledName": "$s16KovaleeFramework0A7ManagerC15setUserProperty3key5valueySS_SStF",
+            "moduleName": "KovaleeFramework",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "setUserProperties",
+            "printedName": "setUserProperties(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Dictionary",
+                "printedName": "[Swift.String : Swift.String]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:SD"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:16KovaleeFramework0A7ManagerC17setUserPropertiesyySDyS2SGF",
+            "mangledName": "$s16KovaleeFramework0A7ManagerC17setUserPropertiesyySDyS2SGF",
             "moduleName": "KovaleeFramework",
             "declAttributes": [
               "AccessControl"
@@ -1533,6 +1573,182 @@
           },
           {
             "kind": "Function",
+            "name": "showMediationDebugger",
+            "printedName": "showMediationDebugger()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:16KovaleeFramework0A7ManagerC21showMediationDebuggeryyF",
+            "mangledName": "$s16KovaleeFramework0A7ManagerC21showMediationDebuggeryyF",
+            "moduleName": "KovaleeFramework",
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "loadInterstitialAd",
+            "printedName": "loadInterstitialAd()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Bool?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:16KovaleeFramework0A7ManagerC18loadInterstitialAdSbSgyYaF",
+            "mangledName": "$s16KovaleeFramework0A7ManagerC18loadInterstitialAdSbSgyYaF",
+            "moduleName": "KovaleeFramework",
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "showInterstitialAd",
+            "printedName": "showInterstitialAd()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Bool?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:16KovaleeFramework0A7ManagerC18showInterstitialAdSbSgyYaF",
+            "mangledName": "$s16KovaleeFramework0A7ManagerC18showInterstitialAdSbSgyYaF",
+            "moduleName": "KovaleeFramework",
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "loadRewardedAd",
+            "printedName": "loadRewardedAd()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Bool?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:16KovaleeFramework0A7ManagerC14loadRewardedAdSbSgyYaF",
+            "mangledName": "$s16KovaleeFramework0A7ManagerC14loadRewardedAdSbSgyYaF",
+            "moduleName": "KovaleeFramework",
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "showRewardedAd",
+            "printedName": "showRewardedAd()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "(any KovaleeFramework.AbstractReward)?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AbstractReward",
+                    "printedName": "any KovaleeFramework.AbstractReward",
+                    "usr": "s:16KovaleeFramework14AbstractRewardP"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:16KovaleeFramework0A7ManagerC14showRewardedAdAA14AbstractReward_pSgyYaF",
+            "mangledName": "$s16KovaleeFramework0A7ManagerC14showRewardedAdAA14AbstractReward_pSgyYaF",
+            "moduleName": "KovaleeFramework",
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "removeUserFromBundle",
+            "printedName": "removeUserFromBundle()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:16KovaleeFramework0A7ManagerC20removeUserFromBundleyyF",
+            "mangledName": "$s16KovaleeFramework0A7ManagerC20removeUserFromBundleyyF",
+            "moduleName": "KovaleeFramework",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "isUserInBundle",
+            "printedName": "isUserInBundle(email:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:16KovaleeFramework0A7ManagerC14isUserInBundle5emailSbSS_tYaKF",
+            "mangledName": "$s16KovaleeFramework0A7ManagerC14isUserInBundle5emailSbSS_tYaKF",
+            "moduleName": "KovaleeFramework",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
             "name": "setPurchaseDelegate",
             "printedName": "setPurchaseDelegate(_:)",
             "children": [
@@ -2396,182 +2612,6 @@
             "moduleName": "KovaleeFramework",
             "isFromExtension": true,
             "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "showMediationDebugger",
-            "printedName": "showMediationDebugger()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:16KovaleeFramework0A7ManagerC21showMediationDebuggeryyF",
-            "mangledName": "$s16KovaleeFramework0A7ManagerC21showMediationDebuggeryyF",
-            "moduleName": "KovaleeFramework",
-            "isFromExtension": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "loadInterstitialAd",
-            "printedName": "loadInterstitialAd()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "Swift.Bool?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Bool",
-                    "printedName": "Swift.Bool",
-                    "usr": "s:Sb"
-                  }
-                ],
-                "usr": "s:Sq"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:16KovaleeFramework0A7ManagerC18loadInterstitialAdSbSgyYaF",
-            "mangledName": "$s16KovaleeFramework0A7ManagerC18loadInterstitialAdSbSgyYaF",
-            "moduleName": "KovaleeFramework",
-            "isFromExtension": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "showInterstitialAd",
-            "printedName": "showInterstitialAd()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "Swift.Bool?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Bool",
-                    "printedName": "Swift.Bool",
-                    "usr": "s:Sb"
-                  }
-                ],
-                "usr": "s:Sq"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:16KovaleeFramework0A7ManagerC18showInterstitialAdSbSgyYaF",
-            "mangledName": "$s16KovaleeFramework0A7ManagerC18showInterstitialAdSbSgyYaF",
-            "moduleName": "KovaleeFramework",
-            "isFromExtension": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "loadRewardedAd",
-            "printedName": "loadRewardedAd()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "Swift.Bool?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Bool",
-                    "printedName": "Swift.Bool",
-                    "usr": "s:Sb"
-                  }
-                ],
-                "usr": "s:Sq"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:16KovaleeFramework0A7ManagerC14loadRewardedAdSbSgyYaF",
-            "mangledName": "$s16KovaleeFramework0A7ManagerC14loadRewardedAdSbSgyYaF",
-            "moduleName": "KovaleeFramework",
-            "isFromExtension": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "showRewardedAd",
-            "printedName": "showRewardedAd()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "(any KovaleeFramework.AbstractReward)?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "AbstractReward",
-                    "printedName": "any KovaleeFramework.AbstractReward",
-                    "usr": "s:16KovaleeFramework14AbstractRewardP"
-                  }
-                ],
-                "usr": "s:Sq"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:16KovaleeFramework0A7ManagerC14showRewardedAdAA14AbstractReward_pSgyYaF",
-            "mangledName": "$s16KovaleeFramework0A7ManagerC14showRewardedAdAA14AbstractReward_pSgyYaF",
-            "moduleName": "KovaleeFramework",
-            "isFromExtension": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "removeUserFromBundle",
-            "printedName": "removeUserFromBundle()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:16KovaleeFramework0A7ManagerC20removeUserFromBundleyyF",
-            "mangledName": "$s16KovaleeFramework0A7ManagerC20removeUserFromBundleyyF",
-            "moduleName": "KovaleeFramework",
-            "declAttributes": [
-              "AccessControl"
-            ],
-            "isFromExtension": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "isUserInBundle",
-            "printedName": "isUserInBundle(email:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Bool",
-                "printedName": "Swift.Bool",
-                "usr": "s:Sb"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:16KovaleeFramework0A7ManagerC14isUserInBundle5emailSbSS_tYaKF",
-            "mangledName": "$s16KovaleeFramework0A7ManagerC14isUserInBundle5emailSbSS_tYaKF",
-            "moduleName": "KovaleeFramework",
-            "declAttributes": [
-              "AccessControl"
-            ],
-            "isFromExtension": true,
-            "throwing": true,
-            "funcSelfKind": "NonMutating"
           }
         ],
         "declKind": "Class",
@@ -2976,6 +3016,13 @@
             "mangledName": "$ss9EscapableP"
           }
         ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "KovaleeFramework"
       },
       {
         "kind": "Import",
@@ -8480,8 +8527,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:16KovaleeFramework18AttributionManagerP03getC4AdidSSSgyF",
-            "mangledName": "$s16KovaleeFramework18AttributionManagerP03getC4AdidSSSgyF",
+            "usr": "s:16KovaleeFramework18AttributionManagerP03getC4AdidSSSgyYaF",
+            "mangledName": "$s16KovaleeFramework18AttributionManagerP03getC4AdidSSSgyYaF",
             "moduleName": "KovaleeFramework",
             "genericSig": "<τ_0_0 where τ_0_0 : KovaleeFramework.AttributionManager>",
             "sugared_genericSig": "<Self where Self : KovaleeFramework.AttributionManager>",
@@ -8530,35 +8577,8 @@
           },
           {
             "kind": "Function",
-            "name": "sendConversionValue_SKA3",
-            "printedName": "sendConversionValue_SKA3(value:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Int",
-                "printedName": "Swift.Int",
-                "usr": "s:Si"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:16KovaleeFramework18AttributionManagerP24sendConversionValue_SKA35valueySi_tF",
-            "mangledName": "$s16KovaleeFramework18AttributionManagerP24sendConversionValue_SKA35valueySi_tF",
-            "moduleName": "KovaleeFramework",
-            "genericSig": "<τ_0_0 where τ_0_0 : KovaleeFramework.AttributionManager>",
-            "sugared_genericSig": "<Self where Self : KovaleeFramework.AttributionManager>",
-            "protocolReq": true,
-            "reqNewWitnessTableEntry": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "sendConversionValue_SKA4",
-            "printedName": "sendConversionValue_SKA4(value:coarseValue:completion:)",
+            "name": "sendConversionValue",
+            "printedName": "sendConversionValue(value:coarseValue:completion:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -8605,8 +8625,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:16KovaleeFramework18AttributionManagerP24sendConversionValue_SKA45value06coarseG010completionySi_SSys5Error_pSgctF",
-            "mangledName": "$s16KovaleeFramework18AttributionManagerP24sendConversionValue_SKA45value06coarseG010completionySi_SSys5Error_pSgctF",
+            "usr": "s:16KovaleeFramework18AttributionManagerP19sendConversionValue5value06coarseG010completionySi_SSys5Error_pSgctF",
+            "mangledName": "$s16KovaleeFramework18AttributionManagerP19sendConversionValue5value06coarseG010completionySi_SSys5Error_pSgctF",
             "moduleName": "KovaleeFramework",
             "genericSig": "<τ_0_0 where τ_0_0 : KovaleeFramework.AttributionManager>",
             "sugared_genericSig": "<Self where Self : KovaleeFramework.AttributionManager>",
@@ -8929,6 +8949,47 @@
             "declKind": "Func",
             "usr": "s:16KovaleeFramework19EventTrackerManagerP15setUserProperty8propertyyAA0gH0O_tF",
             "mangledName": "$s16KovaleeFramework19EventTrackerManagerP15setUserProperty8propertyyAA0gH0O_tF",
+            "moduleName": "KovaleeFramework",
+            "genericSig": "<τ_0_0 where τ_0_0 : KovaleeFramework.EventTrackerManager>",
+            "sugared_genericSig": "<Self where Self : KovaleeFramework.EventTrackerManager>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "setUserProperties",
+            "printedName": "setUserProperties(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Dictionary",
+                "printedName": "[Swift.String : Swift.String]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:SD"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:16KovaleeFramework19EventTrackerManagerP17setUserPropertiesyySDyS2SGF",
+            "mangledName": "$s16KovaleeFramework19EventTrackerManagerP17setUserPropertiesyySDyS2SGF",
             "moduleName": "KovaleeFramework",
             "genericSig": "<τ_0_0 where τ_0_0 : KovaleeFramework.EventTrackerManager>",
             "sugared_genericSig": "<Self where Self : KovaleeFramework.EventTrackerManager>",
@@ -10678,6 +10739,47 @@
           },
           {
             "kind": "Function",
+            "name": "setUserProperties",
+            "printedName": "setUserProperties(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Dictionary",
+                "printedName": "[Swift.String : Swift.String]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:SD"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:16KovaleeFramework13SurveyManagerP17setUserPropertiesyySDyS2SGF",
+            "mangledName": "$s16KovaleeFramework13SurveyManagerP17setUserPropertiesyySDyS2SGF",
+            "moduleName": "KovaleeFramework",
+            "genericSig": "<τ_0_0 where τ_0_0 : KovaleeFramework.SurveyManager>",
+            "sugared_genericSig": "<Self where Self : KovaleeFramework.SurveyManager>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
             "name": "setAmplitudeUserId",
             "printedName": "setAmplitudeUserId(userId:)",
             "children": [
@@ -11288,6 +11390,27 @@
             "mangledName": "$ss9EscapableP"
           }
         ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "KovaleeFramework"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "KovaleeFramework"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "KovaleeFramework"
       },
       {
         "kind": "Import",
@@ -14801,7 +14924,7 @@
     {
       "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 9304,
+      "offset": 9204,
       "length": 5,
       "value": "false"
     },
@@ -14997,28 +15120,28 @@
     {
       "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/Event.swift",
       "kind": "StringLiteral",
-      "offset": 3847,
+      "offset": 3988,
       "length": 12,
       "value": "\"key_action\""
     },
     {
       "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/Event.swift",
       "kind": "StringLiteral",
-      "offset": 3885,
+      "offset": 4026,
       "length": 12,
       "value": "\"product_id\""
     },
     {
       "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/EventsQueue.swift",
       "kind": "IntegerLiteral",
-      "offset": 122,
+      "offset": 125,
       "length": 1,
       "value": "5"
     },
     {
       "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/EventsQueue.swift",
       "kind": "BooleanLiteral",
-      "offset": 455,
+      "offset": 475,
       "length": 5,
       "value": "false"
     },
