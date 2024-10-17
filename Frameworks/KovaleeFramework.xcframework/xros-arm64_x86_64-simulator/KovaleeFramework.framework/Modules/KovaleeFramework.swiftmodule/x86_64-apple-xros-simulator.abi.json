@@ -8577,8 +8577,8 @@
           },
           {
             "kind": "Function",
-            "name": "sendConversionValue_SKA4",
-            "printedName": "sendConversionValue_SKA4(value:coarseValue:completion:)",
+            "name": "sendConversionValue",
+            "printedName": "sendConversionValue(value:coarseValue:completion:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -8625,8 +8625,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:16KovaleeFramework18AttributionManagerP24sendConversionValue_SKA45value06coarseG010completionySi_SSys5Error_pSgctF",
-            "mangledName": "$s16KovaleeFramework18AttributionManagerP24sendConversionValue_SKA45value06coarseG010completionySi_SSys5Error_pSgctF",
+            "usr": "s:16KovaleeFramework18AttributionManagerP19sendConversionValue5value06coarseG010completionySi_SSys5Error_pSgctF",
+            "mangledName": "$s16KovaleeFramework18AttributionManagerP19sendConversionValue5value06coarseG010completionySi_SSys5Error_pSgctF",
             "moduleName": "KovaleeFramework",
             "genericSig": "<τ_0_0 where τ_0_0 : KovaleeFramework.AttributionManager>",
             "sugared_genericSig": "<Self where Self : KovaleeFramework.AttributionManager>",
@@ -14924,7 +14924,7 @@
     {
       "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 9209,
+      "offset": 9204,
       "length": 5,
       "value": "false"
     },
