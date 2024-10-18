@@ -265,7 +265,7 @@ public protocol AbstractCustomerInfo {
   var activeSubscriptions: Swift.Set<Swift.String> { get }
   var entitlements: any KovaleeFramework.AbstractEntitlementInfos { get }
 }
-public protocol AbstractEntitlementInfos {
+public protocol AbstractEntitlementInfos : Swift.Encodable {
   var active: [Swift.String : any KovaleeFramework.AbstractEntitlementInfo] { get }
 }
 public protocol AbstractEntitlementInfo {
