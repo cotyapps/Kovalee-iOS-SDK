@@ -49,7 +49,7 @@ platform :ios do
     survey_podspec = "KovaleeSurvey.podspec"
     swift_file_path = "./Sources/KovaleeSDK/Kovalee.swift"
 
-    # pod_lib_lint(podspec: sdk_podspec)
+    pod_lib_lint(podspec: sdk_podspec)
     version = version_bump_podspec(
       path: sdk_podspec,
       bump_type: type
@@ -58,7 +58,7 @@ platform :ios do
     update_version_in_swift(version)
     handle_git(version, [sdk_podspec, swift_file_path])
 
-    # pod_push(path: sdk_podspec)
+    pod_push(path: sdk_podspec)
   end
 end
 
