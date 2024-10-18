@@ -263,6 +263,7 @@ public protocol KovaleePurchasesDelegate {
 }
 public protocol AbstractCustomerInfo {
   var activeSubscriptions: Swift.Set<Swift.String> { get }
+  var activeEntitlements: Swift.Bool { get }
 }
 public protocol AbstractOfferings {
 }
