@@ -7,6 +7,15 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 <<<<<<< HEAD
 =======
+## [1.12.3] - 2024-10-18
+### :bug: Bug Fixes
+- [`ccc03fa`](https://github.com/cotyapps/Kovalee-iOS-SDK/commit/ccc03fa5cdee79772ff94429383f0a06b59b9847) - setting user as premium when puchased lifetime offer *(commit by [@fto-k](https://github.com/fto-k))*
+- [`b726fcd`](https://github.com/cotyapps/Kovalee-iOS-SDK/commit/b726fcdaa6c619f2d68123066b2244a1d82a0fa7) - lifetime purchase update *(commit by [@fto-k](https://github.com/fto-k))*
+
+### :wrench: Chores
+- [`92c5b8f`](https://github.com/cotyapps/Kovalee-iOS-SDK/commit/92c5b8f643898e4f198e0effbc3f6a2e37f81d7a) - commented out pod in fastlane *(commit by [@fto-k](https://github.com/fto-k))*
+
+
 ## [1.12.1] - 2024-10-18
 ### :bug: Bug Fixes
 - [`fad59af`](https://github.com/cotyapps/Kovalee-iOS-SDK/commit/fad59aff876da808f538a12011e4b4d9cca36359) - lifetime users are not set as premium *(commit by [@fto-k](https://github.com/fto-k))*
@@ -632,3 +641,4 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 [1.11.0]: https://github.com/cotyapps/Kovalee-iOS-SDK/compare/1.10.9...1.11.0
 [1.12.0]: https://github.com/cotyapps/Kovalee-iOS-SDK/compare/1.11.1...1.12.0
 [1.12.1]: https://github.com/cotyapps/Kovalee-iOS-SDK/compare/1.12.0...1.12.1
+[1.12.3]: https://github.com/cotyapps/Kovalee-iOS-SDK/compare/1.12.2...1.12.3
