@@ -263,13 +263,7 @@ public protocol KovaleePurchasesDelegate {
 }
 public protocol AbstractCustomerInfo {
   var activeSubscriptions: Swift.Set<Swift.String> { get }
-  var entitlements: any KovaleeFramework.AbstractEntitlementInfos { get }
-}
-public protocol AbstractEntitlementInfos : Swift.Encodable {
-  var active: [Swift.String : any KovaleeFramework.AbstractEntitlementInfo] { get }
-}
-public protocol AbstractEntitlementInfo : Swift.Encodable {
-  var isActive: Swift.Bool { get }
+  var activeEntitlements: Swift.Bool { get }
 }
 public protocol AbstractOfferings {
 }
