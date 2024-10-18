@@ -10125,6 +10125,8 @@
         "usr": "s:16KovaleeFramework23AbstractEntitlementInfoP",
         "mangledName": "$s16KovaleeFramework23AbstractEntitlementInfoP",
         "moduleName": "KovaleeFramework",
+        "genericSig": "<τ_0_0 : Swift.Encodable>",
+        "sugared_genericSig": "<Self : Swift.Encodable>",
         "declAttributes": [
           "AccessControl"
         ],
@@ -10142,6 +10144,13 @@
             "printedName": "Copyable",
             "usr": "s:s8CopyableP",
             "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Encodable",
+            "printedName": "Encodable",
+            "usr": "s:SE",
+            "mangledName": "$sSE"
           }
         ]
       },
