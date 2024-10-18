@@ -7,6 +7,17 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 <<<<<<< HEAD
 =======
+## [1.12.1] - 2024-10-18
+### :bug: Bug Fixes
+- [`fad59af`](https://github.com/cotyapps/Kovalee-iOS-SDK/commit/fad59aff876da808f538a12011e4b4d9cca36359) - lifetime users are not set as premium *(commit by [@fto-k](https://github.com/fto-k))*
+- [`170b09e`](https://github.com/cotyapps/Kovalee-iOS-SDK/commit/170b09e01b9d15d589efeae899b09c1a46c0a59a) - updated purchase data model *(commit by [@fto-k](https://github.com/fto-k))*
+- [`1211c37`](https://github.com/cotyapps/Kovalee-iOS-SDK/commit/1211c3764f677f866949888cf9875e5ee47f8b69) - updated purchase data model *(commit by [@fto-k](https://github.com/fto-k))*
+- [`99c61ab`](https://github.com/cotyapps/Kovalee-iOS-SDK/commit/99c61ab0b20f1f0bc1851442f296a23271d4cc35) - updated purchase data model *(commit by [@fto-k](https://github.com/fto-k))*
+- [`a7a3e39`](https://github.com/cotyapps/Kovalee-iOS-SDK/commit/a7a3e39f92c3c9fc234c262f87d425acb76f29cc) - updated purchase data model abstraction *(commit by [@fto-k](https://github.com/fto-k))*
+- [`0343304`](https://github.com/cotyapps/Kovalee-iOS-SDK/commit/03433043a7222d2ea4b4190216a29ad087fbb302) - refactored purchase DataModel *(commit by [@fto-k](https://github.com/fto-k))*
+- [`2ede5ba`](https://github.com/cotyapps/Kovalee-iOS-SDK/commit/2ede5ba393c6eeeb1199a65f601370f3bcf7082f) - update logic to set user as premium *(commit by [@fto-k](https://github.com/fto-k))*
+
+
 ## [1.12.0] - 2024-10-17
 ### :sparkles: New Features
 - [`80e380b`](https://github.com/cotyapps/Kovalee-iOS-SDK/commit/80e380be9db0fd36bec278b8a8ba6a6ea2229bc4) - added new function to set a dictionary of user properties *(commit by [@fto-k](https://github.com/fto-k))*
@@ -620,3 +631,4 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 [1.10.9]: https://github.com/cotyapps/Kovalee-iOS-SDK/compare/1.10.8...1.10.9
 [1.11.0]: https://github.com/cotyapps/Kovalee-iOS-SDK/compare/1.10.9...1.11.0
 [1.12.0]: https://github.com/cotyapps/Kovalee-iOS-SDK/compare/1.11.1...1.12.0
+[1.12.1]: https://github.com/cotyapps/Kovalee-iOS-SDK/compare/1.12.0...1.12.1
