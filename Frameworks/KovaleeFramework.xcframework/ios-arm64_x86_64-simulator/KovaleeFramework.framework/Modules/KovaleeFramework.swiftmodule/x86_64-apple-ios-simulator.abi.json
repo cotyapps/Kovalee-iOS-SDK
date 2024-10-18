@@ -9977,7 +9977,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "Dictionary",
-                "printedName": "[Swift.String : any KovaleeFramework.EntitlementInfo]",
+                "printedName": "[Swift.String : any KovaleeFramework.AbstractEntitlementInfo]",
                 "children": [
                   {
                     "kind": "TypeNominal",
@@ -9987,17 +9987,17 @@
                   },
                   {
                     "kind": "TypeNominal",
-                    "name": "EntitlementInfo",
-                    "printedName": "any KovaleeFramework.EntitlementInfo",
-                    "usr": "s:16KovaleeFramework15EntitlementInfoP"
+                    "name": "AbstractEntitlementInfo",
+                    "printedName": "any KovaleeFramework.AbstractEntitlementInfo",
+                    "usr": "s:16KovaleeFramework23AbstractEntitlementInfoP"
                   }
                 ],
                 "usr": "s:SD"
               }
             ],
             "declKind": "Var",
-            "usr": "s:16KovaleeFramework24AbstractEntitlementInfosP6activeSDySSAA0D4Info_pGvp",
-            "mangledName": "$s16KovaleeFramework24AbstractEntitlementInfosP6activeSDySSAA0D4Info_pGvp",
+            "usr": "s:16KovaleeFramework24AbstractEntitlementInfosP6activeSDySSAA0cD4Info_pGvp",
+            "mangledName": "$s16KovaleeFramework24AbstractEntitlementInfosP6activeSDySSAA0cD4Info_pGvp",
             "moduleName": "KovaleeFramework",
             "protocolReq": true,
             "accessors": [
@@ -10009,7 +10009,7 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Dictionary",
-                    "printedName": "[Swift.String : any KovaleeFramework.EntitlementInfo]",
+                    "printedName": "[Swift.String : any KovaleeFramework.AbstractEntitlementInfo]",
                     "children": [
                       {
                         "kind": "TypeNominal",
@@ -10019,17 +10019,17 @@
                       },
                       {
                         "kind": "TypeNominal",
-                        "name": "EntitlementInfo",
-                        "printedName": "any KovaleeFramework.EntitlementInfo",
-                        "usr": "s:16KovaleeFramework15EntitlementInfoP"
+                        "name": "AbstractEntitlementInfo",
+                        "printedName": "any KovaleeFramework.AbstractEntitlementInfo",
+                        "usr": "s:16KovaleeFramework23AbstractEntitlementInfoP"
                       }
                     ],
                     "usr": "s:SD"
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:16KovaleeFramework24AbstractEntitlementInfosP6activeSDySSAA0D4Info_pGvg",
-                "mangledName": "$s16KovaleeFramework24AbstractEntitlementInfosP6activeSDySSAA0D4Info_pGvg",
+                "usr": "s:16KovaleeFramework24AbstractEntitlementInfosP6activeSDySSAA0cD4Info_pGvg",
+                "mangledName": "$s16KovaleeFramework24AbstractEntitlementInfosP6activeSDySSAA0cD4Info_pGvg",
                 "moduleName": "KovaleeFramework",
                 "genericSig": "<τ_0_0 where τ_0_0 : KovaleeFramework.AbstractEntitlementInfos>",
                 "sugared_genericSig": "<Self where Self : KovaleeFramework.AbstractEntitlementInfos>",
@@ -10066,8 +10066,8 @@
       },
       {
         "kind": "TypeDecl",
-        "name": "EntitlementInfo",
-        "printedName": "EntitlementInfo",
+        "name": "AbstractEntitlementInfo",
+        "printedName": "AbstractEntitlementInfo",
         "children": [
           {
             "kind": "Var",
@@ -10082,8 +10082,8 @@
               }
             ],
             "declKind": "Var",
-            "usr": "s:16KovaleeFramework15EntitlementInfoP8isActiveSbvp",
-            "mangledName": "$s16KovaleeFramework15EntitlementInfoP8isActiveSbvp",
+            "usr": "s:16KovaleeFramework23AbstractEntitlementInfoP8isActiveSbvp",
+            "mangledName": "$s16KovaleeFramework23AbstractEntitlementInfoP8isActiveSbvp",
             "moduleName": "KovaleeFramework",
             "protocolReq": true,
             "accessors": [
@@ -10100,11 +10100,11 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:16KovaleeFramework15EntitlementInfoP8isActiveSbvg",
-                "mangledName": "$s16KovaleeFramework15EntitlementInfoP8isActiveSbvg",
+                "usr": "s:16KovaleeFramework23AbstractEntitlementInfoP8isActiveSbvg",
+                "mangledName": "$s16KovaleeFramework23AbstractEntitlementInfoP8isActiveSbvg",
                 "moduleName": "KovaleeFramework",
-                "genericSig": "<τ_0_0 where τ_0_0 : KovaleeFramework.EntitlementInfo>",
-                "sugared_genericSig": "<Self where Self : KovaleeFramework.EntitlementInfo>",
+                "genericSig": "<τ_0_0 where τ_0_0 : KovaleeFramework.AbstractEntitlementInfo>",
+                "sugared_genericSig": "<Self where Self : KovaleeFramework.AbstractEntitlementInfo>",
                 "protocolReq": true,
                 "reqNewWitnessTableEntry": true,
                 "accessorKind": "get"
@@ -10113,8 +10113,8 @@
           }
         ],
         "declKind": "Protocol",
-        "usr": "s:16KovaleeFramework15EntitlementInfoP",
-        "mangledName": "$s16KovaleeFramework15EntitlementInfoP",
+        "usr": "s:16KovaleeFramework23AbstractEntitlementInfoP",
+        "mangledName": "$s16KovaleeFramework23AbstractEntitlementInfoP",
         "moduleName": "KovaleeFramework",
         "declAttributes": [
           "AccessControl"
