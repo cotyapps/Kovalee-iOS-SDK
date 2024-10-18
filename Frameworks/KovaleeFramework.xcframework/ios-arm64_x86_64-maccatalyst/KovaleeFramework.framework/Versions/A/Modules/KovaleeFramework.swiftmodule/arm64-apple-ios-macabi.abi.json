@@ -9896,11 +9896,225 @@
                 "accessorKind": "get"
               }
             ]
+          },
+          {
+            "kind": "Var",
+            "name": "entitlements",
+            "printedName": "entitlements",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "AbstractEntitlementInfos",
+                "printedName": "any KovaleeFramework.AbstractEntitlementInfos",
+                "usr": "s:16KovaleeFramework24AbstractEntitlementInfosP"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:16KovaleeFramework20AbstractCustomerInfoP12entitlementsAA0C16EntitlementInfos_pvp",
+            "mangledName": "$s16KovaleeFramework20AbstractCustomerInfoP12entitlementsAA0C16EntitlementInfos_pvp",
+            "moduleName": "KovaleeFramework",
+            "protocolReq": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AbstractEntitlementInfos",
+                    "printedName": "any KovaleeFramework.AbstractEntitlementInfos",
+                    "usr": "s:16KovaleeFramework24AbstractEntitlementInfosP"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:16KovaleeFramework20AbstractCustomerInfoP12entitlementsAA0C16EntitlementInfos_pvg",
+                "mangledName": "$s16KovaleeFramework20AbstractCustomerInfoP12entitlementsAA0C16EntitlementInfos_pvg",
+                "moduleName": "KovaleeFramework",
+                "genericSig": "<τ_0_0 where τ_0_0 : KovaleeFramework.AbstractCustomerInfo>",
+                "sugared_genericSig": "<Self where Self : KovaleeFramework.AbstractCustomerInfo>",
+                "protocolReq": true,
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "get"
+              }
+            ]
           }
         ],
         "declKind": "Protocol",
         "usr": "s:16KovaleeFramework20AbstractCustomerInfoP",
         "mangledName": "$s16KovaleeFramework20AbstractCustomerInfoP",
+        "moduleName": "KovaleeFramework",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "AbstractEntitlementInfos",
+        "printedName": "AbstractEntitlementInfos",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "active",
+            "printedName": "active",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Dictionary",
+                "printedName": "[Swift.String : any KovaleeFramework.EntitlementInfo]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "EntitlementInfo",
+                    "printedName": "any KovaleeFramework.EntitlementInfo",
+                    "usr": "s:16KovaleeFramework15EntitlementInfoP"
+                  }
+                ],
+                "usr": "s:SD"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:16KovaleeFramework24AbstractEntitlementInfosP6activeSDySSAA0D4Info_pGvp",
+            "mangledName": "$s16KovaleeFramework24AbstractEntitlementInfosP6activeSDySSAA0D4Info_pGvp",
+            "moduleName": "KovaleeFramework",
+            "protocolReq": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Dictionary",
+                    "printedName": "[Swift.String : any KovaleeFramework.EntitlementInfo]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "EntitlementInfo",
+                        "printedName": "any KovaleeFramework.EntitlementInfo",
+                        "usr": "s:16KovaleeFramework15EntitlementInfoP"
+                      }
+                    ],
+                    "usr": "s:SD"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:16KovaleeFramework24AbstractEntitlementInfosP6activeSDySSAA0D4Info_pGvg",
+                "mangledName": "$s16KovaleeFramework24AbstractEntitlementInfosP6activeSDySSAA0D4Info_pGvg",
+                "moduleName": "KovaleeFramework",
+                "genericSig": "<τ_0_0 where τ_0_0 : KovaleeFramework.AbstractEntitlementInfos>",
+                "sugared_genericSig": "<Self where Self : KovaleeFramework.AbstractEntitlementInfos>",
+                "protocolReq": true,
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Protocol",
+        "usr": "s:16KovaleeFramework24AbstractEntitlementInfosP",
+        "mangledName": "$s16KovaleeFramework24AbstractEntitlementInfosP",
+        "moduleName": "KovaleeFramework",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "EntitlementInfo",
+        "printedName": "EntitlementInfo",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "isActive",
+            "printedName": "isActive",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:16KovaleeFramework15EntitlementInfoP8isActiveSbvp",
+            "mangledName": "$s16KovaleeFramework15EntitlementInfoP8isActiveSbvp",
+            "moduleName": "KovaleeFramework",
+            "protocolReq": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:16KovaleeFramework15EntitlementInfoP8isActiveSbvg",
+                "mangledName": "$s16KovaleeFramework15EntitlementInfoP8isActiveSbvg",
+                "moduleName": "KovaleeFramework",
+                "genericSig": "<τ_0_0 where τ_0_0 : KovaleeFramework.EntitlementInfo>",
+                "sugared_genericSig": "<Self where Self : KovaleeFramework.EntitlementInfo>",
+                "protocolReq": true,
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Protocol",
+        "usr": "s:16KovaleeFramework15EntitlementInfoP",
+        "mangledName": "$s16KovaleeFramework15EntitlementInfoP",
         "moduleName": "KovaleeFramework",
         "declAttributes": [
           "AccessControl"
@@ -14924,7 +15138,7 @@
     {
       "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 9204,
+      "offset": 9415,
       "length": 5,
       "value": "false"
     },
