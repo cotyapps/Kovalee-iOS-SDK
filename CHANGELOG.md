@@ -7,6 +7,14 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 <<<<<<< HEAD
 =======
+## [1.12.4] - 2024-12-11
+### :sparkles: New Features
+- [`d7de897`](https://github.com/cotyapps/Kovalee-iOS-SDK/commit/d7de897c09f87256c55eb1281373a5ba553f30ba) - new function to retrieve web onboarding data *(commit by [@fto-k](https://github.com/fto-k))*
+
+### :bug: Bug Fixes
+- [`8a326f0`](https://github.com/cotyapps/Kovalee-iOS-SDK/commit/8a326f03315edcc2fffc0c600d3375a3c1365e0e) - fixed KovaleeUI version *(commit by [@fto-k](https://github.com/fto-k))*
+
+
 ## [1.12.3] - 2024-10-18
 ### :bug: Bug Fixes
 - [`ccc03fa`](https://github.com/cotyapps/Kovalee-iOS-SDK/commit/ccc03fa5cdee79772ff94429383f0a06b59b9847) - setting user as premium when puchased lifetime offer *(commit by [@fto-k](https://github.com/fto-k))*
@@ -642,3 +650,4 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 [1.12.0]: https://github.com/cotyapps/Kovalee-iOS-SDK/compare/1.11.1...1.12.0
 [1.12.1]: https://github.com/cotyapps/Kovalee-iOS-SDK/compare/1.12.0...1.12.1
 [1.12.3]: https://github.com/cotyapps/Kovalee-iOS-SDK/compare/1.12.2...1.12.3
+[1.12.4]: https://github.com/cotyapps/Kovalee-iOS-SDK/compare/1.12.3...1.12.4
