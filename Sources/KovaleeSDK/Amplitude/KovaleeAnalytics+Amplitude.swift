@@ -156,6 +156,28 @@ public extension Kovalee {
     }
 }
 
+public extension Kovalee {
+    /// Retrieves onboarding data for a specific user .
+    ///
+    /// This method fetches the onboarding data collected during the web onboarding associated with the provided user ID.
+    ///
+    /// - Parameters:
+    ///   - userId: A `String` representing the ID of the user
+    /// - Returns: A `UserOnboardingData?` containing the onboarding data for the user, or `nil` if no data is available
+    /// - Throws: An error if the retrieval process fails.
+    ///
+    /// ```swift
+    /// struct UserOnboardingData {
+    ///		var userExists: Bool
+    /// 	var onboardingCompleted: Bool
+    /// 	var onboardingData: [String: String]
+    /// }
+    /// ```
+    static func webOnboardingDataForUser(withId userId: String) async throws -> KovaleeManager.UserOnboardingData? {
+        try await shared.kovaleeManager?.userOnboardingData(userId: userId)
+    }
+}
+
 public enum TaggingPlanLiteEvent {
     case onboardingFinish
     case onboardingPageView(number: Int)

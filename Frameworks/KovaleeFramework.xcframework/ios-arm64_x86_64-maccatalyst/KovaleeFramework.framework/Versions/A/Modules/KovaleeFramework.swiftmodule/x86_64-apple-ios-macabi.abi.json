@@ -2233,6 +2233,384 @@
             "funcSelfKind": "NonMutating"
           },
           {
+            "kind": "TypeDecl",
+            "name": "OnboardingDataResponse",
+            "printedName": "OnboardingDataResponse",
+            "children": [
+              {
+                "kind": "Constructor",
+                "name": "init",
+                "printedName": "init(from:)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "OnboardingDataResponse",
+                    "printedName": "KovaleeFramework.KovaleeManager.OnboardingDataResponse",
+                    "usr": "s:16KovaleeFramework0A7ManagerC22OnboardingDataResponseV"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Decoder",
+                    "printedName": "any Swift.Decoder",
+                    "usr": "s:s7DecoderP"
+                  }
+                ],
+                "declKind": "Constructor",
+                "usr": "s:16KovaleeFramework0A7ManagerC22OnboardingDataResponseV4fromAEs7Decoder_p_tKcfc",
+                "mangledName": "$s16KovaleeFramework0A7ManagerC22OnboardingDataResponseV4fromAEs7Decoder_p_tKcfc",
+                "moduleName": "KovaleeFramework",
+                "implicit": true,
+                "throwing": true,
+                "init_kind": "Designated"
+              },
+              {
+                "kind": "Function",
+                "name": "encode",
+                "printedName": "encode(to:)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Encoder",
+                    "printedName": "any Swift.Encoder",
+                    "usr": "s:s7EncoderP"
+                  }
+                ],
+                "declKind": "Func",
+                "usr": "s:16KovaleeFramework0A7ManagerC22OnboardingDataResponseV6encode2toys7Encoder_p_tKF",
+                "mangledName": "$s16KovaleeFramework0A7ManagerC22OnboardingDataResponseV6encode2toys7Encoder_p_tKF",
+                "moduleName": "KovaleeFramework",
+                "implicit": true,
+                "throwing": true,
+                "funcSelfKind": "NonMutating"
+              }
+            ],
+            "declKind": "Struct",
+            "usr": "s:16KovaleeFramework0A7ManagerC22OnboardingDataResponseV",
+            "mangledName": "$s16KovaleeFramework0A7ManagerC22OnboardingDataResponseV",
+            "moduleName": "KovaleeFramework",
+            "isFromExtension": true,
+            "conformances": [
+              {
+                "kind": "Conformance",
+                "name": "Copyable",
+                "printedName": "Copyable",
+                "usr": "s:s8CopyableP",
+                "mangledName": "$ss8CopyableP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Escapable",
+                "printedName": "Escapable",
+                "usr": "s:s9EscapableP",
+                "mangledName": "$ss9EscapableP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Decodable",
+                "printedName": "Decodable",
+                "usr": "s:Se",
+                "mangledName": "$sSe"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Encodable",
+                "printedName": "Encodable",
+                "usr": "s:SE",
+                "mangledName": "$sSE"
+              }
+            ]
+          },
+          {
+            "kind": "TypeDecl",
+            "name": "UserOnboardingData",
+            "printedName": "UserOnboardingData",
+            "children": [
+              {
+                "kind": "Constructor",
+                "name": "init",
+                "printedName": "init(from:)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UserOnboardingData",
+                    "printedName": "KovaleeFramework.KovaleeManager.UserOnboardingData",
+                    "usr": "s:16KovaleeFramework0A7ManagerC18UserOnboardingDataV"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Decoder",
+                    "printedName": "any Swift.Decoder",
+                    "usr": "s:s7DecoderP"
+                  }
+                ],
+                "declKind": "Constructor",
+                "usr": "s:16KovaleeFramework0A7ManagerC18UserOnboardingDataV4fromAEs7Decoder_p_tKcfc",
+                "mangledName": "$s16KovaleeFramework0A7ManagerC18UserOnboardingDataV4fromAEs7Decoder_p_tKcfc",
+                "moduleName": "KovaleeFramework",
+                "implicit": true,
+                "throwing": true,
+                "init_kind": "Designated"
+              },
+              {
+                "kind": "Function",
+                "name": "encode",
+                "printedName": "encode(to:)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Encoder",
+                    "printedName": "any Swift.Encoder",
+                    "usr": "s:s7EncoderP"
+                  }
+                ],
+                "declKind": "Func",
+                "usr": "s:16KovaleeFramework0A7ManagerC18UserOnboardingDataV6encode2toys7Encoder_p_tKF",
+                "mangledName": "$s16KovaleeFramework0A7ManagerC18UserOnboardingDataV6encode2toys7Encoder_p_tKF",
+                "moduleName": "KovaleeFramework",
+                "implicit": true,
+                "throwing": true,
+                "funcSelfKind": "NonMutating"
+              }
+            ],
+            "declKind": "Struct",
+            "usr": "s:16KovaleeFramework0A7ManagerC18UserOnboardingDataV",
+            "mangledName": "$s16KovaleeFramework0A7ManagerC18UserOnboardingDataV",
+            "moduleName": "KovaleeFramework",
+            "isFromExtension": true,
+            "conformances": [
+              {
+                "kind": "Conformance",
+                "name": "Copyable",
+                "printedName": "Copyable",
+                "usr": "s:s8CopyableP",
+                "mangledName": "$ss8CopyableP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Escapable",
+                "printedName": "Escapable",
+                "usr": "s:s9EscapableP",
+                "mangledName": "$ss9EscapableP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Decodable",
+                "printedName": "Decodable",
+                "usr": "s:Se",
+                "mangledName": "$sSe"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Encodable",
+                "printedName": "Encodable",
+                "usr": "s:SE",
+                "mangledName": "$sSE"
+              }
+            ]
+          },
+          {
+            "kind": "TypeDecl",
+            "name": "OnboardingDataError",
+            "printedName": "OnboardingDataError",
+            "children": [
+              {
+                "kind": "Var",
+                "name": "networkError",
+                "printedName": "networkError",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(KovaleeFramework.KovaleeManager.OnboardingDataError.Type) -> (any Swift.Error) -> KovaleeFramework.KovaleeManager.OnboardingDataError",
+                    "children": [
+                      {
+                        "kind": "TypeFunc",
+                        "name": "Function",
+                        "printedName": "(any Swift.Error) -> KovaleeFramework.KovaleeManager.OnboardingDataError",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "OnboardingDataError",
+                            "printedName": "KovaleeFramework.KovaleeManager.OnboardingDataError",
+                            "usr": "s:16KovaleeFramework0A7ManagerC19OnboardingDataErrorO"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Error",
+                            "printedName": "any Swift.Error",
+                            "usr": "s:s5ErrorP"
+                          }
+                        ]
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "KovaleeFramework.KovaleeManager.OnboardingDataError.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "OnboardingDataError",
+                            "printedName": "KovaleeFramework.KovaleeManager.OnboardingDataError",
+                            "usr": "s:16KovaleeFramework0A7ManagerC19OnboardingDataErrorO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:16KovaleeFramework0A7ManagerC19OnboardingDataErrorO07networkF0yAEs0F0_pcAEmF",
+                "mangledName": "$s16KovaleeFramework0A7ManagerC19OnboardingDataErrorO07networkF0yAEs0F0_pcAEmF",
+                "moduleName": "KovaleeFramework"
+              },
+              {
+                "kind": "Var",
+                "name": "invalidResponse",
+                "printedName": "invalidResponse",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(KovaleeFramework.KovaleeManager.OnboardingDataError.Type) -> KovaleeFramework.KovaleeManager.OnboardingDataError",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "OnboardingDataError",
+                        "printedName": "KovaleeFramework.KovaleeManager.OnboardingDataError",
+                        "usr": "s:16KovaleeFramework0A7ManagerC19OnboardingDataErrorO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "KovaleeFramework.KovaleeManager.OnboardingDataError.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "OnboardingDataError",
+                            "printedName": "KovaleeFramework.KovaleeManager.OnboardingDataError",
+                            "usr": "s:16KovaleeFramework0A7ManagerC19OnboardingDataErrorO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:16KovaleeFramework0A7ManagerC19OnboardingDataErrorO15invalidResponseyA2EmF",
+                "mangledName": "$s16KovaleeFramework0A7ManagerC19OnboardingDataErrorO15invalidResponseyA2EmF",
+                "moduleName": "KovaleeFramework"
+              },
+              {
+                "kind": "Var",
+                "name": "invalidRequest",
+                "printedName": "invalidRequest",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(KovaleeFramework.KovaleeManager.OnboardingDataError.Type) -> KovaleeFramework.KovaleeManager.OnboardingDataError",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "OnboardingDataError",
+                        "printedName": "KovaleeFramework.KovaleeManager.OnboardingDataError",
+                        "usr": "s:16KovaleeFramework0A7ManagerC19OnboardingDataErrorO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "KovaleeFramework.KovaleeManager.OnboardingDataError.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "OnboardingDataError",
+                            "printedName": "KovaleeFramework.KovaleeManager.OnboardingDataError",
+                            "usr": "s:16KovaleeFramework0A7ManagerC19OnboardingDataErrorO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:16KovaleeFramework0A7ManagerC19OnboardingDataErrorO14invalidRequestyA2EmF",
+                "mangledName": "$s16KovaleeFramework0A7ManagerC19OnboardingDataErrorO14invalidRequestyA2EmF",
+                "moduleName": "KovaleeFramework"
+              }
+            ],
+            "declKind": "Enum",
+            "usr": "s:16KovaleeFramework0A7ManagerC19OnboardingDataErrorO",
+            "mangledName": "$s16KovaleeFramework0A7ManagerC19OnboardingDataErrorO",
+            "moduleName": "KovaleeFramework",
+            "isFromExtension": true,
+            "conformances": [
+              {
+                "kind": "Conformance",
+                "name": "Copyable",
+                "printedName": "Copyable",
+                "usr": "s:s8CopyableP",
+                "mangledName": "$ss8CopyableP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Escapable",
+                "printedName": "Escapable",
+                "usr": "s:s9EscapableP",
+                "mangledName": "$ss9EscapableP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Error",
+                "printedName": "Error",
+                "usr": "s:s5ErrorP",
+                "mangledName": "$ss5ErrorP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Sendable",
+                "printedName": "Sendable",
+                "usr": "s:s8SendableP",
+                "mangledName": "$ss8SendableP"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "userOnboardingData",
+            "printedName": "userOnboardingData(userId:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "UserOnboardingData",
+                "printedName": "KovaleeFramework.KovaleeManager.UserOnboardingData",
+                "usr": "s:16KovaleeFramework0A7ManagerC18UserOnboardingDataV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:16KovaleeFramework0A7ManagerC18userOnboardingData0D2IdAC04UsereF0VSS_tYaKF",
+            "mangledName": "$s16KovaleeFramework0A7ManagerC18userOnboardingData0D2IdAC04UsereF0VSS_tYaKF",
+            "moduleName": "KovaleeFramework",
+            "isFromExtension": true,
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
             "kind": "Function",
             "name": "startedPurchasing",
             "printedName": "startedPurchasing(subscriptionWithId:fromSource:)",
