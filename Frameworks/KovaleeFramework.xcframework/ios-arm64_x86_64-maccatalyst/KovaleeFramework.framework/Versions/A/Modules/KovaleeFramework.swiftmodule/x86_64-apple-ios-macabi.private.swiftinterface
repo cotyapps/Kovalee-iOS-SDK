@@ -350,6 +350,9 @@ extension KovaleeFramework.KovaleeManager {
     public init(from decoder: any Swift.Decoder) throws
   }
   public struct UserOnboardingData : Swift.Codable {
+    public var userExists: Swift.Bool
+    public var onboardingCompleted: Swift.Bool
+    public var onboardingData: [Swift.String : Swift.String]
     public func encode(to encoder: any Swift.Encoder) throws
     public init(from decoder: any Swift.Decoder) throws
   }

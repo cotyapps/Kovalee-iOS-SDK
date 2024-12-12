@@ -2331,6 +2331,303 @@
             "printedName": "UserOnboardingData",
             "children": [
               {
+                "kind": "Var",
+                "name": "userExists",
+                "printedName": "userExists",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:16KovaleeFramework0A7ManagerC18UserOnboardingDataV10userExistsSbvp",
+                "mangledName": "$s16KovaleeFramework0A7ManagerC18UserOnboardingDataV10userExistsSbvp",
+                "moduleName": "KovaleeFramework",
+                "declAttributes": [
+                  "HasStorage",
+                  "AccessControl"
+                ],
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Bool",
+                        "printedName": "Swift.Bool",
+                        "usr": "s:Sb"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:16KovaleeFramework0A7ManagerC18UserOnboardingDataV10userExistsSbvg",
+                    "mangledName": "$s16KovaleeFramework0A7ManagerC18UserOnboardingDataV10userExistsSbvg",
+                    "moduleName": "KovaleeFramework",
+                    "implicit": true,
+                    "accessorKind": "get"
+                  },
+                  {
+                    "kind": "Accessor",
+                    "name": "Set",
+                    "printedName": "Set()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Bool",
+                        "printedName": "Swift.Bool",
+                        "usr": "s:Sb"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:16KovaleeFramework0A7ManagerC18UserOnboardingDataV10userExistsSbvs",
+                    "mangledName": "$s16KovaleeFramework0A7ManagerC18UserOnboardingDataV10userExistsSbvs",
+                    "moduleName": "KovaleeFramework",
+                    "implicit": true,
+                    "accessorKind": "set"
+                  },
+                  {
+                    "kind": "Accessor",
+                    "name": "Modify",
+                    "printedName": "Modify()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:16KovaleeFramework0A7ManagerC18UserOnboardingDataV10userExistsSbvM",
+                    "mangledName": "$s16KovaleeFramework0A7ManagerC18UserOnboardingDataV10userExistsSbvM",
+                    "moduleName": "KovaleeFramework",
+                    "implicit": true,
+                    "accessorKind": "_modify"
+                  }
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "onboardingCompleted",
+                "printedName": "onboardingCompleted",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:16KovaleeFramework0A7ManagerC18UserOnboardingDataV19onboardingCompletedSbvp",
+                "mangledName": "$s16KovaleeFramework0A7ManagerC18UserOnboardingDataV19onboardingCompletedSbvp",
+                "moduleName": "KovaleeFramework",
+                "declAttributes": [
+                  "HasStorage",
+                  "AccessControl"
+                ],
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Bool",
+                        "printedName": "Swift.Bool",
+                        "usr": "s:Sb"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:16KovaleeFramework0A7ManagerC18UserOnboardingDataV19onboardingCompletedSbvg",
+                    "mangledName": "$s16KovaleeFramework0A7ManagerC18UserOnboardingDataV19onboardingCompletedSbvg",
+                    "moduleName": "KovaleeFramework",
+                    "implicit": true,
+                    "accessorKind": "get"
+                  },
+                  {
+                    "kind": "Accessor",
+                    "name": "Set",
+                    "printedName": "Set()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Bool",
+                        "printedName": "Swift.Bool",
+                        "usr": "s:Sb"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:16KovaleeFramework0A7ManagerC18UserOnboardingDataV19onboardingCompletedSbvs",
+                    "mangledName": "$s16KovaleeFramework0A7ManagerC18UserOnboardingDataV19onboardingCompletedSbvs",
+                    "moduleName": "KovaleeFramework",
+                    "implicit": true,
+                    "accessorKind": "set"
+                  },
+                  {
+                    "kind": "Accessor",
+                    "name": "Modify",
+                    "printedName": "Modify()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:16KovaleeFramework0A7ManagerC18UserOnboardingDataV19onboardingCompletedSbvM",
+                    "mangledName": "$s16KovaleeFramework0A7ManagerC18UserOnboardingDataV19onboardingCompletedSbvM",
+                    "moduleName": "KovaleeFramework",
+                    "implicit": true,
+                    "accessorKind": "_modify"
+                  }
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "onboardingData",
+                "printedName": "onboardingData",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Dictionary",
+                    "printedName": "[Swift.String : Swift.String]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:SD"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:16KovaleeFramework0A7ManagerC18UserOnboardingDataV010onboardingF0SDyS2SGvp",
+                "mangledName": "$s16KovaleeFramework0A7ManagerC18UserOnboardingDataV010onboardingF0SDyS2SGvp",
+                "moduleName": "KovaleeFramework",
+                "declAttributes": [
+                  "HasStorage",
+                  "AccessControl"
+                ],
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Dictionary",
+                        "printedName": "[Swift.String : Swift.String]",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          }
+                        ],
+                        "usr": "s:SD"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:16KovaleeFramework0A7ManagerC18UserOnboardingDataV010onboardingF0SDyS2SGvg",
+                    "mangledName": "$s16KovaleeFramework0A7ManagerC18UserOnboardingDataV010onboardingF0SDyS2SGvg",
+                    "moduleName": "KovaleeFramework",
+                    "implicit": true,
+                    "accessorKind": "get"
+                  },
+                  {
+                    "kind": "Accessor",
+                    "name": "Set",
+                    "printedName": "Set()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Dictionary",
+                        "printedName": "[Swift.String : Swift.String]",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          }
+                        ],
+                        "usr": "s:SD"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:16KovaleeFramework0A7ManagerC18UserOnboardingDataV010onboardingF0SDyS2SGvs",
+                    "mangledName": "$s16KovaleeFramework0A7ManagerC18UserOnboardingDataV010onboardingF0SDyS2SGvs",
+                    "moduleName": "KovaleeFramework",
+                    "implicit": true,
+                    "accessorKind": "set"
+                  },
+                  {
+                    "kind": "Accessor",
+                    "name": "Modify",
+                    "printedName": "Modify()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:16KovaleeFramework0A7ManagerC18UserOnboardingDataV010onboardingF0SDyS2SGvM",
+                    "mangledName": "$s16KovaleeFramework0A7ManagerC18UserOnboardingDataV010onboardingF0SDyS2SGvM",
+                    "moduleName": "KovaleeFramework",
+                    "implicit": true,
+                    "accessorKind": "_modify"
+                  }
+                ]
+              },
+              {
                 "kind": "Constructor",
                 "name": "init",
                 "printedName": "init(from:)",
