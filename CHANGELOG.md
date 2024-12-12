@@ -7,6 +7,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 <<<<<<< HEAD
 =======
+## [1.12.5] - 2024-12-12
+### :bug: Bug Fixes
+- [`4e15d37`](https://github.com/cotyapps/Kovalee-iOS-SDK/commit/4e15d37ebb42fd0ba0ea1b35fa2030044e6a1176) - OnboardingData properties are now public *(commit by [@fto-k](https://github.com/fto-k))*
+
+
 ## [1.12.4] - 2024-12-11
 ### :sparkles: New Features
 - [`d7de897`](https://github.com/cotyapps/Kovalee-iOS-SDK/commit/d7de897c09f87256c55eb1281373a5ba553f30ba) - new function to retrieve web onboarding data *(commit by [@fto-k](https://github.com/fto-k))*
@@ -651,3 +656,4 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 [1.12.1]: https://github.com/cotyapps/Kovalee-iOS-SDK/compare/1.12.0...1.12.1
 [1.12.3]: https://github.com/cotyapps/Kovalee-iOS-SDK/compare/1.12.2...1.12.3
 [1.12.4]: https://github.com/cotyapps/Kovalee-iOS-SDK/compare/1.12.3...1.12.4
+[1.12.5]: https://github.com/cotyapps/Kovalee-iOS-SDK/compare/1.12.4...1.12.5
