@@ -20,7 +20,6 @@ let package = Package(
             name: .kovaleePurchases,
             targets: [
                 .kovaleePurchases,
-                .kovaleePaywall,
             ]
         ),
         .library(
@@ -95,15 +94,6 @@ let package = Package(
             ],
             resources: [
                 .copy("PrivacyInfo.xcprivacy"),
-            ]
-        ),
-        .target(
-            name: .kovaleePaywall,
-            dependencies: [
-                .superwall,
-                .sdk,
-                .kovaleeRemoteConfig,
-                .kovaleePurchases,
             ]
         ),
         .target(
@@ -196,6 +186,5 @@ extension String {
     static let survey = "KovaleeSurvey"
     static let kovaleeRemoteConfig = "KovaleeRemoteConfig"
     static let kovaleePurchases = "KovaleePurchases"
-    static let kovaleePaywall = "KovaleePaywall"
     static let kovaleeAttribution = "KovaleeAttribution"
 }
