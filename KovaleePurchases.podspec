@@ -16,7 +16,7 @@ It's part of a broader project KovaleeSDK
                    DESC
 
   spec.license      = { :type => 'MIT', :file => 'MIT-LICENSE' }
-  spec.homepage     = "https://github.com/cotyapps/KovaleePurchases-iOS"
+  spec.homepage     = "https://github.com/cotyapps/Kovalee-iOS-SDK.git"
   spec.author       = { "fto-k" => "fto@kovalee.app" }
 
   spec.source       = { :git => "https://github.com/cotyapps/Kovalee-iOS-SDK.git", :tag => "#{spec.version}" }

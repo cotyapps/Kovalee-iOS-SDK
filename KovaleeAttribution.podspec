@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
                    DESC
 
   spec.license        = { :type => 'MIT', :file => 'MIT-LICENSE' }
-  spec.homepage     = "https://github.com/cotyapps/KovaleeAttribution-iOS"
+  spec.homepage     = "https://github.com/cotyapps/Kovalee-iOS-SDK.git"
   spec.author       = { "fto-k" => "fto@kovalee.app" }
 
   spec.source       = { :git => "https://github.com/cotyapps/Kovalee-iOS-SDK.git", :tag => "#{spec.version}" }
