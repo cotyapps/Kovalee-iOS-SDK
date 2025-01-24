@@ -77,7 +77,9 @@ public final class Kovalee {
                     experimentalFeatureEnabled: configuration.enableExperimentalFeature,
                     alreadyIntegrated: configuration.alreadyIntegrated
                 )
-
+                Task.detached {
+                    await self.kovaleeManager?.fetchEventSequences(locale: Locale.current.regionCode, keys: self.keys, experimentalFeatureEnabled: false)
+                }
                 setupCapabilities()
             }
 
