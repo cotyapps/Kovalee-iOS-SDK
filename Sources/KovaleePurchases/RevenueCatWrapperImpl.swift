@@ -36,7 +36,6 @@ class RevenueCatWrapperImpl: NSObject, PurchaseManager, Manager {
 
     func setUserId(userId: String) async throws -> (AbstractCustomerInfo, created: Bool) {
         let result = try await Purchases.shared.logIn(userId)
-        
         return (CustomerInfo(info: result.customerInfo), result.created)
     }
 
