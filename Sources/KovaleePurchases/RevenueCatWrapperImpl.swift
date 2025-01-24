@@ -3,7 +3,6 @@ import KovaleeFramework
 import KovaleeRemoteConfig
 import KovaleeSDK
 import RevenueCat
-import SuperwallKit
 
 class RevenueCatWrapperImpl: NSObject, PurchaseManager, Manager {
     init(withKeys keys: KovaleeKeys.RevenueCat) {
@@ -37,9 +36,7 @@ class RevenueCatWrapperImpl: NSObject, PurchaseManager, Manager {
 
     func setUserId(userId: String) async throws -> (AbstractCustomerInfo, created: Bool) {
         let result = try await Purchases.shared.logIn(userId)
-        if Superwall.isInitialized {
-            Superwall.shared.identify(userId: Purchases.shared.appUserID)
-        }
+        
         return (CustomerInfo(info: result.customerInfo), result.created)
     }
 

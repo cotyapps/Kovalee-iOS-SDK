@@ -40,7 +40,6 @@ let package = Package(
         .package(url: "https://github.com/Survicate/survicate-ios-sdk", .upToNextMajor(from: "5.0.0")),
         .package(url: "https://github.com/firebase/firebase-ios-sdk.git", from: Version(10, 12, 0)),
         .package(url: "https://github.com/RevenueCat/purchases-ios", from: Version(5, 0, 0)),
-        .package(url: "https://github.com/superwall-me/Superwall-iOS", .upToNextMajor(from: Version(3, 0, 0))),
         .package(url: "https://github.com/adjust/ios_sdk", from: Version(5, 0, 0))
     ],
     targets: [
@@ -89,7 +88,6 @@ let package = Package(
             dependencies: [
                 .sdk,
                 .revenueCat,
-                .superwall,
                 .kovaleeRemoteConfig,
             ],
             resources: [

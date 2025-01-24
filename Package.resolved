@@ -155,24 +155,6 @@
         }
       },
       {
-        "package": "Superscript",
-        "repositoryURL": "https://github.com/superwall/Superscript-iOS",
-        "state": {
-          "branch": null,
-          "revision": "a917ad513e171e658a73f9ae7329f3cffa42f173",
-          "version": "0.1.16"
-        }
-      },
-      {
-        "package": "SuperwallKit",
-        "repositoryURL": "https://github.com/superwall-me/Superwall-iOS",
-        "state": {
-          "branch": null,
-          "revision": "a41f5296a9dab597ca9969be2fdeb9ff59bcf015",
-          "version": "3.12.0"
-        }
-      },
-      {
         "package": "Survicate",
         "repositoryURL": "https://github.com/Survicate/survicate-ios-sdk",
         "state": {
