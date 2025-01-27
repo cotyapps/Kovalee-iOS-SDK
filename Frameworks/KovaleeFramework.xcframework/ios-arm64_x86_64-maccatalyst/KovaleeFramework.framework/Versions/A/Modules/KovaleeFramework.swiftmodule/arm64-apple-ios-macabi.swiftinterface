@@ -19,6 +19,7 @@ public class KovaleeManager {
   public func setupAdsManager(adsManager: any KovaleeFramework.AdsManager)
   public func setupPaywallManager(paywallManager: any KovaleeFramework.PaywallManager)
   public func setupSurveyManager(surveyManager: any KovaleeFramework.SurveyManager)
+  public func fetchAppConfiguration(appCode: Swift.String) async
   public func fetchEventSequences(locale: Swift.String?, keys: KovaleeFramework.KovaleeKeys, experimentalFeatureEnabled: Swift.Bool) async
   public func promptTrackingAuthorization(completion: @escaping (AppTrackingTransparency.ATTrackingManager.AuthorizationStatus) -> Swift.Void)
   public func getAttributionAdid() async -> Swift.String?
@@ -29,6 +30,8 @@ public class KovaleeManager {
   public func currentSequencesFileName() -> Swift.String?
   public func currentEventsSequence() -> Swift.String
   public func userConversionValue() -> Swift.Int
+  public func sequenceVersion() -> Swift.Int
+  public func parsingLogic() -> Swift.Int
   public func sendEvent(_ event: KovaleeFramework.Event)
   public func setAmplitudeUserId(userId: Swift.String)
   public func amplitudeUserId() -> Swift.String?
@@ -173,6 +176,8 @@ public enum StorageKeys : Swift.String {
   case isDataCollectionEnabled
   case nttTrackingPromptStatus
   case eventsSequencesFetched
+  case sequenceVersion
+  case parsingLogic
   public init?(rawValue: Swift.String)
   public typealias RawValue = Swift.String
   public var rawValue: Swift.String {

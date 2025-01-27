@@ -66,6 +66,12 @@ public struct DebugView: View {
                 }
 
                 Section {
+                    configurationView()
+                } header: {
+                    Text("Configuration")
+                }
+
+                Section {
                     sequencesView()
                 } header: {
                     Text("Events Sequences")
@@ -164,6 +170,24 @@ extension DebugView {
             InfoLabel(
                 title: "Current sequence:",
                 value: sequence,
+                horizontal: false
+            )
+        }
+    }
+
+    @ViewBuilder
+    private func configurationView() -> some View {
+        if let sequence = Kovalee.shared.kovaleeManager?.sequenceVersion() {
+            InfoLabel(
+                title: "Sequence version:",
+                value: String(sequence),
+                horizontal: false
+            )
+        }
+        if let parsingLogic = Kovalee.shared.kovaleeManager?.parsingLogic() {
+            InfoLabel(
+                title: "Parsing logic:",
+                value: String(parsingLogic),
                 horizontal: false
             )
         }
