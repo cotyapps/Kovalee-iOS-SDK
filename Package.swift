@@ -155,10 +155,6 @@ extension Target.Dependency {
         .product(name: "RevenueCat", package: "purchases-ios")
     }
 
-    static var superwall: Self {
-        .product(name: "SuperwallKit", package: "Superwall-iOS")
-    }
-
     static var AdjustSdk: Self {
         .product(name: "AdjustSdk", package: "ios_sdk")
     }
