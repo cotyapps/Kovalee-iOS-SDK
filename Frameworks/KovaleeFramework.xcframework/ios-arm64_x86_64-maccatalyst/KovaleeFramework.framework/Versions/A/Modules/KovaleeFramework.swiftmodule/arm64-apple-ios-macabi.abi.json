@@ -12119,25 +12119,6 @@
           },
           {
             "kind": "Function",
-            "name": "coarseValue",
-            "printedName": "coarseValue()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:16KovaleeFramework22ConversionValueManagerV06coarseD0SSyF",
-            "mangledName": "$s16KovaleeFramework22ConversionValueManagerV06coarseD0SSyF",
-            "moduleName": "KovaleeFramework",
-            "isFromExtension": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
             "name": "conversionValue",
             "printedName": "conversionValue(fromEvent:)",
             "children": [
@@ -15738,7 +15719,7 @@
     {
       "filePath": "\/Users\/moez\/Documents\/SDK\/Kovalee-iOS-Framework\/KovaleeFramework\/KovaleeManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 10571,
+      "offset": 10677,
       "length": 5,
       "value": "false"
     },

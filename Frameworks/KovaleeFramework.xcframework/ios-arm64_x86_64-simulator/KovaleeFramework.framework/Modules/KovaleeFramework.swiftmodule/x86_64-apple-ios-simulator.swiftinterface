@@ -12,7 +12,7 @@ import _StringProcessing
 import _SwiftConcurrencyShims
 import os
 public class KovaleeManager {
-  public init(withStorage storage: KovaleeFramework.Storage = .userDefaults(), keys: KovaleeFramework.KovaleeKeys, sdkVersion: Swift.String, eventTrackerManager: any KovaleeFramework.EventTrackerManager, experimentalFeatureEnabled: Swift.Bool, alreadyIntegrated: Swift.Bool)
+  public init(withStorage storage: KovaleeFramework.Storage = .userDefaults(), keys: KovaleeFramework.KovaleeKeys, sdkVersion: Swift.String, eventTrackerManager: any KovaleeFramework.EventTrackerManager, experimentalFeatureEnabled _: Swift.Bool, alreadyIntegrated: Swift.Bool)
   public func setupAttributionManager(adjustWrapper: any KovaleeFramework.AttributionManager)
   public func setupPurchaseManager(purchaseManager: any KovaleeFramework.PurchaseManager)
   public func setupRemoteConfigurationManager(remoteConfigManager: any KovaleeFramework.RemoteConfigurationManager)
@@ -326,7 +326,6 @@ public struct ConversionValueManager {
   public init(keys: KovaleeFramework.KovaleeKeys, locale: Swift.String?, liteVersion: Swift.Bool, experimentalFeatureEnabled: Swift.Bool, storage: KovaleeFramework.Storage = .userDefaults())
 }
 extension KovaleeFramework.ConversionValueManager {
-  public func coarseValue() -> Swift.String
   public mutating func conversionValue(fromEvent event: KovaleeFramework.Event) -> Swift.Int?
 }
 extension KovaleeFramework.KovaleeManager {
