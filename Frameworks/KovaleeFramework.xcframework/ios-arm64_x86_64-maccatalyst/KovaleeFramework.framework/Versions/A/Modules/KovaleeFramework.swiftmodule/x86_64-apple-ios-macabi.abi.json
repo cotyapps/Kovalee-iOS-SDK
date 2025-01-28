@@ -239,6 +239,32 @@
           },
           {
             "kind": "Function",
+            "name": "fetchAppConfiguration",
+            "printedName": "fetchAppConfiguration(appCode:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:16KovaleeFramework0A7ManagerC21fetchAppConfiguration7appCodeySS_tYaF",
+            "mangledName": "$s16KovaleeFramework0A7ManagerC21fetchAppConfiguration7appCodeySS_tYaF",
+            "moduleName": "KovaleeFramework",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
             "name": "fetchEventSequences",
             "printedName": "fetchEventSequences(locale:keys:experimentalFeatureEnabled:)",
             "children": [
@@ -519,6 +545,100 @@
             "declKind": "Func",
             "usr": "s:16KovaleeFramework0A7ManagerC19userConversionValueSiyF",
             "mangledName": "$s16KovaleeFramework0A7ManagerC19userConversionValueSiyF",
+            "moduleName": "KovaleeFramework",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "sequenceVersion",
+            "printedName": "sequenceVersion()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:16KovaleeFramework0A7ManagerC15sequenceVersionSiyF",
+            "mangledName": "$s16KovaleeFramework0A7ManagerC15sequenceVersionSiyF",
+            "moduleName": "KovaleeFramework",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "setSequenceVersion",
+            "printedName": "setSequenceVersion(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:16KovaleeFramework0A7ManagerC18setSequenceVersionyySiF",
+            "mangledName": "$s16KovaleeFramework0A7ManagerC18setSequenceVersionyySiF",
+            "moduleName": "KovaleeFramework",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "parsingLogic",
+            "printedName": "parsingLogic()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:16KovaleeFramework0A7ManagerC12parsingLogicSiyF",
+            "mangledName": "$s16KovaleeFramework0A7ManagerC12parsingLogicSiyF",
+            "moduleName": "KovaleeFramework",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "setParsingLogic",
+            "printedName": "setParsingLogic(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:16KovaleeFramework0A7ManagerC15setParsingLogicyySiF",
+            "mangledName": "$s16KovaleeFramework0A7ManagerC15setParsingLogicyySiF",
             "moduleName": "KovaleeFramework",
             "declAttributes": [
               "AccessControl"
@@ -7871,6 +7991,80 @@
             "declKind": "EnumElement",
             "usr": "s:16KovaleeFramework11StorageKeysO22eventsSequencesFetchedyA2CmF",
             "mangledName": "$s16KovaleeFramework11StorageKeysO22eventsSequencesFetchedyA2CmF",
+            "moduleName": "KovaleeFramework"
+          },
+          {
+            "kind": "Var",
+            "name": "sequenceVersion",
+            "printedName": "sequenceVersion",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(KovaleeFramework.StorageKeys.Type) -> KovaleeFramework.StorageKeys",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "StorageKeys",
+                    "printedName": "KovaleeFramework.StorageKeys",
+                    "usr": "s:16KovaleeFramework11StorageKeysO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "KovaleeFramework.StorageKeys.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "StorageKeys",
+                        "printedName": "KovaleeFramework.StorageKeys",
+                        "usr": "s:16KovaleeFramework11StorageKeysO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:16KovaleeFramework11StorageKeysO15sequenceVersionyA2CmF",
+            "mangledName": "$s16KovaleeFramework11StorageKeysO15sequenceVersionyA2CmF",
+            "moduleName": "KovaleeFramework"
+          },
+          {
+            "kind": "Var",
+            "name": "parsingLogic",
+            "printedName": "parsingLogic",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(KovaleeFramework.StorageKeys.Type) -> KovaleeFramework.StorageKeys",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "StorageKeys",
+                    "printedName": "KovaleeFramework.StorageKeys",
+                    "usr": "s:16KovaleeFramework11StorageKeysO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "KovaleeFramework.StorageKeys.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "StorageKeys",
+                        "printedName": "KovaleeFramework.StorageKeys",
+                        "usr": "s:16KovaleeFramework11StorageKeysO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:16KovaleeFramework11StorageKeysO12parsingLogicyA2CmF",
+            "mangledName": "$s16KovaleeFramework11StorageKeysO12parsingLogicyA2CmF",
             "moduleName": "KovaleeFramework"
           },
           {
@@ -15719,7 +15913,7 @@
     {
       "filePath": "\/Users\/moez\/Documents\/SDK\/Kovalee-iOS-Framework\/KovaleeFramework\/KovaleeManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 10677,
+      "offset": 11537,
       "length": 5,
       "value": "false"
     },
@@ -15824,7 +16018,7 @@
     {
       "filePath": "\/Users\/moez\/Documents\/SDK\/Kovalee-iOS-Framework\/KovaleeFramework\/NetworkProvider.swift",
       "kind": "StringLiteral",
-      "offset": 1091,
+      "offset": 1321,
       "length": 30,
       "value": "\"https:\/\/web2web.onrender.com\""
     },
@@ -15925,6 +16119,20 @@
       "offset": 780,
       "length": 26,
       "value": "\"events_sequences_fetched\""
+    },
+    {
+      "filePath": "\/Users\/moez\/Documents\/SDK\/Kovalee-iOS-Framework\/KovaleeFramework\/Utils\/Storage.swift",
+      "kind": "StringLiteral",
+      "offset": 834,
+      "length": 18,
+      "value": "\"sequence_version\""
+    },
+    {
+      "filePath": "\/Users\/moez\/Documents\/SDK\/Kovalee-iOS-Framework\/KovaleeFramework\/Utils\/Storage.swift",
+      "kind": "StringLiteral",
+      "offset": 877,
+      "length": 15,
+      "value": "\"parsing_logic\""
     },
     {
       "filePath": "\/Users\/moez\/Documents\/SDK\/Kovalee-iOS-Framework\/KovaleeFramework\/ConversionValue\/Event.swift",

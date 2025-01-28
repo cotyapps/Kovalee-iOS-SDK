@@ -66,6 +66,12 @@ public struct DebugView: View {
                 }
 
                 Section {
+                    EventsSequencesConfigurationView(isDebugModeOn: $isDebugModeOn)
+                } header: {
+                    Text("Configuration")
+                }
+
+                Section {
                     sequencesView()
                 } header: {
                     Text("Events Sequences")
@@ -170,6 +176,7 @@ extension DebugView {
     }
 }
 
+
 struct InfoLabel: View {
     var title: String
     var value: String
@@ -185,6 +192,72 @@ struct InfoLabel: View {
             VStack(alignment: .leading) {
                 Text(title).bold()
                 Text(value)
+            }
+        }
+    }
+}
+
+@available(iOS 16.0, *)
+struct EventsSequencesConfigurationView: View {
+    enum FocusedField {
+        case parsingLogic
+        case sequenceLogic
+    }
+
+    @FocusState private var focusedField: FocusedField?
+    @State private var sequenceVersionValue: String = ""
+    @State private var parsingLogicValue: String = ""
+    @Binding var isDebugModeOn: Bool
+
+    var body: some View {
+
+        if isDebugModeOn {
+            HStack {
+                Text("Sequence version:").bold()
+                TextField("Sequence version:", text: $sequenceVersionValue)
+                    .keyboardType(.numberPad)
+                    .focused($focusedField, equals: .sequenceLogic)
+            }
+        } else {
+            if let sequence = Kovalee.shared.kovaleeManager?.sequenceVersion() {
+                InfoLabel(
+                    title: "Sequence version:",
+                    value: String(sequence),
+                    horizontal: false
+                )
+            }
+        }
+
+        if isDebugModeOn {
+            HStack {
+                Text("Parsing logic: ").bold()
+                TextField("Parsing logic", text: $parsingLogicValue)
+                    .keyboardType(.numberPad)
+                    .focused($focusedField, equals: .parsingLogic)
+            }
+
+            Button("Update Value") {
+                focusedField = nil
+                if !parsingLogicValue.isEmpty {
+                    Kovalee.shared.kovaleeManager?.setParsingLogic(Int(parsingLogicValue) ?? 0)
+                }
+                if !sequenceVersionValue.isEmpty {
+                    Kovalee.shared.kovaleeManager?.setSequenceVersion(Int(sequenceVersionValue) ?? 0)
+                }
+
+                //TODO: call FetchEvents
+            }
+            .buttonStyle(.borderedProminent)
+            .onAppear {
+                focusedField = .sequenceLogic
+            }
+        } else {
+            if let logic = Kovalee.shared.kovaleeManager?.parsingLogic() {
+                InfoLabel(
+                    title: "Parsing Logic:",
+                    value: String(logic),
+                    horizontal: false
+                )
             }
         }
     }
