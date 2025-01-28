@@ -74,12 +74,11 @@ public final class Kovalee {
                     keys: keys,
                     sdkVersion: SDK_VERSION,
                     eventTrackerManager: eventTracker,
-                    experimentalFeatureEnabled: configuration.enableExperimentalFeature,
                     alreadyIntegrated: configuration.alreadyIntegrated
                 )
                 Task.detached {
-                    await self.kovaleeManager?.fetchAppConfiguration(appCode: self.keys.appCode)
-                    await self.kovaleeManager?.fetchEventSequences(locale: Locale.current.regionCode, keys: self.keys, experimentalFeatureEnabled: false)
+                    await self.kovaleeManager?.fetchAppConfiguration()
+                    self.kovaleeManager?.setupConversionManager()
                 }
                 setupCapabilities()
             }
@@ -133,27 +132,6 @@ extension Kovalee {
                     kovaleeManager?.setupRemoteConfigurationManager(remoteConfigManager: remoteConfigManager)
                 }
 
-            case .ads:
-                let creator = AdsManagerCreator()
-                if let adsManager = (creator as? Creator)?.createImplementation(
-                    withConfiguration: configuration,
-                    andKeys: keys
-                ) as? AdsManager {
-                    kovaleeManager?.setupAdsManager(adsManager: adsManager)
-                }
-
-            case .paywall:
-                guard keys.superwall != nil else {
-                    continue
-                }
-                let creator = PaywallManagerCreator()
-                if let paywallManager = (creator as? Creator)?.createImplementation(
-                    withConfiguration: configuration,
-                    andKeys: keys
-                ) as? PaywallManager {
-                    kovaleeManager?.setupPaywallManager(paywallManager: paywallManager)
-                }
-
             case .survey:
                 guard keys.survicate?.sdkId != nil else {
                     continue
@@ -177,8 +155,6 @@ enum Capabilities: CaseIterable {
     case attribution
     case purchases
     case remoteConfiguration
-    case ads
-    case paywall
     case survey
 }
 
@@ -198,6 +174,4 @@ public struct AttributionManagerCreator {
 
 public struct PurchaseManagerCreator {}
 public struct RemoteConfigManagerCreator {}
-public struct AdsManagerCreator {}
-public struct PaywallManagerCreator {}
 public struct SurveyManagerCreator {}

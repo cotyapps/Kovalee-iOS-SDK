@@ -1,5 +1,5 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 6.0 effective-5.10 (swiftlang-6.0.0.9.10 clang-1600.0.26.2)
+// swift-compiler-version: Apple Swift version 6.0.3 effective-5.10 (swiftlang-6.0.3.1.10 clang-1600.0.30.1)
 // swift-module-flags: -target x86_64-apple-ios14.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name KovaleeFramework
 // swift-module-flags-ignorable: -no-verify-emitted-module-interface
 import AppTrackingTransparency
@@ -12,15 +12,13 @@ import _StringProcessing
 import _SwiftConcurrencyShims
 import os
 public class KovaleeManager {
-  public init(withStorage storage: KovaleeFramework.Storage = .userDefaults(), keys: KovaleeFramework.KovaleeKeys, sdkVersion: Swift.String, eventTrackerManager: any KovaleeFramework.EventTrackerManager, experimentalFeatureEnabled _: Swift.Bool, alreadyIntegrated: Swift.Bool)
+  public init(withStorage storage: KovaleeFramework.Storage = .userDefaults(), keys: KovaleeFramework.KovaleeKeys, sdkVersion: Swift.String, eventTrackerManager: any KovaleeFramework.EventTrackerManager, alreadyIntegrated: Swift.Bool)
   public func setupAttributionManager(adjustWrapper: any KovaleeFramework.AttributionManager)
   public func setupPurchaseManager(purchaseManager: any KovaleeFramework.PurchaseManager)
   public func setupRemoteConfigurationManager(remoteConfigManager: any KovaleeFramework.RemoteConfigurationManager)
   public func setupAdsManager(adsManager: any KovaleeFramework.AdsManager)
   public func setupPaywallManager(paywallManager: any KovaleeFramework.PaywallManager)
   public func setupSurveyManager(surveyManager: any KovaleeFramework.SurveyManager)
-  public func fetchAppConfiguration(appCode: Swift.String) async
-  public func fetchEventSequences(locale: Swift.String?, keys: KovaleeFramework.KovaleeKeys, experimentalFeatureEnabled: Swift.Bool) async
   public func promptTrackingAuthorization(completion: @escaping (AppTrackingTransparency.ATTrackingManager.AuthorizationStatus) -> Swift.Void)
   public func getAttributionAdid() async -> Swift.String?
   public func attributionCallback(withAdid adid: Swift.String?)
@@ -54,6 +52,11 @@ public class KovaleeManager {
   public var paywallManager: (any KovaleeFramework.PaywallManager)?
   public var surveyManager: (any KovaleeFramework.SurveyManager)?
   @objc deinit
+}
+extension KovaleeFramework.KovaleeManager {
+  public func fetchAppConfiguration() async
+  public func fetchEventSequences() async
+  public func setupConversionManager()
 }
 public struct KLogger {
   public static var logLevel: KovaleeFramework.LogLevel
@@ -94,14 +97,10 @@ public struct KovaleeConstants {
 }
 public struct KovaleeKeys : Swift.Decodable {
   public let appCode: Swift.String
-  public let liteVersion: Swift.Bool?
   public let adjust: Swift.String?
   public let amplitude: KovaleeFramework.KovaleeKeys.Amplitude
   public let revenueCat: KovaleeFramework.KovaleeKeys.RevenueCat?
   public let firebase: KovaleeFramework.KovaleeKeys.Firebase?
-  public let applovin: KovaleeFramework.KovaleeKeys.Applovin?
-  public let superwall: KovaleeFramework.KovaleeKeys.Superwall?
-  public let conversionValue: KovaleeFramework.KovaleeKeys.ConversionValue?
   public let survicate: KovaleeFramework.KovaleeKeys.Survicate?
   public struct Amplitude : Swift.Decodable {
     public var prodSDKId: Swift.String
@@ -119,23 +118,6 @@ public struct KovaleeKeys : Swift.Decodable {
     public var senderId: Swift.String
     public var projectId: Swift.String
     public var configuredInApp: Swift.Bool
-    public init(from decoder: any Swift.Decoder) throws
-  }
-  public struct Applovin : Swift.Decodable {
-    public var sdkId: Swift.String
-    public var interstitialUnitId: Swift.String
-    public var rewardedUnitId: Swift.String
-    public init(from decoder: any Swift.Decoder) throws
-  }
-  public struct ConversionValue : Swift.Decodable {
-    public let bottomTier: [Swift.String : Swift.Int]
-    public let topTier: [Swift.String : Swift.Int]
-    public let usTier: [Swift.String : Swift.Int]
-    public init(from decoder: any Swift.Decoder) throws
-  }
-  public struct Superwall : Swift.Decodable {
-    public var prodSDKId: Swift.String
-    public var devSDKId: Swift.String?
     public init(from decoder: any Swift.Decoder) throws
   }
   public struct Survicate : Swift.Decodable {
@@ -330,7 +312,7 @@ extension KovaleeFramework.KovaleeError : Foundation.LocalizedError {
   }
 }
 public struct ConversionValueManager {
-  public init(keys: KovaleeFramework.KovaleeKeys, locale: Swift.String?, liteVersion: Swift.Bool, experimentalFeatureEnabled: Swift.Bool, storage: KovaleeFramework.Storage = .userDefaults())
+  public init(appCode: Swift.String, parsingVersion: Swift.Int, storage: KovaleeFramework.Storage = .userDefaults())
 }
 extension KovaleeFramework.ConversionValueManager {
   public mutating func conversionValue(fromEvent event: KovaleeFramework.Event) -> Swift.Int?
