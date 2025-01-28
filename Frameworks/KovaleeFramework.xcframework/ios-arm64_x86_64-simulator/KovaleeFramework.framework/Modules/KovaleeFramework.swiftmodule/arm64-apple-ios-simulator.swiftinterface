@@ -31,7 +31,9 @@ public class KovaleeManager {
   public func currentEventsSequence() -> Swift.String
   public func userConversionValue() -> Swift.Int
   public func sequenceVersion() -> Swift.Int
+  public func setSequenceVersion(_ version: Swift.Int)
   public func parsingLogic() -> Swift.Int
+  public func setParsingLogic(_ logic: Swift.Int)
   public func sendEvent(_ event: KovaleeFramework.Event)
   public func setAmplitudeUserId(userId: Swift.String)
   public func amplitudeUserId() -> Swift.String?

@@ -574,6 +574,32 @@
           },
           {
             "kind": "Function",
+            "name": "setSequenceVersion",
+            "printedName": "setSequenceVersion(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:16KovaleeFramework0A7ManagerC18setSequenceVersionyySiF",
+            "mangledName": "$s16KovaleeFramework0A7ManagerC18setSequenceVersionyySiF",
+            "moduleName": "KovaleeFramework",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
             "name": "parsingLogic",
             "printedName": "parsingLogic()",
             "children": [
@@ -587,6 +613,32 @@
             "declKind": "Func",
             "usr": "s:16KovaleeFramework0A7ManagerC12parsingLogicSiyF",
             "mangledName": "$s16KovaleeFramework0A7ManagerC12parsingLogicSiyF",
+            "moduleName": "KovaleeFramework",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "setParsingLogic",
+            "printedName": "setParsingLogic(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:16KovaleeFramework0A7ManagerC15setParsingLogicyySiF",
+            "mangledName": "$s16KovaleeFramework0A7ManagerC15setParsingLogicyySiF",
             "moduleName": "KovaleeFramework",
             "declAttributes": [
               "AccessControl"
@@ -15861,7 +15913,7 @@
     {
       "filePath": "\/Users\/moez\/Documents\/SDK\/Kovalee-iOS-Framework\/KovaleeFramework\/KovaleeManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 11311,
+      "offset": 11537,
       "length": 5,
       "value": "false"
     },
