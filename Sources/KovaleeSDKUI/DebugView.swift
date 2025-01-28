@@ -246,6 +246,8 @@ struct ConfigurationView: View {
                 if !sequenceVersionValue.isEmpty {
                     Kovalee.shared.kovaleeManager?.setSequenceVersion(Int(sequenceVersionValue) ?? 0)
                 }
+
+                //TODO: call FetchEvents
             }
             .buttonStyle(.borderedProminent)
             .onAppear {
