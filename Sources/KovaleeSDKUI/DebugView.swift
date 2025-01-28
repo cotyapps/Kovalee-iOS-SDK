@@ -66,9 +66,7 @@ public struct DebugView: View {
                 }
 
                 Section {
-//                    if isDebugModeOn {
-                    ConfigurationView(isDebugModeOn: $isDebugModeOn)
-//                    }
+                    EventsSequencesConfigurationView(isDebugModeOn: $isDebugModeOn)
                 } header: {
                     Text("Configuration")
                 }
@@ -200,7 +198,7 @@ struct InfoLabel: View {
 }
 
 @available(iOS 16.0, *)
-struct ConfigurationView: View {
+struct EventsSequencesConfigurationView: View {
     enum FocusedField {
         case parsingLogic
         case sequenceLogic
