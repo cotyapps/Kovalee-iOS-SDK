@@ -236,16 +236,8 @@ struct EventsSequencesConfigurationView: View {
                     .focused($focusedField, equals: .parsingLogic)
             }
 
-            Button("Update Value") {
-                focusedField = nil
-                if !parsingLogicValue.isEmpty {
-                    Kovalee.shared.kovaleeManager?.setParsingLogic(Int(parsingLogicValue) ?? 0)
-                }
-                if !sequenceVersionValue.isEmpty {
-                    Kovalee.shared.kovaleeManager?.setSequenceVersion(Int(sequenceVersionValue) ?? 0)
-                }
-
-                //TODO: call FetchEvents
+            Button(action: refreshAction) {
+                Text("Refresh Sequences")
             }
             .buttonStyle(.borderedProminent)
             .onAppear {
@@ -259,6 +251,23 @@ struct EventsSequencesConfigurationView: View {
                     horizontal: false
                 )
             }
+        }
+    }
+}
+
+@available(iOS 16.0, *)
+extension EventsSequencesConfigurationView {
+    func refreshAction() {
+        focusedField = nil
+        if !parsingLogicValue.isEmpty {
+            Kovalee.shared.kovaleeManager?.setParsingLogic(Int(parsingLogicValue) ?? 0)
+        }
+        if !sequenceVersionValue.isEmpty {
+            Kovalee.shared.kovaleeManager?.setSequenceVersion(Int(sequenceVersionValue) ?? 0)
+        }
+
+        Task {
+            await Kovalee.shared.kovaleeManager?.fetchEventSequences()
         }
     }
 }
