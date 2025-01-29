@@ -54,9 +54,9 @@ public class KovaleeManager {
   @objc deinit
 }
 extension KovaleeFramework.KovaleeManager {
-  public func fetchAppConfiguration() async
   public func fetchEventSequences() async
   public func setupConversionManager()
+  public func flushCachedEvents()
 }
 public struct KLogger {
   public static var logLevel: KovaleeFramework.LogLevel
