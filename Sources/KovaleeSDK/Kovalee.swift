@@ -76,10 +76,7 @@ public final class Kovalee {
                     eventTrackerManager: eventTracker,
                     alreadyIntegrated: configuration.alreadyIntegrated
                 )
-                Task.detached {
-                    await self.kovaleeManager?.fetchAppConfiguration()
-                    self.kovaleeManager?.setupConversionManager()
-                }
+
                 setupCapabilities()
             }
 

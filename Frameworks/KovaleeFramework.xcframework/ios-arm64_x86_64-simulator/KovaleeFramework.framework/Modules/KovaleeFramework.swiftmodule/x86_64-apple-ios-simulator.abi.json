@@ -1661,24 +1661,6 @@
           },
           {
             "kind": "Function",
-            "name": "fetchAppConfiguration",
-            "printedName": "fetchAppConfiguration()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:16KovaleeFramework0A7ManagerC21fetchAppConfigurationyyYaF",
-            "mangledName": "$s16KovaleeFramework0A7ManagerC21fetchAppConfigurationyyYaF",
-            "moduleName": "KovaleeFramework",
-            "isFromExtension": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
             "name": "fetchEventSequences",
             "printedName": "fetchEventSequences()",
             "children": [
@@ -1709,6 +1691,24 @@
             "declKind": "Func",
             "usr": "s:16KovaleeFramework0A7ManagerC015setupConversionC0yyF",
             "mangledName": "$s16KovaleeFramework0A7ManagerC015setupConversionC0yyF",
+            "moduleName": "KovaleeFramework",
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "flushCachedEvents",
+            "printedName": "flushCachedEvents()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:16KovaleeFramework0A7ManagerC17flushCachedEventsyyF",
+            "mangledName": "$s16KovaleeFramework0A7ManagerC17flushCachedEventsyyF",
             "moduleName": "KovaleeFramework",
             "isFromExtension": true,
             "funcSelfKind": "NonMutating"
@@ -14774,7 +14774,7 @@
     {
       "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 10199,
+      "offset": 10095,
       "length": 5,
       "value": "false"
     },
