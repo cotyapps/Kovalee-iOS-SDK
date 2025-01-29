@@ -268,6 +268,7 @@ extension EventsSequencesConfigurationView {
 
         Task {
             await Kovalee.shared.kovaleeManager?.fetchEventSequences()
+            Kovalee.shared.kovaleeManager?.setupConversionManager()
         }
     }
 }
