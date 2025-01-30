@@ -1,5 +1,5 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 6.0 effective-5.10 (swiftlang-6.0.0.9.10 clang-1600.0.26.2)
+// swift-compiler-version: Apple Swift version 6.0.3 effective-5.10 (swiftlang-6.0.3.1.10 clang-1600.0.30.1)
 // swift-module-flags: -target x86_64-apple-ios14.0-macabi -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name KovaleeFramework
 // swift-module-flags-ignorable: -no-verify-emitted-module-interface
 import AppTrackingTransparency
@@ -16,7 +16,6 @@ public class KovaleeManager {
   public func setupAttributionManager(adjustWrapper: any KovaleeFramework.AttributionManager)
   public func setupPurchaseManager(purchaseManager: any KovaleeFramework.PurchaseManager)
   public func setupRemoteConfigurationManager(remoteConfigManager: any KovaleeFramework.RemoteConfigurationManager)
-  public func setupAdsManager(adsManager: any KovaleeFramework.AdsManager)
   public func setupPaywallManager(paywallManager: any KovaleeFramework.PaywallManager)
   public func setupSurveyManager(surveyManager: any KovaleeFramework.SurveyManager)
   public func promptTrackingAuthorization(completion: @escaping (AppTrackingTransparency.ATTrackingManager.AuthorizationStatus) -> Swift.Void)
@@ -48,7 +47,6 @@ public class KovaleeManager {
   public var trackerManager: (any KovaleeFramework.EventTrackerManager)?
   public var purchaseManager: (any KovaleeFramework.PurchaseManager)?
   public var remoteConfigManager: (any KovaleeFramework.RemoteConfigurationManager)?
-  public var adsManager: (any KovaleeFramework.AdsManager)?
   public var paywallManager: (any KovaleeFramework.PaywallManager)?
   public var surveyManager: (any KovaleeFramework.SurveyManager)?
   @objc deinit
@@ -66,13 +64,6 @@ extension KovaleeFramework.KLogger {
   public static func info(_ message: Swift.String, fileName: Swift.String? = #fileID, functionName: Swift.String? = #function, line: Swift.UInt = #line)
   public static func warn(_ message: Swift.String, fileName: Swift.String? = #fileID, functionName: Swift.String? = #function, line: Swift.UInt = #line)
   public static func error(_ message: Swift.String, fileName: Swift.String = #fileID, functionName: Swift.String = #function, line: Swift.UInt = #line)
-}
-extension KovaleeFramework.KovaleeManager {
-  public func showMediationDebugger()
-  public func loadInterstitialAd() async -> Swift.Bool?
-  public func showInterstitialAd() async -> Swift.Bool?
-  public func loadRewardedAd() async -> Swift.Bool?
-  public func showRewardedAd() async -> (any KovaleeFramework.AbstractReward)?
 }
 public enum LogLevel : Swift.Int {
   case verbose
@@ -92,7 +83,7 @@ public enum LogLevel : Swift.Int {
 extension KovaleeFramework.LogLevel : Swift.Comparable {
   public static func < (lhs: KovaleeFramework.LogLevel, rhs: KovaleeFramework.LogLevel) -> Swift.Bool
 }
-public struct KovaleeConstants {
+public enum KovaleeConstants {
   public static let keysFileName: Swift.String
 }
 public struct KovaleeKeys : Swift.Decodable {
@@ -268,14 +259,6 @@ public protocol AbstractPackage {
   var rcPackage: Any { get }
   func getDuration() -> Swift.Int
 }
-public protocol AdsManager {
-  func showMediationDebugger()
-  func createInterstitialAd() async throws -> Swift.Bool
-  func showInterstitialAd() async throws -> Swift.Bool
-  func createRewardedAd() async throws -> Swift.Bool
-  func showRewardedAd() async throws -> (any KovaleeFramework.AbstractReward)?
-  func setDataCollectionEnabled(_ enabled: Swift.Bool)
-}
 public protocol AbstractReward {
   var label: Swift.String { get }
   var amount: Swift.Int { get }
@@ -312,7 +295,7 @@ extension KovaleeFramework.KovaleeError : Foundation.LocalizedError {
   }
 }
 public struct ConversionValueManager {
-  public init(appCode: Swift.String, parsingVersion: Swift.Int, storage: KovaleeFramework.Storage = .userDefaults(), eventTrackerManager: (any KovaleeFramework.EventTrackerManager)?)
+  public init(appCode: Swift.String, parsingLogicVersion: Swift.Int, storage: KovaleeFramework.Storage = .userDefaults(), eventTrackerManager: (any KovaleeFramework.EventTrackerManager)?)
 }
 extension KovaleeFramework.ConversionValueManager {
   public mutating func conversionValue(fromEvent event: KovaleeFramework.Event) -> Swift.Int?
