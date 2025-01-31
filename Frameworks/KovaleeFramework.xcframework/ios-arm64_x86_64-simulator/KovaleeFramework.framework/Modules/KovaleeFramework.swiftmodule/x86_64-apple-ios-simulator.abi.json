@@ -14341,7 +14341,7 @@
     {
       "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 9804,
+      "offset": 9791,
       "length": 5,
       "value": "false"
     },
@@ -14624,13 +14624,6 @@
       "offset": 154,
       "length": 4,
       "value": "\"D3\""
-    },
-    {
-      "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/FixedSizeQueue.swift",
-      "kind": "IntegerLiteral",
-      "offset": 240,
-      "length": 2,
-      "value": "-1"
     }
   ]
 }
