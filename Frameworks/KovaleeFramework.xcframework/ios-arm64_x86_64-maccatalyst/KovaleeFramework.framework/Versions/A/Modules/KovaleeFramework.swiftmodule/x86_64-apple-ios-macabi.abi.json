@@ -14589,41 +14589,6 @@
       "offset": 125,
       "length": 1,
       "value": "5"
-    },
-    {
-      "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/EventsSequence.swift",
-      "kind": "StringLiteral",
-      "offset": 66,
-      "length": 8,
-      "value": "\"sess_1\""
-    },
-    {
-      "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/EventsSequence.swift",
-      "kind": "StringLiteral",
-      "offset": 91,
-      "length": 4,
-      "value": "\"D0\""
-    },
-    {
-      "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/EventsSequence.swift",
-      "kind": "StringLiteral",
-      "offset": 112,
-      "length": 4,
-      "value": "\"D1\""
-    },
-    {
-      "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/EventsSequence.swift",
-      "kind": "StringLiteral",
-      "offset": 133,
-      "length": 4,
-      "value": "\"D2\""
-    },
-    {
-      "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/EventsSequence.swift",
-      "kind": "StringLiteral",
-      "offset": 154,
-      "length": 4,
-      "value": "\"D3\""
     }
   ]
 }
