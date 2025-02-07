@@ -1,5 +1,5 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 6.0.3 effective-5.10 (swiftlang-6.0.3.1.10 clang-1600.0.30.1)
+// swift-compiler-version: Apple Swift version 6.0 effective-5.10 (swiftlang-6.0.0.9.10 clang-1600.0.26.2)
 // swift-module-flags: -target x86_64-apple-ios14.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name KovaleeFramework
 // swift-module-flags-ignorable: -no-verify-emitted-module-interface
 import AppTrackingTransparency
@@ -298,7 +298,7 @@ public struct ConversionValueManager {
   public init(appCode: Swift.String, parsingLogicVersion: Swift.Int, storage: KovaleeFramework.Storage = .userDefaults(), eventTrackerManager: (any KovaleeFramework.EventTrackerManager)?)
 }
 extension KovaleeFramework.ConversionValueManager {
-  public mutating func conversionValue(fromEvent event: KovaleeFramework.Event) -> Swift.Int?
+  public mutating func conversionValue(fromEvent event: KovaleeFramework.Event) -> KovaleeFramework.ConversionValue?
 }
 extension KovaleeFramework.KovaleeManager {
   public func setPurchaseDelegate(_ delegate: any KovaleeFramework.KovaleePurchasesDelegate)
@@ -437,6 +437,20 @@ extension Swift.Dictionary where Key == Swift.String, Value == Any {
     get
   }
 }
+public struct ConversionValue : Swift.Decodable {
+  public enum CoarseValue : Swift.String, Swift.Decodable {
+    case low
+    case medium
+    case high
+    public init?(rawValue: Swift.String)
+    public typealias RawValue = Swift.String
+    public var rawValue: Swift.String {
+      get
+    }
+  }
+  public init(value: Swift.Int, coarseValue: KovaleeFramework.ConversionValue.CoarseValue)
+  public init(from decoder: any Swift.Decoder) throws
+}
 extension KovaleeFramework.LogLevel : Swift.Hashable {}
 extension KovaleeFramework.LogLevel : Swift.RawRepresentable {}
 extension KovaleeFramework.FileReaderError : Swift.Equatable {}
@@ -452,3 +466,6 @@ extension KovaleeFramework.AdjustConfiguration.Environment : Swift.Hashable {}
 extension KovaleeFramework.AdjustConfiguration.Environment : Swift.RawRepresentable {}
 extension KovaleeFramework.KovaleeError : Swift.Equatable {}
 extension KovaleeFramework.KovaleeError : Swift.Hashable {}
+extension KovaleeFramework.ConversionValue.CoarseValue : Swift.Equatable {}
+extension KovaleeFramework.ConversionValue.CoarseValue : Swift.Hashable {}
+extension KovaleeFramework.ConversionValue.CoarseValue : Swift.RawRepresentable {}

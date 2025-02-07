@@ -2,7 +2,7 @@
   "object": {
     "pins": [
       {
-        "package": "abseil-cpp-binary",
+        "package": "abseil",
         "repositoryURL": "https://github.com/google/abseil-cpp-binary.git",
         "state": {
           "branch": null,
@@ -11,21 +11,12 @@
         }
       },
       {
-        "package": "adjust_signature_sdk",
+        "package": "AdjustSignature",
         "repositoryURL": "https://github.com/adjust/adjust_signature_sdk.git",
         "state": {
           "branch": null,
           "revision": "93c40d7fa27b709a81adc50e41b400ce4411c7ff",
           "version": "3.35.2"
-        }
-      },
-      {
-        "package": "AIKit-iOS",
-        "repositoryURL": "https://github.com/cotyapps/AIKit-iOS.git",
-        "state": {
-          "branch": null,
-          "revision": "ea23543a25f753557a54e573b9c311030697f458",
-          "version": "1.7.0"
         }
       },
       {
@@ -47,7 +38,7 @@
         }
       },
       {
-        "package": "app-check",
+        "package": "AppCheck",
         "repositoryURL": "https://github.com/google/app-check.git",
         "state": {
           "branch": null,
@@ -56,61 +47,7 @@
         }
       },
       {
-        "package": "combine-schedulers",
-        "repositoryURL": "https://github.com/pointfreeco/combine-schedulers",
-        "state": {
-          "branch": null,
-          "revision": "5928286acce13def418ec36d05a001a9641086f2",
-          "version": "1.0.3"
-        }
-      },
-      {
-        "package": "Components-iOS",
-        "repositoryURL": "https://github.com/cotyapps/Components-iOS",
-        "state": {
-          "branch": null,
-          "revision": "50d4c1307079112b9303270cc22a1be7d4696056",
-          "version": "1.25.3"
-        }
-      },
-      {
-        "package": "contentkit-ios",
-        "repositoryURL": "https://github.com/cotyapps/contentkit-ios.git",
-        "state": {
-          "branch": null,
-          "revision": "a3551b6da1a451ec61b8164a13f3eb27c84f51ab",
-          "version": "0.7.0"
-        }
-      },
-      {
-        "package": "Defaults",
-        "repositoryURL": "https://github.com/sindresorhus/Defaults.git",
-        "state": {
-          "branch": null,
-          "revision": "38925e3cfacf3fb89a81a35b1cd44fd5a5b7e0fa",
-          "version": "8.2.0"
-        }
-      },
-      {
-        "package": "DynamicColor",
-        "repositoryURL": "https://github.com/yannickl/DynamicColor.git",
-        "state": {
-          "branch": null,
-          "revision": "d9beca13ca85baa50ee29832d0db5129fba69630",
-          "version": "5.0.1"
-        }
-      },
-      {
-        "package": "facebook-ios-sdk",
-        "repositoryURL": "https://github.com/facebook/facebook-ios-sdk.git",
-        "state": {
-          "branch": null,
-          "revision": "619d1772808425faa010d92293b26eeb9bc1d630",
-          "version": "17.4.0"
-        }
-      },
-      {
-        "package": "firebase-ios-sdk",
+        "package": "Firebase",
         "repositoryURL": "https://github.com/firebase/firebase-ios-sdk.git",
         "state": {
           "branch": null,
@@ -146,7 +83,7 @@
         }
       },
       {
-        "package": "grpc-binary",
+        "package": "gRPC",
         "repositoryURL": "https://github.com/google/grpc-binary.git",
         "state": {
           "branch": null,
@@ -155,7 +92,7 @@
         }
       },
       {
-        "package": "gtm-session-fetcher",
+        "package": "GTMSessionFetcher",
         "repositoryURL": "https://github.com/google/gtm-session-fetcher.git",
         "state": {
           "branch": null,
@@ -164,7 +101,7 @@
         }
       },
       {
-        "package": "interop-ios-for-google-sdks",
+        "package": "InteropForGoogle",
         "repositoryURL": "https://github.com/google/interop-ios-for-google-sdks.git",
         "state": {
           "branch": null,
@@ -179,15 +116,6 @@
           "branch": null,
           "revision": "c419718364e9f360c602a17a64b91c591f33fe6a",
           "version": "5.0.1"
-        }
-      },
-      {
-        "package": "Kingfisher",
-        "repositoryURL": "https://github.com/onevcat/Kingfisher.git",
-        "state": {
-          "branch": null,
-          "revision": "2ef543ee21d63734e1c004ad6c870255e8716c50",
-          "version": "7.12.0"
         }
       },
       {
@@ -209,7 +137,7 @@
         }
       },
       {
-        "package": "promises",
+        "package": "Promises",
         "repositoryURL": "https://github.com/google/promises.git",
         "state": {
           "branch": null,
@@ -227,51 +155,6 @@
         }
       },
       {
-        "package": "RichTextKit",
-        "repositoryURL": "https://github.com/danielsaidi/RichTextKit.git",
-        "state": {
-          "branch": null,
-          "revision": "f0ecceb71ff3cb12a3143eed13b8b62fea7c34e5",
-          "version": "1.0.0"
-        }
-      },
-      {
-        "package": "scannerkit-ios",
-        "repositoryURL": "https://github.com/cotyapps/scannerkit-ios",
-        "state": {
-          "branch": null,
-          "revision": "8aa55291e2befb1e63877ba68351c42a7473e528",
-          "version": "1.3.0"
-        }
-      },
-      {
-        "package": "SFSafeSymbols",
-        "repositoryURL": "https://github.com/SFSafeSymbols/SFSafeSymbols.git",
-        "state": {
-          "branch": null,
-          "revision": "e2e28f4e56e1769c2ec3c61c9355fc64eb7a535a",
-          "version": "5.3.0"
-        }
-      },
-      {
-        "package": "SimpleToast",
-        "repositoryURL": "https://github.com/sanzaru/SimpleToast.git",
-        "state": {
-          "branch": null,
-          "revision": "99330cceeea6a9068d40ccbe27efb75d240098ef",
-          "version": "0.10.1"
-        }
-      },
-      {
-        "package": "SQLite.swift",
-        "repositoryURL": "https://github.com/stephencelis/SQLite.swift.git",
-        "state": {
-          "branch": null,
-          "revision": "a95fc6df17d108bd99210db5e8a9bac90fe984b8",
-          "version": "0.15.3"
-        }
-      },
-      {
         "package": "Survicate",
         "repositoryURL": "https://github.com/Survicate/survicate-ios-sdk",
         "state": {
@@ -281,66 +164,12 @@
         }
       },
       {
-        "package": "swift-clocks",
-        "repositoryURL": "https://github.com/pointfreeco/swift-clocks",
-        "state": {
-          "branch": null,
-          "revision": "cc46202b53476d64e824e0b6612da09d84ffde8e",
-          "version": "1.0.6"
-        }
-      },
-      {
-        "package": "swift-concurrency-extras",
-        "repositoryURL": "https://github.com/pointfreeco/swift-concurrency-extras",
-        "state": {
-          "branch": null,
-          "revision": "82a4ae7170d98d8538ec77238b7eb8e7199ef2e8",
-          "version": "1.3.1"
-        }
-      },
-      {
-        "package": "swift-dependencies",
-        "repositoryURL": "https://github.com/pointfreeco/swift-dependencies",
-        "state": {
-          "branch": null,
-          "revision": "52b5e1a09dc016e64ce253e19ab3124b7fae9ac9",
-          "version": "1.7.0"
-        }
-      },
-      {
-        "package": "swift-protobuf",
+        "package": "SwiftProtobuf",
         "repositoryURL": "https://github.com/apple/swift-protobuf.git",
         "state": {
           "branch": null,
           "revision": "ebc7251dd5b37f627c93698e4374084d98409633",
           "version": "1.28.2"
-        }
-      },
-      {
-        "package": "swift-syntax",
-        "repositoryURL": "https://github.com/swiftlang/swift-syntax",
-        "state": {
-          "branch": null,
-          "revision": "0687f71944021d616d34d922343dcef086855920",
-          "version": "600.0.1"
-        }
-      },
-      {
-        "package": "swiftui-markdown",
-        "repositoryURL": "https://github.com/jaywcjlove/swiftui-markdown.git",
-        "state": {
-          "branch": null,
-          "revision": "c7e1dd8226cd788a4dd5c654b98e672916c9e96d",
-          "version": "1.0.11"
-        }
-      },
-      {
-        "package": "xctest-dynamic-overlay",
-        "repositoryURL": "https://github.com/pointfreeco/xctest-dynamic-overlay",
-        "state": {
-          "branch": null,
-          "revision": "9243488728a70a457f15651fdea44cacf12ee4ff",
-          "version": "1.5.0"
         }
       }
     ]
