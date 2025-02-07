@@ -74,6 +74,7 @@ let package = Package(
         .target(
             name: .kovaleeRemoteConfig,
             dependencies: [
+                .sdk,
                 .framework,
                 .firebaseAnalyticsSwift,
                 .firebaseRemoteConfig,
