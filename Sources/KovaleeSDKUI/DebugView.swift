@@ -270,6 +270,8 @@ extension EventsSequencesConfigurationView {
             await Kovalee.shared.kovaleeManager?.fetchEventSequences()
             Kovalee.shared.kovaleeManager?.setupConversionManager()
         }
+        Kovalee.shared.kovaleeManager?.resetApp()
+        UIImpactFeedbackGenerator(style: .medium).impactOccurred()
     }
 }
 

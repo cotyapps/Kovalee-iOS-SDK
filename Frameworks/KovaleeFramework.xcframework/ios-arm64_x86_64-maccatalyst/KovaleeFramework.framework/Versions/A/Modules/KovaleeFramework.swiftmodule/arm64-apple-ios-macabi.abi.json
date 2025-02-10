@@ -543,6 +543,26 @@
           },
           {
             "kind": "Function",
+            "name": "resetApp",
+            "printedName": "resetApp()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:16KovaleeFramework0A7ManagerC8resetAppyyF",
+            "mangledName": "$s16KovaleeFramework0A7ManagerC8resetAppyyF",
+            "moduleName": "KovaleeFramework",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
             "name": "sendEvent",
             "printedName": "sendEvent(_:)",
             "children": [
@@ -14698,7 +14718,7 @@
     {
       "filePath": "\/Users\/moez\/Documents\/SDK\/Kovalee-iOS-Framework\/KovaleeFramework\/KovaleeManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 9661,
+      "offset": 9992,
       "length": 5,
       "value": "false"
     },
