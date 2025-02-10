@@ -266,6 +266,8 @@ extension EventsSequencesConfigurationView {
             Kovalee.shared.kovaleeManager?.setSequenceVersion(Int(sequenceVersionValue) ?? 0)
         }
 
+        Kovalee.shared.kovaleeManager?.resetApp()
+
         Task {
             await Kovalee.shared.kovaleeManager?.fetchEventSequences()
             Kovalee.shared.kovaleeManager?.setupConversionManager()
