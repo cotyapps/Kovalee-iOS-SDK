@@ -405,6 +405,8 @@ public enum BasicEvent {
     get
   }
 }
+public struct ParsingLogic {
+}
 public struct Event {
   public var name: Swift.String
   public var properties: [Swift.String : Any]?
@@ -413,9 +415,6 @@ public struct Event {
 }
 extension KovaleeFramework.Event : Swift.CustomStringConvertible {
   public var description: Swift.String {
-    get
-  }
-  public var experimentalValue: Swift.String {
     get
   }
 }
