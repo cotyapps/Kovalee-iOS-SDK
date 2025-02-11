@@ -1,28 +1,21 @@
+import FirebaseAnalytics
+import FirebaseCore
+import FirebaseRemoteConfig
 import Foundation
 import KovaleeFramework
 import KovaleeSDK
-import FirebaseCore
-import FirebaseAnalytics
-import FirebaseRemoteConfig
 
 struct FirebaseWrapperImpl: RemoteConfigurationManager, Manager {
     init(keys: KovaleeKeys.Firebase) {
         if !keys.configuredInApp {
-            let options = FirebaseOptions(
-                googleAppID: keys.appId,
-                gcmSenderID: keys.senderId
-            )
-            options.apiKey = keys.apiKey
-            options.projectID = keys.projectId
-
-            FirebaseApp.configure(options: options)
+            FirebaseApp.configure()
         }
 
-        self.remoteConfig = RemoteConfig.remoteConfig()
+        remoteConfig = RemoteConfig.remoteConfig()
     }
 
     func setFetchTimeout(_ timeout: Double) {
-        self.remoteConfig.configSettings.fetchTimeout = timeout
+        remoteConfig.configSettings.fetchTimeout = timeout
     }
 
     func setDataCollectionEnabled(_ enabled: Bool) {
@@ -30,12 +23,12 @@ struct FirebaseWrapperImpl: RemoteConfigurationManager, Manager {
     }
 
     func setDefaultValues(_ values: [String: Any]) {
-        self.remoteConfig.setDefaults(values as? [String: NSObject])
+        remoteConfig.setDefaults(values as? [String: NSObject])
     }
 
     func fetchAndActivateRemoteConfig() async {
         do {
-            try await self.remoteConfig.ensureInitialized()
+            try await remoteConfig.ensureInitialized()
 
             let activated = try await remoteConfig.fetchAndActivate()
             KLogger.debug("🛰️ Remote config activated: \(activated)")
@@ -87,13 +80,13 @@ public class RemoteConfigValue {
     }
 
     init(data: Data) {
-        self.value = String(data: data, encoding: .utf8)
-        self.dataValue = data
+        value = String(data: data, encoding: .utf8)
+        dataValue = data
     }
 
     init(config: FirebaseRemoteConfig.RemoteConfigValue) {
-        self.value = String(data: config.dataValue, encoding: .utf8)
-        self.dataValue = config.dataValue
+        value = String(data: config.dataValue, encoding: .utf8)
+        dataValue = config.dataValue
     }
 }
 
