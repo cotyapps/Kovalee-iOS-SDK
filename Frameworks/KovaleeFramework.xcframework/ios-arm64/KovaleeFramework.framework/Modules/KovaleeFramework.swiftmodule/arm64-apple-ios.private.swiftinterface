@@ -27,6 +27,7 @@ public class KovaleeManager {
   public func currentSequencesFileName() -> Swift.String?
   public func currentEventsSequence() -> Swift.String
   public func userConversionValue() -> Swift.Int
+  public func userCoarseValue() -> Swift.String?
   public func sequenceVersion() -> Swift.Int
   public func setSequenceVersion(_ version: Swift.Int)
   public func parsingLogic() -> Swift.Int
@@ -141,6 +142,7 @@ public enum StorageKeys : Swift.String {
   case appInstallationDate
   case userSubscription
   case conversionValue
+  case coarseValue
   case amplitudeUserId
   case isFirstAppOpening
   case abExperimentValue

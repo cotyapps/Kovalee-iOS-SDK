@@ -57,22 +57,23 @@ public struct DebugView: View {
         NavigationView {
             List {
                 Text("SDK Version: \(SDK_VERSION)")
+                    .allowsHitTesting(false)
                 Toggle("Enable Debug Mode", isOn: $isDebugModeOn)
 
                 Section {
-                    basicInfoView()
+                    basicInfoView
                 } header: {
                     Text("Basic Infos")
                 }
 
                 Section {
-                    EventsSequencesConfigurationView(isDebugModeOn: $isDebugModeOn)
+                    conversionValue
                 } header: {
-                    Text("Configuration")
+                    Text("Conversion Value")
                 }
 
                 Section {
-                    sequencesView()
+                    EventsSequencesConfigurationView(isDebugModeOn: $isDebugModeOn)
                 } header: {
                     Text("Events Sequences")
                 }
@@ -85,6 +86,7 @@ public struct DebugView: View {
 
                 Section {
                     InfoLabel(title: "Current AB test Value:", value: abTestValue ?? "Not set yet")
+                        .allowsHitTesting(false)
                     if isDebugModeOn {
                         ABTestView()
                     }
@@ -92,6 +94,7 @@ public struct DebugView: View {
                     Text("AB Test")
                 }
             }
+            .allowsHitTesting(true)
             .task {
                 self.abTestValue = await Kovalee.shared.kovaleeManager?.abTestValue(forKey: "ab_test_version")
                 self.adid = await Kovalee.shared.kovaleeManager?.getAttributionAdid()
@@ -117,7 +120,7 @@ public struct DebugView: View {
 @available(iOS 16.0, *)
 extension DebugView {
     @ViewBuilder
-    private func basicInfoView() -> some View {
+    private var basicInfoView: some View {
         InfoLabel(
             title: "Configuration:",
             value: Kovalee.shared.configuration.environment.rawValue
@@ -126,199 +129,64 @@ extension DebugView {
             title: "SDK Initialized:",
             value: Kovalee.isInitialized ? "✅" : "❌"
         )
-        if let installationDate {
+        if let locale = Locale.current.region?.identifier {
             InfoLabel(
-                title: "Installation Date",
-                value: installationDate
-            )
-        }
-        if let conversionValue = Kovalee.shared.kovaleeManager?.userConversionValue() {
-            InfoLabel(
-                title: "Conversion Value",
-                value: "\(conversionValue)"
+                title: "Current Locale:",
+                value: locale
             )
         }
 
+        if let installationDate {
+            InfoLabel(
+                title: "Installation Date:",
+                value: installationDate
+            )
+        }
+        if let sessions = Kovalee.shared.kovaleeManager?.appOpeningCount() {
+            InfoLabel(
+                title: "Session Count:",
+                value: "\(sessions)"
+            )
+        }
         if let userId = Kovalee.getAmplitudeUserId() {
             InfoLabel(
                 title: "Amplitude User Id:",
                 value: userId,
-                horizontal: false
+                horizontal: false,
+                allowCopy: true
             )
         }
         if let deviceId = Kovalee.shared.kovaleeManager?.amplitudeDeviceId() {
             InfoLabel(
                 title: "Amplitude Device Id:",
                 value: deviceId,
-                horizontal: false
+                horizontal: false,
+                allowCopy: true
             )
         }
         if let adid {
-            InfoLabel(title: "User ADID:", value: adid, horizontal: false)
+            InfoLabel(
+                title: "User ADID:",
+                value: adid,
+                horizontal: false,
+                allowCopy: true
+            )
         }
     }
 
     @ViewBuilder
-    private func sequencesView() -> some View {
-        InfoLabel(
-            title: "Loaded file:",
-            value: Kovalee.shared.kovaleeManager?.currentSequencesFileName() ?? "No file loaded",
-            horizontal: false
-        )
-
-        if let sequence = Kovalee.shared.kovaleeManager?.currentEventsSequence() {
+    private var conversionValue: some View {
+        if let conversionValue = Kovalee.shared.kovaleeManager?.userConversionValue() {
             InfoLabel(
-                title: "Current sequence:",
-                value: sequence,
-                horizontal: false
+                title: "Conversion Value:",
+                value: "\(conversionValue)"
             )
         }
-    }
-}
-
-
-struct InfoLabel: View {
-    var title: String
-    var value: String
-    var horizontal: Bool = true
-
-    var body: some View {
-        if horizontal {
-            HStack {
-                Text(title).bold()
-                Text(value)
-            }
-        } else {
-            VStack(alignment: .leading) {
-                Text(title).bold()
-                Text(value)
-            }
-        }
-    }
-}
-
-@available(iOS 16.0, *)
-struct EventsSequencesConfigurationView: View {
-    enum FocusedField {
-        case parsingLogic
-        case sequenceLogic
-    }
-
-    @FocusState private var focusedField: FocusedField?
-    @State private var sequenceVersionValue: String = ""
-    @State private var parsingLogicValue: String = ""
-    @Binding var isDebugModeOn: Bool
-
-    var body: some View {
-
-        if isDebugModeOn {
-            HStack {
-                Text("Sequence version:").bold()
-                TextField("Sequence version:", text: $sequenceVersionValue)
-                    .keyboardType(.numberPad)
-                    .focused($focusedField, equals: .sequenceLogic)
-            }
-        } else {
-            if let sequence = Kovalee.shared.kovaleeManager?.sequenceVersion() {
-                InfoLabel(
-                    title: "Sequence version:",
-                    value: String(sequence),
-                    horizontal: false
-                )
-            }
-        }
-
-        if isDebugModeOn {
-            HStack {
-                Text("Parsing logic: ").bold()
-                TextField("Parsing logic", text: $parsingLogicValue)
-                    .keyboardType(.numberPad)
-                    .focused($focusedField, equals: .parsingLogic)
-            }
-
-            Button(action: refreshAction) {
-                Text("Refresh Sequences")
-            }
-            .buttonStyle(.borderedProminent)
-            .onAppear {
-                focusedField = .sequenceLogic
-            }
-        } else {
-            if let logic = Kovalee.shared.kovaleeManager?.parsingLogic() {
-                InfoLabel(
-                    title: "Parsing Logic:",
-                    value: String(logic),
-                    horizontal: false
-                )
-            }
-        }
-    }
-}
-
-@available(iOS 16.0, *)
-extension EventsSequencesConfigurationView {
-    func refreshAction() {
-        focusedField = nil
-        if !parsingLogicValue.isEmpty {
-            Kovalee.shared.kovaleeManager?.setParsingLogic(Int(parsingLogicValue) ?? 0)
-        }
-        if !sequenceVersionValue.isEmpty {
-            Kovalee.shared.kovaleeManager?.setSequenceVersion(Int(sequenceVersionValue) ?? 0)
-        }
-
-        Task {
-            await Kovalee.shared.kovaleeManager?.fetchEventSequences()
-            Kovalee.shared.kovaleeManager?.setupConversionManager()
-        }
-        Kovalee.shared.kovaleeManager?.resetApp()
-        UIImpactFeedbackGenerator(style: .medium).impactOccurred()
-    }
-}
-
-@available(iOS 16.0, *)
-struct ABTestView: View {
-    enum FocusedField {
-        case abValue
-    }
-
-    @FocusState private var focusedField: FocusedField?
-    @State private var newABValue: String = ""
-
-    var body: some View {
-        TextField("Set AB test Value", text: $newABValue)
-            .keyboardType(.numberPad)
-            .focused($focusedField, equals: .abValue)
-
-        Button("Update Value") {
-            focusedField = nil
-            Kovalee.shared.kovaleeManager?.setAbTestValue(newABValue)
-        }
-        .buttonStyle(.borderedProminent)
-        .onAppear {
-            focusedField = .abValue
-        }
-    }
-}
-
-@available(iOS 16.0, *)
-struct PurchaseCVView: View {
-    @State private var customerSubscriptions: Set<String>?
-
-    var body: some View {
-        VStack(alignment: .leading) {
-            if let customerSubscriptions {
-                Text("Active Subscriptions:").bold()
-                ForEach(Array(customerSubscriptions), id: \.self) { subscription in
-                    HStack {
-                        Text(subscription)
-                    }
-                }
-            } else {
-                Text("No Subscriptions purchased")
-            }
-        }
-        .task {
-            self.customerSubscriptions = try? await Kovalee.shared.kovaleeManager?.customerInfo()?.activeSubscriptions
+        if let coarseValue = Kovalee.shared.kovaleeManager?.userCoarseValue() {
+            InfoLabel(
+                title: "Coarse Value",
+                value: "\(coarseValue)"
+            )
         }
     }
 }
