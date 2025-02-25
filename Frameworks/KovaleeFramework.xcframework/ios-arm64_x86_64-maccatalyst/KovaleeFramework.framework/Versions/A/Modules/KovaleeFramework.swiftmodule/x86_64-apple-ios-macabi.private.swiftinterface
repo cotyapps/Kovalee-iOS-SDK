@@ -371,6 +371,7 @@ public enum DefaultEvents {
   case conversionValueError(error: Swift.String)
   case adsInterstitialShow
   case adsRewardedShow
+  case settingUserAsPremium(source: Swift.String)
   public var name: Swift.String {
     get
   }

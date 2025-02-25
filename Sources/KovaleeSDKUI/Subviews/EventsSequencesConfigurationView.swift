@@ -16,6 +16,8 @@ struct EventsSequencesConfigurationView: View {
     @State private var currentSequencesFileName: String?
     @State private var currentEventsSequence: String?
 
+    @State private var parsingName: String = "Nurturing"
+
     var body: some View {
         Group {
             if let fileName = currentSequencesFileName {
@@ -58,6 +60,10 @@ struct EventsSequencesConfigurationView: View {
                     value: sequenceVersionValue
                 )
                 InfoLabel(
+                    title: "Parsing Name:",
+                    value: parsingName
+                )
+                InfoLabel(
                     title: "Parsing Logic:",
                     value: parsingLogicValue
                 )
@@ -65,6 +71,20 @@ struct EventsSequencesConfigurationView: View {
         }
         .onAppear {
             retrieveValues()
+        }
+        .onChange(of: parsingLogicValue) { _ in
+            parsingName = mapParsingName()
+        }
+    }
+
+    private func mapParsingName() -> String {
+        switch Int(parsingLogicValue) ?? 0 {
+        case 0:
+            return "Nurturing"
+        case 1:
+            return "Mature"
+        default:
+            return "Nurturing"
         }
     }
 
