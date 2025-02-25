@@ -73,7 +73,9 @@ struct EventsSequencesConfigurationView: View {
             retrieveValues()
         }
         .onChange(of: parsingLogicValue) { _ in
-            parsingName = mapParsingName()
+            withAnimation {
+                parsingName = mapParsingName()
+            }
         }
     }
 
