@@ -159,6 +159,7 @@ public struct Reader<T> where T : Swift.Decodable {
 }
 public enum StorageKeys : Swift.String {
   case sdkVersion
+  case adid
   case isUserPremium
   case isUserInBundle
   case appOpenedCount

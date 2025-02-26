@@ -7341,6 +7341,43 @@
           },
           {
             "kind": "Var",
+            "name": "adid",
+            "printedName": "adid",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(KovaleeFramework.StorageKeys.Type) -> KovaleeFramework.StorageKeys",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "StorageKeys",
+                    "printedName": "KovaleeFramework.StorageKeys",
+                    "usr": "s:16KovaleeFramework11StorageKeysO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "KovaleeFramework.StorageKeys.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "StorageKeys",
+                        "printedName": "KovaleeFramework.StorageKeys",
+                        "usr": "s:16KovaleeFramework11StorageKeysO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:16KovaleeFramework11StorageKeysO4adidyA2CmF",
+            "mangledName": "$s16KovaleeFramework11StorageKeysO4adidyA2CmF",
+            "moduleName": "KovaleeFramework"
+          },
+          {
+            "kind": "Var",
             "name": "isUserPremium",
             "printedName": "isUserPremium",
             "children": [
@@ -15698,7 +15735,7 @@
     {
       "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 9416,
+      "offset": 9555,
       "length": 5,
       "value": "false"
     },
@@ -15810,84 +15847,91 @@
     {
       "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/Utils\/Storage.swift",
       "kind": "StringLiteral",
-      "offset": 127,
+      "offset": 115,
+      "length": 9,
+      "value": "\"KV_adid\""
+    },
+    {
+      "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/Utils\/Storage.swift",
+      "kind": "StringLiteral",
+      "offset": 150,
       "length": 20,
       "value": "\"KV_is_user_premium\""
     },
     {
       "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/Utils\/Storage.swift",
       "kind": "StringLiteral",
-      "offset": 174,
+      "offset": 197,
       "length": 22,
       "value": "\"KV_is_user_in_bunlde\""
     },
     {
       "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/Utils\/Storage.swift",
       "kind": "StringLiteral",
-      "offset": 223,
+      "offset": 246,
       "length": 21,
       "value": "\"KV_app_opened_count\""
     },
     {
       "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/Utils\/Storage.swift",
       "kind": "StringLiteral",
-      "offset": 276,
+      "offset": 299,
       "length": 26,
       "value": "\"KV_app_installation_date\""
     },
     {
       "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/Utils\/Storage.swift",
       "kind": "StringLiteral",
-      "offset": 331,
+      "offset": 354,
       "length": 22,
       "value": "\"KV_user_subscription\""
     },
     {
       "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/Utils\/Storage.swift",
       "kind": "StringLiteral",
-      "offset": 381,
+      "offset": 404,
       "length": 21,
       "value": "\"KV_conversion_value\""
     },
     {
       "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/Utils\/Storage.swift",
       "kind": "StringLiteral",
-      "offset": 430,
+      "offset": 453,
       "length": 22,
       "value": "\"KV_amplitude_user_id\""
     },
     {
       "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/Utils\/Storage.swift",
       "kind": "StringLiteral",
-      "offset": 482,
+      "offset": 505,
       "length": 25,
       "value": "\"KV_is_first_app_opening\""
     },
     {
       "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/Utils\/Storage.swift",
       "kind": "StringLiteral",
-      "offset": 537,
+      "offset": 560,
       "length": 24,
       "value": "\"KV_ab_experiment_value\""
     },
     {
       "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/Utils\/Storage.swift",
       "kind": "StringLiteral",
-      "offset": 589,
+      "offset": 612,
       "length": 22,
       "value": "\"KV_ab_experiment_key\""
     },
     {
       "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/Utils\/Storage.swift",
       "kind": "StringLiteral",
-      "offset": 647,
+      "offset": 670,
       "length": 31,
       "value": "\"KV_is_data_collection_enabled\""
     },
     {
       "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/Utils\/Storage.swift",
       "kind": "StringLiteral",
-      "offset": 714,
+      "offset": 737,
       "length": 31,
       "value": "\"KV_ntt_tracking_prompt_status\""
     },
