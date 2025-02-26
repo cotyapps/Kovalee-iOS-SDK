@@ -350,8 +350,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:16KovaleeFramework0A7ManagerC16setDefaultUserIdyyF",
-            "mangledName": "$s16KovaleeFramework0A7ManagerC16setDefaultUserIdyyF",
+            "usr": "s:16KovaleeFramework0A7ManagerC16setDefaultUserIdyyYaF",
+            "mangledName": "$s16KovaleeFramework0A7ManagerC16setDefaultUserIdyyYaF",
             "moduleName": "KovaleeFramework",
             "declAttributes": [
               "AccessControl"
@@ -15698,7 +15698,7 @@
     {
       "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 9415,
+      "offset": 9416,
       "length": 5,
       "value": "false"
     },

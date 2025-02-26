@@ -22,7 +22,7 @@ public class KovaleeManager {
   public func promptTrackingAuthorization(completion: @escaping (AppTrackingTransparency.ATTrackingManager.AuthorizationStatus) -> Swift.Void)
   public func getAttributionAdid() async -> Swift.String?
   public func attributionCallback(withAdid adid: Swift.String?)
-  public func setDefaultUserId()
+  public func setDefaultUserId() async
   public func installationDate() -> Foundation.Date?
   public func appOpeningCount() -> Swift.Int
   public func currentSequencesFileName() -> Swift.String?
