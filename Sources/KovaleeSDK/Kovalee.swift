@@ -80,8 +80,9 @@ public final class Kovalee {
 
                 setupCapabilities()
             }
-
-            kovaleeManager?.setDefaultUserId()
+            Task {
+                await kovaleeManager?.setDefaultUserId()
+            }
             kovaleeManager?.sendAppOpenEvent()
         } catch {
             KLogger.error("We couldn't find the file at \(configuration.keysFileUrl?.absoluteString ?? "")")
