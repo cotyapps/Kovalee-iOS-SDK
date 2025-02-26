@@ -14522,7 +14522,7 @@
     {
       "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 10145,
+      "offset": 10152,
       "length": 5,
       "value": "false"
     },
@@ -14809,14 +14809,14 @@
     {
       "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/EventsSequence.swift",
       "kind": "StringLiteral",
-      "offset": 4710,
+      "offset": 4711,
       "length": 4,
       "value": "\"cv\""
     },
     {
       "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/EventsSequence.swift",
       "kind": "StringLiteral",
-      "offset": 4742,
+      "offset": 4743,
       "length": 14,
       "value": "\"coarse_value\""
     }
