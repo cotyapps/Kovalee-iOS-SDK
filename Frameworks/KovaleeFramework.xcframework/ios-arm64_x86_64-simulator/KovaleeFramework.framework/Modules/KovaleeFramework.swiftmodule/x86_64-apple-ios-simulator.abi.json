@@ -13313,14 +13313,22 @@
               },
               {
                 "kind": "TypeNominal",
-                "name": "CoarseValue",
-                "printedName": "KovaleeFramework.ConversionValue.CoarseValue",
-                "usr": "s:16KovaleeFramework15ConversionValueV06CoarseD0O"
+                "name": "Optional",
+                "printedName": "KovaleeFramework.ConversionValue.CoarseValue?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CoarseValue",
+                    "printedName": "KovaleeFramework.ConversionValue.CoarseValue",
+                    "usr": "s:16KovaleeFramework15ConversionValueV06CoarseD0O"
+                  }
+                ],
+                "usr": "s:Sq"
               }
             ],
             "declKind": "Constructor",
-            "usr": "s:16KovaleeFramework15ConversionValueV5value06coarseD0ACSi_AC06CoarseD0Otcfc",
-            "mangledName": "$s16KovaleeFramework15ConversionValueV5value06coarseD0ACSi_AC06CoarseD0Otcfc",
+            "usr": "s:16KovaleeFramework15ConversionValueV5value06coarseD0ACSi_AC06CoarseD0OSgtcfc",
+            "mangledName": "$s16KovaleeFramework15ConversionValueV5value06coarseD0ACSi_AC06CoarseD0OSgtcfc",
             "moduleName": "KovaleeFramework",
             "declAttributes": [
               "AccessControl",
@@ -14809,14 +14817,14 @@
     {
       "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/EventsSequence.swift",
       "kind": "StringLiteral",
-      "offset": 4711,
+      "offset": 4562,
       "length": 4,
       "value": "\"cv\""
     },
     {
       "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/EventsSequence.swift",
       "kind": "StringLiteral",
-      "offset": 4743,
+      "offset": 4594,
       "length": 14,
       "value": "\"coarse_value\""
     }

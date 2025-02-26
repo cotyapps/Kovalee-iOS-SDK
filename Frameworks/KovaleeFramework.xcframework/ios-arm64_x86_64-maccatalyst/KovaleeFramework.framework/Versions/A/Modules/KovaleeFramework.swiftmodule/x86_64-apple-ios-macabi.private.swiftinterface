@@ -448,7 +448,7 @@ public struct ConversionValue : Swift.Decodable {
       get
     }
   }
-  public init(value: Swift.Int, coarseValue: KovaleeFramework.ConversionValue.CoarseValue)
+  public init(value: Swift.Int, coarseValue: KovaleeFramework.ConversionValue.CoarseValue?)
   public init(from decoder: any Swift.Decoder) throws
 }
 extension KovaleeFramework.LogLevel : Swift.Hashable {}
