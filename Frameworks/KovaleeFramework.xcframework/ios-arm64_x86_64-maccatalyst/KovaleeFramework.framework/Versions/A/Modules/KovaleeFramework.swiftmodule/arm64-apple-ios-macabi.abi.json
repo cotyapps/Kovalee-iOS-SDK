@@ -592,6 +592,26 @@
           },
           {
             "kind": "Function",
+            "name": "resetCVManager",
+            "printedName": "resetCVManager()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:16KovaleeFramework0A7ManagerC14resetCVManageryyF",
+            "mangledName": "$s16KovaleeFramework0A7ManagerC14resetCVManageryyF",
+            "moduleName": "KovaleeFramework",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
             "name": "sendEvent",
             "printedName": "sendEvent(_:)",
             "children": [
@@ -14502,7 +14522,7 @@
     {
       "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 10115,
+      "offset": 10145,
       "length": 5,
       "value": "false"
     },

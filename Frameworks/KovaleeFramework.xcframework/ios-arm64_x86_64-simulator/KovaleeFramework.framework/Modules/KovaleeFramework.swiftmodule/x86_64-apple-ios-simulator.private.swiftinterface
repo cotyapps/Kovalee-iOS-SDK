@@ -33,6 +33,7 @@ public class KovaleeManager {
   public func parsingLogic() -> Swift.Int
   public func setParsingLogic(_ logic: Swift.Int)
   public func resetApp()
+  public func resetCVManager()
   public func sendEvent(_ event: KovaleeFramework.Event)
   public func setAmplitudeUserId(userId: Swift.String)
   public func amplitudeUserId() -> Swift.String?
