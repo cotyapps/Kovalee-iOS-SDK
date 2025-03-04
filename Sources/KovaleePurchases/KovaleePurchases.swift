@@ -36,11 +36,11 @@ public extension Kovalee {
     /// - Returns:
     ///    - customerInfo: customer information
     ///    - created: returns true if the user has been created
-    static func setRevenueCatUserId(userId: String) async throws -> (info: CustomerInfo, created: Bool) {
+    static func setRevenueCatUserId(userId: String) async throws -> (info: KCustomerInfo, created: Bool) {
         guard let manager = shared.kovaleeManager else {
             throw PurchaseError.initializationProblem
         }
-        return try await manager.setRevenueCatUserId(userId: userId) as! (CustomerInfo, created: Bool)
+        return try await manager.setRevenueCatUserId(userId: userId) as! (KCustomerInfo, created: Bool)
     }
 
     /// Set a specific userId for RevenueCat.
@@ -53,7 +53,7 @@ public extension Kovalee {
     ///    - created: returns true if the user has been created
     static func setRevenueCatUserId(
         userId: String,
-        withCompletion completion: @escaping (Result<(info: CustomerInfo, created: Bool), Error>) -> Void
+        withCompletion completion: @escaping (Result<(info: KCustomerInfo, created: Bool), Error>) -> Void
     ) {
         Task {
             do {
@@ -74,11 +74,11 @@ public extension Kovalee {
     ///
     /// - Returns:
     ///    - customerInfo: customer information
-    static func logoutRevenueCatUser() async throws -> CustomerInfo {
+    static func logoutRevenueCatUser() async throws -> KCustomerInfo {
         guard let manager = shared.kovaleeManager else {
             throw PurchaseError.initializationProblem
         }
-        return try await manager.logoutRevenueCatUser() as! CustomerInfo
+        return try await manager.logoutRevenueCatUser() as! KCustomerInfo
     }
 
     /// Logout the current user from RevenueCat.
@@ -87,7 +87,7 @@ public extension Kovalee {
     /// - Returns:
     ///    - customerInfo: customer information
     static func logoutRevenueCatUser(
-        withCompletion completion: @escaping (Result<CustomerInfo, Error>) -> Void
+        withCompletion completion: @escaping (Result<KCustomerInfo, Error>) -> Void
     ) {
         Task {
             do {
@@ -106,8 +106,8 @@ public extension Kovalee {
     /// Retrieve the ``CustomerInfo`` for the current customer
     ///
     /// - Returns: current customer information
-    static func customerInfo() async throws -> CustomerInfo? {
-        try await shared.kovaleeManager?.customerInfo() as? CustomerInfo
+    static func customerInfo() async throws -> KCustomerInfo? {
+        try await shared.kovaleeManager?.customerInfo() as? KCustomerInfo
     }
 
     /// Retrieve the ``CustomerInfo`` for the current customer
@@ -115,7 +115,7 @@ public extension Kovalee {
     /// - Parameters:
     ///    - completion: current customer information if returned.
     static func customerInfo(
-        withCompletion completion: @escaping (Result<CustomerInfo?, Error>) -> Void
+        withCompletion completion: @escaping (Result<KCustomerInfo?, Error>) -> Void
     ) {
         Task {
             do {
@@ -159,8 +159,8 @@ public extension Kovalee {
     /// Sync the purchases for the current customer
     ///
     /// - Returns: current customer information
-    static func syncPurchases() async throws -> CustomerInfo? {
-        try await shared.kovaleeManager?.syncPurchase() as? CustomerInfo
+    static func syncPurchases() async throws -> KCustomerInfo? {
+        try await shared.kovaleeManager?.syncPurchase() as? KCustomerInfo
     }
 
     /// Sync the purchases for the current customer
@@ -168,7 +168,7 @@ public extension Kovalee {
     /// - Parameters:
     ///    - completion: current customer information
     static func syncPurchases(
-        withCompletion completion: @escaping (Result<CustomerInfo?, Error>) -> Void
+        withCompletion completion: @escaping (Result<KCustomerInfo?, Error>) -> Void
     ) {
         Task {
             do {
@@ -187,8 +187,8 @@ public extension Kovalee {
     /// Fetch ``Offerings`` if available
     ///
     /// - Returns: available offerings
-    static func fetchOfferings() async throws -> Offerings? {
-        try await shared.kovaleeManager?.fetchOfferings() as? Offerings
+    static func fetchOfferings() async throws -> KOfferings? {
+        try await shared.kovaleeManager?.fetchOfferings() as? KOfferings
     }
 
     /// Fetch ``Offerings`` if available
@@ -196,7 +196,7 @@ public extension Kovalee {
     /// - Parameters:
     ///    - completion: available offerings
     static func fetchOfferings(
-        withCompletion completion: @escaping (Result<Offerings?, Error>) -> Void
+        withCompletion completion: @escaping (Result<KOfferings?, Error>) -> Void
     ) {
         Task {
             do {
@@ -215,8 +215,8 @@ public extension Kovalee {
     /// Fetch current ``Offering`` if available
     ///
     /// - Returns: available current offering
-    static func fetchCurrentOffering() async throws -> Offering? {
-        try await shared.kovaleeManager?.fetchCurrentOffering() as? Offering
+    static func fetchCurrentOffering() async throws -> KOffering? {
+        try await shared.kovaleeManager?.fetchCurrentOffering() as? KOffering
     }
 
     /// Fetch current ``Offering`` if available
@@ -224,7 +224,7 @@ public extension Kovalee {
     /// - Parameters:
     ///    - completion: available offering
     static func fetchCurrentOffering(
-        withCompletion completion: @escaping (Result<Offering?, Error>) -> Void
+        withCompletion completion: @escaping (Result<KOffering?, Error>) -> Void
     ) {
         Task {
             do {
@@ -245,8 +245,8 @@ public extension Kovalee {
     /// - Parameters:
     ///    - fromSource: from where is the user making the purchase
     /// - Returns: current ``CustomerInfo``
-    static func restorePurchases(fromSource source: String) async throws -> CustomerInfo? {
-        try await shared.kovaleeManager?.restorePurchases(fromSource: source) as? CustomerInfo
+    static func restorePurchases(fromSource source: String) async throws -> KCustomerInfo? {
+        try await shared.kovaleeManager?.restorePurchases(fromSource: source) as? KCustomerInfo
     }
 
     /// Restore purchase previously made by current user
@@ -256,7 +256,7 @@ public extension Kovalee {
     ///    - completion: current ``CustomerInfo``
     static func restorePurchases(
         fromSource source: String,
-        withCompletion completion: @escaping (Result<CustomerInfo?, Error>) -> Void
+        withCompletion completion: @escaping (Result<KCustomerInfo?, Error>) -> Void
     ) {
         Task {
             do {
@@ -278,8 +278,8 @@ public extension Kovalee {
     ///    - package: the package to be purchased
     ///    - fromSource: from where is the user making the purchase
     /// - Returns: the result of the purchase transaction as ``PurchaseResultData``
-    static func purchase(package: Package, fromSource source: String) async throws -> PurchaseResultData? {
-        try await shared.kovaleeManager?.purchase(package: package, fromSource: source) as? PurchaseResultData
+    static func purchase(package: KPackage, fromSource source: String) async throws -> KPurchaseResultData? {
+        try await shared.kovaleeManager?.purchase(package: package, fromSource: source) as? KPurchaseResultData
     }
 
     /// Performs a purchase of the specified ``Package``
@@ -289,9 +289,9 @@ public extension Kovalee {
     ///    - fromSource: from where is the user making the purchase
     ///    - completion: the result of the purchase transaction as ``PurchaseResultData``
     static func purchase(
-        package: Package,
+        package: KPackage,
         fromSource source: String,
-        withCompletion completion: @escaping (Result<PurchaseResultData?, Error>) -> Void
+        withCompletion completion: @escaping (Result<KPurchaseResultData?, Error>) -> Void
     ) {
         Task {
             do {
@@ -316,15 +316,15 @@ public extension Kovalee {
     static func purchaseSubscription(
         withId subscriptionId: String,
         fromSource source: String
-    ) async throws -> PurchaseResultData? {
+    ) async throws -> KPurchaseResultData? {
         guard
-            let offerings = try await shared.kovaleeManager?.fetchOfferings() as? Offerings,
+            let offerings = try await shared.kovaleeManager?.fetchOfferings() as? KOfferings,
             let package = offerings.returnOffering(withSubscriptionId: subscriptionId)
         else {
             return nil
         }
 
-        return try await Self.shared.kovaleeManager?.purchase(package: package, fromSource: source) as? PurchaseResultData
+        return try await Self.shared.kovaleeManager?.purchase(package: package, fromSource: source) as? KPurchaseResultData
     }
 
     /// Performs a purchase of a subscription with specified Id and duration
@@ -336,7 +336,7 @@ public extension Kovalee {
     static func purchaseSubscription(
         withId subscriptionId: String,
         fromSource source: String,
-        withCompletion completion: @escaping (Result<PurchaseResultData?, Error>) -> Void
+        withCompletion completion: @escaping (Result<KPurchaseResultData?, Error>) -> Void
     ) {
         Task {
             do {
@@ -359,15 +359,15 @@ public extension Kovalee {
         shared.kovaleeManager?.revenueCatUserId() ?? ""
     }
 
-    static func checkTrialOrIntroDiscountEligibility(productIdentifiers: [String]) async -> [String: IntroEligibilityStatus] {
+    static func checkTrialOrIntroDiscountEligibility(productIdentifiers: [String]) async -> [String: KIntroEligibilityStatus] {
         await shared.kovaleeManager?
             .checkTrialOrIntroDiscountEligibility(productIdentifiers: productIdentifiers)?
-            .compactMapValues { IntroEligibilityStatus(rawValue: $0) } ?? [:]
+            .compactMapValues { KIntroEligibilityStatus(rawValue: $0) } ?? [:]
     }
 
     static func checkTrialOrIntroDiscountEligibility(
         productIdentifiers: [String],
-        withCompletion completion: @escaping ([String: IntroEligibilityStatus]) -> Void
+        withCompletion completion: @escaping ([String: KIntroEligibilityStatus]) -> Void
     ) async {
         Task {
             completion(await Self.checkTrialOrIntroDiscountEligibility(productIdentifiers: productIdentifiers))

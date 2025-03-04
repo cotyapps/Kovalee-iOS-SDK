@@ -31,12 +31,12 @@ class RevenueCatWrapperImpl: NSObject, PurchaseManager, Manager {
 
     func logout() async throws -> AbstractCustomerInfo {
         let customerInfo = try await Purchases.shared.logOut()
-        return CustomerInfo(info: customerInfo)
+        return KCustomerInfo(info: customerInfo)
     }
 
     func setUserId(userId: String) async throws -> (AbstractCustomerInfo, created: Bool) {
         let result = try await Purchases.shared.logIn(userId)
-        return (CustomerInfo(info: result.customerInfo), result.created)
+        return (KCustomerInfo(info: result.customerInfo), result.created)
     }
 
     func setEmail(email: String) {
@@ -50,7 +50,7 @@ class RevenueCatWrapperImpl: NSObject, PurchaseManager, Manager {
     func fetchOfferings() async throws -> AbstractOfferings? {
         let rcOfferings = try await Purchases.shared.offerings()
 
-        let offerings = Offerings(rcOfferings)
+        let offerings = KOfferings(rcOfferings)
         offerings.all.keys.forEach { KLogger.debug("🛍️ Fetched offerings \($0)") }
 
         return offerings
@@ -72,10 +72,10 @@ class RevenueCatWrapperImpl: NSObject, PurchaseManager, Manager {
 
         if let variantOffering {
             KLogger.debug("🛍️ Fetched current offering \(variantOffering)")
-            return Offering(offering: variantOffering)
+            return KOffering(offering: variantOffering)
         } else if let current = offerings.current {
             KLogger.debug("🛍️ Fetched current offering \(current)")
-            return Offering(offering: current)
+            return KOffering(offering: current)
         } else {
             return nil
         }
@@ -93,16 +93,16 @@ class RevenueCatWrapperImpl: NSObject, PurchaseManager, Manager {
         let rcCustomerInfo = try await Purchases.shared.restorePurchases()
         KLogger.debug("🛍️ Purchase restored with customer info: \(rcCustomerInfo)")
 
-        return CustomerInfo(info: rcCustomerInfo)
+        return KCustomerInfo(info: rcCustomerInfo)
     }
 
     func purchase(package: AbstractPackage) async throws -> AbstractPurchaseResultData {
         let purchaseResult = try await Purchases.shared.purchase(package: package.rcPackage as! RevenueCat.Package)
         KLogger.debug("🛍️ Purchase \(purchaseResult)")
 
-        return PurchaseResultData(
-            transaction: StoreTransaction(transaction: purchaseResult.transaction),
-            customerInfo: CustomerInfo(info: purchaseResult.customerInfo),
+        return KPurchaseResultData(
+            transaction: KStoreTransaction(transaction: purchaseResult.transaction),
+            customerInfo: KCustomerInfo(info: purchaseResult.customerInfo),
             userCancelled: purchaseResult.userCancelled
         )
     }
@@ -115,21 +115,21 @@ class RevenueCatWrapperImpl: NSObject, PurchaseManager, Manager {
         let purchaseResult = try await Purchases.shared.purchase(product: product)
         KLogger.debug("🛍️ Purchase \(purchaseResult)")
 
-        return PurchaseResultData(
-            transaction: StoreTransaction(transaction: purchaseResult.transaction),
-            customerInfo: CustomerInfo(info: purchaseResult.customerInfo),
+        return KPurchaseResultData(
+            transaction: KStoreTransaction(transaction: purchaseResult.transaction),
+            customerInfo: KCustomerInfo(info: purchaseResult.customerInfo),
             userCancelled: purchaseResult.userCancelled
         )
     }
 
     func syncPurchase() async throws -> AbstractCustomerInfo {
         let info = try await Purchases.shared.syncPurchases()
-        return CustomerInfo(info: info)
+        return KCustomerInfo(info: info)
     }
 
     func customerInfo() async throws -> AbstractCustomerInfo {
         let info = try await Purchases.shared.customerInfo()
-        return CustomerInfo(info: info)
+        return KCustomerInfo(info: info)
     }
 
     func setAttribution(adid: String) {
@@ -151,7 +151,7 @@ extension RevenueCatWrapperImpl: RevenueCat.PurchasesDelegate {
     func purchases(_: Purchases, receivedUpdated customerInfo: RevenueCat.CustomerInfo) {
         KLogger.debug("🛍️ did receive update \(customerInfo)")
 
-        delegate?.didReceiveUpdate(CustomerInfo(info: customerInfo))
+        delegate?.didReceiveUpdate(KCustomerInfo(info: customerInfo))
     }
 }
 

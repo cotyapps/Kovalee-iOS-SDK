@@ -8,9 +8,9 @@ enum PurchaseError: Error {
 }
 
 /// A container for the most recent customer info
-public class CustomerInfo: AbstractCustomerInfo, Encodable {
+public class KCustomerInfo: AbstractCustomerInfo, Encodable {
     /// ``EntitlementInfos`` attached to this customer info.
-    public let entitlements: EntitlementInfos
+    public let entitlements: KEntitlementInfos
 
     /// All *subscription* product identifiers with expiration dates in the future.
     public var activeSubscriptions: Set<String>
@@ -22,7 +22,7 @@ public class CustomerInfo: AbstractCustomerInfo, Encodable {
     public var latestExpirationDate: Date?
 
     /// Returns all the non-subscription purchases a user has made.
-    public let nonSubscriptions: [NonSubscriptionTransaction]
+    public let nonSubscriptions: [KNonSubscriptionTransaction]
 
     /// Returns the fetch date of this CustomerInfo.
     public let requestDate: Date
@@ -53,11 +53,11 @@ public class CustomerInfo: AbstractCustomerInfo, Encodable {
     }
 
     init(info: RevenueCat.CustomerInfo) {
-        entitlements = EntitlementInfos(entitlements: info.entitlements)
+        entitlements = KEntitlementInfos(entitlements: info.entitlements)
         activeSubscriptions = info.activeSubscriptions
         allPurchasedProductIdentifiers = info.allPurchasedProductIdentifiers
         latestExpirationDate = info.latestExpirationDate
-        nonSubscriptions = info.nonSubscriptions.map { NonSubscriptionTransaction(transaction: $0) }
+        nonSubscriptions = info.nonSubscriptions.map { KNonSubscriptionTransaction(transaction: $0) }
         requestDate = info.requestDate
         firstSeen = info.firstSeen
         originalAppUserId = info.originalAppUserId
@@ -67,32 +67,32 @@ public class CustomerInfo: AbstractCustomerInfo, Encodable {
 }
 
 /// This class contains all the entitlements associated to the user.
-public class EntitlementInfos: NSObject, Encodable {
+public class KEntitlementInfos: NSObject, Encodable {
     /**
      Dictionary of all EntitlementInfo (``EntitlementInfo``) objects (active and inactive) keyed by entitlement
      identifier. This dictionary can also be accessed by using an index subscript on ``EntitlementInfos``, e.g.
      `entitlementInfos["pro_entitlement_id"]`.
      */
-    public let all: [String: EntitlementInfo]
+    public let all: [String: KEntitlementInfo]
 
-    public subscript(key: String) -> EntitlementInfo? {
+    public subscript(key: String) -> KEntitlementInfo? {
         return all[key]
     }
 
     init(entitlements: RevenueCat.EntitlementInfos) {
-        all = entitlements.all.reduce(into: [String: EntitlementInfo]()) { all, entitlement in
-            all[entitlement.key] = EntitlementInfo(info: entitlement.value)
+        all = entitlements.all.reduce(into: [String: KEntitlementInfo]()) { all, entitlement in
+            all[entitlement.key] = KEntitlementInfo(info: entitlement.value)
         }
     }
 }
 
-public extension EntitlementInfos {
+public extension KEntitlementInfos {
     /// Dictionary of active ``EntitlementInfo`` objects keyed by their identifiers.
     /// - Warning: this is equivalent to ``activeInAnyEnvironment``
     ///
     /// #### Related Symbols
     /// - ``activeInCurrentEnvironment``
-    @objc var active: [String: EntitlementInfo] {
+    @objc var active: [String: KEntitlementInfo] {
         return activeInAnyEnvironment
     }
 
@@ -101,13 +101,13 @@ public extension EntitlementInfos {
     ///
     /// #### Related Symbols
     /// - ``activeInCurrentEnvironment``
-    @objc var activeInAnyEnvironment: [String: EntitlementInfo] {
+    @objc var activeInAnyEnvironment: [String: KEntitlementInfo] {
         return all.filter { $0.value.isActiveInAnyEnvironment }
     }
 }
 
 ///  The EntitlementInfo object gives you access to all of the information about the status of a user entitlement.
-public class EntitlementInfo: NSObject, Encodable {
+public class KEntitlementInfo: NSObject, Encodable {
     /// The entitlement identifier configured in the RevenueCat dashboard
     public var identifier: String
 
@@ -118,7 +118,7 @@ public class EntitlementInfo: NSObject, Encodable {
     public var willRenew: Bool
 
     /// The last period type this entitlement was in
-    public var periodType: PeriodType
+    public var periodType: KPeriodType
 
     /// The latest purchase or renewal date for the entitlement.
     public var latestPurchaseDate: Date?
@@ -131,7 +131,7 @@ public class EntitlementInfo: NSObject, Encodable {
     public var expirationDate: Date?
 
     /// The store where this entitlement was unlocked from
-    public var store: Store
+    public var store: KStore
 
     /// The product identifier that unlocked this entitlement
     public var productIdentifier: String
@@ -152,26 +152,26 @@ public class EntitlementInfo: NSObject, Encodable {
      or shared to them by a family member. This can be useful for onboarding users who have had
      an entitlement shared with them, but might not be entirely aware of the benefits they now have.
      */
-    public var ownershipType: PurchaseOwnershipType
+    public var ownershipType: KPurchaseOwnershipType
 
     init(info: RevenueCat.EntitlementInfo) {
         identifier = info.identifier
         isActive = info.isActive
         willRenew = info.willRenew
-        periodType = PeriodType(rawValue: info.periodType.rawValue)!
+        periodType = KPeriodType(rawValue: info.periodType.rawValue)!
         latestPurchaseDate = info.latestPurchaseDate
         originalPurchaseDate = info.originalPurchaseDate
         expirationDate = info.expirationDate
-        store = Store(rawValue: info.store.rawValue) ?? .unknownStore
+        store = KStore(rawValue: info.store.rawValue) ?? .unknownStore
         productIdentifier = info.productIdentifier
         isSandbox = info.isSandbox
         unsubscribeDetectedAt = info.unsubscribeDetectedAt
         billingIssueDetectedAt = info.billingIssueDetectedAt
-        ownershipType = PurchaseOwnershipType(rawValue: info.ownershipType.rawValue) ?? .unknown
+        ownershipType = KPurchaseOwnershipType(rawValue: info.ownershipType.rawValue) ?? .unknown
     }
 }
 
-public extension EntitlementInfo {
+public extension KEntitlementInfo {
     /// True if the user has access to this entitlement in any environment.
     ///
     /// #### Related Symbols
@@ -182,7 +182,7 @@ public extension EntitlementInfo {
 }
 
 /// Information that represents a non-subscription purchase made by a user.
-public class NonSubscriptionTransaction: NSObject, Encodable {
+public class KNonSubscriptionTransaction: NSObject, Encodable {
     /// The product identifier.
     public let productIdentifier: String
 
@@ -199,7 +199,7 @@ public class NonSubscriptionTransaction: NSObject, Encodable {
     }
 }
 
-public enum PeriodType: Int, Encodable {
+public enum KPeriodType: Int, Encodable {
     /// If the entitlement is not under an introductory or trial period.
     case normal = 0
 
@@ -210,13 +210,13 @@ public enum PeriodType: Int, Encodable {
     case trial = 2
 }
 
-public enum PurchaseOwnershipType: Int, Encodable {
+public enum KPurchaseOwnershipType: Int, Encodable {
     case purchased = 0
     case familyShared = 1
     case unknown = 2
 }
 
-public enum Store: Int, Encodable {
+public enum KStore: Int, Encodable {
     /// For entitlements granted via Apple App Store.
     case appStore = 0
     /// For entitlements granted via Apple Mac App Store.
@@ -244,7 +244,7 @@ public enum Store: Int, Encodable {
     case external = 8
 }
 
-public class Product: Encodable {
+public class KProduct: Encodable {
     var identifier: String
     var isActive: Bool
     var willRenew: Bool
@@ -272,18 +272,18 @@ public class Product: Encodable {
     }
 }
 
-public struct Offerings: AbstractOfferings, Encodable {
-    public let all: [String: Offering]
-    public var current: Offering?
+public struct KOfferings: AbstractOfferings, Encodable {
+    public let all: [String: KOffering]
+    public var current: KOffering?
 
     init(_ offerings: RevenueCat.Offerings) {
-        all = offerings.all.reduce(into: [String: Offering]()) { all, offering in
-            all[offering.key] = Offering(offering: offering.value)
+        all = offerings.all.reduce(into: [String: KOffering]()) { all, offering in
+            all[offering.key] = KOffering(offering: offering.value)
         }
-        current = offerings.current != nil ? Offering(offering: offerings.current!) : nil
+        current = offerings.current != nil ? KOffering(offering: offerings.current!) : nil
     }
 
-    func returnOffering(withSubscriptionId subscriptionId: String) -> Package? {
+    func returnOffering(withSubscriptionId subscriptionId: String) -> KPackage? {
         all.values.compactMap { offering in
             offering.availablePackages.first(where: { package in
                 package.storeProduct.productIdentifier == subscriptionId
@@ -294,7 +294,7 @@ public struct Offerings: AbstractOfferings, Encodable {
 
 /// An offering is a collection of ``Package``s, and they let you control which products
 /// are shown to users without requiring an app update.
-public class Offering: AbstractOffering, Encodable {
+public class KOffering: AbstractOffering, Encodable {
     /// Unique identifier defined in RevenueCat dashboard.
     public let identifier: String
 
@@ -302,44 +302,44 @@ public class Offering: AbstractOffering, Encodable {
     public let serverDescription: String
 
     /// Array of ``Package`` objects available for purchase.
-    public let availablePackages: [Package]
+    public let availablePackages: [KPackage]
 
     /// Offering metadata defined in RevenueCat dashboard.
     public let metadata: [String: Any]
 
     /// Lifetime ``Package`` type configured in the RevenueCat dashboard, if available.
-    public let lifetime: Package?
+    public let lifetime: KPackage?
 
     /// Annual ``Package`` type configured in the RevenueCat dashboard, if available.
-    public let annual: Package?
+    public let annual: KPackage?
 
     /// Six month ``Package`` type configured in the RevenueCat dashboard, if available.
-    public let sixMonth: Package?
+    public let sixMonth: KPackage?
 
     /// Three month ``Package`` type configured in the RevenueCat dashboard, if available.
-    public let threeMonth: Package?
+    public let threeMonth: KPackage?
 
     /// Two month ``Package`` type configured in the RevenueCat dashboard, if available.
-    public let twoMonth: Package?
+    public let twoMonth: KPackage?
 
     /// Monthly ``Package`` type configured in the RevenueCat dashboard, if available.
-    public let monthly: Package?
+    public let monthly: KPackage?
 
     /// Weekly ``Package`` type configured in the RevenueCat dashboard, if available.
-    public let weekly: Package?
+    public let weekly: KPackage?
 
     init(offering: RevenueCat.Offering) {
         identifier = offering.identifier
         serverDescription = offering.serverDescription
-        availablePackages = offering.availablePackages.compactMap { Package(package: $0) }
+        availablePackages = offering.availablePackages.compactMap { KPackage(package: $0) }
         metadata = offering.metadata
-        lifetime = Package(package: offering.lifetime)
-        annual = Package(package: offering.annual)
-        sixMonth = Package(package: offering.sixMonth)
-        threeMonth = Package(package: offering.threeMonth)
-        twoMonth = Package(package: offering.twoMonth)
-        monthly = Package(package: offering.monthly)
-        weekly = Package(package: offering.weekly)
+        lifetime = KPackage(package: offering.lifetime)
+        annual = KPackage(package: offering.annual)
+        sixMonth = KPackage(package: offering.sixMonth)
+        threeMonth = KPackage(package: offering.threeMonth)
+        twoMonth = KPackage(package: offering.twoMonth)
+        monthly = KPackage(package: offering.monthly)
+        weekly = KPackage(package: offering.weekly)
     }
 
     enum CodingKeys: String, CodingKey {
@@ -373,7 +373,7 @@ public class Offering: AbstractOffering, Encodable {
     }
 }
 
-public extension Offering {
+public extension KOffering {
     /**
      - Returns: the `metadata` value associated to `key` for the expected type,
      or `default` if not found, or it's not the expected type.
@@ -388,7 +388,7 @@ public extension Offering {
 
 /// Packages help abstract platform-specific products by grouping equivalent products across iOS, Android, and web.
 /// A package is made up of three parts: ``identifier``, ``packageType``, and underlying ``StoreProduct``.
-public class Package: Identifiable, AbstractPackage, Encodable {
+public class KPackage: Identifiable, AbstractPackage, Encodable {
     public var id: String {
         identifier
     }
@@ -401,10 +401,10 @@ public class Package: Identifiable, AbstractPackage, Encodable {
     public let identifier: String
 
     /// The type configured for this package.
-    public let packageType: PackageType
+    public let packageType: KPackageType
 
     /// The underlying ``storeProduct``
-    public let storeProduct: StoreProduct
+    public let storeProduct: KStoreProduct
 
     /// The identifier of the ``Offering`` containing this Package.
     public let offeringIdentifier: String
@@ -423,8 +423,8 @@ public class Package: Identifiable, AbstractPackage, Encodable {
             return nil
         }
         identifier = package.identifier
-        packageType = PackageType(rawValue: package.packageType.rawValue) ?? .unknown
-        storeProduct = StoreProduct(package.storeProduct)
+        packageType = KPackageType(rawValue: package.packageType.rawValue) ?? .unknown
+        storeProduct = KStoreProduct(package.storeProduct)
         offeringIdentifier = package.offeringIdentifier
         localizedPriceString = package.localizedPriceString
         localizedIntroductoryPriceString = package.localizedIntroductoryPriceString
@@ -456,7 +456,7 @@ public class Package: Identifiable, AbstractPackage, Encodable {
     required init() {
         identifier = "0"
         packageType = .unknown
-        storeProduct = StoreProduct.empty()
+        storeProduct = KStoreProduct.empty()
         offeringIdentifier = ""
         localizedPriceString = ""
         localizedIntroductoryPriceString = nil
@@ -465,7 +465,7 @@ public class Package: Identifiable, AbstractPackage, Encodable {
 
     /// Generates an empty Package
     /// To use only for testing purposes
-    public static func empty() -> Package {
+    public static func empty() -> KPackage {
         self.init()
     }
 
@@ -488,12 +488,12 @@ public class Package: Identifiable, AbstractPackage, Encodable {
 }
 
 /// Type that provides access to all of `StoreKit`'s product type's properties.
-public struct StoreProduct: Encodable {
+public struct KStoreProduct: Encodable {
     /// The type of product.
-    public var productType: ProductType
+    public var productType: KProductType
 
     /// The category of this product, whether a subscription or a one-time purchase.
-    public var productCategory: ProductCategory
+    public var productCategory: KProductCategory
 
     /// A description of the product.
     /// - Note: The title's language is determined by the storefront that the user's device is connected to,
@@ -538,7 +538,7 @@ public struct StoreProduct: Encodable {
 
     /// The period details for products that are subscriptions.
     /// - Returns: `nil` if the product is not a subscription.
-    public var subscriptionPeriod: SubscriptionPeriod?
+    public var subscriptionPeriod: KSubscriptionPeriod?
 
     /// The object containing introductory price information for the product.
     /// If you've set up introductory prices in App Store Connect, the introductory price property will be populated.
@@ -546,17 +546,17 @@ public struct StoreProduct: Encodable {
     ///
     /// Before displaying UI that offers the introductory price,
     /// you must first determine if the user is eligible to receive it.
-    public var introductoryDiscount: StoreProductDiscount?
+    public var introductoryDiscount: KStoreProductDiscount?
 
     /// An array of subscription offers available for the auto-renewable subscription.
     /// - Note: the current user may or may not be eligible for some of these.
-    public var discounts: [StoreProductDiscount]
+    public var discounts: [KStoreProductDiscount]
 
     var product: RevenueCat.StoreProduct?
 
     init(_ product: RevenueCat.StoreProduct) {
-        productType = ProductType(rawValue: product.productType.rawValue)!
-        productCategory = ProductCategory(rawValue: product.productCategory.rawValue)!
+        productType = KProductType(rawValue: product.productType.rawValue)!
+        productCategory = KProductCategory(rawValue: product.productCategory.rawValue)!
         localizedDescription = product.localizedDescription
         localizedTitle = product.localizedTitle
         currencyCode = product.currencyCode
@@ -567,9 +567,9 @@ public struct StoreProduct: Encodable {
         subscriptionGroupIdentifier = product.subscriptionGroupIdentifier
         priceFormatter = product.priceFormatter
         subscriptionPeriod = product.subscriptionPeriod != nil ?
-            SubscriptionPeriod(product.subscriptionPeriod!) : nil
-        introductoryDiscount = StoreProductDiscount(product.introductoryDiscount)
-        discounts = product.discounts.compactMap { StoreProductDiscount($0) }
+            KSubscriptionPeriod(product.subscriptionPeriod!) : nil
+        introductoryDiscount = KStoreProductDiscount(product.introductoryDiscount)
+        discounts = product.discounts.compactMap { KStoreProductDiscount($0) }
         self.product = product
     }
 
@@ -633,7 +633,7 @@ public struct StoreProduct: Encodable {
     }
 }
 
-public extension StoreProduct {
+public extension KStoreProduct {
     /// Calculates the price of this subscription product per month.
     /// - Returns: `nil` if the product is not a subscription.
     var pricePerMonth: NSDecimalNumber? {
@@ -651,14 +651,14 @@ public extension StoreProduct {
     }
 }
 
-public enum ProductCategory: Int, Encodable {
+public enum KProductCategory: Int, Encodable {
     /// A non-renewable or auto-renewable subscription.
     case subscription
     /// A consumable or non-consumable in-app purchase.
     case nonSubscription
 }
 
-public enum ProductType: Int, Encodable {
+public enum KProductType: Int, Encodable {
     /// A consumable in-app purchase.
     case consumable
     /// A non-consumable in-app purchase.
@@ -669,7 +669,7 @@ public enum ProductType: Int, Encodable {
     case autoRenewableSubscription
 }
 
-public struct SubscriptionPeriod: Encodable {
+public struct KSubscriptionPeriod: Encodable {
     /// The number of period units.
     public let value: Int
     /// The increment of time that a subscription period is specified in.
@@ -735,7 +735,7 @@ public struct SubscriptionPeriod: Encodable {
     )
 }
 
-public struct StoreProductDiscount: Encodable {
+public struct KStoreProductDiscount: Encodable {
     public enum PaymentMode: Int, Encodable {
         /// Price is charged one or more times
         case payAsYouGo = 0
@@ -757,7 +757,7 @@ public struct StoreProductDiscount: Encodable {
     public var price: Decimal
     public var localizedPriceString: String
     public var paymentMode: PaymentMode
-    public var subscriptionPeriod: SubscriptionPeriod
+    public var subscriptionPeriod: KSubscriptionPeriod
     public var numberOfPeriods: Int
     public var type: DiscountType
 
@@ -771,13 +771,13 @@ public struct StoreProductDiscount: Encodable {
         price = discount.price
         localizedPriceString = discount.localizedPriceString
         paymentMode = PaymentMode(rawValue: discount.paymentMode.rawValue)!
-        subscriptionPeriod = SubscriptionPeriod(discount.subscriptionPeriod)
+        subscriptionPeriod = KSubscriptionPeriod(discount.subscriptionPeriod)
         numberOfPeriods = discount.numberOfPeriods
         type = DiscountType(rawValue: discount.type.rawValue)!
     }
 }
 
-public enum PackageType: Int, Encodable {
+public enum KPackageType: Int, Encodable {
     /// A package that was defined with an unknown identifier.
     case unknown = -2,
          /// A package that was defined with a custom identifier.
@@ -798,7 +798,7 @@ public enum PackageType: Int, Encodable {
          weekly
 }
 
-public struct StoreTransaction: Encodable {
+public struct KStoreTransaction: Encodable {
     public var productIdentifier: String
     public var purchaseDate: Date
     public var transactionIdentifier: String
@@ -815,13 +815,13 @@ public struct StoreTransaction: Encodable {
     }
 }
 
-public struct PurchaseResultData: AbstractPurchaseResultData, Encodable {
-    public var transaction: StoreTransaction?
-    public var customerInfo: CustomerInfo
+public struct KPurchaseResultData: AbstractPurchaseResultData, Encodable {
+    public var transaction: KStoreTransaction?
+    public var customerInfo: KCustomerInfo
     public var userCancelled: Bool
 }
 
-public enum IntroEligibilityStatus: Int {
+public enum KIntroEligibilityStatus: Int {
     case unknown = 0
     case ineligible
     case eligible
