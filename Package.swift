@@ -38,9 +38,9 @@ let package = Package(
     dependencies: [
         .package(url: "https://github.com/amplitude/Amplitude-Swift", .upToNextMajor(from: "1.4.3")),
         .package(url: "https://github.com/Survicate/survicate-ios-sdk", .upToNextMajor(from: "5.0.0")),
-        .package(url: "https://github.com/firebase/firebase-ios-sdk.git", from: Version(10, 12, 0)),
-        .package(url: "https://github.com/RevenueCat/purchases-ios", from: Version(5, 0, 0)),
-        .package(url: "https://github.com/adjust/ios_sdk", from: Version(5, 0, 0))
+        .package(url: "https://github.com/firebase/firebase-ios-sdk.git", .upToNextMajor(from: "11.0.0")),
+        .package(url: "https://github.com/RevenueCat/purchases-ios", .upToNextMajor(from: "5.0.0")),
+        .package(url: "https://github.com/adjust/ios_sdk", .upToNextMajor(from: "5.0.0")),
     ],
     targets: [
         .binaryTarget(
@@ -68,7 +68,7 @@ let package = Package(
             name: .survey,
             dependencies: [
                 .sdk,
-                .survicate
+                .survicate,
             ]
         ),
         .target(
@@ -76,9 +76,7 @@ let package = Package(
             dependencies: [
                 .sdk,
                 .framework,
-                .firebaseAnalyticsSwift,
                 .firebaseRemoteConfig,
-                .firebaseCrashlytics
             ],
             resources: [
                 .copy("PrivacyInfo.xcprivacy"),
@@ -99,12 +97,12 @@ let package = Package(
             name: .kovaleeAttribution,
             dependencies: [
                 .sdk,
-                .AdjustSdk
+                .AdjustSdk,
             ],
             resources: [
                 .copy("PrivacyInfo.xcprivacy"),
             ]
-        )
+        ),
     ]
 )
 
@@ -139,7 +137,6 @@ extension Target.Dependency {
 }
 
 extension Target.Dependency {
-
     static var survicate: Self {
         .product(
             name: "Survicate",
@@ -160,18 +157,9 @@ extension Target.Dependency {
         .product(name: "AdjustSdk", package: "ios_sdk")
     }
 
-    static var firebaseAnalyticsSwift: Self {
-        .product(name: "FirebaseAnalyticsSwift", package: "firebase-ios-sdk")
-    }
-
     static var firebaseRemoteConfig: Self {
         .product(name: "FirebaseRemoteConfig", package: "firebase-ios-sdk")
     }
-
-    static var firebaseCrashlytics: Self {
-        .product(name: "FirebaseCrashlytics", package: "firebase-ios-sdk")
-    }
-
 }
 
 extension String {
