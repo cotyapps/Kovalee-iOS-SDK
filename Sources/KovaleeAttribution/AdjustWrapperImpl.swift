@@ -1,9 +1,9 @@
+import AdjustSdk
 import AdSupport
 import AppTrackingTransparency
 import Foundation
-import KovaleeSDK
 import KovaleeFramework
-import AdjustSdk
+import KovaleeSDK
 
 extension AdjustConfiguration.Environment {
     var adjustEnvironment: String {
@@ -16,9 +16,9 @@ extension AdjustConfiguration.Environment {
     }
 }
 
-extension AdjustConfiguration {
-    public static var test: Self {
-        Self.init(environment: "test", token: "")
+public extension AdjustConfiguration {
+    static var test: Self {
+        Self(environment: "test", token: "")
     }
 }
 
@@ -58,7 +58,7 @@ class AdjustWrapperImpl: NSObject, AttributionManager, Manager {
         }
     }
 
-    func sendConversionValue(value: Int, coarseValue: String, completion: @escaping (Error?) -> Void) {
+    func sendConversionValue(value: Int, coarseValue: String?, completion: @escaping (Error?) -> Void) {
         Adjust.updateSkanConversionValue(value, coarseValue: coarseValue, lockWindow: false) { error in
             completion(error)
         }
@@ -69,11 +69,11 @@ class AdjustWrapperImpl: NSObject, AttributionManager, Manager {
 }
 
 extension AdjustWrapperImpl: AdjustDelegate {
-    func adjustAttributionChanged(_ attribution: ADJAttribution?) {
+    func adjustAttributionChanged(_: ADJAttribution?) {
 //        self.attributionAdidCallback(attribution?.adid)
     }
 
-    func adjustConversionValueUpdated(_ fineValue: NSNumber?, coarseValue: String?, lockWindow: NSNumber?) {
+    func adjustConversionValueUpdated(_ fineValue: NSNumber?, coarseValue _: String?, lockWindow _: NSNumber?) {
         KLogger.debug("Successfully Updated Conversion Value: \(String(describing: fineValue))")
     }
 }
@@ -91,15 +91,15 @@ extension LogLevel {
     func adjustLogLevel() -> ADJLogLevel {
         switch self {
         case .verbose:
-                .verbose
+            .verbose
         case .debug:
-                .debug
+            .debug
         case .info:
-                .info
+            .info
         case .warn:
-                .warn
+            .warn
         case .error:
-                .error
+            .error
         @unknown default:
             fatalError()
         }

@@ -7937,9 +7937,17 @@
               },
               {
                 "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
               },
               {
                 "kind": "TypeFunc",
@@ -7969,8 +7977,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:16KovaleeFramework18AttributionManagerP19sendConversionValue5value06coarseG010completionySi_SSys5Error_pSgctF",
-            "mangledName": "$s16KovaleeFramework18AttributionManagerP19sendConversionValue5value06coarseG010completionySi_SSys5Error_pSgctF",
+            "usr": "s:16KovaleeFramework18AttributionManagerP19sendConversionValue5value06coarseG010completionySi_SSSgys5Error_pSgctF",
+            "mangledName": "$s16KovaleeFramework18AttributionManagerP19sendConversionValue5value06coarseG010completionySi_SSSgys5Error_pSgctF",
             "moduleName": "KovaleeFramework",
             "genericSig": "<τ_0_0 where τ_0_0 : KovaleeFramework.AttributionManager>",
             "sugared_genericSig": "<Self where Self : KovaleeFramework.AttributionManager>",
@@ -14530,7 +14538,7 @@
     {
       "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 10221,
+      "offset": 10215,
       "length": 5,
       "value": "false"
     },
