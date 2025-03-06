@@ -176,7 +176,13 @@ public struct Storage {
   public var removeFromStorage: (KovaleeFramework.StorageKeys) -> Swift.Void
 }
 extension KovaleeFramework.Storage {
-  public static func userDefaults(defaults: Foundation.UserDefaults = UserDefaults.standard) -> KovaleeFramework.Storage
+  public static func userDefaults(defaults: Foundation.UserDefaults = .standard) -> KovaleeFramework.Storage
+}
+public struct SyncStorage {
+  public init(defaults: Foundation.UserDefaults = .standard)
+  public func hydrateFromStorage(_ key: KovaleeFramework.StorageKeys, _ defaultValue: Any?) -> Any?
+  public func persistToStorage(_ key: KovaleeFramework.StorageKeys, _ value: Any)
+  public func removeFromStorage(_ key: KovaleeFramework.StorageKeys)
 }
 extension Foundation.ProcessInfo {
   public static var isRunningTests: Swift.Bool {

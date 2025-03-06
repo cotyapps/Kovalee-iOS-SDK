@@ -7422,6 +7422,175 @@
         "moduleName": "KovaleeFramework"
       },
       {
+        "kind": "TypeDecl",
+        "name": "SyncStorage",
+        "printedName": "SyncStorage",
+        "children": [
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(defaults:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "SyncStorage",
+                "printedName": "KovaleeFramework.SyncStorage",
+                "usr": "s:16KovaleeFramework11SyncStorageV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UserDefaults",
+                "printedName": "Foundation.UserDefaults",
+                "hasDefaultArg": true,
+                "usr": "c:objc(cs)NSUserDefaults"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:16KovaleeFramework11SyncStorageV8defaultsACSo14NSUserDefaultsC_tcfc",
+            "mangledName": "$s16KovaleeFramework11SyncStorageV8defaultsACSo14NSUserDefaultsC_tcfc",
+            "moduleName": "KovaleeFramework",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "hydrateFromStorage",
+            "printedName": "hydrateFromStorage(_:_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Any?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ProtocolComposition",
+                    "printedName": "Any"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "StorageKeys",
+                "printedName": "KovaleeFramework.StorageKeys",
+                "usr": "s:16KovaleeFramework11StorageKeysO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Any?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ProtocolComposition",
+                    "printedName": "Any"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:16KovaleeFramework11SyncStorageV011hydrateFromD0yypSgAA0D4KeysO_AEtF",
+            "mangledName": "$s16KovaleeFramework11SyncStorageV011hydrateFromD0yypSgAA0D4KeysO_AEtF",
+            "moduleName": "KovaleeFramework",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "persistToStorage",
+            "printedName": "persistToStorage(_:_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "StorageKeys",
+                "printedName": "KovaleeFramework.StorageKeys",
+                "usr": "s:16KovaleeFramework11StorageKeysO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "ProtocolComposition",
+                "printedName": "Any"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:16KovaleeFramework11SyncStorageV09persistToD0yyAA0D4KeysO_yptF",
+            "mangledName": "$s16KovaleeFramework11SyncStorageV09persistToD0yyAA0D4KeysO_yptF",
+            "moduleName": "KovaleeFramework",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "removeFromStorage",
+            "printedName": "removeFromStorage(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "StorageKeys",
+                "printedName": "KovaleeFramework.StorageKeys",
+                "usr": "s:16KovaleeFramework11StorageKeysO"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:16KovaleeFramework11SyncStorageV010removeFromD0yyAA0D4KeysOF",
+            "mangledName": "$s16KovaleeFramework11SyncStorageV010removeFromD0yyAA0D4KeysOF",
+            "moduleName": "KovaleeFramework",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:16KovaleeFramework11SyncStorageV",
+        "mangledName": "$s16KovaleeFramework11SyncStorageV",
+        "moduleName": "KovaleeFramework",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "KovaleeFramework"
+      },
+      {
         "kind": "Import",
         "name": "AppTrackingTransparency",
         "printedName": "AppTrackingTransparency",
@@ -14575,7 +14744,7 @@
     {
       "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 10435,
+      "offset": 10636,
       "length": 5,
       "value": "false"
     },
