@@ -77,6 +77,7 @@ let package = Package(
                 .sdk,
                 .framework,
                 .firebaseRemoteConfig,
+                .firebaseAnalytics,
             ],
             resources: [
                 .copy("PrivacyInfo.xcprivacy"),
@@ -159,6 +160,10 @@ extension Target.Dependency {
 
     static var firebaseRemoteConfig: Self {
         .product(name: "FirebaseRemoteConfig", package: "firebase-ios-sdk")
+    }
+
+    static var firebaseAnalytics: Self {
+        .productItem(name: "FirebaseAnalytics", package: "firebase-ios-sdk")
     }
 }
 
