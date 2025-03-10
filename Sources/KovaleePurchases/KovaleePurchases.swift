@@ -402,7 +402,7 @@ public extension Kovalee {
     /// Removes the current user from their associated bundle.
     ///
     /// This static method attempts to logout the current user from any bundle they are associated with.
-    static func removeUserFromBundle() {
-        shared.kovaleeManager?.removeUserFromBundle()
+    static func removeUserFromBundle() async {
+        await shared.kovaleeManager?.removeUserFromBundle()
     }
 }

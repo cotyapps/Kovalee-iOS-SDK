@@ -4,7 +4,7 @@ import KovaleeSDK
 
 extension RemoteConfigManagerCreator: Creator {
     public func createImplementation(
-        withConfiguration configuration: Configuration,
+        withConfiguration _: Configuration,
         andKeys keys: KovaleeKeys
     ) -> Manager {
         guard let key = keys.firebase else {
@@ -16,15 +16,16 @@ extension RemoteConfigManagerCreator: Creator {
 }
 
 // MARK: Firebase
-extension Kovalee {
-    public static let abTestKey = "ab_test_version"
+
+public extension Kovalee {
+    static let abTestKey = "ab_test_version"
 
     /// Set the fetch timeout for ``Firebase/RemoteConfig``
     ///
     /// - Parameters:
     ///    - timeout: value of the timeout in seconds
-    public static func setFetchTimeout(_ timeout: Double) {
-        Self.shared.kovaleeManager?.setFetchTimeout(timeout)
+    static func setFetchTimeout(_ timeout: Double) {
+        shared.kovaleeManager?.setFetchTimeout(timeout)
     }
 
     /// Retrieves asynchronously Firebase ``RemoteConfigValue`` for a specific key
@@ -32,13 +33,13 @@ extension Kovalee {
     /// - Parameters:
     ///    - key: string key of the remote value that the user is trying to load
     /// - Returns: retrieve the requested ``RemoteConfigValue`` if found
-    public static func remoteValue(forKey key: String) async -> RemoteConfigValue? {
+    static func remoteValue(forKey key: String) async -> RemoteConfigValue? {
         guard key != abTestKey else {
             KLogger.error("❌ ab_test_version is a private key and can't be used for remote config")
             return nil
         }
 
-        guard let data = try? await Self.shared.kovaleeManager?.remoteValue(forKey: key) else {
+        guard let data = try? await shared.kovaleeManager?.remoteValue(forKey: key) else {
             return nil
         }
 
@@ -52,7 +53,7 @@ extension Kovalee {
     ///    - completion: A closure that is called with the result of the fetch operation.
     ///        This closure has no return value and takes the following parameter:
     ///        - value: The requested value as a ``RemoteConfigValue``. If no value is found, `nil` is provided.
-    public static func remoteValue(
+    static func remoteValue(
         forKey key: String,
         withCompletion completion: @escaping (RemoteConfigValue?) -> Void
     ) {
@@ -66,8 +67,8 @@ extension Kovalee {
     ///
     /// - Parameters:
     ///    - values: a dictionary of values to be stored
-    public static func setDefaultValues(_ values: [String: Any]) {
-        Self.shared.kovaleeManager?.setDefaultValues(values)
+    static func setDefaultValues(_ values: [String: Any]) {
+        shared.kovaleeManager?.setDefaultValues(values)
     }
 
     /// Retrieve the value associated with an AB testing experiment
@@ -76,15 +77,15 @@ extension Kovalee {
     ///    - key: string key of the remote value that the user is trying to load
     /// - Returns: retrieve the requested ``RemoteConfigValue`` if found
     @available(*, deprecated, renamed: "abTestValue")
-    public static func abTestValue(forKey key: String) async -> String? {
-        await Self.abTestValue()
+    static func abTestValue(forKey _: String) async -> String? {
+        await abTestValue()
     }
 
     /// Retrieve the value associated with an AB testing experiment
     ///
     /// - Returns: retrieve the requested ``RemoteConfigValue`` if found
-    public static func abTestValue() async -> String? {
-        guard let value = await Self.shared.kovaleeManager?.abTestValue(forKey: Self.abTestKey) else {
+    static func abTestValue() async -> String? {
+        guard let value = await shared.kovaleeManager?.abTestValue(forKey: abTestKey) else {
             KLogger.error("❌ No AB test value found")
             return nil
         }
@@ -97,7 +98,7 @@ extension Kovalee {
     /// - Parameter completion: A closure that is called with the result of the fetch operation.
     ///   This closure has no return value and takes the following parameter:
     ///   - value: The retrieved AB test value as a `String?`. If no value is found, `nil` is provided.
-    public static func abTestValue(withCompletion completion: @escaping (String?) -> Void) {
+    static func abTestValue(withCompletion completion: @escaping (String?) -> Void) {
         Task {
             completion(await Self.abTestValue())
         }
@@ -111,8 +112,10 @@ extension Kovalee {
     ///
     /// - Parameters:
     ///    - value: the value to be set to the AB Test experiment
-    public static func setAbTestValue(_ value: String) {
-        Self.shared.kovaleeManager?.setAbTestValue(value)
+    static func setAbTestValue(_ value: String) {
+        Task {
+            await Self.shared.kovaleeManager?.setAbTestValue(value)
+        }
     }
 
     /// Retrieve the local value associated with an AB testing experiment.
@@ -123,7 +126,7 @@ extension Kovalee {
     /// If none of the two conditions is met, the function will return nil
     ///
     /// - Returns: retrieve the requested ab test value if found
-    public static func localAbTestValue() -> String? {
-        Self.shared.kovaleeManager?.localABTestValue()
+    static func localAbTestValue() async -> String? {
+        await shared.kovaleeManager?.localABTestValue()
     }
 }
