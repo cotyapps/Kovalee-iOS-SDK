@@ -21,15 +21,15 @@ public extension Kovalee {
     /// Returns the date when the app has been installed in the current device
     ///
     /// - Returns: date of the app installation in current device
-    static func appInstallationDate() -> Date? {
-        shared.kovaleeManager?.installationDate()
+    static func appInstallationDate() async -> Date? {
+        await shared.kovaleeManager?.installationDate()
     }
 
     /// Returns the number of times the app has been opened
     ///
     /// - Returns: number of times app has beeen opened
-    static func appOpeningCount() -> Int {
-        shared.kovaleeManager?.appOpeningCount() ?? 0
+    static func appOpeningCount() async -> Int {
+        await shared.kovaleeManager?.appOpeningCount() ?? 0
     }
 
     /// Disable any data collection for this specific user
@@ -44,8 +44,8 @@ public extension Kovalee {
     /// Returns a boolean stating if the data about the current user is currently collected
     ///
     /// - Returns: a boolean stating if data about the user is currently collected
-    static func isDataCollectionEnabled() -> Bool {
-        shared.kovaleeManager?.isDataCollectionEnabled() ?? true
+    static func isDataCollectionEnabled() async -> Bool {
+        await shared.kovaleeManager?.isDataCollectionEnabled() ?? true
     }
 
     /// Send an ``Event``

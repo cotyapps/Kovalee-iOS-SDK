@@ -6,7 +6,7 @@
 	<dict>
 		<key>Headers/KovaleeFramework-Swift.h</key>
 		<data>
-		OvNqp4utMmZYZF9iMgbsn6HqYFI=
+		RMpWkUJbxivrvuy/ECsu/ZcTlsA=
 		</data>
 		<key>Headers/KovaleeFramework.h</key>
 		<data>
@@ -18,11 +18,11 @@
 		</data>
 		<key>Modules/KovaleeFramework.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		WRt2hz1VsRryrcRoXQRNZe26lLM=
+		ow7Gx5SQIZqX+SO7kV0LLnXy5PU=
 		</data>
 		<key>Modules/KovaleeFramework.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		DqphOz8RbUaxDAqmcy/KJGkm3L0=
+		ciHmCbFDiRryWhKAmF8fXENXKfU=
 		</data>
 		<key>Modules/KovaleeFramework.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -30,19 +30,19 @@
 		</data>
 		<key>Modules/KovaleeFramework.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		DqphOz8RbUaxDAqmcy/KJGkm3L0=
+		ciHmCbFDiRryWhKAmF8fXENXKfU=
 		</data>
 		<key>Modules/KovaleeFramework.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		uEyFOEdnSVwDvhfnfOfZjFm69BU=
+		MpqzsPHktK9uzj4M5wms/r1CuSQ=
 		</data>
 		<key>Modules/KovaleeFramework.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		WRt2hz1VsRryrcRoXQRNZe26lLM=
+		ow7Gx5SQIZqX+SO7kV0LLnXy5PU=
 		</data>
 		<key>Modules/KovaleeFramework.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		1SGdu7yPfIadaEtwXvUDgqBncsg=
+		jZPjn1doDlHHrofD8vDqv+9d5so=
 		</data>
 		<key>Modules/KovaleeFramework.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -50,11 +50,11 @@
 		</data>
 		<key>Modules/KovaleeFramework.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		1SGdu7yPfIadaEtwXvUDgqBncsg=
+		jZPjn1doDlHHrofD8vDqv+9d5so=
 		</data>
 		<key>Modules/KovaleeFramework.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		6LLYIzpsW9pVbyYwE6ecNXwjEuo=
+		j5Sv3ww6pNQrslYFHMZYk8Guie8=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -71,7 +71,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			DAW2CMPJNro7FOxz30gl0fm3/1rAJenwj+w59ZK8t+k=
+			hmUSAiDksTOAKlO7b5Ih7BV8C3nca+tAlB1e/T/yA20=
 			</data>
 		</dict>
 		<key>Headers/KovaleeFramework.h</key>
@@ -85,14 +85,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			rR+lfRUtWetQ4SMD9qlCZ+Hc8Ti/zyDB6+nrzt/5kr0=
+			tSqUUJ0s7rF4khkKunh8wO9pIrzyfaEcNXtxoV/IDw0=
 			</data>
 		</dict>
 		<key>Modules/KovaleeFramework.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			sLFfll5PUO6c7Kr7rdpt7gZMesFIpzTH4NfrcKEBuAI=
+			nORn80GlzbthdGoz+7f7yrOwItWRVCEfkQgwWZqd1ko=
 			</data>
 		</dict>
 		<key>Modules/KovaleeFramework.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
@@ -106,28 +106,28 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			sLFfll5PUO6c7Kr7rdpt7gZMesFIpzTH4NfrcKEBuAI=
+			nORn80GlzbthdGoz+7f7yrOwItWRVCEfkQgwWZqd1ko=
 			</data>
 		</dict>
 		<key>Modules/KovaleeFramework.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			spI6eZgo8J/y+ZOnMVELzJNlbJBX+DnBjgeWM+Y/K0A=
+			LhFZdIWmxFMKUuuYiUdFFtrd8MQNnfdeoA9/hBQWgg4=
 			</data>
 		</dict>
 		<key>Modules/KovaleeFramework.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			rR+lfRUtWetQ4SMD9qlCZ+Hc8Ti/zyDB6+nrzt/5kr0=
+			tSqUUJ0s7rF4khkKunh8wO9pIrzyfaEcNXtxoV/IDw0=
 			</data>
 		</dict>
 		<key>Modules/KovaleeFramework.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			HVKnrklsBHVmhiskrwbbQYswYRQCjjg01PIBARybspk=
+			FFeTvjqxiz3TJ2M6x9yKo1yj1EQkjCiFw1kdVfPmaA0=
 			</data>
 		</dict>
 		<key>Modules/KovaleeFramework.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
@@ -141,14 +141,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			HVKnrklsBHVmhiskrwbbQYswYRQCjjg01PIBARybspk=
+			FFeTvjqxiz3TJ2M6x9yKo1yj1EQkjCiFw1kdVfPmaA0=
 			</data>
 		</dict>
 		<key>Modules/KovaleeFramework.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			pecpN5YqlbtwkFVC4ORpVRVMrci21FAc4ib4B1s+lBo=
+			dcUYogHadryCs5/HsGoOe8IG0pIfqzs6qAPl+M5uu8M=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
