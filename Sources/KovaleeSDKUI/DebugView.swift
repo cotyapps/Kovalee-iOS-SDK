@@ -43,15 +43,12 @@ public struct DebugView: View {
     @State private var adid: String?
     @State private var basicInfoExpanded: Bool = false
 
+    @State private var coarseValue: String?
+    @State private var conversionValue: Int?
+    @State private var installationDate: String?
+    @State private var sessionCount: Int?
+
     public init() {}
-
-    private var installationDate: String? {
-        guard let installationDate = Kovalee.appInstallationDate() else {
-            return nil
-        }
-
-        return installationDate.formatted(date: .numeric, time: .omitted)
-    }
 
     public var body: some View {
         NavigationView {
@@ -67,7 +64,7 @@ public struct DebugView: View {
                 }
 
                 Section {
-                    conversionValue
+                    conversionValueView
                 } header: {
                     Text("Conversion Value")
                 }
@@ -98,6 +95,11 @@ public struct DebugView: View {
             .task {
                 self.abTestValue = await Kovalee.shared.kovaleeManager?.abTestValue(forKey: "ab_test_version")
                 self.adid = await Kovalee.shared.kovaleeManager?.getAttributionAdid()
+
+                self.conversionValue = await conversionValue()
+                self.coarseValue = await coarseValue()
+                self.installationDate = await installationDate()
+                self.sessionCount = await sesssionCount()
             }
             .navigationTitle("SDK Debug Console")
             .navigationBarTitleDisplayMode(.inline)
@@ -142,10 +144,10 @@ extension DebugView {
                 value: installationDate
             )
         }
-        if let sessions = Kovalee.shared.kovaleeManager?.appOpeningCount() {
+        if let sessionCount {
             InfoLabel(
                 title: "Session Count:",
-                value: "\(sessions)"
+                value: "\(sessionCount)"
             )
         }
         if let userId = Kovalee.getAmplitudeUserId() {
@@ -175,18 +177,41 @@ extension DebugView {
     }
 
     @ViewBuilder
-    private var conversionValue: some View {
-        if let conversionValue = Kovalee.shared.kovaleeManager?.userConversionValue() {
+    private var conversionValueView: some View {
+        if let conversionValue {
             InfoLabel(
                 title: "Conversion Value:",
                 value: "\(conversionValue)"
             )
         }
-        if let coarseValue = Kovalee.shared.kovaleeManager?.userCoarseValue() {
+        if let coarseValue {
             InfoLabel(
                 title: "Coarse Value",
                 value: "\(coarseValue)"
             )
         }
+    }
+}
+
+@available(iOS 16.0, *)
+extension DebugView {
+    private func installationDate() async -> String? {
+        guard let installationDate = await Kovalee.appInstallationDate() else {
+            return nil
+        }
+
+        return installationDate.formatted(date: .numeric, time: .omitted)
+    }
+
+    private func coarseValue() async -> String? {
+        return await Kovalee.shared.kovaleeManager?.userCoarseValue()
+    }
+
+    private func conversionValue() async -> Int? {
+        return await Kovalee.shared.kovaleeManager?.userConversionValue()
+    }
+
+    private func sesssionCount() async -> Int? {
+        await Kovalee.shared.kovaleeManager?.appOpeningCount()
     }
 }

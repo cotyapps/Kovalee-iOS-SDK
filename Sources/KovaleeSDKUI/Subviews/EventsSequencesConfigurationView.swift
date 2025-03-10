@@ -69,8 +69,8 @@ struct EventsSequencesConfigurationView: View {
                 )
             }
         }
-        .onAppear {
-            retrieveValues()
+        .task {
+            await retrieveValues()
         }
         .onChange(of: parsingLogicValue) { _ in
             withAnimation {
@@ -90,15 +90,15 @@ struct EventsSequencesConfigurationView: View {
         }
     }
 
-    private func retrieveValues() {
-        withAnimation {
-            if let logic = Kovalee.shared.kovaleeManager?.parsingLogic() {
-                parsingLogicValue = String(logic)
-            }
-            if let sequence = Kovalee.shared.kovaleeManager?.sequenceVersion() {
-                sequenceVersionValue = String(sequence)
-            }
+    private func retrieveValues() async {
+        if let logic = await Kovalee.shared.kovaleeManager?.parsingLogic() {
+            parsingLogicValue = String(logic)
+        }
+        if let sequence = await Kovalee.shared.kovaleeManager?.sequenceVersion() {
+            sequenceVersionValue = String(sequence)
+        }
 
+        Task { @MainActor in
             currentSequencesFileName = Kovalee.shared.kovaleeManager?.currentSequencesFileName()
             currentEventsSequence = Kovalee.shared.kovaleeManager?.currentEventsSequence()
         }
@@ -106,23 +106,21 @@ struct EventsSequencesConfigurationView: View {
 
     private func refreshAction() {
         focusedField = nil
-
-        Kovalee.shared.kovaleeManager?.resetApp()
-        Kovalee.shared.kovaleeManager?.resetCVManager()
-
-        Kovalee.shared.kovaleeManager?.setParsingLogic(Int(parsingLogicValue) ?? 0)
-        Kovalee.shared.kovaleeManager?.setSequenceVersion(Int(sequenceVersionValue) ?? 0)
-
         Task {
-            await Kovalee.shared.kovaleeManager?.fetchEventSequences()
-            Kovalee.shared.kovaleeManager?.setupConversionManager()
-            Kovalee.shared.kovaleeManager?.resetApp()
+            await Kovalee.shared.kovaleeManager?.resetApp()
+            Kovalee.shared.kovaleeManager?.resetCVManager()
 
-            await MainActor.run {
-                retrieveValues()
+            await Kovalee.shared.kovaleeManager?.setParsingLogic(Int(parsingLogicValue) ?? 0)
+            await Kovalee.shared.kovaleeManager?.setSequenceVersion(Int(sequenceVersionValue) ?? 0)
+
+            Task {
+                await Kovalee.shared.kovaleeManager?.fetchEventSequences()
+                await Kovalee.shared.kovaleeManager?.setupConversionManager()
+                await Kovalee.shared.kovaleeManager?.resetApp()
+
+                await retrieveValues()
             }
         }
-
         UIImpactFeedbackGenerator(style: .medium).impactOccurred()
     }
 }
