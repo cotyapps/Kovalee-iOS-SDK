@@ -12,9 +12,15 @@ let package = Package(
     products: [
         .library(
             name: .sdk,
-            targets: [
-                .sdk, .sdkUI, .survey,
-            ]
+            targets: [.sdk]
+        ),
+        .library(
+            name: .sdkUI,
+            targets: [.sdkUI]
+        ),
+        .library(
+            name: .survey,
+            targets: [.survey]
         ),
         .library(
             name: .kovaleePurchases,
