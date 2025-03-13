@@ -70,7 +70,7 @@ struct EventsSequencesConfigurationView: View {
             }
         }
         .task {
-            await retrieveValues()
+            retrieveValues()
         }
         .onChange(of: parsingLogicValue) { _ in
             withAnimation {
@@ -90,11 +90,11 @@ struct EventsSequencesConfigurationView: View {
         }
     }
 
-    private func retrieveValues() async {
-        if let logic = await Kovalee.shared.kovaleeManager?.parsingLogic() {
+    private func retrieveValues() {
+        if let logic = Kovalee.shared.kovaleeManager?.parsingLogic() {
             parsingLogicValue = String(logic)
         }
-        if let sequence = await Kovalee.shared.kovaleeManager?.sequenceVersion() {
+        if let sequence = Kovalee.shared.kovaleeManager?.sequenceVersion() {
             sequenceVersionValue = String(sequence)
         }
 
@@ -107,18 +107,18 @@ struct EventsSequencesConfigurationView: View {
     private func refreshAction() {
         focusedField = nil
         Task {
-            await Kovalee.shared.kovaleeManager?.resetApp()
+            Kovalee.shared.kovaleeManager?.resetApp()
             Kovalee.shared.kovaleeManager?.resetCVManager()
 
-            await Kovalee.shared.kovaleeManager?.setParsingLogic(Int(parsingLogicValue) ?? 0)
-            await Kovalee.shared.kovaleeManager?.setSequenceVersion(Int(sequenceVersionValue) ?? 0)
+            Kovalee.shared.kovaleeManager?.setParsingLogic(Int(parsingLogicValue) ?? 0)
+            Kovalee.shared.kovaleeManager?.setSequenceVersion(Int(sequenceVersionValue) ?? 0)
 
             Task {
-                await Kovalee.shared.kovaleeManager?.fetchEventSequences()
-                await Kovalee.shared.kovaleeManager?.setupConversionManager()
-                await Kovalee.shared.kovaleeManager?.resetApp()
+                //				await Kovalee.shared.kovaleeManager?.fetchEventsSequences()
+                //				await Kovalee.shared.kovaleeManager?.setupConversionManager()
+                Kovalee.shared.kovaleeManager?.resetApp()
 
-                await retrieveValues()
+                retrieveValues()
             }
         }
         UIImpactFeedbackGenerator(style: .medium).impactOccurred()

@@ -1,7 +1,7 @@
 import KovaleeFramework
 import KovaleeSDK
 
-extension SurveyManagerCreator: @retroactive Creator {
+extension SurveyManagerCreator: Creator {
     public func createImplementation(
         withConfiguration _: Configuration,
         andKeys keys: KovaleeKeys

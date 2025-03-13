@@ -1,9 +1,9 @@
-import Foundation
 import AppTrackingTransparency
+import Foundation
 import KovaleeFramework
 import KovaleeSDK
 
-extension AttributionManagerCreator: @retroactive Creator {
+extension AttributionManagerCreator: Creator {
     public func createImplementation(
         withConfiguration configuration: Configuration,
         andKeys keys: KovaleeKeys
@@ -24,9 +24,9 @@ extension AttributionManagerCreator: @retroactive Creator {
     }
 }
 
-
 // MARK: Adjust
-extension Kovalee {
+
+public extension Kovalee {
     /// Prompt the user with tracking authorization alert view
     ///
     /// This method uses a trailing closure as return value.
@@ -34,10 +34,10 @@ extension Kovalee {
     ///
     /// - Returns:a completion block returning the `ATTrackingManager.AuthorizationStatus` based on the user response
     ///  based on the user response
-    public static func promptTrackingAuthorization(
+    static func promptTrackingAuthorization(
         completion: @escaping (ATTrackingManager.AuthorizationStatus) -> Void
     ) {
-        Self.shared.kovaleeManager?.promptTrackingAuthorization(completion: completion)
+        shared.kovaleeManager?.promptTrackingAuthorization(completion: completion)
     }
 
     /// Prompt the user with tracking authorization alert view
@@ -47,7 +47,7 @@ extension Kovalee {
     ///
     /// - Returns:the `ATTrackingManager.AuthorizationStatus` based on the user response
     @discardableResult
-    public static func promptTrackingAuthorization() async -> ATTrackingManager.AuthorizationStatus {
+    static func promptTrackingAuthorization() async -> ATTrackingManager.AuthorizationStatus {
         await withUnsafeContinuation { continuation in
             Self.shared.kovaleeManager?.promptTrackingAuthorization { userState in
                 continuation.resume(returning: userState)
@@ -58,7 +58,7 @@ extension Kovalee {
     /// Retrieve the Adjust identifier value
     ///
     /// - Returns: the Adjust identifier value
-    public static func getAttributionAdid() async -> String? {
-        await Self.shared.kovaleeManager?.getAttributionAdid()
+    static func getAttributionAdid() async -> String? {
+        await shared.kovaleeManager?.getAttributionAdid()
     }
 }

@@ -24,8 +24,8 @@
         "repositoryURL": "https://github.com/amplitude/Amplitude-Swift",
         "state": {
           "branch": null,
-          "revision": "858c6974eb75fee16084cf712395d6fc3241fdd1",
-          "version": "1.4.3"
+          "revision": "f31bd466fc22927a1291a01c1b1b80d4c162c321",
+          "version": "1.11.7"
         }
       },
       {
@@ -33,8 +33,8 @@
         "repositoryURL": "https://github.com/amplitude/analytics-connector-ios.git",
         "state": {
           "branch": null,
-          "revision": "e2ca17ac735bcbc48b13062484541702ef45153d",
-          "version": "1.0.3"
+          "revision": "4adbfe85486e6dcdcdca5fa9362097ffe5ec712b",
+          "version": "1.3.1"
         }
       },
       {

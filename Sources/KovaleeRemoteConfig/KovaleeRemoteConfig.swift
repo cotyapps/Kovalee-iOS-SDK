@@ -55,10 +55,13 @@ public extension Kovalee {
     ///        - value: The requested value as a ``RemoteConfigValue``. If no value is found, `nil` is provided.
     static func remoteValue(
         forKey key: String,
-        withCompletion completion: @escaping (RemoteConfigValue?) -> Void
+        withCompletion completion: @escaping @Sendable (RemoteConfigValue?) -> Void
     ) {
-        Task {
-            completion(await Self.remoteValue(forKey: key))
+        // Create a local copy of the key to avoid capturing self
+        let keyValue = key
+        Task { @Sendable in
+            let result = await Self.remoteValue(forKey: keyValue)
+            completion(result)
         }
     }
 
@@ -98,9 +101,10 @@ public extension Kovalee {
     /// - Parameter completion: A closure that is called with the result of the fetch operation.
     ///   This closure has no return value and takes the following parameter:
     ///   - value: The retrieved AB test value as a `String?`. If no value is found, `nil` is provided.
-    static func abTestValue(withCompletion completion: @escaping (String?) -> Void) {
-        Task {
-            completion(await Self.abTestValue())
+    static func abTestValue(withCompletion completion: @escaping @Sendable (String?) -> Void) {
+        Task { @Sendable in
+            let result = await Self.abTestValue()
+            completion(result)
         }
     }
 
@@ -113,8 +117,10 @@ public extension Kovalee {
     /// - Parameters:
     ///    - value: the value to be set to the AB Test experiment
     static func setAbTestValue(_ value: String) {
-        Task {
-            await Self.shared.kovaleeManager?.setAbTestValue(value)
+        // Create a local copy to avoid capturing self
+        let valueToSet = value
+        Task { @Sendable in
+            Self.shared.kovaleeManager?.setAbTestValue(valueToSet)
         }
     }
 
@@ -126,7 +132,7 @@ public extension Kovalee {
     /// If none of the two conditions is met, the function will return nil
     ///
     /// - Returns: retrieve the requested ab test value if found
-    static func localAbTestValue() async -> String? {
-        await shared.kovaleeManager?.localABTestValue()
+    static func localAbTestValue() -> String? {
+        shared.kovaleeManager?.localABTestValue()
     }
 }

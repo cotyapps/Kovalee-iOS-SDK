@@ -4,7 +4,7 @@ import KovaleeRemoteConfig
 import KovaleeSDK
 import RevenueCat
 
-class RevenueCatWrapperImpl: NSObject, PurchaseManager, Manager {
+final class RevenueCatWrapperImpl: NSObject, PurchaseManager, Manager {
     init(withKeys keys: KovaleeKeys.RevenueCat) {
         super.init()
 
@@ -146,6 +146,8 @@ class RevenueCatWrapperImpl: NSObject, PurchaseManager, Manager {
 
     private var delegate: KovaleeFramework.KovaleePurchasesDelegate?
 }
+
+extension RevenueCatWrapperImpl: @unchecked Sendable {}
 
 extension RevenueCatWrapperImpl: RevenueCat.PurchasesDelegate {
     func purchases(_: Purchases, receivedUpdated customerInfo: RevenueCat.CustomerInfo) {

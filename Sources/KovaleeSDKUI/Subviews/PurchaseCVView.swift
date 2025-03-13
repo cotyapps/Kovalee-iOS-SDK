@@ -20,7 +20,7 @@ struct PurchaseCVView: View {
             }
         }
         .task {
-            self.customerSubscriptions = try? await Kovalee.shared.kovaleeManager?.customerInfo()?.activeSubscriptions
+//            self.customerSubscriptions = try? await Kovalee.shared.kovaleeManager?.customerInfo()?.activeSubscriptions
         }
     }
 }

@@ -96,10 +96,10 @@ public struct DebugView: View {
                 self.abTestValue = await Kovalee.shared.kovaleeManager?.abTestValue(forKey: "ab_test_version")
                 self.adid = await Kovalee.shared.kovaleeManager?.getAttributionAdid()
 
-                self.conversionValue = await conversionValue()
-                self.coarseValue = await coarseValue()
-                self.installationDate = await installationDate()
-                self.sessionCount = await sesssionCount()
+                self.conversionValue = fetchConversionValue()
+                self.coarseValue = fetchCoarseValue()
+                self.installationDate = fetchInstallationDate()
+                self.sessionCount = fetchSessionCount()
             }
             .navigationTitle("SDK Debug Console")
             .navigationBarTitleDisplayMode(.inline)
@@ -195,23 +195,23 @@ extension DebugView {
 
 @available(iOS 16.0, *)
 extension DebugView {
-    private func installationDate() async -> String? {
-        guard let installationDate = await Kovalee.appInstallationDate() else {
+    private func fetchInstallationDate() -> String? {
+        guard let installationDate = Kovalee.appInstallationDate() else {
             return nil
         }
 
         return installationDate.formatted(date: .numeric, time: .omitted)
     }
 
-    private func coarseValue() async -> String? {
-        return await Kovalee.shared.kovaleeManager?.userCoarseValue()
+    private func fetchCoarseValue() -> String? {
+        Kovalee.shared.kovaleeManager?.userCoarseValue()
     }
 
-    private func conversionValue() async -> Int? {
-        return await Kovalee.shared.kovaleeManager?.userConversionValue()
+    private func fetchConversionValue() -> Int? {
+        Kovalee.shared.kovaleeManager?.userConversionValue()
     }
 
-    private func sesssionCount() async -> Int? {
-        await Kovalee.shared.kovaleeManager?.appOpeningCount()
+    private func fetchSessionCount() -> Int? {
+        Kovalee.shared.kovaleeManager?.appOpeningCount()
     }
 }

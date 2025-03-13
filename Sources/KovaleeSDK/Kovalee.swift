@@ -20,36 +20,37 @@ public let SDK_VERSION = "2.0.0"
 public final class Kovalee {
     /// Checks if Kovalee has been initialized
     public static var isInitialized: Bool {
-        initializedManager != nil
+        getInitializedManager() != nil
     }
 
     /// Initiialize Kovalee with specific configuration
     /// - Parameters:
     ///   - configuration: the configuration to be used by Kovalee
     public static func initialize(configuration: Configuration) {
-        initializedManager = .init(configuration: configuration, storage: .userDefaults())
+        setInitializedManager(.init(configuration: configuration, storage: .userDefaults()))
     }
 
     /// used for testing purpose mainly
     static func initialize(configuration: Configuration, storage: Storage) {
-        initializedManager = .init(configuration: configuration, storage: storage)
+        setInitializedManager(.init(configuration: configuration, storage: storage))
     }
 
     /// terminate current Kovalee instance
     public static func terminate() {
-        initializedManager = nil
+        setInitializedManager(nil)
     }
 
     /// Kovalee shared instance
     public static var shared: Kovalee {
-        if let initializedManager {
-            return initializedManager
+        if let manager = getInitializedManager() {
+            return manager
         } else if ProcessInfo.processInfo.environment["XCODE_RUNNING_FOR_PREVIEWS"] == "1" {
             // SwiftUI Previews, this is not a real launch of the app, therefore mock data is used
-            initializedManager = .init(configuration: .preview, storage: .userDefaults())
-            return initializedManager!
+            let newManager = self.init(configuration: .preview, storage: .userDefaults())
+            setInitializedManager(newManager)
+            return newManager
         } else {
-            let errorMessage = "Please call KovaleeManager.initialize(...) before accessing the shared instance."
+            let errorMessage = "Please call Kovalee.initialize(...) before accessing the shared instance."
             KLogger.error(errorMessage)
             fatalError(errorMessage)
         }
@@ -63,22 +64,21 @@ public final class Kovalee {
         do {
             keys = try Reader.kovaleeKeysReader.load(configuration.keysFileUrl)
 
-            // avoid initializing third party tools if running UnitTests
-            if !ProcessInfo.isRunningTests {
-                let eventTracker = EventsTrackerManagerCreator().createImplementation(
-                    withConfiguration: configuration,
-                    andKeys: keys
-                ) as! EventTrackerManager
-
-                kovaleeManager = KovaleeManager(
-                    keys: keys,
-                    sdkVersion: SDK_VERSION,
-                    eventTrackerManager: eventTracker,
-                    alreadyIntegrated: configuration.alreadyIntegrated
-                )
-
-                setupCapabilities()
+            guard let eventTracker = EventsTrackerManagerCreator().createImplementation(
+                withConfiguration: configuration,
+                andKeys: keys
+            ) as? EventTrackerManager else {
+                fatalError("Failed to create EventTrackerManager")
             }
+
+            kovaleeManager = KovaleeManager(
+                keys: keys,
+                sdkVersion: SDK_VERSION,
+                eventTrackerManager: eventTracker,
+                alreadyIntegrated: configuration.alreadyIntegrated
+            )
+
+            setupCapabilities()
 
             kovaleeManager?.setDefaultUserId()
             kovaleeManager?.sendAppOpenEvent()
@@ -89,20 +89,43 @@ public final class Kovalee {
         }
     }
 
-    private static var initializedManager: Kovalee?
-
     public var keys: KovaleeKeys
     public var kovaleeManager: KovaleeManager?
     public var configuration: Configuration
 }
+
+// MARK: - Private Singleton Implementation
+
+private extension Kovalee {
+    // A lock for thread-safe access to the initializedManager
+    static let lock = NSLock()
+
+    // Thread-safe storage for the singleton instance
+    // Mark as nonisolated(unsafe) to indicate we're handling thread safety ourselves
+    nonisolated(unsafe) static var _initializedManager: Kovalee?
+
+    static func getInitializedManager() -> Kovalee? {
+        lock.lock()
+        defer { lock.unlock() }
+        return _initializedManager
+    }
+
+    static func setInitializedManager(_ manager: Kovalee?) {
+        lock.lock()
+        defer { lock.unlock() }
+        _initializedManager = manager
+    }
+}
+
+// MARK: - Capabilities Setup
 
 extension Kovalee {
     private func setupCapabilities() {
         for item in Capabilities.allCases {
             switch item {
             case .attribution:
-                let creator = AttributionManagerCreator {
-                    self.kovaleeManager?.attributionCallback(withAdid: $0)
+                let creator = AttributionManagerCreator { adid in
+                    Kovalee.performAttributionCallback(with: adid)
                 }
                 if let attributionManager = (creator as? Creator)?.createImplementation(
                     withConfiguration: configuration,
@@ -147,6 +170,13 @@ extension Kovalee {
     }
 }
 
+extension Kovalee {
+    // Accesses the shared instance without capturing self in the closure.
+    static func performAttributionCallback(with adid: String?) {
+        shared.kovaleeManager?.attributionCallback(withAdid: adid)
+    }
+}
+
 enum Capabilities: CaseIterable {
     case eventsTracking
     case attribution
@@ -165,8 +195,8 @@ public protocol Creator {
 }
 
 public struct EventsTrackerManagerCreator {}
-public struct AttributionManagerCreator {
-    public var attributionAdidCallback: (String?) -> Void
+public struct AttributionManagerCreator: Sendable {
+    public var attributionAdidCallback: @Sendable (String?) -> Void
 }
 
 public struct PurchaseManagerCreator {}

@@ -1,4 +1,4 @@
-// swift-tools-version: 5.5.0
+// swift-tools-version: 6.0.0
 // The swift-tools-version declares the minimum version of Swift required to build this package.
 
 import PackageDescription
@@ -169,7 +169,7 @@ extension Target.Dependency {
     }
 
     static var firebaseAnalytics: Self {
-        .productItem(name: "FirebaseAnalytics", package: "firebase-ios-sdk")
+        .product(name: "FirebaseAnalytics", package: "firebase-ios-sdk")
     }
 }
 

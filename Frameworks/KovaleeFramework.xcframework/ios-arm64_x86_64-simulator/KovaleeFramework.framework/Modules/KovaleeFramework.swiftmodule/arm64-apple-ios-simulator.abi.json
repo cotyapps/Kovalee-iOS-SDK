@@ -347,8 +347,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:16KovaleeFramework0A7ManagerC16installationDate10Foundation0E0VSgyYaF",
-            "mangledName": "$s16KovaleeFramework0A7ManagerC16installationDate10Foundation0E0VSgyYaF",
+            "usr": "s:16KovaleeFramework0A7ManagerC16installationDate10Foundation0E0VSgyF",
+            "mangledName": "$s16KovaleeFramework0A7ManagerC16installationDate10Foundation0E0VSgyF",
             "moduleName": "KovaleeFramework",
             "declAttributes": [
               "AccessControl"
@@ -368,8 +368,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:16KovaleeFramework0A7ManagerC15appOpeningCountSiyYaF",
-            "mangledName": "$s16KovaleeFramework0A7ManagerC15appOpeningCountSiyYaF",
+            "usr": "s:16KovaleeFramework0A7ManagerC15appOpeningCountSiyF",
+            "mangledName": "$s16KovaleeFramework0A7ManagerC15appOpeningCountSiyF",
             "moduleName": "KovaleeFramework",
             "declAttributes": [
               "AccessControl"
@@ -439,8 +439,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:16KovaleeFramework0A7ManagerC19userConversionValueSiyYaF",
-            "mangledName": "$s16KovaleeFramework0A7ManagerC19userConversionValueSiyYaF",
+            "usr": "s:16KovaleeFramework0A7ManagerC19userConversionValueSiyF",
+            "mangledName": "$s16KovaleeFramework0A7ManagerC19userConversionValueSiyF",
             "moduleName": "KovaleeFramework",
             "declAttributes": [
               "AccessControl"
@@ -468,8 +468,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:16KovaleeFramework0A7ManagerC15userCoarseValueSSSgyYaF",
-            "mangledName": "$s16KovaleeFramework0A7ManagerC15userCoarseValueSSSgyYaF",
+            "usr": "s:16KovaleeFramework0A7ManagerC15userCoarseValueSSSgyF",
+            "mangledName": "$s16KovaleeFramework0A7ManagerC15userCoarseValueSSSgyF",
             "moduleName": "KovaleeFramework",
             "declAttributes": [
               "AccessControl"
@@ -489,8 +489,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:16KovaleeFramework0A7ManagerC15sequenceVersionSiyYaF",
-            "mangledName": "$s16KovaleeFramework0A7ManagerC15sequenceVersionSiyYaF",
+            "usr": "s:16KovaleeFramework0A7ManagerC15sequenceVersionSiyF",
+            "mangledName": "$s16KovaleeFramework0A7ManagerC15sequenceVersionSiyF",
             "moduleName": "KovaleeFramework",
             "declAttributes": [
               "AccessControl"
@@ -515,8 +515,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:16KovaleeFramework0A7ManagerC18setSequenceVersionyySiYaF",
-            "mangledName": "$s16KovaleeFramework0A7ManagerC18setSequenceVersionyySiYaF",
+            "usr": "s:16KovaleeFramework0A7ManagerC18setSequenceVersionyySiF",
+            "mangledName": "$s16KovaleeFramework0A7ManagerC18setSequenceVersionyySiF",
             "moduleName": "KovaleeFramework",
             "declAttributes": [
               "AccessControl"
@@ -536,8 +536,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:16KovaleeFramework0A7ManagerC12parsingLogicSiyYaF",
-            "mangledName": "$s16KovaleeFramework0A7ManagerC12parsingLogicSiyYaF",
+            "usr": "s:16KovaleeFramework0A7ManagerC12parsingLogicSiyF",
+            "mangledName": "$s16KovaleeFramework0A7ManagerC12parsingLogicSiyF",
             "moduleName": "KovaleeFramework",
             "declAttributes": [
               "AccessControl"
@@ -562,8 +562,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:16KovaleeFramework0A7ManagerC15setParsingLogicyySiYaF",
-            "mangledName": "$s16KovaleeFramework0A7ManagerC15setParsingLogicyySiYaF",
+            "usr": "s:16KovaleeFramework0A7ManagerC15setParsingLogicyySiF",
+            "mangledName": "$s16KovaleeFramework0A7ManagerC15setParsingLogicyySiF",
             "moduleName": "KovaleeFramework",
             "declAttributes": [
               "AccessControl"
@@ -582,8 +582,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:16KovaleeFramework0A7ManagerC8resetAppyyYaF",
-            "mangledName": "$s16KovaleeFramework0A7ManagerC8resetAppyyYaF",
+            "usr": "s:16KovaleeFramework0A7ManagerC8resetAppyyF",
+            "mangledName": "$s16KovaleeFramework0A7ManagerC8resetAppyyF",
             "moduleName": "KovaleeFramework",
             "declAttributes": [
               "AccessControl"
@@ -840,6 +840,27 @@
           },
           {
             "kind": "Function",
+            "name": "canSendEvents",
+            "printedName": "canSendEvents()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:16KovaleeFramework0A7ManagerC13canSendEventsSbyF",
+            "mangledName": "$s16KovaleeFramework0A7ManagerC13canSendEventsSbyF",
+            "moduleName": "KovaleeFramework",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
             "name": "isDataCollectionEnabled",
             "printedName": "isDataCollectionEnabled()",
             "children": [
@@ -851,8 +872,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:16KovaleeFramework0A7ManagerC23isDataCollectionEnabledSbyYaF",
-            "mangledName": "$s16KovaleeFramework0A7ManagerC23isDataCollectionEnabledSbyYaF",
+            "usr": "s:16KovaleeFramework0A7ManagerC23isDataCollectionEnabledSbyF",
+            "mangledName": "$s16KovaleeFramework0A7ManagerC23isDataCollectionEnabledSbyF",
             "moduleName": "KovaleeFramework",
             "declAttributes": [
               "AccessControl"
@@ -1594,24 +1615,6 @@
           },
           {
             "kind": "Function",
-            "name": "fetchEventSequences",
-            "printedName": "fetchEventSequences()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:16KovaleeFramework0A7ManagerC19fetchEventSequencesyyYaF",
-            "mangledName": "$s16KovaleeFramework0A7ManagerC19fetchEventSequencesyyYaF",
-            "moduleName": "KovaleeFramework",
-            "isFromExtension": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
             "name": "setupConversionManager",
             "printedName": "setupConversionManager()",
             "children": [
@@ -1622,8 +1625,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:16KovaleeFramework0A7ManagerC015setupConversionC0yyYaF",
-            "mangledName": "$s16KovaleeFramework0A7ManagerC015setupConversionC0yyYaF",
+            "usr": "s:16KovaleeFramework0A7ManagerC015setupConversionC0yyF",
+            "mangledName": "$s16KovaleeFramework0A7ManagerC015setupConversionC0yyF",
             "moduleName": "KovaleeFramework",
             "isFromExtension": true,
             "funcSelfKind": "NonMutating"
@@ -1648,6 +1651,88 @@
           },
           {
             "kind": "Function",
+            "name": "fetchRemoteConfiguration",
+            "printedName": "fetchRemoteConfiguration(storage:appCode:trackerManager:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Storage",
+                "printedName": "KovaleeFramework.Storage",
+                "usr": "s:16KovaleeFramework7StorageV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "(any KovaleeFramework.EventTrackerManager)?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "EventTrackerManager",
+                    "printedName": "any KovaleeFramework.EventTrackerManager",
+                    "usr": "s:16KovaleeFramework19EventTrackerManagerP"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:16KovaleeFramework0A7ManagerC24fetchRemoteConfiguration7storage7appCode07trackerC0yAA7StorageV_SSAA012EventTrackerC0_pSgtYaFZ",
+            "mangledName": "$s16KovaleeFramework0A7ManagerC24fetchRemoteConfiguration7storage7appCode07trackerC0yAA7StorageV_SSAA012EventTrackerC0_pSgtYaFZ",
+            "moduleName": "KovaleeFramework",
+            "static": true,
+            "declAttributes": [
+              "Final"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "fetchEventSequences",
+            "printedName": "fetchEventSequences(storage:appCode:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Storage",
+                "printedName": "KovaleeFramework.Storage",
+                "usr": "s:16KovaleeFramework7StorageV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:16KovaleeFramework0A7ManagerC19fetchEventSequences7storage7appCodeyAA7StorageV_SStYaFZ",
+            "mangledName": "$s16KovaleeFramework0A7ManagerC19fetchEventSequences7storage7appCodeyAA7StorageV_SStYaFZ",
+            "moduleName": "KovaleeFramework",
+            "static": true,
+            "declAttributes": [
+              "Final"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
             "name": "removeUserFromBundle",
             "printedName": "removeUserFromBundle()",
             "children": [
@@ -1658,8 +1743,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:16KovaleeFramework0A7ManagerC20removeUserFromBundleyyYaF",
-            "mangledName": "$s16KovaleeFramework0A7ManagerC20removeUserFromBundleyyYaF",
+            "usr": "s:16KovaleeFramework0A7ManagerC20removeUserFromBundleyyF",
+            "mangledName": "$s16KovaleeFramework0A7ManagerC20removeUserFromBundleyyF",
             "moduleName": "KovaleeFramework",
             "declAttributes": [
               "AccessControl"
@@ -3150,8 +3235,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:16KovaleeFramework0A7ManagerC16localABTestValueSSSgyYaF",
-            "mangledName": "$s16KovaleeFramework0A7ManagerC16localABTestValueSSSgyYaF",
+            "usr": "s:16KovaleeFramework0A7ManagerC16localABTestValueSSSgyF",
+            "mangledName": "$s16KovaleeFramework0A7ManagerC16localABTestValueSSSgyF",
             "moduleName": "KovaleeFramework",
             "isFromExtension": true,
             "funcSelfKind": "NonMutating"
@@ -3207,8 +3292,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:16KovaleeFramework0A7ManagerC14setAbTestValueyySSYaF",
-            "mangledName": "$s16KovaleeFramework0A7ManagerC14setAbTestValueyySSYaF",
+            "usr": "s:16KovaleeFramework0A7ManagerC14setAbTestValueyySSF",
+            "mangledName": "$s16KovaleeFramework0A7ManagerC14setAbTestValueyySSF",
             "moduleName": "KovaleeFramework",
             "isFromExtension": true,
             "funcSelfKind": "NonMutating"
@@ -4050,6 +4135,13 @@
             "printedName": "Comparable",
             "usr": "s:SL",
             "mangledName": "$sSL"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
           }
         ]
       },
@@ -4739,6 +4831,13 @@
                 "printedName": "Decodable",
                 "usr": "s:Se",
                 "mangledName": "$sSe"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Sendable",
+                "printedName": "Sendable",
+                "usr": "s:s8SendableP",
+                "mangledName": "$ss8SendableP"
               }
             ]
           },
@@ -4972,6 +5071,13 @@
                 "printedName": "Decodable",
                 "usr": "s:Se",
                 "mangledName": "$sSe"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Sendable",
+                "printedName": "Sendable",
+                "usr": "s:s8SendableP",
+                "mangledName": "$ss8SendableP"
               }
             ]
           },
@@ -5120,6 +5226,13 @@
                 "printedName": "Decodable",
                 "usr": "s:Se",
                 "mangledName": "$sSe"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Sendable",
+                "printedName": "Sendable",
+                "usr": "s:s8SendableP",
+                "mangledName": "$ss8SendableP"
               }
             ]
           },
@@ -5227,6 +5340,13 @@
                 "printedName": "Decodable",
                 "usr": "s:Se",
                 "mangledName": "$sSe"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Sendable",
+                "printedName": "Sendable",
+                "usr": "s:s8SendableP",
+                "mangledName": "$ss8SendableP"
               }
             ]
           },
@@ -5285,6 +5405,13 @@
             "printedName": "Decodable",
             "usr": "s:Se",
             "mangledName": "$sSe"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
           }
         ]
       },
@@ -5575,8 +5702,8 @@
               }
             ],
             "declKind": "Var",
-            "usr": "s:16KovaleeFramework6ReaderV4loadyx10Foundation3URLVSgKcvp",
-            "mangledName": "$s16KovaleeFramework6ReaderV4loadyx10Foundation3URLVSgKcvp",
+            "usr": "s:16KovaleeFramework6ReaderV4loadyx10Foundation3URLVSgYbKcvp",
+            "mangledName": "$s16KovaleeFramework6ReaderV4loadyx10Foundation3URLVSgYbKcvp",
             "moduleName": "KovaleeFramework",
             "declAttributes": [
               "HasStorage",
@@ -5617,8 +5744,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:16KovaleeFramework6ReaderV4loadyx10Foundation3URLVSgKcvg",
-                "mangledName": "$s16KovaleeFramework6ReaderV4loadyx10Foundation3URLVSgKcvg",
+                "usr": "s:16KovaleeFramework6ReaderV4loadyx10Foundation3URLVSgYbKcvg",
+                "mangledName": "$s16KovaleeFramework6ReaderV4loadyx10Foundation3URLVSgYbKcvg",
                 "moduleName": "KovaleeFramework",
                 "genericSig": "<τ_0_0 where τ_0_0 : Swift.Decodable>",
                 "sugared_genericSig": "<T where T : Swift.Decodable>",
@@ -5663,8 +5790,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:16KovaleeFramework6ReaderV4loadyx10Foundation3URLVSgKcvs",
-                "mangledName": "$s16KovaleeFramework6ReaderV4loadyx10Foundation3URLVSgKcvs",
+                "usr": "s:16KovaleeFramework6ReaderV4loadyx10Foundation3URLVSgYbKcvs",
+                "mangledName": "$s16KovaleeFramework6ReaderV4loadyx10Foundation3URLVSgYbKcvs",
                 "moduleName": "KovaleeFramework",
                 "genericSig": "<τ_0_0 where τ_0_0 : Swift.Decodable>",
                 "sugared_genericSig": "<T where T : Swift.Decodable>",
@@ -5683,8 +5810,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:16KovaleeFramework6ReaderV4loadyx10Foundation3URLVSgKcvM",
-                "mangledName": "$s16KovaleeFramework6ReaderV4loadyx10Foundation3URLVSgKcvM",
+                "usr": "s:16KovaleeFramework6ReaderV4loadyx10Foundation3URLVSgYbKcvM",
+                "mangledName": "$s16KovaleeFramework6ReaderV4loadyx10Foundation3URLVSgYbKcvM",
                 "moduleName": "KovaleeFramework",
                 "genericSig": "<τ_0_0 where τ_0_0 : Swift.Decodable>",
                 "sugared_genericSig": "<T where T : Swift.Decodable>",
@@ -5784,6 +5911,13 @@
             "printedName": "Escapable",
             "usr": "s:s9EscapableP",
             "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
           }
         ]
       },
@@ -6603,6 +6737,13 @@
             ],
             "usr": "s:SY",
             "mangledName": "$sSY"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
           }
         ]
       },
@@ -6869,17 +7010,18 @@
               {
                 "kind": "TypeFunc",
                 "name": "Function",
-                "printedName": "(KovaleeFramework.StorageKeys, Any?) async -> Any?",
+                "printedName": "(KovaleeFramework.StorageKeys, (any Swift.Sendable)?) -> (any Swift.Sendable)?",
                 "children": [
                   {
                     "kind": "TypeNominal",
                     "name": "Optional",
-                    "printedName": "Any?",
+                    "printedName": "(any Swift.Sendable)?",
                     "children": [
                       {
                         "kind": "TypeNominal",
-                        "name": "ProtocolComposition",
-                        "printedName": "Any"
+                        "name": "Sendable",
+                        "printedName": "any Swift.Sendable",
+                        "usr": "s:s8SendableP"
                       }
                     ],
                     "usr": "s:Sq"
@@ -6887,7 +7029,7 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Tuple",
-                    "printedName": "(KovaleeFramework.StorageKeys, Any?)",
+                    "printedName": "(KovaleeFramework.StorageKeys, (any Swift.Sendable)?)",
                     "children": [
                       {
                         "kind": "TypeNominal",
@@ -6898,12 +7040,13 @@
                       {
                         "kind": "TypeNominal",
                         "name": "Optional",
-                        "printedName": "Any?",
+                        "printedName": "(any Swift.Sendable)?",
                         "children": [
                           {
                             "kind": "TypeNominal",
-                            "name": "ProtocolComposition",
-                            "printedName": "Any"
+                            "name": "Sendable",
+                            "printedName": "any Swift.Sendable",
+                            "usr": "s:s8SendableP"
                           }
                         ],
                         "usr": "s:Sq"
@@ -6914,8 +7057,8 @@
               }
             ],
             "declKind": "Var",
-            "usr": "s:16KovaleeFramework7StorageV011hydrateFromC0yypSgAA0C4KeysO_AEtYacvp",
-            "mangledName": "$s16KovaleeFramework7StorageV011hydrateFromC0yypSgAA0C4KeysO_AEtYacvp",
+            "usr": "s:16KovaleeFramework7StorageV011hydrateFromC0ys8Sendable_pSgAA0C4KeysO_AFtYbcvp",
+            "mangledName": "$s16KovaleeFramework7StorageV011hydrateFromC0ys8Sendable_pSgAA0C4KeysO_AFtYbcvp",
             "moduleName": "KovaleeFramework",
             "declAttributes": [
               "HasStorage",
@@ -6931,17 +7074,18 @@
                   {
                     "kind": "TypeFunc",
                     "name": "Function",
-                    "printedName": "(KovaleeFramework.StorageKeys, Any?) async -> Any?",
+                    "printedName": "(KovaleeFramework.StorageKeys, (any Swift.Sendable)?) -> (any Swift.Sendable)?",
                     "children": [
                       {
                         "kind": "TypeNominal",
                         "name": "Optional",
-                        "printedName": "Any?",
+                        "printedName": "(any Swift.Sendable)?",
                         "children": [
                           {
                             "kind": "TypeNominal",
-                            "name": "ProtocolComposition",
-                            "printedName": "Any"
+                            "name": "Sendable",
+                            "printedName": "any Swift.Sendable",
+                            "usr": "s:s8SendableP"
                           }
                         ],
                         "usr": "s:Sq"
@@ -6949,7 +7093,7 @@
                       {
                         "kind": "TypeNominal",
                         "name": "Tuple",
-                        "printedName": "(KovaleeFramework.StorageKeys, Any?)",
+                        "printedName": "(KovaleeFramework.StorageKeys, (any Swift.Sendable)?)",
                         "children": [
                           {
                             "kind": "TypeNominal",
@@ -6960,12 +7104,13 @@
                           {
                             "kind": "TypeNominal",
                             "name": "Optional",
-                            "printedName": "Any?",
+                            "printedName": "(any Swift.Sendable)?",
                             "children": [
                               {
                                 "kind": "TypeNominal",
-                                "name": "ProtocolComposition",
-                                "printedName": "Any"
+                                "name": "Sendable",
+                                "printedName": "any Swift.Sendable",
+                                "usr": "s:s8SendableP"
                               }
                             ],
                             "usr": "s:Sq"
@@ -6976,8 +7121,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:16KovaleeFramework7StorageV011hydrateFromC0yypSgAA0C4KeysO_AEtYacvg",
-                "mangledName": "$s16KovaleeFramework7StorageV011hydrateFromC0yypSgAA0C4KeysO_AEtYacvg",
+                "usr": "s:16KovaleeFramework7StorageV011hydrateFromC0ys8Sendable_pSgAA0C4KeysO_AFtYbcvg",
+                "mangledName": "$s16KovaleeFramework7StorageV011hydrateFromC0ys8Sendable_pSgAA0C4KeysO_AFtYbcvg",
                 "moduleName": "KovaleeFramework",
                 "implicit": true,
                 "accessorKind": "get"
@@ -6995,17 +7140,18 @@
                   {
                     "kind": "TypeFunc",
                     "name": "Function",
-                    "printedName": "(KovaleeFramework.StorageKeys, Any?) async -> Any?",
+                    "printedName": "(KovaleeFramework.StorageKeys, (any Swift.Sendable)?) -> (any Swift.Sendable)?",
                     "children": [
                       {
                         "kind": "TypeNominal",
                         "name": "Optional",
-                        "printedName": "Any?",
+                        "printedName": "(any Swift.Sendable)?",
                         "children": [
                           {
                             "kind": "TypeNominal",
-                            "name": "ProtocolComposition",
-                            "printedName": "Any"
+                            "name": "Sendable",
+                            "printedName": "any Swift.Sendable",
+                            "usr": "s:s8SendableP"
                           }
                         ],
                         "usr": "s:Sq"
@@ -7013,7 +7159,7 @@
                       {
                         "kind": "TypeNominal",
                         "name": "Tuple",
-                        "printedName": "(KovaleeFramework.StorageKeys, Any?)",
+                        "printedName": "(KovaleeFramework.StorageKeys, (any Swift.Sendable)?)",
                         "children": [
                           {
                             "kind": "TypeNominal",
@@ -7024,12 +7170,13 @@
                           {
                             "kind": "TypeNominal",
                             "name": "Optional",
-                            "printedName": "Any?",
+                            "printedName": "(any Swift.Sendable)?",
                             "children": [
                               {
                                 "kind": "TypeNominal",
-                                "name": "ProtocolComposition",
-                                "printedName": "Any"
+                                "name": "Sendable",
+                                "printedName": "any Swift.Sendable",
+                                "usr": "s:s8SendableP"
                               }
                             ],
                             "usr": "s:Sq"
@@ -7040,8 +7187,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:16KovaleeFramework7StorageV011hydrateFromC0yypSgAA0C4KeysO_AEtYacvs",
-                "mangledName": "$s16KovaleeFramework7StorageV011hydrateFromC0yypSgAA0C4KeysO_AEtYacvs",
+                "usr": "s:16KovaleeFramework7StorageV011hydrateFromC0ys8Sendable_pSgAA0C4KeysO_AFtYbcvs",
+                "mangledName": "$s16KovaleeFramework7StorageV011hydrateFromC0ys8Sendable_pSgAA0C4KeysO_AFtYbcvs",
                 "moduleName": "KovaleeFramework",
                 "implicit": true,
                 "accessorKind": "set"
@@ -7058,8 +7205,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:16KovaleeFramework7StorageV011hydrateFromC0yypSgAA0C4KeysO_AEtYacvM",
-                "mangledName": "$s16KovaleeFramework7StorageV011hydrateFromC0yypSgAA0C4KeysO_AEtYacvM",
+                "usr": "s:16KovaleeFramework7StorageV011hydrateFromC0ys8Sendable_pSgAA0C4KeysO_AFtYbcvM",
+                "mangledName": "$s16KovaleeFramework7StorageV011hydrateFromC0ys8Sendable_pSgAA0C4KeysO_AFtYbcvM",
                 "moduleName": "KovaleeFramework",
                 "implicit": true,
                 "accessorKind": "_modify"
@@ -7074,7 +7221,7 @@
               {
                 "kind": "TypeFunc",
                 "name": "Function",
-                "printedName": "(KovaleeFramework.StorageKeys, Any) async -> ()",
+                "printedName": "(KovaleeFramework.StorageKeys, any Swift.Sendable) -> ()",
                 "children": [
                   {
                     "kind": "TypeNominal",
@@ -7084,7 +7231,7 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Tuple",
-                    "printedName": "(KovaleeFramework.StorageKeys, Any)",
+                    "printedName": "(KovaleeFramework.StorageKeys, any Swift.Sendable)",
                     "children": [
                       {
                         "kind": "TypeNominal",
@@ -7094,8 +7241,9 @@
                       },
                       {
                         "kind": "TypeNominal",
-                        "name": "ProtocolComposition",
-                        "printedName": "Any"
+                        "name": "Sendable",
+                        "printedName": "any Swift.Sendable",
+                        "usr": "s:s8SendableP"
                       }
                     ]
                   }
@@ -7103,8 +7251,8 @@
               }
             ],
             "declKind": "Var",
-            "usr": "s:16KovaleeFramework7StorageV09persistToC0yyAA0C4KeysO_yptYacvp",
-            "mangledName": "$s16KovaleeFramework7StorageV09persistToC0yyAA0C4KeysO_yptYacvp",
+            "usr": "s:16KovaleeFramework7StorageV09persistToC0yyAA0C4KeysO_s8Sendable_ptYbcvp",
+            "mangledName": "$s16KovaleeFramework7StorageV09persistToC0yyAA0C4KeysO_s8Sendable_ptYbcvp",
             "moduleName": "KovaleeFramework",
             "declAttributes": [
               "HasStorage",
@@ -7120,7 +7268,7 @@
                   {
                     "kind": "TypeFunc",
                     "name": "Function",
-                    "printedName": "(KovaleeFramework.StorageKeys, Any) async -> ()",
+                    "printedName": "(KovaleeFramework.StorageKeys, any Swift.Sendable) -> ()",
                     "children": [
                       {
                         "kind": "TypeNominal",
@@ -7130,7 +7278,7 @@
                       {
                         "kind": "TypeNominal",
                         "name": "Tuple",
-                        "printedName": "(KovaleeFramework.StorageKeys, Any)",
+                        "printedName": "(KovaleeFramework.StorageKeys, any Swift.Sendable)",
                         "children": [
                           {
                             "kind": "TypeNominal",
@@ -7140,8 +7288,9 @@
                           },
                           {
                             "kind": "TypeNominal",
-                            "name": "ProtocolComposition",
-                            "printedName": "Any"
+                            "name": "Sendable",
+                            "printedName": "any Swift.Sendable",
+                            "usr": "s:s8SendableP"
                           }
                         ]
                       }
@@ -7149,8 +7298,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:16KovaleeFramework7StorageV09persistToC0yyAA0C4KeysO_yptYacvg",
-                "mangledName": "$s16KovaleeFramework7StorageV09persistToC0yyAA0C4KeysO_yptYacvg",
+                "usr": "s:16KovaleeFramework7StorageV09persistToC0yyAA0C4KeysO_s8Sendable_ptYbcvg",
+                "mangledName": "$s16KovaleeFramework7StorageV09persistToC0yyAA0C4KeysO_s8Sendable_ptYbcvg",
                 "moduleName": "KovaleeFramework",
                 "implicit": true,
                 "accessorKind": "get"
@@ -7168,7 +7317,7 @@
                   {
                     "kind": "TypeFunc",
                     "name": "Function",
-                    "printedName": "(KovaleeFramework.StorageKeys, Any) async -> ()",
+                    "printedName": "(KovaleeFramework.StorageKeys, any Swift.Sendable) -> ()",
                     "children": [
                       {
                         "kind": "TypeNominal",
@@ -7178,7 +7327,7 @@
                       {
                         "kind": "TypeNominal",
                         "name": "Tuple",
-                        "printedName": "(KovaleeFramework.StorageKeys, Any)",
+                        "printedName": "(KovaleeFramework.StorageKeys, any Swift.Sendable)",
                         "children": [
                           {
                             "kind": "TypeNominal",
@@ -7188,8 +7337,9 @@
                           },
                           {
                             "kind": "TypeNominal",
-                            "name": "ProtocolComposition",
-                            "printedName": "Any"
+                            "name": "Sendable",
+                            "printedName": "any Swift.Sendable",
+                            "usr": "s:s8SendableP"
                           }
                         ]
                       }
@@ -7197,8 +7347,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:16KovaleeFramework7StorageV09persistToC0yyAA0C4KeysO_yptYacvs",
-                "mangledName": "$s16KovaleeFramework7StorageV09persistToC0yyAA0C4KeysO_yptYacvs",
+                "usr": "s:16KovaleeFramework7StorageV09persistToC0yyAA0C4KeysO_s8Sendable_ptYbcvs",
+                "mangledName": "$s16KovaleeFramework7StorageV09persistToC0yyAA0C4KeysO_s8Sendable_ptYbcvs",
                 "moduleName": "KovaleeFramework",
                 "implicit": true,
                 "accessorKind": "set"
@@ -7215,8 +7365,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:16KovaleeFramework7StorageV09persistToC0yyAA0C4KeysO_yptYacvM",
-                "mangledName": "$s16KovaleeFramework7StorageV09persistToC0yyAA0C4KeysO_yptYacvM",
+                "usr": "s:16KovaleeFramework7StorageV09persistToC0yyAA0C4KeysO_s8Sendable_ptYbcvM",
+                "mangledName": "$s16KovaleeFramework7StorageV09persistToC0yyAA0C4KeysO_s8Sendable_ptYbcvM",
                 "moduleName": "KovaleeFramework",
                 "implicit": true,
                 "accessorKind": "_modify"
@@ -7231,7 +7381,7 @@
               {
                 "kind": "TypeFunc",
                 "name": "Function",
-                "printedName": "(KovaleeFramework.StorageKeys) async -> ()",
+                "printedName": "(KovaleeFramework.StorageKeys) -> ()",
                 "children": [
                   {
                     "kind": "TypeNominal",
@@ -7248,8 +7398,8 @@
               }
             ],
             "declKind": "Var",
-            "usr": "s:16KovaleeFramework7StorageV010removeFromC0yyAA0C4KeysOYacvp",
-            "mangledName": "$s16KovaleeFramework7StorageV010removeFromC0yyAA0C4KeysOYacvp",
+            "usr": "s:16KovaleeFramework7StorageV010removeFromC0yyAA0C4KeysOYbcvp",
+            "mangledName": "$s16KovaleeFramework7StorageV010removeFromC0yyAA0C4KeysOYbcvp",
             "moduleName": "KovaleeFramework",
             "declAttributes": [
               "HasStorage",
@@ -7265,7 +7415,7 @@
                   {
                     "kind": "TypeFunc",
                     "name": "Function",
-                    "printedName": "(KovaleeFramework.StorageKeys) async -> ()",
+                    "printedName": "(KovaleeFramework.StorageKeys) -> ()",
                     "children": [
                       {
                         "kind": "TypeNominal",
@@ -7282,8 +7432,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:16KovaleeFramework7StorageV010removeFromC0yyAA0C4KeysOYacvg",
-                "mangledName": "$s16KovaleeFramework7StorageV010removeFromC0yyAA0C4KeysOYacvg",
+                "usr": "s:16KovaleeFramework7StorageV010removeFromC0yyAA0C4KeysOYbcvg",
+                "mangledName": "$s16KovaleeFramework7StorageV010removeFromC0yyAA0C4KeysOYbcvg",
                 "moduleName": "KovaleeFramework",
                 "implicit": true,
                 "accessorKind": "get"
@@ -7301,7 +7451,7 @@
                   {
                     "kind": "TypeFunc",
                     "name": "Function",
-                    "printedName": "(KovaleeFramework.StorageKeys) async -> ()",
+                    "printedName": "(KovaleeFramework.StorageKeys) -> ()",
                     "children": [
                       {
                         "kind": "TypeNominal",
@@ -7318,8 +7468,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:16KovaleeFramework7StorageV010removeFromC0yyAA0C4KeysOYacvs",
-                "mangledName": "$s16KovaleeFramework7StorageV010removeFromC0yyAA0C4KeysOYacvs",
+                "usr": "s:16KovaleeFramework7StorageV010removeFromC0yyAA0C4KeysOYbcvs",
+                "mangledName": "$s16KovaleeFramework7StorageV010removeFromC0yyAA0C4KeysOYbcvs",
                 "moduleName": "KovaleeFramework",
                 "implicit": true,
                 "accessorKind": "set"
@@ -7336,8 +7486,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:16KovaleeFramework7StorageV010removeFromC0yyAA0C4KeysOYacvM",
-                "mangledName": "$s16KovaleeFramework7StorageV010removeFromC0yyAA0C4KeysOYacvM",
+                "usr": "s:16KovaleeFramework7StorageV010removeFromC0yyAA0C4KeysOYbcvM",
+                "mangledName": "$s16KovaleeFramework7StorageV010removeFromC0yyAA0C4KeysOYbcvM",
                 "moduleName": "KovaleeFramework",
                 "implicit": true,
                 "accessorKind": "_modify"
@@ -7370,6 +7520,59 @@
             "static": true,
             "isFromExtension": true,
             "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "hydrate",
+            "printedName": "hydrate(from:defaultValue:defaults:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "(any Swift.Sendable)?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Sendable",
+                    "printedName": "any Swift.Sendable",
+                    "usr": "s:s8SendableP"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "StorageKeys",
+                "printedName": "KovaleeFramework.StorageKeys",
+                "usr": "s:16KovaleeFramework11StorageKeysO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Any?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ProtocolComposition",
+                    "printedName": "Any"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UserDefaults",
+                "printedName": "Foundation.UserDefaults",
+                "usr": "c:objc(cs)NSUserDefaults"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:16KovaleeFramework7StorageV7hydrate4from12defaultValue8defaultss8Sendable_pSgAA0C4KeysO_ypSgSo14NSUserDefaultsCtFZ",
+            "mangledName": "$s16KovaleeFramework7StorageV7hydrate4from12defaultValue8defaultss8Sendable_pSgAA0C4KeysO_ypSgSo14NSUserDefaultsCtFZ",
+            "moduleName": "KovaleeFramework",
+            "static": true,
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
           }
         ],
         "declKind": "Struct",
@@ -7394,6 +7597,13 @@
             "printedName": "Escapable",
             "usr": "s:s9EscapableP",
             "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
           }
         ]
       },
@@ -7633,6 +7843,13 @@
                 ],
                 "usr": "s:SY",
                 "mangledName": "$sSY"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Sendable",
+                "printedName": "Sendable",
+                "usr": "s:s8SendableP",
+                "mangledName": "$ss8SendableP"
               }
             ]
           },
@@ -7862,6 +8079,13 @@
             "printedName": "Escapable",
             "usr": "s:s9EscapableP",
             "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
           }
         ]
       },
@@ -8066,8 +8290,8 @@
               }
             ],
             "declKind": "Var",
-            "usr": "s:16KovaleeFramework18AttributionManagerP23attributionAdidCallbackyySSSgcvp",
-            "mangledName": "$s16KovaleeFramework18AttributionManagerP23attributionAdidCallbackyySSSgcvp",
+            "usr": "s:16KovaleeFramework18AttributionManagerP23attributionAdidCallbackyySSSgYbcvp",
+            "mangledName": "$s16KovaleeFramework18AttributionManagerP23attributionAdidCallbackyySSSgYbcvp",
             "moduleName": "KovaleeFramework",
             "protocolReq": true,
             "accessors": [
@@ -8104,8 +8328,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:16KovaleeFramework18AttributionManagerP23attributionAdidCallbackyySSSgcvg",
-                "mangledName": "$s16KovaleeFramework18AttributionManagerP23attributionAdidCallbackyySSSgcvg",
+                "usr": "s:16KovaleeFramework18AttributionManagerP23attributionAdidCallbackyySSSgYbcvg",
+                "mangledName": "$s16KovaleeFramework18AttributionManagerP23attributionAdidCallbackyySSSgYbcvg",
                 "moduleName": "KovaleeFramework",
                 "genericSig": "<τ_0_0 where τ_0_0 : KovaleeFramework.AttributionManager>",
                 "sugared_genericSig": "<Self where Self : KovaleeFramework.AttributionManager>",
@@ -8162,6 +8386,8 @@
         "usr": "s:16KovaleeFramework18AttributionManagerP",
         "mangledName": "$s16KovaleeFramework18AttributionManagerP",
         "moduleName": "KovaleeFramework",
+        "genericSig": "<τ_0_0 : Swift.Sendable>",
+        "sugared_genericSig": "<Self : Swift.Sendable>",
         "declAttributes": [
           "AccessControl"
         ],
@@ -8179,6 +8405,13 @@
             "printedName": "Copyable",
             "usr": "s:s8CopyableP",
             "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
           }
         ]
       },
@@ -8461,6 +8694,8 @@
         "usr": "s:16KovaleeFramework19EventTrackerManagerP",
         "mangledName": "$s16KovaleeFramework19EventTrackerManagerP",
         "moduleName": "KovaleeFramework",
+        "genericSig": "<τ_0_0 : Swift.Sendable>",
+        "sugared_genericSig": "<Self : Swift.Sendable>",
         "declAttributes": [
           "AccessControl",
           "RawDocComment"
@@ -8479,6 +8714,13 @@
             "printedName": "Copyable",
             "usr": "s:s8CopyableP",
             "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
           }
         ]
       },
@@ -9128,6 +9370,8 @@
         "usr": "s:16KovaleeFramework15PurchaseManagerP",
         "mangledName": "$s16KovaleeFramework15PurchaseManagerP",
         "moduleName": "KovaleeFramework",
+        "genericSig": "<τ_0_0 : Swift.Sendable>",
+        "sugared_genericSig": "<Self : Swift.Sendable>",
         "declAttributes": [
           "AccessControl",
           "RawDocComment"
@@ -9146,6 +9390,13 @@
             "printedName": "Copyable",
             "usr": "s:s8CopyableP",
             "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
           }
         ]
       },
@@ -9186,6 +9437,8 @@
         "usr": "s:16KovaleeFramework0A17PurchasesDelegateP",
         "mangledName": "$s16KovaleeFramework0A17PurchasesDelegateP",
         "moduleName": "KovaleeFramework",
+        "genericSig": "<τ_0_0 : Swift.Sendable>",
+        "sugared_genericSig": "<Self : Swift.Sendable>",
         "declAttributes": [
           "AccessControl"
         ],
@@ -9203,6 +9456,13 @@
             "printedName": "Copyable",
             "usr": "s:s8CopyableP",
             "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
           }
         ]
       },
@@ -9518,13 +9778,14 @@
             "children": [
               {
                 "kind": "TypeNominal",
-                "name": "ProtocolComposition",
-                "printedName": "Any"
+                "name": "Sendable",
+                "printedName": "any Swift.Sendable",
+                "usr": "s:s8SendableP"
               }
             ],
             "declKind": "Var",
-            "usr": "s:16KovaleeFramework15AbstractPackageP02rcD0ypvp",
-            "mangledName": "$s16KovaleeFramework15AbstractPackageP02rcD0ypvp",
+            "usr": "s:16KovaleeFramework15AbstractPackageP02rcD0s8Sendable_pvp",
+            "mangledName": "$s16KovaleeFramework15AbstractPackageP02rcD0s8Sendable_pvp",
             "moduleName": "KovaleeFramework",
             "protocolReq": true,
             "accessors": [
@@ -9535,13 +9796,14 @@
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "ProtocolComposition",
-                    "printedName": "Any"
+                    "name": "Sendable",
+                    "printedName": "any Swift.Sendable",
+                    "usr": "s:s8SendableP"
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:16KovaleeFramework15AbstractPackageP02rcD0ypvg",
-                "mangledName": "$s16KovaleeFramework15AbstractPackageP02rcD0ypvg",
+                "usr": "s:16KovaleeFramework15AbstractPackageP02rcD0s8Sendable_pvg",
+                "mangledName": "$s16KovaleeFramework15AbstractPackageP02rcD0s8Sendable_pvg",
                 "moduleName": "KovaleeFramework",
                 "genericSig": "<τ_0_0 where τ_0_0 : KovaleeFramework.AbstractPackage>",
                 "sugared_genericSig": "<Self where Self : KovaleeFramework.AbstractPackage>",
@@ -9578,6 +9840,8 @@
         "usr": "s:16KovaleeFramework15AbstractPackageP",
         "mangledName": "$s16KovaleeFramework15AbstractPackageP",
         "moduleName": "KovaleeFramework",
+        "genericSig": "<τ_0_0 : Swift.Sendable>",
+        "sugared_genericSig": "<Self : Swift.Sendable>",
         "declAttributes": [
           "AccessControl"
         ],
@@ -9595,6 +9859,13 @@
             "printedName": "Copyable",
             "usr": "s:s8CopyableP",
             "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
           }
         ]
       },
@@ -10073,6 +10344,8 @@
         "usr": "s:16KovaleeFramework13SurveyManagerP",
         "mangledName": "$s16KovaleeFramework13SurveyManagerP",
         "moduleName": "KovaleeFramework",
+        "genericSig": "<τ_0_0 : Swift.Sendable>",
+        "sugared_genericSig": "<Self : Swift.Sendable>",
         "declAttributes": [
           "AccessControl"
         ],
@@ -10090,6 +10363,13 @@
             "printedName": "Copyable",
             "usr": "s:s8CopyableP",
             "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
           }
         ]
       },
@@ -10532,8 +10812,8 @@
               }
             ],
             "declKind": "Constructor",
-            "usr": "s:16KovaleeFramework22ConversionValueManagerV7appCode19parsingLogicVersion7storage012eventTrackerE0ACSS_SiAA7StorageVAA05EventmE0_pSgtYacfc",
-            "mangledName": "$s16KovaleeFramework22ConversionValueManagerV7appCode19parsingLogicVersion7storage012eventTrackerE0ACSS_SiAA7StorageVAA05EventmE0_pSgtYacfc",
+            "usr": "s:16KovaleeFramework22ConversionValueManagerV7appCode19parsingLogicVersion7storage012eventTrackerE0ACSS_SiAA7StorageVAA05EventmE0_pSgtcfc",
+            "mangledName": "$s16KovaleeFramework22ConversionValueManagerV7appCode19parsingLogicVersion7storage012eventTrackerE0ACSS_SiAA7StorageVAA05EventmE0_pSgtcfc",
             "moduleName": "KovaleeFramework",
             "declAttributes": [
               "AccessControl"
@@ -10567,8 +10847,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:16KovaleeFramework22ConversionValueManagerV010conversionD09fromEventAA0cD0VSgAA0H0V_tYaF",
-            "mangledName": "$s16KovaleeFramework22ConversionValueManagerV010conversionD09fromEventAA0cD0VSgAA0H0V_tYaF",
+            "usr": "s:16KovaleeFramework22ConversionValueManagerV010conversionD09fromEventAA0cD0VSgAA0H0V_tF",
+            "mangledName": "$s16KovaleeFramework22ConversionValueManagerV010conversionD09fromEventAA0cD0VSgAA0H0V_tF",
             "moduleName": "KovaleeFramework",
             "declAttributes": [
               "Mutating"
@@ -13319,6 +13599,13 @@
                 "printedName": "Decodable",
                 "usr": "s:Se",
                 "mangledName": "$sSe"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Sendable",
+                "printedName": "Sendable",
+                "usr": "s:s8SendableP",
+                "mangledName": "$ss8SendableP"
               }
             ]
           },
@@ -13422,6 +13709,13 @@
             "printedName": "Decodable",
             "usr": "s:Se",
             "mangledName": "$sSe"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
           }
         ]
       },
@@ -13555,8 +13849,7 @@
             "moduleName": "KovaleeFramework",
             "static": true,
             "declAttributes": [
-              "Final",
-              "AccessControl"
+              "Final"
             ],
             "isFromExtension": true,
             "accessors": [
@@ -14650,8 +14943,15 @@
   "ConstValues": [
     {
       "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
+      "kind": "StringLiteral",
+      "offset": 148,
+      "length": 30,
+      "value": "\"kovaleeConfigurationComplete\""
+    },
+    {
+      "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 10634,
+      "offset": 11406,
       "length": 5,
       "value": "false"
     },
@@ -14679,35 +14979,35 @@
     {
       "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/Logger\/LogLevel.swift",
       "kind": "IntegerLiteral",
-      "offset": 130,
+      "offset": 140,
       "length": 1,
       "value": "4"
     },
     {
       "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/Logger\/LogLevel.swift",
       "kind": "IntegerLiteral",
-      "offset": 182,
+      "offset": 192,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/Logger\/LogLevel.swift",
       "kind": "IntegerLiteral",
-      "offset": 237,
+      "offset": 247,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/Logger\/LogLevel.swift",
       "kind": "IntegerLiteral",
-      "offset": 301,
+      "offset": 311,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/Logger\/LogLevel.swift",
       "kind": "IntegerLiteral",
-      "offset": 373,
+      "offset": 383,
       "length": 1,
       "value": "3"
     },
@@ -14784,147 +15084,147 @@
     {
       "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/NetworkProvider.swift",
       "kind": "StringLiteral",
-      "offset": 1355,
+      "offset": 1365,
       "length": 30,
       "value": "\"https:\/\/web2web.onrender.com\""
     },
     {
       "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/Utils\/KovaleeKeys.swift",
       "kind": "StringLiteral",
-      "offset": 332,
+      "offset": 342,
       "length": 10,
       "value": "\"app_code\""
     },
     {
       "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/Utils\/KovaleeKeys.swift",
       "kind": "StringLiteral",
-      "offset": 412,
+      "offset": 422,
       "length": 13,
       "value": "\"revenue_cat\""
     },
     {
       "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/Utils\/Storage.swift",
       "kind": "StringLiteral",
-      "offset": 82,
+      "offset": 95,
       "length": 16,
       "value": "\"KV_sdk_version\""
     },
     {
       "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/Utils\/Storage.swift",
       "kind": "StringLiteral",
-      "offset": 112,
+      "offset": 128,
       "length": 9,
       "value": "\"KV_adid\""
     },
     {
       "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/Utils\/Storage.swift",
       "kind": "StringLiteral",
-      "offset": 144,
+      "offset": 163,
       "length": 20,
       "value": "\"KV_is_user_premium\""
     },
     {
       "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/Utils\/Storage.swift",
       "kind": "StringLiteral",
-      "offset": 188,
+      "offset": 210,
       "length": 22,
       "value": "\"KV_is_user_in_bunlde\""
     },
     {
       "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/Utils\/Storage.swift",
       "kind": "StringLiteral",
-      "offset": 234,
+      "offset": 259,
       "length": 21,
       "value": "\"KV_app_opened_count\""
     },
     {
       "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/Utils\/Storage.swift",
       "kind": "StringLiteral",
-      "offset": 284,
+      "offset": 312,
       "length": 26,
       "value": "\"KV_app_installation_date\""
     },
     {
       "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/Utils\/Storage.swift",
       "kind": "StringLiteral",
-      "offset": 336,
+      "offset": 367,
       "length": 22,
       "value": "\"KV_user_subscription\""
     },
     {
       "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/Utils\/Storage.swift",
       "kind": "StringLiteral",
-      "offset": 383,
+      "offset": 417,
       "length": 21,
       "value": "\"KV_conversion_value\""
     },
     {
       "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/Utils\/Storage.swift",
       "kind": "StringLiteral",
-      "offset": 425,
+      "offset": 462,
       "length": 17,
       "value": "\"KV_coarse_value\""
     },
     {
       "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/Utils\/Storage.swift",
       "kind": "StringLiteral",
-      "offset": 467,
+      "offset": 507,
       "length": 22,
       "value": "\"KV_amplitude_user_id\""
     },
     {
       "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/Utils\/Storage.swift",
       "kind": "StringLiteral",
-      "offset": 516,
+      "offset": 559,
       "length": 25,
       "value": "\"KV_is_first_app_opening\""
     },
     {
       "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/Utils\/Storage.swift",
       "kind": "StringLiteral",
-      "offset": 568,
+      "offset": 614,
       "length": 24,
       "value": "\"KV_ab_experiment_value\""
     },
     {
       "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/Utils\/Storage.swift",
       "kind": "StringLiteral",
-      "offset": 617,
+      "offset": 666,
       "length": 22,
       "value": "\"KV_ab_experiment_key\""
     },
     {
       "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/Utils\/Storage.swift",
       "kind": "StringLiteral",
-      "offset": 672,
+      "offset": 724,
       "length": 31,
       "value": "\"KV_is_data_collection_enabled\""
     },
     {
       "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/Utils\/Storage.swift",
       "kind": "StringLiteral",
-      "offset": 736,
+      "offset": 791,
       "length": 31,
       "value": "\"KV_ntt_tracking_prompt_status\""
     },
     {
       "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/Utils\/Storage.swift",
       "kind": "StringLiteral",
-      "offset": 799,
+      "offset": 857,
       "length": 26,
       "value": "\"events_sequences_fetched\""
     },
     {
       "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/Utils\/Storage.swift",
       "kind": "StringLiteral",
-      "offset": 850,
+      "offset": 911,
       "length": 18,
       "value": "\"sequence_version\""
     },
     {
       "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/Utils\/Storage.swift",
       "kind": "StringLiteral",
-      "offset": 890,
+      "offset": 954,
       "length": 15,
       "value": "\"parsing_logic\""
     },
@@ -14959,14 +15259,14 @@
     {
       "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/EventsSequence.swift",
       "kind": "StringLiteral",
-      "offset": 4562,
+      "offset": 4592,
       "length": 4,
       "value": "\"cv\""
     },
     {
       "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/EventsSequence.swift",
       "kind": "StringLiteral",
-      "offset": 4594,
+      "offset": 4624,
       "length": 14,
       "value": "\"coarse_value\""
     }

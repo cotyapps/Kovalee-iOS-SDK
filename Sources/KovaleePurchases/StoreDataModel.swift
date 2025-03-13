@@ -13,13 +13,13 @@ public class KCustomerInfo: AbstractCustomerInfo, Encodable {
     public let entitlements: KEntitlementInfos
 
     /// All *subscription* product identifiers with expiration dates in the future.
-    public var activeSubscriptions: Set<String>
+    public let activeSubscriptions: Set<String>
 
     /// All product identifiers purchases by the user regardless of expiration.
     public let allPurchasedProductIdentifiers: Set<String>
 
     /// Returns the latest expiration date of all products, nil if there are none.
-    public var latestExpirationDate: Date?
+    public let latestExpirationDate: Date?
 
     /// Returns all the non-subscription purchases a user has made.
     public let nonSubscriptions: [KNonSubscriptionTransaction]
@@ -109,50 +109,50 @@ public extension KEntitlementInfos {
 ///  The EntitlementInfo object gives you access to all of the information about the status of a user entitlement.
 public class KEntitlementInfo: NSObject, Encodable {
     /// The entitlement identifier configured in the RevenueCat dashboard
-    public var identifier: String
+    public let identifier: String
 
     ///  True if the user has access to this entitlement
-    public var isActive: Bool
+    public let isActive: Bool
 
     /// True if the underlying subscription is set to renew at the end of the billing period (``expirationDate``).
-    public var willRenew: Bool
+    public let willRenew: Bool
 
     /// The last period type this entitlement was in
-    public var periodType: KPeriodType
+    public let periodType: KPeriodType
 
     /// The latest purchase or renewal date for the entitlement.
-    public var latestPurchaseDate: Date?
+    public let latestPurchaseDate: Date?
 
     /// The first date this entitlement was purchased
-    public var originalPurchaseDate: Date?
+    public let originalPurchaseDate: Date?
 
     /// The expiration date for the entitlement, can be `nil` for lifetime access.
     /// If the ``periodType`` is ``PeriodType/trial``, this is the trial expiration date.
-    public var expirationDate: Date?
+    public let expirationDate: Date?
 
     /// The store where this entitlement was unlocked from
-    public var store: KStore
+    public let store: KStore
 
     /// The product identifier that unlocked this entitlement
-    public var productIdentifier: String
+    public let productIdentifier: String
 
     /// False if this entitlement is unlocked via a production purchase
-    public var isSandbox: Bool
+    public let isSandbox: Bool
 
     /// The date an unsubscribe was detected. Can be `nil`.
     /// - Note: Entitlement may still be active even if user has unsubscribed. Check the ``isActive`` property.
-    public var unsubscribeDetectedAt: Date?
+    public let unsubscribeDetectedAt: Date?
 
     /// The date a billing issue was detected. Can be `nil` if there is no billing issue or an issue has been resolved.
     /// - Note: Entitlement may still be active even if there is a billing issue.
-    public var billingIssueDetectedAt: Date?
+    public let billingIssueDetectedAt: Date?
 
     /**
      Use this property to determine whether a purchase was made by the current user
      or shared to them by a family member. This can be useful for onboarding users who have had
      an entitlement shared with them, but might not be entirely aware of the benefits they now have.
      */
-    public var ownershipType: KPurchaseOwnershipType
+    public let ownershipType: KPurchaseOwnershipType
 
     init(info: RevenueCat.EntitlementInfo) {
         identifier = info.identifier
@@ -186,7 +186,7 @@ public class KNonSubscriptionTransaction: NSObject, Encodable {
     /// The product identifier.
     public let productIdentifier: String
 
-    /// The date that App Store charged the user’s account.
+    /// The date that App Store charged the user's account.
     public let purchaseDate: Date
 
     /// The unique identifier for the transaction.
@@ -245,18 +245,18 @@ public enum KStore: Int, Encodable {
 }
 
 public class KProduct: Encodable {
-    var identifier: String
-    var isActive: Bool
-    var willRenew: Bool
+    let identifier: String
+    let isActive: Bool
+    let willRenew: Bool
 
-    var latestPurchaseDate: Date?
-    var originalPurchaseDate: Date?
-    var expirationDate: Date?
+    let latestPurchaseDate: Date?
+    let originalPurchaseDate: Date?
+    let expirationDate: Date?
 
-    var productIdentifier: String
-    var isSandbox: Bool
-    var unsubscribeDetectedAt: Date?
-    var billingIssueDetectedAt: Date?
+    let productIdentifier: String
+    let isSandbox: Bool
+    let unsubscribeDetectedAt: Date?
+    let billingIssueDetectedAt: Date?
 
     init(entitlement: RevenueCat.EntitlementInfo) {
         identifier = entitlement.identifier
@@ -386,9 +386,10 @@ public extension KOffering {
     }
 }
 
+extension RevenueCat.Package: Sendable {}
 /// Packages help abstract platform-specific products by grouping equivalent products across iOS, Android, and web.
 /// A package is made up of three parts: ``identifier``, ``packageType``, and underlying ``StoreProduct``.
-public class KPackage: Identifiable, AbstractPackage, Encodable {
+public final class KPackage: Identifiable, AbstractPackage, Encodable {
     public var id: String {
         identifier
     }
@@ -410,13 +411,13 @@ public class KPackage: Identifiable, AbstractPackage, Encodable {
     public let offeringIdentifier: String
 
     /// The price of this product using ``StoreProduct/priceFormatter``.
-    public var localizedPriceString: String
+    public let localizedPriceString: String
 
     /// The price of the ``StoreProduct/introductoryDiscount`` formatted using ``StoreProduct/priceFormatter``.
     /// - Returns: `nil` if there is no `introductoryDiscount`.
-    public var localizedIntroductoryPriceString: String?
+    public let localizedIntroductoryPriceString: String?
 
-    public var rcPackage: Any
+    public let rcPackage: any Sendable
 
     init?(package: RevenueCat.Package?) {
         guard let package else {
@@ -488,32 +489,32 @@ public class KPackage: Identifiable, AbstractPackage, Encodable {
 }
 
 /// Type that provides access to all of `StoreKit`'s product type's properties.
-public struct KStoreProduct: Encodable {
+public struct KStoreProduct: Encodable, Sendable {
     /// The type of product.
-    public var productType: KProductType
+    public let productType: KProductType
 
     /// The category of this product, whether a subscription or a one-time purchase.
-    public var productCategory: KProductCategory
+    public let productCategory: KProductCategory
 
     /// A description of the product.
     /// - Note: The title's language is determined by the storefront that the user's device is connected to,
     /// not the preferred language set on the device.
-    public var localizedDescription: String
+    public let localizedDescription: String
 
     /// The name of the product.
-    public var localizedTitle: String
+    public let localizedTitle: String
 
     /// The currency of the product's price.
-    public var currencyCode: String?
+    public let currencyCode: String?
 
     /// The decimal representation of the cost of the product, in local currency.
-    public var price: Decimal
+    public let price: Decimal
 
     /// The price of this product using ``priceFormatter``.
-    public var localizedPriceString: String
+    public let localizedPriceString: String
 
     /// The string that identifies the product to the Apple App Store.
-    public var productIdentifier: String
+    public let productIdentifier: String
 
     /// A Boolean value that indicates whether the product is available for family sharing in App Store Connect.
     /// Check the value of `isFamilyShareable` to learn whether an in-app purchase is sharable with the family group.
@@ -523,22 +524,22 @@ public struct KStoreProduct: Encodable {
     ///
     /// Configure your in-app purchases to allow Family Sharing in App Store Connect.
     /// For more information about setting up Family Sharing, see Turn-on Family Sharing for in-app purchases.
-    public var isFamilyShareable: Bool
+    public let isFamilyShareable: Bool
 
     /// The identifier of the subscription group to which the subscription belongs.
     /// All auto-renewable subscriptions must be a part of a group.
     /// You create the group identifiers in App Store Connect.
     /// This property is `nil` if the product is not an auto-renewable subscription.
-    public var subscriptionGroupIdentifier: String?
+    public let subscriptionGroupIdentifier: String?
 
     /// Provides a `NumberFormatter`, useful for formatting the price for displaying.
     /// - Note: This creates a new formatter for every product, which can be slow.
     /// - Returns: `nil` for StoreKit 2 backed products if the currency code could not be determined.
-    public var priceFormatter: NumberFormatter?
+    public let priceFormatter: NumberFormatter?
 
     /// The period details for products that are subscriptions.
     /// - Returns: `nil` if the product is not a subscription.
-    public var subscriptionPeriod: KSubscriptionPeriod?
+    public let subscriptionPeriod: KSubscriptionPeriod?
 
     /// The object containing introductory price information for the product.
     /// If you've set up introductory prices in App Store Connect, the introductory price property will be populated.
@@ -546,13 +547,13 @@ public struct KStoreProduct: Encodable {
     ///
     /// Before displaying UI that offers the introductory price,
     /// you must first determine if the user is eligible to receive it.
-    public var introductoryDiscount: KStoreProductDiscount?
+    public let introductoryDiscount: KStoreProductDiscount?
 
     /// An array of subscription offers available for the auto-renewable subscription.
     /// - Note: the current user may or may not be eligible for some of these.
-    public var discounts: [KStoreProductDiscount]
+    public let discounts: [KStoreProductDiscount]
 
-    var product: RevenueCat.StoreProduct?
+    let product: RevenueCat.StoreProduct?
 
     init(_ product: RevenueCat.StoreProduct) {
         productType = KProductType(rawValue: product.productType.rawValue)!
@@ -651,14 +652,14 @@ public extension KStoreProduct {
     }
 }
 
-public enum KProductCategory: Int, Encodable {
+public enum KProductCategory: Int, Encodable, Sendable {
     /// A non-renewable or auto-renewable subscription.
     case subscription
     /// A consumable or non-consumable in-app purchase.
     case nonSubscription
 }
 
-public enum KProductType: Int, Encodable {
+public enum KProductType: Int, Encodable, Sendable {
     /// A consumable in-app purchase.
     case consumable
     /// A non-consumable in-app purchase.
@@ -669,13 +670,13 @@ public enum KProductType: Int, Encodable {
     case autoRenewableSubscription
 }
 
-public struct KSubscriptionPeriod: Encodable {
+public struct KSubscriptionPeriod: Encodable, Sendable {
     /// The number of period units.
     public let value: Int
     /// The increment of time that a subscription period is specified in.
     public let unit: Unit
 
-    public enum Unit: Int, Encodable {
+    public enum Unit: Int, Encodable, Sendable {
         /// A subscription period unit of a day.
         case day = 0
         /// A subscription period unit of a week.
@@ -735,8 +736,8 @@ public struct KSubscriptionPeriod: Encodable {
     )
 }
 
-public struct KStoreProductDiscount: Encodable {
-    public enum PaymentMode: Int, Encodable {
+public struct KStoreProductDiscount: Encodable, Sendable {
+    public enum PaymentMode: Int, Encodable, Sendable {
         /// Price is charged one or more times
         case payAsYouGo = 0
         /// Price is charged once in advance
@@ -745,7 +746,7 @@ public struct KStoreProductDiscount: Encodable {
         case freeTrial = 2
     }
 
-    public enum DiscountType: Int, Encodable {
+    public enum DiscountType: Int, Encodable, Sendable {
         /// Introductory offer
         case introductory = 0
         /// Promotional offer for subscriptions
@@ -777,7 +778,7 @@ public struct KStoreProductDiscount: Encodable {
     }
 }
 
-public enum KPackageType: Int, Encodable {
+public enum KPackageType: Int, Encodable, Sendable {
     /// A package that was defined with an unknown identifier.
     case unknown = -2,
          /// A package that was defined with a custom identifier.

@@ -1,6 +1,6 @@
 // swift-interface-format-version: 1.0
 // swift-compiler-version: Apple Swift version 6.0.3 effective-5.10 (swiftlang-6.0.3.1.10 clang-1600.0.30.1)
-// swift-module-flags: -target arm64-apple-ios14.0-macabi -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-upcoming-feature ConciseMagicFile -enable-upcoming-feature ForwardTrailingClosures -enable-upcoming-feature DeprecateApplicationMain -enable-upcoming-feature ImportObjcForwardDeclarations -enable-upcoming-feature DisableOutwardActorInference -enable-upcoming-feature IsolatedDefaultValues -enable-upcoming-feature GlobalConcurrency -enable-upcoming-feature InferSendableFromCaptures -enable-upcoming-feature ImplicitOpenExistentials -enable-bare-slash-regex -module-name KovaleeFramework
+// swift-module-flags: -target arm64-apple-ios14.0-macabi -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-upcoming-feature ConciseMagicFile -enable-upcoming-feature ForwardTrailingClosures -enable-upcoming-feature StrictConcurrency -enable-upcoming-feature DeprecateApplicationMain -enable-upcoming-feature ImportObjcForwardDeclarations -enable-upcoming-feature DisableOutwardActorInference -enable-upcoming-feature IsolatedDefaultValues -enable-upcoming-feature GlobalConcurrency -enable-upcoming-feature InferSendableFromCaptures -enable-upcoming-feature ImplicitOpenExistentials -enable-bare-slash-regex -module-name KovaleeFramework
 // swift-module-flags-ignorable: -no-verify-emitted-module-interface
 import AppTrackingTransparency
 import Foundation
@@ -22,17 +22,17 @@ public class KovaleeManager {
   public func getAttributionAdid() async -> Swift.String?
   public func attributionCallback(withAdid adid: Swift.String?)
   public func setDefaultUserId()
-  public func installationDate() async -> Foundation.Date?
-  public func appOpeningCount() async -> Swift.Int
+  public func installationDate() -> Foundation.Date?
+  public func appOpeningCount() -> Swift.Int
   public func currentSequencesFileName() -> Swift.String?
   public func currentEventsSequence() -> Swift.String
-  public func userConversionValue() async -> Swift.Int
-  public func userCoarseValue() async -> Swift.String?
-  public func sequenceVersion() async -> Swift.Int
-  public func setSequenceVersion(_ version: Swift.Int) async
-  public func parsingLogic() async -> Swift.Int
-  public func setParsingLogic(_ logic: Swift.Int) async
-  public func resetApp() async
+  public func userConversionValue() -> Swift.Int
+  public func userCoarseValue() -> Swift.String?
+  public func sequenceVersion() -> Swift.Int
+  public func setSequenceVersion(_ version: Swift.Int)
+  public func parsingLogic() -> Swift.Int
+  public func setParsingLogic(_ logic: Swift.Int)
+  public func resetApp()
   public func resetCVManager()
   public func sendEvent(_ event: KovaleeFramework.Event)
   public func setAmplitudeUserId(userId: Swift.String)
@@ -42,7 +42,8 @@ public class KovaleeManager {
   public func setUserProperties(_ properties: [Swift.String : Swift.String])
   public func setUserProperty(property: KovaleeFramework.UserProperty)
   public func sendAppOpenEvent()
-  public func isDataCollectionEnabled() async -> Swift.Bool
+  public func canSendEvents() -> Swift.Bool
+  public func isDataCollectionEnabled() -> Swift.Bool
   public func setDataCollectionEnabled(_ enabled: Swift.Bool)
   public func setDebugMode(_ on: Swift.Bool)
   public func debugModeOn() -> Swift.Bool
@@ -55,9 +56,10 @@ public class KovaleeManager {
   @objc deinit
 }
 extension KovaleeFramework.KovaleeManager {
-  public func fetchEventSequences() async
-  public func setupConversionManager() async
+  public func setupConversionManager()
   public func flushCachedEvents()
+  public static func fetchRemoteConfiguration(storage: KovaleeFramework.Storage, appCode: Swift.String, trackerManager: (any KovaleeFramework.EventTrackerManager)?) async
+  public static func fetchEventSequences(storage: KovaleeFramework.Storage, appCode: Swift.String) async
 }
 public enum KLogger {
   public static var logLevel: KovaleeFramework.LogLevel {
@@ -71,7 +73,7 @@ extension KovaleeFramework.KLogger {
   public static func warn(_ message: Swift.String, fileName: Swift.String? = #fileID, functionName: Swift.String? = #function, line: Swift.UInt = #line)
   public static func error(_ message: Swift.String, fileName: Swift.String = #fileID, functionName: Swift.String = #function, line: Swift.UInt = #line)
 }
-public enum LogLevel : Swift.Int, Swift.Comparable {
+public enum LogLevel : Swift.Int, Swift.Comparable, Swift.Sendable {
   case verbose
   case debug
   case info
@@ -90,28 +92,28 @@ public enum LogLevel : Swift.Int, Swift.Comparable {
 public enum KovaleeConstants {
   public static let keysFileName: Swift.String
 }
-public struct KovaleeKeys : Swift.Decodable {
+public struct KovaleeKeys : Swift.Decodable, Swift.Sendable {
   public let appCode: Swift.String
   public let adjust: Swift.String?
   public let amplitude: KovaleeFramework.KovaleeKeys.Amplitude
   public let revenueCat: KovaleeFramework.KovaleeKeys.RevenueCat?
   public let firebase: KovaleeFramework.KovaleeKeys.Firebase?
   public let survicate: KovaleeFramework.KovaleeKeys.Survicate?
-  public struct Amplitude : Swift.Decodable {
+  public struct Amplitude : Swift.Decodable, Swift.Sendable {
     public var prodSDKId: Swift.String
     public var devSDKId: Swift.String?
     public init(from decoder: any Swift.Decoder) throws
   }
-  public struct RevenueCat : Swift.Decodable {
+  public struct RevenueCat : Swift.Decodable, Swift.Sendable {
     public var sdkId: Swift.String
     public var observerMode: Swift.Bool
     public init(from decoder: any Swift.Decoder) throws
   }
-  public struct Firebase : Swift.Decodable {
+  public struct Firebase : Swift.Decodable, Swift.Sendable {
     public var configuredInApp: Swift.Bool
     public init(from decoder: any Swift.Decoder) throws
   }
-  public struct Survicate : Swift.Decodable {
+  public struct Survicate : Swift.Decodable, Swift.Sendable {
     public let sdkId: Swift.String
     public init(from decoder: any Swift.Decoder) throws
   }
@@ -121,7 +123,7 @@ extension KovaleeFramework.Reader where T == KovaleeFramework.KovaleeKeys {
   public static let kovaleeKeysReader: KovaleeFramework.Reader<KovaleeFramework.KovaleeKeys>
 }
 extension KovaleeFramework.KovaleeManager {
-  public func removeUserFromBundle() async
+  public func removeUserFromBundle()
   public func isUserInBundle(email: Swift.String) async throws -> Swift.Bool
 }
 public enum FileReaderError : Swift.Error {
@@ -134,9 +136,11 @@ public enum FileReaderError : Swift.Error {
   }
 }
 public struct Reader<T> where T : Swift.Decodable {
-  public var load: (Foundation.URL?) throws -> T
+  public var load: @Sendable (Foundation.URL?) throws -> T
 }
-public enum StorageKeys : Swift.String {
+extension KovaleeFramework.Reader : Swift.Sendable where T : Swift.Sendable {
+}
+public enum StorageKeys : Swift.String, Swift.Sendable {
   case sdkVersion
   case adid
   case isUserPremium
@@ -171,13 +175,14 @@ public enum UserSubscription : Swift.String {
     get
   }
 }
-public struct Storage {
-  public var hydrateFromStorage: (KovaleeFramework.StorageKeys, Any?) async -> Any?
-  public var persistToStorage: (KovaleeFramework.StorageKeys, Any) async -> Swift.Void
-  public var removeFromStorage: (KovaleeFramework.StorageKeys) async -> Swift.Void
+public struct Storage : Swift.Sendable {
+  public var hydrateFromStorage: @Sendable (KovaleeFramework.StorageKeys, (any Swift.Sendable)?) -> (any Swift.Sendable)?
+  public var persistToStorage: @Sendable (KovaleeFramework.StorageKeys, any Swift.Sendable) -> Swift.Void
+  public var removeFromStorage: @Sendable (KovaleeFramework.StorageKeys) -> Swift.Void
 }
 extension KovaleeFramework.Storage {
   public static func userDefaults(defaults: Foundation.UserDefaults = .standard) -> KovaleeFramework.Storage
+  public static func hydrate(from key: KovaleeFramework.StorageKeys, defaultValue: Any?, defaults: Foundation.UserDefaults) -> (any Swift.Sendable)?
 }
 #if compiler(>=5.3) && $RetroactiveAttribute
 extension Foundation.UserDefaults : @unchecked @retroactive Swift.Sendable {
@@ -191,8 +196,8 @@ extension Foundation.ProcessInfo {
     get
   }
 }
-public struct AdjustConfiguration {
-  public enum Environment : Swift.String {
+public struct AdjustConfiguration : Swift.Sendable {
+  public enum Environment : Swift.String, Swift.Sendable {
     case production
     case development
     public init?(rawValue: Swift.String)
@@ -205,15 +210,15 @@ public struct AdjustConfiguration {
   public var token: Swift.String
   public init(environment: Swift.String, token: Swift.String)
 }
-public protocol AttributionManager {
+public protocol AttributionManager : Swift.Sendable {
   func getAttributionAdid() async -> Swift.String?
   func promptTrackingAuthorization(completion: @escaping (AppTrackingTransparency.ATTrackingManager.AuthorizationStatus) -> Swift.Void)
   func sendConversionValue(value: Swift.Int, coarseValue: Swift.String?, completion: @escaping ((any Swift.Error)?) -> Swift.Void)
   func setDataCollectionEnabled(_ enabled: Swift.Bool)
-  var attributionAdidCallback: (Swift.String?) -> Swift.Void { get }
+  var attributionAdidCallback: @Sendable (Swift.String?) -> Swift.Void { get }
   var configuration: KovaleeFramework.AdjustConfiguration { get }
 }
-public protocol EventTrackerManager {
+public protocol EventTrackerManager : Swift.Sendable {
   func sendEvent(_ event: KovaleeFramework.Event)
   func setUserId(_ userId: Swift.String)
   func setDeviceId(_ deviceId: Swift.String)
@@ -231,7 +236,7 @@ public protocol RemoteConfigurationManager {
   func value(forKey key: Swift.String) async throws -> Foundation.Data
   func setDataCollectionEnabled(_ enabled: Swift.Bool)
 }
-public protocol PurchaseManager {
+public protocol PurchaseManager : Swift.Sendable {
   func revenueCatUserId() -> Swift.String
   func setUserId(userId: Swift.String)
   func setUserId(userId: Swift.String) async throws -> (any KovaleeFramework.AbstractCustomerInfo, created: Swift.Bool)
@@ -249,7 +254,7 @@ public protocol PurchaseManager {
   func checkTrialOrIntroDiscountEligibility(productIdentifiers: [Swift.String]) async -> [Swift.String : Swift.Int]
   func setPurchaseDelegate(_ delegate: any KovaleeFramework.KovaleePurchasesDelegate)
 }
-public protocol KovaleePurchasesDelegate {
+public protocol KovaleePurchasesDelegate : Swift.Sendable {
   func didReceiveUpdate(_ customerInfo: any KovaleeFramework.AbstractCustomerInfo)
 }
 public protocol AbstractCustomerInfo {
@@ -263,9 +268,9 @@ public protocol AbstractOffering {
 public protocol AbstractPurchaseResultData {
   var userCancelled: Swift.Bool { get }
 }
-public protocol AbstractPackage {
+public protocol AbstractPackage : Swift.Sendable {
   var productIdentifier: Swift.String { get }
-  var rcPackage: Any { get }
+  var rcPackage: any Swift.Sendable { get }
   func getDuration() -> Swift.Int
 }
 public protocol AbstractReward {
@@ -279,7 +284,7 @@ public protocol KovaleeSurveyDelegate : AnyObject {
   func surveyCompleted(surveyId: Swift.String)
   func surveyClosed(surveyId: Swift.String)
 }
-public protocol SurveyManager {
+public protocol SurveyManager : Swift.Sendable {
   func sendEvent(with name: Swift.String, andProperties properties: [Swift.String : Any]?)
   func viewScreen(with name: Swift.String)
   func setUserProperty(withName name: Swift.String, andValue value: Swift.String)
@@ -304,10 +309,10 @@ extension KovaleeFramework.KovaleeError : Foundation.LocalizedError {
   }
 }
 public struct ConversionValueManager {
-  public init(appCode: Swift.String, parsingLogicVersion: Swift.Int, storage: KovaleeFramework.Storage = .userDefaults(), eventTrackerManager: (any KovaleeFramework.EventTrackerManager)?) async
+  public init(appCode: Swift.String, parsingLogicVersion: Swift.Int, storage: KovaleeFramework.Storage = .userDefaults(), eventTrackerManager: (any KovaleeFramework.EventTrackerManager)?)
 }
 extension KovaleeFramework.ConversionValueManager {
-  public mutating func conversionValue(fromEvent event: KovaleeFramework.Event) async -> KovaleeFramework.ConversionValue?
+  public mutating func conversionValue(fromEvent event: KovaleeFramework.Event) -> KovaleeFramework.ConversionValue?
 }
 extension KovaleeFramework.KovaleeManager {
   public func setPurchaseDelegate(_ delegate: any KovaleeFramework.KovaleePurchasesDelegate)
@@ -360,9 +365,9 @@ extension KovaleeFramework.KovaleeManager {
 extension KovaleeFramework.KovaleeManager {
   public func setDefaultValues(_ values: [Swift.String : Any])
   public func remoteValue(forKey key: Swift.String) async throws -> Foundation.Data
-  public func localABTestValue() async -> Swift.String?
+  public func localABTestValue() -> Swift.String?
   public func abTestValue(forKey key: Swift.String) async -> Swift.String?
-  public func setAbTestValue(_ value: Swift.String) async
+  public func setAbTestValue(_ value: Swift.String)
   public func setFetchTimeout(_ timeout: Swift.Double)
 }
 public enum DefaultEvents {
@@ -446,8 +451,8 @@ extension Swift.Dictionary where Key == Swift.String, Value == Any {
     get
   }
 }
-public struct ConversionValue : Swift.Decodable {
-  public enum CoarseValue : Swift.String, Swift.Decodable {
+public struct ConversionValue : Swift.Decodable, Swift.Sendable {
+  public enum CoarseValue : Swift.String, Swift.Decodable, Swift.Sendable {
     case low
     case medium
     case high

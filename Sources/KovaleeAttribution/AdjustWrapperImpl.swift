@@ -22,10 +22,10 @@ public extension AdjustConfiguration {
     }
 }
 
-class AdjustWrapperImpl: NSObject, AttributionManager, Manager {
+final class AdjustWrapperImpl: NSObject, AttributionManager, Manager {
     init(
         configuration: AdjustConfiguration,
-        attributionAdidCallback: @escaping (String?) -> Void
+        attributionAdidCallback: @escaping @Sendable (String?) -> Void
     ) {
         KLogger.debug("initializing Adjust")
 
@@ -64,8 +64,8 @@ class AdjustWrapperImpl: NSObject, AttributionManager, Manager {
         }
     }
 
-    var attributionAdidCallback: (String?) -> Void
-    var configuration: AdjustConfiguration
+    let attributionAdidCallback: @Sendable (String?) -> Void
+    let configuration: AdjustConfiguration
 }
 
 extension AdjustWrapperImpl: AdjustDelegate {

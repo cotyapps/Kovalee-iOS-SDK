@@ -18,8 +18,8 @@ struct ABTestView: View {
         Button("Update Value") {
             focusedField = nil
             Task {
-                await Kovalee.shared.kovaleeManager?.setAbTestValue(newABValue)
-                await Kovalee.shared.kovaleeManager?.resetApp()
+                Kovalee.shared.kovaleeManager?.setAbTestValue(newABValue)
+                Kovalee.shared.kovaleeManager?.resetApp()
             }
         }
         .buttonStyle(.borderedProminent)

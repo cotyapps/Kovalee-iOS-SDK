@@ -3,7 +3,7 @@ import KovaleeFramework
 import KovaleeSDK
 import RevenueCat
 
-extension PurchaseManagerCreator: @retroactive Creator {
+extension PurchaseManagerCreator: Creator {
     public func createImplementation(
         withConfiguration _: KovaleeSDK.Configuration,
         andKeys keys: KovaleeKeys
@@ -53,17 +53,19 @@ public extension Kovalee {
     ///    - created: returns true if the user has been created
     static func setRevenueCatUserId(
         userId: String,
-        withCompletion completion: @escaping (Result<(info: KCustomerInfo, created: Bool), Error>) -> Void
+        withCompletion completion: @escaping @Sendable (Result<(info: KCustomerInfo, created: Bool), Error>) -> Void
     ) {
-        Task {
+        let userIdCopy = userId // Create local copy
+        Task { @Sendable in
             do {
-                let result = try await Self.setRevenueCatUserId(userId: userId)
+                let result = try await Self.setRevenueCatUserId(userId: userIdCopy)
                 DispatchQueue.main.async {
                     completion(Result.success(result))
                 }
             } catch {
+                let capturedError = error // Capture error locally
                 DispatchQueue.main.async {
-                    completion(Result.failure(error))
+                    completion(Result.failure(capturedError))
                 }
             }
         }
@@ -87,17 +89,18 @@ public extension Kovalee {
     /// - Returns:
     ///    - customerInfo: customer information
     static func logoutRevenueCatUser(
-        withCompletion completion: @escaping (Result<KCustomerInfo, Error>) -> Void
+        withCompletion completion: @escaping @Sendable (Result<KCustomerInfo, Error>) -> Void
     ) {
-        Task {
+        Task { @Sendable in
             do {
                 let result = try await Self.logoutRevenueCatUser()
                 DispatchQueue.main.async {
                     completion(Result.success(result))
                 }
             } catch {
+                let capturedError = error // Capture error locally
                 DispatchQueue.main.async {
-                    completion(Result.failure(error))
+                    completion(Result.failure(capturedError))
                 }
             }
         }
@@ -115,7 +118,7 @@ public extension Kovalee {
     /// - Parameters:
     ///    - completion: current customer information if returned.
     static func customerInfo(
-        withCompletion completion: @escaping (Result<KCustomerInfo?, Error>) -> Void
+        withCompletion completion: @escaping @Sendable (Result<KCustomerInfo?, Error>) -> Void
     ) {
         Task {
             do {
@@ -168,17 +171,18 @@ public extension Kovalee {
     /// - Parameters:
     ///    - completion: current customer information
     static func syncPurchases(
-        withCompletion completion: @escaping (Result<KCustomerInfo?, Error>) -> Void
+        withCompletion completion: @escaping @Sendable (Result<KCustomerInfo?, Error>) -> Void
     ) {
-        Task {
+        Task { @Sendable in
             do {
                 let result = try await Self.syncPurchases()
                 DispatchQueue.main.async {
                     completion(Result.success(result))
                 }
             } catch {
+                let capturedError = error // Capture error locally
                 DispatchQueue.main.async {
-                    completion(Result.failure(error))
+                    completion(Result.failure(capturedError))
                 }
             }
         }
@@ -196,17 +200,18 @@ public extension Kovalee {
     /// - Parameters:
     ///    - completion: available offerings
     static func fetchOfferings(
-        withCompletion completion: @escaping (Result<KOfferings?, Error>) -> Void
+        withCompletion completion: @escaping @Sendable (Result<KOfferings?, Error>) -> Void
     ) {
-        Task {
+        Task { @Sendable in
             do {
                 let result = try await Self.fetchOfferings()
                 DispatchQueue.main.async {
                     completion(Result.success(result))
                 }
             } catch {
+                let capturedError = error // Capture error locally
                 DispatchQueue.main.async {
-                    completion(Result.failure(error))
+                    completion(Result.failure(capturedError))
                 }
             }
         }
@@ -224,17 +229,18 @@ public extension Kovalee {
     /// - Parameters:
     ///    - completion: available offering
     static func fetchCurrentOffering(
-        withCompletion completion: @escaping (Result<KOffering?, Error>) -> Void
+        withCompletion completion: @escaping @Sendable (Result<KOffering?, Error>) -> Void
     ) {
-        Task {
+        Task { @Sendable in
             do {
                 let result = try await Self.fetchCurrentOffering()
                 DispatchQueue.main.async {
                     completion(Result.success(result))
                 }
             } catch {
+                let capturedError = error // Capture error locally
                 DispatchQueue.main.async {
-                    completion(Result.failure(error))
+                    completion(Result.failure(capturedError))
                 }
             }
         }
@@ -256,17 +262,19 @@ public extension Kovalee {
     ///    - completion: current ``CustomerInfo``
     static func restorePurchases(
         fromSource source: String,
-        withCompletion completion: @escaping (Result<KCustomerInfo?, Error>) -> Void
+        withCompletion completion: @escaping @Sendable (Result<KCustomerInfo?, Error>) -> Void
     ) {
-        Task {
+        let sourceCopy = source // Create local copy
+        Task { @Sendable in
             do {
-                let result = try await Self.restorePurchases(fromSource: source)
+                let result = try await Self.restorePurchases(fromSource: sourceCopy)
                 DispatchQueue.main.async {
                     completion(Result.success(result))
                 }
             } catch {
+                let capturedError = error // Capture error locally
                 DispatchQueue.main.async {
-                    completion(Result.failure(error))
+                    completion(Result.failure(capturedError))
                 }
             }
         }
@@ -291,17 +299,25 @@ public extension Kovalee {
     static func purchase(
         package: KPackage,
         fromSource source: String,
-        withCompletion completion: @escaping (Result<KPurchaseResultData?, Error>) -> Void
+        withCompletion completion: @escaping @Sendable (Result<KPurchaseResultData?, Error>) -> Void
     ) {
-        Task {
+        // Create local copies to avoid capturing mutable state
+        let packageCopy = package
+        let sourceCopy = source
+
+        Task { @Sendable in
             do {
-                let result = try await Self.purchase(package: package, fromSource: source)
+                let result = try await Self.purchase(
+                    package: packageCopy,
+                    fromSource: sourceCopy
+                )
                 DispatchQueue.main.async {
                     completion(Result.success(result))
                 }
             } catch {
+                let capturedError = error // Capture error locally
                 DispatchQueue.main.async {
-                    completion(Result.failure(error))
+                    completion(Result.failure(capturedError))
                 }
             }
         }
@@ -336,20 +352,25 @@ public extension Kovalee {
     static func purchaseSubscription(
         withId subscriptionId: String,
         fromSource source: String,
-        withCompletion completion: @escaping (Result<KPurchaseResultData?, Error>) -> Void
+        withCompletion completion: @escaping @Sendable (Result<KPurchaseResultData?, Error>) -> Void
     ) {
-        Task {
+        // Create local copies
+        let subscriptionIdCopy = subscriptionId
+        let sourceCopy = source
+
+        Task { @Sendable in
             do {
                 let result = try await Self.purchaseSubscription(
-                    withId: subscriptionId,
-                    fromSource: source
+                    withId: subscriptionIdCopy,
+                    fromSource: sourceCopy
                 )
                 DispatchQueue.main.async {
                     completion(Result.success(result))
                 }
             } catch {
+                let capturedError = error // Capture error locally
                 DispatchQueue.main.async {
-                    completion(Result.failure(error))
+                    completion(Result.failure(capturedError))
                 }
             }
         }
@@ -367,7 +388,7 @@ public extension Kovalee {
 
     static func checkTrialOrIntroDiscountEligibility(
         productIdentifiers: [String],
-        withCompletion completion: @escaping ([String: KIntroEligibilityStatus]) -> Void
+        withCompletion completion: @escaping @Sendable ([String: KIntroEligibilityStatus]) -> Void
     ) async {
         Task {
             completion(await Self.checkTrialOrIntroDiscountEligibility(productIdentifiers: productIdentifiers))
@@ -402,7 +423,7 @@ public extension Kovalee {
     /// Removes the current user from their associated bundle.
     ///
     /// This static method attempts to logout the current user from any bundle they are associated with.
-    static func removeUserFromBundle() async {
-        await shared.kovaleeManager?.removeUserFromBundle()
+    static func removeUserFromBundle() {
+        shared.kovaleeManager?.removeUserFromBundle()
     }
 }
