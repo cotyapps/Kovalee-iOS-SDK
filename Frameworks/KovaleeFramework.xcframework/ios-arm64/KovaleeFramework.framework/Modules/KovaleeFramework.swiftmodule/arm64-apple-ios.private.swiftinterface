@@ -58,6 +58,8 @@ public class KovaleeManager {
 extension KovaleeFramework.KovaleeManager {
   public func setupConversionManager()
   public func flushCachedEvents()
+  public func fetchRemoingConfiguration() async
+  public func fetchEventsSequence() async
   public static func fetchRemoteConfiguration(storage: KovaleeFramework.Storage, appCode: Swift.String, trackerManager: (any KovaleeFramework.EventTrackerManager)?) async
   public static func fetchEventSequences(storage: KovaleeFramework.Storage, appCode: Swift.String) async
 }

@@ -1651,6 +1651,42 @@
           },
           {
             "kind": "Function",
+            "name": "fetchRemoingConfiguration",
+            "printedName": "fetchRemoingConfiguration()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:16KovaleeFramework0A7ManagerC25fetchRemoingConfigurationyyYaF",
+            "mangledName": "$s16KovaleeFramework0A7ManagerC25fetchRemoingConfigurationyyYaF",
+            "moduleName": "KovaleeFramework",
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "fetchEventsSequence",
+            "printedName": "fetchEventsSequence()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:16KovaleeFramework0A7ManagerC19fetchEventsSequenceyyYaF",
+            "mangledName": "$s16KovaleeFramework0A7ManagerC19fetchEventsSequenceyyYaF",
+            "moduleName": "KovaleeFramework",
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
             "name": "fetchRemoteConfiguration",
             "printedName": "fetchRemoteConfiguration(storage:appCode:trackerManager:)",
             "children": [
@@ -14951,7 +14987,7 @@
     {
       "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 11406,
+      "offset": 11242,
       "length": 5,
       "value": "false"
     },
