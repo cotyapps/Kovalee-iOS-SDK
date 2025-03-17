@@ -1651,24 +1651,6 @@
           },
           {
             "kind": "Function",
-            "name": "fetchRemoingConfiguration",
-            "printedName": "fetchRemoingConfiguration()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:16KovaleeFramework0A7ManagerC25fetchRemoingConfigurationyyYaF",
-            "mangledName": "$s16KovaleeFramework0A7ManagerC25fetchRemoingConfigurationyyYaF",
-            "moduleName": "KovaleeFramework",
-            "isFromExtension": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
             "name": "fetchEventsSequence",
             "printedName": "fetchEventsSequence()",
             "children": [
@@ -1682,88 +1664,6 @@
             "usr": "s:16KovaleeFramework0A7ManagerC19fetchEventsSequenceyyYaF",
             "mangledName": "$s16KovaleeFramework0A7ManagerC19fetchEventsSequenceyyYaF",
             "moduleName": "KovaleeFramework",
-            "isFromExtension": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "fetchRemoteConfiguration",
-            "printedName": "fetchRemoteConfiguration(storage:appCode:trackerManager:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Storage",
-                "printedName": "KovaleeFramework.Storage",
-                "usr": "s:16KovaleeFramework7StorageV"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "(any KovaleeFramework.EventTrackerManager)?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "EventTrackerManager",
-                    "printedName": "any KovaleeFramework.EventTrackerManager",
-                    "usr": "s:16KovaleeFramework19EventTrackerManagerP"
-                  }
-                ],
-                "usr": "s:Sq"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:16KovaleeFramework0A7ManagerC24fetchRemoteConfiguration7storage7appCode07trackerC0yAA7StorageV_SSAA012EventTrackerC0_pSgtYaFZ",
-            "mangledName": "$s16KovaleeFramework0A7ManagerC24fetchRemoteConfiguration7storage7appCode07trackerC0yAA7StorageV_SSAA012EventTrackerC0_pSgtYaFZ",
-            "moduleName": "KovaleeFramework",
-            "static": true,
-            "declAttributes": [
-              "Final"
-            ],
-            "isFromExtension": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "fetchEventSequences",
-            "printedName": "fetchEventSequences(storage:appCode:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Storage",
-                "printedName": "KovaleeFramework.Storage",
-                "usr": "s:16KovaleeFramework7StorageV"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:16KovaleeFramework0A7ManagerC19fetchEventSequences7storage7appCodeyAA7StorageV_SStYaFZ",
-            "mangledName": "$s16KovaleeFramework0A7ManagerC19fetchEventSequences7storage7appCodeyAA7StorageV_SStYaFZ",
-            "moduleName": "KovaleeFramework",
-            "static": true,
-            "declAttributes": [
-              "Final"
-            ],
             "isFromExtension": true,
             "funcSelfKind": "NonMutating"
           },
@@ -7552,59 +7452,6 @@
             "declKind": "Func",
             "usr": "s:16KovaleeFramework7StorageV12userDefaults8defaultsACSo06NSUserE0C_tFZ",
             "mangledName": "$s16KovaleeFramework7StorageV12userDefaults8defaultsACSo06NSUserE0C_tFZ",
-            "moduleName": "KovaleeFramework",
-            "static": true,
-            "isFromExtension": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "hydrate",
-            "printedName": "hydrate(from:defaultValue:defaults:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "(any Swift.Sendable)?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Sendable",
-                    "printedName": "any Swift.Sendable",
-                    "usr": "s:s8SendableP"
-                  }
-                ],
-                "usr": "s:Sq"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "StorageKeys",
-                "printedName": "KovaleeFramework.StorageKeys",
-                "usr": "s:16KovaleeFramework11StorageKeysO"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "Any?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "ProtocolComposition",
-                    "printedName": "Any"
-                  }
-                ],
-                "usr": "s:Sq"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "UserDefaults",
-                "printedName": "Foundation.UserDefaults",
-                "usr": "c:objc(cs)NSUserDefaults"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:16KovaleeFramework7StorageV7hydrate4from12defaultValue8defaultss8Sendable_pSgAA0C4KeysO_ypSgSo14NSUserDefaultsCtFZ",
-            "mangledName": "$s16KovaleeFramework7StorageV7hydrate4from12defaultValue8defaultss8Sendable_pSgAA0C4KeysO_ypSgSo14NSUserDefaultsCtFZ",
             "moduleName": "KovaleeFramework",
             "static": true,
             "isFromExtension": true,
@@ -15263,6 +15110,13 @@
       "offset": 954,
       "length": 15,
       "value": "\"parsing_logic\""
+    },
+    {
+      "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/ConversionValueManager.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1891,
+      "length": 1,
+      "value": "0"
     },
     {
       "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/Event.swift",

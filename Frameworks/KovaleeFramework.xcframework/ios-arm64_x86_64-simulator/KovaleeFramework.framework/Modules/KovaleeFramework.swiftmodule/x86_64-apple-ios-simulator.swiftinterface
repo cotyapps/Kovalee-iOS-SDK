@@ -58,10 +58,7 @@ public class KovaleeManager {
 extension KovaleeFramework.KovaleeManager {
   public func setupConversionManager()
   public func flushCachedEvents()
-  public func fetchRemoingConfiguration() async
   public func fetchEventsSequence() async
-  public static func fetchRemoteConfiguration(storage: KovaleeFramework.Storage, appCode: Swift.String, trackerManager: (any KovaleeFramework.EventTrackerManager)?) async
-  public static func fetchEventSequences(storage: KovaleeFramework.Storage, appCode: Swift.String) async
 }
 public enum KLogger {
   public static var logLevel: KovaleeFramework.LogLevel {
@@ -184,7 +181,6 @@ public struct Storage : Swift.Sendable {
 }
 extension KovaleeFramework.Storage {
   public static func userDefaults(defaults: Foundation.UserDefaults = .standard) -> KovaleeFramework.Storage
-  public static func hydrate(from key: KovaleeFramework.StorageKeys, defaultValue: Any?, defaults: Foundation.UserDefaults) -> (any Swift.Sendable)?
 }
 #if compiler(>=5.3) && $RetroactiveAttribute
 extension Foundation.UserDefaults : @unchecked @retroactive Swift.Sendable {
