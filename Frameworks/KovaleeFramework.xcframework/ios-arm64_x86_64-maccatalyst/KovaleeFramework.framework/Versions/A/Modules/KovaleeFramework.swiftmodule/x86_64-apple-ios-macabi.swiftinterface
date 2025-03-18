@@ -182,13 +182,6 @@ public struct Storage : Swift.Sendable {
 extension KovaleeFramework.Storage {
   public static func userDefaults(defaults: Foundation.UserDefaults = UserDefaults.standard) -> KovaleeFramework.Storage
 }
-#if compiler(>=5.3) && $RetroactiveAttribute
-extension Foundation.UserDefaults : @unchecked @retroactive Swift.Sendable {
-}
-#else
-extension Foundation.UserDefaults : @unchecked Swift.Sendable {
-}
-#endif
 extension Foundation.ProcessInfo {
   public static var isRunningTests: Swift.Bool {
     get
