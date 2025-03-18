@@ -180,7 +180,7 @@ public struct Storage : Swift.Sendable {
   public var removeFromStorage: @Sendable (KovaleeFramework.StorageKeys) -> Swift.Void
 }
 extension KovaleeFramework.Storage {
-  public static func userDefaults(defaults: Foundation.UserDefaults = .standard) -> KovaleeFramework.Storage
+  public static func userDefaults(defaults: Foundation.UserDefaults = UserDefaults.standard) -> KovaleeFramework.Storage
 }
 #if compiler(>=5.3) && $RetroactiveAttribute
 extension Foundation.UserDefaults : @unchecked @retroactive Swift.Sendable {

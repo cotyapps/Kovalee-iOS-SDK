@@ -15112,13 +15112,6 @@
       "value": "\"parsing_logic\""
     },
     {
-      "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/ConversionValueManager.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1891,
-      "length": 1,
-      "value": "0"
-    },
-    {
       "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/Event.swift",
       "kind": "IntegerLiteral",
       "offset": 175,
@@ -15128,14 +15121,14 @@
     {
       "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/Event.swift",
       "kind": "StringLiteral",
-      "offset": 6255,
+      "offset": 6301,
       "length": 12,
       "value": "\"key_action\""
     },
     {
       "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/Event.swift",
       "kind": "StringLiteral",
-      "offset": 6293,
+      "offset": 6339,
       "length": 12,
       "value": "\"product_id\""
     },
