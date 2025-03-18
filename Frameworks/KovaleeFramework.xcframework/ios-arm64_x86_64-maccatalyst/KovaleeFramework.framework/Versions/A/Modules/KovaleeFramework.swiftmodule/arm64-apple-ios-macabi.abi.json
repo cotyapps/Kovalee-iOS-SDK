@@ -14988,126 +14988,126 @@
     {
       "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/Utils\/Storage.swift",
       "kind": "StringLiteral",
-      "offset": 95,
+      "offset": 92,
       "length": 16,
       "value": "\"KV_sdk_version\""
     },
     {
       "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/Utils\/Storage.swift",
       "kind": "StringLiteral",
-      "offset": 128,
+      "offset": 122,
       "length": 9,
       "value": "\"KV_adid\""
     },
     {
       "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/Utils\/Storage.swift",
       "kind": "StringLiteral",
-      "offset": 163,
+      "offset": 154,
       "length": 20,
       "value": "\"KV_is_user_premium\""
     },
     {
       "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/Utils\/Storage.swift",
       "kind": "StringLiteral",
-      "offset": 210,
+      "offset": 198,
       "length": 22,
       "value": "\"KV_is_user_in_bunlde\""
     },
     {
       "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/Utils\/Storage.swift",
       "kind": "StringLiteral",
-      "offset": 259,
+      "offset": 244,
       "length": 21,
       "value": "\"KV_app_opened_count\""
     },
     {
       "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/Utils\/Storage.swift",
       "kind": "StringLiteral",
-      "offset": 312,
+      "offset": 294,
       "length": 26,
       "value": "\"KV_app_installation_date\""
     },
     {
       "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/Utils\/Storage.swift",
       "kind": "StringLiteral",
-      "offset": 367,
+      "offset": 346,
       "length": 22,
       "value": "\"KV_user_subscription\""
     },
     {
       "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/Utils\/Storage.swift",
       "kind": "StringLiteral",
-      "offset": 417,
+      "offset": 393,
       "length": 21,
       "value": "\"KV_conversion_value\""
     },
     {
       "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/Utils\/Storage.swift",
       "kind": "StringLiteral",
-      "offset": 462,
+      "offset": 435,
       "length": 17,
       "value": "\"KV_coarse_value\""
     },
     {
       "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/Utils\/Storage.swift",
       "kind": "StringLiteral",
-      "offset": 507,
+      "offset": 477,
       "length": 22,
       "value": "\"KV_amplitude_user_id\""
     },
     {
       "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/Utils\/Storage.swift",
       "kind": "StringLiteral",
-      "offset": 559,
+      "offset": 526,
       "length": 25,
       "value": "\"KV_is_first_app_opening\""
     },
     {
       "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/Utils\/Storage.swift",
       "kind": "StringLiteral",
-      "offset": 614,
+      "offset": 578,
       "length": 24,
       "value": "\"KV_ab_experiment_value\""
     },
     {
       "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/Utils\/Storage.swift",
       "kind": "StringLiteral",
-      "offset": 666,
+      "offset": 627,
       "length": 22,
       "value": "\"KV_ab_experiment_key\""
     },
     {
       "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/Utils\/Storage.swift",
       "kind": "StringLiteral",
-      "offset": 724,
+      "offset": 682,
       "length": 31,
       "value": "\"KV_is_data_collection_enabled\""
     },
     {
       "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/Utils\/Storage.swift",
       "kind": "StringLiteral",
-      "offset": 791,
+      "offset": 746,
       "length": 31,
       "value": "\"KV_ntt_tracking_prompt_status\""
     },
     {
       "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/Utils\/Storage.swift",
       "kind": "StringLiteral",
-      "offset": 857,
+      "offset": 809,
       "length": 26,
       "value": "\"events_sequences_fetched\""
     },
     {
       "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/Utils\/Storage.swift",
       "kind": "StringLiteral",
-      "offset": 911,
+      "offset": 860,
       "length": 18,
       "value": "\"sequence_version\""
     },
     {
       "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/Utils\/Storage.swift",
       "kind": "StringLiteral",
-      "offset": 954,
+      "offset": 900,
       "length": 15,
       "value": "\"parsing_logic\""
     },
