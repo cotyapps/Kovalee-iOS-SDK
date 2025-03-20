@@ -1070,28 +1070,21 @@
             "children": [
               {
                 "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "(any KovaleeFramework.EventTrackerManager)?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "EventTrackerManager",
-                    "printedName": "any KovaleeFramework.EventTrackerManager",
-                    "usr": "s:16KovaleeFramework19EventTrackerManagerP"
-                  }
-                ],
-                "usr": "s:Sq"
+                "name": "EventTrackerManager",
+                "printedName": "any KovaleeFramework.EventTrackerManager",
+                "usr": "s:16KovaleeFramework19EventTrackerManagerP"
               }
             ],
             "declKind": "Var",
-            "usr": "s:16KovaleeFramework0A7ManagerC07trackerC0AA012EventTrackerC0_pSgvp",
-            "mangledName": "$s16KovaleeFramework0A7ManagerC07trackerC0AA012EventTrackerC0_pSgvp",
+            "usr": "s:16KovaleeFramework0A7ManagerC07trackerC0AA012EventTrackerC0_pvp",
+            "mangledName": "$s16KovaleeFramework0A7ManagerC07trackerC0AA012EventTrackerC0_pvp",
             "moduleName": "KovaleeFramework",
             "declAttributes": [
-              "HasInitialValue",
+              "Final",
               "HasStorage",
               "AccessControl"
             ],
+            "isLet": true,
             "hasStorage": true,
             "accessors": [
               {
@@ -1101,75 +1094,20 @@
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "Optional",
-                    "printedName": "(any KovaleeFramework.EventTrackerManager)?",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "EventTrackerManager",
-                        "printedName": "any KovaleeFramework.EventTrackerManager",
-                        "usr": "s:16KovaleeFramework19EventTrackerManagerP"
-                      }
-                    ],
-                    "usr": "s:Sq"
+                    "name": "EventTrackerManager",
+                    "printedName": "any KovaleeFramework.EventTrackerManager",
+                    "usr": "s:16KovaleeFramework19EventTrackerManagerP"
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:16KovaleeFramework0A7ManagerC07trackerC0AA012EventTrackerC0_pSgvg",
-                "mangledName": "$s16KovaleeFramework0A7ManagerC07trackerC0AA012EventTrackerC0_pSgvg",
+                "usr": "s:16KovaleeFramework0A7ManagerC07trackerC0AA012EventTrackerC0_pvg",
+                "mangledName": "$s16KovaleeFramework0A7ManagerC07trackerC0AA012EventTrackerC0_pvg",
                 "moduleName": "KovaleeFramework",
                 "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
                 "accessorKind": "get"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Set",
-                "printedName": "Set()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Optional",
-                    "printedName": "(any KovaleeFramework.EventTrackerManager)?",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "EventTrackerManager",
-                        "printedName": "any KovaleeFramework.EventTrackerManager",
-                        "usr": "s:16KovaleeFramework19EventTrackerManagerP"
-                      }
-                    ],
-                    "usr": "s:Sq"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:16KovaleeFramework0A7ManagerC07trackerC0AA012EventTrackerC0_pSgvs",
-                "mangledName": "$s16KovaleeFramework0A7ManagerC07trackerC0AA012EventTrackerC0_pSgvs",
-                "moduleName": "KovaleeFramework",
-                "implicit": true,
-                "accessorKind": "set"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Modify",
-                "printedName": "Modify()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:16KovaleeFramework0A7ManagerC07trackerC0AA012EventTrackerC0_pSgvM",
-                "mangledName": "$s16KovaleeFramework0A7ManagerC07trackerC0AA012EventTrackerC0_pSgvM",
-                "moduleName": "KovaleeFramework",
-                "implicit": true,
-                "accessorKind": "_modify"
               }
             ]
           },
@@ -6759,35 +6697,48 @@
       },
       {
         "kind": "TypeDecl",
-        "name": "UserSubscription",
-        "printedName": "UserSubscription",
+        "name": "StorageResult",
+        "printedName": "StorageResult",
         "children": [
           {
             "kind": "Var",
-            "name": "notSubscribed",
-            "printedName": "notSubscribed",
+            "name": "value",
+            "printedName": "value",
             "children": [
               {
                 "kind": "TypeFunc",
                 "name": "Function",
-                "printedName": "(KovaleeFramework.UserSubscription.Type) -> KovaleeFramework.UserSubscription",
+                "printedName": "(KovaleeFramework.StorageResult.Type) -> (any Swift.Sendable) -> KovaleeFramework.StorageResult",
                 "children": [
                   {
-                    "kind": "TypeNominal",
-                    "name": "UserSubscription",
-                    "printedName": "KovaleeFramework.UserSubscription",
-                    "usr": "s:16KovaleeFramework16UserSubscriptionO"
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(any Swift.Sendable) -> KovaleeFramework.StorageResult",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "StorageResult",
+                        "printedName": "KovaleeFramework.StorageResult",
+                        "usr": "s:16KovaleeFramework13StorageResultO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Sendable",
+                        "printedName": "any Swift.Sendable",
+                        "usr": "s:s8SendableP"
+                      }
+                    ]
                   },
                   {
                     "kind": "TypeNominal",
                     "name": "Metatype",
-                    "printedName": "KovaleeFramework.UserSubscription.Type",
+                    "printedName": "KovaleeFramework.StorageResult.Type",
                     "children": [
                       {
                         "kind": "TypeNominal",
-                        "name": "UserSubscription",
-                        "printedName": "KovaleeFramework.UserSubscription",
-                        "usr": "s:16KovaleeFramework16UserSubscriptionO"
+                        "name": "StorageResult",
+                        "printedName": "KovaleeFramework.StorageResult",
+                        "usr": "s:16KovaleeFramework13StorageResultO"
                       }
                     ]
                   }
@@ -6795,36 +6746,36 @@
               }
             ],
             "declKind": "EnumElement",
-            "usr": "s:16KovaleeFramework16UserSubscriptionO13notSubscribedyA2CmF",
-            "mangledName": "$s16KovaleeFramework16UserSubscriptionO13notSubscribedyA2CmF",
+            "usr": "s:16KovaleeFramework13StorageResultO5valueyACs8Sendable_pcACmF",
+            "mangledName": "$s16KovaleeFramework13StorageResultO5valueyACs8Sendable_pcACmF",
             "moduleName": "KovaleeFramework"
           },
           {
             "kind": "Var",
-            "name": "monthlySubscription",
-            "printedName": "monthlySubscription",
+            "name": "nilValue",
+            "printedName": "nilValue",
             "children": [
               {
                 "kind": "TypeFunc",
                 "name": "Function",
-                "printedName": "(KovaleeFramework.UserSubscription.Type) -> KovaleeFramework.UserSubscription",
+                "printedName": "(KovaleeFramework.StorageResult.Type) -> KovaleeFramework.StorageResult",
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "UserSubscription",
-                    "printedName": "KovaleeFramework.UserSubscription",
-                    "usr": "s:16KovaleeFramework16UserSubscriptionO"
+                    "name": "StorageResult",
+                    "printedName": "KovaleeFramework.StorageResult",
+                    "usr": "s:16KovaleeFramework13StorageResultO"
                   },
                   {
                     "kind": "TypeNominal",
                     "name": "Metatype",
-                    "printedName": "KovaleeFramework.UserSubscription.Type",
+                    "printedName": "KovaleeFramework.StorageResult.Type",
                     "children": [
                       {
                         "kind": "TypeNominal",
-                        "name": "UserSubscription",
-                        "printedName": "KovaleeFramework.UserSubscription",
-                        "usr": "s:16KovaleeFramework16UserSubscriptionO"
+                        "name": "StorageResult",
+                        "printedName": "KovaleeFramework.StorageResult",
+                        "usr": "s:16KovaleeFramework13StorageResultO"
                       }
                     ]
                   }
@@ -6832,36 +6783,36 @@
               }
             ],
             "declKind": "EnumElement",
-            "usr": "s:16KovaleeFramework16UserSubscriptionO07monthlyD0yA2CmF",
-            "mangledName": "$s16KovaleeFramework16UserSubscriptionO07monthlyD0yA2CmF",
+            "usr": "s:16KovaleeFramework13StorageResultO8nilValueyA2CmF",
+            "mangledName": "$s16KovaleeFramework13StorageResultO8nilValueyA2CmF",
             "moduleName": "KovaleeFramework"
           },
           {
             "kind": "Var",
-            "name": "yearlySubscription",
-            "printedName": "yearlySubscription",
+            "name": "noValue",
+            "printedName": "noValue",
             "children": [
               {
                 "kind": "TypeFunc",
                 "name": "Function",
-                "printedName": "(KovaleeFramework.UserSubscription.Type) -> KovaleeFramework.UserSubscription",
+                "printedName": "(KovaleeFramework.StorageResult.Type) -> KovaleeFramework.StorageResult",
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "UserSubscription",
-                    "printedName": "KovaleeFramework.UserSubscription",
-                    "usr": "s:16KovaleeFramework16UserSubscriptionO"
+                    "name": "StorageResult",
+                    "printedName": "KovaleeFramework.StorageResult",
+                    "usr": "s:16KovaleeFramework13StorageResultO"
                   },
                   {
                     "kind": "TypeNominal",
                     "name": "Metatype",
-                    "printedName": "KovaleeFramework.UserSubscription.Type",
+                    "printedName": "KovaleeFramework.StorageResult.Type",
                     "children": [
                       {
                         "kind": "TypeNominal",
-                        "name": "UserSubscription",
-                        "printedName": "KovaleeFramework.UserSubscription",
-                        "usr": "s:16KovaleeFramework16UserSubscriptionO"
+                        "name": "StorageResult",
+                        "printedName": "KovaleeFramework.StorageResult",
+                        "usr": "s:16KovaleeFramework13StorageResultO"
                       }
                     ]
                   }
@@ -6869,58 +6820,386 @@
               }
             ],
             "declKind": "EnumElement",
-            "usr": "s:16KovaleeFramework16UserSubscriptionO06yearlyD0yA2CmF",
-            "mangledName": "$s16KovaleeFramework16UserSubscriptionO06yearlyD0yA2CmF",
+            "usr": "s:16KovaleeFramework13StorageResultO7noValueyA2CmF",
+            "mangledName": "$s16KovaleeFramework13StorageResultO7noValueyA2CmF",
             "moduleName": "KovaleeFramework"
           },
           {
-            "kind": "Constructor",
-            "name": "init",
-            "printedName": "init(rawValue:)",
+            "kind": "Function",
+            "name": "==",
+            "printedName": "==(_:_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "StorageResult",
+                "printedName": "KovaleeFramework.StorageResult",
+                "usr": "s:16KovaleeFramework13StorageResultO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "StorageResult",
+                "printedName": "KovaleeFramework.StorageResult",
+                "usr": "s:16KovaleeFramework13StorageResultO"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:16KovaleeFramework13StorageResultO2eeoiySbAC_ACtFZ",
+            "mangledName": "$s16KovaleeFramework13StorageResultO2eeoiySbAC_ACtFZ",
+            "moduleName": "KovaleeFramework",
+            "static": true,
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "unwrapValue",
+            "printedName": "unwrapValue(as:default:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "GenericTypeParam",
+                "printedName": "τ_0_0"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Metatype",
+                "printedName": "τ_0_0.Type",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GenericTypeParam",
+                    "printedName": "τ_0_0"
+                  }
+                ],
+                "hasDefaultArg": true
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "GenericTypeParam",
+                "printedName": "τ_0_0"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:16KovaleeFramework13StorageResultO11unwrapValue2as7defaultxxm_xtlF",
+            "mangledName": "$s16KovaleeFramework13StorageResultO11unwrapValue2as7defaultxxm_xtlF",
+            "moduleName": "KovaleeFramework",
+            "genericSig": "<τ_0_0>",
+            "sugared_genericSig": "<T>",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "unwrapOptionalValue",
+            "printedName": "unwrapOptionalValue(as:)",
             "children": [
               {
                 "kind": "TypeNominal",
                 "name": "Optional",
-                "printedName": "KovaleeFramework.UserSubscription?",
+                "printedName": "τ_0_0?",
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "UserSubscription",
-                    "printedName": "KovaleeFramework.UserSubscription",
-                    "usr": "s:16KovaleeFramework16UserSubscriptionO"
+                    "name": "GenericTypeParam",
+                    "printedName": "τ_0_0"
                   }
                 ],
                 "usr": "s:Sq"
               },
               {
                 "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
+                "name": "Metatype",
+                "printedName": "τ_0_0.Type",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GenericTypeParam",
+                    "printedName": "τ_0_0"
+                  }
+                ],
+                "hasDefaultArg": true
               }
             ],
-            "declKind": "Constructor",
-            "usr": "s:16KovaleeFramework16UserSubscriptionO8rawValueACSgSS_tcfc",
-            "mangledName": "$s16KovaleeFramework16UserSubscriptionO8rawValueACSgSS_tcfc",
+            "declKind": "Func",
+            "usr": "s:16KovaleeFramework13StorageResultO19unwrapOptionalValue2asxSgxm_tlF",
+            "mangledName": "$s16KovaleeFramework13StorageResultO19unwrapOptionalValue2asxSgxm_tlF",
             "moduleName": "KovaleeFramework",
-            "implicit": true,
-            "init_kind": "Designated"
+            "genericSig": "<τ_0_0>",
+            "sugared_genericSig": "<T>",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
           },
           {
-            "kind": "Var",
-            "name": "rawValue",
-            "printedName": "rawValue",
+            "kind": "Function",
+            "name": "unwrapWithExistence",
+            "printedName": "unwrapWithExistence(as:default:)",
             "children": [
               {
                 "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
+                "name": "Tuple",
+                "printedName": "(value: τ_0_0, exists: Swift.Bool)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GenericTypeParam",
+                    "printedName": "τ_0_0"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ]
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Metatype",
+                "printedName": "τ_0_0.Type",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GenericTypeParam",
+                    "printedName": "τ_0_0"
+                  }
+                ],
+                "hasDefaultArg": true
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "GenericTypeParam",
+                "printedName": "τ_0_0"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:16KovaleeFramework13StorageResultO19unwrapWithExistence2as7defaultx5value_Sb6existstxm_xtlF",
+            "mangledName": "$s16KovaleeFramework13StorageResultO19unwrapWithExistence2as7defaultx5value_Sb6existstxm_xtlF",
+            "moduleName": "KovaleeFramework",
+            "genericSig": "<τ_0_0>",
+            "sugared_genericSig": "<T>",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:16KovaleeFramework13StorageResultO",
+        "mangledName": "$s16KovaleeFramework13StorageResultO",
+        "moduleName": "KovaleeFramework",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "StorageError",
+        "printedName": "StorageError",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "keyNotFound",
+            "printedName": "keyNotFound",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(KovaleeFramework.StorageError.Type) -> KovaleeFramework.StorageError",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "StorageError",
+                    "printedName": "KovaleeFramework.StorageError",
+                    "usr": "s:16KovaleeFramework12StorageErrorO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "KovaleeFramework.StorageError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "StorageError",
+                        "printedName": "KovaleeFramework.StorageError",
+                        "usr": "s:16KovaleeFramework12StorageErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:16KovaleeFramework12StorageErrorO11keyNotFoundyA2CmF",
+            "mangledName": "$s16KovaleeFramework12StorageErrorO11keyNotFoundyA2CmF",
+            "moduleName": "KovaleeFramework"
+          },
+          {
+            "kind": "Var",
+            "name": "nilValue",
+            "printedName": "nilValue",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(KovaleeFramework.StorageError.Type) -> KovaleeFramework.StorageError",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "StorageError",
+                    "printedName": "KovaleeFramework.StorageError",
+                    "usr": "s:16KovaleeFramework12StorageErrorO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "KovaleeFramework.StorageError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "StorageError",
+                        "printedName": "KovaleeFramework.StorageError",
+                        "usr": "s:16KovaleeFramework12StorageErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:16KovaleeFramework12StorageErrorO8nilValueyA2CmF",
+            "mangledName": "$s16KovaleeFramework12StorageErrorO8nilValueyA2CmF",
+            "moduleName": "KovaleeFramework"
+          },
+          {
+            "kind": "Var",
+            "name": "typeMismatch",
+            "printedName": "typeMismatch",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(KovaleeFramework.StorageError.Type) -> KovaleeFramework.StorageError",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "StorageError",
+                    "printedName": "KovaleeFramework.StorageError",
+                    "usr": "s:16KovaleeFramework12StorageErrorO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "KovaleeFramework.StorageError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "StorageError",
+                        "printedName": "KovaleeFramework.StorageError",
+                        "usr": "s:16KovaleeFramework12StorageErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:16KovaleeFramework12StorageErrorO12typeMismatchyA2CmF",
+            "mangledName": "$s16KovaleeFramework12StorageErrorO12typeMismatchyA2CmF",
+            "moduleName": "KovaleeFramework"
+          },
+          {
+            "kind": "Function",
+            "name": "==",
+            "printedName": "==(_:_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "StorageError",
+                "printedName": "KovaleeFramework.StorageError",
+                "usr": "s:16KovaleeFramework12StorageErrorO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "StorageError",
+                "printedName": "KovaleeFramework.StorageError",
+                "usr": "s:16KovaleeFramework12StorageErrorO"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:16KovaleeFramework12StorageErrorO2eeoiySbAC_ACtFZ",
+            "mangledName": "$s16KovaleeFramework12StorageErrorO2eeoiySbAC_ACtFZ",
+            "moduleName": "KovaleeFramework",
+            "static": true,
+            "implicit": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Var",
+            "name": "hashValue",
+            "printedName": "hashValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
               }
             ],
             "declKind": "Var",
-            "usr": "s:16KovaleeFramework16UserSubscriptionO8rawValueSSvp",
-            "mangledName": "$s16KovaleeFramework16UserSubscriptionO8rawValueSSvp",
+            "usr": "s:16KovaleeFramework12StorageErrorO9hashValueSivp",
+            "mangledName": "$s16KovaleeFramework12StorageErrorO9hashValueSivp",
             "moduleName": "KovaleeFramework",
             "implicit": true,
             "accessors": [
@@ -6931,29 +7210,54 @@
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:16KovaleeFramework16UserSubscriptionO8rawValueSSvg",
-                "mangledName": "$s16KovaleeFramework16UserSubscriptionO8rawValueSSvg",
+                "usr": "s:16KovaleeFramework12StorageErrorO9hashValueSivg",
+                "mangledName": "$s16KovaleeFramework12StorageErrorO9hashValueSivg",
                 "moduleName": "KovaleeFramework",
                 "implicit": true,
                 "accessorKind": "get"
               }
             ]
+          },
+          {
+            "kind": "Function",
+            "name": "hash",
+            "printedName": "hash(into:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Hasher",
+                "printedName": "Swift.Hasher",
+                "paramValueOwnership": "InOut",
+                "usr": "s:s6HasherV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:16KovaleeFramework12StorageErrorO4hash4intoys6HasherVz_tF",
+            "mangledName": "$s16KovaleeFramework12StorageErrorO4hash4intoys6HasherVz_tF",
+            "moduleName": "KovaleeFramework",
+            "implicit": true,
+            "funcSelfKind": "NonMutating"
           }
         ],
         "declKind": "Enum",
-        "usr": "s:16KovaleeFramework16UserSubscriptionO",
-        "mangledName": "$s16KovaleeFramework16UserSubscriptionO",
+        "usr": "s:16KovaleeFramework12StorageErrorO",
+        "mangledName": "$s16KovaleeFramework12StorageErrorO",
         "moduleName": "KovaleeFramework",
         "declAttributes": [
-          "AccessControl"
+          "AccessControl",
+          "RawDocComment"
         ],
-        "enumRawTypeName": "String",
         "conformances": [
           {
             "kind": "Conformance",
@@ -6985,25 +7289,17 @@
           },
           {
             "kind": "Conformance",
-            "name": "RawRepresentable",
-            "printedName": "RawRepresentable",
-            "children": [
-              {
-                "kind": "TypeWitness",
-                "name": "RawValue",
-                "printedName": "RawValue",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ]
-              }
-            ],
-            "usr": "s:SY",
-            "mangledName": "$sSY"
+            "name": "Error",
+            "printedName": "Error",
+            "usr": "s:s5ErrorP",
+            "mangledName": "$ss5ErrorP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
           }
         ]
       },
@@ -7013,501 +7309,9 @@
         "printedName": "Storage",
         "children": [
           {
-            "kind": "Var",
-            "name": "hydrateFromStorage",
-            "printedName": "hydrateFromStorage",
-            "children": [
-              {
-                "kind": "TypeFunc",
-                "name": "Function",
-                "printedName": "(KovaleeFramework.StorageKeys, (any Swift.Sendable)?) -> (any Swift.Sendable)?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Optional",
-                    "printedName": "(any Swift.Sendable)?",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Sendable",
-                        "printedName": "any Swift.Sendable",
-                        "usr": "s:s8SendableP"
-                      }
-                    ],
-                    "usr": "s:Sq"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Tuple",
-                    "printedName": "(KovaleeFramework.StorageKeys, (any Swift.Sendable)?)",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "StorageKeys",
-                        "printedName": "KovaleeFramework.StorageKeys",
-                        "usr": "s:16KovaleeFramework11StorageKeysO"
-                      },
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Optional",
-                        "printedName": "(any Swift.Sendable)?",
-                        "children": [
-                          {
-                            "kind": "TypeNominal",
-                            "name": "Sendable",
-                            "printedName": "any Swift.Sendable",
-                            "usr": "s:s8SendableP"
-                          }
-                        ],
-                        "usr": "s:Sq"
-                      }
-                    ]
-                  }
-                ]
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:16KovaleeFramework7StorageV011hydrateFromC0ys8Sendable_pSgAA0C4KeysO_AFtYbcvp",
-            "mangledName": "$s16KovaleeFramework7StorageV011hydrateFromC0ys8Sendable_pSgAA0C4KeysO_AFtYbcvp",
-            "moduleName": "KovaleeFramework",
-            "declAttributes": [
-              "HasStorage",
-              "AccessControl"
-            ],
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeFunc",
-                    "name": "Function",
-                    "printedName": "(KovaleeFramework.StorageKeys, (any Swift.Sendable)?) -> (any Swift.Sendable)?",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Optional",
-                        "printedName": "(any Swift.Sendable)?",
-                        "children": [
-                          {
-                            "kind": "TypeNominal",
-                            "name": "Sendable",
-                            "printedName": "any Swift.Sendable",
-                            "usr": "s:s8SendableP"
-                          }
-                        ],
-                        "usr": "s:Sq"
-                      },
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Tuple",
-                        "printedName": "(KovaleeFramework.StorageKeys, (any Swift.Sendable)?)",
-                        "children": [
-                          {
-                            "kind": "TypeNominal",
-                            "name": "StorageKeys",
-                            "printedName": "KovaleeFramework.StorageKeys",
-                            "usr": "s:16KovaleeFramework11StorageKeysO"
-                          },
-                          {
-                            "kind": "TypeNominal",
-                            "name": "Optional",
-                            "printedName": "(any Swift.Sendable)?",
-                            "children": [
-                              {
-                                "kind": "TypeNominal",
-                                "name": "Sendable",
-                                "printedName": "any Swift.Sendable",
-                                "usr": "s:s8SendableP"
-                              }
-                            ],
-                            "usr": "s:Sq"
-                          }
-                        ]
-                      }
-                    ]
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:16KovaleeFramework7StorageV011hydrateFromC0ys8Sendable_pSgAA0C4KeysO_AFtYbcvg",
-                "mangledName": "$s16KovaleeFramework7StorageV011hydrateFromC0ys8Sendable_pSgAA0C4KeysO_AFtYbcvg",
-                "moduleName": "KovaleeFramework",
-                "implicit": true,
-                "accessorKind": "get"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Set",
-                "printedName": "Set()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeFunc",
-                    "name": "Function",
-                    "printedName": "(KovaleeFramework.StorageKeys, (any Swift.Sendable)?) -> (any Swift.Sendable)?",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Optional",
-                        "printedName": "(any Swift.Sendable)?",
-                        "children": [
-                          {
-                            "kind": "TypeNominal",
-                            "name": "Sendable",
-                            "printedName": "any Swift.Sendable",
-                            "usr": "s:s8SendableP"
-                          }
-                        ],
-                        "usr": "s:Sq"
-                      },
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Tuple",
-                        "printedName": "(KovaleeFramework.StorageKeys, (any Swift.Sendable)?)",
-                        "children": [
-                          {
-                            "kind": "TypeNominal",
-                            "name": "StorageKeys",
-                            "printedName": "KovaleeFramework.StorageKeys",
-                            "usr": "s:16KovaleeFramework11StorageKeysO"
-                          },
-                          {
-                            "kind": "TypeNominal",
-                            "name": "Optional",
-                            "printedName": "(any Swift.Sendable)?",
-                            "children": [
-                              {
-                                "kind": "TypeNominal",
-                                "name": "Sendable",
-                                "printedName": "any Swift.Sendable",
-                                "usr": "s:s8SendableP"
-                              }
-                            ],
-                            "usr": "s:Sq"
-                          }
-                        ]
-                      }
-                    ]
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:16KovaleeFramework7StorageV011hydrateFromC0ys8Sendable_pSgAA0C4KeysO_AFtYbcvs",
-                "mangledName": "$s16KovaleeFramework7StorageV011hydrateFromC0ys8Sendable_pSgAA0C4KeysO_AFtYbcvs",
-                "moduleName": "KovaleeFramework",
-                "implicit": true,
-                "accessorKind": "set"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Modify",
-                "printedName": "Modify()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:16KovaleeFramework7StorageV011hydrateFromC0ys8Sendable_pSgAA0C4KeysO_AFtYbcvM",
-                "mangledName": "$s16KovaleeFramework7StorageV011hydrateFromC0ys8Sendable_pSgAA0C4KeysO_AFtYbcvM",
-                "moduleName": "KovaleeFramework",
-                "implicit": true,
-                "accessorKind": "_modify"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
-            "name": "persistToStorage",
-            "printedName": "persistToStorage",
-            "children": [
-              {
-                "kind": "TypeFunc",
-                "name": "Function",
-                "printedName": "(KovaleeFramework.StorageKeys, any Swift.Sendable) -> ()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Tuple",
-                    "printedName": "(KovaleeFramework.StorageKeys, any Swift.Sendable)",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "StorageKeys",
-                        "printedName": "KovaleeFramework.StorageKeys",
-                        "usr": "s:16KovaleeFramework11StorageKeysO"
-                      },
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Sendable",
-                        "printedName": "any Swift.Sendable",
-                        "usr": "s:s8SendableP"
-                      }
-                    ]
-                  }
-                ]
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:16KovaleeFramework7StorageV09persistToC0yyAA0C4KeysO_s8Sendable_ptYbcvp",
-            "mangledName": "$s16KovaleeFramework7StorageV09persistToC0yyAA0C4KeysO_s8Sendable_ptYbcvp",
-            "moduleName": "KovaleeFramework",
-            "declAttributes": [
-              "HasStorage",
-              "AccessControl"
-            ],
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeFunc",
-                    "name": "Function",
-                    "printedName": "(KovaleeFramework.StorageKeys, any Swift.Sendable) -> ()",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Void",
-                        "printedName": "()"
-                      },
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Tuple",
-                        "printedName": "(KovaleeFramework.StorageKeys, any Swift.Sendable)",
-                        "children": [
-                          {
-                            "kind": "TypeNominal",
-                            "name": "StorageKeys",
-                            "printedName": "KovaleeFramework.StorageKeys",
-                            "usr": "s:16KovaleeFramework11StorageKeysO"
-                          },
-                          {
-                            "kind": "TypeNominal",
-                            "name": "Sendable",
-                            "printedName": "any Swift.Sendable",
-                            "usr": "s:s8SendableP"
-                          }
-                        ]
-                      }
-                    ]
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:16KovaleeFramework7StorageV09persistToC0yyAA0C4KeysO_s8Sendable_ptYbcvg",
-                "mangledName": "$s16KovaleeFramework7StorageV09persistToC0yyAA0C4KeysO_s8Sendable_ptYbcvg",
-                "moduleName": "KovaleeFramework",
-                "implicit": true,
-                "accessorKind": "get"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Set",
-                "printedName": "Set()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeFunc",
-                    "name": "Function",
-                    "printedName": "(KovaleeFramework.StorageKeys, any Swift.Sendable) -> ()",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Void",
-                        "printedName": "()"
-                      },
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Tuple",
-                        "printedName": "(KovaleeFramework.StorageKeys, any Swift.Sendable)",
-                        "children": [
-                          {
-                            "kind": "TypeNominal",
-                            "name": "StorageKeys",
-                            "printedName": "KovaleeFramework.StorageKeys",
-                            "usr": "s:16KovaleeFramework11StorageKeysO"
-                          },
-                          {
-                            "kind": "TypeNominal",
-                            "name": "Sendable",
-                            "printedName": "any Swift.Sendable",
-                            "usr": "s:s8SendableP"
-                          }
-                        ]
-                      }
-                    ]
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:16KovaleeFramework7StorageV09persistToC0yyAA0C4KeysO_s8Sendable_ptYbcvs",
-                "mangledName": "$s16KovaleeFramework7StorageV09persistToC0yyAA0C4KeysO_s8Sendable_ptYbcvs",
-                "moduleName": "KovaleeFramework",
-                "implicit": true,
-                "accessorKind": "set"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Modify",
-                "printedName": "Modify()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:16KovaleeFramework7StorageV09persistToC0yyAA0C4KeysO_s8Sendable_ptYbcvM",
-                "mangledName": "$s16KovaleeFramework7StorageV09persistToC0yyAA0C4KeysO_s8Sendable_ptYbcvM",
-                "moduleName": "KovaleeFramework",
-                "implicit": true,
-                "accessorKind": "_modify"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
-            "name": "removeFromStorage",
-            "printedName": "removeFromStorage",
-            "children": [
-              {
-                "kind": "TypeFunc",
-                "name": "Function",
-                "printedName": "(KovaleeFramework.StorageKeys) -> ()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "StorageKeys",
-                    "printedName": "KovaleeFramework.StorageKeys",
-                    "usr": "s:16KovaleeFramework11StorageKeysO"
-                  }
-                ]
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:16KovaleeFramework7StorageV010removeFromC0yyAA0C4KeysOYbcvp",
-            "mangledName": "$s16KovaleeFramework7StorageV010removeFromC0yyAA0C4KeysOYbcvp",
-            "moduleName": "KovaleeFramework",
-            "declAttributes": [
-              "HasStorage",
-              "AccessControl"
-            ],
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeFunc",
-                    "name": "Function",
-                    "printedName": "(KovaleeFramework.StorageKeys) -> ()",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Void",
-                        "printedName": "()"
-                      },
-                      {
-                        "kind": "TypeNominal",
-                        "name": "StorageKeys",
-                        "printedName": "KovaleeFramework.StorageKeys",
-                        "usr": "s:16KovaleeFramework11StorageKeysO"
-                      }
-                    ]
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:16KovaleeFramework7StorageV010removeFromC0yyAA0C4KeysOYbcvg",
-                "mangledName": "$s16KovaleeFramework7StorageV010removeFromC0yyAA0C4KeysOYbcvg",
-                "moduleName": "KovaleeFramework",
-                "implicit": true,
-                "accessorKind": "get"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Set",
-                "printedName": "Set()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeFunc",
-                    "name": "Function",
-                    "printedName": "(KovaleeFramework.StorageKeys) -> ()",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Void",
-                        "printedName": "()"
-                      },
-                      {
-                        "kind": "TypeNominal",
-                        "name": "StorageKeys",
-                        "printedName": "KovaleeFramework.StorageKeys",
-                        "usr": "s:16KovaleeFramework11StorageKeysO"
-                      }
-                    ]
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:16KovaleeFramework7StorageV010removeFromC0yyAA0C4KeysOYbcvs",
-                "mangledName": "$s16KovaleeFramework7StorageV010removeFromC0yyAA0C4KeysOYbcvs",
-                "moduleName": "KovaleeFramework",
-                "implicit": true,
-                "accessorKind": "set"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Modify",
-                "printedName": "Modify()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:16KovaleeFramework7StorageV010removeFromC0yyAA0C4KeysOYbcvM",
-                "mangledName": "$s16KovaleeFramework7StorageV010removeFromC0yyAA0C4KeysOYbcvM",
-                "moduleName": "KovaleeFramework",
-                "implicit": true,
-                "accessorKind": "_modify"
-              }
-            ]
-          },
-          {
-            "kind": "Function",
-            "name": "userDefaults",
-            "printedName": "userDefaults(defaults:)",
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(defaults:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -7523,12 +7327,215 @@
                 "usr": "c:objc(cs)NSUserDefaults"
               }
             ],
-            "declKind": "Func",
-            "usr": "s:16KovaleeFramework7StorageV12userDefaults8defaultsACSo06NSUserE0C_tFZ",
-            "mangledName": "$s16KovaleeFramework7StorageV12userDefaults8defaultsACSo06NSUserE0C_tFZ",
+            "declKind": "Constructor",
+            "usr": "s:16KovaleeFramework7StorageV8defaultsACSo14NSUserDefaultsC_tcfc",
+            "mangledName": "$s16KovaleeFramework7StorageV8defaultsACSo14NSUserDefaultsC_tcfc",
             "moduleName": "KovaleeFramework",
-            "static": true,
-            "isFromExtension": true,
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "get",
+            "printedName": "get(_:_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "StorageResult",
+                "printedName": "KovaleeFramework.StorageResult",
+                "usr": "s:16KovaleeFramework13StorageResultO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "StorageKeys",
+                "printedName": "KovaleeFramework.StorageKeys",
+                "usr": "s:16KovaleeFramework11StorageKeysO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "(any Swift.Sendable)?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Sendable",
+                    "printedName": "any Swift.Sendable",
+                    "usr": "s:s8SendableP"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:16KovaleeFramework7StorageV3getyAA0C6ResultOAA0C4KeysO_s8Sendable_pSgtF",
+            "mangledName": "$s16KovaleeFramework7StorageV3getyAA0C6ResultOAA0C4KeysO_s8Sendable_pSgtF",
+            "moduleName": "KovaleeFramework",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "set",
+            "printedName": "set(_:_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "StorageKeys",
+                "printedName": "KovaleeFramework.StorageKeys",
+                "usr": "s:16KovaleeFramework11StorageKeysO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Sendable",
+                "printedName": "any Swift.Sendable",
+                "usr": "s:s8SendableP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:16KovaleeFramework7StorageV3setyyAA0C4KeysO_s8Sendable_ptF",
+            "mangledName": "$s16KovaleeFramework7StorageV3setyyAA0C4KeysO_s8Sendable_ptF",
+            "moduleName": "KovaleeFramework",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "remove",
+            "printedName": "remove(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "StorageKeys",
+                "printedName": "KovaleeFramework.StorageKeys",
+                "usr": "s:16KovaleeFramework11StorageKeysO"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:16KovaleeFramework7StorageV6removeyyAA0C4KeysOF",
+            "mangledName": "$s16KovaleeFramework7StorageV6removeyyAA0C4KeysOF",
+            "moduleName": "KovaleeFramework",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getValue",
+            "printedName": "getValue(_:default:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "GenericTypeParam",
+                "printedName": "τ_0_0"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "StorageKeys",
+                "printedName": "KovaleeFramework.StorageKeys",
+                "usr": "s:16KovaleeFramework11StorageKeysO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "GenericTypeParam",
+                "printedName": "τ_0_0"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:16KovaleeFramework7StorageV8getValue_7defaultxAA0C4KeysO_xts8SendableRzlF",
+            "mangledName": "$s16KovaleeFramework7StorageV8getValue_7defaultxAA0C4KeysO_xts8SendableRzlF",
+            "moduleName": "KovaleeFramework",
+            "genericSig": "<τ_0_0 where τ_0_0 : Swift.Sendable>",
+            "sugared_genericSig": "<T where T : Swift.Sendable>",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getOptionalValue",
+            "printedName": "getOptionalValue(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "τ_0_0?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GenericTypeParam",
+                    "printedName": "τ_0_0"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "StorageKeys",
+                "printedName": "KovaleeFramework.StorageKeys",
+                "usr": "s:16KovaleeFramework11StorageKeysO"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:16KovaleeFramework7StorageV16getOptionalValueyxSgAA0C4KeysOlF",
+            "mangledName": "$s16KovaleeFramework7StorageV16getOptionalValueyxSgAA0C4KeysOlF",
+            "moduleName": "KovaleeFramework",
+            "genericSig": "<τ_0_0>",
+            "sugared_genericSig": "<T>",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "hasKey",
+            "printedName": "hasKey(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "StorageKeys",
+                "printedName": "KovaleeFramework.StorageKeys",
+                "usr": "s:16KovaleeFramework11StorageKeysO"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:16KovaleeFramework7StorageV6hasKeyySbAA0C4KeysOF",
+            "mangledName": "$s16KovaleeFramework7StorageV6hasKeyySbAA0C4KeysOF",
+            "moduleName": "KovaleeFramework",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
             "funcSelfKind": "NonMutating"
           }
         ],
@@ -10750,7 +10757,6 @@
                 "kind": "TypeNominal",
                 "name": "Storage",
                 "printedName": "KovaleeFramework.Storage",
-                "hasDefaultArg": true,
                 "usr": "s:16KovaleeFramework7StorageV"
               },
               {
@@ -14908,7 +14914,7 @@
     {
       "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 11485,
+      "offset": 11253,
       "length": 5,
       "value": "false"
     },
@@ -15188,14 +15194,14 @@
     {
       "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/Utils\/Storage.swift",
       "kind": "StringLiteral",
-      "offset": 994,
+      "offset": 995,
       "length": 16,
       "value": "\"rc_initialized\""
     },
     {
       "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/Utils\/Storage.swift",
       "kind": "StringLiteral",
-      "offset": 1029,
+      "offset": 1033,
       "length": 13,
       "value": "\"rc_id_cache\""
     },

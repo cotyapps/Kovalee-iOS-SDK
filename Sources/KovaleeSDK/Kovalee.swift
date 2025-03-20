@@ -27,7 +27,7 @@ public final class Kovalee {
     /// - Parameters:
     ///   - configuration: the configuration to be used by Kovalee
     public static func initialize(configuration: Configuration) {
-        setInitializedManager(.init(configuration: configuration, storage: .userDefaults()))
+        setInitializedManager(.init(configuration: configuration, storage: Storage()))
     }
 
     /// used for testing purpose mainly
@@ -46,7 +46,7 @@ public final class Kovalee {
             return manager
         } else if ProcessInfo.processInfo.environment["XCODE_RUNNING_FOR_PREVIEWS"] == "1" {
             // SwiftUI Previews, this is not a real launch of the app, therefore mock data is used
-            let newManager = self.init(configuration: .preview, storage: .userDefaults())
+            let newManager = self.init(configuration: .preview, storage: Storage())
             setInitializedManager(newManager)
             return newManager
         } else {

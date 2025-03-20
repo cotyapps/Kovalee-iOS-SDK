@@ -12,7 +12,7 @@ import _StringProcessing
 import _SwiftConcurrencyShims
 import os
 public class KovaleeManager {
-  public init(withStorage storage: KovaleeFramework.Storage = .userDefaults(), keys: KovaleeFramework.KovaleeKeys, sdkVersion: Swift.String, eventTrackerManager: any KovaleeFramework.EventTrackerManager, alreadyIntegrated: Swift.Bool)
+  public init(withStorage storage: KovaleeFramework.Storage = Storage(defaults: UserDefaults()), keys: KovaleeFramework.KovaleeKeys, sdkVersion: Swift.String, eventTrackerManager: any KovaleeFramework.EventTrackerManager, alreadyIntegrated: Swift.Bool)
   public func setupAttributionManager(adjustWrapper: any KovaleeFramework.AttributionManager)
   public func setupPurchaseManager(purchaseManager: any KovaleeFramework.PurchaseManager)
   public func setupRemoteConfigurationManager(remoteConfigManager: any KovaleeFramework.RemoteConfigurationManager)
@@ -48,7 +48,7 @@ public class KovaleeManager {
   public func setDebugMode(_ on: Swift.Bool)
   public func debugModeOn() -> Swift.Bool
   public var attributionManager: (any KovaleeFramework.AttributionManager)?
-  public var trackerManager: (any KovaleeFramework.EventTrackerManager)?
+  final public let trackerManager: any KovaleeFramework.EventTrackerManager
   public var purchaseManager: (any KovaleeFramework.PurchaseManager)?
   public var remoteConfigManager: (any KovaleeFramework.RemoteConfigurationManager)?
   public var paywallManager: (any KovaleeFramework.PaywallManager)?
@@ -166,23 +166,33 @@ public enum StorageKeys : Swift.String, Swift.Sendable {
     get
   }
 }
-public enum UserSubscription : Swift.String {
-  case notSubscribed
-  case monthlySubscription
-  case yearlySubscription
-  public init?(rawValue: Swift.String)
-  public typealias RawValue = Swift.String
-  public var rawValue: Swift.String {
+public enum StorageResult : Swift.Sendable, Swift.Equatable {
+  case value(any Swift.Sendable)
+  case nilValue
+  case noValue
+  public static func == (lhs: KovaleeFramework.StorageResult, rhs: KovaleeFramework.StorageResult) -> Swift.Bool
+  public func unwrapValue<T>(as _: T.Type = T.self, default defaultValue: T) -> T
+  public func unwrapOptionalValue<T>(as _: T.Type = T.self) -> T?
+  public func unwrapWithExistence<T>(as _: T.Type = T.self, default defaultValue: T) -> (value: T, exists: Swift.Bool)
+}
+public enum StorageError : Swift.Error {
+  case keyNotFound
+  case nilValue
+  case typeMismatch
+  public static func == (a: KovaleeFramework.StorageError, b: KovaleeFramework.StorageError) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
     get
   }
 }
 public struct Storage : Swift.Sendable {
-  public var hydrateFromStorage: @Sendable (KovaleeFramework.StorageKeys, (any Swift.Sendable)?) -> (any Swift.Sendable)?
-  public var persistToStorage: @Sendable (KovaleeFramework.StorageKeys, any Swift.Sendable) -> Swift.Void
-  public var removeFromStorage: @Sendable (KovaleeFramework.StorageKeys) -> Swift.Void
-}
-extension KovaleeFramework.Storage {
-  public static func userDefaults(defaults: Foundation.UserDefaults = .standard) -> KovaleeFramework.Storage
+  public init(defaults: Foundation.UserDefaults = .standard)
+  public func get(_ key: KovaleeFramework.StorageKeys, _ defaultValue: (any Swift.Sendable)? = nil) -> KovaleeFramework.StorageResult
+  public func set(_ key: KovaleeFramework.StorageKeys, _ value: any Swift.Sendable)
+  public func remove(_ key: KovaleeFramework.StorageKeys)
+  public func getValue<T>(_ key: KovaleeFramework.StorageKeys, default defaultValue: T) -> T where T : Swift.Sendable
+  public func getOptionalValue<T>(_ key: KovaleeFramework.StorageKeys) -> T?
+  public func hasKey(_ key: KovaleeFramework.StorageKeys) -> Swift.Bool
 }
 #if compiler(>=5.3) && $RetroactiveAttribute
 extension Foundation.UserDefaults : @unchecked @retroactive Swift.Sendable {
@@ -309,7 +319,7 @@ extension KovaleeFramework.KovaleeError : Foundation.LocalizedError {
   }
 }
 public struct ConversionValueManager {
-  public init(appCode: Swift.String, parsingLogicVersion: Swift.Int, storage: KovaleeFramework.Storage = .userDefaults(), eventTrackerManager: (any KovaleeFramework.EventTrackerManager)?)
+  public init(appCode: Swift.String, parsingLogicVersion: Swift.Int, storage: KovaleeFramework.Storage, eventTrackerManager: (any KovaleeFramework.EventTrackerManager)?)
 }
 extension KovaleeFramework.ConversionValueManager {
   public mutating func conversionValue(fromEvent event: KovaleeFramework.Event) -> KovaleeFramework.ConversionValue?
@@ -472,9 +482,8 @@ extension KovaleeFramework.FileReaderError : Swift.Hashable {}
 extension KovaleeFramework.StorageKeys : Swift.Equatable {}
 extension KovaleeFramework.StorageKeys : Swift.Hashable {}
 extension KovaleeFramework.StorageKeys : Swift.RawRepresentable {}
-extension KovaleeFramework.UserSubscription : Swift.Equatable {}
-extension KovaleeFramework.UserSubscription : Swift.Hashable {}
-extension KovaleeFramework.UserSubscription : Swift.RawRepresentable {}
+extension KovaleeFramework.StorageError : Swift.Equatable {}
+extension KovaleeFramework.StorageError : Swift.Hashable {}
 extension KovaleeFramework.AdjustConfiguration.Environment : Swift.Equatable {}
 extension KovaleeFramework.AdjustConfiguration.Environment : Swift.Hashable {}
 extension KovaleeFramework.AdjustConfiguration.Environment : Swift.RawRepresentable {}
