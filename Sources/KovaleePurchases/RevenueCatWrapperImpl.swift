@@ -97,7 +97,10 @@ final class RevenueCatWrapperImpl: NSObject, PurchaseManager, Manager {
     }
 
     func purchase(package: AbstractPackage) async throws -> AbstractPurchaseResultData {
-        let purchaseResult = try await Purchases.shared.purchase(package: package.rcPackage as! RevenueCat.Package)
+        guard let rcPackage = package.rcPackage as? RevenueCat.Package else {
+            throw KovaleePurchasesError.noRCPackageIdentified
+        }
+        let purchaseResult = try await Purchases.shared.purchase(package: rcPackage)
         KLogger.debug("🛍️ Purchase \(purchaseResult)")
 
         return KPurchaseResultData(
@@ -159,6 +162,7 @@ extension RevenueCatWrapperImpl: RevenueCat.PurchasesDelegate {
 
 public enum KovaleePurchasesError: Error {
     case noProductWithSpecifiedId
+    case noRCPackageIdentified
 }
 
 extension KovaleeFramework.LogLevel {

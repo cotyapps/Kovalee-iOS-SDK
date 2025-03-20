@@ -45,7 +45,10 @@ final class AdjustWrapperImpl: NSObject, AttributionManager, Manager {
     }
 
     func setDataCollectionEnabled(_ enabled: Bool) {
-        Adjust.trackThirdPartySharing(ADJThirdPartySharing(isEnabled: enabled ? 1 : 0)!)
+        guard let value = ADJThirdPartySharing(isEnabled: enabled ? 1 : 0) else {
+            return
+        }
+        Adjust.trackThirdPartySharing(value)
     }
 
     func getAttributionAdid() async -> String? {

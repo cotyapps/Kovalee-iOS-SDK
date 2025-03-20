@@ -40,7 +40,12 @@ public extension Kovalee {
         guard let manager = shared.kovaleeManager else {
             throw PurchaseError.initializationProblem
         }
-        return try await manager.setRevenueCatUserId(userId: userId) as! (KCustomerInfo, created: Bool)
+        guard
+            let customerInfo = try await manager.setRevenueCatUserId(userId: userId) as? (KCustomerInfo, created: Bool)
+        else {
+            throw PurchaseError.rcNotYetInitialized
+        }
+        return customerInfo
     }
 
     /// Set a specific userId for RevenueCat.
@@ -80,7 +85,11 @@ public extension Kovalee {
         guard let manager = shared.kovaleeManager else {
             throw PurchaseError.initializationProblem
         }
-        return try await manager.logoutRevenueCatUser() as! KCustomerInfo
+        guard let customerInfo = try await manager.logoutRevenueCatUser() as? KCustomerInfo else {
+            throw PurchaseError.rcNotYetInitialized
+        }
+
+        return customerInfo
     }
 
     /// Logout the current user from RevenueCat.

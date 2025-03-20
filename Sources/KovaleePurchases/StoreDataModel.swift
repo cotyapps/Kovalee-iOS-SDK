@@ -5,6 +5,7 @@ import RevenueCat
 // swiftlint:disable file_length
 enum PurchaseError: Error {
     case initializationProblem
+    case rcNotYetInitialized
 }
 
 /// A container for the most recent customer info
@@ -118,7 +119,7 @@ public class KEntitlementInfo: NSObject, Encodable {
     public let willRenew: Bool
 
     /// The last period type this entitlement was in
-    public let periodType: KPeriodType
+    public let periodType: KPeriodType?
 
     /// The latest purchase or renewal date for the entitlement.
     public let latestPurchaseDate: Date?
@@ -158,7 +159,7 @@ public class KEntitlementInfo: NSObject, Encodable {
         identifier = info.identifier
         isActive = info.isActive
         willRenew = info.willRenew
-        periodType = KPeriodType(rawValue: info.periodType.rawValue)!
+        periodType = KPeriodType(rawValue: info.periodType.rawValue)
         latestPurchaseDate = info.latestPurchaseDate
         originalPurchaseDate = info.originalPurchaseDate
         expirationDate = info.expirationDate
@@ -280,7 +281,9 @@ public struct KOfferings: AbstractOfferings, Encodable {
         all = offerings.all.reduce(into: [String: KOffering]()) { all, offering in
             all[offering.key] = KOffering(offering: offering.value)
         }
-        current = offerings.current != nil ? KOffering(offering: offerings.current!) : nil
+        if let currentOffering = offerings.current {
+            current = KOffering(offering: currentOffering)
+        }
     }
 
     func returnOffering(withSubscriptionId subscriptionId: String) -> KPackage? {
@@ -471,7 +474,10 @@ public final class KPackage: Identifiable, AbstractPackage, Encodable {
     }
 
     public func getDuration() -> Int {
-        guard let subscriptionPeriod = (rcPackage as! RevenueCat.Package).storeProduct.subscriptionPeriod else {
+        guard
+            let package = rcPackage as? RevenueCat.Package,
+            let subscriptionPeriod = package.storeProduct.subscriptionPeriod
+        else {
             return 0
         }
 
@@ -491,10 +497,10 @@ public final class KPackage: Identifiable, AbstractPackage, Encodable {
 /// Type that provides access to all of `StoreKit`'s product type's properties.
 public struct KStoreProduct: Encodable, Sendable {
     /// The type of product.
-    public let productType: KProductType
+    public let productType: KProductType?
 
     /// The category of this product, whether a subscription or a one-time purchase.
-    public let productCategory: KProductCategory
+    public let productCategory: KProductCategory?
 
     /// A description of the product.
     /// - Note: The title's language is determined by the storefront that the user's device is connected to,
@@ -556,8 +562,8 @@ public struct KStoreProduct: Encodable, Sendable {
     let product: RevenueCat.StoreProduct?
 
     init(_ product: RevenueCat.StoreProduct) {
-        productType = KProductType(rawValue: product.productType.rawValue)!
-        productCategory = KProductCategory(rawValue: product.productCategory.rawValue)!
+        productType = KProductType(rawValue: product.productType.rawValue)
+        productCategory = KProductCategory(rawValue: product.productCategory.rawValue)
         localizedDescription = product.localizedDescription
         localizedTitle = product.localizedTitle
         currencyCode = product.currencyCode
@@ -567,8 +573,11 @@ public struct KStoreProduct: Encodable, Sendable {
         isFamilyShareable = product.isFamilyShareable
         subscriptionGroupIdentifier = product.subscriptionGroupIdentifier
         priceFormatter = product.priceFormatter
-        subscriptionPeriod = product.subscriptionPeriod != nil ?
-            KSubscriptionPeriod(product.subscriptionPeriod!) : nil
+        if let period = product.subscriptionPeriod {
+            subscriptionPeriod = KSubscriptionPeriod(period)
+        } else {
+            subscriptionPeriod = nil
+        }
         introductoryDiscount = KStoreProductDiscount(product.introductoryDiscount)
         discounts = product.discounts.compactMap { KStoreProductDiscount($0) }
         self.product = product
@@ -689,7 +698,7 @@ public struct KSubscriptionPeriod: Encodable, Sendable {
 
     init(_ period: RevenueCat.SubscriptionPeriod) {
         value = period.value
-        unit = Unit(rawValue: period.unit.rawValue)!
+        unit = Unit(rawValue: period.unit.rawValue) ?? .day
     }
 
     func pricePerMonth(withTotalPrice price: Decimal) -> Decimal {
@@ -757,10 +766,10 @@ public struct KStoreProductDiscount: Encodable, Sendable {
     public var currencyCode: String?
     public var price: Decimal
     public var localizedPriceString: String
-    public var paymentMode: PaymentMode
+    public var paymentMode: PaymentMode?
     public var subscriptionPeriod: KSubscriptionPeriod
     public var numberOfPeriods: Int
-    public var type: DiscountType
+    public var type: DiscountType?
 
     init?(_ discount: RevenueCat.StoreProductDiscount?) {
         guard let discount else {
@@ -771,10 +780,10 @@ public struct KStoreProductDiscount: Encodable, Sendable {
         currencyCode = discount.currencyCode
         price = discount.price
         localizedPriceString = discount.localizedPriceString
-        paymentMode = PaymentMode(rawValue: discount.paymentMode.rawValue)!
+        paymentMode = PaymentMode(rawValue: discount.paymentMode.rawValue)
         subscriptionPeriod = KSubscriptionPeriod(discount.subscriptionPeriod)
         numberOfPeriods = discount.numberOfPeriods
-        type = DiscountType(rawValue: discount.type.rawValue)!
+        type = DiscountType(rawValue: discount.type.rawValue)
     }
 }
 
