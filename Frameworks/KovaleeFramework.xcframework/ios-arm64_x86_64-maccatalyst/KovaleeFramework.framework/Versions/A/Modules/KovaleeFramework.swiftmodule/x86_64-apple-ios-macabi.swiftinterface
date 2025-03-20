@@ -400,7 +400,7 @@ public enum DefaultEvents {
   public var name: Swift.String {
     get
   }
-  public var properties: [Swift.String : Any]? {
+  public var properties: [Swift.String : any Swift.Sendable]? {
     get
   }
 }
@@ -435,11 +435,11 @@ public enum BasicEvent {
 }
 public struct ParsingLogic {
 }
-public struct Event {
+public struct Event : Swift.Sendable {
   public var name: Swift.String
-  public var properties: [Swift.String : Any]?
+  public var properties: [Swift.String : any Swift.Sendable]?
   public var isSystemEvent: Swift.Bool
-  public init(name: Swift.String, properties: [Swift.String : Any]? = nil, isSystemEvent: Swift.Bool = false)
+  public init(name: Swift.String, properties: [Swift.String : any Swift.Sendable]? = nil, isSystemEvent: Swift.Bool = false)
   public init(event: KovaleeFramework.DefaultEvents, isSystemEvent: Swift.Bool = false)
 }
 extension KovaleeFramework.Event : Swift.CustomStringConvertible {
@@ -457,7 +457,7 @@ extension Swift.String {
     get
   }
 }
-extension Swift.Dictionary where Key == Swift.String, Value == Any {
+extension Swift.Dictionary where Key == Swift.String {
   public var serialization: Swift.String {
     get
   }

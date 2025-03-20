@@ -11744,12 +11744,12 @@
               {
                 "kind": "TypeNominal",
                 "name": "Optional",
-                "printedName": "[Swift.String : Any]?",
+                "printedName": "[Swift.String : any Swift.Sendable]?",
                 "children": [
                   {
                     "kind": "TypeNominal",
                     "name": "Dictionary",
-                    "printedName": "[Swift.String : Any]",
+                    "printedName": "[Swift.String : any Swift.Sendable]",
                     "children": [
                       {
                         "kind": "TypeNominal",
@@ -11759,8 +11759,9 @@
                       },
                       {
                         "kind": "TypeNominal",
-                        "name": "ProtocolComposition",
-                        "printedName": "Any"
+                        "name": "Sendable",
+                        "printedName": "any Swift.Sendable",
+                        "usr": "s:s8SendableP"
                       }
                     ],
                     "usr": "s:SD"
@@ -11770,8 +11771,8 @@
               }
             ],
             "declKind": "Var",
-            "usr": "s:16KovaleeFramework13DefaultEventsO10propertiesSDySSypGSgvp",
-            "mangledName": "$s16KovaleeFramework13DefaultEventsO10propertiesSDySSypGSgvp",
+            "usr": "s:16KovaleeFramework13DefaultEventsO10propertiesSDySSs8Sendable_pGSgvp",
+            "mangledName": "$s16KovaleeFramework13DefaultEventsO10propertiesSDySSs8Sendable_pGSgvp",
             "moduleName": "KovaleeFramework",
             "declAttributes": [
               "AccessControl"
@@ -11785,12 +11786,12 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Optional",
-                    "printedName": "[Swift.String : Any]?",
+                    "printedName": "[Swift.String : any Swift.Sendable]?",
                     "children": [
                       {
                         "kind": "TypeNominal",
                         "name": "Dictionary",
-                        "printedName": "[Swift.String : Any]",
+                        "printedName": "[Swift.String : any Swift.Sendable]",
                         "children": [
                           {
                             "kind": "TypeNominal",
@@ -11800,8 +11801,9 @@
                           },
                           {
                             "kind": "TypeNominal",
-                            "name": "ProtocolComposition",
-                            "printedName": "Any"
+                            "name": "Sendable",
+                            "printedName": "any Swift.Sendable",
+                            "usr": "s:s8SendableP"
                           }
                         ],
                         "usr": "s:SD"
@@ -11811,8 +11813,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:16KovaleeFramework13DefaultEventsO10propertiesSDySSypGSgvg",
-                "mangledName": "$s16KovaleeFramework13DefaultEventsO10propertiesSDySSypGSgvg",
+                "usr": "s:16KovaleeFramework13DefaultEventsO10propertiesSDySSs8Sendable_pGSgvg",
+                "mangledName": "$s16KovaleeFramework13DefaultEventsO10propertiesSDySSs8Sendable_pGSgvg",
                 "moduleName": "KovaleeFramework",
                 "accessorKind": "get"
               }
@@ -12941,12 +12943,12 @@
               {
                 "kind": "TypeNominal",
                 "name": "Optional",
-                "printedName": "[Swift.String : Any]?",
+                "printedName": "[Swift.String : any Swift.Sendable]?",
                 "children": [
                   {
                     "kind": "TypeNominal",
                     "name": "Dictionary",
-                    "printedName": "[Swift.String : Any]",
+                    "printedName": "[Swift.String : any Swift.Sendable]",
                     "children": [
                       {
                         "kind": "TypeNominal",
@@ -12956,8 +12958,9 @@
                       },
                       {
                         "kind": "TypeNominal",
-                        "name": "ProtocolComposition",
-                        "printedName": "Any"
+                        "name": "Sendable",
+                        "printedName": "any Swift.Sendable",
+                        "usr": "s:s8SendableP"
                       }
                     ],
                     "usr": "s:SD"
@@ -12967,8 +12970,8 @@
               }
             ],
             "declKind": "Var",
-            "usr": "s:16KovaleeFramework5EventV10propertiesSDySSypGSgvp",
-            "mangledName": "$s16KovaleeFramework5EventV10propertiesSDySSypGSgvp",
+            "usr": "s:16KovaleeFramework5EventV10propertiesSDySSs8Sendable_pGSgvp",
+            "mangledName": "$s16KovaleeFramework5EventV10propertiesSDySSs8Sendable_pGSgvp",
             "moduleName": "KovaleeFramework",
             "declAttributes": [
               "HasInitialValue",
@@ -12985,12 +12988,12 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Optional",
-                    "printedName": "[Swift.String : Any]?",
+                    "printedName": "[Swift.String : any Swift.Sendable]?",
                     "children": [
                       {
                         "kind": "TypeNominal",
                         "name": "Dictionary",
-                        "printedName": "[Swift.String : Any]",
+                        "printedName": "[Swift.String : any Swift.Sendable]",
                         "children": [
                           {
                             "kind": "TypeNominal",
@@ -13000,8 +13003,9 @@
                           },
                           {
                             "kind": "TypeNominal",
-                            "name": "ProtocolComposition",
-                            "printedName": "Any"
+                            "name": "Sendable",
+                            "printedName": "any Swift.Sendable",
+                            "usr": "s:s8SendableP"
                           }
                         ],
                         "usr": "s:SD"
@@ -13011,8 +13015,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:16KovaleeFramework5EventV10propertiesSDySSypGSgvg",
-                "mangledName": "$s16KovaleeFramework5EventV10propertiesSDySSypGSgvg",
+                "usr": "s:16KovaleeFramework5EventV10propertiesSDySSs8Sendable_pGSgvg",
+                "mangledName": "$s16KovaleeFramework5EventV10propertiesSDySSs8Sendable_pGSgvg",
                 "moduleName": "KovaleeFramework",
                 "implicit": true,
                 "accessorKind": "get"
@@ -13030,12 +13034,12 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Optional",
-                    "printedName": "[Swift.String : Any]?",
+                    "printedName": "[Swift.String : any Swift.Sendable]?",
                     "children": [
                       {
                         "kind": "TypeNominal",
                         "name": "Dictionary",
-                        "printedName": "[Swift.String : Any]",
+                        "printedName": "[Swift.String : any Swift.Sendable]",
                         "children": [
                           {
                             "kind": "TypeNominal",
@@ -13045,8 +13049,9 @@
                           },
                           {
                             "kind": "TypeNominal",
-                            "name": "ProtocolComposition",
-                            "printedName": "Any"
+                            "name": "Sendable",
+                            "printedName": "any Swift.Sendable",
+                            "usr": "s:s8SendableP"
                           }
                         ],
                         "usr": "s:SD"
@@ -13056,8 +13061,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:16KovaleeFramework5EventV10propertiesSDySSypGSgvs",
-                "mangledName": "$s16KovaleeFramework5EventV10propertiesSDySSypGSgvs",
+                "usr": "s:16KovaleeFramework5EventV10propertiesSDySSs8Sendable_pGSgvs",
+                "mangledName": "$s16KovaleeFramework5EventV10propertiesSDySSs8Sendable_pGSgvs",
                 "moduleName": "KovaleeFramework",
                 "implicit": true,
                 "accessorKind": "set"
@@ -13074,8 +13079,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:16KovaleeFramework5EventV10propertiesSDySSypGSgvM",
-                "mangledName": "$s16KovaleeFramework5EventV10propertiesSDySSypGSgvM",
+                "usr": "s:16KovaleeFramework5EventV10propertiesSDySSs8Sendable_pGSgvM",
+                "mangledName": "$s16KovaleeFramework5EventV10propertiesSDySSs8Sendable_pGSgvM",
                 "moduleName": "KovaleeFramework",
                 "implicit": true,
                 "accessorKind": "_modify"
@@ -13188,12 +13193,12 @@
               {
                 "kind": "TypeNominal",
                 "name": "Optional",
-                "printedName": "[Swift.String : Any]?",
+                "printedName": "[Swift.String : any Swift.Sendable]?",
                 "children": [
                   {
                     "kind": "TypeNominal",
                     "name": "Dictionary",
-                    "printedName": "[Swift.String : Any]",
+                    "printedName": "[Swift.String : any Swift.Sendable]",
                     "children": [
                       {
                         "kind": "TypeNominal",
@@ -13203,8 +13208,9 @@
                       },
                       {
                         "kind": "TypeNominal",
-                        "name": "ProtocolComposition",
-                        "printedName": "Any"
+                        "name": "Sendable",
+                        "printedName": "any Swift.Sendable",
+                        "usr": "s:s8SendableP"
                       }
                     ],
                     "usr": "s:SD"
@@ -13222,8 +13228,8 @@
               }
             ],
             "declKind": "Constructor",
-            "usr": "s:16KovaleeFramework5EventV4name10properties08isSystemC0ACSS_SDySSypGSgSbtcfc",
-            "mangledName": "$s16KovaleeFramework5EventV4name10properties08isSystemC0ACSS_SDySSypGSgSbtcfc",
+            "usr": "s:16KovaleeFramework5EventV4name10properties08isSystemC0ACSS_SDySSs8Sendable_pGSgSbtcfc",
+            "mangledName": "$s16KovaleeFramework5EventV4name10properties08isSystemC0ACSS_SDySSs8Sendable_pGSgSbtcfc",
             "moduleName": "KovaleeFramework",
             "declAttributes": [
               "AccessControl",
@@ -13373,6 +13379,13 @@
             "printedName": "Escapable",
             "usr": "s:s9EscapableP",
             "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
           },
           {
             "kind": "Conformance",
@@ -14645,8 +14658,8 @@
               }
             ],
             "declKind": "Var",
-            "usr": "s:SD16KovaleeFrameworkSSRszypRs_rlE13serializationSSvp",
-            "mangledName": "$sSD16KovaleeFrameworkSSRszypRs_rlE13serializationSSvp",
+            "usr": "s:SD16KovaleeFrameworkSSRszrlE13serializationSSvp",
+            "mangledName": "$sSD16KovaleeFrameworkSSRszrlE13serializationSSvp",
             "moduleName": "KovaleeFramework",
             "declAttributes": [
               "AccessControl"
@@ -14666,11 +14679,11 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:SD16KovaleeFrameworkSSRszypRs_rlE13serializationSSvg",
-                "mangledName": "$sSD16KovaleeFrameworkSSRszypRs_rlE13serializationSSvg",
+                "usr": "s:SD16KovaleeFrameworkSSRszrlE13serializationSSvg",
+                "mangledName": "$sSD16KovaleeFrameworkSSRszrlE13serializationSSvg",
                 "moduleName": "KovaleeFramework",
-                "genericSig": "<τ_0_0, τ_0_1 where τ_0_0 == Swift.String, τ_0_1 == Any>",
-                "sugared_genericSig": "<Key, Value where Key == Swift.String, Value == Any>",
+                "genericSig": "<τ_0_0, τ_0_1 where τ_0_0 == Swift.String>",
+                "sugared_genericSig": "<Key, Value where Key == Swift.String>",
                 "isFromExtension": true,
                 "accessorKind": "get"
               }
@@ -15015,7 +15028,7 @@
     {
       "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 11970,
+      "offset": 12028,
       "length": 5,
       "value": "false"
     },
@@ -15316,28 +15329,28 @@
     {
       "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/Event.swift",
       "kind": "BooleanLiteral",
-      "offset": 1181,
+      "offset": 1209,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/Event.swift",
       "kind": "BooleanLiteral",
-      "offset": 1362,
+      "offset": 1390,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/Event.swift",
       "kind": "StringLiteral",
-      "offset": 6662,
+      "offset": 6690,
       "length": 12,
       "value": "\"key_action\""
     },
     {
       "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/Event.swift",
       "kind": "StringLiteral",
-      "offset": 6700,
+      "offset": 6728,
       "length": 12,
       "value": "\"product_id\""
     },
