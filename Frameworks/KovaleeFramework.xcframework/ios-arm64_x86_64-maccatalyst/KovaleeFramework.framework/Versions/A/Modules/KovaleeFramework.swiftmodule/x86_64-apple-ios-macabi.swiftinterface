@@ -429,7 +429,7 @@ public enum BasicEvent {
   public var name: Swift.String {
     get
   }
-  public var properties: [Swift.String : Any]? {
+  public var properties: [Swift.String : any Swift.Sendable]? {
     get
   }
 }

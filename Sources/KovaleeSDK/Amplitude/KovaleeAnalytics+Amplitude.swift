@@ -83,7 +83,7 @@ public extension Kovalee {
     ///    - properties: the properties of the event that is going to be sent
     static func sendEvent(
         withName name: String,
-        andProperties properties: [String: Any]? = nil
+        andProperties properties: [String: any Sendable]? = nil
     ) {
         shared.kovaleeManager?.sendEvent(Event(name: name, properties: properties))
     }
