@@ -158,6 +158,8 @@ public enum StorageKeys : Swift.String, Swift.Sendable {
   case eventsSequencesFetched
   case sequenceVersion
   case parsingLogic
+  case rcInitialized
+  case rcIdCache
   public init?(rawValue: Swift.String)
   public typealias RawValue = Swift.String
   public var rawValue: Swift.String {
