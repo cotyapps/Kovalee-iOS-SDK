@@ -632,7 +632,8 @@
             "mangledName": "$s16KovaleeFramework0A7ManagerC9sendEventyyAA0E0VF",
             "moduleName": "KovaleeFramework",
             "declAttributes": [
-              "AccessControl"
+              "AccessControl",
+              "RawDocComment"
             ],
             "funcSelfKind": "NonMutating"
           },
@@ -13082,9 +13083,95 @@
             ]
           },
           {
+            "kind": "Var",
+            "name": "isSystemEvent",
+            "printedName": "isSystemEvent",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:16KovaleeFramework5EventV08isSystemC0Sbvp",
+            "mangledName": "$s16KovaleeFramework5EventV08isSystemC0Sbvp",
+            "moduleName": "KovaleeFramework",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:16KovaleeFramework5EventV08isSystemC0Sbvg",
+                "mangledName": "$s16KovaleeFramework5EventV08isSystemC0Sbvg",
+                "moduleName": "KovaleeFramework",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:16KovaleeFramework5EventV08isSystemC0Sbvs",
+                "mangledName": "$s16KovaleeFramework5EventV08isSystemC0Sbvs",
+                "moduleName": "KovaleeFramework",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:16KovaleeFramework5EventV08isSystemC0SbvM",
+                "mangledName": "$s16KovaleeFramework5EventV08isSystemC0SbvM",
+                "moduleName": "KovaleeFramework",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
             "kind": "Constructor",
             "name": "init",
-            "printedName": "init(name:properties:)",
+            "printedName": "init(name:properties:isSystemEvent:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -13125,11 +13212,18 @@
                 ],
                 "hasDefaultArg": true,
                 "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "hasDefaultArg": true,
+                "usr": "s:Sb"
               }
             ],
             "declKind": "Constructor",
-            "usr": "s:16KovaleeFramework5EventV4name10propertiesACSS_SDySSypGSgtcfc",
-            "mangledName": "$s16KovaleeFramework5EventV4name10propertiesACSS_SDySSypGSgtcfc",
+            "usr": "s:16KovaleeFramework5EventV4name10properties08isSystemC0ACSS_SDySSypGSgSbtcfc",
+            "mangledName": "$s16KovaleeFramework5EventV4name10properties08isSystemC0ACSS_SDySSypGSgSbtcfc",
             "moduleName": "KovaleeFramework",
             "declAttributes": [
               "AccessControl",
@@ -13140,7 +13234,7 @@
           {
             "kind": "Constructor",
             "name": "init",
-            "printedName": "init(event:)",
+            "printedName": "init(event:isSystemEvent:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -13153,11 +13247,18 @@
                 "name": "DefaultEvents",
                 "printedName": "KovaleeFramework.DefaultEvents",
                 "usr": "s:16KovaleeFramework13DefaultEventsO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "hasDefaultArg": true,
+                "usr": "s:Sb"
               }
             ],
             "declKind": "Constructor",
-            "usr": "s:16KovaleeFramework5EventV5eventAcA13DefaultEventsO_tcfc",
-            "mangledName": "$s16KovaleeFramework5EventV5eventAcA13DefaultEventsO_tcfc",
+            "usr": "s:16KovaleeFramework5EventV5event08isSystemC0AcA13DefaultEventsO_Sbtcfc",
+            "mangledName": "$s16KovaleeFramework5EventV5event08isSystemC0AcA13DefaultEventsO_Sbtcfc",
             "moduleName": "KovaleeFramework",
             "declAttributes": [
               "AccessControl"
@@ -14914,7 +15015,7 @@
     {
       "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 11152,
+      "offset": 11970,
       "length": 5,
       "value": "false"
     },
@@ -15214,15 +15315,29 @@
     },
     {
       "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/Event.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1181,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/Event.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1362,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/Event.swift",
       "kind": "StringLiteral",
-      "offset": 6301,
+      "offset": 6662,
       "length": 12,
       "value": "\"key_action\""
     },
     {
       "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/Event.swift",
       "kind": "StringLiteral",
-      "offset": 6339,
+      "offset": 6700,
       "length": 12,
       "value": "\"product_id\""
     },

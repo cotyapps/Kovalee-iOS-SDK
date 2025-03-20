@@ -438,8 +438,9 @@ public struct ParsingLogic {
 public struct Event {
   public var name: Swift.String
   public var properties: [Swift.String : Any]?
-  public init(name: Swift.String, properties: [Swift.String : Any]? = nil)
-  public init(event: KovaleeFramework.DefaultEvents)
+  public var isSystemEvent: Swift.Bool
+  public init(name: Swift.String, properties: [Swift.String : Any]? = nil, isSystemEvent: Swift.Bool = false)
+  public init(event: KovaleeFramework.DefaultEvents, isSystemEvent: Swift.Bool = false)
 }
 extension KovaleeFramework.Event : Swift.CustomStringConvertible {
   public var description: Swift.String {
