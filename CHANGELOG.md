@@ -7,6 +7,94 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 <<<<<<< HEAD
 =======
+## [2.0.0] - 2025-04-01
+### :sparkles: New Features
+- [`6a26ea5`](https://github.com/cotyapps/Kovalee-iOS-SDK/commit/6a26ea55cbd4e73cebe143d5cbc70f68c407030a) - Merge libraries *(commit by [@Moez6060](https://github.com/Moez6060))*
+- [`6fd789d`](https://github.com/cotyapps/Kovalee-iOS-SDK/commit/6fd789d3d362c549998931bf9938aecfeb31ed04) - Pods *(commit by [@ElMoez](https://github.com/ElMoez))*
+- [`6d78d4c`](https://github.com/cotyapps/Kovalee-iOS-SDK/commit/6d78d4c844560756a3614a75e61262b0152c2997) - FetchEvents *(commit by [@ElMoez](https://github.com/ElMoez))*
+- [`5a2cfd6`](https://github.com/cotyapps/Kovalee-iOS-SDK/commit/5a2cfd60a6496afe87e101a7dadee42e891d2c4f) - Framework update *(commit by [@ElMoez](https://github.com/ElMoez))*
+- [`7e56a75`](https://github.com/cotyapps/Kovalee-iOS-SDK/commit/7e56a753f71ede00a439504ccb5e26fb8733d651) - Debug console update *(commit by [@ElMoez](https://github.com/ElMoez))*
+- [`f8e3c9a`](https://github.com/cotyapps/Kovalee-iOS-SDK/commit/f8e3c9a6cb3e9a0893e96d07cd0935a209f9c256) - add sequenceVersion and parsingLogic to SDK console *(commit by [@ElMoez](https://github.com/ElMoez))*
+- [`53b73e9`](https://github.com/cotyapps/Kovalee-iOS-SDK/commit/53b73e9ad8f2af75626987afbbb7104c5a1451ce) - Refresh sequences *(commit by [@ElMoez](https://github.com/ElMoez))*
+- [`dfed623`](https://github.com/cotyapps/Kovalee-iOS-SDK/commit/dfed62374c2b27e40070d96a6104719cb5f3c892) - W2W *(commit by [@ElMoez](https://github.com/ElMoez))*
+- [`ea98fa9`](https://github.com/cotyapps/Kovalee-iOS-SDK/commit/ea98fa9e52fc5a13bc0dafc5541f3e3a19e6b389) - Framwork update *(commit by [@ElMoez](https://github.com/ElMoez))*
+- [`3369374`](https://github.com/cotyapps/Kovalee-iOS-SDK/commit/33693746181339b5b59ec74bab49b612852cbf3a) - Reset App *(commit by [@ElMoez](https://github.com/ElMoez))*
+- [`630b527`](https://github.com/cotyapps/Kovalee-iOS-SDK/commit/630b527cd50a1c9e9d2d7361371c5e078b958c24) - Haptic feedback *(commit by [@ElMoez](https://github.com/ElMoez))*
+- [`1d39655`](https://github.com/cotyapps/Kovalee-iOS-SDK/commit/1d39655187c7563749340498f5e3e7454fba8128) - updated parsing logic *(commit by [@fto-k](https://github.com/fto-k))*
+- [`4d83d60`](https://github.com/cotyapps/Kovalee-iOS-SDK/commit/4d83d60953ce118e6c56432447788da344ff9c0b) - bumped Fireabse minimum version to 11, removed unused dependencies *(commit by [@fto-k](https://github.com/fto-k))*
+- [`e99c3ec`](https://github.com/cotyapps/Kovalee-iOS-SDK/commit/e99c3ec0e2fa106679abe2a4f8aa52fa1a19f7ca) - refactoring code to structured concurrency *(commit by [@fto-k](https://github.com/fto-k))*
+- [`6fbc389`](https://github.com/cotyapps/Kovalee-iOS-SDK/commit/6fbc389f230a7921d689e54110be3df8b1ae4bd2) - migration to Swift 6 *(commit by [@fto-k](https://github.com/fto-k))*
+
+### :bug: Bug Fixes
+- [`ea00391`](https://github.com/cotyapps/Kovalee-iOS-SDK/commit/ea003917342041233fc6f8fb893c8b9a95e08a83) - Remove KovaleePaywall *(commit by [@ElMoez](https://github.com/ElMoez))*
+- [`29f9102`](https://github.com/cotyapps/Kovalee-iOS-SDK/commit/29f9102c8984af43f311dbfed2763b9def8ae3da) - License *(commit by [@ElMoez](https://github.com/ElMoez))*
+- [`46f67bd`](https://github.com/cotyapps/Kovalee-iOS-SDK/commit/46f67bd2f6d0cda23746947a6a323b3af0b6157c) - Remove Superwall *(commit by [@ElMoez](https://github.com/ElMoez))*
+- [`f89c5d1`](https://github.com/cotyapps/Kovalee-iOS-SDK/commit/f89c5d1f71f86843b3c4bdc1cc4f9d8718bccb60) - podspec homepages *(commit by [@ElMoez](https://github.com/ElMoez))*
+- [`f8cad36`](https://github.com/cotyapps/Kovalee-iOS-SDK/commit/f8cad36ba053af888e41856e7f582961cc8ace92) - remove comment *(commit by [@ElMoez](https://github.com/ElMoez))*
+- [`4bb6acc`](https://github.com/cotyapps/Kovalee-iOS-SDK/commit/4bb6accaabaaf382ce0ba0f1f4bb3c2187e83502) - updated gitignore *(commit by [@fto-k](https://github.com/fto-k))*
+- [`55478f9`](https://github.com/cotyapps/Kovalee-iOS-SDK/commit/55478f9a051a5fbdf0c34724288d8bc3a2428bbd) - Add setupConversionManager *(commit by [@ElMoez](https://github.com/ElMoez))*
+- [`426a4fb`](https://github.com/cotyapps/Kovalee-iOS-SDK/commit/426a4fb5844c1da5acea62091f10a4b17871c8c0) - Crash fix *(commit by [@ElMoez](https://github.com/ElMoez))*
+- [`3af9232`](https://github.com/cotyapps/Kovalee-iOS-SDK/commit/3af9232ee15b3522a040c4733ca56fb4354fb4a0) - merge conflict *(commit by [@fto-k](https://github.com/fto-k))*
+- [`90bcce0`](https://github.com/cotyapps/Kovalee-iOS-SDK/commit/90bcce030a77d4cfecf00f456a68d361075a83ae) - sequence file load logic *(commit by [@fto-k](https://github.com/fto-k))*
+- [`b60c707`](https://github.com/cotyapps/Kovalee-iOS-SDK/commit/b60c707ccc4f2608f0bf4288b23f985ec1de4ae7) - fixed issue in cvmanager *(commit by [@fto-k](https://github.com/fto-k))*
+- [`f6cfe98`](https://github.com/cotyapps/Kovalee-iOS-SDK/commit/f6cfe98be94152a11aadc7037ca615a35eb2668e) - updated hardcoded file naming convention *(commit by [@fto-k](https://github.com/fto-k))*
+- [`013baee`](https://github.com/cotyapps/Kovalee-iOS-SDK/commit/013baee9c8c9b00ab46638c68ff1308732e91ed9) - first_app_open redundant code *(commit by [@fto-k](https://github.com/fto-k))*
+- [`9c4aa73`](https://github.com/cotyapps/Kovalee-iOS-SDK/commit/9c4aa73164bb9dbd259f0ca8bc644411acb3812b) - rolled back hardcoded file name *(commit by [@fto-k](https://github.com/fto-k))*
+- [`95f9aa5`](https://github.com/cotyapps/Kovalee-iOS-SDK/commit/95f9aa58c4e99d690faf9d693fd97d5197198465) - add sdk dependency *(commit by [@ElMoez](https://github.com/ElMoez))*
+- [`a26f719`](https://github.com/cotyapps/Kovalee-iOS-SDK/commit/a26f7193bad7d60b0defa9430b42d2eb7c1eb053) - removed unnecessary Firebase params from KovaleeKeys *(commit by [@fto-k](https://github.com/fto-k))*
+- [`df1f01c`](https://github.com/cotyapps/Kovalee-iOS-SDK/commit/df1f01c2897e6d3e9ce7af6031dd94b5240b6a16) - updated events sequences folder structure + added a few utility functions + updated Debug console *(commit by [@fto-k](https://github.com/fto-k))*
+- [`77a0982`](https://github.com/cotyapps/Kovalee-iOS-SDK/commit/77a09826b9a9c2f03b6fa2005120c7f87cfcefd4) - possible fix for CV issue *(commit by [@fto-k](https://github.com/fto-k))*
+- [`c6e434b`](https://github.com/cotyapps/Kovalee-iOS-SDK/commit/c6e434b27b04c09575b81b9b3ec373089cf9267b) - debug console *(commit by [@fto-k](https://github.com/fto-k))*
+- [`99edf8b`](https://github.com/cotyapps/Kovalee-iOS-SDK/commit/99edf8b66826f22ca075e8a2ef4f47a46ea0c71a) - small UI update in debugger *(commit by [@fto-k](https://github.com/fto-k))*
+- [`7fecef5`](https://github.com/cotyapps/Kovalee-iOS-SDK/commit/7fecef5c36b09d642b7b7afdbd2d99c1431aa3d7) - cleanup function *(commit by [@fto-k](https://github.com/fto-k))*
+- [`b7b8068`](https://github.com/cotyapps/Kovalee-iOS-SDK/commit/b7b8068ca5ae0d1231fbd4e419958e6f84e9b407) - refreshing session count *(commit by [@fto-k](https://github.com/fto-k))*
+- [`1e618c6`](https://github.com/cotyapps/Kovalee-iOS-SDK/commit/1e618c6564adfc2567b78ecd15d61b26518a5e6b) - posible fix for CoarseValue *(commit by [@fto-k](https://github.com/fto-k))*
+- [`778c053`](https://github.com/cotyapps/Kovalee-iOS-SDK/commit/778c053fdbd4c55e37550bf13fb99e162f671dad) - coarse value parsing *(commit by [@fto-k](https://github.com/fto-k))*
+- [`84e3f53`](https://github.com/cotyapps/Kovalee-iOS-SDK/commit/84e3f53e03e0187fb5b359aa220de956ab38cdc4) - cleanup CV on appreset *(commit by [@fto-k](https://github.com/fto-k))*
+- [`a973f9d`](https://github.com/cotyapps/Kovalee-iOS-SDK/commit/a973f9d2a556f8e5d097de952bf9ba783e61c858) - updated parsing logic for payment events *(commit by [@fto-k](https://github.com/fto-k))*
+- [`2ad2928`](https://github.com/cotyapps/Kovalee-iOS-SDK/commit/2ad29289d51fe6384d659b23e7ec77be86362a0b) - renamed Kovalee purchases data model to avoid any conflict with StoreKit *(commit by [@fto-k](https://github.com/fto-k))*
+- [`bc29103`](https://github.com/cotyapps/Kovalee-iOS-SDK/commit/bc29103f8faa7993dc3d8e340244ea1510eccff4) - sdk won't send coarse value in case it's not set *(commit by [@fto-k](https://github.com/fto-k))*
+- [`147b671`](https://github.com/cotyapps/Kovalee-iOS-SDK/commit/147b671dd26dd83ce467a3f9d1ea0059a193d068) - enabled adid caching *(commit by [@fto-k](https://github.com/fto-k))*
+- [`78a90fa`](https://github.com/cotyapps/Kovalee-iOS-SDK/commit/78a90fa5de67aa6dc5d8811a392cc93ff0436428) - updated force unwrappign *(commit by [@fto-k](https://github.com/fto-k))*
+- [`baf01c8`](https://github.com/cotyapps/Kovalee-iOS-SDK/commit/baf01c806b331e73c3d1c168bd65d0e004694f09) - removed detached task *(commit by [@fto-k](https://github.com/fto-k))*
+- [`ed16dac`](https://github.com/cotyapps/Kovalee-iOS-SDK/commit/ed16dac91ad0b894b26749ecade34355f08a2e43) - moving current Storage code to Actor *(commit by [@fto-k](https://github.com/fto-k))*
+- [`3621e5a`](https://github.com/cotyapps/Kovalee-iOS-SDK/commit/3621e5ad8fd7fccd00a316a047ac48338685bf2e) - restored Google Analytics dependency *(commit by [@fto-k](https://github.com/fto-k))*
+- [`64c1e2f`](https://github.com/cotyapps/Kovalee-iOS-SDK/commit/64c1e2f2b0052a0787a5699a717b8dd644c22d64) - possible fix of late app_open event *(commit by [@fto-k](https://github.com/fto-k))*
+- [`4887a8c`](https://github.com/cotyapps/Kovalee-iOS-SDK/commit/4887a8c83f5b3a31f3ea72b7fe0f0eda0944fcbc) - split sdk library in different targets *(commit by [@fto-k](https://github.com/fto-k))*
+- [`92b2d2e`](https://github.com/cotyapps/Kovalee-iOS-SDK/commit/92b2d2ea353fe373f5978ac059ae8e4eb6584683) - structure concurrency in remote config target *(commit by [@fto-k](https://github.com/fto-k))*
+- [`a8bc1c6`](https://github.com/cotyapps/Kovalee-iOS-SDK/commit/a8bc1c6a7a348c66823e2143e286e65068243eea) - async functions after moving to structured concurrency *(commit by [@fto-k](https://github.com/fto-k))*
+- [`6ce03d4`](https://github.com/cotyapps/Kovalee-iOS-SDK/commit/6ce03d458373c1d299ebc175afd24fcd91573889) - fixed KovaleeUI *(commit by [@fto-k](https://github.com/fto-k))*
+- [`3eb9f41`](https://github.com/cotyapps/Kovalee-iOS-SDK/commit/3eb9f41e5a8f22f8d690eba1700860f117e03053) - Storage thread safety *(commit by [@fto-k](https://github.com/fto-k))*
+- [`589e818`](https://github.com/cotyapps/Kovalee-iOS-SDK/commit/589e818e6fcd5d0d466411514c8ac85f6af675ee) - Storage thread safety - rollback *(commit by [@fto-k](https://github.com/fto-k))*
+- [`f542b74`](https://github.com/cotyapps/Kovalee-iOS-SDK/commit/f542b745b99e89c714fba507fdf42b016c02d3ab) - Storage thread safety - rollback *(commit by [@fto-k](https://github.com/fto-k))*
+- [`0c547db`](https://github.com/cotyapps/Kovalee-iOS-SDK/commit/0c547dbd28c453e636a3b2a1c35708ee93238df4) - Storage thread safety - rollback *(commit by [@fto-k](https://github.com/fto-k))*
+- [`227379b`](https://github.com/cotyapps/Kovalee-iOS-SDK/commit/227379b8052e41b0ef02a7a69c95be44dcd6dbb6) - Storage thread safety - complete rollback *(commit by [@fto-k](https://github.com/fto-k))*
+- [`9716d71`](https://github.com/cotyapps/Kovalee-iOS-SDK/commit/9716d71747f4cfd68f880570edfcfb368f096f54) - Storage thread safety - complete rollback *(commit by [@fto-k](https://github.com/fto-k))*
+- [`5552def`](https://github.com/cotyapps/Kovalee-iOS-SDK/commit/5552defc83b7ba444d3c81e4d9bb2a30cf4b1623) - Storage thread safety - rollback *(commit by [@fto-k](https://github.com/fto-k))*
+- [`3694914`](https://github.com/cotyapps/Kovalee-iOS-SDK/commit/3694914388c04d7c7fdca61b65d0e534708fc8a3) - Storage thread safety - rollback *(commit by [@fto-k](https://github.com/fto-k))*
+- [`aed776e`](https://github.com/cotyapps/Kovalee-iOS-SDK/commit/aed776ee6ea347db2b36c3b6d026005dd6db5eeb) - Storage thread safety - Actor *(commit by [@fto-k](https://github.com/fto-k))*
+- [`9bf181d`](https://github.com/cotyapps/Kovalee-iOS-SDK/commit/9bf181d2ab8e63b53636437e6a78e7089b4591bd) - removed force unwrapping in purchase functions *(commit by [@fto-k](https://github.com/fto-k))*
+- [`05aedcc`](https://github.com/cotyapps/Kovalee-iOS-SDK/commit/05aedcc50e290bb3f78d186fdbeef02774b03e80) - postponing RC userId setting in case it's not yet initialized *(commit by [@fto-k](https://github.com/fto-k))*
+- [`5ce5c88`](https://github.com/cotyapps/Kovalee-iOS-SDK/commit/5ce5c88adf17988296bfc81de71fa760759f2025) - refactored Storage *(commit by [@fto-k](https://github.com/fto-k))*
+- [`ddd39e2`](https://github.com/cotyapps/Kovalee-iOS-SDK/commit/ddd39e2d6ea82e02eeca8f2d945f06d07a3a84c6) - setting default values in Storage *(commit by [@fto-k](https://github.com/fto-k))*
+- [`9e58788`](https://github.com/cotyapps/Kovalee-iOS-SDK/commit/9e587885a55d4cb176e30b18b75b79eade241076) - enabling events sending *(commit by [@fto-k](https://github.com/fto-k))*
+- [`1c047e5`](https://github.com/cotyapps/Kovalee-iOS-SDK/commit/1c047e5cd7624a7701778dacf4579cc97fcec8c4) - setting first_app_open *(commit by [@fto-k](https://github.com/fto-k))*
+- [`aaf6c0c`](https://github.com/cotyapps/Kovalee-iOS-SDK/commit/aaf6c0ce7b0a56307edbb9de3cf1b1894f666e96) - possible fix for sending multiple cv *(commit by [@fto-k](https://github.com/fto-k))*
+- [`62cd519`](https://github.com/cotyapps/Kovalee-iOS-SDK/commit/62cd519ae2c586aafb0f0bbe83ed8b85e025599d) - make EventsCache thread safe *(commit by [@fto-k](https://github.com/fto-k))*
+- [`7b68296`](https://github.com/cotyapps/Kovalee-iOS-SDK/commit/7b68296c9d12552347bf3fca683ea17e561e6fa1) - enabling events sending *(commit by [@fto-k](https://github.com/fto-k))*
+- [`1267db3`](https://github.com/cotyapps/Kovalee-iOS-SDK/commit/1267db3e5ce0ecbda8a0b0b2f04eadf01e30e64c) - merge conflict *(commit by [@fto-k](https://github.com/fto-k))*
+
+### :recycle: Refactors
+- [`f6c487f`](https://github.com/cotyapps/Kovalee-iOS-SDK/commit/f6c487ff5b31c0e4db8749a0e2413f33c1fb5801) - KovaleeManager code cleanup *(commit by [@fto-k](https://github.com/fto-k))*
+- [`775616c`](https://github.com/cotyapps/Kovalee-iOS-SDK/commit/775616cda716ef47f6234662eeee47eb64e2b48e) - removed KovaleeManager setup which is now handled by the manager itself *(commit by [@fto-k](https://github.com/fto-k))*
+
+### :wrench: Chores
+- [`179dcee`](https://github.com/cotyapps/Kovalee-iOS-SDK/commit/179dceebe88befbcaadb7176de01cea20854272a) - Update SDK Version *(commit by [@ElMoez](https://github.com/ElMoez))*
+- [`04a9bd6`](https://github.com/cotyapps/Kovalee-iOS-SDK/commit/04a9bd606d848aa410b1e4fcd61605f8daf2133f) - migrated to Swift 6 and structured concurrency *(commit by [@fto-k](https://github.com/fto-k))*
+- [`920435e`](https://github.com/cotyapps/Kovalee-iOS-SDK/commit/920435ef9598fb22dc7e992a93e3e16f1c8c2eb0) - bumped package *(commit by [@fto-k](https://github.com/fto-k))*
+- [`5745a3a`](https://github.com/cotyapps/Kovalee-iOS-SDK/commit/5745a3a11085252fc21ed00003179e6948822c69) - new xcframework build *(commit by [@fto-k](https://github.com/fto-k))*
+
+
 ## [1.12.5] - 2024-12-12
 ### :bug: Bug Fixes
 - [`4e15d37`](https://github.com/cotyapps/Kovalee-iOS-SDK/commit/4e15d37ebb42fd0ba0ea1b35fa2030044e6a1176) - OnboardingData properties are now public *(commit by [@fto-k](https://github.com/fto-k))*
@@ -657,3 +745,4 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 [1.12.3]: https://github.com/cotyapps/Kovalee-iOS-SDK/compare/1.12.2...1.12.3
 [1.12.4]: https://github.com/cotyapps/Kovalee-iOS-SDK/compare/1.12.3...1.12.4
 [1.12.5]: https://github.com/cotyapps/Kovalee-iOS-SDK/compare/1.12.4...1.12.5
+[2.0.0]: https://github.com/cotyapps/Kovalee-iOS-SDK/compare/1.12.5...2.0.0
