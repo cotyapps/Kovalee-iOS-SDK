@@ -1,9 +1,9 @@
-import KovaleeSDK
 import KovaleeFramework
+import KovaleeSDK
 
 extension SurveyManagerCreator: Creator {
     public func createImplementation(
-        withConfiguration configuration: Configuration,
+        withConfiguration _: Configuration,
         andKeys keys: KovaleeKeys
     ) -> Manager {
         return KovaleeSurveyManagerImpl(withKey: keys.survicate?.sdkId)
@@ -11,12 +11,11 @@ extension SurveyManagerCreator: Creator {
 }
 
 public extension Kovalee {
-
     /// Sets the delegate for Survey actions
     ///
     /// - Parameters:
     ///    - delegate: the delegate that will perform Survey actions
     static func setSurveyDelegate(_ delegate: KovaleeSurveyDelegate) {
-        Self.shared.kovaleeManager?.setSurveyDelegate(delegate)
+        shared.kovaleeManager?.setSurveyDelegate(delegate)
     }
 }

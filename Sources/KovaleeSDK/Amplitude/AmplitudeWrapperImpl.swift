@@ -1,4 +1,4 @@
-import AmplitudeSwift
+@preconcurrency import AmplitudeSwift
 import Foundation
 import KovaleeFramework
 

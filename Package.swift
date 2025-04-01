@@ -1,4 +1,4 @@
-// swift-tools-version: 5.5.0
+// swift-tools-version: 6.0.0
 // The swift-tools-version declares the minimum version of Swift required to build this package.
 
 import PackageDescription
@@ -12,14 +12,41 @@ let package = Package(
     products: [
         .library(
             name: .sdk,
+            targets: [.sdk]
+        ),
+        .library(
+            name: .sdkUI,
+            targets: [.sdkUI]
+        ),
+        .library(
+            name: .survey,
+            targets: [.survey]
+        ),
+        .library(
+            name: .kovaleePurchases,
             targets: [
-                .sdk, .sdkUI, .survey,
+                .kovaleePurchases,
+            ]
+        ),
+        .library(
+            name: .kovaleeAttribution,
+            targets: [
+                .kovaleeAttribution,
+            ]
+        ),
+        .library(
+            name: .kovaleeRemoteConfig,
+            targets: [
+                .kovaleeRemoteConfig,
             ]
         ),
     ],
     dependencies: [
         .package(url: "https://github.com/amplitude/Amplitude-Swift", .upToNextMajor(from: "1.4.3")),
         .package(url: "https://github.com/Survicate/survicate-ios-sdk", .upToNextMajor(from: "5.0.0")),
+        .package(url: "https://github.com/firebase/firebase-ios-sdk.git", .upToNextMajor(from: "11.0.0")),
+        .package(url: "https://github.com/RevenueCat/purchases-ios", .upToNextMajor(from: "5.0.0")),
+        .package(url: "https://github.com/adjust/ios_sdk", .upToNextMajor(from: "5.0.0")),
     ],
     targets: [
         .binaryTarget(
@@ -31,7 +58,7 @@ let package = Package(
             name: .sdk,
             dependencies: [
                 .framework,
-                .product(name: "AmplitudeSwift", package: "Amplitude-Swift"),
+                .amplitude,
             ],
             resources: [
                 .copy("PrivacyInfo.xcprivacy"),
@@ -47,11 +74,40 @@ let package = Package(
             name: .survey,
             dependencies: [
                 .sdk,
-                .product(
-                    name: "Survicate",
-                    package: "survicate-ios-sdk",
-                    condition: .when(platforms: [.iOS])
-                ),
+                .survicate,
+            ]
+        ),
+        .target(
+            name: .kovaleeRemoteConfig,
+            dependencies: [
+                .sdk,
+                .framework,
+                .firebaseRemoteConfig,
+                .firebaseAnalytics,
+            ],
+            resources: [
+                .copy("PrivacyInfo.xcprivacy"),
+            ]
+        ),
+        .target(
+            name: .kovaleePurchases,
+            dependencies: [
+                .sdk,
+                .revenueCat,
+                .kovaleeRemoteConfig,
+            ],
+            resources: [
+                .copy("PrivacyInfo.xcprivacy"),
+            ]
+        ),
+        .target(
+            name: .kovaleeAttribution,
+            dependencies: [
+                .sdk,
+                .AdjustSdk,
+            ],
+            resources: [
+                .copy("PrivacyInfo.xcprivacy"),
             ]
         ),
     ]
@@ -73,6 +129,48 @@ extension Target.Dependency {
     static var survey: Self {
         .target(name: .survey)
     }
+
+    static var kovaleeRemoteConfig: Self {
+        .target(name: .kovaleeRemoteConfig)
+    }
+
+    static var kovaleePurchases: Self {
+        .target(name: .kovaleePurchases)
+    }
+
+    static var kovaleeAttribution: Self {
+        .target(name: .kovaleeAttribution)
+    }
+}
+
+extension Target.Dependency {
+    static var survicate: Self {
+        .product(
+            name: "Survicate",
+            package: "survicate-ios-sdk",
+            condition: .when(platforms: [.iOS])
+        )
+    }
+
+    static var amplitude: Self {
+        .product(name: "AmplitudeSwift", package: "Amplitude-Swift")
+    }
+
+    static var revenueCat: Self {
+        .product(name: "RevenueCat", package: "purchases-ios")
+    }
+
+    static var AdjustSdk: Self {
+        .product(name: "AdjustSdk", package: "ios_sdk")
+    }
+
+    static var firebaseRemoteConfig: Self {
+        .product(name: "FirebaseRemoteConfig", package: "firebase-ios-sdk")
+    }
+
+    static var firebaseAnalytics: Self {
+        .product(name: "FirebaseAnalytics", package: "firebase-ios-sdk")
+    }
 }
 
 extension String {
@@ -80,4 +178,7 @@ extension String {
     static let sdk = "KovaleeSDK"
     static let sdkUI = "KovaleeSDKUI"
     static let survey = "KovaleeSurvey"
+    static let kovaleeRemoteConfig = "KovaleeRemoteConfig"
+    static let kovaleePurchases = "KovaleePurchases"
+    static let kovaleeAttribution = "KovaleeAttribution"
 }

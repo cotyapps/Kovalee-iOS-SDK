@@ -2,7 +2,7 @@ import Foundation
 import KovaleeFramework
 import KovaleeSDK
 #if !targetEnvironment(macCatalyst)
-    import Survicate
+    @preconcurrency import Survicate
 
     class KovaleeSurveyManagerImpl: SurveyManager, Manager {
         private enum Constants {
@@ -60,6 +60,8 @@ import KovaleeSDK
             self.delegate = delegate
         }
     }
+
+    extension KovaleeSurveyManagerImpl: @unchecked Sendable {}
 
     extension KovaleeSurveyManagerImpl: SurvicateDelegate {
         func surveyDisplayed(event _: SurveyDisplayedEvent) {
