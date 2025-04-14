@@ -50,7 +50,7 @@
 		</data>
 		<key>ios-arm64/dSYMs/KovaleeFramework.framework.dSYM/Contents/Resources/DWARF/KovaleeFramework</key>
 		<data>
-		ZXVlBdb4KkaAFwSpVm2hLI0CVys=
+		CZcPvBVTj7EXHLYHTZrW3heQim0=
 		</data>
 		<key>ios-arm64/dSYMs/KovaleeFramework.framework.dSYM/Contents/Resources/Relocations/aarch64/KovaleeFramework.yml</key>
 		<data>
@@ -118,7 +118,7 @@
 		</data>
 		<key>ios-arm64_x86_64-maccatalyst/dSYMs/KovaleeFramework.framework.dSYM/Contents/Resources/DWARF/KovaleeFramework</key>
 		<data>
-		qbhoMABJJssJL0ZFZ70skD1d8HQ=
+		sGCCSkPpF7lUbd+iec+WnFMdjUw=
 		</data>
 		<key>ios-arm64_x86_64-maccatalyst/dSYMs/KovaleeFramework.framework.dSYM/Contents/Resources/Relocations/aarch64/KovaleeFramework.yml</key>
 		<data>
@@ -194,7 +194,7 @@
 		</data>
 		<key>ios-arm64_x86_64-simulator/dSYMs/KovaleeFramework.framework.dSYM/Contents/Resources/DWARF/KovaleeFramework</key>
 		<data>
-		Xzh8t+TqCEM84jvat53qVKntYGI=
+		a69yM/AcpBwY3F4tyyMMBCSBJdc=
 		</data>
 		<key>ios-arm64_x86_64-simulator/dSYMs/KovaleeFramework.framework.dSYM/Contents/Resources/Relocations/aarch64/KovaleeFramework.yml</key>
 		<data>
@@ -332,11 +332,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			ZXVlBdb4KkaAFwSpVm2hLI0CVys=
+			CZcPvBVTj7EXHLYHTZrW3heQim0=
 			</data>
 			<key>hash2</key>
 			<data>
-			dbq561hv0dBEXG4YPltt+vMNz9wXWn0y/kk95+7DNF4=
+			TxeGWzznETcqRjIVMiLQ+3ex8LhWqRGcepqs3C0n8m0=
 			</data>
 		</dict>
 		<key>ios-arm64/dSYMs/KovaleeFramework.framework.dSYM/Contents/Resources/Relocations/aarch64/KovaleeFramework.yml</key>
@@ -544,11 +544,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			qbhoMABJJssJL0ZFZ70skD1d8HQ=
+			sGCCSkPpF7lUbd+iec+WnFMdjUw=
 			</data>
 			<key>hash2</key>
 			<data>
-			TPpJYTC1esZD5tKVlgf6mUIgBPzlF42LSR2UTikvBVY=
+			swZOP/90lwMph+Mhw/3pgw8VFS/u+3S/R0xjin+UHQ4=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-maccatalyst/dSYMs/KovaleeFramework.framework.dSYM/Contents/Resources/Relocations/aarch64/KovaleeFramework.yml</key>
@@ -753,11 +753,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Xzh8t+TqCEM84jvat53qVKntYGI=
+			a69yM/AcpBwY3F4tyyMMBCSBJdc=
 			</data>
 			<key>hash2</key>
 			<data>
-			TdTuuXvVoyc493liS1uqu4iryOhdp5UQQlMzcYKDHK0=
+			3ajmt4H1dQmEBmWGBsK9VK7khuS8W2k7rbY/k7lnqUU=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/dSYMs/KovaleeFramework.framework.dSYM/Contents/Resources/Relocations/aarch64/KovaleeFramework.yml</key>

@@ -72,8 +72,8 @@ final class AdjustWrapperImpl: NSObject, AttributionManager, Manager {
 }
 
 extension AdjustWrapperImpl: AdjustDelegate {
-    func adjustAttributionChanged(_: ADJAttribution?) {
-//        self.attributionAdidCallback(attribution?.adid)
+    func adjustSessionTrackingSucceeded(_ session: ADJSessionSuccess?) {
+        attributionAdidCallback(session?.adid)
     }
 
     func adjustConversionValueUpdated(_ fineValue: NSNumber?, coarseValue _: String?, lockWindow _: NSNumber?) {
