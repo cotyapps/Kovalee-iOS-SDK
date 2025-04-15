@@ -180,6 +180,7 @@ public enum StorageError : Swift.Error {
   case keyNotFound
   case nilValue
   case typeMismatch
+  case timeout
   public static func == (a: KovaleeFramework.StorageError, b: KovaleeFramework.StorageError) -> Swift.Bool
   public func hash(into hasher: inout Swift.Hasher)
   public var hashValue: Swift.Int {
@@ -188,10 +189,13 @@ public enum StorageError : Swift.Error {
 }
 public struct Storage : Swift.Sendable {
   public init(defaults: Foundation.UserDefaults = .standard)
-  public func get(_ key: KovaleeFramework.StorageKeys, _ defaultValue: (any Swift.Sendable)? = nil) -> KovaleeFramework.StorageResult
-  public func set(_ key: KovaleeFramework.StorageKeys, _ value: any Swift.Sendable)
+  public func get(_ key: KovaleeFramework.StorageKeys, _ defaultValue: (any Swift.Sendable)? = nil, setDefaultImmediately: Swift.Bool = false) -> KovaleeFramework.StorageResult
+  public func set(_ key: KovaleeFramework.StorageKeys, _ value: any Swift.Sendable, immediate: Swift.Bool = false)
   public func remove(_ key: KovaleeFramework.StorageKeys)
-  public func getValue<T>(_ key: KovaleeFramework.StorageKeys, default defaultValue: T) -> T where T : Swift.Sendable
+  public func batchUpdate(_ updates: [KovaleeFramework.StorageKeys : any Swift.Sendable], immediate: Swift.Bool = false)
+  public func saveImmediately()
+  public func invalidateCache(_ key: KovaleeFramework.StorageKeys? = nil)
+  public func getValue<T>(_ key: KovaleeFramework.StorageKeys, default defaultValue: T, immediate: Swift.Bool = false) -> T where T : Swift.Sendable
   public func getOptionalValue<T>(_ key: KovaleeFramework.StorageKeys) -> T?
   public func hasKey(_ key: KovaleeFramework.StorageKeys) -> Swift.Bool
 }

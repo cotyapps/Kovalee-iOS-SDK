@@ -7187,6 +7187,43 @@
             "moduleName": "KovaleeFramework"
           },
           {
+            "kind": "Var",
+            "name": "timeout",
+            "printedName": "timeout",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(KovaleeFramework.StorageError.Type) -> KovaleeFramework.StorageError",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "StorageError",
+                    "printedName": "KovaleeFramework.StorageError",
+                    "usr": "s:16KovaleeFramework12StorageErrorO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "KovaleeFramework.StorageError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "StorageError",
+                        "printedName": "KovaleeFramework.StorageError",
+                        "usr": "s:16KovaleeFramework12StorageErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:16KovaleeFramework12StorageErrorO7timeoutyA2CmF",
+            "mangledName": "$s16KovaleeFramework12StorageErrorO7timeoutyA2CmF",
+            "moduleName": "KovaleeFramework"
+          },
+          {
             "kind": "Function",
             "name": "==",
             "printedName": "==(_:_:)",
@@ -7372,7 +7409,7 @@
           {
             "kind": "Function",
             "name": "get",
-            "printedName": "get(_:_:)",
+            "printedName": "get(_:_:setDefaultImmediately:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -7400,11 +7437,18 @@
                 ],
                 "hasDefaultArg": true,
                 "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "hasDefaultArg": true,
+                "usr": "s:Sb"
               }
             ],
             "declKind": "Func",
-            "usr": "s:16KovaleeFramework7StorageV3getyAA0C6ResultOAA0C4KeysO_s8Sendable_pSgtF",
-            "mangledName": "$s16KovaleeFramework7StorageV3getyAA0C6ResultOAA0C4KeysO_s8Sendable_pSgtF",
+            "usr": "s:16KovaleeFramework7StorageV3get__21setDefaultImmediatelyAA0C6ResultOAA0C4KeysO_s8Sendable_pSgSbtF",
+            "mangledName": "$s16KovaleeFramework7StorageV3get__21setDefaultImmediatelyAA0C6ResultOAA0C4KeysO_s8Sendable_pSgSbtF",
             "moduleName": "KovaleeFramework",
             "declAttributes": [
               "AccessControl",
@@ -7415,7 +7459,7 @@
           {
             "kind": "Function",
             "name": "set",
-            "printedName": "set(_:_:)",
+            "printedName": "set(_:_:immediate:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -7433,11 +7477,18 @@
                 "name": "Sendable",
                 "printedName": "any Swift.Sendable",
                 "usr": "s:s8SendableP"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "hasDefaultArg": true,
+                "usr": "s:Sb"
               }
             ],
             "declKind": "Func",
-            "usr": "s:16KovaleeFramework7StorageV3setyyAA0C4KeysO_s8Sendable_ptF",
-            "mangledName": "$s16KovaleeFramework7StorageV3setyyAA0C4KeysO_s8Sendable_ptF",
+            "usr": "s:16KovaleeFramework7StorageV3set__9immediateyAA0C4KeysO_s8Sendable_pSbtF",
+            "mangledName": "$s16KovaleeFramework7StorageV3set__9immediateyAA0C4KeysO_s8Sendable_pSbtF",
             "moduleName": "KovaleeFramework",
             "declAttributes": [
               "AccessControl",
@@ -7474,8 +7525,113 @@
           },
           {
             "kind": "Function",
+            "name": "batchUpdate",
+            "printedName": "batchUpdate(_:immediate:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Dictionary",
+                "printedName": "[KovaleeFramework.StorageKeys : any Swift.Sendable]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "StorageKeys",
+                    "printedName": "KovaleeFramework.StorageKeys",
+                    "usr": "s:16KovaleeFramework11StorageKeysO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Sendable",
+                    "printedName": "any Swift.Sendable",
+                    "usr": "s:s8SendableP"
+                  }
+                ],
+                "usr": "s:SD"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "hasDefaultArg": true,
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:16KovaleeFramework7StorageV11batchUpdate_9immediateySDyAA0C4KeysOs8Sendable_pG_SbtF",
+            "mangledName": "$s16KovaleeFramework7StorageV11batchUpdate_9immediateySDyAA0C4KeysOs8Sendable_pG_SbtF",
+            "moduleName": "KovaleeFramework",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "saveImmediately",
+            "printedName": "saveImmediately()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:16KovaleeFramework7StorageV15saveImmediatelyyyF",
+            "mangledName": "$s16KovaleeFramework7StorageV15saveImmediatelyyyF",
+            "moduleName": "KovaleeFramework",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "invalidateCache",
+            "printedName": "invalidateCache(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "KovaleeFramework.StorageKeys?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "StorageKeys",
+                    "printedName": "KovaleeFramework.StorageKeys",
+                    "usr": "s:16KovaleeFramework11StorageKeysO"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:16KovaleeFramework7StorageV15invalidateCacheyyAA0C4KeysOSgF",
+            "mangledName": "$s16KovaleeFramework7StorageV15invalidateCacheyyAA0C4KeysOSgF",
+            "moduleName": "KovaleeFramework",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
             "name": "getValue",
-            "printedName": "getValue(_:default:)",
+            "printedName": "getValue(_:default:immediate:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -7492,11 +7648,18 @@
                 "kind": "TypeNominal",
                 "name": "GenericTypeParam",
                 "printedName": "τ_0_0"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "hasDefaultArg": true,
+                "usr": "s:Sb"
               }
             ],
             "declKind": "Func",
-            "usr": "s:16KovaleeFramework7StorageV8getValue_7defaultxAA0C4KeysO_xts8SendableRzlF",
-            "mangledName": "$s16KovaleeFramework7StorageV8getValue_7defaultxAA0C4KeysO_xts8SendableRzlF",
+            "usr": "s:16KovaleeFramework7StorageV8getValue_7default9immediatexAA0C4KeysO_xSbts8SendableRzlF",
+            "mangledName": "$s16KovaleeFramework7StorageV8getValue_7default9immediatexAA0C4KeysO_xSbts8SendableRzlF",
             "moduleName": "KovaleeFramework",
             "genericSig": "<τ_0_0 where τ_0_0 : Swift.Sendable>",
             "sugared_genericSig": "<T where T : Swift.Sendable>",
@@ -15531,6 +15694,104 @@
       "offset": 1033,
       "length": 13,
       "value": "\"rc_id_cache\""
+    },
+    {
+      "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/Utils\/Storage.swift",
+      "kind": "Dictionary",
+      "offset": 3131,
+      "length": 3,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/Utils\/Storage.swift",
+      "kind": "Dictionary",
+      "offset": 3196,
+      "length": 3,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/Utils\/Storage.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3359,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/Utils\/Storage.swift",
+      "kind": "FloatLiteral",
+      "offset": 3406,
+      "length": 3,
+      "value": "3.0"
+    },
+    {
+      "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/Utils\/Storage.swift",
+      "kind": "StringLiteral",
+      "offset": 3491,
+      "length": 32,
+      "value": "\"com.kovalee.storage.writeQueue\""
+    },
+    {
+      "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/Utils\/Storage.swift",
+      "kind": "BooleanLiteral",
+      "offset": 7064,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/Utils\/Storage.swift",
+      "kind": "BooleanLiteral",
+      "offset": 9863,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/Utils\/Storage.swift",
+      "kind": "BooleanLiteral",
+      "offset": 10597,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/Utils\/Storage.swift",
+      "kind": "FloatLiteral",
+      "offset": 14883,
+      "length": 3,
+      "value": "3.0"
+    },
+    {
+      "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/Utils\/Storage.swift",
+      "kind": "Dictionary",
+      "offset": 16646,
+      "length": 3,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/Utils\/Storage.swift",
+      "kind": "BooleanLiteral",
+      "offset": 17802,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/Utils\/Storage.swift",
+      "kind": "BooleanLiteral",
+      "offset": 18070,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/Utils\/Storage.swift",
+      "kind": "BooleanLiteral",
+      "offset": 18486,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/Utils\/Storage.swift",
+      "kind": "BooleanLiteral",
+      "offset": 19150,
+      "length": 5,
+      "value": "false"
     },
     {
       "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/Event.swift",
