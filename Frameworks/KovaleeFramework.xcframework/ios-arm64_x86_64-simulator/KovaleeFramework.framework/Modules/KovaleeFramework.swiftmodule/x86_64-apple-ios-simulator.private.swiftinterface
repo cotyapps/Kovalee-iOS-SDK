@@ -59,7 +59,7 @@ public class KovaleeManager {
 extension KovaleeFramework.KovaleeManager {
   public func setupConversionManager()
   public func flushCachedEvents()
-  public func fetchEventsSequence() async
+  public func fetchEventsSequence(sequenceVersion: Swift.Int) async
 }
 public enum KLogger {
   public static var logLevel: KovaleeFramework.LogLevel {
