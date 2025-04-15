@@ -7,6 +7,15 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 <<<<<<< HEAD
 =======
+## [2.0.3] - 2025-04-15
+### :sparkles: New Features
+- [`cf20f3e`](https://github.com/cotyapps/Kovalee-iOS-SDK/commit/cf20f3e3bc1ec6f91ccdb161259a06a337c3e02f) - improved SDK State Management *(commit by [@fto-k](https://github.com/fto-k))*
+
+### :bug: Bug Fixes
+- [`942855f`](https://github.com/cotyapps/Kovalee-iOS-SDK/commit/942855ff8e008e31f5eb4c5abe662bf71c7c77ba) - small fix for SDK storage *(commit by [@fto-k](https://github.com/fto-k))*
+- [`81ad8c8`](https://github.com/cotyapps/Kovalee-iOS-SDK/commit/81ad8c81121be993c8ecc2cc57a0c71ace24cf87) - loop if no events sequence is found *(commit by [@fto-k](https://github.com/fto-k))*
+
+
 ## [2.0.1] - 2025-04-15
 ### :sparkles: New Features
 - [`fe1a1a2`](https://github.com/cotyapps/Kovalee-iOS-SDK/commit/fe1a1a2186fe3175081704d85009b1586812924d) - exposing AttributionDelegate *(commit by [@fto-k](https://github.com/fto-k))*
@@ -759,3 +768,4 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 [1.12.5]: https://github.com/cotyapps/Kovalee-iOS-SDK/compare/1.12.4...1.12.5
 [2.0.0]: https://github.com/cotyapps/Kovalee-iOS-SDK/compare/1.12.5...2.0.0
 [2.0.1]: https://github.com/cotyapps/Kovalee-iOS-SDK/compare/2.0.0...2.0.1
+[2.0.3]: https://github.com/cotyapps/Kovalee-iOS-SDK/compare/2.0.2...2.0.3
