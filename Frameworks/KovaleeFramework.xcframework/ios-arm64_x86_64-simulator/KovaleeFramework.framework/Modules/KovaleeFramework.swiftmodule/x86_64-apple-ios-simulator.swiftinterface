@@ -21,6 +21,7 @@ public class KovaleeManager {
   public func promptTrackingAuthorization(completion: @escaping (AppTrackingTransparency.ATTrackingManager.AuthorizationStatus) -> Swift.Void)
   public func getAttributionAdid() async -> Swift.String?
   public func attributionCallback(withAdid adid: Swift.String?)
+  public func setAttributionDelegate(_ delegate: any KovaleeFramework.KovaleeAttributionDelegate)
   public func setDefaultUserId()
   public func installationDate() -> Foundation.Date?
   public func appOpeningCount() -> Swift.Int
@@ -220,8 +221,10 @@ public protocol AttributionManager : Swift.Sendable {
   func promptTrackingAuthorization(completion: @escaping (AppTrackingTransparency.ATTrackingManager.AuthorizationStatus) -> Swift.Void)
   func sendConversionValue(value: Swift.Int, coarseValue: Swift.String?, completion: @escaping ((any Swift.Error)?) -> Swift.Void)
   func setDataCollectionEnabled(_ enabled: Swift.Bool)
-  var attributionAdidCallback: @Sendable (Swift.String?) -> Swift.Void { get }
-  var configuration: KovaleeFramework.AdjustConfiguration { get }
+  func setAttributionDelegate(_ delegate: any KovaleeFramework.KovaleeAttributionDelegate)
+}
+public protocol KovaleeAttributionDelegate : Swift.Sendable {
+  func adjustDeferredDeeplinkReceived(_ deeplink: Foundation.URL?) -> Swift.Bool
 }
 public protocol EventTrackerManager : Swift.Sendable {
   func sendEvent(_ event: KovaleeFramework.Event)

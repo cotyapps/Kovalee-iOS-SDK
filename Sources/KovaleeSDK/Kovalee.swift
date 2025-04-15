@@ -195,7 +195,7 @@ public protocol Creator {
 }
 
 public struct EventsTrackerManagerCreator {}
-public struct AttributionManagerCreator: Sendable {
+public struct AttributionManagerCreator {
     public var attributionAdidCallback: @Sendable (String?) -> Void
 }
 

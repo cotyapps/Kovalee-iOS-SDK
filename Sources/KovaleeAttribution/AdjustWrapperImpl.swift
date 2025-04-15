@@ -67,9 +67,17 @@ final class AdjustWrapperImpl: NSObject, AttributionManager, Manager {
         }
     }
 
+    func setAttributionDelegate(_ delegate: KovaleeFramework.KovaleeAttributionDelegate) {
+        self.delegate = delegate
+    }
+
     let attributionAdidCallback: @Sendable (String?) -> Void
     let configuration: AdjustConfiguration
+
+    private var delegate: KovaleeFramework.KovaleeAttributionDelegate?
 }
+
+extension AdjustWrapperImpl: @unchecked Sendable {}
 
 extension AdjustWrapperImpl: AdjustDelegate {
     func adjustSessionTrackingSucceeded(_ session: ADJSessionSuccess?) {
@@ -78,6 +86,10 @@ extension AdjustWrapperImpl: AdjustDelegate {
 
     func adjustConversionValueUpdated(_ fineValue: NSNumber?, coarseValue _: String?, lockWindow _: NSNumber?) {
         KLogger.debug("Successfully Updated Conversion Value: \(String(describing: fineValue))")
+    }
+
+    func adjustDeferredDeeplinkReceived(_ deeplink: URL?) -> Bool {
+        delegate?.adjustDeferredDeeplinkReceived(deeplink) ?? false
     }
 }
 

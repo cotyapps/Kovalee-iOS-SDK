@@ -308,6 +308,32 @@
           },
           {
             "kind": "Function",
+            "name": "setAttributionDelegate",
+            "printedName": "setAttributionDelegate(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "KovaleeAttributionDelegate",
+                "printedName": "any KovaleeFramework.KovaleeAttributionDelegate",
+                "usr": "s:16KovaleeFramework0A19AttributionDelegateP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:16KovaleeFramework0A7ManagerC22setAttributionDelegateyyAA0aeF0_pF",
+            "mangledName": "$s16KovaleeFramework0A7ManagerC22setAttributionDelegateyyAA0aeF0_pF",
+            "moduleName": "KovaleeFramework",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
             "name": "setDefaultUserId",
             "printedName": "setDefaultUserId()",
             "children": [
@@ -8223,133 +8249,111 @@
             "funcSelfKind": "NonMutating"
           },
           {
-            "kind": "Var",
-            "name": "attributionAdidCallback",
-            "printedName": "attributionAdidCallback",
-            "children": [
-              {
-                "kind": "TypeFunc",
-                "name": "Function",
-                "printedName": "(Swift.String?) -> ()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Optional",
-                    "printedName": "Swift.String?",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "String",
-                        "printedName": "Swift.String",
-                        "usr": "s:SS"
-                      }
-                    ],
-                    "usr": "s:Sq"
-                  }
-                ]
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:16KovaleeFramework18AttributionManagerP23attributionAdidCallbackyySSSgYbcvp",
-            "mangledName": "$s16KovaleeFramework18AttributionManagerP23attributionAdidCallbackyySSSgYbcvp",
-            "moduleName": "KovaleeFramework",
-            "protocolReq": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeFunc",
-                    "name": "Function",
-                    "printedName": "(Swift.String?) -> ()",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Void",
-                        "printedName": "()"
-                      },
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Optional",
-                        "printedName": "Swift.String?",
-                        "children": [
-                          {
-                            "kind": "TypeNominal",
-                            "name": "String",
-                            "printedName": "Swift.String",
-                            "usr": "s:SS"
-                          }
-                        ],
-                        "usr": "s:Sq"
-                      }
-                    ]
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:16KovaleeFramework18AttributionManagerP23attributionAdidCallbackyySSSgYbcvg",
-                "mangledName": "$s16KovaleeFramework18AttributionManagerP23attributionAdidCallbackyySSSgYbcvg",
-                "moduleName": "KovaleeFramework",
-                "genericSig": "<τ_0_0 where τ_0_0 : KovaleeFramework.AttributionManager>",
-                "sugared_genericSig": "<Self where Self : KovaleeFramework.AttributionManager>",
-                "protocolReq": true,
-                "reqNewWitnessTableEntry": true,
-                "accessorKind": "get"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
-            "name": "configuration",
-            "printedName": "configuration",
+            "kind": "Function",
+            "name": "setAttributionDelegate",
+            "printedName": "setAttributionDelegate(_:)",
             "children": [
               {
                 "kind": "TypeNominal",
-                "name": "AdjustConfiguration",
-                "printedName": "KovaleeFramework.AdjustConfiguration",
-                "usr": "s:16KovaleeFramework19AdjustConfigurationV"
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "KovaleeAttributionDelegate",
+                "printedName": "any KovaleeFramework.KovaleeAttributionDelegate",
+                "usr": "s:16KovaleeFramework0A19AttributionDelegateP"
               }
             ],
-            "declKind": "Var",
-            "usr": "s:16KovaleeFramework18AttributionManagerP13configurationAA19AdjustConfigurationVvp",
-            "mangledName": "$s16KovaleeFramework18AttributionManagerP13configurationAA19AdjustConfigurationVvp",
+            "declKind": "Func",
+            "usr": "s:16KovaleeFramework18AttributionManagerP03setC8DelegateyyAA0acF0_pF",
+            "mangledName": "$s16KovaleeFramework18AttributionManagerP03setC8DelegateyyAA0acF0_pF",
             "moduleName": "KovaleeFramework",
+            "genericSig": "<τ_0_0 where τ_0_0 : KovaleeFramework.AttributionManager>",
+            "sugared_genericSig": "<Self where Self : KovaleeFramework.AttributionManager>",
             "protocolReq": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "AdjustConfiguration",
-                    "printedName": "KovaleeFramework.AdjustConfiguration",
-                    "usr": "s:16KovaleeFramework19AdjustConfigurationV"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:16KovaleeFramework18AttributionManagerP13configurationAA19AdjustConfigurationVvg",
-                "mangledName": "$s16KovaleeFramework18AttributionManagerP13configurationAA19AdjustConfigurationVvg",
-                "moduleName": "KovaleeFramework",
-                "genericSig": "<τ_0_0 where τ_0_0 : KovaleeFramework.AttributionManager>",
-                "sugared_genericSig": "<Self where Self : KovaleeFramework.AttributionManager>",
-                "protocolReq": true,
-                "reqNewWitnessTableEntry": true,
-                "accessorKind": "get"
-              }
-            ]
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
           }
         ],
         "declKind": "Protocol",
         "usr": "s:16KovaleeFramework18AttributionManagerP",
         "mangledName": "$s16KovaleeFramework18AttributionManagerP",
+        "moduleName": "KovaleeFramework",
+        "genericSig": "<τ_0_0 : Swift.Sendable>",
+        "sugared_genericSig": "<Self : Swift.Sendable>",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "KovaleeAttributionDelegate",
+        "printedName": "KovaleeAttributionDelegate",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "adjustDeferredDeeplinkReceived",
+            "printedName": "adjustDeferredDeeplinkReceived(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Foundation.URL?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "URL",
+                    "printedName": "Foundation.URL",
+                    "usr": "s:10Foundation3URLV"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:16KovaleeFramework0A19AttributionDelegateP30adjustDeferredDeeplinkReceivedySb10Foundation3URLVSgF",
+            "mangledName": "$s16KovaleeFramework0A19AttributionDelegateP30adjustDeferredDeeplinkReceivedySb10Foundation3URLVSgF",
+            "moduleName": "KovaleeFramework",
+            "genericSig": "<τ_0_0 where τ_0_0 : KovaleeFramework.KovaleeAttributionDelegate>",
+            "sugared_genericSig": "<Self where Self : KovaleeFramework.KovaleeAttributionDelegate>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Protocol",
+        "usr": "s:16KovaleeFramework0A19AttributionDelegateP",
+        "mangledName": "$s16KovaleeFramework0A19AttributionDelegateP",
         "moduleName": "KovaleeFramework",
         "genericSig": "<τ_0_0 : Swift.Sendable>",
         "sugared_genericSig": "<Self : Swift.Sendable>",
@@ -15030,7 +15034,7 @@
     {
       "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/KovaleeManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 12028,
+      "offset": 12165,
       "length": 5,
       "value": "false"
     },

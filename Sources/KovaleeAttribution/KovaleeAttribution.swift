@@ -17,9 +17,7 @@ extension AttributionManagerCreator: Creator {
                 environment: configuration.environment.rawValue,
                 token: key
             ),
-            attributionAdidCallback: {
-                self.attributionAdidCallback($0)
-            }
+            attributionAdidCallback: attributionAdidCallback
         )
     }
 }
@@ -60,5 +58,9 @@ public extension Kovalee {
     /// - Returns: the Adjust identifier value
     static func getAttributionAdid() async -> String? {
         await shared.kovaleeManager?.getAttributionAdid()
+    }
+
+    static func setAttributionDelegate(_ delegate: KovaleeAttributionDelegate) {
+        shared.kovaleeManager?.setAttributionDelegate(delegate)
     }
 }
