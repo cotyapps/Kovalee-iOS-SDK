@@ -7,6 +7,18 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 <<<<<<< HEAD
 =======
+## [2.0.1] - 2025-04-15
+### :sparkles: New Features
+- [`fe1a1a2`](https://github.com/cotyapps/Kovalee-iOS-SDK/commit/fe1a1a2186fe3175081704d85009b1586812924d) - exposing AttributionDelegate *(commit by [@fto-k](https://github.com/fto-k))*
+- [`5c1cb94`](https://github.com/cotyapps/Kovalee-iOS-SDK/commit/5c1cb940927ab2f3119b627b5f2f706941c380c4) - add new user property if user comes from TestFlight *(commit by [@fto-k](https://github.com/fto-k))*
+
+### :bug: Bug Fixes
+- [`501b6b3`](https://github.com/cotyapps/Kovalee-iOS-SDK/commit/501b6b3183da924f87d25b2c88cfd3ef12dfe332) - restore Attribution Callback *(commit by [@fto-k](https://github.com/fto-k))*
+
+### :wrench: Chores
+- [`97c455f`](https://github.com/cotyapps/Kovalee-iOS-SDK/commit/97c455f3e05444ffa58952af5c65b2921ca9a997) - changed RC package to https://github.com/RevenueCat/purchases-ios-spm *(commit by [@fto-k](https://github.com/fto-k))*
+
+
 ## [2.0.0] - 2025-04-01
 ### :sparkles: New Features
 - [`6a26ea5`](https://github.com/cotyapps/Kovalee-iOS-SDK/commit/6a26ea55cbd4e73cebe143d5cbc70f68c407030a) - Merge libraries *(commit by [@Moez6060](https://github.com/Moez6060))*
@@ -746,3 +758,4 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 [1.12.4]: https://github.com/cotyapps/Kovalee-iOS-SDK/compare/1.12.3...1.12.4
 [1.12.5]: https://github.com/cotyapps/Kovalee-iOS-SDK/compare/1.12.4...1.12.5
 [2.0.0]: https://github.com/cotyapps/Kovalee-iOS-SDK/compare/1.12.5...2.0.0
+[2.0.1]: https://github.com/cotyapps/Kovalee-iOS-SDK/compare/2.0.0...2.0.1
