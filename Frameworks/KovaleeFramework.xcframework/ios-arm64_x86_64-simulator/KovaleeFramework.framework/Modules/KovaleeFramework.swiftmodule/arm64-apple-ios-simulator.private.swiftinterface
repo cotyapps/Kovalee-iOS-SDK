@@ -202,6 +202,11 @@ extension Foundation.ProcessInfo {
     get
   }
 }
+extension Foundation.Bundle {
+  public static var isRunningOnTestFlight: Swift.Bool {
+    get
+  }
+}
 public struct AdjustConfiguration : Swift.Sendable {
   public enum Environment : Swift.String, Swift.Sendable {
     case production
@@ -410,6 +415,7 @@ public enum UserProperty {
   case adid(value: Swift.String)
   case abTestVersion(value: Swift.String)
   case sdkVersion(value: Swift.String)
+  case environment(value: Swift.String)
   public var key: Swift.String {
     get
   }
