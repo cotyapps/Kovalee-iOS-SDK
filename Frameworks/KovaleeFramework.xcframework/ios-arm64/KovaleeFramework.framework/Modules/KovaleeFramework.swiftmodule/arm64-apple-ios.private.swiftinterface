@@ -388,7 +388,7 @@ public enum DefaultEvents {
   case paymentRestoreFinish(source: Swift.String)
   case paymentRestoreFail(source: Swift.String)
   case paymentStart(source: Swift.String, product: Swift.String)
-  case updateConversionValue(number: Swift.Int)
+  case updateConversionValue(number: Swift.Int, category: Swift.String)
   case conversionValueError(error: Swift.String)
   case adsInterstitialShow
   case adsRewardedShow
