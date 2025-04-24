@@ -10807,12 +10807,12 @@
               {
                 "kind": "TypeFunc",
                 "name": "Function",
-                "printedName": "(KovaleeFramework.DefaultEvents.Type) -> (Swift.Int) -> KovaleeFramework.DefaultEvents",
+                "printedName": "(KovaleeFramework.DefaultEvents.Type) -> (Swift.Int, Swift.String) -> KovaleeFramework.DefaultEvents",
                 "children": [
                   {
                     "kind": "TypeFunc",
                     "name": "Function",
-                    "printedName": "(Swift.Int) -> KovaleeFramework.DefaultEvents",
+                    "printedName": "(Swift.Int, Swift.String) -> KovaleeFramework.DefaultEvents",
                     "children": [
                       {
                         "kind": "TypeNominal",
@@ -10823,13 +10823,19 @@
                       {
                         "kind": "TypeNominal",
                         "name": "Tuple",
-                        "printedName": "(number: Swift.Int)",
+                        "printedName": "(number: Swift.Int, category: Swift.String)",
                         "children": [
                           {
                             "kind": "TypeNominal",
                             "name": "Int",
                             "printedName": "Swift.Int",
                             "usr": "s:Si"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
                           }
                         ]
                       }
@@ -10852,8 +10858,8 @@
               }
             ],
             "declKind": "EnumElement",
-            "usr": "s:16KovaleeFramework13DefaultEventsO21updateConversionValueyACSi_tcACmF",
-            "mangledName": "$s16KovaleeFramework13DefaultEventsO21updateConversionValueyACSi_tcACmF",
+            "usr": "s:16KovaleeFramework13DefaultEventsO21updateConversionValueyACSi_SStcACmF",
+            "mangledName": "$s16KovaleeFramework13DefaultEventsO21updateConversionValueyACSi_SStcACmF",
             "moduleName": "KovaleeFramework"
           },
           {
