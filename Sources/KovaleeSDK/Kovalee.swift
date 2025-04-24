@@ -27,12 +27,7 @@ public final class Kovalee {
     /// - Parameters:
     ///   - configuration: the configuration to be used by Kovalee
     public static func initialize(configuration: Configuration) {
-        setInitializedManager(.init(configuration: configuration, storage: Storage()))
-    }
-
-    /// used for testing purpose mainly
-    static func initialize(configuration: Configuration, storage: Storage) {
-        setInitializedManager(.init(configuration: configuration, storage: storage))
+        setInitializedManager(.init(configuration: configuration))
     }
 
     /// terminate current Kovalee instance
@@ -46,7 +41,7 @@ public final class Kovalee {
             return manager
         } else if ProcessInfo.processInfo.environment["XCODE_RUNNING_FOR_PREVIEWS"] == "1" {
             // SwiftUI Previews, this is not a real launch of the app, therefore mock data is used
-            let newManager = self.init(configuration: .preview, storage: Storage())
+            let newManager = self.init(configuration: .preview)
             setInitializedManager(newManager)
             return newManager
         } else {
@@ -56,13 +51,13 @@ public final class Kovalee {
         }
     }
 
-    private init(configuration: Configuration, storage _: Storage) {
+    private init(configuration: Configuration) {
         self.configuration = configuration
 
         KLogger.logLevel = configuration.logLevel
 
         do {
-            keys = try Reader.kovaleeKeysReader.load(configuration.keysFileUrl)
+            let keys = try Reader.kovaleeKeysReader.load(configuration.keysFileUrl)
 
             guard let eventTracker = EventsTrackerManagerCreator().createImplementation(
                 withConfiguration: configuration,
@@ -71,15 +66,30 @@ public final class Kovalee {
                 fatalError("Failed to create EventTrackerManager")
             }
 
+            guard let attributionManager = Kovalee.setupCapabilities(forItem: .attribution, withConfiguration: configuration, andKeys: keys) as? AttributionManager else {
+                fatalError("Failed to create EventTrackerManager")
+            }
+
+            guard let purchaseManager = Kovalee.setupCapabilities(forItem: .purchases, withConfiguration: configuration, andKeys: keys) as? PurchaseManager else {
+                fatalError("Failed to create EventTrackerManager")
+            }
+
+            guard let remoteConfigManager = Kovalee.setupCapabilities(forItem: .remoteConfiguration, withConfiguration: configuration, andKeys: keys) as? RemoteConfigurationManager else {
+                fatalError("Failed to create EventTrackerManager")
+            }
+
+            let surveyManager = Kovalee.setupCapabilities(forItem: .survey, withConfiguration: configuration, andKeys: keys) as? SurveyManager
+
             kovaleeManager = KovaleeManager(
                 keys: keys,
                 sdkVersion: SDK_VERSION,
                 eventTrackerManager: eventTracker,
+                attributionManager: attributionManager,
+                purchaseManager: purchaseManager,
+                remoteConfigManager: remoteConfigManager,
+                surveyManager: surveyManager,
                 alreadyIntegrated: configuration.alreadyIntegrated
             )
-
-            setupCapabilities()
-
             kovaleeManager?.setDefaultUserId()
             kovaleeManager?.sendAppOpenEvent()
         } catch {
@@ -89,9 +99,9 @@ public final class Kovalee {
         }
     }
 
-    public var keys: KovaleeKeys
+    //    public var keys: KovaleeKeys
     public var kovaleeManager: KovaleeManager?
-    public var configuration: Configuration
+    public let configuration: Configuration
 }
 
 // MARK: - Private Singleton Implementation
@@ -120,53 +130,57 @@ private extension Kovalee {
 // MARK: - Capabilities Setup
 
 extension Kovalee {
-    private func setupCapabilities() {
-        for item in Capabilities.allCases {
-            switch item {
-            case .attribution:
-                let creator = AttributionManagerCreator { adid in
-                    Kovalee.performAttributionCallback(with: adid)
-                }
-                if let attributionManager = (creator as? Creator)?.createImplementation(
-                    withConfiguration: configuration,
-                    andKeys: keys
-                ) as? AttributionManager {
-                    kovaleeManager?.setupAttributionManager(adjustWrapper: attributionManager)
-                }
-
-            case .purchases:
-                let creator = PurchaseManagerCreator()
-                if let purchaseManager = (creator as? Creator)?.createImplementation(
-                    withConfiguration: configuration,
-                    andKeys: keys
-                ) as? PurchaseManager {
-                    kovaleeManager?.setupPurchaseManager(purchaseManager: purchaseManager)
-                }
-
-            case .remoteConfiguration:
-                let creator = RemoteConfigManagerCreator()
-                if let remoteConfigManager = (creator as? Creator)?.createImplementation(
-                    withConfiguration: configuration,
-                    andKeys: keys
-                ) as? RemoteConfigurationManager {
-                    kovaleeManager?.setupRemoteConfigurationManager(remoteConfigManager: remoteConfigManager)
-                }
-
-            case .survey:
-                guard keys.survicate?.sdkId != nil else {
-                    continue
-                }
-                let creator = SurveyManagerCreator()
-                if let surveyManager = (creator as? Creator)?.createImplementation(
-                    withConfiguration: configuration,
-                    andKeys: keys
-                ) as? SurveyManager {
-                    kovaleeManager?.setupSurveyManager(surveyManager: surveyManager)
-                }
-
-            case .eventsTracking: ()
+    private static func setupCapabilities(
+        forItem item: Capabilities,
+        withConfiguration configuration: Configuration,
+        andKeys keys: KovaleeKeys
+    ) -> Sendable? {
+        switch item {
+        case .attribution:
+            let creator = AttributionManagerCreator { adid in
+                Kovalee.performAttributionCallback(with: adid)
             }
+            if let attributionManager = (creator as? Creator)?.createImplementation(
+                withConfiguration: configuration,
+                andKeys: keys
+            ) as? AttributionManager {
+                return attributionManager
+            }
+
+        case .purchases:
+            let creator = PurchaseManagerCreator()
+            if let purchaseManager = (creator as? Creator)?.createImplementation(
+                withConfiguration: configuration,
+                andKeys: keys
+            ) as? PurchaseManager {
+                return purchaseManager
+            }
+
+        case .remoteConfiguration:
+            let creator = RemoteConfigManagerCreator()
+            if let remoteConfigManager = (creator as? Creator)?.createImplementation(
+                withConfiguration: configuration,
+                andKeys: keys
+            ) as? RemoteConfigurationManager {
+                return remoteConfigManager
+            }
+
+        case .survey:
+            guard keys.survicate?.sdkId != nil else {
+                return nil
+            }
+            let creator = SurveyManagerCreator()
+            if let surveyManager = (creator as? Creator)?.createImplementation(
+                withConfiguration: configuration,
+                andKeys: keys
+            ) as? SurveyManager {
+                return surveyManager
+            }
+
+        case .eventsTracking: ()
         }
+
+        return nil
     }
 }
 

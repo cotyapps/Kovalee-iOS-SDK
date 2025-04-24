@@ -76,16 +76,6 @@ public extension Kovalee {
 
     /// Retrieve the value associated with an AB testing experiment
     ///
-    /// - Parameters:
-    ///    - key: string key of the remote value that the user is trying to load
-    /// - Returns: retrieve the requested ``RemoteConfigValue`` if found
-    @available(*, deprecated, renamed: "abTestValue")
-    static func abTestValue(forKey _: String) async -> String? {
-        await abTestValue()
-    }
-
-    /// Retrieve the value associated with an AB testing experiment
-    ///
     /// - Returns: retrieve the requested ``RemoteConfigValue`` if found
     static func abTestValue() async -> String? {
         guard let value = await shared.kovaleeManager?.abTestValue(forKey: abTestKey) else {

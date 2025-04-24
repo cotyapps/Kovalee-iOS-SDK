@@ -11,55 +11,16 @@ import _Concurrency
 import _StringProcessing
 import _SwiftConcurrencyShims
 import os
-public class KovaleeManager {
-  public init(withStorage storage: KovaleeFramework.Storage = Storage(defaults: UserDefaults()), keys: KovaleeFramework.KovaleeKeys, sdkVersion: Swift.String, eventTrackerManager: any KovaleeFramework.EventTrackerManager, alreadyIntegrated: Swift.Bool)
-  public func setupAttributionManager(adjustWrapper: any KovaleeFramework.AttributionManager)
-  public func setupPurchaseManager(purchaseManager: any KovaleeFramework.PurchaseManager)
-  public func setupRemoteConfigurationManager(remoteConfigManager: any KovaleeFramework.RemoteConfigurationManager)
-  public func setupPaywallManager(paywallManager: any KovaleeFramework.PaywallManager)
-  public func setupSurveyManager(surveyManager: any KovaleeFramework.SurveyManager)
-  public func promptTrackingAuthorization(completion: @escaping (AppTrackingTransparency.ATTrackingManager.AuthorizationStatus) -> Swift.Void)
-  public func getAttributionAdid() async -> Swift.String?
-  public func attributionCallback(withAdid adid: Swift.String?)
-  public func setAttributionDelegate(_ delegate: any KovaleeFramework.KovaleeAttributionDelegate)
-  public func setDefaultUserId()
-  public func installationDate() -> Foundation.Date?
-  public func appOpeningCount() -> Swift.Int
-  public func currentSequencesFileName() -> Swift.String?
-  public func currentEventsSequence() -> Swift.String
-  public func userConversionValue() -> Swift.Int
-  public func userCoarseValue() -> Swift.String?
-  public func sequenceVersion() -> Swift.Int
-  public func setSequenceVersion(_ version: Swift.Int)
-  public func parsingLogic() -> Swift.Int
-  public func setParsingLogic(_ logic: Swift.Int)
-  public func resetApp()
-  public func resetCVManager()
-  public func sendEvent(_ event: KovaleeFramework.Event)
-  public func setAmplitudeUserId(userId: Swift.String)
-  public func amplitudeUserId() -> Swift.String?
-  public func amplitudeDeviceId() -> Swift.String?
-  public func setUserProperty(key: Swift.String, value: Swift.String)
-  public func setUserProperties(_ properties: [Swift.String : Swift.String])
-  public func setUserProperty(property: KovaleeFramework.UserProperty)
-  public func sendAppOpenEvent()
-  public func canSendEvents() -> Swift.Bool
-  public func isDataCollectionEnabled() -> Swift.Bool
-  public func setDataCollectionEnabled(_ enabled: Swift.Bool)
-  public func setDebugMode(_ on: Swift.Bool)
-  public func debugModeOn() -> Swift.Bool
-  public var attributionManager: (any KovaleeFramework.AttributionManager)?
-  final public let trackerManager: any KovaleeFramework.EventTrackerManager
-  public var purchaseManager: (any KovaleeFramework.PurchaseManager)?
-  public var remoteConfigManager: (any KovaleeFramework.RemoteConfigurationManager)?
-  public var paywallManager: (any KovaleeFramework.PaywallManager)?
-  public var surveyManager: (any KovaleeFramework.SurveyManager)?
+final public class KovaleeManager {
+  public init(keys: KovaleeFramework.KovaleeKeys, sdkVersion: Swift.String, eventTrackerManager: any KovaleeFramework.EventTrackerManager, attributionManager: any KovaleeFramework.AttributionManager, purchaseManager: any KovaleeFramework.PurchaseManager, remoteConfigManager: any KovaleeFramework.RemoteConfigurationManager, surveyManager: (any KovaleeFramework.SurveyManager)?, alreadyIntegrated: Swift.Bool)
   @objc deinit
 }
 extension KovaleeFramework.KovaleeManager {
-  public func setupConversionManager()
-  public func flushCachedEvents()
-  public func fetchEventsSequence(sequenceVersion: Swift.Int) async
+  final public func setupConversionManager() async
+  final public func flushCachedEvents() async
+  final public func fetchEventsSequence(sequenceVersion: Swift.Int) async
+}
+extension KovaleeFramework.KovaleeManager : @unchecked Swift.Sendable {
 }
 public enum KLogger {
   public static var logLevel: KovaleeFramework.LogLevel {
@@ -123,8 +84,8 @@ extension KovaleeFramework.Reader where T == KovaleeFramework.KovaleeKeys {
   public static let kovaleeKeysReader: KovaleeFramework.Reader<KovaleeFramework.KovaleeKeys>
 }
 extension KovaleeFramework.KovaleeManager {
-  public func removeUserFromBundle()
-  public func isUserInBundle(email: Swift.String) async throws -> Swift.Bool
+  final public func removeUserFromBundle()
+  final public func isUserInBundle(email: Swift.String) async throws -> Swift.Bool
 }
 public enum FileReaderError : Swift.Error {
   case fileNotFound
@@ -141,26 +102,24 @@ public struct Reader<T> where T : Swift.Decodable {
 extension KovaleeFramework.Reader : Swift.Sendable where T : Swift.Sendable {
 }
 public enum StorageKeys : Swift.String, Swift.Sendable {
-  case sdkVersion
-  case adid
   case isUserPremium
-  case isUserInBundle
   case appOpenedCount
   case appInstallationDate
-  case userSubscription
   case conversionValue
   case coarseValue
-  case amplitudeUserId
-  case isFirstAppOpening
-  case abExperimentValue
-  case abExperimentKey
+  case sdkVersion
   case isDataCollectionEnabled
-  case nttTrackingPromptStatus
+  case isFirstAppOpening
   case eventsSequencesFetched
   case sequenceVersion
   case parsingLogic
+  case isUserInBundle
+  case nttTrackingPromptStatus
+  case adid
   case rcInitialized
   case rcIdCache
+  case abExperimentValue
+  case abExperimentKey
   public init?(rawValue: Swift.String)
   public typealias RawValue = Swift.String
   public var rawValue: Swift.String {
@@ -187,17 +146,12 @@ public enum StorageError : Swift.Error {
     get
   }
 }
-public struct Storage : Swift.Sendable {
-  public init(defaults: Foundation.UserDefaults = .standard)
-  public func get(_ key: KovaleeFramework.StorageKeys, _ defaultValue: (any Swift.Sendable)? = nil, setDefaultImmediately: Swift.Bool = false) -> KovaleeFramework.StorageResult
-  public func set(_ key: KovaleeFramework.StorageKeys, _ value: any Swift.Sendable, immediate: Swift.Bool = false)
-  public func remove(_ key: KovaleeFramework.StorageKeys)
-  public func batchUpdate(_ updates: [KovaleeFramework.StorageKeys : any Swift.Sendable], immediate: Swift.Bool = false)
-  public func saveImmediately()
-  public func invalidateCache(_ key: KovaleeFramework.StorageKeys? = nil)
-  public func getValue<T>(_ key: KovaleeFramework.StorageKeys, default defaultValue: T, immediate: Swift.Bool = false) -> T where T : Swift.Sendable
-  public func getOptionalValue<T>(_ key: KovaleeFramework.StorageKeys) -> T?
-  public func hasKey(_ key: KovaleeFramework.StorageKeys) -> Swift.Bool
+@_hasMissingDesignatedInitializers public actor StorageActor {
+  @objc deinit
+  @available(iOS 13.0, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
+  @_semantics("defaultActor") nonisolated final public var unownedExecutor: _Concurrency.UnownedSerialExecutor {
+    get
+  }
 }
 extension Foundation.UserDefaults : @unchecked @retroactive Swift.Sendable {
 }
@@ -246,7 +200,7 @@ public protocol EventTrackerManager : Swift.Sendable {
   func getUserId() -> Swift.String?
   func getDeviceId() -> Swift.String?
 }
-public protocol RemoteConfigurationManager {
+public protocol RemoteConfigurationManager : Swift.Sendable {
   func setFetchTimeout(_ timeout: Swift.Double)
   func fetchAndActivateRemoteConfig() async
   func setDefaultValues(_ values: [Swift.String : Any])
@@ -309,6 +263,40 @@ public protocol SurveyManager : Swift.Sendable {
   func setAmplitudeUserId(userId: Swift.String)
   func setSurveyDelegate(_ delegate: any KovaleeFramework.KovaleeSurveyDelegate)
 }
+extension KovaleeFramework.KovaleeManager {
+  final public func setupAttributionManager()
+  final public func setupPurchaseManager()
+  final public func promptTrackingAuthorization(completion: @escaping (AppTrackingTransparency.ATTrackingManager.AuthorizationStatus) -> Swift.Void)
+  final public func getAttributionAdid() async -> Swift.String?
+  final public func attributionCallback(withAdid adid: Swift.String?)
+  final public func setAttributionDelegate(_ delegate: any KovaleeFramework.KovaleeAttributionDelegate)
+  final public func setDefaultUserId()
+  final public func installationDate() -> Foundation.Date?
+  final public func appOpeningCount() -> Swift.Int
+  final public func currentSequencesFileName() -> Swift.String?
+  final public func currentEventsSequence() -> Swift.String
+  final public func userConversionValue() -> Swift.Int
+  final public func userCoarseValue() -> Swift.String?
+  final public func sequenceVersion() -> Swift.Int
+  final public func setSequenceVersion(_ version: Swift.Int)
+  final public func parsingLogic() -> Swift.Int
+  final public func setParsingLogic(_ logic: Swift.Int)
+  final public func resetApp() async
+  final public func resetCVManager()
+  final public func sendEvent(_ event: KovaleeFramework.Event)
+  final public func setAmplitudeUserId(userId: Swift.String)
+  final public func amplitudeUserId() -> Swift.String?
+  final public func amplitudeDeviceId() -> Swift.String?
+  final public func setUserProperty(key: Swift.String, value: Swift.String)
+  final public func setUserProperties(_ properties: [Swift.String : Swift.String])
+  final public func setUserProperty(property: KovaleeFramework.UserProperty)
+  final public func sendAppOpenEvent()
+  final public func canSendEvents() -> Swift.Bool
+  final public func isDataCollectionEnabled() -> Swift.Bool
+  final public func setDataCollectionEnabled(_ enabled: Swift.Bool)
+  final public func setDebugMode(_ on: Swift.Bool)
+  final public func debugModeOn() -> Swift.Bool
+}
 public enum KovaleeError : Swift.Error {
   case firebaseNotInitialized
   case remoteValueAlreadyUsedForABTest
@@ -326,27 +314,28 @@ extension KovaleeFramework.KovaleeError : Foundation.LocalizedError {
   }
 }
 public struct ConversionValueManager {
-  public init(appCode: Swift.String, parsingLogicVersion: Swift.Int, storage: KovaleeFramework.Storage, eventTrackerManager: (any KovaleeFramework.EventTrackerManager)?)
+  public init(appCode: Swift.String, parsingLogicVersion: Swift.Int, storage: KovaleeFramework.StorageActor, eventTrackerManager: (any KovaleeFramework.EventTrackerManager)?) async
 }
 extension KovaleeFramework.ConversionValueManager {
   public mutating func conversionValue(fromEvent event: KovaleeFramework.Event) -> KovaleeFramework.ConversionValue?
+  public mutating func resetState() async
 }
 extension KovaleeFramework.KovaleeManager {
-  public func setPurchaseDelegate(_ delegate: any KovaleeFramework.KovaleePurchasesDelegate)
-  public func revenueCatUserId() -> Swift.String?
-  public func setIsUserPremium(_ premium: Swift.Bool)
-  public func setRevenueCatUserId(userId: Swift.String)
-  public func setRevenueCatUserId(userId: Swift.String) async throws -> (any KovaleeFramework.AbstractCustomerInfo, created: Swift.Bool)?
-  public func setRevenueCatEmail(email: Swift.String)
-  public func logoutRevenueCatUser() async throws -> (any KovaleeFramework.AbstractCustomerInfo)?
-  public func syncPurchase() async throws -> (any KovaleeFramework.AbstractCustomerInfo)?
-  public func customerInfo() async throws -> (any KovaleeFramework.AbstractCustomerInfo)?
-  public func fetchOfferings() async throws -> (any KovaleeFramework.AbstractOfferings)?
-  public func fetchCurrentOffering() async throws -> (any KovaleeFramework.AbstractOffering)?
-  public func restorePurchases(fromSource source: Swift.String) async throws -> (any KovaleeFramework.AbstractCustomerInfo)?
-  public func purchaseSubscription(withIdentifier subscriptionId: Swift.String, andDuration _: Swift.Int, fromSource source: Swift.String) async throws -> (any KovaleeFramework.AbstractPurchaseResultData)?
-  public func purchase(package: any KovaleeFramework.AbstractPackage, fromSource source: Swift.String) async throws -> (any KovaleeFramework.AbstractPurchaseResultData)?
-  public func checkTrialOrIntroDiscountEligibility(productIdentifiers: [Swift.String]) async -> [Swift.String : Swift.Int]?
+  final public func setPurchaseDelegate(_ delegate: any KovaleeFramework.KovaleePurchasesDelegate)
+  final public func revenueCatUserId() -> Swift.String?
+  final public func setIsUserPremium(_ premium: Swift.Bool)
+  final public func setRevenueCatUserId(userId: Swift.String)
+  final public func setRevenueCatUserId(userId: Swift.String) async throws -> (any KovaleeFramework.AbstractCustomerInfo, created: Swift.Bool)?
+  final public func setRevenueCatEmail(email: Swift.String)
+  final public func logoutRevenueCatUser() async throws -> (any KovaleeFramework.AbstractCustomerInfo)?
+  final public func syncPurchase() async throws -> (any KovaleeFramework.AbstractCustomerInfo)?
+  final public func customerInfo() async throws -> (any KovaleeFramework.AbstractCustomerInfo)?
+  final public func fetchOfferings() async throws -> (any KovaleeFramework.AbstractOfferings)?
+  final public func fetchCurrentOffering() async throws -> (any KovaleeFramework.AbstractOffering)?
+  final public func restorePurchases(fromSource source: Swift.String) async throws -> (any KovaleeFramework.AbstractCustomerInfo)?
+  final public func purchaseSubscription(withIdentifier subscriptionId: Swift.String, andDuration _: Swift.Int, fromSource source: Swift.String) async throws -> (any KovaleeFramework.AbstractPurchaseResultData)?
+  final public func purchase(package: any KovaleeFramework.AbstractPackage, fromSource source: Swift.String) async throws -> (any KovaleeFramework.AbstractPurchaseResultData)?
+  final public func checkTrialOrIntroDiscountEligibility(productIdentifiers: [Swift.String]) async -> [Swift.String : Swift.Int]?
 }
 extension KovaleeFramework.KovaleeManager {
   public struct OnboardingDataResponse : Swift.Codable {
@@ -365,27 +354,27 @@ extension KovaleeFramework.KovaleeManager {
     case invalidResponse
     case invalidRequest
   }
-  public func userOnboardingData(userId: Swift.String) async throws -> KovaleeFramework.KovaleeManager.UserOnboardingData
+  final public func userOnboardingData(userId: Swift.String) async throws -> KovaleeFramework.KovaleeManager.UserOnboardingData
 }
 extension KovaleeFramework.KovaleeManager {
-  public func startedPurchasing(subscriptionWithId productId: Swift.String, fromSource source: Swift.String)
-  public func succesfullyPurchased(subscriptionWithProductId productId: Swift.String, fromSource source: Swift.String)
-  public func paymentCancelledForSubscription(fromSource source: Swift.String)
-  public func paymentFailed(forSubscriptionWithId productId: Swift.String, fromSource source: Swift.String)
-  public func paymentRestoredStart(fromSource source: Swift.String)
-  public func paymentRestoredFailed(fromSource source: Swift.String)
-  public func paymentRestored(fromSource source: Swift.String)
+  final public func startedPurchasing(subscriptionWithId productId: Swift.String, fromSource source: Swift.String)
+  final public func succesfullyPurchased(subscriptionWithProductId productId: Swift.String, fromSource source: Swift.String)
+  final public func paymentCancelledForSubscription(fromSource source: Swift.String)
+  final public func paymentFailed(forSubscriptionWithId productId: Swift.String, fromSource source: Swift.String)
+  final public func paymentRestoredStart(fromSource source: Swift.String)
+  final public func paymentRestoredFailed(fromSource source: Swift.String)
+  final public func paymentRestored(fromSource source: Swift.String)
 }
 extension KovaleeFramework.KovaleeManager {
-  public func setSurveyDelegate(_ delegate: any KovaleeFramework.KovaleeSurveyDelegate)
+  final public func setSurveyDelegate(_ delegate: any KovaleeFramework.KovaleeSurveyDelegate)
 }
 extension KovaleeFramework.KovaleeManager {
-  public func setDefaultValues(_ values: [Swift.String : Any])
-  public func remoteValue(forKey key: Swift.String) async throws -> Foundation.Data
-  public func localABTestValue() -> Swift.String?
-  public func abTestValue(forKey key: Swift.String) async -> Swift.String?
-  public func setAbTestValue(_ value: Swift.String)
-  public func setFetchTimeout(_ timeout: Swift.Double)
+  final public func setDefaultValues(_ values: [Swift.String : Any])
+  final public func remoteValue(forKey key: Swift.String) async throws -> Foundation.Data
+  final public func localABTestValue() -> Swift.String?
+  final public func abTestValue(forKey key: Swift.String) async -> Swift.String?
+  final public func setAbTestValue(_ value: Swift.String)
+  final public func setFetchTimeout(_ timeout: Swift.Double)
 }
 public enum DefaultEvents {
   case firstAppOpen

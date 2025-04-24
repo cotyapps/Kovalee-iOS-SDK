@@ -107,7 +107,7 @@ struct EventsSequencesConfigurationView: View {
     private func refreshAction() {
         focusedField = nil
         Task {
-            Kovalee.shared.kovaleeManager?.resetApp()
+            await Kovalee.shared.kovaleeManager?.resetApp()
             Kovalee.shared.kovaleeManager?.resetCVManager()
 
             Kovalee.shared.kovaleeManager?.setParsingLogic(Int(parsingLogicValue) ?? 0)
@@ -115,8 +115,8 @@ struct EventsSequencesConfigurationView: View {
 
             Task {
                 await Kovalee.shared.kovaleeManager?.fetchEventsSequence(sequenceVersion: Int(sequenceVersionValue) ?? 0)
-                Kovalee.shared.kovaleeManager?.setupConversionManager()
-                Kovalee.shared.kovaleeManager?.resetApp()
+                await Kovalee.shared.kovaleeManager?.setupConversionManager()
+                await Kovalee.shared.kovaleeManager?.resetApp()
 
                 retrieveValues()
             }

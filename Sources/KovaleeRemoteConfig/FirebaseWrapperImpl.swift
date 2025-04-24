@@ -1,6 +1,6 @@
 import FirebaseAnalytics
 import FirebaseCore
-import FirebaseRemoteConfig
+@preconcurrency import FirebaseRemoteConfig
 import Foundation
 import KovaleeFramework
 import KovaleeSDK
