@@ -7,6 +7,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 <<<<<<< HEAD
 =======
+## [2.0.6] - 2025-04-24
+### :sparkles: New Features
+- [`fc58a6d`](https://github.com/cotyapps/Kovalee-iOS-SDK/commit/fc58a6d628368d44d993667311e38a97f9f9c414) - sending coarseValue with update_conversion_value event *(commit by [@fto-k](https://github.com/fto-k))*
+
+
 ## [2.0.4] - 2025-04-24
 ### :sparkles: New Features
 - [`4f336c6`](https://github.com/cotyapps/Kovalee-iOS-SDK/commit/4f336c6af3e17a737ac7ce9edb6e1c06cce77b97) - migrated internal state storage to actors *(commit by [@fto-k](https://github.com/fto-k))*
@@ -775,3 +780,4 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 [2.0.1]: https://github.com/cotyapps/Kovalee-iOS-SDK/compare/2.0.0...2.0.1
 [2.0.3]: https://github.com/cotyapps/Kovalee-iOS-SDK/compare/2.0.2...2.0.3
 [2.0.4]: https://github.com/cotyapps/Kovalee-iOS-SDK/compare/2.0.3...2.0.4
+[2.0.6]: https://github.com/cotyapps/Kovalee-iOS-SDK/compare/2.0.5...2.0.6
