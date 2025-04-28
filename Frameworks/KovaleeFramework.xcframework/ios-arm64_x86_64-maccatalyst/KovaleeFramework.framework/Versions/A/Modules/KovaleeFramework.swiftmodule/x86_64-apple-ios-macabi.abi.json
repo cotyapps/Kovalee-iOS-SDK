@@ -9998,164 +9998,9 @@
         "moduleName": "KovaleeFramework"
       },
       {
-        "kind": "TypeDecl",
-        "name": "ConversionValueManager",
-        "printedName": "ConversionValueManager",
-        "children": [
-          {
-            "kind": "Constructor",
-            "name": "init",
-            "printedName": "init(appCode:parsingLogicVersion:storage:eventTrackerManager:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "ConversionValueManager",
-                "printedName": "KovaleeFramework.ConversionValueManager",
-                "usr": "s:16KovaleeFramework22ConversionValueManagerV"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Int",
-                "printedName": "Swift.Int",
-                "usr": "s:Si"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "StorageActor",
-                "printedName": "KovaleeFramework.StorageActor",
-                "usr": "s:16KovaleeFramework12StorageActorC"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "(any KovaleeFramework.EventTrackerManager)?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "EventTrackerManager",
-                    "printedName": "any KovaleeFramework.EventTrackerManager",
-                    "usr": "s:16KovaleeFramework19EventTrackerManagerP"
-                  }
-                ],
-                "usr": "s:Sq"
-              }
-            ],
-            "declKind": "Constructor",
-            "usr": "s:16KovaleeFramework22ConversionValueManagerV7appCode19parsingLogicVersion7storage012eventTrackerE0ACSS_SiAA12StorageActorCAA05EventmE0_pSgtYacfc",
-            "mangledName": "$s16KovaleeFramework22ConversionValueManagerV7appCode19parsingLogicVersion7storage012eventTrackerE0ACSS_SiAA12StorageActorCAA05EventmE0_pSgtYacfc",
-            "moduleName": "KovaleeFramework",
-            "declAttributes": [
-              "AccessControl"
-            ],
-            "init_kind": "Designated"
-          },
-          {
-            "kind": "Function",
-            "name": "conversionValue",
-            "printedName": "conversionValue(fromEvent:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "KovaleeFramework.ConversionValue?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "ConversionValue",
-                    "printedName": "KovaleeFramework.ConversionValue",
-                    "usr": "s:16KovaleeFramework15ConversionValueV"
-                  }
-                ],
-                "usr": "s:Sq"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Event",
-                "printedName": "KovaleeFramework.Event",
-                "usr": "s:16KovaleeFramework5EventV"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:16KovaleeFramework22ConversionValueManagerV010conversionD09fromEventAA0cD0VSgAA0H0V_tF",
-            "mangledName": "$s16KovaleeFramework22ConversionValueManagerV010conversionD09fromEventAA0cD0VSgAA0H0V_tF",
-            "moduleName": "KovaleeFramework",
-            "declAttributes": [
-              "Mutating"
-            ],
-            "isFromExtension": true,
-            "funcSelfKind": "Mutating"
-          },
-          {
-            "kind": "Function",
-            "name": "resetState",
-            "printedName": "resetState()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:16KovaleeFramework22ConversionValueManagerV10resetStateyyYaF",
-            "mangledName": "$s16KovaleeFramework22ConversionValueManagerV10resetStateyyYaF",
-            "moduleName": "KovaleeFramework",
-            "declAttributes": [
-              "Mutating"
-            ],
-            "isFromExtension": true,
-            "funcSelfKind": "Mutating"
-          }
-        ],
-        "declKind": "Struct",
-        "usr": "s:16KovaleeFramework22ConversionValueManagerV",
-        "mangledName": "$s16KovaleeFramework22ConversionValueManagerV",
-        "moduleName": "KovaleeFramework",
-        "declAttributes": [
-          "AccessControl",
-          "RawDocComment"
-        ],
-        "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          }
-        ]
-      },
-      {
         "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "KovaleeFramework"
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "KovaleeFramework"
-      },
-      {
-        "kind": "Import",
-        "name": "OSLog",
-        "printedName": "OSLog",
         "declKind": "Import",
         "moduleName": "KovaleeFramework"
       },
@@ -14835,16 +14680,16 @@
       "value": "false"
     },
     {
-      "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/ConversionValueManagerState.swift",
+      "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/DataModel\/SDKState.swift",
       "kind": "BooleanLiteral",
-      "offset": 130,
+      "offset": 562,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/ConversionValueManagerState.swift",
+      "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/DataModel\/SDKState.swift",
       "kind": "IntegerLiteral",
-      "offset": 166,
+      "offset": 598,
       "length": 1,
       "value": "0"
     },
