@@ -389,27 +389,6 @@
           },
           {
             "kind": "Function",
-            "name": "setDefaultUserId",
-            "printedName": "setDefaultUserId()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:16KovaleeFramework0A7ManagerC16setDefaultUserIdyyF",
-            "mangledName": "$s16KovaleeFramework0A7ManagerC16setDefaultUserIdyyF",
-            "moduleName": "KovaleeFramework",
-            "declAttributes": [
-              "Final"
-            ],
-            "isFromExtension": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
             "name": "installationDate",
             "printedName": "installationDate()",
             "children": [
@@ -913,27 +892,6 @@
             "declKind": "Func",
             "usr": "s:16KovaleeFramework0A7ManagerC15setUserProperty8propertyyAA0eF0O_tF",
             "mangledName": "$s16KovaleeFramework0A7ManagerC15setUserProperty8propertyyAA0eF0O_tF",
-            "moduleName": "KovaleeFramework",
-            "declAttributes": [
-              "Final"
-            ],
-            "isFromExtension": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "sendAppOpenEvent",
-            "printedName": "sendAppOpenEvent()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:16KovaleeFramework0A7ManagerC16sendAppOpenEventyyF",
-            "mangledName": "$s16KovaleeFramework0A7ManagerC16sendAppOpenEventyyF",
             "moduleName": "KovaleeFramework",
             "declAttributes": [
               "Final"

@@ -90,8 +90,6 @@ public final class Kovalee {
                 surveyManager: surveyManager,
                 alreadyIntegrated: configuration.alreadyIntegrated
             )
-            kovaleeManager?.setDefaultUserId()
-            kovaleeManager?.sendAppOpenEvent()
         } catch {
             KLogger.error("We couldn't find the file at \(configuration.keysFileUrl?.absoluteString ?? "")")
             KLogger.error("Please add the file KovaleeKeys.json to your project")

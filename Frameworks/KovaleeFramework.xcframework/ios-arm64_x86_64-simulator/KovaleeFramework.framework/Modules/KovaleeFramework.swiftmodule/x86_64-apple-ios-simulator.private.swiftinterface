@@ -270,7 +270,6 @@ extension KovaleeFramework.KovaleeManager {
   final public func getAttributionAdid() async -> Swift.String?
   final public func attributionCallback(withAdid adid: Swift.String?)
   final public func setAttributionDelegate(_ delegate: any KovaleeFramework.KovaleeAttributionDelegate)
-  final public func setDefaultUserId()
   final public func installationDate() -> Foundation.Date?
   final public func appOpeningCount() -> Swift.Int
   final public func currentSequencesFileName() -> Swift.String?
@@ -290,7 +289,6 @@ extension KovaleeFramework.KovaleeManager {
   final public func setUserProperty(key: Swift.String, value: Swift.String)
   final public func setUserProperties(_ properties: [Swift.String : Swift.String])
   final public func setUserProperty(property: KovaleeFramework.UserProperty)
-  final public func sendAppOpenEvent()
   final public func canSendEvents() -> Swift.Bool
   final public func isDataCollectionEnabled() -> Swift.Bool
   final public func setDataCollectionEnabled(_ enabled: Swift.Bool)
