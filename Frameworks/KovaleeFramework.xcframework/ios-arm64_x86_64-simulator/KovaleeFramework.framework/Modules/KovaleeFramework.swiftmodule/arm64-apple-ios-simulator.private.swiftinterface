@@ -311,6 +311,13 @@ extension KovaleeFramework.KovaleeError : Foundation.LocalizedError {
     get
   }
 }
+public struct ConversionValueManager {
+  public init(appCode: Swift.String, parsingLogicVersion: Swift.Int, storage: KovaleeFramework.StorageActor, eventTrackerManager: (any KovaleeFramework.EventTrackerManager)?) async
+}
+extension KovaleeFramework.ConversionValueManager {
+  public mutating func conversionValue(fromEvent event: KovaleeFramework.Event) -> KovaleeFramework.ConversionValue?
+  public mutating func resetState() async
+}
 extension KovaleeFramework.KovaleeManager {
   final public func setPurchaseDelegate(_ delegate: any KovaleeFramework.KovaleePurchasesDelegate)
   final public func revenueCatUserId() -> Swift.String?
