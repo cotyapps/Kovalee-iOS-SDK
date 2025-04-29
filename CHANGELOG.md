@@ -7,6 +7,19 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 <<<<<<< HEAD
 =======
+## [2.0.7] - 2025-04-29
+### :bug: Bug Fixes
+- [`a6c9656`](https://github.com/cotyapps/Kovalee-iOS-SDK/commit/a6c9656ccd61a192e8020325ed09b8d7114cd79f) - sending always first_app_open event *(commit by [@fto-k](https://github.com/fto-k))*
+- [`90334c9`](https://github.com/cotyapps/Kovalee-iOS-SDK/commit/90334c9f144ba100e730eb1aa707557ab02c219b) - unified sdk state and cv manager state *(commit by [@fto-k](https://github.com/fto-k))*
+- [`777ce60`](https://github.com/cotyapps/Kovalee-iOS-SDK/commit/777ce60ba6b973865f6bae2a8a58e8d2d49e02d0) - removed re-settin isFirstAppOpen flag *(commit by [@fto-k](https://github.com/fto-k))*
+- [`08f60db`](https://github.com/cotyapps/Kovalee-iOS-SDK/commit/08f60db77b0734da3adba8168905a625f6ed649b) - better handling of SDK State *(commit by [@fto-k](https://github.com/fto-k))*
+
+### :wrench: Chores
+- [`565af6c`](https://github.com/cotyapps/Kovalee-iOS-SDK/commit/565af6ccd3c7cac38e1e48992c319216b202b221) - added more debugging to understand current issue *(commit by [@fto-k](https://github.com/fto-k))*
+- [`8736e53`](https://github.com/cotyapps/Kovalee-iOS-SDK/commit/8736e538fe007dd917c4989fe6e4ae337021bfd1) - moved first_app_open event before fetching starts *(commit by [@fto-k](https://github.com/fto-k))*
+- [`e718af5`](https://github.com/cotyapps/Kovalee-iOS-SDK/commit/e718af5ace857e95d1097e0cb024de1ab039cf7c) - rolled back code to previous working state *(commit by [@fto-k](https://github.com/fto-k))*
+
+
 ## [2.0.6] - 2025-04-24
 ### :sparkles: New Features
 - [`fc58a6d`](https://github.com/cotyapps/Kovalee-iOS-SDK/commit/fc58a6d628368d44d993667311e38a97f9f9c414) - sending coarseValue with update_conversion_value event *(commit by [@fto-k](https://github.com/fto-k))*
@@ -781,3 +794,4 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 [2.0.3]: https://github.com/cotyapps/Kovalee-iOS-SDK/compare/2.0.2...2.0.3
 [2.0.4]: https://github.com/cotyapps/Kovalee-iOS-SDK/compare/2.0.3...2.0.4
 [2.0.6]: https://github.com/cotyapps/Kovalee-iOS-SDK/compare/2.0.5...2.0.6
+[2.0.7]: https://github.com/cotyapps/Kovalee-iOS-SDK/compare/2.0.6...2.0.7
