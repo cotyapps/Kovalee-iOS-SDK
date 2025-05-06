@@ -1110,33 +1110,6 @@
             "children": [
               {
                 "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:16KovaleeFramework0A7ManagerC19setRevenueCatUserId04userH0ySS_tF",
-            "mangledName": "$s16KovaleeFramework0A7ManagerC19setRevenueCatUserId04userH0ySS_tF",
-            "moduleName": "KovaleeFramework",
-            "declAttributes": [
-              "Final"
-            ],
-            "isFromExtension": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "setRevenueCatUserId",
-            "printedName": "setRevenueCatUserId(userId:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
                 "name": "Optional",
                 "printedName": "(any KovaleeFramework.AbstractCustomerInfo, created: Swift.Bool)?",
                 "children": [
@@ -8134,33 +8107,6 @@
             "declKind": "Func",
             "usr": "s:16KovaleeFramework15PurchaseManagerP16revenueCatUserIdSSyF",
             "mangledName": "$s16KovaleeFramework15PurchaseManagerP16revenueCatUserIdSSyF",
-            "moduleName": "KovaleeFramework",
-            "genericSig": "<τ_0_0 where τ_0_0 : KovaleeFramework.PurchaseManager>",
-            "sugared_genericSig": "<Self where Self : KovaleeFramework.PurchaseManager>",
-            "protocolReq": true,
-            "reqNewWitnessTableEntry": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "setUserId",
-            "printedName": "setUserId(userId:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:16KovaleeFramework15PurchaseManagerP9setUserId04userG0ySS_tF",
-            "mangledName": "$s16KovaleeFramework15PurchaseManagerP9setUserId04userG0ySS_tF",
             "moduleName": "KovaleeFramework",
             "genericSig": "<τ_0_0 where τ_0_0 : KovaleeFramework.PurchaseManager>",
             "sugared_genericSig": "<Self where Self : KovaleeFramework.PurchaseManager>",

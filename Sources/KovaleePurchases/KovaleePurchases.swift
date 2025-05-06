@@ -19,15 +19,6 @@ extension PurchaseManagerCreator: Creator {
 // MARK: Revenue Cat Purchases
 
 public extension Kovalee {
-    /// Set a specific userId for RevenueCat
-    ///
-    /// - Parameters:
-    ///    - userId: a string representing the userId to be set
-    @available(swift, deprecated: 1.5.5, message: "Please migrate to setRevenueCatUserId async method")
-    static func setRevenueCatUserId(userId: String) {
-        shared.kovaleeManager?.setRevenueCatUserId(userId: userId)
-    }
-
     /// Set a specific userId for RevenueCat.
     /// The function is async and can throw
     ///

@@ -23,12 +23,6 @@ final class RevenueCatWrapperImpl: NSObject, PurchaseManager, Manager {
         Purchases.shared.delegate = self
     }
 
-    func setUserId(userId: String) {
-        Task {
-            try? await Purchases.shared.logIn(userId)
-        }
-    }
-
     func logout() async throws -> AbstractCustomerInfo {
         let customerInfo = try await Purchases.shared.logOut()
         return KCustomerInfo(info: customerInfo)
