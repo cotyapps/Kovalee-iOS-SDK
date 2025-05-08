@@ -7,6 +7,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 <<<<<<< HEAD
 =======
+## [2.0.8] - 2025-05-08
+### :bug: Bug Fixes
+- [`4931384`](https://github.com/cotyapps/Kovalee-iOS-SDK/commit/4931384a688192455330a70626d452cfc00d075f) - possible fix for anonymous RC users *(commit by [@fto-k](https://github.com/fto-k))*
+- [`30c40ba`](https://github.com/cotyapps/Kovalee-iOS-SDK/commit/30c40ba80c6513658bc6bc1119edd0c8ca7890c8) - retry fetching remote config on next open if none has been returned *(commit by [@fto-k](https://github.com/fto-k))*
+
+
 ## [2.0.7] - 2025-04-29
 ### :bug: Bug Fixes
 - [`a6c9656`](https://github.com/cotyapps/Kovalee-iOS-SDK/commit/a6c9656ccd61a192e8020325ed09b8d7114cd79f) - sending always first_app_open event *(commit by [@fto-k](https://github.com/fto-k))*
@@ -795,3 +801,4 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 [2.0.4]: https://github.com/cotyapps/Kovalee-iOS-SDK/compare/2.0.3...2.0.4
 [2.0.6]: https://github.com/cotyapps/Kovalee-iOS-SDK/compare/2.0.5...2.0.6
 [2.0.7]: https://github.com/cotyapps/Kovalee-iOS-SDK/compare/2.0.6...2.0.7
+[2.0.8]: https://github.com/cotyapps/Kovalee-iOS-SDK/compare/2.0.7...2.0.8
