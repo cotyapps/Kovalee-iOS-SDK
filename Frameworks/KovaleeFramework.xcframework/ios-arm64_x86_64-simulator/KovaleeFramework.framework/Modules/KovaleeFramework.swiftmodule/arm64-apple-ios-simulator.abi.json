@@ -237,27 +237,6 @@
           },
           {
             "kind": "Function",
-            "name": "setupPurchaseManager",
-            "printedName": "setupPurchaseManager()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:16KovaleeFramework0A7ManagerC013setupPurchaseC0yyF",
-            "mangledName": "$s16KovaleeFramework0A7ManagerC013setupPurchaseC0yyF",
-            "moduleName": "KovaleeFramework",
-            "declAttributes": [
-              "Final"
-            ],
-            "isFromExtension": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
             "name": "promptTrackingAuthorization",
             "printedName": "promptTrackingAuthorization(completion:)",
             "children": [
@@ -5771,80 +5750,6 @@
             "declKind": "EnumElement",
             "usr": "s:16KovaleeFramework11StorageKeysO4adidyA2CmF",
             "mangledName": "$s16KovaleeFramework11StorageKeysO4adidyA2CmF",
-            "moduleName": "KovaleeFramework"
-          },
-          {
-            "kind": "Var",
-            "name": "rcInitialized",
-            "printedName": "rcInitialized",
-            "children": [
-              {
-                "kind": "TypeFunc",
-                "name": "Function",
-                "printedName": "(KovaleeFramework.StorageKeys.Type) -> KovaleeFramework.StorageKeys",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "StorageKeys",
-                    "printedName": "KovaleeFramework.StorageKeys",
-                    "usr": "s:16KovaleeFramework11StorageKeysO"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Metatype",
-                    "printedName": "KovaleeFramework.StorageKeys.Type",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "StorageKeys",
-                        "printedName": "KovaleeFramework.StorageKeys",
-                        "usr": "s:16KovaleeFramework11StorageKeysO"
-                      }
-                    ]
-                  }
-                ]
-              }
-            ],
-            "declKind": "EnumElement",
-            "usr": "s:16KovaleeFramework11StorageKeysO13rcInitializedyA2CmF",
-            "mangledName": "$s16KovaleeFramework11StorageKeysO13rcInitializedyA2CmF",
-            "moduleName": "KovaleeFramework"
-          },
-          {
-            "kind": "Var",
-            "name": "rcIdCache",
-            "printedName": "rcIdCache",
-            "children": [
-              {
-                "kind": "TypeFunc",
-                "name": "Function",
-                "printedName": "(KovaleeFramework.StorageKeys.Type) -> KovaleeFramework.StorageKeys",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "StorageKeys",
-                    "printedName": "KovaleeFramework.StorageKeys",
-                    "usr": "s:16KovaleeFramework11StorageKeysO"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Metatype",
-                    "printedName": "KovaleeFramework.StorageKeys.Type",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "StorageKeys",
-                        "printedName": "KovaleeFramework.StorageKeys",
-                        "usr": "s:16KovaleeFramework11StorageKeysO"
-                      }
-                    ]
-                  }
-                ]
-              }
-            ],
-            "declKind": "EnumElement",
-            "usr": "s:16KovaleeFramework11StorageKeysO9rcIdCacheyA2CmF",
-            "mangledName": "$s16KovaleeFramework11StorageKeysO9rcIdCacheyA2CmF",
             "moduleName": "KovaleeFramework"
           },
           {
@@ -14734,49 +14639,35 @@
     {
       "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/Utils\/Storage.swift",
       "kind": "StringLiteral",
-      "offset": 850,
-      "length": 16,
-      "value": "\"rc_initialized\""
-    },
-    {
-      "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/Utils\/Storage.swift",
-      "kind": "StringLiteral",
-      "offset": 888,
-      "length": 13,
-      "value": "\"rc_id_cache\""
-    },
-    {
-      "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/Utils\/Storage.swift",
-      "kind": "StringLiteral",
-      "offset": 932,
+      "offset": 855,
       "length": 24,
       "value": "\"KV_ab_experiment_value\""
     },
     {
       "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/Utils\/Storage.swift",
       "kind": "StringLiteral",
-      "offset": 984,
+      "offset": 907,
       "length": 22,
       "value": "\"KV_ab_experiment_key\""
     },
     {
       "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/Utils\/Storage.swift",
       "kind": "Dictionary",
-      "offset": 3098,
+      "offset": 3021,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/Utils\/Storage.swift",
       "kind": "BooleanLiteral",
-      "offset": 3359,
+      "offset": 3282,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/Utils\/Storage.swift",
       "kind": "BooleanLiteral",
-      "offset": 5871,
+      "offset": 5794,
       "length": 5,
       "value": "false"
     },

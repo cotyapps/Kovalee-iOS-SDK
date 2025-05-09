@@ -116,8 +116,6 @@ public enum StorageKeys : Swift.String, Swift.Sendable {
   case isUserInBundle
   case nttTrackingPromptStatus
   case adid
-  case rcInitialized
-  case rcIdCache
   case abExperimentValue
   case abExperimentKey
   public init?(rawValue: Swift.String)
@@ -264,7 +262,6 @@ public protocol SurveyManager : Swift.Sendable {
 }
 extension KovaleeFramework.KovaleeManager {
   final public func setupAttributionManager()
-  final public func setupPurchaseManager()
   final public func promptTrackingAuthorization(completion: @escaping (AppTrackingTransparency.ATTrackingManager.AuthorizationStatus) -> Swift.Void)
   final public func getAttributionAdid() async -> Swift.String?
   final public func attributionCallback(withAdid adid: Swift.String?)
