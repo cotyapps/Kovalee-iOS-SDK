@@ -7,6 +7,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 <<<<<<< HEAD
 =======
+## [2.0.9] - 2025-05-09
+### :bug: Bug Fixes
+- [`41cb379`](https://github.com/cotyapps/Kovalee-iOS-SDK/commit/41cb3799f30d2d1b0e57e3bf77cff95d86866470) - anonymous revenue cat user id *(commit by [@fto-k](https://github.com/fto-k))*
+
+
 ## [2.0.8] - 2025-05-08
 ### :bug: Bug Fixes
 - [`4931384`](https://github.com/cotyapps/Kovalee-iOS-SDK/commit/4931384a688192455330a70626d452cfc00d075f) - possible fix for anonymous RC users *(commit by [@fto-k](https://github.com/fto-k))*
@@ -802,3 +807,4 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 [2.0.6]: https://github.com/cotyapps/Kovalee-iOS-SDK/compare/2.0.5...2.0.6
 [2.0.7]: https://github.com/cotyapps/Kovalee-iOS-SDK/compare/2.0.6...2.0.7
 [2.0.8]: https://github.com/cotyapps/Kovalee-iOS-SDK/compare/2.0.7...2.0.8
+[2.0.9]: https://github.com/cotyapps/Kovalee-iOS-SDK/compare/2.0.8...2.0.9
