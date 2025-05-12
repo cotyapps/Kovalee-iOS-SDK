@@ -90,8 +90,8 @@ extension BaseEvent {
     }
 }
 
-extension LogLevel {
-    func amplitudeLogLevel() -> LogLevelEnum {
+extension KovaleeFramework.LogLevel {
+    func amplitudeLogLevel() -> AmplitudeSwift.LogLevelEnum {
         switch self {
         case .verbose:
             return .LOG
