@@ -21,7 +21,7 @@ public struct Configuration {
     /// Configuration environment type
     public var environment: Environment
     /// Configuration log level
-    public var logLevel: LogLevel
+    public var logLevel: KovaleeFramework.LogLevel
     public var keysFileUrl: URL?
     public var alreadyIntegrated: Bool
     public var enableExperimentalFeature: Bool
@@ -38,7 +38,7 @@ public struct Configuration {
     public init(
         environment: Environment,
         keysFileName: String = KovaleeConstants.keysFileName,
-        logLevel: LogLevel = .info,
+        logLevel: KovaleeFramework.LogLevel = .info,
         alreadyIntegrated: Bool = false,
         enableExperimentalFeature: Bool = false
     ) {
