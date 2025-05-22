@@ -29,8 +29,8 @@ It's part of a broader project KovaleeSDK
 
   spec.static_framework = true
 
-  spec.dependency 'Firebase/Core', '>= 11.0.0'
-  spec.dependency "FirebaseAnalyticsSwift"
-  spec.dependency "FirebaseRemoteConfigSwift"
+  # spec.dependency 'Firebase/Core', '~> 10.18.0'
+  spec.dependency "FirebaseAnalyticsSwift", '~> 10.18.0'
+  spec.dependency "FirebaseRemoteConfigSwift", '~> 10.18.0'
 
 end
