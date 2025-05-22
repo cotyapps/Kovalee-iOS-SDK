@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'KovaleeSDKUI'
-  s.version          = '2.0.0'
+  s.version          = '2.0.10'
   s.summary          = 'KovaleeSDKUI is an efficient iOS framework, that\'s packed with tools for tracking user behavior.'
   s.description  = <<-DESC
                    KovaleeSDKUI is an efficient iOS framework, that\'s packed with tools specifically for tracking user behavior, handling user purchases, and smoothly integrating ads.

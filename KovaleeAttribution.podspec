@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |spec|
   spec.name         = "KovaleeAttribution"
-  spec.version      = "2.0.0"
+  spec.version      = "2.0.10"
   spec.summary      = "KovaleeAttribution automates users attribution."
   spec.description  = <<-DESC
   Measuring marketing effectiveness and understanding where your users come from can be tricky. KovaleeAttribution automates this process, making the identification a breeze.

@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
     s.name             = 'KovaleeSurvey'
-    s.version          = '2.0.0'
+    s.version          = '2.0.10'
     s.summary          = 'KovaleeSurvey is an efficient iOS framework, that\'s packed with tools for tracking user behavior.'
     s.description  = <<-DESC
                      KovaleeSurvey is an efficient iOS framework, that\'s packed with tools specifically for tracking user behavior, handling user purchases, and smoothly integrating ads.
@@ -17,5 +17,5 @@ Pod::Spec.new do |s|
   
     s.source_files     =  "Sources/KovaleeSurvey/**/*.swift"
     s.dependency 'KovaleeSDK'
-    s.dependency 'Survicate', '>= 1.10.0'
+    s.dependency 'Survicate', '>= 5.0.0'
   end

@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |spec|
   spec.name         = "KovaleePurchases"
-  spec.version      = "2.0.0"
+  spec.version      = "2.0.10"
   spec.summary      = "KovaleePurchases simplify in-app purchases and subscriptions"
   spec.description  = <<-DESC
   Adding in-app purchases and subscriptions doesn't need to be a headache. KovaleePurchases comes with a set of APIs designed to streamline this integration.
@@ -26,12 +26,12 @@ It's part of a broader project KovaleeSDK
   spec.source_files          = "Sources/KovaleePurchases/*.swift"
 
   spec.dependency 'KovaleeSDK'
-  spec.dependency "RevenueCat", '>= 4.38.0'
+  spec.dependency "RevenueCat", '>= 5.0.0'
   spec.dependency "KovaleeRemoteConfig"
 
   spec.static_framework = true
 
-  spec.dependency 'Firebase/Core', '>= 10.24.0'
+  spec.dependency 'Firebase/Core', '>= 11.0.0'
   spec.dependency "FirebaseAnalyticsSwift"
   spec.dependency "FirebaseRemoteConfigSwift"
 end
