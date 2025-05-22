@@ -14,7 +14,7 @@ struct AmplitudeWrapperImpl: EventTrackerManager, Manager {
         amplitude = Amplitude(
             configuration: AmplitudeSwift.Configuration(
                 apiKey: key,
-                logLevel: KLogger.logLevel.amplitudeLogLevel(),
+                logLevel: KovaleeFramework.LogLevel.amplitudeLogLevel(KLogger.logLevel),
                 callback: { event, code, message in
                     KLogger.debug("\(code): \(message) → \(event.description)")
                 },
@@ -91,8 +91,8 @@ extension BaseEvent {
 }
 
 extension KovaleeFramework.LogLevel {
-    func amplitudeLogLevel() -> AmplitudeSwift.LogLevelEnum {
-        switch self {
+    static func amplitudeLogLevel(_ level: KovaleeFramework.LogLevel) -> AmplitudeSwift.LogLevelEnum {
+        switch level {
         case .verbose:
             return .LOG
         case .debug:
