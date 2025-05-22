@@ -102,7 +102,7 @@ extension AttributionManager {
     }
 }
 
-extension LogLevel {
+extension KovaleeFramework.LogLevel {
     func adjustLogLevel() -> ADJLogLevel {
         switch self {
         case .verbose:
