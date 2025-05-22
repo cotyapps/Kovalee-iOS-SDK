@@ -7,6 +7,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 <<<<<<< HEAD
 =======
+## [2.0.12] - 2025-05-22
+### :bug: Bug Fixes
+- [`4967a75`](https://github.com/cotyapps/Kovalee-iOS-SDK/commit/4967a759049a5d5eab1927fc99f719672c2015eb) - trying to fix error on LogLevel disambiguation *(commit by [@fto-k](https://github.com/fto-k))*
+- [`7674235`](https://github.com/cotyapps/Kovalee-iOS-SDK/commit/7674235652c687b690b17191eabd354bd8ecf0c1) - LogLevel ambiguity *(commit by [@fto-k](https://github.com/fto-k))*
+
+
 ## [2.0.11] - 2025-05-22
 ### :bug: Bug Fixes
 - [`0d11978`](https://github.com/cotyapps/Kovalee-iOS-SDK/commit/0d119783f3edbb570db262dfc256d1957c371af0) - LogLevel disambiguation *(commit by [@fto-k](https://github.com/fto-k))*
@@ -823,3 +829,4 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 [2.0.9]: https://github.com/cotyapps/Kovalee-iOS-SDK/compare/2.0.8...2.0.9
 [2.0.10]: https://github.com/cotyapps/Kovalee-iOS-SDK/compare/2.0.9...2.0.10
 [2.0.11]: https://github.com/cotyapps/Kovalee-iOS-SDK/compare/2.0.10...2.0.11
+[2.0.12]: https://github.com/cotyapps/Kovalee-iOS-SDK/compare/2.0.11...2.0.12
