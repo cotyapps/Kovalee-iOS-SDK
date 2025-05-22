@@ -7,6 +7,14 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 <<<<<<< HEAD
 =======
+## [2.0.11] - 2025-05-22
+### :bug: Bug Fixes
+- [`0d11978`](https://github.com/cotyapps/Kovalee-iOS-SDK/commit/0d119783f3edbb570db262dfc256d1957c371af0) - LogLevel disambiguation *(commit by [@fto-k](https://github.com/fto-k))*
+
+### :wrench: Chores
+- [`862539d`](https://github.com/cotyapps/Kovalee-iOS-SDK/commit/862539d568bf3230eea27ff412334cb78d66b8b9) - bumped dependencies for podspecs *(commit by [@fto-k](https://github.com/fto-k))*
+
+
 ## [2.0.10] - 2025-05-12
 ### :bug: Bug Fixes
 - [`baae2fd`](https://github.com/cotyapps/Kovalee-iOS-SDK/commit/baae2fd8267f33be82c6ad9c1f3d1b3c6ad57da3) - compatibility with Amplitude 1.13.0 *(commit by [@fto-k](https://github.com/fto-k))*
@@ -814,3 +822,4 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 [2.0.8]: https://github.com/cotyapps/Kovalee-iOS-SDK/compare/2.0.7...2.0.8
 [2.0.9]: https://github.com/cotyapps/Kovalee-iOS-SDK/compare/2.0.8...2.0.9
 [2.0.10]: https://github.com/cotyapps/Kovalee-iOS-SDK/compare/2.0.9...2.0.10
+[2.0.11]: https://github.com/cotyapps/Kovalee-iOS-SDK/compare/2.0.10...2.0.11
