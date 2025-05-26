@@ -44,9 +44,9 @@ let package = Package(
     dependencies: [
         .package(url: "https://github.com/amplitude/Amplitude-Swift", .upToNextMajor(from: "1.4.3")),
         .package(url: "https://github.com/Survicate/survicate-ios-sdk", .upToNextMajor(from: "5.0.0")),
-        .package(url: "https://github.com/firebase/firebase-ios-sdk.git", .upToNextMajor(from: "11.0.0")),
         .package(url: "https://github.com/RevenueCat/purchases-ios-spm.git", .upToNextMajor(from: "5.0.0")),
         .package(url: "https://github.com/adjust/ios_sdk", .upToNextMajor(from: "5.0.0")),
+        .package(url: "https://github.com/PostHog/posthog-ios.git", from: "3.0.0"),
     ],
     targets: [
         .binaryTarget(
@@ -82,8 +82,7 @@ let package = Package(
             dependencies: [
                 .sdk,
                 .framework,
-                .firebaseRemoteConfig,
-                .firebaseAnalytics,
+                .posthog,
             ],
             resources: [
                 .copy("PrivacyInfo.xcprivacy"),
@@ -164,12 +163,8 @@ extension Target.Dependency {
         .product(name: "AdjustSdk", package: "ios_sdk")
     }
 
-    static var firebaseRemoteConfig: Self {
-        .product(name: "FirebaseRemoteConfig", package: "firebase-ios-sdk")
-    }
-
-    static var firebaseAnalytics: Self {
-        .product(name: "FirebaseAnalytics", package: "firebase-ios-sdk")
+    static var posthog: Self {
+        .product(name: "PostHog", package: "posthog-ios")
     }
 }
 

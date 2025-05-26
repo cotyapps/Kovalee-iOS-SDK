@@ -7,11 +7,11 @@ extension RemoteConfigManagerCreator: Creator {
         withConfiguration _: Configuration,
         andKeys keys: KovaleeKeys
     ) -> Manager {
-        guard let key = keys.firebase else {
+        guard let key = keys.posthog else {
             fatalError("No configuration Key for Firebase found in the Keys file")
         }
 
-        return FirebaseWrapperImpl(keys: key)
+        return PosthogWrapperImpl(keys: key)
     }
 }
 
@@ -19,60 +19,6 @@ extension RemoteConfigManagerCreator: Creator {
 
 public extension Kovalee {
     static let abTestKey = "ab_test_version"
-
-    /// Set the fetch timeout for ``Firebase/RemoteConfig``
-    ///
-    /// - Parameters:
-    ///    - timeout: value of the timeout in seconds
-    static func setFetchTimeout(_ timeout: Double) {
-        shared.kovaleeManager?.setFetchTimeout(timeout)
-    }
-
-    /// Retrieves asynchronously Firebase ``RemoteConfigValue`` for a specific key
-    ///
-    /// - Parameters:
-    ///    - key: string key of the remote value that the user is trying to load
-    /// - Returns: retrieve the requested ``RemoteConfigValue`` if found
-    static func remoteValue(forKey key: String) async -> RemoteConfigValue? {
-        guard key != abTestKey else {
-            KLogger.error("❌ ab_test_version is a private key and can't be used for remote config")
-            return nil
-        }
-
-        guard let data = try? await shared.kovaleeManager?.remoteValue(forKey: key) else {
-            return nil
-        }
-
-        return RemoteConfigValue(data: data)
-    }
-
-    /// Retrieves asynchronously Firebase ``RemoteConfigValue`` for a specific key
-    ///
-    /// - Parameters:
-    ///    - key: string key of the remote value that the user is trying to load
-    ///    - completion: A closure that is called with the result of the fetch operation.
-    ///        This closure has no return value and takes the following parameter:
-    ///        - value: The requested value as a ``RemoteConfigValue``. If no value is found, `nil` is provided.
-    static func remoteValue(
-        forKey key: String,
-        withCompletion completion: @escaping @Sendable (RemoteConfigValue?) -> Void
-    ) {
-        // Create a local copy of the key to avoid capturing self
-        let keyValue = key
-        Task { @Sendable in
-            let result = await Self.remoteValue(forKey: keyValue)
-            completion(result)
-        }
-    }
-
-    /// Set Default values in the Firebase RemoteConfig.
-    ///    This method shold be only used for Remote Values NOT AB tests
-    ///
-    /// - Parameters:
-    ///    - values: a dictionary of values to be stored
-    static func setDefaultValues(_ values: [String: Any]) {
-        shared.kovaleeManager?.setDefaultValues(values)
-    }
 
     /// Retrieve the value associated with an AB testing experiment
     ///

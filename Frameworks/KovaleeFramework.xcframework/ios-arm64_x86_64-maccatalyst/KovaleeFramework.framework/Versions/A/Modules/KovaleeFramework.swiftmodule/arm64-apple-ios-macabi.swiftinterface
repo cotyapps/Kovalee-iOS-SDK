@@ -58,8 +58,8 @@ public struct KovaleeKeys : Swift.Decodable, Swift.Sendable {
   public let adjust: Swift.String?
   public let amplitude: KovaleeFramework.KovaleeKeys.Amplitude
   public let revenueCat: KovaleeFramework.KovaleeKeys.RevenueCat?
-  public let firebase: KovaleeFramework.KovaleeKeys.Firebase?
   public let survicate: KovaleeFramework.KovaleeKeys.Survicate?
+  public let posthog: KovaleeFramework.KovaleeKeys.Posthog?
   public struct Amplitude : Swift.Decodable, Swift.Sendable {
     public var prodSDKId: Swift.String
     public var devSDKId: Swift.String?
@@ -76,6 +76,11 @@ public struct KovaleeKeys : Swift.Decodable, Swift.Sendable {
   }
   public struct Survicate : Swift.Decodable, Swift.Sendable {
     public let sdkId: Swift.String
+    public init(from decoder: any Swift.Decoder) throws
+  }
+  public struct Posthog : Swift.Decodable, Swift.Sendable {
+    public let apiKey: Swift.String
+    public let host: Swift.String
     public init(from decoder: any Swift.Decoder) throws
   }
   public init(from decoder: any Swift.Decoder) throws
@@ -199,11 +204,8 @@ public protocol EventTrackerManager : Swift.Sendable {
   func getDeviceId() -> Swift.String?
 }
 public protocol RemoteConfigurationManager : Swift.Sendable {
-  func setFetchTimeout(_ timeout: Swift.Double)
   func fetchAndActivateRemoteConfig() async
-  func setDefaultValues(_ values: [Swift.String : Any])
   func value(forKey key: Swift.String) async throws -> Foundation.Data
-  func setDataCollectionEnabled(_ enabled: Swift.Bool)
 }
 public protocol PurchaseManager : Swift.Sendable {
   func revenueCatUserId() -> Swift.String
@@ -362,12 +364,10 @@ extension KovaleeFramework.KovaleeManager {
   final public func setSurveyDelegate(_ delegate: any KovaleeFramework.KovaleeSurveyDelegate)
 }
 extension KovaleeFramework.KovaleeManager {
-  final public func setDefaultValues(_ values: [Swift.String : Any])
   final public func remoteValue(forKey key: Swift.String) async throws -> Foundation.Data
   final public func localABTestValue() -> Swift.String?
   final public func abTestValue(forKey key: Swift.String) async -> Swift.String?
   final public func setAbTestValue(_ value: Swift.String)
-  final public func setFetchTimeout(_ timeout: Swift.Double)
 }
 public enum DefaultEvents {
   case firstAppOpen

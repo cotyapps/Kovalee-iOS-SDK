@@ -2415,46 +2415,6 @@
           },
           {
             "kind": "Function",
-            "name": "setDefaultValues",
-            "printedName": "setDefaultValues(_:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Dictionary",
-                "printedName": "[Swift.String : Any]",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "ProtocolComposition",
-                    "printedName": "Any"
-                  }
-                ],
-                "usr": "s:SD"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:16KovaleeFramework0A7ManagerC16setDefaultValuesyySDySSypGF",
-            "mangledName": "$s16KovaleeFramework0A7ManagerC16setDefaultValuesyySDySSypGF",
-            "moduleName": "KovaleeFramework",
-            "declAttributes": [
-              "Final"
-            ],
-            "isFromExtension": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
             "name": "remoteValue",
             "printedName": "remoteValue(forKey:)",
             "children": [
@@ -2568,33 +2528,6 @@
             "declKind": "Func",
             "usr": "s:16KovaleeFramework0A7ManagerC14setAbTestValueyySSF",
             "mangledName": "$s16KovaleeFramework0A7ManagerC14setAbTestValueyySSF",
-            "moduleName": "KovaleeFramework",
-            "declAttributes": [
-              "Final"
-            ],
-            "isFromExtension": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "setFetchTimeout",
-            "printedName": "setFetchTimeout(_:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Double",
-                "printedName": "Swift.Double",
-                "usr": "s:Sd"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:16KovaleeFramework0A7ManagerC15setFetchTimeoutyySdF",
-            "mangledName": "$s16KovaleeFramework0A7ManagerC15setFetchTimeoutyySdF",
             "moduleName": "KovaleeFramework",
             "declAttributes": [
               "Final"
@@ -3746,66 +3679,6 @@
           },
           {
             "kind": "Var",
-            "name": "firebase",
-            "printedName": "firebase",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "KovaleeFramework.KovaleeKeys.Firebase?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Firebase",
-                    "printedName": "KovaleeFramework.KovaleeKeys.Firebase",
-                    "usr": "s:16KovaleeFramework0A4KeysV8FirebaseV"
-                  }
-                ],
-                "usr": "s:Sq"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:16KovaleeFramework0A4KeysV8firebaseAC8FirebaseVSgvp",
-            "mangledName": "$s16KovaleeFramework0A4KeysV8firebaseAC8FirebaseVSgvp",
-            "moduleName": "KovaleeFramework",
-            "declAttributes": [
-              "HasStorage",
-              "AccessControl"
-            ],
-            "isLet": true,
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Optional",
-                    "printedName": "KovaleeFramework.KovaleeKeys.Firebase?",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Firebase",
-                        "printedName": "KovaleeFramework.KovaleeKeys.Firebase",
-                        "usr": "s:16KovaleeFramework0A4KeysV8FirebaseV"
-                      }
-                    ],
-                    "usr": "s:Sq"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:16KovaleeFramework0A4KeysV8firebaseAC8FirebaseVSgvg",
-                "mangledName": "$s16KovaleeFramework0A4KeysV8firebaseAC8FirebaseVSgvg",
-                "moduleName": "KovaleeFramework",
-                "implicit": true,
-                "accessorKind": "get"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
             "name": "survicate",
             "printedName": "survicate",
             "children": [
@@ -3858,6 +3731,66 @@
                 "declKind": "Accessor",
                 "usr": "s:16KovaleeFramework0A4KeysV9survicateAC9SurvicateVSgvg",
                 "mangledName": "$s16KovaleeFramework0A4KeysV9survicateAC9SurvicateVSgvg",
+                "moduleName": "KovaleeFramework",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "posthog",
+            "printedName": "posthog",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "KovaleeFramework.KovaleeKeys.Posthog?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Posthog",
+                    "printedName": "KovaleeFramework.KovaleeKeys.Posthog",
+                    "usr": "s:16KovaleeFramework0A4KeysV7PosthogV"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:16KovaleeFramework0A4KeysV7posthogAC7PosthogVSgvp",
+            "mangledName": "$s16KovaleeFramework0A4KeysV7posthogAC7PosthogVSgvp",
+            "moduleName": "KovaleeFramework",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "KovaleeFramework.KovaleeKeys.Posthog?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Posthog",
+                        "printedName": "KovaleeFramework.KovaleeKeys.Posthog",
+                        "usr": "s:16KovaleeFramework0A4KeysV7PosthogV"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:16KovaleeFramework0A4KeysV7posthogAC7PosthogVSgvg",
+                "mangledName": "$s16KovaleeFramework0A4KeysV7posthogAC7PosthogVSgvg",
                 "moduleName": "KovaleeFramework",
                 "implicit": true,
                 "accessorKind": "get"
@@ -4603,6 +4536,164 @@
             "declKind": "Struct",
             "usr": "s:16KovaleeFramework0A4KeysV9SurvicateV",
             "mangledName": "$s16KovaleeFramework0A4KeysV9SurvicateV",
+            "moduleName": "KovaleeFramework",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "conformances": [
+              {
+                "kind": "Conformance",
+                "name": "Copyable",
+                "printedName": "Copyable",
+                "usr": "s:s8CopyableP",
+                "mangledName": "$ss8CopyableP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Escapable",
+                "printedName": "Escapable",
+                "usr": "s:s9EscapableP",
+                "mangledName": "$ss9EscapableP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Decodable",
+                "printedName": "Decodable",
+                "usr": "s:Se",
+                "mangledName": "$sSe"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Sendable",
+                "printedName": "Sendable",
+                "usr": "s:s8SendableP",
+                "mangledName": "$ss8SendableP"
+              }
+            ]
+          },
+          {
+            "kind": "TypeDecl",
+            "name": "Posthog",
+            "printedName": "Posthog",
+            "children": [
+              {
+                "kind": "Var",
+                "name": "apiKey",
+                "printedName": "apiKey",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:16KovaleeFramework0A4KeysV7PosthogV6apiKeySSvp",
+                "mangledName": "$s16KovaleeFramework0A4KeysV7PosthogV6apiKeySSvp",
+                "moduleName": "KovaleeFramework",
+                "declAttributes": [
+                  "HasStorage",
+                  "AccessControl"
+                ],
+                "isLet": true,
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:16KovaleeFramework0A4KeysV7PosthogV6apiKeySSvg",
+                    "mangledName": "$s16KovaleeFramework0A4KeysV7PosthogV6apiKeySSvg",
+                    "moduleName": "KovaleeFramework",
+                    "implicit": true,
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "host",
+                "printedName": "host",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:16KovaleeFramework0A4KeysV7PosthogV4hostSSvp",
+                "mangledName": "$s16KovaleeFramework0A4KeysV7PosthogV4hostSSvp",
+                "moduleName": "KovaleeFramework",
+                "declAttributes": [
+                  "HasStorage",
+                  "AccessControl"
+                ],
+                "isLet": true,
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:16KovaleeFramework0A4KeysV7PosthogV4hostSSvg",
+                    "mangledName": "$s16KovaleeFramework0A4KeysV7PosthogV4hostSSvg",
+                    "moduleName": "KovaleeFramework",
+                    "implicit": true,
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Constructor",
+                "name": "init",
+                "printedName": "init(from:)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Posthog",
+                    "printedName": "KovaleeFramework.KovaleeKeys.Posthog",
+                    "usr": "s:16KovaleeFramework0A4KeysV7PosthogV"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Decoder",
+                    "printedName": "any Swift.Decoder",
+                    "usr": "s:s7DecoderP"
+                  }
+                ],
+                "declKind": "Constructor",
+                "usr": "s:16KovaleeFramework0A4KeysV7PosthogV4fromAEs7Decoder_p_tKcfc",
+                "mangledName": "$s16KovaleeFramework0A4KeysV7PosthogV4fromAEs7Decoder_p_tKcfc",
+                "moduleName": "KovaleeFramework",
+                "implicit": true,
+                "throwing": true,
+                "init_kind": "Designated"
+              }
+            ],
+            "declKind": "Struct",
+            "usr": "s:16KovaleeFramework0A4KeysV7PosthogV",
+            "mangledName": "$s16KovaleeFramework0A4KeysV7PosthogV",
             "moduleName": "KovaleeFramework",
             "declAttributes": [
               "AccessControl"
@@ -7815,33 +7906,6 @@
         "children": [
           {
             "kind": "Function",
-            "name": "setFetchTimeout",
-            "printedName": "setFetchTimeout(_:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Double",
-                "printedName": "Swift.Double",
-                "usr": "s:Sd"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:16KovaleeFramework26RemoteConfigurationManagerP15setFetchTimeoutyySdF",
-            "mangledName": "$s16KovaleeFramework26RemoteConfigurationManagerP15setFetchTimeoutyySdF",
-            "moduleName": "KovaleeFramework",
-            "genericSig": "<τ_0_0 where τ_0_0 : KovaleeFramework.RemoteConfigurationManager>",
-            "sugared_genericSig": "<Self where Self : KovaleeFramework.RemoteConfigurationManager>",
-            "protocolReq": true,
-            "reqNewWitnessTableEntry": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
             "name": "fetchAndActivateRemoteConfig",
             "printedName": "fetchAndActivateRemoteConfig()",
             "children": [
@@ -7854,46 +7918,6 @@
             "declKind": "Func",
             "usr": "s:16KovaleeFramework26RemoteConfigurationManagerP016fetchAndActivateC6ConfigyyYaF",
             "mangledName": "$s16KovaleeFramework26RemoteConfigurationManagerP016fetchAndActivateC6ConfigyyYaF",
-            "moduleName": "KovaleeFramework",
-            "genericSig": "<τ_0_0 where τ_0_0 : KovaleeFramework.RemoteConfigurationManager>",
-            "sugared_genericSig": "<Self where Self : KovaleeFramework.RemoteConfigurationManager>",
-            "protocolReq": true,
-            "reqNewWitnessTableEntry": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "setDefaultValues",
-            "printedName": "setDefaultValues(_:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Dictionary",
-                "printedName": "[Swift.String : Any]",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "ProtocolComposition",
-                    "printedName": "Any"
-                  }
-                ],
-                "usr": "s:SD"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:16KovaleeFramework26RemoteConfigurationManagerP16setDefaultValuesyySDySSypGF",
-            "mangledName": "$s16KovaleeFramework26RemoteConfigurationManagerP16setDefaultValuesyySDySSypGF",
             "moduleName": "KovaleeFramework",
             "genericSig": "<τ_0_0 where τ_0_0 : KovaleeFramework.RemoteConfigurationManager>",
             "sugared_genericSig": "<Self where Self : KovaleeFramework.RemoteConfigurationManager>",
@@ -7927,33 +7951,6 @@
             "sugared_genericSig": "<Self where Self : KovaleeFramework.RemoteConfigurationManager>",
             "protocolReq": true,
             "throwing": true,
-            "reqNewWitnessTableEntry": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "setDataCollectionEnabled",
-            "printedName": "setDataCollectionEnabled(_:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Bool",
-                "printedName": "Swift.Bool",
-                "usr": "s:Sb"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:16KovaleeFramework26RemoteConfigurationManagerP24setDataCollectionEnabledyySbF",
-            "mangledName": "$s16KovaleeFramework26RemoteConfigurationManagerP24setDataCollectionEnabledyySbF",
-            "moduleName": "KovaleeFramework",
-            "genericSig": "<τ_0_0 where τ_0_0 : KovaleeFramework.RemoteConfigurationManager>",
-            "sugared_genericSig": "<Self where Self : KovaleeFramework.RemoteConfigurationManager>",
-            "protocolReq": true,
             "reqNewWitnessTableEntry": true,
             "funcSelfKind": "NonMutating"
           }
@@ -14527,14 +14524,14 @@
     {
       "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/Utils\/KovaleeKeys.swift",
       "kind": "StringLiteral",
-      "offset": 342,
+      "offset": 337,
       "length": 10,
       "value": "\"app_code\""
     },
     {
       "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/Utils\/KovaleeKeys.swift",
       "kind": "StringLiteral",
-      "offset": 422,
+      "offset": 417,
       "length": 13,
       "value": "\"revenue_cat\""
     },
