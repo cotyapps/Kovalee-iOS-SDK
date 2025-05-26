@@ -26,12 +26,8 @@ It's part of a broader project KovaleeSDK
   spec.source_files          = "Sources/KovaleePurchases/*.swift"
 
   spec.dependency 'KovaleeSDK'
-  spec.dependency "RevenueCat", '>= 5.0.0'
   spec.dependency "KovaleeRemoteConfig"
+  spec.dependency "RevenueCat", '>= 5.0.0'
 
   spec.static_framework = true
-
-  spec.dependency 'Firebase/Core', '>= 11.0.0'
-  spec.dependency "FirebaseAnalyticsSwift"
-  spec.dependency "FirebaseRemoteConfigSwift"
 end
