@@ -15,7 +15,7 @@ Pod::Spec.new do |s|
   s.ios.deployment_target = '14.3'
   s.swift_version    = '5.7'
 
-  s.source_files = 'Sources/KovaleeSDKUI/*.swift'
+  s.source_files = 'Sources/KovaleeSDKUI/*.swift', 'Sources/KovaleeSDKUI/Subviews/*.swift'
   s.dependency 'KovaleeSDK'
 
 end
