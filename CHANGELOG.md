@@ -7,6 +7,20 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 <<<<<<< HEAD
 =======
+## [2.0.13] - 2025-05-29
+### :sparkles: New Features
+- [`cbf0b2b`](https://github.com/cotyapps/Kovalee-iOS-SDK/commit/cbf0b2b2350427f785e4d1bee693dcc8b31493a0) - integrating check for external payment *(commit by [@fto-k](https://github.com/fto-k))*
+- [`7094ec8`](https://github.com/cotyapps/Kovalee-iOS-SDK/commit/7094ec839d452dddef564b5f8da70bc9b4239687) - exposing readyForPromotedProduct purchase delegate *(commit by [@fto-k](https://github.com/fto-k))*
+
+### :bug: Bug Fixes
+- [`3a66c6b`](https://github.com/cotyapps/Kovalee-iOS-SDK/commit/3a66c6b44b3032892a104b4fe0f2322c26018e2e) - KovaleePurchases.podspecs *(commit by [@fto-k](https://github.com/fto-k))*
+- [`492d3c7`](https://github.com/cotyapps/Kovalee-iOS-SDK/commit/492d3c73e5a77ef44b1a94aee59086a6e6361e0a) - podspec for KovaleeSDKUI *(commit by [@fto-k](https://github.com/fto-k))*
+
+### :wrench: Chores
+- [`e39289c`](https://github.com/cotyapps/Kovalee-iOS-SDK/commit/e39289cfde820660b2fe8f3f7407fa49b440af60) - fixed podspec for KovaleeRemoteConfig *(commit by [@fto-k](https://github.com/fto-k))*
+- [`3d1220a`](https://github.com/cotyapps/Kovalee-iOS-SDK/commit/3d1220a5ab42d48ee3742f431e04228bcb7f3232) - updated podspec version *(commit by [@fto-k](https://github.com/fto-k))*
+
+
 ## [2.0.12] - 2025-05-22
 ### :bug: Bug Fixes
 - [`4967a75`](https://github.com/cotyapps/Kovalee-iOS-SDK/commit/4967a759049a5d5eab1927fc99f719672c2015eb) - trying to fix error on LogLevel disambiguation *(commit by [@fto-k](https://github.com/fto-k))*
@@ -830,3 +844,4 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 [2.0.10]: https://github.com/cotyapps/Kovalee-iOS-SDK/compare/2.0.9...2.0.10
 [2.0.11]: https://github.com/cotyapps/Kovalee-iOS-SDK/compare/2.0.10...2.0.11
 [2.0.12]: https://github.com/cotyapps/Kovalee-iOS-SDK/compare/2.0.11...2.0.12
+[2.0.13]: https://github.com/cotyapps/Kovalee-iOS-SDK/compare/2.0.12...2.0.13
