@@ -141,6 +141,15 @@ final class RevenueCatWrapperImpl: NSObject, PurchaseManager, Manager {
         self.delegate = delegate
     }
 
+    func asyncPurchase(withId productId: String) {
+        Task {
+            _ = try? await Kovalee.purchaseSubscription(
+                withId: productId,
+                fromSource: "external"
+            )
+        }
+    }
+
     private var delegate: KovaleeFramework.KovaleePurchasesDelegate?
 }
 
@@ -151,6 +160,18 @@ extension RevenueCatWrapperImpl: RevenueCat.PurchasesDelegate {
         KLogger.debug("🛍️ did receive update \(customerInfo)")
 
         delegate?.didReceiveUpdate(KCustomerInfo(info: customerInfo))
+    }
+
+    func purchases(
+        _: Purchases,
+        readyForPromotedProduct _: StoreProduct,
+        purchase startPurchase: @escaping StartPurchaseBlock
+    ) {
+        startPurchase { _, customerInfo, _, _ in
+            customerInfo?.entitlements.all.values
+                .filter { $0.isActive == true }
+                .forEach { self.asyncPurchase(withId: $0.productIdentifier) }
+        }
     }
 }
 
