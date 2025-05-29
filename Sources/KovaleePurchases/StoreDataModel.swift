@@ -495,7 +495,7 @@ public final class KPackage: Identifiable, AbstractPackage, Encodable {
 }
 
 /// Type that provides access to all of `StoreKit`'s product type's properties.
-public struct KStoreProduct: Encodable, Sendable {
+public struct KStoreProduct: AbstractStoreProduct, Encodable, Sendable {
     /// The type of product.
     public let productType: KProductType?
 
@@ -808,7 +808,7 @@ public enum KPackageType: Int, Encodable, Sendable {
          weekly
 }
 
-public struct KStoreTransaction: Encodable {
+public struct KStoreTransaction: AbstractStoreTransaction, Encodable {
     public var productIdentifier: String
     public var purchaseDate: Date
     public var transactionIdentifier: String

@@ -8497,6 +8497,82 @@
             "protocolReq": true,
             "reqNewWitnessTableEntry": true,
             "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "readyForPromotedProduct",
+            "printedName": "readyForPromotedProduct(_:purchaseBlock:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "AbstractStoreProduct",
+                "printedName": "any KovaleeFramework.AbstractStoreProduct",
+                "usr": "s:16KovaleeFramework20AbstractStoreProductP"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Tuple",
+                "printedName": "((any KovaleeFramework.AbstractStoreTransaction)?, (any KovaleeFramework.AbstractCustomerInfo)?, Foundation.NSError?)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "(any KovaleeFramework.AbstractStoreTransaction)?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "AbstractStoreTransaction",
+                        "printedName": "any KovaleeFramework.AbstractStoreTransaction",
+                        "usr": "s:16KovaleeFramework24AbstractStoreTransactionP"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "(any KovaleeFramework.AbstractCustomerInfo)?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "AbstractCustomerInfo",
+                        "printedName": "any KovaleeFramework.AbstractCustomerInfo",
+                        "usr": "s:16KovaleeFramework20AbstractCustomerInfoP"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Foundation.NSError?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NSError",
+                        "printedName": "Foundation.NSError",
+                        "usr": "c:objc(cs)NSError"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:16KovaleeFramework0A17PurchasesDelegateP23readyForPromotedProduct_13purchaseBlockyAA013AbstractStoreH0_p_AA0kL11Transaction_pSg_AA0K12CustomerInfo_pSgSo7NSErrorCSgttF",
+            "mangledName": "$s16KovaleeFramework0A17PurchasesDelegateP23readyForPromotedProduct_13purchaseBlockyAA013AbstractStoreH0_p_AA0kL11Transaction_pSg_AA0K12CustomerInfo_pSgSo7NSErrorCSgttF",
+            "moduleName": "KovaleeFramework",
+            "genericSig": "<τ_0_0 where τ_0_0 : KovaleeFramework.KovaleePurchasesDelegate>",
+            "sugared_genericSig": "<Self where Self : KovaleeFramework.KovaleePurchasesDelegate>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
           }
         ],
         "declKind": "Protocol",
@@ -8529,6 +8605,62 @@
             "printedName": "Sendable",
             "usr": "s:s8SendableP",
             "mangledName": "$ss8SendableP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "AbstractStoreProduct",
+        "printedName": "AbstractStoreProduct",
+        "declKind": "Protocol",
+        "usr": "s:16KovaleeFramework20AbstractStoreProductP",
+        "mangledName": "$s16KovaleeFramework20AbstractStoreProductP",
+        "moduleName": "KovaleeFramework",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "AbstractStoreTransaction",
+        "printedName": "AbstractStoreTransaction",
+        "declKind": "Protocol",
+        "usr": "s:16KovaleeFramework24AbstractStoreTransactionP",
+        "mangledName": "$s16KovaleeFramework24AbstractStoreTransactionP",
+        "moduleName": "KovaleeFramework",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
           }
         ]
       },
