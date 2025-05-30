@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'KovaleeSDK'
-  s.version          = '2.0.13'
+  s.version          = '2.0.14'
   s.summary          = 'KovaleeSDK is an efficient iOS framework, that\'s packed with tools for tracking user behavior.'
   s.description  = <<-DESC
                    KovaleeSDK is an efficient iOS framework, that\'s packed with tools specifically for tracking user behavior, handling user purchases, and smoothly integrating ads.
