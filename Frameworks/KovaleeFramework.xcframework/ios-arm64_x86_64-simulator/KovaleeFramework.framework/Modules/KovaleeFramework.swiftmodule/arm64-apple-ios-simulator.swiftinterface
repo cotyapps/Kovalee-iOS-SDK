@@ -230,7 +230,7 @@ public protocol AbstractStoreProduct {
 }
 public protocol AbstractStoreTransaction {
 }
-public protocol AbstractCustomerInfo {
+public protocol AbstractCustomerInfo : Swift.Sendable {
   var activeSubscriptions: Swift.Set<Swift.String> { get }
   var activeEntitlements: Swift.Bool { get }
 }

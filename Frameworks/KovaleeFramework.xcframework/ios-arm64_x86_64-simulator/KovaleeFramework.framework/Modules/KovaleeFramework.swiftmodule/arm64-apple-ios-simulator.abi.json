@@ -8774,6 +8774,8 @@
         "usr": "s:16KovaleeFramework20AbstractCustomerInfoP",
         "mangledName": "$s16KovaleeFramework20AbstractCustomerInfoP",
         "moduleName": "KovaleeFramework",
+        "genericSig": "<τ_0_0 : Swift.Sendable>",
+        "sugared_genericSig": "<Self : Swift.Sendable>",
         "declAttributes": [
           "AccessControl"
         ],
@@ -8791,6 +8793,13 @@
             "printedName": "Copyable",
             "usr": "s:s8CopyableP",
             "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
           }
         ]
       },

@@ -9,7 +9,7 @@ enum PurchaseError: Error {
 }
 
 /// A container for the most recent customer info
-public class KCustomerInfo: AbstractCustomerInfo, Encodable {
+public final class KCustomerInfo: AbstractCustomerInfo, Encodable {
     /// ``EntitlementInfos`` attached to this customer info.
     public let entitlements: KEntitlementInfos
 
@@ -68,7 +68,7 @@ public class KCustomerInfo: AbstractCustomerInfo, Encodable {
 }
 
 /// This class contains all the entitlements associated to the user.
-public class KEntitlementInfos: NSObject, Encodable {
+public final class KEntitlementInfos: NSObject, Encodable, Sendable {
     /**
      Dictionary of all EntitlementInfo (``EntitlementInfo``) objects (active and inactive) keyed by entitlement
      identifier. This dictionary can also be accessed by using an index subscript on ``EntitlementInfos``, e.g.
@@ -108,7 +108,7 @@ public extension KEntitlementInfos {
 }
 
 ///  The EntitlementInfo object gives you access to all of the information about the status of a user entitlement.
-public class KEntitlementInfo: NSObject, Encodable {
+public final class KEntitlementInfo: NSObject, Encodable, Sendable {
     /// The entitlement identifier configured in the RevenueCat dashboard
     public let identifier: String
 
@@ -183,7 +183,7 @@ public extension KEntitlementInfo {
 }
 
 /// Information that represents a non-subscription purchase made by a user.
-public class KNonSubscriptionTransaction: NSObject, Encodable {
+public final class KNonSubscriptionTransaction: NSObject, Encodable, Sendable {
     /// The product identifier.
     public let productIdentifier: String
 
@@ -200,7 +200,7 @@ public class KNonSubscriptionTransaction: NSObject, Encodable {
     }
 }
 
-public enum KPeriodType: Int, Encodable {
+public enum KPeriodType: Int, Encodable, Sendable {
     /// If the entitlement is not under an introductory or trial period.
     case normal = 0
 
@@ -211,13 +211,13 @@ public enum KPeriodType: Int, Encodable {
     case trial = 2
 }
 
-public enum KPurchaseOwnershipType: Int, Encodable {
+public enum KPurchaseOwnershipType: Int, Encodable, Sendable {
     case purchased = 0
     case familyShared = 1
     case unknown = 2
 }
 
-public enum KStore: Int, Encodable {
+public enum KStore: Int, Encodable, Sendable {
     /// For entitlements granted via Apple App Store.
     case appStore = 0
     /// For entitlements granted via Apple Mac App Store.
