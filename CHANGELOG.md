@@ -7,6 +7,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 <<<<<<< HEAD
 =======
+## [2.0.14] - 2025-05-30
+### :sparkles: New Features
+- [`9c1dfa4`](https://github.com/cotyapps/Kovalee-iOS-SDK/commit/9c1dfa4ff6af613a2e96ea685c78ab3ae2270895) - set KCustomerInfo as Sendable *(commit by [@fto-k](https://github.com/fto-k))*
+
+
 ## [2.0.13] - 2025-05-29
 ### :sparkles: New Features
 - [`cbf0b2b`](https://github.com/cotyapps/Kovalee-iOS-SDK/commit/cbf0b2b2350427f785e4d1bee693dcc8b31493a0) - integrating check for external payment *(commit by [@fto-k](https://github.com/fto-k))*
@@ -845,3 +850,4 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 [2.0.11]: https://github.com/cotyapps/Kovalee-iOS-SDK/compare/2.0.10...2.0.11
 [2.0.12]: https://github.com/cotyapps/Kovalee-iOS-SDK/compare/2.0.11...2.0.12
 [2.0.13]: https://github.com/cotyapps/Kovalee-iOS-SDK/compare/2.0.12...2.0.13
+[2.0.14]: https://github.com/cotyapps/Kovalee-iOS-SDK/compare/2.0.13...2.0.14
