@@ -7,6 +7,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 <<<<<<< HEAD
 =======
+## [2.0.15] - 2025-07-16
+### :bug: Bug Fixes
+- [`09de997`](https://github.com/cotyapps/Kovalee-iOS-SDK/commit/09de997afced02d0bdaf7996122a74df65899b8a) - Debug console + internal Storage re-hydration on null default values *(commit by [@fto-k](https://github.com/fto-k))*
+
+
 ## [2.0.14] - 2025-05-30
 ### :sparkles: New Features
 - [`9c1dfa4`](https://github.com/cotyapps/Kovalee-iOS-SDK/commit/9c1dfa4ff6af613a2e96ea685c78ab3ae2270895) - set KCustomerInfo as Sendable *(commit by [@fto-k](https://github.com/fto-k))*
@@ -851,3 +856,4 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 [2.0.12]: https://github.com/cotyapps/Kovalee-iOS-SDK/compare/2.0.11...2.0.12
 [2.0.13]: https://github.com/cotyapps/Kovalee-iOS-SDK/compare/2.0.12...2.0.13
 [2.0.14]: https://github.com/cotyapps/Kovalee-iOS-SDK/compare/2.0.13...2.0.14
+[2.0.15]: https://github.com/cotyapps/Kovalee-iOS-SDK/compare/2.0.14...2.0.15
