@@ -16,7 +16,7 @@ final public class KovaleeManager {
   @objc deinit
 }
 extension KovaleeFramework.KovaleeManager {
-  final public func setupConversionManager() async
+  final public func setupConversionManager(withParsingLogic logic: Swift.Int) async
   final public func flushCachedEvents() async
   final public func fetchEventsSequence(sequenceVersion: Swift.Int) async
 }

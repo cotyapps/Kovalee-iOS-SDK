@@ -96,17 +96,23 @@
           {
             "kind": "Function",
             "name": "setupConversionManager",
-            "printedName": "setupConversionManager()",
+            "printedName": "setupConversionManager(withParsingLogic:)",
             "children": [
               {
                 "kind": "TypeNominal",
                 "name": "Void",
                 "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
               }
             ],
             "declKind": "Func",
-            "usr": "s:16KovaleeFramework0A7ManagerC015setupConversionC0yyYaF",
-            "mangledName": "$s16KovaleeFramework0A7ManagerC015setupConversionC0yyYaF",
+            "usr": "s:16KovaleeFramework0A7ManagerC015setupConversionC016withParsingLogicySi_tYaF",
+            "mangledName": "$s16KovaleeFramework0A7ManagerC015setupConversionC016withParsingLogicySi_tYaF",
             "moduleName": "KovaleeFramework",
             "declAttributes": [
               "Final"
@@ -14835,35 +14841,42 @@
     {
       "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/Event.swift",
       "kind": "IntegerLiteral",
-      "offset": 175,
-      "length": 7,
+      "offset": 164,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/Event.swift",
+      "kind": "IntegerLiteral",
+      "offset": 189,
+      "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/Event.swift",
       "kind": "BooleanLiteral",
-      "offset": 1209,
+      "offset": 1217,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/Event.swift",
       "kind": "BooleanLiteral",
-      "offset": 1390,
+      "offset": 1398,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/Event.swift",
       "kind": "StringLiteral",
-      "offset": 6690,
+      "offset": 6856,
       "length": 12,
       "value": "\"key_action\""
     },
     {
       "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/Event.swift",
       "kind": "StringLiteral",
-      "offset": 6728,
+      "offset": 6894,
       "length": 12,
       "value": "\"product_id\""
     },

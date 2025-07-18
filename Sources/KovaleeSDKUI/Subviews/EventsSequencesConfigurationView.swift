@@ -114,7 +114,7 @@ struct EventsSequencesConfigurationView: View {
             Kovalee.shared.kovaleeManager?.setSequenceVersion(Int(sequenceVersionValue) ?? 0)
 
             await Kovalee.shared.kovaleeManager?.fetchEventsSequence(sequenceVersion: Int(sequenceVersionValue) ?? 0)
-            await Kovalee.shared.kovaleeManager?.setupConversionManager()
+            await Kovalee.shared.kovaleeManager?.setupConversionManager(withParsingLogic: Int(parsingLogicValue) ?? 0)
 
             await Kovalee.shared.kovaleeManager?.resetApp(resetAllData: false)
 
