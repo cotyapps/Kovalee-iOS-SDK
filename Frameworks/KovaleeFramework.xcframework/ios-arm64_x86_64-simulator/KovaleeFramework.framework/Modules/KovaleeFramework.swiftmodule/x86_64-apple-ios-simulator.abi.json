@@ -623,17 +623,23 @@
           {
             "kind": "Function",
             "name": "resetApp",
-            "printedName": "resetApp()",
+            "printedName": "resetApp(resetAllData:)",
             "children": [
               {
                 "kind": "TypeNominal",
                 "name": "Void",
                 "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
               }
             ],
             "declKind": "Func",
-            "usr": "s:16KovaleeFramework0A7ManagerC8resetAppyyYaF",
-            "mangledName": "$s16KovaleeFramework0A7ManagerC8resetAppyyYaF",
+            "usr": "s:16KovaleeFramework0A7ManagerC8resetApp0D7AllDataySb_tYaF",
+            "mangledName": "$s16KovaleeFramework0A7ManagerC8resetApp0D7AllDataySb_tYaF",
             "moduleName": "KovaleeFramework",
             "declAttributes": [
               "Final"

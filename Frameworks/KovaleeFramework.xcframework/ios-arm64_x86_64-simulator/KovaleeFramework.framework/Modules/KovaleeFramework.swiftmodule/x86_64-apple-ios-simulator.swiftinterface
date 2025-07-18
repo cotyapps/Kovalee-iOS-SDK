@@ -281,7 +281,7 @@ extension KovaleeFramework.KovaleeManager {
   final public func setSequenceVersion(_ version: Swift.Int)
   final public func parsingLogic() -> Swift.Int
   final public func setParsingLogic(_ logic: Swift.Int)
-  final public func resetApp() async
+  final public func resetApp(resetAllData: Swift.Bool) async
   final public func resetCVManager()
   final public func sendEvent(_ event: KovaleeFramework.Event)
   final public func setAmplitudeUserId(userId: Swift.String)
