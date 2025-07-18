@@ -7,6 +7,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 <<<<<<< HEAD
 =======
+## [2.0.16] - 2025-07-18
+### :bug: Bug Fixes
+- [`d551b54`](https://github.com/cotyapps/Kovalee-iOS-SDK/commit/d551b54f3ff56d02a0f5ea6ef6bc3cf8c8aeac2f) - Debug console will now reset to first session *(commit by [@fto-k](https://github.com/fto-k))*
+- [`ab3c017`](https://github.com/cotyapps/Kovalee-iOS-SDK/commit/ab3c017f1bccebb7822bede6c1b390ad437694f3) - ConversionValue Manager initialization issue for Mature apps *(commit by [@fto-k](https://github.com/fto-k))*
+
+
 ## [2.0.15] - 2025-07-16
 ### :bug: Bug Fixes
 - [`09de997`](https://github.com/cotyapps/Kovalee-iOS-SDK/commit/09de997afced02d0bdaf7996122a74df65899b8a) - Debug console + internal Storage re-hydration on null default values *(commit by [@fto-k](https://github.com/fto-k))*
@@ -857,3 +863,4 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 [2.0.13]: https://github.com/cotyapps/Kovalee-iOS-SDK/compare/2.0.12...2.0.13
 [2.0.14]: https://github.com/cotyapps/Kovalee-iOS-SDK/compare/2.0.13...2.0.14
 [2.0.15]: https://github.com/cotyapps/Kovalee-iOS-SDK/compare/2.0.14...2.0.15
+[2.0.16]: https://github.com/cotyapps/Kovalee-iOS-SDK/compare/2.0.15...2.0.16
