@@ -14869,14 +14869,14 @@
     {
       "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/Event.swift",
       "kind": "StringLiteral",
-      "offset": 6856,
+      "offset": 6698,
       "length": 12,
       "value": "\"key_action\""
     },
     {
       "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/Event.swift",
       "kind": "StringLiteral",
-      "offset": 6894,
+      "offset": 6736,
       "length": 12,
       "value": "\"product_id\""
     },
@@ -14890,14 +14890,14 @@
     {
       "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/EventsSequence.swift",
       "kind": "StringLiteral",
-      "offset": 4592,
+      "offset": 4764,
       "length": 4,
       "value": "\"cv\""
     },
     {
       "filePath": "\/Users\/filippo\/Tools\/SDK\/KovaleeFramework\/KovaleeFramework\/ConversionValue\/EventsSequence.swift",
       "kind": "StringLiteral",
-      "offset": 4624,
+      "offset": 4796,
       "length": 14,
       "value": "\"coarse_value\""
     }

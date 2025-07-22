@@ -18,11 +18,11 @@
 		</data>
 		<key>ios-arm64/KovaleeFramework.framework/KovaleeFramework</key>
 		<data>
-		SrwDfArCBrxWjuwKKEbAeXium3w=
+		CHYqYRSjsPJsBYSYWv5owCHuARo=
 		</data>
 		<key>ios-arm64/KovaleeFramework.framework/Modules/KovaleeFramework.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		G21juovS+suaN0B5LiWK2fQ1dhk=
+		gwpxYxpqTH9HWb3h/Uizclu0ers=
 		</data>
 		<key>ios-arm64/KovaleeFramework.framework/Modules/KovaleeFramework.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
@@ -50,11 +50,11 @@
 		</data>
 		<key>ios-arm64/dSYMs/KovaleeFramework.framework.dSYM/Contents/Resources/DWARF/KovaleeFramework</key>
 		<data>
-		fML29GuqpHVGz8Jl6AiMDGendro=
+		PaPZj5BmPNjuoylOdPZsy7s5KAk=
 		</data>
 		<key>ios-arm64/dSYMs/KovaleeFramework.framework.dSYM/Contents/Resources/Relocations/aarch64/KovaleeFramework.yml</key>
 		<data>
-		zjhaXXiXAp7BmwowgzRpxaDJMEs=
+		75mQOI+VDd7Keqi/8GN74pQD9FY=
 		</data>
 		<key>ios-arm64_x86_64-maccatalyst/KovaleeFramework.framework/Versions/A/Headers/KovaleeFramework-Swift.h</key>
 		<data>
@@ -66,11 +66,11 @@
 		</data>
 		<key>ios-arm64_x86_64-maccatalyst/KovaleeFramework.framework/Versions/A/KovaleeFramework</key>
 		<data>
-		cjzG07znBUJmBeY5W3+KUSGirBM=
+		5oYeuCIoxy7Ffet3keAFFGKCZs0=
 		</data>
 		<key>ios-arm64_x86_64-maccatalyst/KovaleeFramework.framework/Versions/A/Modules/KovaleeFramework.swiftmodule/arm64-apple-ios-macabi.abi.json</key>
 		<data>
-		G21juovS+suaN0B5LiWK2fQ1dhk=
+		gwpxYxpqTH9HWb3h/Uizclu0ers=
 		</data>
 		<key>ios-arm64_x86_64-maccatalyst/KovaleeFramework.framework/Versions/A/Modules/KovaleeFramework.swiftmodule/arm64-apple-ios-macabi.private.swiftinterface</key>
 		<data>
@@ -86,7 +86,7 @@
 		</data>
 		<key>ios-arm64_x86_64-maccatalyst/KovaleeFramework.framework/Versions/A/Modules/KovaleeFramework.swiftmodule/x86_64-apple-ios-macabi.abi.json</key>
 		<data>
-		G21juovS+suaN0B5LiWK2fQ1dhk=
+		gwpxYxpqTH9HWb3h/Uizclu0ers=
 		</data>
 		<key>ios-arm64_x86_64-maccatalyst/KovaleeFramework.framework/Versions/A/Modules/KovaleeFramework.swiftmodule/x86_64-apple-ios-macabi.private.swiftinterface</key>
 		<data>
@@ -118,15 +118,15 @@
 		</data>
 		<key>ios-arm64_x86_64-maccatalyst/dSYMs/KovaleeFramework.framework.dSYM/Contents/Resources/DWARF/KovaleeFramework</key>
 		<data>
-		haP0fmCsXgore2mztAs27N5U3Oc=
+		2jmLzNP1hZbY5GUvdz9FVUZE4rw=
 		</data>
 		<key>ios-arm64_x86_64-maccatalyst/dSYMs/KovaleeFramework.framework.dSYM/Contents/Resources/Relocations/aarch64/KovaleeFramework.yml</key>
 		<data>
-		F7bdf3RUzxGuOk70TZMk16vcFjE=
+		s3qDiO+JGRTQS5KsgaQ9dzPs74w=
 		</data>
 		<key>ios-arm64_x86_64-maccatalyst/dSYMs/KovaleeFramework.framework.dSYM/Contents/Resources/Relocations/x86_64/KovaleeFramework.yml</key>
 		<data>
-		+JIZwB3ZKUTlrHKKj+xdki+cTWg=
+		O9cwFpPiZg33BD3PXbXH3+cbRkU=
 		</data>
 		<key>ios-arm64_x86_64-simulator/KovaleeFramework.framework/Headers/KovaleeFramework-Swift.h</key>
 		<data>
@@ -142,11 +142,11 @@
 		</data>
 		<key>ios-arm64_x86_64-simulator/KovaleeFramework.framework/KovaleeFramework</key>
 		<data>
-		sp2gF8vXbFiDRAunGAw4LKh0Y7I=
+		iJpuxeJg78AI5hflKdhYn1CBxTw=
 		</data>
 		<key>ios-arm64_x86_64-simulator/KovaleeFramework.framework/Modules/KovaleeFramework.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		G21juovS+suaN0B5LiWK2fQ1dhk=
+		gwpxYxpqTH9HWb3h/Uizclu0ers=
 		</data>
 		<key>ios-arm64_x86_64-simulator/KovaleeFramework.framework/Modules/KovaleeFramework.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -162,7 +162,7 @@
 		</data>
 		<key>ios-arm64_x86_64-simulator/KovaleeFramework.framework/Modules/KovaleeFramework.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		G21juovS+suaN0B5LiWK2fQ1dhk=
+		gwpxYxpqTH9HWb3h/Uizclu0ers=
 		</data>
 		<key>ios-arm64_x86_64-simulator/KovaleeFramework.framework/Modules/KovaleeFramework.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -186,7 +186,7 @@
 		</data>
 		<key>ios-arm64_x86_64-simulator/KovaleeFramework.framework/_CodeSignature/CodeResources</key>
 		<data>
-		7Gr2j1K20l0aVwd57gv0qzWHBFQ=
+		1b3ai5wUUku6efsm3Xm2CdXPrT4=
 		</data>
 		<key>ios-arm64_x86_64-simulator/dSYMs/KovaleeFramework.framework.dSYM/Contents/Info.plist</key>
 		<data>
@@ -194,15 +194,15 @@
 		</data>
 		<key>ios-arm64_x86_64-simulator/dSYMs/KovaleeFramework.framework.dSYM/Contents/Resources/DWARF/KovaleeFramework</key>
 		<data>
-		pwWLNlwzlAIYEMJp2iFRT+EnwXw=
+		wZv5zlRL5IrjOQ4eHXhhzVCq33I=
 		</data>
 		<key>ios-arm64_x86_64-simulator/dSYMs/KovaleeFramework.framework.dSYM/Contents/Resources/Relocations/aarch64/KovaleeFramework.yml</key>
 		<data>
-		FrDk+bPAikWdXapSOmu9EhIKiTM=
+		DU1GaNwvzlm42W+B+FUGC0Xe0Kw=
 		</data>
 		<key>ios-arm64_x86_64-simulator/dSYMs/KovaleeFramework.framework.dSYM/Contents/Resources/Relocations/x86_64/KovaleeFramework.yml</key>
 		<data>
-		HD3KNLp0oLCwYN3nVchFJ2f5LNc=
+		y0wu5EyaEBhZ6pntidsa2R8UUGs=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -244,22 +244,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			SrwDfArCBrxWjuwKKEbAeXium3w=
+			CHYqYRSjsPJsBYSYWv5owCHuARo=
 			</data>
 			<key>hash2</key>
 			<data>
-			iKgzvUIfmubP9hbUYis1E7yNHYWbCbG0wNPVIbsVI/Q=
+			Bw9HtE+2LUN89WOzDab3FckFXqIKC1nOwUPxEVd8/Nw=
 			</data>
 		</dict>
 		<key>ios-arm64/KovaleeFramework.framework/Modules/KovaleeFramework.swiftmodule/arm64-apple-ios.abi.json</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			G21juovS+suaN0B5LiWK2fQ1dhk=
+			gwpxYxpqTH9HWb3h/Uizclu0ers=
 			</data>
 			<key>hash2</key>
 			<data>
-			T2OMnEuX9C7nOduuYiAcp6gNlQUiCVm2zCGbQBTgdkk=
+			umid5don4hMWDl4mGBP+0ZS06KBDnt94pVKdOPxuW70=
 			</data>
 		</dict>
 		<key>ios-arm64/KovaleeFramework.framework/Modules/KovaleeFramework.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
@@ -332,22 +332,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			fML29GuqpHVGz8Jl6AiMDGendro=
+			PaPZj5BmPNjuoylOdPZsy7s5KAk=
 			</data>
 			<key>hash2</key>
 			<data>
-			NzW86fKaFKvdOXLOTSzNu4cPRY6/7vmJbxB37v5Igxk=
+			HYRkwg8xxsF7RB3Sj1kgQomajnazd0dMKjfto3mFM6o=
 			</data>
 		</dict>
 		<key>ios-arm64/dSYMs/KovaleeFramework.framework.dSYM/Contents/Resources/Relocations/aarch64/KovaleeFramework.yml</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			zjhaXXiXAp7BmwowgzRpxaDJMEs=
+			75mQOI+VDd7Keqi/8GN74pQD9FY=
 			</data>
 			<key>hash2</key>
 			<data>
-			frDjs5nWc5jRCNppapGU1aI0xTBlG2f8hwK5i8pJjsY=
+			0owFknN4kJDmZcrFMVIbwZzGPT6FvfWSyAhhkDNM9p0=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-maccatalyst/KovaleeFramework.framework/Headers</key>
@@ -396,22 +396,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			cjzG07znBUJmBeY5W3+KUSGirBM=
+			5oYeuCIoxy7Ffet3keAFFGKCZs0=
 			</data>
 			<key>hash2</key>
 			<data>
-			bmFXnh7gLRVXMnCtjpMNzmfgP0mWaj81tdVzMYIsIXs=
+			ozxZ+Gst8JB/ZzPPl2NBjaEOKZa3fp+kycP5u/Ca2eo=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-maccatalyst/KovaleeFramework.framework/Versions/A/Modules/KovaleeFramework.swiftmodule/arm64-apple-ios-macabi.abi.json</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			G21juovS+suaN0B5LiWK2fQ1dhk=
+			gwpxYxpqTH9HWb3h/Uizclu0ers=
 			</data>
 			<key>hash2</key>
 			<data>
-			T2OMnEuX9C7nOduuYiAcp6gNlQUiCVm2zCGbQBTgdkk=
+			umid5don4hMWDl4mGBP+0ZS06KBDnt94pVKdOPxuW70=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-maccatalyst/KovaleeFramework.framework/Versions/A/Modules/KovaleeFramework.swiftmodule/arm64-apple-ios-macabi.private.swiftinterface</key>
@@ -451,11 +451,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			G21juovS+suaN0B5LiWK2fQ1dhk=
+			gwpxYxpqTH9HWb3h/Uizclu0ers=
 			</data>
 			<key>hash2</key>
 			<data>
-			T2OMnEuX9C7nOduuYiAcp6gNlQUiCVm2zCGbQBTgdkk=
+			umid5don4hMWDl4mGBP+0ZS06KBDnt94pVKdOPxuW70=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-maccatalyst/KovaleeFramework.framework/Versions/A/Modules/KovaleeFramework.swiftmodule/x86_64-apple-ios-macabi.private.swiftinterface</key>
@@ -544,33 +544,33 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			haP0fmCsXgore2mztAs27N5U3Oc=
+			2jmLzNP1hZbY5GUvdz9FVUZE4rw=
 			</data>
 			<key>hash2</key>
 			<data>
-			AzotDLirDAY8bYc8PI2wmvlR4rR/Xj1xFkJL6cwbnWA=
+			561aN4I16WkfV921DdyxWgbiDjWE1DJET9HTP6InR3o=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-maccatalyst/dSYMs/KovaleeFramework.framework.dSYM/Contents/Resources/Relocations/aarch64/KovaleeFramework.yml</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			F7bdf3RUzxGuOk70TZMk16vcFjE=
+			s3qDiO+JGRTQS5KsgaQ9dzPs74w=
 			</data>
 			<key>hash2</key>
 			<data>
-			FCosUG4EADpAlLlnxkVamRDteXOPp35LbCUfY5BMbk8=
+			iWhXYjU7equhrOvfU2HOSxD9Qt2NN1oGDCHTTCuJ9CI=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-maccatalyst/dSYMs/KovaleeFramework.framework.dSYM/Contents/Resources/Relocations/x86_64/KovaleeFramework.yml</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			+JIZwB3ZKUTlrHKKj+xdki+cTWg=
+			O9cwFpPiZg33BD3PXbXH3+cbRkU=
 			</data>
 			<key>hash2</key>
 			<data>
-			EG7JdqooI/FDP3A9WzC8ACiFJVbSfTeI2NHnPNpnYeA=
+			wT9WnnFXJ6r5C2dkhlr1tgoKFjaTTFL7uD/1oEa3vts=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/KovaleeFramework.framework/Headers/KovaleeFramework-Swift.h</key>
@@ -610,22 +610,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			sp2gF8vXbFiDRAunGAw4LKh0Y7I=
+			iJpuxeJg78AI5hflKdhYn1CBxTw=
 			</data>
 			<key>hash2</key>
 			<data>
-			MdoUaz3gQ4poM2xK8ZrhXwJNXHwnbNr+9dHg3+7++fQ=
+			jjzCdwWQlmqHvvpE0LJKYaCQvIN626TIPGFQJf0BI24=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/KovaleeFramework.framework/Modules/KovaleeFramework.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			G21juovS+suaN0B5LiWK2fQ1dhk=
+			gwpxYxpqTH9HWb3h/Uizclu0ers=
 			</data>
 			<key>hash2</key>
 			<data>
-			T2OMnEuX9C7nOduuYiAcp6gNlQUiCVm2zCGbQBTgdkk=
+			umid5don4hMWDl4mGBP+0ZS06KBDnt94pVKdOPxuW70=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/KovaleeFramework.framework/Modules/KovaleeFramework.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
@@ -665,11 +665,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			G21juovS+suaN0B5LiWK2fQ1dhk=
+			gwpxYxpqTH9HWb3h/Uizclu0ers=
 			</data>
 			<key>hash2</key>
 			<data>
-			T2OMnEuX9C7nOduuYiAcp6gNlQUiCVm2zCGbQBTgdkk=
+			umid5don4hMWDl4mGBP+0ZS06KBDnt94pVKdOPxuW70=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/KovaleeFramework.framework/Modules/KovaleeFramework.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
@@ -731,11 +731,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			7Gr2j1K20l0aVwd57gv0qzWHBFQ=
+			1b3ai5wUUku6efsm3Xm2CdXPrT4=
 			</data>
 			<key>hash2</key>
 			<data>
-			BaT3K9qHNAIeyncuX61u6AIhKfOmWBsgi3SqgIjoawc=
+			014HYhdTRW/7ivWKJkVON2P6rkzNmjcPB6x+PEUDFFw=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/dSYMs/KovaleeFramework.framework.dSYM/Contents/Info.plist</key>
@@ -753,33 +753,33 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			pwWLNlwzlAIYEMJp2iFRT+EnwXw=
+			wZv5zlRL5IrjOQ4eHXhhzVCq33I=
 			</data>
 			<key>hash2</key>
 			<data>
-			lT10s3dnVwqJlZjn4JBmhoVsNj/6YgMbue8cqnVuUNU=
+			d9xcvfVROo81A85CqcOeELe2JT0lurRIpMn6Cflo3wo=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/dSYMs/KovaleeFramework.framework.dSYM/Contents/Resources/Relocations/aarch64/KovaleeFramework.yml</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			FrDk+bPAikWdXapSOmu9EhIKiTM=
+			DU1GaNwvzlm42W+B+FUGC0Xe0Kw=
 			</data>
 			<key>hash2</key>
 			<data>
-			ygmbHljrh3B7Oi7XcJ9wNtRlhCf5uKlJV71oWhU8tWk=
+			4lJGjya3hROIE8HWl5R8YGuuSrP3b2+zaiF47pJFqqM=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/dSYMs/KovaleeFramework.framework.dSYM/Contents/Resources/Relocations/x86_64/KovaleeFramework.yml</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			HD3KNLp0oLCwYN3nVchFJ2f5LNc=
+			y0wu5EyaEBhZ6pntidsa2R8UUGs=
 			</data>
 			<key>hash2</key>
 			<data>
-			3SO+upPfJMVDLi/NknLJbesL5StubNhushY5RHhSDDI=
+			VdbTPkmQ2jn80uZGDbNNNQHNxc/mrEOIbZ9J/F2SZL0=
 			</data>
 		</dict>
 	</dict>
