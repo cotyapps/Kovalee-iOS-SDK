@@ -27,14 +27,15 @@ public extension Kovalee {
     ///
     /// This method is used to track when a user views a specific page during onboarding.
     /// ``` Swift
-    /// Kovalee.sendOnboardingPageViewEvent(number: 0) // First page
-    /// Kovalee.sendOnboardingPageViewEvent(number: 3) // Fourth page
+    /// Kovalee.sendOnboardingPageViewEvent(number: 0, totalPages: 5) // First page of 5
+    /// Kovalee.sendOnboardingPageViewEvent(number: 3, totalPages: 5) // Fourth page of 5
     /// ```
     ///
     /// - Parameters:
     ///    - number: the page number being viewed during onboarding (0-indexed, where 0 is the first page)
-    static func sendOnboardingPageViewEvent(number: Int) {
-        sendEvent(event: .onboardingPageView(number: number))
+    ///    - totalPages: the total number of pages in the onboarding flow
+    static func sendOnboardingPageViewEvent(number: Int, totalPages: Int) {
+        sendEvent(event: .onboardingPageView(number: number, totalPages: totalPages))
     }
 
     /// Set onboarding data for the current user
@@ -102,7 +103,7 @@ public extension Kovalee {
 
 public enum TaggingPlanLiteEvent {
     case onboardingFinish
-    case onboardingPageView(number: Int)
+    case onboardingPageView(number: Int, totalPages: Int)
     case onboardingStart
     case pageViewPaywall(source: String) // onboarding (onboarding paywall) / in_content (paywall within the app/ not onboarding)
     case paymentSubscribe(name: String) // id of the product
@@ -136,8 +137,8 @@ public enum TaggingPlanLiteEvent {
 
     var properties: [String: String]? {
         switch self {
-        case let .onboardingPageView(number):
-            ["number": "\(number)"]
+        case let .onboardingPageView(number, total):
+            ["number": "\(number)", "total": "\(total)"]
         case let .pageViewPaywall(source):
             ["source": source]
         case let .paymentSubscribe(name):
