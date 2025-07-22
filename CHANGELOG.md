@@ -7,6 +7,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 <<<<<<< HEAD
 =======
+## [2.1.0] - 2025-07-22
+### :sparkles: New Features
+- [`1b5f3b7`](https://github.com/cotyapps/Kovalee-iOS-SDK/commit/1b5f3b7a1e826c7b4ad814e0a11006734710e2fc) - added accessory onboarding methods *(commit by [@fto-k](https://github.com/fto-k))*
+
+
 ## [2.0.17] - 2025-07-22
 ### :wrench: Chores
 - [`ccd201c`](https://github.com/cotyapps/Kovalee-iOS-SDK/commit/ccd201c9d02a5e69feeb6985d6523d60e38b34df) - events sequences will now be matched ignoring any string case for the events *(commit by [@fto-k](https://github.com/fto-k))*
@@ -870,3 +875,4 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 [2.0.15]: https://github.com/cotyapps/Kovalee-iOS-SDK/compare/2.0.14...2.0.15
 [2.0.16]: https://github.com/cotyapps/Kovalee-iOS-SDK/compare/2.0.15...2.0.16
 [2.0.17]: https://github.com/cotyapps/Kovalee-iOS-SDK/compare/2.0.16...2.0.17
+[2.1.0]: https://github.com/cotyapps/Kovalee-iOS-SDK/compare/2.0.17...2.1.0
