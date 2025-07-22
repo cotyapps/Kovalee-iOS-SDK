@@ -7,6 +7,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 <<<<<<< HEAD
 =======
+## [2.0.17] - 2025-07-22
+### :wrench: Chores
+- [`ccd201c`](https://github.com/cotyapps/Kovalee-iOS-SDK/commit/ccd201c9d02a5e69feeb6985d6523d60e38b34df) - events sequences will now be matched ignoring any string case for the events *(commit by [@fto-k](https://github.com/fto-k))*
+
+
 ## [2.0.16] - 2025-07-18
 ### :bug: Bug Fixes
 - [`d551b54`](https://github.com/cotyapps/Kovalee-iOS-SDK/commit/d551b54f3ff56d02a0f5ea6ef6bc3cf8c8aeac2f) - Debug console will now reset to first session *(commit by [@fto-k](https://github.com/fto-k))*
@@ -864,3 +869,4 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 [2.0.14]: https://github.com/cotyapps/Kovalee-iOS-SDK/compare/2.0.13...2.0.14
 [2.0.15]: https://github.com/cotyapps/Kovalee-iOS-SDK/compare/2.0.14...2.0.15
 [2.0.16]: https://github.com/cotyapps/Kovalee-iOS-SDK/compare/2.0.15...2.0.16
+[2.0.17]: https://github.com/cotyapps/Kovalee-iOS-SDK/compare/2.0.16...2.0.17
