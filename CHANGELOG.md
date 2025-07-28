@@ -7,6 +7,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 <<<<<<< HEAD
 =======
+## [2.1.2] - 2025-07-28
+### :bug: Bug Fixes
+- [`56b1395`](https://github.com/cotyapps/Kovalee-iOS-SDK/commit/56b13956bc7103e467a6dc4a2fd0c0c08f973cc9) - debugging console issue for switching parsing logic *(commit by [@fto-k](https://github.com/fto-k))*
+
+
 ## [2.1.1] - 2025-07-22
 ### :wrench: Chores
 - [`27a0ca4`](https://github.com/cotyapps/Kovalee-iOS-SDK/commit/27a0ca4d8a07415cddedadbc0cdd7230814172e5) - small update to sendOnboardingPageViewEvent *(commit by [@fto-k](https://github.com/fto-k))*
@@ -882,3 +887,4 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 [2.0.17]: https://github.com/cotyapps/Kovalee-iOS-SDK/compare/2.0.16...2.0.17
 [2.1.0]: https://github.com/cotyapps/Kovalee-iOS-SDK/compare/2.0.17...2.1.0
 [2.1.1]: https://github.com/cotyapps/Kovalee-iOS-SDK/compare/2.1.0...2.1.1
+[2.1.2]: https://github.com/cotyapps/Kovalee-iOS-SDK/compare/2.1.1...2.1.2
