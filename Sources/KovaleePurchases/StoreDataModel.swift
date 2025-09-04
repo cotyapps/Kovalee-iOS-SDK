@@ -808,7 +808,7 @@ public enum KPackageType: Int, Encodable, Sendable {
          weekly
 }
 
-public struct KStoreTransaction: AbstractStoreTransaction, Encodable {
+public struct KStoreTransaction: AbstractStoreTransaction, Encodable, Sendable {
     public var productIdentifier: String
     public var purchaseDate: Date
     public var transactionIdentifier: String
@@ -825,7 +825,7 @@ public struct KStoreTransaction: AbstractStoreTransaction, Encodable {
     }
 }
 
-public struct KPurchaseResultData: AbstractPurchaseResultData, Encodable {
+public struct KPurchaseResultData: AbstractPurchaseResultData, Encodable, Sendable {
     public var transaction: KStoreTransaction?
     public var customerInfo: KCustomerInfo
     public var userCancelled: Bool
