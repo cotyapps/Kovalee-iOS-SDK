@@ -1,7 +1,7 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 6.1.2 effective-5.10 (swiftlang-6.1.2.1.2 clang-1700.0.13.5)
+// swift-compiler-version: Apple Swift version 6.2 effective-5.10 (swiftlang-6.2.0.19.9 clang-1700.3.19.1)
 // swift-module-flags: -target x86_64-apple-ios14.0-macabi -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-upcoming-feature ConciseMagicFile -enable-upcoming-feature ForwardTrailingClosures -enable-upcoming-feature StrictConcurrency -enable-upcoming-feature DeprecateApplicationMain -enable-upcoming-feature ImportObjcForwardDeclarations -enable-upcoming-feature DisableOutwardActorInference -enable-upcoming-feature IsolatedDefaultValues -enable-upcoming-feature GlobalConcurrency -enable-upcoming-feature InferSendableFromCaptures -enable-upcoming-feature ImplicitOpenExistentials -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name KovaleeFramework
-// swift-module-flags-ignorable: -no-verify-emitted-module-interface -interface-compiler-version 6.1.2
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface -formal-cxx-interoperability-mode=off -interface-compiler-version 6.2
 import AppTrackingTransparency
 import Foundation
 @_exported import KovaleeFramework
@@ -12,7 +12,9 @@ import _StringProcessing
 import _SwiftConcurrencyShims
 import os
 final public class KovaleeManager {
+  #if compiler(>=5.3) && $NonescapableTypes
   public init(keys: KovaleeFramework.KovaleeKeys, sdkVersion: Swift.String, eventTrackerManager: any KovaleeFramework.EventTrackerManager, attributionManager: any KovaleeFramework.AttributionManager, purchaseManager: any KovaleeFramework.PurchaseManager, remoteConfigManager: any KovaleeFramework.RemoteConfigurationManager, surveyManager: (any KovaleeFramework.SurveyManager)?, alreadyIntegrated: Swift.Bool)
+  #endif
   @objc deinit
 }
 extension KovaleeFramework.KovaleeManager {
@@ -29,9 +31,15 @@ public enum KLogger {
   }
 }
 extension KovaleeFramework.KLogger {
+  #if compiler(>=5.3) && $NonescapableTypes
   public static func debug(_ message: Swift.String, fileName: Swift.String? = #fileID, functionName: Swift.String? = #function, line: Swift.UInt = #line)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public static func info(_ message: Swift.String, fileName: Swift.String? = #fileID, functionName: Swift.String? = #function, line: Swift.UInt = #line)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public static func warn(_ message: Swift.String, fileName: Swift.String? = #fileID, functionName: Swift.String? = #function, line: Swift.UInt = #line)
+  #endif
   public static func error(_ message: Swift.String, fileName: Swift.String = #fileID, functionName: Swift.String = #function, line: Swift.UInt = #line)
 }
 public enum LogLevel : Swift.Int, Swift.Comparable, Swift.Sendable {
@@ -44,7 +52,9 @@ public enum LogLevel : Swift.Int, Swift.Comparable, Swift.Sendable {
     get
   }
   public static func < (lhs: KovaleeFramework.LogLevel, rhs: KovaleeFramework.LogLevel) -> Swift.Bool
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
+  #endif
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get
@@ -118,7 +128,9 @@ public enum StorageKeys : Swift.String, Swift.Sendable {
   case adid
   case abExperimentValue
   case abExperimentKey
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.String)
+  #endif
   public typealias RawValue = Swift.String
   public var rawValue: Swift.String {
     get
@@ -130,7 +142,9 @@ public enum StorageResult : Swift.Sendable, Swift.Equatable {
   case noValue
   public static func == (lhs: KovaleeFramework.StorageResult, rhs: KovaleeFramework.StorageResult) -> Swift.Bool
   public func unwrapValue<T>(as _: T.Type = T.self, default defaultValue: T) -> T
+  #if compiler(>=5.3) && $NonescapableTypes
   public func unwrapOptionalValue<T>(as _: T.Type = T.self) -> T?
+  #endif
   public func unwrapWithExistence<T>(as _: T.Type = T.self, default defaultValue: T) -> (value: T, exists: Swift.Bool)
 }
 public enum StorageError : Swift.Error {
@@ -167,7 +181,9 @@ public struct AdjustConfiguration : Swift.Sendable {
   public enum Environment : Swift.String, Swift.Sendable {
     case production
     case development
+    #if compiler(>=5.3) && $NonescapableTypes
     public init?(rawValue: Swift.String)
+    #endif
     public typealias RawValue = Swift.String
     public var rawValue: Swift.String {
       get
@@ -178,14 +194,20 @@ public struct AdjustConfiguration : Swift.Sendable {
   public init(environment: Swift.String, token: Swift.String)
 }
 public protocol AttributionManager : Swift.Sendable {
+  #if compiler(>=5.3) && $NonescapableTypes
   func getAttributionAdid() async -> Swift.String?
+  #endif
   func promptTrackingAuthorization(completion: @escaping (AppTrackingTransparency.ATTrackingManager.AuthorizationStatus) -> Swift.Void)
+  #if compiler(>=5.3) && $NonescapableTypes
   func sendConversionValue(value: Swift.Int, coarseValue: Swift.String?, completion: @escaping ((any Swift.Error)?) -> Swift.Void)
+  #endif
   func setDataCollectionEnabled(_ enabled: Swift.Bool)
   func setAttributionDelegate(_ delegate: any KovaleeFramework.KovaleeAttributionDelegate)
 }
 public protocol KovaleeAttributionDelegate : Swift.Sendable {
+  #if compiler(>=5.3) && $NonescapableTypes
   func adjustDeferredDeeplinkReceived(_ deeplink: Foundation.URL?) -> Swift.Bool
+  #endif
 }
 public protocol EventTrackerManager : Swift.Sendable {
   func sendEvent(_ event: KovaleeFramework.Event)
@@ -195,8 +217,12 @@ public protocol EventTrackerManager : Swift.Sendable {
   func setUserProperty(property: KovaleeFramework.UserProperty)
   func setUserProperties(_ properties: [Swift.String : Swift.String])
   func setDataCollectionEnabled(_ enabled: Swift.Bool)
+  #if compiler(>=5.3) && $NonescapableTypes
   func getUserId() -> Swift.String?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   func getDeviceId() -> Swift.String?
+  #endif
 }
 public protocol RemoteConfigurationManager : Swift.Sendable {
   func setFetchTimeout(_ timeout: Swift.Double)
@@ -214,8 +240,12 @@ public protocol PurchaseManager : Swift.Sendable {
   func setAmplitudeUserId(userId: Swift.String)
   func syncPurchase() async throws -> any KovaleeFramework.AbstractCustomerInfo
   func customerInfo() async throws -> any KovaleeFramework.AbstractCustomerInfo
+  #if compiler(>=5.3) && $NonescapableTypes
   func fetchOfferings() async throws -> (any KovaleeFramework.AbstractOfferings)?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   func fetchCurrentOffering() async throws -> (any KovaleeFramework.AbstractOffering)?
+  #endif
   func restorePurchases() async throws -> any KovaleeFramework.AbstractCustomerInfo
   func purchase(package: any KovaleeFramework.AbstractPackage) async throws -> any KovaleeFramework.AbstractPurchaseResultData
   func purchaseProduct(withId productId: Swift.String) async throws -> any KovaleeFramework.AbstractPurchaseResultData
@@ -224,7 +254,9 @@ public protocol PurchaseManager : Swift.Sendable {
 }
 public protocol KovaleePurchasesDelegate : Swift.Sendable {
   func didReceiveUpdate(_ customerInfo: any KovaleeFramework.AbstractCustomerInfo)
+  #if compiler(>=5.3) && $NonescapableTypes
   func readyForPromotedProduct(_ product: any KovaleeFramework.AbstractStoreProduct, purchaseBlock: ((any KovaleeFramework.AbstractStoreTransaction)?, (any KovaleeFramework.AbstractCustomerInfo)?, Foundation.NSError?))
+  #endif
 }
 public protocol AbstractStoreProduct {
 }
@@ -258,7 +290,9 @@ public protocol KovaleeSurveyDelegate : AnyObject {
   func surveyClosed(surveyId: Swift.String)
 }
 public protocol SurveyManager : Swift.Sendable {
+  #if compiler(>=5.3) && $NonescapableTypes
   func sendEvent(with name: Swift.String, andProperties properties: [Swift.String : Any]?)
+  #endif
   func viewScreen(with name: Swift.String)
   func setUserProperty(withName name: Swift.String, andValue value: Swift.String)
   func setUserProperties(_ properties: [Swift.String : Swift.String])
@@ -268,15 +302,25 @@ public protocol SurveyManager : Swift.Sendable {
 extension KovaleeFramework.KovaleeManager {
   final public func setupAttributionManager()
   final public func promptTrackingAuthorization(completion: @escaping (AppTrackingTransparency.ATTrackingManager.AuthorizationStatus) -> Swift.Void)
+  #if compiler(>=5.3) && $NonescapableTypes
   final public func getAttributionAdid() async -> Swift.String?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   final public func attributionCallback(withAdid adid: Swift.String?)
+  #endif
   final public func setAttributionDelegate(_ delegate: any KovaleeFramework.KovaleeAttributionDelegate)
+  #if compiler(>=5.3) && $NonescapableTypes
   final public func installationDate() -> Foundation.Date?
+  #endif
   final public func appOpeningCount() -> Swift.Int
+  #if compiler(>=5.3) && $NonescapableTypes
   final public func currentSequencesFileName() -> Swift.String?
+  #endif
   final public func currentEventsSequence() -> Swift.String
   final public func userConversionValue() -> Swift.Int
+  #if compiler(>=5.3) && $NonescapableTypes
   final public func userCoarseValue() -> Swift.String?
+  #endif
   final public func sequenceVersion() -> Swift.Int
   final public func setSequenceVersion(_ version: Swift.Int)
   final public func parsingLogic() -> Swift.Int
@@ -285,8 +329,12 @@ extension KovaleeFramework.KovaleeManager {
   final public func resetCVManager()
   final public func sendEvent(_ event: KovaleeFramework.Event)
   final public func setAmplitudeUserId(userId: Swift.String)
+  #if compiler(>=5.3) && $NonescapableTypes
   final public func amplitudeUserId() -> Swift.String?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   final public func amplitudeDeviceId() -> Swift.String?
+  #endif
   final public func setUserProperty(key: Swift.String, value: Swift.String)
   final public func setUserProperties(_ properties: [Swift.String : Swift.String])
   final public func setUserProperty(property: KovaleeFramework.UserProperty)
@@ -308,32 +356,60 @@ public enum KovaleeError : Swift.Error {
   }
 }
 extension KovaleeFramework.KovaleeError : Foundation.LocalizedError {
+  #if compiler(>=5.3) && $NonescapableTypes
   public var errorDescription: Swift.String? {
     get
   }
+  #endif
 }
 public struct ConversionValueManager {
+  #if compiler(>=5.3) && $NonescapableTypes
   public init(appCode: Swift.String, parsingLogicVersion: Swift.Int, storage: KovaleeFramework.StorageActor, eventTrackerManager: (any KovaleeFramework.EventTrackerManager)?) async
+  #endif
 }
 extension KovaleeFramework.ConversionValueManager {
+  #if compiler(>=5.3) && $NonescapableTypes
   public mutating func conversionValue(fromEvent event: KovaleeFramework.Event) -> KovaleeFramework.ConversionValue?
+  #endif
   public mutating func resetState() async
 }
 extension KovaleeFramework.KovaleeManager {
   final public func setPurchaseDelegate(_ delegate: any KovaleeFramework.KovaleePurchasesDelegate)
+  #if compiler(>=5.3) && $NonescapableTypes
   final public func revenueCatUserId() -> Swift.String?
+  #endif
   final public func setIsUserPremium(_ premium: Swift.Bool)
+  #if compiler(>=5.3) && $NonescapableTypes
   final public func setRevenueCatUserId(userId: Swift.String) async throws -> (any KovaleeFramework.AbstractCustomerInfo, created: Swift.Bool)?
+  #endif
   final public func setRevenueCatEmail(email: Swift.String)
+  #if compiler(>=5.3) && $NonescapableTypes
   final public func logoutRevenueCatUser() async throws -> (any KovaleeFramework.AbstractCustomerInfo)?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   final public func syncPurchase() async throws -> (any KovaleeFramework.AbstractCustomerInfo)?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   final public func customerInfo() async throws -> (any KovaleeFramework.AbstractCustomerInfo)?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   final public func fetchOfferings() async throws -> (any KovaleeFramework.AbstractOfferings)?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   final public func fetchCurrentOffering() async throws -> (any KovaleeFramework.AbstractOffering)?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   final public func restorePurchases(fromSource source: Swift.String) async throws -> (any KovaleeFramework.AbstractCustomerInfo)?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   final public func purchaseSubscription(withIdentifier subscriptionId: Swift.String, andDuration _: Swift.Int, fromSource source: Swift.String) async throws -> (any KovaleeFramework.AbstractPurchaseResultData)?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   final public func purchase(package: any KovaleeFramework.AbstractPackage, fromSource source: Swift.String) async throws -> (any KovaleeFramework.AbstractPurchaseResultData)?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   final public func checkTrialOrIntroDiscountEligibility(productIdentifiers: [Swift.String]) async -> [Swift.String : Swift.Int]?
+  #endif
 }
 extension KovaleeFramework.KovaleeManager {
   public struct OnboardingDataResponse : Swift.Codable {
@@ -369,8 +445,12 @@ extension KovaleeFramework.KovaleeManager {
 extension KovaleeFramework.KovaleeManager {
   final public func setDefaultValues(_ values: [Swift.String : Any])
   final public func remoteValue(forKey key: Swift.String) async throws -> Foundation.Data
+  #if compiler(>=5.3) && $NonescapableTypes
   final public func localABTestValue() -> Swift.String?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   final public func abTestValue(forKey key: Swift.String) async -> Swift.String?
+  #endif
   final public func setAbTestValue(_ value: Swift.String)
   final public func setFetchTimeout(_ timeout: Swift.Double)
 }
@@ -394,9 +474,11 @@ public enum DefaultEvents {
   public var name: Swift.String {
     get
   }
+  #if compiler(>=5.3) && $NonescapableTypes
   public var properties: [Swift.String : any Swift.Sendable]? {
     get
   }
+  #endif
 }
 public enum UserProperty {
   case appCode(value: Swift.String)
@@ -424,9 +506,11 @@ public enum BasicEvent {
   public var name: Swift.String {
     get
   }
+  #if compiler(>=5.3) && $NonescapableTypes
   public var properties: [Swift.String : any Swift.Sendable]? {
     get
   }
+  #endif
 }
 public struct ParsingLogic {
 }
@@ -434,7 +518,9 @@ public struct Event : Swift.Sendable {
   public var name: Swift.String
   public var properties: [Swift.String : any Swift.Sendable]?
   public var isSystemEvent: Swift.Bool
+  #if compiler(>=5.3) && $NonescapableTypes
   public init(name: Swift.String, properties: [Swift.String : any Swift.Sendable]? = nil, isSystemEvent: Swift.Bool = false)
+  #endif
   public init(event: KovaleeFramework.DefaultEvents, isSystemEvent: Swift.Bool = false)
 }
 extension KovaleeFramework.Event : Swift.CustomStringConvertible {
@@ -462,13 +548,17 @@ public struct ConversionValue : Swift.Decodable, Swift.Sendable {
     case low
     case medium
     case high
+    #if compiler(>=5.3) && $NonescapableTypes
     public init?(rawValue: Swift.String)
+    #endif
     public typealias RawValue = Swift.String
     public var rawValue: Swift.String {
       get
     }
   }
+  #if compiler(>=5.3) && $NonescapableTypes
   public init(value: Swift.Int, coarseValue: KovaleeFramework.ConversionValue.CoarseValue?)
+  #endif
   public init(from decoder: any Swift.Decoder) throws
 }
 extension KovaleeFramework.LogLevel : Swift.Hashable {}
