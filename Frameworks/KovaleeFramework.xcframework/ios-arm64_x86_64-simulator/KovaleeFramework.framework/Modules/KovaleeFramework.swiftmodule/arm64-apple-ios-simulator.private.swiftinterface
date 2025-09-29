@@ -466,7 +466,7 @@ public enum DefaultEvents {
   case paymentRestoreFinish(source: Swift.String)
   case paymentRestoreFail(source: Swift.String)
   case paymentStart(source: Swift.String, product: Swift.String)
-  case updateConversionValue(number: Swift.Int, category: Swift.String)
+  case updateConversionValue(number: Swift.Int, category: Swift.String, loadedSequenceFile: Swift.String)
   case conversionValueError(error: Swift.String)
   case adsInterstitialShow
   case adsRewardedShow
@@ -557,7 +557,7 @@ public struct ConversionValue : Swift.Decodable, Swift.Sendable {
     }
   }
   #if compiler(>=5.3) && $NonescapableTypes
-  public init(value: Swift.Int, coarseValue: KovaleeFramework.ConversionValue.CoarseValue?)
+  public init(value: Swift.Int, coarseValue: KovaleeFramework.ConversionValue.CoarseValue?, loadedSequenceFile: Swift.String?)
   #endif
   public init(from decoder: any Swift.Decoder) throws
 }
