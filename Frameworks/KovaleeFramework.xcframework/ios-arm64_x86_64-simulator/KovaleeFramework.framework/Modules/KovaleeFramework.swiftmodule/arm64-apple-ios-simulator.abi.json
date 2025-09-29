@@ -10951,12 +10951,12 @@
               {
                 "kind": "TypeFunc",
                 "name": "Function",
-                "printedName": "(KovaleeFramework.DefaultEvents.Type) -> (Swift.Int, Swift.String) -> KovaleeFramework.DefaultEvents",
+                "printedName": "(KovaleeFramework.DefaultEvents.Type) -> (Swift.Int, Swift.String, Swift.String) -> KovaleeFramework.DefaultEvents",
                 "children": [
                   {
                     "kind": "TypeFunc",
                     "name": "Function",
-                    "printedName": "(Swift.Int, Swift.String) -> KovaleeFramework.DefaultEvents",
+                    "printedName": "(Swift.Int, Swift.String, Swift.String) -> KovaleeFramework.DefaultEvents",
                     "children": [
                       {
                         "kind": "TypeNominal",
@@ -10967,13 +10967,19 @@
                       {
                         "kind": "TypeNominal",
                         "name": "Tuple",
-                        "printedName": "(number: Swift.Int, category: Swift.String)",
+                        "printedName": "(number: Swift.Int, category: Swift.String, loadedSequenceFile: Swift.String)",
                         "children": [
                           {
                             "kind": "TypeNominal",
                             "name": "Int",
                             "printedName": "Swift.Int",
                             "usr": "s:Si"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
                           },
                           {
                             "kind": "TypeNominal",
@@ -11002,8 +11008,8 @@
               }
             ],
             "declKind": "EnumElement",
-            "usr": "s:16KovaleeFramework13DefaultEventsO21updateConversionValueyACSi_SStcACmF",
-            "mangledName": "$s16KovaleeFramework13DefaultEventsO21updateConversionValueyACSi_SStcACmF",
+            "usr": "s:16KovaleeFramework13DefaultEventsO21updateConversionValueyACSi_S2StcACmF",
+            "mangledName": "$s16KovaleeFramework13DefaultEventsO21updateConversionValueyACSi_S2StcACmF",
             "moduleName": "KovaleeFramework"
           },
           {
@@ -13260,7 +13266,7 @@
           {
             "kind": "Constructor",
             "name": "init",
-            "printedName": "init(value:coarseValue:)",
+            "printedName": "init(value:coarseValue:loadedSequenceFile:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -13287,11 +13293,25 @@
                   }
                 ],
                 "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
               }
             ],
             "declKind": "Constructor",
-            "usr": "s:16KovaleeFramework15ConversionValueV5value06coarseD0ACSi_AC06CoarseD0OSgtcfc",
-            "mangledName": "$s16KovaleeFramework15ConversionValueV5value06coarseD0ACSi_AC06CoarseD0OSgtcfc",
+            "usr": "s:16KovaleeFramework15ConversionValueV5value06coarseD018loadedSequenceFileACSi_AC06CoarseD0OSgSSSgtcfc",
+            "mangledName": "$s16KovaleeFramework15ConversionValueV5value06coarseD018loadedSequenceFileACSi_AC06CoarseD0OSgSSSgtcfc",
             "moduleName": "KovaleeFramework",
             "declAttributes": [
               "AccessControl",
@@ -15135,14 +15155,14 @@
     {
       "filePath": "\/Users\/stepankurennykh\/Projects\/Kovalee-iOS-Framework\/KovaleeFramework\/ConversionValue\/EventsSequence.swift",
       "kind": "StringLiteral",
-      "offset": 4762,
+      "offset": 4846,
       "length": 4,
       "value": "\"cv\""
     },
     {
       "filePath": "\/Users\/stepankurennykh\/Projects\/Kovalee-iOS-Framework\/KovaleeFramework\/ConversionValue\/EventsSequence.swift",
       "kind": "StringLiteral",
-      "offset": 4794,
+      "offset": 4878,
       "length": 14,
       "value": "\"coarse_value\""
     }
