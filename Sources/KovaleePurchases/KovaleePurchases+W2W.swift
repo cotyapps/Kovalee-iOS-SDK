@@ -60,6 +60,7 @@ public extension Kovalee {
     ///     }
     ///  ```
     static func isWebUserPremium(withUrl url: URL) async throws -> Bool {
+
         guard let userId = handleIncomingURL(url) else {
             return false
         }
@@ -119,9 +120,13 @@ public extension Kovalee {
             KLogger.error("Invalid URL: \(url.absoluteString)")
             return nil
         }
+        // For custom schemes, the action is in the host, not the path
+        let action = components.scheme == "http" || components.scheme == "https"
+            ? components.path
+            : components.host ?? ""
 
-        guard components.path == "/web2web" else {
-            KLogger.error("We can't handle this action: \(components.host ?? "")")
+        guard action == "/web2web" || action == "web2web" else {
+            KLogger.error("We can't handle this action: \(action)")
             return nil
         }
 
@@ -139,7 +144,7 @@ public extension Kovalee {
 /// by calling `Kovalee.isWebUserPremium(withUrl:)`. The result is returned via a closure, allowing the view to react accordingly.
 ///
 /// ## Usage
-/// Attach this modifier to a view using `.checkWebUserPremium(isUserPremium:)`.
+/// Attach this modifier to a view using `.checkWebUserPremium(readPasteboard:, isUserPremium:, onError:)`.
 ///
 /// ```swift
 /// struct ContentView: View {
@@ -153,6 +158,7 @@ public extension Kovalee {
 ///                 .padding()
 ///         }
 ///         .checkWebUserPremium(
+///                readPasteboard: true,
 ///                isUserPremium: { premiumStatus in
 ///                    isPremium = premiumStatus
 ///                },
@@ -164,29 +170,48 @@ public extension Kovalee {
 /// }
 /// ```
 /// - Parameters:
+///   - readPasteboard: A boolean indicating whether to read the pasteboard for looking for a deep link URL.
 ///   - isUserPremium: A closure that updates the UI based on the web user's premium status.
 ///   - onError: A closure that handles errors encountered while checking the premium status.
 struct WebUserPremiumModifier: ViewModifier {
+    var readPasteboard: Bool
     var isUserPremium: @MainActor (Bool) -> Void
     var onError: @MainActor (String) -> Void
 
     func body(content: Content) -> some View {
         content
             .onOpenURL { incomingURL in
-                Task {
-                    do {
-                        let isPremium = try await Kovalee.isWebUserPremium(withUrl: incomingURL)
-                        await MainActor.run {
-                            isUserPremium(isPremium)
-                        }
-                    } catch {
-                        let errorMessage = "Failed to check web user premium status: \(error.localizedDescription)"
-                        await MainActor.run {
-                            onError(errorMessage)
-                        }
-                    }
+                handleIncomingURL(incomingURL)
+            }
+            .onAppear {
+                guard readPasteboard else { return }
+
+                // We only want to read the pasteboard on the first app launch.
+                guard Kovalee.appOpeningCount() == 0 else { return }
+
+                // We rely on the LinkMe feature from Adjust, which places a URL in the pasteboard when the user taps the download link.
+                guard UIPasteboard.general.hasURLs else { return }
+
+                // This displays a dialog asking the user whether they want to allow the app to read the pasteboard.
+                guard let clipboardUrl = UIPasteboard.general.url else { return }
+                handleIncomingURL(clipboardUrl)
+            }
+    }
+
+    private func handleIncomingURL(_ url: URL) {
+        Task {
+            do {
+                let isPremium = try await Kovalee.isWebUserPremium(withUrl: url)
+                await MainActor.run {
+                    isUserPremium(isPremium)
+                }
+            } catch {
+                let errorMessage = "Failed to check web user premium status: \(error.localizedDescription)"
+                await MainActor.run {
+                    onError(errorMessage)
                 }
             }
+        }
     }
 }
 
@@ -194,13 +219,15 @@ public extension View {
     /// Applies the `WebUserPremiumModifier` to the view, enabling it to check premium status from deep link URLs.
     ///
     /// - Parameters:
+    ///   - readPasteboard: A boolean indicating whether to read the pasteboard for looking for a deep link URL.
     ///   - isUserPremium: A closure that updates the UI based on the web user's premium status.
     ///   - onError: A closure that handles errors encountered while checking the premium status.
     /// - Returns: A modified view that listens for deep link URLs and updates the premium status accordingly.
     func checkWebUserPremium(
+        readPasteboard: Bool = true,
         isUserPremium: @escaping @MainActor (Bool) -> Void,
         onError: @escaping @MainActor (String) -> Void
     ) -> some View {
-        modifier(WebUserPremiumModifier(isUserPremium: isUserPremium, onError: onError))
+        modifier(WebUserPremiumModifier(readPasteboard: readPasteboard, isUserPremium: isUserPremium, onError: onError))
     }
 }

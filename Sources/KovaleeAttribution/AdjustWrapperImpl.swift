@@ -89,7 +89,7 @@ extension AdjustWrapperImpl: AdjustDelegate {
     }
 
     func adjustDeferredDeeplinkReceived(_ deeplink: URL?) -> Bool {
-        delegate?.adjustDeferredDeeplinkReceived(deeplink) ?? false
+        delegate?.adjustDeferredDeeplinkReceived(deeplink) ?? true
     }
 }
 
