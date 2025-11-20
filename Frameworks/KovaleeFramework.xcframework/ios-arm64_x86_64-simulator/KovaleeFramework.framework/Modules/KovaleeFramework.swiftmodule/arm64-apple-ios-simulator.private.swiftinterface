@@ -1,7 +1,7 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 6.2.1 effective-5.10 (swiftlang-6.2.1.4.8 clang-1700.4.4.1)
+// swift-compiler-version: Apple Swift version 6.2 effective-5.10 (swiftlang-6.2.0.19.9 clang-1700.3.19.1)
 // swift-module-flags: -target arm64-apple-ios14.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-upcoming-feature ConciseMagicFile -enable-upcoming-feature ForwardTrailingClosures -enable-upcoming-feature StrictConcurrency -enable-upcoming-feature DeprecateApplicationMain -enable-upcoming-feature ImportObjcForwardDeclarations -enable-upcoming-feature DisableOutwardActorInference -enable-upcoming-feature IsolatedDefaultValues -enable-upcoming-feature GlobalConcurrency -enable-upcoming-feature InferSendableFromCaptures -enable-upcoming-feature ImplicitOpenExistentials -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name KovaleeFramework
-// swift-module-flags-ignorable: -no-verify-emitted-module-interface -formal-cxx-interoperability-mode=off -interface-compiler-version 6.2.1
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface -formal-cxx-interoperability-mode=off -interface-compiler-version 6.2
 import AppTrackingTransparency
 import Foundation
 @_exported import KovaleeFramework
@@ -251,6 +251,9 @@ public protocol PurchaseManager : Swift.Sendable {
   func purchaseProduct(withId productId: Swift.String) async throws -> any KovaleeFramework.AbstractPurchaseResultData
   func checkTrialOrIntroDiscountEligibility(productIdentifiers: [Swift.String]) async -> [Swift.String : Swift.Int]
   func setPurchaseDelegate(_ delegate: any KovaleeFramework.KovaleePurchasesDelegate)
+  #if compiler(>=5.3) && $NonescapableTypes
+  func cancelableStripeSubscriptionId() async throws -> Swift.String?
+  #endif
 }
 public protocol KovaleePurchasesDelegate : Swift.Sendable {
   func didReceiveUpdate(_ customerInfo: any KovaleeFramework.AbstractCustomerInfo)
@@ -374,6 +377,14 @@ extension KovaleeFramework.ConversionValueManager {
   public mutating func resetState() async
 }
 extension KovaleeFramework.KovaleeManager {
+  public enum SubscriptionError : Swift.Error {
+    case networkError(any Swift.Error)
+    case noResponse
+    case invalidResponse(Swift.Int)
+    case dataParsingError(Foundation.Data)
+    case invalidRequest
+    case noCancelableSubscriptionFound
+  }
   final public func setPurchaseDelegate(_ delegate: any KovaleeFramework.KovaleePurchasesDelegate)
   #if compiler(>=5.3) && $NonescapableTypes
   final public func revenueCatUserId() -> Swift.String?
@@ -383,6 +394,8 @@ extension KovaleeFramework.KovaleeManager {
   final public func setRevenueCatUserId(userId: Swift.String) async throws -> (any KovaleeFramework.AbstractCustomerInfo, created: Swift.Bool)?
   #endif
   final public func setRevenueCatEmail(email: Swift.String)
+  final public func hasActiveStripeSubscription() async throws -> Swift.Bool
+  final public func cancelStripeSubscription() async throws -> Swift.Bool
   #if compiler(>=5.3) && $NonescapableTypes
   final public func logoutRevenueCatUser() async throws -> (any KovaleeFramework.AbstractCustomerInfo)?
   #endif
