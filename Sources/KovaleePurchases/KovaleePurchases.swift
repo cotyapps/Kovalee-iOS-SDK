@@ -134,6 +134,18 @@ public extension Kovalee {
         }
     }
 
+    /// Cancel Web Subscription for the current user will only works if user has an active Stripe subscription
+    ///
+    static func cancelStripeSubscription() async throws -> Bool {
+        try await shared.kovaleeManager?.cancelStripeSubscription() ?? false
+    }
+
+    /// Check active stripe subscription for the current user will only works if user has an active Stripe subscription
+    ///
+    static func hasActiveStripeSubscription() async throws -> Bool {
+        try await shared.kovaleeManager?.hasActiveStripeSubscription() ?? false
+    }
+
     /// Set a user email for RevenueCat
     ///
     /// - Parameters:
