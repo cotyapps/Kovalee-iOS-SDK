@@ -173,17 +173,15 @@ public extension Kovalee {
         return userId
     }
 
-    private static func readPasteboardLookingForDeeplink() -> URL? {
-        guard readPasteboard else { return }
-
+    fileprivate static func readPasteboardLookingForDeeplink() -> URL? {
         // We only want to read the pasteboard on the first app launch.
-        guard Kovalee.appOpeningCount() == 0 else { return }
+        guard Kovalee.appOpeningCount() == 0 else { return nil }
 
         // We rely on the LinkMe feature from Adjust, which places a URL in the pasteboard when the user taps the download link.
-        guard UIPasteboard.general.hasURLs else { return }
+        guard UIPasteboard.general.hasURLs else { return nil }
 
         // This displays a dialog asking the user whether they want to allow the app to read the pasteboard.
-        guard let clipboardUrl = UIPasteboard.general.url else { return }
+        guard let clipboardUrl = UIPasteboard.general.url else { return nil }
         return clipboardUrl
     }
 }
@@ -236,6 +234,7 @@ struct WebUserPremiumModifier: ViewModifier {
                 handleIncomingURL(incomingURL)
             }
             .onAppear {
+                guard readPasteboard else { return }
                 guard let clipboardUrl = Kovalee.readPasteboardLookingForDeeplink() else { return }
                 handleIncomingURL(clipboardUrl)
             }
