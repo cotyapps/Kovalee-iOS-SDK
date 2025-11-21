@@ -10,18 +10,29 @@ https://appname.go.link/web2web?adj_t=123456&adj_linkme=1&user_id={{user.id}}
 
 
 ## Supporting Deeplinks (App Scheme and Universal Links)
- 
+
+Let's say you received this from the Kovalee team. If you don't have these values, please contact the Kovalee team:
+
+```json
+{
+    "scheme": "hard-75",
+    "raw-universal-link": "35ze.adj.st",
+    "branded-universal-link": "75hard.go.link"
+}
+```
 ### Configure Your App to Support Deeplinks
 
 #### Supporting URL Schemes
 
-Add a new URL Type in your Xcode Project (Project Settings -> Info -> URL Types) and give it the value of your app scheme (for example: myappscheme).
+Add a new URL Type in your Xcode Project (Project Settings -> Info -> URL Types) and give it the value of your app scheme (for example: hard-75).
 
 Now you can open your app using a deeplink like this:
 
 ```
-myappscheme://
+hard-75://
 ```
+
+Please replace `hard-75` with the value provided by the Kovalee team.
 
 #### Supporting Universal Links
 
@@ -30,16 +41,16 @@ For universal links, you need to configure your app's associated domains. Go to 
 Your branded universal link domain:
 
 ```
-applinks:YOUR_CUSTOM_DOMAIN.go.link
+applinks:75hard.go.link
 ```
 
 Your raw universal link:
 
 ```
-applinks:YOUR_ID.adj.st
+applinks:35ze.adj.st
 ```
 
-Remember to replace `YOUR_CUSTOM_DOMAIN` and `YOUR_ID` with the values provided by the Kovalee team.
+Remember to replace `75hard.go.link` and `35ze.adj.st` with the values provided by the Kovalee team.
 
 ## Reading Deeplink Values to Make the User Premium
 
