@@ -41,6 +41,16 @@ final class RevenueCatWrapperImpl: NSObject, PurchaseManager, Manager {
         Purchases.shared.appUserID
     }
 
+    func cancellableStripeSubscriptionId() async throws -> String? {
+        let infos = try await Purchases.shared.customerInfo()
+        let activeSubscriptions = infos.activeSubscriptions
+            .compactMap({ infos.subscriptionsByProductIdentifier[$0] })
+
+        return activeSubscriptions
+             .first { $0.store == .stripe && $0.storeTransactionId != nil && $0.willRenew == true}
+             .storeTransactionId
+    }
+
     func fetchOfferings() async throws -> AbstractOfferings? {
         let rcOfferings = try await Purchases.shared.offerings()
 

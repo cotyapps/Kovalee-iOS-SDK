@@ -68,6 +68,42 @@ public extension Kovalee {
         return try await handleWebUser(withId: userId)
     }
 
+    /// Checks if the user has an active premium subscription by extracting a deeplink from the clipboard.
+    /// Checks, only on the first launch of the app the presence of a deeplink on the clipboard then if found verifies if the user has an active premium subscription.
+    ///
+    /// This function reads the clipboard content only on the first launch and verifies the presence of a deeplink.
+    /// then if found verifies if the user has an active premium subscription.
+    /// This function is useful for web2web scenarios where the user is redirected from a web page that are using Adjust technology LinkMe.
+    ///
+    /// - Returns: A `Bool` indicating whether the user has an active premium subscription.
+    ///            Returns `true` if the user has an active subscription or entitlement, and `false` otherwise.
+    ///
+    /// - Throws: An error if setting the user ID in RevenueCat fails or if the premium status retrieval fails.
+    ///
+    /// ## Informations:
+    /// - This function will only works on the first run of the application.
+    /// - This function should be called as soon as possible
+    /// - If the clipboard does not contains a valide web2web url the function returns `false` without making any API calls.
+    ///
+    /// ## Example Usage:
+    /// ```swift
+    /// Task {
+    ///     do {
+    ///         let isPremium = try await Kovalee.checkIfWebUserIsPremiumOnFirstLaunch()
+    ///         print("Is the user premium form the web? \(isPremium)")
+    ///     } catch {
+    ///         print("Error checking premium status from clipboard: \(error)")
+    ///     }
+    /// }
+    /// ```
+    static func checkIfWebUserIsPremiumOnFirstLaunch() async throws -> Bool {
+        guard let clipboardUrl = readPasteboardLookingForDeeplink() else {
+            return false
+        }
+        return try await isWebUserPremium(withUrl: clipboardUrl)
+    }
+
+
     /// Checks if the user has an active premium subscription by extracting a user ID from the clipboard.
     ///
     /// This function reads the clipboard content and verifies if it contains a valid UUID (user ID).
@@ -136,7 +172,21 @@ public extension Kovalee {
         }
         return userId
     }
+
+    fileprivate static func readPasteboardLookingForDeeplink() -> URL? {
+        // We only want to read the pasteboard on the first app launch.
+        guard Kovalee.appOpeningCount() == 0 else { return nil }
+
+        // We rely on the LinkMe feature from Adjust, which places a URL in the pasteboard when the user taps the download link.
+        guard UIPasteboard.general.hasURLs else { return nil }
+
+        // This displays a dialog asking the user whether they want to allow the app to read the pasteboard.
+        guard let clipboardUrl = UIPasteboard.general.url else { return nil }
+        return clipboardUrl
+    }
 }
+
+
 
 /// A `ViewModifier` that listens for deep link URLs and checks if a web user has an active premium status.
 ///
@@ -185,15 +235,7 @@ struct WebUserPremiumModifier: ViewModifier {
             }
             .onAppear {
                 guard readPasteboard else { return }
-
-                // We only want to read the pasteboard on the first app launch.
-                guard Kovalee.appOpeningCount() == 0 else { return }
-
-                // We rely on the LinkMe feature from Adjust, which places a URL in the pasteboard when the user taps the download link.
-                guard UIPasteboard.general.hasURLs else { return }
-
-                // This displays a dialog asking the user whether they want to allow the app to read the pasteboard.
-                guard let clipboardUrl = UIPasteboard.general.url else { return }
+                guard let clipboardUrl = Kovalee.readPasteboardLookingForDeeplink() else { return }
                 handleIncomingURL(clipboardUrl)
             }
     }
