@@ -13,9 +13,11 @@ https://appname.go.link/web2web?adj_t=123456&adj_linkme=1&user_id={{user.id}}
 
 ### For SwiftUI apps only (easy way)
 
-Just add the view modifier to your main view.
+Just add the view modifier `checkWebUserPremium` from KovaleeSDK to your main view.
 
 ```swift
+import KovaleeSDK
+
 @main
 struct MyApp: App {
 
@@ -77,9 +79,9 @@ func application(
 ```
 
 
-## Let the user manage and cancel their subscription
+## Let the user manage and cancel its subscription
 
-It is important to let the user cancel their subscription inside the app. A good practice is to show a button to do so on a settings view.
+It is important to let the user cancel its subscription inside the app. A good practice is to show a button to do so on a settings view.
 
 ### Cancel user subscription
 
@@ -87,16 +89,16 @@ It is important to let the user cancel their subscription inside the app. A good
 Task {
     do {
         let success = try await Kovalee.cancelStripeSubscription()
-        print("Was the web subscription canceled? \(success)")
+        print("Was the web subscription cancelled? \(success)")
     } catch {
-        print("Error while canceling subscription: \(error)")
+        print("Error while cancelling subscription: \(error)")
     }
 }
 ```
 
-### Check if the user has a cancelable subscription
+### Check if the user has a cancellable subscription
 
-You can check if the user still has a subscription that can be canceled, for example to hide or show a cancelation button.
+You can check if the user still has a subscription that can be cancelled, for example to hide or show a cancelation button.
 
 ```swift
 struct ContentView: View {
