@@ -5,13 +5,10 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 
-<<<<<<< HEAD
-=======
 ## [2.2.0] - 2025-11-21
 ### :bug: Bug Fixes
 - [`53586f5`](https://github.com/cotyapps/Kovalee-iOS-SDK/commit/53586f5b5f1926b3dc23484aa494a3673b616f85) - send conversion event for subscriptions with extra info *(commit by [@stoope](https://github.com/stoope))*
 - [`7a0b2a9`](https://github.com/cotyapps/Kovalee-iOS-SDK/commit/7a0b2a985ebe1b17f0a8f705d680aa4fdadd4212) - send conversion event for subscriptions with extra info *(commit by [@stoope](https://github.com/stoope))*
-
 
 ## [2.1.2] - 2025-07-28
 ### :bug: Bug Fixes
@@ -748,7 +745,6 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - [`35f847a`](https://github.com/cotyapps/Kovalee-iOS-SDK/commit/35f847a933e87cce6af7d26be384925ee962d01c) - new KovaleeFramework release with fix for amplitude user id *(commit by [@fto-k](https://github.com/fto-k))*
 
 
->>>>>>> master
 ## [v1.2.0] - 2023-08-01
 ### :sparkles: New Features
 - [`5cb83ca`](https://github.com/cotyapps/Kovalee-iOS-SDK/commit/5cb83ca2809d451a7a7e997c55f93642778ef91d) - started splitting framework *(commit by [@fto-k](https://github.com/fto-k))*

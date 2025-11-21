@@ -47,7 +47,9 @@ final class RevenueCatWrapperImpl: NSObject, PurchaseManager, Manager {
             .compactMap({ infos.subscriptionsByProductIdentifier[$0] })
 
         return activeSubscriptions
-             .first { $0.store == .stripe && $0.storeTransactionId != nil && $0.willRenew == true}
+             .filter { $0.store == .stripe}
+             .filter { $0.storeTransactionId != nil }
+             .first { $0.willRenew == true }?
              .storeTransactionId
     }
 
