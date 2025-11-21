@@ -7,6 +7,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 <<<<<<< HEAD
 =======
+## [2.2.0] - 2025-11-21
+### :bug: Bug Fixes
+- [`53586f5`](https://github.com/cotyapps/Kovalee-iOS-SDK/commit/53586f5b5f1926b3dc23484aa494a3673b616f85) - send conversion event for subscriptions with extra info *(commit by [@stoope](https://github.com/stoope))*
+- [`7a0b2a9`](https://github.com/cotyapps/Kovalee-iOS-SDK/commit/7a0b2a985ebe1b17f0a8f705d680aa4fdadd4212) - send conversion event for subscriptions with extra info *(commit by [@stoope](https://github.com/stoope))*
+
+
 ## [2.1.2] - 2025-07-28
 ### :bug: Bug Fixes
 - [`56b1395`](https://github.com/cotyapps/Kovalee-iOS-SDK/commit/56b13956bc7103e467a6dc4a2fd0c0c08f973cc9) - debugging console issue for switching parsing logic *(commit by [@fto-k](https://github.com/fto-k))*
@@ -888,3 +894,4 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 [2.1.0]: https://github.com/cotyapps/Kovalee-iOS-SDK/compare/2.0.17...2.1.0
 [2.1.1]: https://github.com/cotyapps/Kovalee-iOS-SDK/compare/2.1.0...2.1.1
 [2.1.2]: https://github.com/cotyapps/Kovalee-iOS-SDK/compare/2.1.1...2.1.2
+[2.2.0]: https://github.com/cotyapps/Kovalee-iOS-SDK/compare/2.1.3...2.2.0
