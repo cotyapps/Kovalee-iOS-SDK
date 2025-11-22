@@ -18,19 +18,11 @@
 		</data>
 		<key>Modules/KovaleeFramework.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-<<<<<<< HEAD
-		Erj4cDffTbsQg6YJbfoQKiYY4O0=
-		</data>
-		<key>Modules/KovaleeFramework.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
-		<data>
-		24HPxxMNi6SBkP+e7nQYQMZohSI=
-=======
 		FxMSs2PtgjHfsmZ5GSgMj2rC5Ns=
 		</data>
 		<key>Modules/KovaleeFramework.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
 		3lJLFl9tq/Cdz0nKPY4W+en0dng=
->>>>>>> 1425349d (feat: Update iOS deployment target to 15.0)
 		</data>
 		<key>Modules/KovaleeFramework.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -38,21 +30,6 @@
 		</data>
 		<key>Modules/KovaleeFramework.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-<<<<<<< HEAD
-		24HPxxMNi6SBkP+e7nQYQMZohSI=
-		</data>
-		<key>Modules/KovaleeFramework.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
-		<data>
-		74uIugAnRNftYrE/w5Z7V7Zo7bw=
-		</data>
-		<key>Modules/KovaleeFramework.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
-		<data>
-		Erj4cDffTbsQg6YJbfoQKiYY4O0=
-		</data>
-		<key>Modules/KovaleeFramework.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
-		<data>
-		QnF7UEUM+kfOsgT8NoU54av94eo=
-=======
 		3lJLFl9tq/Cdz0nKPY4W+en0dng=
 		</data>
 		<key>Modules/KovaleeFramework.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
@@ -66,7 +43,6 @@
 		<key>Modules/KovaleeFramework.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
 		dXan+ONoDefoK7upWp+XH/KO5ys=
->>>>>>> 1425349d (feat: Update iOS deployment target to 15.0)
 		</data>
 		<key>Modules/KovaleeFramework.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -74,19 +50,11 @@
 		</data>
 		<key>Modules/KovaleeFramework.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-<<<<<<< HEAD
-		QnF7UEUM+kfOsgT8NoU54av94eo=
-		</data>
-		<key>Modules/KovaleeFramework.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
-		<data>
-		FomjPY9N6nItRE0uw2wCw1q5Fbk=
-=======
 		dXan+ONoDefoK7upWp+XH/KO5ys=
 		</data>
 		<key>Modules/KovaleeFramework.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
 		1NhB5Jdp9kP5OoDR0GiNLwl6dFk=
->>>>>>> 1425349d (feat: Update iOS deployment target to 15.0)
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -117,22 +85,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-<<<<<<< HEAD
-			bFGMS4EQtc3rYoXDdMN+dvkofeddsquwpyC8CFzOqZU=
-=======
 			ts9AsfCqtZD2e23gqB5ycF0lC9J/DrMqtdXGZd9hOPM=
->>>>>>> 1425349d (feat: Update iOS deployment target to 15.0)
 			</data>
 		</dict>
 		<key>Modules/KovaleeFramework.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-<<<<<<< HEAD
-			mK4R3zi+fD60ETLyYHjwgPrO7u+z3LLbSbqPuWc6SSE=
-=======
 			uAgIqmQyzDfYnXO0HZJJo2F/3Nixg40pm61V9S7GFTw=
->>>>>>> 1425349d (feat: Update iOS deployment target to 15.0)
 			</data>
 		</dict>
 		<key>Modules/KovaleeFramework.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
@@ -146,44 +106,28 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-<<<<<<< HEAD
-			mK4R3zi+fD60ETLyYHjwgPrO7u+z3LLbSbqPuWc6SSE=
-=======
 			uAgIqmQyzDfYnXO0HZJJo2F/3Nixg40pm61V9S7GFTw=
->>>>>>> 1425349d (feat: Update iOS deployment target to 15.0)
 			</data>
 		</dict>
 		<key>Modules/KovaleeFramework.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-<<<<<<< HEAD
-			es8pFqFMpo0yakMXMK91cQh2oeou/A0/XaMEy6//cVI=
-=======
 			ODYtLJIErUkKKsUNtna+0EYjhqdPsnt7A51KAHTJ4Uk=
->>>>>>> 1425349d (feat: Update iOS deployment target to 15.0)
 			</data>
 		</dict>
 		<key>Modules/KovaleeFramework.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-<<<<<<< HEAD
-			bFGMS4EQtc3rYoXDdMN+dvkofeddsquwpyC8CFzOqZU=
-=======
 			ts9AsfCqtZD2e23gqB5ycF0lC9J/DrMqtdXGZd9hOPM=
->>>>>>> 1425349d (feat: Update iOS deployment target to 15.0)
 			</data>
 		</dict>
 		<key>Modules/KovaleeFramework.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-<<<<<<< HEAD
-			EjYAkzzVj++FbIeJ33HZwMyUY+o8DEcYhjZVAs77KME=
-=======
 			DXkbASrpPHbLoJw5KlZW2XKpiv1MvYVMCZu5HjLJhDw=
->>>>>>> 1425349d (feat: Update iOS deployment target to 15.0)
 			</data>
 		</dict>
 		<key>Modules/KovaleeFramework.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
@@ -197,22 +141,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-<<<<<<< HEAD
-			EjYAkzzVj++FbIeJ33HZwMyUY+o8DEcYhjZVAs77KME=
-=======
 			DXkbASrpPHbLoJw5KlZW2XKpiv1MvYVMCZu5HjLJhDw=
->>>>>>> 1425349d (feat: Update iOS deployment target to 15.0)
 			</data>
 		</dict>
 		<key>Modules/KovaleeFramework.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-<<<<<<< HEAD
-			USWrSKX1k8damKHKQwnh4Q3Ez8xEJPxcoglUMLcuf+E=
-=======
 			HVu/H4mZhz+dwcEB2nHZejHtLjuXbEp9pMbv7QYrgPw=
->>>>>>> 1425349d (feat: Update iOS deployment target to 15.0)
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
