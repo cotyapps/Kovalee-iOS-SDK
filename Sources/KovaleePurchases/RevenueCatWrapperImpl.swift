@@ -5,6 +5,11 @@ import KovaleeSDK
 import RevenueCat
 
 final class RevenueCatWrapperImpl: NSObject, PurchaseManager, Manager {
+    // TO-DO: Remove
+    func cancelableStripeSubscriptionId() async throws -> String? {
+        ""
+    }
+    
     init(withKeys keys: KovaleeKeys.RevenueCat) {
         super.init()
 
