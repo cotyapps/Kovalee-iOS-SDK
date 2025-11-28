@@ -252,7 +252,7 @@ public protocol PurchaseManager : Swift.Sendable {
   func checkTrialOrIntroDiscountEligibility(productIdentifiers: [Swift.String]) async -> [Swift.String : Swift.Int]
   func setPurchaseDelegate(_ delegate: any KovaleeFramework.KovaleePurchasesDelegate)
   #if compiler(>=5.3) && $NonescapableTypes
-  func cancelableStripeSubscriptionId() async throws -> Swift.String?
+  func cancellableStripeSubscriptionId() async throws -> Swift.String?
   #endif
 }
 public protocol KovaleePurchasesDelegate : Swift.Sendable {

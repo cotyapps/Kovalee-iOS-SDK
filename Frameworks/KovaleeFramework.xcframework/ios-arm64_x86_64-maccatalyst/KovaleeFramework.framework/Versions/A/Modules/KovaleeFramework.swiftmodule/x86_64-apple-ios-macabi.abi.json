@@ -8941,8 +8941,8 @@
           },
           {
             "kind": "Function",
-            "name": "cancelableStripeSubscriptionId",
-            "printedName": "cancelableStripeSubscriptionId()",
+            "name": "cancellableStripeSubscriptionId",
+            "printedName": "cancellableStripeSubscriptionId()",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -8960,8 +8960,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:16KovaleeFramework15PurchaseManagerP30cancelableStripeSubscriptionIdSSSgyYaKF",
-            "mangledName": "$s16KovaleeFramework15PurchaseManagerP30cancelableStripeSubscriptionIdSSSgyYaKF",
+            "usr": "s:16KovaleeFramework15PurchaseManagerP31cancellableStripeSubscriptionIdSSSgyYaKF",
+            "mangledName": "$s16KovaleeFramework15PurchaseManagerP31cancellableStripeSubscriptionIdSSSgyYaKF",
             "moduleName": "KovaleeFramework",
             "genericSig": "<τ_0_0 where τ_0_0 : KovaleeFramework.PurchaseManager>",
             "sugared_genericSig": "<Self where Self : KovaleeFramework.PurchaseManager>",
