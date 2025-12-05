@@ -10,7 +10,8 @@ extension EventsTrackerManagerCreator: Creator {
             KLogger.error("Configured Sandbox environment but Amplitude Dev key hasn't been provided")
         }
         return AmplitudeWrapperImpl(
-            withKey: configuration.environment == .production ? keys.amplitude.prodSDKId : (keys.amplitude.devSDKId ?? "")
+            withKey: configuration.environment == .production ? keys.amplitude.prodSDKId : (keys.amplitude.devSDKId ?? ""),
+            amplitudeTrackingEnable: configuration.environment == .production ? true : configuration.forceAmplitudeDebugLogging
         )
     }
 }
@@ -27,7 +28,7 @@ public extension Kovalee {
 
     /// Returns the number of times the app has been opened
     ///
-    /// - Returns: number of times app has beeen opened
+    /// - Returns: number of times app has been opened
     static func appOpeningCount() -> Int {
         shared.kovaleeManager?.appOpeningCount() ?? 0
     }
