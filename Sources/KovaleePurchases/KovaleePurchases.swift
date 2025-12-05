@@ -143,7 +143,19 @@ public extension Kovalee {
     /// Check active stripe subscription for the current user will only works if user has an active Stripe subscription
     ///
     static func hasActiveStripeSubscription() async throws -> Bool {
-        try await shared.kovaleeManager?.hasActiveStripeSubscription() ?? false
+        return try await shared.kovaleeManager?.hasActiveStripeSubscription() ?? false
+    }
+
+    /// Check if user has a manageable subscription for the current user will only works if user has an active Stripe subscription
+    ///
+    static func hasManageableWebSubscription() async throws -> Bool {
+        guard let customerInfo = try await Self.customerInfo() else {
+            return false
+        }
+        if let _ = customerInfo.managementURL {
+            return true
+        }
+        return await try hasActiveStripeSubscription()
     }
 
     /// Set a user email for RevenueCat
