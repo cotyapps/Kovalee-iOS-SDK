@@ -3,9 +3,10 @@ import Foundation
 import KovaleeFramework
 
 struct AmplitudeWrapperImpl: EventTrackerManager, Manager {
-    init(withKey key: String) {
-        KLogger.debug("initializing Amplitude")
 
+    init(withKey key: String, amplitudeTrackingEnable: Bool = true) {
+        KLogger.debug("initializing Amplitude")
+        self.amplitudeTrackingEnable = amplitudeTrackingEnable
         let trackingOptions = TrackingOptions()
             .disableTrackCarrier()
             .disableTrackCity()
@@ -33,7 +34,10 @@ struct AmplitudeWrapperImpl: EventTrackerManager, Manager {
             KLogger.error("Failed sending Event: \(event.name) \(event.properties?.serialization ?? "")")
             return
         }
-
+        guard amplitudeTrackingEnable else {
+            KLogger.warn("Amplitude tracking disabled - not sending Event: \(event.name) \(event.properties?.serialization ?? "")")
+            return
+        }
         amplitude.track(
             eventType: event.name,
             eventProperties: event.properties ?? [:]
@@ -78,6 +82,9 @@ struct AmplitudeWrapperImpl: EventTrackerManager, Manager {
     }
 
     var amplitude: Amplitude?
+
+    let amplitudeTrackingEnable: Bool
+
 }
 
 extension BaseEvent {
