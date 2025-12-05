@@ -10,6 +10,22 @@
 			<key>DebugSymbolsPath</key>
 			<string>dSYMs</string>
 			<key>LibraryIdentifier</key>
+			<string>ios-arm64</string>
+			<key>LibraryPath</key>
+			<string>KovaleeFramework.framework</string>
+			<key>SupportedArchitectures</key>
+			<array>
+				<string>arm64</string>
+			</array>
+			<key>SupportedPlatform</key>
+			<string>ios</string>
+		</dict>
+		<dict>
+			<key>BinaryPath</key>
+			<string>KovaleeFramework.framework/KovaleeFramework</string>
+			<key>DebugSymbolsPath</key>
+			<string>dSYMs</string>
+			<key>LibraryIdentifier</key>
 			<string>ios-arm64_x86_64-simulator</string>
 			<key>LibraryPath</key>
 			<string>KovaleeFramework.framework</string>
@@ -25,25 +41,6 @@
 		</dict>
 		<dict>
 			<key>BinaryPath</key>
-<<<<<<< HEAD
-=======
-			<string>KovaleeFramework.framework/KovaleeFramework</string>
-			<key>DebugSymbolsPath</key>
-			<string>dSYMs</string>
-			<key>LibraryIdentifier</key>
-			<string>ios-arm64</string>
-			<key>LibraryPath</key>
-			<string>KovaleeFramework.framework</string>
-			<key>SupportedArchitectures</key>
-			<array>
-				<string>arm64</string>
-			</array>
-			<key>SupportedPlatform</key>
-			<string>ios</string>
-		</dict>
-		<dict>
-			<key>BinaryPath</key>
->>>>>>> master
 			<string>KovaleeFramework.framework/Versions/A/KovaleeFramework</string>
 			<key>DebugSymbolsPath</key>
 			<string>dSYMs</string>
@@ -61,25 +58,6 @@
 			<key>SupportedPlatformVariant</key>
 			<string>maccatalyst</string>
 		</dict>
-<<<<<<< HEAD
-		<dict>
-			<key>BinaryPath</key>
-			<string>KovaleeFramework.framework/KovaleeFramework</string>
-			<key>DebugSymbolsPath</key>
-			<string>dSYMs</string>
-			<key>LibraryIdentifier</key>
-			<string>ios-arm64</string>
-			<key>LibraryPath</key>
-			<string>KovaleeFramework.framework</string>
-			<key>SupportedArchitectures</key>
-			<array>
-				<string>arm64</string>
-			</array>
-			<key>SupportedPlatform</key>
-			<string>ios</string>
-		</dict>
-=======
->>>>>>> master
 	</array>
 	<key>CFBundlePackageType</key>
 	<string>XFWK</string>
