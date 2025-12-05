@@ -25,22 +25,25 @@ public struct Configuration {
     public var keysFileUrl: URL?
     public var alreadyIntegrated: Bool
     public var enableExperimentalFeature: Bool
+    public var enableAmplitudeInDevelopment: Bool = false
 
     /// Creates a configuration with environment, keys file name, and log level.
     ///
-    /// Keys file name is set to a defeult value of KovaleeKeys
+    /// Keys file name is set to a default value of KovaleeKeys
     ///
     /// - Parameters:
-    ///   - environment: The enviroment type
+    ///   - environment: The environment type
     ///   - keysFileName: The file name for the keys
     ///   - logLevel: The configuration log levels
     ///   - experimentalFeatureEnabled: enable any new experimental feature
+    ///   - enableAmplitudeInDevelopment: enable Amplitude in development environment (default is false)
     public init(
         environment: Environment,
         keysFileName: String = KovaleeConstants.keysFileName,
         logLevel: KovaleeFramework.LogLevel = .info,
         alreadyIntegrated: Bool = false,
-        enableExperimentalFeature: Bool = false
+        enableExperimentalFeature: Bool = false,
+        enableAmplitudeInDevelopment: Bool = false
     ) {
         self.environment = environment
         keysFileUrl = Bundle.main.url(
@@ -50,6 +53,7 @@ public struct Configuration {
         self.logLevel = logLevel
         self.alreadyIntegrated = alreadyIntegrated
         self.enableExperimentalFeature = enableExperimentalFeature
+        self.enableAmplitudeInDevelopment = enableAmplitudeInDevelopment
     }
 
     init(
