@@ -25,7 +25,7 @@ public struct Configuration {
     public var keysFileUrl: URL?
     public var alreadyIntegrated: Bool
     public var enableExperimentalFeature: Bool
-    public var forceAmplitudeDebugLogging: Bool = false
+    public var enableAmplitudeInDevelopment: Bool = false
 
     /// Creates a configuration with environment, keys file name, and log level.
     ///
@@ -42,7 +42,7 @@ public struct Configuration {
         logLevel: KovaleeFramework.LogLevel = .info,
         alreadyIntegrated: Bool = false,
         enableExperimentalFeature: Bool = false,
-        forceAmplitudeDebugLogging: Bool = false
+        enableAmplitudeInDevelopment: Bool = false
     ) {
         self.environment = environment
         keysFileUrl = Bundle.main.url(
@@ -52,7 +52,7 @@ public struct Configuration {
         self.logLevel = logLevel
         self.alreadyIntegrated = alreadyIntegrated
         self.enableExperimentalFeature = enableExperimentalFeature
-        self.forceAmplitudeDebugLogging = forceAmplitudeDebugLogging
+        self.enableAmplitudeInDevelopment = enableAmplitudeInDevelopment
     }
 
     init(

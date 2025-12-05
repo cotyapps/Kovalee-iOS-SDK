@@ -11,7 +11,7 @@ extension EventsTrackerManagerCreator: Creator {
         }
         return AmplitudeWrapperImpl(
             withKey: configuration.environment == .production ? keys.amplitude.prodSDKId : (keys.amplitude.devSDKId ?? ""),
-            amplitudeTrackingEnable: configuration.environment == .production ? true : configuration.forceAmplitudeDebugLogging
+            amplitudeTrackingEnable: configuration.environment == .production ? true : configuration.enableAmplitudeInDevelopment
         )
     }
 }

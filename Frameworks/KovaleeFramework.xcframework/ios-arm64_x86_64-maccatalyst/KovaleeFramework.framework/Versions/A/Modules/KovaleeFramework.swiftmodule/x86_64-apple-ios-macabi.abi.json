@@ -11532,63 +11532,6 @@
           },
           {
             "kind": "Var",
-            "name": "settingUserAsPremium",
-            "printedName": "settingUserAsPremium",
-            "children": [
-              {
-                "kind": "TypeFunc",
-                "name": "Function",
-                "printedName": "(KovaleeFramework.DefaultEvents.Type) -> (Swift.String) -> KovaleeFramework.DefaultEvents",
-                "children": [
-                  {
-                    "kind": "TypeFunc",
-                    "name": "Function",
-                    "printedName": "(Swift.String) -> KovaleeFramework.DefaultEvents",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "DefaultEvents",
-                        "printedName": "KovaleeFramework.DefaultEvents",
-                        "usr": "s:16KovaleeFramework13DefaultEventsO"
-                      },
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Tuple",
-                        "printedName": "(source: Swift.String)",
-                        "children": [
-                          {
-                            "kind": "TypeNominal",
-                            "name": "String",
-                            "printedName": "Swift.String",
-                            "usr": "s:SS"
-                          }
-                        ]
-                      }
-                    ]
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Metatype",
-                    "printedName": "KovaleeFramework.DefaultEvents.Type",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "DefaultEvents",
-                        "printedName": "KovaleeFramework.DefaultEvents",
-                        "usr": "s:16KovaleeFramework13DefaultEventsO"
-                      }
-                    ]
-                  }
-                ]
-              }
-            ],
-            "declKind": "EnumElement",
-            "usr": "s:16KovaleeFramework13DefaultEventsO20settingUserAsPremiumyACSS_tcACmF",
-            "mangledName": "$s16KovaleeFramework13DefaultEventsO20settingUserAsPremiumyACSS_tcACmF",
-            "moduleName": "KovaleeFramework"
-          },
-          {
-            "kind": "Var",
             "name": "name",
             "printedName": "name",
             "children": [
