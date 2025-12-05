@@ -60,12 +60,7 @@ public extension Kovalee {
     ///     }
     ///  ```
     static func isWebUserPremium(withUrl url: URL) async throws -> Bool {
-
-        guard let userId = handleIncomingURL(url) else {
-            return false
-        }
-
-        return try await handleWebUser(withId: userId)
+        return try await shared.kovaleeManager?.checkWebRedemptionURL(url) ?? false
     }
 
     /// Checks if the user has an active premium subscription by extracting a deeplink from the clipboard.
@@ -149,28 +144,6 @@ public extension Kovalee {
             Kovalee.setUserProperty(key: "web_premium", value: "true")
         }
         return isPremium
-    }
-
-    private static func handleIncomingURL(_ url: URL) -> String? {
-        guard let components = URLComponents(url: url, resolvingAgainstBaseURL: true) else {
-            KLogger.error("Invalid URL: \(url.absoluteString)")
-            return nil
-        }
-        // For custom schemes, the action is in the host, not the path
-        let action = components.scheme == "http" || components.scheme == "https"
-            ? components.path
-            : components.host ?? ""
-
-        guard action == "/web2web" || action == "web2web" else {
-            KLogger.error("We can't handle this action: \(action)")
-            return nil
-        }
-
-        guard let userId = components.queryItems?.first(where: { $0.name == "user_id" })?.value else {
-            KLogger.error("Missing user_id query parameter")
-            return nil
-        }
-        return userId
     }
 
     fileprivate static func readPasteboardLookingForDeeplink() -> URL? {
