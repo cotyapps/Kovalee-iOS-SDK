@@ -478,6 +478,66 @@
           },
           {
             "kind": "Function",
+            "name": "lastOpenedUrlValue",
+            "printedName": "lastOpenedUrlValue()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:16KovaleeFramework0A7ManagerC18lastOpenedUrlValueSSSgyF",
+            "mangledName": "$s16KovaleeFramework0A7ManagerC18lastOpenedUrlValueSSSgyF",
+            "moduleName": "KovaleeFramework",
+            "declAttributes": [
+              "Final"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "deepLinkParsingErrorValue",
+            "printedName": "deepLinkParsingErrorValue()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:16KovaleeFramework0A7ManagerC25deepLinkParsingErrorValueSSSgyF",
+            "mangledName": "$s16KovaleeFramework0A7ManagerC25deepLinkParsingErrorValueSSSgyF",
+            "moduleName": "KovaleeFramework",
+            "declAttributes": [
+              "Final"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
             "name": "userConversionValue",
             "printedName": "userConversionValue()",
             "children": [
@@ -1012,6 +1072,276 @@
           },
           {
             "kind": "TypeDecl",
+            "name": "Web2WebFlowError",
+            "printedName": "Web2WebFlowError",
+            "children": [
+              {
+                "kind": "Var",
+                "name": "invalidURL",
+                "printedName": "invalidURL",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(KovaleeFramework.KovaleeManager.Web2WebFlowError.Type) -> KovaleeFramework.KovaleeManager.Web2WebFlowError",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Web2WebFlowError",
+                        "printedName": "KovaleeFramework.KovaleeManager.Web2WebFlowError",
+                        "usr": "s:16KovaleeFramework0A7ManagerC16Web2WebFlowErrorO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "KovaleeFramework.KovaleeManager.Web2WebFlowError.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Web2WebFlowError",
+                            "printedName": "KovaleeFramework.KovaleeManager.Web2WebFlowError",
+                            "usr": "s:16KovaleeFramework0A7ManagerC16Web2WebFlowErrorO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:16KovaleeFramework0A7ManagerC16Web2WebFlowErrorO10invalidURLyA2EmF",
+                "mangledName": "$s16KovaleeFramework0A7ManagerC16Web2WebFlowErrorO10invalidURLyA2EmF",
+                "moduleName": "KovaleeFramework"
+              },
+              {
+                "kind": "Var",
+                "name": "invalidAction",
+                "printedName": "invalidAction",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(KovaleeFramework.KovaleeManager.Web2WebFlowError.Type) -> KovaleeFramework.KovaleeManager.Web2WebFlowError",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Web2WebFlowError",
+                        "printedName": "KovaleeFramework.KovaleeManager.Web2WebFlowError",
+                        "usr": "s:16KovaleeFramework0A7ManagerC16Web2WebFlowErrorO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "KovaleeFramework.KovaleeManager.Web2WebFlowError.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Web2WebFlowError",
+                            "printedName": "KovaleeFramework.KovaleeManager.Web2WebFlowError",
+                            "usr": "s:16KovaleeFramework0A7ManagerC16Web2WebFlowErrorO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:16KovaleeFramework0A7ManagerC16Web2WebFlowErrorO13invalidActionyA2EmF",
+                "mangledName": "$s16KovaleeFramework0A7ManagerC16Web2WebFlowErrorO13invalidActionyA2EmF",
+                "moduleName": "KovaleeFramework"
+              },
+              {
+                "kind": "Var",
+                "name": "missingUserId",
+                "printedName": "missingUserId",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(KovaleeFramework.KovaleeManager.Web2WebFlowError.Type) -> KovaleeFramework.KovaleeManager.Web2WebFlowError",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Web2WebFlowError",
+                        "printedName": "KovaleeFramework.KovaleeManager.Web2WebFlowError",
+                        "usr": "s:16KovaleeFramework0A7ManagerC16Web2WebFlowErrorO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "KovaleeFramework.KovaleeManager.Web2WebFlowError.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Web2WebFlowError",
+                            "printedName": "KovaleeFramework.KovaleeManager.Web2WebFlowError",
+                            "usr": "s:16KovaleeFramework0A7ManagerC16Web2WebFlowErrorO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:16KovaleeFramework0A7ManagerC16Web2WebFlowErrorO13missingUserIdyA2EmF",
+                "mangledName": "$s16KovaleeFramework0A7ManagerC16Web2WebFlowErrorO13missingUserIdyA2EmF",
+                "moduleName": "KovaleeFramework"
+              },
+              {
+                "kind": "Function",
+                "name": "==",
+                "printedName": "==(_:_:)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Web2WebFlowError",
+                    "printedName": "KovaleeFramework.KovaleeManager.Web2WebFlowError",
+                    "usr": "s:16KovaleeFramework0A7ManagerC16Web2WebFlowErrorO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Web2WebFlowError",
+                    "printedName": "KovaleeFramework.KovaleeManager.Web2WebFlowError",
+                    "usr": "s:16KovaleeFramework0A7ManagerC16Web2WebFlowErrorO"
+                  }
+                ],
+                "declKind": "Func",
+                "usr": "s:16KovaleeFramework0A7ManagerC16Web2WebFlowErrorO2eeoiySbAE_AEtFZ",
+                "mangledName": "$s16KovaleeFramework0A7ManagerC16Web2WebFlowErrorO2eeoiySbAE_AEtFZ",
+                "moduleName": "KovaleeFramework",
+                "static": true,
+                "implicit": true,
+                "funcSelfKind": "NonMutating"
+              },
+              {
+                "kind": "Var",
+                "name": "hashValue",
+                "printedName": "hashValue",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:16KovaleeFramework0A7ManagerC16Web2WebFlowErrorO9hashValueSivp",
+                "mangledName": "$s16KovaleeFramework0A7ManagerC16Web2WebFlowErrorO9hashValueSivp",
+                "moduleName": "KovaleeFramework",
+                "implicit": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:16KovaleeFramework0A7ManagerC16Web2WebFlowErrorO9hashValueSivg",
+                    "mangledName": "$s16KovaleeFramework0A7ManagerC16Web2WebFlowErrorO9hashValueSivg",
+                    "moduleName": "KovaleeFramework",
+                    "implicit": true,
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Function",
+                "name": "hash",
+                "printedName": "hash(into:)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Hasher",
+                    "printedName": "Swift.Hasher",
+                    "paramValueOwnership": "InOut",
+                    "usr": "s:s6HasherV"
+                  }
+                ],
+                "declKind": "Func",
+                "usr": "s:16KovaleeFramework0A7ManagerC16Web2WebFlowErrorO4hash4intoys6HasherVz_tF",
+                "mangledName": "$s16KovaleeFramework0A7ManagerC16Web2WebFlowErrorO4hash4intoys6HasherVz_tF",
+                "moduleName": "KovaleeFramework",
+                "implicit": true,
+                "funcSelfKind": "NonMutating"
+              }
+            ],
+            "declKind": "Enum",
+            "usr": "s:16KovaleeFramework0A7ManagerC16Web2WebFlowErrorO",
+            "mangledName": "$s16KovaleeFramework0A7ManagerC16Web2WebFlowErrorO",
+            "moduleName": "KovaleeFramework",
+            "isFromExtension": true,
+            "conformances": [
+              {
+                "kind": "Conformance",
+                "name": "Copyable",
+                "printedName": "Copyable",
+                "usr": "s:s8CopyableP",
+                "mangledName": "$ss8CopyableP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Escapable",
+                "printedName": "Escapable",
+                "usr": "s:s9EscapableP",
+                "mangledName": "$ss9EscapableP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Equatable",
+                "printedName": "Equatable",
+                "usr": "s:SQ",
+                "mangledName": "$sSQ"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Hashable",
+                "printedName": "Hashable",
+                "usr": "s:SH",
+                "mangledName": "$sSH"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Error",
+                "printedName": "Error",
+                "usr": "s:s5ErrorP",
+                "mangledName": "$ss5ErrorP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Sendable",
+                "printedName": "Sendable",
+                "usr": "s:s8SendableP",
+                "mangledName": "$ss8SendableP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "SendableMetatype",
+                "printedName": "SendableMetatype",
+                "usr": "s:s16SendableMetatypeP",
+                "mangledName": "$ss16SendableMetatypeP"
+              }
+            ]
+          },
+          {
+            "kind": "TypeDecl",
             "name": "SubscriptionError",
             "printedName": "SubscriptionError",
             "children": [
@@ -1479,6 +1809,35 @@
               "Final"
             ],
             "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "checkWebRedemptionURL",
+            "printedName": "checkWebRedemptionURL(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "URL",
+                "printedName": "Foundation.URL",
+                "usr": "s:10Foundation3URLV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:16KovaleeFramework0A7ManagerC21checkWebRedemptionURLySb10Foundation0G0VYaKF",
+            "mangledName": "$s16KovaleeFramework0A7ManagerC21checkWebRedemptionURLySb10Foundation0G0VYaKF",
+            "moduleName": "KovaleeFramework",
+            "declAttributes": [
+              "Final"
+            ],
+            "isFromExtension": true,
+            "throwing": true,
             "funcSelfKind": "NonMutating"
           },
           {
@@ -8969,6 +9328,92 @@
             "throwing": true,
             "reqNewWitnessTableEntry": true,
             "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "handleWebRedemptionURL",
+            "printedName": "handleWebRedemptionURL(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "URL",
+                "printedName": "Foundation.URL",
+                "usr": "s:10Foundation3URLV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:16KovaleeFramework15PurchaseManagerP22handleWebRedemptionURLySb10Foundation0H0VYaKF",
+            "mangledName": "$s16KovaleeFramework15PurchaseManagerP22handleWebRedemptionURLySb10Foundation0H0VYaKF",
+            "moduleName": "KovaleeFramework",
+            "genericSig": "<τ_0_0 where τ_0_0 : KovaleeFramework.PurchaseManager>",
+            "sugared_genericSig": "<Self where Self : KovaleeFramework.PurchaseManager>",
+            "protocolReq": true,
+            "throwing": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "handleWebUser",
+            "printedName": "handleWebUser(withId:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:16KovaleeFramework15PurchaseManagerP13handleWebUser6withIdSbSS_tYaKF",
+            "mangledName": "$s16KovaleeFramework15PurchaseManagerP13handleWebUser6withIdSbSS_tYaKF",
+            "moduleName": "KovaleeFramework",
+            "genericSig": "<τ_0_0 where τ_0_0 : KovaleeFramework.PurchaseManager>",
+            "sugared_genericSig": "<Self where Self : KovaleeFramework.PurchaseManager>",
+            "protocolReq": true,
+            "throwing": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "isRCWebPurchaseRedemptionURL",
+            "printedName": "isRCWebPurchaseRedemptionURL(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "URL",
+                "printedName": "Foundation.URL",
+                "usr": "s:10Foundation3URLV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:16KovaleeFramework15PurchaseManagerP07isRCWebC13RedemptionURLySb10Foundation0H0VF",
+            "mangledName": "$s16KovaleeFramework15PurchaseManagerP07isRCWebC13RedemptionURLySb10Foundation0H0VF",
+            "moduleName": "KovaleeFramework",
+            "genericSig": "<τ_0_0 where τ_0_0 : KovaleeFramework.PurchaseManager>",
+            "sugared_genericSig": "<Self where Self : KovaleeFramework.PurchaseManager>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
           }
         ],
         "declKind": "Protocol",
@@ -15128,7 +15573,7 @@
     {
       "filePath": "\/Users\/antoine\/Documents\/repos\/kovalee\/Kovalee-iOS-Framework\/KovaleeFramework\/KovaleeManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 1284,
+      "offset": 1347,
       "length": 5,
       "value": "false"
     },
