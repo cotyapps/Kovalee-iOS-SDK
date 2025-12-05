@@ -29,7 +29,7 @@ And you are good to go.
 
 | Platform | Minimum target |
 | -------- | -------------- |
-| iOS      | 14.0+          |
+| iOS      | 15.0+          |
 
 
 ## Integration
