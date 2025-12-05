@@ -36,6 +36,7 @@ public struct Configuration {
     ///   - keysFileName: The file name for the keys
     ///   - logLevel: The configuration log levels
     ///   - experimentalFeatureEnabled: enable any new experimental feature
+    ///   - enableAmplitudeInDevelopment: enable Amplitude in development environment (default is false)
     public init(
         environment: Environment,
         keysFileName: String = KovaleeConstants.keysFileName,
