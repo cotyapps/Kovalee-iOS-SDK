@@ -11,7 +11,7 @@ https://appname.go.link/web2web?adj_t=123456&adj_linkme=1&user_id={{user.id}}
 
 ## Supporting Deeplinks (App Scheme and Universal Links)
 
-Let's say you received this from the Kovalee team. If you don't have these values, please contact the Kovalee team:
+You should have received a configuration file from the Kovalee team. If you don't have a configuration file, please contact the Kovalee team:
 
 ```json
 {

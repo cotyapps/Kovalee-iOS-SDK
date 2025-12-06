@@ -61,7 +61,7 @@ public extension Kovalee {
     ///  ```
     static func isWebUserPremium(withUrl url: URL) async throws -> Bool {
 
-        guard let userId = handleIncomingURL(url) else {
+        guard let userId = getUserIdFromDeeplink(withUrl: url) else {
             return false
         }
 
@@ -97,7 +97,7 @@ public extension Kovalee {
     /// }
     /// ```
     static func checkIfWebUserIsPremiumOnFirstLaunch() async throws -> Bool {
-        guard let clipboardUrl = readPasteboardLookingForDeeplink() else {
+        guard let clipboardUrl = readDeeplinkFromPasteboardOnFirstLaunch() else {
             return false
         }
         return try await isWebUserPremium(withUrl: clipboardUrl)
@@ -151,7 +151,7 @@ public extension Kovalee {
         return isPremium
     }
 
-    private static func handleIncomingURL(_ url: URL) -> String? {
+    static func getUserIdFromDeeplink(withUrl url: URL) -> String? {
         guard let components = URLComponents(url: url, resolvingAgainstBaseURL: true) else {
             KLogger.error("Invalid URL: \(url.absoluteString)")
             return nil
@@ -173,7 +173,7 @@ public extension Kovalee {
         return userId
     }
 
-    fileprivate static func readPasteboardLookingForDeeplink() -> URL? {
+    static func readDeeplinkFromPasteboardOnFirstLaunch() -> URL? {
         // We only want to read the pasteboard on the first app launch.
         guard Kovalee.appOpeningCount() <= 1 else { return nil }
 
@@ -237,7 +237,7 @@ struct WebUserPremiumModifier: ViewModifier {
             }
             .onAppear {
                 guard readPasteboard else { return }
-                guard let clipboardUrl = Kovalee.readPasteboardLookingForDeeplink() else { return }
+                guard let clipboardUrl = Kovalee.readDeeplinkFromPasteboardOnFirstLaunch() else { return }
                 handleIncomingURL(clipboardUrl)
             }
     }
