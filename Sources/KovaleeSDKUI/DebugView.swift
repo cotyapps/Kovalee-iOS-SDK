@@ -47,6 +47,7 @@ public struct DebugView: View {
     @State private var conversionValue: Int?
     @State private var installationDate: String?
     @State private var sessionCount: Int?
+    @State private var lastDeeplinkReceived: String?
 
     public init() {}
 
@@ -82,6 +83,12 @@ public struct DebugView: View {
                 }
 
                 Section {
+                    deepLinkView
+                } header: {
+                    Text("DeepLink")
+                }
+
+                Section {
                     InfoLabel(title: "Current AB test Value:", value: abTestValue ?? "Not set yet")
                         .allowsHitTesting(false)
                     if isDebugModeOn {
@@ -100,6 +107,7 @@ public struct DebugView: View {
                 self.coarseValue = fetchCoarseValue()
                 self.installationDate = fetchInstallationDate()
                 self.sessionCount = fetchSessionCount()
+                self.lastDeeplinkReceived = fetchLastOpenedURL()
             }
             .navigationTitle("SDK Debug Console")
             .navigationBarTitleDisplayMode(.inline)
@@ -174,6 +182,8 @@ extension DebugView {
                 allowCopy: true
             )
         }
+
+
     }
 
     @ViewBuilder
@@ -189,6 +199,26 @@ extension DebugView {
                 title: "Coarse Value",
                 value: "\(coarseValue)"
             )
+        }
+    }
+
+    @ViewBuilder
+    private var deepLinkView: some View {
+        if let lastDeeplinkReceived {
+            InfoLabel(
+                title: "Last opened URL:",
+                value: lastDeeplinkReceived,
+                horizontal: false,
+                allowCopy: true
+            )
+            if let parsingError = deepLinkParsingError() {
+                InfoLabel(
+                    title: "Error:",
+                    value: parsingError
+                )
+            }
+        } else {
+            Text("No deeplinks opened yet")
         }
     }
 }
@@ -213,5 +243,13 @@ extension DebugView {
 
     private func fetchSessionCount() -> Int? {
         Kovalee.shared.kovaleeManager?.appOpeningCount()
+    }
+
+    private func fetchLastOpenedURL() -> String? {
+        Kovalee.shared.kovaleeManager?.lastOpenedUrlValue()
+    }
+
+    private func deepLinkParsingError() -> String? {
+        Kovalee.shared.kovaleeManager?.deepLinkParsingErrorValue()
     }
 }
