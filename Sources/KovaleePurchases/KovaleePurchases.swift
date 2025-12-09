@@ -158,7 +158,7 @@ public extension Kovalee {
     ///
     static func showSubscriptionManagementFlow() async throws -> Bool {
         guard let customerInfo = try await Self.customerInfo(),
-              customerInfo.entitlements.active.filter { $0.value.store == KStore.rcBilling }.isEmpty,
+              !customerInfo.entitlements.active.filter { $0.value.store == KStore.rcBilling }.isEmpty,
               let url = customerInfo.managementURL else {
             return false
         }
