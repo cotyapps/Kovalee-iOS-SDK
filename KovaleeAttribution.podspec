@@ -21,7 +21,7 @@ Pod::Spec.new do |spec|
 
   spec.source       = { :git => "https://github.com/cotyapps/Kovalee-iOS-SDK.git", :tag => "#{spec.version}" }
 
-  spec.ios.deployment_target = '14.3'
+  spec.ios.deployment_target = '15.0'
   spec.swift_version    = '5.7'
   spec.source_files  = "Sources/KovaleeAttribution/*.swift"
 
