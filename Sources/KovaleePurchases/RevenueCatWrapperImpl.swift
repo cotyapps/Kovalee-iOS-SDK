@@ -4,7 +4,57 @@ import KovaleeRemoteConfig
 import KovaleeSDK
 import RevenueCat
 
+public enum WebPurchaseRedemptionError: Error {
+    case newLinkSentToEmail(obfuscatedEmail: String)
+    case invalidToken
+    case otherError(String)
+    case purchaseBelongsToOtherUser
+}
+
 final class RevenueCatWrapperImpl: NSObject, PurchaseManager, Manager {
+
+    func handleWebUser(withId userId: String) async throws -> Bool {
+        _ = try await Kovalee.setRevenueCatUserId(userId: userId)
+        Kovalee.setAmplitudeUserId(userId: userId)
+
+        let isPremium = try await Kovalee.isUserPremium()
+        if isPremium {
+            Kovalee.setUserProperty(key: "web_premium", value: "true")
+        }
+        return isPremium
+    }
+    
+    func isRCWebPurchaseRedemptionURL(_ url: URL) -> Bool {
+        guard let _ = url.asWebPurchaseRedemption, Purchases.isConfigured else {
+            return false
+        }
+        return true
+    }
+
+    func handleWebRedemptionURL(_ url: URL) async throws -> Bool {
+        if let webPurchaseRedemption = url.asWebPurchaseRedemption,
+           Purchases.isConfigured {
+               let result = await Purchases.shared.redeemWebPurchase(webPurchaseRedemption)
+               switch result {
+               case let .success(infos):
+                   let isPremium = try await Kovalee.isUserPremium()
+                   if isPremium {
+                       Kovalee.setUserProperty(key: "web_premium", value: "true")
+                   }
+                   return isPremium
+               case let .error(error):
+                   throw WebPurchaseRedemptionError.otherError(error.localizedDescription)
+               case .invalidToken:
+                   throw WebPurchaseRedemptionError.invalidToken
+               case .purchaseBelongsToOtherUser:
+                   throw WebPurchaseRedemptionError.purchaseBelongsToOtherUser
+               case let .expired(obfuscatedEmail):
+                   throw WebPurchaseRedemptionError.newLinkSentToEmail(obfuscatedEmail: obfuscatedEmail)
+               }
+        } else {
+            return false
+        }
+    }
     init(withKeys keys: KovaleeKeys.RevenueCat) {
         super.init()
 
