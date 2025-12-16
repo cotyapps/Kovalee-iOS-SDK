@@ -17,49 +17,24 @@ default_platform(:ios)
 
 platform :ios do
 
-  desc "Release a new version with a patch bump_type"
-  lane :patch do
-    release("patch") # we could use __method__.to_s instead of duplicating the name
-  end
-
-  desc "Release a new version with a minor bump_type"
-  lane :minor do
-    release("minor")
-  end
-
-  desc "Release a new version with a major bump_type"
-  lane :major do
-    release("major")
-  end
-
-  lane :ui_pod do
-    podspec_name = "KovaleeSDKUI.podspec"
-    pod_lib_lint(podspec: podspec_name)
-    pod_push(path: podspec_name)
-  end
-
-  lane :survey_pod do
-    podspec_name = "KovaleeSurvey.podspec"
-    pod_lib_lint(podspec: podspec_name)
-    pod_push(path: podspec_name)
-  end
-
-  def release(type)
-    sdk_podspec = "KovaleeSDK.podspec"
-    survey_podspec = "KovaleeSurvey.podspec"
+  lane :release do
     swift_file_path = "./Sources/KovaleeSDK/Kovalee.swift"
-
-    # pod_lib_lint(podspec: sdk_podspec)
-    version = version_bump_podspec(
-      path: sdk_podspec,
-      bump_type: type
-    )
-
-    update_version_in_swift(version)
-    handle_git(version, [sdk_podspec, swift_file_path])
-
-    # pod_push(path: sdk_podspec)
+    version = bump_version
+    handle_git(version, [swift_file_path])
   end
+
+  private_lane :bump_version do |options|
+    bump_type = options[:type] || "patch"
+    current_version = read_version_from_swift
+    new_version = bump_version_string(current_version, bump_type)
+    
+    UI.message("Bumping version from #{current_version} to #{new_version}")
+    update_version_in_swift(new_version)
+    
+    UI.success("Version bumped to #{new_version}")
+    new_version
+  end
+
 end
 
 def update_version_in_swift(new_version)
@@ -69,6 +44,38 @@ def update_version_in_swift(new_version)
 
   # Write changes to the file
   File.open(file_path, "w") {|file| file.puts new_contents}
+end
+
+def read_version_from_swift
+  file_path = "../Sources/KovaleeSDK/Kovalee.swift"
+  text = File.read(file_path)
+  match = text.match(/let SDK_VERSION = "([^"]+)"/)
+  
+  if match && match[1]
+    return match[1]
+  else
+    UI.user_error!("Could not find SDK_VERSION in #{file_path}")
+  end
+end
+
+def bump_version_string(version, type)
+  parts = version.split(".").map(&:to_i)
+  
+  case type.downcase
+  when "major"
+    parts[0] += 1
+    parts[1] = 0
+    parts[2] = 0
+  when "minor"
+    parts[1] += 1
+    parts[2] = 0
+  when "patch"
+    parts[2] += 1
+  else
+    UI.user_error!("Invalid bump type: #{type}. Use 'major', 'minor', or 'patch'")
+  end
+  
+  parts.join(".")
 end
 
 def handle_git(new_version, paths) 
