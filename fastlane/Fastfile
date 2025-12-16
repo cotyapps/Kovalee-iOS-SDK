@@ -23,7 +23,7 @@ platform :ios do
     handle_git(version, [swift_file_path])
   end
 
-  private_lane :bump_version do |options|
+  lane :bump_version do |options|
     bump_type = options[:type] || "patch"
     current_version = read_version_from_swift
     new_version = bump_version_string(current_version, bump_type)

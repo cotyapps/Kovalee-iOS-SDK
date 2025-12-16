@@ -1,4 +1,5 @@
-name: Bump version
+name: Create Release
+
 on:
   push:
     tags:
@@ -14,8 +15,10 @@ jobs:
       - name: Create GitHub Release
         id: create_release
         uses: actions/create-release@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # This token is provided by Actions, you do not need to create your own token
         with:
-          tag_name: v${{ steps.git_short_hash.outputs.hash }}
-          release_name: Release v${{ steps.git_short_hash.outputs.hash }}
+          tag_name: ${{ github.ref }}
+          release_name: Release ${{ github.ref }}
           generateReleaseNotes: true 
-          draft: false
+          makeLatest: true
