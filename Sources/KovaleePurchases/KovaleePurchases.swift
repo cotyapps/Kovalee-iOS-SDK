@@ -137,13 +137,47 @@ public extension Kovalee {
     /// Cancel Web Subscription for the current user will only works if user has an active Stripe subscription
     ///
     static func cancelStripeSubscription() async throws -> Bool {
-        try await shared.kovaleeManager?.cancelStripeSubscription() ?? false
+        guard let customerInfo = try await Self.customerInfo(),
+              !customerInfo.entitlements.active.filter({ $0.value.store == KStore.stripe }).isEmpty else {
+            return false
+        }
+        return try await shared.kovaleeManager?.cancelStripeSubscription() ?? false
     }
 
     /// Check active stripe subscription for the current user will only works if user has an active Stripe subscription
     ///
     static func hasActiveStripeSubscription() async throws -> Bool {
-        try await shared.kovaleeManager?.hasActiveStripeSubscription() ?? false
+        guard let customerInfo = try await Self.customerInfo(),
+              !customerInfo.entitlements.active.filter({ $0.value.store == KStore.stripe }).isEmpty else {
+            return false
+        }
+        return try await shared.kovaleeManager?.hasActiveStripeSubscription() ?? false
+    }
+
+    /// Show RevenueCat Billing subscription  management Flow
+    ///
+    static func showManageSubscriptionsIfAvailable() async throws -> Bool {
+        guard let customerInfo = try await Self.customerInfo(),
+              !customerInfo.entitlements.active.filter({ $0.value.store == KStore.rcBilling }).isEmpty,
+              let url = customerInfo.managementURL else {
+            return false
+        }
+        do {
+            try await Purchases.shared.showManageSubscriptions()
+            return true
+        } catch {
+            return false
+        }
+    }
+
+
+    /// Check if user has a manageable RevenueCat Billing subscription for the current user
+    ///
+    static func hasManageableWebSubscription() async throws -> Bool {
+        guard let customerInfo = try await Self.customerInfo() else {
+            return false
+        }
+        return !customerInfo.entitlements.active.filter { $0.value.store == KStore.rcBilling }.isEmpty
     }
 
     /// Set a user email for RevenueCat
