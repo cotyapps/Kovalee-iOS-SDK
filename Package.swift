@@ -43,6 +43,7 @@ let package = Package(
     ],
     dependencies: [
         .package(url: "https://github.com/amplitude/Amplitude-Swift", .upToNextMajor(from: "1.4.3")),
+        .package(url: "https://github.com/amplitude/AmplitudeSessionReplay-iOS", .upToNextMajor(from: "0.9.5")),
         .package(url: "https://github.com/Survicate/survicate-ios-sdk", .upToNextMajor(from: "5.0.0")),
         .package(url: "https://github.com/firebase/firebase-ios-sdk.git", .upToNextMajor(from: "12.6.0")),
         .package(url: "https://github.com/RevenueCat/purchases-ios-spm.git", .upToNextMajor(from: "5.0.0")),
@@ -59,6 +60,7 @@ let package = Package(
             dependencies: [
                 .framework,
                 .amplitude,
+                .amplitudeSessionReplay,
             ],
             resources: [
                 .copy("PrivacyInfo.xcprivacy"),
@@ -150,6 +152,10 @@ extension Target.Dependency {
             package: "survicate-ios-sdk",
             condition: .when(platforms: [.iOS])
         )
+    }
+
+    static var amplitudeSessionReplay: Self {
+        .product(name: "AmplitudeSwiftSessionReplayPlugin", package: "AmplitudeSessionReplay-iOS")
     }
 
     static var amplitude: Self {

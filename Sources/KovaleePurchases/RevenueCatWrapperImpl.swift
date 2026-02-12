@@ -36,7 +36,7 @@ final class RevenueCatWrapperImpl: NSObject, PurchaseManager, Manager {
            Purchases.isConfigured {
                let result = await Purchases.shared.redeemWebPurchase(webPurchaseRedemption)
                switch result {
-               case let .success(infos):
+               case .success:
                    let isPremium = try await Kovalee.isUserPremium()
                    if isPremium {
                        Kovalee.setUserProperty(key: "web_premium", value: "true")

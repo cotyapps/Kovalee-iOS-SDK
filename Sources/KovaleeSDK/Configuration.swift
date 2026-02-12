@@ -26,6 +26,7 @@ public struct Configuration {
     public var alreadyIntegrated: Bool
     public var enableExperimentalFeature: Bool
     public var enableAmplitudeInDevelopment: Bool = false
+    public var enableAmplitudeSessionReplay: Bool = false
 
     /// Creates a configuration with environment, keys file name, and log level.
     ///
@@ -37,13 +38,15 @@ public struct Configuration {
     ///   - logLevel: The configuration log levels
     ///   - experimentalFeatureEnabled: enable any new experimental feature
     ///   - enableAmplitudeInDevelopment: enable Amplitude in development environment (default is false)
+    ///   - enableAmplitudeSessionReplay: enable Amplitude Session Replay plugin (default is false)
     public init(
         environment: Environment,
         keysFileName: String = KovaleeConstants.keysFileName,
         logLevel: KovaleeFramework.LogLevel = .info,
         alreadyIntegrated: Bool = false,
         enableExperimentalFeature: Bool = false,
-        enableAmplitudeInDevelopment: Bool = false
+        enableAmplitudeInDevelopment: Bool = false,
+        enableAmplitudeSessionReplay: Bool = false
     ) {
         self.environment = environment
         keysFileUrl = Bundle.main.url(
@@ -54,6 +57,7 @@ public struct Configuration {
         self.alreadyIntegrated = alreadyIntegrated
         self.enableExperimentalFeature = enableExperimentalFeature
         self.enableAmplitudeInDevelopment = enableAmplitudeInDevelopment
+        self.enableAmplitudeSessionReplay = enableAmplitudeSessionReplay
     }
 
     init(
@@ -61,13 +65,15 @@ public struct Configuration {
         fileUrl: URL?,
         logLevel: LogLevel = .info,
         alreadyIntegrated: Bool = false,
-        enableExperimentalFeature: Bool = false
+        enableExperimentalFeature: Bool = false,
+        enableAmplitudeSessionReplay: Bool = false
     ) {
         self.environment = environment
         keysFileUrl = fileUrl
         self.logLevel = logLevel
         self.alreadyIntegrated = alreadyIntegrated
         self.enableExperimentalFeature = enableExperimentalFeature
+        self.enableAmplitudeSessionReplay = enableAmplitudeSessionReplay
     }
 }
 

@@ -1,10 +1,12 @@
 @preconcurrency import AmplitudeSwift
+@preconcurrency import AmplitudeSwiftSessionReplayPlugin
+
 import Foundation
 import KovaleeFramework
 
 struct AmplitudeWrapperImpl: EventTrackerManager, Manager {
 
-    init(withKey key: String, amplitudeTrackingEnable: Bool = true) {
+    init(withKey key: String, amplitudeTrackingEnable: Bool = true, sessionReplayPluginEnabled: Bool = false) {
         KLogger.debug("initializing Amplitude")
         self.amplitudeTrackingEnable = amplitudeTrackingEnable
         let trackingOptions = TrackingOptions()
@@ -23,6 +25,11 @@ struct AmplitudeWrapperImpl: EventTrackerManager, Manager {
                 flushEventsOnClose: true
             )
         )
+        
+        if sessionReplayPluginEnabled {
+            amplitude?.add(plugin: AmplitudeSwiftSessionReplayPlugin())
+        }
+
     }
 
     func setDataCollectionEnabled(_ enabled: Bool) {
