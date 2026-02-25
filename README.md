@@ -36,3 +36,22 @@ And you are good to go.
 To properly work, this Package needs a set of configurations files that should be created by the team @Kovalee.
 
 If you are interested in using this package for your iOS app, feel free to get in contact.
+
+## Amplitude Session Replay
+
+KovaleeSDK supports [Amplitude Session Replay](https://amplitude.com/docs/session-replay), which lets you capture and replay user sessions to better understand user behavior in your app.
+
+### Enabling Session Replay
+
+To enable Amplitude Session Replay, set `enableAmplitudeSessionReplay` to `true` in your `Configuration`:
+
+```swift
+Kovalee.initialize(
+    configuration: Configuration(
+        environment: .production,
+        enableAmplitudeSessionReplay: true
+    )
+)
+```
+
+Session Replay is disabled by default. When enabled, the SDK automatically adds the `AmplitudeSwiftSessionReplayPlugin` to the Amplitude instance, and session replays will be available in your Amplitude dashboard.
