@@ -76,6 +76,11 @@ struct AmplitudeWrapperImpl: EventTrackerManager, Manager {
         amplitude?.identify(userProperties: properties)
     }
 
+    func flush() {
+        amplitude?.flush()
+        KLogger.debug("Flushing Amplitude events")
+    }
+
     func setUserProperty(property: UserProperty) {
         setUserProperty(key: property.key, value: property.value)
     }
