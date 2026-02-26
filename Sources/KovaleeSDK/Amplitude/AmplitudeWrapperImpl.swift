@@ -1,5 +1,7 @@
 @preconcurrency import AmplitudeSwift
+#if canImport(AmplitudeSwiftSessionReplayPlugin)
 @preconcurrency import AmplitudeSwiftSessionReplayPlugin
+#endif
 
 import Foundation
 import KovaleeFramework
@@ -26,9 +28,11 @@ struct AmplitudeWrapperImpl: EventTrackerManager, Manager {
             )
         )
         
+        #if canImport(AmplitudeSwiftSessionReplayPlugin)
         if sessionReplayPluginEnabled {
             amplitude?.add(plugin: AmplitudeSwiftSessionReplayPlugin())
         }
+        #endif
 
     }
 
