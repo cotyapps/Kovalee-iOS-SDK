@@ -155,7 +155,11 @@ extension Target.Dependency {
     }
 
     static var amplitudeSessionReplay: Self {
-        .product(name: "AmplitudeSwiftSessionReplayPlugin", package: "AmplitudeSessionReplay-iOS")
+        .product(
+            name: "AmplitudeSwiftSessionReplayPlugin",
+            package: "AmplitudeSessionReplay-iOS",
+            condition: .when(platforms: [.iOS])
+        )
     }
 
     static var amplitude: Self {
