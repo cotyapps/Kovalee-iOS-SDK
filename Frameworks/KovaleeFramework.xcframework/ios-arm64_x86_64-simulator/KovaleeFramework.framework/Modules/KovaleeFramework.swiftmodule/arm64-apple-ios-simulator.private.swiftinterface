@@ -13,7 +13,7 @@ import _SwiftConcurrencyShims
 import os
 final public class KovaleeManager {
   #if compiler(>=5.3) && $NonescapableTypes
-  public init(keys: KovaleeFramework.KovaleeKeys, sdkVersion: Swift.String, eventTrackerManager: any KovaleeFramework.EventTrackerManager, attributionManager: any KovaleeFramework.AttributionManager, purchaseManager: any KovaleeFramework.PurchaseManager, remoteConfigManager: any KovaleeFramework.RemoteConfigurationManager, surveyManager: (any KovaleeFramework.SurveyManager)?, alreadyIntegrated: Swift.Bool)
+  public init(keys: KovaleeFramework.KovaleeKeys, sdkVersion: Swift.String, eventTrackerManager: any KovaleeFramework.EventTrackerManager, attributionManager: any KovaleeFramework.AttributionManager, purchaseManager: any KovaleeFramework.PurchaseManager, remoteConfigManager: any KovaleeFramework.RemoteConfigurationManager, surveyManager: (any KovaleeFramework.SurveyManager)?, tiktokManager: (any KovaleeFramework.TikTokManager)?, alreadyIntegrated: Swift.Bool)
   #endif
   @objc deinit
 }
@@ -70,6 +70,7 @@ public struct KovaleeKeys : Swift.Decodable, Swift.Sendable {
   public let revenueCat: KovaleeFramework.KovaleeKeys.RevenueCat?
   public let firebase: KovaleeFramework.KovaleeKeys.Firebase?
   public let survicate: KovaleeFramework.KovaleeKeys.Survicate?
+  public let tiktok: KovaleeFramework.KovaleeKeys.TikTok?
   public struct Amplitude : Swift.Decodable, Swift.Sendable {
     public var prodSDKId: Swift.String
     public var devSDKId: Swift.String?
@@ -86,6 +87,12 @@ public struct KovaleeKeys : Swift.Decodable, Swift.Sendable {
   }
   public struct Survicate : Swift.Decodable, Swift.Sendable {
     public let sdkId: Swift.String
+    public init(from decoder: any Swift.Decoder) throws
+  }
+  public struct TikTok : Swift.Decodable, Swift.Sendable {
+    public let appId: Swift.String
+    public let tiktokAppId: Swift.String
+    public let accessToken: Swift.String
     public init(from decoder: any Swift.Decoder) throws
   }
   public init(from decoder: any Swift.Decoder) throws
@@ -290,6 +297,12 @@ public protocol AbstractReward {
   var amount: Swift.Int { get }
 }
 public protocol PaywallManager {
+}
+public protocol TikTokManager : Swift.Sendable {
+  #if compiler(>=5.3) && $NonescapableTypes
+  func setUserId(_ userId: Swift.String?)
+  #endif
+  func logout()
 }
 public protocol KovaleeSurveyDelegate : AnyObject {
   func surveyDisplayed(surveyId: Swift.String)

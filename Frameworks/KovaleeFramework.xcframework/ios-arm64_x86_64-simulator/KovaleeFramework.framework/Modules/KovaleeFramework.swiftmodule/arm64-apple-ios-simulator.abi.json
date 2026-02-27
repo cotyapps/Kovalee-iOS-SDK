@@ -19,7 +19,7 @@
           {
             "kind": "Constructor",
             "name": "init",
-            "printedName": "init(keys:sdkVersion:eventTrackerManager:attributionManager:purchaseManager:remoteConfigManager:surveyManager:alreadyIntegrated:)",
+            "printedName": "init(keys:sdkVersion:eventTrackerManager:attributionManager:purchaseManager:remoteConfigManager:surveyManager:tiktokManager:alreadyIntegrated:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -79,14 +79,28 @@
               },
               {
                 "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "(any KovaleeFramework.TikTokManager)?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "TikTokManager",
+                    "printedName": "any KovaleeFramework.TikTokManager",
+                    "usr": "s:16KovaleeFramework13TikTokManagerP"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
                 "name": "Bool",
                 "printedName": "Swift.Bool",
                 "usr": "s:Sb"
               }
             ],
             "declKind": "Constructor",
-            "usr": "s:16KovaleeFramework0A7ManagerC4keys10sdkVersion012eventTrackerC0011attributionC008purchaseC0012remoteConfigC006surveyC017alreadyIntegratedAcA0A4KeysV_SSAA05EventhC0_pAA011AttributionC0_pAA08PurchaseC0_pAA019RemoteConfigurationC0_pAA06SurveyC0_pSgSbtcfc",
-            "mangledName": "$s16KovaleeFramework0A7ManagerC4keys10sdkVersion012eventTrackerC0011attributionC008purchaseC0012remoteConfigC006surveyC017alreadyIntegratedAcA0A4KeysV_SSAA05EventhC0_pAA011AttributionC0_pAA08PurchaseC0_pAA019RemoteConfigurationC0_pAA06SurveyC0_pSgSbtcfc",
+            "usr": "s:16KovaleeFramework0A7ManagerC4keys10sdkVersion012eventTrackerC0011attributionC008purchaseC0012remoteConfigC006surveyC006tiktokC017alreadyIntegratedAcA0A4KeysV_SSAA05EventhC0_pAA011AttributionC0_pAA08PurchaseC0_pAA019RemoteConfigurationC0_pAA06SurveyC0_pSgAA06TikTokC0_pSgSbtcfc",
+            "mangledName": "$s16KovaleeFramework0A7ManagerC4keys10sdkVersion012eventTrackerC0011attributionC008purchaseC0012remoteConfigC006surveyC006tiktokC017alreadyIntegratedAcA0A4KeysV_SSAA05EventhC0_pAA011AttributionC0_pAA08PurchaseC0_pAA019RemoteConfigurationC0_pAA06SurveyC0_pSgAA06TikTokC0_pSgSbtcfc",
             "moduleName": "KovaleeFramework",
             "declAttributes": [
               "AccessControl"
@@ -4613,6 +4627,66 @@
             ]
           },
           {
+            "kind": "Var",
+            "name": "tiktok",
+            "printedName": "tiktok",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "KovaleeFramework.KovaleeKeys.TikTok?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "TikTok",
+                    "printedName": "KovaleeFramework.KovaleeKeys.TikTok",
+                    "usr": "s:16KovaleeFramework0A4KeysV6TikTokV"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:16KovaleeFramework0A4KeysV6tiktokAC6TikTokVSgvp",
+            "mangledName": "$s16KovaleeFramework0A4KeysV6tiktokAC6TikTokVSgvp",
+            "moduleName": "KovaleeFramework",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "KovaleeFramework.KovaleeKeys.TikTok?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "TikTok",
+                        "printedName": "KovaleeFramework.KovaleeKeys.TikTok",
+                        "usr": "s:16KovaleeFramework0A4KeysV6TikTokV"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:16KovaleeFramework0A4KeysV6tiktokAC6TikTokVSgvg",
+                "mangledName": "$s16KovaleeFramework0A4KeysV6tiktokAC6TikTokVSgvg",
+                "moduleName": "KovaleeFramework",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
             "kind": "TypeDecl",
             "name": "Amplitude",
             "printedName": "Amplitude",
@@ -5372,6 +5446,215 @@
             "declKind": "Struct",
             "usr": "s:16KovaleeFramework0A4KeysV9SurvicateV",
             "mangledName": "$s16KovaleeFramework0A4KeysV9SurvicateV",
+            "moduleName": "KovaleeFramework",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "conformances": [
+              {
+                "kind": "Conformance",
+                "name": "Copyable",
+                "printedName": "Copyable",
+                "usr": "s:s8CopyableP",
+                "mangledName": "$ss8CopyableP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Escapable",
+                "printedName": "Escapable",
+                "usr": "s:s9EscapableP",
+                "mangledName": "$ss9EscapableP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Decodable",
+                "printedName": "Decodable",
+                "usr": "s:Se",
+                "mangledName": "$sSe"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Sendable",
+                "printedName": "Sendable",
+                "usr": "s:s8SendableP",
+                "mangledName": "$ss8SendableP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "SendableMetatype",
+                "printedName": "SendableMetatype",
+                "usr": "s:s16SendableMetatypeP",
+                "mangledName": "$ss16SendableMetatypeP"
+              }
+            ]
+          },
+          {
+            "kind": "TypeDecl",
+            "name": "TikTok",
+            "printedName": "TikTok",
+            "children": [
+              {
+                "kind": "Var",
+                "name": "appId",
+                "printedName": "appId",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:16KovaleeFramework0A4KeysV6TikTokV5appIdSSvp",
+                "mangledName": "$s16KovaleeFramework0A4KeysV6TikTokV5appIdSSvp",
+                "moduleName": "KovaleeFramework",
+                "declAttributes": [
+                  "HasStorage",
+                  "AccessControl"
+                ],
+                "isLet": true,
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:16KovaleeFramework0A4KeysV6TikTokV5appIdSSvg",
+                    "mangledName": "$s16KovaleeFramework0A4KeysV6TikTokV5appIdSSvg",
+                    "moduleName": "KovaleeFramework",
+                    "implicit": true,
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "tiktokAppId",
+                "printedName": "tiktokAppId",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:16KovaleeFramework0A4KeysV6TikTokV11tiktokAppIdSSvp",
+                "mangledName": "$s16KovaleeFramework0A4KeysV6TikTokV11tiktokAppIdSSvp",
+                "moduleName": "KovaleeFramework",
+                "declAttributes": [
+                  "HasStorage",
+                  "AccessControl"
+                ],
+                "isLet": true,
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:16KovaleeFramework0A4KeysV6TikTokV11tiktokAppIdSSvg",
+                    "mangledName": "$s16KovaleeFramework0A4KeysV6TikTokV11tiktokAppIdSSvg",
+                    "moduleName": "KovaleeFramework",
+                    "implicit": true,
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "accessToken",
+                "printedName": "accessToken",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:16KovaleeFramework0A4KeysV6TikTokV11accessTokenSSvp",
+                "mangledName": "$s16KovaleeFramework0A4KeysV6TikTokV11accessTokenSSvp",
+                "moduleName": "KovaleeFramework",
+                "declAttributes": [
+                  "HasStorage",
+                  "AccessControl"
+                ],
+                "isLet": true,
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:16KovaleeFramework0A4KeysV6TikTokV11accessTokenSSvg",
+                    "mangledName": "$s16KovaleeFramework0A4KeysV6TikTokV11accessTokenSSvg",
+                    "moduleName": "KovaleeFramework",
+                    "implicit": true,
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Constructor",
+                "name": "init",
+                "printedName": "init(from:)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "TikTok",
+                    "printedName": "KovaleeFramework.KovaleeKeys.TikTok",
+                    "usr": "s:16KovaleeFramework0A4KeysV6TikTokV"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Decoder",
+                    "printedName": "any Swift.Decoder",
+                    "usr": "s:s7DecoderP"
+                  }
+                ],
+                "declKind": "Constructor",
+                "usr": "s:16KovaleeFramework0A4KeysV6TikTokV4fromAEs7Decoder_p_tKcfc",
+                "mangledName": "$s16KovaleeFramework0A4KeysV6TikTokV4fromAEs7Decoder_p_tKcfc",
+                "moduleName": "KovaleeFramework",
+                "implicit": true,
+                "throwing": true,
+                "init_kind": "Designated"
+              }
+            ],
+            "declKind": "Struct",
+            "usr": "s:16KovaleeFramework0A4KeysV6TikTokV",
+            "mangledName": "$s16KovaleeFramework0A4KeysV6TikTokV",
             "moduleName": "KovaleeFramework",
             "declAttributes": [
               "AccessControl"
@@ -10248,6 +10531,109 @@
             "printedName": "Copyable",
             "usr": "s:s8CopyableP",
             "mangledName": "$ss8CopyableP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "TikTokManager",
+        "printedName": "TikTokManager",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "setUserId",
+            "printedName": "setUserId(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:16KovaleeFramework13TikTokManagerP9setUserIdyySSSgF",
+            "mangledName": "$s16KovaleeFramework13TikTokManagerP9setUserIdyySSSgF",
+            "moduleName": "KovaleeFramework",
+            "genericSig": "<τ_0_0 where τ_0_0 : KovaleeFramework.TikTokManager>",
+            "sugared_genericSig": "<Self where Self : KovaleeFramework.TikTokManager>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "logout",
+            "printedName": "logout()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:16KovaleeFramework13TikTokManagerP6logoutyyF",
+            "mangledName": "$s16KovaleeFramework13TikTokManagerP6logoutyyF",
+            "moduleName": "KovaleeFramework",
+            "genericSig": "<τ_0_0 where τ_0_0 : KovaleeFramework.TikTokManager>",
+            "sugared_genericSig": "<Self where Self : KovaleeFramework.TikTokManager>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Protocol",
+        "usr": "s:16KovaleeFramework13TikTokManagerP",
+        "mangledName": "$s16KovaleeFramework13TikTokManagerP",
+        "moduleName": "KovaleeFramework",
+        "genericSig": "<τ_0_0 : Swift.Sendable>",
+        "sugared_genericSig": "<Self : Swift.Sendable>",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "SendableMetatype",
+            "printedName": "SendableMetatype",
+            "usr": "s:s16SendableMetatypeP",
+            "mangledName": "$ss16SendableMetatypeP"
           }
         ]
       },
@@ -15601,7 +15987,7 @@
     {
       "filePath": "\/Users\/antoine\/Documents\/repos\/kovalee\/Kovalee-internal\/KovaleeFramework\/KovaleeManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 1347,
+      "offset": 1467,
       "length": 5,
       "value": "false"
     },
@@ -15741,14 +16127,14 @@
     {
       "filePath": "\/Users\/antoine\/Documents\/repos\/kovalee\/Kovalee-internal\/KovaleeFramework\/Utils\/KovaleeKeys.swift",
       "kind": "StringLiteral",
-      "offset": 342,
+      "offset": 373,
       "length": 10,
       "value": "\"app_code\""
     },
     {
       "filePath": "\/Users\/antoine\/Documents\/repos\/kovalee\/Kovalee-internal\/KovaleeFramework\/Utils\/KovaleeKeys.swift",
       "kind": "StringLiteral",
-      "offset": 422,
+      "offset": 453,
       "length": 13,
       "value": "\"revenue_cat\""
     },

@@ -80,6 +80,20 @@ public final class Kovalee {
 
             let surveyManager = Kovalee.setupCapabilities(forItem: .survey, withConfiguration: configuration, andKeys: keys) as? SurveyManager
 
+            // Optional modules — initialized only when keys are present and the module is linked
+            var tiktokManager: TikTokManager?
+            if keys.tiktok != nil {
+                let creator = TikTokManagerCreator()
+                if let creator = creator as? Creator {
+                    tiktokManager = creator.createImplementation(
+                        withConfiguration: configuration,
+                        andKeys: keys
+                    ) as? TikTokManager
+                } else {
+                    fatalError("TikTok keys found in KovaleeKeys.json but KovaleeTikTok module is not linked. Add KovaleeTikTok to your target to enable TikTok integration.")
+                }
+            }
+
             kovaleeManager = KovaleeManager(
                 keys: keys,
                 sdkVersion: SDK_VERSION,
@@ -88,6 +102,7 @@ public final class Kovalee {
                 purchaseManager: purchaseManager,
                 remoteConfigManager: remoteConfigManager,
                 surveyManager: surveyManager,
+                tiktokManager: tiktokManager,
                 alreadyIntegrated: configuration.alreadyIntegrated
             )
         } catch {
@@ -95,6 +110,7 @@ public final class Kovalee {
             KLogger.error("Please add the file KovaleeKeys.json to your project")
             fatalError(error.localizedDescription)
         }
+
     }
 
     //    public var keys: KovaleeKeys
@@ -214,3 +230,4 @@ public struct AttributionManagerCreator {
 public struct PurchaseManagerCreator {}
 public struct RemoteConfigManagerCreator {}
 public struct SurveyManagerCreator {}
+public struct TikTokManagerCreator {}

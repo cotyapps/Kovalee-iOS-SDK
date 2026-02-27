@@ -9,6 +9,7 @@ We've tackled this issue head-on at Kovalee. `KovaleeSDK` is our answer - a fram
 - KovaleeAttribution
 - KovaleePurchases
 - KovaleeRemoteConfig
+- KovaleeTikTok
 
 ## **Installation**
 
@@ -37,6 +38,50 @@ To properly work, this Package needs a set of configurations files that should b
 
 If you are interested in using this package for your iOS app, feel free to get in contact.
 
+## Configuration
+
+Initialize the SDK in your `AppDelegate` or app entry point. Use the `.development` environment during development for debug logging, and `.production` for release builds:
+
+**UIKit (AppDelegate):**
+
+```swift
+import KovaleeSDK
+
+class AppDelegate: NSObject, UIApplicationDelegate {
+    func application(
+        _: UIApplication,
+        willFinishLaunchingWithOptions _: [UIApplication.LaunchOptionsKey: Any]? = nil
+    ) -> Bool {
+        #if DEBUG
+        let configuration = Configuration(environment: .development, logLevel: .debug)
+        #else
+        let configuration = Configuration(environment: .production)
+        #endif
+
+        Kovalee.initialize(configuration: configuration)
+        return true
+    }
+}
+```
+
+**SwiftUI:**
+
+```swift
+import SwiftUI
+import KovaleeSDK
+
+@main
+struct MyApp: App {
+    @UIApplicationDelegateAdaptor(AppDelegate.self) var appDelegate
+
+    var body: some Scene {
+        WindowGroup {
+            ContentView()
+        }
+    }
+}
+```
+
 ## Amplitude Session Replay
 
 KovaleeSDK supports [Amplitude Session Replay](https://amplitude.com/docs/session-replay), which lets you capture and replay user sessions to better understand user behavior in your app.
@@ -55,3 +100,52 @@ Kovalee.initialize(
 ```
 
 Session Replay is disabled by default. When enabled, the SDK automatically adds the `AmplitudeSwiftSessionReplayPlugin` to the Amplitude instance, and session replays will be available in your Amplitude dashboard.
+
+## TikTok Integration
+
+KovaleeSDK supports [TikTok Events API](https://business-api.tiktok.com/portal/docs?id=1771100865818625) through the `KovaleeTikTok` module, allowing you to track app events and send them to TikTok for ad attribution and optimization.
+
+### Setup
+
+1. Add the `KovaleeTikTok` library to your app target in Xcode:
+   - Select your app target → **General** → **Frameworks, Libraries, and Embedded Content** → **+** → select `KovaleeTikTok`
+
+2. Add your TikTok credentials to `KovaleeKeys.json`:
+   ```json
+   {
+     "tiktok": {
+       "appId": "YOUR_APP_ID",
+       "tiktokAppId": "YOUR_TIKTOK_APP_ID",
+       "accessToken": "YOUR_ACCESS_TOKEN"
+     }
+   }
+   ```
+
+3. Add `import KovaleeTikTok` alongside `KovaleeSDK` where you initialize the SDK:
+   ```swift
+   import KovaleeSDK
+   import KovaleeTikTok
+   ```
+
+TikTok will be automatically initialized during `Kovalee.initialize()` when the keys are present. No additional setup call is needed.
+
+If you don't have TikTok integration keys, reach out to the Kovalee team to get them configured for your app.
+
+### Usage
+
+```swift
+// Track an event
+Kovalee.trackTikTokEvent("purchase", properties: ["value": 9.99, "currency": "USD"])
+
+// Identify a user
+Kovalee.identifyTikTokUser(externalId: "user_123", email: "user@example.com")
+
+// Logout
+Kovalee.logoutTikTok()
+
+// Enable/disable tracking
+Kovalee.setTikTokTrackingEnabled(false)
+
+// Flush queued events
+Kovalee.flushTikTokEvents()
+```
