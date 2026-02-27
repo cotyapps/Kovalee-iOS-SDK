@@ -82,7 +82,6 @@ public final class Kovalee {
 
             // Optional modules — initialized only when keys are present and the module is linked
             var tiktokManager: TikTokManager?
-            #if canImport(KovaleeTikTok)
             if keys.tiktok != nil {
                 let creator = TikTokManagerCreator()
                 if let creator = creator as? Creator {
@@ -91,10 +90,11 @@ public final class Kovalee {
                         andKeys: keys
                     ) as? TikTokManager
                 } else {
-                    fatalError("TikTok keys found in KovaleeKeys.json but KovaleeTikTok module is not linked. Add KovaleeTikTok to your target to enable TikTok integration.")
+                    if let tiktokKeys = keys.tiktok {
+                        fatalError("TikTok keys found in KovaleeKeys.json but KovaleeTikTok module is not linked. Add KovaleeTikTok to your target to enable TikTok integration.")
+                    }
                 }
             }
-            #endif
 
             kovaleeManager = KovaleeManager(
                 keys: keys,
