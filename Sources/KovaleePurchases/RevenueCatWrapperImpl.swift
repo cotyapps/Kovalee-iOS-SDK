@@ -14,10 +14,12 @@ public enum WebPurchaseRedemptionError: Error {
 final class RevenueCatWrapperImpl: NSObject, PurchaseManager, Manager {
 
     func handleWebUser(withId userId: String) async throws -> Bool {
+        print("Handling web user with id: \(userId)")
         _ = try await Kovalee.setRevenueCatUserId(userId: userId)
         Kovalee.setAmplitudeUserId(userId: userId)
 
         let isPremium = try await Kovalee.isUserPremium()
+        print("Is user premium? \(isPremium)")
         if isPremium {
             Kovalee.setUserProperty(key: "web_premium", value: "true")
         }
