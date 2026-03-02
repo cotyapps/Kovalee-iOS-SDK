@@ -52,9 +52,8 @@ let package = Package(
     targets: [
         .binaryTarget(
             name: .framework,
-            path: "./Frameworks/KovaleeFramework.xcframework"
+            path: "./Frameworks/KovaleeFramework.xcframework.zip"
         ),
-
         .target(
             name: .sdk,
             dependencies: [
