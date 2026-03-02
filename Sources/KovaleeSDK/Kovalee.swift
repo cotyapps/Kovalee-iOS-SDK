@@ -90,7 +90,7 @@ public final class Kovalee {
                         andKeys: keys
                     ) as? TikTokManager
                 } else {
-                    if let tiktokKeys = keys.tiktok {
+                    if let _ = keys.tiktok {
                         fatalError("TikTok keys found in KovaleeKeys.json but KovaleeTikTok module is not linked. Add KovaleeTikTok to your target to enable TikTok integration.")
                     }
                 }
