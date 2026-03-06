@@ -197,9 +197,9 @@ public protocol AttributionManager : Swift.Sendable {
   #if compiler(>=5.3) && $NonescapableTypes
   func getAttributionAdid() async -> Swift.String?
   #endif
-  func promptTrackingAuthorization(completion: @escaping (AppTrackingTransparency.ATTrackingManager.AuthorizationStatus) -> Swift.Void)
+  func promptTrackingAuthorization(completion: @escaping @Sendable (AppTrackingTransparency.ATTrackingManager.AuthorizationStatus) -> Swift.Void)
   #if compiler(>=5.3) && $NonescapableTypes
-  func sendConversionValue(value: Swift.Int, coarseValue: Swift.String?, completion: @escaping ((any Swift.Error)?) -> Swift.Void)
+  func sendConversionValue(value: Swift.Int, coarseValue: Swift.String?, completion: @escaping @Sendable ((any Swift.Error)?) -> Swift.Void)
   #endif
   func setDataCollectionEnabled(_ enabled: Swift.Bool)
   func setAttributionDelegate(_ delegate: any KovaleeFramework.KovaleeAttributionDelegate)
@@ -217,7 +217,6 @@ public protocol EventTrackerManager : Swift.Sendable {
   func setUserProperty(property: KovaleeFramework.UserProperty)
   func setUserProperties(_ properties: [Swift.String : Swift.String])
   func setDataCollectionEnabled(_ enabled: Swift.Bool)
-  func flush()
   #if compiler(>=5.3) && $NonescapableTypes
   func getUserId() -> Swift.String?
   #endif
@@ -308,7 +307,7 @@ public protocol SurveyManager : Swift.Sendable {
 }
 extension KovaleeFramework.KovaleeManager {
   final public func setupAttributionManager()
-  final public func promptTrackingAuthorization(completion: @escaping (AppTrackingTransparency.ATTrackingManager.AuthorizationStatus) -> Swift.Void)
+  final public func promptTrackingAuthorization(completion: @escaping @Sendable (AppTrackingTransparency.ATTrackingManager.AuthorizationStatus) -> Swift.Void)
   #if compiler(>=5.3) && $NonescapableTypes
   final public func getAttributionAdid() async -> Swift.String?
   #endif

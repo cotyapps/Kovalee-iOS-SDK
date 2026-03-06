@@ -1,7 +1,6 @@
 import KovaleeFramework
 import KovaleeSDK
 import SwiftUI
-import UIKit
 
 // MARK: - Web2Web
 
@@ -125,9 +124,16 @@ public extension Kovalee {
     /// }
     /// ```
     static func checkWebUserFromClipboard() async throws -> Bool {
+        #if canImport(UIKit) && !os(tvOS) && !os(watchOS)
+            let clipboardUserId: String? = UIPasteboard.general.string
+        #elseif canImport(AppKit)
+            let clipboardUserId: String? = NSPasteboard.general.string(forType: .string)
+        #else
+            let clipboardUserId: String? = nil
+        #endif
+        
         guard
-            let clipboardUserId = UIPasteboard.general.string,
-            clipboardUserId.range(of: "^[a-f0-9\\-]{36}$", options: .regularExpression) != nil
+            let clipboardUserId, clipboardUserId.range(of: "^[a-f0-9\\-]{36}$", options: .regularExpression) != nil
         else {
             return false
         }
@@ -150,13 +156,20 @@ public extension Kovalee {
         // We only want to read the pasteboard on the first app launch.
         guard Kovalee.appOpeningCount() <= 1 else { return nil }
 
-        // We rely on the LinkMe feature from Adjust, which places a URL in the pasteboard when the user taps the download link.
-        guard UIPasteboard.general.hasURLs else { return nil }
+        #if canImport(UIKit) && !os(tvOS) && !os(watchOS) && !os(watchOS)
+            // We rely on the LinkMe feature from Adjust, which places a URL in the pasteboard when the user taps the download link.
+            guard UIPasteboard.general.hasURLs else { return nil }
 
-        // This displays a dialog asking the user whether they want to allow the app to read the pasteboard.
-        guard let clipboardUrl = UIPasteboard.general.url else { return nil }
-        UIPasteboard.general.url = nil // Clear the pasteboard to avoid re-reading it in the future.
-        return clipboardUrl
+            // This displays a dialog asking the user whether they want to allow the app to read the pasteboard.
+            guard let clipboardUrl = UIPasteboard.general.url else { return nil }
+            UIPasteboard.general.url = nil // Clear the pasteboard to avoid re-reading it in the future.
+            return clipboardUrl
+        #elseif canImport(AppKit)
+            guard let value = NSPasteboard.general.string(forType: .string) else { return nil }
+            return URL(string: value)
+        #else
+            return nil
+        #endif
     }
 
 }

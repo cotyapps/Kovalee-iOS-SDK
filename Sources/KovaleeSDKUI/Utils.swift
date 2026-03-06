@@ -1,90 +1,92 @@
-import SwiftUI
-import UIKit
+#if os(iOS)
+    import SwiftUI
+    import UIKit
 
-struct ShakeDetectorModifier: ViewModifier {
-    @State private var isDebugViewPresented = false
+    struct ShakeDetectorModifier: ViewModifier {
+        @State private var isDebugViewPresented = false
 
-    func body(content: Content) -> some View {
-        content
-            .onShake {
-                guard Config.isDebugOrTestflight else {
-                    return
+        func body(content: Content) -> some View {
+            content
+                .onShake {
+                    guard Config.isDebugOrTestflight else {
+                        return
+                    }
+                    self.isDebugViewPresented = true
                 }
-                self.isDebugViewPresented = true
-            }
-            .fullScreenCover(isPresented: $isDebugViewPresented) {
-                if #available(iOS 16.0, *) {
-                    DebugView()
-                } else {
-                    Text("Debug view is supported in iOS 16+")
+                .fullScreenCover(isPresented: $isDebugViewPresented) {
+                    if #available(iOS 16.0, *) {
+                        DebugView()
+                    } else {
+                        Text("Debug view is supported in iOS 16+")
+                    }
                 }
+        }
+    }
+
+    // A view modifier that detects shaking and calls a function of our choosing.
+    struct DeviceShakeViewModifier: ViewModifier {
+        let action: () -> Void
+
+        func body(content: Content) -> some View {
+            content
+                .onAppear()
+                .onReceive(NotificationCenter.default.publisher(for: UIDevice.deviceDidShakeNotification)) { _ in
+                    action()
+                }
+        }
+    }
+
+    extension View {
+        func onShake(perform action: @escaping () -> Void) -> some View {
+            modifier(DeviceShakeViewModifier(action: action))
+        }
+    }
+
+    public extension UIDevice {
+        static let deviceDidShakeNotification = Notification.Name(rawValue: "deviceDidShakeNotification")
+    }
+
+    extension UIWindow {
+        override open func motionEnded(_ motion: UIEvent.EventSubtype, with _: UIEvent?) {
+            if motion == .motionShake {
+                NotificationCenter.default.post(name: UIDevice.deviceDidShakeNotification, object: nil)
             }
+        }
     }
-}
 
-// A view modifier that detects shaking and calls a function of our choosing.
-struct DeviceShakeViewModifier: ViewModifier {
-    let action: () -> Void
+    public enum Config {
+        public enum AppConfiguration {
+            case Debug
+            case TestFlight
+            case AppStore
+        }
 
-    func body(content: Content) -> some View {
-        content
-            .onAppear()
-            .onReceive(NotificationCenter.default.publisher(for: UIDevice.deviceDidShakeNotification)) { _ in
-                action()
+        private static let isTestFlight = Bundle.main.appStoreReceiptURL?.lastPathComponent == "sandboxReceipt"
+
+        public static var isDebug: Bool {
+            #if DEBUG
+                return true
+            #else
+                return false
+            #endif
+        }
+
+        static var appConfiguration: AppConfiguration {
+            if isDebug {
+                return .Debug
+            } else if isTestFlight {
+                return .TestFlight
+            } else {
+                return .AppStore
             }
-    }
-}
+        }
 
-extension View {
-    func onShake(perform action: @escaping () -> Void) -> some View {
-        modifier(DeviceShakeViewModifier(action: action))
-    }
-}
-
-public extension UIDevice {
-    static let deviceDidShakeNotification = Notification.Name(rawValue: "deviceDidShakeNotification")
-}
-
-extension UIWindow {
-    override open func motionEnded(_ motion: UIEvent.EventSubtype, with _: UIEvent?) {
-        if motion == .motionShake {
-            NotificationCenter.default.post(name: UIDevice.deviceDidShakeNotification, object: nil)
+        public static var isDebugOrTestflight: Bool {
+            if isDebug || isTestFlight {
+                return true
+            } else {
+                return false
+            }
         }
     }
-}
-
-public enum Config {
-    public enum AppConfiguration {
-        case Debug
-        case TestFlight
-        case AppStore
-    }
-
-    private static let isTestFlight = Bundle.main.appStoreReceiptURL?.lastPathComponent == "sandboxReceipt"
-
-    public static var isDebug: Bool {
-        #if DEBUG
-            return true
-        #else
-            return false
-        #endif
-    }
-
-    static var appConfiguration: AppConfiguration {
-        if isDebug {
-            return .Debug
-        } else if isTestFlight {
-            return .TestFlight
-        } else {
-            return .AppStore
-        }
-    }
-
-    public static var isDebugOrTestflight: Bool {
-        if isDebug || isTestFlight {
-            return true
-        } else {
-            return false
-        }
-    }
-}
+#endif
