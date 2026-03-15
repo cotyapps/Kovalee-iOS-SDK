@@ -15,12 +15,16 @@ import KovaleeSDK
 struct FirebaseWrapperImpl: RemoteConfigurationManager, Manager {
     init(keys: KovaleeKeys.Firebase) {
         if !keys.configuredInApp {
-            FirebaseApp.configure()
+            #if canImport(FirebaseCore)
+                FirebaseApp.configure()
+            #endif
         }
     }
 
     func setFetchTimeout(_ timeout: Double) {
-        RemoteConfig.remoteConfig().configSettings.fetchTimeout = timeout
+        #if canImport(FirebaseRemoteConfig)
+            RemoteConfig.remoteConfig().configSettings.fetchTimeout = timeout
+        #endif
     }
 
     func setDataCollectionEnabled(_ enabled: Bool) {
@@ -30,32 +34,40 @@ struct FirebaseWrapperImpl: RemoteConfigurationManager, Manager {
     }
 
     func setDefaultValues(_ values: [String: Any]) {
-        RemoteConfig.remoteConfig().setDefaults(values as? [String: NSObject])
+        #if canImport(FirebaseRemoteConfig)
+            RemoteConfig.remoteConfig().setDefaults(values as? [String: NSObject])
+        #endif
     }
 
     func fetchAndActivateRemoteConfig() async {
-        do {
-            let remoteConfig = RemoteConfig.remoteConfig()
-            try await remoteConfig.ensureInitialized()
+        #if canImport(FirebaseRemoteConfig)
+            do {
+                let remoteConfig = RemoteConfig.remoteConfig()
+                try await remoteConfig.ensureInitialized()
 
-            let activated = try await remoteConfig.fetchAndActivate()
-            KLogger.debug("🛰️ Remote config activated: \(activated)")
-            if activated == RemoteConfigFetchAndActivateStatus.error {
-                throw KovaleeError.remoteValueFetchError
+                let activated = try await remoteConfig.fetchAndActivate()
+                KLogger.debug("🛰️ Remote config activated: \(activated)")
+                if activated == RemoteConfigFetchAndActivateStatus.error {
+                    throw KovaleeError.remoteValueFetchError
+                }
+
+                let keys = remoteConfig.allKeys(from: RemoteConfigSource.remote)
+                KLogger.debug("🛰️ Found remote config keys: [\(keys.joined(separator: ","))]")
+            } catch {
+                KLogger.error("❌ Got an error fetching remote values \(error)")
             }
-
-            let keys = remoteConfig.allKeys(from: RemoteConfigSource.remote)
-            KLogger.debug("🛰️ Found remote config keys: [\(keys.joined(separator: ","))]")
-        } catch {
-            KLogger.error("❌ Got an error fetching remote values \(error)")
-        }
+        #endif
     }
 
     func value(forKey key: String) async throws -> Data {
-        await fetchAndActivateRemoteConfig()
-        KLogger.debug("🛰️ initialization complete")
+        #if canImport(FirebaseRemoteConfig)
+            await fetchAndActivateRemoteConfig()
+            KLogger.debug("🛰️ initialization complete")
 
-        return RemoteConfig.remoteConfig().configValue(forKey: key).dataValue
+            return RemoteConfig.remoteConfig().configValue(forKey: key).dataValue
+        #else
+            return Data()
+        #endif
     }
 }
 
@@ -89,11 +101,13 @@ public class RemoteConfigValue {
         value = String(data: data, encoding: .utf8)
         dataValue = data
     }
-
-    init(config: FirebaseRemoteConfig.RemoteConfigValue) {
-        value = String(data: config.dataValue, encoding: .utf8)
-        dataValue = config.dataValue
-    }
+    
+    #if canImport(FirebaseRemoteConfig)
+        init(config: FirebaseRemoteConfig.RemoteConfigValue) {
+            value = String(data: config.dataValue, encoding: .utf8)
+            dataValue = config.dataValue
+        }
+    #endif
 }
 
 extension String {
