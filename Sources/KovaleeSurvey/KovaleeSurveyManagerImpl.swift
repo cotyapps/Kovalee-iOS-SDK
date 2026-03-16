@@ -1,8 +1,8 @@
 import Foundation
 import KovaleeFramework
 import KovaleeSDK
-#if !targetEnvironment(macCatalyst)
-    @preconcurrency import Survicate
+#if canImport(Survicate)
+    import Survicate
 
     class KovaleeSurveyManagerImpl: SurveyManager, Manager {
         private enum Constants {

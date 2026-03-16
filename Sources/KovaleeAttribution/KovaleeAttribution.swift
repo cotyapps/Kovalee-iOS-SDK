@@ -1,4 +1,3 @@
-import AppTrackingTransparency
 import Foundation
 import KovaleeFramework
 import KovaleeSDK
@@ -22,45 +21,49 @@ extension AttributionManagerCreator: Creator {
     }
 }
 
-// MARK: Adjust
 
-public extension Kovalee {
-    /// Prompt the user with tracking authorization alert view
-    ///
-    /// This method uses a trailing closure as return value.
-    /// To get the return value using Swift async/awat, use: ``promptTrackingAuthorization()``
-    ///
-    /// - Returns:a completion block returning the `ATTrackingManager.AuthorizationStatus` based on the user response
-    ///  based on the user response
-    static func promptTrackingAuthorization(
-        completion: @escaping (ATTrackingManager.AuthorizationStatus) -> Void
-    ) {
-        shared.kovaleeManager?.promptTrackingAuthorization(completion: completion)
-    }
+#if canImport(AppTrackingTransparency)
+    import AppTrackingTransparency
+    // MARK: Adjust
 
-    /// Prompt the user with tracking authorization alert view
-    ///
-    /// This method uses Swift async/await.
-    /// To get the return value in a trailing closure, use: ``promptTrackingAuthorization(completion:)``
-    ///
-    /// - Returns:the `ATTrackingManager.AuthorizationStatus` based on the user response
-    @discardableResult
-    static func promptTrackingAuthorization() async -> ATTrackingManager.AuthorizationStatus {
-        await withUnsafeContinuation { continuation in
-            Self.shared.kovaleeManager?.promptTrackingAuthorization { userState in
-                continuation.resume(returning: userState)
+    public extension Kovalee {
+        /// Prompt the user with tracking authorization alert view
+        ///
+        /// This method uses a trailing closure as return value.
+        /// To get the return value using Swift async/awat, use: ``promptTrackingAuthorization()``
+        ///
+        /// - Returns:a completion block returning the `ATTrackingManager.AuthorizationStatus` based on the user response
+        ///  based on the user response
+        static func promptTrackingAuthorization(
+            completion: @Sendable @escaping (ATTrackingManager.AuthorizationStatus) -> Void
+        ) {
+            shared.kovaleeManager?.promptTrackingAuthorization(completion: completion)
+        }
+
+        /// Prompt the user with tracking authorization alert view
+        ///
+        /// This method uses Swift async/await.
+        /// To get the return value in a trailing closure, use: ``promptTrackingAuthorization(completion:)``
+        ///
+        /// - Returns:the `ATTrackingManager.AuthorizationStatus` based on the user response
+        @discardableResult
+        static func promptTrackingAuthorization() async -> ATTrackingManager.AuthorizationStatus {
+            await withUnsafeContinuation { continuation in
+                Self.shared.kovaleeManager?.promptTrackingAuthorization { userState in
+                    continuation.resume(returning: userState)
+                }
             }
         }
-    }
 
-    /// Retrieve the Adjust identifier value
-    ///
-    /// - Returns: the Adjust identifier value
-    static func getAttributionAdid() async -> String? {
-        await shared.kovaleeManager?.getAttributionAdid()
-    }
+        /// Retrieve the Adjust identifier value
+        ///
+        /// - Returns: the Adjust identifier value
+        static func getAttributionAdid() async -> String? {
+            await shared.kovaleeManager?.getAttributionAdid()
+        }
 
-    static func setAttributionDelegate(_ delegate: KovaleeAttributionDelegate) {
-        shared.kovaleeManager?.setAttributionDelegate(delegate)
+        static func setAttributionDelegate(_ delegate: KovaleeAttributionDelegate) {
+            shared.kovaleeManager?.setAttributionDelegate(delegate)
+        }
     }
-}
+#endif
