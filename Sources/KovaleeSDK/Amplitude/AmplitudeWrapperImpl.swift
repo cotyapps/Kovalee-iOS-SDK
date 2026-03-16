@@ -32,7 +32,7 @@ import KovaleeFramework
             
             #if canImport(AmplitudeSwiftSessionReplayPlugin)
                 if sessionReplayPluginEnabled {
-                    amplitude.withAmplitude { $0?.add(plugin: AmplitudeSwiftSessionReplayPlugin(sampleRate: 1.0)) }
+                    amplitude.withAmplitude { $0?.add(plugin: AmplitudeSwiftSessionReplayPlugin()) }
                 }
             #endif
 
