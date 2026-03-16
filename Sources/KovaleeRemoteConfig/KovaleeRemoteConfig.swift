@@ -2,7 +2,6 @@ import Foundation
 import KovaleeFramework
 import KovaleeSDK
 
-#if canImport(FirebaseRemoteConfig)
     extension RemoteConfigManagerCreator: Creator {
         public func createImplementation(
             withConfiguration _: Configuration,
@@ -16,6 +15,7 @@ import KovaleeSDK
         }
     }
 
+#if canImport(FirebaseRemoteConfig)
     // MARK: Firebase
 
     public extension Kovalee {
