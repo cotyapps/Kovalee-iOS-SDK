@@ -1,0 +1,22 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(git add:*)",
+      "Bash(git commit:*)",
+      "Bash(git push:*)",
+      "Bash(swift package dump-package:*)",
+      "Bash(python3:*)",
+      "mcp__claude_ai_Linear__get_issue",
+      "Bash(nm:*)",
+      "Bash(objdump:*)",
+      "Bash(echo === Kovalee-public ===:*)",
+      "Bash(git:*)",
+      "mcp__claude_ai_Linear__update_issue",
+      "WebFetch(domain:business-api.tiktok.com)",
+      "WebFetch(domain:api.github.com)",
+      "WebFetch(domain:ads.tiktok.com)",
+      "mcp__claude_ai_Linear__list_teams",
+      "mcp__claude_ai_Linear__save_issue"
+    ]
+  }
+}
