@@ -77,6 +77,7 @@ let package = Package(
             name: .sdkUI,
             dependencies: [
                 .sdk,
+                .kovaleePurchases,
             ]
         ),
         .target(

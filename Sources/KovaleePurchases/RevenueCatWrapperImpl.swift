@@ -36,10 +36,25 @@ final class RevenueCatWrapperImpl: NSObject, PurchaseManager, Manager {
            Purchases.isConfigured {
                let result = await Purchases.shared.redeemWebPurchase(webPurchaseRedemption)
                switch result {
-               case .success:
+               case let .success(customerInfo):
+                   KLogger.debug("🛍️ Web purchase redeemed successfully")
+                   KLogger.debug("🛍️ appUserID: \(Purchases.shared.appUserID)")
+                   KLogger.debug("🛍️ originalAppUserId: \(customerInfo.originalAppUserId)")
+                   KLogger.debug("🛍️ firstSeen: \(customerInfo.firstSeen)")
+                   KLogger.debug("🛍️ activeSubscriptions: \(customerInfo.activeSubscriptions)")
+                   KLogger.debug("🛍️ activeEntitlements: \(customerInfo.entitlements.active.keys.joined(separator: ", "))")
+                   KLogger.debug("🛍️ allPurchasedProductIdentifiers: \(customerInfo.allPurchasedProductIdentifiers)")
+                   KLogger.debug("🛍️ latestExpirationDate: \(String(describing: customerInfo.latestExpirationDate))")
+                   KLogger.debug("🛍️ managementURL: \(String(describing: customerInfo.managementURL))")
+                   KLogger.debug("🛍️ nonSubscriptions: \(customerInfo.nonSubscriptions)")
+
                    let isPremium = try await Kovalee.isUserPremium()
                    if isPremium {
                        Kovalee.setUserProperty(key: "web_premium", value: "true")
+                   }
+                   let webUserId = customerInfo.originalAppUserId
+                   if webUserId.hasPrefix("web_") {
+                       Kovalee.setAmplitudeUserId(userId: webUserId)
                    }
                    return isPremium
                case let .error(error):
