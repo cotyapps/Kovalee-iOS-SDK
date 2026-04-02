@@ -2,6 +2,7 @@ import KovaleeFramework
 import KovaleePurchases
 import KovaleeSDK
 import SwiftUI
+#if os(iOS)
 
 @available(iOS 16.0, *)
 struct PurchaseCVView: View {
@@ -196,3 +197,4 @@ struct PurchaseCVView: View {
         }
     }
 }
+#endif
