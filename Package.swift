@@ -75,6 +75,7 @@ let package = Package(
             name: .sdkUI,
             dependencies: [
                 .sdk,
+                .kovaleePurchases,
             ]
         ),
         .target(
@@ -121,11 +122,7 @@ let package = Package(
             name: .kovaleeTikTok,
             dependencies: [
                 .sdk,
-                .product(
-                    name: "TikTokBusinessSDK",
-                    package: "tiktok-business-ios-sdk",
-                    condition: .when(platforms: [.iOS])
-                )
+                .tikTokBusinessSDK,
             ],
             resources: [
                 .copy("PrivacyInfo.xcprivacy"),

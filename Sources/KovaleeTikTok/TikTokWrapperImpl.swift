@@ -1,6 +1,7 @@
 import Foundation
 import KovaleeFramework
 import KovaleeSDK
+@preconcurrency import TikTokBusinessSDK
 
 /// Holds a reference to the active TikTok wrapper for use by public API methods
 final class TikTokWrapperRef: @unchecked Sendable {
@@ -122,5 +123,4 @@ final class TikTokWrapperRef: @unchecked Sendable {
         }
     }
 #endif
-
 extension TikTokWrapperImpl: @unchecked Sendable {}
