@@ -52,10 +52,6 @@ final class RevenueCatWrapperImpl: NSObject, PurchaseManager, Manager {
                    if isPremium {
                        Kovalee.setUserProperty(key: "web_premium", value: "true")
                    }
-                   let webUserId = customerInfo.originalAppUserId
-                   if webUserId.hasPrefix("web_") {
-                       Kovalee.setAmplitudeUserId(userId: webUserId)
-                   }
                    return isPremium
                case let .error(error):
                    throw WebPurchaseRedemptionError.otherError(error.localizedDescription)
