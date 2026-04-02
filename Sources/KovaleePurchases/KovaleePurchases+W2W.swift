@@ -153,7 +153,7 @@ public extension Kovalee {
         // We only want to read the pasteboard on the first app launch.
         guard Kovalee.appOpeningCount() <= 1 else { return nil }
 
-        #if canImport(UIKit) && !os(tvOS) && !os(watchOS) && !os(watchOS)
+        #if canImport(UIKit) && !os(tvOS) && !os(watchOS)
             // We rely on the LinkMe feature from Adjust, which places a URL in the pasteboard when the user taps the download link.
             guard UIPasteboard.general.hasURLs else { return nil }
 

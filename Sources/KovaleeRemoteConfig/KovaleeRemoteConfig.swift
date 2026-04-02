@@ -144,5 +144,26 @@ import KovaleeSDK
         static func abTestValue(withCompletion completion: @escaping @Sendable (String?) -> Void) {
             completion(nil)
         }
+
+        static func remoteValue(forKey key: String) async -> RemoteConfigValue? {
+            nil
+        }
+
+        static func remoteValue(
+            forKey key: String,
+            withCompletion completion: @escaping @Sendable (RemoteConfigValue?) -> Void
+        ) {
+            completion(nil)
+        }
+
+        static func setFetchTimeout(_ timeout: Double) {}
+
+        static func setDefaultValues(_ values: [String: Any]) {}
+
+        static func setAbTestValue(_ value: String) {}
+
+        static func localAbTestValue() -> String? {
+            nil
+        }
     }
 #endif

@@ -123,8 +123,6 @@
                         .bold()
                         .tint(.black)
                     }
-                    .bold()
-                    .tint(Color(.systemBackground))
                 }
             }
         }
