@@ -1,7 +1,6 @@
 import Foundation
 import KovaleeFramework
 import KovaleeSDK
-@preconcurrency import TikTokBusinessSDK
 
 /// Holds a reference to the active TikTok wrapper for use by public API methods
 final class TikTokWrapperRef: @unchecked Sendable {
@@ -25,7 +24,7 @@ final class TikTokWrapperRef: @unchecked Sendable {
 }
 
 #if os(iOS)
-    import TikTokBusinessSDK
+@preconcurrency import TikTokBusinessSDK
 
     final class TikTokWrapperImpl: Manager, TikTokManager {
         init(keys: KovaleeKeys.TikTok, debugMode: Bool) {
