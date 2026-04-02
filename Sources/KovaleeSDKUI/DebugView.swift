@@ -120,7 +120,7 @@ public struct DebugView: View {
                         dismiss()
                     }
                     .bold()
-                    .tint(.black)
+                    .tint(Color(.systemBackground))
                 }
             }
         }

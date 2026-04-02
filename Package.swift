@@ -40,6 +40,12 @@ let package = Package(
                 .kovaleeRemoteConfig,
             ]
         ),
+        .library(
+            name: .kovaleeTikTok,
+            targets: [
+                .kovaleeTikTok,
+            ]
+        ),
     ],
     dependencies: [
         .package(url: "https://github.com/amplitude/Amplitude-Swift", .upToNextMajor(from: "1.4.3")),
@@ -48,6 +54,7 @@ let package = Package(
         .package(url: "https://github.com/firebase/firebase-ios-sdk.git", .upToNextMajor(from: "12.6.0")),
         .package(url: "https://github.com/RevenueCat/purchases-ios-spm.git", .upToNextMajor(from: "5.0.0")),
         .package(url: "https://github.com/adjust/ios_sdk", .upToNextMajor(from: "5.0.0")),
+        .package(url: "https://github.com/tiktok/tiktok-business-ios-sdk", .upToNextMajor(from: "1.6.0")),
     ],
     targets: [
         .binaryTarget(
@@ -70,6 +77,7 @@ let package = Package(
             name: .sdkUI,
             dependencies: [
                 .sdk,
+                .kovaleePurchases,
             ]
         ),
         .target(
@@ -112,6 +120,16 @@ let package = Package(
                 .copy("PrivacyInfo.xcprivacy"),
             ]
         ),
+        .target(
+            name: .kovaleeTikTok,
+            dependencies: [
+                .sdk,
+                .tikTokBusinessSDK,
+            ],
+            resources: [
+                .copy("PrivacyInfo.xcprivacy"),
+            ]
+        ),
     ]
 )
 
@@ -142,6 +160,10 @@ extension Target.Dependency {
 
     static var kovaleeAttribution: Self {
         .target(name: .kovaleeAttribution)
+    }
+
+    static var kovaleeTikTok: Self {
+        .target(name: .kovaleeTikTok)
     }
 }
 
@@ -181,6 +203,10 @@ extension Target.Dependency {
     static var firebaseAnalytics: Self {
         .product(name: "FirebaseAnalytics", package: "firebase-ios-sdk")
     }
+
+    static var tikTokBusinessSDK: Self {
+        .product(name: "TikTokBusinessSDK", package: "tiktok-business-ios-sdk")
+    }
 }
 
 extension String {
@@ -191,4 +217,5 @@ extension String {
     static let kovaleeRemoteConfig = "KovaleeRemoteConfig"
     static let kovaleePurchases = "KovaleePurchases"
     static let kovaleeAttribution = "KovaleeAttribution"
+    static let kovaleeTikTok = "KovaleeTikTok"
 }

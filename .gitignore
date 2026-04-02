@@ -3,6 +3,7 @@
 Packages
 .swiftpm/*
 .netrc
+.claude/settings.local.json
 
 fastlane/report.xml
 fastlane/README.md
