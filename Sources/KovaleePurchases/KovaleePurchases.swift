@@ -157,17 +157,21 @@ public extension Kovalee {
     /// Show RevenueCat Billing subscription  management Flow
     ///
     static func showManageSubscriptionsIfAvailable() async throws -> Bool {
-        guard let customerInfo = try await Self.customerInfo(),
-              !customerInfo.entitlements.active.filter({ $0.value.store == KStore.rcBilling }).isEmpty,
-              let _ = customerInfo.managementURL else {
+        #if os(iOS) || os(macOS)
+            guard let customerInfo = try await Self.customerInfo(),
+                  !customerInfo.entitlements.active.filter({ $0.value.store == KStore.rcBilling }).isEmpty,
+                  let _ = customerInfo.managementURL else {
+                return false
+            }
+            do {
+                try await Purchases.shared.showManageSubscriptions()
+                return true
+            } catch {
+                return false
+            }
+        #else
             return false
-        }
-        do {
-            try await Purchases.shared.showManageSubscriptions()
-            return true
-        } catch {
-            return false
-        }
+        #endif
     }
 
 

@@ -6,9 +6,7 @@ import PackageDescription
 let package = Package(
     name: "KovaleeSDK",
     defaultLocalization: "en",
-    platforms: [
-        .iOS(.v15),
-    ],
+    platforms: [.macOS(.v12), .iOS(.v15), .watchOS(.v8), .tvOS(.v15), .macCatalyst(.v15), .visionOS(.v1)],
     products: [
         .library(
             name: .sdk,
@@ -143,7 +141,7 @@ extension Target.Dependency {
     }
 
     static var ui: Self {
-        .target(name: .sdkUI)
+        .target(name: .sdkUI, condition: .when(platforms: [.iOS]))
     }
 
     static var survey: Self {
@@ -185,27 +183,51 @@ extension Target.Dependency {
     }
 
     static var amplitude: Self {
-        .product(name: "AmplitudeSwift", package: "Amplitude-Swift")
+        .product(
+            name: "AmplitudeSwift",
+            package: "Amplitude-Swift",
+            condition: .when(platforms: [.macOS, .iOS, .tvOS, .watchOS])
+        )
     }
 
     static var revenueCat: Self {
-        .product(name: "RevenueCat", package: "purchases-ios-spm")
+        .product(
+            name: "RevenueCat",
+            package: "purchases-ios-spm",
+            condition: .when(platforms: [.macOS, .watchOS, .tvOS, .iOS, .visionOS])
+        )
     }
 
     static var AdjustSdk: Self {
-        .product(name: "AdjustSdk", package: "ios_sdk")
+        .product(
+            name: "AdjustSdk",
+            package: "ios_sdk",
+            condition: .when(platforms: [.iOS, .tvOS])
+        )
     }
 
     static var firebaseRemoteConfig: Self {
-        .product(name: "FirebaseRemoteConfig", package: "firebase-ios-sdk")
+        .product(
+            name: "FirebaseRemoteConfig",
+            package: "firebase-ios-sdk",
+            condition: .when(platforms: [.iOS, .macCatalyst, .macOS, .tvOS, .watchOS])
+        )
     }
 
     static var firebaseAnalytics: Self {
-        .product(name: "FirebaseAnalytics", package: "firebase-ios-sdk")
+        .product(
+            name: "FirebaseAnalytics",
+            package: "firebase-ios-sdk",
+            condition: .when(platforms: [.iOS, .macCatalyst, .macOS, .tvOS, .watchOS])
+        )
     }
 
     static var tikTokBusinessSDK: Self {
-        .product(name: "TikTokBusinessSDK", package: "tiktok-business-ios-sdk")
+        .product(
+            name: "TikTokBusinessSDK",
+            package: "tiktok-business-ios-sdk",
+            condition: .when(platforms: [.iOS])
+        )
     }
 }
 
