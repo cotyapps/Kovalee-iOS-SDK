@@ -186,7 +186,7 @@ extension Target.Dependency {
         .product(
             name: "AmplitudeSwift",
             package: "Amplitude-Swift",
-            condition: .when(platforms: [.macOS, .iOS, .tvOS, .watchOS])
+            condition: .when(platforms: [.macOS, .iOS, .tvOS, .watchOS, .visionOS])
         )
     }
 
