@@ -170,10 +170,15 @@ final class RevenueCatWrapperImpl: NSObject, PurchaseManager, Manager {
         let purchaseResult = try await Purchases.shared.purchase(package: rcPackage)
         KLogger.debug("🛍️ Purchase \(purchaseResult)")
 
+        let product = rcPackage.storeProduct
         return KPurchaseResultData(
             transaction: KStoreTransaction(transaction: purchaseResult.transaction),
             customerInfo: KCustomerInfo(info: purchaseResult.customerInfo),
-            userCancelled: purchaseResult.userCancelled
+            userCancelled: purchaseResult.userCancelled,
+            productId: product.productIdentifier,
+            priceDecimal: product.price,
+            currencyCode: product.currencyCode,
+            hasFreeTrial: product.introductoryDiscount?.paymentMode == .freeTrial
         )
     }
 
@@ -188,7 +193,11 @@ final class RevenueCatWrapperImpl: NSObject, PurchaseManager, Manager {
         return KPurchaseResultData(
             transaction: KStoreTransaction(transaction: purchaseResult.transaction),
             customerInfo: KCustomerInfo(info: purchaseResult.customerInfo),
-            userCancelled: purchaseResult.userCancelled
+            userCancelled: purchaseResult.userCancelled,
+            productId: product.productIdentifier,
+            priceDecimal: product.price,
+            currencyCode: product.currencyCode,
+            hasFreeTrial: product.introductoryDiscount?.paymentMode == .freeTrial
         )
     }
 

@@ -828,6 +828,12 @@ public struct KPurchaseResultData: AbstractPurchaseResultData, Encodable, Sendab
     public var transaction: KStoreTransaction?
     public var customerInfo: KCustomerInfo
     public var userCancelled: Bool
+    public var productId: String
+    public var priceDecimal: Decimal
+    public var currencyCode: String?
+    public var hasFreeTrial: Bool
+    /// Convenience accessor for the underlying StoreKit transaction identifier.
+    public var transactionId: String? { transaction?.transactionIdentifier }
 }
 
 public enum KIntroEligibilityStatus: Int {

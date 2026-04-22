@@ -1,4 +1,5 @@
 #if os(iOS)
+    import KovaleeFramework
     import KovaleeSDK
     import SwiftUI
 
@@ -56,6 +57,8 @@
             NavigationView {
                 List {
                     Text("SDK Version: \(SDK_VERSION)")
+                        .allowsHitTesting(false)
+                    Text("Framework Built: \(KovaleeConstants.frameworkBuildDate)")
                         .allowsHitTesting(false)
                     Toggle("Enable Debug Mode", isOn: $isDebugModeOn)
 
