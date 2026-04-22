@@ -39,6 +39,10 @@ final class TikTokWrapperRef: @unchecked Sendable {
                 return
             }
 
+            config.disableRetentionTracking()
+            config.disablePaymentTracking()
+            config.disableAutoEnhancedDataPostbackEvent()
+
             if debugMode {
                 config.enableDebugMode()
             }
@@ -91,6 +95,56 @@ final class TikTokWrapperRef: @unchecked Sendable {
         func flush() {
             TikTokBusiness.explicitlyFlush()
         }
+
+        func trackRegistration(method: String?) {
+            let event = TikTokBaseEvent(eventName: TTEventName.registration.rawValue)
+            if let method {
+                event.addProperty(withKey: "registration_method", value: method)
+            }
+            TikTokBusiness.trackTTEvent(event)
+        }
+
+        func trackStartTrial(productId: String, value: Double, currency: String, transactionId: String?) {
+            let event = TikTokBaseEvent(
+                eventName: TTEventName.startTrial.rawValue,
+                eventId: transactionId ?? UUID().uuidString
+            )
+            event.addProperty(withKey: "content_id", value: productId)
+            event.addProperty(withKey: "value", value: value)
+            event.addProperty(withKey: "currency", value: currency)
+            TikTokBusiness.trackTTEvent(event)
+        }
+
+        func trackSubscribe(productId: String, value: Double, currency: String, transactionId: String?) {
+            let event = TikTokBaseEvent(
+                eventName: TTEventName.subscribe.rawValue,
+                eventId: transactionId ?? UUID().uuidString
+            )
+            event.addProperty(withKey: "content_id", value: productId)
+            event.addProperty(withKey: "value", value: value)
+            event.addProperty(withKey: "currency", value: currency)
+            TikTokBusiness.trackTTEvent(event)
+        }
+
+        func trackPurchase(productId: String, value: Double, currency: String, transactionId: String?) {
+            let event = TikTokPurchaseEvent(eventId: transactionId ?? UUID().uuidString)
+            event.addProperty(withKey: "content_id", value: productId)
+            event.addProperty(withKey: "content_type", value: "product")
+            event.addProperty(withKey: "currency", value: currency)
+            event.addProperty(withKey: "value", value: value)
+            TikTokBusiness.trackTTEvent(event)
+        }
+
+        func trackViewContent(contentId: String?, contentType: String?) {
+            let event = TikTokViewContentEvent(eventId: UUID().uuidString)
+            if let contentId {
+                event.addProperty(withKey: "content_id", value: contentId)
+            }
+            if let contentType {
+                event.addProperty(withKey: "content_type", value: contentType)
+            }
+            TikTokBusiness.trackTTEvent(event)
+        }
     }
 #else
     final class TikTokWrapperImpl: Manager, TikTokManager {
@@ -119,6 +173,21 @@ final class TikTokWrapperRef: @unchecked Sendable {
         }
 
         func flush() {
+        }
+
+        func trackRegistration(method: String?) {
+        }
+
+        func trackStartTrial(productId: String, value: Double, currency: String, transactionId: String?) {
+        }
+
+        func trackSubscribe(productId: String, value: Double, currency: String, transactionId: String?) {
+        }
+
+        func trackPurchase(productId: String, value: Double, currency: String, transactionId: String?) {
+        }
+
+        func trackViewContent(contentId: String?, contentType: String?) {
         }
     }
 #endif
