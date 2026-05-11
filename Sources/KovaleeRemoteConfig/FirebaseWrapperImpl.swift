@@ -12,7 +12,14 @@ import KovaleeSDK
     import FirebaseAnalytics
 #endif
 
-struct FirebaseWrapperImpl: RemoteConfigurationManager, Manager {
+actor FirebaseWrapperImpl: RemoteConfigurationManager, Manager {
+    // Concurrent callers (e.g. abTestValue() racing with fetchCurrentOffering(),
+    // which itself calls abTestValue() internally) would otherwise issue overlapping
+    // RemoteConfig.fetchAndActivate() requests; Firebase cancels the in-flight one
+    // and the losing call resolves with nil. We coalesce overlapping fetches into a
+    // single shared Task so concurrent callers all observe the same outcome.
+    private var inFlightFetch: Task<Void, Never>?
+
     init(keys: KovaleeKeys.Firebase) {
         if !keys.configuredInApp {
             #if canImport(FirebaseCore)
@@ -21,19 +28,19 @@ struct FirebaseWrapperImpl: RemoteConfigurationManager, Manager {
         }
     }
 
-    func setFetchTimeout(_ timeout: Double) {
+    nonisolated func setFetchTimeout(_ timeout: Double) {
         #if canImport(FirebaseRemoteConfig)
             RemoteConfig.remoteConfig().configSettings.fetchTimeout = timeout
         #endif
     }
 
-    func setDataCollectionEnabled(_ enabled: Bool) {
+    nonisolated func setDataCollectionEnabled(_ enabled: Bool) {
         #if canImport(FirebaseAnalytics)
             Analytics.setAnalyticsCollectionEnabled(enabled)
         #endif
     }
 
-    func setDefaultValues(_ values: [String: Any]) {
+    nonisolated func setDefaultValues(_ values: [String: Any]) {
         #if canImport(FirebaseRemoteConfig)
             RemoteConfig.remoteConfig().setDefaults(values as? [String: NSObject])
         #endif
@@ -41,23 +48,37 @@ struct FirebaseWrapperImpl: RemoteConfigurationManager, Manager {
 
     func fetchAndActivateRemoteConfig() async {
         #if canImport(FirebaseRemoteConfig)
-            do {
-                let remoteConfig = RemoteConfig.remoteConfig()
-                try await remoteConfig.ensureInitialized()
-
-                let activated = try await remoteConfig.fetchAndActivate()
-                KLogger.debug("🛰️ Remote config activated: \(activated)")
-                if activated == RemoteConfigFetchAndActivateStatus.error {
-                    throw KovaleeError.remoteValueFetchError
-                }
-
-                let keys = remoteConfig.allKeys(from: RemoteConfigSource.remote)
-                KLogger.debug("🛰️ Found remote config keys: [\(keys.joined(separator: ","))]")
-            } catch {
-                KLogger.error("❌ Got an error fetching remote values \(error)")
+            if let inFlightFetch {
+                await inFlightFetch.value
+                return
             }
+            let task = Task { await Self.performFetchAndActivate() }
+            inFlightFetch = task
+            await task.value
+            inFlightFetch = nil
         #endif
     }
+
+    #if canImport(FirebaseRemoteConfig)
+    private static func performFetchAndActivate() async {
+        do {
+            let remoteConfig = RemoteConfig.remoteConfig()
+            try await remoteConfig.ensureInitialized()
+
+            let activated = try await remoteConfig.fetchAndActivate()
+            KLogger.debug("🛰️ Remote config activated: \(activated)")
+            // Note: `.error` can be returned when the most recently fetched config
+            // is already activated by the host app (see firebase-ios-sdk#3586). In
+            // that case the values remain readable via `configValue(forKey:)`, so
+            // we don't treat this status as fatal.
+
+            let keys = remoteConfig.allKeys(from: RemoteConfigSource.remote)
+            KLogger.debug("🛰️ Found remote config keys: [\(keys.joined(separator: ","))]")
+        } catch {
+            KLogger.error("❌ Got an error fetching remote values \(error)")
+        }
+    }
+    #endif
 
     func value(forKey key: String) async throws -> Data {
         #if canImport(FirebaseRemoteConfig)
