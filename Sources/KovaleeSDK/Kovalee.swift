@@ -1,7 +1,7 @@
 import Foundation
 import KovaleeFramework
 
-public let SDK_VERSION = "2.5.2"
+public let SDK_VERSION = "2.5.3"
 
 /// A wrapper around all the third party tools used by Kovalee to gather information within the apps
 ///
@@ -95,6 +95,13 @@ public final class Kovalee {
                     }
                 }
             }
+
+            // When a one-shot AB test launch override is pending, wipe the
+            // framework's persisted AB experiment value first so the binary's
+            // SDKState hydrates empty and the next fetch falls through to
+            // FirebaseWrapperImpl.value(forKey:) — where the override is
+            // consumed and returned as if it came from RemoteConfig.
+            AbTestOverride.clearFrameworkStateIfPending()
 
             kovaleeManager = KovaleeManager(
                 keys: keys,

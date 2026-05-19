@@ -63,6 +63,16 @@
                     Toggle("Enable Debug Mode", isOn: $isDebugModeOn)
 
                     Section {
+                        InfoLabel(title: "Current AB test Value:", value: abTestValue ?? "Not set yet")
+                            .allowsHitTesting(false)
+                        if isDebugModeOn {
+                            ABTestView()
+                        }
+                    } header: {
+                        Text("AB Test")
+                    }
+
+                    Section {
                         basicInfoView
                     } header: {
                         Text("Basic Infos")
@@ -91,20 +101,10 @@
                     } header: {
                         Text("DeepLink")
                     }
-
-                    Section {
-                        InfoLabel(title: "Current AB test Value:", value: abTestValue ?? "Not set yet")
-                            .allowsHitTesting(false)
-                        if isDebugModeOn {
-                            ABTestView()
-                        }
-                    } header: {
-                        Text("AB Test")
-                    }
                 }
                 .allowsHitTesting(true)
                 .task {
-                    self.abTestValue = await Kovalee.shared.kovaleeManager?.abTestValue(forKey: "ab_test_version")
+                    self.abTestValue = await Kovalee.shared.kovaleeManager?.abTestValue(forKey: Kovalee.abTestKey)
                     self.adid = await Kovalee.shared.kovaleeManager?.getAttributionAdid()
 
                     self.conversionValue = fetchConversionValue()
