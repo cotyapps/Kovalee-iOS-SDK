@@ -96,6 +96,13 @@ public final class Kovalee {
                 }
             }
 
+            // When a one-shot AB test launch override is pending, wipe the
+            // framework's persisted AB experiment value first so the binary's
+            // SDKState hydrates empty and the next fetch falls through to
+            // FirebaseWrapperImpl.value(forKey:) — where the override is
+            // consumed and returned as if it came from RemoteConfig.
+            AbTestOverride.clearFrameworkStateIfPending()
+
             kovaleeManager = KovaleeManager(
                 keys: keys,
                 sdkVersion: SDK_VERSION,
