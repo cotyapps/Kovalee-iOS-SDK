@@ -20,6 +20,11 @@ actor FirebaseWrapperImpl: RemoteConfigurationManager, Manager {
     // single shared Task so concurrent callers all observe the same outcome.
     private var inFlightFetch: Task<Void, Never>?
 
+    // Caches the launch override after the first read so repeat calls to
+    // value(forKey:) within the same launch return the same value, even after
+    // AbTestOverride.consume() has cleared the persisted entry.
+    private var cachedAbTestOverride: String?
+
     init(keys: KovaleeKeys.Firebase) {
         if !keys.configuredInApp {
             #if canImport(FirebaseCore)
@@ -81,11 +86,32 @@ actor FirebaseWrapperImpl: RemoteConfigurationManager, Manager {
     #endif
 
     func value(forKey key: String) async throws -> Data {
+        // Launch-override interception: when the debug panel has queued a one-shot
+        // override for the AB test key, return it here instead of fetching from
+        // RemoteConfig. The binary stores whatever this method returns as the
+        // "fetched" value, so the override persists across launches without
+        // racing the binary's own setAbTestValue gate.
+        if key == Kovalee.abTestKey {
+            if let cached = cachedAbTestOverride {
+                KLogger.debug("🧪 [value(forKey:)] returning cached AB test override: \(cached)")
+                return Data(cached.utf8)
+            }
+            if let override = AbTestOverride.consume() {
+                cachedAbTestOverride = override
+                KLogger.debug("🧪 [value(forKey:)] consuming AB test override: \(override)")
+                return Data(override.utf8)
+            }
+        }
+
         #if canImport(FirebaseRemoteConfig)
+            KLogger.debug("🛰️ [value(forKey:)] fetching \(key) from Firebase")
             await fetchAndActivateRemoteConfig()
             KLogger.debug("🛰️ initialization complete")
 
-            return RemoteConfig.remoteConfig().configValue(forKey: key).dataValue
+            let data = RemoteConfig.remoteConfig().configValue(forKey: key).dataValue
+            let asString = String(data: data, encoding: .utf8) ?? "<binary>"
+            KLogger.debug("🛰️ [value(forKey:)] Firebase returned \(key) = \(asString)")
+            return data
         #else
             return Data()
         #endif
