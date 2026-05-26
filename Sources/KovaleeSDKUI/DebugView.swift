@@ -58,7 +58,9 @@
                 List {
                     Text("SDK Version: \(SDK_VERSION)")
                         .allowsHitTesting(false)
-                    Text("Framework Built: \(KovaleeConstants.frameworkBuildDate)")
+                    Text("Framework: \(KovaleeBuildInfo.commit)")
+                        .allowsHitTesting(false)
+                    Text("Built: \(KovaleeBuildInfo.builtAt)")
                         .allowsHitTesting(false)
                     Toggle("Enable Debug Mode", isOn: $isDebugModeOn)
 
