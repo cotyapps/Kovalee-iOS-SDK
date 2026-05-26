@@ -77,6 +77,10 @@ let package = Package(
             dependencies: [
                 .sdk,
                 .kovaleePurchases,
+                .revenueCatUI,
+            ],
+            resources: [
+                .process("Resources"),
             ]
         ),
         .target(
@@ -196,6 +200,14 @@ extension Target.Dependency {
             name: "RevenueCat",
             package: "purchases-ios-spm",
             condition: .when(platforms: [.macOS, .watchOS, .tvOS, .iOS, .visionOS])
+        )
+    }
+
+    static var revenueCatUI: Self {
+        .product(
+            name: "RevenueCatUI",
+            package: "purchases-ios-spm",
+            condition: .when(platforms: [.macOS, .tvOS, .iOS, .visionOS])
         )
     }
 
