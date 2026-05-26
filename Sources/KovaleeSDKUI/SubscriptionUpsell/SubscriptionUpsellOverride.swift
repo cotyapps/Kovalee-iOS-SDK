@@ -7,9 +7,10 @@ import Foundation
 public enum SubscriptionUpsellOverride {
 
 	/// When `true`, the orchestrator behaves as if a matching trial entitlement
-	/// existed and presents the paywall regardless of subscription state or the
-	/// show-once flag. Equivalent to `Configuration(debugForceTrigger: true)`
-	/// without rebuilding the host app.
+	/// existed and presents the paywall regardless of subscription state.
+	/// The show-once flag still applies — use `clearAllShownStates()` to
+	/// re-arm. Equivalent to `Configuration(debugForceTrigger: true)` without
+	/// rebuilding the host app.
 	public static let forceTriggerKey = "kovalee.subscriptionUpsell.debugForceTrigger"
 
 	static var forceTrigger: Bool {

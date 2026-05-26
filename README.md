@@ -204,7 +204,8 @@ SubscriptionUpsell.checkAndPresentIfNeeded(
 ```swift
 func scene(_ scene: UIScene, openURLContexts URLContexts: Set<UIOpenURLContext>) {
     guard let url = URLContexts.first?.url,
-          let root = scene.keyWindow?.rootViewController else { return }
+          let windowScene = scene as? UIWindowScene,
+          let root = windowScene.keyWindow?.rootViewController else { return }
 
     if SubscriptionUpsell.handleDeepLink(url, configuration: upsellConfig, from: root) {
         return

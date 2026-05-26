@@ -245,7 +245,7 @@ enum SubscriptionUpsellPresenter {
 			SubscriptionUpsellAnalytics.paywallClosed(in: analyticsContext, purchased: purchased)
 			host.dismiss(animated: true) {
 				if purchased {
-					LifetimeCancelYearlyView.launchAtTop(
+					UpsellPostPurchaseView.launchAtTop(
 						theme: cancelPromptTheme,
 						sourceProduct: sourceProduct,
 						analyticsContext: analyticsContext

@@ -4,7 +4,7 @@ import SwiftUI
 import StoreKit
 import UIKit
 
-struct LifetimeCancelYearlyView: View {
+struct UpsellPostPurchaseView: View {
 	@Environment(\.dismiss) private var dismiss
 	let theme: SubscriptionUpsell.Theme
 	let sourceProduct: Product?
@@ -172,9 +172,16 @@ struct LifetimeCancelYearlyView: View {
 		// then drives the auto-dismiss through `fireDismissOnce()`.
 		defer {
 			Task { @MainActor in
+				defer { isLoading = false }
 				guard let current = await fetchWillAutoRenew() else {
-					didCancelTrialRenewal = true
-					isLoading = false
+					// No renewal status to read. When there's no source product
+					// at all (forced / deep-link path) there's nothing to verify,
+					// so close once the user returns from the sheet. But if we
+					// *have* a product and the read failed, leave the prompt up —
+					// "unknown" must not be treated as "cancelled".
+					if sourceProduct == nil {
+						didCancelTrialRenewal = true
+					}
 					return
 				}
 				if initialWillAutoRenew == true, current == false {
@@ -183,7 +190,6 @@ struct LifetimeCancelYearlyView: View {
 					}
 					didCancelTrialRenewal = true
 				}
-				isLoading = false
 			}
 		}
 
@@ -239,7 +245,7 @@ struct LifetimeCancelYearlyView: View {
 }
 
 
-extension LifetimeCancelYearlyView {
+extension UpsellPostPurchaseView {
 
 	@MainActor
 	static func launchAtTop(
@@ -253,7 +259,7 @@ extension LifetimeCancelYearlyView {
 			return
 		}
 		let host = UIHostingController(
-			rootView: LifetimeCancelYearlyView(
+			rootView: UpsellPostPurchaseView(
 				theme: theme,
 				sourceProduct: sourceProduct,
 				analyticsContext: analyticsContext,

@@ -8,8 +8,8 @@ import SwiftUI
 /// Host apps configure with the RevenueCat offering to present and the product
 /// identifiers that count as the source subscription. The SDK then:
 ///
-/// 1. Checks for an active trial entitlement matching `triggerProductIdentifiers`
-///    whose expiration is within `triggerWithin`.
+/// 1. Checks for an active trial entitlement matching the product identifiers
+///    that `trigger` resolves to, whose expiration is within `triggerWithin`.
 /// 2. Verifies the flow hasn't been shown before (idempotent per `storageKey`).
 /// 3. Presents the RC-hosted paywall for `offeringId`.
 /// 4. On successful purchase, presents a screen that opens Apple's
@@ -60,8 +60,11 @@ public enum SubscriptionUpsell {
 		/// install.
 		public let storageKey: String
 
-		/// Skip the trial-detection and show-once checks and present the paywall
-		/// unconditionally. For QA / screenshots only — ship with `false`.
+		/// Skip trial-detection and present the paywall as if a matching trial
+		/// were expiring. The show-once gate still applies — once presented for
+		/// this `storageKey` the flow won't run again until the flag is cleared
+		/// via `SubscriptionUpsellOverride.clearAllShownStates()`. For QA /
+		/// screenshots only — ship with `false`.
 		public let debugForceTrigger: Bool
 
 		/// Overlays a top-leading X close button on the paywall, independent of
@@ -205,7 +208,7 @@ public enum SubscriptionUpsell {
 		theme: Theme? = nil,
 		onCompletion: (@MainActor @Sendable () -> Void)? = nil
 	) {
-		LifetimeCancelYearlyView.launchAtTop(theme: theme ?? defaultCancelPromptTheme) {
+		UpsellPostPurchaseView.launchAtTop(theme: theme ?? defaultCancelPromptTheme) {
 			onCompletion?()
 		}
 	}
