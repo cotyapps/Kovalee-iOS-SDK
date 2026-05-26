@@ -1,0 +1,16 @@
+/* SubscriptionUpsell — post-purchase "Lifetime unlocked" confirmation step */
+"Lifetime unlocked" = "Lifetime unlocked";
+"Your lifetime access is now active." = "Your lifetime access is now active.";
+"OK" = "OK";
+
+/* SubscriptionUpsell — post-purchase "cancel auto-renewal" prompt step */
+"One last step" = "One last step";
+"Turn off auto-renewal on your existing subscription so the App Store doesn't charge you again." = "Turn off auto-renewal on your existing subscription so the App Store doesn't charge you again.";
+"Open subscription settings" = "Open subscription settings";
+"I'll do it later" = "I'll do it later";
+
+/* SubscriptionUpsell — error shown when no window scene is available to host the manage-subscriptions sheet */
+"No active window scene." = "No active window scene.";
+
+/* SubscriptionUpsell — VoiceOver label for the paywall close (X) button */
+"Close" = "Close";
