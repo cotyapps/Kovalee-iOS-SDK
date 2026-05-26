@@ -60,7 +60,6 @@
                         .allowsHitTesting(false)
                     Text("Framework Built: \(KovaleeConstants.frameworkBuildDate)")
                         .allowsHitTesting(false)
-                    Toggle("Enable Debug Mode", isOn: $isDebugModeOn)
 
                     Section {
                         InfoLabel(title: "Current AB test Value:", value: abTestValue ?? "Not set yet")
@@ -96,6 +95,14 @@
                         Text("Purchases")
                     }
 
+                    if isDebugModeOn {
+                        Section {
+                            SubscriptionUpsellDebugView()
+                        } header: {
+                            Text("Subscription Upsell")
+                        }
+                    }
+
                     Section {
                         deepLinkView
                     } header: {
@@ -103,6 +110,9 @@
                     }
                 }
                 .allowsHitTesting(true)
+                .safeAreaInset(edge: .bottom) {
+                    debugModeFloatingBar
+                }
                 .task {
                     self.abTestValue = await Kovalee.shared.kovaleeManager?.abTestValue(forKey: Kovalee.abTestKey)
                     self.adid = await Kovalee.shared.kovaleeManager?.getAttributionAdid()
@@ -113,18 +123,30 @@
                     self.sessionCount = fetchSessionCount()
                     self.lastDeeplinkReceived = fetchLastOpenedURL()
                 }
-                .navigationTitle("SDK Debug Console")
                 .navigationBarTitleDisplayMode(.inline)
                 .onChange(of: isDebugModeOn) { _ in
                     Kovalee.shared.kovaleeManager?.setDebugMode(isDebugModeOn)
                 }
                 .toolbar {
-                    ToolbarItem(placement: .topBarTrailing) {
-                        Button("", systemImage: "xmark", role: .destructive) {
-                            dismiss()
+                    ToolbarItem(placement: .principal) {
+                        VStack(spacing: 2) {
+                            Text("Debug Console")
+                                .font(.headline)
+                            Text("Kovalee SDK · v\(SDK_VERSION)")
+                                .font(.caption2)
+                                .foregroundStyle(.secondary)
                         }
-                        .bold()
-                        .tint(.black)
+                    }
+                    ToolbarItem(placement: .topBarTrailing) {
+                        Button {
+                            dismiss()
+                        } label: {
+                            Image(systemName: "xmark.circle.fill")
+                                .font(.system(size: 26))
+                                .symbolRenderingMode(.palette)
+                                .foregroundStyle(Color.secondary, Color(.tertiarySystemFill))
+                                .accessibilityLabel("Close")
+                        }
                     }
                 }
             }
@@ -133,6 +155,28 @@
 
     @available(iOS 16.0, *)
     extension DebugView {
+        private var debugModeFloatingBar: some View {
+            HStack(spacing: 12) {
+                Image(systemName: isDebugModeOn ? "ladybug.fill" : "ladybug")
+                    .font(.system(size: 18, weight: .semibold))
+                    .foregroundStyle(isDebugModeOn ? .green : .secondary)
+                Toggle("Enable Debug Mode", isOn: $isDebugModeOn)
+                    .font(.subheadline.weight(.medium))
+                    .tint(.green)
+            }
+            .padding(.horizontal, 16)
+            .padding(.vertical, 12)
+            .background(.regularMaterial, in: RoundedRectangle(cornerRadius: 18, style: .continuous))
+            .overlay(
+                RoundedRectangle(cornerRadius: 18, style: .continuous)
+                    .strokeBorder(Color.primary.opacity(0.08), lineWidth: 1)
+            )
+            .shadow(color: .black.opacity(0.18), radius: 14, x: 0, y: 6)
+            .padding(.horizontal, 16)
+            .padding(.bottom, 8)
+        }
+
+
         @ViewBuilder
         private var basicInfoView: some View {
             InfoLabel(

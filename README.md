@@ -149,3 +149,105 @@ Kovalee.setTikTokTrackingEnabled(false)
 // Flush queued events
 Kovalee.flushTikTokEvents()
 ```
+
+## Subscription Upsell
+
+KovaleeSDKUI ships a turnkey flow for users on an expiring free trial: detect the trial → present a RevenueCat-hosted upsell paywall (typically lifetime) → on purchase, route the user to Apple's *Manage Subscriptions* sheet so they can turn off auto-renewal on the original subscription (Apple does not allow developer-side cancellation).
+
+The host app never sees subscription state, paywall internals, or the manage-subscriptions sheet — it provides configuration and (optionally) receives the final outcome.
+
+### Setup
+
+1. Add the `KovaleeSDKUI` library to your app target. It depends on `RevenueCatUI`, which is fetched automatically.
+
+2. Build a `Configuration`:
+
+   ```swift
+   import KovaleeSDKUI
+
+   let upsellConfig = SubscriptionUpsell.Configuration(
+       offeringId: "lifetime_upsell",          // RevenueCat offering to present
+       trigger: .yearly,                        // watch for an expiring yearly trial
+       triggerWithin: 48 * 3600,                // …expiring within 48h (default: 48h, optional)
+       storageKey: "trial_to_lifetime_v1",      // namespace for the show-once flag
+       showCloseButton: false,                  // overlay an X if your paywall has no dismiss UI (default: false)
+       cancelPromptTheme: nil                   // use the default congrats-screen theme (default: nil)
+   )
+   ```
+
+   `offeringId`, `trigger`, and `storageKey` are required; everything else has a default. `trigger` can be `.yearly`, `.monthly`, `.weekly`, `.anySubscription`, or `.productIdentifiers([...])` for explicit product IDs.
+
+### Usage
+
+**SwiftUI** — drop the modifier on your root view. It runs the check on appear and on every foreground; the show-once flag (keyed by `storageKey`) keeps it idempotent.
+
+```swift
+ContentView()
+    .checkSubscriptionUpsell(configuration: upsellConfig) { outcome in
+        // .notTriggered | .dismissed | .purchased
+    }
+```
+
+**UIKit** — call from the view controller that should host the paywall:
+
+```swift
+SubscriptionUpsell.checkAndPresentIfNeeded(
+    configuration: upsellConfig,
+    from: self
+) { outcome in
+    // …
+}
+```
+
+**Deep link / marketing re-engagement** — bypass the trial-detection and show-once gates and present unconditionally. The built-in handler matches `<scheme>://upsell` (custom schemes only — `http`/`https` are refused):
+
+```swift
+func scene(_ scene: UIScene, openURLContexts URLContexts: Set<UIOpenURLContext>) {
+    guard let url = URLContexts.first?.url,
+          let root = scene.keyWindow?.rootViewController else { return }
+
+    if SubscriptionUpsell.handleDeepLink(url, configuration: upsellConfig, from: root) {
+        return
+    }
+    // …your other deep-link handlers
+}
+```
+
+Or present directly:
+
+```swift
+SubscriptionUpsell.presentNow(configuration: upsellConfig, from: presenter)
+```
+
+### Theming the congrats screen
+
+The post-purchase "Lifetime unlocked" screen is themable. Register a global default at launch so QA and debug previews match production:
+
+```swift
+SubscriptionUpsell.defaultCancelPromptTheme = SubscriptionUpsell.Theme(
+    background: .black,
+    iconTint: .yellow,
+    primaryButtonBackground: .yellow,
+    primaryButtonForeground: .black,
+    iconSystemName: "crown.fill"
+)
+```
+
+Per-call overrides take precedence via `Configuration.cancelPromptTheme`.
+
+### Debug / QA
+
+The SDK's `DebugView` exposes a *Subscription Upsell* section (visible when **Enable Debug Mode** is on) with:
+
+- **Force Trigger on Launch** — behaves as if a matching trial entitlement existed, regardless of subscription state. Gated to debug/TestFlight builds.
+- **Reset Shown State** — clears the show-once flag so the flow can fire again.
+- **Preview Congrats Screen** — opens the post-purchase screen directly to validate theming.
+
+### Outcomes
+
+| Outcome | Meaning |
+| --- | --- |
+| `.notTriggered` | No expiring trial, the flow already ran for this `storageKey`, or the offering / network lookup failed. |
+| `.dismissed` | The user closed the paywall without purchasing. |
+| `.purchased` | The upsell was purchased. Fires after the congrats screen is dismissed. |
+
