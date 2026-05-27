@@ -84,6 +84,7 @@ import KovaleeSDK
                 return nil
             }
 
+            await AbTestAnalytics.shared.report(value: value)
             return value
         }
 
@@ -112,6 +113,7 @@ import KovaleeSDK
             let valueToSet = value
             Task { @Sendable in
                 Self.shared.kovaleeManager?.setAbTestValue(valueToSet)
+                await AbTestAnalytics.shared.report(value: valueToSet)
             }
         }
 
