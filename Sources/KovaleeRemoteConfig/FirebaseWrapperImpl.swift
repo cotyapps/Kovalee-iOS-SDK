@@ -86,24 +86,24 @@ actor FirebaseWrapperImpl: RemoteConfigurationManager, Manager {
     #endif
 
     func value(forKey key: String) async throws -> Data {
-        // Launch-override interception: when the debug panel has queued a one-shot
-        // override for the AB test key, return it here instead of fetching from
-        // RemoteConfig. The binary stores whatever this method returns as the
-        // "fetched" value, so the override persists across launches without
-        // racing the binary's own setAbTestValue gate.
-        if key == Kovalee.abTestKey {
-            if let cached = cachedAbTestOverride {
-                KLogger.debug("🧪 [value(forKey:)] returning cached AB test override: \(cached)")
-                return Data(cached.utf8)
-            }
-            if let override = AbTestOverride.consume() {
-                cachedAbTestOverride = override
-                KLogger.debug("🧪 [value(forKey:)] consuming AB test override: \(override)")
-                return Data(override.utf8)
-            }
-        }
-
         #if canImport(FirebaseRemoteConfig)
+            // Launch-override interception: when the debug panel has queued a one-shot
+            // override for the AB test key, return it here instead of fetching from
+            // RemoteConfig. The binary stores whatever this method returns as the
+            // "fetched" value, so the override persists across launches without
+            // racing the binary's own setAbTestValue gate.
+            if key == Kovalee.abTestKey {
+                if let cached = cachedAbTestOverride {
+                    KLogger.debug("🧪 [value(forKey:)] returning cached AB test override: \(cached)")
+                    return Data(cached.utf8)
+                }
+                if let override = AbTestOverride.consume() {
+                    cachedAbTestOverride = override
+                    KLogger.debug("🧪 [value(forKey:)] consuming AB test override: \(override)")
+                    return Data(override.utf8)
+                }
+            }
+
             KLogger.debug("🛰️ [value(forKey:)] fetching \(key) from Firebase")
             await fetchAndActivateRemoteConfig()
             KLogger.debug("🛰️ initialization complete")
