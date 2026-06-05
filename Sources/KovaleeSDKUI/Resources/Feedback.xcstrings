@@ -1,0 +1,237 @@
+{
+  "sourceLanguage": "en",
+  "strings": {
+    "feedback.email.placeholder": {
+      "comment": "Email field placeholder",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "your@email.com"
+          }
+        }
+      }
+    },
+    "feedback.email.title": {
+      "comment": "Email field title",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Email address"
+          }
+        }
+      }
+    },
+    "feedback.error.cancel": {
+      "comment": "Cancel button in the submission error alert",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Cancel"
+          }
+        }
+      }
+    },
+    "feedback.error.message": {
+      "comment": "Error alert message shown when a feedback submission fails",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Something went wrong. Please check your connection and try again."
+          }
+        }
+      }
+    },
+    "feedback.error.retry": {
+      "comment": "Retry button in the submission error alert",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Try again"
+          }
+        }
+      }
+    },
+    "feedback.error.title": {
+      "comment": "Error alert title shown when a feedback submission fails",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Couldn't send feedback"
+          }
+        }
+      }
+    },
+    "feedback.features.choices.button": {
+      "comment": "Features survey: choices-step CTA button",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Next"
+          }
+        }
+      }
+    },
+    "feedback.features.confirmation.button": {
+      "comment": "Features survey: confirmation-step close button",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Close"
+          }
+        }
+      }
+    },
+    "feedback.features.notes.button": {
+      "comment": "Features survey: notes-step send button",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Send"
+          }
+        }
+      }
+    },
+    "feedback.features.notes.fieldLabel": {
+      "comment": "Features survey: label above the notes text editor",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Your feedback"
+          }
+        }
+      }
+    },
+    "feedback.intro.button": {
+      "comment": "Intro Button",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Continue"
+          }
+        }
+      }
+    },
+    "feedback.intro.title": {
+      "comment": "intro title",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Help me improve the app"
+          }
+        }
+      }
+    },
+    "feedback.message.placeholder": {
+      "comment": "Message field placeholder",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Write your feedback..."
+          }
+        }
+      }
+    },
+    "feedback.message.title": {
+      "comment": "Message field title",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Your feedback"
+          }
+        }
+      }
+    },
+    "feedback.phone.placeholder": {
+      "comment": "Phone field placeholder",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "+1 234 567 8901"
+          }
+        }
+      }
+    },
+    "feedback.phone.title": {
+      "comment": "Phone field title",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Phone number (Optional)"
+          }
+        }
+      }
+    },
+    "feedback.sending.message": {
+      "comment": "Loading message while sending",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sending feedback..."
+          }
+        }
+      }
+    },
+    "feedback.submit.button": {
+      "comment": "Submit button text",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Submit"
+          }
+        }
+      }
+    },
+    "feedback.success.button": {
+      "comment": "Success alert button",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "OK"
+          }
+        }
+      }
+    },
+    "feedback.success.title": {
+      "comment": "Success alert title",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Feedback received!"
+          }
+        }
+      }
+    },
+    "feedback.title": {
+      "comment": "Main title for feedback view",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Provide feedback"
+          }
+        }
+      }
+    }
+  },
+  "version": "1.1"
+}

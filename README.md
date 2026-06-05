@@ -252,3 +252,80 @@ The SDK's `DebugView` exposes a *Subscription Upsell* section (visible when **En
 | `.dismissed` | The user closed the paywall without purchasing. |
 | `.purchased` | The upsell was purchased. Fires after the congrats screen is dismissed. |
 
+## In-App Feedback
+
+`KovaleeSDKUI` ships two ready-made feedback flows (iOS 17+). Metadata (OS/app version, RevenueCat & Amplitude ids, subscription status) is filled automatically from the SDK.
+
+| Flow | What it collects | Backend (Firebase callable) |
+|------|------------------|------------------------------|
+| **Founder** | Free-form message + email + phone | `writeToSheet` |
+| **Features** | Multi-choice survey → optional notes → confirmation | `sendForm` |
+
+```swift
+import KovaleeSDKUI
+```
+
+The recommended entry point is `FeedbackCoordinator` (SwiftUI). For UIKit screens, present the views directly with a `UIHostingController`.
+
+**SwiftUI** — hold a coordinator, attach `.userFeedback(coordinator:)`, and call `showFounder` / `showFeatures`. The modifier is what presents the sheet:
+
+```swift
+struct HomeView: View {
+    @State private var feedback = FeedbackCoordinator()
+
+    var body: some View {
+        content
+            .userFeedback(coordinator: feedback)
+    }
+
+    func contactSupport() {
+        feedback.showFounder(
+            text: FeedbackText(
+                cta: "Send feedback",
+                title: "Hey, I'm the founder.",
+                introText: "Tell me what to build next.",
+                imageName: "founder-photo",   // an asset in YOUR app bundle
+                successText: "Thanks!"
+            )
+        )
+    }
+
+    func askWhatsNext() {
+        feedback.showFeatures(
+            text: FeatureFeedbackText(
+                choicesTitle: "What should we build next?",
+                choicesSubtitle: "Pick the features you'd use most.",
+                notesTitle: "Anything else?",
+                notesSubtitle: "Tell us what would make the app better.",
+                notesPlaceholder: "Type here…",
+                confirmationTitle: "Feedback received",
+                confirmationMessage: "Thanks for helping shape the app."
+            ),
+            appIcon: Image("app-icon"),
+            choices: ["Daily journal", "Streaks", "Community challenges", "Others"],
+            onChoicesButtonTapped: { /* analytics */ },
+            onNotesActionTapped: { /* analytics */ }
+        )
+    }
+}
+```
+
+**UIKit** — present the view directly, building the metadata yourself:
+
+```swift
+@IBAction func contactSupport(_ sender: Any) {
+    Task {
+        let configuration = UserFeedbackConfiguration(
+            feedbackText: FeedbackText(title: "Hey, I'm the founder.", imageName: "founder-photo"),
+            feedbackMetadata: await .fromKovalee()
+        )
+        present(
+            UIHostingController(rootView: UserFeedbackView(configuration: configuration, showBackButton: true)),
+            animated: true
+        )
+    }
+}
+```
+
+Both flows are themable (`FeedbackStyle` / `FeatureFeedbackStyle`). See [Documentation/FEEDBACK.md](Documentation/FEEDBACK.md) for the full reference, reusable configurations, the UIKit features-survey example, and styling details.
+
