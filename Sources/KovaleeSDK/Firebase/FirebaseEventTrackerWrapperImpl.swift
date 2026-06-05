@@ -32,6 +32,7 @@ import KovaleeFramework
                 KLogger.warn("Firebase: dropping user property with invalid name '\(key)'")
                 return
             }
+            // Firebase caps user property values at 36 characters.
             Analytics.setUserProperty(Self.truncate(value, to: 36), forName: sanitizedKey)
         }
 
@@ -79,6 +80,22 @@ import KovaleeFramework
         )
 
         static func sanitizeEventName(_ raw: String) -> String? {
+            guard let truncated = sanitizeName(raw, maxLength: 40) else { return nil }
+            guard !reservedEventNames.contains(truncated.lowercased()) else {
+                return nil
+            }
+            return truncated
+        }
+
+        static func sanitizeUserPropertyName(_ raw: String) -> String? {
+            sanitizeName(raw, maxLength: 24)
+        }
+
+        static func sanitizeParameterName(_ raw: String) -> String? {
+            sanitizeName(raw, maxLength: 40)
+        }
+
+        private static func sanitizeName(_ raw: String, maxLength: Int) -> String? {
             let trimmed = raw.trimmingCharacters(in: .whitespacesAndNewlines)
             guard !trimmed.isEmpty else { return nil }
 
@@ -92,31 +109,14 @@ import KovaleeFramework
                 ? replaced
                 : "_" + replaced
 
-            let truncated = truncate(leadingFixed, to: 40)
-            guard !reservedEventNames.contains(truncated.lowercased()) else {
-                return nil
-            }
-            return truncated
-        }
-
-        static func sanitizeUserPropertyName(_ raw: String) -> String? {
-            let trimmed = raw.trimmingCharacters(in: .whitespacesAndNewlines)
-            guard !trimmed.isEmpty else { return nil }
-            let range = NSRange(trimmed.startIndex..., in: trimmed)
-            let replaced = eventNameAllowedPattern?.stringByReplacingMatches(
-                in: trimmed, range: range, withTemplate: "_"
-            ) ?? trimmed
-            let leadingFixed = replaced.first?.isLetter == true || replaced.first == "_"
-                ? replaced
-                : "_" + replaced
-            return truncate(leadingFixed, to: 24)
+            return truncate(leadingFixed, to: maxLength)
         }
 
         static func sanitizeParameters(_ raw: [String: any Sendable]) -> [String: Any] {
             var out: [String: Any] = [:]
             for (key, value) in raw {
                 guard out.count < 25 else { break }
-                guard let cleanKey = sanitizeUserPropertyName(key) else { continue }
+                guard let cleanKey = sanitizeParameterName(key) else { continue }
                 if let s = value as? String {
                     out[cleanKey] = truncate(s, to: 100)
                 } else if let n = value as? NSNumber {
