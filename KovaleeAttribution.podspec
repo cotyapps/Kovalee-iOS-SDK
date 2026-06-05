@@ -15,7 +15,7 @@ Pod::Spec.new do |spec|
   It's part of a broader project KovaleeSDK
                    DESC
 
-  spec.license        = { :type => 'MIT', :file => 'MIT-LICENSE' }
+  spec.license        = { :type => 'Proprietary', :file => 'LICENSE' }
   spec.homepage     = "https://github.com/cotyapps/Kovalee-iOS-SDK.git"
   spec.author       = { "fto-k" => "fto@kovalee.app" }
 
