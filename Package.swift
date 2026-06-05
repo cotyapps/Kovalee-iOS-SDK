@@ -66,6 +66,7 @@ let package = Package(
                 .framework,
                 .amplitude,
                 .amplitudeSessionReplay,
+                .firebaseAnalytics,
             ],
             resources: [
                 .copy("PrivacyInfo.xcprivacy"),

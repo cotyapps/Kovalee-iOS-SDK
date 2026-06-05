@@ -9,11 +9,18 @@ extension EventsTrackerManagerCreator: Creator {
         if configuration.environment == .development && keys.amplitude.devSDKId == nil {
             KLogger.error("Configured Sandbox environment but Amplitude Dev key hasn't been provided")
         }
-        return AmplitudeWrapperImpl(
+        let amplitude = AmplitudeWrapperImpl(
             withKey: configuration.environment == .production ? keys.amplitude.prodSDKId : (keys.amplitude.devSDKId ?? ""),
             amplitudeTrackingEnable: configuration.environment == .production ? true : configuration.enableAmplitudeInDevelopment,
             sessionReplayPluginEnabled: configuration.enableAmplitudeSessionReplay
         )
+
+        var trackers: [EventTrackerManager] = [amplitude]
+        if keys.firebase?.analyticsEnabled == true {
+            trackers.append(FirebaseEventTrackerWrapperImpl())
+        }
+
+        return trackers.count == 1 ? amplitude : CompositeEventTracker(trackers: trackers)
     }
 }
 
