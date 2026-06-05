@@ -18,7 +18,7 @@ public struct UserFeedbackService: Sendable {
 		userFeedback feedback: UserFeedback,
 		metadata: FeedbackMetadata
 	) async throws {
-		let result = try await callFunction("writeToSheet", [
+		_ = try await callFunction("writeToSheet", [
 			"email": feedback.email,
 			"countryCode": feedback.countryCode,
 			"phoneNumber": feedback.phoneNumber,
@@ -29,14 +29,14 @@ public struct UserFeedbackService: Sendable {
 			"amplitudeUserId": metadata.amplitudeUserId,
 			"subscriptionStatus": metadata.subscriptionStatus
 		])
-		Logger.userFeedback.debug("Send Feedback - Success: \(String(describing: result))")
+		Logger.userFeedback.debug("Send Feedback - Success")
 	}
 
     public func sendForm(
         form: UserForm,
         metadata: FeedbackMetadata
     ) async throws {
-        let result = try await callFunction("sendForm", [
+        _ = try await callFunction("sendForm", [
             "question": form.question,
             "selectedChoices": form.selectedChoices,
             "message": form.feedback,
@@ -46,7 +46,7 @@ public struct UserFeedbackService: Sendable {
             "amplitudeUserId": metadata.amplitudeUserId,
             "subscriptionStatus": metadata.subscriptionStatus
         ])
-        Logger.userFeedback.debug("Send Feedback - Success: \(String(describing: result))")
+        Logger.userFeedback.debug("Send Form - Success")
     }
 }
 

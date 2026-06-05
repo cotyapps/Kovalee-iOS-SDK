@@ -70,6 +70,7 @@ public struct UserFeedbackView: View {
                             Image(systemName: "xmark")
                                 .foregroundStyle(style.textColor)
                         }
+                        .accessibilityLabel(LocalizedStrings.closeButton)
                     }
                 }
             }

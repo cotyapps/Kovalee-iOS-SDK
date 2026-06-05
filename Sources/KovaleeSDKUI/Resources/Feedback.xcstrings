@@ -1,6 +1,17 @@
 {
   "sourceLanguage": "en",
   "strings": {
+    "feedback.close.button": {
+      "comment": "Close button accessibility label",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Close"
+          }
+        }
+      }
+    },
     "feedback.email.placeholder": {
       "comment": "Email field placeholder",
       "localizations": {

@@ -119,14 +119,14 @@ import KovaleeFramework
                 guard let cleanKey = sanitizeParameterName(key) else { continue }
                 if let s = value as? String {
                     out[cleanKey] = truncate(s, to: 100)
-                } else if let n = value as? NSNumber {
-                    out[cleanKey] = n
                 } else if let b = value as? Bool {
                     out[cleanKey] = b ? 1 : 0
                 } else if let i = value as? Int {
                     out[cleanKey] = i
                 } else if let d = value as? Double {
                     out[cleanKey] = d
+                } else if let n = value as? NSNumber {
+                    out[cleanKey] = n
                 } else {
                     out[cleanKey] = truncate(String(describing: value), to: 100)
                 }

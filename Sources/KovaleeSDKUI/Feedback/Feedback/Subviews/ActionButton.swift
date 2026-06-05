@@ -1,5 +1,6 @@
 #if os(iOS)
 import SwiftUI
+import UIKit
 
 @available(iOS 17, *)
 struct ActionButton: View {
@@ -48,10 +49,20 @@ struct ActionButton: View {
 @available(iOS 17, *)
 extension Color {
 	var isLight: Bool {
-		let uiColor = UIColor(self)
+		let uiColor = UIColor(self).resolvedColor(with: UITraitCollection.current)
+		var red: CGFloat = 0
+		var green: CGFloat = 0
+		var blue: CGFloat = 0
+		var alpha: CGFloat = 0
+		if uiColor.getRed(&red, green: &green, blue: &blue, alpha: &alpha) {
+			let luminance = 0.2126 * red + 0.7152 * green + 0.0722 * blue
+			return luminance > 0.5
+		}
 		var white: CGFloat = 0
-		uiColor.getWhite(&white, alpha: nil)
-		return white > 0.5
+		if uiColor.getWhite(&white, alpha: &alpha) {
+			return white > 0.5
+		}
+		return true
 	}
 }
 #endif

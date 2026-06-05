@@ -22,6 +22,7 @@ public enum LocalizedStrings {
 	static let messagePlaceholder = NSLocalizedString("feedback.message.placeholder", tableName: "Feedback", bundle: .module, comment: "Message field placeholder")
 	
 	// MARK: - Actions
+	static let closeButton = NSLocalizedString("feedback.close.button", tableName: "Feedback", bundle: .module, value: "Close", comment: "Close button accessibility label")
 	static let submitButton = NSLocalizedString("feedback.submit.button", tableName: "Feedback", bundle: .module, comment: "Submit button text")
 	static let sendingMessage = NSLocalizedString("feedback.sending.message", tableName: "Feedback", bundle: .module, comment: "Loading message while sending")
 	

@@ -45,6 +45,13 @@ public struct UserFeedbackFormView: View {
 		return emailTest.evaluate(with: email)
 	}
 
+	private var isShowingSuccess: Binding<Bool> {
+		Binding(
+			get: { state == .success },
+			set: { isShowing in if !isShowing { state = .idle } }
+		)
+	}
+
 	private var isShowingError: Binding<Bool> {
 		Binding(
 			get: { state == .failure },
@@ -135,8 +142,9 @@ public struct UserFeedbackFormView: View {
 				LoadingOverlay(style: style)
 			}
 		}
-		.alert(LocalizedStrings.successTitle, isPresented: .constant(state == .success)) {
+		.alert(LocalizedStrings.successTitle, isPresented: isShowingSuccess) {
 			Button(LocalizedStrings.successButton) {
+				state = .idle
 				onCompletion?() ?? dismiss()
 			}
 		} message: {
