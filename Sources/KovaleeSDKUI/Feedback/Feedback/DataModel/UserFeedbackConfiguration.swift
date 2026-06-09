@@ -7,6 +7,8 @@ public struct UserFeedbackConfiguration: Sendable {
     public let feedbackStyle: FeedbackStyle
     public let feedbackMetadata: FeedbackMetadata
     public let secondaryButton: SecondaryButton?
+    /// Cloud Functions region the `writeToSheet` callable is deployed to. `nil` uses Firebase's default (`us-central1`).
+    public let firebaseRegion: String?
 
     public struct SecondaryButton: Sendable {
         public let text: String
@@ -22,12 +24,14 @@ public struct UserFeedbackConfiguration: Sendable {
         feedbackText: FeedbackText,
         feedbackStyle: FeedbackStyle = .default,
         feedbackMetadata: FeedbackMetadata,
-        secondaryButton: SecondaryButton? = nil
+        secondaryButton: SecondaryButton? = nil,
+        firebaseRegion: String? = nil
     ) {
         self.feedbackText = feedbackText
         self.feedbackStyle = feedbackStyle
         self.feedbackMetadata = feedbackMetadata
         self.secondaryButton = secondaryButton
+        self.firebaseRegion = firebaseRegion
     }
 }
 

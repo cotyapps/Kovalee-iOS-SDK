@@ -8,10 +8,10 @@ struct FeedbackNotesView: View {
 
     @FocusState private var isTextFieldFocused: Bool
     @State private var state = ViewState.idle
-    private let userFeedbackService: UserFeedbackService
+    private let injectedService: UserFeedbackService?
 
-    init(userFeedbackService: UserFeedbackService = UserFeedbackService()) {
-        self.userFeedbackService = userFeedbackService
+    init(userFeedbackService: UserFeedbackService? = nil) {
+        self.injectedService = userFeedbackService
     }
 
     private var isShowingError: Binding<Bool> {
@@ -66,6 +66,7 @@ struct FeedbackNotesView: View {
 
     func action() {
         guard state != .sending else { return }
+        let service = injectedService ?? UserFeedbackService(region: viewModel.firebaseRegion)
         Task {
             await MainActor.run {
                 state = .sending
@@ -76,7 +77,7 @@ struct FeedbackNotesView: View {
                 selectedChoices: Array(viewModel.selectedChoices)
             )
             do {
-                try await userFeedbackService.sendForm(
+                try await service.sendForm(
                     form: userFeedback,
                     metadata: viewModel.feedbackMetadata
                 )
@@ -149,7 +150,7 @@ extension FeedbackNotesView {
         Button(action: action) {
             Text(LocalizedStrings.featuresNotesButton)
                 .font(.headline.bold())
-                .foregroundColor(.white)
+                .foregroundColor(viewModel.ctaColor.isLight ? .black : .white)
                 .frame(maxWidth: .infinity)
                 .padding(.vertical, 16)
                 .background(viewModel.ctaColor)

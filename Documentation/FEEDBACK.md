@@ -208,6 +208,7 @@ Task {
         confirmationTitle: config.text.confirmationTitle,
         confirmationMessage: config.text.confirmationMessage,
         feedbackMetadata: config.metadata,
+        firebaseRegion: config.firebaseRegion,
         onComplete: { [weak self] in self?.dismiss(animated: true) },
         onChoicesButtonTapped: config.onChoicesButtonTapped,
         onNotesActionTapped: config.onNotesActionTapped
@@ -263,4 +264,5 @@ extension FeatureFeedbackStyle {
 - All views require **iOS 17+** (`@available(iOS 17, *)`).
 - The founder `imageName` and the features `appIcon` must resolve to assets in **your app's** bundle.
 - Submissions show a retry alert when the Firebase callable fails; make sure the `writeToSheet` / `sendForm` callables exist in your project.
+- The callables are resolved on the **default Firebase app** and, by default, Firebase's default region (`us-central1`). If you deploy them elsewhere (e.g. `europe-west1`), pass `firebaseRegion:` — every entry point accepts it (`showFounder(…, firebaseRegion:)`, `showFeatures(…, firebaseRegion:)`, and the `UserFeedbackConfiguration` / `FeatureFeedbackConfiguration` initializers). Without a matching region, every submission fails with `NOT_FOUND`.
 - `FeedbackCoordinator` is `@MainActor @Observable`; create it with `@State` in SwiftUI and keep one instance per host view.

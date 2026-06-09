@@ -21,6 +21,7 @@ public struct FeedbackFormView: View {
     let confirmationTitle: String
     let confirmationMessage: String
     let feedbackMetadata: FeedbackMetadata
+    let firebaseRegion: String?
     let onComplete: () -> Void
     let onChoicesButtonTapped: (() -> Void)?
     let onNotesActionTapped: (() -> Void)?
@@ -47,6 +48,7 @@ public struct FeedbackFormView: View {
         confirmationTitle: String,
         confirmationMessage: String,
         feedbackMetadata: FeedbackMetadata,
+        firebaseRegion: String? = nil,
         onComplete: @escaping () -> Void,
         onChoicesButtonTapped: (() -> Void)? = nil,
         onNotesActionTapped: (() -> Void)? = nil
@@ -69,6 +71,7 @@ public struct FeedbackFormView: View {
         self.confirmationTitle = confirmationTitle
         self.confirmationMessage = confirmationMessage
         self.feedbackMetadata = feedbackMetadata
+        self.firebaseRegion = firebaseRegion
         self.onComplete = onComplete
         self.onChoicesButtonTapped = onChoicesButtonTapped
         self.onNotesActionTapped = onNotesActionTapped
@@ -90,6 +93,7 @@ public struct FeedbackFormView: View {
             confirmationTitle: confirmationTitle,
             confirmationMessage: confirmationMessage,
             feedbackMetadata: feedbackMetadata,
+            firebaseRegion: firebaseRegion,
             onComplete: onComplete,
             onChoicesButtonTapped: onChoicesButtonTapped,
             onNotesActionTapped: onNotesActionTapped

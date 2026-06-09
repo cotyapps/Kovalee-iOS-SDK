@@ -19,7 +19,7 @@ public struct FeatureFeedbackStyle: Sendable {
         backgroundColor: Color = Color(.systemBackground),
         secondaryBackgroundColor: Color = Color(.secondarySystemBackground),
         ctaColor: Color = .accentColor,
-        selectedColor: Color = .white,
+        selectedColor: Color = .primary,
         unselectedColor: Color = .primary,
         buttonCornerRadius: CGFloat = 16
     ) {
@@ -73,6 +73,8 @@ public struct FeatureFeedbackConfiguration: Sendable {
     public var appIcon: Image
     public var choices: [String]
     public var metadata: FeedbackMetadata
+    /// Cloud Functions region the `sendForm` callable is deployed to. `nil` uses Firebase's default (`us-central1`).
+    public var firebaseRegion: String?
     public var onChoicesButtonTapped: (@Sendable () -> Void)?
     public var onNotesActionTapped: (@Sendable () -> Void)?
 
@@ -82,6 +84,7 @@ public struct FeatureFeedbackConfiguration: Sendable {
         appIcon: Image,
         choices: [String],
         metadata: FeedbackMetadata,
+        firebaseRegion: String? = nil,
         onChoicesButtonTapped: (@Sendable () -> Void)? = nil,
         onNotesActionTapped: (@Sendable () -> Void)? = nil
     ) {
@@ -90,6 +93,7 @@ public struct FeatureFeedbackConfiguration: Sendable {
         self.appIcon = appIcon
         self.choices = choices
         self.metadata = metadata
+        self.firebaseRegion = firebaseRegion
         self.onChoicesButtonTapped = onChoicesButtonTapped
         self.onNotesActionTapped = onNotesActionTapped
     }

@@ -6,10 +6,19 @@ import OSLog
 public struct UserFeedbackService: Sendable {
 	
 	private let callFunction: @Sendable (String, [String: Any]) async throws -> Any
-	
-	public init(callFunction: (@Sendable (String, [String: Any]) async throws -> Any)? = nil) {
+
+	/// - Parameters:
+	///   - region: Cloud Functions region the `writeToSheet` / `sendForm` callables are deployed to.
+	///     `nil` uses Firebase's default (`us-central1`); set this when your callables live elsewhere
+	///     (e.g. `"europe-west1"`), otherwise every submission fails with `NOT_FOUND`.
+	///   - callFunction: Override the callable transport. Used by tests; production leaves this `nil`.
+	public init(
+		region: String? = nil,
+		callFunction: (@Sendable (String, [String: Any]) async throws -> Any)? = nil
+	) {
 		self.callFunction = callFunction ?? { functionName, data in
-			let result = try await Functions.functions().httpsCallable(functionName).call(data)
+			let functions = region.map { Functions.functions(region: $0) } ?? Functions.functions()
+			let result = try await functions.httpsCallable(functionName).call(data)
 			return result.data
 		}
 	}

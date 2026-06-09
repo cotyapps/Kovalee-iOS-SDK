@@ -61,11 +61,11 @@ public struct UserFeedbackFormView: View {
 	
 	public init(
 		configuration: UserFeedbackConfiguration,
-		userFeedbackService: UserFeedbackService = UserFeedbackService(),
+		userFeedbackService: UserFeedbackService? = nil,
 		onCompletion: (() -> Void)? = nil
 	) {
 		self.configuration = configuration
-		self.userFeedbackService = userFeedbackService
+		self.userFeedbackService = userFeedbackService ?? UserFeedbackService(region: configuration.firebaseRegion)
 		self.onCompletion = onCompletion
         let country = Country.local()
         self.selectedCountryCode = country?.code ?? Country.placeholder.code

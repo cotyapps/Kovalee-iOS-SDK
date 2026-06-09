@@ -113,7 +113,7 @@ public struct FeedbackChoicesView: View {
             Button(action: { onSubmit(Array(selectedChoices)) }) {
                 Text(buttonTitle)
                     .font(buttonFont)
-                    .foregroundColor(.white)
+                    .foregroundColor(ctaColor.isLight ? .black : .white)
                     .frame(maxWidth: .infinity)
                     .padding(.vertical, 16)
                     .background(ctaColor)
@@ -183,7 +183,7 @@ private struct ChoiceRow: View {
                 Circle().fill(ctaColor)
                 Image(systemName: "checkmark")
                     .font(.system(size: 12, weight: .bold))
-                    .foregroundColor(.white)
+                    .foregroundColor(ctaColor.isLight ? .black : .white)
             }
             else {
                 Circle().stroke(unselectedText.opacity(0.25), lineWidth: 1.5)

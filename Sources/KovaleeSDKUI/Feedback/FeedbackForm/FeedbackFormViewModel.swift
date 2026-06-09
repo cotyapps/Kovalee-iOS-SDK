@@ -40,6 +40,7 @@ class FeedbackFormViewModel {
     var confirmationTitle: String
     var confirmationMessage: String
     var feedbackMetadata: FeedbackMetadata
+    var firebaseRegion: String?
     var onChoicesButtonTapped: (() -> Void)?
     var onNotesActionTapped: (() -> Void)?
 
@@ -61,6 +62,7 @@ class FeedbackFormViewModel {
         confirmationTitle: String,
         confirmationMessage: String,
         feedbackMetadata: FeedbackMetadata,
+        firebaseRegion: String? = nil,
         onComplete: @escaping () -> Void,
         onChoicesButtonTapped: (() -> Void)? = nil,
         onNotesActionTapped: (() -> Void)? = nil
@@ -82,6 +84,7 @@ class FeedbackFormViewModel {
         self.confirmationTitle = confirmationTitle
         self.confirmationMessage = confirmationMessage
         self.feedbackMetadata = feedbackMetadata
+        self.firebaseRegion = firebaseRegion
         self.onComplete = onComplete
         self.onChoicesButtonTapped = onChoicesButtonTapped
         self.onNotesActionTapped = onNotesActionTapped

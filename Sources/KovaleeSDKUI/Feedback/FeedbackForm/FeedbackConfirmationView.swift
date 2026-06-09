@@ -34,7 +34,7 @@ struct FeedbackConfirmationView: View {
             Button(action: viewModel.onComplete) {
                 Text(LocalizedStrings.featuresConfirmationButton)
                     .font(.system(size: 17, weight: .semibold))
-                    .foregroundColor(.white)
+                    .foregroundColor(viewModel.ctaColor.isLight ? .black : .white)
                     .frame(maxWidth: .infinity)
                     .padding(.vertical, 16)
                     .background(viewModel.ctaColor)

@@ -25,7 +25,8 @@ public extension FeedbackCoordinator {
     @MainActor func showFounder(
         text: FeedbackText,
         style: FeedbackStyle = .default,
-        showBackButton: Bool = true
+        showBackButton: Bool = true,
+        firebaseRegion: String? = nil
     ) {
         Task { @MainActor in
             let metadata = await FeedbackMetadata.fromKovalee()
@@ -33,7 +34,8 @@ public extension FeedbackCoordinator {
                 UserFeedbackConfiguration(
                     feedbackText: text,
                     feedbackStyle: style,
-                    feedbackMetadata: metadata
+                    feedbackMetadata: metadata,
+                    firebaseRegion: firebaseRegion
                 ),
                 showBackButton: showBackButton
             )
@@ -47,6 +49,7 @@ public extension FeedbackCoordinator {
         appIcon: Image,
         choices: [String],
         style: FeatureFeedbackStyle = .default,
+        firebaseRegion: String? = nil,
         onChoicesButtonTapped: (@Sendable () -> Void)? = nil,
         onNotesActionTapped: (@Sendable () -> Void)? = nil
     ) {
@@ -59,6 +62,7 @@ public extension FeedbackCoordinator {
                     appIcon: appIcon,
                     choices: choices,
                     metadata: metadata,
+                    firebaseRegion: firebaseRegion,
                     onChoicesButtonTapped: onChoicesButtonTapped,
                     onNotesActionTapped: onNotesActionTapped
                 )

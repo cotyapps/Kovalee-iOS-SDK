@@ -73,6 +73,7 @@ private struct UserFeedbackPresenter: ViewModifier {
                     confirmationTitle: config.text.confirmationTitle,
                     confirmationMessage: config.text.confirmationMessage,
                     feedbackMetadata: config.metadata,
+                    firebaseRegion: config.firebaseRegion,
                     onComplete: { coordinator.dismiss() },
                     onChoicesButtonTapped: config.onChoicesButtonTapped,
                     onNotesActionTapped: config.onNotesActionTapped
