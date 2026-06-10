@@ -11,7 +11,7 @@ struct ActionButton: View {
     let symbol: String?
 
 	private var adaptiveTextColor: Color {
-		let backgroundColor = isDisabled ? style.fieldBackgroundColor : style.submitButtonColor
+		let backgroundColor = isDisabled ? style.secondaryBackgroundColor : style.ctaColor
 		return backgroundColor.isLight ? .black : .white
 	}
 
@@ -38,7 +38,7 @@ struct ActionButton: View {
                 Spacer()
             }
             .padding(.vertical, 16)
-            .background(isDisabled ? style.fieldBackgroundColor : style.submitButtonColor)
+            .background(isDisabled ? style.secondaryBackgroundColor : style.ctaColor)
             .cornerRadius(25)
 		}
 		.disabled(isDisabled)

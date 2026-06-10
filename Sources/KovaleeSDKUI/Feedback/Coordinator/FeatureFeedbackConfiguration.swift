@@ -2,42 +2,6 @@
 import SwiftUI
 
 @available(iOS 17, *)
-public struct FeatureFeedbackStyle: Sendable {
-    public var primaryColor: Color
-    public var secondaryColor: Color
-    public var backgroundColor: Color
-    public var secondaryBackgroundColor: Color
-    public var ctaColor: Color
-    public var selectedColor: Color
-    public var unselectedColor: Color
-    /// Corner radius of the primary CTA button.
-    public var buttonCornerRadius: CGFloat
-
-    public init(
-        primaryColor: Color = .primary,
-        secondaryColor: Color = .secondary,
-        backgroundColor: Color = Color(.systemBackground),
-        secondaryBackgroundColor: Color = Color(.secondarySystemBackground),
-        ctaColor: Color = .accentColor,
-        selectedColor: Color = .primary,
-        unselectedColor: Color = .primary,
-        buttonCornerRadius: CGFloat = 16
-    ) {
-        self.primaryColor = primaryColor
-        self.secondaryColor = secondaryColor
-        self.backgroundColor = backgroundColor
-        self.secondaryBackgroundColor = secondaryBackgroundColor
-        self.ctaColor = ctaColor
-        self.selectedColor = selectedColor
-        self.unselectedColor = unselectedColor
-        self.buttonCornerRadius = buttonCornerRadius
-    }
-
-    /// Sensible out-of-the-box styling, so a host can present without configuring colors.
-    public static let `default` = FeatureFeedbackStyle()
-}
-
-@available(iOS 17, *)
 public struct FeatureFeedbackText: Sendable {
     public var choicesTitle: String
     public var choicesSubtitle: String
@@ -68,7 +32,7 @@ public struct FeatureFeedbackText: Sendable {
 
 @available(iOS 17, *)
 public struct FeatureFeedbackConfiguration: Sendable {
-    public var style: FeatureFeedbackStyle
+    public var style: FeedbackStyle
     public var text: FeatureFeedbackText
     public var appIcon: Image
     public var choices: [String]
@@ -79,7 +43,7 @@ public struct FeatureFeedbackConfiguration: Sendable {
     public var onNotesActionTapped: (@Sendable () -> Void)?
 
     public init(
-        style: FeatureFeedbackStyle = .default,
+        style: FeedbackStyle = .default,
         text: FeatureFeedbackText,
         appIcon: Image,
         choices: [String],

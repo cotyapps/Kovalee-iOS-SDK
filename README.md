@@ -265,9 +265,40 @@ The SDK's `DebugView` exposes a *Subscription Upsell* section (visible when **En
 import KovaleeSDKUI
 ```
 
-The recommended entry point is `FeedbackCoordinator` (SwiftUI). For UIKit screens, present the views directly with a `UIHostingController`.
+### Configuration
 
-**SwiftUI** — hold a coordinator, attach `.userFeedback(coordinator:)`, and call `showFounder` / `showFeatures`. The modifier is what presents the sheet:
+All feedback content, styling, choices, and the Firebase region are configured **once** through `KovaleeUI.configuration` — typically in `App.init` or `AppDelegate.didFinishLaunching`. This is the single entry point; the call sites stay configuration-free.
+
+```swift
+KovaleeUI.configuration.appIcon         = Image("AppIcon")
+KovaleeUI.configuration.feedbackChoices = ["Daily journal", "Streaks", "Community challenges", "Other"]
+KovaleeUI.configuration.firebaseRegion  = "europe-west1"   // omit if using us-central1
+KovaleeUI.configuration.feedbackStyle   = .myAppStyle      // shared by both flows
+
+KovaleeUI.configuration.founderFeedbackText = FeedbackText(
+    cta: "Send feedback",
+    title: "Hey, I'm the founder.",
+    introText: "Tell me what to build next.",
+    imageName: "founder-photo",   // an asset in YOUR app bundle
+    successText: "Thanks!"
+)
+
+KovaleeUI.configuration.featureFeedbackText = FeatureFeedbackText(
+    choicesTitle: "What should we build next?",
+    choicesSubtitle: "Pick the features you'd use most.",
+    notesTitle: "Anything else?",
+    notesSubtitle: "Tell us what would make the app better.",
+    notesPlaceholder: "Type here…",
+    confirmationTitle: "Feedback received",
+    confirmationMessage: "Thanks for helping shape the app."
+)
+```
+
+> `featureFeedbackText` is required before presenting the features survey — `showFeatures()` triggers an assertion failure in debug builds (and is a no-op in release) if it hasn't been set.
+
+### Usage
+
+Hold a `FeedbackCoordinator`, attach `.userFeedback(coordinator:)`, and call `showFounder()` / `showFeatures()`. The call sites take no content — everything is read from `KovaleeUI.configuration`:
 
 ```swift
 struct HomeView: View {
@@ -279,30 +310,11 @@ struct HomeView: View {
     }
 
     func contactSupport() {
-        feedback.showFounder(
-            text: FeedbackText(
-                cta: "Send feedback",
-                title: "Hey, I'm the founder.",
-                introText: "Tell me what to build next.",
-                imageName: "founder-photo",   // an asset in YOUR app bundle
-                successText: "Thanks!"
-            )
-        )
+        feedback.showFounder()
     }
 
     func askWhatsNext() {
         feedback.showFeatures(
-            text: FeatureFeedbackText(
-                choicesTitle: "What should we build next?",
-                choicesSubtitle: "Pick the features you'd use most.",
-                notesTitle: "Anything else?",
-                notesSubtitle: "Tell us what would make the app better.",
-                notesPlaceholder: "Type here…",
-                confirmationTitle: "Feedback received",
-                confirmationMessage: "Thanks for helping shape the app."
-            ),
-            appIcon: Image("app-icon"),
-            choices: ["Daily journal", "Streaks", "Community challenges", "Others"],
             onChoicesButtonTapped: { /* analytics */ },
             onNotesActionTapped: { /* analytics */ }
         )
@@ -310,22 +322,29 @@ struct HomeView: View {
 }
 ```
 
-**UIKit** — present the view directly, building the metadata yourself:
+### Styling
+
+Both flows share a single `FeedbackStyle`. All fields are defaulted, so `.default` works out of the box — set `KovaleeUI.configuration.feedbackStyle` to theme them:
 
 ```swift
-@IBAction func contactSupport(_ sender: Any) {
-    Task {
-        let configuration = UserFeedbackConfiguration(
-            feedbackText: FeedbackText(title: "Hey, I'm the founder.", imageName: "founder-photo"),
-            feedbackMetadata: await .fromKovalee()
-        )
-        present(
-            UIHostingController(rootView: UserFeedbackView(configuration: configuration, showBackButton: true)),
-            animated: true
-        )
-    }
+extension FeedbackStyle {
+    static let myAppStyle = FeedbackStyle(
+        backgroundColor: Color("background"),
+        primaryColor: .white,                      // titles
+        secondaryColor: .white.opacity(0.8),       // subtitle / body text
+        secondaryBackgroundColor: Color("card"),   // fields & unselected chips
+        ctaColor: Color("accent"),                 // CTA + selected chip
+        selectedColor: .white,                     // selected chip label
+        unselectedColor: .white,                   // unselected chip label
+        buttonCornerRadius: 16,
+        symbol: nil                                // optional SF Symbol on the founder CTA
+    )
 }
 ```
 
-Both flows are themable (`FeedbackStyle` / `FeatureFeedbackStyle`). See [Documentation/FEEDBACK.md](Documentation/FEEDBACK.md) for the full reference, reusable configurations, the UIKit features-survey example, and styling details.
+### Debug / QA
+
+The SDK's `DebugView` exposes an *In-App Feedback* section (visible when **Enable Debug Mode** is on, iOS 17+) with **Preview Founder Feedback** and **Preview Feature Survey** buttons that present each flow using the current `KovaleeUI.configuration`.
+
+See [Documentation/FEEDBACK.md](Documentation/FEEDBACK.md) for the full reference, the UIKit examples, and styling details.
 

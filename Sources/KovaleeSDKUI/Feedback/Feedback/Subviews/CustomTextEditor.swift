@@ -15,9 +15,9 @@ struct CustomTextEditor<FocusValue: Hashable>: View {
 		ZStack(alignment: .topLeading) {
 			TextEditor(text: $text)
 				.font(.body)
-				.foregroundColor(style.textColor)
+				.foregroundColor(style.secondaryColor)
 				.scrollContentBackground(.hidden)
-				.background(style.fieldBackgroundColor)
+				.background(style.secondaryBackgroundColor)
 				.cornerRadius(8)
 				.frame(minHeight: minHeight)
 				.focused(focusState ?? FocusState<FocusValue?>().projectedValue, equals: focusValue)
@@ -25,13 +25,13 @@ struct CustomTextEditor<FocusValue: Hashable>: View {
 			if text.isEmpty {
 				Text(placeholder)
 					.font(.body)
-					.foregroundColor(style.textColor.opacity(0.6))
+					.foregroundColor(style.secondaryColor.opacity(0.6))
 					.padding(.horizontal, 8)
 					.padding(.vertical, 8)
 					.allowsHitTesting(false)
 			}
 		}
-		.background(style.fieldBackgroundColor)
+		.background(style.secondaryBackgroundColor)
 		.cornerRadius(8)
 	}
 }

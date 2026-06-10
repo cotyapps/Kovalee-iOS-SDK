@@ -77,7 +77,7 @@ public struct UserFeedbackFormView: View {
 				VStack(alignment: .leading, spacing: 16) {
 					Text(LocalizedStrings.feedbackTitle)
                         .font(.system(size: 20, weight: .bold))
-						.foregroundColor(style.titlesColor)
+						.foregroundColor(style.primaryColor)
 
 					FormField(title: LocalizedStrings.emailTitle, style: style) {
 						CustomTextField(
@@ -206,12 +206,12 @@ private struct LoadingOverlay: View {
 			
 			VStack(spacing: 16) {
 				ProgressView()
-					.progressViewStyle(CircularProgressViewStyle(tint: style.textColor))
+					.progressViewStyle(CircularProgressViewStyle(tint: style.secondaryColor))
 					.scaleEffect(1.5)
 				
 				Text(LocalizedStrings.sendingMessage)
 					.font(.headline)
-					.foregroundColor(style.textColor)
+					.foregroundColor(style.secondaryColor)
 			}
 		}
 		.ignoresSafeArea()

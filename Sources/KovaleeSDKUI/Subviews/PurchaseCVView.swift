@@ -156,12 +156,15 @@ struct PurchaseCVView: View {
 
     @ViewBuilder
     private func allPurchasesSection(info: KCustomerInfo) -> some View {
-        DisclosureGroup("All Purchased Products (\(info.allPurchasedProductIdentifiers.count))") {
+        DisclosureGroup {
             ForEach(Array(info.allPurchasedProductIdentifiers).sorted(), id: \.self) { product in
                 Text(product)
                     .font(.footnote)
                     .monospaced()
             }
+        } label: {
+            Label("All Purchased Products (\(info.allPurchasedProductIdentifiers.count))", systemImage: "bag")
+                .tint(Color.debugAccent)
         }
     }
 

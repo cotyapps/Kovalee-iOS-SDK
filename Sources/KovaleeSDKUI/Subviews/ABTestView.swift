@@ -17,17 +17,20 @@
         @AppStorage(AbTestOverride.valueKey) private var overrideValue: String = ""
 
         var body: some View {
-            TextField("Set AB test Value", text: $newABValue)
-                .keyboardType(.numberPad)
-                .focused($focusedField, equals: .abValue)
+            LabeledContent("Override Value") {
+                TextField("e.g. 42", text: $newABValue)
+                    .keyboardType(.numberPad)
+                    .multilineTextAlignment(.trailing)
+                    .focused($focusedField, equals: .abValue)
+            }
 
             if overrideOnLaunch, !overrideValue.isEmpty {
                 Text("Staged for next launch: \(overrideValue)")
                     .font(.caption)
-                    .foregroundColor(.secondary)
+                    .foregroundStyle(.secondary)
             }
 
-            Button("Save Override for Next Launch") {
+            Button {
                 focusedField = nil
                 let requested = newABValue
                 guard !requested.isEmpty else {
@@ -40,8 +43,10 @@
                 overrideOnLaunch = true
                 alertMessage = "Override saved. Restart the app to apply \(requested)."
                 showAlert = true
+            } label: {
+                Label("Save Override for Next Launch", systemImage: "checkmark")
             }
-            .buttonStyle(.borderedProminent)
+            .buttonStyle(.debugPrimary)
             .alert("AB Test", isPresented: $showAlert) {
                 Button("OK", role: .cancel) {}
             } message: {

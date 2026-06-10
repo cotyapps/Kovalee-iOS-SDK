@@ -56,15 +56,15 @@
         public var body: some View {
             NavigationView {
                 List {
-                    Text("SDK Version: \(SDK_VERSION)")
-                        .allowsHitTesting(false)
-                    Text("Framework: \(KovaleeBuildInfo.commit)")
-                        .allowsHitTesting(false)
-                    Text("Built: \(KovaleeBuildInfo.builtAt)")
-                        .allowsHitTesting(false)
+                    Section {
+                        InfoLabel(title: "Framework", value: KovaleeBuildInfo.commit)
+                        InfoLabel(title: "Built", value: KovaleeBuildInfo.builtAt)
+                    } header: {
+                        Text("Build Info")
+                    }
 
                     Section {
-                        InfoLabel(title: "Current AB test Value:", value: abTestValue ?? "Not set yet")
+                        InfoLabel(title: "Current Value", value: abTestValue ?? "Not set yet")
                             .allowsHitTesting(false)
                         if isDebugModeOn {
                             ABTestView()
@@ -102,6 +102,8 @@
                             SubscriptionUpsellDebugView()
                         } header: {
                             Text("Subscription Upsell")
+                        } footer: {
+                            Text("Tools to test and manage the subscription upsell experience.")
                         }
 
                         if #available(iOS 17, *) {
@@ -109,6 +111,8 @@
                                 FeedbackDebugView()
                             } header: {
                                 Text("In-App Feedback")
+                            } footer: {
+                                Text("Preview and test in-app feedback flows.")
                             }
                         }
                     }
@@ -119,7 +123,13 @@
                         Text("DeepLink")
                     }
                 }
-                .allowsHitTesting(true)
+                .listStyle(.insetGrouped)
+                .scrollContentBackground(.hidden)
+                .background(Color(.systemGroupedBackground))
+                .toolbar(.hidden, for: .navigationBar)
+                .safeAreaInset(edge: .top, spacing: 0) {
+                    debugHeader
+                }
                 .safeAreaInset(edge: .bottom) {
                     debugModeFloatingBar
                 }
@@ -133,45 +143,73 @@
                     self.sessionCount = fetchSessionCount()
                     self.lastDeeplinkReceived = fetchLastOpenedURL()
                 }
-                .navigationBarTitleDisplayMode(.inline)
                 .onChange(of: isDebugModeOn) { _ in
                     Kovalee.shared.kovaleeManager?.setDebugMode(isDebugModeOn)
                 }
-                .toolbar {
-                    ToolbarItem(placement: .principal) {
-                        VStack(spacing: 2) {
-                            Text("Debug Console")
-                                .font(.headline)
-                            Text("Kovalee SDK · v\(SDK_VERSION)")
-                                .font(.caption2)
-                                .foregroundStyle(.secondary)
-                        }
-                    }
-                    ToolbarItem(placement: .topBarTrailing) {
-                        Button {
-                            dismiss()
-                        } label: {
-                            Image(systemName: "xmark.circle.fill")
-                                .font(.system(size: 26))
-                                .symbolRenderingMode(.palette)
-                                .foregroundStyle(Color.secondary, Color(.tertiarySystemFill))
-                                .accessibilityLabel("Close")
-                        }
-                    }
-                }
             }
+            .navigationViewStyle(.stack)
         }
     }
 
     @available(iOS 16.0, *)
     extension DebugView {
-        private var debugModeFloatingBar: some View {
+        private var debugHeader: some View {
             HStack(spacing: 12) {
-                Image(systemName: isDebugModeOn ? "ladybug.fill" : "ladybug")
+                Image(systemName: "chevron.left.forwardslash.chevron.right")
                     .font(.system(size: 18, weight: .semibold))
+                    .foregroundStyle(Color.debugAccent)
+                    .frame(width: 44, height: 44)
+                    .background(
+                        RoundedRectangle(cornerRadius: 12, style: .continuous)
+                            .fill(Color.debugAccent.opacity(0.12))
+                    )
+
+                VStack(alignment: .leading, spacing: 2) {
+                    Text("Debug Console")
+                        .font(.title3.bold())
+                    Text("Kovalee SDK · v\(SDK_VERSION)")
+                        .font(.subheadline)
+                        .foregroundStyle(.secondary)
+                }
+
+                Spacer(minLength: 8)
+
+                Button {
+                    dismiss()
+                } label: {
+                    Image(systemName: "xmark")
+                        .font(.system(size: 14, weight: .bold))
+                        .foregroundStyle(.secondary)
+                        .frame(width: 32, height: 32)
+                        .debugGlassCircle()
+                }
+                .accessibilityLabel("Close")
+            }
+            .padding(.horizontal, 20)
+            .padding(.top, 12)
+            .padding(.bottom, 12)
+            .background(Color(.systemGroupedBackground))
+        }
+
+        private var debugModeFloatingBar: some View {
+            HStack(spacing: 14) {
+                Image(systemName: isDebugModeOn ? "ladybug.fill" : "ladybug")
+                    .font(.system(size: 22))
                     .foregroundStyle(isDebugModeOn ? .green : .secondary)
+                    .frame(width: 30)
+
+                VStack(alignment: .leading, spacing: 2) {
+                    Text("Enable Debug Mode")
+                        .font(.body.weight(.semibold))
+                    Text("Enables developer tools and options.")
+                        .font(.caption)
+                        .foregroundStyle(.secondary)
+                }
+
+                Spacer(minLength: 8)
+
                 Toggle("Enable Debug Mode", isOn: $isDebugModeOn)
-                    .font(.subheadline.weight(.medium))
+                    .labelsHidden()
                     .tint(.green)
             }
             .padding(.horizontal, 16)
@@ -185,7 +223,6 @@
             .padding(.horizontal, 16)
             .padding(.bottom, 8)
         }
-
 
         @ViewBuilder
         private var basicInfoView: some View {
@@ -264,19 +301,32 @@
         private var deepLinkView: some View {
             if let lastDeeplinkReceived {
                 InfoLabel(
-                    title: "Last opened URL:",
+                    title: "Last opened URL",
                     value: lastDeeplinkReceived,
                     horizontal: false,
                     allowCopy: true
                 )
                 if let parsingError = deepLinkParsingError() {
                     InfoLabel(
-                        title: "Error:",
+                        title: "Error",
                         value: parsingError
                     )
                 }
             } else {
-                Text("No deeplinks opened yet")
+                HStack(spacing: 14) {
+                    Image(systemName: "link")
+                        .font(.system(size: 20))
+                        .foregroundStyle(Color.debugAccent)
+                        .frame(width: 30)
+                    VStack(alignment: .leading, spacing: 2) {
+                        Text("No deeplinks opened yet")
+                            .font(.body.weight(.medium))
+                        Text("Open a supported link to see details here.")
+                            .font(.caption)
+                            .foregroundStyle(.secondary)
+                    }
+                }
+                .padding(.vertical, 4)
             }
         }
     }

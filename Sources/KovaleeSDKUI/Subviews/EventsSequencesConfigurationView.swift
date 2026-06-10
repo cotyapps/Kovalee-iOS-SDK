@@ -22,52 +22,36 @@
         var body: some View {
             Group {
                 if let fileName = currentSequencesFileName {
-                    InfoLabel(
-                        title: "Loaded file:",
-                        value: fileName,
-                        horizontal: true
-                    )
+                    InfoLabel(title: "Loaded file", value: fileName)
                 }
 
                 if let sequence = currentEventsSequence {
-                    InfoLabel(
-                        title: "Current sequence:",
-                        value: sequence,
-                        horizontal: false
-                    )
+                    InfoLabel(title: "Current sequence", value: sequence, horizontal: false)
                 }
 
                 if isDebugModeOn {
-                    HStack {
-                        Text("Sequence version:").bold()
-                        TextField("Sequence version:", text: $sequenceVersionValue)
+                    LabeledContent("Sequence version") {
+                        TextField("0", text: $sequenceVersionValue)
                             .keyboardType(.numberPad)
+                            .multilineTextAlignment(.trailing)
                             .focused($focusedField, equals: .sequenceVersion)
                     }
-                    HStack {
-                        Text("Parsing logic: ").bold()
-                        TextField("Parsing logic", text: $parsingLogicValue)
+
+                    LabeledContent("Parsing logic") {
+                        TextField("0", text: $parsingLogicValue)
                             .keyboardType(.numberPad)
+                            .multilineTextAlignment(.trailing)
                             .focused($focusedField, equals: .parsingLogic)
                     }
 
                     Button(action: refreshAction) {
-                        Text("Refresh Sequences")
+                        Label("Refresh Sequences", systemImage: "arrow.triangle.2.circlepath")
                     }
-                    .buttonStyle(.borderedProminent)
+                    .buttonStyle(.debugPrimary)
                 } else {
-                    InfoLabel(
-                        title: "Sequence version:",
-                        value: sequenceVersionValue
-                    )
-                    InfoLabel(
-                        title: "Parsing Name:",
-                        value: parsingName
-                    )
-                    InfoLabel(
-                        title: "Parsing Logic:",
-                        value: parsingLogicValue
-                    )
+                    InfoLabel(title: "Sequence version", value: sequenceVersionValue)
+                    InfoLabel(title: "Parsing name", value: parsingName)
+                    InfoLabel(title: "Parsing logic", value: parsingLogicValue)
                 }
             }
             .task {
@@ -82,12 +66,9 @@
 
         private func mapParsingName() -> String {
             switch Int(parsingLogicValue) ?? 0 {
-            case 0:
-                return "Nurturing"
-            case 1:
-                return "Mature"
-            default:
-                return "Nurturing"
+            case 0: return "Nurturing"
+            case 1: return "Mature"
+            default: return "Nurturing"
             }
         }
 

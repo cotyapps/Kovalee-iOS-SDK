@@ -12,7 +12,7 @@ struct FormField<Content: View>: View {
 		VStack(alignment: .leading, spacing: 8) {
 			Text(title)
 				.font(.body).fontWeight(.medium)
-				.foregroundColor(style.textColor)
+				.foregroundColor(style.secondaryColor)
 			
 			content()
 		}

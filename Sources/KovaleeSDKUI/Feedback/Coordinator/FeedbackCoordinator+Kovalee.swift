@@ -20,49 +20,53 @@ public extension FeedbackMetadata {
 
 @available(iOS 17, *)
 public extension FeedbackCoordinator {
-    /// Presents the founder (free-form) feedback flow, auto-filling `FeedbackMetadata`
-    /// from the Kovalee SDK. The host only provides copy and (optionally) styling.
-    @MainActor func showFounder(
-        text: FeedbackText,
-        style: FeedbackStyle = .default,
-        showBackButton: Bool = true,
-        firebaseRegion: String? = nil
-    ) {
+    /// Presents the founder (free-form) feedback flow using ``KovaleeUI/configuration``.
+    @MainActor func showFounder(showBackButton: Bool = true) {
         Task { @MainActor in
             let metadata = await FeedbackMetadata.fromKovalee()
             showFounder(
                 UserFeedbackConfiguration(
-                    feedbackText: text,
-                    feedbackStyle: style,
+                    feedbackText: KovaleeUI.configuration.founderFeedbackText,
+                    feedbackStyle: KovaleeUI.configuration.feedbackStyle,
                     feedbackMetadata: metadata,
-                    firebaseRegion: firebaseRegion
+                    firebaseRegion: KovaleeUI.configuration.firebaseRegion
                 ),
                 showBackButton: showBackButton
             )
         }
     }
 
-    /// Presents the multi-choice "features" survey, auto-filling `FeedbackMetadata`
-    /// from the Kovalee SDK. The host only provides copy, icon, choices, and styling.
+    /// Presents the multi-choice feature survey using ``KovaleeUI/configuration``.
     @MainActor func showFeatures(
-        text: FeatureFeedbackText,
-        appIcon: Image,
-        choices: [String],
-        style: FeatureFeedbackStyle = .default,
-        firebaseRegion: String? = nil,
         onChoicesButtonTapped: (@Sendable () -> Void)? = nil,
         onNotesActionTapped: (@Sendable () -> Void)? = nil
     ) {
         Task { @MainActor in
             let metadata = await FeedbackMetadata.fromKovalee()
+            guard let featureFeedbackText = KovaleeUI.configuration.featureFeedbackText else {
+                assertionFailure("""
+                    KovaleeUI.configuration.featureFeedbackText must be set before calling showFeatures().
+                    Set it once at app launch, e.g.:
+                    KovaleeUI.configuration.featureFeedbackText = FeatureFeedbackText(
+                        choicesTitle: "What do you want next?",
+                        choicesSubtitle: "Help us shape the app.",
+                        notesTitle: "Anything Else?",
+                        notesSubtitle: "Share any other thoughts.",
+                        notesPlaceholder: "Type here…",
+                        confirmationTitle: "Feedback Received",
+                        confirmationMessage: "Thanks for your input."
+                    )
+                    """)
+                return
+            }
             showFeatures(
                 FeatureFeedbackConfiguration(
-                    style: style,
-                    text: text,
-                    appIcon: appIcon,
-                    choices: choices,
+                    style: KovaleeUI.configuration.feedbackStyle,
+                    text: featureFeedbackText,
+                    appIcon: KovaleeUI.configuration.appIcon,
+                    choices: KovaleeUI.configuration.feedbackChoices,
                     metadata: metadata,
-                    firebaseRegion: firebaseRegion,
+                    firebaseRegion: KovaleeUI.configuration.firebaseRegion,
                     onChoicesButtonTapped: onChoicesButtonTapped,
                     onNotesActionTapped: onNotesActionTapped
                 )

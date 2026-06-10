@@ -61,31 +61,50 @@ public struct FeedbackText: Sendable {
 
 @available(iOS 17, *)
 public struct FeedbackStyle: Sendable {
-	public let backgroundColor: Color
-	public let textColor: Color
-    public let titlesColor: Color
-	public let fieldBackgroundColor: Color
-	public let submitButtonColor: Color
+    public var backgroundColor: Color
+    public var primaryColor: Color
+    public var secondaryColor: Color
+    public var secondaryBackgroundColor: Color
+    public var ctaColor: Color
+    public var selectedColor: Color
+    public var unselectedColor: Color
+    public var buttonCornerRadius: CGFloat
     public var symbol: String?
 
-	public init(
-		backgroundColor: Color = Color.black,
-		textColor: Color = Color.white,
-        titlesColor: Color = Color.white,
-		fieldBackgroundColor: Color = Color(UIColor.darkGray),
-		submitButtonColor: Color = Color.red,
+    public init(
+        backgroundColor: Color = Color(.systemBackground),
+        primaryColor: Color = .primary,
+        secondaryColor: Color = .secondary,
+        secondaryBackgroundColor: Color = Color(.secondarySystemBackground),
+        ctaColor: Color = .accentColor,
+        selectedColor: Color = .primary,
+        unselectedColor: Color = .primary,
+        buttonCornerRadius: CGFloat = 16,
         symbol: String? = nil
-	) {
-		self.backgroundColor = backgroundColor
-		self.textColor = textColor
-        self.titlesColor = titlesColor
-		self.fieldBackgroundColor = fieldBackgroundColor
-		self.submitButtonColor = submitButtonColor
+    ) {
+        self.backgroundColor = backgroundColor
+        self.primaryColor = primaryColor
+        self.secondaryColor = secondaryColor
+        self.secondaryBackgroundColor = secondaryBackgroundColor
+        self.ctaColor = ctaColor
+        self.selectedColor = selectedColor
+        self.unselectedColor = unselectedColor
+        self.buttonCornerRadius = buttonCornerRadius
         self.symbol = symbol
-	}
+    }
 
-	/// Sensible out-of-the-box styling, so a host can present without configuring colors.
-	public static let `default` = FeedbackStyle()
+    /// Sensible out-of-the-box styling, so a host can present without configuring colors.
+    public static let `default` = FeedbackStyle()
+}
+
+@available(iOS 17, *)
+public extension FeedbackText {
+    /// Sample copy for SwiftUI previews and debug builds.
+    static let preview = FeedbackText(
+        introText: "This is a preview of the founder feedback flow. In production, replace this with a personal message from the founder.",
+        imageName: "",
+        successText: "Thanks for your feedback!"
+    )
 }
 
 @available(iOS 17, *)
@@ -122,9 +141,10 @@ extension UserFeedbackConfiguration {
 		),
 		feedbackStyle: FeedbackStyle(
 			backgroundColor: .black,
-			textColor: .white,
-			fieldBackgroundColor: Color(UIColor.darkGray),
-			submitButtonColor: .red
+			primaryColor: .white,
+			secondaryColor: .white,
+			secondaryBackgroundColor: Color(UIColor.darkGray),
+			ctaColor: .red
 		),
 		feedbackMetadata: FeedbackMetadata(
 			appVersion: "1.0.0",

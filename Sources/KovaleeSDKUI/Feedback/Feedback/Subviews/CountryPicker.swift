@@ -25,12 +25,12 @@ struct CountryPicker: View {
 			HStack(spacing: 4) {
                 Text(verbatim: selectedCountry?.flag ?? Country.placeholder.flag)
 				Text(verbatim: selectedCountry?.phoneCode ?? Country.placeholder.phoneCode)
-					.foregroundColor(style.textColor)
+					.foregroundColor(style.secondaryColor)
 			}
 			.font(.body)
 			.padding(.horizontal, 12)
 			.padding(.vertical, 12)
-			.background(style.fieldBackgroundColor)
+			.background(style.secondaryBackgroundColor)
 			.cornerRadius(8)
 		}
 	}

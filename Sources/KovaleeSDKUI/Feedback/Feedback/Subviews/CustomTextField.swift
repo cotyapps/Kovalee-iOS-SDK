@@ -17,13 +17,13 @@ struct CustomTextField<FocusValue: Hashable>: View {
 			"",
 			text: $text,
 			prompt: Text(placeholder)
-				.foregroundColor(style.textColor.opacity(0.6))
+				.foregroundColor(style.secondaryColor.opacity(0.6))
 		)
 		.font(.body)
-		.foregroundColor(style.textColor)
+		.foregroundColor(style.secondaryColor)
 		.padding(.horizontal, 12)
 		.padding(.vertical, 12)
-		.background(style.fieldBackgroundColor)
+		.background(style.secondaryBackgroundColor)
 		.cornerRadius(8)
 		.keyboardType(keyboardType)
 		.autocapitalization(autocapitalization)

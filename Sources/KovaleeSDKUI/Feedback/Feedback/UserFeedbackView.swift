@@ -36,13 +36,13 @@ public struct UserFeedbackView: View {
                 Text(text.title)
                     .font(.system(size: 28, weight: .bold))
                     .multilineTextAlignment(.center)
-                    .foregroundColor(style.titlesColor)
+                    .foregroundColor(style.primaryColor)
                     .frame(maxWidth: .infinity, alignment: .top)
 
                 Text(text.introText)
                     .font(.system(size: 17))
                     .multilineTextAlignment(.center)
-                    .foregroundColor(style.textColor)
+                    .foregroundColor(style.secondaryColor)
                     .frame(maxWidth: .infinity, alignment: .top)
 
                 Spacer()
@@ -56,7 +56,7 @@ public struct UserFeedbackView: View {
                 if let secondaryButton = configuration.secondaryButton {
                     Button(action: secondaryButton.action) {
                         Text(secondaryButton.text)
-                            .foregroundStyle(style.textColor)
+                            .foregroundStyle(style.secondaryColor)
                             .font(.system(size: 15))
                     }
                 }
@@ -68,7 +68,7 @@ public struct UserFeedbackView: View {
                     ToolbarItem(placement: .topBarTrailing) {
                         Button(action: { dismiss() }) {
                             Image(systemName: "xmark")
-                                .foregroundStyle(style.textColor)
+                                .foregroundStyle(style.secondaryColor)
                         }
                         .accessibilityLabel(LocalizedStrings.closeButton)
                     }
@@ -81,7 +81,7 @@ public struct UserFeedbackView: View {
                 )
             }
         }
-        .tint(style.titlesColor)
+        .tint(style.primaryColor)
     }
 }
 
