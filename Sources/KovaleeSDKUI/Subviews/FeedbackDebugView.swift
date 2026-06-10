@@ -6,7 +6,7 @@ struct FeedbackDebugView: View {
     @State private var coordinator = FeedbackCoordinator()
 
     var body: some View {
-        Button("Preview Founder Feedback") {
+        Button {
             coordinator.showFounder(
                 text: FeedbackText(
                     introText: "This is a debug preview of the founder feedback flow. In production, replace this text with a personal message from the founder.",
@@ -14,11 +14,14 @@ struct FeedbackDebugView: View {
                     successText: "Thanks for your feedback!"
                 )
             )
+        } label: {
+            Label("Preview Founder Feedback", systemImage: "eye")
+                .frame(maxWidth: .infinity)
         }
         .buttonStyle(.bordered)
         .userFeedback(coordinator: coordinator)
 
-        Button("Preview Feature Survey") {
+        Button {
             coordinator.showFeatures(
                 text: FeatureFeedbackText(
                     choicesTitle: "What should we improve?",
@@ -32,6 +35,9 @@ struct FeedbackDebugView: View {
                 appIcon: Image(systemName: "app.fill"),
                 choices: ["Performance", "Design", "Notifications", "Onboarding", "Other"]
             )
+        } label: {
+            Label("Preview Feature Survey", systemImage: "eye")
+                .frame(maxWidth: .infinity)
         }
         .buttonStyle(.bordered)
     }
