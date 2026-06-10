@@ -103,6 +103,14 @@
                         } header: {
                             Text("Subscription Upsell")
                         }
+
+                        if #available(iOS 17, *) {
+                            Section {
+                                FeedbackDebugView()
+                            } header: {
+                                Text("In-App Feedback")
+                            }
+                        }
                     }
 
                     Section {
