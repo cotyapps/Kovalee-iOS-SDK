@@ -4,6 +4,7 @@ import UIKit
 import SwiftUI
 import StoreKit
 import KovaleeFramework
+import KovaleeSDK
 import RevenueCat
 import RevenueCatUI
 
@@ -166,6 +167,18 @@ enum SubscriptionUpsellPresenter {
 	}
 
 
+	private static let paymentSource = "subscription_upsell"
+
+	private static func durationOf(_ package: Package) -> KovaleeSDK.Duration {
+		switch package.storeProduct.subscriptionPeriod?.unit {
+			case .day?: return .day
+			case .week?: return .week
+			case .month?: return .month
+			default: return .year
+		}
+	}
+
+
 	private static func resolveProductIdentifiers(
 		for trigger: SubscriptionUpsell.Trigger,
 		in offerings: Offerings
@@ -210,9 +223,25 @@ enum SubscriptionUpsellPresenter {
 
 		let purchaseSignal = PurchaseSignal()
 		let view = PaywallView(offering: offering)
+			.onPurchaseStarted { package in
+				purchaseSignal.purchasedProductId = package.storeProduct.productIdentifier
+				purchaseSignal.purchasedDuration = durationOf(package)
+				Kovalee.startedPurchasing(subscriptionWithProductId: package.storeProduct.productIdentifier, fromSource: paymentSource)
+			}
 			.onPurchaseCompleted { _ in
 				purchaseSignal.didPurchase = true
+				if let productId = purchaseSignal.purchasedProductId {
+					Kovalee.succesfullyPurchased(subscriptionWithProductId: productId, andDuration: purchaseSignal.purchasedDuration ?? .year, fromSource: paymentSource)
+				}
 				SubscriptionUpsellAnalytics.purchased(in: analyticsContext)
+			}
+			.onPurchaseCancelled {
+				Kovalee.paymentCancelledForSubscription(fromSource: paymentSource)
+			}
+			.onPurchaseFailure { _ in
+				if let productId = purchaseSignal.purchasedProductId {
+					Kovalee.paymentFailed(forSubscriptionWithId: productId, fromSource: paymentSource)
+				}
 			}
 			.onRequestedDismissal {
 				purchaseSignal.requestDismiss?()
@@ -283,6 +312,8 @@ enum SubscriptionUpsellPresenter {
 private final class PurchaseSignal {
 	var didPurchase: Bool = false
 	var requestDismiss: (() -> Void)?
+	var purchasedProductId: String?
+	var purchasedDuration: KovaleeSDK.Duration?
 }
 
 
