@@ -7,22 +7,15 @@ public struct UserFeedbackService: Sendable {
 	
 	private let callFunction: @Sendable (String, [String: Any]) async throws -> Any
 
-	/// - Parameters:
-	///   - region: Cloud Functions region the `writeToSheet` / `sendForm` callables are deployed to.
-	///     `nil` or a blank string uses Firebase's default (`us-central1`); set this when your callables
-	///     live elsewhere (e.g. `"europe-west1"`), otherwise every submission fails with `NOT_FOUND`.
-	///   - callFunction: Override the callable transport (e.g. for tests or previews); production leaves this `nil`.
+	/// - Parameter callFunction: Override the callable transport (e.g. for tests or previews); production leaves this `nil`.
+	///
+	/// The `writeToSheet` / `sendForm` callables resolve on the default Firebase app, matching the
+	/// region the rest of the app's Firebase is configured for.
 	public init(
-		region: String? = nil,
 		callFunction: (@Sendable (String, [String: Any]) async throws -> Any)? = nil
 	) {
-		let normalizedRegion = region.flatMap { value -> String? in
-			let trimmed = value.trimmingCharacters(in: .whitespacesAndNewlines)
-			return trimmed.isEmpty ? nil : trimmed
-		}
 		self.callFunction = callFunction ?? { functionName, data in
-			let functions = normalizedRegion.map { Functions.functions(region: $0) } ?? Functions.functions()
-			let result = try await functions.httpsCallable(functionName).call(data)
+			let result = try await Functions.functions().httpsCallable(functionName).call(data)
 			return result.data
 		}
 	}

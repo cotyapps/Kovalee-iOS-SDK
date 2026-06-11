@@ -7,7 +7,6 @@ import SwiftUI
 /// ```swift
 /// KovaleeUI.configuration.appIcon        = Image("AppIcon")
 /// KovaleeUI.configuration.feedbackChoices = ["Performance", "Design", "Notifications"]
-/// KovaleeUI.configuration.firebaseRegion  = "europe-west1"   // omit if us-central1
 /// KovaleeUI.configuration.founderFeedbackText = FeedbackText(introText: "Hi, I'm…", …)
 /// KovaleeUI.configuration.featureFeedbackText = FeatureFeedbackText(choicesTitle: "…", …)
 /// ```
@@ -26,8 +25,6 @@ public enum KovaleeUI {
         public var appIcon: Image = Image(systemName: "app.fill")
         /// Choices presented in the feature-survey step.
         public var feedbackChoices: [String] = []
-        /// Cloud Functions region for feedback callables. `nil` uses Firebase's default (`us-central1`).
-        public var firebaseRegion: String? = nil
         /// Copy for the founder-feedback sheet. Defaults to ``FeedbackText/preview``.
         public var founderFeedbackText: FeedbackText = .preview
         /// Styling for both feedback sheets. Defaults to ``FeedbackStyle/default``.
