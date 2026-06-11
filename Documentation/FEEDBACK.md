@@ -44,7 +44,6 @@ All feedback content and settings are configured once through `KovaleeUI.configu
 ```swift
 KovaleeUI.configuration.appIcon         = Image("AppIcon")
 KovaleeUI.configuration.feedbackChoices  = ["Daily journal", "Streaks", "Community challenges", "Other"]
-KovaleeUI.configuration.firebaseRegion   = "europe-west1"   // omit if using us-central1
 KovaleeUI.configuration.feedbackStyle    = .myAppStyle      // shared by both flows (see Styling)
 
 KovaleeUI.configuration.founderFeedbackText = FeedbackText(
@@ -66,7 +65,7 @@ KovaleeUI.configuration.featureFeedbackText = FeatureFeedbackText(
 )
 ```
 
-> **Firebase region** — callables are resolved on the default Firebase app. The default region is `us-central1`; if you deployed your callables elsewhere (e.g. `europe-west1`) set `firebaseRegion` once here. Without a matching region every submission fails with `NOT_FOUND`.
+> **Firebase** — the `writeToSheet` / `sendForm` callables resolve on the default Firebase app, matching the region the rest of the app's Firebase is configured for.
 
 ---
 
@@ -99,7 +98,7 @@ struct SettingsView: View {
 }
 ```
 
-Copy, styling, and the Firebase region all come from `KovaleeUI.configuration` (see [Configuration](#configuration)) — there's nothing to pass at the call site.
+Copy and styling come from `KovaleeUI.configuration` (see [Configuration](#configuration)) — there's nothing to pass at the call site.
 
 ### UIKit
 
@@ -110,8 +109,8 @@ Present the view directly, constructing the configuration from `KovaleeUI.config
     Task {
         let configuration = UserFeedbackConfiguration(
             feedbackText: KovaleeUI.configuration.founderFeedbackText,
-            feedbackMetadata: await .fromKovalee(),
-            firebaseRegion: KovaleeUI.configuration.firebaseRegion
+            feedbackStyle: KovaleeUI.configuration.feedbackStyle,
+            feedbackMetadata: await .fromKovalee()
         )
         present(
             UIHostingController(rootView: UserFeedbackView(configuration: configuration, showBackButton: true)),
@@ -148,7 +147,7 @@ struct HomeView: View {
 }
 ```
 
-Copy, styling, choices, the app icon, and the Firebase region all come from `KovaleeUI.configuration` (see [Configuration](#configuration)) — there's nothing to pass at the call site.
+Copy, styling, choices, and the app icon all come from `KovaleeUI.configuration` (see [Configuration](#configuration)) — there's nothing to pass at the call site.
 
 ### UIKit
 
@@ -158,11 +157,11 @@ Present `FeedbackFormView` directly. `featureFeedbackText` is optional on the co
 Task {
     guard let text = KovaleeUI.configuration.featureFeedbackText else { return }
     let config = FeatureFeedbackConfiguration(
+        style: KovaleeUI.configuration.feedbackStyle,
         text: text,
         appIcon: KovaleeUI.configuration.appIcon,
         choices: KovaleeUI.configuration.feedbackChoices,
-        metadata: await .fromKovalee(),
-        firebaseRegion: KovaleeUI.configuration.firebaseRegion
+        metadata: await .fromKovalee()
     )
     let form = FeedbackFormView(
         primaryColor: config.style.primaryColor,
@@ -183,7 +182,6 @@ Task {
         confirmationTitle: config.text.confirmationTitle,
         confirmationMessage: config.text.confirmationMessage,
         feedbackMetadata: config.metadata,
-        firebaseRegion: config.firebaseRegion,
         onComplete: { [weak self] in self?.dismiss(animated: true) }
     )
     present(UIHostingController(rootView: form), animated: true)

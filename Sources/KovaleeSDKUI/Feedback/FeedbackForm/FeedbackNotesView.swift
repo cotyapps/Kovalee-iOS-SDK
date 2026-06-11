@@ -66,7 +66,7 @@ struct FeedbackNotesView: View {
 
     func action() {
         guard state != .sending else { return }
-        let service = injectedService ?? UserFeedbackService(region: viewModel.firebaseRegion)
+        let service = injectedService ?? UserFeedbackService()
         Task {
             await MainActor.run {
                 state = .sending

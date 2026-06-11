@@ -28,8 +28,7 @@ public extension FeedbackCoordinator {
                 UserFeedbackConfiguration(
                     feedbackText: KovaleeUI.configuration.founderFeedbackText,
                     feedbackStyle: KovaleeUI.configuration.feedbackStyle,
-                    feedbackMetadata: metadata,
-                    firebaseRegion: KovaleeUI.configuration.firebaseRegion
+                    feedbackMetadata: metadata
                 ),
                 showBackButton: showBackButton
             )
@@ -66,7 +65,6 @@ public extension FeedbackCoordinator {
                     appIcon: KovaleeUI.configuration.appIcon,
                     choices: KovaleeUI.configuration.feedbackChoices,
                     metadata: metadata,
-                    firebaseRegion: KovaleeUI.configuration.firebaseRegion,
                     onChoicesButtonTapped: onChoicesButtonTapped,
                     onNotesActionTapped: onNotesActionTapped
                 )

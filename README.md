@@ -267,12 +267,11 @@ import KovaleeSDKUI
 
 ### Configuration
 
-All feedback content, styling, choices, and the Firebase region are configured **once** through `KovaleeUI.configuration` — typically in `App.init` or `AppDelegate.didFinishLaunching`. This is the single entry point; the call sites stay configuration-free.
+All feedback content, styling, and choices are configured **once** through `KovaleeUI.configuration` — typically in `App.init` or `AppDelegate.didFinishLaunching`. This is the single entry point; the call sites stay configuration-free.
 
 ```swift
 KovaleeUI.configuration.appIcon         = Image("AppIcon")
 KovaleeUI.configuration.feedbackChoices = ["Daily journal", "Streaks", "Community challenges", "Other"]
-KovaleeUI.configuration.firebaseRegion  = "europe-west1"   // omit if using us-central1
 KovaleeUI.configuration.feedbackStyle   = .myAppStyle      // shared by both flows
 
 KovaleeUI.configuration.founderFeedbackText = FeedbackText(
