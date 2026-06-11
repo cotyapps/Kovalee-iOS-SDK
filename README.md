@@ -252,3 +252,99 @@ The SDK's `DebugView` exposes a *Subscription Upsell* section (visible when **En
 | `.dismissed` | The user closed the paywall without purchasing. |
 | `.purchased` | The upsell was purchased. Fires after the congrats screen is dismissed. |
 
+## In-App Feedback
+
+`KovaleeSDKUI` ships two ready-made feedback flows (iOS 17+). Metadata (OS/app version, RevenueCat & Amplitude ids, subscription status) is filled automatically from the SDK.
+
+| Flow | What it collects | Backend (Firebase callable) |
+|------|------------------|------------------------------|
+| **Founder** | Free-form message + email + phone | `writeToSheet` |
+| **Features** | Multi-choice survey → optional notes → confirmation | `sendForm` |
+
+```swift
+import KovaleeSDKUI
+```
+
+### Configuration
+
+All feedback content, styling, choices, and the Firebase region are configured **once** through `KovaleeUI.configuration` — typically in `App.init` or `AppDelegate.didFinishLaunching`. This is the single entry point; the call sites stay configuration-free.
+
+```swift
+KovaleeUI.configuration.appIcon         = Image("AppIcon")
+KovaleeUI.configuration.feedbackChoices = ["Daily journal", "Streaks", "Community challenges", "Other"]
+KovaleeUI.configuration.firebaseRegion  = "europe-west1"   // omit if using us-central1
+KovaleeUI.configuration.feedbackStyle   = .myAppStyle      // shared by both flows
+
+KovaleeUI.configuration.founderFeedbackText = FeedbackText(
+    cta: "Send feedback",
+    title: "Hey, I'm the founder.",
+    introText: "Tell me what to build next.",
+    imageName: "founder-photo",   // an asset in YOUR app bundle
+    successText: "Thanks!"
+)
+
+KovaleeUI.configuration.featureFeedbackText = FeatureFeedbackText(
+    choicesTitle: "What should we build next?",
+    choicesSubtitle: "Pick the features you'd use most.",
+    notesTitle: "Anything else?",
+    notesSubtitle: "Tell us what would make the app better.",
+    notesPlaceholder: "Type here…",
+    confirmationTitle: "Feedback received",
+    confirmationMessage: "Thanks for helping shape the app."
+)
+```
+
+> `featureFeedbackText` is required before presenting the features survey — `showFeatures()` triggers an assertion failure in debug builds (and is a no-op in release) if it hasn't been set.
+
+### Usage
+
+Hold a `FeedbackCoordinator`, attach `.userFeedback(coordinator:)`, and call `showFounder()` / `showFeatures()`. The call sites take no content — everything is read from `KovaleeUI.configuration`:
+
+```swift
+struct HomeView: View {
+    @State private var feedback = FeedbackCoordinator()
+
+    var body: some View {
+        content
+            .userFeedback(coordinator: feedback)
+    }
+
+    func contactSupport() {
+        feedback.showFounder()
+    }
+
+    func askWhatsNext() {
+        feedback.showFeatures(
+            onChoicesButtonTapped: { /* analytics */ },
+            onNotesActionTapped: { /* analytics */ }
+        )
+    }
+}
+```
+
+### Styling
+
+Both flows share a single `FeedbackStyle`. All fields are defaulted, so `.default` works out of the box — set `KovaleeUI.configuration.feedbackStyle` to theme them:
+
+```swift
+extension FeedbackStyle {
+    static let myAppStyle = FeedbackStyle(
+        backgroundColor: Color("background"),
+        primaryColor: .white,                      // titles
+        secondaryColor: .white.opacity(0.8),       // subtitle / body text
+        secondaryBackgroundColor: Color("card"),   // fields & unselected chips
+        ctaColor: Color("accent"),                 // CTA + selected chip
+        selectedColor: .white,                     // selected chip label
+        unselectedColor: .white,                   // unselected chip label
+        buttonCornerRadius: 16,
+        symbol: nil                                // optional SF Symbol on the founder CTA
+    )
+}
+```
+
+### Debug / QA
+
+The SDK's `DebugView` exposes an *In-App Feedback* section (visible when **Enable Debug Mode** is on, iOS 17+) with **Preview Founder Feedback** and **Preview Feature Survey** buttons that present each flow using the current `KovaleeUI.configuration`.
+
+See [Documentation/FEEDBACK.md](Documentation/FEEDBACK.md) for the full reference, the UIKit examples, and styling details.
+

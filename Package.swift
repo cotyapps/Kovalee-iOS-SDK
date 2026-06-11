@@ -78,9 +78,11 @@ let package = Package(
                 .sdk,
                 .kovaleePurchases,
                 .revenueCatUI,
+                .firebaseFunctions,
             ],
             resources: [
                 .process("Resources"),
+                .copy("PrivacyInfo.xcprivacy"),
             ]
         ),
         .target(
@@ -230,6 +232,14 @@ extension Target.Dependency {
     static var firebaseAnalytics: Self {
         .product(
             name: "FirebaseAnalytics",
+            package: "firebase-ios-sdk",
+            condition: .when(platforms: [.iOS, .macCatalyst, .macOS, .tvOS, .watchOS])
+        )
+    }
+
+    static var firebaseFunctions: Self {
+        .product(
+            name: "FirebaseFunctions",
             package: "firebase-ios-sdk",
             condition: .when(platforms: [.iOS, .macCatalyst, .macOS, .tvOS, .watchOS])
         )

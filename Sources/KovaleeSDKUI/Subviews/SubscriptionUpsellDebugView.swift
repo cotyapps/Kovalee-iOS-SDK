@@ -10,27 +10,34 @@ struct SubscriptionUpsellDebugView: View {
 	var body: some View {
 		Toggle("Force Trigger on Launch", isOn: $forceTrigger)
 
-		if forceTrigger {
-			Text("Paywall will present on next foreground regardless of subscription state — only if the user hasn't seen it yet. Tap Reset Shown State to re-arm.")
-				.font(.caption)
-				.foregroundColor(.secondary)
-		}
+		VStack(spacing: 10) {
+			if forceTrigger {
+				Text("Paywall will present on next foreground regardless of subscription state — only if the user hasn't seen it yet. Tap Reset Shown State to re-arm.")
+					.font(.caption)
+					.foregroundStyle(.secondary)
+					.frame(maxWidth: .infinity, alignment: .leading)
+			}
 
-		Button("Reset Shown State") {
-			SubscriptionUpsellOverride.clearAllShownStates()
-			showResetAlert = true
+			Button {
+				SubscriptionUpsell.presentCongratsScreen()
+			} label: {
+				Label("Preview Congrats Screen", systemImage: "eye")
+			}
+			.buttonStyle(.debugPrimary)
+
+			Button {
+				SubscriptionUpsellOverride.clearAllShownStates()
+				showResetAlert = true
+			} label: {
+				Label("Reset Shown State", systemImage: "arrow.clockwise")
+			}
+			.buttonStyle(.debugSecondary)
 		}
-		.buttonStyle(.bordered)
 		.alert("Subscription Upsell", isPresented: $showResetAlert) {
 			Button("OK", role: .cancel) {}
 		} message: {
 			Text("Cleared show-once flags. The next eligible foreground will trigger the flow.")
 		}
-
-		Button("Preview Congrats Screen") {
-			SubscriptionUpsell.presentCongratsScreen()
-		}
-		.buttonStyle(.bordered)
 	}
 }
 #endif
