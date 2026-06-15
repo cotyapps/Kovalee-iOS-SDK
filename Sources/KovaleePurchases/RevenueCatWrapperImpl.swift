@@ -82,6 +82,18 @@ final class RevenueCatWrapperImpl: NSObject, PurchaseManager, Manager {
                 .build()
         )
         Purchases.shared.delegate = self
+
+        // Set $firebaseAppInstanceId as soon as Firebase is configured (signalled by
+        // KovaleeRemoteConfig), so it's pending on the subscriber before the user can
+        // reach a paywall — RevenueCat then includes it with the purchase receipt.
+        // The PurchasesDelegate callback keeps it in sync afterwards as a backstop.
+        firebaseConfiguredObserver = NotificationCenter.default.addObserver(
+            forName: .kovaleeFirebaseConfigured,
+            object: nil,
+            queue: nil
+        ) { _ in
+            FirebaseRevenueCatLink.sync()
+        }
     }
 
     func logout() async throws -> AbstractCustomerInfo {
@@ -224,13 +236,52 @@ final class RevenueCatWrapperImpl: NSObject, PurchaseManager, Manager {
     }
 
     private var delegate: KovaleeFramework.KovaleePurchasesDelegate?
+    private var firebaseConfiguredObserver: NSObjectProtocol?
+
+    deinit {
+        if let firebaseConfiguredObserver {
+            NotificationCenter.default.removeObserver(firebaseConfiguredObserver)
+        }
+    }
 }
 
 extension RevenueCatWrapperImpl: @unchecked Sendable {}
 
+/// Bridges Firebase's analytics identity into RevenueCat.
+///
+/// Implements step 2 of RevenueCat's Firebase integration — "Set Firebase user
+/// identity in RevenueCat" — by mirroring Firebase's app-instance ID into the
+/// reserved `$firebaseAppInstanceId` subscriber attribute, so RevenueCat can
+/// deliver subscription events back to the matching Firebase user.
+/// https://www.revenuecat.com/docs/integrations/third-party-integrations/firebase-integration#2-set-firebase-user-identity-in-revenuecat
+///
+/// Firebase is configured during ``Kovalee/initialize(configuration:)`` *after*
+/// the purchase manager is built, so the ID isn't readable at init time. Instead
+/// it's forwarded — idempotently — from the `PurchasesDelegate` CustomerInfo
+/// callback, which fires at launch and on every change regardless of how the host
+/// app drives RevenueCat. Re-setting the attribute is cheap and overwrites the
+/// prior value, so calling this repeatedly is safe.
+enum FirebaseRevenueCatLink {
+    static func sync() {
+        guard Purchases.isConfigured,
+              let appInstanceID = Kovalee.firebaseAppInstanceID() else {
+            return
+        }
+        Purchases.shared.attribution.setFirebaseAppInstanceID(appInstanceID)
+        KLogger.debug("🛍️ Linked Firebase appInstanceID to RevenueCat ($firebaseAppInstanceId)")
+    }
+}
+
 extension RevenueCatWrapperImpl: RevenueCat.PurchasesDelegate {
     func purchases(_: Purchases, receivedUpdated customerInfo: RevenueCat.CustomerInfo) {
         KLogger.debug("🛍️ did receive update \(customerInfo)")
+
+        // Keep RevenueCat's $firebaseAppInstanceId attribute in sync. This delegate
+        // fires at launch (initial CustomerInfo) and on every change — regardless of
+        // whether the host app drives RevenueCat through the Kovalee wrapper or
+        // Purchases.shared directly — so the attribute is set before RevenueCat sends
+        // its Measurement Protocol events to Firebase/GA4.
+        FirebaseRevenueCatLink.sync()
 
         delegate?.didReceiveUpdate(KCustomerInfo(info: customerInfo))
     }

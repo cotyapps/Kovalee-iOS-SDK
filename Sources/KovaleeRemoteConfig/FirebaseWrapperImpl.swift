@@ -31,6 +31,13 @@ actor FirebaseWrapperImpl: RemoteConfigurationManager, Manager {
                 FirebaseApp.configure()
             #endif
         }
+
+        // Firebase is now configured (either above, or by the host app when
+        // `configuredInApp`). Signal listeners — e.g. RevenueCat attribution — that
+        // the Firebase app-instance ID is readable, so it can be forwarded to
+        // RevenueCat before any purchase rather than only after the first
+        // CustomerInfo update.
+        NotificationCenter.default.post(name: .kovaleeFirebaseConfigured, object: nil)
     }
 
     nonisolated func setFetchTimeout(_ timeout: Double) {
