@@ -36,3 +36,12 @@ public extension Kovalee {
         #endif
     }
 }
+
+public extension Notification.Name {
+    /// Posted once Firebase has been configured — either by Kovalee during
+    /// ``Kovalee/initialize(configuration:)`` or detected as already configured by
+    /// the host app — signalling that ``Kovalee/firebaseAppInstanceID()`` is now
+    /// readable. RevenueCat attribution listens for this to set
+    /// `$firebaseAppInstanceId` as early as possible, before any purchase.
+    static let kovaleeFirebaseConfigured = Notification.Name("com.kovalee.firebaseConfigured")
+}

@@ -82,6 +82,18 @@ final class RevenueCatWrapperImpl: NSObject, PurchaseManager, Manager {
                 .build()
         )
         Purchases.shared.delegate = self
+
+        // Set $firebaseAppInstanceId as soon as Firebase is configured (signalled by
+        // KovaleeRemoteConfig), so it's pending on the subscriber before the user can
+        // reach a paywall — RevenueCat then includes it with the purchase receipt.
+        // The PurchasesDelegate callback keeps it in sync afterwards as a backstop.
+        firebaseConfiguredObserver = NotificationCenter.default.addObserver(
+            forName: .kovaleeFirebaseConfigured,
+            object: nil,
+            queue: nil
+        ) { _ in
+            FirebaseRevenueCatLink.sync()
+        }
     }
 
     func logout() async throws -> AbstractCustomerInfo {
@@ -224,6 +236,13 @@ final class RevenueCatWrapperImpl: NSObject, PurchaseManager, Manager {
     }
 
     private var delegate: KovaleeFramework.KovaleePurchasesDelegate?
+    private var firebaseConfiguredObserver: NSObjectProtocol?
+
+    deinit {
+        if let firebaseConfiguredObserver {
+            NotificationCenter.default.removeObserver(firebaseConfiguredObserver)
+        }
+    }
 }
 
 extension RevenueCatWrapperImpl: @unchecked Sendable {}
