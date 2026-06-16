@@ -296,6 +296,67 @@ public extension Kovalee {
         }
     }
 
+    /// Fetch the current ``Offering`` for a RevenueCat targeting placement.
+    ///
+    /// Use this to serve different offerings at different points in your app
+    /// (e.g. `"first_paywall"` vs `"repeat_paywall"`) without hardcoding offering
+    /// identifiers. The placement targeting rules configured in the RevenueCat
+    /// dashboard are resolved server-side.
+    ///
+    /// Unlike ``fetchCurrentOffering()``, this does not apply the legacy
+    /// `ab_test_version` metadata selection — placements are the targeting
+    /// mechanism. RevenueCat returns the placement's fallback offering when the
+    /// placement is not explicitly configured, and `nil` when the placement
+    /// explicitly excludes the user.
+    ///
+    /// - Parameters:
+    ///    - placement: the RevenueCat placement identifier
+    /// - Returns: the placement-targeted offering, or `nil` if none applies
+    static func fetchCurrentOffering(forPlacement placement: String) async throws -> KOffering? {
+        guard shared.kovaleeManager != nil else {
+            throw PurchaseError.initializationProblem
+        }
+        guard Purchases.isConfigured else {
+            throw PurchaseError.rcNotYetInitialized
+        }
+
+        KLogger.debug("🛍️ Fetching current offering for placement \"\(placement)\"...")
+
+        let offerings = try await Purchases.shared.offerings()
+        guard let offering = offerings.currentOffering(forPlacement: placement) else {
+            KLogger.debug("🛍️ No offering available for placement \"\(placement)\"")
+            return nil
+        }
+
+        KLogger.debug("🛍️ Fetched offering \(offering.identifier) for placement \"\(placement)\"")
+        return KOffering(offering: offering)
+    }
+
+    /// Fetch the current ``Offering`` for a RevenueCat targeting placement.
+    ///
+    /// - Parameters:
+    ///    - placement: the RevenueCat placement identifier
+    ///    - completion: the placement-targeted offering, or `nil` if none applies
+    static func fetchCurrentOffering(
+        forPlacement placement: String,
+        withCompletion completion: @escaping @Sendable (Result<KOffering?, Error>) -> Void
+    ) {
+        let placementCopy = placement // Create local copy
+        Task { @Sendable in
+            do {
+                let result = try await Self.fetchCurrentOffering(forPlacement: placementCopy)
+                DispatchQueue.main.async {
+                    completion(Result.success(result))
+                }
+            } catch {
+                let capturedError = error // Capture error locally
+                DispatchQueue.main.async {
+                    completion(Result.failure(capturedError))
+                }
+            }
+        }
+    }
+
     /// Restore purchase previously made by current user
     ///
     /// - Parameters:
