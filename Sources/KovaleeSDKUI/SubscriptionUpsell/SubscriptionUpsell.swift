@@ -3,13 +3,14 @@ import Foundation
 import UIKit
 import SwiftUI
 
-/// Drives a "trial-ending → upsell paywall → cancel-original-subscription" flow.
+/// Drives an "eligible subscription → upsell paywall → cancel-original-subscription" flow.
 ///
 /// Host apps configure with the RevenueCat offering to present and the product
 /// identifiers that count as the source subscription. The SDK then:
 ///
-/// 1. Checks for an active trial entitlement matching the product identifiers
-///    that `trigger` resolves to, whose expiration is within `triggerWithin`.
+/// 1. Checks for an active entitlement matching the product identifiers that
+///    `trigger` resolves to and satisfying `condition` — either a trial expiring
+///    within a window, or a non-trial subscription active longer than an interval.
 /// 2. Verifies the flow hasn't been shown before (idempotent per `storageKey`).
 /// 3. Presents the RC-hosted paywall for `offeringId`.
 /// 4. On successful purchase, presents a screen that opens Apple's
@@ -45,23 +46,40 @@ public enum SubscriptionUpsell {
 		case productIdentifiers(Set<String>)
 	}
 
+	/// What makes a matching entitlement eligible to trigger the upsell.
+	public enum Condition: Sendable, Equatable {
+		/// An active trial entitlement whose expiration is within the given window.
+		case trialExpiring(within: TimeInterval)
+		/// An active, non-trial subscription first purchased more than the given
+		/// interval ago. Re-engages established subscribers — e.g. upselling a
+		/// long-time yearly subscriber to lifetime.
+		case activeLongerThan(TimeInterval)
+	}
+
 	public struct Configuration: Sendable {
 		/// RevenueCat offering identifier rendered as the upsell paywall.
 		public let offeringId: String
 
-		/// Which source subscription(s) to watch for an expiring trial.
+		/// Which source subscription(s) to watch. Scopes which products count
+		/// toward `condition` (e.g. `.yearly` resolves to the annual products).
 		public let trigger: Trigger
 
-		/// Time window before trial expiration during which to trigger.
+		/// Time window before trial expiration during which to trigger. Used as the
+		/// default for the `.trialExpiring` condition when `condition` is omitted.
 		public let triggerWithin: TimeInterval
+
+		/// What makes a matching entitlement eligible to trigger the upsell.
+		/// Defaults to `.trialExpiring(within: triggerWithin)` for backward
+		/// compatibility with callers that only set `triggerWithin`.
+		public let condition: Condition
 
 		/// Namespace key used to remember "already shown" state. Reusing the
 		/// same key across runs / sessions guarantees the flow shows once per
 		/// install.
 		public let storageKey: String
 
-		/// Skip trial-detection and present the paywall as if a matching trial
-		/// were expiring. The show-once gate still applies — once presented for
+		/// Skip condition-detection and present the paywall as if a matching
+		/// entitlement were found. The show-once gate still applies — once presented for
 		/// this `storageKey` the flow won't run again until the flag is cleared
 		/// via `SubscriptionUpsellOverride.clearAllShownStates()`. For QA /
 		/// screenshots only — ship with `false`.
@@ -84,6 +102,7 @@ public enum SubscriptionUpsell {
 			trigger: Trigger,
 			triggerWithin: TimeInterval = 48 * 3600,
 			storageKey: String,
+			condition: Condition? = nil,
 			debugForceTrigger: Bool = false,
 			showCloseButton: Bool = false,
 			cancelPromptTheme: Theme? = nil
@@ -92,6 +111,7 @@ public enum SubscriptionUpsell {
 			self.trigger = trigger
 			self.triggerWithin = triggerWithin
 			self.storageKey = storageKey
+			self.condition = condition ?? .trialExpiring(within: triggerWithin)
 			self.debugForceTrigger = debugForceTrigger
 			self.showCloseButton = showCloseButton
 			self.cancelPromptTheme = cancelPromptTheme
@@ -179,7 +199,7 @@ public enum SubscriptionUpsell {
 	}
 
 
-	/// Force-presents the upsell paywall right now, bypassing trial detection
+	/// Force-presents the upsell paywall right now, bypassing condition detection
 	/// and the show-once gate. For deep links (e.g. `peptalk://upsell`) and
 	/// marketing re-engagement.
 	@MainActor
