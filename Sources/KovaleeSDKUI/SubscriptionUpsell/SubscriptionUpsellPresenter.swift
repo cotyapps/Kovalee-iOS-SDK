@@ -308,7 +308,7 @@ enum SubscriptionUpsellPresenter {
 				case .activeLongerThan(let interval):
 					guard entitlement.periodType != .trial else { return false }
 					guard let start = entitlement.originalPurchaseDate else { return false }
-					return -start.timeIntervalSinceNow > interval
+					return Date().timeIntervalSince(start) > interval
 			}
 		}
 	}

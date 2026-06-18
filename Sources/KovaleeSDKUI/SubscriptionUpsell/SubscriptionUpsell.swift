@@ -60,7 +60,8 @@ public enum SubscriptionUpsell {
 		/// RevenueCat offering identifier rendered as the upsell paywall.
 		public let offeringId: String
 
-		/// Which source subscription(s) to watch for an expiring trial.
+		/// Which source subscription(s) to watch. Scopes which products count
+		/// toward `condition` (e.g. `.yearly` resolves to the annual products).
 		public let trigger: Trigger
 
 		/// Time window before trial expiration during which to trigger. Used as the
