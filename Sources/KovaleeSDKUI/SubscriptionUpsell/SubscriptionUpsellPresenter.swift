@@ -59,9 +59,9 @@ enum SubscriptionUpsellPresenter {
 					matchedProductId = productIds.first
 				}
 				else {
-					guard let entitlement = try await findExpiringTrialEntitlement(
-						productIdentifiers: productIds,
-						within: configuration.triggerWithin
+					guard let entitlement = try await findEntitlement(
+						matching: configuration.condition,
+						productIdentifiers: productIds
 					) else {
 						onCompletion?(.notTriggered)
 						return
@@ -292,17 +292,24 @@ enum SubscriptionUpsellPresenter {
 	}
 
 
-	private static func findExpiringTrialEntitlement(
-		productIdentifiers: Set<String>,
-		within: TimeInterval
+	private static func findEntitlement(
+		matching condition: SubscriptionUpsell.Condition,
+		productIdentifiers: Set<String>
 	) async throws -> EntitlementInfo? {
 		let info = try await Purchases.shared.customerInfo()
 		return info.entitlements.active.values.first { entitlement in
-			guard entitlement.periodType == .trial else { return false }
 			guard productIdentifiers.contains(entitlement.productIdentifier) else { return false }
-			guard let expiration = entitlement.expirationDate else { return false }
-			let remaining = expiration.timeIntervalSinceNow
-			return remaining > 0 && remaining <= within
+			switch condition {
+				case .trialExpiring(let within):
+					guard entitlement.periodType == .trial else { return false }
+					guard let expiration = entitlement.expirationDate else { return false }
+					let remaining = expiration.timeIntervalSinceNow
+					return remaining > 0 && remaining <= within
+				case .activeLongerThan(let interval):
+					guard entitlement.periodType != .trial else { return false }
+					guard let start = entitlement.originalPurchaseDate else { return false }
+					return -start.timeIntervalSinceNow > interval
+			}
 		}
 	}
 }
