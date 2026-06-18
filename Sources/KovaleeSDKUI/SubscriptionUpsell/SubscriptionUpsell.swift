@@ -3,7 +3,7 @@ import Foundation
 import UIKit
 import SwiftUI
 
-/// Drives a "trial-ending → upsell paywall → cancel-original-subscription" flow.
+/// Drives an "eligible subscription → upsell paywall → cancel-original-subscription" flow.
 ///
 /// Host apps configure with the RevenueCat offering to present and the product
 /// identifiers that count as the source subscription. The SDK then:
@@ -78,8 +78,8 @@ public enum SubscriptionUpsell {
 		/// install.
 		public let storageKey: String
 
-		/// Skip trial-detection and present the paywall as if a matching trial
-		/// were expiring. The show-once gate still applies — once presented for
+		/// Skip condition-detection and present the paywall as if a matching
+		/// entitlement were found. The show-once gate still applies — once presented for
 		/// this `storageKey` the flow won't run again until the flag is cleared
 		/// via `SubscriptionUpsellOverride.clearAllShownStates()`. For QA /
 		/// screenshots only — ship with `false`.
@@ -199,7 +199,7 @@ public enum SubscriptionUpsell {
 	}
 
 
-	/// Force-presents the upsell paywall right now, bypassing trial detection
+	/// Force-presents the upsell paywall right now, bypassing condition detection
 	/// and the show-once gate. For deep links (e.g. `peptalk://upsell`) and
 	/// marketing re-engagement.
 	@MainActor
