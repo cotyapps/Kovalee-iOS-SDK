@@ -116,6 +116,21 @@ public enum SubscriptionUpsell {
 			self.showCloseButton = showCloseButton
 			self.cancelPromptTheme = cancelPromptTheme
 		}
+
+		/// Copy with a different RevenueCat offering, keeping every other field.
+		/// Used by `handleDeepLink` to honor an `?offering=` override.
+		public func overridingOffering(id: String) -> Configuration {
+			Configuration(
+				offeringId: id,
+				trigger: trigger,
+				triggerWithin: triggerWithin,
+				storageKey: storageKey,
+				condition: condition,
+				debugForceTrigger: debugForceTrigger,
+				showCloseButton: showCloseButton,
+				cancelPromptTheme: cancelPromptTheme
+			)
+		}
 	}
 
 	public enum Outcome: Sendable, Equatable {
@@ -243,6 +258,11 @@ public enum SubscriptionUpsell {
 	/// - `<scheme>://upsell/`
 	/// - `<scheme>:///upsell` (hostless variant — path-only)
 	///
+	/// An optional `?offering=<id>` query item overrides
+	/// `configuration.offeringId`, so a single deep link can target any paywall
+	/// (e.g. `<scheme>://upsell?offering=Default_2` for a harder-discount
+	/// offering sent by email). Every other configuration field is preserved.
+	///
 	/// ### What does NOT match
 	/// - `<scheme>://app/upsell` — `upsell` must be the host (or be the entire
 	///   path in the hostless variant), not nested under another host.
@@ -265,8 +285,19 @@ public enum SubscriptionUpsell {
 		let hostIsUpsell = url.host == "upsell" && (url.path.isEmpty || url.path == "/")
 		let hostlessUpsellPath = (url.host?.isEmpty ?? true) && url.path == "/upsell"
 		guard hostIsUpsell || hostlessUpsellPath else { return false }
-		presentNow(configuration: configuration, from: presenter, onCompletion: onCompletion)
+		let resolved = offeringOverride(in: url).map(configuration.overridingOffering) ?? configuration
+		presentNow(configuration: resolved, from: presenter, onCompletion: onCompletion)
 		return true
+	}
+
+
+	/// Reads `?offering=<id>` from a deep link, trimming whitespace and the
+	/// surrounding quotes that hand-authored marketing links sometimes carry.
+	private static func offeringOverride(in url: URL) -> String? {
+		guard let items = URLComponents(url: url, resolvingAgainstBaseURL: false)?.queryItems else { return nil }
+		guard let raw = items.first(where: { $0.name == "offering" })?.value else { return nil }
+		let trimmed = raw.trimmingCharacters(in: CharacterSet(charactersIn: "\"").union(.whitespacesAndNewlines))
+		return trimmed.isEmpty ? nil : trimmed
 	}
 }
 #endif
