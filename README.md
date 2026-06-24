@@ -214,6 +214,8 @@ func scene(_ scene: UIScene, openURLContexts URLContexts: Set<UIOpenURLContext>)
 }
 ```
 
+Add an `?offering=<id>` query item to target a specific paywall, overriding `configuration.offeringId` for that link only — e.g. `<scheme>://upsell?offering=Default_2` to email a harder-discount offering. Every other configuration field is preserved; without the param the configured offering is used.
+
 Or present directly:
 
 ```swift
