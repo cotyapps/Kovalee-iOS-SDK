@@ -52,6 +52,21 @@ actor FirebaseWrapperImpl: RemoteConfigurationManager, Manager {
         #endif
     }
 
+    /// Firebase Advanced Consent Mode: updates the advertising consent types once the ATT
+    /// decision is known. Analytics collection stays on (so ODM keeps capturing de-identified
+    /// signals at launch); only the ad-related consents move. `analytics_storage` is left at the
+    /// app's Info.plist default (GOOGLE_ANALYTICS_DEFAULT_ALLOW_ANALYTICS_STORAGE).
+    nonisolated func setAdvertisingConsentGranted(_ granted: Bool) {
+        #if canImport(FirebaseAnalytics)
+            let status: ConsentStatus = granted ? .granted : .denied
+            Analytics.setConsent([
+                .adStorage: status,
+                .adUserData: status,
+                .adPersonalization: status,
+            ])
+        #endif
+    }
+
     nonisolated func setDefaultValues(_ values: [String: Any]) {
         #if canImport(FirebaseRemoteConfig)
             RemoteConfig.remoteConfig().setDefaults(values as? [String: NSObject])
