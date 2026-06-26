@@ -4,7 +4,7 @@ import SwiftUI
 @available(iOS 17, *)
 struct FormField<Content: View>: View {
 	let title: String
-	let style: FeedbackStyle
+	let style: KovaleeUIStyle
 
 	@ViewBuilder let content: () -> Content
 	

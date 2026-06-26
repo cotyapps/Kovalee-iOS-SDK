@@ -5,7 +5,7 @@ import UIKit
 @available(iOS 17, *)
 struct ActionButton: View {
 	let text: String
-	let style: FeedbackStyle
+	let style: KovaleeUIStyle
 	let isDisabled: Bool
 	let onSubmitAction: () -> Void
     let symbol: String?
@@ -15,7 +15,7 @@ struct ActionButton: View {
 		return backgroundColor.isLight ? .black : .white
 	}
 
-    init(text: String, symbol: String? = nil, style: FeedbackStyle, isDisabled: Bool, onSubmitAction: @escaping () -> Void) {
+    init(text: String, symbol: String? = nil, style: KovaleeUIStyle, isDisabled: Bool, onSubmitAction: @escaping () -> Void) {
         self.text = text
         self.style = style
         self.isDisabled = isDisabled
@@ -46,7 +46,6 @@ struct ActionButton: View {
 	}
 }
 
-@available(iOS 17, *)
 extension Color {
 	var isLight: Bool {
 		let uiColor = UIColor(self).resolvedColor(with: UITraitCollection.current)

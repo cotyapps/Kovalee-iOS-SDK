@@ -4,7 +4,7 @@ import SwiftUI
 @available(iOS 17, *)
 struct CountryPicker: View {
 	@Binding var selectedCountryCode: String
-	let style: FeedbackStyle
+	let style: KovaleeUIStyle
     let countries: [Country] = Country.supportedCountries
 
 	private var selectedCountry: Country? {

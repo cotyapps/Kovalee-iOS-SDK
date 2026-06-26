@@ -82,7 +82,7 @@ enum SubscriptionUpsellPresenter {
 					offering: offering,
 					sourceProduct: sourceProduct,
 					showCloseButton: configuration.showCloseButton,
-					cancelPromptTheme: configuration.cancelPromptTheme ?? SubscriptionUpsell.defaultCancelPromptTheme,
+					cancelPromptStyle: configuration.cancelPromptStyle ?? SubscriptionUpsell.defaultCancelPromptStyle,
 					analyticsContext: context,
 					onCompletion: onCompletion
 				)
@@ -149,7 +149,7 @@ enum SubscriptionUpsellPresenter {
 					offering: offering,
 					sourceProduct: nil,
 					showCloseButton: configuration.showCloseButton,
-					cancelPromptTheme: configuration.cancelPromptTheme ?? SubscriptionUpsell.defaultCancelPromptTheme,
+					cancelPromptStyle: configuration.cancelPromptStyle ?? SubscriptionUpsell.defaultCancelPromptStyle,
 					analyticsContext: context,
 					onCompletion: onCompletion
 				)
@@ -216,7 +216,7 @@ enum SubscriptionUpsellPresenter {
 		offering: Offering,
 		sourceProduct: Product?,
 		showCloseButton: Bool,
-		cancelPromptTheme: SubscriptionUpsell.Theme,
+		cancelPromptStyle: KovaleeUIStyle,
 		analyticsContext: SubscriptionUpsellAnalytics.Context,
 		onCompletion: (@MainActor @Sendable (SubscriptionUpsell.Outcome) -> Void)?
 	) -> UIViewController {
@@ -275,7 +275,7 @@ enum SubscriptionUpsellPresenter {
 			host.dismiss(animated: true) {
 				if purchased {
 					UpsellPostPurchaseView.launchAtTop(
-						theme: cancelPromptTheme,
+						style: cancelPromptStyle,
 						sourceProduct: sourceProduct,
 						analyticsContext: analyticsContext
 					) {

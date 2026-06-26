@@ -8,7 +8,7 @@ public struct UserFeedbackView: View {
 
     public let configuration: UserFeedbackConfiguration
     public let showBackButton: Bool
-    private var style: FeedbackStyle {
+    private var style: KovaleeUIStyle {
         configuration.feedbackStyle
     }
 

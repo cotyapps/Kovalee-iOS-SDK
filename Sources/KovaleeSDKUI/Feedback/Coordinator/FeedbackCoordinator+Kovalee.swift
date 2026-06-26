@@ -27,7 +27,7 @@ public extension FeedbackCoordinator {
             showFounder(
                 UserFeedbackConfiguration(
                     feedbackText: KovaleeUI.configuration.founderFeedbackText,
-                    feedbackStyle: KovaleeUI.configuration.feedbackStyle,
+                    feedbackStyle: KovaleeUI.configuration.style,
                     feedbackMetadata: metadata
                 ),
                 showBackButton: showBackButton
@@ -60,7 +60,7 @@ public extension FeedbackCoordinator {
             }
             showFeatures(
                 FeatureFeedbackConfiguration(
-                    style: KovaleeUI.configuration.feedbackStyle,
+                    style: KovaleeUI.configuration.style,
                     text: featureFeedbackText,
                     appIcon: KovaleeUI.configuration.appIcon,
                     choices: KovaleeUI.configuration.feedbackChoices,

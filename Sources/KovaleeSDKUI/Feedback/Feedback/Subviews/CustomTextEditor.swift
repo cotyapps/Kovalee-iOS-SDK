@@ -8,7 +8,7 @@ struct CustomTextEditor<FocusValue: Hashable>: View {
 	var focusValue: FocusValue?
 
 	let placeholder: String
-	let style: FeedbackStyle
+	let style: KovaleeUIStyle
 	let minHeight: CGFloat
 	
 	var body: some View {
