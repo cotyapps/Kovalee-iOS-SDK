@@ -17,20 +17,25 @@ default_platform(:ios)
 
 platform :ios do
 
-  lane :release do
+  lane :release do |options|
     swift_file_path = "./Sources/KovaleeSDK/Kovalee.swift"
-    version = bump_version
+    version = bump_version(type: options[:type], version: options[:version])
     handle_git(version, [swift_file_path])
   end
 
   lane :bump_version do |options|
-    bump_type = options[:type] || "patch"
     current_version = read_version_from_swift
-    new_version = bump_version_string(current_version, bump_type)
-    
+
+    if options[:version]
+      new_version = validate_version_string(options[:version])
+    else
+      bump_type = options[:type] || "patch"
+      new_version = bump_version_string(current_version, bump_type)
+    end
+
     UI.message("Bumping version from #{current_version} to #{new_version}")
     update_version_in_swift(new_version)
-    
+
     UI.success("Version bumped to #{new_version}")
     new_version
   end
@@ -56,6 +61,13 @@ def read_version_from_swift
   else
     UI.user_error!("Could not find SDK_VERSION in #{file_path}")
   end
+end
+
+def validate_version_string(version)
+  unless version =~ /\A\d+\.\d+\.\d+\z/
+    UI.user_error!("Invalid version: #{version}. Expected format X.Y.Z (e.g. 2.6.0)")
+  end
+  version
 end
 
 def bump_version_string(version, type)
