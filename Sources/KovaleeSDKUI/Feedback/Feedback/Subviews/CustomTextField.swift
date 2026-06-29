@@ -8,7 +8,7 @@ struct CustomTextField<FocusValue: Hashable>: View {
 	var focusValue: FocusValue?
 
 	let placeholder: String
-	let style: FeedbackStyle
+	let style: KovaleeUIStyle
 	let keyboardType: UIKeyboardType
 	let autocapitalization: UITextAutocapitalizationType
 	

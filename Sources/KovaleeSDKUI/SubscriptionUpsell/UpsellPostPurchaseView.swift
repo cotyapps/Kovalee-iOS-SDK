@@ -6,7 +6,7 @@ import UIKit
 
 struct UpsellPostPurchaseView: View {
 	@Environment(\.dismiss) private var dismiss
-	let theme: SubscriptionUpsell.Theme
+	let style: KovaleeUIStyle
 	let sourceProduct: Product?
 	/// Correlation for funnel analytics. `nil` when the screen is shown as a
 	/// standalone preview (debug menu) — no events are fired in that case.
@@ -25,9 +25,16 @@ struct UpsellPostPurchaseView: View {
 		case cancelPrompt
 	}
 
+	/// Matches `ActionButton`'s adaptive contrast: dark text on a light CTA,
+	/// light text on a dark one, so the button label stays legible whatever
+	/// `ctaColor` the host configures.
+	private var primaryButtonForeground: Color {
+		style.ctaColor.isLight ? .black : .white
+	}
+
 	var body: some View {
 		ZStack {
-			theme.background.ignoresSafeArea()
+			style.backgroundColor.ignoresSafeArea()
 
 			switch step {
 			case .confirmation: confirmationStep
@@ -51,19 +58,19 @@ struct UpsellPostPurchaseView: View {
 		VStack(spacing: 24) {
 			Spacer()
 
-			Image(systemName: theme.iconSystemName)
+			Image(systemName: style.confirmationIcon)
 				.font(.system(size: 56))
-				.foregroundStyle(theme.iconTint)
+				.foregroundStyle(style.ctaColor)
 
 			Text("Lifetime unlocked", bundle: .module)
-				.font(theme.titleFont)
-				.foregroundStyle(theme.titleColor)
+				.font(style.titleFont)
+				.foregroundStyle(style.primaryColor)
 				.multilineTextAlignment(.center)
 
 			Text("Your lifetime access is now active.", bundle: .module)
-				.font(theme.bodyFont)
+				.font(style.bodyFont)
 				.multilineTextAlignment(.center)
-				.foregroundStyle(theme.bodyColor)
+				.foregroundStyle(style.secondaryColor)
 				.padding(.horizontal, 24)
 
 			Spacer()
@@ -73,11 +80,11 @@ struct UpsellPostPurchaseView: View {
 				step = .cancelPrompt
 			} label: {
 				Text("OK", bundle: .module)
-					.font(theme.buttonFont)
-					.foregroundStyle(theme.primaryButtonForeground)
+					.font(style.buttonFont)
+					.foregroundStyle(primaryButtonForeground)
 					.frame(maxWidth: .infinity)
 					.frame(height: 56)
-					.background(Capsule().fill(theme.primaryButtonBackground))
+					.background(Capsule().fill(style.ctaColor))
 			}
 			.padding(.horizontal, 24)
 			.padding(.bottom, 24)
@@ -89,19 +96,19 @@ struct UpsellPostPurchaseView: View {
 		VStack(spacing: 24) {
 			Spacer()
 
-			Image(systemName: theme.cancelPromptIconSystemName)
+			Image(systemName: style.cancelPromptIcon)
 				.font(.system(size: 56))
-				.foregroundStyle(theme.iconTint)
+				.foregroundStyle(style.ctaColor)
 
 			Text("One last step", bundle: .module)
-				.font(theme.titleFont)
-				.foregroundStyle(theme.titleColor)
+				.font(style.titleFont)
+				.foregroundStyle(style.primaryColor)
 				.multilineTextAlignment(.center)
 
 			Text("Turn off auto-renewal on your existing subscription so the App Store doesn't charge you again.", bundle: .module)
-				.font(theme.bodyFont)
+				.font(style.bodyFont)
 				.multilineTextAlignment(.center)
-				.foregroundStyle(theme.bodyColor)
+				.foregroundStyle(style.secondaryColor)
 				.padding(.horizontal, 24)
 
 			if let errorMessage {
@@ -119,17 +126,17 @@ struct UpsellPostPurchaseView: View {
 			} label: {
 				ZStack {
 					if isLoading {
-						ProgressView().tint(theme.primaryButtonForeground)
+						ProgressView().tint(primaryButtonForeground)
 					}
 					else {
 						Text("Open subscription settings", bundle: .module)
 					}
 				}
-				.font(theme.buttonFont)
-				.foregroundStyle(theme.primaryButtonForeground)
+				.font(style.buttonFont)
+				.foregroundStyle(primaryButtonForeground)
 				.frame(maxWidth: .infinity)
 				.frame(height: 56)
-				.background(Capsule().fill(theme.primaryButtonBackground))
+				.background(Capsule().fill(style.ctaColor))
 			}
 			.disabled(isLoading)
 			.padding(.horizontal, 24)
@@ -142,7 +149,7 @@ struct UpsellPostPurchaseView: View {
 			} label: {
 				Text("I'll do it later", bundle: .module)
 					.font(.subheadline)
-					.foregroundStyle(theme.secondaryButtonColor)
+					.foregroundStyle(style.secondaryColor)
 			}
 			.padding(.bottom, 24)
 		}
@@ -249,7 +256,7 @@ extension UpsellPostPurchaseView {
 
 	@MainActor
 	static func launchAtTop(
-		theme: SubscriptionUpsell.Theme,
+		style: KovaleeUIStyle,
 		sourceProduct: Product? = nil,
 		analyticsContext: SubscriptionUpsellAnalytics.Context? = nil,
 		onDismiss: @escaping @MainActor () -> Void
@@ -260,7 +267,7 @@ extension UpsellPostPurchaseView {
 		}
 		let host = UIHostingController(
 			rootView: UpsellPostPurchaseView(
-				theme: theme,
+				style: style,
 				sourceProduct: sourceProduct,
 				analyticsContext: analyticsContext,
 				onDismiss: onDismiss

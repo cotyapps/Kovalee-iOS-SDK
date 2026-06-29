@@ -32,7 +32,7 @@ public struct FeatureFeedbackText: Sendable {
 
 @available(iOS 17, *)
 public struct FeatureFeedbackConfiguration: Sendable {
-    public var style: FeedbackStyle
+    public var style: KovaleeUIStyle
     public var text: FeatureFeedbackText
     public var appIcon: Image
     public var choices: [String]
@@ -41,7 +41,7 @@ public struct FeatureFeedbackConfiguration: Sendable {
     public var onNotesActionTapped: (@Sendable () -> Void)?
 
     public init(
-        style: FeedbackStyle = .default,
+        style: KovaleeUIStyle = .default,
         text: FeatureFeedbackText,
         appIcon: Image,
         choices: [String],

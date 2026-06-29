@@ -22,12 +22,21 @@ import SwiftUI
 /// receives the final outcome.
 public enum SubscriptionUpsell {
 
-	/// Theme used by `presentCongratsScreen` and by the SDK debug-menu preview.
-	/// Hosts can override at launch (e.g. `SubscriptionUpsell.defaultCancelPromptTheme = .pep`)
-	/// so QA sees the production look-and-feel in previews. Per-call Configuration
-	/// theme still takes precedence inside the real upsell flow.
+	/// Style for the post-purchase ("Lifetime unlocked" / cancel-prompt) screens.
+	///
+	/// Resolves to `KovaleeUI.configuration.style` — the single style
+	/// partners already configure for the feedback sheets — so both surfaces
+	/// match out of the box. Falls back to `.default` on iOS < 17, where
+	/// `KovaleeUI.configuration` is unavailable. Per-call
+	/// `Configuration.cancelPromptStyle` still takes precedence inside the real
+	/// upsell flow.
 	@MainActor
-	public static var defaultCancelPromptTheme: Theme = .default
+	static var defaultCancelPromptStyle: KovaleeUIStyle {
+		if #available(iOS 17, *) {
+			return KovaleeUI.configuration.style
+		}
+		return .default
+	}
 
 
 	/// Which source subscription(s) to watch. The SDK resolves the actual
@@ -91,11 +100,11 @@ public enum SubscriptionUpsell {
 		/// the paywall has no dismiss UI of its own.
 		public let showCloseButton: Bool
 
-		/// Visual customization for the post-purchase "Lifetime unlocked"
-		/// screen. When `nil` the orchestrator falls back to
-		/// `SubscriptionUpsell.defaultCancelPromptTheme` (which hosts can
-		/// register once at launch). Pass an explicit `Theme` to override.
-		public let cancelPromptTheme: Theme?
+		/// Per-flow override for the post-purchase screens' styling. When `nil`
+		/// the orchestrator falls back to `KovaleeUI.configuration.style`
+		/// so the upsell matches the feedback sheets. Pass an explicit
+		/// `KovaleeUIStyle` to override just this flow.
+		public let cancelPromptStyle: KovaleeUIStyle?
 
 		public init(
 			offeringId: String,
@@ -105,7 +114,7 @@ public enum SubscriptionUpsell {
 			condition: Condition? = nil,
 			debugForceTrigger: Bool = false,
 			showCloseButton: Bool = false,
-			cancelPromptTheme: Theme? = nil
+			cancelPromptStyle: KovaleeUIStyle? = nil
 		) {
 			self.offeringId = offeringId
 			self.trigger = trigger
@@ -114,7 +123,7 @@ public enum SubscriptionUpsell {
 			self.condition = condition ?? .trialExpiring(within: triggerWithin)
 			self.debugForceTrigger = debugForceTrigger
 			self.showCloseButton = showCloseButton
-			self.cancelPromptTheme = cancelPromptTheme
+			self.cancelPromptStyle = cancelPromptStyle
 		}
 
 		/// Copy with a different RevenueCat offering, keeping every other field.
@@ -128,7 +137,7 @@ public enum SubscriptionUpsell {
 				condition: condition,
 				debugForceTrigger: debugForceTrigger,
 				showCloseButton: showCloseButton,
-				cancelPromptTheme: cancelPromptTheme
+				cancelPromptStyle: cancelPromptStyle
 			)
 		}
 	}
@@ -139,58 +148,6 @@ public enum SubscriptionUpsell {
 		case purchased
 	}
 
-
-	/// Visual customization for the post-purchase "Lifetime unlocked" screen.
-	/// Defaults to system styling so any host gets a sensible look without
-	/// configuration.
-	public struct Theme: Sendable {
-		public var background: Color
-		public var iconTint: Color
-		public var titleColor: Color
-		public var bodyColor: Color
-		public var primaryButtonBackground: Color
-		public var primaryButtonForeground: Color
-		public var secondaryButtonColor: Color
-		public var titleFont: Font
-		public var bodyFont: Font
-		public var buttonFont: Font
-		/// SF Symbol shown above the "Lifetime unlocked" confirmation step.
-		public var iconSystemName: String
-		/// SF Symbol shown above the "One last step" cancel-prompt step. Kept
-		/// separate from `iconSystemName` so the celebratory icon doesn't carry
-		/// over into the more cautionary "turn off auto-renewal" screen.
-		public var cancelPromptIconSystemName: String
-
-		public init(
-			background: Color = Color(.systemBackground),
-			iconTint: Color = .accentColor,
-			titleColor: Color = .primary,
-			bodyColor: Color = .secondary,
-			primaryButtonBackground: Color = .accentColor,
-			primaryButtonForeground: Color = .white,
-			secondaryButtonColor: Color = .secondary,
-			titleFont: Font = .system(size: 32, weight: .semibold),
-			bodyFont: Font = .body,
-			buttonFont: Font = .headline,
-			iconSystemName: String = "checkmark.seal.fill",
-			cancelPromptIconSystemName: String = "exclamationmark.circle.fill"
-		) {
-			self.background = background
-			self.iconTint = iconTint
-			self.titleColor = titleColor
-			self.bodyColor = bodyColor
-			self.primaryButtonBackground = primaryButtonBackground
-			self.primaryButtonForeground = primaryButtonForeground
-			self.secondaryButtonColor = secondaryButtonColor
-			self.titleFont = titleFont
-			self.bodyFont = bodyFont
-			self.buttonFont = buttonFont
-			self.iconSystemName = iconSystemName
-			self.cancelPromptIconSystemName = cancelPromptIconSystemName
-		}
-
-		public static let `default` = Theme()
-	}
 
 	/// UIKit entry point.
 	///
@@ -237,13 +194,13 @@ public enum SubscriptionUpsell {
 
 	/// Presents the "Lifetime unlocked" congrats screen directly. Useful for
 	/// debug menu previews, design reviews, and QA without needing a real
-	/// purchase. Uses `defaultCancelPromptTheme` unless overridden.
+	/// purchase. Uses `KovaleeUI.configuration.style` unless overridden.
 	@MainActor
 	public static func presentCongratsScreen(
-		theme: Theme? = nil,
+		style: KovaleeUIStyle? = nil,
 		onCompletion: (@MainActor @Sendable () -> Void)? = nil
 	) {
-		UpsellPostPurchaseView.launchAtTop(theme: theme ?? defaultCancelPromptTheme) {
+		UpsellPostPurchaseView.launchAtTop(style: style ?? defaultCancelPromptStyle) {
 			onCompletion?()
 		}
 	}

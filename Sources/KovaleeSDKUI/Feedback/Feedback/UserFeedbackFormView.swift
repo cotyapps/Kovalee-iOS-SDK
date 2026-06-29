@@ -31,7 +31,7 @@ public struct UserFeedbackFormView: View {
 	public let configuration: UserFeedbackConfiguration
 	private let onCompletion: (() -> Void)?
 	
-	private var style: FeedbackStyle {
+	private var style: KovaleeUIStyle {
 		configuration.feedbackStyle
 	}
 	
@@ -198,7 +198,7 @@ extension UserFeedbackFormView {
 
 @available(iOS 17, *)
 private struct LoadingOverlay: View {
-	let style: FeedbackStyle
+	let style: KovaleeUIStyle
 	
 	var body: some View {
 		ZStack {

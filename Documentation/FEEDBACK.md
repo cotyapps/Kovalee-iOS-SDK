@@ -44,7 +44,7 @@ All feedback content and settings are configured once through `KovaleeUI.configu
 ```swift
 KovaleeUI.configuration.appIcon         = Image("AppIcon")
 KovaleeUI.configuration.feedbackChoices  = ["Daily journal", "Streaks", "Community challenges", "Other"]
-KovaleeUI.configuration.feedbackStyle    = .myAppStyle      // shared by both flows (see Styling)
+KovaleeUI.configuration.style            = .myAppStyle      // shared by feedback + upsell (see Styling)
 
 KovaleeUI.configuration.founderFeedbackText = FeedbackText(
     cta: "Send feedback",
@@ -109,7 +109,7 @@ Present the view directly, constructing the configuration from `KovaleeUI.config
     Task {
         let configuration = UserFeedbackConfiguration(
             feedbackText: KovaleeUI.configuration.founderFeedbackText,
-            feedbackStyle: KovaleeUI.configuration.feedbackStyle,
+            feedbackStyle: KovaleeUI.configuration.style,
             feedbackMetadata: await .fromKovalee()
         )
         present(
@@ -157,7 +157,7 @@ Present `FeedbackFormView` directly. `featureFeedbackText` is optional on the co
 Task {
     guard let text = KovaleeUI.configuration.featureFeedbackText else { return }
     let config = FeatureFeedbackConfiguration(
-        style: KovaleeUI.configuration.feedbackStyle,
+        style: KovaleeUI.configuration.style,
         text: text,
         appIcon: KovaleeUI.configuration.appIcon,
         choices: KovaleeUI.configuration.feedbackChoices,
@@ -192,11 +192,11 @@ Task {
 
 ## Styling
 
-Both flows share a single `FeedbackStyle`. All fields are defaulted, so `.default` works out of the box. Set it once via `KovaleeUI.configuration.feedbackStyle`:
+The feedback sheets and the subscription-upsell post-purchase screens share a single `KovaleeUIStyle`. All fields are defaulted, so `.default` works out of the box. Set it once via `KovaleeUI.configuration.style`. The fields below drive the feedback sheets; `KovaleeUIStyle` also carries upsell-only `titleFont`/`bodyFont`/`buttonFont` and `confirmationIcon`/`cancelPromptIcon` (see the upsell docs):
 
 ```swift
-extension FeedbackStyle {
-    static let myAppStyle = FeedbackStyle(
+extension KovaleeUIStyle {
+    static let myAppStyle = KovaleeUIStyle(
         backgroundColor: Color("background"),
         primaryColor: .white,                      // titles
         secondaryColor: .white.opacity(0.8),       // subtitle / body / notes text

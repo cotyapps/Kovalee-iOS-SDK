@@ -171,7 +171,7 @@ The host app never sees subscription state, paywall internals, or the manage-sub
        triggerWithin: 48 * 3600,                // …expiring within 48h (default: 48h, optional)
        storageKey: "trial_to_lifetime_v1",      // namespace for the show-once flag
        showCloseButton: false,                  // overlay an X if your paywall has no dismiss UI (default: false)
-       cancelPromptTheme: nil                   // use the default congrats-screen theme (default: nil)
+       cancelPromptStyle: nil                   // per-flow override; nil = shared KovaleeUI.configuration.style (default: nil)
    )
    ```
 
@@ -222,21 +222,22 @@ Or present directly:
 SubscriptionUpsell.presentNow(configuration: upsellConfig, from: presenter)
 ```
 
-### Theming the congrats screen
+### Styling the congrats screen
 
-The post-purchase "Lifetime unlocked" screen is themable. Register a global default at launch so QA and debug previews match production:
+The post-purchase "Lifetime unlocked" / cancel-prompt screens derive their look from the shared `KovaleeUI.configuration.style` — the same `KovaleeUIStyle` the feedback sheets use — so they match your app out of the box. On top of the shared colors, `KovaleeUIStyle` carries upsell-only fonts and the two hero SF Symbols:
 
 ```swift
-SubscriptionUpsell.defaultCancelPromptTheme = SubscriptionUpsell.Theme(
-    background: .black,
-    iconTint: .yellow,
-    primaryButtonBackground: .yellow,
-    primaryButtonForeground: .black,
-    iconSystemName: "crown.fill"
+KovaleeUI.configuration.style = KovaleeUIStyle(
+    backgroundColor: .black,
+    primaryColor: .white,                    // title
+    secondaryColor: .white.opacity(0.8),     // body
+    ctaColor: .yellow,                        // hero icon + primary button
+    confirmationIcon: "crown.fill",           // "Lifetime unlocked" hero icon
+    cancelPromptIcon: "bell.slash.fill"       // "One last step" hero icon
 )
 ```
 
-Per-call overrides take precedence via `Configuration.cancelPromptTheme`.
+The primary button's text color is derived automatically for contrast against `ctaColor`. Per-flow overrides take precedence via `Configuration.cancelPromptStyle`.
 
 ### Debug / QA
 
@@ -274,7 +275,7 @@ All feedback content, styling, and choices are configured **once** through `Kova
 ```swift
 KovaleeUI.configuration.appIcon         = Image("AppIcon")
 KovaleeUI.configuration.feedbackChoices = ["Daily journal", "Streaks", "Community challenges", "Other"]
-KovaleeUI.configuration.feedbackStyle   = .myAppStyle      // shared by both flows
+KovaleeUI.configuration.style           = .myAppStyle      // shared by feedback + upsell
 
 KovaleeUI.configuration.founderFeedbackText = FeedbackText(
     cta: "Send feedback",
@@ -325,11 +326,11 @@ struct HomeView: View {
 
 ### Styling
 
-Both flows share a single `FeedbackStyle`. All fields are defaulted, so `.default` works out of the box — set `KovaleeUI.configuration.feedbackStyle` to theme them:
+The feedback sheets and the subscription-upsell post-purchase screens share a single `KovaleeUIStyle`. All fields are defaulted, so `.default` works out of the box — set `KovaleeUI.configuration.style` to theme them:
 
 ```swift
-extension FeedbackStyle {
-    static let myAppStyle = FeedbackStyle(
+extension KovaleeUIStyle {
+    static let myAppStyle = KovaleeUIStyle(
         backgroundColor: Color("background"),
         primaryColor: .white,                      // titles
         secondaryColor: .white.opacity(0.8),       // subtitle / body text

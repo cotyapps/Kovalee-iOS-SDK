@@ -7,6 +7,7 @@ import SwiftUI
 /// ```swift
 /// KovaleeUI.configuration.appIcon        = Image("AppIcon")
 /// KovaleeUI.configuration.feedbackChoices = ["Performance", "Design", "Notifications"]
+/// KovaleeUI.configuration.style           = KovaleeUIStyle(ctaColor: .purple)
 /// KovaleeUI.configuration.founderFeedbackText = FeedbackText(introText: "Hi, I'm…", …)
 /// KovaleeUI.configuration.featureFeedbackText = FeatureFeedbackText(choicesTitle: "…", …)
 /// ```
@@ -27,8 +28,9 @@ public enum KovaleeUI {
         public var feedbackChoices: [String] = []
         /// Copy for the founder-feedback sheet. Defaults to ``FeedbackText/preview``.
         public var founderFeedbackText: FeedbackText = .preview
-        /// Styling for both feedback sheets. Defaults to ``FeedbackStyle/default``.
-        public var feedbackStyle: FeedbackStyle = .default
+        /// Styling for the feedback sheets and the subscription-upsell
+        /// post-purchase screens. Defaults to ``KovaleeUIStyle/default``.
+        public var style: KovaleeUIStyle = .default
         /// Copy for the feature-survey sheet. Defaults to ``FeatureFeedbackText/preview``.
         public var featureFeedbackText: FeatureFeedbackText?
     }
