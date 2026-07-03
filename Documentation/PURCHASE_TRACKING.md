@@ -58,6 +58,12 @@ Full wrapper reference — API, restore semantics, differences vs `presentPaywal
 If you keep your own `presentPaywallIfNeeded` / `PaywallView` wiring, capture the package at purchase **start** and fire the conversion at **completion**:
 
 ```swift
+import KovaleePurchases
+import KovaleeSDK
+import RevenueCat
+import RevenueCatUI
+import SwiftUI
+
 @State private var purchasedPackage: Package?
 
 .presentPaywallIfNeeded(requiredEntitlementIdentifier: "pro", offering: offering) { startedPackage in

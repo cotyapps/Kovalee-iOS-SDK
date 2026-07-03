@@ -12,13 +12,13 @@
 
 The paywall itself is RevenueCatUI's `PaywallView` — it renders the paywall template configured for the offering in the RevenueCat dashboard, so design changes ship without app updates.
 
-```swift
-import KovaleeSDKUI
-```
-
 ## Quick start
 
 ```swift
+import KovaleeSDKUI
+import RevenueCat
+import SwiftUI
+
 struct MainView: View {
     @State private var showPaywall = false
     @State private var offering: Offering?

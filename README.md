@@ -156,6 +156,7 @@ Kovalee.flushTikTokEvents()
 
 ```swift
 import KovaleeSDKUI
+import RevenueCat
 
 MainView()
     .kovaleePaywall(
