@@ -44,6 +44,12 @@ let package = Package(
                 .kovaleeTikTok,
             ]
         ),
+        .library(
+            name: .kovaleeFacebook,
+            targets: [
+                .kovaleeFacebook,
+            ]
+        ),
     ],
     dependencies: [
         .package(url: "https://github.com/amplitude/Amplitude-Swift", .upToNextMajor(from: "1.4.3")),
@@ -53,6 +59,7 @@ let package = Package(
         .package(url: "https://github.com/RevenueCat/purchases-ios-spm.git", .upToNextMajor(from: "5.0.0")),
         .package(url: "https://github.com/adjust/ios_sdk", .upToNextMajor(from: "5.0.0")),
         .package(url: "https://github.com/tiktok/tiktok-business-ios-sdk", .upToNextMajor(from: "1.6.0")),
+        .package(url: "https://github.com/facebook/facebook-ios-sdk", .upToNextMajor(from: "18.1.0")),
     ],
     targets: [
         .binaryTarget(
@@ -135,6 +142,17 @@ let package = Package(
                 .copy("PrivacyInfo.xcprivacy"),
             ]
         ),
+        .target(
+            name: .kovaleeFacebook,
+            dependencies: [
+                .sdk,
+                .framework,
+                .facebookCore,
+            ],
+            resources: [
+                .copy("PrivacyInfo.xcprivacy"),
+            ]
+        ),
     ]
 )
 
@@ -169,6 +187,10 @@ extension Target.Dependency {
 
     static var kovaleeTikTok: Self {
         .target(name: .kovaleeTikTok)
+    }
+
+    static var kovaleeFacebook: Self {
+        .target(name: .kovaleeFacebook)
     }
 }
 
@@ -252,6 +274,14 @@ extension Target.Dependency {
             condition: .when(platforms: [.iOS])
         )
     }
+
+    static var facebookCore: Self {
+        .product(
+            name: "FacebookCore",
+            package: "facebook-ios-sdk",
+            condition: .when(platforms: [.iOS])
+        )
+    }
 }
 
 extension String {
@@ -263,4 +293,5 @@ extension String {
     static let kovaleePurchases = "KovaleePurchases"
     static let kovaleeAttribution = "KovaleeAttribution"
     static let kovaleeTikTok = "KovaleeTikTok"
+    static let kovaleeFacebook = "KovaleeFacebook"
 }

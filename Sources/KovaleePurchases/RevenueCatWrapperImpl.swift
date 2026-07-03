@@ -190,7 +190,8 @@ final class RevenueCatWrapperImpl: NSObject, PurchaseManager, Manager {
             productId: product.productIdentifier,
             priceDecimal: product.price,
             currencyCode: product.currencyCode,
-            hasFreeTrial: product.introductoryDiscount?.paymentMode == .freeTrial
+            hasFreeTrial: transactionStartedFreeTrial(purchaseResult.transaction, product: product),
+            subscriptionPeriodUnit: product.subscriptionPeriod?.kPurchasePeriodUnit
         )
     }
 
@@ -209,7 +210,8 @@ final class RevenueCatWrapperImpl: NSObject, PurchaseManager, Manager {
             productId: product.productIdentifier,
             priceDecimal: product.price,
             currencyCode: product.currencyCode,
-            hasFreeTrial: product.introductoryDiscount?.paymentMode == .freeTrial
+            hasFreeTrial: transactionStartedFreeTrial(purchaseResult.transaction, product: product),
+            subscriptionPeriodUnit: product.subscriptionPeriod?.kPurchasePeriodUnit
         )
     }
 
@@ -316,6 +318,27 @@ extension KovaleeFramework.LogLevel {
     }
 }
 
+/// Whether *this* purchase actually started a free trial — transaction-level truth.
+///
+/// `product.introductoryDiscount?.paymentMode == .freeTrial` only says the product
+/// *offers* a trial; a lapsed (intro-ineligible) re-subscriber buying the same product
+/// pays full price immediately. Reporting that as a StartTrial would feed fabricated
+/// trial signals to the ad platforms, so when the StoreKit 2 transaction is available
+/// we require that it really redeemed an introductory offer. Without a transaction
+/// (SK1 path, observer edges) we fall back to the product-level check.
+func transactionStartedFreeTrial(
+    _ transaction: RevenueCat.StoreTransaction?,
+    product: RevenueCat.StoreProduct
+) -> Bool {
+    guard product.introductoryDiscount?.paymentMode == .freeTrial else { return false }
+    guard let sk2 = transaction?.sk2Transaction else { return true }
+    if #available(iOS 17.2, macOS 14.2, tvOS 17.2, watchOS 10.2, visionOS 1.1, *) {
+        return sk2.offer?.type == .introductory
+    } else {
+        return sk2.offerType == .introductory
+    }
+}
+
 extension RevenueCat.SubscriptionPeriod {
     func getDuration() -> Int {
         switch unit {
@@ -328,5 +351,48 @@ extension RevenueCat.SubscriptionPeriod {
         case .year:
             return 365
         }
+    }
+
+    var kPurchasePeriodUnit: KPurchasePeriodUnit {
+        switch unit {
+        case .day:
+            return .day
+        case .week:
+            return .week
+        case .month:
+            return .month
+        case .year:
+            return .year
+        }
+    }
+}
+
+public extension Kovalee {
+    /// Fires purchase-conversion events (Facebook + TikTok + Firebase revenue) for a
+    /// completed RevenueCat purchase, deriving value / currency / period from the
+    /// package's `StoreProduct` — and, when the `StoreTransaction` is provided, the
+    /// transaction id (GA4 dedup) and whether *this* purchase really started a free
+    /// trial (an intro-ineligible re-subscriber pays immediately even on a
+    /// trial-bearing product).
+    ///
+    /// Call this from remote-paywall completion handlers (e.g. RevenueCatUI's
+    /// two-argument `onPurchaseCompleted { transaction, _ in ... }`) that do NOT flow
+    /// through `Kovalee.purchase(...)`. Native `Kovalee.purchase(...)` already fires
+    /// conversions internally, so a given purchase must reach this through exactly one
+    /// path — never both. Consent-gated internally.
+    static func trackSubscriptionConversion(package: Package, transaction: RevenueCat.StoreTransaction? = nil) {
+        let product = package.storeProduct
+        guard let currency = product.currencyCode else {
+            KLogger.warn("Purchase conversion dropped: product \(product.productIdentifier) has no currency code")
+            return
+        }
+        trackSubscriptionConversion(
+            productId: product.productIdentifier,
+            value: NSDecimalNumber(decimal: product.price).doubleValue,
+            currency: currency,
+            periodUnit: product.subscriptionPeriod?.kPurchasePeriodUnit,
+            hasFreeTrial: transactionStartedFreeTrial(transaction, product: product),
+            transactionId: transaction?.transactionIdentifier
+        )
     }
 }

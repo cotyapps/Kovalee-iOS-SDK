@@ -96,6 +96,17 @@ public final class Kovalee {
                 }
             }
 
+            // Facebook — optional module, enabled purely by linking KovaleeFacebook.
+            // App ID / Client Token are read from the host app's Info.plist
+            // (FacebookAppID / FacebookClientToken); no KovaleeKeys entry required.
+            var facebookManager: FacebookManager?
+            if let creator = FacebookManagerCreator() as? Creator {
+                facebookManager = creator.createImplementation(
+                    withConfiguration: configuration,
+                    andKeys: keys
+                ) as? FacebookManager
+            }
+
             // When a one-shot AB test launch override is pending, wipe the
             // framework's persisted AB experiment value first so the binary's
             // SDKState hydrates empty and the next fetch falls through to
@@ -112,6 +123,7 @@ public final class Kovalee {
                 remoteConfigManager: remoteConfigManager,
                 surveyManager: surveyManager,
                 tiktokManager: tiktokManager,
+                facebookManager: facebookManager,
                 alreadyIntegrated: configuration.alreadyIntegrated
             )
         } catch {
@@ -240,3 +252,4 @@ public struct PurchaseManagerCreator {}
 public struct RemoteConfigManagerCreator {}
 public struct SurveyManagerCreator {}
 public struct TikTokManagerCreator {}
+public struct FacebookManagerCreator {}

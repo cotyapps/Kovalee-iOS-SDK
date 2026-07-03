@@ -832,6 +832,7 @@ public struct KPurchaseResultData: AbstractPurchaseResultData, Encodable, Sendab
     public var priceDecimal: Decimal
     public var currencyCode: String?
     public var hasFreeTrial: Bool
+    public var subscriptionPeriodUnit: KPurchasePeriodUnit?
     /// Convenience accessor for the underlying StoreKit transaction identifier.
     public var transactionId: String? { transaction?.transactionIdentifier }
 }

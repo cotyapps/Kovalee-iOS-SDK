@@ -1,4 +1,5 @@
 import Foundation
+import KovaleeFramework
 
 // MARK: Purchase accessory methods
 
@@ -13,6 +14,39 @@ public extension Kovalee {
         fromSource source: String
     ) {
         shared.kovaleeManager?.startedPurchasing(subscriptionWithId: productId, fromSource: source)
+    }
+
+    /// Fires purchase-conversion events — Facebook, TikTok, and the Firebase standard
+    /// `purchase` event — carrying the transaction's value. Consent-gated internally.
+    ///
+    /// Call this from custom or RevenueCat **remote-paywall** completion handlers that
+    /// do NOT go through `Kovalee.purchase(...)`. Native `Kovalee.purchase(...)` already
+    /// calls it internally, so a given purchase should reach it through exactly one path
+    /// (don't double-fire).
+    ///
+    /// - Parameters:
+    ///   - productId: purchased product identifier
+    ///   - value: price in `currency`
+    ///   - currency: ISO 4217 code (e.g. "USD")
+    ///   - periodUnit: subscription period unit (drives Facebook's `purchase_<period>` name)
+    ///   - hasFreeTrial: whether this purchase started a free trial
+    ///   - transactionId: StoreKit/RevenueCat transaction id, for dedup
+    static func trackSubscriptionConversion(
+        productId: String,
+        value: Double,
+        currency: String,
+        periodUnit: KPurchasePeriodUnit?,
+        hasFreeTrial: Bool,
+        transactionId: String? = nil
+    ) {
+        shared.kovaleeManager?.trackSubscriptionConversion(
+            productId: productId,
+            value: value,
+            currency: currency,
+            periodUnit: periodUnit,
+            hasFreeTrial: hasFreeTrial,
+            transactionId: transactionId
+        )
     }
 
     /// Use this method straight after a purchase has been successfully executed

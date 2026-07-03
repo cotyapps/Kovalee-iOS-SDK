@@ -36,6 +36,10 @@ struct CompositeEventTracker: EventTrackerManager, Manager {
         trackers.forEach { $0.flush() }
     }
 
+    func logPurchase(value: Double, currency: String, productId: String, transactionId: String?) {
+        trackers.forEach { $0.logPurchase(value: value, currency: currency, productId: productId, transactionId: transactionId) }
+    }
+
     // Identity queries: return the first non-nil answer — Amplitude is added
     // first in the init wiring, so those IDs win (they're the ones existing
     // call-sites expect).

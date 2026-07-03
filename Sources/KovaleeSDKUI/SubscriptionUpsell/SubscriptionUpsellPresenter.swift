@@ -226,12 +226,20 @@ enum SubscriptionUpsellPresenter {
 			.onPurchaseStarted { package in
 				purchaseSignal.purchasedProductId = package.storeProduct.productIdentifier
 				purchaseSignal.purchasedDuration = durationOf(package)
+				purchaseSignal.purchasedPackage = package
 				Kovalee.startedPurchasing(subscriptionWithProductId: package.storeProduct.productIdentifier, fromSource: paymentSource)
 			}
-			.onPurchaseCompleted { _ in
+			.onPurchaseCompleted { (transaction: StoreTransaction?, _: CustomerInfo) in
 				purchaseSignal.didPurchase = true
 				if let productId = purchaseSignal.purchasedProductId {
 					Kovalee.succesfullyPurchased(subscriptionWithProductId: productId, andDuration: purchaseSignal.purchasedDuration ?? .year, fromSource: paymentSource)
+				}
+				// Value-carrying conversions (Facebook + TikTok + Firebase) — the upsell
+				// paywall previously fired Amplitude only.
+				if let package = purchaseSignal.purchasedPackage {
+					PaywallConversionTracker.track(package: package, transaction: transaction)
+				} else {
+					KLogger.warn("SubscriptionUpsell: purchase completed without a captured package — conversion skipped")
 				}
 				SubscriptionUpsellAnalytics.purchased(in: analyticsContext)
 			}
@@ -242,6 +250,15 @@ enum SubscriptionUpsellPresenter {
 				if let productId = purchaseSignal.purchasedProductId {
 					Kovalee.paymentFailed(forSubscriptionWithId: productId, fromSource: paymentSource)
 				}
+			}
+			.onRestoreStarted {
+				Kovalee.paymentRestoreStart(fromSource: paymentSource)
+			}
+			.onRestoreCompleted { _ in
+				Kovalee.paymentRestored(fromSource: paymentSource)
+			}
+			.onRestoreFailure { _ in
+				Kovalee.paymentRestoredFailed(fromSource: paymentSource)
 			}
 			.onRequestedDismissal {
 				purchaseSignal.requestDismiss?()
@@ -321,6 +338,7 @@ private final class PurchaseSignal {
 	var requestDismiss: (() -> Void)?
 	var purchasedProductId: String?
 	var purchasedDuration: KovaleeSDK.Duration?
+	var purchasedPackage: Package?
 }
 
 
