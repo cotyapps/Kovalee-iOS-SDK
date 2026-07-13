@@ -254,8 +254,15 @@ enum SubscriptionUpsellPresenter {
 			.onRestoreStarted {
 				Kovalee.paymentRestoreStart(fromSource: paymentSource)
 			}
-			.onRestoreCompleted { _ in
-				Kovalee.paymentRestored(fromSource: paymentSource)
+			.onRestoreCompleted { customerInfo in
+				// RevenueCatUI fires this callback even when there was nothing to
+				// restore — only report a successful restore when an entitlement
+				// was actually recovered.
+				if !customerInfo.entitlements.active.isEmpty {
+					Kovalee.paymentRestored(fromSource: paymentSource)
+				} else {
+					KLogger.debug("SubscriptionUpsell: restore completed without active entitlements — payment_restore not fired")
+				}
 			}
 			.onRestoreFailure { _ in
 				Kovalee.paymentRestoredFailed(fromSource: paymentSource)

@@ -134,13 +134,15 @@ import Foundation
                 Kovalee.paymentRestoreStart(fromSource: source)
             }
             .onRestoreCompleted { customerInfo in
-                Kovalee.paymentRestored(fromSource: source)
-                // Unlock + dismiss only when the restore actually recovered an
-                // entitlement — RevenueCatUI fires this callback even when there was
-                // nothing to restore.
+                // RevenueCatUI fires this callback even when there was nothing to
+                // restore — only report a successful restore (and unlock + dismiss)
+                // when an entitlement was actually recovered.
                 if !customerInfo.entitlements.active.isEmpty {
+                    Kovalee.paymentRestored(fromSource: source)
                     signal.didPurchase = true
                     isPresented = false
+                } else {
+                    KLogger.debug("KovaleePaywall: restore completed without active entitlements — payment_restore not fired")
                 }
             }
             .onRestoreFailure { _ in
