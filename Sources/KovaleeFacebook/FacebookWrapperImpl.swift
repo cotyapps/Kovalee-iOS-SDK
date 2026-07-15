@@ -174,6 +174,43 @@ final class FacebookWrapperRef: @unchecked Sendable {
             AppEvents.shared.flush()
         }
 
+        // MARK: Debug diagnostics
+
+        /// Live snapshot rendered by the DebugView "Ad SDK Integrations" card.
+        func debugFields() -> [KovaleeDebugIntegrationField] {
+            lock.lock()
+            let consentResolved = consentResolved
+            let dataCollection = dataCollectionEnabled
+            let activated = didActivate
+            let buffered = pendingEvents.count
+            lock.unlock()
+
+            let appID = Bundle.main.object(forInfoDictionaryKey: "FacebookAppID") as? String
+            let autoLog = Bundle.main.object(forInfoDictionaryKey: "FacebookAutoLogAppEventsEnabled") as? Bool
+
+            var fields: [KovaleeDebugIntegrationField] = [
+                .init("Configured", isConfigured ? "Yes" : "Missing FacebookAppID/ClientToken"),
+                .init("App ID", appID ?? "—"),
+                .init("Consent", consentResolved ? (dataCollection ? "Granted" : "Denied") : "Unresolved"),
+                .init("SDK activated", activated ? "Yes" : "No"),
+                .init("Buffered events", "\(buffered)"),
+                .init("Auto-log app events", autoLog.map { $0 ? "On (plist)" : "Off (plist)" } ?? "Default (on)"),
+            ]
+            #if canImport(AppTrackingTransparency)
+                let att: String
+                switch ATTrackingManager.trackingAuthorizationStatus {
+                case .authorized: att = "Authorized"
+                case .denied: att = "Denied"
+                case .restricted: att = "Restricted"
+                case .notDetermined: att = "Not determined"
+                @unknown default: att = "Unknown"
+                }
+                // FBSDK ≥17 derives advertiser_tracking_enabled from this directly.
+                fields.append(.init("ATT status", att))
+            #endif
+            return fields
+        }
+
         // MARK: State machine internals
 
         private var canTrack: Bool {
@@ -368,6 +405,10 @@ final class FacebookWrapperRef: @unchecked Sendable {
         func setAdvertiserTrackingEnabled(_: Bool) {}
         func setDataCollectionEnabled(_: Bool) {}
         func flush() {}
+
+        func debugFields() -> [KovaleeDebugIntegrationField] {
+            [.init("Platform", "iOS only")]
+        }
     }
 
     extension FacebookWrapperImpl: @unchecked Sendable {}

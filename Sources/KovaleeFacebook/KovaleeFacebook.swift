@@ -9,7 +9,25 @@ extension FacebookManagerCreator: Creator {
     ) -> Manager {
         // App ID + Client Token are read from the host app's Info.plist
         // (`FacebookAppID` / `FacebookClientToken`) — no KovaleeKeys entry needed.
-        FacebookWrapperImpl()
+        let wrapper = FacebookWrapperImpl()
+        KovaleeDebugIntegrations.shared.register(KovaleeDebugIntegration(
+            id: "facebook",
+            title: "Facebook (Meta)",
+            fields: { FacebookWrapperRef.shared.wrapper?.debugFields() ?? [] },
+            actions: [
+                KovaleeDebugIntegrationAction("Send test event") {
+                    FacebookWrapperRef.shared.wrapper?.logEvent(
+                        "kovalee_debug_ping",
+                        parameters: ["source": "debug_menu"]
+                    )
+                    FacebookWrapperRef.shared.wrapper?.flush()
+                },
+                KovaleeDebugIntegrationAction("Flush events") {
+                    FacebookWrapperRef.shared.wrapper?.flush()
+                },
+            ]
+        ))
+        return wrapper
     }
 }
 
