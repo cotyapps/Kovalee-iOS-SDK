@@ -66,17 +66,30 @@ public final class Kovalee {
                 fatalError("Failed to create EventTrackerManager")
             }
 
+            // Analytics-only watchOS targets link just KovaleeSDK — the
+            // attribution (Adjust, no watchOS slice), purchases (RevenueCat) and
+            // remote-config (Firebase) modules aren't present, so their managers
+            // can't be created. Fall back to no-op implementations there instead
+            // of crashing. Every other platform keeps the strict contract: a
+            // missing manager means the module wasn't linked, which is a
+            // misconfiguration we want to surface immediately.
+            #if os(watchOS)
+            let attributionManager = (Kovalee.setupCapabilities(forItem: .attribution, withConfiguration: configuration, andKeys: keys) as? AttributionManager) ?? NoopAttributionManager()
+            let purchaseManager = (Kovalee.setupCapabilities(forItem: .purchases, withConfiguration: configuration, andKeys: keys) as? PurchaseManager) ?? NoopPurchaseManager()
+            let remoteConfigManager = (Kovalee.setupCapabilities(forItem: .remoteConfiguration, withConfiguration: configuration, andKeys: keys) as? RemoteConfigurationManager) ?? NoopRemoteConfigurationManager()
+            #else
             guard let attributionManager = Kovalee.setupCapabilities(forItem: .attribution, withConfiguration: configuration, andKeys: keys) as? AttributionManager else {
-                fatalError("Failed to create EventTrackerManager")
+                fatalError("Failed to create AttributionManager")
             }
 
             guard let purchaseManager = Kovalee.setupCapabilities(forItem: .purchases, withConfiguration: configuration, andKeys: keys) as? PurchaseManager else {
-                fatalError("Failed to create EventTrackerManager")
+                fatalError("Failed to create PurchaseManager")
             }
 
             guard let remoteConfigManager = Kovalee.setupCapabilities(forItem: .remoteConfiguration, withConfiguration: configuration, andKeys: keys) as? RemoteConfigurationManager else {
-                fatalError("Failed to create EventTrackerManager")
+                fatalError("Failed to create RemoteConfigurationManager")
             }
+            #endif
 
             let surveyManager = Kovalee.setupCapabilities(forItem: .survey, withConfiguration: configuration, andKeys: keys) as? SurveyManager
 
