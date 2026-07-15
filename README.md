@@ -152,7 +152,7 @@ Kovalee.flushTikTokEvents()
 
 ## Subscription Upsell
 
-KovaleeSDKUI ships a turnkey flow for users on an expiring free trial: detect the trial → present a RevenueCat-hosted upsell paywall (typically lifetime) → on purchase, route the user to Apple's *Manage Subscriptions* sheet so they can turn off auto-renewal on the original subscription (Apple does not allow developer-side cancellation).
+KovaleeSDKUI ships a turnkey subscription-to-lifetime flow: detect an eligible subscription — a trial about to expire, or an established subscriber active past a threshold (see [Eligibility conditions](#eligibility-conditions)) → present a RevenueCat-hosted upsell paywall (typically lifetime) → on purchase, route the user to Apple's *Manage Subscriptions* sheet so they can turn off auto-renewal on the original subscription (Apple does not allow developer-side cancellation).
 
 The host app never sees subscription state, paywall internals, or the manage-subscriptions sheet — it provides configuration and (optionally) receives the final outcome.
 
@@ -170,12 +170,34 @@ The host app never sees subscription state, paywall internals, or the manage-sub
        trigger: .yearly,                        // watch for an expiring yearly trial
        triggerWithin: 48 * 3600,                // …expiring within 48h (default: 48h, optional)
        storageKey: "trial_to_lifetime_v1",      // namespace for the show-once flag
+       condition: nil,                          // see Eligibility conditions (default: .trialExpiring(within: triggerWithin))
        showCloseButton: false,                  // overlay an X if your paywall has no dismiss UI (default: false)
        cancelPromptStyle: nil                   // per-flow override; nil = shared KovaleeUI.configuration.style (default: nil)
    )
    ```
 
    `offeringId`, `trigger`, and `storageKey` are required; everything else has a default. `trigger` can be `.yearly`, `.monthly`, `.weekly`, `.anySubscription`, or `.productIdentifiers([...])` for explicit product IDs.
+
+### Eligibility conditions
+
+What makes a matching subscription eligible is controlled by the optional `condition` parameter:
+
+| Condition | Fires when |
+| --- | --- |
+| `.trialExpiring(within:)` | An active **trial** entitlement expires within the given window. This is the default — omitting `condition` is equivalent to `.trialExpiring(within: triggerWithin)`. |
+| `.activeLongerThan(_:)` | An active, **non-trial** subscription was first purchased more than the given interval ago. Use it to re-engage established subscribers — e.g. upselling a long-time yearly subscriber to lifetime. |
+
+```swift
+// Re-engage subscribers who have been paying yearly for 90+ days
+let upsellConfig = SubscriptionUpsell.Configuration(
+    offeringId: "lifetime_upsell",
+    trigger: .yearly,
+    storageKey: "established_to_lifetime_v1",
+    condition: .activeLongerThan(90 * 24 * 3600)
+)
+```
+
+In both cases `trigger` scopes which products are considered.
 
 ### Usage
 
@@ -199,7 +221,7 @@ SubscriptionUpsell.checkAndPresentIfNeeded(
 }
 ```
 
-**Deep link / marketing re-engagement** — bypass the trial-detection and show-once gates and present unconditionally. The built-in handler matches `<scheme>://upsell` (custom schemes only — `http`/`https` are refused):
+**Deep link / marketing re-engagement** — bypass the eligibility-condition and show-once gates and present unconditionally. The built-in handler matches `<scheme>://upsell` (custom schemes only — `http`/`https` are refused):
 
 ```swift
 func scene(_ scene: UIScene, openURLContexts URLContexts: Set<UIOpenURLContext>) {
@@ -251,7 +273,7 @@ The SDK's `DebugView` exposes a *Subscription Upsell* section (visible when **En
 
 | Outcome | Meaning |
 | --- | --- |
-| `.notTriggered` | No expiring trial, the flow already ran for this `storageKey`, or the offering / network lookup failed. |
+| `.notTriggered` | No entitlement met the eligibility `condition` (no expiring trial / subscription not active long enough), the flow already ran for this `storageKey`, or the offering / network lookup failed. |
 | `.dismissed` | The user closed the paywall without purchasing. |
 | `.purchased` | The upsell was purchased. Fires after the congrats screen is dismissed. |
 
