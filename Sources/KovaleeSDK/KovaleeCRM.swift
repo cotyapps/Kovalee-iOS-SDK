@@ -11,7 +11,9 @@ public extension Kovalee {
 
     /// Creates a contact in Brevo CRM with the provided email and optional attributes.
     ///
-    /// The SDK automatically attaches the app code, Amplitude user ID, and device ID.
+    /// The SDK automatically attaches the app code, Amplitude user ID, device ID,
+    /// and RevenueCat app user ID (so the server can reconcile purchases made
+    /// before the email was known).
     ///
     /// - Parameters:
     ///   - email: the email address for the Brevo contact
