@@ -176,7 +176,7 @@ Full guide — API, restore semantics, migration from hand-rolled paywalls: [Doc
 
 ## Purchase Conversion Tracking
 
-Every completed subscription purchase can fire **value-carrying conversion events** to Facebook (`StartTrial`/`Purchase` + a custom `purchase_<period>[_trial]` taxonomy), TikTok (`StartTrial`/`Subscribe`), and Firebase (GA4 `purchase`, real charges only) — in one consent-gated dispatch, fired exactly once per purchase.
+Every completed subscription purchase can fire **value-carrying conversion events** to Facebook (custom `purchase_<period>[_trial]` taxonomy — standard `Purchase`/`StartTrial` stay with Adjust, the MMP of record), TikTok (`StartTrial`/`Subscribe`), and Firebase (GA4 `purchase`, real charges only) — in one consent-gated dispatch, fired exactly once per purchase.
 
 A purchase must reach the dispatch through **exactly one** of:
 

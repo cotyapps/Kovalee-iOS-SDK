@@ -4,13 +4,15 @@ Every completed subscription purchase can fire **value-carrying conversion event
 
 | Sink | Trial start (free trial) | Real charge | Value |
 |------|--------------------------|-------------|-------|
-| **Facebook** | standard `StartTrial` + custom `purchase_<period>_trial` | standard `Purchase` + custom `purchase_<period>` | on the standard event only |
+| **Facebook** | custom `purchase_<period>_trial` | custom `purchase_<period>` | yes (on the custom event) |
 | **TikTok** | `StartTrial` + `Subscribe` | `Subscribe` | yes |
 | **Firebase** | — *(nothing — see below)* | GA4 standard `purchase` | yes (`value`, `currency`, `transaction_id`) |
 
-The custom Facebook taxonomy is `purchase_yearly_trial`, `purchase_monthly_trial`, `purchase_yearly`, `purchase_monthly` (plus `weekly`/`daily`/`unknown` fallbacks), each carrying `fb_content_id` (product id), `subscription_type`, and `transaction_id` when available.
+The custom Facebook taxonomy is `purchase_yearly_trial`, `purchase_monthly_trial`, `purchase_yearly`, `purchase_monthly` (plus `weekly`/`daily`/`unknown` fallbacks), each carrying `fb_content_id` (product id), `subscription_type`, value + currency, and `transaction_id` when available.
 
-**Why Firebase gets nothing on trial starts:** a free-trial start collects no money. Logging the recurring price would overstate GA4 revenue by one full price per trial and feed unrealized value to Google Ads bidding — same reasoning as Facebook's `StartTrial`/`Purchase` split.
+**Why Facebook gets no standard `Purchase`/`StartTrial`:** Adjust is the MMP of record — Meta's iOS attribution slot for the standard events is owned by the Adjust integration (fed server-side via RevenueCat → Adjust → Meta). Firing them from the FB SDK as well would double-count against that feed while never attributing (no owned measurement path). The SDK therefore sends only the custom taxonomy, which is useful for reporting, custom conversions and audiences. For the same reason, host apps should set `FacebookAutoLogAppEventsEnabled = NO` — the FB SDK's implicit StoreKit logging otherwise re-creates the standard-event double count on its own.
+
+**Why Firebase gets nothing on trial starts:** a free-trial start collects no money. Logging the recurring price would overstate GA4 revenue by one full price per trial and feed unrealized value to Google Ads bidding.
 
 **Trials are detected at the transaction level.** A product *offering* a free trial is not enough: a lapsed, intro-ineligible re-subscriber pays full price immediately. When the StoreKit 2 transaction is available, the SDK requires that the transaction actually redeemed an introductory offer; without a transaction it falls back to the product-level check.
 
@@ -100,7 +102,7 @@ Behavior notes:
 
 - **Consent-deferred bring-up.** The Facebook SDK is not initialized until data collection is enabled. Events fired before consent is known are held in a small local buffer (nothing leaves the device) and replayed on activation; an explicit opt-out drops them.
 - **ATT.** `Settings.isAdvertiserTrackingEnabled` mirrors the ATT decision automatically (via the SDK's `promptTrackingAuthorization` flow) — no app wiring needed.
-- **`FacebookAutoLogAppEventsEnabled` interplay.** If your app enables Facebook's automatic event logging, FBSDK **ignores manual `logPurchase`** and captures purchase value itself from the StoreKit transaction — so the standard `Purchase` comes from auto-logging while the custom `purchase_<period>` taxonomy still comes from this SDK. No double count in either configuration; just know which regime your app is in when reading Events Manager.
+- **Set `FacebookAutoLogAppEventsEnabled = NO` in the host app's Info.plist.** With auto-logging on, the FB SDK implicitly logs standard `Purchase`/`StartTrial`/`Subscribe` from every StoreKit transaction (including renewals) — exactly the standard events this SDK deliberately does not send, double-counting against the Adjust feed that owns them.
 
 ### TikTok
 

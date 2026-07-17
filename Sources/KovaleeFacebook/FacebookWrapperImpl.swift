@@ -337,25 +337,15 @@ final class FacebookWrapperRef: @unchecked Sendable {
                 parameters[transactionIdParameter] = transactionId
             }
 
-            if hasFreeTrial {
-                // No money is collected at a free-trial start, so we must NOT fire the
-                // standard `Purchase` event with the recurring price — that would pollute
-                // realized-revenue / Purchase-optimized (AEO) reporting with money that was
-                // never charged. Use the standard `StartTrial` event instead; it carries the
-                // subscription's value + currency (what Meta expects for trial optimization).
-                var trialParameters = parameters
-                trialParameters[.currency] = currency
-                AppEvents.shared.logEvent(.startTrial, valueToSum: value, parameters: trialParameters)
-            } else {
-                // Real charge — the standard `Purchase` event carries the realized value Meta
-                // uses for value optimization / AEO and standard purchase attribution.
-                AppEvents.shared.logPurchase(amount: value, currency: currency, parameters: parameters)
-            }
-
-            // Granular custom event (e.g. `purchase_yearly_trial`) for reporting, custom
-            // conversions and audiences. Intentionally carries NO value — the standard event
-            // above owns the monetary value; attaching it here too would double-count it.
-            AppEvents.shared.logEvent(AppEvents.Name(eventName), parameters: parameters)
+            // Deliberately NO standard `Purchase`/`StartTrial` event here: Adjust is the
+            // MMP of record and owns the iOS attribution slot for the standard events
+            // (RevenueCat -> Adjust -> Meta delivers them with attribution). Firing them
+            // from the FB SDK too would double-count against that feed without ever
+            // attributing. Only the granular custom event (e.g. `purchase_yearly_trial`)
+            // is sent — for reporting, custom conversions and audiences — and it carries
+            // the value + currency since no standard event owns them on this path.
+            parameters[.currency] = currency
+            AppEvents.shared.logEvent(AppEvents.Name(eventName), valueToSum: value, parameters: parameters)
         }
 
         /// Maps the subscription period + trial status onto Kovalee's custom event

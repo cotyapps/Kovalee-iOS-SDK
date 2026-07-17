@@ -36,10 +36,13 @@ extension FacebookManagerCreator: Creator {
 public extension Kovalee {
     /// Track a standard Facebook `Purchase` event.
     ///
-    /// Purchases made through `Kovalee.purchase(package:fromSource:)` /
-    /// `Kovalee.purchaseSubscription(withId:fromSource:)` already fire this
-    /// automatically (plus a granular `purchase_<period>[_trial]` custom event),
-    /// so only call this manually when bypassing those APIs.
+    /// - Warning: The SDK's automatic purchase dispatch deliberately does NOT fire
+    ///   the standard `Purchase`/`StartTrial` events — Adjust is the MMP of record
+    ///   and owns the iOS attribution slot for them (RevenueCat → Adjust → Meta).
+    ///   Purchases made through `Kovalee.purchase(package:fromSource:)` /
+    ///   `Kovalee.purchaseSubscription(withId:fromSource:)` fire only the granular
+    ///   `purchase_<period>[_trial]` custom event. Only call this manually if you
+    ///   knowingly want an SDK-side standard `Purchase` on top of Adjust's feed.
     ///
     /// Safe to call in apps that do not link KovaleeFacebook — the call is a no-op.
     ///
