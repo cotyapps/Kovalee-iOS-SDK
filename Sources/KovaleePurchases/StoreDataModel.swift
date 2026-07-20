@@ -53,6 +53,14 @@ public final class KCustomerInfo: AbstractCustomerInfo, Encodable {
         !entitlements.active.isEmpty
     }
 
+    public var isInTrialPeriod: Bool {
+        entitlements.active.contains { $0.value.periodType == .trial }
+    }
+
+    public var nonSubscriptionProductIds: [String] {
+        nonSubscriptions.map(\.productIdentifier)
+    }
+
     init(info: RevenueCat.CustomerInfo) {
         entitlements = KEntitlementInfos(entitlements: info.entitlements)
         activeSubscriptions = info.activeSubscriptions
