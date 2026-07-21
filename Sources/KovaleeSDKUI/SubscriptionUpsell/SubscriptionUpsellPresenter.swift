@@ -252,16 +252,19 @@ enum SubscriptionUpsellPresenter {
 				}
 			}
 			.onRestoreStarted {
+				purchaseSignal.entitlementsBeforeRestore = RestoreDetection.activeEntitlementIDs()
 				Kovalee.paymentRestoreStart(fromSource: paymentSource)
 			}
 			.onRestoreCompleted { customerInfo in
 				// RevenueCatUI fires this callback even when there was nothing to
-				// restore — only report a successful restore when an entitlement
-				// was actually recovered.
-				if !customerInfo.entitlements.active.isEmpty {
+				// restore. The upsell is shown only to already-entitled users, so
+				// `entitlements.active` is non-empty regardless — report success
+				// only when the restore made an entitlement active that wasn't
+				// active before it started.
+				if RestoreDetection.recoveredAccess(before: purchaseSignal.entitlementsBeforeRestore, after: customerInfo) {
 					Kovalee.paymentRestored(fromSource: paymentSource)
 				} else {
-					KLogger.debug("SubscriptionUpsell: restore completed without active entitlements — payment_restore not fired")
+					KLogger.debug("SubscriptionUpsell: restore recovered no new entitlement — payment_restore not fired")
 				}
 			}
 			.onRestoreFailure { _ in
@@ -346,6 +349,10 @@ private final class PurchaseSignal {
 	var purchasedProductId: String?
 	var purchasedDuration: KovaleeSDK.Duration?
 	var purchasedPackage: Package?
+	/// Entitlements active when a restore started, so completion can tell a real
+	/// recovery from a no-op restore (see RestoreDetection). The upsell is shown
+	/// only to already-entitled users, so this is normally non-empty.
+	var entitlementsBeforeRestore: Set<String> = []
 }
 
 

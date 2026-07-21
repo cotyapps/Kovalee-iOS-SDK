@@ -41,10 +41,14 @@ import Foundation
     private final class KovaleePaywallSignal {
         var purchasedPackage: Package?
         var didPurchase = false
+        /// Entitlements active when a restore started, so completion can tell a real
+        /// recovery from a no-op restore (see RestoreDetection).
+        var entitlementsBeforeRestore: Set<String> = []
 
         func reset() {
             purchasedPackage = nil
             didPurchase = false
+            entitlementsBeforeRestore = []
         }
     }
 
@@ -131,18 +135,21 @@ import Foundation
                 }
             }
             .onRestoreStarted {
+                signal.entitlementsBeforeRestore = RestoreDetection.activeEntitlementIDs()
                 Kovalee.paymentRestoreStart(fromSource: source)
             }
             .onRestoreCompleted { customerInfo in
                 // RevenueCatUI fires this callback even when there was nothing to
                 // restore — only report a successful restore (and unlock + dismiss)
-                // when an entitlement was actually recovered.
-                if !customerInfo.entitlements.active.isEmpty {
+                // when the restore made an entitlement active that wasn't active
+                // before it started (a post-restore emptiness check would report
+                // every no-op restore as success for already-entitled users).
+                if RestoreDetection.recoveredAccess(before: signal.entitlementsBeforeRestore, after: customerInfo) {
                     Kovalee.paymentRestored(fromSource: source)
                     signal.didPurchase = true
                     isPresented = false
                 } else {
-                    KLogger.debug("KovaleePaywall: restore completed without active entitlements — payment_restore not fired")
+                    KLogger.debug("KovaleePaywall: restore recovered no new entitlement — payment_restore not fired")
                 }
             }
             .onRestoreFailure { _ in
