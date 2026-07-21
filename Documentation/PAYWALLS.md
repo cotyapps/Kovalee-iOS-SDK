@@ -6,7 +6,7 @@
 |------------|------|
 | `page_view_paywall` (with `source`) | the paywall actually appears |
 | `payment_start` (with product id) | user starts a purchase |
-| `payment_finish` + **conversion dispatch** (Facebook + TikTok + Firebase, with value) | purchase completes |
+| `payment_finish` + **conversion dispatch** (TikTok + Firebase, with value) | purchase completes |
 | `payment_cancel` / `payment_failure` | user cancels / purchase fails |
 | `payment_restore_start` / `finish` / `fail` | restore lifecycle, including failure |
 
@@ -104,5 +104,5 @@ Delete the manual `sendEvent` calls — the wrapper fires them all (and adds the
 
 ## Related
 
-- **Conversion tracking in depth** (per-sink requirements, Facebook setup, pitfalls, verification): [PURCHASE_TRACKING.md](PURCHASE_TRACKING.md)
+- **Conversion tracking in depth** (per-sink requirements, pitfalls, verification): [PURCHASE_TRACKING.md](PURCHASE_TRACKING.md)
 - **Trial-expiry lifetime upsell** (a specialized, fully-managed RC paywall flow with post-purchase screens): see *Subscription Upsell* in the README — it fires the same conversions internally.

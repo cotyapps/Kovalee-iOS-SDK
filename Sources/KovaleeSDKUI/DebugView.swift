@@ -102,7 +102,7 @@
                     } header: {
                         Text("Ad SDK Integrations")
                     } footer: {
-                        Text("Live status of the optional Facebook/TikTok modules. Note: new custom event names sent to Meta are held for review (Events Manager → Settings → Manage event blocking) until confirmed.")
+                        Text("Live status of the optional TikTok module.")
                     }
 
                     if isDebugModeOn {

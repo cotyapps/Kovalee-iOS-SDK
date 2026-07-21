@@ -16,7 +16,7 @@ public extension Kovalee {
         shared.kovaleeManager?.startedPurchasing(subscriptionWithId: productId, fromSource: source)
     }
 
-    /// Fires purchase-conversion events — Facebook, TikTok, and the Firebase standard
+    /// Fires purchase-conversion events — TikTok and the Firebase standard
     /// `purchase` event — carrying the transaction's value. Consent-gated internally.
     ///
     /// Call this from custom or RevenueCat **remote-paywall** completion handlers that
@@ -28,7 +28,7 @@ public extension Kovalee {
     ///   - productId: purchased product identifier
     ///   - value: price in `currency`
     ///   - currency: ISO 4217 code (e.g. "USD")
-    ///   - periodUnit: subscription period unit (drives Facebook's `purchase_<period>` name)
+    ///   - periodUnit: subscription period unit (drives TikTok's `purchase_<period>` naming)
     ///   - hasFreeTrial: whether this purchase started a free trial
     ///   - transactionId: StoreKit/RevenueCat transaction id, for dedup
     static func trackSubscriptionConversion(

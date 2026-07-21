@@ -234,7 +234,7 @@ enum SubscriptionUpsellPresenter {
 				if let productId = purchaseSignal.purchasedProductId {
 					Kovalee.succesfullyPurchased(subscriptionWithProductId: productId, andDuration: purchaseSignal.purchasedDuration ?? .year, fromSource: paymentSource)
 				}
-				// Value-carrying conversions (Facebook + TikTok + Firebase) — the upsell
+				// Value-carrying conversions (TikTok + Firebase) — the upsell
 				// paywall previously fired Amplitude only.
 				if let package = purchaseSignal.purchasedPackage {
 					PaywallConversionTracker.track(package: package, transaction: transaction)

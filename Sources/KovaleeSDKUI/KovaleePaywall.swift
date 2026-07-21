@@ -10,7 +10,7 @@ import Foundation
     // MARK: - Conversion mapping
 
     /// Maps a purchased RevenueCat package onto the SDK's unified purchase-conversion
-    /// dispatch (Facebook + TikTok + Firebase revenue). Shared by the paywall wrapper
+    /// dispatch (TikTok + Firebase revenue). Shared by the paywall wrapper
     /// and the subscription-upsell presenter so both fire identical conversions.
     enum PaywallConversionTracker {
         static func duration(_ package: Package) -> KovaleeSDK.Duration {
@@ -22,7 +22,7 @@ import Foundation
             }
         }
 
-        /// Fires the value-carrying conversion dispatch (Facebook + TikTok + Firebase)
+        /// Fires the value-carrying conversion dispatch (TikTok + Firebase)
         /// for a completed purchase. Delegates to the canonical package→conversion
         /// mapping in KovaleePurchases; the transaction (when available) supplies the
         /// GA4 dedup id and the transaction-level free-trial truth.
@@ -100,7 +100,7 @@ import Foundation
                         fromSource: source
                     )
                     // The gap this whole wrapper exists to close: value-carrying
-                    // conversions (Facebook + TikTok + Firebase) on a remote paywall.
+                    // conversions (TikTok + Firebase) on a remote paywall.
                     PaywallConversionTracker.track(package: package, transaction: transaction)
                 } else {
                     // Purchase completed without an observed start (external/custom flow):
@@ -158,7 +158,7 @@ import Foundation
         /// Presents the app's RevenueCat paywall and fires **all** Kovalee purchase
         /// tracking automatically: `page_view_paywall`, `payment_start`/`finish`/
         /// `cancel`/`failure`/`restore` (incl. restore failure), **and the
-        /// value-carrying conversion dispatch (Facebook + TikTok + Firebase
+        /// value-carrying conversion dispatch (TikTok + Firebase
         /// `purchase`)**.
         ///
         /// Use this instead of hand-wiring RevenueCatUI's `presentPaywallIfNeeded` /

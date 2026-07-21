@@ -1,22 +1,17 @@
 # Purchase Conversion Tracking
 
-Every completed subscription purchase can fire **value-carrying conversion events** to the three ad/analytics sinks in one consent-gated dispatch:
+Every completed subscription purchase can fire **value-carrying conversion events** to the ad/analytics sinks in one consent-gated dispatch:
 
 | Sink | Trial start (free trial) | Real charge | Value |
 |------|--------------------------|-------------|-------|
-| **Facebook** | custom `purchase_<period>_trial` | custom `purchase_<period>` | yes (on the custom event) |
 | **TikTok** | `StartTrial` + `Subscribe` | `Subscribe` | yes |
 | **Firebase** | — *(nothing — see below)* | GA4 standard `purchase` | yes (`value`, `currency`, `transaction_id`) |
-
-The custom Facebook taxonomy is `purchase_yearly_trial`, `purchase_monthly_trial`, `purchase_yearly`, `purchase_monthly` (plus `weekly`/`daily`/`unknown` fallbacks), each carrying `fb_content_id` (product id), `subscription_type`, value + currency, and `transaction_id` when available.
-
-**Why Facebook gets no standard `Purchase`/`StartTrial`:** Adjust is the MMP of record — Meta's iOS attribution slot for the standard events is owned by the Adjust integration (fed server-side via RevenueCat → Adjust → Meta). Firing them from the FB SDK as well would double-count against that feed while never attributing (no owned measurement path). The SDK therefore sends only the custom taxonomy, which is useful for reporting, custom conversions and audiences. For the same reason, host apps should set `FacebookAutoLogAppEventsEnabled = NO` — the FB SDK's implicit StoreKit logging otherwise re-creates the standard-event double count on its own.
 
 **Why Firebase gets nothing on trial starts:** a free-trial start collects no money. Logging the recurring price would overstate GA4 revenue by one full price per trial and feed unrealized value to Google Ads bidding.
 
 **Trials are detected at the transaction level.** A product *offering* a free trial is not enough: a lapsed, intro-ineligible re-subscriber pays full price immediately. When the StoreKit 2 transaction is available, the SDK requires that the transaction actually redeemed an introductory offer; without a transaction it falls back to the product-level check.
 
-All conversions are gated by `Kovalee.setDataCollectionEnabled(_:)` — nothing fires (or reaches the Facebook SDK at all) while data collection is off.
+All conversions are gated by `Kovalee.setDataCollectionEnabled(_:)` — nothing fires while data collection is off.
 
 ---
 
@@ -93,17 +88,6 @@ The SDK's lifetime-upsell paywall (`SubscriptionUpsell`) fires the conversions i
 
 ## Per-sink requirements
 
-### Facebook — the `KovaleeFacebook` module
-
-1. Link the **`KovaleeFacebook`** product to your app target (that alone enables it — no `KovaleeKeys.json` entry).
-2. Add to the app's **Info.plist**: `FacebookAppID`, `FacebookClientToken` (and typically `FacebookDisplayName`). If either key is missing, the module logs an error once and every Facebook call becomes a safe no-op.
-
-Behavior notes:
-
-- **Consent-deferred bring-up.** The Facebook SDK is not initialized until data collection is enabled. Events fired before consent is known are held in a small local buffer (nothing leaves the device) and replayed on activation; an explicit opt-out drops them.
-- **ATT.** `Settings.isAdvertiserTrackingEnabled` mirrors the ATT decision automatically (via the SDK's `promptTrackingAuthorization` flow) — no app wiring needed.
-- **Set `FacebookAutoLogAppEventsEnabled = NO` in the host app's Info.plist.** With auto-logging on, the FB SDK implicitly logs standard `Purchase`/`StartTrial`/`Subscribe` from every StoreKit transaction (including renewals) — exactly the standard events this SDK deliberately does not send, double-counting against the Adjust feed that owns them.
-
 ### TikTok
 
 Configure the `tiktok` block in `KovaleeKeys.json` and link `KovaleeTikTok` (unchanged). Note: TikTok has its own tracking switch (`Kovalee.setTikTokTrackingEnabled(_:)`) that the app manages alongside consent.
@@ -122,7 +106,6 @@ The GA4 `purchase` event requires `"analyticsEnabled": true` in the `firebase` b
 
 ## Verifying an integration
 
-- **Facebook:** Meta Events Manager → Test Events (or enable `FacebookLoggingBehavior` = `["app_events"]` in the Info.plist of a debug build and watch `FBSDKAppEvents: Recording event` in the console).
 - **Firebase:** run with `-FIRDebugEnabled` and check GA4 DebugView for `purchase`.
 - **TikTok:** TikTok Events Manager (the SDK does not log individual enqueues to the console).
 - The dispatch itself (fan-out, trial/paid split, consent gate, nil-currency guard) is covered by `TikTokDispatchTests` in the KovaleeFramework test suite.

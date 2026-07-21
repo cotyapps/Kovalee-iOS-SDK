@@ -368,7 +368,7 @@ extension RevenueCat.SubscriptionPeriod {
 }
 
 public extension Kovalee {
-    /// Fires purchase-conversion events (Facebook + TikTok + Firebase revenue) for a
+    /// Fires purchase-conversion events (TikTok + Firebase revenue) for a
     /// completed RevenueCat purchase, deriving value / currency / period from the
     /// package's `StoreProduct` — and, when the `StoreTransaction` is provided, the
     /// transaction id (GA4 dedup) and whether *this* purchase really started a free

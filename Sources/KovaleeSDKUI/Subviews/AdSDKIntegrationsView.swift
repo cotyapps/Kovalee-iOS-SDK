@@ -3,7 +3,7 @@
     import SwiftUI
 
     /// Debug-menu section showing the live status of the optional ad-SDK modules
-    /// (Facebook, TikTok): linked or not, configuration, consent/activation state,
+    /// (TikTok): linked or not, configuration, consent/activation state,
     /// plus test-event and flush actions to exercise the pipeline end-to-end.
     ///
     /// Cards come from ``KovaleeDebugIntegrations``, which each optional module
@@ -20,7 +20,6 @@
         }
 
         private static let slots: [Slot] = [
-            Slot(id: "facebook", title: "Facebook (Meta)", plistHintKey: "FacebookAppID"),
             Slot(id: "tiktok", title: "TikTok", plistHintKey: nil),
         ]
 

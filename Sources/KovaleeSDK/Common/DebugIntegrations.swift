@@ -1,15 +1,15 @@
 import Foundation
 
-/// Live diagnostic card for an optional ad-SDK module (TikTok, Facebook…),
+/// Live diagnostic card for an optional ad-SDK module (e.g. TikTok),
 /// shown in the DebugView "Ad SDK Integrations" section.
 ///
 /// Optional modules register their card when their `Creator` runs during
 /// `Kovalee.initialize` — so a missing entry means "module not linked into
 /// this app", which is itself the first thing the debug menu reports.
 public struct KovaleeDebugIntegration: Sendable {
-    /// Stable identifier the debug menu looks up ("facebook", "tiktok").
+    /// Stable identifier the debug menu looks up (e.g. "tiktok").
     public let id: String
-    /// Display title ("Facebook (Meta)").
+    /// Display title (e.g. "TikTok").
     public let title: String
     /// Ordered label/value rows, recomputed live on every render so the menu
     /// reflects the current state (consent, activation, buffered events…).

@@ -176,7 +176,7 @@ Full guide — API, restore semantics, migration from hand-rolled paywalls: [Doc
 
 ## Purchase Conversion Tracking
 
-Every completed subscription purchase can fire **value-carrying conversion events** to Facebook (custom `purchase_<period>[_trial]` taxonomy — standard `Purchase`/`StartTrial` stay with Adjust, the MMP of record), TikTok (`StartTrial`/`Subscribe`), and Firebase (GA4 `purchase`, real charges only) — in one consent-gated dispatch, fired exactly once per purchase.
+Every completed subscription purchase can fire **value-carrying conversion events** to TikTok (`StartTrial`/`Subscribe`) and Firebase (GA4 `purchase`, real charges only) — in one consent-gated dispatch, fired exactly once per purchase.
 
 A purchase must reach the dispatch through **exactly one** of:
 
@@ -184,7 +184,7 @@ A purchase must reach the dispatch through **exactly one** of:
 2. **RevenueCat remote paywalls** — present them with the `.kovaleePaywall(isPresented:offering:source:)` modifier (KovaleeSDKUI); it wires `page_view_paywall`, the whole `payment_*` lifecycle, and the conversions automatically.
 3. **Custom RevenueCatUI wiring** — capture the package in `purchaseStarted`, then call `Kovalee.trackSubscriptionConversion(package:transaction:)` in `purchaseCompleted`.
 
-Facebook requires linking the **`KovaleeFacebook`** product and adding `FacebookAppID` + `FacebookClientToken` to the app's Info.plist (no `KovaleeKeys.json` entry); the Facebook SDK is only initialized once data collection is enabled, and ATT is mirrored automatically. The Firebase `purchase` event requires `"analyticsEnabled": true` in the `firebase` block of `KovaleeKeys.json`.
+The Firebase `purchase` event requires `"analyticsEnabled": true` in the `firebase` block of `KovaleeKeys.json`.
 
 Full guide — events, per-sink requirements, pitfalls, and how to verify an integration: [Documentation/PURCHASE_TRACKING.md](Documentation/PURCHASE_TRACKING.md).
 
