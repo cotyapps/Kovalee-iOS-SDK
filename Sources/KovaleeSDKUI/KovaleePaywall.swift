@@ -41,43 +41,50 @@ import Foundation
     @MainActor
     private final class KovaleePaywallSignal {
         var purchasedPackage: Package?
-        var didPurchase = false
         /// Entitlements active when a restore started, so completion can tell a real
         /// recovery from a no-op restore (see RestoreDetection).
         var entitlementsBeforeRestore: Set<String> = []
 
         func reset() {
             purchasedPackage = nil
-            didPurchase = false
             entitlementsBeforeRestore = []
         }
     }
 
-    private struct KovaleePaywallModifier: ViewModifier {
-        @Binding var isPresented: Bool
-        let offering: Offering?
-        let source: String
-        let onPurchaseCompleted: ((CustomerInfo) -> Void)?
-        let onDismiss: ((Bool) -> Void)?
+    /// The Kovalee-instrumented RevenueCat paywall rendered **inline**, with no
+    /// presentation of its own. Fires all Kovalee purchase tracking (identical to
+    /// ``kovaleePaywall(isPresented:offering:source:onPurchaseCompleted:onDismiss:)``)
+    /// and reports through `onDismiss` when the paywall should be taken down.
+    ///
+    /// Use this when the host **already owns a presentation** (e.g. its own
+    /// `fullScreenCover` shown with a loading state while the offering resolves), so the
+    /// paywall renders into an already-visible container — avoiding the brief black
+    /// frame the SDK's own cover shows during its present transition. Hosts that just
+    /// want a fire-and-forget presentation should keep using the `.kovaleePaywall`
+    /// modifier, which wraps this view in a `fullScreenCover`.
+    public struct KovaleePaywallView: View {
+        private let offering: Offering?
+        private let source: String
+        private let onPurchaseCompleted: ((CustomerInfo) -> Void)?
+        /// Called when the paywall should be dismissed by the host. `Bool` = unlocked
+        /// (purchased or restore recovered an entitlement); `false` on user dismissal.
+        private let onDismiss: ((Bool) -> Void)?
 
         @State private var signal = KovaleePaywallSignal()
 
-        func body(content: Content) -> some View {
-            content.fullScreenCover(
-                isPresented: $isPresented,
-                onDismiss: {
-                    onDismiss?(signal.didPurchase)
-                    // Clear immediately so a callback straggling in after dismissal can
-                    // never read the previous presentation's package/outcome.
-                    signal.reset()
-                }
-            ) {
-                paywall
-            }
+        public init(
+            offering: Offering? = nil,
+            source: String,
+            onPurchaseCompleted: ((CustomerInfo) -> Void)? = nil,
+            onDismiss: ((Bool) -> Void)? = nil
+        ) {
+            self.offering = offering
+            self.source = source
+            self.onPurchaseCompleted = onPurchaseCompleted
+            self.onDismiss = onDismiss
         }
 
-        @ViewBuilder
-        private var paywall: some View {
+        public var body: some View {
             Group {
                 if let offering {
                     PaywallView(offering: offering)
@@ -102,7 +109,6 @@ import Foundation
                 )
             }
             .onPurchaseCompleted { (transaction: StoreTransaction?, customerInfo: CustomerInfo) in
-                signal.didPurchase = true
                 if let package = signal.purchasedPackage {
                     Kovalee.succesfullyPurchased(
                         subscriptionWithProductId: package.storeProduct.productIdentifier,
@@ -127,7 +133,7 @@ import Foundation
                     KLogger.warn("KovaleePaywall: purchase completed without a captured package — conversion skipped for \(productId ?? "unknown product")")
                 }
                 onPurchaseCompleted?(customerInfo)
-                isPresented = false
+                onDismiss?(true)
             }
             .onPurchaseCancelled {
                 Kovalee.paymentCancelledForSubscription(fromSource: source)
@@ -152,8 +158,7 @@ import Foundation
                 // every no-op restore as success for already-entitled users).
                 if RestoreDetection.recoveredAccess(before: signal.entitlementsBeforeRestore, after: customerInfo) {
                     Kovalee.paymentRestored(fromSource: source)
-                    signal.didPurchase = true
-                    isPresented = false
+                    onDismiss?(true)
                 } else {
                     KLogger.debug("KovaleePaywall: restore recovered no new entitlement — payment_restore not fired")
                 }
@@ -162,7 +167,7 @@ import Foundation
                 Kovalee.paymentRestoredFailed(fromSource: source)
             }
             .onRequestedDismissal {
-                isPresented = false
+                onDismiss?(false)
             }
         }
 
@@ -175,6 +180,38 @@ import Foundation
             guard Kovalee.getAmplitudeUserId() == nil else { return }
             let adid = await Kovalee.getAttributionAdid() ?? UUID().uuidString
             Kovalee.setAmplitudeUserId(userId: adid)
+        }
+    }
+
+    private struct KovaleePaywallModifier: ViewModifier {
+        @Binding var isPresented: Bool
+        let offering: Offering?
+        let source: String
+        let onPurchaseCompleted: ((CustomerInfo) -> Void)?
+        let onDismiss: ((Bool) -> Void)?
+
+        // Carries the outcome from the inline view's dismissal callback to the cover's
+        // `onDismiss`, so a straggling callback can never leak into the next presentation.
+        @State private var didUnlock = false
+
+        func body(content: Content) -> some View {
+            content.fullScreenCover(
+                isPresented: $isPresented,
+                onDismiss: {
+                    onDismiss?(didUnlock)
+                    didUnlock = false
+                }
+            ) {
+                KovaleePaywallView(
+                    offering: offering,
+                    source: source,
+                    onPurchaseCompleted: onPurchaseCompleted,
+                    onDismiss: { unlocked in
+                        didUnlock = unlocked
+                        isPresented = false
+                    }
+                )
+            }
         }
     }
 
