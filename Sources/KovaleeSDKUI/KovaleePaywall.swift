@@ -1,5 +1,6 @@
 import Foundation
 #if os(iOS)
+    import KovaleeAttribution
     import KovaleeFramework
     import KovaleePurchases
     import KovaleeSDK
@@ -87,6 +88,11 @@ import Foundation
             .onAppear {
                 signal.reset()
                 Kovalee.sendEvent(event: BasicEvent.pageViewPaywall(source: source))
+                // A remote-paywall purchase bypasses `Kovalee.purchase()`, so the
+                // framework never sets the RevenueCat `$amplitudeUserId` attribute that
+                // links RC→Amplitude purchase webhooks to the right user. Ensure it
+                // exists now, before any purchase can complete.
+                Task { await Self.ensureAmplitudeUserId() }
             }
             .onPurchaseStarted { package in
                 signal.purchasedPackage = package
@@ -159,6 +165,17 @@ import Foundation
                 isPresented = false
             }
         }
+
+        /// Ensures a RevenueCat `$amplitudeUserId` subscriber attribute exists so
+        /// RC→Amplitude purchase webhooks attribute to the right user. No-op once an
+        /// Amplitude user id is present; otherwise seeds it from the Adjust adid (so it
+        /// aligns with attribution) or a random UUID as a last resort.
+        @MainActor
+        private static func ensureAmplitudeUserId() async {
+            guard Kovalee.getAmplitudeUserId() == nil else { return }
+            let adid = await Kovalee.getAttributionAdid() ?? UUID().uuidString
+            Kovalee.setAmplitudeUserId(userId: adid)
+        }
     }
 
     public extension View {
@@ -172,6 +189,10 @@ import Foundation
         /// `PaywallView`, so remote-paywall purchases fire conversions exactly like
         /// native `Kovalee.purchase()` does. Gate `isPresented` on `!isUserPremium`
         /// at the call site as before.
+        ///
+        /// On presentation the wrapper also ensures the RevenueCat `$amplitudeUserId`
+        /// attribute exists (seeded from the Adjust adid, else a UUID), so RC→Amplitude
+        /// purchase webhooks attribute correctly — callers no longer need to do this.
         ///
         /// A successful restore that recovers an entitlement dismisses the paywall and
         /// reports `true` to `onDismiss`, same as a purchase.

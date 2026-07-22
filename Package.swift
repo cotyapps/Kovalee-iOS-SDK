@@ -77,6 +77,7 @@ let package = Package(
             dependencies: [
                 .sdk,
                 .kovaleePurchases,
+                .kovaleeAttribution,
                 .revenueCatUI,
                 .firebaseFunctions,
             ],
