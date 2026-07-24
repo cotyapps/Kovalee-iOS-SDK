@@ -62,6 +62,10 @@ import Foundation
     /// frame the SDK's own cover shows during its present transition. Hosts that just
     /// want a fire-and-forget presentation should keep using the `.kovaleePaywall`
     /// modifier, which wraps this view in a `fullScreenCover`.
+    ///
+    /// - Note: Pass a **preloaded** `offering` so the paywall renders immediately.
+    ///   Resolving the offering only once the user triggers the paywall makes the
+    ///   presentation wait on the fetch.
     public struct KovaleePaywallView: View {
         private let offering: Offering?
         private let source: String
@@ -239,9 +243,23 @@ import Foundation
         ///   `onPurchaseCompleted` — that would double-count the purchase on every ad
         ///   platform.
         ///
+        /// - Important: This presents the paywall in its **own** `fullScreenCover`. Do
+        ///   NOT wrap it in another `fullScreenCover`/`sheet` — two stacked covers leave
+        ///   a black backdrop visible behind the paywall and destabilise the StoreKit
+        ///   purchase flow (the paywall can re-present mid-payment). Apply it directly on
+        ///   content. If the host must own the presentation, render ``KovaleePaywallView``
+        ///   inline instead.
+        ///
+        /// - Note: Pass a **preloaded** `offering` — resolve/fetch it ahead of time (e.g.
+        ///   when the screen appears), not in response to the tap. RevenueCat caches
+        ///   offerings after the first fetch, so presenting with an already-resolved
+        ///   offering keeps the trigger instant; resolving on-tap makes it feel
+        ///   unresponsive while the fetch is in flight.
+        ///
         /// - Parameters:
         ///   - isPresented: binding that shows/hides the paywall
-        ///   - offering: explicit offering to render; `nil` uses the current offering
+        ///   - offering: explicit offering to render; `nil` uses the current offering.
+        ///     Prefer a preloaded offering (see the responsiveness note above)
         ///   - source: analytics source (e.g. "progress", "onboarding")
         ///   - onPurchaseCompleted: optional hook after a successful purchase
         ///   - onDismiss: optional hook when the paywall dismisses; `Bool` = unlocked
