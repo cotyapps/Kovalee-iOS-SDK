@@ -53,6 +53,22 @@ import KovaleeFramework
             // Firebase Analytics has no public flush API; events are dispatched on its own schedule.
         }
 
+        func logPurchase(value: Double, currency: String, productId: String, transactionId: String?) {
+            // GA4 standard ecommerce `purchase` event — powers GA4 revenue reporting and
+            // Google Ads value-based bidding. (`in_app_purchase` is reserved; `purchase` is the
+            // recommended revenue event.)
+            var parameters: [String: Any] = [
+                AnalyticsParameterValue: value,
+                AnalyticsParameterCurrency: currency,
+                AnalyticsParameterItems: [[AnalyticsParameterItemID: productId]],
+            ]
+            if let transactionId {
+                parameters[AnalyticsParameterTransactionID] = transactionId
+            }
+            Analytics.logEvent(AnalyticsEventPurchase, parameters: parameters)
+            KLogger.debug("Firebase: logged purchase \(value) \(currency) for \(productId)")
+        }
+
         func getUserId() -> String? { nil }
         func getDeviceId() -> String? { nil }
     }

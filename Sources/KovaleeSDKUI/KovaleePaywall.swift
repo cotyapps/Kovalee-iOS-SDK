@@ -1,0 +1,283 @@
+import Foundation
+#if os(iOS)
+    import KovaleeAttribution
+    import KovaleeFramework
+    import KovaleePurchases
+    import KovaleeSDK
+    import RevenueCat
+    import RevenueCatUI
+    import SwiftUI
+
+    // MARK: - Conversion mapping
+
+    /// Maps a purchased RevenueCat package onto the SDK's unified purchase-conversion
+    /// dispatch (TikTok + Firebase revenue). Shared by the paywall wrapper
+    /// and the subscription-upsell presenter so both fire identical conversions.
+    enum PaywallConversionTracker {
+        static func duration(_ package: Package) -> KovaleeSDK.Duration {
+            switch package.storeProduct.subscriptionPeriod?.unit {
+            case .day?: return .day
+            case .week?: return .week
+            case .month?: return .month
+            default: return .year
+            }
+        }
+
+        /// Fires the value-carrying conversion dispatch (TikTok + Firebase)
+        /// for a completed purchase. Delegates to the canonical package→conversion
+        /// mapping in KovaleePurchases; the transaction (when available) supplies the
+        /// GA4 dedup id and the transaction-level free-trial truth.
+        @MainActor
+        static func track(package: Package, transaction: StoreTransaction? = nil) {
+            Kovalee.trackSubscriptionConversion(package: package, transaction: transaction)
+        }
+    }
+
+    // MARK: - Paywall wrapper
+
+    /// Reference capture so the value-type purchase callbacks can share the package
+    /// observed at purchase-start (needed to fire value-carrying conversions on
+    /// completion — RevenueCatUI's `onPurchaseCompleted` gives only `CustomerInfo`).
+    @MainActor
+    private final class KovaleePaywallSignal {
+        var purchasedPackage: Package?
+        /// Entitlements active when a restore started, so completion can tell a real
+        /// recovery from a no-op restore (see RestoreDetection).
+        var entitlementsBeforeRestore: Set<String> = []
+
+        func reset() {
+            purchasedPackage = nil
+            entitlementsBeforeRestore = []
+        }
+    }
+
+    /// The Kovalee-instrumented RevenueCat paywall rendered **inline**, with no
+    /// presentation of its own. Fires all Kovalee purchase tracking (identical to
+    /// ``kovaleePaywall(isPresented:offering:source:onPurchaseCompleted:onDismiss:)``)
+    /// and reports through `onDismiss` when the paywall should be taken down.
+    ///
+    /// Use this when the host **already owns a presentation** (e.g. its own
+    /// `fullScreenCover` shown with a loading state while the offering resolves), so the
+    /// paywall renders into an already-visible container — avoiding the brief black
+    /// frame the SDK's own cover shows during its present transition. Hosts that just
+    /// want a fire-and-forget presentation should keep using the `.kovaleePaywall`
+    /// modifier, which wraps this view in a `fullScreenCover`.
+    ///
+    /// - Note: Pass a **preloaded** `offering` so the paywall renders immediately.
+    ///   Resolving the offering only once the user triggers the paywall makes the
+    ///   presentation wait on the fetch.
+    public struct KovaleePaywallView: View {
+        private let offering: Offering?
+        private let source: String
+        private let onPurchaseCompleted: ((CustomerInfo) -> Void)?
+        /// Called when the paywall should be dismissed by the host. `Bool` = unlocked
+        /// (purchased or restore recovered an entitlement); `false` on user dismissal.
+        private let onDismiss: ((Bool) -> Void)?
+
+        @State private var signal = KovaleePaywallSignal()
+
+        public init(
+            offering: Offering? = nil,
+            source: String,
+            onPurchaseCompleted: ((CustomerInfo) -> Void)? = nil,
+            onDismiss: ((Bool) -> Void)? = nil
+        ) {
+            self.offering = offering
+            self.source = source
+            self.onPurchaseCompleted = onPurchaseCompleted
+            self.onDismiss = onDismiss
+        }
+
+        public var body: some View {
+            Group {
+                if let offering {
+                    PaywallView(offering: offering)
+                } else {
+                    PaywallView()
+                }
+            }
+            .onAppear {
+                signal.reset()
+                Kovalee.sendEvent(event: BasicEvent.pageViewPaywall(source: source))
+                // A remote-paywall purchase bypasses `Kovalee.purchase()`, so the
+                // framework never sets the RevenueCat `$amplitudeUserId` attribute that
+                // links RC→Amplitude purchase webhooks to the right user. Ensure it
+                // exists now, before any purchase can complete.
+                Task { await Self.ensureAmplitudeUserId() }
+            }
+            .onPurchaseStarted { package in
+                signal.purchasedPackage = package
+                Kovalee.startedPurchasing(
+                    subscriptionWithProductId: package.storeProduct.productIdentifier,
+                    fromSource: source
+                )
+            }
+            .onPurchaseCompleted { (transaction: StoreTransaction?, customerInfo: CustomerInfo) in
+                if let package = signal.purchasedPackage {
+                    Kovalee.succesfullyPurchased(
+                        subscriptionWithProductId: package.storeProduct.productIdentifier,
+                        andDuration: PaywallConversionTracker.duration(package),
+                        fromSource: source
+                    )
+                    // The gap this whole wrapper exists to close: value-carrying
+                    // conversions (TikTok + Firebase) on a remote paywall.
+                    PaywallConversionTracker.track(package: package, transaction: transaction)
+                } else {
+                    // Purchase completed without an observed start (external/custom flow):
+                    // fire a best-effort finish and leave a trace — a silently missing
+                    // conversion is otherwise undiagnosable.
+                    let productId = transaction?.productIdentifier ?? customerInfo.activeSubscriptions.first
+                    if let productId {
+                        Kovalee.succesfullyPurchased(
+                            subscriptionWithProductId: productId,
+                            andDuration: .year,
+                            fromSource: source
+                        )
+                    }
+                    KLogger.warn("KovaleePaywall: purchase completed without a captured package — conversion skipped for \(productId ?? "unknown product")")
+                }
+                onPurchaseCompleted?(customerInfo)
+                onDismiss?(true)
+            }
+            .onPurchaseCancelled {
+                Kovalee.paymentCancelledForSubscription(fromSource: source)
+            }
+            .onPurchaseFailure { _ in
+                if let package = signal.purchasedPackage {
+                    Kovalee.paymentFailed(
+                        forSubscriptionWithId: package.storeProduct.productIdentifier,
+                        fromSource: source
+                    )
+                }
+            }
+            .onRestoreStarted {
+                signal.entitlementsBeforeRestore = RestoreDetection.activeEntitlementIDs()
+                Kovalee.paymentRestoreStart(fromSource: source)
+            }
+            .onRestoreCompleted { customerInfo in
+                // RevenueCatUI fires this callback even when there was nothing to
+                // restore — only report a successful restore (and unlock + dismiss)
+                // when the restore made an entitlement active that wasn't active
+                // before it started (a post-restore emptiness check would report
+                // every no-op restore as success for already-entitled users).
+                if RestoreDetection.recoveredAccess(before: signal.entitlementsBeforeRestore, after: customerInfo) {
+                    Kovalee.paymentRestored(fromSource: source)
+                    onDismiss?(true)
+                } else {
+                    KLogger.debug("KovaleePaywall: restore recovered no new entitlement — payment_restore not fired")
+                }
+            }
+            .onRestoreFailure { _ in
+                Kovalee.paymentRestoredFailed(fromSource: source)
+            }
+            .onRequestedDismissal {
+                onDismiss?(false)
+            }
+        }
+
+        /// Ensures a RevenueCat `$amplitudeUserId` subscriber attribute exists so
+        /// RC→Amplitude purchase webhooks attribute to the right user. No-op once an
+        /// Amplitude user id is present; otherwise seeds it from the Adjust adid (so it
+        /// aligns with attribution) or a random UUID as a last resort.
+        @MainActor
+        private static func ensureAmplitudeUserId() async {
+            guard Kovalee.getAmplitudeUserId() == nil else { return }
+            let adid = await Kovalee.getAttributionAdid() ?? UUID().uuidString
+            Kovalee.setAmplitudeUserId(userId: adid)
+        }
+    }
+
+    private struct KovaleePaywallModifier: ViewModifier {
+        @Binding var isPresented: Bool
+        let offering: Offering?
+        let source: String
+        let onPurchaseCompleted: ((CustomerInfo) -> Void)?
+        let onDismiss: ((Bool) -> Void)?
+
+        // Carries the outcome from the inline view's dismissal callback to the cover's
+        // `onDismiss`, so a straggling callback can never leak into the next presentation.
+        @State private var didUnlock = false
+
+        func body(content: Content) -> some View {
+            content.fullScreenCover(
+                isPresented: $isPresented,
+                onDismiss: {
+                    onDismiss?(didUnlock)
+                    didUnlock = false
+                }
+            ) {
+                KovaleePaywallView(
+                    offering: offering,
+                    source: source,
+                    onPurchaseCompleted: onPurchaseCompleted,
+                    onDismiss: { unlocked in
+                        didUnlock = unlocked
+                        isPresented = false
+                    }
+                )
+            }
+        }
+    }
+
+    public extension View {
+        /// Presents the app's RevenueCat paywall and fires **all** Kovalee purchase
+        /// tracking automatically: `page_view_paywall`, `payment_start`/`finish`/
+        /// `cancel`/`failure`/`restore` (incl. restore failure), **and the
+        /// value-carrying conversion dispatch (TikTok + Firebase
+        /// `purchase`)**.
+        ///
+        /// Use this instead of hand-wiring RevenueCatUI's `presentPaywallIfNeeded` /
+        /// `PaywallView`, so remote-paywall purchases fire conversions exactly like
+        /// native `Kovalee.purchase()` does. Gate `isPresented` on `!isUserPremium`
+        /// at the call site as before.
+        ///
+        /// On presentation the wrapper also ensures the RevenueCat `$amplitudeUserId`
+        /// attribute exists (seeded from the Adjust adid, else a UUID), so RC→Amplitude
+        /// purchase webhooks attribute correctly — callers no longer need to do this.
+        ///
+        /// A successful restore that recovers an entitlement dismisses the paywall and
+        /// reports `true` to `onDismiss`, same as a purchase.
+        ///
+        /// - Important: The wrapper already fires the conversion dispatch. Do NOT also
+        ///   call `Kovalee.trackSubscriptionConversion(package:transaction:)` from your
+        ///   `onPurchaseCompleted` — that would double-count the purchase on every ad
+        ///   platform.
+        ///
+        /// - Important: This presents the paywall in its **own** `fullScreenCover`. Do
+        ///   NOT wrap it in another `fullScreenCover`/`sheet` — two stacked covers leave
+        ///   a black backdrop visible behind the paywall and destabilise the StoreKit
+        ///   purchase flow (the paywall can re-present mid-payment). Apply it directly on
+        ///   content. If the host must own the presentation, render ``KovaleePaywallView``
+        ///   inline instead.
+        ///
+        /// - Note: Pass a **preloaded** `offering` — resolve/fetch it ahead of time (e.g.
+        ///   when the screen appears), not in response to the tap. RevenueCat caches
+        ///   offerings after the first fetch, so presenting with an already-resolved
+        ///   offering keeps the trigger instant; resolving on-tap makes it feel
+        ///   unresponsive while the fetch is in flight.
+        ///
+        /// - Parameters:
+        ///   - isPresented: binding that shows/hides the paywall
+        ///   - offering: explicit offering to render; `nil` uses the current offering.
+        ///     Prefer a preloaded offering (see the responsiveness note above)
+        ///   - source: analytics source (e.g. "progress", "onboarding")
+        ///   - onPurchaseCompleted: optional hook after a successful purchase
+        ///   - onDismiss: optional hook when the paywall dismisses; `Bool` = unlocked
+        ///     (purchased or restored)
+        func kovaleePaywall(
+            isPresented: Binding<Bool>,
+            offering: Offering? = nil,
+            source: String,
+            onPurchaseCompleted: ((CustomerInfo) -> Void)? = nil,
+            onDismiss: ((Bool) -> Void)? = nil
+        ) -> some View {
+            modifier(KovaleePaywallModifier(
+                isPresented: isPresented,
+                offering: offering,
+                source: source,
+                onPurchaseCompleted: onPurchaseCompleted,
+                onDismiss: onDismiss
+            ))
+        }
+    }
+#endif

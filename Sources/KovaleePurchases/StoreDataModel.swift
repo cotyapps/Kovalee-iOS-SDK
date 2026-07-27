@@ -53,6 +53,14 @@ public final class KCustomerInfo: AbstractCustomerInfo, Encodable {
         !entitlements.active.isEmpty
     }
 
+    public var isInTrialPeriod: Bool {
+        entitlements.active.contains { $0.value.periodType == .trial }
+    }
+
+    public var nonSubscriptionProductIds: [String] {
+        nonSubscriptions.map(\.productIdentifier)
+    }
+
     init(info: RevenueCat.CustomerInfo) {
         entitlements = KEntitlementInfos(entitlements: info.entitlements)
         activeSubscriptions = info.activeSubscriptions
@@ -832,6 +840,7 @@ public struct KPurchaseResultData: AbstractPurchaseResultData, Encodable, Sendab
     public var priceDecimal: Decimal
     public var currencyCode: String?
     public var hasFreeTrial: Bool
+    public var subscriptionPeriodUnit: KPurchasePeriodUnit?
     /// Convenience accessor for the underlying StoreKit transaction identifier.
     public var transactionId: String? { transaction?.transactionIdentifier }
 }

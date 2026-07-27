@@ -11,9 +11,37 @@ extension TikTokManagerCreator: Creator {
             fatalError("No TikTok configuration found in KovaleeKeys.json")
         }
 
+        let debugMode = configuration.environment == .development
+        let appId = tiktokKeys.appId
+        let tiktokAppId = tiktokKeys.tiktokAppId
+        KovaleeDebugIntegrations.shared.register(KovaleeDebugIntegration(
+            id: "tiktok",
+            title: "TikTok",
+            fields: {
+                [
+                    KovaleeDebugIntegrationField("App ID", appId),
+                    KovaleeDebugIntegrationField("TikTok App ID", tiktokAppId),
+                    KovaleeDebugIntegrationField("SDK initialized", TikTokWrapperRef.shared.wrapper != nil ? "Yes" : "No"),
+                    KovaleeDebugIntegrationField("Debug mode", debugMode ? "On" : "Off"),
+                ]
+            },
+            actions: [
+                KovaleeDebugIntegrationAction("Send test event") {
+                    TikTokWrapperRef.shared.wrapper?.trackEvent(
+                        "kovalee_debug_ping",
+                        properties: ["source": "debug_menu"]
+                    )
+                    TikTokWrapperRef.shared.wrapper?.flush()
+                },
+                KovaleeDebugIntegrationAction("Flush events") {
+                    TikTokWrapperRef.shared.wrapper?.flush()
+                },
+            ]
+        ))
+
         return TikTokWrapperImpl(
             keys: tiktokKeys,
-            debugMode: configuration.environment == .development
+            debugMode: debugMode
         )
     }
 }

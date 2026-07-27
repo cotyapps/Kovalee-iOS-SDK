@@ -150,6 +150,44 @@ Kovalee.setTikTokTrackingEnabled(false)
 Kovalee.flushTikTokEvents()
 ```
 
+## RevenueCat Paywalls
+
+`KovaleeSDKUI` presents RevenueCat-hosted (remote) paywalls with **all Kovalee tracking wired automatically** — `page_view_paywall`, the full `payment_*` lifecycle (including restore failure), and the value-carrying ad-SDK conversions:
+
+```swift
+import KovaleeSDKUI
+import RevenueCat
+
+MainView()
+    .kovaleePaywall(
+        isPresented: $showPaywall,      // gate on !isUserPremium at the call site
+        offering: offering,              // nil → the RC "current" offering
+        source: "progress"
+    ) { customerInfo in
+        isUserPremium = true
+    } onDismiss: { unlocked in           // purchased OR restored an entitlement
+        if unlocked { isUserPremium = true }
+    }
+```
+
+The paywall renders the template configured for the offering in the RevenueCat dashboard, so design changes ship without app updates. Prefer this over hand-wiring RevenueCatUI's `presentPaywallIfNeeded` — hand-rolled callbacks historically missed the ad-SDK conversions entirely.
+
+Full guide — API, restore semantics, migration from hand-rolled paywalls: [Documentation/PAYWALLS.md](Documentation/PAYWALLS.md).
+
+## Purchase Conversion Tracking
+
+Every completed subscription purchase can fire **value-carrying conversion events** to TikTok (`StartTrial`/`Subscribe`) and Firebase (GA4 `purchase`, real charges only) — in one consent-gated dispatch, fired exactly once per purchase.
+
+A purchase must reach the dispatch through **exactly one** of:
+
+1. **Native purchases** — `Kovalee.purchase(...)` / `Kovalee.purchaseSubscription(...)` fire it automatically.
+2. **RevenueCat remote paywalls** — present them with the `.kovaleePaywall(isPresented:offering:source:)` modifier (KovaleeSDKUI); it wires `page_view_paywall`, the whole `payment_*` lifecycle, and the conversions automatically.
+3. **Custom RevenueCatUI wiring** — capture the package in `purchaseStarted`, then call `Kovalee.trackSubscriptionConversion(package:transaction:)` in `purchaseCompleted`.
+
+The Firebase `purchase` event requires `"analyticsEnabled": true` in the `firebase` block of `KovaleeKeys.json`.
+
+Full guide — events, per-sink requirements, pitfalls, and how to verify an integration: [Documentation/PURCHASE_TRACKING.md](Documentation/PURCHASE_TRACKING.md).
+
 ## Subscription Upsell
 
 KovaleeSDKUI ships a turnkey subscription-to-lifetime flow: detect an eligible subscription — a trial about to expire, or an established subscriber active past a threshold (see [Eligibility conditions](#eligibility-conditions)) → present a RevenueCat-hosted upsell paywall (typically lifetime) → on purchase, route the user to Apple's *Manage Subscriptions* sheet so they can turn off auto-renewal on the original subscription (Apple does not allow developer-side cancellation).

@@ -226,12 +226,20 @@ enum SubscriptionUpsellPresenter {
 			.onPurchaseStarted { package in
 				purchaseSignal.purchasedProductId = package.storeProduct.productIdentifier
 				purchaseSignal.purchasedDuration = durationOf(package)
+				purchaseSignal.purchasedPackage = package
 				Kovalee.startedPurchasing(subscriptionWithProductId: package.storeProduct.productIdentifier, fromSource: paymentSource)
 			}
-			.onPurchaseCompleted { _ in
+			.onPurchaseCompleted { (transaction: StoreTransaction?, _: CustomerInfo) in
 				purchaseSignal.didPurchase = true
 				if let productId = purchaseSignal.purchasedProductId {
 					Kovalee.succesfullyPurchased(subscriptionWithProductId: productId, andDuration: purchaseSignal.purchasedDuration ?? .year, fromSource: paymentSource)
+				}
+				// Value-carrying conversions (TikTok + Firebase) — the upsell
+				// paywall previously fired Amplitude only.
+				if let package = purchaseSignal.purchasedPackage {
+					PaywallConversionTracker.track(package: package, transaction: transaction)
+				} else {
+					KLogger.warn("SubscriptionUpsell: purchase completed without a captured package — conversion skipped")
 				}
 				SubscriptionUpsellAnalytics.purchased(in: analyticsContext)
 			}
@@ -242,6 +250,25 @@ enum SubscriptionUpsellPresenter {
 				if let productId = purchaseSignal.purchasedProductId {
 					Kovalee.paymentFailed(forSubscriptionWithId: productId, fromSource: paymentSource)
 				}
+			}
+			.onRestoreStarted {
+				purchaseSignal.entitlementsBeforeRestore = RestoreDetection.activeEntitlementIDs()
+				Kovalee.paymentRestoreStart(fromSource: paymentSource)
+			}
+			.onRestoreCompleted { customerInfo in
+				// RevenueCatUI fires this callback even when there was nothing to
+				// restore. The upsell is shown only to already-entitled users, so
+				// `entitlements.active` is non-empty regardless — report success
+				// only when the restore made an entitlement active that wasn't
+				// active before it started.
+				if RestoreDetection.recoveredAccess(before: purchaseSignal.entitlementsBeforeRestore, after: customerInfo) {
+					Kovalee.paymentRestored(fromSource: paymentSource)
+				} else {
+					KLogger.debug("SubscriptionUpsell: restore recovered no new entitlement — payment_restore not fired")
+				}
+			}
+			.onRestoreFailure { _ in
+				Kovalee.paymentRestoredFailed(fromSource: paymentSource)
 			}
 			.onRequestedDismissal {
 				purchaseSignal.requestDismiss?()
@@ -321,6 +348,11 @@ private final class PurchaseSignal {
 	var requestDismiss: (() -> Void)?
 	var purchasedProductId: String?
 	var purchasedDuration: KovaleeSDK.Duration?
+	var purchasedPackage: Package?
+	/// Entitlements active when a restore started, so completion can tell a real
+	/// recovery from a no-op restore (see RestoreDetection). The upsell is shown
+	/// only to already-entitled users, so this is normally non-empty.
+	var entitlementsBeforeRestore: Set<String> = []
 }
 
 

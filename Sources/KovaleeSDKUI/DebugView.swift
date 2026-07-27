@@ -97,6 +97,14 @@
                         Text("Purchases")
                     }
 
+                    Section {
+                        AdSDKIntegrationsView()
+                    } header: {
+                        Text("Ad SDK Integrations")
+                    } footer: {
+                        Text("Live status of the optional TikTok module.")
+                    }
+
                     if isDebugModeOn {
                         Section {
                             SubscriptionUpsellDebugView()
