@@ -261,7 +261,7 @@ extension UpsellPostPurchaseView {
 		analyticsContext: SubscriptionUpsellAnalytics.Context? = nil,
 		onDismiss: @escaping @MainActor () -> Void
 	) {
-		guard let topPresenter = Self.topPresenter else {
+		guard let topPresenter = TopPresenter.current else {
 			onDismiss()
 			return
 		}
@@ -275,23 +275,6 @@ extension UpsellPostPurchaseView {
 		)
 		host.modalPresentationStyle = .fullScreen
 		topPresenter.present(host, animated: true)
-	}
-
-
-	@MainActor
-	private static var topPresenter: UIViewController? {
-		let scene = UIApplication.shared.connectedScenes
-			.compactMap { $0 as? UIWindowScene }
-			.first { $0.activationState == .foregroundActive }
-			?? UIApplication.shared.connectedScenes
-				.compactMap { $0 as? UIWindowScene }
-				.first
-		guard let root = scene?.keyWindow?.rootViewController else { return nil }
-		var top = root
-		while let presented = top.presentedViewController {
-			top = presented
-		}
-		return top
 	}
 }
 #endif
