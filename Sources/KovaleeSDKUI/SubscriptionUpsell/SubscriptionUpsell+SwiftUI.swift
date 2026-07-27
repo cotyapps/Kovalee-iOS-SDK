@@ -1,7 +1,6 @@
 import Foundation
 #if os(iOS)
 import SwiftUI
-import UIKit
 
 public extension View {
 
@@ -39,26 +38,12 @@ private struct SubscriptionUpsellModifier: ViewModifier {
 		SubscriptionUpsellPresenter.run(
 			configuration: configuration,
 			present: { viewController in
-				guard let presenter = SubscriptionUpsellModifier.topPresenter else { return false }
+				guard let presenter = TopPresenter.current else { return false }
 				presenter.present(viewController, animated: true)
 				return true
 			},
 			onCompletion: onCompletion
 		)
-	}
-
-
-	@MainActor
-	private static var topPresenter: UIViewController? {
-		let scene = UIApplication.shared.connectedScenes
-			.compactMap { $0 as? UIWindowScene }
-			.first { $0.activationState == .foregroundActive }
-		guard let root = scene?.keyWindow?.rootViewController else { return nil }
-		var top = root
-		while let presented = top.presentedViewController {
-			top = presented
-		}
-		return top
 	}
 }
 #endif

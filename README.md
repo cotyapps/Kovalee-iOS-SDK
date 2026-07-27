@@ -268,6 +268,7 @@ The SDK's `DebugView` exposes a *Subscription Upsell* section (visible when **En
 - **Force Trigger on Launch** — behaves as if a matching trial entitlement existed, regardless of subscription state. Gated to debug/TestFlight builds.
 - **Reset Shown State** — clears the show-once flag so the flow can fire again.
 - **Preview Congrats Screen** — opens the post-purchase screen directly to validate theming.
+- **Present Paywall** — lists every RevenueCat offering (the active one marked *(current)*) and force-presents its upsell paywall immediately, bypassing eligibility and the show-once gate. Always shows a close button so the paywall is dismissable regardless of the offering's template.
 
 ### Outcomes
 
