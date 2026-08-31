@@ -189,6 +189,7 @@ struct PurchaseCVView: View {
         case .normal: return "Normal"
         case .intro: return "Intro"
         case .trial: return "Trial"
+        case .prepaid: return "Prepaid"
         }
     }
 

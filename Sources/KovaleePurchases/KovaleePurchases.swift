@@ -134,6 +134,116 @@ public extension Kovalee {
         }
     }
 
+    /// Retrieve the ``CustomerInfo`` for the current customer, choosing how fresh it must be.
+    ///
+    /// Use ``KCustomerInfoFetchPolicy/fetchCurrent`` when a stale answer would be wrong — for
+    /// example when deciding whether to warn about overlapping subscriptions, where cached data
+    /// can still show a subscription the user cancelled moments ago. It always hits the network,
+    /// so prefer the cached path for anything called on every view appearance.
+    ///
+    /// - Parameters:
+    ///    - fetchPolicy: how fresh the returned customer info must be
+    /// - Returns: current customer information
+    /// - Throws: if the SDK is not initialized, or if no customer info could be produced. States
+    ///   where ``customerInfo()`` returns `nil` surface here as errors, since the result is
+    ///   non-optional. For ``KCustomerInfoFetchPolicy/fetchCurrent``, also throws when the fetch
+    ///   fails — a failed forced fetch never falls back to cached data.
+    ///
+    /// - Note: ``KCustomerInfoFetchPolicy/cachedOrFetched`` throws `KovaleeError.userAlreadyInBundle`
+    ///   for users in a Kovalee bundle, exactly like ``customerInfo()``.
+    ///   ``KCustomerInfoFetchPolicy/fetchCurrent`` does **not** — it queries RevenueCat directly and
+    ///   returns the store's view of the customer regardless of bundle membership. It is a pure
+    ///   read: unlike the cached path, it does not update the `premium` user property.
+    static func customerInfo(fetchPolicy: KCustomerInfoFetchPolicy) async throws -> KCustomerInfo {
+        guard shared.kovaleeManager != nil else {
+            throw PurchaseError.initializationProblem
+        }
+
+        switch fetchPolicy {
+        case .cachedOrFetched:
+            // Same call as the no-argument `customerInfo()`; the one contract difference at this
+            // signature is that a `nil` result becomes an error, because the return is non-optional.
+            guard let info = try await Self.customerInfo() else {
+                throw PurchaseError.rcNotYetInitialized
+            }
+            return info
+
+        case .fetchCurrent:
+            guard Purchases.isConfigured else {
+                throw PurchaseError.rcNotYetInitialized
+            }
+            // Pure read — deliberately no `setIsUserPremium` mirror. The manager only mirrors
+            // premium status for non-bundle users (its bundle check isn't readable from here),
+            // and a bundle user's premium comes from another Kovalee app: mirroring this app's
+            // store-only view would flip their `premium` property to "no".
+            return KCustomerInfo(info: try await Purchases.shared.customerInfo(fetchPolicy: .fetchCurrent))
+        }
+    }
+
+    /// Retrieve the ``CustomerInfo`` for the current customer, choosing how fresh it must be.
+    ///
+    /// - Parameters:
+    ///    - fetchPolicy: how fresh the returned customer info must be
+    ///    - completion: current customer information
+    static func customerInfo(
+        fetchPolicy: KCustomerInfoFetchPolicy,
+        withCompletion completion: @escaping @Sendable (Result<KCustomerInfo, Error>) -> Void
+    ) {
+        Task { @Sendable in
+            do {
+                let result = try await Self.customerInfo(fetchPolicy: fetchPolicy)
+                DispatchQueue.main.async {
+                    completion(Result.success(result))
+                }
+            } catch {
+                DispatchQueue.main.async {
+                    completion(Result.failure(error))
+                }
+            }
+        }
+    }
+
+    /// Look up store products by identifier, independently of the configured offerings.
+    ///
+    /// Products a customer already owns are frequently absent from every current offering —
+    /// grandfathered price points, retired products, or products belonging to another offering.
+    /// This resolves them straight from StoreKit so their title, price and subscription group are
+    /// available for display.
+    ///
+    /// - Parameters:
+    ///    - productIdentifiers: the product identifiers to resolve
+    /// - Returns: the products that resolved, in no guaranteed order. Identifiers that do not
+    ///   resolve are omitted; note this does not distinguish an unknown product from a failed
+    ///   StoreKit request, so an empty result is not proof the identifiers are invalid.
+    static func products(productIdentifiers: [String]) async -> [KStoreProduct] {
+        guard Purchases.isConfigured else {
+            KLogger.debug("🛍️ Cannot fetch products: RevenueCat is not configured yet")
+            return []
+        }
+
+        let products = await Purchases.shared.products(productIdentifiers)
+        KLogger.debug("🛍️ Resolved \(products.count)/\(productIdentifiers.count) requested products")
+
+        return products.map { KStoreProduct($0) }
+    }
+
+    /// Look up store products by identifier, independently of the configured offerings.
+    ///
+    /// - Parameters:
+    ///    - productIdentifiers: the product identifiers to resolve
+    ///    - completion: the products that resolved
+    static func products(
+        productIdentifiers: [String],
+        withCompletion completion: @escaping @Sendable ([KStoreProduct]) -> Void
+    ) {
+        Task { @Sendable in
+            let result = await Self.products(productIdentifiers: productIdentifiers)
+            DispatchQueue.main.async {
+                completion(result)
+            }
+        }
+    }
+
     /// Cancel Web Subscription for the current user will only works if user has an active Stripe subscription
     ///
     static func cancelStripeSubscription() async throws -> Bool {
@@ -509,6 +619,16 @@ public extension Kovalee {
     static func setPurchasesDelegate(_ delegate: KovaleePurchasesDelegate) {
         shared.kovaleeManager?.setPurchaseDelegate(delegate)
     }
+}
+
+/// How fresh ``Kovalee/customerInfo(fetchPolicy:)`` requires its customer info to be.
+public enum KCustomerInfoFetchPolicy: Sendable {
+    /// Returns cached data if available (even if stale), otherwise fetches. RevenueCat's default,
+    /// and the behavior of the no-argument ``Kovalee/customerInfo()``.
+    case cachedOrFetched
+
+    /// Always fetches up-to-date data, and fails rather than returning stale data.
+    case fetchCurrent
 }
 
 // MARK: - Bundle

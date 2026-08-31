@@ -25,6 +25,14 @@ public final class KCustomerInfo: AbstractCustomerInfo, Encodable {
     /// Returns all the non-subscription purchases a user has made.
     public let nonSubscriptions: [KNonSubscriptionTransaction]
 
+    /// Every subscription record the customer has, keyed by product identifier.
+    ///
+    /// Unlike ``entitlements``, this is *not* collapsed per entitlement: RevenueCat resolves each
+    /// entitlement to a single winning product, so two products granting the same entitlement
+    /// surface as one ``KEntitlementInfo``. This dictionary keeps both records, which is what makes
+    /// overlapping subscriptions (double billing, or a lifetime alongside a subscription) detectable.
+    public let subscriptionsByProductIdentifier: [String: KSubscriptionInfo]
+
     /// Returns the fetch date of this CustomerInfo.
     public let requestDate: Date
 
@@ -67,6 +75,8 @@ public final class KCustomerInfo: AbstractCustomerInfo, Encodable {
         allPurchasedProductIdentifiers = info.allPurchasedProductIdentifiers
         latestExpirationDate = info.latestExpirationDate
         nonSubscriptions = info.nonSubscriptions.map { KNonSubscriptionTransaction(transaction: $0) }
+        subscriptionsByProductIdentifier = info.subscriptionsByProductIdentifier
+            .mapValues { KSubscriptionInfo(info: $0) }
         requestDate = info.requestDate
         firstSeen = info.firstSeen
         originalAppUserId = info.originalAppUserId
@@ -84,6 +94,12 @@ public final class KEntitlementInfos: NSObject, Encodable, Sendable {
      */
     public let all: [String: KEntitlementInfo]
 
+    /// Whether these entitlements were verified against RevenueCat's signature.
+    ///
+    /// RevenueCat runs in `.informational` verification mode by default, so this reports a real
+    /// result rather than always being ``KVerificationResult/notRequested``.
+    public let verification: KVerificationResult
+
     public subscript(key: String) -> KEntitlementInfo? {
         return all[key]
     }
@@ -92,6 +108,9 @@ public final class KEntitlementInfos: NSObject, Encodable, Sendable {
         all = entitlements.all.reduce(into: [String: KEntitlementInfo]()) { all, entitlement in
             all[entitlement.key] = KEntitlementInfo(info: entitlement.value)
         }
+        // Falls back to `.notRequested` for cases added by future RevenueCat versions: a downgrade
+        // loses detail but never claims verification that did not happen.
+        verification = KVerificationResult(rawValue: entitlements.verification.rawValue) ?? .notRequested
     }
 }
 
@@ -201,10 +220,18 @@ public final class KNonSubscriptionTransaction: NSObject, Encodable, Sendable {
     /// The unique identifier for the transaction.
     public let transactionIdentifier: String
 
+    /// The store where this purchase was made.
+    public let store: KStore
+
+    /// False if this purchase was made in a production environment.
+    public let isSandbox: Bool
+
     init(transaction: RevenueCat.NonSubscriptionTransaction) {
         productIdentifier = transaction.productIdentifier
         purchaseDate = transaction.purchaseDate
         transactionIdentifier = transaction.transactionIdentifier
+        store = KStore(rawValue: transaction.store.rawValue) ?? .unknownStore
+        isSandbox = transaction.isSandbox
     }
 }
 
@@ -217,6 +244,9 @@ public enum KPeriodType: Int, Encodable, Sendable {
 
     /// If the entitlement is under a trial period.
     case trial = 2
+
+    /// If the entitlement is under a prepaid period (Google Play prepaid plans).
+    case prepaid = 3
 }
 
 public enum KPurchaseOwnershipType: Int, Encodable, Sendable {
@@ -251,6 +281,82 @@ public enum KStore: Int, Encodable, Sendable {
 
     /// For entitlements granted via RevenueCat's External Purchases API.
     case external = 8
+
+    /// For entitlements granted via Paddle.
+    case paddle = 9
+
+    /// For entitlements granted via a StoreKit configuration file (local testing / previews).
+    case testStore = 10
+
+    /// For entitlements granted via the Samsung Galaxy Store.
+    case galaxy = 11
+}
+
+/// Whether a ``KEntitlementInfos`` payload was verified against RevenueCat's signature.
+///
+/// Raw values mirror `RevenueCat.VerificationResult` exactly. Note the ordering is *not*
+/// sequential — `verifiedOnDevice` was added after `failed` — so these must not be renumbered.
+public enum KVerificationResult: Int, Encodable, Sendable {
+    /// No verification was requested.
+    case notRequested = 0
+
+    /// Verification succeeded on RevenueCat's servers.
+    case verified = 1
+
+    /// Verification failed. The data may have been tampered with.
+    case failed = 2
+
+    /// Verification succeeded on device.
+    case verifiedOnDevice = 3
+}
+
+/// A single subscription record, as reported by RevenueCat for one product identifier.
+///
+/// Sourced from ``KCustomerInfo/subscriptionsByProductIdentifier``, which preserves one entry per
+/// product rather than collapsing per entitlement.
+public struct KSubscriptionInfo: Encodable, Sendable {
+    /// Whether the subscription is currently active.
+    public let isActive: Bool
+
+    /// Whether the subscription will renew at the next billing period.
+    ///
+    /// A second active subscription with `willRenew == false` is already cancelled and simply
+    /// running out its term — worth distinguishing from one that is genuinely double-billing.
+    public let willRenew: Bool
+
+    /// The store where this subscription was purchased.
+    public let store: KStore
+
+    /// How the customer got access — a `familyShared` subscription was not paid for twice.
+    public let ownershipType: KPurchaseOwnershipType
+
+    /// The date RevenueCat detected a refund of this subscription, if any.
+    public let refundedAt: Date?
+
+    /// False if this subscription was purchased in a production environment.
+    public let isSandbox: Bool
+
+    /// The date this subscription expires or expired. `nil` for subscriptions that never expire.
+    public let expiresDate: Date?
+
+    /// The current period type — a subscription still in ``KPeriodType/trial`` can be cancelled
+    /// free of charge, which usually calls for different messaging.
+    public let periodType: KPeriodType?
+
+    /// The date the last subscription period started.
+    public let purchaseDate: Date
+
+    init(info: RevenueCat.SubscriptionInfo) {
+        isActive = info.isActive
+        willRenew = info.willRenew
+        store = KStore(rawValue: info.store.rawValue) ?? .unknownStore
+        ownershipType = KPurchaseOwnershipType(rawValue: info.ownershipType.rawValue) ?? .unknown
+        refundedAt = info.refundedAt
+        isSandbox = info.isSandbox
+        expiresDate = info.expiresDate
+        periodType = KPeriodType(rawValue: info.periodType.rawValue)
+        purchaseDate = info.purchaseDate
+    }
 }
 
 public class KProduct: Encodable {

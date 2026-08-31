@@ -27,7 +27,7 @@ It's part of a broader project KovaleeSDK
 
   spec.dependency 'KovaleeSDK'
   spec.dependency "KovaleeRemoteConfig"
-  spec.dependency "RevenueCat", '>= 5.0.0'
+  spec.dependency "RevenueCat", '>= 5.25.3'
 
   spec.static_framework = true
 end
