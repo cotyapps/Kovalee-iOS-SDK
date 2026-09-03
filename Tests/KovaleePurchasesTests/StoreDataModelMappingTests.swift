@@ -47,7 +47,10 @@ final class StoreDataModelMappingTests: XCTestCase {
                     isSandbox: true,
                     ownershipType: "FAMILY_SHARED",
                     periodType: "trial",
-                    refundedAt: "2026-05-01T00:00:00Z"
+                    unsubscribeDetectedAt: "2026-04-01T00:00:00Z",
+                    billingIssuesDetectedAt: "2026-04-15T00:00:00Z",
+                    refundedAt: "2026-05-01T00:00:00Z",
+                    price: (currency: "EUR", amount: 12.99)
                 ),
             ]
         )
@@ -61,6 +64,75 @@ final class StoreDataModelMappingTests: XCTestCase {
         XCTAssertEqual(subscription.refundedAt, ISO8601DateFormatter().date(from: "2026-05-01T00:00:00Z"))
         XCTAssertEqual(subscription.expiresDate, ISO8601DateFormatter().date(from: "2100-03-14T09:00:00Z"))
         XCTAssertEqual(subscription.purchaseDate, ISO8601DateFormatter().date(from: "2026-02-14T09:00:00Z"))
+        XCTAssertEqual(subscription.unsubscribeDetectedAt, ISO8601DateFormatter().date(from: "2026-04-01T00:00:00Z"))
+        XCTAssertEqual(subscription.billingIssuesDetectedAt, ISO8601DateFormatter().date(from: "2026-04-15T00:00:00Z"))
+        XCTAssertEqual(subscription.price?.amount, 12.99)
+        XCTAssertEqual(subscription.price?.currency, "EUR")
+    }
+
+    /// A missing price must stay `nil` — not become zero or a store-product price.
+    func testMissingPaidPriceStaysNil() throws {
+        let json = CustomerInfoFixture.response(
+            subscriptions: ["monthly.sub": CustomerInfoFixture.subscription()]
+        )
+        let info = KCustomerInfo(info: try CustomerInfoFixture.customerInfo(json: json))
+
+        XCTAssertNil(info.subscriptionsByProductIdentifier["monthly.sub"]?.price)
+    }
+
+    /// An unrecognised currency code passes through without validation or coercion.
+    func testInvalidCurrencyIsPreservedNotCoerced() throws {
+        let json = CustomerInfoFixture.response(
+            subscriptions: [
+                "monthly.sub": CustomerInfoFixture.subscription(price: (currency: "NOT_A_CODE", amount: 5)),
+            ]
+        )
+        let info = KCustomerInfo(info: try CustomerInfoFixture.customerInfo(json: json))
+
+        XCTAssertEqual(info.subscriptionsByProductIdentifier["monthly.sub"]?.price?.currency, "NOT_A_CODE")
+        XCTAssertEqual(info.subscriptionsByProductIdentifier["monthly.sub"]?.price?.amount, 5)
+    }
+
+    func testFormattedPriceUsesCurrencyStyle() throws {
+        let json = CustomerInfoFixture.response(
+            subscriptions: [
+                "monthly.sub": CustomerInfoFixture.subscription(price: (currency: "USD", amount: 3.99)),
+            ]
+        )
+        let info = KCustomerInfo(info: try CustomerInfoFixture.customerInfo(json: json))
+        let price = try XCTUnwrap(info.subscriptionsByProductIdentifier["monthly.sub"]?.price)
+
+        XCTAssertEqual(price.formatted(locale: Locale(identifier: "en_US")), "$3.99")
+    }
+
+    /// The distinction Grit needs: `willRenew == false` alone cannot say *why* — these two dates can.
+    func testCancellationAndBillingIssueAreDistinguishable() throws {
+        let json = CustomerInfoFixture.response(
+            subscriptions: [
+                "cancelled.sub": CustomerInfoFixture.subscription(
+                    unsubscribeDetectedAt: "2026-05-01T00:00:00Z"
+                ),
+                "billing.sub": CustomerInfoFixture.subscription(
+                    billingIssuesDetectedAt: "2026-05-01T00:00:00Z"
+                ),
+            ]
+        )
+        let info = KCustomerInfo(info: try CustomerInfoFixture.customerInfo(json: json))
+        let cancelled = try XCTUnwrap(info.subscriptionsByProductIdentifier["cancelled.sub"])
+        let billing = try XCTUnwrap(info.subscriptionsByProductIdentifier["billing.sub"])
+
+        XCTAssertNotNil(cancelled.unsubscribeDetectedAt)
+        XCTAssertNil(cancelled.billingIssuesDetectedAt)
+        XCTAssertNil(billing.unsubscribeDetectedAt)
+        XCTAssertNotNil(billing.billingIssuesDetectedAt)
+    }
+
+    /// Without a configured RevenueCat instance (tests, previews) the environment flag must be a
+    /// safe `false`, never a crash from touching `Purchases.shared`.
+    func testEnvironmentIsSandboxIsFalseWhenRevenueCatUnconfigured() throws {
+        let info = KCustomerInfo(info: try CustomerInfoFixture.customerInfo(json: CustomerInfoFixture.response()))
+
+        XCTAssertFalse(info.isSandbox)
     }
 
     /// A second subscription that is already cancelled is not double billing — it is simply running

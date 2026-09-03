@@ -57,6 +57,15 @@ public final class KCustomerInfo: AbstractCustomerInfo, Encodable {
      */
     public let originalPurchaseDate: Date?
 
+    /// Whether the app is running against the sandbox store environment.
+    ///
+    /// Sourced from RevenueCat's runtime environment detector — independent of the per-record
+    /// `isSandbox` flags on subscriptions and transactions, which describe where each purchase was
+    /// originally made. Returns `false` when RevenueCat is not configured (unit tests, previews).
+    public var isSandbox: Bool {
+        Purchases.isConfigured ? Purchases.shared.isSandbox : false
+    }
+
     public var activeEntitlements: Bool {
         !entitlements.active.isEmpty
     }
@@ -346,6 +355,22 @@ public struct KSubscriptionInfo: Encodable, Sendable {
     /// The date the last subscription period started.
     public let purchaseDate: Date
 
+    /// The price actually paid for this subscription, as reported by RevenueCat.
+    ///
+    /// `nil` when RevenueCat has no price on record (e.g. promotional grants, family-shared
+    /// access, or older receipts). Not a substitute for store-product pricing and vice versa:
+    /// this is what *was paid*, not the product's current price.
+    public let price: KProductPaidPrice?
+
+    /// The date RevenueCat detected that auto-renewal was turned off, if any.
+    ///
+    /// `willRenew == false` alone cannot distinguish a user cancellation from a billing problem —
+    /// check this and ``billingIssuesDetectedAt`` to tell them apart.
+    public let unsubscribeDetectedAt: Date?
+
+    /// The date RevenueCat detected a billing issue, if any. Reset to `nil` once resolved.
+    public let billingIssuesDetectedAt: Date?
+
     init(info: RevenueCat.SubscriptionInfo) {
         isActive = info.isActive
         willRenew = info.willRenew
@@ -356,6 +381,39 @@ public struct KSubscriptionInfo: Encodable, Sendable {
         expiresDate = info.expiresDate
         periodType = KPeriodType(rawValue: info.periodType.rawValue)
         purchaseDate = info.purchaseDate
+        price = info.price.map { KProductPaidPrice($0) }
+        unsubscribeDetectedAt = info.unsubscribeDetectedAt
+        billingIssuesDetectedAt = info.billingIssuesDetectedAt
+    }
+}
+
+/// The price paid for a purchase — amount and currency exactly as RevenueCat reports them.
+public struct KProductPaidPrice: Encodable, Sendable {
+    /// Amount paid, in ``currency``.
+    public let amount: Double
+
+    /// ISO 4217 currency code of ``amount``, passed through without validation.
+    public let currency: String
+
+    /// The price formatted for display in the current locale, e.g. "$3.99".
+    ///
+    /// Computed locally: RevenueCat's own `formatted` property does not exist on the oldest
+    /// RevenueCat this package supports (5.25.3).
+    public var formatted: String {
+        formatted(locale: .current)
+    }
+
+    func formatted(locale: Locale) -> String {
+        let formatter = NumberFormatter()
+        formatter.numberStyle = .currency
+        formatter.currencyCode = currency
+        formatter.locale = locale
+        return formatter.string(from: NSNumber(value: amount)) ?? "\(amount) \(currency)"
+    }
+
+    init(_ price: RevenueCat.ProductPaidPrice) {
+        amount = price.amount
+        currency = price.currency
     }
 }
 

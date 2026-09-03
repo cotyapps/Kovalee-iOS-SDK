@@ -38,7 +38,9 @@ enum CustomerInfoFixture {
         ownershipType: String = "PURCHASED",
         periodType: String = "normal",
         unsubscribeDetectedAt: String? = nil,
-        refundedAt: String? = nil
+        billingIssuesDetectedAt: String? = nil,
+        refundedAt: String? = nil,
+        price: (currency: String, amount: Double)? = nil
     ) -> String {
         var fields: [String] = [
             "\"purchase_date\": \"\(purchaseDate)\"",
@@ -50,7 +52,11 @@ enum CustomerInfoFixture {
         ]
         fields.append("\"expires_date\": \(expiresDate.map { "\"\($0)\"" } ?? "null")")
         fields.append("\"unsubscribe_detected_at\": \(unsubscribeDetectedAt.map { "\"\($0)\"" } ?? "null")")
+        fields.append("\"billing_issues_detected_at\": \(billingIssuesDetectedAt.map { "\"\($0)\"" } ?? "null")")
         fields.append("\"refunded_at\": \(refundedAt.map { "\"\($0)\"" } ?? "null")")
+        if let price {
+            fields.append("\"price\": {\"currency\": \"\(price.currency)\", \"amount\": \(price.amount)}")
+        }
         return "{\(fields.joined(separator: ", "))}"
     }
 
