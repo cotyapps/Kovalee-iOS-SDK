@@ -40,8 +40,20 @@ final class TikTokWrapperRef: @unchecked Sendable {
             }
 
             config.disableRetentionTracking()
-            config.disablePaymentTracking()
             config.disableAutoEnhancedDataPostbackEvent()
+
+            // Adjust owns SKAdNetwork conversion values on every app in the fleet.
+            // Only one SDK may update them, so TikTok must stay out of it.
+            config.disableSKAdNetworkSupport()
+
+            // Automatic StoreKit purchase tracking. The local flag is only an intent
+            // signal: at init the SDK overwrites `paymentTrackingEnabled` with
+            // `auto_track_Payment_enable` from TikTok's per-app remote config
+            // (see TikTokBusiness.m, getGlobalConfig), so disabling it here does not
+            // reliably stop the observer. Kept off while we confirm with TikTok how
+            // their automatic Purchase events are deduplicated against the Adjust
+            // postbacks that already carry our purchases.
+            config.disablePaymentTracking()
 
             if debugMode {
                 config.enableDebugMode()
@@ -121,6 +133,7 @@ final class TikTokWrapperRef: @unchecked Sendable {
                 eventId: transactionId ?? UUID().uuidString
             )
             event.addProperty(withKey: "content_id", value: productId)
+            event.addProperty(withKey: "content_type", value: "product")
             event.addProperty(withKey: "value", value: value)
             event.addProperty(withKey: "currency", value: currency)
             TikTokBusiness.trackTTEvent(event)
