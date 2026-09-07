@@ -52,7 +52,7 @@ let package = Package(
         .package(url: "https://github.com/firebase/firebase-ios-sdk.git", .upToNextMajor(from: "12.6.0")),
         .package(url: "https://github.com/RevenueCat/purchases-ios-spm.git", .upToNextMajor(from: "5.0.0")),
         .package(url: "https://github.com/adjust/ios_sdk", .upToNextMajor(from: "5.0.0")),
-        .package(url: "https://github.com/tiktok/tiktok-business-ios-sdk", .upToNextMajor(from: "1.6.0")),
+        .package(url: "https://github.com/tiktok/tiktok-business-ios-sdk", .upToNextMajor(from: "1.7.2")),
     ],
     targets: [
         .binaryTarget(
