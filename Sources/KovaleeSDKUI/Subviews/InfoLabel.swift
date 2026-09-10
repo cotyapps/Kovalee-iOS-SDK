@@ -1,4 +1,4 @@
-#if os(iOS)
+#if os(iOS) || os(visionOS)
     import SwiftUI
 
     @available(iOS 16.0, *)
@@ -31,7 +31,9 @@
 
         private var copyButton: some View {
             Button {
-                UIImpactFeedbackGenerator(style: .light).impactOccurred()
+                #if os(iOS)
+                    UIImpactFeedbackGenerator(style: .light).impactOccurred()
+                #endif
                 UIPasteboard.general.string = value
             } label: {
                 Image(systemName: "document.on.document")

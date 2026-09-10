@@ -1,4 +1,4 @@
-#if os(iOS)
+#if os(iOS) || os(visionOS)
 import KovaleePurchases
 import KovaleeSDK
 import SwiftUI

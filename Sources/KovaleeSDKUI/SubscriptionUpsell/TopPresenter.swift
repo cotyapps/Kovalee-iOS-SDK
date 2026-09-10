@@ -1,5 +1,5 @@
 import Foundation
-#if os(iOS)
+#if os(iOS) || os(visionOS)
 import UIKit
 
 /// Resolves the top-most view controller to present from, so the upsell flow

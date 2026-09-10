@@ -1,4 +1,4 @@
-#if os(iOS)
+#if os(iOS) || os(visionOS)
     import SwiftUI
 
     extension Color {
@@ -49,11 +49,16 @@
         /// falling back to a tinted system fill on earlier versions.
         @ViewBuilder
         func debugGlassCircle() -> some View {
-            if #available(iOS 26.0, *) {
-                glassEffect(.regular.interactive(), in: .circle)
-            } else {
+            #if os(visionOS)
+                // visionOS renders its own glass materials; `glassEffect` is unavailable.
                 background(Circle().fill(Color(.tertiarySystemFill)))
-            }
+            #else
+                if #available(iOS 26.0, *) {
+                    glassEffect(.regular.interactive(), in: .circle)
+                } else {
+                    background(Circle().fill(Color(.tertiarySystemFill)))
+                }
+            #endif
         }
     }
 #endif

@@ -1,4 +1,4 @@
-#if os(iOS)
+#if os(iOS) || os(visionOS)
     import KovaleeSDK
     import SwiftUI
 
@@ -102,7 +102,9 @@
 
                 retrieveValues()
             }
-            UIImpactFeedbackGenerator(style: .medium).impactOccurred()
+            #if os(iOS)
+                UIImpactFeedbackGenerator(style: .medium).impactOccurred()
+            #endif
         }
     }
 #endif

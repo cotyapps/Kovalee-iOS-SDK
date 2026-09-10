@@ -1,4 +1,4 @@
-#if os(iOS)
+#if os(iOS) || os(visionOS)
 import Foundation
 
 /// Persistent overrides used by the SDK debug panel to drive the upsell flow

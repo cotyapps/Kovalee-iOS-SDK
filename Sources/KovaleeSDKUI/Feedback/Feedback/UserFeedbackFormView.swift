@@ -1,4 +1,4 @@
-#if os(iOS)
+#if os(iOS) || os(visionOS)
 import OSLog
 import SwiftUI
 
@@ -123,7 +123,9 @@ public struct UserFeedbackFormView: View {
 					Spacer(minLength: 40)
 				}
 			}
+			#if !os(visionOS)
 			.scrollDismissesKeyboard(.interactively)
+			#endif
 			
 			ActionButton(
 				text: LocalizedStrings.submitButton,
