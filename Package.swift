@@ -149,7 +149,7 @@ extension Target.Dependency {
     }
 
     static var ui: Self {
-        .target(name: .sdkUI, condition: .when(platforms: [.iOS]))
+        .target(name: .sdkUI, condition: .when(platforms: [.iOS, .visionOS]))
     }
 
     static var survey: Self {
@@ -226,7 +226,7 @@ extension Target.Dependency {
         .product(
             name: "FirebaseRemoteConfig",
             package: "firebase-ios-sdk",
-            condition: .when(platforms: [.iOS, .macCatalyst, .macOS, .tvOS, .watchOS])
+            condition: .when(platforms: [.iOS, .macCatalyst, .macOS, .tvOS, .watchOS, .visionOS])
         )
     }
 
@@ -242,7 +242,7 @@ extension Target.Dependency {
         .product(
             name: "FirebaseFunctions",
             package: "firebase-ios-sdk",
-            condition: .when(platforms: [.iOS, .macCatalyst, .macOS, .tvOS, .watchOS])
+            condition: .when(platforms: [.iOS, .macCatalyst, .macOS, .tvOS, .watchOS, .visionOS])
         )
     }
 

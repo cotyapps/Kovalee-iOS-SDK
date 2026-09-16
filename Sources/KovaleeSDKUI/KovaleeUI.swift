@@ -1,4 +1,4 @@
-#if os(iOS)
+#if os(iOS) || os(visionOS)
 import SwiftUI
 
 /// Single configuration entry point for the KovaleeSDKUI feedback flows.

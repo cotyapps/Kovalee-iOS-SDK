@@ -2,7 +2,7 @@ import KovaleeFramework
 import KovaleePurchases
 import KovaleeSDK
 import SwiftUI
-#if os(iOS)
+#if os(iOS) || os(visionOS)
 
 @available(iOS 16.0, *)
 struct PurchaseCVView: View {

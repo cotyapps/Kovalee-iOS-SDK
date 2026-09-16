@@ -1,4 +1,4 @@
-#if os(iOS)
+#if os(iOS) || os(visionOS)
     import SwiftUI
 
     /// To integrate ``DebugView`` into your SwiftUI-based projects you should use the view modifier ``showDebugConsoleOnShake()``.

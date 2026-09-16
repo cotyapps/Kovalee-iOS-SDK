@@ -1,5 +1,5 @@
 import Foundation
-#if os(iOS)
+#if os(iOS) || os(visionOS)
     import RevenueCat
 
     /// RevenueCatUI fires `onRestoreCompleted` even when "Restore Purchases"
