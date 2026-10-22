@@ -188,6 +188,16 @@ The Firebase `purchase` event requires `"analyticsEnabled": true` in the `fireba
 
 Full guide — events, per-sink requirements, pitfalls, and how to verify an integration: [Documentation/PURCHASE_TRACKING.md](Documentation/PURCHASE_TRACKING.md).
 
+## Google On-Device Conversion Measurement (ODM)
+
+Since 2.6.5, `KovaleeAttribution` includes Adjust's Google ODM module. To turn it on in your app:
+
+1. Update the SDK to 2.6.5 or newer. If your app pins `firebase-ios-sdk` to 12.x, allow 13.x.
+2. In `Info.plist`, never set `GOOGLE_ANALYTICS_DEFAULT_ALLOW_AD_STORAGE` to `false`.
+3. Ask for tracking with `Kovalee.promptTrackingAuthorization()`.
+
+To check it works: after a fresh install, `adj_google_odm_info_processed` is `1` in the app's `UserDefaults`.
+
 ## Subscription Upsell
 
 KovaleeSDKUI ships a turnkey subscription-to-lifetime flow: detect an eligible subscription — a trial about to expire, or an established subscriber active past a threshold (see [Eligibility conditions](#eligibility-conditions)) → present a RevenueCat-hosted upsell paywall (typically lifetime) → on purchase, route the user to Apple's *Manage Subscriptions* sheet so they can turn off auto-renewal on the original subscription (Apple does not allow developer-side cancellation).
