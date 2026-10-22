@@ -190,16 +190,13 @@ Full guide — events, per-sink requirements, pitfalls, and how to verify an int
 
 ## Google On-Device Conversion Measurement (ODM)
 
-`KovaleeAttribution` links Adjust's Google ODM module (`AdjustGoogleOdm`) on iOS and requires Adjust 5.4.1 or newer, so Adjust sends Google's on-device conversion data for iOS App campaigns. With Firebase 13, this covers Google's code requirements. Nothing to call: Adjust finds the plugin at runtime.
+Since 2.6.5, `KovaleeAttribution` includes Adjust's Google ODM module. To turn it on in your app:
 
-In your app:
+1. Update the SDK to 2.6.5 or newer. If your app pins `firebase-ios-sdk` to 12.x, allow 13.x.
+2. In `Info.plist`, never set `GOOGLE_ANALYTICS_DEFAULT_ALLOW_AD_STORAGE` to `false`.
+3. Ask for tracking with `Kovalee.promptTrackingAuthorization()`.
 
-1. Update the SDK to **2.6.5 or newer**. If the app references `firebase-ios-sdk` directly and caps it at 12.x, raise it to `Up to Next Major` from `13.0.1`.
-2. Never deny ad storage at first launch: `GOOGLE_ANALYTICS_DEFAULT_ALLOW_AD_STORAGE` in `Info.plist` must be `true` or absent. Firebase tries ODM only once, at first launch.
-3. Ask for tracking with `Kovalee.promptTrackingAuthorization()`, and call it again whenever the app becomes active, so Firebase ad consent follows the user's answer.
-4. Check a fresh install with `-FIRAnalyticsDebugEnabled`: look for `adj_google_odm_info_processed = 1` (Adjust) and `_psmvalue_gads` (Firebase).
-
-Full guide — consent defaults, the log lines to check, and the dashboard settings UA needs: [Documentation/GOOGLE_ODM.md](Documentation/GOOGLE_ODM.md).
+To check it works: after a fresh install, `adj_google_odm_info_processed` is `1` in the app's `UserDefaults`.
 
 ## Subscription Upsell
 
