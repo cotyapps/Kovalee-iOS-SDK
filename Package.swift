@@ -51,7 +51,7 @@ let package = Package(
         .package(url: "https://github.com/Survicate/survicate-ios-sdk", .upToNextMajor(from: "5.0.0")),
         .package(url: "https://github.com/firebase/firebase-ios-sdk.git", .upToNextMajor(from: "13.0.1")),
         .package(url: "https://github.com/RevenueCat/purchases-ios-spm.git", .upToNextMajor(from: "5.0.0")),
-        .package(url: "https://github.com/adjust/ios_sdk", .upToNextMajor(from: "5.0.0")),
+        .package(url: "https://github.com/adjust/ios_sdk", .upToNextMajor(from: "5.4.1")),
         .package(url: "https://github.com/tiktok/tiktok-business-ios-sdk", .upToNextMajor(from: "1.7.2")),
     ],
     targets: [
@@ -121,6 +121,7 @@ let package = Package(
             dependencies: [
                 .sdk,
                 .AdjustSdk,
+                .AdjustGoogleOdm,
             ],
             resources: [
                 .copy("PrivacyInfo.xcprivacy"),
@@ -219,6 +220,16 @@ extension Target.Dependency {
             name: "AdjustSdk",
             package: "ios_sdk",
             condition: .when(platforms: [.iOS, .tvOS])
+        )
+    }
+
+    /// Adjust's Google on-device conversion measurement (ODM) plugin. Adjust finds it at
+    /// runtime, so linking it is all it takes. Google's ODM library only ships for iOS.
+    static var AdjustGoogleOdm: Self {
+        .product(
+            name: "AdjustGoogleOdm",
+            package: "ios_sdk",
+            condition: .when(platforms: [.iOS])
         )
     }
 

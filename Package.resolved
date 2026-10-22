@@ -1,5 +1,5 @@
 {
-  "originHash" : "580a6c0374df64f5dd7fbe990ef7fd15d2ef6a4a3999ee6e75e7cc373354368c",
+  "originHash" : "21c7dee151ceea4e166550cdd2bab69066da4ba6fadf0dab39911e7acbf839f8",
   "pins" : [
     {
       "identity" : "abseil-cpp-binary",
@@ -15,8 +15,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/adjust/adjust_signature_sdk.git",
       "state" : {
-        "revision" : "93c40d7fa27b709a81adc50e41b400ce4411c7ff",
-        "version" : "3.35.2"
+        "revision" : "e3d405e813d35d50bb2be35d59b8659527fe37dc",
+        "version" : "5.0.0"
       }
     },
     {
@@ -159,8 +159,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/adjust/ios_sdk",
       "state" : {
-        "revision" : "c419718364e9f360c602a17a64b91c591f33fe6a",
-        "version" : "5.0.1"
+        "revision" : "06aaed8bbee099d545c74bf3101b6bcffb9d2791",
+        "version" : "5.8.0"
       }
     },
     {
