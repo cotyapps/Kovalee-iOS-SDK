@@ -23,7 +23,7 @@ struct PurchaseCVView: View {
                     title: "RevenueCat User ID:",
                     value: revenueCatUserId,
                     horizontal: false,
-                    allowCopy: true
+                    allowShare: true
                 )
             }
 
@@ -32,7 +32,7 @@ struct PurchaseCVView: View {
                     title: "Original App User ID:",
                     value: info.originalAppUserId,
                     horizontal: false,
-                    allowCopy: true
+                    allowShare: true
                 )
 
                 premiumStatusRow(info: info)
@@ -63,7 +63,7 @@ struct PurchaseCVView: View {
                         title: "Management URL:",
                         value: managementURL.absoluteString,
                         horizontal: false,
-                        allowCopy: true
+                        allowShare: true
                     )
                 }
             } else {

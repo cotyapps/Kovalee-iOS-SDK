@@ -266,7 +266,7 @@
                     title: "Amplitude User Id:",
                     value: userId,
                     horizontal: false,
-                    allowCopy: true
+                    allowShare: true
                 )
             }
             if let deviceId = Kovalee.shared.kovaleeManager?.amplitudeDeviceId() {
@@ -274,7 +274,7 @@
                     title: "Amplitude Device Id:",
                     value: deviceId,
                     horizontal: false,
-                    allowCopy: true
+                    allowShare: true
                 )
             }
             if let adid {
@@ -282,7 +282,7 @@
                     title: "User ADID:",
                     value: adid,
                     horizontal: false,
-                    allowCopy: true
+                    allowShare: true
                 )
             }
 
@@ -312,7 +312,7 @@
                     title: "Last opened URL",
                     value: lastDeeplinkReceived,
                     horizontal: false,
-                    allowCopy: true
+                    allowShare: true
                 )
                 if let parsingError = deepLinkParsingError() {
                     InfoLabel(
