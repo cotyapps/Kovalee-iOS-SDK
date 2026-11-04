@@ -22,6 +22,7 @@
                             .textSelection(.enabled)
                         if allowCopy {
                             copyButton
+                            shareButton
                         }
                     }
                 }
@@ -37,6 +38,14 @@
                 UIPasteboard.general.string = value
             } label: {
                 Image(systemName: "document.on.document")
+                    .font(.caption)
+                    .foregroundStyle(.secondary)
+            }
+        }
+
+        private var shareButton: some View {
+            ShareLink(item: value, subject: Text(title)) {
+                Image(systemName: "square.and.arrow.up")
                     .font(.caption)
                     .foregroundStyle(.secondary)
             }
