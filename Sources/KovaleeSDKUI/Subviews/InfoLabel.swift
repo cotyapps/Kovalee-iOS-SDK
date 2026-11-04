@@ -6,7 +6,7 @@
         var title: String
         var value: String
         var horizontal: Bool = true
-        var allowCopy: Bool = false
+        var allowShare: Bool = false
 
         var body: some View {
             if horizontal {
@@ -20,8 +20,8 @@
                         Text(value)
                             .font(.system(.subheadline, design: .monospaced))
                             .textSelection(.enabled)
-                        if allowCopy {
-                            copyButton
+                        if allowShare {
+                            shareButton
                         }
                     }
                 }
@@ -29,14 +29,9 @@
             }
         }
 
-        private var copyButton: some View {
-            Button {
-                #if os(iOS)
-                    UIImpactFeedbackGenerator(style: .light).impactOccurred()
-                #endif
-                UIPasteboard.general.string = value
-            } label: {
-                Image(systemName: "document.on.document")
+        private var shareButton: some View {
+            ShareLink(item: value, subject: Text(title)) {
+                Image(systemName: "square.and.arrow.up")
                     .font(.caption)
                     .foregroundStyle(.secondary)
             }
