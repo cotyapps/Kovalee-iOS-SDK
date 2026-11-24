@@ -50,7 +50,7 @@ let package = Package(
         .package(url: "https://github.com/amplitude/AmplitudeSessionReplay-iOS", .upToNextMajor(from: "0.9.5")),
         .package(url: "https://github.com/Survicate/survicate-ios-sdk", .upToNextMajor(from: "5.0.0")),
         .package(url: "https://github.com/firebase/firebase-ios-sdk.git", .upToNextMajor(from: "13.0.1")),
-        .package(url: "https://github.com/RevenueCat/purchases-ios-spm.git", .upToNextMajor(from: "5.0.0")),
+        .package(url: "https://github.com/RevenueCat/purchases-ios-spm.git", .upToNextMajor(from: "5.93.0")),
         .package(url: "https://github.com/adjust/ios_sdk", .upToNextMajor(from: "5.4.1")),
         .package(url: "https://github.com/tiktok/tiktok-business-ios-sdk", .upToNextMajor(from: "1.7.2")),
     ],
