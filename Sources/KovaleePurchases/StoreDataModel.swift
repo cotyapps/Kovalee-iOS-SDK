@@ -61,9 +61,17 @@ public final class KCustomerInfo: AbstractCustomerInfo, Encodable {
         nonSubscriptions.map(\.productIdentifier)
     }
 
-    init(info: RevenueCat.CustomerInfo) {
-        entitlements = KEntitlementInfos(entitlements: info.entitlements)
-        activeSubscriptions = info.activeSubscriptions
+    /// Debug and TestFlight builds leave ignored test purchases out (see
+    /// ``IgnoredTestPurchases``): their entitlements are inactive and their
+    /// subscriptions aren't active. Production purchases are never left out.
+    init(
+        info: RevenueCat.CustomerInfo,
+        ignoring ignoredProductIDs: Set<String> = IgnoredTestPurchases.productIDs
+    ) {
+        entitlements = KEntitlementInfos(entitlements: info.entitlements, ignoring: ignoredProductIDs)
+        activeSubscriptions = info.activeSubscriptions.filter {
+            !IgnoredTestPurchases.ignoresSubscription($0, in: info, ignoring: ignoredProductIDs)
+        }
         allPurchasedProductIdentifiers = info.allPurchasedProductIdentifiers
         latestExpirationDate = info.latestExpirationDate
         nonSubscriptions = info.nonSubscriptions.map { KNonSubscriptionTransaction(transaction: $0) }
@@ -88,9 +96,12 @@ public final class KEntitlementInfos: NSObject, Encodable, Sendable {
         return all[key]
     }
 
-    init(entitlements: RevenueCat.EntitlementInfos) {
+    init(entitlements: RevenueCat.EntitlementInfos, ignoring ignoredProductIDs: Set<String> = []) {
         all = entitlements.all.reduce(into: [String: KEntitlementInfo]()) { all, entitlement in
-            all[entitlement.key] = KEntitlementInfo(info: entitlement.value)
+            all[entitlement.key] = KEntitlementInfo(
+                info: entitlement.value,
+                isIgnored: IgnoredTestPurchases.ignores(entitlement.value, ignoring: ignoredProductIDs)
+            )
         }
     }
 }
@@ -163,9 +174,11 @@ public final class KEntitlementInfo: NSObject, Encodable, Sendable {
      */
     public let ownershipType: KPurchaseOwnershipType
 
-    init(info: RevenueCat.EntitlementInfo) {
+    /// - Parameter isIgnored: an ignored test purchase (see ``IgnoredTestPurchases``),
+    ///   reported inactive.
+    init(info: RevenueCat.EntitlementInfo, isIgnored: Bool = false) {
         identifier = info.identifier
-        isActive = info.isActive
+        isActive = info.isActive && !isIgnored
         willRenew = info.willRenew
         periodType = KPeriodType(rawValue: info.periodType.rawValue)
         latestPurchaseDate = info.latestPurchaseDate

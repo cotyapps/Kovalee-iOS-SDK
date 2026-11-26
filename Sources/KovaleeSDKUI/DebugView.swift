@@ -50,6 +50,8 @@
         @State private var installationDate: String?
         @State private var sessionCount: Int?
         @State private var lastDeeplinkReceived: String?
+        /// Changed after a test purchase reset, so the Purchases section reloads.
+        @State private var purchasesRefreshID = UUID()
 
         public init() {}
 
@@ -93,8 +95,21 @@
 
                     Section {
                         PurchaseCVView()
+                            .id(purchasesRefreshID)
                     } header: {
                         Text("Purchases")
+                    }
+
+                    if Config.isDebugOrTestflight {
+                        Section {
+                            TestPurchaseResetView {
+                                purchasesRefreshID = UUID()
+                            }
+                        } header: {
+                            Text("Reset Test Purchases")
+                        } footer: {
+                            Text("TestFlight purchases use your real Apple Account and can't be wiped. Ignore one to see the app as a free user: only test purchases can be ignored, never a real one. A refund removes it for good: Apple approves it at once in TestFlight, whatever reason you pick. A free trial stays used on this Apple Account. Changes reach the app when you close this console.")
+                        }
                     }
 
                     Section {
@@ -156,6 +171,11 @@
                 }
             }
             .navigationViewStyle(.stack)
+            // The app can't present its paywall over the console, so it hears about
+            // changed test purchases only once the console has closed.
+            .onDisappear {
+                DebugConsoleChanges.postIfNeeded()
+            }
         }
     }
 

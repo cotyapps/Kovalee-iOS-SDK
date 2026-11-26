@@ -1,5 +1,6 @@
 import Foundation
 #if os(iOS) || os(visionOS)
+    import KovaleePurchases
     import RevenueCat
 
     /// RevenueCatUI fires `onRestoreCompleted` even when "Restore Purchases"
@@ -16,12 +17,13 @@ import Foundation
     enum RestoreDetection {
         /// Entitlement identifiers active right now, read synchronously from
         /// RevenueCat's cache. Capture this in `onRestoreStarted`, before the
-        /// restore can change anything.
+        /// restore can change anything. Ignored test purchases don't count (see
+        /// ``IgnoredTestPurchases``): a restore gives them back.
         static func activeEntitlementIDs() -> Set<String> {
             guard Purchases.isConfigured, let info = Purchases.shared.cachedCustomerInfo else {
                 return []
             }
-            return Set(info.entitlements.active.keys)
+            return Set(info.entitlements.active.filter { !IgnoredTestPurchases.ignores($0.value) }.keys)
         }
 
         /// Whether a completed restore actually recovered access: some entitlement is

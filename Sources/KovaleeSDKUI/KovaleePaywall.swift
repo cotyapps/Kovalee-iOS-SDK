@@ -96,6 +96,11 @@ import Foundation
                     PaywallView()
                 }
             }
+            .overlay(alignment: .top) {
+                IgnoredTestPurchasesBadge {
+                    useIgnoredTestPurchasesAgain()
+                }
+            }
             .onAppear {
                 signal.reset()
                 Kovalee.sendEvent(event: BasicEvent.pageViewPaywall(source: source))
@@ -113,6 +118,11 @@ import Foundation
                 )
             }
             .onPurchaseCompleted { (transaction: StoreTransaction?, customerInfo: CustomerInfo) in
+                // Buying an ignored test product again ends ignoring it.
+                if let productID = transaction?.productIdentifier
+                    ?? signal.purchasedPackage?.storeProduct.productIdentifier {
+                    IgnoredTestPurchases.setIgnoring(false, productID: productID)
+                }
                 if let package = signal.purchasedPackage {
                     Kovalee.succesfullyPurchased(
                         subscriptionWithProductId: package.storeProduct.productIdentifier,
@@ -155,6 +165,9 @@ import Foundation
                 Kovalee.paymentRestoreStart(fromSource: source)
             }
             .onRestoreCompleted { customerInfo in
+                // Asking for purchases back ends ignoring test purchases, so a
+                // restore while some are ignored recovers them.
+                IgnoredTestPurchases.stopIgnoringAll()
                 // RevenueCatUI fires this callback even when there was nothing to
                 // restore — only report a successful restore (and unlock + dismiss)
                 // when the restore made an entitlement active that wasn't active
@@ -172,6 +185,17 @@ import Foundation
             }
             .onRequestedDismissal {
                 onDismiss?(false)
+            }
+        }
+
+        /// The paywall's TestFlight badge: stops ignoring test purchases, and closes the
+        /// paywall as an unlock when they make the user premium again.
+        private func useIgnoredTestPurchasesAgain() {
+            IgnoredTestPurchases.stopIgnoringAll()
+            Task { @MainActor in
+                if (try? await Kovalee.isUserPremium()) == true {
+                    onDismiss?(true)
+                }
             }
         }
 

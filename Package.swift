@@ -137,6 +137,13 @@ let package = Package(
                 .copy("PrivacyInfo.xcprivacy"),
             ]
         ),
+        .testTarget(
+            name: "KovaleePurchasesTests",
+            dependencies: [
+                .kovaleePurchases,
+                .revenueCat,
+            ]
+        ),
     ]
 )
 

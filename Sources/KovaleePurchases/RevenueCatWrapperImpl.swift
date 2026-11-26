@@ -171,6 +171,8 @@ final class RevenueCatWrapperImpl: NSObject, PurchaseManager, Manager {
 
         let rcCustomerInfo = try await Purchases.shared.restorePurchases()
         KLogger.debug("🛍️ Purchase restored with customer info: \(rcCustomerInfo)")
+        // Asking for purchases back ends ignoring test purchases.
+        IgnoredTestPurchases.stopIgnoringAll()
 
         return KCustomerInfo(info: rcCustomerInfo)
     }
@@ -183,6 +185,10 @@ final class RevenueCatWrapperImpl: NSObject, PurchaseManager, Manager {
         KLogger.debug("🛍️ Purchase \(purchaseResult)")
 
         let product = rcPackage.storeProduct
+        if !purchaseResult.userCancelled {
+            // Buying an ignored test product again ends ignoring it.
+            IgnoredTestPurchases.setIgnoring(false, productID: product.productIdentifier)
+        }
         return KPurchaseResultData(
             transaction: KStoreTransaction(transaction: purchaseResult.transaction),
             customerInfo: KCustomerInfo(info: purchaseResult.customerInfo),
@@ -202,6 +208,9 @@ final class RevenueCatWrapperImpl: NSObject, PurchaseManager, Manager {
 
         let purchaseResult = try await Purchases.shared.purchase(product: product)
         KLogger.debug("🛍️ Purchase \(purchaseResult)")
+        if !purchaseResult.userCancelled {
+            IgnoredTestPurchases.setIgnoring(false, productID: product.productIdentifier)
+        }
 
         return KPurchaseResultData(
             transaction: KStoreTransaction(transaction: purchaseResult.transaction),
