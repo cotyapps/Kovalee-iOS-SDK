@@ -87,6 +87,16 @@ final class RevenueCatWrapperImpl: NSObject, PurchaseManager, Manager {
         // KovaleeRemoteConfig), so it's pending on the subscriber before the user can
         // reach a paywall — RevenueCat then includes it with the purchase receipt.
         // The PurchasesDelegate callback keeps it in sync afterwards as a backstop.
+        // Apps that keep premium status from the delegate hear about ignored test
+        // purchases too: RevenueCat itself sends no update when the list changes.
+        ignoredTestPurchasesObserver = NotificationCenter.default.addObserver(
+            forName: IgnoredTestPurchases.didChangeNotification,
+            object: nil,
+            queue: .main
+        ) { [weak self] _ in
+            self?.sendCachedCustomerInfoToDelegate()
+        }
+
         firebaseConfiguredObserver = NotificationCenter.default.addObserver(
             forName: .kovaleeFirebaseConfigured,
             object: nil,
@@ -248,8 +258,12 @@ final class RevenueCatWrapperImpl: NSObject, PurchaseManager, Manager {
 
     private var delegate: KovaleeFramework.KovaleePurchasesDelegate?
     private var firebaseConfiguredObserver: NSObjectProtocol?
+    private var ignoredTestPurchasesObserver: NSObjectProtocol?
 
     deinit {
+        if let ignoredTestPurchasesObserver {
+            NotificationCenter.default.removeObserver(ignoredTestPurchasesObserver)
+        }
         if let firebaseConfiguredObserver {
             NotificationCenter.default.removeObserver(firebaseConfiguredObserver)
         }
@@ -297,6 +311,11 @@ extension RevenueCatWrapperImpl: RevenueCat.PurchasesDelegate {
         delegate?.didReceiveUpdate(KCustomerInfo(info: customerInfo))
     }
 
+    private func sendCachedCustomerInfoToDelegate() {
+        guard Purchases.isConfigured, let customerInfo = Purchases.shared.cachedCustomerInfo else { return }
+        delegate?.didReceiveUpdate(KCustomerInfo(info: customerInfo))
+    }
+
     func purchases(
         _: Purchases,
         readyForPromotedProduct product: StoreProduct,
@@ -304,7 +323,11 @@ extension RevenueCatWrapperImpl: RevenueCat.PurchasesDelegate {
     ) {
         KLogger.debug("🛍️ ready for Promoted Product \(product)")
 
-        startPurchase { transaction, customerInfo, error, _ in
+        startPurchase { transaction, customerInfo, error, userCancelled in
+            if let transaction, error == nil, !userCancelled {
+                // Buying an ignored test product again ends ignoring it.
+                IgnoredTestPurchases.setIgnoring(false, productID: transaction.productIdentifier)
+            }
             let storeTransaction = KStoreTransaction(transaction: transaction)
             let info = customerInfo.map { KCustomerInfo(info: $0) }
 

@@ -20,6 +20,13 @@ import Security
 /// check below were wrong. On top of that, the list is only read in debug and
 /// TestFlight builds.
 ///
+/// ## Entitlements
+/// RevenueCat names one product per entitlement, so an entitlement is only switched
+/// off when its product is ignored **and** no other active purchase that isn't
+/// ignored is left: with a weekly and a lifetime both granting `premium`, ignoring
+/// the lifetime keeps `premium` active. If a different purchase is left, the tester
+/// stays premium: when in doubt, a tester can stay premium but is never made free.
+///
 /// ## Lifecycle
 /// Purchases are ignored by product id, which stays the same across TestFlight's daily
 /// renewals. Buying the product again stops ignoring it, restoring purchases stops
@@ -27,8 +34,10 @@ import Security
 /// The list is kept in the Keychain, so it survives a reinstall.
 ///
 /// ``KCustomerInfo`` (and so `Kovalee.customerInfo()` and `Kovalee.isUserPremium()`)
-/// already leaves ignored purchases out. Apps that read RevenueCat directly use
-/// ``isPremium(_:)`` or ``ignores(_:)``.
+/// leaves ignored purchases out of its entitlements, active subscriptions,
+/// non-subscription purchases, purchased product ids and latest expiration date. Apps
+/// that read RevenueCat directly use ``isPremium(_:)``,
+/// ``ignores(_:in:)`` or ``ignores(_:)``.
 public enum IgnoredTestPurchases {
     /// Posted on the main thread when the ignored purchases change, and when the debug
     /// console closes after changing test purchases (a refund, a new RevenueCat user).
@@ -63,24 +72,17 @@ public enum IgnoredTestPurchases {
         stopIgnoringAll(notifies: true)
     }
 
-    /// Whether this entitlement comes from an ignored test purchase. `false` for every
-    /// production purchase.
-    public static func ignores(_ entitlement: EntitlementInfo) -> Bool {
-        ignores(
-            productID: entitlement.productIdentifier,
-            isSandbox: entitlement.isSandbox,
-            isAppStore: entitlement.store == .appStore
-        )
+    /// Whether this active entitlement is switched off: its product is an ignored test
+    /// purchase and no other active purchase that isn't ignored is left. `false` for
+    /// every production purchase.
+    public static func ignores(_ entitlement: EntitlementInfo, in customerInfo: CustomerInfo) -> Bool {
+        ignores(entitlement, in: customerInfo, ignoring: productIDs)
     }
 
     /// Whether this subscription is an ignored test purchase. `false` for every
     /// production purchase.
     public static func ignores(_ subscription: SubscriptionInfo) -> Bool {
-        ignores(
-            productID: subscription.productIdentifier,
-            isSandbox: subscription.isSandbox,
-            isAppStore: subscription.store == .appStore
-        )
+        ignores(subscription, ignoring: productIDs)
     }
 
     /// The premium rule of `Kovalee.isUserPremium()` (an active subscription or
@@ -103,11 +105,20 @@ public enum IgnoredTestPurchases {
         isSandbox && isAppStore && ignoredProductIDs.contains(productID)
     }
 
-    static func ignores(_ entitlement: EntitlementInfo, ignoring ignoredProductIDs: Set<String>) -> Bool {
+    static func ignores(_ subscription: SubscriptionInfo, ignoring ignoredProductIDs: Set<String>) -> Bool {
         ignores(
-            productID: entitlement.productIdentifier,
-            isSandbox: entitlement.isSandbox,
-            isAppStore: entitlement.store == .appStore,
+            productID: subscription.productIdentifier,
+            isSandbox: subscription.isSandbox,
+            isAppStore: subscription.store == .appStore,
+            ignoredProductIDs: ignoredProductIDs
+        )
+    }
+
+    static func ignores(_ transaction: NonSubscriptionTransaction, ignoring ignoredProductIDs: Set<String>) -> Bool {
+        ignores(
+            productID: transaction.productIdentifier,
+            isSandbox: transaction.isSandbox,
+            isAppStore: transaction.store == .appStore,
             ignoredProductIDs: ignoredProductIDs
         )
     }
@@ -122,19 +133,51 @@ public enum IgnoredTestPurchases {
         guard let subscription = customerInfo.subscriptionsByProductIdentifier[productID] else {
             return false
         }
-        return ignores(
-            productID: productID,
-            isSandbox: subscription.isSandbox,
-            isAppStore: subscription.store == .appStore,
+        return ignores(subscription, ignoring: ignoredProductIDs)
+    }
+
+    /// Whether a product the customer bought is an ignored test purchase, as RevenueCat
+    /// describes it (a subscription or a non-subscription purchase).
+    static func ignoresProduct(
+        _ productID: String,
+        in customerInfo: CustomerInfo,
+        ignoring ignoredProductIDs: Set<String>
+    ) -> Bool {
+        if let subscription = customerInfo.subscriptionsByProductIdentifier[productID] {
+            return ignores(subscription, ignoring: ignoredProductIDs)
+        }
+        let transactions = customerInfo.nonSubscriptions.filter { $0.productIdentifier == productID }
+        return !transactions.isEmpty && transactions.allSatisfy { ignores($0, ignoring: ignoredProductIDs) }
+    }
+
+    /// Whether some active purchase isn't ignored: an active subscription or a
+    /// non-subscription purchase.
+    static func hasPurchaseNotIgnored(_ customerInfo: CustomerInfo, ignoring ignoredProductIDs: Set<String>) -> Bool {
+        customerInfo.activeSubscriptions.contains {
+            !ignoresSubscription($0, in: customerInfo, ignoring: ignoredProductIDs)
+        } || customerInfo.nonSubscriptions.contains { !ignores($0, ignoring: ignoredProductIDs) }
+    }
+
+    static func ignores(
+        _ entitlement: EntitlementInfo,
+        in customerInfo: CustomerInfo,
+        ignoring ignoredProductIDs: Set<String>
+    ) -> Bool {
+        let fromIgnoredProduct = ignores(
+            productID: entitlement.productIdentifier,
+            isSandbox: entitlement.isSandbox,
+            isAppStore: entitlement.store == .appStore,
             ignoredProductIDs: ignoredProductIDs
         )
+        return fromIgnoredProduct && !hasPurchaseNotIgnored(customerInfo, ignoring: ignoredProductIDs)
     }
 
     static func isPremium(_ customerInfo: CustomerInfo, ignoring ignoredProductIDs: Set<String>) -> Bool {
-        customerInfo.entitlements.active.values.contains { !ignores($0, ignoring: ignoredProductIDs) }
-            || customerInfo.activeSubscriptions.contains {
-                !ignoresSubscription($0, in: customerInfo, ignoring: ignoredProductIDs)
-            }
+        customerInfo.entitlements.active.values.contains {
+            !ignores($0, in: customerInfo, ignoring: ignoredProductIDs)
+        } || customerInfo.activeSubscriptions.contains {
+            !ignoresSubscription($0, in: customerInfo, ignoring: ignoredProductIDs)
+        }
     }
 
     /// Like ``setIgnoring(_:productID:)``. The debug console passes `notifies: false`
@@ -161,6 +204,12 @@ public enum IgnoredTestPurchases {
         return changed
     }
 
+    static func postDidChange() {
+        DispatchQueue.main.async {
+            NotificationCenter.default.post(name: didChangeNotification, object: nil)
+        }
+    }
+
     private static func didChange(notifies: Bool) {
         // TestFlight events go to the production Amplitude project: say which
         // purchases are ignored, so these testers' "not premium" can be told apart.
@@ -172,56 +221,73 @@ public enum IgnoredTestPurchases {
         if notifies { postDidChange() }
     }
 
-    static func postDidChange() {
-        DispatchQueue.main.async {
-            NotificationCenter.default.post(name: didChangeNotification, object: nil)
-        }
-    }
-
     private static let storage = IgnoredProductIDStorage(
         service: (Bundle.main.bundleIdentifier ?? "kovalee") + ".kovalee.ignored-test-purchases"
     )
 }
 
-/// The ignored product ids, kept in the Keychain (it survives a reinstall) and cached
-/// in memory, since every ``KCustomerInfo`` reads them.
+/// Where the ignored product ids are kept.
+protocol IgnoredProductIDStore: Sendable {
+    /// The stored ids, `[]` when none are stored, `nil` when the store can't be read.
+    func load() -> Set<String>?
+    /// - Returns: whether the store now holds `ids`.
+    func save(_ ids: Set<String>) -> Bool
+}
+
+/// The ignored product ids, cached in memory since every ``KCustomerInfo`` reads them.
+///
+/// A store error (for example the Keychain before the first unlock after a reboot) is
+/// never taken for an empty list: nothing is cached, the next read tries again, the
+/// stored list is never overwritten from a read that failed, and a failed save
+/// changes nothing.
 final class IgnoredProductIDStorage: @unchecked Sendable {
-    private let service: String
-    private let account = "productIDs"
+    private let store: IgnoredProductIDStore
     private let lock = NSLock()
     private var cache: Set<String>?
 
-    init(service: String) {
-        self.service = service
+    init(store: IgnoredProductIDStore) {
+        self.store = store
     }
 
+    /// Kept in the Keychain, so the list survives a reinstall.
+    convenience init(service: String) {
+        self.init(store: KeychainIgnoredProductIDStore(service: service))
+    }
+
+    /// The stored ids, or none while the store can't be read.
     var productIDs: Set<String> {
         lock.lock()
         defer { lock.unlock() }
-        return loadedProductIDs()
+        return loadedProductIDs() ?? []
     }
 
     /// Applies `change` and saves the result.
-    /// - Returns: whether the ids changed.
+    /// - Returns: whether the ids changed and were saved. `false` when the store
+    ///   can't be read or written, so nothing changed.
     @discardableResult
     func update(_ change: (inout Set<String>) -> Void) -> Bool {
         lock.lock()
         defer { lock.unlock() }
-        var ids = loadedProductIDs()
+        guard var ids = loadedProductIDs() else { return false }
         let before = ids
         change(&ids)
-        guard ids != before else { return false }
-        save(ids)
+        guard ids != before, store.save(ids) else { return false }
         cache = ids
         return true
     }
 
-    private func loadedProductIDs() -> Set<String> {
+    private func loadedProductIDs() -> Set<String>? {
         if let cache { return cache }
-        let loaded = load()
+        guard let loaded = store.load() else { return nil }
         cache = loaded
         return loaded
     }
+}
+
+/// A Keychain item only this device can read, kept after the app is deleted.
+struct KeychainIgnoredProductIDStore: IgnoredProductIDStore {
+    let service: String
+    let account = "productIDs"
 
     private var itemQuery: [String: Any] {
         [
@@ -231,24 +297,38 @@ final class IgnoredProductIDStorage: @unchecked Sendable {
         ]
     }
 
-    private func load() -> Set<String> {
+    func load() -> Set<String>? {
         var query = itemQuery
         query[kSecReturnData as String] = true
         query[kSecMatchLimit as String] = kSecMatchLimitOne
         var result: AnyObject?
-        guard SecItemCopyMatching(query as CFDictionary, &result) == errSecSuccess,
-              let data = result as? Data,
-              let ids = try? JSONDecoder().decode([String].self, from: data)
-        else { return [] }
-        return Set(ids)
+        switch SecItemCopyMatching(query as CFDictionary, &result) {
+        case errSecSuccess:
+            guard let data = result as? Data,
+                  let ids = try? JSONDecoder().decode([String].self, from: data)
+            else { return [] }
+            return Set(ids)
+        case errSecItemNotFound:
+            return []
+        default:
+            return nil
+        }
     }
 
-    private func save(_ ids: Set<String>) {
-        SecItemDelete(itemQuery as CFDictionary)
-        guard !ids.isEmpty, let data = try? JSONEncoder().encode(ids.sorted()) else { return }
+    func save(_ ids: Set<String>) -> Bool {
+        guard !ids.isEmpty else {
+            let status = SecItemDelete(itemQuery as CFDictionary)
+            return status == errSecSuccess || status == errSecItemNotFound
+        }
+        guard let data = try? JSONEncoder().encode(ids.sorted()) else { return false }
+        let status = SecItemUpdate(
+            itemQuery as CFDictionary,
+            [kSecValueData as String: data] as CFDictionary
+        )
+        guard status == errSecItemNotFound else { return status == errSecSuccess }
         var attributes = itemQuery
         attributes[kSecValueData as String] = data
         attributes[kSecAttrAccessible as String] = kSecAttrAccessibleAfterFirstUnlockThisDeviceOnly
-        SecItemAdd(attributes as CFDictionary, nil)
+        return SecItemAdd(attributes as CFDictionary, nil) == errSecSuccess
     }
 }

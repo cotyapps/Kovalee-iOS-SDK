@@ -4,6 +4,7 @@ import UIKit
 import SwiftUI
 import StoreKit
 import KovaleeFramework
+import KovaleePurchases
 import KovaleeSDK
 import RevenueCat
 import RevenueCatUI
@@ -231,6 +232,10 @@ enum SubscriptionUpsellPresenter {
 			}
 			.onPurchaseCompleted { (transaction: StoreTransaction?, _: CustomerInfo) in
 				purchaseSignal.didPurchase = true
+				// Buying an ignored test product again ends ignoring it.
+				if let productId = transaction?.productIdentifier ?? purchaseSignal.purchasedProductId {
+					IgnoredTestPurchases.setIgnoring(false, productID: productId)
+				}
 				if let productId = purchaseSignal.purchasedProductId {
 					Kovalee.succesfullyPurchased(subscriptionWithProductId: productId, andDuration: purchaseSignal.purchasedDuration ?? .year, fromSource: paymentSource)
 				}
@@ -256,6 +261,9 @@ enum SubscriptionUpsellPresenter {
 				Kovalee.paymentRestoreStart(fromSource: paymentSource)
 			}
 			.onRestoreCompleted { customerInfo in
+				// Asking for purchases back ends ignoring test purchases, so the
+				// check below compares like with like.
+				IgnoredTestPurchases.stopIgnoringAll()
 				// RevenueCatUI fires this callback even when there was nothing to
 				// restore. The upsell is shown only to already-entitled users, so
 				// `entitlements.active` is non-empty regardless — report success
@@ -326,6 +334,11 @@ enum SubscriptionUpsellPresenter {
 		let info = try await Purchases.shared.customerInfo()
 		return info.entitlements.active.values.first { entitlement in
 			guard productIdentifiers.contains(entitlement.productIdentifier) else { return false }
+			// A tester ignoring this test subscription is a free user: no upsell.
+			if let subscription = info.subscriptionsByProductIdentifier[entitlement.productIdentifier],
+			   IgnoredTestPurchases.ignores(subscription) {
+				return false
+			}
 			switch condition {
 				case .trialExpiring(let within):
 					guard entitlement.periodType == .trial else { return false }

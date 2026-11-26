@@ -23,7 +23,7 @@ import Foundation
             guard Purchases.isConfigured, let info = Purchases.shared.cachedCustomerInfo else {
                 return []
             }
-            return Set(info.entitlements.active.filter { !IgnoredTestPurchases.ignores($0.value) }.keys)
+            return Set(info.entitlements.active.filter { !IgnoredTestPurchases.ignores($0.value, in: info) }.keys)
         }
 
         /// Whether a completed restore actually recovered access: some entitlement is

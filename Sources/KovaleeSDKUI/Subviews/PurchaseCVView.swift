@@ -6,6 +6,9 @@ import SwiftUI
 
 @available(iOS 16.0, *)
 struct PurchaseCVView: View {
+    /// Changed to read the purchases again (after a test purchase reset).
+    private let refreshID: UUID
+
     @State private var customerInfo: KCustomerInfo?
     @State private var revenueCatUserId: String?
 
@@ -15,6 +18,10 @@ struct PurchaseCVView: View {
         formatter.timeStyle = .short
         return formatter
     }()
+
+    init(refreshID: UUID = UUID()) {
+        self.refreshID = refreshID
+    }
 
     var body: some View {
         Group {
@@ -71,7 +78,7 @@ struct PurchaseCVView: View {
                     .foregroundStyle(.secondary)
             }
         }
-        .task {
+        .task(id: refreshID) {
             self.customerInfo = try? await Kovalee.customerInfo()
             self.revenueCatUserId = Kovalee.revenueCatUserId()
         }

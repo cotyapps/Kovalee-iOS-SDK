@@ -34,35 +34,36 @@
         @State private var revenueCatUserId = ""
 
         var body: some View {
-            Group {
-                purchaseRows
-                revenueCatRow
-                if let outcome {
-                    outcomeRow(outcome)
+            purchaseRows
+            // The presenters and the reload hang off this one row, which is always
+            // there: the section's rows are separate List rows, and modifiers on a
+            // group of them would be repeated on each row.
+            revenueCatRow
+                .refundRequestSheet(
+                    for: refundTarget?.refundableTransactionID ?? 0,
+                    isPresented: $isRefundSheetPresented
+                ) { result in
+                    guard let row = refundTarget else { return }
+                    refundTarget = nil
+                    Task { await finishRefund(of: row, result: result) }
                 }
-            }
-            .refundRequestSheet(
-                for: refundTarget?.refundableTransactionID ?? 0,
-                isPresented: $isRefundSheetPresented
-            ) { result in
-                guard let row = refundTarget else { return }
-                refundTarget = nil
-                Task { await finishRefund(of: row, result: result) }
-            }
-            .manageSubscriptionsSheet(isPresented: $isManagingSubscriptions)
-            .confirmationDialog(
-                "Start as a new RevenueCat user?",
-                isPresented: $isConfirmingNewUser,
-                titleVisibility: .visible
-            ) {
-                Button("Start as a new user") {
-                    Task { await startAsNewRevenueCatUser() }
+                .manageSubscriptionsSheet(isPresented: $isManagingSubscriptions)
+                .confirmationDialog(
+                    "Start as a new RevenueCat user?",
+                    isPresented: $isConfirmingNewUser,
+                    titleVisibility: .visible
+                ) {
+                    Button("Start as a new user") {
+                        Task { await startAsNewRevenueCatUser() }
+                    }
+                    Button("Cancel", role: .cancel) {}
+                } message: {
+                    Text("This device gets a new RevenueCat user with no history. Purchases still on this Apple Account come back to it: ignore or refund them.")
                 }
-                Button("Cancel", role: .cancel) {}
-            } message: {
-                Text("This device gets a new RevenueCat user with no history. Purchases still on this Apple Account come back to it: ignore or refund them.")
+                .task { await reload() }
+            if let outcome {
+                outcomeRow(outcome)
             }
-            .task { await reload() }
         }
 
         // MARK: - Rows
@@ -219,6 +220,10 @@
             isWorking = true
             defer { isWorking = false }
             let isRemoved = await TestPurchase.waitUntilRemoved(productID: row.productID)
+            if isRemoved {
+                // Nothing left to ignore: the badge stops counting it.
+                IgnoredTestPurchases.setIgnoring(false, productID: row.productID, notifies: false)
+            }
             // Tell RevenueCat now rather than whenever it next looks.
             _ = try? await Kovalee.syncPurchases()
             DebugConsoleChanges.testPurchasesChanged = true

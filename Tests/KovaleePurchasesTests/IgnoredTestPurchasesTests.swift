@@ -90,6 +90,60 @@ struct IgnoredTestPurchasesTests {
         #expect(KCustomerInfo(info: info, ignoring: [weekly]).activeSubscriptions == [yearly])
     }
 
+    @Test func ignoringOneOfTwoProductsKeepsTheEntitlement() throws {
+        // RevenueCat names the lifetime as the entitlement's product, but the weekly,
+        // which isn't ignored, still grants it.
+        let info = try customerInfo(
+            subscriptions: [weekly: .sandbox],
+            lifetimes: [lifetime: .sandbox],
+            entitlementProduct: lifetime
+        )
+        let wrapped = KCustomerInfo(info: info, ignoring: [lifetime])
+
+        #expect(IgnoredTestPurchases.isPremium(info, ignoring: [lifetime]))
+        #expect(wrapped.entitlements.all["premium"]?.isActive == true)
+        #expect(wrapped.nonSubscriptionProductIds.isEmpty)
+    }
+
+    @Test func ignoringEveryProductSwitchesTheEntitlementOff() throws {
+        let info = try customerInfo(
+            subscriptions: [weekly: .sandbox],
+            lifetimes: [lifetime: .sandbox],
+            entitlementProduct: lifetime
+        )
+
+        #expect(!IgnoredTestPurchases.isPremium(info, ignoring: [lifetime, weekly]))
+        #expect(!KCustomerInfo(info: info, ignoring: [lifetime, weekly]).activeEntitlements)
+    }
+
+    @Test func ignoredPurchasesLeaveEveryFieldOfTheCustomerInfo() throws {
+        let info = try customerInfo(
+            subscriptions: [weekly: .sandbox],
+            lifetimes: [lifetime: .sandbox],
+            entitlementProduct: lifetime
+        )
+        let wrapped = KCustomerInfo(info: info, ignoring: [lifetime, weekly])
+
+        #expect(wrapped.nonSubscriptions.isEmpty)
+        #expect(wrapped.allPurchasedProductIdentifiers.isEmpty)
+        #expect(wrapped.latestExpirationDate == nil)
+        #expect(wrapped.activeSubscriptions.isEmpty)
+    }
+
+    @Test func aPayingCustomersHistoryIsKept() throws {
+        let info = try customerInfo(
+            subscriptions: [weekly: .production],
+            lifetimes: [lifetime: .production],
+            entitlementProduct: lifetime
+        )
+        let wrapped = KCustomerInfo(info: info, ignoring: [lifetime, weekly])
+
+        #expect(wrapped.nonSubscriptionProductIds == [lifetime])
+        #expect(wrapped.allPurchasedProductIdentifiers == [lifetime, weekly])
+        #expect(wrapped.latestExpirationDate == info.latestExpirationDate)
+        #expect(wrapped.activeEntitlements)
+    }
+
     @Test func nothingIgnoredLeavesRevenueCatsAnswer() throws {
         let info = try customerInfo(subscriptions: [weekly: .sandbox], entitlementProduct: weekly)
         let wrapped = KCustomerInfo(info: info, ignoring: [])
@@ -108,16 +162,56 @@ struct IgnoredTestPurchasesTests {
     // MARK: - Storage
 
     @Test func storageAddsAndRemovesProducts() {
-        let storage = IgnoredProductIDStorage(service: "kovalee.tests.\(UUID().uuidString)")
-        defer { storage.update { $0.removeAll() } }
+        let store = MemoryStore()
+        let storage = IgnoredProductIDStorage(store: store)
         #expect(storage.productIDs.isEmpty)
 
         #expect(storage.update { _ = $0.insert(weekly) })
-        #expect(storage.productIDs == [weekly])
+        #expect(store.saved == [weekly])
         #expect(!storage.update { _ = $0.insert(weekly) })
 
         #expect(storage.update { _ = $0.remove(weekly) })
+        #expect(store.saved == [])
         #expect(storage.productIDs.isEmpty)
+    }
+
+    @Test func anUnreadableStoreIsNotTakenForAnEmptyList() {
+        // Before the first unlock after a reboot, the Keychain can't be read.
+        let store = MemoryStore(saved: [lifetime], isReadable: false)
+        let storage = IgnoredProductIDStorage(store: store)
+
+        #expect(storage.productIDs.isEmpty)
+        #expect(!storage.update { _ = $0.insert(weekly) })
+        #expect(store.saved == [lifetime])
+
+        store.isReadable = true
+        #expect(storage.productIDs == [lifetime])
+        #expect(storage.update { _ = $0.insert(weekly) })
+        #expect(store.saved == [lifetime, weekly])
+    }
+
+    @Test func aFailedSaveChangesNothing() {
+        let store = MemoryStore(isWritable: false)
+        let storage = IgnoredProductIDStorage(store: store)
+
+        #expect(!storage.update { _ = $0.insert(weekly) })
+        #expect(storage.productIDs.isEmpty)
+    }
+
+    /// Needs a Keychain: an app-hosted test bundle. A hostless iOS simulator bundle
+    /// has none (errSecMissingEntitlement), so the test is skipped there.
+    @Test(.enabled(if: KeychainProbe.isAvailable, "needs a Keychain (an app-hosted test bundle)"))
+    func theKeychainKeepsTheList() {
+        let store = KeychainIgnoredProductIDStore(service: "kovalee.tests.\(UUID().uuidString)")
+        defer { _ = store.save([]) }
+
+        #expect(store.load() == [])
+        #expect(store.save([weekly, lifetime]))
+        #expect(store.load() == [weekly, lifetime])
+        #expect(store.save([weekly]))
+        #expect(store.load() == [weekly])
+        #expect(store.save([]))
+        #expect(store.load() == [])
     }
 
     // MARK: - Helpers
@@ -163,6 +257,7 @@ struct IgnoredTestPurchasesTests {
         subscriber["non_subscriptions"] = lifetimes.mapValues { origin -> [[String: Any]] in
             [[
                 "id": UUID().uuidString,
+                "store_transaction_id": "1000000000000001",
                 "purchase_date": bought,
                 "original_purchase_date": bought,
                 "store": origin.store,
@@ -190,4 +285,35 @@ struct IgnoredTestPurchasesTests {
         decoder.dateDecodingStrategy = .iso8601
         return try decoder.decode(CustomerInfo.self, from: JSONSerialization.data(withJSONObject: json))
     }
+}
+
+/// An in-memory store that can fail like the Keychain does.
+private final class MemoryStore: IgnoredProductIDStore, @unchecked Sendable {
+    var saved: Set<String>
+    var isReadable: Bool
+    var isWritable: Bool
+
+    init(saved: Set<String> = [], isReadable: Bool = true, isWritable: Bool = true) {
+        self.saved = saved
+        self.isReadable = isReadable
+        self.isWritable = isWritable
+    }
+
+    func load() -> Set<String>? {
+        isReadable ? saved : nil
+    }
+
+    func save(_ ids: Set<String>) -> Bool {
+        guard isWritable else { return false }
+        saved = ids
+        return true
+    }
+}
+
+private enum KeychainProbe {
+    static let isAvailable: Bool = {
+        let store = KeychainIgnoredProductIDStore(service: "kovalee.tests.probe.\(UUID().uuidString)")
+        defer { _ = store.save([]) }
+        return store.save(["probe"])
+    }()
 }

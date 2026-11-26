@@ -94,8 +94,7 @@
                     }
 
                     Section {
-                        PurchaseCVView()
-                            .id(purchasesRefreshID)
+                        PurchaseCVView(refreshID: purchasesRefreshID)
                     } header: {
                         Text("Purchases")
                     }

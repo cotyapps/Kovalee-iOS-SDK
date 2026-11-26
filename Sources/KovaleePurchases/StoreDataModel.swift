@@ -62,19 +62,32 @@ public final class KCustomerInfo: AbstractCustomerInfo, Encodable {
     }
 
     /// Debug and TestFlight builds leave ignored test purchases out (see
-    /// ``IgnoredTestPurchases``): their entitlements are inactive and their
-    /// subscriptions aren't active. Production purchases are never left out.
+    /// ``IgnoredTestPurchases``) of the entitlements, active subscriptions,
+    /// non-subscription purchases, purchased product ids and latest expiration date.
+    /// Production purchases are never left out.
     init(
         info: RevenueCat.CustomerInfo,
         ignoring ignoredProductIDs: Set<String> = IgnoredTestPurchases.productIDs
     ) {
-        entitlements = KEntitlementInfos(entitlements: info.entitlements, ignoring: ignoredProductIDs)
+        entitlements = KEntitlementInfos(entitlements: info.entitlements) {
+            IgnoredTestPurchases.ignores($0, in: info, ignoring: ignoredProductIDs)
+        }
         activeSubscriptions = info.activeSubscriptions.filter {
             !IgnoredTestPurchases.ignoresSubscription($0, in: info, ignoring: ignoredProductIDs)
         }
-        allPurchasedProductIdentifiers = info.allPurchasedProductIdentifiers
-        latestExpirationDate = info.latestExpirationDate
-        nonSubscriptions = info.nonSubscriptions.map { KNonSubscriptionTransaction(transaction: $0) }
+        allPurchasedProductIdentifiers = info.allPurchasedProductIdentifiers.filter {
+            !IgnoredTestPurchases.ignoresProduct($0, in: info, ignoring: ignoredProductIDs)
+        }
+        let subscriptions = Array(info.subscriptionsByProductIdentifier.values)
+        let keptSubscriptions = subscriptions.filter {
+            !IgnoredTestPurchases.ignores($0, ignoring: ignoredProductIDs)
+        }
+        latestExpirationDate = keptSubscriptions.count == subscriptions.count
+            ? info.latestExpirationDate
+            : keptSubscriptions.compactMap(\.expiresDate).max()
+        nonSubscriptions = info.nonSubscriptions
+            .filter { !IgnoredTestPurchases.ignores($0, ignoring: ignoredProductIDs) }
+            .map { KNonSubscriptionTransaction(transaction: $0) }
         requestDate = info.requestDate
         firstSeen = info.firstSeen
         originalAppUserId = info.originalAppUserId
@@ -96,11 +109,16 @@ public final class KEntitlementInfos: NSObject, Encodable, Sendable {
         return all[key]
     }
 
-    init(entitlements: RevenueCat.EntitlementInfos, ignoring ignoredProductIDs: Set<String> = []) {
+    /// - Parameter isIgnored: whether an entitlement comes from an ignored test
+    ///   purchase (see ``IgnoredTestPurchases``), so it is reported inactive.
+    init(
+        entitlements: RevenueCat.EntitlementInfos,
+        isIgnored: (RevenueCat.EntitlementInfo) -> Bool = { _ in false }
+    ) {
         all = entitlements.all.reduce(into: [String: KEntitlementInfo]()) { all, entitlement in
             all[entitlement.key] = KEntitlementInfo(
                 info: entitlement.value,
-                isIgnored: IgnoredTestPurchases.ignores(entitlement.value, ignoring: ignoredProductIDs)
+                isIgnored: isIgnored(entitlement.value)
             )
         }
     }

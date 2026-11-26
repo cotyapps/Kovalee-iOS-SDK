@@ -14,7 +14,9 @@
         @State private var isConfirming = false
 
         var body: some View {
-            Group {
+            // A ZStack, not a Group: a Group's modifiers go to its children, so with
+            // no badge showing there would be nothing listening for changes.
+            ZStack {
                 if count > 0 {
                     Button {
                         isConfirming = true
@@ -38,6 +40,9 @@
                         Text("The app acts as if you hadn't bought them, so you can test the paywall.")
                     }
                 }
+            }
+            .onAppear {
+                count = IgnoredTestPurchases.productIDs.count
             }
             .onReceive(
                 NotificationCenter.default.publisher(for: IgnoredTestPurchases.didChangeNotification)
